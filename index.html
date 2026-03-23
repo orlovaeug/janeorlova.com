@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jane Orlova</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+```
+:root {
+  --black: #0a0a0a;
+  --white: #f5f5f3;
+  --gray: #888;
+  --light-gray: #e8e8e6;
+  --accent: #0a0a0a;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+/* Custom cursor */
+.cursor {
+  position: fixed;
+  width: 10px; height: 10px;
+  background: var(--black);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+}
+.cursor-ring {
+  position: fixed;
+  width: 36px; height: 36px;
+  border: 1px solid var(--black);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s;
+  opacity: 0.5;
+}
+body:hover .cursor { opacity: 1; }
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 52px;
+  mix-blend-mode: normal;
+  background: rgba(245,245,243,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+nav.scrolled { border-bottom-color: var(--light-gray); }
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--gray);
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
+  background: var(--black);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--black); }
+.nav-links a:hover::after { width: 100%; }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 120px 52px 80px;
+  gap: 60px;
+}
+
+.hero-text { opacity: 0; animation: fadeUp 1s ease forwards 0.2s; }
+
+.hero-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 32px; height: 1px;
+  background: var(--gray);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.2rem, 6vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+h1 em {
+  font-style: italic;
+  color: var(--gray);
+}
+
+.hero-bio {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #444;
+  max-width: 420px;
+  margin-bottom: 48px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: none;
+}
+.btn-primary {
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--black);
+}
+.btn-secondary {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--light-gray);
+}
+.btn-secondary:hover {
+  border-color: var(--black);
+}
+.btn svg { transition: transform 0.2s; }
+.btn:hover svg { transform: translateX(4px); }
+
+/* Hero visual */
+.hero-visual {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-card {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 3/4;
+  background: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+.hero-card-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 36px;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 55%);
+}
+.hero-card-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 10px;
+}
+.hero-card-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.5;
+}
+/* Geometric pattern on card */
+.hero-card-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.03) 40px,
+      rgba(255,255,255,0.03) 41px
+    );
+}
+
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: var(--light-gray);
+  margin: 0 52px;
+}
+
+/* SECTIONS */
+section {
+  padding: 100px 52px;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 56px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--light-gray);
+}
+
+/* POLITICS SECTION */
+.politics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.politics-card {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  padding: 40px 36px;
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: background 0.25s, transform 0.25s;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+.politics-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 2px;
+  background: var(--black);
+  transition: width 0.4s ease;
+}
+.politics-card:hover { background: var(--black); }
+.politics-card:hover .card-title,
+.politics-card:hover .card-desc,
+.politics-card:hover .card-num { color: var(--white); }
+.politics-card:hover .card-arrow { color: var(--white); }
+.politics-card:hover::before { width: 100%; }
+
+.card-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--light-gray);
+  transition: color 0.25s;
+}
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: color 0.25s;
+}
+.card-desc {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--gray);
+  transition: color 0.25s;
+}
+.card-arrow {
+  margin-top: auto;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.25s;
+}
+
+/* ABOUT SECTION */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 80px;
+  align-items: start;
+}
+.about-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.about-heading em { font-style: italic; color: var(--gray); }
+
+.about-body p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #444;
+  margin-bottom: 24px;
+}
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+.tag {
+  padding: 7px 16px;
+  border: 1px solid var(--light-gray);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+/* MOTION TRACKER */
+.tracker-banner {
+  background: var(--black);
+  color: var(--white);
+  padding: 60px 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  cursor: none;
+}
+.tracker-banner:hover { opacity: 0.88; }
+.tracker-left { flex: 1; }
+.tracker-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 14px;
+}
+.tracker-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 400;
+}
+.tracker-desc {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+  max-width: 420px;
+}
+.tracker-cta {
+  white-space: nowrap;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 16px 28px;
+  transition: border-color 0.2s;
+}
+.tracker-banner:hover .tracker-cta { border-color: white; }
+
+/* SUBSTACK */
+.substack-section {
+  text-align: center;
+  padding: 100px 52px;
+  background: var(--white);
+}
+.substack-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.substack-section h2 em { font-style: italic; color: var(--gray); }
+.substack-section p {
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: 40px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid var(--light-gray);
+  padding: 36px 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--gray);
+  letter-spacing: 0.05em;
+}
+footer a { color: var(--gray); text-decoration: none; transition: color 0.2s; }
+footer a:hover { color: var(--black); }
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav { padding: 20px 24px; }
+  .nav-links { gap: 24px; }
+  .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
+  .hero-visual { display: none; }
+  section { padding: 70px 24px; }
+  .divider { margin: 0 24px; }
+  .politics-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .tracker-banner { flex-direction: column; padding: 48px 24px; align-items: flex-start; }
+  footer { flex-direction: column; gap: 12px; text-align: center; padding: 28px 24px; }
+  .substack-section { padding: 70px 24px; }
+  body { cursor: auto; }
+  .cursor, .cursor-ring { display: none; }
+}
+```
+
+  </style>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+
+  <nav id="nav">
+    <a href="/" class="nav-logo">Jane Orlova</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#politics">Politics</a></li>
+      <li><a href="#tracker">Motion Tracker</a></li>
+      <li><a href="https://janeorlova.substack.com" target="_blank">Substack</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="hero-text">
+      <div class="hero-eyebrow">Politics & Writing</div>
+      <h1>Jane<br><em>Orlova</em></h1>
+      <p class="hero-bio">
+        Politics is noisy. International Relations & Political Communication graduate, born in Russia, became Dutch. Writing about Dutch and international politics. Obsessed with art.
+      </p>
+      <div class="hero-cta">
+        <a href="#politics" class="btn btn-primary">
+          Politics Pages
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="https://janeorlova.substack.com" target="_blank" class="btn btn-secondary">
+          Read on Substack
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-bg"></div>
+        <div class="hero-card-inner">
+          <div class="hero-card-label">Writing since 2025</div>
+          <div class="hero-card-quote">"Politics is noisy. Let's make sense of it."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- POLITICS SECTION -->
+
+  <section id="politics">
+    <div class="section-label">Politics Pages</div>
+    <div class="politics-grid">
+
+```
+  <a href="/gemeenteuitslag2026" class="politics-card">
+    <div class="card-num">01</div>
+    <div class="card-title">Gemeente­uitslag 2026</div>
+    <div class="card-desc">Municipal election results for 2026 — an in-depth look at local outcomes across the Netherlands.</div>
+    <div class="card-arrow">
+      View page
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </a>
+
+  <a href="/jetten-sentiment" class="politics-card">
+    <div class="card-num">02</div>
+    <div class="card-title">Jetten Sentiment</div>
+    <div class="card-desc">Tracking public and political sentiment around Rob Jetten over time through data and analysis.</div>
+    <div class="card-arrow">
+      View page
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </a>
+
+  <a href="/moties-tracker" class="politics-card">
+    <div class="card-num">03</div>
+    <div class="card-title">Moties Tracker</div>
+    <div class="card-desc">A live tracker of parliamentary motions — who submits them, who votes for them, and what passes.</div>
+    <div class="card-arrow">
+      View page
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </a>
+
+</div>
+```
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT SECTION -->
+
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div>
+        <h2 class="about-heading">Making sense of <em>the noise</em></h2>
+      </div>
+      <div class="about-body">
+        <p>
+          I'm Jane Orlova — an International Relations & Political Communication graduate who was born in Russia and became Dutch. Politics has always felt like a puzzle worth solving, and writing is how I make sense of the pieces.
+        </p>
+        <p>
+          I write about Dutch and international politics, from parliamentary motions to election results, from party dynamics to individual politicians. I believe in data, clarity, and a bit of obsession with getting it right.
+        </p>
+        <p>
+          When I'm not writing about politics, I'm probably thinking about art.
+        </p>
+        <div class="about-tags">
+          <span class="tag">Dutch Politics</span>
+          <span class="tag">International Relations</span>
+          <span class="tag">Political Communication</span>
+          <span class="tag">Data</span>
+          <span class="tag">Art</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOTION TRACKER BANNER -->
+
+  <a href="/moties-tracker" class="tracker-banner" id="tracker">
+    <div class="tracker-left">
+      <div class="tracker-eyebrow">Live Tool</div>
+      <div class="tracker-title">Motion Tracker</div>
+      <div class="tracker-desc">Track every parliamentary motion in real time — who proposes, who votes, what passes.</div>
+    </div>
+    <div class="tracker-cta">
+      Open Tracker
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </div>
+  </a>
+
+  <!-- SUBSTACK -->
+
+  <div class="substack-section">
+    <h2>Read my <em>writing</em></h2>
+    <p>Essays, analysis, and takes on Dutch and international politics — published on Substack.</p>
+    <a href="https://janeorlova.substack.com" target="_blank" class="btn btn-primary">
+      Visit Substack
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <span>© 2026 Jane Orlova</span>
+    <span>
+      <a href="https://janeorlova.substack.com" target="_blank">Substack</a>
+      &nbsp;·&nbsp;
+      <a href="mailto:hello@janeorlova.com">Contact</a>
+    </span>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const ring = document.getElementById('cursorRing');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cursor.style.left = mx + 'px';
+      cursor.style.top = my + 'px';
+    });
+
+    function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.left = rx + 'px';
+      ring.style.top = ry + 'px';
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.politics-card, .about-grid, .section-label').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
