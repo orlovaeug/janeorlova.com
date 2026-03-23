@@ -28,13 +28,13 @@ jobs:
       # 3️⃣ Install dependencies if requirements.txt exists
       - name: Install dependencies
         run: |
-          if [ -f janeorlova.com/motie-tracker/requirements.txt ]; then
-            pip install -r janeorlova.com/motie-tracker/requirements.txt
+          if [ -f moties-tracker/requirements.txt ]; then
+            pip install -r moties-tracker/requirements.txt
           fi
 
-      # 4️⃣ Run all Python scripts in motie-tracker
+      # 4️⃣ Run all Python scripts in moties-tracker
       - name: Run motie scripts
-        working-directory: janeorlova.com/motie-tracker
+        working-directory: moties-tracker
         run: |
           python fetch_moties.py
           python fix_moties_json.py
@@ -45,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add janeorlova.com/motie-tracker/moties.json janeorlova.com/motie-tracker/index.html
+          git add moties-tracker/moties.json moties-tracker/index.html
           git diff --staged --quiet && echo "Geen wijzigingen" || \
             git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && \
             git push
