@@ -15,37 +15,37 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      # Checkout repo
+      # 1️⃣ Checkout repo
       - uses: actions/checkout@v4.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Setup Python
+      # 2️⃣ Setup Python
       - uses: actions/setup-python@v5.3.0
         with:
           python-version: '3.12'
 
-      # Install dependencies if you have requirements.txt
+      # 3️⃣ Install dependencies if requirements.txt exists
       - name: Install dependencies
         run: |
-          if [ -f motie-tracker/requirements.txt ]; then
-            pip install -r motie-tracker/requirements.txt
+          if [ -f janeorlova.com/motie-tracker/requirements.txt ]; then
+            pip install -r janeorlova.com/motie-tracker/requirements.txt
           fi
 
-      # Run all Python scripts inside motie-tracker
+      # 4️⃣ Run all Python scripts in motie-tracker
       - name: Run motie scripts
-        working-directory: motie-tracker
+        working-directory: janeorlova.com/motie-tracker
         run: |
           python fetch_moties.py
           python fix_moties_json.py
           python embed_moties.py
 
-      # Commit and push changes
+      # 5️⃣ Commit and push changes
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add motie-tracker/moties.json motie-tracker/index.html
+          git add janeorlova.com/motie-tracker/moties.json janeorlova.com/motie-tracker/index.html
           git diff --staged --quiet && echo "Geen wijzigingen" || \
             git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && \
             git push
