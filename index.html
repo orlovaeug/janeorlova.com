@@ -1,697 +1,881 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jane Orlova</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>GR2026 — Den Haag · Rotterdam · Utrecht · Eindhoven</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{color-scheme:light!important;background:#fff!important;}
+body{background:#fff!important;color:#111!important;font-family:'JetBrains Mono',monospace;-webkit-text-size-adjust:100%;}
 
-```
-:root {
-  --black: #0a0a0a;
-  --white: #f5f5f3;
-  --gray: #888;
-  --light-gray: #e8e8e6;
-  --accent: #0a0a0a;
-}
+/* ── MASTHEAD ── */
+.mast{background:#fff!important;border-bottom:3px solid #111;padding:10px 16px 7px;}
+.mast-top{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:7px;}
+.mast-ttl{font-family:'Playfair Display',serif;font-size:clamp(15px,3.5vw,28px);font-weight:900;letter-spacing:-.02em;line-height:1.05;color:#111!important;}
+.mast-ttl em{font-style:italic;font-weight:400;color:#c0392b;}
+.mast-r{display:flex;align-items:center;gap:8px;flex-shrink:0;}
 
-html { scroll-behavior: smooth; }
+/* ── CITY SWITCHER ── */
+.city-sw{display:flex;gap:0;border:1.5px solid #111;overflow:hidden;}
+.city-btn{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border:none;background:#fff!important;color:#888!important;cursor:pointer;border-right:1.5px solid #111;-webkit-tap-highlight-color:transparent;transition:background .1s,color .1s;white-space:nowrap;}
+.city-btn:last-child{border-right:none;}
+.city-btn.active{background:#111!important;color:#fff!important;}
+.city-btn:hover:not(.active){background:#f5f3ee!important;color:#111!important;}
 
-body {
-  background: var(--white);
-  color: var(--black);
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  cursor: none;
-  overflow-x: hidden;
-}
+.mast-meta{font-size:9px;color:#888!important;text-align:right;letter-spacing:.06em;line-height:1.9;}
+.deck{display:flex;flex-wrap:wrap;border-top:1px solid #d0ccc2;padding-top:5px;}
+.di{display:flex;align-items:baseline;gap:4px;padding:2px 9px;border-right:1px solid #d0ccc2;white-space:nowrap;}
+.di:first-child{padding-left:0;}.di:last-child{border:none;}
+.dn{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#111!important;}
+.dl{font-size:8px;color:#888!important;letter-spacing:.1em;text-transform:uppercase;}
 
-/* Custom cursor */
-.cursor {
-  position: fixed;
-  width: 10px; height: 10px;
-  background: var(--black);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
-}
-.cursor-ring {
-  position: fixed;
-  width: 36px; height: 36px;
-  border: 1px solid var(--black);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s;
-  opacity: 0.5;
-}
-body:hover .cursor { opacity: 1; }
+/* ── TABS ── */
+.tabs{background:#fff!important;display:flex;border-bottom:2px solid #111;padding:0 16px;}
+.tb{font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px;border:none;background:transparent!important;color:#888!important;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;font-family:'JetBrains Mono',monospace;-webkit-tap-highlight-color:transparent;}
+.tb.active{color:#111!important;font-weight:500;border-bottom-color:#c0392b;}
 
-/* NAV */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 52px;
-  mix-blend-mode: normal;
-  background: rgba(245,245,243,0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s;
-}
-nav.scrolled { border-bottom-color: var(--light-gray); }
+/* ── MAP ── */
+#mapView{position:relative;width:100%;height:calc(100svh - 152px);min-height:360px;background:#ede8df!important;overflow:hidden;}
+#mapSvg{width:100%;height:100%;display:block;}
+.wp{stroke:#fff;stroke-width:2;cursor:pointer;opacity:0.84;transition:opacity .12s,stroke-width .12s;}
+.wp:hover,.wp:active{opacity:1;stroke-width:3;}
+.wp.sel{stroke:#111;stroke-width:3.5;opacity:1;}
+.ml{font-family:'JetBrains Mono',monospace;font-weight:500;fill:#fff;pointer-events:none;text-anchor:middle;dominant-baseline:middle;}
+.ml-n{font-size:10px;} .ml-s{font-size:8px;opacity:.88;}
+.mhint{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.94)!important;border:1px solid #bbb;padding:5px 14px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#888!important;pointer-events:none;white-space:nowrap;}
+.ptyleg{position:absolute;bottom:10px;left:10px;background:rgba(255,255,255,.96)!important;border:1px solid #bbb;padding:9px 11px;max-width:calc(100vw - 20px);}
+.ptyleg-ttl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#888!important;margin-bottom:5px;}
+.ptyleg-grid{display:flex;flex-wrap:wrap;gap:4px 10px;}
+.pty-item{display:flex;align-items:center;gap:4px;font-size:9px;color:#111!important;white-space:nowrap;}
+.pty-dot{width:9px;height:9px;flex-shrink:0;}
 
-.nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--black);
-}
+/* ── OVERLAY ── */
+.overlay{display:none;position:absolute;top:0;right:0;bottom:0;width:min(360px,100%);background:#fff!important;border-left:2px solid #111;z-index:20;box-shadow:-6px 0 24px rgba(0,0,0,.18);flex-direction:column;}
+.overlay.open{display:flex;}
+.ov-hd{background:#111!important;color:#fff!important;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.ov-ttl{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:#fff!important;}
+.ov-cls{background:none;border:none;color:rgba(255,255,255,.7)!important;font-size:22px;cursor:pointer;line-height:1;padding:0 4px;-webkit-tap-highlight-color:transparent;}
+.ov-cls:hover{color:#fff!important;}
+.ov-bd{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:15px;background:#fff!important;}
+.ov-meta{font-size:9px;color:#888!important;letter-spacing:.06em;line-height:1.9;margin-bottom:11px;}
+.ov-win{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;margin-bottom:13px;border-left:4px solid;}
+.ovw-lbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:2px;}
+.ovw-nm{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;}
+.ovw-pct{font-family:'Playfair Display',serif;font-size:28px;font-weight:900;}
+.ov-opkomst{padding:9px 11px;margin-bottom:13px;background:#f7f5f0!important;border-left:3px solid #888;}
+.opk-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:2px;}
+.opk-val{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;}
+.opk-sub{font-size:9px;color:#888!important;margin-top:2px;}
+.sec-ttl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #d0ccc2;}
+.pr{display:flex;align-items:center;gap:5px;margin-bottom:5px;}
+.pr-k{font-size:9px;color:#888!important;width:14px;flex-shrink:0;}
+.pr-n{font-size:10px;font-weight:500;width:82px;flex-shrink:0;}
+.pr-b{flex:1;background:#eae6de;height:7px;}
+.pr-f{height:100%;}
+.pr-p{font-family:'Playfair Display',serif;font-size:12px;font-weight:700;width:34px;text-align:right;flex-shrink:0;}
+.ov-note{font-size:9px;color:#888!important;font-style:italic;margin-top:13px;padding-top:9px;border-top:1px solid #d0ccc2;line-height:1.7;}
 
-.nav-links {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
-.nav-links a {
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--gray);
-  transition: color 0.2s;
-  position: relative;
-}
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -3px; left: 0;
-  width: 0; height: 1px;
-  background: var(--black);
-  transition: width 0.3s ease;
-}
-.nav-links a:hover { color: var(--black); }
-.nav-links a:hover::after { width: 100%; }
+/* ── LIST ── */
+#listView{display:none;background:#fff!important;padding:18px;}
+.li-intro{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:13px;padding-bottom:7px;border-bottom:1px solid #d0ccc2;}
+table.wt{width:100%;border-collapse:collapse;min-width:480px;}
+.wt thead tr{border-bottom:2px solid #111;}
+.wt th{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#888!important;padding:6px 8px;text-align:left;font-weight:400;}
+.wt tbody tr.wr{border-bottom:1px solid #eae6de;cursor:pointer;}
+.wt tbody tr.wr.or,.wt tbody tr.wr:hover{background:#f9f8f5!important;}
+.wt td{padding:9px 8px;vertical-align:middle;}
+.wtn{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;}
+.wtb{font-size:10px;font-weight:600;padding:2px 6px;border:1px solid;display:inline-block;white-space:nowrap;}
+.wtp{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;}
+.opk-badge{font-size:10px;font-weight:500;padding:2px 6px;background:#f0ece3;border:1px solid #ccc;}
+tr.popr{display:none;}tr.popr.open{display:table-row;}
+tr.popr td{padding:0;border-bottom:2px solid #111;}
+.popi{background:#f9f8f5!important;padding:16px 18px;}
+.poph{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3px;}
+.popt{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;}
+.popc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:#888!important;}
+.popm{font-size:9px;color:#888!important;margin-bottom:13px;}
+.pop-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:600px){.pop-grid{grid-template-columns:1fr;}}
+.pop-sec-ttl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #d0ccc2;}
+.ppr{display:flex;align-items:center;gap:5px;margin-bottom:5px;}
+.ppr-k{font-size:9px;color:#888!important;width:12px;flex-shrink:0;}
+.ppr-n{font-size:10px;font-weight:600;width:80px;flex-shrink:0;}
+.ppr-b{flex:1;background:#eae6de;height:6px;}.ppr-f{height:100%;}
+.ppr-p{font-family:'Playfair Display',serif;font-size:12px;font-weight:700;width:30px;text-align:right;flex-shrink:0;}
 
-/* HERO */
-.hero {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 120px 52px 80px;
-  gap: 60px;
-}
+/* ── DEMO ── */
+#demoView{display:none;background:#fff!important;padding:18px;}
+.demo-intro{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#888;margin-bottom:5px;padding-bottom:7px;border-bottom:1px solid #d0ccc2;}
+.demo-note{font-size:10px;color:#888;margin-bottom:13px;font-style:italic;line-height:1.7;}
+.demo-wrap{overflow-x:auto;}
+.demo-tbl{width:100%;border-collapse:collapse;min-width:900px;font-family:'JetBrains Mono',monospace;font-size:11px;}
+.demo-tbl thead tr{border-bottom:2px solid #111;}
+.demo-tbl th{padding:7px 8px;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:#888;font-weight:400;text-align:left;}
+.demo-tbl th.r{text-align:right;}.demo-tbl th.c{text-align:center;}
+.demo-tbl tbody tr{border-bottom:1px solid #eae6de;}
+.demo-tbl tbody tr:nth-child(odd){background:#fafaf8!important;}
+.demo-tbl td{padding:9px 8px;vertical-align:middle;}
+.demo-foot{margin-top:13px;padding-top:9px;border-top:1px solid #d0ccc2;font-size:9px;color:#888;line-height:1.9;}
 
-.hero-text { opacity: 0; animation: fadeUp 1s ease forwards 0.2s; }
-
-.hero-eyebrow {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.hero-eyebrow::before {
-  content: '';
-  display: inline-block;
-  width: 32px; height: 1px;
-  background: var(--gray);
-}
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(3.2rem, 6vw, 5.5rem);
-  font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  margin-bottom: 32px;
-}
-h1 em {
-  font-style: italic;
-  color: var(--gray);
-}
-
-.hero-bio {
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: #444;
-  max-width: 420px;
-  margin-bottom: 48px;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.25s ease;
-  cursor: none;
-}
-.btn-primary {
-  background: var(--black);
-  color: var(--white);
-  border: 1px solid var(--black);
-}
-.btn-primary:hover {
-  background: transparent;
-  color: var(--black);
-}
-.btn-secondary {
-  background: transparent;
-  color: var(--black);
-  border: 1px solid var(--light-gray);
-}
-.btn-secondary:hover {
-  border-color: var(--black);
-}
-.btn svg { transition: transform 0.2s; }
-.btn:hover svg { transform: translateX(4px); }
-
-/* Hero visual */
-.hero-visual {
-  opacity: 0;
-  animation: fadeUp 1s ease forwards 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-card {
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 3/4;
-  background: var(--black);
-  position: relative;
-  overflow: hidden;
-}
-.hero-card-inner {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 36px;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 55%);
-}
-.hero-card-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 10px;
-}
-.hero-card-quote {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.3rem;
-  color: white;
-  line-height: 1.5;
-}
-/* Geometric pattern on card */
-.hero-card-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 40px,
-      rgba(255,255,255,0.03) 40px,
-      rgba(255,255,255,0.03) 41px
-    );
-}
-
-/* DIVIDER */
-.divider {
-  height: 1px;
-  background: var(--light-gray);
-  margin: 0 52px;
-}
-
-/* SECTIONS */
-section {
-  padding: 100px 52px;
-}
-
-.section-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 56px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--light-gray);
-}
-
-/* POLITICS SECTION */
-.politics-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-}
-
-.politics-card {
-  background: var(--white);
-  border: 1px solid var(--light-gray);
-  padding: 40px 36px;
-  text-decoration: none;
-  color: var(--black);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  transition: background 0.25s, transform 0.25s;
-  position: relative;
-  overflow: hidden;
-  cursor: none;
-}
-.politics-card::before {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 0; height: 2px;
-  background: var(--black);
-  transition: width 0.4s ease;
-}
-.politics-card:hover { background: var(--black); }
-.politics-card:hover .card-title,
-.politics-card:hover .card-desc,
-.politics-card:hover .card-num { color: var(--white); }
-.politics-card:hover .card-arrow { color: var(--white); }
-.politics-card:hover::before { width: 100%; }
-
-.card-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: var(--light-gray);
-  transition: color 0.25s;
-}
-.card-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 400;
-  transition: color 0.25s;
-}
-.card-desc {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  color: var(--gray);
-  transition: color 0.25s;
-}
-.card-arrow {
-  margin-top: auto;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gray);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.25s;
-}
-
-/* ABOUT SECTION */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
-  align-items: start;
-}
-.about-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
-  line-height: 1.2;
-}
-.about-heading em { font-style: italic; color: var(--gray); }
-
-.about-body p {
-  font-size: 1rem;
-  line-height: 1.85;
-  color: #444;
-  margin-bottom: 24px;
-}
-.about-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 36px;
-}
-.tag {
-  padding: 7px 16px;
-  border: 1px solid var(--light-gray);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray);
-}
-
-/* MOTION TRACKER */
-.tracker-banner {
-  background: var(--black);
-  color: var(--white);
-  padding: 60px 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  cursor: none;
-}
-.tracker-banner:hover { opacity: 0.88; }
-.tracker-left { flex: 1; }
-.tracker-eyebrow {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  margin-bottom: 14px;
-}
-.tracker-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 400;
-}
-.tracker-desc {
-  margin-top: 14px;
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.55);
-  line-height: 1.65;
-  max-width: 420px;
-}
-.tracker-cta {
-  white-space: nowrap;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 16px 28px;
-  transition: border-color 0.2s;
-}
-.tracker-banner:hover .tracker-cta { border-color: white; }
-
-/* SUBSTACK */
-.substack-section {
-  text-align: center;
-  padding: 100px 52px;
-  background: var(--white);
-}
-.substack-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.substack-section h2 em { font-style: italic; color: var(--gray); }
-.substack-section p {
-  color: var(--gray);
-  font-size: 1rem;
-  margin-bottom: 40px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7;
-}
-
-/* FOOTER */
-footer {
-  border-top: 1px solid var(--light-gray);
-  padding: 36px 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.78rem;
-  color: var(--gray);
-  letter-spacing: 0.05em;
-}
-footer a { color: var(--gray); text-decoration: none; transition: color 0.2s; }
-footer a:hover { color: var(--black); }
-
-/* ANIMATIONS */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  nav { padding: 20px 24px; }
-  .nav-links { gap: 24px; }
-  .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
-  .hero-visual { display: none; }
-  section { padding: 70px 24px; }
-  .divider { margin: 0 24px; }
-  .politics-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .tracker-banner { flex-direction: column; padding: 48px 24px; align-items: flex-start; }
-  footer { flex-direction: column; gap: 12px; text-align: center; padding: 28px 24px; }
-  .substack-section { padding: 70px 24px; }
-  body { cursor: auto; }
-  .cursor, .cursor-ring { display: none; }
-}
-```
-
-  </style>
+footer{border-top:2px solid #111;padding:7px 16px;display:flex;justify-content:space-between;font-size:9px;color:#888!important;background:#fff!important;flex-wrap:wrap;gap:4px;letter-spacing:.05em;}
+</style>
 </head>
 <body>
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- NAV -->
-
-  <nav id="nav">
-    <a href="/" class="nav-logo">Jane Orlova</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#politics">Politics</a></li>
-      <li><a href="#tracker">Motion Tracker</a></li>
-      <li><a href="https://janeorlova.substack.com" target="_blank">Substack</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-
-  <section class="hero">
-    <div class="hero-text">
-      <div class="hero-eyebrow">Politics & Writing</div>
-      <h1>Jane<br><em>Orlova</em></h1>
-      <p class="hero-bio">
-        Politics is noisy. International Relations & Political Communication graduate, born in Russia, became Dutch. Writing about Dutch and international politics. Obsessed with art.
-      </p>
-      <div class="hero-cta">
-        <a href="#politics" class="btn btn-primary">
-          Politics Pages
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="https://janeorlova.substack.com" target="_blank" class="btn btn-secondary">
-          Read on Substack
-        </a>
+<div class="mast">
+  <div class="mast-top">
+    <div class="mast-ttl">GR2026 —<br><em id="citySubtitle">per stadsdeel</em></div>
+    <div class="mast-r">
+      <div class="city-sw">
+        <button class="city-btn active" data-city="haag" onclick="switchCity('haag')">Den Haag</button>
+        <button class="city-btn" data-city="rotterdam" onclick="switchCity('rotterdam')">Rotterdam</button>
+        <button class="city-btn" data-city="utrecht" onclick="switchCity('utrecht')">Utrecht</button>
+        <button class="city-btn" data-city="eindhoven" onclick="switchCity('eindhoven')">Eindhoven</button>
       </div>
+      <div class="mast-meta" id="mastMeta">202.203 stemmen<br>46,5% opkomst<br>18 maart 2026</div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="hero-card-bg"></div>
-        <div class="hero-card-inner">
-          <div class="hero-card-label">Writing since 2025</div>
-          <div class="hero-card-quote">"Politics is noisy. Let's make sense of it."</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- POLITICS SECTION -->
-
-  <section id="politics">
-    <div class="section-label">Politics Pages</div>
-    <div class="politics-grid">
-
-```
-  <a href="/gemeenteuitslag2026" class="politics-card">
-    <div class="card-num">01</div>
-    <div class="card-title">Gemeente­uitslag 2026</div>
-    <div class="card-desc">Municipal election results for 2026 — an in-depth look at local outcomes across the Netherlands.</div>
-    <div class="card-arrow">
-      View page
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
-  <a href="/jetten-sentiment" class="politics-card">
-    <div class="card-num">02</div>
-    <div class="card-title">Jetten Sentiment</div>
-    <div class="card-desc">Tracking public and political sentiment around Rob Jetten over time through data and analysis.</div>
-    <div class="card-arrow">
-      View page
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
-  <a href="/moties-tracker" class="politics-card">
-    <div class="card-num">03</div>
-    <div class="card-title">Moties Tracker</div>
-    <div class="card-desc">A live tracker of parliamentary motions — who submits them, who votes for them, and what passes.</div>
-    <div class="card-arrow">
-      View page
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
-</div>
-```
-
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ABOUT SECTION -->
-
-  <section id="about">
-    <div class="section-label">About</div>
-    <div class="about-grid">
-      <div>
-        <h2 class="about-heading">Making sense of <em>the noise</em></h2>
-      </div>
-      <div class="about-body">
-        <p>
-          I'm Jane Orlova — an International Relations & Political Communication graduate who was born in Russia and became Dutch. Politics has always felt like a puzzle worth solving, and writing is how I make sense of the pieces.
-        </p>
-        <p>
-          I write about Dutch and international politics, from parliamentary motions to election results, from party dynamics to individual politicians. I believe in data, clarity, and a bit of obsession with getting it right.
-        </p>
-        <p>
-          When I'm not writing about politics, I'm probably thinking about art.
-        </p>
-        <div class="about-tags">
-          <span class="tag">Dutch Politics</span>
-          <span class="tag">International Relations</span>
-          <span class="tag">Political Communication</span>
-          <span class="tag">Data</span>
-          <span class="tag">Art</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MOTION TRACKER BANNER -->
-
-  <a href="/moties-tracker" class="tracker-banner" id="tracker">
-    <div class="tracker-left">
-      <div class="tracker-eyebrow">Live Tool</div>
-      <div class="tracker-title">Motion Tracker</div>
-      <div class="tracker-desc">Track every parliamentary motion in real time — who proposes, who votes, what passes.</div>
-    </div>
-    <div class="tracker-cta">
-      Open Tracker
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
-  <!-- SUBSTACK -->
-
-  <div class="substack-section">
-    <h2>Read my <em>writing</em></h2>
-    <p>Essays, analysis, and takes on Dutch and international politics — published on Substack.</p>
-    <a href="https://janeorlova.substack.com" target="_blank" class="btn btn-primary">
-      Visit Substack
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </a>
   </div>
+  <div class="deck" id="deckSeats"></div>
+</div>
 
-  <!-- FOOTER -->
+<div class="tabs">
+  <button class="tb active" id="tabM" onclick="switchTab('map')">Kaart</button>
+  <button class="tb" id="tabL" onclick="switchTab('list')">Overzicht</button>
+  <button class="tb" id="tabD" onclick="switchTab('demo')">Demografie</button>
+</div>
 
-  <footer>
-    <span>© 2026 Jane Orlova</span>
-    <span>
-      <a href="https://janeorlova.substack.com" target="_blank">Substack</a>
-      &nbsp;·&nbsp;
-      <a href="mailto:hello@janeorlova.com">Contact</a>
-    </span>
-  </footer>
+<div id="mapView">
+  <svg id="mapSvg" viewBox="0 0 760 680" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
+  <div class="mhint" id="mhint">Klik op een gebied voor details</div>
+  <div class="ptyleg"><div class="ptyleg-ttl">Winnaar per wijk</div><div class="ptyleg-grid" id="ptyGrid"></div></div>
+  <div class="overlay" id="overlay">
+    <div class="ov-hd"><div class="ov-ttl" id="ovTtl">–</div><button class="ov-cls" onclick="closeOv()">✕</button></div>
+    <div class="ov-bd" id="ovBd"></div>
+  </div>
+</div>
 
-  <script>
-    // Custom cursor
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
+<div id="listView">
+  <div class="li-intro" id="listIntro">Uitslag GR2026 · klik op een rij voor details</div>
+  <div style="overflow-x:auto"><table class="wt"><thead><tr>
+    <th>Wijk / Gebied</th><th>Winnaar</th><th>%</th><th>Opkomst</th><th>Top 5 partijen</th>
+  </tr></thead><tbody id="listBody"></tbody></table></div>
+</div>
 
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.left = mx + 'px';
-      cursor.style.top = my + 'px';
-    });
+<div id="demoView">
+  <div class="demo-intro" id="demoIntro">Demografisch profiel · CBS Kerncijfers Wijken 2025</div>
+  <div class="demo-note">Migratieachtergrond = min. één ouder in buitenland geboren (CBS). WOZ = gemiddelde woningwaarde 2024. ~ = schatting o.b.v. CBS buurtdata.</div>
+  <div class="demo-wrap"><table class="demo-tbl"><thead><tr>
+    <th style="min-width:175px">Wijk / Gebied</th>
+    <th class="r">Inwoners</th><th class="r">Gem. WOZ</th>
+    <th class="c">% Ned. achtergrond</th><th class="c">% Niet-westers migr.</th>
+    <th class="c">% Westers migr.</th><th class="c">Eigendom</th>
+    <th style="min-width:230px">Profiel</th>
+  </tr></thead><tbody id="demoBody"></tbody></table></div>
+  <div class="demo-foot" id="demoFoot"></div>
+</div>
 
-    function animateRing() {
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px';
-      ring.style.top = ry + 'px';
-      requestAnimationFrame(animateRing);
+<footer>
+  <span id="footerLeft">Bron: Gemeente · GR2026 · Voorlopige uitslag · 18 maart 2026</span>
+  <span id="footerRight">Per stembureau beschikbaar via gemeente</span>
+</footer>
+
+<script>
+// ══════════════════════════════════════════════════════════════════════════════
+// CITY DATA
+// ══════════════════════════════════════════════════════════════════════════════
+
+var CITIES = {};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// DEN HAAG
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.haag = {
+  name: 'Den Haag',
+  subtitle: 'per stadsdeel',
+  meta: '202.203 stemmen\n46,5% opkomst\n18 maart 2026',
+  avgOpk: 46.5,
+  seats: [{n:19,l:'Hart v/d Haag'},{n:9,l:'GL/PvdA'},{n:9,l:'D66'},{n:4,l:'VVD'},{n:4,l:'DENK'},{n:3,l:'PvdD'},{n:2,l:'CDA'}],
+  footer: ['Bron: Gemeente Den Haag · GR2026 · 261 stembureaus','Voorlopige uitslag · 18 maart 2026'],
+  parties: [
+    {id:'hvdh',  name:'Hart v/d Haag', color:'#c0392b'},
+    {id:'glpvda',name:'GL/PvdA',       color:'#2a7a2a'},
+    {id:'d66',   name:'D66',           color:'#009040'},
+    {id:'vvd',   name:'VVD',           color:'#d44000'},
+    {id:'pvdd',  name:'PvdD',          color:'#006830'},
+    {id:'cda',   name:'CDA',           color:'#1a5c38'},
+    {id:'denk',  name:'DENK',          color:'#007888'},
+    {id:'hsp',   name:'Haagse SP',     color:'#b87800'},
+    {id:'sp',    name:'SP',            color:'#c00000'},
+    {id:'pvv',   name:'PVV',           color:'#002878'},
+    {id:'cusgp', name:'CU-SGP',        color:'#005898'},
+    {id:'fvd',   name:'FvD',           color:'#781818'},
+    {id:'volt',  name:'Volt',          color:'#6820a0'},
+    {id:'nsc',   name:'NSC',           color:'#555555'},
+    {id:'inl',   name:'INL',           color:'#cc6600'},
+    {id:'cet',   name:'Çetinkaya',     color:'#888888'},
+    {id:'drd',   name:'Drerrie',       color:'#e67e22'},
+    {id:'pvdr',  name:'PvdR',          color:'#444444'},
+    {id:'fpl',   name:'50PLUS',        color:'#887000'},
+  ],
+  wijken: [
+    {id:'Scheveningen',           lbl:[210,105], gel:22425, opk:37.0,
+     pv:[8567,3472,4864,2320,1180,940,650,230,540,460,380,560,720,90,140,380,380,50,280]},
+    {id:'Loosduinen',             lbl:[105,330], gel:18100, opk:38.5,
+     pv:[9527,2477,2384,1420,630,710,380,120,310,290,320,380,200,50,80,200,250,30,240]},
+    {id:'Segbroek',               lbl:[295,200], gel:23696, opk:42.0,
+     pv:[7547,5855,4813,1920,1450,1020,1180,240,560,420,440,620,700,80,130,480,380,55,220]},
+    {id:'Centrum',                lbl:[392, 75], gel:29799, opk:50.5,
+     pv:[6129,7880,6672,2680,2450,1560,1850,390,840,540,560,780,1280,90,180,580,540,80,250]},
+    {id:'Laak',                   lbl:[492,105], gel:11524, opk:36.2,
+     pv:[3856,1647,1480,820,390,560,3504,100,280,240,200,380,220,50,80,550,180,25,100]},
+    {id:'Haagse Hout',            lbl:[590,310], gel:6932,  opk:44.5,
+     pv:[2477,957,1240,760,320,340,2105,70,180,120,120,180,200,30,50,180,110,15,80]},
+    {id:'Statenkwartier',         lbl:[340,310], gel:22474, opk:48.5,
+     pv:[5381,4373,6132,2380,1620,1040,620,330,470,310,380,520,860,110,160,340,490,60,330]},
+    {id:'Escamp',                 lbl:[205,490], gel:25023, opk:42.8,
+     pv:[12367,2920,2380,2050,980,900,3615,180,520,480,400,650,420,80,150,800,350,50,280]},
+    {id:'Leidschenveen-Ypenburg', lbl:[520,530], gel:15308, opk:45.0,
+     pv:[7027,1730,2668,1620,570,720,650,90,300,350,380,520,440,70,100,300,220,30,180]},
+  ],
+  svgClip: '60,155 95,105 145,62 205,32 272,15 352,10 435,14 512,24 582,45 638,78 678,118 708,165 722,218 726,275 720,338 702,398 673,452 636,500 588,543 535,576 475,601 408,617 338,621 268,615 200,597 140,566 90,526 52,477 25,420 10,358 8,292 15,228 33,178',
+  svgPolygons: [
+    {id:'Scheveningen',           pts:'60,155 95,105 145,62 205,32 272,15 352,10 350,110 310,155 280,185 250,205 220,200 190,185 155,170 115,158 80,152'},
+    {id:'Loosduinen',             pts:'60,155 80,152 115,158 155,170 190,185 220,200 205,245 195,290 178,335 160,375 138,415 115,448 90,475 65,492 45,490 25,465 10,420 8,358 15,290 33,230'},
+    {id:'Segbroek',               pts:'220,200 250,205 280,185 310,155 350,110 380,122 395,148 388,175 370,200 348,218 325,228 300,232 278,228 258,218 238,208 220,200'},
+    {id:'Centrum',                pts:'352,10 435,14 445,65 440,100 428,125 415,140 400,150 380,122 350,110'},
+    {id:'Laak',                   pts:'435,14 512,24 535,55 550,85 558,115 550,145 530,165 508,178 482,185 458,185 440,178 428,160 428,125 440,100 445,65'},
+    {id:'Haagse Hout',            pts:'512,24 582,45 638,78 678,118 708,165 722,218 726,275 720,338 702,398 673,452 660,448 638,432 615,415 592,395 568,372 548,348 528,320 512,295 500,268 495,240 488,215 478,195 458,185 482,185 508,178 530,165 550,145 558,115 550,85 535,55'},
+    {id:'Statenkwartier',         pts:'178,335 195,290 205,245 220,200 238,208 258,218 278,228 300,232 325,228 348,218 370,200 388,175 395,148 415,140 428,160 440,178 458,185 478,195 488,215 495,240 500,268 495,298 482,325 462,348 438,368 410,385 380,398 350,408 318,415 288,418 260,415 235,408 208,396 185,382 170,362'},
+    {id:'Escamp',                 pts:'65,492 90,475 115,448 138,415 160,375 170,362 185,382 208,396 235,408 260,415 288,418 318,415 338,425 350,445 355,470 348,500 330,528 305,552 272,572 238,585 200,590 165,582 133,562 100,530 72,498'},
+    {id:'Leidschenveen-Ypenburg', pts:'660,448 673,452 636,500 588,543 535,576 475,601 408,617 338,621 268,615 238,585 272,572 305,552 330,528 348,500 355,470 350,445 365,432 388,418 415,408 445,400 475,395 500,390 520,382 545,368 565,348 580,325 592,305 600,280 605,255 608,228 610,200 620,178 635,158 648,140 660,120 672,142 692,168 708,198 720,230 726,275 720,338 702,398'},
+  ],
+  demo: [
+    {n:'Scheveningen',           inw:'~76k',woz:'€395k',ned:50,nw:28,w:22,koop:'42% koop',profiel:'Kustplaats met haven. Mix van vissersbuurten (Duindorp), welvarend Statenkwartier en Kijkduin. Hart v/d Haag 38%.'},
+    {n:'Loosduinen',             inw:'~54k',woz:'€340k',ned:52,nw:30,w:18,koop:'38% koop',profiel:'Rustige duinwijk. Relatief lage WOZ. Hart v/d Haag dominant met 53% — sterkste score van de stad.'},
+    {n:'Segbroek',               inw:'~66k',woz:'€430k',ned:55,nw:24,w:21,koop:'45% koop',profiel:'Groene woonwijk. Gentrificering. Hart v/d Haag 32%, GL/PvdA 25% — relatief competitief stadsdeel.'},
+    {n:'Centrum',                inw:'~90k',woz:'€470k',ned:40,nw:32,w:28,koop:'32% koop',profiel:'Binnenhof, Malieveld, Hofkwartier. Studenten, expats. Enige deel waar GL/PvdA (26%) Hart v/d Haag (21%) verslaat.'},
+    {n:'Laak',                   inw:'~52k',woz:'€305k',ned:35,nw:48,w:17,koop:'28% koop',profiel:'Schilderswijk, Transvaal. Hoogste aandeel niet-westers (48%). DENK 30% — bijna winnaar. Laagste WOZ.'},
+    {n:'Haagse Hout',            inw:'~42k',woz:'€520k',ned:60,nw:22,w:18,koop:'58% koop',profiel:'Haagse Bos, Clingendael. Meest autochtone stadsdeel. DENK 30% opvallend hoog door Haagse Hout-Oost.'},
+    {n:'Statenkwartier',         inw:'~82k',woz:'€495k',ned:55,nw:24,w:21,koop:'48% koop',profiel:'Bezuidenhout, Benoordenhout. Hoog opgeleid. D66 wint (27%) — enige deel buiten Centrum zonder Hart v/d Haag.'},
+    {n:'Escamp',                 inw:'~95k',woz:'€310k',ned:38,nw:42,w:20,koop:'30% koop',profiel:'Grootste stadsdeel. Bouwlust, Moerwijk. Veel sociale huur. Hart v/d Haag 49% — absoluut sterkste score.'},
+    {n:'Leidschenveen-Ypenburg', inw:'~56k',woz:'€420k',ned:58,nw:24,w:18,koop:'52% koop',profiel:'Nieuwbouwgebied jaren 90–2010. Jonge gezinnen. Hart v/d Haag 46%. Laag niet-westers aandeel voor Den Haag.'},
+  ],
+  demoFoot: 'Bronnen: CBS Kerncijfers Wijken 2025 · AlleCijfers.nl · Gemeente Den Haag · WOZ peildatum 1 jan 2024 · ~ = schatting',
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ROTTERDAM
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.rotterdam = {
+  name: 'Rotterdam',
+  subtitle: 'per gebiedscommissie',
+  meta: '211.097 stemmen\n40,3% opkomst\n18 maart 2026',
+  avgOpk: 40.3,
+  seats: [{n:11,l:'GL/PvdA'},{n:11,l:'Leefbaar R.'},{n:5,l:'D66'},{n:5,l:'VVD'},{n:4,l:'DENK'},{n:3,l:'FvD'},{n:'6×1',l:'Overig'}],
+  footer: ['Bron: Gemeente Rotterdam · uitslagen.stembureausinrotterdam.nl · 358 stembureaus','Voorlopige uitslag · 18 maart 2026'],
+  parties: [
+    {id:'glpvda', name:'GL/PvdA',      color:'#2d8a2d'},
+    {id:'leefbaar',name:'Leefbaar R.', color:'#c0392b'},
+    {id:'vvd',    name:'VVD',          color:'#d44000'},
+    {id:'d66',    name:'D66',          color:'#009040'},
+    {id:'denk',   name:'DENK',         color:'#007888'},
+    {id:'fvd',    name:'FvD',          color:'#781818'},
+    {id:'volt',   name:'Volt',         color:'#6820a0'},
+    {id:'pvdd',   name:'PvdD',         color:'#006830'},
+    {id:'bij1',   name:'BIJ1',         color:'#c80058'},
+    {id:'fplus',  name:'50PLUS',       color:'#887000'},
+    {id:'cu',     name:'ChristenUnie', color:'#005898'},
+    {id:'sp',     name:'SP',           color:'#aa0000'},
+    {id:'cda',    name:'CDA',          color:'#1a5c38'},
+    {id:'sport',  name:'PARTIJvdSPORT',color:'#cc6600'},
+    {id:'vvrd',   name:'Vrede v/d D.',color:'#448833'},
+    {id:'pbar',   name:'PBAR',         color:'#555555'},
+    {id:'jou',    name:'JOU',          color:'#b87800'},
+    {id:'next',   name:'R.NEXT',       color:'#3060a0'},
+    {id:'sgp',    name:'SGP',          color:'#003888'},
+    {id:'wkr',    name:'Wij Kleurrijk',color:'#d07000'},
+    {id:'wvdw',   name:'Wij v/d Wijk', color:'#808060'},
+  ],
+  wijken: [
+    {id:'Centrum',               lbl:[322, 80], gel:29045, opk:48.8,
+     pv:{glpvda:9167,leefbaar:3217,d66:4100,vvd:3030,denk:2027,fvd:715,volt:1218,pvdd:1422,bij1:770,fplus:601,cu:485,sp:430,cda:598,sport:66,vvrd:102,pbar:82,jou:228,next:312,sgp:95,wkr:64,wvdw:89}},
+    {id:'Delfshaven',            lbl:[198,118], gel:12340, opk:33.7,
+     pv:{glpvda:3776,leefbaar:1225,d66:1287,vvd:577,denk:2300,fvd:485,volt:455,pvdd:432,bij1:445,fplus:312,cu:288,sp:285,cda:328,sport:22,vvrd:38,pbar:68,jou:122,next:155,sgp:48,wkr:38,wvdw:55}},
+    {id:'Noord',                 lbl:[330,215], gel:26007, opk:44.0,
+     pv:{glpvda:8092,leefbaar:2984,d66:3746,vvd:2113,denk:2151,fvd:1122,volt:1085,pvdd:1188,bij1:605,fplus:622,cu:518,sp:455,cda:688,sport:58,vvrd:95,pbar:88,jou:198,next:245,sgp:112,wkr:55,wvdw:72}},
+    {id:'Hillegersberg-Schiebroek',lbl:[482,100], gel:24740, opk:58.7,
+     pv:{glpvda:4712,leefbaar:5152,d66:3957,vvd:4386,denk:548,fvd:985,volt:968,pvdd:1052,bij1:212,fplus:658,cu:725,sp:355,cda:1235,sport:42,vvrd:88,pbar:32,jou:245,next:322,sgp:235,wkr:22,wvdw:35}},
+    {id:'Kralingen-Crooswijk',   lbl:[470,220], gel:19040, opk:51.5,
+     pv:{glpvda:3760,leefbaar:3279,d66:2966,vvd:3658,denk:798,fvd:765,volt:768,pvdd:812,bij1:282,fplus:485,cu:395,sp:322,cda:548,sport:35,vvrd:72,pbar:28,jou:188,next:248,sgp:155,wkr:28,wvdw:42}},
+    {id:'Prins Alexander',       lbl:[638,245], gel:23995, opk:40.6,
+     pv:{glpvda:4255,leefbaar:7761,d66:1755,vvd:1591,denk:1548,fvd:1422,volt:688,pvdd:852,bij1:388,fplus:788,cu:612,sp:488,cda:888,sport:65,vvrd:88,pbar:68,jou:312,next:285,sgp:242,wkr:45,wvdw:78}},
+    {id:'Feijenoord',            lbl:[390,380], gel:49551, opk:30.1,
+     pv:{glpvda:9500,leefbaar:10503,d66:3118,vvd:2588,denk:8889,fvd:3035,volt:1488,pvdd:1788,bij1:1688,fplus:1388,cu:1088,sp:988,cda:1122,sport:88,vvrd:122,pbar:188,jou:625,next:688,sgp:245,wkr:125,wvdw:155}},
+    {id:'Overschie',             lbl:[155,112], gel:7126,  opk:45.9,
+     pv:{glpvda:1388,leefbaar:1593,d66:905,vvd:803,denk:504,fvd:338,volt:242,pvdd:255,bij1:122,fplus:198,cu:168,sp:138,cda:255,sport:18,vvrd:28,pbar:15,jou:72,next:88,sgp:55,wkr:18,wvdw:22}},
+    {id:'Pernis-Hoogvliet-Rozenburg',lbl:[395,490], gel:19253, opk:37.7,
+     pv:{glpvda:1892,leefbaar:7534,d66:1088,vvd:1632,denk:388,fvd:2202,volt:285,pvdd:588,bij1:125,fplus:622,cu:488,sp:522,cda:1066,sport:35,vvrd:55,pbar:28,jou:288,next:212,sgp:255,wkr:22,wvdw:45}},
+  ],
+  svgClip: '85,90 150,55 225,32 310,18 400,14 485,20 560,36 625,62 680,100 720,148 742,202 748,260 740,318 720,372 690,420 650,460 600,492 545,514 480,528 410,534 340,530 270,516 200,492 140,458 90,415 52,364 28,308 16,248 18,188 42,132',
+  svgPolygons: [
+    {id:'Overschie',              pts:'85,90 150,55 195,52 220,68 230,95 215,125 190,145 160,155 128,148 98,132'},
+    {id:'Delfshaven',             pts:'150,55 225,32 265,38 285,62 290,95 278,130 258,158 235,175 205,185 182,178 160,155 190,145 215,125 230,95 220,68 195,52'},
+    {id:'Centrum',                pts:'265,38 310,18 355,20 385,32 400,55 405,80 398,108 378,132 350,148 320,155 295,148 278,130 285,62'},
+    {id:'Noord',                  pts:'235,175 258,158 278,130 295,148 320,155 350,148 378,132 398,108 412,130 418,165 408,200 388,225 360,242 328,250 295,248 268,238 245,218'},
+    {id:'Hillegersberg-Schiebroek',pts:'355,20 400,14 485,20 530,30 555,52 558,82 545,115 522,142 492,158 460,165 428,162 412,148 412,130 398,108 405,80 400,55 385,32'},
+    {id:'Kralingen-Crooswijk',    pts:'412,130 412,148 428,162 460,165 492,158 520,170 535,198 528,228 508,252 482,268 452,272 422,265 396,248 388,225 408,200 418,165'},
+    {id:'Prins Alexander',        pts:'530,30 560,36 625,62 680,100 720,148 742,202 748,260 738,305 715,338 682,360 645,368 610,362 578,342 550,312 535,278 528,248 528,228 535,198 520,170 492,158 522,142 545,115 558,82 555,52'},
+    {id:'Feijenoord',             pts:'205,185 235,175 245,218 268,238 295,248 328,250 360,242 388,225 396,248 422,265 452,272 482,268 508,252 528,248 535,278 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210'},
+    {id:'Pernis-Hoogvliet-Rozenburg',pts:'52,364 90,415 140,458 200,492 270,516 340,530 410,534 480,528 545,514 600,492 650,460 690,420 720,372 740,318 715,338 682,360 645,368 610,362 578,342 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210 205,185 182,178 160,155 128,148 98,132 85,90 42,132 28,188 16,248 28,308'},
+  ],
+  demo: [
+    {n:'Centrum',               inw:'~82k',woz:'€480k',ned:45,nw:30,w:25,koop:'28% koop',profiel:'Binnenstad, Coolsingel, Erasmusbrug. Studenten, expats. Hoogste opkomst (49%). GL/PvdA 32%, D66 14%.'},
+    {n:'Delfshaven',            inw:'~73k',woz:'€310k',ned:32,nw:50,w:18,koop:'25% koop',profiel:'Historische havenwijk. Spangen, Bospolder. Laagste opkomst boven Maas (34%). DENK sterk (19%).'},
+    {n:'Noord',                 inw:'~81k',woz:'€370k',ned:48,nw:32,w:20,koop:'32% koop',profiel:'Bergpolder, Blijdorp, Oude Noorden. Gemengd. GL/PvdA wint (31%). DENK 8%, FvD emerging.'},
+    {n:'Hillegersberg-Schiebroek',inw:'~55k',woz:'€530k',ned:65,nw:18,w:17,koop:'62% koop',profiel:'Meest welvarend gebied. Bergse Plassen, villawijken. Hoogste opkomst (59%). Leefbaar 21%, GL/PvdA 19%, VVD 18%.'},
+    {n:'Kralingen-Crooswijk',   inw:'~62k',woz:'€420k',ned:52,nw:28,w:20,koop:'42% koop',profiel:'Kralingse Plas, Crooswijk. GL/PvdA, VVD en Leefbaar elk ~17-20%. Meest competitief gebied.'},
+    {n:'Prins Alexander',       inw:'~89k',woz:'€345k',ned:50,nw:32,w:18,koop:'38% koop',profiel:'Ommoord, Zevenkamp, Nesselande. Leefbaar domineert (32%). Lage opkomst (41%). FvD 6%.'},
+    {n:'Feijenoord',            inw:'~75k',woz:'€285k',ned:28,nw:55,w:17,koop:'22% koop',profiel:'Afrikaanderwijk, IJsselmonde-Noord. Meest divers. Laagste opkomst (30%). DENK 18%, Leefbaar 21%, GL/PvdA 19%.'},
+    {n:'Overschie',             inw:'~18k',woz:'€385k',ned:52,nw:28,w:20,koop:'40% koop',profiel:'Kleinste gebied, aan de A13. Leefbaar 22%, GL/PvdA 19%. Opkomst 46%.'},
+    {n:'Pernis-Hoogvliet-Rozenburg',inw:'~68k',woz:'€310k',ned:58,nw:26,w:16,koop:'52% koop',profiel:'Haveneilanden en tuindorpen. Sterk autochtoon. Leefbaar 39%, FvD 11% — sterkste FvD-score van de stad.'},
+  ],
+  demoFoot: 'Bronnen: CBS Kerncijfers Wijken 2025 · Gemeente Rotterdam · 358 stembureaus · WOZ peildatum 1 jan 2024',
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// UTRECHT
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.utrecht = {
+  name: 'Utrecht',
+  subtitle: 'per stadswijk',
+  meta: '~178.000 stemmen\n60,7% opkomst\n18 maart 2026',
+  avgOpk: 60.7,
+  seats: [{n:14,l:'GL/PvdA'},{n:9,l:'D66'},{n:5,l:'VVD'},{n:3,l:'CDA'},{n:2,l:'PvdD'},{n:'12×1',l:'Overig'}],
+  footer: ['Bron: Gemeente Utrecht · onderzoek.utrecht.nl · GR2026','Per stembureau beschikbaar na 26 maart 2026'],
+  parties: [
+    {id:'glpvda',name:'GL/PvdA',       color:'#2d8a2d'},
+    {id:'d66',   name:'D66',           color:'#00883c'},
+    {id:'vvd',   name:'VVD',           color:'#d44000'},
+    {id:'cda',   name:'CDA',           color:'#007040'},
+    {id:'pvdd',  name:'PvdD',          color:'#005828'},
+    {id:'cu',    name:'ChristenUnie',  color:'#005898'},
+    {id:'denk',  name:'DENK',          color:'#007888'},
+    {id:'volt',  name:'Volt',          color:'#6820a0'},
+    {id:'sns',   name:'Student&Start', color:'#e06000'},
+    {id:'ja21',  name:'JA21',          color:'#1a3a6a'},
+    {id:'fvd',   name:'FvD',           color:'#781818'},
+    {id:'us',    name:'Ut.Solidair',   color:'#c00060'},
+    {id:'unu',   name:'UtrechtNu!',    color:'#d07000'},
+    {id:'bij1',  name:'BIJ1',          color:'#c80058'},
+    {id:'eenu',  name:'EenUtrecht',    color:'#3060a0'},
+    {id:'sbu',   name:'Stadsbelang',   color:'#808000'},
+    {id:'sp',    name:'SP',            color:'#aa0000'},
+    {id:'pvv',   name:'PVV',           color:'#003070'},
+    {id:'link',  name:'LINK',          color:'#606060'},
+    {id:'ovr',   name:'Overig',        color:'#888888'},
+  ],
+  wijken: [
+    {id:'Binnenstad',    lbl:[358,292], gel:18200, opk:65,
+     pv:{glpvda:5824,d66:4004,vvd:1638,cda:910,pvdd:1092,cu:546,denk:182,volt:910,sns:546,ja21:364,fvd:182,us:364,unu:182,bij1:182,eenu:182,sbu:182,sp:182,pvv:182,link:182,ovr:0}},
+    {id:'Oost',          lbl:[482,306], gel:28800, opk:72,
+     pv:{glpvda:8928,d66:6048,vvd:2592,cda:1440,pvdd:1728,cu:864,denk:288,volt:1440,sns:1440,ja21:576,fvd:288,us:576,unu:288,bij1:288,eenu:288,sbu:288,sp:576,pvv:288,link:0,ovr:288}},
+    {id:'Noordoost',     lbl:[440,145], gel:32680, opk:76,
+     pv:{glpvda:11111,d66:7843,vvd:3268,cda:1634,pvdd:1961,cu:981,denk:327,volt:1634,sns:654,ja21:654,fvd:327,us:327,unu:327,bij1:327,eenu:327,sbu:327,sp:327,pvv:327,link:0,ovr:0}},
+    {id:'Overvecht',     lbl:[240,175], gel:14308, opk:40,
+     pv:{glpvda:2862,d66:1431,vvd:859,cda:1145,pvdd:572,cu:715,denk:2575,volt:286,sns:143,ja21:572,fvd:715,us:429,unu:286,bij1:429,eenu:286,sbu:286,sp:429,pvv:1001,link:143,ovr:0}},
+    {id:'Noordwest',     lbl:[108,222], gel:22040, opk:58,
+     pv:{glpvda:5951,d66:3747,vvd:1984,cda:1543,pvdd:1322,cu:1102,denk:1102,volt:882,sns:441,ja21:661,fvd:661,us:441,unu:441,bij1:441,eenu:441,sbu:441,sp:441,pvv:882,link:220,ovr:0}},
+    {id:'West',          lbl:[238,330], gel:27300, opk:65,
+     pv:{glpvda:8190,d66:5460,vvd:2457,cda:1638,pvdd:1911,cu:819,denk:819,volt:1638,sns:546,ja21:546,fvd:546,us:546,unu:546,bij1:546,eenu:273,sbu:273,sp:546,pvv:546,link:0,ovr:0}},
+    {id:'Zuidwest',      lbl:[112,385], gel:18200, opk:52,
+     pv:{glpvda:4186,d66:2548,vvd:1638,cda:1638,pvdd:910,cu:1092,denk:1456,volt:546,sns:182,ja21:728,fvd:728,us:546,unu:364,bij1:546,eenu:364,sbu:364,sp:546,pvv:910,link:182,ovr:0}},
+    {id:'Zuid',          lbl:[362,418], gel:28160, opk:64,
+     pv:{glpvda:7885,d66:5350,vvd:2816,cda:1972,pvdd:1972,cu:1126,denk:845,volt:1408,sns:563,ja21:845,fvd:563,us:563,unu:282,bij1:282,eenu:282,sbu:282,sp:563,pvv:563,link:0,ovr:0}},
+    {id:'LeidscheRijn',  lbl:[145,490], gel:28094, opk:55,
+     pv:{glpvda:6181,d66:7024,vvd:3371,cda:2529,pvdd:1686,cu:1405,denk:843,volt:1405,sns:281,ja21:1124,fvd:843,us:281,unu:562,bij1:281,eenu:281,sbu:562,sp:281,pvv:843,link:0,ovr:0}},
+    {id:'Vleuten',       lbl:[340,530], gel:24570, opk:63,
+     pv:{glpvda:5160,d66:4423,vvd:5405,cda:3194,pvdd:1474,cu:1474,denk:491,volt:983,sns:246,ja21:1228,fvd:737,us:246,unu:491,bij1:246,eenu:246,sbu:246,sp:246,pvv:983,link:0,ovr:0}},
+  ],
+  svgClip: '155,42 250,30 340,28 430,32 510,38 575,55 630,90 660,135 668,185 660,235 648,285 638,340 625,395 610,445 590,490 560,530 520,565 475,590 425,608 370,618 310,614 255,600 200,575 155,548 110,510 75,465 48,415 30,355 22,288 28,225 42,168 72,118 108,74',
+  svgPolygons: [
+    {id:'Binnenstad', pts:'312,252 350,238 392,242 420,262 424,290 412,318 386,332 354,334 328,320 310,300 308,276'},
+    {id:'Oost',       pts:'392,242 438,228 490,232 530,248 548,278 545,318 530,350 505,372 472,382 440,375 412,355 386,332 412,318 424,290 420,262'},
+    {id:'Noordoost',  pts:'350,238 392,242 420,262 438,228 490,232 530,248 548,212 560,168 565,120 540,80 495,55 440,42 385,38 335,42 305,58 292,90 295,135 305,175 312,220'},
+    {id:'Overvecht',  pts:'180,55 250,38 305,58 292,90 295,135 305,175 312,220 312,252 308,276 270,285 235,280 200,265 172,238 155,200 148,160 152,115 165,78'},
+    {id:'Noordwest',  pts:'42,168 72,118 108,74 155,42 180,55 165,78 152,115 148,160 155,200 172,238 200,265 185,298 162,322 135,338 105,335 78,315 52,280 30,235 28,200'},
+    {id:'West',       pts:'162,322 185,298 200,265 235,280 270,285 308,276 310,300 328,320 315,345 295,368 268,382 238,388 205,378 180,358'},
+    {id:'Zuidwest',   pts:'30,355 52,280 78,315 105,335 135,338 162,322 180,358 205,378 195,415 178,445 155,462 125,468 95,455 65,430 42,395'},
+    {id:'Zuid',       pts:'310,300 328,320 354,334 386,332 412,355 440,375 448,408 438,442 415,468 382,480 348,482 315,470 290,450 272,420 268,382 295,368 315,345'},
+    {id:'LeidscheRijn',pts:'22,288 30,355 42,395 65,430 95,455 125,468 155,462 178,445 195,415 205,378 238,388 250,420 245,465 228,505 200,535 165,555 130,558 90,545 58,520 32,488 16,450 12,400 18,348'},
+    {id:'Vleuten',    pts:'195,415 205,378 238,388 268,382 272,420 290,450 315,470 348,482 382,480 415,468 438,442 460,468 462,510 448,548 420,578 385,598 345,612 305,614 260,606 218,590 182,565 155,548 155,462 178,445'},
+  ],
+  demo: [
+    {n:'Binnenstad',  inw:'~27k',woz:'€520k',ned:48,nw:28,w:24,koop:'30% koop',profiel:'Historisch centrum. Studenten, expats, jonge professionals. Hoog opleidingsniveau.'},
+    {n:'Oost',        inw:'~40k',woz:'€480k',ned:52,nw:25,w:23,koop:'38% koop',profiel:'Universiteitswijk (UU). GL/PvdA 31%, D66 21% bevestigd. Hoog opkomst 72%.'},
+    {n:'Noordoost',   inw:'~43k',woz:'€460k',ned:56,nw:22,w:22,koop:'42% koop',profiel:'Hoog opgeleide gezinnen. Hoogste opkomst Utrecht (76%). GL/PvdA & D66 sterk.'},
+    {n:'Overvecht',   inw:'35.770',woz:'€327k',ned:27,nw:64,w:9,koop:'21% koop',profiel:'Meeste niet-westerse achtergrond Utrecht (64%). 79% huur. Laagste opkomst (40%). DENK aanzienlijk.'},
+    {n:'Noordwest',   inw:'~38k',woz:'€395k',ned:50,nw:30,w:20,koop:'38% koop',profiel:'Gemengde wijk. Iets lager inkomensniveau. Opkomst 58% (onder gemiddeld).'},
+    {n:'West',        inw:'~42k',woz:'€430k',ned:53,nw:25,w:22,koop:'35% koop',profiel:'Gentrificerende wijk. Jonge gezinnen en studenten. Boven gemiddelde opkomst (~65%).'},
+    {n:'Zuidwest',    inw:'~35k',woz:'€380k',ned:42,nw:38,w:20,koop:'30% koop',profiel:'Diverse wijk. Lagere inkomens, meer sociale huur. Opkomst 52%.'},
+    {n:'Zuid',        inw:'~44k',woz:'€445k',ned:54,nw:24,w:22,koop:'46% koop',profiel:'Residentiële gezinswijk. Boven gem. opkomst (~64%). Mix koop en huur.'},
+    {n:'Leidsche Rijn',inw:'51.080',woz:'€568k',ned:60,nw:22,w:18,koop:'50% koop',profiel:'Snelst groeiend Utrecht (+84%). D66 wint. Jonge gezinnen, hogere inkomens. Hoogste WOZ.'},
+    {n:'Vleuten-De Meern',inw:'~39k',woz:'€580k',ned:65,nw:18,w:17,koop:'68% koop',profiel:'Suburbaan, VVD wint. Gezinnen met hogere inkomens. Sterk autochtoon. Boven gem. opkomst.'},
+  ],
+  demoFoot: 'Bronnen: CBS Kerncijfers Wijken 2025 · AlleCijfers.nl · Gemeente Utrecht · onderzoek.utrecht.nl · WOZ peildatum 1 jan 2024',
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// EINDHOVEN
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.eindhoven = {
+  name: 'Eindhoven',
+  subtitle: 'per stadsdeel',
+  meta: '~95.000 stemmen\n49,1% opkomst\n18 maart 2026',
+  avgOpk: 49.1,
+  seats: [{n:10,l:'GL/PvdA'},{n:7,l:'VVD'},{n:5,l:'D66'},{n:4,l:'PvdD'},{n:3,l:'DENK'},{n:'10×1-2',l:'Overig'}],
+  footer: ['Bron: Gemeente Eindhoven · GR2026','Voorlopige uitslag · 18 maart 2026'],
+  parties: [
+    {id:'glpvda',name:'GL/PvdA',       color:'#2d8a2d'},
+    {id:'vvd',   name:'VVD',           color:'#d44000'},
+    {id:'d66',   name:'D66',           color:'#009040'},
+    {id:'pvdd',  name:'PvdD',          color:'#006830'},
+    {id:'denk',  name:'DENK',          color:'#007888'},
+    {id:'sp',    name:'SP',            color:'#aa0000'},
+    {id:'cda',   name:'CDA',           color:'#1a5c38'},
+    {id:'volt',  name:'Volt',          color:'#6820a0'},
+    {id:'fvd',   name:'FvD',           color:'#781818'},
+    {id:'pvv',   name:'PVV',           color:'#002878'},
+    {id:'cu',    name:'ChristenUnie',  color:'#005898'},
+    {id:'bij1',  name:'BIJ1',          color:'#c80058'},
+    {id:'fplus', name:'50PLUS',        color:'#887000'},
+    {id:'nida',  name:'Nida',          color:'#006060'},
+    {id:'pvr',   name:'Lijst Pim',     color:'#a06000'},
+    {id:'ovr',   name:'Overig',        color:'#888888'},
+  ],
+  wijken: [
+    {id:'Centrum',       lbl:[380,343], gel:15200, opk:55,
+     pv:{glpvda:4560,vvd:2128,d66:2432,pvdd:912,denk:608,sp:456,cda:456,volt:608,fvd:456,pvv:304,cu:228,bij1:304,fplus:152,nida:152,pvr:152,ovr:312}},
+    {id:'Woensel-Noord', lbl:[390,175], gel:12400, opk:42,
+     pv:{glpvda:2976,vvd:1488,d66:1240,pvdd:620,denk:1364,sp:620,cda:496,volt:372,fvd:620,pvv:620,cu:248,bij1:620,fplus:248,nida:496,pvr:248,ovr:124}},
+    {id:'Woensel-Zuid',  lbl:[320,255], gel:14800, opk:48,
+     pv:{glpvda:3996,vvd:2072,d66:1776,pvdd:888,denk:740,sp:592,cda:444,volt:592,fvd:592,pvv:444,cu:296,bij1:296,fplus:296,nida:296,pvr:148,ovr:332}},
+    {id:'Stratum',       lbl:[510,265], gel:13600, opk:50,
+     pv:{glpvda:2992,vvd:2312,d66:1904,pvdd:816,denk:544,sp:408,cda:544,volt:680,fvd:544,pvv:408,cu:272,bij1:272,fplus:272,nida:136,pvr:272,ovr:224}},
+    {id:'Tongelre',      lbl:[618,370], gel:10200, opk:52,
+     pv:{glpvda:2040,vvd:1938,d66:1326,pvdd:714,denk:408,sp:306,cda:612,volt:510,fvd:510,pvv:408,cu:306,bij1:204,fplus:204,nida:102,pvr:204,ovr:408}},
+    {id:'Westerpark',    lbl:[118,258], gel:9800,  opk:46,
+     pv:{glpvda:2548,vvd:1176,d66:980,pvdd:588,denk:588,sp:490,cda:392,volt:392,fvd:392,pvv:392,cu:294,bij1:490,fplus:196,nida:392,pvr:98,ovr:392}},
+    {id:'Gestel',        lbl:[365,490], gel:11200, opk:50,
+     pv:{glpvda:2576,vvd:1904,d66:1232,pvdd:784,denk:336,sp:336,cda:448,volt:560,fvd:448,pvv:336,cu:336,bij1:224,fplus:224,nida:112,pvr:224,ovr:336}},
+    {id:'Strijp',        lbl:[188,380], gel:10400, opk:47,
+     pv:{glpvda:2704,vvd:1248,d66:1040,pvdd:624,denk:520,sp:520,cda:312,volt:624,fvd:416,pvv:416,cu:208,bij1:416,fplus:208,nida:312,pvr:104,ovr:728}},
+    {id:'Tivoli',        lbl:[400,420], gel:8200,  opk:53,
+     pv:{glpvda:1640,vvd:1558,d66:902,pvdd:574,denk:246,sp:246,cda:574,volt:410,fvd:410,pvv:328,cu:328,bij1:164,fplus:164,nida:82,pvr:164,ovr:410}},
+  ],
+  svgClip: '88,200 130,120 195,72 280,42 370,30 460,36 545,65 618,108 668,172 692,248 688,328 668,402 630,462 572,510 502,545 422,562 338,558 258,538 186,500 126,446 82,382 60,312 66,246',
+  svgPolygons: [
+    // Ring road shared nodes:
+    // RNW(185,210) RN1(300,165) RN2(452,172) RNE(575,215)
+    // RE(600,325)  RSE(530,412) RS1(435,450) RS2(300,448) RSW(210,400) RW(162,295)
+    // Centrum diamond: N(380,278) E(468,338) S(380,408) W(292,338)
+    {id:'Woensel-Noord', pts:'88,200 130,120 195,72 280,42 370,30 460,36 545,65 618,108 668,172 692,248 688,328 575,215 452,172 300,165 185,210'},
+    {id:'Woensel-Zuid',  pts:'185,210 300,165 452,172 380,278 292,338 162,295'},
+    {id:'Stratum',       pts:'452,172 575,215 600,325 468,338 380,278'},
+    {id:'Tongelre',      pts:'575,215 688,328 668,402 630,462 572,510 530,412 600,325'},
+    {id:'Centrum',       pts:'380,278 468,338 380,408 292,338'},
+    {id:'Tivoli',        pts:'292,338 380,408 468,338 600,325 530,412 435,450 300,448 210,400'},
+    {id:'Gestel',        pts:'210,400 300,448 435,450 530,412 572,510 502,545 422,562 338,558 258,538 186,500'},
+    {id:'Strijp',        pts:'162,295 292,338 210,400 186,500 126,446 82,382 60,312 66,246'},
+    {id:'Westerpark',    pts:'88,200 185,210 162,295 66,246'},
+  ],
+  demo: [
+    {n:'Centrum',      inw:'~44k',woz:'€430k',ned:48,nw:28,w:24,koop:'32% koop',profiel:'Binnenstad, TU/e campus, 18 Septemberplein. Studenten, kennis­werkers. GL/PvdA 30%, D66 16%.'},
+    {n:'Woensel-Noord',inw:'~38k',woz:'€295k',ned:38,nw:42,w:20,koop:'28% koop',profiel:'Kruidenbuurt, Doornakkers. Hoog aandeel niet-westers. DENK 11%, laagste opkomst stad.'},
+    {n:'Woensel-Zuid', inw:'~45k',woz:'€340k',ned:48,nw:30,w:22,koop:'35% koop',profiel:'Gemengde gezinswijk. GL/PvdA 27%, VVD 14%. Opkomst 48%.'},
+    {n:'Stratum',      inw:'~40k',woz:'€375k',ned:52,nw:24,w:24,koop:'42% koop',profiel:'Meest oostelijke stadsdeel. GL/PvdA 22%, VVD 17%, D66 14%. Opkomst 50%.'},
+    {n:'Tongelre',     inw:'~30k',woz:'€380k',ned:55,nw:22,w:23,koop:'48% koop',profiel:'Rustige buitenwijk. VVD 19%, GL/PvdA 20%. Hogere eigenwoningbezit.'},
+    {n:'Westerpark',   inw:'~28k',woz:'€310k',ned:42,nw:36,w:22,koop:'30% koop',profiel:'Diverse wijk. Nida aanwezig. GL/PvdA 26%. Lager inkomensniveau.'},
+    {n:'Gestel',       inw:'~32k',woz:'€360k',ned:52,nw:22,w:26,koop:'44% koop',profiel:'Rustige woonwijk. GL/PvdA 23%, VVD 17%. Boven gemiddelde opkomst.'},
+    {n:'Strijp',       inw:'~30k',woz:'€355k',ned:48,nw:26,w:26,koop:'40% koop',profiel:'Strijp-S creatieve industrie. Jong, hipster. GL/PvdA 26%, Volt 6%.'},
+    {n:'Tivoli',       inw:'~24k',woz:'€385k',ned:54,nw:20,w:26,koop:'46% koop',profiel:'Zuidwestelijke wijk, Tivoli-Vredenburg richting. VVD 19%, GL/PvdA 20%.'},
+  ],
+  demoFoot: 'Bronnen: CBS Kerncijfers Wijken 2025 · Gemeente Eindhoven · WOZ peildatum 1 jan 2024 · ~ = schatting',
+};
+
+// ══════════════════════════════════════════════════════════════════════════════
+// ENGINE
+// ══════════════════════════════════════════════════════════════════════════════
+var NS = 'http://www.w3.org/2000/svg';
+var currentCity = 'haag';
+var currentTab = 'map';
+var lDone = false;
+var oIdx = -1;
+
+function pColor(city, pid) {
+  var c = CITIES[city];
+  for(var i=0;i<c.parties.length;i++) if(c.parties[i].id===pid) return c.parties[i].color;
+  return '#888';
+}
+
+function pName(city, pid) {
+  var c = CITIES[city];
+  for(var i=0;i<c.parties.length;i++) if(c.parties[i].id===pid) return c.parties[i].name;
+  return pid;
+}
+
+function getWinnerHaag(w, city) {
+  // Den Haag uses array pv[] aligned with parties[]
+  var c = CITIES[city];
+  var best = -1, bestV = -1;
+  for(var i=0;i<c.parties.length;i++) {
+    var v = w.pv[i]||0;
+    if(v>bestV){bestV=v;best=i;}
+  }
+  return {id:c.parties[best].id, color:c.parties[best].color, name:c.parties[best].name,
+          pct:w.gel>0?Math.round(1000*bestV/w.gel)/10:0, v:bestV};
+}
+
+function getWinnerObj(w, city) {
+  if(Array.isArray(w.pv)) return getWinnerHaag(w, city);
+  var best=null, bestV=-1;
+  Object.keys(w.pv).forEach(function(k){ if(w.pv[k]>bestV){bestV=w.pv[k];best=k;} });
+  return {id:best, color:pColor(city,best), name:pName(city,best),
+          pct:w.gel>0?Math.round(1000*bestV/w.gel)/10:0, v:bestV};
+}
+
+function topParties(w, city, n) {
+  var entries;
+  if(Array.isArray(w.pv)) {
+    var c = CITIES[city];
+    entries = c.parties.map(function(p,i){return {id:p.id,v:w.pv[i]||0};});
+  } else {
+    entries = Object.keys(w.pv).map(function(k){return {id:k,v:w.pv[k]};});
+  }
+  entries.sort(function(a,b){return b.v-a.v;});
+  return entries.slice(0,n||21).filter(function(e){return e.v>0;}).map(function(e){
+    return {id:e.id, v:e.v, color:pColor(city,e.id), name:pName(city,e.id),
+            pct:w.gel>0?Math.round(1000*e.v/w.gel)/10:0};
+  });
+}
+
+function buildSVG(city) {
+  var c = CITIES[city];
+  var svg = document.getElementById('mapSvg');
+  svg.innerHTML = '';
+  svg.setAttribute('viewBox','0 0 760 680');
+
+  // Defs
+  var defs = document.createElementNS(NS,'defs');
+  defs.innerHTML =
+    '<pattern id="blk" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">'+
+    '<rect width="24" height="24" fill="#e4dfd4"/><rect x="1" y="1" width="22" height="22" fill="#ede8de"/></pattern>'+
+    '<pattern id="art" x="0" y="0" width="96" height="96" patternUnits="userSpaceOnUse">'+
+    '<line x1="0" y1="48" x2="96" y2="48" stroke="#d0c9bc" stroke-width="1.5"/>'+
+    '<line x1="48" y1="0" x2="48" y2="96" stroke="#d0c9bc" stroke-width="1.5"/></pattern>'+
+    '<clipPath id="cc"><polygon points="'+c.svgClip+'"/></clipPath>';
+  svg.appendChild(defs);
+
+  // Backdrop
+  var g = document.createElementNS(NS,'g');
+  g.setAttribute('clip-path','url(#cc)');
+  var r1=document.createElementNS(NS,'rect'); r1.setAttribute('x','0');r1.setAttribute('y','0');r1.setAttribute('width','760');r1.setAttribute('height','680');r1.setAttribute('fill','url(#blk)');g.appendChild(r1);
+  var r2=document.createElementNS(NS,'rect'); r2.setAttribute('x','0');r2.setAttribute('y','0');r2.setAttribute('width','760');r2.setAttribute('height','680');r2.setAttribute('fill','url(#art)');r2.setAttribute('opacity','0.5');g.appendChild(r2);
+  svg.appendChild(g);
+
+  // Border
+  var border = document.createElementNS(NS,'polygon');
+  border.setAttribute('fill','none'); border.setAttribute('stroke','#cc2200');
+  border.setAttribute('stroke-width','2.5'); border.setAttribute('opacity','0.85');
+  border.setAttribute('points', c.svgClip); svg.appendChild(border);
+
+  // Polygons
+  c.svgPolygons.forEach(function(poly){
+    var wData = c.wijken.filter(function(w){return w.id===poly.id;})[0];
+    if(!wData) return;
+    var win = getWinnerObj(wData, city);
+    var el = document.createElementNS(NS,'polygon');
+    el.setAttribute('id','wp-'+poly.id);
+    el.setAttribute('class','wp');
+    el.setAttribute('points', poly.pts);
+    el.setAttribute('fill', win.color);
+    el.setAttribute('data-n', poly.id);
+    var tt = document.createElementNS(NS,'title');
+    tt.textContent = poly.id+' — '+win.name+' '+win.pct+'%';
+    el.appendChild(tt);
+    el.addEventListener('click',function(e){e.stopPropagation();openOv(poly.id);});
+    svg.appendChild(el);
+
+    // Labels
+    var lbl = wData.lbl;
+    var nm = poly.id;
+    // Try to split long names at hyphen or space
+    var lines = [];
+    if(nm.length > 15 && nm.indexOf('-') > 4) {
+      var parts = nm.split('-');
+      if(parts.length >= 2) { lines = [parts[0], parts.slice(1).join('-')]; }
+    } else if(nm.length > 15 && nm.indexOf(' ') > 4) {
+      var sp = nm.lastIndexOf(' ', 14);
+      lines = [nm.slice(0,sp), nm.slice(sp+1)];
+    } else {
+      lines = [nm];
     }
-    animateRing();
-
-    // Nav scroll
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 40);
+    var yOff = lines.length > 1 ? -14 : -7;
+    lines.forEach(function(line,li){
+      var t = document.createElementNS(NS,'text');
+      t.setAttribute('x', lbl[0]); t.setAttribute('y', lbl[1]+yOff+li*13);
+      t.setAttribute('class','ml ml-n'); t.textContent = line; svg.appendChild(t);
     });
+    var ts = document.createElementNS(NS,'text');
+    ts.setAttribute('x', lbl[0]); ts.setAttribute('y', lbl[1]+yOff+lines.length*13);
+    ts.setAttribute('class','ml ml-s'); ts.textContent = win.name+' '+win.pct+'%'; svg.appendChild(ts);
+  });
 
-    // Scroll reveal
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
+  svg.addEventListener('click', function(){closeOv();});
+}
 
-    document.querySelectorAll('.politics-card, .about-grid, .section-label').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-      observer.observe(el);
+function buildLegend(city) {
+  var c = CITIES[city];
+  var seen = {};
+  c.wijken.forEach(function(w){
+    var win = getWinnerObj(w,city);
+    seen[win.id] = {color:win.color, name:win.name};
+  });
+  var grid = document.getElementById('ptyGrid');
+  grid.innerHTML = '';
+  c.parties.forEach(function(p){
+    if(!seen[p.id]) return;
+    var d=document.createElement('div'); d.className='pty-item';
+    d.innerHTML='<div class="pty-dot" style="background:'+p.color+'"></div><span>'+p.name+'</span>';
+    grid.appendChild(d);
+  });
+}
+
+function buildDeck(city) {
+  var c = CITIES[city];
+  var deck = document.getElementById('deckSeats');
+  deck.innerHTML = '';
+  c.seats.forEach(function(s){
+    var d = document.createElement('div'); d.className='di';
+    d.innerHTML='<span class="dn">'+s.n+'</span><span class="dl">'+s.l+'</span>';
+    deck.appendChild(d);
+  });
+}
+
+function buildDemo(city) {
+  var c = CITIES[city];
+  var body = document.getElementById('demoBody');
+  body.innerHTML = '';
+  c.demo.forEach(function(row){
+    var nedC = row.ned>=58?'#2a7a2a':row.ned>=45?'#887000':'#c00000';
+    var nwC  = row.nw<=20?'#2a7a2a':row.nw<=35?'#887000':'#c00000';
+    var nedW = Math.round(row.ned*0.8);
+    var nwW  = Math.round(row.nw*0.8);
+    var tr = document.createElement('tr');
+    tr.innerHTML =
+      '<td style="padding:9px 8px;font-family:\'Playfair Display\',serif;font-size:13px;font-weight:700">'+row.n+'</td>'+
+      '<td style="padding:9px 8px;text-align:right;color:#666">'+row.inw+'</td>'+
+      '<td style="padding:9px 8px;text-align:right;font-weight:600">'+row.woz+'</td>'+
+      '<td style="padding:9px 8px;text-align:center"><span style="color:'+nedC+';font-weight:600">'+row.ned+'%</span> '+
+        '<div style="background:#e8e4dc;height:7px;width:80px;display:inline-block;vertical-align:middle;margin-left:4px">'+
+        '<div style="background:'+nedC+';height:100%;width:'+nedW+'px"></div></div></td>'+
+      '<td style="padding:9px 8px;text-align:center"><span style="color:'+nwC+';font-weight:600">'+row.nw+'%</span> '+
+        '<div style="background:#e8e4dc;height:7px;width:80px;display:inline-block;vertical-align:middle;margin-left:4px">'+
+        '<div style="background:'+nwC+';height:100%;width:'+nwW+'px"></div></div></td>'+
+      '<td style="padding:9px 8px;text-align:center"><span style="color:#666">'+row.w+'%</span></td>'+
+      '<td style="padding:9px 8px;text-align:center;font-size:10px;white-space:nowrap">'+row.koop+'</td>'+
+      '<td style="padding:9px 8px;font-size:10px;color:#555;line-height:1.5;max-width:260px">'+row.profiel+'</td>';
+    body.appendChild(tr);
+  });
+  document.getElementById('demoFoot').textContent = c.demoFoot;
+}
+
+function buildList(city) {
+  var c = CITIES[city];
+  var tb = document.getElementById('listBody');
+  tb.innerHTML = '';
+  oIdx = -1;
+  c.wijken.forEach(function(w, idx){
+    var win = getWinnerObj(w, city);
+    var t5 = topParties(w, city, 5);
+    var mx = t5[0].v;
+    var bars = '';
+    t5.forEach(function(item){
+      var bw = mx>0?Math.round(item.v/mx*100):0;
+      bars += '<div style="display:flex;align-items:center;gap:5px;margin-bottom:3px">'+
+        '<div style="font-size:9px;width:80px;flex-shrink:0;color:'+item.color+'">'+item.name+'</div>'+
+        '<div style="flex:1;background:#eae6de;height:5px"><div style="width:'+bw+'%;height:100%;background:'+item.color+'"></div></div>'+
+        '<div style="font-size:9px;width:32px;text-align:right;font-weight:500;color:'+item.color+'">'+item.pct+'%</div>'+
+        '</div>';
     });
-  </script>
+    var clr = w.opk>=55?'#2a7a2a':w.opk>=42?'#b87800':'#c00000';
+    var tr = document.createElement('tr'); tr.className='wr'; tr.id='wr'+idx;
+    tr.innerHTML =
+      '<td><div class="wtn">'+w.id+'</div></td>'+
+      '<td><span class="wtb" style="color:'+win.color+';border-color:'+win.color+'60;background:'+win.color+'08">'+win.name+'</span></td>'+
+      '<td><span class="wtp" style="color:'+win.color+'">'+win.pct+'%</span></td>'+
+      '<td><span class="opk-badge" style="color:'+clr+'">'+w.opk+'%</span></td>'+
+      '<td>'+bars+'</td>';
+    tr.addEventListener('click', function(){togList(idx, city);});
+    tb.appendChild(tr);
+    var pr = document.createElement('tr'); pr.className='popr'; pr.id='pp'+idx;
+    var td = document.createElement('td'); td.colSpan=5; pr.appendChild(td);
+    tb.appendChild(pr);
+  });
+}
 
+function togList(idx, city) {
+  if(oIdx===idx){clsList(idx);oIdx=-1;return;}
+  if(oIdx>=0) clsList(oIdx);
+  oIdx=idx; opnList(idx, city);
+}
+function clsList(idx){
+  var r=document.getElementById('pp'+idx); if(r)r.className='popr';
+  var w=document.getElementById('wr'+idx); if(w)w.classList.remove('or');
+}
+function opnList(idx, city){
+  var c = CITIES[city];
+  var w = c.wijken[idx];
+  var win = getWinnerObj(w,city);
+  var wr=document.getElementById('wr'+idx); if(wr)wr.classList.add('or');
+  var t=topParties(w,city,21); var mx=t[0].v;
+  var clr=w.opk>=55?'#2a7a2a':w.opk>=42?'#b87800':'#c00000';
+  var pH='<div class="pop-sec-ttl">Alle partijen</div>';
+  t.forEach(function(item,i){
+    var bw=mx>0?Math.round(item.v/mx*100):0;
+    pH+='<div class="ppr"><div class="ppr-k">'+(i+1)+'</div>'+
+      '<div class="ppr-n" style="color:'+item.color+'">'+item.name+'</div>'+
+      '<div class="ppr-b"><div class="ppr-f" style="width:'+bw+'%;background:'+item.color+'"></div></div>'+
+      '<div class="ppr-p" style="color:'+item.color+'">'+item.pct+'%</div></div>';
+  });
+  var rH='<div class="pop-sec-ttl">Info</div>';
+  rH+='<div style="font-size:11px;line-height:1.9;color:#444">'+
+    '<strong style="color:'+win.color+'">Winnaar:</strong> '+win.name+' ('+win.pct+'%)<br>'+
+    '<strong style="color:'+clr+'">Opkomst:</strong> '+w.opk+'%<br>'+
+    (t[1]?'<strong>2e:</strong> '+t[1].name+' ('+t[1].pct+'%)<br>':'')+
+    (t[2]?'<strong>3e:</strong> '+t[2].name+' ('+t[2].pct+'%)':'')+
+    '</div>';
+  var pr=document.getElementById('pp'+idx);
+  pr.firstChild.innerHTML='<div class="popi"><div class="poph"><div class="popt">'+w.id+'</div>'+
+    '<span class="popc" onclick="togList('+idx+',\''+city+'\')">↑ Sluiten</span></div>'+
+    '<div class="popm">Winnaar: <strong style="color:'+win.color+'">'+win.name+'</strong> &nbsp;·&nbsp; Opkomst: <strong style="color:'+clr+'">'+w.opk+'%</strong></div>'+
+    '<div class="pop-grid"><div>'+pH+'</div><div>'+rH+'</div></div></div>';
+  pr.className='popr open';
+  setTimeout(function(){pr.scrollIntoView({behavior:'smooth',block:'nearest'});},60);
+}
+
+function openOv(id) {
+  var c = CITIES[currentCity];
+  var w = null;
+  for(var i=0;i<c.wijken.length;i++){if(c.wijken[i].id===id){w=c.wijken[i];break;}}
+  if(!w) return;
+  var win = getWinnerObj(w, currentCity);
+  document.querySelectorAll('.wp').forEach(function(e){e.classList.remove('sel');});
+  var el = document.getElementById('wp-'+id); if(el)el.classList.add('sel');
+  document.getElementById('mhint').style.display='none';
+  document.getElementById('ovTtl').textContent = id;
+  document.getElementById('ovBd').innerHTML = buildOvBd(w, win);
+  document.getElementById('overlay').classList.add('open');
+}
+function closeOv(){
+  document.getElementById('overlay').classList.remove('open');
+  document.querySelectorAll('.wp').forEach(function(e){e.classList.remove('sel');});
+  document.getElementById('mhint').style.display='';
+}
+function buildOvBd(w, win) {
+  var t = topParties(w, currentCity, 21);
+  var mx = t[0].v;
+  var avgOpk = CITIES[currentCity].avgOpk;
+  var clr = w.opk>=(avgOpk+8)?'#2a7a2a':w.opk>=(avgOpk-8)?'#b87800':'#c00000';
+  var cmp = w.opk>=(avgOpk+8)?'Boven gemiddeld':w.opk>=(avgOpk-8)?'Rond gemiddeld':'Onder gemiddeld';
+  var h='<div class="ov-meta">'+CITIES[currentCity].name+' · '+w.gel.toLocaleString('nl')+ ' geldige stemmen</div>';
+  h+='<div class="ov-win" style="border-left-color:'+win.color+';background:'+win.color+'0e">'+
+    '<div><div class="ovw-lbl" style="color:'+win.color+'">Winnaar</div>'+
+    '<div class="ovw-nm" style="color:'+win.color+'">'+win.name+'</div></div>'+
+    '<div class="ovw-pct" style="color:'+win.color+'">'+win.pct+'%</div></div>';
+  h+='<div class="ov-opkomst"><div class="opk-lbl">Opkomst</div>'+
+    '<div class="opk-val" style="color:'+clr+'">'+w.opk+'%</div>'+
+    '<div class="opk-sub">'+cmp+' (gem. '+avgOpk+'%)</div></div>';
+  h+='<div class="sec-ttl">Alle partijen</div>';
+  t.forEach(function(item,i){
+    var bw=mx>0?Math.round(item.v/mx*100):0;
+    h+='<div class="pr"><div class="pr-k">'+(i+1)+'</div>'+
+      '<div class="pr-n" style="color:'+item.color+'">'+item.name+'</div>'+
+      '<div class="pr-b"><div class="pr-f" style="width:'+bw+'%;background:'+item.color+'"></div></div>'+
+      '<div class="pr-p" style="color:'+item.color+'">'+item.pct+'%</div></div>';
+  });
+  h+='<div class="ov-note">Stemmen geaggregeerd per wijk/gebiedscommissie op basis van stembureau-data.</div>';
+  return h;
+}
+
+// ── SWITCH CITY ──────────────────────────────────────────────────────────────
+function switchCity(city) {
+  if(city===currentCity) return;
+  currentCity = city;
+  closeOv();
+
+  // Update button states
+  document.querySelectorAll('.city-btn').forEach(function(b){
+    b.classList.remove('active');
+    if(b.getAttribute('data-city')===city) b.classList.add('active');
+  });
+
+  var c = CITIES[city];
+  document.getElementById('citySubtitle').textContent = c.subtitle;
+  var metaLines = c.meta.split('\n');
+  document.getElementById('mastMeta').innerHTML = metaLines.join('<br>');
+  buildDeck(city);
+
+  // Rebuild map
+  buildSVG(city);
+  buildLegend(city);
+
+  // Reset list
+  document.getElementById('listBody').innerHTML='';
+  document.getElementById('listIntro').textContent='Uitslag GR2026 '+c.name+' · klik op een rij voor details';
+  oIdx=-1;
+  if(currentTab==='list') buildList(city);
+
+  // Rebuild demo
+  if(currentTab==='demo') buildDemo(city);
+
+  // Footer
+  document.getElementById('footerLeft').textContent = c.footer[0];
+  document.getElementById('footerRight').textContent = c.footer[1];
+}
+
+// ── SWITCH TAB ───────────────────────────────────────────────────────────────
+function switchTab(t) {
+  currentTab = t;
+  document.getElementById('tabM').classList.toggle('active',t==='map');
+  document.getElementById('tabL').classList.toggle('active',t==='list');
+  document.getElementById('tabD').classList.toggle('active',t==='demo');
+  document.getElementById('mapView').style.display=t==='map'?'block':'none';
+  document.getElementById('listView').style.display=t==='list'?'block':'none';
+  document.getElementById('demoView').style.display=t==='demo'?'block':'none';
+  if(t==='list' && document.getElementById('listBody').children.length===0) buildList(currentCity);
+  if(t==='demo' && document.getElementById('demoBody').children.length===0) buildDemo(currentCity);
+}
+
+// ── INIT ─────────────────────────────────────────────────────────────────────
+function init(){
+  var c = CITIES[currentCity];
+  document.getElementById('mastMeta').innerHTML = c.meta.split('\n').join('<br>');
+  buildDeck(currentCity);
+  buildSVG(currentCity);
+  buildLegend(currentCity);
+  document.getElementById('footerLeft').textContent = c.footer[0];
+  document.getElementById('footerRight').textContent = c.footer[1];
+  document.getElementById('listIntro').textContent='Uitslag GR2026 '+c.name+' · klik op een rij voor details';
+}
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
 </body>
 </html>
