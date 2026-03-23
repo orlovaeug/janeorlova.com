@@ -25,14 +25,16 @@ jobs:
 
       - name: Fetch moties van tweedekamer.nl
         run: python fetch_moties.py
-        timeout-minutes: 20
-
+        working-directory: moties-tracker
+      
       - name: Fix moties.json (partijnamen, thema, OData besluit + stemmen)
-        run: python fix_moties_json.py
-        timeout-minutes: 15
-
+      run: python fix_moties_json.py
+      working-directory: moties-tracker
+      
       - name: Embed moties in index.html
-        run: python embed_moties.py
+      run: python embed_moties.py
+      working-directory: moties-tracker
+
 
       - name: Commit changes
         run: |
