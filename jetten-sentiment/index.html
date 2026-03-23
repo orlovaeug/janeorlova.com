@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jetten in de Media</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F5F0E8;--ink:#1A1A1A;--muted:#6B6B6B;
+  --g:#2E7D32;--green:#3A7A4A;--r:#C62828;--red:#C0392B;
+  --a:#E65100;--border:rgba(0,0,0,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);min-height:100vh;overflow-x:hidden}
+.nav{position:sticky;top:0;z-index:100;background:rgba(245,240,232,.96);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);padding:0 16px;display:flex;align-items:center;
+  justify-content:space-between;height:52px}
+.nav-brand{display:flex;align-items:center;gap:10px}
+.nav-dot{width:9px;height:9px;border-radius:50%;background:var(--g);animation:pulse 3s ease infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.nav-title{font-weight:600;font-size:15px}
+.nav-sub{font-size:11px;color:var(--muted)}
+.nav-r{display:flex;align-items:center;gap:8px}
+.btn-sm{height:32px;padding:0 14px;border-radius:20px;border:1.5px solid var(--border);
+  background:#fff;font-family:inherit;font-size:12px;font-weight:500;cursor:pointer;
+  color:var(--ink);display:flex;align-items:center;gap:5px;transition:all .15s}
+.btn-sm:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn-sm.grn{background:var(--g);color:#fff;border-color:var(--g)}
+.btn-sm.grn:hover{background:#1B5E20}
+.btn-sm:disabled{opacity:.5;cursor:default;pointer-events:none}
+#upd-ts{font-size:10px;color:var(--muted)}
+.tabs{position:sticky;top:52px;z-index:99;background:rgba(245,240,232,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--border);
+  display:flex;overflow-x:auto;scrollbar-width:none;padding:0 16px}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex-shrink:0;padding:12px 14px;font-family:inherit;font-size:13px;font-weight:500;
+  color:var(--muted);background:none;border:none;border-bottom:2.5px solid transparent;
+  cursor:pointer;white-space:nowrap;transition:all .2s}
+.tab.on{color:var(--g);border-bottom-color:var(--g);font-weight:600}
+.pbar{position:sticky;top:94px;z-index:98;background:rgba(245,240,232,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:7px 12px 5px}
+.prow1{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
+  margin-bottom:5px;padding-bottom:2px}
+.prow1::-webkit-scrollbar{display:none}
+.pp{height:28px;padding:0 11px;border-radius:20px;border:1.5px solid var(--border);
+  background:#fff;font-family:inherit;font-size:12px;font-weight:500;color:var(--ink);
+  cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .15s}
+.pp.on{background:var(--g);color:#fff;border-color:var(--g)}
+.prow3{display:flex;align-items:center;gap:7px;margin-top:5px;flex-wrap:wrap}
+.prow3 label{font-size:11px;color:var(--muted);font-weight:500}
+.din{height:28px;padding:0 9px;border-radius:8px;border:1.5px solid var(--border);
+  background:#fff;font-family:inherit;font-size:11px;color:var(--ink)}
+.btn-ap{height:28px;padding:0 12px;border-radius:20px;background:var(--g);color:#fff;
+  border:none;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer}
+.layout{display:flex;gap:18px;max-width:1100px;margin:0 auto;padding:14px 16px 60px}
+.main-col{flex:1;min-width:0}
+.sidebar{width:268px;flex-shrink:0;position:sticky;top:200px;align-self:flex-start}
+@media(max-width:740px){.sidebar{display:none}.layout{padding:10px 12px 60px}}
+.card{background:rgba(255,255,255,.88);border:1.5px solid rgba(255,255,255,.92);
+  border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.07);overflow:hidden;margin-bottom:11px}
+.ch{padding:11px 14px 9px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.ct{font-size:14px;font-weight:600}
+.cbadge{font-size:10px;color:var(--muted);background:rgba(0,0,0,.05);padding:2px 8px;border-radius:10px;white-space:nowrap}
+.gauge-wrap{display:flex;align-items:center;gap:14px;padding:13px 14px}
+.donut{position:relative;width:78px;height:78px;flex-shrink:0}
+.donut svg{width:78px;height:78px;transform:rotate(-90deg)}
+.donut circle{fill:none;stroke-width:11}
+.donut-bg{stroke:#EBEBEB}
+.donut-g{stroke:#81C784;transition:stroke-dasharray .6s}
+.donut-r{stroke:#EF9A9A;transition:stroke-dasharray .6s}
+.donut-ctr{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;line-height:1}
+.donut-pct{font-size:18px;font-weight:700;display:block}
+.donut-lbl{font-size:9px;color:var(--muted);display:block;margin-top:1px}
+.gnums{flex:1}
+.gn-row{display:flex;justify-content:space-between;margin-bottom:7px}
+.gn{text-align:center}
+.gn-v{font-size:22px;font-weight:700;line-height:1}
+.gn-v.g{color:var(--green)}.gn-v.r{color:var(--red)}.gn-v.n{color:var(--muted)}
+.gn-l{font-size:10px;color:var(--muted);font-weight:500;margin-top:1px}
+.gstrip{height:5px;border-radius:100px;background:rgba(0,0,0,.07);display:flex;overflow:hidden;margin-top:6px}
+.gstrip-g{background:#81C784;transition:width .6s}.gstrip-r{background:#EF9A9A;transition:width .6s}
+.sgrid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}
+.scell{padding:10px 12px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.scell:nth-child(3n){border-right:none}
+.scell:nth-last-child(-n+3){border-bottom:none}
+.sval{font-size:21px;font-weight:700;line-height:1;margin-bottom:1px}
+.sval.g{color:var(--green)}.sval.r{color:var(--red)}
+.slbl{font-size:11px;font-weight:500;color:var(--ink);margin-bottom:1px}
+.ssub{font-size:9px;color:var(--muted)}
+.ins-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--border)}
+.ins-cell{padding:9px 12px;border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.ins-cell:nth-child(3n){border-right:none}
+.ins-cell:nth-last-child(-n+3){border-bottom:none}
+.ins-v{font-size:16px;font-weight:700;line-height:1;margin-bottom:2px}
+.ins-v.g{color:var(--green)}.ins-v.r{color:var(--red)}
+.ins-l{font-size:9px;color:var(--muted);font-weight:500;line-height:1.4}
+.cbar-row{display:flex;align-items:center;padding:7px 14px;border-top:1px solid var(--border);gap:9px}
+.cbar-row:first-child{border-top:none}
+.cbar-nm{font-size:11px;font-weight:500;flex:0 0 110px}
+.cbar-track{flex:1;height:5px;border-radius:100px;background:rgba(0,0,0,.07);overflow:hidden}
+.cbar-fill{height:5px;border-radius:100px;transition:width .5s}
+.cbar-fill.g{background:#81C784}.cbar-fill.r{background:#EF9A9A}.cbar-fill.a{background:#FFCC80}
+.cbar-pct{font-size:10px;color:var(--muted);flex:0 0 30px;text-align:right}
+.tl-wrap{padding:10px 14px 8px;overflow:hidden}
+.tl-scroll{overflow-x:auto;scrollbar-width:thin;padding-bottom:6px}
+.tl-bars{display:flex;gap:3px;align-items:flex-end;height:52px;margin-bottom:4px;min-width:0}
+.tl-bar-wrap{flex:0 0 auto;width:22px;display:flex;flex-direction:column;align-items:stretch;cursor:pointer}
+.tl-bar-wrap:hover .tl-bar-g,.tl-bar-wrap:hover .tl-bar-r{opacity:.75}
+.tl-bar-g{background:#81C784;border-radius:3px 3px 0 0;min-height:2px}
+.tl-bar-r{background:#EF9A9A;border-radius:0 0 3px 3px;min-height:2px}
+.tl-labels{display:flex;gap:3px;min-width:0}
+.tl-lbl{flex:0 0 22px;text-align:center;font-size:8px;color:var(--muted);overflow:hidden;white-space:nowrap}
+.fi{display:flex;gap:10px;padding:10px 14px;border-top:1px solid var(--border);position:relative;transition:background .12s}
+.fi:first-child{border-top:none}
+.fi:hover{background:rgba(0,0,0,.02)}
+.fi-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;margin-top:4px}
+.fi-dot.p{background:#81C784}.fi-dot.n{background:#EF9A9A}.fi-dot.a{background:#FFCC80}.fi-dot.u{background:#CFD8DC}
+.fi-body{flex:1;min-width:0}
+.fi-src{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:1px}
+.fi-q{font-size:13px;line-height:1.45;margin-bottom:3px}
+.fi-q a{color:var(--ink);text-decoration:none}
+.fi-q a:hover{text-decoration:underline}
+.fi-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.fi-tag{font-size:10px;font-weight:600;padding:2px 6px;border-radius:8px}
+.fi-tag.p{background:#E8F5E9;color:#2E7D32}.fi-tag.n{background:#FFEBEE;color:#C62828}
+.fi-tag.a{background:#FFF3E0;color:#E65100}.fi-tag.u{background:#F5F5F5;color:#666}
+.fi-ts{font-size:10px;color:var(--muted)}.fi-stat{font-size:10px;color:var(--muted);font-weight:600}
+.del-btn{position:absolute;right:8px;top:50%;transform:translateY(-50%);
+  font-size:10px;color:var(--muted);padding:2px 6px;border-radius:5px;cursor:pointer;
+  opacity:0;background:#fff;border:1px solid var(--border);transition:opacity .12s}
+.fi:hover .del-btn,.tweet:hover .del-btn,.intl-fi:hover .del-btn,.bsky-post:hover .del-btn{opacity:1}
+.del-btn:hover{background:#FFEBEE;color:var(--r);border-color:#FFCDD2}
+.tweet{padding:11px 14px;border-top:1px solid var(--border);position:relative;transition:background .12s}
+.tweet:first-child{border-top:none}
+.tweet:hover{background:rgba(0,0,0,.02)}
+.tw-hd{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.tw-av{width:31px;height:31px;border-radius:50%;font-size:14px;line-height:31px;text-align:center;background:#E3F2FD;flex-shrink:0}
+.tw-nm{font-size:13px;font-weight:600;line-height:1.2}
+.tw-party{font-size:10px;color:var(--muted)}
+.tw-body{font-size:12px;line-height:1.55;color:#333;margin-bottom:5px}
+.tw-foot{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.tw-ts{font-size:10px;color:var(--muted)}
+.intl-fi{padding:10px 14px;border-top:1px solid var(--border);position:relative;transition:background .12s}
+.intl-fi:first-child{border-top:none}
+.intl-fi:hover{background:rgba(0,0,0,.02)}
+.intl-hd{display:flex;align-items:center;gap:5px;margin-bottom:2px}
+.intl-fl{font-size:9px;font-weight:700;background:rgba(0,0,0,.07);padding:1px 5px;border-radius:4px;color:var(--muted);letter-spacing:.4px}
+.intl-src{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+.intl-t{font-size:13px;line-height:1.4;margin-bottom:3px}
+.intl-t a{color:var(--ink);text-decoration:none}
+.intl-t a:hover{text-decoration:underline}
+.bsky-post{padding:11px 14px;border-top:1px solid var(--border);position:relative;transition:background .12s}
+.bsky-post:first-child{border-top:none}
+.bsky-post:hover{background:rgba(0,0,0,.02)}
+.bsky-hd{display:flex;align-items:center;gap:8px;margin-bottom:5px}
+.bsky-av{width:32px;height:32px;border-radius:50%;background:#E8F4FD;flex-shrink:0;
+  overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:13px}
+.bsky-av img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.bsky-nm{font-size:13px;font-weight:600;line-height:1.2}
+.bsky-handle{font-size:10px;color:var(--muted)}
+.bsky-body{font-size:13px;line-height:1.55;color:#222;margin-bottom:6px;word-break:break-word}
+.bsky-foot{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.bsky-ts{font-size:10px;color:var(--muted)}
+.bsky-stat{font-size:10px;color:var(--muted)}
+.bsky-link{font-size:10px;color:var(--g);text-decoration:none;font-weight:500}
+.bsky-link:hover{text-decoration:underline}
+.lr-donuts-wrap{display:grid;grid-template-columns:1fr 1px 1fr}
+.lr-donut-col{padding:14px 12px}
+.lr-divider{background:var(--border);margin:10px 0}
+.lr-donut-label{font-size:10px;font-weight:700;letter-spacing:.6px;text-align:center;
+  padding:3px 10px;border-radius:10px;margin-bottom:10px;display:inline-block;
+  position:relative;left:50%;transform:translateX(-50%)}
+.left-label{background:#E3F2FD;color:#1565C0}
+.right-label{background:#FFF3E0;color:#E65100}
+.lr-donut-sources{font-size:10px;color:var(--muted);text-align:center;margin-bottom:6px;line-height:1.6}
+.lr-item{display:flex;justify-content:space-between;align-items:center;padding:5px 12px;border-top:1px solid rgba(0,0,0,.05)}
+.lr-item:first-of-type{border-top:none}
+.lr-item-src{font-size:11px;color:var(--ink);font-weight:500}
+.lr-item-bar{display:flex;align-items:center;gap:4px}
+.lr-mini-bar{width:44px;height:4px;border-radius:4px;background:rgba(0,0,0,.07);overflow:hidden}
+.lr-mini-fill{height:4px;border-radius:4px}
+.lr-mini-fill.g{background:#81C784}.lr-mini-fill.r{background:#EF9A9A}.lr-mini-fill.a{background:#FFCC80}
+.lr-pct{font-size:10px;color:var(--muted);min-width:28px;text-align:right}
+@media(max-width:500px){.lr-donuts-wrap{grid-template-columns:1fr}.lr-divider{height:1px;width:100%;margin:0}}
+.pol-stat-card{padding:14px;text-align:center}
+.pol-stat-nums{display:flex;justify-content:center;gap:28px;margin-bottom:10px}
+.pol-num{text-align:center}
+.pol-num-v{font-size:32px;font-weight:700;line-height:1}
+.pol-num-v.g{color:var(--green)}.pol-num-v.r{color:var(--red)}.pol-num-v.n{color:var(--muted)}
+.pol-num-l{font-size:11px;color:var(--muted);margin-top:2px}
+.pol-strip{height:8px;border-radius:100px;background:rgba(0,0,0,.07);display:flex;overflow:hidden;margin:10px 0}
+.pol-strip-g{background:#81C784;transition:width .6s}.pol-strip-r{background:#EF9A9A;transition:width .6s}
+.pol-note{font-size:11px;color:var(--muted);line-height:1.5;margin-top:6px;text-align:left;padding:6px 8px;background:rgba(0,0,0,.03);border-radius:6px}
+.add-row{padding:8px 14px;border-top:1px solid var(--border);display:flex;justify-content:center}
+.btn-add{height:26px;padding:0 12px;border-radius:14px;border:1.5px dashed rgba(0,0,0,.18);
+  background:transparent;font-family:inherit;font-size:11px;font-weight:600;
+  color:var(--muted);cursor:pointer;transition:all .15s}
+.btn-add:hover{border-color:var(--g);color:var(--g)}
+.empty{padding:24px 14px;text-align:center;color:var(--muted);font-size:12px}
+.side-row{display:flex;justify-content:space-between;padding:7px 13px;border-top:1px solid var(--border);font-size:12px}
+.side-row:first-child{border-top:none}
+.sk{color:var(--muted)}.sv{font-weight:600}
+.sv.g{color:var(--green)}.sv.r{color:var(--red)}
+.cbar-wrap{padding:5px 13px;border-top:1px solid var(--border)}
+.cbar-lbl{font-size:10px;color:var(--muted);display:flex;justify-content:space-between;margin-bottom:3px}
+.bio-row{display:flex;justify-content:space-between;padding:8px 14px;border-top:1px solid var(--border);font-size:12px}
+.bio-row:first-child{border-top:none}
+.bk{color:var(--muted)}.bv{font-weight:600;text-align:right;max-width:56%}
+.narr-item{padding:9px 14px;border-top:1px solid var(--border)}
+.narr-item:first-child{border-top:none}
+.narr-head{font-size:13px;font-weight:600;margin-bottom:2px}
+.narr-body{font-size:12px;color:var(--muted);line-height:1.5}
+.loading-bar{position:fixed;top:0;left:0;height:3px;background:var(--g);z-index:999;width:0%;transition:width .3s}
+.status-banner{padding:8px 14px;font-size:12px;display:none;align-items:center;gap:8px;
+  background:#E8F5E9;border-bottom:1px solid #C8E6C9;color:#1B5E20}
+.status-banner.err{background:#FFEBEE;border-color:#FFCDD2;color:#B71C1C}
+.status-banner.warn{background:#FFF8E1;border-color:#FFE082;color:#E65100}
+.status-banner.show{display:flex}
+.info-panel{display:none;margin:16px;padding:16px;background:#fff;border-radius:14px;border:1.5px solid var(--border)}
+.info-panel h2{font-size:15px;font-weight:600;margin-bottom:8px}
+.info-panel p{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:10px}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.46);z-index:800;
+  display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s}
+@media(min-width:480px){.modal-bg{align-items:center;padding:20px}}
+.modal-bg.open{opacity:1;pointer-events:all}
+.modal{background:#fff;border-radius:18px 18px 0 0;width:100%;max-width:440px;
+  padding:20px;transform:translateY(16px);transition:transform .22s;max-height:88vh;overflow-y:auto}
+@media(min-width:480px){.modal{border-radius:14px;transform:none}}
+.modal-bg.open .modal{transform:translateY(0)}
+.modal-title{font-size:17px;font-weight:600;margin-bottom:14px}
+.mrow{margin-bottom:10px}
+.mrow label{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:3px}
+.mrow input,.mrow select,.mrow textarea{width:100%;padding:8px 10px;border:1.5px solid var(--border);
+  border-radius:8px;font-family:inherit;font-size:13px;color:var(--ink);background:#fff;outline:none}
+.mrow textarea{resize:vertical;min-height:56px}
+.m-btns{display:flex;gap:7px;margin-top:14px}
+.m-btn{flex:1;height:38px;border-radius:10px;border:none;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.m-btn.cancel{background:#F5F5F5;color:var(--muted)}.m-btn.save{background:var(--g);color:#fff}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spin{width:13px;height:13px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;
+  border-radius:50%;animation:spin .7s linear infinite;display:inline-block;vertical-align:middle}
+</style>
+</head>
+<body>
+<div class="loading-bar" id="lbar"></div>
+<div class="status-banner" id="sbanner"></div>
+
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-dot"></div>
+    <div><div class="nav-title">Jetten in de Media</div><div class="nav-sub">Sentimenttracker &middot; Premier NL</div></div>
+  </div>
+  <div class="nav-r">
+    <span id="upd-ts"></span>
+    <button class="btn-sm grn" id="btn-refresh" onclick="doRefresh()">&#8635; Vernieuwen</button>
+    <button class="btn-sm" onclick="exportData()">&#8595; Export</button>
+    <button class="btn-sm" onclick="toggleInfo()">&#8505;</button>
+  </div>
+</nav>
+
+<div class="info-panel" id="info-panel">
+  <h2>Over deze tracker</h2>
+  <p>Vernieuwen gebruikt Google News RSS (gratis, geen API-sleutel).<br>
+  Internationale bronnen: EN, DE, FR, ES, IT, RU, UA, PL, NO, SV en meer.<br>
+  Weken worden automatisch gegenereerd vanaf 23 feb 2026.</p>
+  <button class="btn-sm" onclick="toggleInfo()">Sluiten</button>
+</div>
+
+<div class="tabs">
+  <button class="tab on" onclick="showSec('s-home',this)">Overzicht</button>
+  <button class="tab" onclick="showSec('s-nl',this)">NL Media</button>
+  <button class="tab" onclick="showSec('s-lr',this)">Links vs Rechts</button>
+  <button class="tab" onclick="showSec('s-pol',this)">Politici</button>
+  <button class="tab" onclick="showSec('s-social',this)">Sociale media</button>
+  <button class="tab" onclick="showSec('s-intl',this)">Wereld</button>
+  <button class="tab" onclick="showSec('s-more',this)">Persoon</button>
+</div>
+
+<div class="pbar">
+  <div class="prow1" id="week-btns"></div>
+  <div class="prow3">
+    <label>Van</label><input class="din" type="date" id="d-from">
+    <span style="font-size:11px;color:var(--muted)">&rarr;</span>
+    <input class="din" type="date" id="d-to">
+    <button class="btn-ap" onclick="applyRange()">&#10003;</button>
+  </div>
+</div>
+
+<div class="layout">
+<div class="main-col">
+
+<section class="sec" id="s-home">
+  <div class="card">
+    <div class="ch"><span class="ct">Sentimentmeter</span><span class="cbadge" id="g-badge">Alles</span></div>
+    <div class="gauge-wrap">
+      <div class="donut">
+        <svg viewBox="0 0 78 78">
+          <circle class="donut-bg" cx="39" cy="39" r="29"/>
+          <circle class="donut-r" cx="39" cy="39" r="29" id="arc-r" stroke-dasharray="0 182"/>
+          <circle class="donut-g" cx="39" cy="39" r="29" id="arc-g" stroke-dasharray="0 182"/>
+        </svg>
+        <div class="donut-ctr"><span class="donut-pct" id="d-pct">0%</span><span class="donut-lbl">positief</span></div>
+      </div>
+      <div class="gnums">
+        <div class="gn-row">
+          <div class="gn"><div class="gn-v g" id="g-pos">0</div><div class="gn-l">Positief</div></div>
+          <div class="gn"><div class="gn-v r" id="g-neg">0</div><div class="gn-l">Negatief</div></div>
+          <div class="gn"><div class="gn-v n" id="g-neu">0</div><div class="gn-l">Neutraal</div></div>
+        </div>
+        <div class="gstrip"><div class="gstrip-g" id="gs-g" style="width:0%"></div><div class="gstrip-r" id="gs-r" style="width:0%"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Kerncijfers</span><span class="cbadge" id="kc-badge">Alles</span></div>
+    <div class="sgrid">
+      <div class="scell"><div class="sval g" id="kc-pos">0</div><div class="slbl">Positief</div><div class="ssub">Berichten</div></div>
+      <div class="scell"><div class="sval r" id="kc-neg">0</div><div class="slbl">Negatief</div><div class="ssub">Berichten</div></div>
+      <div class="scell"><div class="sval" id="kc-intl">0</div><div class="slbl">Internationaal</div><div class="ssub">Buitenlands</div></div>
+      <div class="scell"><div class="sval" id="kc-nl">0</div><div class="slbl">NL Media</div><div class="ssub">Art. + blogs</div></div>
+      <div class="scell"><div class="sval" id="kc-pol">0</div><div class="slbl">Politici</div><div class="ssub">Reacties</div></div>
+      <div class="scell"><div class="sval" id="kc-tot">0</div><div class="slbl">Totaal items</div><div class="ssub">Alle bronnen</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Semantische inzichten</span><span class="cbadge" id="ins-badge">Alles</span></div>
+    <div class="ins-grid">
+      <div class="ins-cell"><div class="ins-v g" id="ins-pct">0%</div><div class="ins-l">% positief totaal</div></div>
+      <div class="ins-cell"><div class="ins-v" id="ins-peak">0</div><div class="ins-l">Meeste items een dag</div></div>
+      <div class="ins-cell"><div class="ins-v g" id="ins-intlpos">0%</div><div class="ins-l">% positief internationaal</div></div>
+      <div class="ins-cell"><div class="ins-v g" id="ins-nlpos">0%</div><div class="ins-l">% positief NL media</div></div>
+      <div class="ins-cell"><div class="ins-v" id="ins-nlcount">0</div><div class="ins-l">NL art. + blogs</div></div>
+      <div class="ins-cell"><div class="ins-v" id="ins-intlcount">0</div><div class="ins-l">Intl. artikelen</div></div>
+      <div class="ins-cell"><div class="ins-v" id="ins-xcount">0</div><div class="ins-l">Sociale posts</div></div>
+      <div class="ins-cell"><div class="ins-v g" id="ins-maxday">-</div><div class="ins-l">Beste dag</div></div>
+      <div class="ins-cell"><div class="ins-v r" id="ins-minday">-</div><div class="ins-l">Zwaarste dag</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Sentiment per categorie</span><span class="cbadge">% positief</span></div>
+    <div id="cat-bars"></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Aandacht per dag</span><span class="cbadge">scroll &rarr;</span></div>
+    <div class="tl-wrap"><div class="tl-scroll"><div class="tl-bars" id="tl-bars"></div><div class="tl-labels" id="tl-labels"></div></div></div>
+  </div>
+</section>
+
+<section class="sec" id="s-nl" style="display:none">
+  <div class="card">
+    <div class="ch"><span class="ct">NL Media</span><span class="cbadge" id="nl-s">0</span></div>
+    <div id="nl-feed"></div>
+    <div class="add-row"><button class="btn-add" onclick="openModal('nl')">+ Artikel toevoegen</button></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Blogs &amp; Opinie</span><span class="cbadge" id="blog-s">0</span></div>
+    <div id="blog-feed"></div>
+    <div class="add-row"><button class="btn-add" onclick="openModal('blog')">+ Blog toevoegen</button></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">X / Sociaal</span><span class="cbadge" id="x-s">0</span></div>
+    <div id="x-feed"></div>
+    <div class="add-row"><button class="btn-add" onclick="openModal('x')">+ Post toevoegen</button></div>
+  </div>
+</section>
+
+<section class="sec" id="s-lr" style="display:none">
+  <div class="card">
+    <div class="ch"><span class="ct">Links vs Rechts</span><span class="cbadge" id="lr-badge">Alles</span></div>
+    <div class="lr-donuts-wrap">
+      <div class="lr-donut-col">
+        <div class="lr-donut-label left-label">LINKSE MEDIA</div>
+        <div class="lr-donut-sources" id="lr-left-sources"></div>
+        <div class="gauge-wrap" style="padding:10px 8px">
+          <div class="donut">
+            <svg viewBox="0 0 78 78">
+              <circle class="donut-bg" cx="39" cy="39" r="29"/>
+              <circle class="donut-r" cx="39" cy="39" r="29" id="lr-arc-r-left" stroke-dasharray="0 182"/>
+              <circle class="donut-g" cx="39" cy="39" r="29" id="lr-arc-g-left" stroke-dasharray="0 182"/>
+            </svg>
+            <div class="donut-ctr"><span class="donut-pct" id="lr-pct-left">0%</span><span class="donut-lbl">positief</span></div>
+          </div>
+          <div class="gnums">
+            <div class="gn-row">
+              <div class="gn"><div class="gn-v g" id="lr-pos-left">0</div><div class="gn-l">Pos.</div></div>
+              <div class="gn"><div class="gn-v r" id="lr-neg-left">0</div><div class="gn-l">Neg.</div></div>
+              <div class="gn"><div class="gn-v n" id="lr-neu-left">0</div><div class="gn-l">Neutr.</div></div>
+            </div>
+            <div class="gstrip"><div class="gstrip-g" id="lr-gs-g-left" style="width:0%"></div><div class="gstrip-r" id="lr-gs-r-left" style="width:0%"></div></div>
+          </div>
+        </div>
+        <div id="lr-left-items"></div>
+      </div>
+      <div class="lr-divider"></div>
+      <div class="lr-donut-col">
+        <div class="lr-donut-label right-label">RECHTSE MEDIA</div>
+        <div class="lr-donut-sources" id="lr-right-sources"></div>
+        <div class="gauge-wrap" style="padding:10px 8px">
+          <div class="donut">
+            <svg viewBox="0 0 78 78">
+              <circle class="donut-bg" cx="39" cy="39" r="29"/>
+              <circle class="donut-r" cx="39" cy="39" r="29" id="lr-arc-r-right" stroke-dasharray="0 182"/>
+              <circle class="donut-g" cx="39" cy="39" r="29" id="lr-arc-g-right" stroke-dasharray="0 182"/>
+            </svg>
+            <div class="donut-ctr"><span class="donut-pct" id="lr-pct-right">0%</span><span class="donut-lbl">positief</span></div>
+          </div>
+          <div class="gnums">
+            <div class="gn-row">
+              <div class="gn"><div class="gn-v g" id="lr-pos-right">0</div><div class="gn-l">Pos.</div></div>
+              <div class="gn"><div class="gn-v r" id="lr-neg-right">0</div><div class="gn-l">Neg.</div></div>
+              <div class="gn"><div class="gn-v n" id="lr-neu-right">0</div><div class="gn-l">Neutr.</div></div>
+            </div>
+            <div class="gstrip"><div class="gstrip-g" id="lr-gs-g-right" style="width:0%"></div><div class="gstrip-r" id="lr-gs-r-right" style="width:0%"></div></div>
+          </div>
+        </div>
+        <div id="lr-right-items"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Linkse media - artikelen</span><span class="cbadge" id="lr-left-cnt">0</span></div>
+    <div id="lr-left-feed"></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Rechtse media - artikelen</span><span class="cbadge" id="lr-right-cnt">0</span></div>
+    <div id="lr-right-feed"></div>
+  </div>
+</section>
+
+<section class="sec" id="s-pol" style="display:none">
+  <div class="card">
+    <div class="ch"><span class="ct">Politici - sentimentoverzicht</span><span class="cbadge" id="pol-badge">Alles</span></div>
+    <div id="pol-stats-block"></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Individuele uitspraken</span><span class="cbadge" id="pol-s">0</span></div>
+    <div id="pol-feed"></div>
+    <div class="add-row"><button class="btn-add" onclick="openModal('pol')">+ Uitspraak toevoegen</button></div>
+  </div>
+</section>
+
+<section class="sec" id="s-social" style="display:none">
+  <div class="card">
+    <div class="ch"><span class="ct">Sociale media sentiment - per week</span><span class="cbadge" id="social-badge">Alle weken</span></div>
+    <div id="social-weekly"></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Bluesky - posts over Jetten</span><span class="cbadge" id="bsky-badge">-</span></div>
+    <div class="bsky-login" id="bsky-login-panel" style="padding:12px 14px;background:#F0F7FF;border-bottom:1px solid var(--border)">
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px">
+        <label style="font-size:11px;font-weight:600;color:var(--muted);min-width:80px">Handle</label>
+        <input id="bsky-handle" type="text" placeholder="jouw.bsky.social"
+          style="height:30px;padding:0 10px;border-radius:8px;border:1.5px solid var(--border);font-family:inherit;font-size:12px;flex:1;min-width:140px">
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px">
+        <label style="font-size:11px;font-weight:600;color:var(--muted);min-width:80px">App Password</label>
+        <input id="bsky-apppw" type="password" placeholder="xxxx-xxxx-xxxx-xxxx"
+          style="height:30px;padding:0 10px;border-radius:8px;border:1.5px solid var(--border);font-family:inherit;font-size:12px;flex:1;min-width:140px">
+        <button class="btn-sm grn" onclick="bskyLogin()">Inloggen</button>
+      </div>
+      <div id="bsky-login-status" style="font-size:11px;color:var(--muted)">
+        App password: bsky.app &#8594; Settings &#8594; App Passwords
+      </div>
+    </div>
+    <div style="padding:8px 14px 6px;border-bottom:1px solid var(--border);display:flex;gap:8px;align-items:center">
+      <button class="btn-sm grn" id="btn-bsky" onclick="loadBluesky()" disabled>&#8635; Laden</button>
+      <span style="font-size:11px;color:var(--muted)" id="bsky-user-info">Eerst inloggen hierboven</span>
+    </div>
+    <div id="bsky-feed"><div style="padding:20px;text-align:center;color:var(--muted);font-size:12px">Log in om Bluesky posts te laden.</div></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Sociale posts (X)</span><span class="cbadge" id="social-feed-cnt">0</span></div>
+    <div id="social-feed"></div>
+    <div class="add-row"><button class="btn-add" onclick="openModal('x')">+ Post toevoegen</button></div>
+  </div>
+</section>
+
+<section class="sec" id="s-intl" style="display:none">
+  <div class="card">
+    <div class="ch"><span class="ct">Internationale pers</span><span class="cbadge" id="intl-s">0</span></div>
+    <div id="intl-feed"></div>
+    <div class="add-row"><button class="btn-add" onclick="openModal('intl')">+ Artikel toevoegen</button></div>
+  </div>
+</section>
+
+<section class="sec" id="s-more" style="display:none">
+  <div class="card" id="persoon-card"></div>
+  <div class="card">
+    <div class="ch"><span class="ct">Mediaframes</span><span class="cbadge">Dominante verhaallijnen</span></div>
+    <div id="narr-list"></div>
+  </div>
+</section>
+
+</div>
+<div class="sidebar">
+  <div class="card">
+    <div class="ch"><span class="ct">Kerncijfers</span><span class="cbadge" id="sb-period">Alles</span></div>
+    <div class="side-row"><span class="sk">Positief</span><span class="sv g" id="sb-pos">0</span></div>
+    <div class="side-row"><span class="sk">Negatief</span><span class="sv r" id="sb-neg">0</span></div>
+    <div class="side-row"><span class="sk">Internationaal</span><span class="sv" id="sb-intl">0</span></div>
+    <div class="side-row"><span class="sk">NL artikelen</span><span class="sv" id="sb-nl">0</span></div>
+    <div class="side-row"><span class="sk">Politici</span><span class="sv" id="sb-pol">0</span></div>
+    <div class="side-row"><span class="sk">Totaal</span><span class="sv" id="sb-tot">0</span></div>
+    <div class="side-row"><span class="sk">Bijgewerkt</span><span class="sv" id="sb-upd">-</span></div>
+  </div>
+  <div class="card">
+    <div class="ch"><span class="ct">Sentimentindex</span><span class="cbadge">per dag</span></div>
+    <div id="sb-idx"></div>
+  </div>
+</div>
+</div>
+
+<div class="modal-bg" id="modal-bg" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-title" id="modal-title">Toevoegen</div>
+    <div class="mrow"><label>Bron</label><input id="m-src" type="text" placeholder="NOS, NRC..."></div>
+    <div class="mrow" id="m-icon-row"><label>Icoon</label><input id="m-icon" type="text" maxlength="4" placeholder="newspaper"></div>
+    <div class="mrow"><label>Titel / tekst</label><textarea id="m-title" placeholder="Kopregel of inhoud..."></textarea></div>
+    <div class="mrow"><label>Datum</label><input id="m-date" type="date"></div>
+    <div class="mrow"><label>Sentiment</label>
+      <select id="m-sent">
+        <option value="p">Positief</option><option value="n">Negatief</option>
+        <option value="a">Gemengd</option><option value="u" selected>Neutraal</option>
+      </select>
+    </div>
+    <div class="mrow"><label>Stats (optioneel)</label><input id="m-stats" placeholder="12K likes..."></div>
+    <div class="mrow"><label>Link (optioneel)</label><input id="m-link" type="url" placeholder="https://..."></div>
+    <div id="m-pol-extra" style="display:none">
+      <div class="mrow"><label>Avatar</label><input id="m-av" maxlength="4" placeholder="P"></div>
+      <div class="mrow"><label>Partij</label><input id="m-party" placeholder="D66, PVV..."></div>
+    </div>
+    <div id="m-intl-extra" style="display:none">
+      <div class="mrow"><label>Land (bijv. GB, US, DE)</label><input id="m-flag" maxlength="8" placeholder="GB"></div>
+    </div>
+    <div class="m-btns">
+      <button class="m-btn cancel" onclick="closeModal()">Annuleren</button>
+      <button class="m-btn save" onclick="saveModal()">Opslaan</button>
+    </div>
+  </div>
+</div>
+
+<script>
+var START_DATE = '2026-02-23';
+var STORAGE_KEY = 'jetten-tracker-v1';
+var items = [];
+var fFrom = null, fTo = null;
+var WEEKS = [];
+
+var LEFT_MEDIA = ['de volkskrant','volkskrant','trouw','nos','bnnvara','joop',
+  'human','de correspondent','correspondent','follow the money','ftm','nieuwsuur','eenvandaag'];
+var RIGHT_MEDIA = ['de telegraaf','telegraaf','nrc','fd','financieel dagblad',
+  'rtl nieuws','rtlnieuws','rtlz','bnr','elsevier','de dagelijkse standaard',
+  'dagelijkse standaard','geenstijl','wynia','ad'];
+
+var INTL_MAP = [
+  {k:['guardian','bbc','telegraph','sky news','independent'], c:'GB'},
+  {k:['nytimes','washington post','wapo','bloomberg','reuters','ap news','cnn','wsj','politico','npr'], c:'US'},
+  {k:['spiegel','frankfurter','faz','zeit','welt','tagesschau','zdf','ard'], c:'DE'},
+  {k:['monde','figaro','liberation','france24','rfi','bfmtv'], c:'FR'},
+  {k:['el pais','el pais','elmundo','lavanguardia','rtve'], c:'ES'},
+  {k:['corriere','repubblica','stampa','messaggero','rai'], c:'IT'},
+  {k:['kommersant','vedomosti','rbc','meduza','fontanka'], c:'RU'},
+  {k:['ukrinform','ukrainska pravda','kyiv post','kyiv independent'], c:'UA'},
+  {k:['vrt','rtbf','de morgen','nieuwsblad','standaard'], c:'BE'},
+  {k:['wyborcza','rzeczpospolita','onet','tvn24'], c:'PL'},
+  {k:['aftenposten','dagbladet','nrk'], c:'NO'},
+  {k:['svt','aftonbladet','expressen'], c:'SE'},
+  {k:['politico.eu','euractiv','europarl'], c:'EU'},
+];
+
+var NL_SOURCES = ['nos','nrc','volkskrant','telegraaf','trouw','ad.nl','rtlnieuws',
+  'nu.nl','fd.nl','bnr','eenvandaag','bnnvara','joop','ftm','follow the money',
+  'correspondent','geenstijl','elsevier','nieuwsuur'];
+
+var POS_WORDS = ['steunt','steun','belooft','verdedigt','wint','bereikt','beedigdigd',
+  'beëdigd','samenwerkt','levert','lanceert','doorbraak','akkoord','succes','winst',
+  'vooruitgang','groei','investering','meerderheid','vertrouwen','hoop','samenwerking',
+  'daadkracht','kans','mijlpaal','lof','oplossing','stabiliteit','positief','succesvol',
+  'historisch','stabiel','ambitieus','sterk','daadkrachtig','gewaardeerd','pro-europees',
+  'verbindend','kersverse','blij','tevreden','breed gesteund','jongste premier',
+  'support','backs','welcomes','praises','praised','commends','hails','celebrates',
+  'achieves','delivers','wins','succeeds','milestone','landmark','breakthrough',
+  'agreement','progress','optimistic','youngest','historic',
+  'einigung','erfolg','durchbruch','unterstützt','begrüßt',
+  'accord','succes','soutien','approuve','félicite','réussite',
+  'acuerdo','apoyo','aprueba','logro','avance',
+  'accordo','sostegno','approva','progresso',
+  'успех','соглашение','прорыв','одобрение','достижение','победа','прогресс',
+  'успіх','угода','прорив','досягнення','перемога',
+  'porozumienie','sukces','wsparcie','osiagniecie','postep',
+  'enighet','suksess','gjennombrudd','framgang'];
+
+var NEG_WORDS = ['valt','struikelt','verliest','weigert','dreigt','waarschuwt',
+  'staakt','loopt weg','wegloopt','blazen af','breekt af','afwijst','hekelt',
+  'beschuldigt','stapt op','crisis','schandaal','ontslag','aftreden','mislukking',
+  'verlies','chaos','wantrouwen','impasse','breuk','conflict','ruzie','aanval',
+  'blunder','teleurstelling','onrust','woede','protest','staking','demonstratie',
+  'verzet','bezuinigingen','bezuinig','versoberen','schuld','puinhoop',
+  'val kabinet','instorting','geen meerderheid','fragiel','under fire','omstreden',
+  'nitwits','dubieus','onbegrijpelijk','ongekend','puinhoop van gemaakt',
+  'schandaal na schandaal','aardige puinhoop','open brief','dronken van machtsgeilheid',
+  'energierekening niet gedaald','woningmarkt niet verbeterd','grenzen wagenwijd open',
+  'letschert antisemitisme','iraanse connectie',
+  'negatief','instabiel','verdeeld','zwak','rampzalig','furieus','geschokt',
+  'verontwaardigd','felle kritiek','scherpe kritiek',
+  'rejects','opposes','slams','blasts','criticises','criticizes','resigns',
+  'collapses','walkout','strikes','scandal','failure','clash','backlash',
+  'outrage','condemned','revolt','no confidence','defeated','vetoed','furious',
+  'anger','meltdown','implodes','divided','coalition crisis','snap election',
+  'kritik','krise','rücktritt','scheitert','streik','warnt','ablehnt',
+  'misstrauensvotum','skandal','versagen','zusammenbruch',
+  'critique','crise','démission','échec','grève','rejette','scandale',
+  'motion de censure','fragilisé',
+  'dimisión','fracaso','protesta','huelga','rechaza','escándalo',
+  'dimissioni','fallimento','sciopero','rifiuta','sfiducia',
+  'критика','протест','кризис','отставка','провал','скандал',
+  'конфликт','угроза','осуждает','недоверие','давление',
+  'критика','криза','відставка','загроза','недовіра',
+  'krytyka','kryzys','rezygnacja','strajk','wotum nieufnosci',
+  'kritikk','krise','streik','mistillit','kritik','kris','strejk'];
+
+var STRONG_NEG = [
+  'valt','val kabinet','crisis','wantrouwen','motie van wantrouwen',
+  'ontslag','aftreden','schandaal','chaos','mislukt','puinhoop',
+  'loopt weg','blazen af','instabiel','rampzalig','furieus',
+  'geen meerderheid','snap election','collapse','under fire',
+  'no confidence','scandal','coalition crisis',
+  'nitwits','dubieus','onbegrijpelijk','ongekend',
+  'кризис','отставка','криза','відставка',
+  'krise','криза','rücktritt','scheitert','crise','motion de censure',
+];
+var STRONG_POS = ['doorbraak','akkoord','historisch','winst','succes','meerderheid',
+  'mijlpaal','jongste premier','daadkrachtig','breakthrough','landmark','record',
+  'historic','einigung','accord'];
+
+var PERSON = {
+  emoji:'P',
+  name:'Rob Jetten',
+  title:'Minister-President D66',
+  facts:[
+    {k:'Geboren',v:'17 aug 1987, Boxmeer'},
+    {k:'Partij',v:'D66'},
+    {k:'Ambt',v:'Min.-President (feb 2026-)'},
+    {k:'Eerder',v:'Min. Klimaat & Energie 2022-2024'},
+    {k:'Opleiding',v:'Bestuurskunde, Tilburg'},
+    {k:'X/BSky',v:'@RobJetten / @MinPres'}
+  ]
+};
+
+var NARRATIVES = [
+  {head:'"De verbinder"',body:'Brugbouwer tussen links en rechts in brede coalitie.'},
+  {head:'"Klimaatpremier"',body:'D66-achtergrond domineert framing. Positief links, kritisch rechts.'},
+  {head:'"Democratisch mandaat?"',body:'D66 won geen verkiezingen - terugkerend kritisch frame.'},
+  {head:'"Pro-Europees gezicht"',body:'Internationaal pro-EU-signaal na Wilders-periode.'},
+  {head:'"Fietsende premier"',body:'Viraal persoonsmerk - volksverbonden imago.'},
+  {head:'"AOW-debat"',body:'Vakbonden FNV/CNV/VCP liepen weg - groot sociaal conflict week 1.'},
+];
+
+var BSKY_QUERIES = ['Jetten','Rob Jetten','Jetten premier','kabinet-Jetten',
+  'Robot Jetten','klimaatdrammer','MinPres',
+  'Йеттен','Єттен'];
+
+var REFRESH_QUERIES = [
+  // NL
+  {q:'Jetten',hl:'nl',gl:'NL'},
+  {q:'Rob Jetten premier',hl:'nl',gl:'NL'},
+  {q:'Jetten kabinet',hl:'nl',gl:'NL'},
+  {q:'kabinet-Jetten',hl:'nl',gl:'NL'},
+  {q:'Robot Jetten',hl:'nl',gl:'NL'},
+  {q:'klimaatdrammer',hl:'nl',gl:'NL'},
+  {q:'Jetten AOW vakbonden',hl:'nl',gl:'NL'},
+  {q:'Jetten EU klimaat',hl:'nl',gl:'NL'},
+  {q:'Jetten antisemitisme synagoge',hl:'nl',gl:'NL'},
+  {q:'Jetten Kiev Oekraine',hl:'nl',gl:'NL'},
+  {q:'Jetten gemeenteraad verkiezingen',hl:'nl',gl:'NL'},
+  {q:'Jetten puinhoop schandaal',hl:'nl',gl:'NL'},
+  {q:'MinPres Jetten',hl:'nl',gl:'NL'},
+  // EN
+  {q:'Rob Jetten Netherlands prime minister',hl:'en',gl:'US'},
+  {q:'Jetten Dutch PM coalition',hl:'en',gl:'US'},
+  {q:'Jetten Dutch government',hl:'en',gl:'GB'},
+  {q:'Rob Jetten Netherlands PM',hl:'en',gl:'GB'},
+  // DE
+  {q:'Jetten Ministerpräsident Niederlande',hl:'de',gl:'DE'},
+  {q:'Niederlande Premier Jetten',hl:'de',gl:'DE'},
+  // FR
+  {q:'Jetten premier ministre Pays-Bas',hl:'fr',gl:'FR'},
+  // ES
+  {q:'Jetten primer ministro Países Bajos',hl:'es',gl:'ES'},
+  // IT
+  {q:'Jetten primo ministro Olanda',hl:'it',gl:'IT'},
+  // RU
+  {q:'Йеттен',hl:'ru',gl:'RU'},
+  {q:'Йеттен премьер Нидерланды',hl:'ru',gl:'RU'},
+  {q:'Нидерланды правительство Jetten',hl:'ru',gl:'RU'},
+  // UK
+  {q:'Єттен',hl:'uk',gl:'UA'},
+  {q:"Нідерланди прем'єр Єттен",hl:'uk',gl:'UA'},
+  // PL
+  {q:'Jetten premier Holandia',hl:'pl',gl:'PL'},
+  // NO
+  {q:'Jetten statsminister Nederland',hl:'no',gl:'NO'},
+  // SV
+  {q:'Jetten premiärminister Nederländerna',hl:'sv',gl:'SE'},
+  // Extra NL topics from real news
+  {q:'Jetten synagoge antisemitisme',hl:'nl',gl:'NL'},
+  {q:'Jetten Von der Leyen Brussel',hl:'nl',gl:'NL'},
+  {q:'Jetten Oekraine Zelensky Kiev',hl:'nl',gl:'NL'},
+  {q:'Jetten homohaat aangifte',hl:'nl',gl:'NL'},
+  {q:'Jetten genocide Israel',hl:'nl',gl:'NL'},
+  {q:'kabinet Jetten nitwits',hl:'nl',gl:'NL'},
+  {q:'Jetten minderheidskabinet steun',hl:'nl',gl:'NL'},
+  {q:'Jetten Rutte NAVO defensie',hl:'nl',gl:'NL'},
+  {q:'Jetten woningbouw huurders',hl:'nl',gl:'NL'},
+  {q:'Jetten energierekening',hl:'nl',gl:'NL'},
+  {q:'Jetten FVD Forum voor Democratie',hl:'nl',gl:'NL'},
+  {q:'Jetten eerste homoseksuele premier',hl:'nl',gl:'NL'},
+  {q:'Jetten Van Berkel staatssecretaris cv',hl:'nl',gl:'NL'},
+  {q:'Jetten coalitieakkoord',hl:'nl',gl:'NL'},
+  {q:'Jetten D66 congres leden',hl:'nl',gl:'NL'},
+  {q:'Jetten Klaver GroenLinks steun',hl:'nl',gl:'NL'},
+  {q:'Jetten Iran aanvallen Midden-Oosten',hl:'nl',gl:'NL'},
+  {q:'Jetten teflonlaag Rutte vergelijking',hl:'nl',gl:'NL'},
+  {q:'Jetten bordesscene beediging',hl:'nl',gl:'NL'},
+  {q:'Jetten gemeente verkiezingen D66',hl:'nl',gl:'NL'},
+];
+
+function today(){return new Date().toISOString().slice(0,10);}
+function fmtD(iso){if(!iso)return'';var p=iso.split('-');return p[2]+'/'+p[1];}
+function sLbl(s){return s==='p'?'Positief':s==='n'?'Negatief':s==='a'?'Gemengd':'Neutraal';}
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function uid(){return 'u'+Date.now()+Math.random().toString(36).slice(2,6);}
+function setEl(id,v){var e=document.getElementById(id);if(e)e.textContent=String(v);}
+function setProgress(p){document.getElementById('lbar').style.width=p+'%';}
+
+function showStatus(msg,type){
+  var e=document.getElementById('sbanner');
+  e.textContent=msg;
+  e.className='status-banner show'+(type?' '+type:'');
+  if(type!=='err')setTimeout(function(){e.classList.remove('show');},8000);
+}
+
+function classifyLR(src){
+  var s=(src||'').toLowerCase();
+  for(var i=0;i<LEFT_MEDIA.length;i++){if(s.indexOf(LEFT_MEDIA[i])>=0)return'left';}
+  for(var i=0;i<RIGHT_MEDIA.length;i++){if(s.indexOf(RIGHT_MEDIA[i])>=0)return'right';}
+  return null;
+}
+
+function detectFlag(src){
+  var s=(src||'').toLowerCase();
+  for(var i=0;i<INTL_MAP.length;i++){
+    var entry=INTL_MAP[i];
+    for(var j=0;j<entry.k.length;j++){if(s.indexOf(entry.k[j])>=0)return entry.c;}
+  }
+  return'INTL';
+}
+
+function isIntl(src){
+  var s=(src||'').toLowerCase();
+  for(var i=0;i<NL_SOURCES.length;i++){if(s.indexOf(NL_SOURCES[i])>=0)return false;}
+  for(var i=0;i<INTL_MAP.length;i++){
+    for(var j=0;j<INTL_MAP[i].k.length;j++){if(s.indexOf(INTL_MAP[i].k[j])>=0)return true;}
+  }
+  return false;
+}
+
+function detectSentiment(title){
+  var t=(title||'').toLowerCase();
+  var pos=0,neg=0;
+  for(var i=0;i<POS_WORDS.length;i++){if(t.indexOf(POS_WORDS[i])>=0)pos++;}
+  for(var i=0;i<NEG_WORDS.length;i++){if(t.indexOf(NEG_WORDS[i])>=0)neg++;}
+  for(var i=0;i<STRONG_NEG.length;i++){if(t.indexOf(STRONG_NEG[i])>=0)neg+=2;}
+  for(var i=0;i<STRONG_POS.length;i++){if(t.indexOf(STRONG_POS[i])>=0)pos+=2;}
+  if(pos>neg)return'p';
+  if(neg>pos)return'n';
+  if(pos&&neg)return'a';
+  return'u';
+}
+
+function saveData(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(items));}catch(e){}}
+function loadData(){
+  try{var s=localStorage.getItem(STORAGE_KEY);if(s)items=JSON.parse(s);}catch(e){items=[];}
+}
+
+function generateWeeks(start){
+  var d=new Date(start),now=new Date(),weeks=[],n=1;
+  now.setHours(23,59,59,999);
+  while(d<=now){
+    var e=new Date(d);e.setDate(e.getDate()+6);
+    if(e>now)e=new Date(now);
+    weeks.push({label:'Week '+n,from:d.toISOString().slice(0,10),to:e.toISOString().slice(0,10)});
+    d=new Date(d);d.setDate(d.getDate()+7);n++;
+  }
+  return weeks;
+}
+
+function filt(type){
+  return items.filter(function(x){
+    if(x.type==='pol-stat')return false;
+    if(type&&x.type!==type)return false;
+    if(fFrom&&x.date&&x.date<fFrom)return false;
+    if(fTo&&x.date&&x.date>fTo)return false;
+    return true;
+  });
+}
+function filtPolStat(){
+  return items.filter(function(x){
+    if(x.type!=='pol-stat')return false;
+    if(fFrom&&x.date&&x.date<fFrom)return false;
+    if(fTo&&x.date&&x.date>fTo)return false;
+    return true;
+  });
+}
+function periodLabel(){
+  if(!fFrom&&!fTo)return'Alles';
+  if(fFrom===fTo)return fmtD(fFrom);
+  if(fFrom&&fTo)return fmtD(fFrom)+' - '+fmtD(fTo);
+  return fFrom?'Vanaf '+fmtD(fFrom):'Tot '+fmtD(fTo);
+}
+
+function renderAll(){
+  var all=filt(null),nlIt=filt('nl'),blogIt=filt('blog'),xIt=filt('x'),
+      polIt=filt('pol'),intlIt=filt('intl'),lbl=periodLabel();
+  ['g-badge','kc-badge','ins-badge','sb-period','lr-badge'].forEach(function(id){setEl(id,lbl);});
+  renderGauge(all);
+  renderKC(all,nlIt,blogIt,polIt,intlIt);
+  renderIns(all,nlIt,intlIt,xIt);
+  renderCatBars(nlIt,blogIt,xIt,polIt,intlIt);
+  renderTimeline(all);
+  renderSidebar(all);
+  renderLR(all);
+  renderFeed('nl-feed',nlIt,'nl-s',nlIt.length+' artikelen');
+  renderFeed('blog-feed',blogIt,'blog-s',blogIt.length+' stukken');
+  renderFeed('x-feed',xIt,'x-s',xIt.length+' posts');
+  renderSocialWeekly();
+  renderPolStats(polIt);
+  renderPolFeed(polIt);
+  renderIntl(intlIt);
+}
+
+function renderGauge(its){
+  var p=0,n=0,u=0,PL=182;
+  its.forEach(function(x){if(x.sent==='p')p++;else if(x.sent==='n')n++;else u++;});
+  var tot=p+n+u||1,pp=Math.round(p/tot*100),np=Math.round(n/tot*100);
+  var ag=document.getElementById('arc-g'),ar=document.getElementById('arc-r');
+  if(ag)ag.setAttribute('stroke-dasharray',(PL*pp/100)+' '+(PL-PL*pp/100));
+  if(ar){ar.setAttribute('stroke-dasharray',(PL*np/100)+' '+(PL-PL*np/100));ar.setAttribute('stroke-dashoffset',(-PL*pp/100).toString());}
+  setEl('d-pct',pp+'%');setEl('g-pos',p);setEl('g-neg',n);setEl('g-neu',u);
+  var gg=document.getElementById('gs-g'),gr=document.getElementById('gs-r');
+  if(gg)gg.style.width=pp+'%';if(gr)gr.style.width=np+'%';
+}
+
+function renderKC(all,nlIt,blogIt,polIt,intlIt){
+  var p=all.filter(function(x){return x.sent==='p';}).length;
+  var n=all.filter(function(x){return x.sent==='n';}).length;
+  setEl('kc-pos',p);setEl('kc-neg',n);setEl('kc-intl',intlIt.length);
+  setEl('kc-nl',nlIt.length+blogIt.length);setEl('kc-pol',polIt.length);setEl('kc-tot',all.length);
+}
+
+function renderIns(all,nlIt,intlIt,xIt){
+  var tot=all.length||1,p=all.filter(function(x){return x.sent==='p';}).length;
+  setEl('ins-pct',Math.round(p/tot*100)+'%');
+  setEl('ins-nlcount',nlIt.length);setEl('ins-intlcount',intlIt.length);setEl('ins-xcount',xIt.length);
+  var iP=intlIt.filter(function(x){return x.sent==='p';}).length;
+  setEl('ins-intlpos',intlIt.length?Math.round(iP/intlIt.length*100)+'%':'0%');
+  var nP=nlIt.filter(function(x){return x.sent==='p';}).length;
+  setEl('ins-nlpos',nlIt.length?Math.round(nP/nlIt.length*100)+'%':'0%');
+  var dc={},ds={};
+  all.forEach(function(x){
+    if(!x.date)return;
+    dc[x.date]=(dc[x.date]||0)+1;
+    if(!ds[x.date])ds[x.date]={p:0,n:0};
+    if(x.sent==='p')ds[x.date].p++;else if(x.sent==='n')ds[x.date].n++;
+  });
+  var peak=0;Object.keys(dc).forEach(function(d){if(dc[d]>peak)peak=dc[d];});
+  var bestDay='-',worstDay='-',bSc=-999,wSc=999;
+  Object.keys(ds).forEach(function(d){
+    var sc=ds[d].p-ds[d].n;
+    if(sc>bSc){bSc=sc;bestDay=fmtD(d);}
+    if(sc<wSc){wSc=sc;worstDay=fmtD(d);}
+  });
+  setEl('ins-peak',peak||0);setEl('ins-maxday',bestDay);setEl('ins-minday',worstDay);
+}
+
+function renderCatBars(nlIt,blogIt,xIt,polIt,intlIt){
+  var cats=[
+    {nm:'Internationaal',items:intlIt},
+    {nm:'NL Media',items:nlIt},
+    {nm:'Blogs/Opinie',items:blogIt},
+    {nm:'X / Sociaal',items:xIt},
+    {nm:'Politici',items:polIt},
+  ];
+  var h='';
+  cats.forEach(function(c){
+    var pv=c.items.length?Math.round(c.items.filter(function(x){return x.sent==='p';}).length/c.items.length*100):0;
+    var cls=pv>=60?'g':pv<=35?'r':'a';
+    h+='<div class="cbar-row"><span class="cbar-nm">'+esc(c.nm)+'</span>'
+      +'<div class="cbar-track"><div class="cbar-fill '+cls+'" style="width:'+pv+'%"></div></div>'
+      +'<span class="cbar-pct">'+(c.items.length?pv+'%':'')+'</span></div>';
+  });
+  document.getElementById('cat-bars').innerHTML=h||'<div class="empty">Geen data</div>';
+}
+
+function renderTimeline(its){
+  var ds={};
+  its.forEach(function(x){
+    if(!x.date)return;
+    if(!ds[x.date])ds[x.date]={p:0,n:0};
+    if(x.sent==='p')ds[x.date].p++;else if(x.sent==='n')ds[x.date].n++;
+  });
+  var sorted=[];
+  if(!fFrom&&!fTo){
+    var cur=new Date(START_DATE),end=new Date(today());end.setHours(23,59,59);
+    while(cur<=end){sorted.push(cur.toISOString().slice(0,10));cur.setDate(cur.getDate()+1);}
+  }else{
+    sorted=Object.keys(ds).sort();
+  }
+  if(!sorted.length){
+    document.getElementById('tl-bars').innerHTML='<div class="empty" style="padding:8px">Geen data</div>';
+    document.getElementById('tl-labels').innerHTML='';return;
+  }
+  var maxv=1;sorted.forEach(function(d){if(ds[d])maxv=Math.max(maxv,ds[d].p+ds[d].n);});
+  var bH='',lH='';
+  sorted.forEach(function(d){
+    var dv=ds[d]||{p:0,n:0};
+    var hasData=dv.p>0||dv.n>0;
+    var ph=hasData?Math.max(2,Math.round(dv.p/maxv*44)):1;
+    var rh=hasData?Math.max(2,Math.round(dv.n/maxv*44)):1;
+    var op=hasData?'':'opacity:.2;';
+    bH+='<div class="tl-bar-wrap" title="'+fmtD(d)+': +'+dv.p+' -'+dv.n+'" onclick="setDayFilter(\''+d+'\')" style="'+op+'">'
+      +'<div class="tl-bar-g" style="height:'+ph+'px"></div>'
+      +'<div class="tl-bar-r" style="height:'+rh+'px"></div></div>';
+    lH+='<div class="tl-lbl">'+fmtD(d)+'</div>';
+  });
+  document.getElementById('tl-bars').innerHTML=bH;
+  document.getElementById('tl-labels').innerHTML=lH;
+  var sc=document.querySelector('.tl-scroll');
+  if(sc)setTimeout(function(){sc.scrollLeft=sc.scrollWidth;},100);
+}
+
+function setDayFilter(d){
+  clearPP();fFrom=d;fTo=d;
+  document.getElementById('d-from').value=d;document.getElementById('d-to').value=d;renderAll();
+}
+
+
+function renderSocialWeekly(){
+  var xIt = filt('x');
+  setEl('social-feed-cnt', xIt.length + ' posts');
+  renderFeed('social-feed', xIt, null, null);
+
+  // Weekly sentiment breakdown
+  var weekData = {};
+  WEEKS.forEach(function(w){
+    var wItems = items.filter(function(x){
+      return x.type==='x' && x.date >= w.from && x.date <= w.to;
+    });
+    if(wItems.length === 0) return;
+    var pos = wItems.filter(function(x){return x.sent==='p';}).length;
+    var neg = wItems.filter(function(x){return x.sent==='n';}).length;
+    var neu = wItems.length - pos - neg;
+    weekData[w.label] = {pos:pos, neg:neg, neu:neu, total:wItems.length, from:w.from, to:w.to};
+  });
+
+  var weeks = Object.keys(weekData);
+  if(!weeks.length){
+    document.getElementById('social-weekly').innerHTML = '<div class="empty">Geen sociale posts gevonden. Vernieuwen om data te laden.</div>';
+    setEl('social-badge', '0 weken');
+    return;
+  }
+
+  setEl('social-badge', weeks.length + ' weken');
+  var PL = 182;
+  var h = '';
+  weeks.forEach(function(wlabel){
+    var d = weekData[wlabel];
+    var pp = d.total ? Math.round(d.pos/d.total*100) : 0;
+    var np = d.total ? Math.round(d.neg/d.total*100) : 0;
+    h += '<div style="padding:12px 14px;border-top:1px solid var(--border)">';
+    h += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">';
+    h += '<span style="font-size:13px;font-weight:600">'+esc(wlabel)+'</span>';
+    h += '<span style="font-size:10px;color:var(--muted)">'+fmtD(d.from)+' - '+fmtD(d.to)+'</span>';
+    h += '</div>';
+    h += '<div style="display:flex;align-items:center;gap:12px">';
+    // Mini donut
+    h += '<svg width="48" height="48" viewBox="0 0 78 78" style="transform:rotate(-90deg);flex-shrink:0">';
+    h += '<circle fill="none" stroke="#EBEBEB" stroke-width="11" cx="39" cy="39" r="29"/>';
+    h += '<circle fill="none" stroke="#EF9A9A" stroke-width="11" cx="39" cy="39" r="29" stroke-dasharray="'+(PL*np/100)+' '+(PL-PL*np/100)+'" stroke-dashoffset="'+(0)+'"/>';
+    h += '<circle fill="none" stroke="#81C784" stroke-width="11" cx="39" cy="39" r="29" stroke-dasharray="'+(PL*pp/100)+' '+(PL-PL*pp/100)+'" stroke-dashoffset="'+(-PL*np/100)+'"/>';
+    h += '</svg>';
+    // Numbers
+    h += '<div style="flex:1">';
+    h += '<div style="display:flex;gap:16px;margin-bottom:5px">';
+    h += '<div style="text-align:center"><div style="font-size:18px;font-weight:700;color:var(--green)">'+d.pos+'</div><div style="font-size:9px;color:var(--muted)">Pos.</div></div>';
+    h += '<div style="text-align:center"><div style="font-size:18px;font-weight:700;color:var(--red)">'+d.neg+'</div><div style="font-size:9px;color:var(--muted)">Neg.</div></div>';
+    h += '<div style="text-align:center"><div style="font-size:18px;font-weight:700;color:var(--muted)">'+d.neu+'</div><div style="font-size:9px;color:var(--muted)">Neutr.</div></div>';
+    h += '<div style="text-align:center"><div style="font-size:18px;font-weight:700">'+d.total+'</div><div style="font-size:9px;color:var(--muted)">Totaal</div></div>';
+    h += '</div>';
+    h += '<div style="height:5px;border-radius:100px;background:rgba(0,0,0,.07);display:flex;overflow:hidden">';
+    h += '<div style="background:#EF9A9A;width:'+np+'%"></div>';
+    h += '<div style="background:#81C784;width:'+pp+'%"></div>';
+    h += '</div>';
+    h += '</div></div></div>';
+  });
+  document.getElementById('social-weekly').innerHTML = h;
+}
+
+function renderSidebar(its){
+  var p=its.filter(function(x){return x.sent==='p';}).length;
+  var n=its.filter(function(x){return x.sent==='n';}).length;
+  setEl('sb-pos',p);setEl('sb-neg',n);
+  setEl('sb-intl',filt('intl').length);setEl('sb-nl',filt('nl').length+filt('blog').length);
+  setEl('sb-pol',filt('pol').length);setEl('sb-tot',its.length);
+  var ds={};
+  its.forEach(function(x){
+    if(!x.date)return;
+    if(!ds[x.date])ds[x.date]={p:0,n:0};
+    if(x.sent==='p')ds[x.date].p++;else if(x.sent==='n')ds[x.date].n++;
+  });
+  var days=Object.keys(ds).sort().slice(-14),sh='';
+  days.forEach(function(d){
+    var dv=ds[d],tot2=dv.p+dv.n||1,pv=Math.round(dv.p/tot2*100);
+    sh+='<div class="cbar-wrap"><div class="cbar-lbl"><span>'+fmtD(d)+'</span><span>'+pv+'%</span></div>'
+      +'<div class="cbar-track"><div class="cbar-fill g" style="width:'+pv+'%"></div></div></div>';
+  });
+  document.getElementById('sb-idx').innerHTML=sh||'<div class="empty" style="padding:8px">Geen data</div>';
+}
+
+function renderLR(all){
+  var srcMap={};
+  all.forEach(function(x){
+    var lr=classifyLR(x.src);if(!lr)return;
+    var key=(x.src||'').toLowerCase().trim();
+    if(!srcMap[key])srcMap[key]={src:x.src,lr:lr,p:0,n:0,u:0,total:0};
+    srcMap[key].total++;
+    if(x.sent==='p')srcMap[key].p++;else if(x.sent==='n')srcMap[key].n++;else srcMap[key].u++;
+  });
+  var leftSrcs=[],rightSrcs=[];
+  Object.keys(srcMap).forEach(function(k){
+    if(srcMap[k].lr==='left')leftSrcs.push(srcMap[k]);else rightSrcs.push(srcMap[k]);
+  });
+  leftSrcs.sort(function(a,b){return b.total-a.total;});
+  rightSrcs.sort(function(a,b){return b.total-a.total;});
+
+  function renderDonut(srcs,side){
+    var tot=0,pos=0,neg=0,neu=0,PL=182;
+    srcs.forEach(function(s){tot+=s.total;pos+=s.p;neg+=s.n;neu+=s.u;});
+    var pp=tot?Math.round(pos/tot*100):0,np=tot?Math.round(neg/tot*100):0;
+    var ag=document.getElementById('lr-arc-g-'+side),ar=document.getElementById('lr-arc-r-'+side);
+    if(ag)ag.setAttribute('stroke-dasharray',(PL*pp/100)+' '+(PL-PL*pp/100));
+    if(ar){ar.setAttribute('stroke-dasharray',(PL*np/100)+' '+(PL-PL*np/100));ar.setAttribute('stroke-dashoffset',(-PL*pp/100).toString());}
+    setEl('lr-pct-'+side,pp+'%');setEl('lr-pos-'+side,pos);setEl('lr-neg-'+side,neg);setEl('lr-neu-'+side,neu);
+    var gg=document.getElementById('lr-gs-g-'+side),gr=document.getElementById('lr-gs-r-'+side);
+    if(gg)gg.style.width=pp+'%';if(gr)gr.style.width=np+'%';
+    var names=srcs.slice(0,5).map(function(s){return s.src;}).join(', ');
+    var se=document.getElementById('lr-'+side+'-sources');if(se)se.textContent=names||'-';
+  }
+
+  function renderLRItems(srcs){
+    if(!srcs.length)return'<div class="empty" style="padding:10px;font-size:12px">Geen items</div>';
+    return srcs.map(function(s){
+      var pct=s.total?Math.round(s.p/s.total*100):0,cls=pct>=60?'g':pct<=35?'r':'a';
+      return'<div class="lr-item"><span class="lr-item-src">'+esc(s.src)+'</span>'
+        +'<span class="lr-item-bar"><div class="lr-mini-bar"><div class="lr-mini-fill '+cls+'" style="width:'+pct+'%"></div></div>'
+        +'<span class="lr-pct">'+pct+'%</span></span></div>';
+    }).join('');
+  }
+
+  renderDonut(leftSrcs,'left');renderDonut(rightSrcs,'right');
+  document.getElementById('lr-left-items').innerHTML=renderLRItems(leftSrcs);
+  document.getElementById('lr-right-items').innerHTML=renderLRItems(rightSrcs);
+  var leftItems=all.filter(function(x){return classifyLR(x.src)==='left';});
+  var rightItems=all.filter(function(x){return classifyLR(x.src)==='right';});
+  renderFeed('lr-left-feed',leftItems,'lr-left-cnt',leftItems.length+' artikelen');
+  renderFeed('lr-right-feed',rightItems,'lr-right-cnt',rightItems.length+' artikelen');
+}
+
+function renderFeed(elId,its,subId,subTxt){
+  var el=document.getElementById(elId);if(!el)return;
+  if(subId)setEl(subId,subTxt);
+  if(!its.length){el.innerHTML='<div class="empty">Geen items voor deze periode</div>';return;}
+  var h='';
+  its.forEach(function(x){
+    var lnk=x.link?'href="'+esc(x.link)+'" target="_blank" rel="noopener"':'href="#"';
+    h+='<div class="fi"><div class="fi-dot '+(x.sent||'u')+'"></div>'
+      +'<div class="fi-body"><div class="fi-src">'+esc(x.src)+'</div>'
+      +'<div class="fi-q"><a '+lnk+'>'+esc(x.title||'')+'</a></div>'
+      +'<div class="fi-meta"><span class="fi-tag '+(x.sent||'u')+'">'+sLbl(x.sent||'u')+'</span>'
+      +'<span class="fi-ts">'+fmtD(x.date)+'</span>'
+      +(x.stats?'<span class="fi-stat">'+esc(x.stats)+'</span>':'')
+      +'</div></div><span class="del-btn" onclick="delItem(\''+esc(x.id)+'\')">x</span></div>';
+  });
+  el.innerHTML=h;
+}
+
+function renderPolFeed(its){
+  var el=document.getElementById('pol-feed');if(!el)return;
+  if(!its.length){el.innerHTML='<div class="empty">Nog geen uitspraken. Voeg toe via + knop hieronder, of klik Vernieuwen om automatisch te zoeken naar reacties van politici.</div>';return;}
+  var h='';
+  its.forEach(function(x){
+    h+='<div class="tweet"><div class="tw-hd">'
+      +'<div class="tw-av">'+(x.av||'P')+'</div>'
+      +'<div><div class="tw-nm">'+esc(x.src)+'</div><div class="tw-party">'+(x.party||'')+'</div></div></div>'
+      +'<div class="tw-body">'+esc(x.body||x.title||'')+'</div>'
+      +'<div class="tw-foot"><span class="fi-tag '+(x.sent||'u')+'">'+sLbl(x.sent||'u')+'</span>'
+      +'<span class="tw-ts">'+fmtD(x.date)+'</span></div>'
+      +'<span class="del-btn" onclick="delItem(\''+esc(x.id)+'\')">x</span></div>';
+  });
+  el.innerHTML=h;
+}
+
+function renderPolStats(polIt){
+  var polStats=filtPolStat();
+  var allP=polIt.filter(function(x){return x.sent==='p';}).length;
+  var allN=polIt.filter(function(x){return x.sent==='n';}).length;
+  var allU=polIt.length-(allP+allN);
+  polStats.forEach(function(x){if(x.data){allP+=x.data.pos||0;allN+=x.data.neg||0;allU+=x.data.neu||0;}});
+  var tot=allP+allN+allU||1,pPct=Math.round(allP/tot*100),nPct=Math.round(allN/tot*100);
+  var el=document.getElementById('pol-stats-block');if(!el)return;
+  var h='<div class="pol-stat-card">'
+    +'<div class="pol-stat-nums">'
+    +'<div class="pol-num"><div class="pol-num-v g">'+allP+'</div><div class="pol-num-l">Positief</div></div>'
+    +'<div class="pol-num"><div class="pol-num-v r">'+allN+'</div><div class="pol-num-l">Negatief</div></div>'
+    +'<div class="pol-num"><div class="pol-num-v n">'+allU+'</div><div class="pol-num-l">Neutraal</div></div>'
+    +'</div><div class="pol-strip"><div class="pol-strip-g" style="width:'+pPct+'%"></div>'
+    +'<div class="pol-strip-r" style="width:'+nPct+'%"></div></div>'
+    +'<div style="font-size:12px;color:var(--muted)">'+pPct+'% positief - '+nPct+'% negatief</div>';
+  polStats.forEach(function(x){
+    if(x.data&&x.data.note)h+='<div class="pol-note"><strong>'+fmtD(x.date)+':</strong> '+esc(x.data.note)+'</div>';
+  });
+  h+='</div>';
+  el.innerHTML=h;
+  setEl('pol-badge',periodLabel());setEl('pol-s',polIt.length+' uitspraken');
+}
+
+function renderIntl(its){
+  var el=document.getElementById('intl-feed');if(!el)return;
+  setEl('intl-s',its.length+' artikelen');
+  if(!its.length){el.innerHTML='<div class="empty">Geen items - klik Vernieuwen</div>';return;}
+  var h='';
+  its.forEach(function(x){
+    var lnk=x.link?'href="'+esc(x.link)+'" target="_blank" rel="noopener"':'href="#"';
+    h+='<div class="intl-fi"><div class="intl-hd">'
+      +'<span class="intl-fl">'+esc(x.flag||'INTL')+'</span> '
+      +'<span class="intl-src">'+esc(x.src)+'</span>'
+      +'<span class="fi-tag '+(x.sent||'u')+'" style="font-size:9px;padding:1px 5px;margin-left:4px">'+sLbl(x.sent||'u')+'</span></div>'
+      +'<div class="intl-t"><a '+lnk+'>'+esc(x.title||'')+'</a></div>'
+      +'<div class="fi-meta"><span class="fi-ts">'+fmtD(x.date)+'</span></div>'
+      +'<span class="del-btn" onclick="delItem(\''+esc(x.id)+'\')">x</span></div>';
+  });
+  el.innerHTML=h;
+}
+
+function renderPerson(){
+  var el=document.getElementById('persoon-card');if(!el)return;
+  var h='<div style="font-size:44px;text-align:center;padding:16px 0 6px">&#x1F3DB;</div>'
+    +'<div style="font-size:20px;font-weight:700;text-align:center;padding:0 14px 3px">'+esc(PERSON.name)+'</div>'
+    +'<div style="font-size:12px;color:var(--muted);text-align:center;margin-bottom:12px">'+esc(PERSON.title)+'</div>';
+  PERSON.facts.forEach(function(f){
+    h+='<div class="bio-row"><span class="bk">'+esc(f.k)+'</span><span class="bv">'+esc(f.v)+'</span></div>';
+  });
+  el.innerHTML=h;
+  var nl=document.getElementById('narr-list');if(!nl)return;
+  nl.innerHTML=NARRATIVES.map(function(n){
+    return'<div class="narr-item"><div class="narr-head">'+esc(n.head)+'</div>'
+      +'<div class="narr-body">'+esc(n.body)+'</div></div>';
+  }).join('');
+}
+
+function buildPeriodBtns(){
+  WEEKS=generateWeeks(START_DATE);
+  var wrow=document.getElementById('week-btns');
+  var h='<button class="pp on" onclick="setPP(this,null,null)">Alles</button>';
+  WEEKS.forEach(function(w,i){
+    h+='<button class="pp" onclick="setPPwk(this,'+i+')">'+esc(w.label)+'</button>';
+  });
+  wrow.innerHTML=h;
+}
+
+function clearPP(){document.querySelectorAll('.pp').forEach(function(b){b.classList.remove('on');});}
+function setPP(btn,f,t){
+  clearPP();if(btn)btn.classList.add('on');
+  fFrom=f||null;fTo=t||null;
+  document.getElementById('d-from').value=f||'';document.getElementById('d-to').value=t||'';
+  renderAll();
+}
+function setPPwk(btn,i){
+  clearPP();if(btn)btn.classList.add('on');
+  var w=WEEKS[i];fFrom=w.from;fTo=w.to;
+  document.getElementById('d-from').value=fFrom;document.getElementById('d-to').value=fTo;
+  renderAll();
+}
+function applyRange(){
+  var f=document.getElementById('d-from').value,t=document.getElementById('d-to').value;
+  if(!f&&!t){setPP(document.querySelector('.prow1 .pp'),null,null);return;}
+  clearPP();fFrom=f||null;fTo=t||null;renderAll();
+}
+
+function showSec(id,btn){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('on');});
+  if(btn)btn.classList.add('on');
+  document.querySelectorAll('.sec').forEach(function(s){s.style.display='none';});
+  var el=document.getElementById(id);if(el)el.style.display='block';
+}
+
+function toggleInfo(){
+  var p=document.getElementById('info-panel');
+  p.style.display=p.style.display==='none'?'block':'none';
+}
+
+function delItem(id){
+  if(!confirm('Item verwijderen?'))return;
+  items=items.filter(function(x){return x.id!==id;});saveData();renderAll();
+}
+
+var mType='';
+function openModal(type){
+  mType=type;
+  var titles={nl:'NL Artikel',blog:'Blog/Opinie',x:'Post',pol:'Uitspraak',intl:'Intl artikel'};
+  document.getElementById('modal-title').textContent=(titles[type]||'Item')+' toevoegen';
+  ['m-src','m-icon','m-title','m-stats','m-link','m-av','m-party','m-flag'].forEach(function(id){
+    var e=document.getElementById(id);if(e)e.value='';
+  });
+  document.getElementById('m-date').value=today();
+  document.getElementById('m-sent').value='u';
+  document.getElementById('m-pol-extra').style.display=type==='pol'?'block':'none';
+  document.getElementById('m-intl-extra').style.display=type==='intl'?'block':'none';
+  document.getElementById('m-icon-row').style.display=(type==='pol'||type==='intl')?'none':'block';
+  document.getElementById('modal-bg').classList.add('open');
+}
+function closeModal(){document.getElementById('modal-bg').classList.remove('open');}
+function saveModal(){
+  var src=document.getElementById('m-src').value.trim();
+  var title=document.getElementById('m-title').value.trim();
+  if(!src||!title){alert('Vul bron en tekst in.');return;}
+  var item={id:uid(),type:mType,src:src,date:document.getElementById('m-date').value||today(),sent:document.getElementById('m-sent').value};
+  if(mType!=='pol'&&mType!=='intl')item.icon=document.getElementById('m-icon').value||'art';
+  if(mType==='pol'){item.av=document.getElementById('m-av').value||'P';item.party=document.getElementById('m-party').value;item.body=title;}
+  else item.title=title;
+  if(mType==='intl')item.flag=document.getElementById('m-flag').value||'INTL';
+  var st=document.getElementById('m-stats').value.trim();if(st)item.stats=st;
+  var lk=document.getElementById('m-link').value.trim();if(lk)item.link=lk;
+  items.push(item);saveData();renderAll();closeModal();
+}
+
+function exportData(){
+  try{
+    var b=new Blob([JSON.stringify(items,null,2)],{type:'application/json'});
+    var u=URL.createObjectURL(b);
+    var a=document.createElement('a');a.href=u;a.download='jetten-data-'+today()+'.json';
+    document.body.appendChild(a);a.click();
+    setTimeout(function(){document.body.removeChild(a);URL.revokeObjectURL(u);},300);
+  }catch(e){alert('Export mislukt: '+e.message);}
+}
+
+async function doRefresh(){
+  var btn=document.getElementById('btn-refresh');
+  btn.disabled=true;btn.innerHTML='<span class="spin"></span> Zoeken...';
+  setProgress(10);
+  var added=0,errors=0;
+  var seen={};items.forEach(function(x){seen[x.id]=true;});
+  var total=REFRESH_QUERIES.length;
+
+  for(var qi=0;qi<total;qi++){
+    var qc=REFRESH_QUERIES[qi];
+    setProgress(10+Math.round(qi/total*80));
+    showStatus('Zoeken ('+qc.hl+'): "'+qc.q+'"... ('+(qi+1)+'/'+total+')');
+    try{
+      var rssUrl='https://news.google.com/rss/search?q='+encodeURIComponent(qc.q)+'&hl='+qc.hl+'&gl='+qc.gl+'&ceid='+qc.gl+':'+qc.hl;
+      var proxies=[
+        'https://api.allorigins.win/raw?url='+encodeURIComponent(rssUrl),
+        'https://corsproxy.io/?'+encodeURIComponent(rssUrl),
+      ];
+      var resp=null;
+      for(var pi=0;pi<proxies.length;pi++){
+        try{
+          resp=await fetch(proxies[pi],{signal:AbortSignal.timeout(7000)});
+          if(resp.ok)break;resp=null;
+        }catch(pe){resp=null;}
+      }
+      if(!resp||!resp.ok)throw new Error('proxy failed');
+      var xml=await resp.text();
+      var doc=new DOMParser().parseFromString(xml,'text/xml');
+      Array.from(doc.querySelectorAll('item')).forEach(function(el){
+        var titleEl=el.querySelector('title');
+        var title=titleEl?titleEl.textContent.trim():'';
+        if(!title)return;
+        // Skip if clearly not about Jetten
+        var tl2=title.toLowerCase();
+        var isJetten=tl2.indexOf('jetten')>=0||tl2.indexOf('йеттен')>=0||tl2.indexOf('єттен')>=0||tl2.indexOf('klimaatdrammer')>=0||tl2.indexOf('minpres')>=0;
+        if(!isJetten&&qc.hl==='nl')return;
+        var key=title.toLowerCase().replace(/\s+/g,'').slice(0,60);
+        if(seen[key])return;
+        var pubEl=el.querySelector('pubDate');
+        var d=new Date(pubEl?pubEl.textContent:'');
+        var dateStr=isNaN(d)?today():d.toISOString().slice(0,10);
+        if(dateStr<START_DATE||dateStr>today())return;
+        var linkEl=el.querySelector('link')||el.querySelector('guid');
+        var srcEl=el.querySelector('source');
+        var src=srcEl?srcEl.textContent.trim():'';
+        if(!src){var m=(linkEl?linkEl.textContent:'').match(/https?:\/\/(?:www\.)?([^\/]+)/);src=m?m[1].replace(/\.(nl|com|org|net)/,''):'Google News';}
+        var itemType;
+        if(isIntl(src)||qc.hl!=='nl')itemType='intl';
+        else{var sl=src.toLowerCase(),tl=title.toLowerCase();
+          if(tl.match(/trending|viraal|hashtag/))itemType='x';
+          else if(sl.match(/joop|correspondent|geenstijl|ftm|follow|elsevier|groene/))itemType='blog';
+          else itemType='nl';}
+        var item={id:key,type:itemType,src:src,title:title,date:dateStr,
+          sent:detectSentiment(title),link:linkEl?linkEl.textContent.trim():''};
+        if(itemType==='intl')item.flag=detectFlag(src);
+        else item.icon='art';
+        seen[key]=true;items.push(item);added++;
+      });
+    }catch(err){errors++;console.warn(qc.q,err.message);}
+    await new Promise(function(r){setTimeout(r,300);});
+  }
+
+  setProgress(95);saveData();renderAll();setProgress(100);
+  var ts=new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+  setEl('upd-ts',ts);setEl('sb-upd',ts);
+  if(added>0)showStatus('+ '+added+' nieuwe artikelen via Google News');
+  else if(errors===total)showStatus('Proxy niet bereikbaar. Probeer later opnieuw.','err');
+  else showStatus('Alles al up-to-date.');
+  setTimeout(function(){setProgress(0);},800);
+  btn.disabled=false;btn.innerHTML='&#8635; Vernieuwen';
+}
+
+var BSKY_TOKEN = null;
+var BSKY_DID = null;
+
+async function bskyLogin(){
+  var handle = document.getElementById('bsky-handle').value.trim();
+  var apppw  = document.getElementById('bsky-apppw').value.trim();
+  var status = document.getElementById('bsky-login-status');
+  if(!handle || !apppw){ status.textContent='Vul handle en app password in.'; status.className='bsky-status err'; return; }
+  status.textContent='Inloggen...'; status.className='bsky-status';
+  try{
+    var resp = await fetch('https://bsky.social/xrpc/com.atproto.server.createSession',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({identifier:handle, password:apppw})
+    });
+    if(!resp.ok){ var err=await resp.json(); throw new Error(err.message||'Login mislukt'); }
+    var data = await resp.json();
+    BSKY_TOKEN = data.accessJwt;
+    BSKY_DID   = data.did;
+    // Save to localStorage (only on this device)
+    localStorage.setItem('bsky_token', BSKY_TOKEN);
+    localStorage.setItem('bsky_handle', handle);
+    status.textContent='Ingelogd als @'+handle;
+    status.className='bsky-status ok';
+    document.getElementById('btn-bsky').disabled = false;
+    document.getElementById('bsky-user-info').textContent = '@'+handle;
+    // Collapse login panel
+    document.getElementById('bsky-login-panel').style.display='none';
+  }catch(e){
+    status.textContent='Fout: '+e.message;
+    status.className='bsky-status err';
+  }
+}
+
+function bskyRestoreSession(){
+  var token  = localStorage.getItem('bsky_token');
+  var handle = localStorage.getItem('bsky_handle');
+  if(token && handle){
+    BSKY_TOKEN = token;
+    document.getElementById('btn-bsky').disabled = false;
+    document.getElementById('bsky-user-info').textContent = '@'+handle+' (ingelogd)';
+    document.getElementById('bsky-login-panel').style.display='none';
+    document.getElementById('bsky-login-status').textContent='Ingelogd als @'+handle;
+    document.getElementById('bsky-login-status').className='bsky-status ok';
+  }
+}
+
+async function loadBluesky(){
+  if(!BSKY_TOKEN){ showStatus('Log eerst in bij Bluesky.','warn'); return; }
+  var btn=document.getElementById('btn-bsky');
+  btn.disabled=true;btn.innerHTML='<span class="spin"></span> Zoeken...';
+  setEl('bsky-badge','laden...');
+  var seen=new Set(),posts=[];
+  for(var qi=0;qi<BSKY_QUERIES.length;qi++){
+    var q=BSKY_QUERIES[qi];
+    try{
+      var url='https://bsky.social/xrpc/app.bsky.feed.searchPosts?q='+encodeURIComponent(q)+'&limit=25&sort=latest';
+      var resp=await fetch(url,{
+        headers:{'Accept':'application/json','Authorization':'Bearer '+BSKY_TOKEN},
+        signal:AbortSignal.timeout(8000)});
+      if(resp.status===401){
+        // Token expired - clear and ask to re-login
+        BSKY_TOKEN=null;
+        localStorage.removeItem('bsky_token');
+        document.getElementById('bsky-login-panel').style.display='block';
+        document.getElementById('btn-bsky').disabled=true;
+        document.getElementById('bsky-login-status').textContent='Sessie verlopen - log opnieuw in.';
+        document.getElementById('bsky-login-status').className='bsky-status err';
+        btn.disabled=false;btn.innerHTML='&#8635; Laden';
+        setEl('bsky-badge','-');return;
+      }
+      if(!resp.ok)throw new Error('HTTP '+resp.status);
+      var data=await resp.json();
+      (data.posts||[]).forEach(function(p){
+        var uri=p.uri||'';if(seen.has(uri))return;seen.add(uri);
+        var record=p.record||{};
+        var text=record.text||'';if(!text)return;
+        var createdAt=record.createdAt||p.indexedAt||'';
+        var dateStr=createdAt?createdAt.slice(0,10):today();
+        if(dateStr<START_DATE)return;
+        var author=p.author||{};
+        var handle=author.handle||'';
+        var name=author.displayName||handle||'?';
+        var rkey=uri.split('/').pop();
+        var postUrl=handle?'https://bsky.app/profile/'+handle+'/post/'+rkey:'';
+        posts.push({uri:uri,text:text,name:name,handle:handle,createdAt:createdAt,
+          dateStr:dateStr,likes:p.likeCount||0,reposts:p.repostCount||0,
+          replies:p.replyCount||0,postUrl:postUrl,sent:detectSentiment(text)});
+      });
+    }catch(err){console.warn('Bluesky',q,err.message);}
+    await new Promise(function(r){setTimeout(r,200);});
+  }
+  posts.sort(function(a,b){return b.createdAt.localeCompare(a.createdAt);});
+  var unique=[],seenTexts=new Set();
+  posts.forEach(function(p){
+    var k=p.text.toLowerCase().replace(/\s+/g,'').slice(0,80);
+    if(!seenTexts.has(k)){seenTexts.add(k);unique.push(p);}
+  });
+  renderBsky(unique);
+  var existingIds=new Set(items.map(function(x){return x.id;}));
+  var addedBsky=0;
+  unique.forEach(function(p){
+    var id='bsky_'+p.uri.split('/').pop();
+    if(existingIds.has(id))return;
+    items.push({id:id,type:'x',src:p.name+' (Bluesky)',icon:'bsky',
+      title:p.text.slice(0,120),date:p.dateStr,sent:p.sent,link:p.postUrl,
+      stats:p.likes+' likes - '+p.reposts+' reposts'});
+    addedBsky++;
+  });
+  if(addedBsky>0){saveData();renderAll();}
+  btn.disabled=false;btn.innerHTML='&#8635; Laden';
+}
+
+function bskyAgo(iso){
+  if(!iso)return'';
+  var diff=Math.floor((Date.now()-new Date(iso))/1000);
+  if(diff<60)return diff+'s';if(diff<3600)return Math.floor(diff/60)+'m';
+  if(diff<86400)return Math.floor(diff/3600)+'u';return Math.floor(diff/86400)+'d';
+}
+
+function renderBsky(posts){
+  var el=document.getElementById('bsky-feed');
+  setEl('bsky-badge',posts.length+' posts');
+  if(!posts.length){el.innerHTML='<div class="empty">Geen posts gevonden.</div>';return;}
+  var h='';
+  posts.forEach(function(p){
+    var sc=p.sent||'u';
+    var lnk=p.postUrl?'<a class="bsky-link" href="'+esc(p.postUrl)+'" target="_blank" rel="noopener">Bekijk</a>':'';
+    h+='<div class="bsky-post">'
+      +'<div class="bsky-hd">'
+      +'<div class="bsky-av">B</div>'
+      +'<div><div class="bsky-nm">'+esc(p.name)+'</div><div class="bsky-handle">@'+esc(p.handle)+'</div></div>'
+      +'<span class="fi-tag '+sc+'" style="margin-left:auto;font-size:9px;padding:1px 5px">'+sLbl(sc)+'</span>'
+      +'</div>'
+      +'<div class="bsky-body">'+esc(p.text)+'</div>'
+      +'<div class="bsky-foot">'
+      +'<span class="bsky-ts">'+bskyAgo(p.createdAt)+'</span>'
+      +(p.likes?'<span class="bsky-stat">h '+p.likes+'</span>':'')
+      +(p.reposts?'<span class="bsky-stat">r '+p.reposts+'</span>':'')
+      +lnk
+      +'</div></div>';
+  });
+  el.innerHTML=h;
+}
+
+
+var POL_STAT_SEED = [];
+
+async function init(){
+  var dataLoaded=false;
+  try{
+    var resp=await fetch('./data.json?_='+Date.now());
+    if(resp.ok){
+      var fresh=await resp.json();
+      if(Array.isArray(fresh)&&fresh.length){
+        var saved=[];
+        try{var s=localStorage.getItem(STORAGE_KEY);if(s)saved=JSON.parse(s);}catch(e){}
+        var seedIds={};fresh.forEach(function(x){seedIds[x.id]=true;});
+        var extras=saved.filter(function(x){return !seedIds[x.id];});
+        items=fresh.concat(extras);
+        dataLoaded=true;
+      }
+    }
+  }catch(e){console.warn('data.json:',e.message);}
+  if(!dataLoaded)loadData();
+  bskyRestoreSession();
+
+  buildPeriodBtns();
+  renderPerson();
+  renderAll();
+  var ts=new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+  setEl('sb-upd',ts);
+  if(!items.length)showStatus('Klik Vernieuwen om nieuws te laden via Google News.','warn');
+}
+
+init();
+</script>
+</body>
+</html>
