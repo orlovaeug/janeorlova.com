@@ -270,7 +270,7 @@ LEDEN_PARTIJ = {
     "Kircali": "DENK",
 
     # 50PLUS (2 zetels)
-    "Struijs": "50PLUS",
+    "Struijs": "50PLUS", "Struijs": "50PLUS",
     "Jan Struijs": "50PLUS",
     "Van Brenk": "50PLUS",
     "Corrie van Brenk": "50PLUS",
