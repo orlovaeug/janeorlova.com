@@ -3,29 +3,30 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9SV5Y8BZ24');
+  </script>
 
-  gtag('config', 'G-9SV5Y8BZ24');
-</script>
-    <!-- Google Tag Manager -->
+  <!-- Google Tag Manager -->
+
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
+
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jane Orlova</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
-<!-- End Google Tag Manager --> a, button {
-  cursor: pointer;
-}
 
 ```
 :root {
@@ -39,15 +40,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 html { scroll-behavior: smooth; }
 
 body {
-
   background: var(--white);
   color: var(--black);
   font-family: 'DM Sans', sans-serif;
   font-weight: 300;
   cursor: none;
   overflow-x: hidden;
-}                            
-                             
+}
+
 /* Custom cursor */
 .cursor {
   position: fixed;
@@ -72,6 +72,10 @@ body {
 }
 body:hover .cursor { opacity: 1; }
 
+/* Cursor grow on hover over clickable elements */
+a:hover ~ #cursor,
+button:hover ~ #cursor { transform: translate(-50%, -50%) scale(1.8); }
+
 /* NAV */
 nav {
   position: fixed;
@@ -81,7 +85,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 28px 52px;
-  mix-blend-mode: normal;
   background: rgba(245,245,243,0.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid transparent;
@@ -95,6 +98,7 @@ nav.scrolled { border-bottom-color: var(--light-gray); }
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--black);
+  cursor: none;
 }
 
 .nav-links {
@@ -110,6 +114,7 @@ nav.scrolled { border-bottom-color: var(--light-gray); }
   color: var(--gray);
   transition: color 0.2s;
   position: relative;
+  cursor: none;
 }
 .nav-links a::after {
   content: '';
@@ -251,7 +256,6 @@ h1 em {
   color: white;
   line-height: 1.5;
 }
-/* Geometric pattern on card */
 .hero-card-bg {
   position: absolute;
   inset: 0;
@@ -480,7 +484,7 @@ footer {
   color: var(--gray);
   letter-spacing: 0.05em;
 }
-footer a { color: var(--gray); text-decoration: none; transition: color 0.2s; }
+footer a { color: var(--gray); text-decoration: none; transition: color 0.2s; cursor: none; }
 footer a:hover { color: var(--black); }
 
 /* ANIMATIONS */
@@ -504,6 +508,7 @@ footer a:hover { color: var(--black); }
   .substack-section { padding: 70px 24px; }
   body { cursor: auto; }
   .cursor, .cursor-ring { display: none; }
+  a, button { cursor: pointer; }
 }
 ```
 
@@ -511,9 +516,9 @@ footer a:hover { color: var(--black); }
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC93BV4D"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC93BV4D"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
@@ -616,20 +621,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="about-body">
         <p>
-          I’m Jane Orlova — a political researcher and writer based in the Netherlands since 2018. I have a background in International Relations (Moscow State University) and Political Communication (MSc, University of Amsterdam), and I did research at the University of Bologna during my Erasmus.
+          I'm Jane Orlova — a political researcher and writer based in the Netherlands since 2018. I have a background in International Relations (Moscow State University) and Political Communication (MSc, University of Amsterdam), and I did research at the University of Bologna during my Erasmus.
         </p>
         <p>
           My thesis looked at how news framing shapes public support for climate refugees — and how emotions and political knowledge change that effect. That question still sits at the centre of everything I find interesting: why people believe what they believe, how messaging moves public opinion, and who controls the frame.
         </p>
         <p>
-          I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. I’m particularly drawn to campaigns: how they’re built, where they win people over, and where they lose them.
+          I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. I'm particularly drawn to campaigns: how they're built, where they win people over, and where they lose them.
         </p>
         <div class="about-tags">
           <span class="tag">Dutch Politics</span>
           <span class="tag">International Relations</span>
           <span class="tag">Political Communication</span>
           <span class="tag">European Politics</span>
-          <span class="tag">Political marketing</span>
+          <span class="tag">Political Marketing</span>
         </div>
       </div>
     </div>
@@ -691,6 +696,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       requestAnimationFrame(animateRing);
     }
     animateRing();
+
+    // Cursor grow on clickable elements
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        ring.style.width = '52px';
+        ring.style.height = '52px';
+      });
+      el.addEventListener('mouseleave', () => {
+        cursor.style.width = '10px';
+        cursor.style.height = '10px';
+        ring.style.width = '36px';
+        ring.style.height = '36px';
+      });
+    });
 
     // Nav scroll
     const nav = document.getElementById('nav');
