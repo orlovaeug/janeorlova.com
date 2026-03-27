@@ -1,5 +1,25 @@
 [
   {
+    "id": "ge6862b32a1d8",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Ministerie van Financiën VS kondigt bankbiljetten aan met handtekening Trump",
+    "date": "2026-03-27",
+    "sent": "u",
+    "link": "https://nos.nl/l/2607987"
+  },
+  {
+    "id": "g623b00db57e0",
+    "type": "intl",
+    "src": "agencianova.com",
+    "title": "Asumió el primer ministro gay en la historia de los Países Bajos - agencianova.com",
+    "date": "2026-03-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9hM1NmNHRhZnlNbENpcFlHM2J5VWMyMmU5SnVNZDBOQkpKNkx6dXFRWGtMU2pYU3FTMmZxbUFfZS1PSVVVdC1xZlZTYzVvNFJlOTczNFZnQXpRZVZvWWNQd0VtaVpBanhFcVpJNU5RRnlkaW4zeDVsR0dkYk9ad28?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gbe41d2b52487",
     "type": "nl",
     "src": "de Volkskrant",
@@ -39,6 +59,36 @@
     "date": "2026-03-26",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5XNmNyZnRVTzJ1Njd1LWdOd0w3MkQ4Wldac1MybzhvcTdTTFEzSml2NllzQ1QyTGxkTDhGZVRkb0ZBaXc3dlVab3hHSzFUdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc6f8dc51ae8c",
+    "type": "nl",
+    "src": "nu.CW",
+    "title": "Premier Jetten bezoekt Caribische eilanden in mei - nu.CW",
+    "date": "2026-03-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcFJqSHRnRHFPMnBtLWlfMTJkX2UtVzZTN3lNX0lkZ3VrVy1ILUkwWEF2Unp4dVpiUGt5amMyUmJzQ1k2R2Z6QzNGb0VxMlYxRThCOEo2ZzRLNVRZSXg2XzdLYmgyVUV1dXAtaGdoenV0SVBab29HMWptVXVuTk5nYg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g05f8c85965f7",
+    "type": "nl",
+    "src": "Transparency International Nederland",
+    "title": "EU zet belangrijke stap met anti-corruptierichtlijn: Kabinet-Jetten moet aan de slag – Nieuws - Transparency International Nederland",
+    "date": "2026-03-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPN3RYaktFVDIwaU10Ym1oT2NrX3dTa2lyUm5nRzFJUXJtRkFJZVUyOXkydTFGQjJCQjUtNFRrMUVtT04xVjV3di11RG5EM2ZWZWVjQjJ0Uk1GY3IwaHFNNG9qbGRiN0FxMExVR1Z5RWlNbWV3V21RekJQZ0JWSUQtWm9sQTJTUTFHd1VQQTZGSkRiSUhHSXBXMFJWZlZ4SW1NMVlmREIweEJFNW9GZlF2Q1JaVkM5UmxmOFVnSTVFcjZwMU94ZFE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g30f46e8a48f4",
+    "type": "intl",
+    "src": "GOV.UK",
+    "title": "PM meeting with Prime Minister Jetten of the Netherlands: 26 March 2026 - GOV.UK",
+    "date": "2026-03-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOT29vZ29BeW5NNm1Ibl9nTXFramw5N2tZUU9SaXRxZERSSG9Cck1EbllvYmwxcWVFNGlpTDJsZXlzbzRxWXZRSldsN01fTUE2TkZxdXFpZXRQRGVzNmd5SHpNMWJRV1BRUWdjaklDRVBFSkNKbDY4akkyQXFmN2VTM0NEbl9YVWpLb0c0RUFwMVFkTXUtXzhEQk1ncW5xeXFqbHhCLUNZLVo?oc=5",
     "flag": "🌍"
   },
   {
@@ -183,6 +233,26 @@
     "flag": "🌍"
   },
   {
+    "id": "g1e99a741ba05",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten verwacht snel einde blokkade 90 miljard voor Oekraïne - Noordhollands Dagblad",
+    "date": "2026-03-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZDhZVnNyYjBKdDFNMm5qR05hWWYxbElFa1VMY3BsTk9PNGFwSF83NG5zU3gxOWs3NlMxdEtLT2dDR1VvREo3dEF1Y0VpLVVtemFiOTRUYl96djNsN0w0Tk1RUzd4T2FaTWlyZWUtYzJvaTh2NHBlNWNLSHBXbDJqYkhROFIyWE9XSzJaWFFjU0JlTXVhSHItRDlnR0tUb21nSGoxa0VUbEozRDVWdDc0TDg1LXQ3YnY5ZXlRUnhR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g41f4c1f1ddee",
+    "type": "intl",
+    "src": "MSN",
+    "title": "Rob Jetten: the centrist millennial set to be the Netherlands’ next prime minister - MSN",
+    "date": "2026-03-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6gJBVV95cUxOQ2FiX3BrTFlVc1RFa2xvZ1RGekZPMXVXUTZOUFZnRllLejhPV2VhOWYwaEt2M2VGbkJ1eTltV18xQWt3eGxfc0htMVJBLUVVRXU3VjltY1hJU2JyR1Jja19lWHlQSEZmcm5wSGItTEw0R3VyRXk3azk5Qjdxdk5tUWdETFRmNDl3N2QxaVYzM1BzeEIzV1A5R2k3ZjdEZWtjLXpMZW5EbUQzYzY2b2p6ODdmQ1ZWdlJqeUpSVm5vai12YjNIMjZIeXJCVXVxVENLMVk5QTU4SHdpX3JOS19LZExxMUFiREs5YmRxTWJXNUZBVlpEWXAtcENmR1JkbmRheDBKeERIdmQ2Vm9Fc2kyX2dzZldTSXRXLXlpWVZPVUxLVkhVU2ExcUw3aGdSdHEySnBPMnMyRXFJQi16RVY5TUU0ZU9yZFctcGhkcG9haDZ2dXNEeGZ1ZjFYVlE5Q2czbUZMUF9vcm5oZw?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gef855ddd58d4",
     "type": "nl",
     "src": "bnnvara",
@@ -317,6 +387,26 @@
     "date": "2026-03-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vMjBwTjdjNnBmSXRBTmVlLVJmbVh3YVdqNTlTT0x3WDkzeXMtVVYzdTF0dVhFR3VXRzB2bE02ZHc2WmUzdnZBamFRLWVqellWd0xj?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5bf34c4a4b26",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kabinet wil toch geen versoepeling omgangsrecht opa's en oma's met kleinkind - NOS",
+    "date": "2026-03-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRDJuMFhGbjhKbGx5OC1aVzhNWFc5cXJRbW1zTFVzS0hGdUlvM0U4TnNWN3dmd01KTGxaUGs4X09kRThOR3ZmYTAtNTd6MmFiaU4xME1qTlpwR2U3a3ZFdThsSHZzUmhfT1BUSHdaM0hGd0gxNWtROF80TmpoY2F1amRNcGtPaEFUMVRyenVwM1JibnRIWnh4UE1oV01iYzJ4LTI5djZzNGtXYTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3d5679b3ddaa",
+    "type": "intl",
+    "src": "MSN",
+    "title": "Rob Jetten, flamante primer ministro neerlandés, quiere hablar español como su marido argentino - MSN",
+    "date": "2026-03-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiANBVV95cUxQTWU1WHMzX2t1QndtYmJka1RERk5UbDJqMWY4NmJxbk9NMnBsOXFNaHF1TUpIcThWVy1LenpUdUl5R2MyejBCYWs3U0RETmZJZUxSUkZOSXYwaWxLdWFNcUwyWEhvaHdaZi1kWWE0aHMwWHBPZTRiN2lpNmZZLXJmRUFyLW9FNEtuQU1GTEpaZnE1V1VaOXRrcUdReDNhcmN5UjFCbzgwMnhIdlA0dVg4dndPYjBRVHJpZ0VxeXVsNWw0VWxQaEJmNURQT3ZqTFBDTTRBR09DUjFxdllXMkpSbmZaMm9BZFJwVHA0M0h5NkJGcjFFY3ZMd0FUX2lXdU1Qb3FueXpNVGFXRXZ3TWFfSHVxSFZDTlBPZ2dTNzdUanM5MURmTm9pSDdpVE1uRktnWHBzdWV5UVFVQU13Z2RwOW5aTmNfZFZlN1pOUERJeEhoclprM254RFdyczQzYzUyajNQSWFUUGg3TW5BUklIZ1Nyejl1dHM0RDhlUlI2ZlJ4RDQ4bFlYRA?oc=5",
     "flag": "🌍"
   },
   {
@@ -5906,5 +5996,35 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxONklubXNoR3QzWlBWRXZLQXFSeFFOUjJ4S09FTzdCWHQ5WHRWZThUS0xhdHdUMDE3THZpeVhMN1NmRExzMWR4YkMxbFhMSjJIQ2FsYzFqUF8yQTAwWGFoZHB0WEtvR1l0M3FSR1pvdW1BY09kV1Jxd0IzQ3R4dVFYX2FmZE1uU18xOFp5eEExTzBwYmZQQkF2M3N3eF9yQlk4dEdQeEFKX1g0RnFMMXA0NEFNdEM?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "g0330fa3eae48",
+    "type": "intl",
+    "src": "Arab News",
+    "title": "A new era for Dutch politics with Rob Jetten set to be sworn in as prime minister - Arab News",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9HN3praWtxRm4zM09fdTA0QnVwV2FVMzJqNXNlZU9nVTVmY29NLTJSN0NoQ0hqbzVCdFhKdDlGMHg1MDJyRnp4YjBIb2hUbGwtVVFV?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g06b151258c99",
+    "type": "intl",
+    "src": "Укрінформ",
+    "title": "Новий прем’єр Нідерландів: Україна може розраховувати на нашу підтримку - Укрінформ",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNR3pVLW9HdDlCT0lPR09TbGlFQlp0Z1JCbVlmUE43Q1dyOEJQRVRXUnFDeTlJMDVHdkt2V285M0dDWTBUNmUzM254bTJ3UDRWalJSSUtsZFN6TlV0cUtTeEJESjQwejNPQURjdmhySld1ekhsTER3ZmhTaWhxbWpIWFRwX0dOMUZFQjJhX3ZfMGxaeXNUNEhmX2dyYkxwNVMzV3JZelRRRXZUTXpLei1TblJmdmk1ZkF2ci14ZmNheUbSAcYBQVVfeXFMTTA4cl9nRG9JQmFiT3JrVmZicHVVUmJTU0JNNWRVM2tIaGxQTHNRVnJDRjYwWktsMXJTS0p0enppdG9tNkV5S3pSQW5tZXBXR1JJUlE5ZWRieDZkX2lZZUJrbEZNdEhsempKLUZveEpfZXFYS3dYVTNQdTk1ZjZzTk5QVnNGMFdlLWUtcXVMVW0xaElEUEZSd0FuZ2hEM0tBZHdOakc0RnB5NjJScVpxUVNHMGdwQ2F4NE55WVM5cUk1b09feTVn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g576a6c959460",
+    "type": "intl",
+    "src": "Bulletin",
+    "title": "Nederländerna har fått ny premiärminister – yngsta någonsin - Bulletin",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ3otS1AyYVhOZzJDYXFTZEc4MjZHXzc1QkJCbGpGYTN1N1Jra3EtQV9HLVdhbC1lZGtucnNDUllENElCdmFqN2VTcThlUnpyTXduNWttbmpwU3U4Y19FVWhRNGFxX1ZfT0xyQzF0RkxQMUJlQjZ5NjBWTWlIdG81MU8tSQ?oc=5",
+    "flag": "🌍"
   }
 ]
