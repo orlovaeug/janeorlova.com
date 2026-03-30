@@ -21,6 +21,16 @@
     "lr": "left"
   },
   {
+    "id": "g7f233e6cd9c4",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Opinie: ‘Teleurstellend dat juist premier Jetten gezinshereniging uitsluit voor queer vluchtelingen’ - Het Parool",
+    "date": "2026-03-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdjh1cTNGV25GWENiQnh2NUw2TVZaWEM1V1E1WWk1Qm10Rk9JZENYUEU2Y3hrWFh0Ul81WmVxY2tITDVPNHBtWWVaY3c1NV9GeXowdTFLcjJHdmtpMDhpOTBrQ2pOYjNZRkFpLVNCcTdfTEhBNG5LSmh5Z3piam8tTG9MekRicjJBUHJhQ1RDU1hWVDVpMjVMVFN4OGVSdHVZY0dITUZ1TDdLM1MzYkVUeWJHS3BPYXRmRkpnZ3lwT1ZYbmNrd2d1ZFFTUEFwX2xzVVhIZ3FxNkVMak90?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g373b454135ae",
     "type": "nl",
     "src": "Wynia's Week",
@@ -124,6 +134,47 @@
     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMXc5b0llMXd1UXNhX2E2SDZsd2xwU0kwcTBEREM1Wl9UcnZWUFBVdTN2dUZxTXJtcmpNRHVoOE5EX2ZRZW1LSzhMUllkNHk5Wjk2RWtRd0JDbGQ1RXROc1dFbWJvT0huR2JBdnoxeG5taksySlJIbk1PT0FjSE81czlnUXA5R3VmbmpvTGQ0OEJ4MWZjeURBaU9rMkNRS1pLaU12TmhaTnVWcllxLUc1WkN4dDlubVgzd1NxZ0NrSHNrR2s?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g781726daf279",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet-Jetten schuift miljarden vooruit om onder EU-norm te blijven - maar rek is bijna op - EW - EWmagazine.nl",
+    "date": "2026-03-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVDdLQ0tET0Y4NVVzZmYxc1JMYlhUSFR3bF9SamFMdWYtOFVMVWp5ZlhKQndIR1dCc0RlQzZSSHdzcEJpYTBZYWxIWjBRV182dEduRU5GamlZM09yb1FIVWtMYVIwcHNkRlp1SldDV1lzelY4TkozY3V5WEFZYmtuWEVmd2FxV05uRHR5b0RJd18?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfba2b1a8d46c",
+    "type": "nl",
+    "src": "Nieuws.nl",
+    "title": "Jetten: energiesteun mag investeringen kabinet niet dwarszitten - Nieuws.nl",
+    "date": "2026-03-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZFFPMHdrLUc3dFY4aC1LWkhIQkNIcFJ5QmhiZExBWFlmMlpBZXFpMU5YcUFaQk4yNW8zZnpycV91UElJQjgtNnZINWdwUUdQQmh4RE9WQ3RURzJqWDBkazdOR2w1N3dHdENFTm12M202OW1Pd0dzZF9BM0JoaHo4SnVmOGVxWkppbUppNUk5Nlo0NG8?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga64bbcbd5b75",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "De eerste voorjaarsnota van het kabinet-Jetten heeft last van onzekere wereldpolitiek - Trouw",
+    "date": "2026-03-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWkNORjhJbGVSQlVMWG12VFEwVXJ4RmVFejRqTzVXTzdFcVBLdUNodnVOTmFFd0ZvWFg3clh5V0hSUF80T2F6d2VNU2tTUDNubE9uZm9pdnFEel82UUdva2kzQS1kUW02eFBraTJnRXBLSDJqVGZGNnlfRjhFbGRVdDFZYzJ2eTdNdU1FM0x6ekphMVNsTjl5VnJ2SlkxYzRQN3VFbUhEbUpIOFoxemoyd2ZsM3NZVnVOMGFuQnVRc2FnV1E?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g39b59b8a1e12",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Voorjaarsnota 2026: Begroting wankelt, maar blijft nipt op orde – Iran-oorlog gaat pijn doen - EWmagazine.nl",
+    "date": "2026-03-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZFpUeXdUNG1iTC1HODZjUEtCYnA2U0E2dmtkTWlWdTFLS2dtZU9EdGl3UTZUeHlqOVVMeENCeFNkbDh4enk2UUFuUVhYZEFPNmcweUJwV3NuNlBSQmx6TW5aWldXS0lMQkduaGdPR2QyZGNqLWhMQ0JvLVgwdzdOMFNoLXA5R0hiY2pOY19aeGhGU1p5UWdkOXJEWjlqZ2E0enYwTXB6TnNhbFo0b2NYR2RzWkNWbVZUelMwcXRJQQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gbe41d2b52487",
@@ -545,6 +596,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiiANBVV95cUxQTWU1WHMzX2t1QndtYmJka1RERk5UbDJqMWY4NmJxbk9NMnBsOXFNaHF1TUpIcThWVy1LenpUdUl5R2MyejBCYWs3U0RETmZJZUxSUkZOSXYwaWxLdWFNcUwyWEhvaHdaZi1kWWE0aHMwWHBPZTRiN2lpNmZZLXJmRUFyLW9FNEtuQU1GTEpaZnE1V1VaOXRrcUdReDNhcmN5UjFCbzgwMnhIdlA0dVg4dndPYjBRVHJpZ0VxeXVsNWw0VWxQaEJmNURQT3ZqTFBDTTRBR09DUjFxdllXMkpSbmZaMm9BZFJwVHA0M0h5NkJGcjFFY3ZMd0FUX2lXdU1Qb3FueXpNVGFXRXZ3TWFfSHVxSFZDTlBPZ2dTNzdUanM5MURmTm9pSDdpVE1uRktnWHBzdWV5UVFVQU13Z2RwOW5aTmNfZFZlN1pOUERJeEhoclprM254RFdyczQzYzUyajNQSWFUUGg3TW5BUklIZ1Nyejl1dHM0RDhlUlI2ZlJ4RDQ4bFlYRA?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g02b98614bc21",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Video: Rob Jetten geconfronteerd met zijn kritiek op Donald Trump: 'Ik ga dat niet terugnemen' - Vandaag Inside",
+    "date": "2026-03-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMnRhZHhmdUtQaTI0OUFWNVhXZjNoTlZWZDVLMGIxcTQtRG9kVk1YdE1SMGMzbnlSTWN6MEdCM003U1YtS1VvRU5welN6czJiZG1iS3FheW9BNUdlcTltSXlYMWgybEdpVkEtaWxUSWNCVjY1aWxodjQyT1BDdkxGOVJYdGFXSF94d2lIX2l2b2I4akU4UlBkY19wTk1jU1daT2p3enZ5Ri1pVXludnc5SjJSSkN5c3BTTU5nWUc4SE5LN1hpSEE1SmxBcC1ZbFN5ZEo3WUlhSGhNaDg?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gad3a049b6b43",
@@ -2584,6 +2645,16 @@
     "flag": "🇩🇪"
   },
   {
+    "id": "gb542af032cbf",
+    "type": "intl",
+    "src": "abc.es",
+    "title": "El primer ministro de Países Bajos se reúne con el canciller Merz en Berlín - abc.es",
+    "date": "2026-03-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNeGduUlJsdW5iOGNaam5Iam1HaFh0TnZ2UXFZeHNQRV94T3VidFhFcjhRTjlmOW1MTnAzbGtRM25nWl9TUWl5V0w1MER3Uy1oX0tuV1I5ZUdYdXhpTG5iakgwTkFFSXREM3IyQlI3VGlsLUlKcVIyWWNFaFdWcldDUXB4bEhDU2hNcEtTNTA4LTJMakZJbERKNl93S1JUWkE?oc=5",
+    "flag": "🇪🇸"
+  },
+  {
     "id": "g8a35a9165efd",
     "type": "nl",
     "src": "De Gelderlander",
@@ -2816,6 +2887,17 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNajNpTmR2N0NwYUNpUWliY3hlcW9Kc0VLUS1PLWRlbUI2MFozT1NGSUZEQVIya2xTVkQxOGRvYWhiU1FtTDFDTnFmMlBqVjFSYTZydzVPbXdVWHJzQVptSzZsdGJidnVTMWE1ZHl6S19GUWpIX0tTNkRnbmpIMGRyNjM0a2hDWUxURjdTVE9nWW5iWDg?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gfa782c3d7628",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Premier Jetten wil een ‘concreet uitgewerkt plan’ van de Fransen over mogelijke vervolgmissie in Straat van Hormuz - NRC",
+    "date": "2026-03-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNY0gyU3VTMng1U3hyS3RTemRvbG8xMGNzeW55cERDcVRQNjd6dElPQTcxVWFSUGVfSjBoZExqNDFjSm5nOEgtZVpBUkM4UjE5aGdrd0QzZEZPV3R3ME81R1FRSmUtYmk0cUpHaFpNLTN6MlQwNVJHWUZIRGtKZkZ6b1BSSTFvMFNrUV9TMGNLY2dWTVJMNzVTYWVrWE1Ud0ttUUVfRTdINWYydEg4SEtfcVBQT0tBTE1YSUZYbE9VWHJqSW15N0xZeFNIbUxPSnNvT1M1RUQ3QUJCa1lxV1dfMlRhZTJMYWswOGVPdTI0VQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "g2e112215b8f8",
@@ -3369,6 +3451,26 @@
     "flag": "🌍"
   },
   {
+    "id": "g322392a76d0c",
+    "type": "intl",
+    "src": "interfax.com.ua",
+    "title": "Нідерланди обговорять з європейськими партнерами реалістичні умови щодо вступу України в ЄС – прем’єр країни - interfax.com.ua",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE14Vy1HR25tWURwekl2WlFKaTVZNWNzY2tES0FVdWhGaXZoaFZHOU1yckk3YXI4NnBBN0VaZ2gzNmVhLUVDcXhodTFCaFl6NDQ2OENJQlNISWpqalJSR2fSAWNBVV95cUxNZXFtd0xvSnFZYWJ4aF94ckgtNGpmTnBCNVFmR3dwTWlROWc2XzJpa0ZZWGp6R0hZWVh2R04tOUpWVk9CQ3pLQmJESG9GMkFlTkhGSnU3NlY5RlBrVHlLWndmUEE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g96de3ec14740",
+    "type": "intl",
+    "src": "fakty.com.ua",
+    "title": "Україна та Нідерланди розширять потужності з виробництва дронів — Єттен - fakty.com.ua",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOYWoxLU5zelFzbEhIOUhndS1ScW9RNTJ0WV9aNnFISGVpc3Iyd3RDcy1nd3NMaVo1MVdLTk5KbWpBR2IxOXVGM3lZZkNMY2w2TGpaSWwwQkpPaFlNaVlDOEZhamNPXzdpa3NjbE1pTlRSYXFwT0JNaGx4aGFvMlB2S0szLUN3SVVwZ1FOeVBfcGFYVWtObm1qMUlkTnI4V255cl9nVlFUVEczanp6dG50YUFGTWJ0SDTSAbwBQVVfeXFMTU9JTHUyM1JFaF9OQVZ1ejZwcTdXVnJadWNMZTdfTXNfVm1iTUVVeS1HSndoVWNaclhQd29HRVhoMTYzbnJyUW1YZHhQcHU0UXNHcHhMS2VsdHlNNV8xOGZTQWFpUWRlc1hEVDJLRTdLaFdtUVRsT0EzY09IYVNQb3pMTlBFU29qaGlmWWRVT3NiRW5MOWFzeWczbU5JMkNRb3lpN2ZGazZ2Mjhadjd2Z3lEa1ZWeDFNYWtHejc?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge961dea86589",
     "type": "intl",
     "src": "politico.eu",
@@ -3718,6 +3820,16 @@
     "date": "2026-03-03",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMFlhLVFJVFI5ZUwxajBjMVJWaDYyYXdqbmtVbU9IaWZsZ3o4R2xHcWlmVktrQVY5MXlRODEzTDB5V0dJOTZEZWR6RnI3VlBzenMySEJwbzFpWkxFRUlTSWFBdzFZdTN3d2RpaEp5eDE3VGlHajRvaDVLRmRmRlF3azUxdV9RUFJGRE9TSk55U2I1TU9Hb0JJLTlYRHJqZWJhV3pOWHJNWE9wR2F3UG5YZ0JaU2VjdUtOYVdHWkxGYllHQ2s?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g67a4c72407a3",
+    "type": "intl",
+    "src": "MSN",
+    "title": "Dutch unveil 'freedom tax' for defense boost - MSN",
+    "date": "2026-03-03",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOF8zZDhkYkoxeDAxdk1FY0lkamtGcTJzYlRST1Ywc1BaU1B5LVNyN2xPb3RJNTJpZWY1aTJGMEUzR0Q5bEo4NHg1VC0wbnhTd09fakI2dmJRSHBkSXY1VWJsdkxwQ1JWQUFnRmhfSTZtdEIzQzcxUDB6VHM2YmZUcFhwR255YXZGUTJNdnprdVlKOEl0M3NXYkZQam41RWt5bmlfWFV4VWVwRjhmYkJDektKLUdyYTM2bG1VdkhUS1dfT3B3ZWFoWnFEdE4?oc=5",
     "flag": "🌍"
   },
   {
@@ -4442,6 +4554,16 @@
     "date": "2026-02-25",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQM3BENDhKVl9qRHlZX1IzMWtLdkhRUHJ4NHYtQUJLZFNGOURlQTQ4VlpDNklTYXotVGctT05XTmFSZWhTb2FGQTcwX1V2UnYwdlk2VG55ajNhOWxRWWpUS05sUDVOLXZvbnpGSTNfbnl6REFacjUzUEhIa1FJRnVVeEtmNW1FTFdDeTBNSHoxdjAxa1VnbXNtTm1ucFJ2VElOWElBTGNhTGdFY3VRT2FlRXlzWTZxcTU4RHZj?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb3f6e9bc8d64",
+    "type": "intl",
+    "src": "monocle.com",
+    "title": "Who is Rob Jetten, the Netherlands’ new prime minister? - monocle.com",
+    "date": "2026-02-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNckhMckNMRUZhVkVBaFY1WklWZi04MHlrY0FiS1hCeUJpUjRSSVVQdGdYZ0d2LWNxaXNCVUxzTjA1ZEVMelllMGdsaGJmQkIyZWQ0em1tQjY4aVJaM0xLZ2haSGtEZFoxRndKTkUwOGJNOC1vRnRCYlFqRlczbjlEZjgyc0NKYnVUZFp5enlNZzhFckZ6?oc=5",
     "flag": "🌍"
   },
   {
@@ -6573,6 +6695,46 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWGVhNUEzc2lUcTFCNzRTWXhGY2VuZWFBcC0xVXhIZHoxdl95Q3VWeEJWSTNKUzh3MFFvQkpKazRwRUtiZFR3VldpRUFVelZ3QTFJOVhJUkN1a3RvQXZQRGlvVU1IV1ZOVmlpSEozUUVsYWlfcjRHOVZpMy1yeGdJekxQMGQtOEFIRFBV?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbccff540c193",
+    "type": "intl",
+    "src": "news.az",
+    "title": "New Dutch PM Jetten faces tough road with minority government - news.az",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORGJkalQ1OWI1QzVHRmlUZURxX3RJS2pGMUlyZEhwWWZKQTlENlhNODFfcVNMdDd3MmJJLXRMUzdyTU1GWlJ0bVc0SzJneE0wSXJoemVTM0cyQjRuZUw4RkdGSF9HY2sxemRkVEM3dTc0SHIxY3hBWWNETUlwTGNGZkN2ZEFTR0l0eGc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1a8ac4d53293",
+    "type": "intl",
+    "src": "Eunews",
+    "title": "Liberal Rob Jetten sworn in as Prime Minister of the Netherlands - Eunews",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWXNLRURfU0JSZ1BGNXpZdjFuNVhpSGlqNkk3RHdHQTNXU1h2Vm1rYlluMUstMWplNXNBdlF0NDJrUFNXSGgxMVBCak5ac1ZOWXpaYmhyQWxBdWZTLUFTMkZlcERqZkpuTkJNZ1QtX2duNm83S0NpaGJBcnpoenE2T25Mc3IwX1ViSmV6bzMxdXlBQ0pOR2RaVUJ4R1lLazl3RE1N?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd2b780b223d4",
+    "type": "intl",
+    "src": "Gamereactor",
+    "title": "Rob Jetten blir Nederlands yngste statsminister - Gamereactor",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWGVhNUEzc2lUcTFCNzRTWXhGY2VuZWFBcC0xVXhIZHoxdl95Q3VWeEJWSTNKUzh3MFFvQkpKazRwRUtiZFR3VldpRUFVelZ3QTFJOVhJUkN1a3RvQXZQRGlvVU1IV1ZOVmlpSEozUUVsYWlfcjRHOVZpMy1yeGdJekxQMGQtOEFIRFBV?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcd1acc307391",
+    "type": "intl",
+    "src": "bulletin.nu",
+    "title": "Nederländerna har fått ny premiärminister – yngsta någonsin - bulletin.nu",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ3otS1AyYVhOZzJDYXFTZEc4MjZHXzc1QkJCbGpGYTN1N1Jra3EtQV9HLVdhbC1lZGtucnNDUllENElCdmFqN2VTcThlUnpyTXduNWttbmpwU3U4Y19FVWhRNGFxX1ZfT0xyQzF0RkxQMUJlQjZ5NjBWTWlIdG81MU8tSQ?oc=5",
     "flag": "🌍"
   }
 ]
