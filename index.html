@@ -2,740 +2,797 @@
 
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SV5Y8BZ24');
-  </script>
-
-  <!-- Google Tag Manager -->
-
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
-
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jane Orlova</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jane Orlova — Political Researcher & Writer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 ```
 :root {
-  --black: #0a0a0a;
-  --white: #f5f5f3;
-  --gray: #888;
-  --light-gray: #e8e8e6;
-  --accent: #0a0a0a;
+  --ink:       #0c0c0c;
+  --ink-soft:  #3b3b3b;
+  --ink-muted: #8a8a8a;
+  --paper:     #f7f5f0;
+  --paper-2:   #efece5;
+  --rule:      #d6d1c8;
+  --accent:    #b4a48a;
+  --red:       #8b1a1a;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--white);
-  color: var(--black);
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
-  cursor: none;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
-/* Custom cursor */
-.cursor {
-  position: fixed;
-  width: 10px; height: 10px;
-  background: var(--black);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 9999;
+  opacity: 0.25;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
 }
-.cursor-ring {
-  position: fixed;
-  width: 36px; height: 36px;
-  border: 1px solid var(--black);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: transform 0.15s ease, width 0.3s ease, height 0.3s ease, opacity 0.3s;
-  opacity: 0.5;
-}
-body:hover .cursor { opacity: 1; }
 
-/* Cursor grow on hover over clickable elements */
-a:hover ~ #cursor,
-button:hover ~ #cursor { transform: translate(-50%, -50%) scale(1.8); }
-
-/* NAV */
+/* ─── NAV ─── */
 nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 52px;
-  background: rgba(245,245,243,0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s;
-}
-nav.scrolled { border-bottom-color: var(--light-gray); }
-
-.nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--black);
-  cursor: none;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5rem;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
 }
 
-.nav-links {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
-.nav-links a {
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--gray);
-  transition: color 0.2s;
-  position: relative;
-  cursor: none;
-}
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -3px; left: 0;
-  width: 0; height: 1px;
-  background: var(--black);
-  transition: width 0.3s ease;
-}
-.nav-links a:hover { color: var(--black); }
-.nav-links a:hover::after { width: 100%; }
+.nav-brand { display: flex; align-items: center; gap: 1.1rem; text-decoration: none; }
 
-/* HERO */
+.nav-headshot {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: var(--paper-2); border: 1px solid var(--rule);
+  overflow: hidden; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.nav-headshot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+.nav-wordmark { font-family: 'Playfair Display', serif; font-size: 0.98rem; font-weight: 700; letter-spacing: 0.04em; color: var(--ink); }
+
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.13em; text-transform: uppercase; text-decoration: none; color: var(--ink-muted); transition: color 0.2s; }
+.nav-links a:hover { color: var(--ink); }
+
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
+.nav-dateline { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; color: var(--ink-muted); }
+.nav-cta { display: inline-block; padding: 0.42rem 1.15rem; background: var(--ink); color: var(--paper); font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+.nav-cta:hover { background: var(--red); }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1px; background: var(--ink); }
+
+/* ─── TICKER ─── */
+.ticker { margin-top: 60px; height: 34px; background: var(--ink); overflow: hidden; display: flex; align-items: center; }
+.ticker-track { display: flex; white-space: nowrap; animation: tick 34s linear infinite; }
+@keyframes tick { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+.ti { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); padding: 0 2.5rem; }
+.td { color: rgba(180,164,138,0.28); padding: 0; }
+
+/* ─── HERO ─── */
 .hero {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding: 120px 52px 80px;
-  gap: 60px;
+  min-height: calc(100vh - 94px);
+  display: grid; grid-template-columns: 1fr 440px;
+  border-bottom: 2px solid var(--ink);
 }
 
-.hero-text { opacity: 0; animation: fadeUp 1s ease forwards 0.2s; }
-
-.hero-eyebrow {
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.hero-eyebrow::before {
-  content: '';
-  display: inline-block;
-  width: 32px; height: 1px;
-  background: var(--gray);
+.hero-main {
+  padding: 5.5rem 5rem;
+  border-right: 1px solid var(--rule);
+  display: flex; flex-direction: column; justify-content: space-between;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(3.2rem, 6vw, 5.5rem);
-  font-weight: 400;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  margin-bottom: 32px;
+.hero-overline { font-family: 'DM Mono', monospace; font-size: 0.61rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2.5rem; }
+.hero-overline-rule { display: block; width: 26px; height: 1px; background: var(--ink-muted); }
+
+h1.hero-name { font-family: 'Playfair Display', serif; font-size: clamp(4.5rem, 7.5vw, 8.5rem); font-weight: 900; line-height: 0.88; letter-spacing: -0.025em; margin-bottom: 2.5rem; }
+h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); }
+
+.hero-lead { font-size: 1.15rem; color: var(--ink-soft); max-width: 52ch; line-height: 1.65; margin-bottom: 3rem; }
+
+.hero-actions { display: flex; align-items: center; gap: 1.25rem; }
+
+.btn-ink { display: inline-block; padding: 0.8rem 2.2rem; background: var(--ink); color: var(--paper); font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+.btn-ink:hover { background: var(--red); }
+.btn-ghost { display: inline-block; padding: 0.8rem 2.2rem; border: 1px solid var(--ink); color: var(--ink); font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, color 0.2s; }
+.btn-ghost:hover { background: var(--ink); color: var(--paper); }
+
+.hero-footer-strip { border-top: 1px solid var(--rule); padding-top: 2.5rem; display: flex; align-items: flex-start; gap: 3.5rem; }
+.hero-stat-item strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; line-height: 1; margin-bottom: 0.2rem; }
+.hero-stat-item span { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--ink-muted); }
+
+/* ─── HERO SIDEBAR ─── */
+.hero-sidebar { display: flex; flex-direction: column; }
+
+.photo-panel {
+  flex: 1; background: var(--paper-2);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 3.5rem 2rem;
+  border-bottom: 1px solid var(--rule);
+  position: relative; overflow: hidden;
+  min-height: 420px;
 }
-h1 em {
-  font-style: italic;
-  color: var(--gray);
+.photo-panel::before {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg, transparent 0px, transparent 29px, var(--rule) 29px, var(--rule) 30px);
+  opacity: 0.2;
 }
 
-.hero-bio {
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: #444;
-  max-width: 420px;
-  margin-bottom: 48px;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.25s ease;
-  cursor: none;
-}
-.btn-primary {
-  background: var(--black);
-  color: var(--white);
-  border: 1px solid var(--black);
-}
-.btn-primary:hover {
-  background: transparent;
-  color: var(--black);
-}
-.btn-secondary {
-  background: transparent;
-  color: var(--black);
-  border: 1px solid var(--light-gray);
-}
-.btn-secondary:hover {
-  border-color: var(--black);
-}
-.btn svg { transition: transform 0.2s; }
-.btn:hover svg { transform: translateX(4px); }
-
-/* Hero visual */
-.hero-visual {
-  opacity: 0;
-  animation: fadeUp 1s ease forwards 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-card {
-  width: 100%;
-  max-width: 380px;
-  aspect-ratio: 3/4;
-  background: var(--black);
-  position: relative;
+/* ★ DOMINANT — 300px ★ */
+.headshot-ring {
+  position: relative; z-index: 1;
+  width: 300px; height: 300px; border-radius: 50%;
+  background: var(--rule);
+  border: 6px solid var(--paper);
+  box-shadow: 0 0 0 1px var(--rule), 0 20px 60px rgba(12,12,12,0.2);
   overflow: hidden;
+  margin-bottom: 1.75rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
 }
-.hero-card-inner {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 36px;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 55%);
-}
-.hero-card-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 10px;
-}
-.hero-card-quote {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.3rem;
-  color: white;
-  line-height: 1.5;
-}
-.hero-card-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 40px,
-      rgba(255,255,255,0.03) 40px,
-      rgba(255,255,255,0.03) 41px
-    );
+.headshot-ring img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+.headshot-name { position: relative; z-index: 1; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; text-align: center; margin-bottom: 0.35rem; }
+.headshot-sub { position: relative; z-index: 1; font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); text-align: center; }
+
+.hero-stats-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.hsg-item { padding: 1.6rem 1.75rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.hsg-item:nth-child(even) { border-right: none; }
+.hsg-item:nth-last-child(-n+2) { border-bottom: none; }
+.hsg-n { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; line-height: 1; margin-bottom: 0.25rem; }
+.hsg-l { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); }
+
+/* ─── SECTION HEADER ─── */
+.sec-hd { display: flex; align-items: baseline; gap: 1.25rem; margin-bottom: 3.5rem; }
+.sec-n { font-family: 'DM Mono', monospace; font-size: 0.61rem; letter-spacing: 0.13em; color: var(--ink-muted); }
+.sec-h { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3vw, 2.85rem); font-weight: 700; line-height: 1.1; }
+.sec-h em { font-style: italic; font-weight: 400; }
+.sec-rule { flex: 1; height: 1px; background: var(--rule); }
+
+/* ─── ABOUT ─── */
+#about { padding: 6rem 5rem; display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; border-bottom: 1px solid var(--rule); }
+
+.about-body p { font-size: 1.17rem; color: var(--ink-soft); line-height: 1.78; max-width: 60ch; margin-bottom: 1.5rem; }
+.about-body p:first-of-type::first-letter { font-family: 'Playfair Display', serif; font-size: 4.8rem; font-weight: 900; line-height: 0.78; float: left; margin: 0.06em 0.09em 0 0; color: var(--ink); }
+.about-body p:last-child { margin-bottom: 0; }
+
+.exp-list { list-style: none; margin-bottom: 2.5rem; }
+.exp-list li { padding: 0.78rem 0; border-bottom: 1px solid var(--rule); font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); display: flex; align-items: center; gap: 0.7rem; }
+.exp-list li::before { content: ''; width: 4px; height: 4px; background: var(--accent); flex-shrink: 0; }
+
+.creds { background: var(--ink); color: var(--paper); padding: 2rem; }
+.creds h4 { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
+.cred { margin-bottom: 1.2rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.cred:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.cred-deg { font-family: 'Playfair Display', serif; font-size: 0.93rem; font-style: italic; margin-bottom: 0.2rem; }
+.cred-inst { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.08em; color: rgba(247,245,240,0.42); }
+
+/* ─── DATA WORK ─── */
+#datawork { border-bottom: 1px solid var(--rule); }
+
+.datawork-head { padding: 5rem 5rem 0; }
+
+.datawork-intro { font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; max-width: 65ch; margin-bottom: 4rem; }
+
+/* Featured viz — full-width dark panel */
+.viz-featured {
+  display: grid; grid-template-columns: 1fr 1fr;
+  background: var(--ink);
+  border-top: 1px solid var(--rule);
+  margin-bottom: 0;
 }
 
-/* DIVIDER */
-.divider {
-  height: 1px;
-  background: var(--light-gray);
-  margin: 0 52px;
+.viz-featured-info {
+  padding: 4rem 5rem;
+  display: flex; flex-direction: column; justify-content: center;
+  border-right: 1px solid rgba(255,255,255,0.08);
 }
 
-/* SECTIONS */
-section {
-  padding: 100px 52px;
+.viz-tag { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.25rem; }
+.viz-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700; line-height: 1.15; color: var(--paper); margin-bottom: 1rem; }
+.viz-desc { font-size: 1rem; color: rgba(247,245,240,0.6); line-height: 1.7; margin-bottom: 2rem; max-width: 44ch; }
+
+.viz-meta-row { display: flex; gap: 2rem; margin-bottom: 2.5rem; }
+.viz-meta-item strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--paper); line-height: 1; margin-bottom: 0.2rem; }
+.viz-meta-item span { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(180,164,138,0.7); }
+
+.viz-link { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 0.2rem; transition: color 0.2s, border-color 0.2s; }
+.viz-link:hover { color: var(--accent); border-color: var(--accent); }
+.viz-link::after { content: '→'; transition: transform 0.2s; }
+.viz-link:hover::after { transform: translateX(4px); }
+
+/* Mini bar chart SVG */
+.viz-featured-chart {
+  padding: 3.5rem 4rem;
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  background: #111;
 }
 
-.section-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 56px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--light-gray);
+.chart-label { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(180,164,138,0.6); margin-bottom: 1.5rem; }
+
+.bar-chart { width: 100%; }
+
+.bar-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
+.bar-row:last-child { margin-bottom: 0; }
+
+.bar-party { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.08em; color: rgba(247,245,240,0.5); width: 2.8rem; flex-shrink: 0; text-align: right; }
+
+.bar-track { flex: 1; height: 10px; background: rgba(255,255,255,0.06); position: relative; overflow: hidden; }
+
+.bar-fill { height: 100%; background: var(--accent); transform-origin: left; animation: growBar 1.2s cubic-bezier(0.4,0,0.2,1) forwards; transform: scaleX(0); }
+
+@keyframes growBar { to { transform: scaleX(1); } }
+
+.bar-pct { font-family: 'DM Mono', monospace; font-size: 0.56rem; color: rgba(247,245,240,0.4); width: 2.5rem; flex-shrink: 0; }
+
+/* secondary viz cards */
+.viz-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--rule);
 }
 
-/* POLITICS SECTION */
-.politics-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
+.viz-card {
+  padding: 3rem;
+  border-right: 1px solid var(--rule);
+  text-decoration: none; color: inherit;
+  display: flex; flex-direction: column;
+  transition: background 0.25s;
+  position: relative; overflow: hidden;
 }
+.viz-card:last-child { border-right: none; }
+.viz-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
+.viz-card:hover { background: var(--paper-2); }
+.viz-card:hover::after { transform: scaleX(1); }
 
-.politics-card {
-  background: var(--white);
-  border: 1px solid var(--light-gray);
-  padding: 40px 36px;
-  text-decoration: none;
-  color: var(--black);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  transition: background 0.25s, transform 0.25s;
-  position: relative;
-  overflow: hidden;
-  cursor: none;
-}
-.politics-card::before {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 0; height: 2px;
-  background: var(--black);
-  transition: width 0.4s ease;
-}
-.politics-card:hover { background: var(--black); }
-.politics-card:hover .card-title,
-.politics-card:hover .card-desc,
-.politics-card:hover .card-num { color: var(--white); }
-.politics-card:hover .card-arrow { color: var(--white); }
-.politics-card:hover::before { width: 100%; }
+.vc-type { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 1.5rem; }
 
-.card-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: var(--light-gray);
-  transition: color 0.25s;
-}
-.card-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 400;
-  transition: color 0.25s;
-}
-.card-desc {
-  font-size: 0.88rem;
-  line-height: 1.65;
-  color: var(--gray);
-  transition: color 0.25s;
-}
-.card-arrow {
-  margin-top: auto;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gray);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.25s;
-}
+/* mini spark line */
+.vc-spark { margin-bottom: 1.5rem; }
+.vc-spark svg { width: 100%; height: 48px; display: block; }
 
-/* ABOUT SECTION */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 80px;
-  align-items: start;
-}
-.about-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 400;
-  line-height: 1.2;
-}
-.about-heading em { font-style: italic; color: var(--gray); }
+.vc-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.75rem; }
+.vc-desc { font-size: 0.91rem; color: var(--ink-soft); line-height: 1.6; flex: 1; margin-bottom: 1.75rem; }
+.vc-link { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); display: flex; align-items: center; gap: 0.5rem; }
+.vc-link::after { content: '→'; transition: transform 0.2s; }
+.viz-card:hover .vc-link::after { transform: translateX(4px); }
 
-.about-body p {
-  font-size: 1rem;
-  line-height: 1.85;
-  color: #444;
-  margin-bottom: 24px;
-}
-.about-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 36px;
-}
-.tag {
-  padding: 7px 16px;
-  border: 1px solid var(--light-gray);
-  font-size: 0.75rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray);
-}
+/* ─── TRACKER LIVE ─── */
+#tracker { padding: 6rem 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; border-bottom: 1px solid var(--rule); }
 
-/* MOTION TRACKER */
-.tracker-banner {
-  background: var(--black);
-  color: var(--white);
-  padding: 60px 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-  cursor: none;
-}
-.tracker-banner:hover { opacity: 0.88; }
-.tracker-left { flex: 1; }
-.tracker-eyebrow {
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.4);
-  margin-bottom: 14px;
-}
-.tracker-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
-  font-weight: 400;
-}
-.tracker-desc {
-  margin-top: 14px;
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.55);
-  line-height: 1.65;
-  max-width: 420px;
-}
-.tracker-cta {
-  white-space: nowrap;
-  font-size: 0.78rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 16px 28px;
-  transition: border-color 0.2s;
-}
-.tracker-banner:hover .tracker-cta { border-color: white; }
+.tracker-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--red); color: white; font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.28rem 0.75rem; margin-bottom: 1.5rem; }
+.tracker-pill::before { content: ''; width: 5px; height: 5px; background: white; border-radius: 50%; animation: pulse 1.6s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
-/* SUBSTACK */
-.substack-section {
-  text-align: center;
-  padding: 100px 52px;
-  background: var(--white);
-}
-.substack-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.substack-section h2 em { font-style: italic; color: var(--gray); }
-.substack-section p {
-  color: var(--gray);
-  font-size: 1rem;
-  margin-bottom: 40px;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.7;
-}
+.tracker-h { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4vw, 3.8rem); font-weight: 700; line-height: 1.08; margin-bottom: 1.2rem; }
+.tracker-h em { font-style: italic; font-weight: 400; }
+.tracker-p { font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 44ch; margin-bottom: 2.5rem; }
 
-/* FOOTER */
-footer {
-  border-top: 1px solid var(--light-gray);
-  padding: 36px 52px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.78rem;
-  color: var(--gray);
-  letter-spacing: 0.05em;
-}
-footer a { color: var(--gray); text-decoration: none; transition: color 0.2s; cursor: none; }
-footer a:hover { color: var(--black); }
+.t-screen { background: var(--ink); padding: 2.5rem; }
+.ts-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+.ts-lbl { font-family: 'DM Mono', monospace; font-size: 0.59rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.live-dot { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.1em; color: #4ade80; display: flex; align-items: center; gap: 0.4rem; }
+.live-dot::before { content: ''; width: 5px; height: 5px; background: #4ade80; border-radius: 50%; animation: pulse 1.6s infinite; }
 
-/* ANIMATIONS */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+.m-row { display: flex; align-items: center; gap: 0.8rem; padding: 0.78rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.m-row:last-child { border-bottom: none; }
+.m-tag { font-family: 'DM Mono', monospace; font-size: 0.5rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.48rem; flex-shrink: 0; }
+.tp { background: rgba(74,222,128,0.15); color: #4ade80; }
+.tr { background: rgba(239,68,68,0.15); color: #f87171; }
+.tpe { background: rgba(251,191,36,0.15); color: #fbbf24; }
+.m-txt { font-family: 'EB Garamond', serif; font-size: 0.84rem; color: rgba(247,245,240,0.62); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  nav { padding: 20px 24px; }
-  .nav-links { gap: 24px; }
-  .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
-  .hero-visual { display: none; }
-  section { padding: 70px 24px; }
-  .divider { margin: 0 24px; }
-  .politics-grid { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .tracker-banner { flex-direction: column; padding: 48px 24px; align-items: flex-start; }
-  footer { flex-direction: column; gap: 12px; text-align: center; padding: 28px 24px; }
-  .substack-section { padding: 70px 24px; }
-  body { cursor: auto; }
-  .cursor, .cursor-ring { display: none; }
-  a, button { cursor: pointer; }
+/* ─── WRITING ─── */
+#writing { padding: 6rem 5rem; border-bottom: 1px solid var(--rule); }
+.writing-top { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
+.writing-desc { font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; }
+.writing-r { text-align: right; }
+
+.articles { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); min-height: 180px; }
+.art { padding: 2.5rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; display: block; transition: background 0.2s; }
+.art:hover { background: var(--paper-2); }
+.art:nth-child(even) { border-right: none; }
+.art:nth-last-child(-n+2) { border-bottom: none; }
+.art-meta { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.8rem; }
+.art-h { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.65rem; }
+.art-p { font-size: 0.91rem; color: var(--ink-soft); line-height: 1.6; }
+.art-more { background: var(--paper-2); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1.2rem; }
+.art-more-lbl { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rule); }
+
+.feed-loading { grid-column: 1/-1; display: flex; align-items: center; justify-content: center; padding: 4rem; font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); gap: 0.75rem; }
+.feed-loading::before { content: ''; width: 14px; height: 14px; border: 1px solid var(--rule); border-top-color: var(--ink); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ─── CONTACT ─── */
+#contact { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid var(--ink); }
+
+.contact-ink { padding: 6rem 5rem; background: var(--ink); color: var(--paper); border-right: 1px solid rgba(255,255,255,0.07); }
+.contact-ink .sec-n { color: var(--accent); }
+.contact-ink .sec-h { color: var(--paper); }
+.contact-ink .sec-rule { background: rgba(255,255,255,0.1); }
+
+.contact-desc { font-size: 1.05rem; color: rgba(247,245,240,0.58); line-height: 1.7; max-width: 42ch; margin-bottom: 3rem; }
+.email-block { margin-bottom: 3rem; }
+.email-lbl { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); display: block; margin-bottom: 0.7rem; }
+.email-addr { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-style: italic; color: var(--paper); text-decoration: none; border-bottom: 1px solid var(--accent); padding-bottom: 0.25rem; transition: color 0.2s; }
+.email-addr:hover { color: var(--accent); }
+.avail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem; }
+.av-tag { padding: 0.52rem 0.8rem; border: 1px solid rgba(255,255,255,0.11); font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(247,245,240,0.4); text-align: center; }
+
+.contact-paper { padding: 6rem 5rem; }
+.pq-lbl { font-family: 'DM Mono', monospace; font-size: 0.59rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 1.75rem; }
+.pullquote { font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 2.5vw, 2.25rem); font-style: italic; font-weight: 400; line-height: 1.4; color: var(--ink); margin-bottom: 1.2rem; }
+.pq-attr { font-family: 'DM Mono', monospace; font-size: 0.61rem; letter-spacing: 0.1em; color: var(--ink-muted); margin-bottom: 3rem; }
+.topics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+.t-tag { padding: 0.52rem 0.8rem; border: 1px solid var(--rule); font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-soft); text-align: center; }
+
+/* ─── FOOTER ─── */
+footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--rule); }
+.footer-brand { font-family: 'Playfair Display', serif; font-size: 0.93rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; color: var(--ink); }
+.footer-links { display: flex; gap: 2rem; list-style: none; }
+.footer-links a { font-family: 'DM Mono', monospace; font-size: 0.59rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--ink); }
+.footer-copy { font-family: 'DM Mono', monospace; font-size: 0.57rem; color: var(--ink-muted); letter-spacing: 0.08em; }
+
+/* ─── REVEAL ─── */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.on { opacity: 1; transform: none; }
+
+/* ─── MOBILE ─── */
+@media (max-width: 960px) {
+  nav { padding: 0 1.5rem; }
+  .nav-links, .nav-dateline { display: none; }
+  .hamburger { display: flex; }
+
+  .hero { grid-template-columns: 1fr; min-height: unset; }
+  .hero-main { padding: 3.5rem 1.5rem; border-right: none; }
+  .hero-sidebar { display: none; }
+
+  #about { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
+
+  .datawork-head { padding: 3rem 1.5rem 0; }
+  .viz-featured { grid-template-columns: 1fr; }
+  .viz-featured-info { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .viz-featured-chart { padding: 2.5rem 1.5rem; }
+  .viz-grid { grid-template-columns: 1fr; }
+  .viz-card { border-right: none; }
+
+  #tracker { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
+
+  #writing { padding: 3rem 1.5rem; }
+  .writing-top { grid-template-columns: 1fr; gap: 1.5rem; }
+  .writing-r { text-align: left; }
+  .articles { grid-template-columns: 1fr; }
+  .art { border-right: none; }
+  .art:nth-last-child(-n+2) { border-bottom: 1px solid var(--rule); }
+  .art:last-child { border-bottom: none; }
+
+  #contact { grid-template-columns: 1fr; }
+  .contact-ink { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .contact-paper { padding: 3rem 1.5rem; }
+
+  footer { flex-direction: column; gap: 1.2rem; text-align: center; padding: 2rem 1.5rem; }
+  .footer-links { flex-wrap: wrap; justify-content: center; }
 }
 ```
 
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC93BV4D"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
+<!-- NAV -->
 
-  <!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <div class="nav-headshot">
+      <!-- Replace SVG with: <img src="your-photo.jpg" alt="Jane Orlova"> -->
+      <svg width="16" height="16" fill="none" stroke="#999" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+    <span class="nav-wordmark">Jane Orlova</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Profile</a></li>
+    <li><a href="#datawork">Data Work</a></li>
+    <li><a href="#tracker">Tracker</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-dateline">NL · 2026</span>
+    <a href="/cdn-cgi/l/email-protection#fa958896958c9ba590ba839b929595d4999597" class="nav-cta">Email me</a>
+  </div>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
 
-  <nav id="nav">
-    <a href="/" class="nav-logo">Jane Orlova</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#politics">Politics</a></li>
-      <li><a href="#tracker">Motion Tracker</a></li>
-      <li><a href="https://janeorlova.substack.com" target="_blank">Substack</a></li>
+<!-- TICKER -->
+
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ti">Dutch Political Researcher</span><span class="ti td">◆</span>
+    <span class="ti">Political Communication · MSc UvA</span><span class="ti td">◆</span>
+    <span class="ti">Framing &amp; Public Opinion</span><span class="ti td">◆</span>
+    <span class="ti">European Politics</span><span class="ti td">◆</span>
+    <span class="ti">Data Visualisation</span><span class="ti td">◆</span>
+    <span class="ti">Available for Collaboration</span><span class="ti td">◆</span>
+    <span class="ti">Dutch Political Researcher</span><span class="ti td">◆</span>
+    <span class="ti">Political Communication · MSc UvA</span><span class="ti td">◆</span>
+    <span class="ti">Framing &amp; Public Opinion</span><span class="ti td">◆</span>
+    <span class="ti">European Politics</span><span class="ti td">◆</span>
+    <span class="ti">Data Visualisation</span><span class="ti td">◆</span>
+    <span class="ti">Available for Collaboration</span><span class="ti td">◆</span>
+  </div>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="hero-main">
+    <div>
+      <p class="hero-overline"><span class="hero-overline-rule"></span>Political Researcher &amp; Writer · Amsterdam</p>
+      <h1 class="hero-name">Jane<br><em>Orlova</em></h1>
+      <p class="hero-lead">International Relations &amp; Political Communication researcher. Writing about Dutch and European politics — elections, policy, messaging, and the people shaping it.</p>
+      <div class="hero-actions">
+        <a href="/cdn-cgi/l/email-protection#08677a64677e695762487169606767266b6765" class="btn-ink">Email me directly</a>
+        <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read Substack</a>
+      </div>
+    </div>
+    <div class="hero-footer-strip">
+      <div class="hero-stat-item"><strong>2018</strong><span>Based in NL since</span></div>
+      <div class="hero-stat-item"><strong>MSc</strong><span>Univ. of Amsterdam</span></div>
+      <div class="hero-stat-item"><strong>3</strong><span>Live data projects</span></div>
+    </div>
+  </div>
+
+  <div class="hero-sidebar">
+    <div class="photo-panel">
+      <div class="headshot-ring">
+        <!-- Replace SVG with: <img src="your-photo.jpg" alt="Jane Orlova"> -->
+        <svg width="72" height="72" fill="none" stroke="#bbb" stroke-width="0.75" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <p class="headshot-name">Jane Orlova</p>
+      <p class="headshot-sub">Political Researcher · Amsterdam</p>
+    </div>
+    <div class="hero-stats-grid">
+      <div class="hsg-item"><div class="hsg-n">NL</div><div class="hsg-l">Based</div></div>
+      <div class="hsg-item"><div class="hsg-n">EU</div><div class="hsg-l">Focus</div></div>
+      <div class="hsg-item"><div class="hsg-n">MSc</div><div class="hsg-l">UvA</div></div>
+      <div class="hsg-item"><div class="hsg-n">3</div><div class="hsg-l">Projects</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="about-body reveal">
+    <div class="sec-hd">
+      <span class="sec-n">01</span>
+      <h2 class="sec-h">Understanding <em>the choice</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <p>I'm Jane Orlova — a political researcher and writer based in the Netherlands since 2018. My background spans International Relations (Moscow State University) and Political Communication (MSc, University of Amsterdam), with research conducted at the University of Bologna during my Erasmus exchange.</p>
+    <p>My thesis examined how news framing shapes public support for climate refugees — and how emotions and political knowledge modify that effect. That question still sits at the centre of everything I find compelling: why people believe what they believe, how messaging moves public opinion, and who controls the frame.</p>
+    <p>I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. I am particularly drawn to campaigns: how they are built, where they win people over, and where they lose them.</p>
+  </div>
+  <div class="reveal" style="transition-delay:0.15s">
+    <ul class="exp-list">
+      <li>Dutch Politics</li>
+      <li>Political Communication</li>
+      <li>News Framing &amp; Opinion</li>
+      <li>European Elections</li>
+      <li>Campaign Strategy</li>
+      <li>Political Marketing</li>
     </ul>
-  </nav>
+    <div class="creds">
+      <h4>Education</h4>
+      <div class="cred"><div class="cred-deg">Political Communication</div><div class="cred-inst">MSc · University of Amsterdam</div></div>
+      <div class="cred"><div class="cred-deg">International Relations</div><div class="cred-inst">Moscow State University</div></div>
+      <div class="cred"><div class="cred-deg">Erasmus Research</div><div class="cred-inst">University of Bologna</div></div>
+    </div>
+  </div>
+</section>
 
-  <!-- HERO -->
+<!-- DATA WORK -->
 
-  <section class="hero">
-    <div class="hero-text">
-      <div class="hero-eyebrow">Politics & Writing</div>
-      <h1>Jane<br><em>Orlova</em></h1>
-      <p class="hero-bio">
-        International Relations & Political Communication researcher, based in the Netherlands since 2018. MSc from the University of Amsterdam. Writing about Dutch and European politics — elections, policy, political messaging, and the people shaping it.
-      </p>
-      <div class="hero-cta">
-        <a href="#politics" class="btn btn-primary">
-          Politics Pages
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </a>
-        <a href="https://janeorlova.substack.com" target="_blank" class="btn btn-secondary">
-          Read on Substack
-        </a>
+<section id="datawork">
+  <div class="datawork-head reveal">
+    <div class="sec-hd">
+      <span class="sec-n">02</span>
+      <h2 class="sec-h">Data Work &amp; <em>Visualisations</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <p class="datawork-intro">Political data made legible — from election outcomes and parliamentary voting patterns to live sentiment tracking. Each project combines original data collection with analysis and visual storytelling.</p>
+  </div>
+
+  <!-- FEATURED: Gemeenteuitslag -->
+
+  <div class="viz-featured reveal">
+    <div class="viz-featured-info">
+      <span class="viz-tag">Featured · Municipal Elections 2026</span>
+      <h3 class="viz-title">Gemeenteuitslag 2026</h3>
+      <p class="viz-desc">In-depth analysis of Dutch municipal election results — local outcomes mapped and contextualised across all municipalities, revealing patterns in party performance, urban-rural divides, and coalition dynamics.</p>
+      <div class="viz-meta-row">
+        <div class="viz-meta-item"><strong>380+</strong><span>Municipalities</span></div>
+        <div class="viz-meta-item"><strong>2026</strong><span>Election cycle</span></div>
+        <div class="viz-meta-item"><strong>Live</strong><span>Data</span></div>
+      </div>
+      <a href="https://janeorlova.com/gemeenteuitslag2026" class="viz-link">Explore results</a>
+    </div>
+    <div class="viz-featured-chart">
+      <div class="chart-label">Party vote share · sample municipalities</div>
+      <div class="bar-chart" id="bar-chart">
+        <!-- Rendered by JS -->
       </div>
     </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="hero-card-bg"></div>
-        <div class="hero-card-inner">
-          <div class="hero-card-label">Writing since 2025</div>
-          <div class="hero-card-quote">"Behind every headline, a frame. Behind every frame, a choice."</div>
-        </div>
+  </div>
+
+  <!-- Secondary viz cards -->
+
+  <div class="viz-grid">
+    <a href="https://janeorlova.com/jetten-sentiment" class="viz-card reveal">
+      <div class="vc-type">Sentiment Analysis</div>
+      <div class="vc-spark">
+        <svg viewBox="0 0 200 48" preserveAspectRatio="none">
+          <polyline points="0,38 20,32 40,28 60,34 80,18 100,22 120,14 140,20 160,10 180,16 200,8" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+          <polyline points="0,38 20,32 40,28 60,34 80,18 100,22 120,14 140,20 160,10 180,16 200,8 200,48 0,48" fill="var(--accent)" opacity="0.08"/>
+        </svg>
       </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- POLITICS SECTION -->
-
-  <section id="politics">
-    <div class="section-label">Politics Pages</div>
-    <div class="politics-grid">
+      <h3 class="vc-title">Jetten Sentiment Tracker</h3>
+      <p class="vc-desc">Longitudinal tracking of public and political sentiment around Rob Jetten — methodology combining media monitoring, social signals, and political discourse.</p>
+      <span class="vc-link">View tracker</span>
+    </a>
 
 ```
-  <a href="/gemeenteuitslag2026" class="politics-card">
-    <div class="card-num">01</div>
-    <div class="card-title">Gemeente­uitslag 2026</div>
-    <div class="card-desc">Municipal election results for 2026 — an in-depth look at local outcomes across the Netherlands.</div>
-    <div class="card-arrow">
-      View page
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
+<a href="https://janeorlova.com/moties-tracker" class="viz-card reveal" style="transition-delay:0.1s">
+  <div class="vc-type">Parliamentary Data</div>
+  <div class="vc-spark">
+    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
+      <!-- mini histogram bars -->
+      <rect x="0"  y="28" width="16" height="20" fill="var(--accent)" opacity="0.5"/>
+      <rect x="20" y="18" width="16" height="30" fill="var(--accent)" opacity="0.6"/>
+      <rect x="40" y="10" width="16" height="38" fill="var(--accent)" opacity="0.8"/>
+      <rect x="60" y="22" width="16" height="26" fill="var(--accent)" opacity="0.6"/>
+      <rect x="80" y="8"  width="16" height="40" fill="var(--accent)" opacity="0.9"/>
+      <rect x="100" y="16" width="16" height="32" fill="var(--accent)" opacity="0.7"/>
+      <rect x="120" y="24" width="16" height="24" fill="var(--accent)" opacity="0.5"/>
+      <rect x="140" y="12" width="16" height="36" fill="var(--accent)" opacity="0.8"/>
+      <rect x="160" y="20" width="16" height="28" fill="var(--accent)" opacity="0.6"/>
+      <rect x="180" y="6"  width="16" height="42" fill="var(--accent)" opacity="0.9"/>
+    </svg>
+  </div>
+  <h3 class="vc-title">Moties Tracker</h3>
+  <p class="vc-desc">Live tracking of parliamentary motions in the Tweede Kamer — who proposes, who votes, what passes. Patterns in party alliances and opposition strategies over time.</p>
+  <span class="vc-link">Open tracker</span>
+</a>
 
-  <a href="/jetten-sentiment" class="politics-card">
-    <div class="card-num">02</div>
-    <div class="card-title">Jetten Sentiment</div>
-    <div class="card-desc">Tracking public and political sentiment around Rob Jetten over time through data and analysis.</div>
-    <div class="card-arrow">
-      View page
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
-  <a href="/moties-tracker" class="politics-card">
-    <div class="card-num">03</div>
-    <div class="card-title">Moties Tracker</div>
-    <div class="card-desc">A live tracker of parliamentary motions — who submits them, who votes for them, and what passes.</div>
-    <div class="card-arrow">
-      View page
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
+<div class="viz-card reveal" style="transition-delay:0.2s; cursor:default;">
+  <div class="vc-type">Coming Soon</div>
+  <div class="vc-spark">
+    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
+      <polyline points="0,24 25,24 50,24 75,24 100,24 125,24 150,24 175,24 200,24" fill="none" stroke="var(--rule)" stroke-width="1.5" stroke-dasharray="4 4"/>
+    </svg>
+  </div>
+  <h3 class="vc-title">Next Visualisation</h3>
+  <p class="vc-desc">A new data project is in development. Add a description of your next visualisation or data work here — framing analysis, coalition modelling, or another live tool.</p>
+  <span class="vc-link" style="color:var(--ink-muted)">In progress</span>
 </div>
 ```
 
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- ABOUT SECTION -->
-
-  <section id="about">
-    <div class="section-label">About</div>
-    <div class="about-grid">
-      <div>
-        <h2 class="about-heading">Understanding <em>the choice</em></h2>
-      </div>
-      <div class="about-body">
-        <p>
-          I'm Jane Orlova — a political researcher and writer based in the Netherlands since 2018. I have a background in International Relations (Moscow State University) and Political Communication (MSc, University of Amsterdam), and I did research at the University of Bologna during my Erasmus.
-        </p>
-        <p>
-          My thesis looked at how news framing shapes public support for climate refugees — and how emotions and political knowledge change that effect. That question still sits at the centre of everything I find interesting: why people believe what they believe, how messaging moves public opinion, and who controls the frame.
-        </p>
-        <p>
-          I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. I'm particularly drawn to campaigns: how they're built, where they win people over, and where they lose them.
-        </p>
-        <div class="about-tags">
-          <span class="tag">Dutch Politics</span>
-          <span class="tag">International Relations</span>
-          <span class="tag">Political Communication</span>
-          <span class="tag">European Politics</span>
-          <span class="tag">Political Marketing</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MOTION TRACKER BANNER -->
-
-  <a href="/moties-tracker" class="tracker-banner" id="tracker">
-    <div class="tracker-left">
-      <div class="tracker-eyebrow">Live Tool</div>
-      <div class="tracker-title">Motion Tracker</div>
-      <div class="tracker-desc">Track every parliamentary motion in real time — who proposes, who votes, what passes.</div>
-    </div>
-    <div class="tracker-cta">
-      Open Tracker
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </div>
-  </a>
-
-  <!-- SUBSTACK -->
-
-  <div class="substack-section">
-    <h2>Read my <em>writing</em></h2>
-    <p>Essays, analysis, and takes on Dutch and international politics — published on Substack.</p>
-    <a href="https://janeorlova.substack.com" target="_blank" class="btn btn-primary">
-      Visit Substack
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </a>
   </div>
+</section>
 
-  <!-- FOOTER -->
+<!-- TRACKER LIVE -->
 
-  <footer>
-    <span>© 2026 Jane Orlova</span>
-    <span>
-      <a href="https://janeorlova.substack.com" target="_blank">Substack</a>
-      &nbsp;·&nbsp;
-      <a href="mailto:orlova_j@yahoo.com">Contact</a>
-    </span>
-  </footer>
+<section id="tracker">
+  <div class="reveal">
+    <div class="tracker-pill">Live Tool</div>
+    <h2 class="tracker-h">Motion<br><em>Tracker</em></h2>
+    <p class="tracker-p">Track every parliamentary motion in real time — who proposes, who votes, what passes. Built to make Dutch democracy legible.</p>
+    <a href="https://janeorlova.com/moties-tracker" class="btn-ink">Open full tracker →</a>
+  </div>
+  <div class="t-screen reveal" style="transition-delay:0.15s">
+    <div class="ts-head">
+      <span class="ts-lbl">Tweede Kamer · Recent Moties</span>
+      <span class="live-dot">Live</span>
+    </div>
+    <div id="tracker-feed">
+      <div class="feed-loading">Loading recent motions…</div>
+    </div>
+  </div>
+</section>
 
-  <script>
-    // Custom cursor
-    const cursor = document.getElementById('cursor');
-    const ring = document.getElementById('cursorRing');
-    let mx = 0, my = 0, rx = 0, ry = 0;
+<!-- WRITING — LIVE SUBSTACK -->
 
-    document.addEventListener('mousemove', e => {
-      mx = e.clientX; my = e.clientY;
-      cursor.style.left = mx + 'px';
-      cursor.style.top = my + 'px';
-    });
+<section id="writing">
+  <div class="sec-hd reveal">
+    <span class="sec-n">03</span>
+    <h2 class="sec-h">Read my <em>writing</em></h2>
+    <div class="sec-rule"></div>
+  </div>
+  <div class="writing-top reveal">
+    <p class="writing-desc">Essays, analysis, and takes on Dutch and international politics. Published on Substack — covering elections, messaging, leadership, and what the numbers actually mean. Posts load automatically.</p>
+    <div class="writing-r"><a href="https://janeorlova.substack.com" target="_blank" class="btn-ink">Visit Substack →</a></div>
+  </div>
+  <div class="articles reveal" id="substack-feed">
+    <div class="feed-loading">Loading latest posts…</div>
+  </div>
+</section>
 
-    function animateRing() {
-      rx += (mx - rx) * 0.12;
-      ry += (my - ry) * 0.12;
-      ring.style.left = rx + 'px';
-      ring.style.top = ry + 'px';
-      requestAnimationFrame(animateRing);
-    }
-    animateRing();
+<!-- CONTACT -->
 
-    // Cursor grow on clickable elements
-    document.querySelectorAll('a, button').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.style.width = '20px';
-        cursor.style.height = '20px';
-        ring.style.width = '52px';
-        ring.style.height = '52px';
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.style.width = '10px';
-        cursor.style.height = '10px';
-        ring.style.width = '36px';
-        ring.style.height = '36px';
-      });
-    });
+<section id="contact">
+  <div class="contact-ink reveal">
+    <div class="sec-hd" style="margin-bottom:2rem">
+      <span class="sec-n">04</span>
+      <h2 class="sec-h">Get in <em>touch</em></h2>
+      <div class="sec-rule"></div>
+    </div>
+    <p class="contact-desc">Available for research collaboration, media commentary, writing commissions, and advisory roles within political agencies across the Netherlands and Europe.</p>
+    <div class="email-block">
+      <span class="email-lbl">Write to me directly</span>
+      <a href="/cdn-cgi/l/email-protection#bdd2cfd1d2cbdce2d7fdc4dcd5d2d293ded2d0" class="email-addr"><span class="__cf_email__" data-cfemail="68071a04071e093702281109000707460b0705">[email&#160;protected]</span></a>
+    </div>
+    <div class="avail-grid">
+      <div class="av-tag">Research</div>
+      <div class="av-tag">Commentary</div>
+      <div class="av-tag">Writing</div>
+      <div class="av-tag">Advisory</div>
+    </div>
+  </div>
+  <div class="contact-paper reveal" style="transition-delay:0.15s">
+    <p class="pq-lbl">For citation &amp; press</p>
+    <blockquote class="pullquote">"Behind every headline, a frame. Behind every frame, a choice."</blockquote>
+    <p class="pq-attr">— Jane Orlova, Political Researcher · Amsterdam</p>
+    <div class="topics">
+      <div class="t-tag">Dutch Politics</div>
+      <div class="t-tag">EU Elections</div>
+      <div class="t-tag">Framing Theory</div>
+      <div class="t-tag">Campaign Analysis</div>
+      <div class="t-tag">Public Opinion</div>
+      <div class="t-tag">Political Messaging</div>
+    </div>
+  </div>
+</section>
 
-    // Nav scroll
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 40);
-    });
+<!-- FOOTER -->
 
-    // Scroll reveal
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1 });
+<footer>
+  <a href="#" class="footer-brand">Jane Orlova</a>
+  <ul class="footer-links">
+    <li><a href="#about">Profile</a></li>
+    <li><a href="#datawork">Data Work</a></li>
+    <li><a href="https://janeorlova.substack.com" target="_blank">Substack</a></li>
+    <li><a href="/cdn-cgi/l/email-protection#543b26383b22350b3e142d353c3b3b7a373b39">Contact</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 Jane Orlova · Amsterdam</span>
+</footer>
 
-    document.querySelectorAll('.politics-card, .about-grid, .section-label').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
-      observer.observe(el);
-    });
-  </script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
-</body>
-</html>
+/* ── SCROLL REVEAL ── */
+const io = new IntersectionObserver(entries => {
+entries.forEach(e => { if (e.isIntersecting) e.target.classList.add(‘on’); });
+}, { threshold: 0.08, rootMargin: ‘0px 0px -30px 0px’ });
+document.querySelectorAll(’.reveal’).forEach(el => io.observe(el));
+
+/* ── MOBILE NAV ── */
+const ham = document.querySelector(’.hamburger’);
+const navLinks = document.querySelector(’.nav-links’);
+ham.addEventListener(‘click’, () => {
+const open = navLinks.style.display === ‘flex’;
+if (open) { navLinks.style.display = ‘’; }
+else {
+Object.assign(navLinks.style, {
+display: ‘flex’, flexDirection: ‘column’,
+position: ‘fixed’, top: ‘60px’, left: 0, right: 0,
+background: ‘var(–paper)’, borderBottom: ‘1px solid var(–rule)’,
+padding: ‘2rem’, gap: ‘1.5rem’, zIndex: 99
+});
+}
+});
+
+/* ── BAR CHART (Gemeenteuitslag sample data) ── */
+const parties = [
+{ name: ‘VVD’,  pct: 0.22 },
+{ name: ‘D66’,  pct: 0.17 },
+{ name: ‘GL’,   pct: 0.14 },
+{ name: ‘PvdA’, pct: 0.13 },
+{ name: ‘CDA’,  pct: 0.11 },
+{ name: ‘SP’,   pct: 0.09 },
+{ name: ‘PVV’,  pct: 0.08 },
+];
+
+const chart = document.getElementById(‘bar-chart’);
+chart.innerHTML = parties.map((p, i) => `<div class="bar-row"> <span class="bar-party">${p.name}</span> <div class="bar-track"> <div class="bar-fill" style="width:${p.pct * 100}%; animation-delay:${0.3 + i * 0.1}s"></div> </div> <span class="bar-pct">${Math.round(p.pct * 100)}%</span> </div>`).join(’’);
+
+/* ── LIVE SUBSTACK FEED ── */
+async function loadSubstack() {
+const container = document.getElementById(‘substack-feed’);
+const RSS = ‘https://janeorlova.substack.com/feed’;
+const API = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS)}&count=3`;
+
+```
+try {
+  const res = await fetch(API);
+  const data = await res.json();
+  if (!data.items || !data.items.length) throw new Error('empty');
+
+  let html = data.items.slice(0, 3).map(item => {
+    const date = new Date(item.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    const tmp = document.createElement('div');
+    tmp.innerHTML = item.description || '';
+    const excerpt = (tmp.textContent || '').slice(0, 160).trim() + '…';
+    return `<a href="${item.link}" target="_blank" rel="noopener" class="art">
+      <p class="art-meta">${date}</p>
+      <h3 class="art-h">${item.title}</h3>
+      <p class="art-p">${excerpt}</p>
+    </a>`;
+  }).join('');
+
+  html += `<div class="art art-more">
+    <p class="art-more-lbl">More on Substack</p>
+    <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a>
+  </div>`;
+
+  container.innerHTML = html;
+} catch {
+  container.innerHTML = `
+    <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">First article coming soon</h3><p class="art-p">Posts will appear here automatically once published on Substack.</p></div>
+    <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">More writing on the way</h3><p class="art-p">Check back soon — or visit Substack directly.</p></div>
+    <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">Analysis and essays</h3><p class="art-p">Dutch and European politics published on Substack.</p></div>
+    <div class="art art-more"><p class="art-more-lbl">Visit directly</p><a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>`;
+}
+```
+
+}
+
+/* ── LIVE MOTIES TRACKER ── */
+async function loadTracker() {
+const feed = document.getElementById(‘tracker-feed’);
+const tagMap = {
+‘aangenomen’:  { cls: ‘tp’,  label: ‘Passed’ },
+‘verworpen’:   { cls: ‘tr’,  label: ‘Rejected’ },
+‘ingetrokken’: { cls: ‘tr’,  label: ‘Withdrawn’ },
+‘aangehouden’: { cls: ‘tpe’, label: ‘Deferred’ },
+};
+
+```
+const fallback = [
+  { cls: 'tp',  label: 'Passed',   text: 'Motie klimaatbeleid subsidies — D66, GroenLinks' },
+  { cls: 'tr',  label: 'Rejected', text: 'Motie defensiebudget verhoging — PVV' },
+  { cls: 'tpe', label: 'Pending',  text: 'Motie asielopvang gemeenten — NSC, BBB' },
+  { cls: 'tp',  label: 'Passed',   text: 'Motie woningbouw versnelling — VVD' },
+  { cls: 'tr',  label: 'Rejected', text: 'Motie zorgpersoneel loonsverhoging — SP, PvdA' },
+];
+
+const renderRows = items => items.map(r =>
+  `<div class="m-row"><span class="m-tag ${r.cls}">${r.label}</span><span class="m-txt">${r.text}</span></div>`
+).join('');
+
+try {
+  const url = 'https://gegevens.tweedekamer.nl/kamerstukken/moties?$top=5&$orderby=Datum desc&$format=json';
+  const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
+  if (!res.ok) throw new Error('api');
+  const data = await res.json();
+  const items = (data.value || []).slice(0, 5);
+  if (!items.length) throw new Error('empty');
+
+  feed.innerHTML = items.map(m => {
+    const status = (m.Besluit || '').toLowerCase();
+    const tag = tagMap[status] || { cls: 'tpe', label: 
+```
