@@ -351,8 +351,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 .footer-copy { font-family: 'DM Mono', monospace; font-size: 0.57rem; color: var(--ink-muted); letter-spacing: 0.08em; }
 
 /* ─── REVEAL ─── */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.65s ease, transform 0.65s ease; }
-.reveal.on { opacity: 1; transform: none; }
+/* reveal handled by JS for desktop only — all elements visible on mobile */
 
 /* ─── MOBILE ─── */
 @media (max-width: 960px) {
@@ -688,11 +687,23 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
-/* ── SCROLL REVEAL ── */
+/* ── SCROLL REVEAL — desktop only ── */
+if (window.innerWidth >= 961) {
+document.querySelectorAll(’.reveal’).forEach(el => {
+el.style.opacity = ‘0’;
+el.style.transform = ‘translateY(18px)’;
+el.style.transition = ‘opacity 0.65s ease, transform 0.65s ease’;
+});
 const io = new IntersectionObserver(entries => {
-entries.forEach(e => { if (e.isIntersecting) e.target.classList.add(‘on’); });
-}, { threshold: 0.08, rootMargin: ‘0px 0px -30px 0px’ });
+entries.forEach(e => {
+if (e.isIntersecting) {
+e.target.style.opacity = ‘1’;
+e.target.style.transform = ‘none’;
+}
+});
+}, { threshold: 0.05, rootMargin: ‘0px 0px -20px 0px’ });
 document.querySelectorAll(’.reveal’).forEach(el => io.observe(el));
+}
 
 /* ── MOBILE NAV ── */
 const ham = document.querySelector(’.hamburger’);
