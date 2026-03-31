@@ -53,7 +53,8 @@ nav {
   border-bottom: 1px solid var(--rule);
 }
 
-.nav-brand { display: flex; align-items: center; gap: 1.1rem; text-decoration: none; }
+a { color: inherit; }
+.nav-brand { display: flex; align-items: center; gap: 1.1rem; text-decoration: none; color: var(--ink); }
 
 .nav-headshot {
   width: 34px; height: 34px; border-radius: 50%;
@@ -359,9 +360,12 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   .nav-links, .nav-dateline { display: none; }
   .hamburger { display: flex; }
 
-  .hero { grid-template-columns: 1fr; min-height: unset; }
-  .hero-main { padding: 3.5rem 1.5rem; border-right: none; }
-  .hero-sidebar { display: none; }
+  .hero { grid-template-columns: 1fr; min-height: unset; display: flex; flex-direction: column-reverse; }
+  .hero-main { padding: 3rem 1.5rem; border-right: none; }
+  .hero-sidebar { display: flex; }
+  .hero-stats-grid { display: none; }
+  .photo-panel { min-height: unset; padding: 2.5rem 1.5rem; }
+  .headshot-ring { width: 200px; height: 200px; margin-bottom: 1.25rem; }
 
   #about { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
 
