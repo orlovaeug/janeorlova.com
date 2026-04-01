@@ -1,411 +1,282 @@
-<!DOCTYPE html>
+import { useState } from “react”;
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, ReferenceLine } from “recharts”;
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dutch Poll Tracker · janeorlova.com</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<style>
-:root {
-  --ink: #0e0d0b;
-  --paper: #f5f0e8;
-  --accent: #c8102e;
-  --muted: #7a7260;
-  --border: #2a2820;
-  --serif: 'Playfair Display', Georgia, serif;
-  --mono: 'DM Mono', 'Courier New', monospace;
-  --sans: 'DM Sans', sans-serif;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--ink); color: var(--paper); font-family: var(--sans); font-size: 14px; line-height: 1.6; }
-
-.masthead { border-bottom: 1px solid var(–border); padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
-.masthead-brand { font-family: var(–serif); font-size: 12px; color: var(–muted); letter-spacing: .08em; text-transform: uppercase; }
-.masthead-brand span { color: var(–paper); }
-.live-badge { display: inline-flex; align-items: center; gap: 5px; font-family: var(–mono); font-size: 9px; color: var(–muted); border: 1px solid var(–border); padding: 3px 8px; letter-spacing: .1em; }
-.live-dot { width: 5px; height: 5px; background: #22c55e; border-radius: 50%; animation: livepulse 2s infinite; }
-@keyframes livepulse { 0%,100%{opacity:1} 50%{opacity:.3} }
-
-.hero { padding: 44px 32px 32px; border-bottom: 1px solid var(–border); position: relative; overflow: hidden; }
-.hero::before { content: ‘POLLS’; position: absolute; right: -10px; top: 0; font-family: var(–serif); font-size: 160px; font-weight: 900; color: rgba(255,255,255,.02); line-height: 1; pointer-events: none; }
-.hero-kicker { font-family: var(–mono); font-size: 10px; color: var(–accent); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
-.hero h1 { font-family: var(–serif); font-size: clamp(32px,5vw,52px); font-weight: 700; font-style: italic; line-height: 1.05; margin-bottom: 14px; }
-.hero h1 em { font-style: normal; color: var(–accent); }
-.hero-sub { font-size: 13px; color: var(–muted); max-width: 480px; line-height: 1.7; }
-
-.stats-bar { display: flex; border-bottom: 1px solid var(–border); }
-.stat { flex: 1; padding: 18px 22px; border-right: 1px solid var(–border); }
-.stat:last-child { border-right: none; }
-.stat-label { font-family: var(–mono); font-size: 9px; color: var(–muted); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
-.stat-value { font-family: var(–serif); font-size: 24px; font-weight: 700; line-height: 1; }
-.stat-sub { font-size: 11px; color: var(–muted); margin-top: 3px; }
-
-.layout { display: grid; grid-template-columns: 1fr 290px; }
-.main { border-right: 1px solid var(–border); }
-
-.section-header { padding: 14px 22px 12px; border-bottom: 1px solid var(–border); display: flex; justify-content: space-between; align-items: baseline; }
-.section-title { font-family: var(–serif); font-size: 12px; font-style: italic; color: var(–muted); }
-.section-tag { font-family: var(–mono); font-size: 9px; color: var(–accent); letter-spacing: .1em; text-transform: uppercase; }
-
-.tabs { display: flex; border-bottom: 1px solid var(–border); }
-.tab { font-family: var(–mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 12px 20px; cursor: pointer; background: none; border: none; border-bottom: 2px solid transparent; color: var(–muted); transition: all .2s; }
-.tab:hover { color: var(–paper); }
-.tab.active { color: var(–paper); border-bottom-color: var(–accent); }
-.tab-panel { display: none; }
-.tab-panel.active { display: block; }
-
-.chart-area { padding: 20px 22px 8px; }
-.chart-wrap { position: relative; height: 300px; }
-
-.party-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 8px 22px 18px; }
-.legend-item { display: flex; align-items: center; gap: 5px; cursor: pointer; opacity: 1; transition: opacity .2s; }
-.legend-item.hidden { opacity: .3; }
-.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-.legend-name { font-family: var(–mono); font-size: 10px; color: var(–paper); }
-
-.seat-projection { padding: 18px 22px; }
-.majority-note { font-family: var(–mono); font-size: 10px; color: var(–accent); letter-spacing: .08em; margin-bottom: 14px; }
-.seat-grid { display: flex; flex-direction: column; gap: 9px; }
-.seat-row { display: grid; grid-template-columns: 64px 1fr 36px; align-items: center; gap: 10px; }
-.seat-party { font-family: var(–mono); font-size: 10px; color: var(–muted); }
-.seat-bar-wrap { height: 5px; background: #2a2820; }
-.seat-bar { height: 100%; transition: width .8s ease; }
-.seat-count { font-family: var(–mono); font-size: 11px; font-weight: 500; text-align: right; }
-
-.event-list { padding: 14px 22px; }
-.event-item { display: grid; grid-template-columns: 84px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid #1a1916; }
-.event-item:last-child { border-bottom: none; }
-.event-date { font-family: var(–mono); font-size: 10px; color: var(–accent); padding-top: 2px; }
-.event-text { font-size: 12px; color: var(–muted); line-height: 1.5; }
-
-.poll-table-wrap { overflow-y: auto; max-height: 520px; }
-.poll-table { width: 100%; border-collapse: collapse; }
-.poll-table th { font-family: var(–mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(–muted); padding: 8px 12px 6px; text-align: left; border-bottom: 1px solid var(–border); background: var(–ink); position: sticky; top: 0; }
-.poll-table td { padding: 8px 12px; border-bottom: 1px solid #1a1916; font-family: var(–mono); font-size: 10px; color: var(–muted); }
-.poll-table tr:hover td { background: rgba(255,255,255,.02); }
-.poll-date, .poll-firm { color: var(–paper) !important; }
-
-.loading { display: flex; align-items: center; justify-content: center; height: 200px; gap: 6px; color: var(–muted); font-family: var(–mono); font-size: 11px; }
-.dot { width: 5px; height: 5px; background: var(–accent); border-radius: 50%; animation: pulse 1.2s infinite; }
-.dot:nth-child(2){animation-delay:.2s} .dot:nth-child(3){animation-delay:.4s}
-@keyframes pulse { 0%,80%,100%{opacity:.2;transform:scale(.8)} 40%{opacity:1;transform:scale(1.2)} }
-
-.error { padding: 28px 22px; font-family: var(–mono); font-size: 12px; color: var(–muted); line-height: 2; }
-
-footer { border-top: 1px solid var(–border); padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; }
-.footer-note { font-family: var(–mono); font-size: 10px; color: #3a3830; }
-.footer-link { font-family: var(–mono); font-size: 10px; color: var(–muted); text-decoration: none; }
-.footer-link:hover { color: var(–paper); }
-
-@media(max-width:800px) {
-.layout { grid-template-columns: 1fr; }
-.main { border-right: none; border-bottom: 1px solid var(–border); }
-.stats-bar { flex-wrap: wrap; }
-.stat { min-width: 50%; }
-}
-</style>
-
-</head>
-<body>
-
-<header class="masthead">
-  <div class="masthead-brand"><span>Jane Orlova</span> · Dutch Political Research</div>
-  <div style="display:flex;gap:12px;align-items:center">
-    <div class="live-badge"><span class="live-dot"></span>Auto-updated</div>
-    <div id="updateTime" style="font-family:var(--mono);font-size:11px;color:var(--muted)">—</div>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-kicker">↗ Netherlands · Polling Tracker</div>
-  <h1>The Dutch <em>Poll</em><br>Tracker</h1>
-  <p class="hero-sub">Seat projections, party averages and every poll — sourced from Ipsos I&O, Verian and Peil.nl. Updated automatically every week.</p>
-</section>
-
-<div class="stats-bar">
-  <div class="stat"><div class="stat-label">Leading Party</div><div class="stat-value" id="statLeader">—</div><div class="stat-sub" id="statLeaderSub">—</div></div>
-  <div class="stat"><div class="stat-label">Latest Poll</div><div class="stat-value" id="statDate">—</div><div class="stat-sub" id="statFirm">—</div></div>
-  <div class="stat"><div class="stat-label">Polls Tracked</div><div class="stat-value" id="statCount">—</div><div class="stat-sub">Since Jul 2024</div></div>
-  <div class="stat"><div class="stat-label">Seats to Majority</div><div class="stat-value">76</div><div class="stat-sub">of 150 total</div></div>
-</div>
-
-<div class="layout">
-  <main class="main">
-    <div class="tabs">
-      <button class="tab active" onclick="switchTab('trend')">Trend Lines</button>
-      <button class="tab" onclick="switchTab('seats')">Seat Projections</button>
-      <button class="tab" onclick="switchTab('events')">Key Events</button>
-    </div>
-
-```
-<div class="tab-panel active" id="panel-trend">
-  <div class="section-header">
-    <span class="section-title">Seat averages over time</span>
-    <span class="section-tag">Top 8 Parties</span>
-  </div>
-  <div class="chart-area">
-    <div class="chart-wrap" id="chartWrap">
-      <div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:8px">Loading data…</span></div>
-    </div>
-  </div>
-  <div class="party-legend" id="partyLegend"></div>
-</div>
-
-<div class="tab-panel" id="panel-seats">
-  <div class="section-header">
-    <span class="section-title">3-poll rolling average — all parties</span>
-    <span class="section-tag">Projections</span>
-  </div>
-  <div class="seat-projection">
-    <div class="majority-note">▬ 76 seats required for majority</div>
-    <div class="seat-grid" id="seatGrid"><div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
-  </div>
-</div>
-
-<div class="tab-panel" id="panel-events">
-  <div class="section-header">
-    <span class="section-title">Political events that shaped the polls</span>
-    <span class="section-tag">Timeline</span>
-  </div>
-  <div class="event-list" id="eventList"><div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
-</div>
-```
-
-  </main>
-
-  <aside>
-    <div class="section-header">
-      <span class="section-title">Poll by poll</span>
-      <span class="section-tag" id="pollCount">—</span>
-    </div>
-    <div class="poll-table-wrap">
-      <table class="poll-table">
-        <thead><tr><th>Date</th><th>Firm</th><th>Leader</th><th>↑</th></tr></thead>
-        <tbody id="pollTableBody"><tr><td colspan="4"><div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></td></tr></tbody>
-      </table>
-    </div>
-  </aside>
-</div>
-
-<footer>
-  <div class="footer-note">Data: Wikipedia · Opinion polling for the 2025 Dutch general election · Auto-updated via GitHub Actions</div>
-  <a href="https://janeorlova.com" class="footer-link">janeorlova.com →</a>
-</footer>
-
-<script>
-const PARTY_COLORS = {
-  "PVV":"#4a90d9","GL/PvdA":"#e05252","VVD":"#6baed6","D66":"#3db87a",
-  "CDA":"#74c47a","NSC":"#b07dd9","SP":"#cc3333","BBB":"#5dba65",
-  "FvD":"#c06040","JA21":"#e8922a","PvdD":"#3abfb0","SGP":"#f0b429",
-  "CU":"#60a8e0","Volt":"#9b6cd9","50+":"#c4aa30","Denk":"#2abfaa"
+const PARTY_CONFIG = {
+“D66”:     { color: “#1a6b3c” },
+“PVV”:     { color: “#c8102e” },
+“VVD”:     { color: “#1d4e89” },
+“GL-PvdA”: { color: “#b5451b” },
+“CDA”:     { color: “#2d6a4f” },
+“JA21”:    { color: “#7b4f12” },
+“FvD”:     { color: “#6b2737” },
+“BBB”:     { color: “#3d6b21” },
+“SP”:      { color: “#8b1a1a” },
+“PvdD”:    { color: “#1a6b5e” },
+“SGP”:     { color: “#8b6914” },
+“CU”:      { color: “#1a4a7a” },
+“Volt”:    { color: “#4a1a7a” },
+“50+”:     { color: “#7a6a14” },
+“Denk”:    { color: “#145a4a” },
 };
 
-const TOP_PARTIES = ["PVV","GL/PvdA","VVD","D66","CDA","JA21","FvD","BBB"];
+const TOP_PARTIES = [“D66”,“PVV”,“VVD”,“GL-PvdA”,“CDA”,“JA21”,“FvD”,“BBB”];
 
-let trendChart = null;
+const RAW_POLLS = [
+{ date:“2026-02-23”, firm:“Verian”,    data:{D66:22,PVV:21,VVD:23,“GL-PvdA”:22,CDA:14,JA21:12,FvD:10,BBB:3,Denk:3,SGP:3,PvdD:4,CU:3,SP:5,“50+”:3,Volt:2} },
+{ date:“2026-02-21”, firm:“Peil.nl”,   data:{D66:27,PVV:16,VVD:17,“GL-PvdA”:21,CDA:17,JA21:14,FvD:14,BBB:2,Denk:3,SGP:3,PvdD:4,CU:3,SP:4,“50+”:3,Volt:2} },
+{ date:“2026-02-13”, firm:“Ipsos I&O”, data:{D66:25,PVV:20,VVD:20,“GL-PvdA”:22,CDA:15,JA21:13,FvD:9,BBB:3,Denk:3,SGP:3,PvdD:4,CU:3,SP:4,“50+”:4,Volt:2} },
+{ date:“2026-02-08”, firm:“Peil.nl”,   data:{D66:27,PVV:16,VVD:18,“GL-PvdA”:21,CDA:17,JA21:14,FvD:13,BBB:3,Denk:3,SGP:3,PvdD:4,CU:3,SP:3,“50+”:3,Volt:2} },
+{ date:“2026-02-01”, firm:“Ipsos I&O”, data:{D66:26,PVV:19,VVD:20,“GL-PvdA”:21,CDA:15,JA21:14,FvD:10,BBB:3,Denk:2,SGP:3,PvdD:4,CU:3,SP:4,“50+”:4,Volt:2} },
+{ date:“2026-01-25”, firm:“Verian”,    data:{D66:26,PVV:18,VVD:23,“GL-PvdA”:21,CDA:17,JA21:12,FvD:10,BBB:1,Denk:4,SGP:3,PvdD:3,CU:3,SP:3,“50+”:4,Volt:2} },
+{ date:“2026-01-25”, firm:“Peil.nl”,   data:{D66:27,PVV:17,VVD:20,“GL-PvdA”:20,CDA:18,JA21:11,FvD:14,BBB:3,Denk:3,SGP:3,PvdD:4,CU:3,SP:3,“50+”:3,Volt:1} },
+{ date:“2026-01-17”, firm:“Ipsos I&O”, data:{D66:28,PVV:23,VVD:20,“GL-PvdA”:19,CDA:16,JA21:11,FvD:8,BBB:2,Denk:3,SGP:3,PvdD:5,CU:4,SP:3,“50+”:3,Volt:2} },
+{ date:“2026-01-17”, firm:“Peil.nl”,   data:{D66:28,PVV:17,VVD:21,“GL-PvdA”:20,CDA:18,JA21:11,FvD:14,BBB:3,Denk:3,SGP:3,PvdD:3,CU:3,SP:3,“50+”:2,Volt:1} },
+{ date:“2025-12-19”, firm:“Peil.nl”,   data:{D66:28,PVV:20,VVD:22,“GL-PvdA”:20,CDA:17,JA21:10,FvD:12,BBB:3,Denk:3,SGP:3,PvdD:3,CU:3,SP:3,“50+”:2,Volt:1} },
+{ date:“2025-12-13”, firm:“Ipsos I&O”, data:{D66:28,PVV:24,VVD:21,“GL-PvdA”:21,CDA:17,JA21:10,FvD:7,BBB:2,Denk:2,SGP:4,PvdD:3,CU:3,SP:3,“50+”:3,Volt:2} },
+{ date:“2025-11-29”, firm:“Peil.nl”,   data:{D66:28,PVV:23,VVD:22,“GL-PvdA”:19,CDA:17,JA21:9,FvD:10,BBB:4,Denk:3,SGP:3,PvdD:3,CU:3,SP:3,“50+”:2,Volt:1} },
+{ date:“2025-11-22”, firm:“Verian”,    data:{D66:31,PVV:22,VVD:20,“GL-PvdA”:16,CDA:20,JA21:9,FvD:10,BBB:3,Denk:3,SGP:4,PvdD:3,CU:2,SP:3,“50+”:3,Volt:1} },
+{ date:“2025-11-22”, firm:“Peil.nl”,   data:{D66:28,PVV:23,VVD:23,“GL-PvdA”:18,CDA:17,JA21:9,FvD:10,BBB:4,Denk:3,SGP:3,PvdD:3,CU:3,SP:3,“50+”:2,Volt:1} },
+{ date:“2025-11-07”, firm:“Peil.nl”,   data:{D66:28,PVV:24,VVD:22,“GL-PvdA”:18,CDA:18,JA21:10,FvD:9,BBB:3,Denk:3,SGP:3,PvdD:3,CU:3,SP:3,“50+”:2,Volt:1} },
+];
 
-// ── LOAD DATA ──────────────────────────────────────────────
-async function loadData() {
-  try {
-    const res = await fetch("data/polls.json");
-    if (!res.ok) throw new Error("fetch failed");
-    return await res.json();
-  } catch(e) {
-    console.error("Could not load polls.json:", e);
-    return null;
-  }
+const KEY_EVENTS = [
+{ date:“2025-10-29”, text:“Election Day — D66 and PVV tie at 26 seats” },
+{ date:“2025-11-03”, text:“Klaver succeeds Timmermans as GL-PvdA leader” },
+{ date:“2026-01-20”, text:“Seven MPs leave PVV, form Markuszower Group” },
+{ date:“2026-02-20”, text:“Van der Plas hands BBB leadership to Vermeer” },
+{ date:“2026-02-23”, text:“Jetten cabinet sworn in” },
+];
+
+const ELECTION_RESULT = {D66:26,PVV:26,VVD:22,“GL-PvdA”:20,CDA:18,JA21:9,FvD:7,BBB:4};
+
+function getAvg(polls,party,n=3){
+const vals=polls.slice(0,n).map(p=>p.data[party]||0);
+return Math.round(vals.reduce((a,b)=>a+b,0)/vals.length);
+}
+function buildSeats(polls){
+return Object.keys(PARTY_CONFIG).map(p=>({party:p,seats:getAvg(polls,p,3),color:PARTY_CONFIG[p].color}))
+.filter(p=>p.seats>0).sort((a,b)=>b.seats-a.seats);
+}
+function buildTrend(polls){
+const byDate={};
+polls.forEach(p=>{if(!byDate[p.date])byDate[p.date]=[];byDate[p.date].push(p)});
+return Object.keys(byDate).sort().map(date=>{
+const row={date:date.slice(5)};
+TOP_PARTIES.forEach(p=>{
+const vals=byDate[date].map(poll=>poll.data[p]||0);
+row[p]=Math.round(vals.reduce((a,b)=>a+b,0)/vals.length*10)/10;
+});
+return row;
+});
 }
 
-// ── HELPERS ────────────────────────────────────────────────
-function getAvg(polls, party, n=3) {
-  const vals = polls.slice(0, n).map(p => p.data[party] || 0);
-  return Math.round(vals.reduce((a,b) => a+b, 0) / vals.length);
+const Tip = ({active,payload,label}) => {
+if(!active||!payload?.length) return null;
+return (
+<div style={{background:”#fff”,border:“1px solid #ddd8ce”,padding:“12px 16px”,fontFamily:“monospace”,fontSize:11,boxShadow:“0 2px 12px rgba(0,0,0,0.06)”}}>
+<div style={{color:”#8a8070”,marginBottom:8,fontSize:9,letterSpacing:“0.1em”,textTransform:“uppercase”}}>{label}</div>
+{[…payload].sort((a,b)=>b.value-a.value).map(d=>(
+<div key={d.dataKey} style={{color:PARTY_CONFIG[d.dataKey]?.color,lineHeight:1.9,display:“flex”,justifyContent:“space-between”,gap:20}}>
+<span>{d.dataKey}</span><span style={{fontWeight:600}}>{d.value}</span>
+</div>
+))}
+</div>
+);
+};
+
+export default function App() {
+const [tab,setTab]=useState(“trend”);
+const [hidden,setHidden]=useState({});
+const trendData=buildTrend(RAW_POLLS);
+const seatData=buildSeats(RAW_POLLS);
+const leader=seatData[0];
+const latest=RAW_POLLS[0];
+
+const C={cream:”#f7f3ec”,white:”#ffffff”,ink:”#18160f”,muted:”#8a8070”,border:”#ddd8ce”,rule:”#ede8df”,accent:”#c8102e”};
+
+return (
+<div style={{background:C.cream,color:C.ink,fontFamily:“Georgia,serif”,minHeight:“100vh”,fontSize:14,lineHeight:1.6}}>
+
+```
+  {/* TOP RULE */}
+  <div style={{height:4,background:C.ink}}/>
+
+  {/* MASTHEAD */}
+  <div style={{padding:"13px 32px",borderBottom:`1px solid ${C.border}`,display:"flex",justifyContent:"space-between",alignItems:"center",background:C.cream}}>
+    <span style={{fontFamily:"monospace",fontSize:9,color:C.muted,letterSpacing:"0.14em",textTransform:"uppercase"}}>Jane Orlova · Dutch Political Research</span>
+    <div style={{display:"flex",gap:20,alignItems:"center"}}>
+      <span style={{fontFamily:"monospace",fontSize:9,color:C.muted}}>{new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"})}</span>
+      <span style={{fontFamily:"monospace",fontSize:9,color:"#2d7a3a",letterSpacing:"0.1em",display:"flex",alignItems:"center",gap:5}}>
+        <span style={{width:5,height:5,borderRadius:"50%",background:"#2d7a3a",display:"inline-block"}}/>AUTO-UPDATED
+      </span>
+    </div>
+  </div>
+
+  {/* HERO */}
+  <div style={{borderBottom:`1px solid ${C.border}`,display:"grid",gridTemplateColumns:"1fr 220px"}}>
+    <div style={{padding:"44px 32px 36px",borderRight:`1px solid ${C.border}`}}>
+      <div style={{fontFamily:"monospace",fontSize:9,color:C.accent,letterSpacing:"0.2em",textTransform:"uppercase",marginBottom:14}}>Netherlands · 2025–2029 Polling</div>
+      <h1 style={{fontFamily:"'Playfair Display',Georgia,serif",fontSize:"clamp(34px,4vw,56px)",fontWeight:700,fontStyle:"italic",lineHeight:1.0,margin:"0 0 18px",letterSpacing:"-0.01em"}}>
+        The Dutch <span style={{color:C.accent,fontStyle:"normal"}}>Poll</span><br/>Tracker
+      </h1>
+      <p style={{fontFamily:"'DM Sans',Georgia,sans-serif",fontSize:13,color:C.muted,maxWidth:440,lineHeight:1.85,margin:0,fontStyle:"normal"}}>
+        Weekly seat projections since the October 2025 election — aggregating Ipsos&nbsp;I&O, Verian, and Peil.nl into a single rolling average.
+      </p>
+    </div>
+    {/* ELECTION SNAPSHOT */}
+    <div style={{padding:"24px 24px",background:C.white}}>
+      <div style={{fontFamily:"monospace",fontSize:8,color:C.muted,letterSpacing:"0.14em",textTransform:"uppercase",marginBottom:14,paddingBottom:10,borderBottom:`1px solid ${C.rule}`}}>
+        29 Oct 2025 · Election Result
+      </div>
+      {Object.entries(ELECTION_RESULT).sort((a,b)=>b[1]-a[1]).map(([p,s])=>(
+        <div key={p} style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:7}}>
+          <span style={{fontFamily:"monospace",fontSize:10,color:PARTY_CONFIG[p]?.color||C.ink}}>{p}</span>
+          <div style={{display:"flex",alignItems:"center",gap:8}}>
+            <div style={{width:s*2,height:3,background:PARTY_CONFIG[p]?.color||C.muted,opacity:0.7}}/>
+            <span style={{fontFamily:"monospace",fontSize:10,color:C.muted,width:16,textAlign:"right"}}>{s}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* STATS */}
+  <div style={{display:"flex",borderBottom:`1px solid ${C.border}`,background:C.white}}>
+    {[
+      {label:"Current Leader",value:leader.party,sub:`~${leader.seats} seats · 3-poll avg`,vc:PARTY_CONFIG[leader.party]?.color},
+      {label:"Latest Poll",value:latest.date.slice(0,7),sub:latest.firm},
+      {label:"Polls Since Election",value:RAW_POLLS.length,sub:"Nov 2025 — present"},
+      {label:"Majority",value:"76 seats",sub:"of 150 total"},
+    ].map((s,i,a)=>(
+      <div key={i} style={{flex:1,padding:"18px 24px",borderRight:i<a.length-1?`1px solid ${C.border}`:"none"}}>
+        <div style={{fontFamily:"monospace",fontSize:8,color:C.muted,letterSpacing:"0.12em",textTransform:"uppercase",marginBottom:5}}>{s.label}</div>
+        <div style={{fontFamily:"'Playfair Display',Georgia,serif",fontSize:22,fontWeight:700,lineHeight:1,color:s.vc||C.ink}}>{s.value}</div>
+        <div style={{fontFamily:"monospace",fontSize:9,color:C.muted,marginTop:4}}>{s.sub}</div>
+      </div>
+    ))}
+  </div>
+
+  {/* MAIN LAYOUT */}
+  <div style={{display:"grid",gridTemplateColumns:"1fr 280px"}}>
+    <div style={{borderRight:`1px solid ${C.border}`}}>
+
+      {/* TABS */}
+      <div style={{display:"flex",borderBottom:`1px solid ${C.border}`}}>
+        {[["trend","Trend Lines"],["seats","Seat Projections"],["events","Key Events"]].map(([t,l])=>(
+          <button key={t} onClick={()=>setTab(t)} style={{
+            fontFamily:"monospace",fontSize:9,letterSpacing:"0.12em",textTransform:"uppercase",
+            padding:"13px 22px",cursor:"pointer",background:"none",border:"none",
+            borderBottom:tab===t?`2px solid ${C.ink}`:"2px solid transparent",
+            color:tab===t?C.ink:C.muted,transition:"color 0.2s",
+          }}>{l}</button>
+        ))}
+      </div>
+
+      {tab==="trend"&&(
+        <div>
+          <div style={{padding:"14px 28px 12px",borderBottom:`1px solid ${C.rule}`,display:"flex",justifyContent:"space-between"}}>
+            <em style={{fontFamily:"Georgia,serif",fontSize:12,color:C.muted,fontStyle:"italic"}}>Seat averages over time — all pollsters</em>
+            <span style={{fontFamily:"monospace",fontSize:8,color:C.accent,letterSpacing:"0.12em",textTransform:"uppercase"}}>Top 8 parties</span>
+          </div>
+          <div style={{padding:"22px 28px 6px"}}>
+            <ResponsiveContainer width="100%" height={290}>
+              <LineChart data={trendData} margin={{top:4,right:4,bottom:0,left:-22}}>
+                <XAxis dataKey="date" tick={{fill:C.muted,fontSize:8,fontFamily:"monospace"}} tickLine={false} axisLine={{stroke:C.rule}} interval={2}/>
+                <YAxis tick={{fill:C.muted,fontSize:8,fontFamily:"monospace"}} tickLine={false} axisLine={false} domain={[0,35]}/>
+                <Tooltip content={<Tip/>}/>
+                {TOP_PARTIES.map(p=>(
+                  <Line key={p} type="monotone" dataKey={p}
+                    stroke={PARTY_CONFIG[p].color} strokeWidth={hidden[p]?0:1.8}
+                    strokeOpacity={hidden[p]?0:1} dot={false} activeDot={{r:3}}/>
+                ))}
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          <div style={{display:"flex",flexWrap:"wrap",gap:"5px 18px",padding:"10px 28px 20px"}}>
+            {TOP_PARTIES.map(p=>(
+              <div key={p} onClick={()=>setHidden(h=>({...h,[p]:!h[p]}))}
+                style={{display:"flex",alignItems:"center",gap:7,cursor:"pointer",opacity:hidden[p]?0.25:1,transition:"opacity 0.2s"}}>
+                <div style={{width:18,height:2,background:PARTY_CONFIG[p].color}}/>
+                <span style={{fontFamily:"monospace",fontSize:9,color:C.ink}}>{p}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {tab==="seats"&&(
+        <div style={{padding:"22px 28px"}}>
+          <div style={{fontFamily:"monospace",fontSize:8,color:C.muted,letterSpacing:"0.1em",textTransform:"uppercase",marginBottom:18}}>
+            Rolling 3-poll average · 76 seats needed for majority
+          </div>
+          <div style={{display:"flex",flexDirection:"column",gap:11}}>
+            {seatData.map(({party,seats,color})=>(
+              <div key={party} style={{display:"grid",gridTemplateColumns:"68px 1fr 32px",alignItems:"center",gap:12}}>
+                <span style={{fontFamily:"monospace",fontSize:9,color:C.muted}}>{party}</span>
+                <div style={{height:3,background:C.rule,position:"relative"}}>
+                  <div style={{position:"absolute",inset:0,width:`${seats/150*100}%`,background:color,transition:"width 0.7s ease"}}/>
+                </div>
+                <span style={{fontFamily:"monospace",fontSize:10,color,textAlign:"right",fontWeight:600}}>{seats}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {tab==="events"&&(
+        <div style={{padding:"18px 28px"}}>
+          {KEY_EVENTS.map((e,i)=>(
+            <div key={i} style={{display:"grid",gridTemplateColumns:"88px 1fr",gap:14,padding:"13px 0",borderBottom:`1px solid ${C.rule}`}}>
+              <span style={{fontFamily:"monospace",fontSize:8,color:C.accent,letterSpacing:"0.08em",textTransform:"uppercase",paddingTop:3}}>{e.date.slice(0,7)}</span>
+              <span style={{fontFamily:"'DM Sans',Georgia,sans-serif",fontSize:13,color:C.ink,lineHeight:1.65}}>{e.text}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+
+    {/* SIDEBAR */}
+    <div style={{background:C.white}}>
+      <div style={{padding:"13px 16px 11px",borderBottom:`1px solid ${C.border}`,display:"flex",justifyContent:"space-between"}}>
+        <em style={{fontFamily:"Georgia,serif",fontSize:11,color:C.muted,fontStyle:"italic"}}>Poll by poll</em>
+        <span style={{fontFamily:"monospace",fontSize:8,color:C.accent,letterSpacing:"0.1em",textTransform:"uppercase"}}>{RAW_POLLS.length} polls</span>
+      </div>
+      <div style={{overflowY:"auto",maxHeight:500}}>
+        <table style={{width:"100%",borderCollapse:"collapse"}}>
+          <thead>
+            <tr>{["Date","Firm","Leader","↑"].map(h=>(
+              <th key={h} style={{fontFamily:"monospace",fontSize:8,letterSpacing:"0.08em",textTransform:"uppercase",color:C.muted,padding:"8px 12px 6px",textAlign:"left",borderBottom:`1px solid ${C.border}`,background:C.white,position:"sticky",top:0,fontWeight:400}}>{h}</th>
+            ))}</tr>
+          </thead>
+          <tbody>
+            {RAW_POLLS.map((poll,i)=>{
+              let top="",seats=0;
+              Object.entries(poll.data).forEach(([p,s])=>{if(s>seats){seats=s;top=p;}});
+              return(
+                <tr key={i} style={{borderBottom:`1px solid ${C.rule}`}}>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",fontSize:9,color:C.ink}}>{poll.date.slice(5)}</td>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",fontSize:9,color:C.muted}}>{poll.firm.replace("Ipsos I&O","I&O").replace("Peil.nl","Peil")}</td>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",fontSize:9,color:PARTY_CONFIG[top]?.color||C.ink,fontWeight:600}}>{top}</td>
+                  <td style={{padding:"8px 12px",fontFamily:"monospace",fontSize:9,color:C.muted}}>{seats}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  {/* FOOTER */}
+  <div style={{height:1,background:C.border}}/>
+  <div style={{padding:"13px 32px",display:"flex",justifyContent:"space-between",background:C.cream}}>
+    <span style={{fontFamily:"monospace",fontSize:8,color:C.muted,letterSpacing:"0.06em"}}>Source: Wikipedia · Next Dutch general election · Auto-updated every Monday via GitHub Actions</span>
+    <a href="https://janeorlova.com" style={{fontFamily:"monospace",fontSize:8,color:C.muted,textDecoration:"none",letterSpacing:"0.08em"}}>janeorlova.com →</a>
+  </div>
+  <div style={{height:4,background:C.ink}}/>
+
+</div>
+```
+
+);
 }
-
-function buildSeatAverages(polls) {
-  return Object.keys(PARTY_COLORS).map(p => ({
-    party: p,
-    seats: getAvg(polls, p, 3),
-    color: PARTY_COLORS[p]
-  })).filter(p => p.seats > 0).sort((a,b) => b.seats - a.seats);
-}
-
-function buildTrendData(polls) {
-  const byDate = {};
-  polls.forEach(p => {
-    if (!byDate[p.date]) byDate[p.date] = [];
-    byDate[p.date].push(p);
-  });
-  return Object.keys(byDate).sort().map(date => {
-    const row = { date: date.slice(5) };
-    TOP_PARTIES.forEach(p => {
-      const vals = byDate[date].map(poll => poll.data[p] || 0);
-      row[p] = Math.round(vals.reduce((a,b)=>a+b,0) / vals.length * 10) / 10;
-    });
-    return row;
-  });
-}
-
-// ── RENDER ─────────────────────────────────────────────────
-function renderStats(data) {
-  const polls = data.polls;
-  const avgs = buildSeatAverages(polls);
-  const leader = avgs[0];
-  const latest = polls[0];
-
-  document.getElementById("statLeader").textContent = leader.party;
-  document.getElementById("statLeader").style.color = PARTY_COLORS[leader.party] || "";
-  document.getElementById("statLeaderSub").textContent = `~${leader.seats} seats (3-poll avg)`;
-  document.getElementById("statDate").textContent = latest.date.slice(0,7);
-  document.getElementById("statFirm").textContent = latest.firm;
-  document.getElementById("statCount").textContent = polls.length;
-  document.getElementById("pollCount").textContent = polls.length + " polls";
-
-  const updated = new Date(data.updated);
-  document.getElementById("updateTime").textContent =
-    "Updated " + updated.toLocaleDateString("en-GB", {day:"numeric",month:"short",year:"numeric"});
-}
-
-function renderChart(polls) {
-  const wrap = document.getElementById("chartWrap");
-  wrap.innerHTML = '<canvas id="trendChart"></canvas>';
-  const ctx = document.getElementById("trendChart").getContext("2d");
-  const trendData = buildTrendData(polls);
-
-  trendChart = new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: trendData.map(d => d.date),
-      datasets: TOP_PARTIES.map(p => ({
-        label: p,
-        data: trendData.map(d => d[p]),
-        borderColor: PARTY_COLORS[p],
-        backgroundColor: "transparent",
-        borderWidth: 1.8,
-        pointRadius: 0,
-        pointHoverRadius: 4,
-        tension: 0.35,
-      }))
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      interaction: { mode: "index", intersect: false },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: "#1a1916",
-          borderColor: "#3a3830",
-          borderWidth: 1,
-          titleFont: { family: "monospace", size: 10 },
-          bodyFont: { family: "monospace", size: 10 },
-          titleColor: "#f5f0e8",
-          bodyColor: "#7a7260",
-          padding: 10,
-          callbacks: {
-            label: item => ` ${item.dataset.label}: ${item.raw}`
-          }
-        }
-      },
-      scales: {
-        x: { ticks: { color:"#3a3830", font:{family:"monospace",size:8}, maxTicksLimit:10, maxRotation:0 }, grid:{color:"#1a1916"}, border:{color:"#2a2820"} },
-        y: { ticks: { color:"#3a3830", font:{family:"monospace",size:8} }, grid:{color:"#1a1916"}, border:{color:"#2a2820"}, min:0 }
-      }
-    }
-  });
-}
-
-function renderLegend() {
-  const c = document.getElementById("partyLegend");
-  c.innerHTML = "";
-  TOP_PARTIES.forEach((p, i) => {
-    const el = document.createElement("div");
-    el.className = "legend-item";
-    el.innerHTML = `<div class="legend-dot" style="background:${PARTY_COLORS[p]}"></div><span class="legend-name">${p}</span>`;
-    el.onclick = () => {
-      const ds = trendChart.data.datasets[i];
-      ds.hidden = !ds.hidden;
-      el.classList.toggle("hidden");
-      trendChart.update();
-    };
-    c.appendChild(el);
-  });
-}
-
-function renderSeats(polls) {
-  const grid = document.getElementById("seatGrid");
-  grid.innerHTML = "";
-  buildSeatAverages(polls).forEach(({party, seats, color}) => {
-    const row = document.createElement("div");
-    row.className = "seat-row";
-    row.innerHTML = `
-      <div class="seat-party">${party}</div>
-      <div class="seat-bar-wrap"><div class="seat-bar" style="width:${seats/150*100}%;background:${color}"></div></div>
-      <div class="seat-count" style="color:${color}">${seats}</div>`;
-    grid.appendChild(row);
-  });
-}
-
-function renderTable(polls) {
-  const tb = document.getElementById("pollTableBody");
-  tb.innerHTML = "";
-  polls.forEach(poll => {
-    let top = "", seats = 0;
-    Object.entries(poll.data).forEach(([p,s]) => { if(s > seats){ seats=s; top=p; }});
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td class="poll-date">${poll.date.slice(5)}</td>
-      <td class="poll-firm">${poll.firm.replace("Ipsos I&O","I&O").replace("Peil.nl","Peil")}</td>
-      <td style="color:${PARTY_COLORS[top]||"#fff"}">${top}</td>
-      <td>${seats}</td>`;
-    tb.appendChild(tr);
-  });
-}
-
-function renderEvents(events) {
-  const list = document.getElementById("eventList");
-  list.innerHTML = "";
-  [...events].reverse().forEach(e => {
-    const el = document.createElement("div");
-    el.className = "event-item";
-    const label = e.date.slice(5).replace("-", " ") + " " + e.date.slice(0,4);
-    el.innerHTML = `<div class="event-date">${label}</div><div class="event-text">${e.text}</div>`;
-    list.appendChild(el);
-  });
-}
-
-function renderError() {
-  document.getElementById("chartWrap").innerHTML =
-    `<div class="error">⚠ Could not load polls.json<br>Make sure the GitHub Action has run at least once<br>and <code>docs/data/polls.json</code> exists in your repo.</div>`;
-}
-
-// ── TABS ───────────────────────────────────────────────────
-function switchTab(name) {
-  document.querySelectorAll(".tab").forEach((t,i) => {
-    t.classList.toggle("active", ["trend","seats","events"][i] === name);
-  });
-  document.querySelectorAll(".tab-panel").forEach(p => {
-    p.classList.toggle("active", p.id === "panel-"+name);
-  });
-}
-
-// ── INIT ───────────────────────────────────────────────────
-(async () => {
-  const data = await loadData();
-  if (!data || !data.polls || !data.polls.length) {
-    renderError();
-    return;
-  }
-  renderStats(data);
-  renderChart(data.polls);
-  renderLegend();
-  renderSeats(data.polls);
-  renderTable(data.polls);
-  renderEvents(data.events || []);
-})();
-</script>
-
-</body>
-</html>
