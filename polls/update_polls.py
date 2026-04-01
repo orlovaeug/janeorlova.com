@@ -75,7 +75,7 @@ return raw.strip().title()
 def parse_date(raw):
 raw = raw.strip()
 # Split on dash or en-dash, take the last part (end of fieldwork range)
-parts = [p.strip() for p in re.split(r”[–]”, raw, maxsplit=1)]
+parts = [p.strip() for p in re.split(r”[-\u2013]”, raw, maxsplit=1)]
 candidates = [parts[-1]] if len(parts) > 1 else []
 candidates.append(raw)
 for candidate in candidates:
