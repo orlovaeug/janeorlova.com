@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dutch Poll Tracker · janeorlova.com</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --ink: #0e0d0b;
+  --paper: #f5f0e8;
+  --accent: #c8102e;
+  --muted: #7a7260;
+  --border: #2a2820;
+  --serif: 'Playfair Display', Georgia, serif;
+  --mono: 'DM Mono', 'Courier New', monospace;
+  --sans: 'DM Sans', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--ink); color: var(--paper); font-family: var(--sans); font-size: 14px; line-height: 1.6; }
+
+.masthead { border-bottom: 1px solid var(–border); padding: 16px 32px; display: flex; justify-content: space-between; align-items: center; }
+.masthead-brand { font-family: var(–serif); font-size: 12px; color: var(–muted); letter-spacing: .08em; text-transform: uppercase; }
+.masthead-brand span { color: var(–paper); }
+.live-badge { display: inline-flex; align-items: center; gap: 5px; font-family: var(–mono); font-size: 9px; color: var(–muted); border: 1px solid var(–border); padding: 3px 8px; letter-spacing: .1em; }
+.live-dot { width: 5px; height: 5px; background: #22c55e; border-radius: 50%; animation: livepulse 2s infinite; }
+@keyframes livepulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+.hero { padding: 44px 32px 32px; border-bottom: 1px solid var(–border); position: relative; overflow: hidden; }
+.hero::before { content: ‘POLLS’; position: absolute; right: -10px; top: 0; font-family: var(–serif); font-size: 160px; font-weight: 900; color: rgba(255,255,255,.02); line-height: 1; pointer-events: none; }
+.hero-kicker { font-family: var(–mono); font-size: 10px; color: var(–accent); letter-spacing: .12em; text-transform: uppercase; margin-bottom: 12px; }
+.hero h1 { font-family: var(–serif); font-size: clamp(32px,5vw,52px); font-weight: 700; font-style: italic; line-height: 1.05; margin-bottom: 14px; }
+.hero h1 em { font-style: normal; color: var(–accent); }
+.hero-sub { font-size: 13px; color: var(–muted); max-width: 480px; line-height: 1.7; }
+
+.stats-bar { display: flex; border-bottom: 1px solid var(–border); }
+.stat { flex: 1; padding: 18px 22px; border-right: 1px solid var(–border); }
+.stat:last-child { border-right: none; }
+.stat-label { font-family: var(–mono); font-size: 9px; color: var(–muted); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+.stat-value { font-family: var(–serif); font-size: 24px; font-weight: 700; line-height: 1; }
+.stat-sub { font-size: 11px; color: var(–muted); margin-top: 3px; }
+
+.layout { display: grid; grid-template-columns: 1fr 290px; }
+.main { border-right: 1px solid var(–border); }
+
+.section-header { padding: 14px 22px 12px; border-bottom: 1px solid var(–border); display: flex; justify-content: space-between; align-items: baseline; }
+.section-title { font-family: var(–serif); font-size: 12px; font-style: italic; color: var(–muted); }
+.section-tag { font-family: var(–mono); font-size: 9px; color: var(–accent); letter-spacing: .1em; text-transform: uppercase; }
+
+.tabs { display: flex; border-bottom: 1px solid var(–border); }
+.tab { font-family: var(–mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; padding: 12px 20px; cursor: pointer; background: none; border: none; border-bottom: 2px solid transparent; color: var(–muted); transition: all .2s; }
+.tab:hover { color: var(–paper); }
+.tab.active { color: var(–paper); border-bottom-color: var(–accent); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.chart-area { padding: 20px 22px 8px; }
+.chart-wrap { position: relative; height: 300px; }
+
+.party-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 8px 22px 18px; }
+.legend-item { display: flex; align-items: center; gap: 5px; cursor: pointer; opacity: 1; transition: opacity .2s; }
+.legend-item.hidden { opacity: .3; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.legend-name { font-family: var(–mono); font-size: 10px; color: var(–paper); }
+
+.seat-projection { padding: 18px 22px; }
+.majority-note { font-family: var(–mono); font-size: 10px; color: var(–accent); letter-spacing: .08em; margin-bottom: 14px; }
+.seat-grid { display: flex; flex-direction: column; gap: 9px; }
+.seat-row { display: grid; grid-template-columns: 64px 1fr 36px; align-items: center; gap: 10px; }
+.seat-party { font-family: var(–mono); font-size: 10px; color: var(–muted); }
+.seat-bar-wrap { height: 5px; background: #2a2820; }
+.seat-bar { height: 100%; transition: width .8s ease; }
+.seat-count { font-family: var(–mono); font-size: 11px; font-weight: 500; text-align: right; }
+
+.event-list { padding: 14px 22px; }
+.event-item { display: grid; grid-template-columns: 84px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid #1a1916; }
+.event-item:last-child { border-bottom: none; }
+.event-date { font-family: var(–mono); font-size: 10px; color: var(–accent); padding-top: 2px; }
+.event-text { font-size: 12px; color: var(–muted); line-height: 1.5; }
+
+.poll-table-wrap { overflow-y: auto; max-height: 520px; }
+.poll-table { width: 100%; border-collapse: collapse; }
+.poll-table th { font-family: var(–mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(–muted); padding: 8px 12px 6px; text-align: left; border-bottom: 1px solid var(–border); background: var(–ink); position: sticky; top: 0; }
+.poll-table td { padding: 8px 12px; border-bottom: 1px solid #1a1916; font-family: var(–mono); font-size: 10px; color: var(–muted); }
+.poll-table tr:hover td { background: rgba(255,255,255,.02); }
+.poll-date, .poll-firm { color: var(–paper) !important; }
+
+.loading { display: flex; align-items: center; justify-content: center; height: 200px; gap: 6px; color: var(–muted); font-family: var(–mono); font-size: 11px; }
+.dot { width: 5px; height: 5px; background: var(–accent); border-radius: 50%; animation: pulse 1.2s infinite; }
+.dot:nth-child(2){animation-delay:.2s} .dot:nth-child(3){animation-delay:.4s}
+@keyframes pulse { 0%,80%,100%{opacity:.2;transform:scale(.8)} 40%{opacity:1;transform:scale(1.2)} }
+
+.error { padding: 28px 22px; font-family: var(–mono); font-size: 12px; color: var(–muted); line-height: 2; }
+
+footer { border-top: 1px solid var(–border); padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; }
+.footer-note { font-family: var(–mono); font-size: 10px; color: #3a3830; }
+.footer-link { font-family: var(–mono); font-size: 10px; color: var(–muted); text-decoration: none; }
+.footer-link:hover { color: var(–paper); }
+
+@media(max-width:800px) {
+.layout { grid-template-columns: 1fr; }
+.main { border-right: none; border-bottom: 1px solid var(–border); }
+.stats-bar { flex-wrap: wrap; }
+.stat { min-width: 50%; }
+}
+</style>
+
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-brand"><span>Jane Orlova</span> · Dutch Political Research</div>
+  <div style="display:flex;gap:12px;align-items:center">
+    <div class="live-badge"><span class="live-dot"></span>Auto-updated</div>
+    <div id="updateTime" style="font-family:var(--mono);font-size:11px;color:var(--muted)">—</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-kicker">↗ Netherlands · Polling Tracker</div>
+  <h1>The Dutch <em>Poll</em><br>Tracker</h1>
+  <p class="hero-sub">Seat projections, party averages and every poll — sourced from Ipsos I&O, Verian and Peil.nl. Updated automatically every week.</p>
+</section>
+
+<div class="stats-bar">
+  <div class="stat"><div class="stat-label">Leading Party</div><div class="stat-value" id="statLeader">—</div><div class="stat-sub" id="statLeaderSub">—</div></div>
+  <div class="stat"><div class="stat-label">Latest Poll</div><div class="stat-value" id="statDate">—</div><div class="stat-sub" id="statFirm">—</div></div>
+  <div class="stat"><div class="stat-label">Polls Tracked</div><div class="stat-value" id="statCount">—</div><div class="stat-sub">Since Jul 2024</div></div>
+  <div class="stat"><div class="stat-label">Seats to Majority</div><div class="stat-value">76</div><div class="stat-sub">of 150 total</div></div>
+</div>
+
+<div class="layout">
+  <main class="main">
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab('trend')">Trend Lines</button>
+      <button class="tab" onclick="switchTab('seats')">Seat Projections</button>
+      <button class="tab" onclick="switchTab('events')">Key Events</button>
+    </div>
+
+```
+<div class="tab-panel active" id="panel-trend">
+  <div class="section-header">
+    <span class="section-title">Seat averages over time</span>
+    <span class="section-tag">Top 8 Parties</span>
+  </div>
+  <div class="chart-area">
+    <div class="chart-wrap" id="chartWrap">
+      <div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span style="margin-left:8px">Loading data…</span></div>
+    </div>
+  </div>
+  <div class="party-legend" id="partyLegend"></div>
+</div>
+
+<div class="tab-panel" id="panel-seats">
+  <div class="section-header">
+    <span class="section-title">3-poll rolling average — all parties</span>
+    <span class="section-tag">Projections</span>
+  </div>
+  <div class="seat-projection">
+    <div class="majority-note">▬ 76 seats required for majority</div>
+    <div class="seat-grid" id="seatGrid"><div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="panel-events">
+  <div class="section-header">
+    <span class="section-title">Political events that shaped the polls</span>
+    <span class="section-tag">Timeline</span>
+  </div>
+  <div class="event-list" id="eventList"><div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+</div>
+```
+
+  </main>
+
+  <aside>
+    <div class="section-header">
+      <span class="section-title">Poll by poll</span>
+      <span class="section-tag" id="pollCount">—</span>
+    </div>
+    <div class="poll-table-wrap">
+      <table class="poll-table">
+        <thead><tr><th>Date</th><th>Firm</th><th>Leader</th><th>↑</th></tr></thead>
+        <tbody id="pollTableBody"><tr><td colspan="4"><div class="loading"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></td></tr></tbody>
+      </table>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-note">Data: Wikipedia · Opinion polling for the 2025 Dutch general election · Auto-updated via GitHub Actions</div>
+  <a href="https://janeorlova.com" class="footer-link">janeorlova.com →</a>
+</footer>
+
+<script>
+const PARTY_COLORS = {
+  "PVV":"#4a90d9","GL/PvdA":"#e05252","VVD":"#6baed6","D66":"#3db87a",
+  "CDA":"#74c47a","NSC":"#b07dd9","SP":"#cc3333","BBB":"#5dba65",
+  "FvD":"#c06040","JA21":"#e8922a","PvdD":"#3abfb0","SGP":"#f0b429",
+  "CU":"#60a8e0","Volt":"#9b6cd9","50+":"#c4aa30","Denk":"#2abfaa"
+};
+
+const TOP_PARTIES = ["PVV","GL/PvdA","VVD","D66","CDA","JA21","FvD","BBB"];
+
+let trendChart = null;
+
+// ── LOAD DATA ──────────────────────────────────────────────
+async function loadData() {
+  try {
+    const res = await fetch("data/polls.json");
+    if (!res.ok) throw new Error("fetch failed");
+    return await res.json();
+  } catch(e) {
+    console.error("Could not load polls.json:", e);
+    return null;
+  }
+}
+
+// ── HELPERS ────────────────────────────────────────────────
+function getAvg(polls, party, n=3) {
+  const vals = polls.slice(0, n).map(p => p.data[party] || 0);
+  return Math.round(vals.reduce((a,b) => a+b, 0) / vals.length);
+}
+
+function buildSeatAverages(polls) {
+  return Object.keys(PARTY_COLORS).map(p => ({
+    party: p,
+    seats: getAvg(polls, p, 3),
+    color: PARTY_COLORS[p]
+  })).filter(p => p.seats > 0).sort((a,b) => b.seats - a.seats);
+}
+
+function buildTrendData(polls) {
+  const byDate = {};
+  polls.forEach(p => {
+    if (!byDate[p.date]) byDate[p.date] = [];
+    byDate[p.date].push(p);
+  });
+  return Object.keys(byDate).sort().map(date => {
+    const row = { date: date.slice(5) };
+    TOP_PARTIES.forEach(p => {
+      const vals = byDate[date].map(poll => poll.data[p] || 0);
+      row[p] = Math.round(vals.reduce((a,b)=>a+b,0) / vals.length * 10) / 10;
+    });
+    return row;
+  });
+}
+
+// ── RENDER ─────────────────────────────────────────────────
+function renderStats(data) {
+  const polls = data.polls;
+  const avgs = buildSeatAverages(polls);
+  const leader = avgs[0];
+  const latest = polls[0];
+
+  document.getElementById("statLeader").textContent = leader.party;
+  document.getElementById("statLeader").style.color = PARTY_COLORS[leader.party] || "";
+  document.getElementById("statLeaderSub").textContent = `~${leader.seats} seats (3-poll avg)`;
+  document.getElementById("statDate").textContent = latest.date.slice(0,7);
+  document.getElementById("statFirm").textContent = latest.firm;
+  document.getElementById("statCount").textContent = polls.length;
+  document.getElementById("pollCount").textContent = polls.length + " polls";
+
+  const updated = new Date(data.updated);
+  document.getElementById("updateTime").textContent =
+    "Updated " + updated.toLocaleDateString("en-GB", {day:"numeric",month:"short",year:"numeric"});
+}
+
+function renderChart(polls) {
+  const wrap = document.getElementById("chartWrap");
+  wrap.innerHTML = '<canvas id="trendChart"></canvas>';
+  const ctx = document.getElementById("trendChart").getContext("2d");
+  const trendData = buildTrendData(polls);
+
+  trendChart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: trendData.map(d => d.date),
+      datasets: TOP_PARTIES.map(p => ({
+        label: p,
+        data: trendData.map(d => d[p]),
+        borderColor: PARTY_COLORS[p],
+        backgroundColor: "transparent",
+        borderWidth: 1.8,
+        pointRadius: 0,
+        pointHoverRadius: 4,
+        tension: 0.35,
+      }))
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "#1a1916",
+          borderColor: "#3a3830",
+          borderWidth: 1,
+          titleFont: { family: "monospace", size: 10 },
+          bodyFont: { family: "monospace", size: 10 },
+          titleColor: "#f5f0e8",
+          bodyColor: "#7a7260",
+          padding: 10,
+          callbacks: {
+            label: item => ` ${item.dataset.label}: ${item.raw}`
+          }
+        }
+      },
+      scales: {
+        x: { ticks: { color:"#3a3830", font:{family:"monospace",size:8}, maxTicksLimit:10, maxRotation:0 }, grid:{color:"#1a1916"}, border:{color:"#2a2820"} },
+        y: { ticks: { color:"#3a3830", font:{family:"monospace",size:8} }, grid:{color:"#1a1916"}, border:{color:"#2a2820"}, min:0 }
+      }
+    }
+  });
+}
+
+function renderLegend() {
+  const c = document.getElementById("partyLegend");
+  c.innerHTML = "";
+  TOP_PARTIES.forEach((p, i) => {
+    const el = document.createElement("div");
+    el.className = "legend-item";
+    el.innerHTML = `<div class="legend-dot" style="background:${PARTY_COLORS[p]}"></div><span class="legend-name">${p}</span>`;
+    el.onclick = () => {
+      const ds = trendChart.data.datasets[i];
+      ds.hidden = !ds.hidden;
+      el.classList.toggle("hidden");
+      trendChart.update();
+    };
+    c.appendChild(el);
+  });
+}
+
+function renderSeats(polls) {
+  const grid = document.getElementById("seatGrid");
+  grid.innerHTML = "";
+  buildSeatAverages(polls).forEach(({party, seats, color}) => {
+    const row = document.createElement("div");
+    row.className = "seat-row";
+    row.innerHTML = `
+      <div class="seat-party">${party}</div>
+      <div class="seat-bar-wrap"><div class="seat-bar" style="width:${seats/150*100}%;background:${color}"></div></div>
+      <div class="seat-count" style="color:${color}">${seats}</div>`;
+    grid.appendChild(row);
+  });
+}
+
+function renderTable(polls) {
+  const tb = document.getElementById("pollTableBody");
+  tb.innerHTML = "";
+  polls.forEach(poll => {
+    let top = "", seats = 0;
+    Object.entries(poll.data).forEach(([p,s]) => { if(s > seats){ seats=s; top=p; }});
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="poll-date">${poll.date.slice(5)}</td>
+      <td class="poll-firm">${poll.firm.replace("Ipsos I&O","I&O").replace("Peil.nl","Peil")}</td>
+      <td style="color:${PARTY_COLORS[top]||"#fff"}">${top}</td>
+      <td>${seats}</td>`;
+    tb.appendChild(tr);
+  });
+}
+
+function renderEvents(events) {
+  const list = document.getElementById("eventList");
+  list.innerHTML = "";
+  [...events].reverse().forEach(e => {
+    const el = document.createElement("div");
+    el.className = "event-item";
+    const label = e.date.slice(5).replace("-", " ") + " " + e.date.slice(0,4);
+    el.innerHTML = `<div class="event-date">${label}</div><div class="event-text">${e.text}</div>`;
+    list.appendChild(el);
+  });
+}
+
+function renderError() {
+  document.getElementById("chartWrap").innerHTML =
+    `<div class="error">⚠ Could not load polls.json<br>Make sure the GitHub Action has run at least once<br>and <code>docs/data/polls.json</code> exists in your repo.</div>`;
+}
+
+// ── TABS ───────────────────────────────────────────────────
+function switchTab(name) {
+  document.querySelectorAll(".tab").forEach((t,i) => {
+    t.classList.toggle("active", ["trend","seats","events"][i] === name);
+  });
+  document.querySelectorAll(".tab-panel").forEach(p => {
+    p.classList.toggle("active", p.id === "panel-"+name);
+  });
+}
+
+// ── INIT ───────────────────────────────────────────────────
+(async () => {
+  const data = await loadData();
+  if (!data || !data.polls || !data.polls.length) {
+    renderError();
+    return;
+  }
+  renderStats(data);
+  renderChart(data.polls);
+  renderLegend();
+  renderSeats(data.polls);
+  renderTable(data.polls);
+  renderEvents(data.events || []);
+})();
+</script>
+
+</body>
+</html>
