@@ -733,43 +733,84 @@ const parties = [
 const chart = document.getElementById(‘bar-chart’);
 chart.innerHTML = parties.map((p, i) => `<div class="bar-row"> <span class="bar-party">${p.name}</span> <div class="bar-track"> <div class="bar-fill" style="width:${p.pct * 100}%; animation-delay:${0.3 + i * 0.1}s"></div> </div> <span class="bar-pct">${Math.round(p.pct * 100)}%</span> </div>`).join(’’);
 
-/* ── LIVE SUBSTACK FEED ── */
+/* ── LIVE SUBSTACK FEED via allorigins proxy ── */
 async function loadSubstack() {
 const container = document.getElementById(‘substack-feed’);
 const RSS = ‘https://janeorlova.substack.com/feed’;
-const API = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS)}&count=3`;
 
 ```
-try {
-  const res = await fetch(API);
-  const data = await res.json();
-  if (!data.items || !data.items.length) throw new Error('empty');
-
-  let html = data.items.slice(0, 3).map(item => {
-    const date = new Date(item.pubDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-    const tmp = document.createElement('div');
-    tmp.innerHTML = item.description || '';
-    const excerpt = (tmp.textContent || '').slice(0, 160).trim() + '…';
-    return `<a href="${item.link}" target="_blank" rel="noopener" class="art">
-      <p class="art-meta">${date}</p>
-      <h3 class="art-h">${item.title}</h3>
-      <p class="art-p">${excerpt}</p>
-    </a>`;
-  }).join('');
-
-  html += `<div class="art art-more">
-    <p class="art-more-lbl">More on Substack</p>
-    <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a>
-  </div>`;
-
-  container.innerHTML = html;
-} catch {
+function showFallback() {
   container.innerHTML = `
     <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">First article coming soon</h3><p class="art-p">Posts will appear here automatically once published on Substack.</p></div>
     <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">More writing on the way</h3><p class="art-p">Check back soon — or visit Substack directly.</p></div>
     <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">Analysis and essays</h3><p class="art-p">Dutch and European politics published on Substack.</p></div>
     <div class="art art-more"><p class="art-more-lbl">Visit directly</p><a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>`;
 }
+
+// Try multiple proxies in sequence
+const proxies = [
+  `https://api.allorigins.win/get?url=${encodeURIComponent(RSS)}`,
+  `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS)}&count=3`,
+  `https://cors.sh/${RSS}`
+];
+
+function parseRSS(xmlStr) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(xmlStr, 'text/xml');
+  const items = [...doc.querySelectorAll('item')].slice(0, 3);
+  if (!items.length) throw new Error('no items');
+  return items.map(item => ({
+    title: item.querySelector('title')?.textContent?.trim() || '',
+    link:  item.querySelector('link')?.textContent?.trim() || '#',
+    date:  item.querySelector('pubDate')?.textContent?.trim() || '',
+    desc:  item.querySelector('description')?.textContent?.trim() || ''
+  }));
+}
+
+function renderPosts(posts) {
+  let html = posts.map(p => {
+    const date = p.date ? new Date(p.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+    const tmp = document.createElement('div');
+    tmp.innerHTML = p.desc;
+    const excerpt = (tmp.textContent || '').slice(0, 160).trim() + '…';
+    return `<a href="${p.link}" target="_blank" rel="noopener" class="art">
+      <p class="art-meta">${date}</p>
+      <h3 class="art-h">${p.title}</h3>
+      <p class="art-p">${excerpt}</p>
+    </a>`;
+  }).join('');
+  html += `<div class="art art-more">
+    <p class="art-more-lbl">More on Substack</p>
+    <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a>
+  </div>`;
+  container.innerHTML = html;
+}
+
+try {
+  // Proxy 1: allorigins (returns XML in contents field)
+  const res1 = await fetch(proxies[0], { signal: AbortSignal.timeout(5000) });
+  const json1 = await res1.json();
+  if (json1.contents) {
+    const posts = parseRSS(json1.contents);
+    renderPosts(posts);
+    return;
+  }
+} catch(e) {}
+
+try {
+  // Proxy 2: rss2json
+  const res2 = await fetch(proxies[1], { signal: AbortSignal.timeout(5000) });
+  const json2 = await res2.json();
+  if (json2.items && json2.items.length) {
+    const posts = json2.items.slice(0,3).map(it => ({
+      title: it.title, link: it.link, date: it.pubDate, desc: it.description
+    }));
+    renderPosts(posts);
+    return;
+  }
+} catch(e) {}
+
+showFallback();
 ```
 
 }
