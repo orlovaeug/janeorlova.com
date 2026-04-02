@@ -14,13 +14,13 @@ except ImportError:
 
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/Next_Dutch_general_election"
 
-# Columns as they appear on this specific page
+# Exact abbreviations used in the Wikipedia table header abbr tags or title text
 SEAT_COLUMNS = [
     "D66", "PVV", "VVD", "GL-PvdA", "CDA", "JA21",
     "FvD", "BBB", "Denk", "SGP", "PvdD", "CU", "SP", "50+", "Volt",
 ]
 
-# Map GL-PvdA (Wikipedia) -> GL/PvdA (our display name)
+# Map Wikipedia name -> display name in our tracker
 PARTY_NAME_MAP = {
     "GL-PvdA": "GL/PvdA",
 }
@@ -65,6 +65,18 @@ def fetch_page(url):
     return BeautifulSoup(resp.text, "html.parser")
 
 
+def get_cell_abbr(cell):
+    # Try <abbr> tag title first, then link text, then raw text
+    abbr = cell.find("abbr")
+    if abbr:
+        return abbr.get("title", abbr.get_text(strip=True))
+    a = cell.find("a")
+    if a:
+        # Use the link text which is usually the abbreviation
+        return a.get_text(strip=True)
+    return cell.get_text(strip=True)
+
+
 def normalise_firm(raw):
     key = raw.strip().lower()
     for pattern, name in FIRM_MAP.items():
@@ -75,11 +87,11 @@ def normalise_firm(raw):
 
 def parse_date(raw):
     raw = re.sub(r'\[.*?\]', '', raw).strip()
-    # Split on en-dash or hyphen, take the end date of the range
+    # Split on en-dash or hyphen to get end of range
     parts = re.split(r'\s*[\u2013\-]\s*', raw)
     for part in reversed(parts):
         part = part.strip()
-        # If bare day number, grab month+year from the original string
+        # Bare day number — attach month+year from full string
         if re.match(r'^\d{1,2}$', part):
             my = re.search(r'[A-Za-z]+ \d{4}', raw)
             if my:
@@ -101,34 +113,38 @@ def scrape_polls(soup):
         if len(rows) < 3:
             continue
 
-        # Find the header row that contains party columns
-        header_texts = []
-        for row in rows[:3]:
-            texts = [c.get_text(strip=True) for c in row.find_all(["th", "td"])]
-            if sum(1 for t in texts if t in SEAT_COLUMNS) >= 5:
-                header_texts = texts
-                break
+        # Find header row — look at first 3 rows, pick the one with most party matches
+        best_headers = []
+        best_col_index = {}
 
-        if not header_texts:
+        for row in rows[:3]:
+            cells = row.find_all(["th", "td"])
+            # Get text using abbr-aware extraction
+            texts = [get_cell_abbr(c) for c in cells]
+            col_index = {}
+            for i, t in enumerate(texts):
+                if t in SEAT_COLUMNS:
+                    col_index[t] = i
+            if len(col_index) > len(best_col_index):
+                best_col_index = col_index
+                best_headers = texts
+
+        if len(best_col_index) < 5:
             continue
 
         # Skip percentage tables
-        if any('%' in h for h in header_texts):
+        if any('%' in h for h in best_headers):
             continue
 
-        # Build column index
-        col_index = {}
-        for i, h in enumerate(header_texts):
-            if h in SEAT_COLUMNS:
-                col_index[h] = i
+        print(f"Found seats table with {len(best_col_index)} party columns: {list(best_col_index.keys())}", file=sys.stderr)
 
         firm_col = next(
-            (i for i, h in enumerate(header_texts)
+            (i for i, h in enumerate(best_headers)
              if any(k in h.lower() for k in ["polling", "firm", "pollster"])),
             0
         )
         date_col = next(
-            (i for i, h in enumerate(header_texts)
+            (i for i, h in enumerate(best_headers)
              if any(k in h.lower() for k in ["fieldwork", "date"])),
             1
         )
@@ -153,11 +169,13 @@ def scrape_polls(soup):
                 continue
 
             data = {}
-            for wiki_name, idx in col_index.items():
+            for wiki_name, idx in best_col_index.items():
                 if idx >= len(cells):
                     continue
                 val = re.sub(r'\[.*?\]', '', cells[idx].get_text(strip=True)).strip()
-                val = val.replace('\u2013', '').replace('-', '').strip()
+                val = val.replace('\u2013', '').replace('\u2014', '').strip()
+                # Remove any trailing/leading non-digit chars
+                val = re.sub(r'[^\d]', '', val)
                 if val.isdigit():
                     display_name = PARTY_NAME_MAP.get(wiki_name, wiki_name)
                     data[display_name] = int(val)
@@ -167,7 +185,7 @@ def scrape_polls(soup):
 
             polls.append({"date": date, "firm": firm, "data": data})
 
-    # Deduplicate
+    # Deduplicate by date+firm
     seen = set()
     unique = []
     for p in polls:
