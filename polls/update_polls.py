@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-
-# Dutch Poll Tracker - scrapes Wikipedia and writes data/polls.json
-
-# Usage: python update_polls.py [–output path] [–dry-run]
-
 import json
 import re
 import sys
@@ -41,7 +36,7 @@ EVENTS = [
 {“date”: “2025-10-29”, “text”: “General election: D66 and PVV tie at 26 seats. D66 achieves best-ever result. NSC collapses.”},
 {“date”: “2025-11-03”, “text”: “Jesse Klaver succeeds Frans Timmermans as leader of GL-PvdA.”},
 {“date”: “2025-11-05”, “text”: “Coalition negotiations begin. GL/PvdA, D66, VVD and CDA seen as likely partners.”},
-{“date”: “2025-12-10”, “text”: “Coalition formation stalls. PVV drops to second behind GL/PvdA in post-election polling.”},
+{“date”: “2025-12-10”, “text”: “Coalition formation stalls. PVV drops behind GL/PvdA in post-election polling.”},
 {“date”: “2026-01-20”, “text”: “Seven MPs leave the PVV to form the Markuszower Group, weakening Wilders bloc.”},
 {“date”: “2026-02-15”, “text”: “GL/PvdA and GroenLinks announce formal party merger in 2026 under single banner.”},
 {“date”: “2026-02-20”, “text”: “Caroline van der Plas hands over leadership of BBB to Henk Vermeer.”},
@@ -74,7 +69,6 @@ return raw.strip().title()
 
 def parse_date(raw):
 raw = raw.strip()
-# Split on dash or en-dash, take the last part (end of fieldwork range)
 parts = [p.strip() for p in re.split(r”[-\u2013]”, raw, maxsplit=1)]
 candidates = [parts[-1]] if len(parts) > 1 else []
 candidates.append(raw)
