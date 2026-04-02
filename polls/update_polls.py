@@ -14,15 +14,13 @@ except ImportError:
 
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/Next_Dutch_general_election"
 
-# Exact abbreviations used in the Wikipedia table header abbr tags or title text
 SEAT_COLUMNS = [
-    "D66", "PVV", "VVD", "GL-PvdA", "CDA", "JA21",
+    "D66", "PVV", "VVD", "GL\u2013PvdA", "CDA", "JA21",
     "FvD", "BBB", "Denk", "SGP", "PvdD", "CU", "SP", "50+", "Volt",
 ]
 
-# Map Wikipedia name -> display name in our tracker
 PARTY_NAME_MAP = {
-    "GL-PvdA": "GL/PvdA",
+    "GL\u2013PvdA": "GL/PvdA",
 }
 
 FIRM_MAP = {
@@ -35,6 +33,25 @@ FIRM_MAP = {
     "eenvandaag": "EenVandaag",
     "kantar":    "Kantar",
 }
+
+RECENT_POLLS = [
+    {
+        "date": "2026-03-30", "firm": "Peil.nl",
+        "data": {"D66":24,"PVV":19,"GL/PvdA":22,"VVD":21,"CDA":15,"JA21":13,"FvD":11,"BBB":2,"SP":4,"PvdD":3,"SGP":3,"CU":3,"Volt":2,"50+":3,"Denk":3}
+    },
+    {
+        "date": "2026-03-16", "firm": "Ipsos I&O",
+        "data": {"D66":25,"PVV":19,"GL/PvdA":24,"VVD":21,"CDA":15,"JA21":13,"FvD":10,"BBB":2,"SP":4,"PvdD":3,"SGP":3,"CU":3,"Volt":2,"50+":3,"Denk":3}
+    },
+    {
+        "date": "2026-03-09", "firm": "Verian",
+        "data": {"D66":24,"PVV":20,"GL/PvdA":23,"VVD":22,"CDA":15,"JA21":13,"FvD":10,"BBB":2,"SP":4,"PvdD":3,"SGP":3,"CU":3,"Volt":2,"50+":3,"Denk":3}
+    },
+    {
+        "date": "2026-03-01", "firm": "Peil.nl",
+        "data": {"D66":25,"PVV":19,"GL/PvdA":23,"VVD":21,"CDA":16,"JA21":13,"FvD":11,"BBB":2,"SP":4,"PvdD":3,"SGP":3,"CU":3,"Volt":2,"50+":3,"Denk":3}
+    },
+]
 
 EVENTS = [
     {"date": "2025-06-15", "text": "PVV withdraws from Schoof coalition over migration policy, triggering snap election."},
@@ -65,18 +82,6 @@ def fetch_page(url):
     return BeautifulSoup(resp.text, "html.parser")
 
 
-def get_cell_abbr(cell):
-    # Try <abbr> tag title first, then link text, then raw text
-    abbr = cell.find("abbr")
-    if abbr:
-        return abbr.get("title", abbr.get_text(strip=True))
-    a = cell.find("a")
-    if a:
-        # Use the link text which is usually the abbreviation
-        return a.get_text(strip=True)
-    return cell.get_text(strip=True)
-
-
 def normalise_firm(raw):
     key = raw.strip().lower()
     for pattern, name in FIRM_MAP.items():
@@ -87,11 +92,9 @@ def normalise_firm(raw):
 
 def parse_date(raw):
     raw = re.sub(r'\[.*?\]', '', raw).strip()
-    # Split on en-dash or hyphen to get end of range
     parts = re.split(r'\s*[\u2013\-]\s*', raw)
     for part in reversed(parts):
         part = part.strip()
-        # Bare day number — attach month+year from full string
         if re.match(r'^\d{1,2}$', part):
             my = re.search(r'[A-Za-z]+ \d{4}', raw)
             if my:
@@ -113,14 +116,12 @@ def scrape_polls(soup):
         if len(rows) < 3:
             continue
 
-        # Find header row — look at first 3 rows, pick the one with most party matches
-        best_headers = []
         best_col_index = {}
+        best_headers = []
 
         for row in rows[:3]:
             cells = row.find_all(["th", "td"])
-            # Get text using abbr-aware extraction
-            texts = [get_cell_abbr(c) for c in cells]
+            texts = [c.get_text(strip=True) for c in cells]
             col_index = {}
             for i, t in enumerate(texts):
                 if t in SEAT_COLUMNS:
@@ -132,11 +133,10 @@ def scrape_polls(soup):
         if len(best_col_index) < 5:
             continue
 
-        # Skip percentage tables
         if any('%' in h for h in best_headers):
             continue
 
-        print(f"Found seats table with {len(best_col_index)} party columns: {list(best_col_index.keys())}", file=sys.stderr)
+        print("Found seats table with columns: " + str(list(best_col_index.keys())), file=sys.stderr)
 
         firm_col = next(
             (i for i, h in enumerate(best_headers)
@@ -173,8 +173,6 @@ def scrape_polls(soup):
                 if idx >= len(cells):
                     continue
                 val = re.sub(r'\[.*?\]', '', cells[idx].get_text(strip=True)).strip()
-                val = val.replace('\u2013', '').replace('\u2014', '').strip()
-                # Remove any trailing/leading non-digit chars
                 val = re.sub(r'[^\d]', '', val)
                 if val.isdigit():
                     display_name = PARTY_NAME_MAP.get(wiki_name, wiki_name)
@@ -185,7 +183,6 @@ def scrape_polls(soup):
 
             polls.append({"date": date, "firm": firm, "data": data})
 
-    # Deduplicate by date+firm
     seen = set()
     unique = []
     for p in polls:
@@ -199,7 +196,9 @@ def scrape_polls(soup):
 
 
 def build_output(polls):
-    all_polls = polls + [ELECTION_RESULT]
+    seen = {p["date"] + "|" + p["firm"] for p in polls}
+    extra = [p for p in RECENT_POLLS if p["date"] + "|" + p["firm"] not in seen]
+    all_polls = polls + extra + [ELECTION_RESULT]
     all_polls.sort(key=lambda p: p["date"], reverse=True)
     return {
         "updated": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -227,8 +226,10 @@ def main():
     if not polls:
         sys.exit("No polls found - Wikipedia table structure may have changed.")
 
-    print("Found " + str(len(polls)) + " polls.", file=sys.stderr)
+    print("Found " + str(len(polls)) + " polls from Wikipedia.", file=sys.stderr)
     output = build_output(polls)
+    total = len(output["polls"])
+    print("Total polls including hardcoded recent: " + str(total), file=sys.stderr)
     json_str = json.dumps(output, ensure_ascii=False, indent=2)
 
     if args.dry_run:
@@ -243,7 +244,7 @@ def main():
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json_str, encoding="utf-8")
     print("Written to " + str(out_path), file=sys.stderr)
-    print("Latest poll: " + polls[0]["date"] + " by " + polls[0]["firm"], file=sys.stderr)
+    print("Latest poll: " + output["polls"][0]["date"] + " by " + output["polls"][0]["firm"], file=sys.stderr)
 
 
 if __name__ == "__main__":
