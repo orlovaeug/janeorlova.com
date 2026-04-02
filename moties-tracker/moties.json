@@ -5510,7 +5510,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z04046&did=2026D09263",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk2c33020b2f",
@@ -5556,7 +5556,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z04027&did=2026D09238",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkeb3ac9e49c",
@@ -5602,7 +5602,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z04043&did=2026D09260",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkc70e1a5a4b",
@@ -5616,7 +5616,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z04029&did=2026D09240",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkdb6dc1091b",
@@ -5662,7 +5662,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z04026&did=2026D09237",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tke303378074",
@@ -13166,9 +13166,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05865&did=2026D13297",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "voor",
+      "CDA": "tegen",
+      "Volt": "tegen",
+      "D66": "tegen",
+      "PvdD": "tegen",
+      "JA21": "voor",
+      "SP": "tegen",
+      "VVD": "tegen",
+      "BBB": "tegen",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "50PLUS": "tegen",
+      "PVV": "voor",
+      "SGP": "tegen",
+      "GL-PvdA": "tegen",
+      "DENK": "tegen",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk3771c41bf8",
@@ -13181,9 +13198,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05869&did=2026D13301",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "VVD": "tegen",
+      "CU": "tegen",
+      "SGP": "tegen",
+      "GL-PvdA": "tegen",
+      "PvdD": "tegen",
+      "50PLUS": "tegen",
+      "FvD": "voor",
+      "SP": "tegen",
+      "D66": "tegen",
+      "JA21": "voor",
+      "Volt": "tegen",
+      "DENK": "tegen",
+      "CDA": "tegen",
+      "BBB": "voor",
+      "Keijzer": "voor",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk4e6d0956dc",
@@ -13196,9 +13230,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05879&did=2026D13311",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "voor",
+      "CU": "voor",
+      "DENK": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "tegen",
+      "SP": "voor",
+      "SGP": "voor",
+      "JA21": "tegen",
+      "D66": "voor",
+      "Volt": "voor",
+      "Keijzer": "tegen",
+      "PVV": "tegen",
+      "50PLUS": "voor",
+      "VVD": "voor",
+      "CDA": "voor",
+      "FvD": "tegen",
+      "GL-PvdA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk69e9454c7d",
@@ -13225,9 +13276,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05877&did=2026D13309",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "voor",
+      "PVV": "tegen",
+      "FvD": "tegen",
+      "CDA": "tegen",
+      "SGP": "voor",
+      "PvdD": "voor",
+      "50PLUS": "tegen",
+      "BBB": "tegen",
+      "Volt": "voor",
+      "D66": "voor",
+      "Gr.Markuszower": "tegen",
+      "JA21": "tegen",
+      "GL-PvdA": "voor",
+      "SP": "voor",
+      "VVD": "tegen",
+      "Keijzer": "tegen",
+      "CU": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk8197f164e4",
@@ -13254,9 +13322,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05875&did=2026D13307",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Keijzer": "voor",
+      "PvdD": "voor",
+      "CU": "voor",
+      "GL-PvdA": "voor",
+      "Volt": "voor",
+      "JA21": "tegen",
+      "VVD": "tegen",
+      "D66": "tegen",
+      "BBB": "tegen",
+      "SP": "voor",
+      "50PLUS": "tegen",
+      "SGP": "voor",
+      "DENK": "voor",
+      "Gr.Markuszower": "tegen",
+      "CDA": "tegen",
+      "FvD": "tegen",
+      "PVV": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk49958039c9",
@@ -13269,9 +13354,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05874&did=2026D13306",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "tegen",
+      "SGP": "tegen",
+      "JA21": "tegen",
+      "VVD": "tegen",
+      "Keijzer": "tegen",
+      "50PLUS": "tegen",
+      "DENK": "voor",
+      "GL-PvdA": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "voor",
+      "PvdD": "voor",
+      "CDA": "tegen",
+      "CU": "voor",
+      "SP": "voor",
+      "BBB": "tegen",
+      "FvD": "tegen",
+      "PVV": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkbefbdb215a",
@@ -13284,9 +13386,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05873&did=2026D13305",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "tegen",
+      "JA21": "voor",
+      "Volt": "tegen",
+      "VVD": "voor",
+      "SGP": "voor",
+      "BBB": "voor",
+      "GL-PvdA": "tegen",
+      "50PLUS": "voor",
+      "SP": "tegen",
+      "Gr.Markuszower": "voor",
+      "DENK": "tegen",
+      "Keijzer": "voor",
+      "CU": "tegen",
+      "PVV": "voor",
+      "CDA": "tegen",
+      "FvD": "voor",
+      "PvdD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkc0ca668fdf",
@@ -13299,9 +13418,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05872&did=2026D13304",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "tegen",
+      "PVV": "voor",
+      "Gr.Markuszower": "voor",
+      "CU": "voor",
+      "50PLUS": "voor",
+      "DENK": "tegen",
+      "D66": "voor",
+      "GL-PvdA": "tegen",
+      "CDA": "voor",
+      "SP": "voor",
+      "Volt": "tegen",
+      "Keijzer": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "BBB": "voor",
+      "SGP": "voor",
+      "JA21": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk5d1bcc1388",
@@ -13314,9 +13450,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05871&did=2026D13303",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "tegen",
+      "50PLUS": "voor",
+      "Volt": "tegen",
+      "D66": "tegen",
+      "SGP": "voor",
+      "FvD": "voor",
+      "CU": "tegen",
+      "VVD": "tegen",
+      "CDA": "tegen",
+      "PVV": "voor",
+      "Keijzer": "voor",
+      "BBB": "voor",
+      "SP": "tegen",
+      "PvdD": "tegen",
+      "GL-PvdA": "tegen",
+      "JA21": "voor",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkbfe1244326",
@@ -13329,9 +13482,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05870&did=2026D13302",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Keijzer": "tegen",
+      "50PLUS": "tegen",
+      "JA21": "voor",
+      "D66": "tegen",
+      "BBB": "tegen",
+      "PvdD": "tegen",
+      "SGP": "tegen",
+      "CDA": "tegen",
+      "Gr.Markuszower": "voor",
+      "FvD": "voor",
+      "CU": "tegen",
+      "SP": "tegen",
+      "GL-PvdA": "tegen",
+      "DENK": "tegen",
+      "PVV": "voor",
+      "VVD": "tegen",
+      "Volt": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk8350b4e263",
@@ -13344,9 +13514,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05866&did=2026D13298",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "tegen",
+      "Volt": "tegen",
+      "CDA": "voor",
+      "D66": "tegen",
+      "Gr.Markuszower": "voor",
+      "Keijzer": "voor",
+      "JA21": "voor",
+      "FvD": "voor",
+      "CU": "voor",
+      "PvdD": "tegen",
+      "50PLUS": "voor",
+      "SP": "tegen",
+      "SGP": "voor",
+      "GL-PvdA": "tegen",
+      "VVD": "voor",
+      "BBB": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkd47d5868f0",
@@ -13359,9 +13546,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05868&did=2026D13300",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "DENK": "tegen",
+      "BBB": "voor",
+      "FvD": "voor",
+      "VVD": "tegen",
+      "Volt": "tegen",
+      "D66": "tegen",
+      "CDA": "tegen",
+      "Keijzer": "voor",
+      "SP": "tegen",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "PvdD": "tegen",
+      "SGP": "voor",
+      "GL-PvdA": "tegen",
+      "CU": "tegen",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk21b62d3953",
@@ -13374,9 +13578,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05867&did=2026D13299",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "tegen",
+      "CU": "voor",
+      "PvdD": "tegen",
+      "Keijzer": "voor",
+      "DENK": "tegen",
+      "JA21": "voor",
+      "VVD": "voor",
+      "Volt": "tegen",
+      "BBB": "voor",
+      "SGP": "voor",
+      "D66": "tegen",
+      "Gr.Markuszower": "voor",
+      "SP": "tegen",
+      "50PLUS": "voor",
+      "FvD": "voor",
+      "PVV": "voor",
+      "CDA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk1291fab906",
@@ -13389,9 +13610,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05864&did=2026D13296",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "voor",
+      "PVV": "voor",
+      "CU": "tegen",
+      "BBB": "tegen",
+      "D66": "tegen",
+      "JA21": "voor",
+      "FvD": "voor",
+      "SGP": "tegen",
+      "VVD": "tegen",
+      "SP": "tegen",
+      "GL-PvdA": "tegen",
+      "Keijzer": "tegen",
+      "Volt": "tegen",
+      "50PLUS": "tegen",
+      "PvdD": "tegen",
+      "CDA": "tegen",
+      "DENK": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk4c5f6444cc",
@@ -13404,9 +13642,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05860&did=2026D13292",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "tegen",
+      "Keijzer": "voor",
+      "GL-PvdA": "tegen",
+      "SGP": "voor",
+      "VVD": "voor",
+      "JA21": "voor",
+      "CDA": "voor",
+      "Volt": "tegen",
+      "PvdD": "tegen",
+      "SP": "tegen",
+      "DENK": "tegen",
+      "CU": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "tegen",
+      "FvD": "voor",
+      "PVV": "voor",
+      "50PLUS": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk42105005bf",
@@ -13433,9 +13688,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05861&did=2026D13293",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "CU": "voor",
+      "PvdD": "tegen",
+      "Volt": "tegen",
+      "DENK": "tegen",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "SP": "voor",
+      "SGP": "voor",
+      "JA21": "voor",
+      "GL-PvdA": "tegen",
+      "PVV": "voor",
+      "CDA": "voor",
+      "VVD": "voor",
+      "Keijzer": "voor",
+      "D66": "voor",
+      "50PLUS": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk88c2f04b32",
@@ -13494,9 +13766,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05836&did=2026D13241",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "Volt": "voor",
+      "CDA": "voor",
+      "GL-PvdA": "voor",
+      "SGP": "voor",
+      "BBB": "voor",
+      "DENK": "voor",
+      "FvD": "voor",
+      "VVD": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "voor",
+      "PvdD": "voor",
+      "CU": "voor",
+      "JA21": "voor",
+      "Keijzer": "voor",
+      "SP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb127767e90",
@@ -13509,9 +13798,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05835&did=2026D13240",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "VVD": "voor",
+      "PVV": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "DENK": "voor",
+      "CU": "voor",
+      "PvdD": "voor",
+      "FvD": "voor",
+      "CDA": "voor",
+      "50PLUS": "voor",
+      "GL-PvdA": "voor",
+      "JA21": "voor",
+      "D66": "voor",
+      "Keijzer": "tegen",
+      "SP": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkdfc333ec88",
@@ -13524,9 +13830,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05834&did=2026D13239",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "voor",
+      "JA21": "voor",
+      "DENK": "voor",
+      "VVD": "voor",
+      "GL-PvdA": "voor",
+      "Keijzer": "voor",
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "D66": "voor",
+      "PvdD": "voor",
+      "FvD": "voor",
+      "Volt": "voor",
+      "CDA": "voor",
+      "CU": "voor",
+      "SP": "voor",
+      "BBB": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk46d6c711eb",
@@ -13539,9 +13862,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05832&did=2026D13235",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "voor",
+      "CDA": "voor",
+      "PvdD": "voor",
+      "50PLUS": "voor",
+      "D66": "voor",
+      "SGP": "voor",
+      "SP": "voor",
+      "Keijzer": "voor",
+      "CU": "voor",
+      "Volt": "voor",
+      "JA21": "voor",
+      "BBB": "voor",
+      "GL-PvdA": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "PVV": "voor",
+      "FvD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk791102de60",
@@ -13610,9 +13950,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05826&did=2026D13228",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SGP": "voor",
+      "FvD": "voor",
+      "D66": "voor",
+      "JA21": "voor",
+      "Gr.Markuszower": "voor",
+      "BBB": "voor",
+      "CU": "voor",
+      "Volt": "voor",
+      "CDA": "voor",
+      "SP": "voor",
+      "DENK": "voor",
+      "GL-PvdA": "voor",
+      "VVD": "voor",
+      "PVV": "tegen",
+      "Keijzer": "voor",
+      "50PLUS": "voor",
+      "PvdD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk6e649a75a7",
@@ -13625,9 +13982,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05824&did=2026D13227",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "VVD": "voor",
+      "PvdD": "voor",
+      "Volt": "voor",
+      "D66": "voor",
+      "Gr.Markuszower": "tegen",
+      "SGP": "voor",
+      "50PLUS": "voor",
+      "SP": "voor",
+      "DENK": "voor",
+      "JA21": "voor",
+      "PVV": "voor",
+      "BBB": "voor",
+      "GL-PvdA": "voor",
+      "CDA": "voor",
+      "Keijzer": "voor",
+      "CU": "voor",
+      "FvD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkf62a450007",
@@ -13640,9 +14014,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05823&did=2026D13226",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "VVD": "voor",
+      "JA21": "voor",
+      "DENK": "tegen",
+      "CU": "voor",
+      "PVV": "voor",
+      "PvdD": "tegen",
+      "50PLUS": "voor",
+      "SP": "tegen",
+      "FvD": "voor",
+      "Volt": "voor",
+      "D66": "voor",
+      "CDA": "voor",
+      "GL-PvdA": "tegen",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "SGP": "voor",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkcd348c8e15",
@@ -13765,9 +14156,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06027&did=2026D13677",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "tegen",
+      "SGP": "tegen",
+      "SP": "voor",
+      "FvD": "voor",
+      "CU": "tegen",
+      "D66": "tegen",
+      "Volt": "tegen",
+      "PVV": "tegen",
+      "Keijzer": "voor",
+      "BBB": "voor",
+      "CDA": "tegen",
+      "50PLUS": "tegen",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "VVD": "tegen",
+      "PvdD": "tegen",
+      "JA21": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk095e677d40",
@@ -13780,9 +14188,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06026&did=2026D13676",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "GL-PvdA": "voor",
+      "CDA": "tegen",
+      "DENK": "voor",
+      "PVV": "voor",
+      "BBB": "voor",
+      "CU": "tegen",
+      "50PLUS": "tegen",
+      "JA21": "tegen",
+      "SP": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "tegen",
+      "PvdD": "voor",
+      "SGP": "tegen",
+      "D66": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkee1c29abbf",
@@ -13795,9 +14220,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06015&did=2026D13665",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SP": "tegen",
+      "PvdD": "voor",
+      "GL-PvdA": "voor",
+      "Keijzer": "voor",
+      "PVV": "voor",
+      "CDA": "voor",
+      "BBB": "tegen",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "D66": "voor",
+      "VVD": "voor",
+      "FvD": "tegen",
+      "SGP": "voor",
+      "50PLUS": "voor",
+      "JA21": "tegen",
+      "CU": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb8d15a3f96",
@@ -13810,9 +14252,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06019&did=2026D13669",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "tegen",
+      "CU": "voor",
+      "VVD": "voor",
+      "SP": "tegen",
+      "50PLUS": "voor",
+      "Keijzer": "voor",
+      "BBB": "voor",
+      "PVV": "tegen",
+      "PvdD": "tegen",
+      "FvD": "tegen",
+      "GL-PvdA": "tegen",
+      "SGP": "voor",
+      "Volt": "tegen",
+      "CDA": "voor",
+      "JA21": "voor",
+      "Gr.Markuszower": "tegen",
+      "D66": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk3fa38d3500",
@@ -13839,9 +14298,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06020&did=2026D13670",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "tegen",
+      "CDA": "voor",
+      "Volt": "voor",
+      "BBB": "voor",
+      "Keijzer": "voor",
+      "DENK": "voor",
+      "CU": "voor",
+      "SP": "voor",
+      "D66": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "PvdD": "voor",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk88450f7bf6",
@@ -13854,9 +14330,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06021&did=2026D13671",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "tegen",
+      "PvdD": "voor",
+      "SGP": "voor",
+      "GL-PvdA": "voor",
+      "JA21": "voor",
+      "CU": "voor",
+      "VVD": "voor",
+      "PVV": "voor",
+      "50PLUS": "voor",
+      "Volt": "voor",
+      "BBB": "voor",
+      "D66": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "Keijzer": "voor",
+      "CDA": "voor",
+      "SP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk396590ab95",
@@ -13869,9 +14362,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06025&did=2026D13675",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SGP": "tegen",
+      "BBB": "tegen",
+      "VVD": "tegen",
+      "CDA": "tegen",
+      "SP": "voor",
+      "Volt": "voor",
+      "GL-PvdA": "voor",
+      "50PLUS": "tegen",
+      "DENK": "voor",
+      "PvdD": "voor",
+      "Keijzer": "tegen",
+      "Gr.Markuszower": "tegen",
+      "D66": "voor",
+      "JA21": "tegen",
+      "FvD": "tegen",
+      "PVV": "tegen",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk88f84d7bd7",
@@ -13884,9 +14394,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06022&did=2026D13672",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "FvD": "voor",
+      "GL-PvdA": "tegen",
+      "D66": "tegen",
+      "Keijzer": "tegen",
+      "PVV": "voor",
+      "SP": "tegen",
+      "50PLUS": "tegen",
+      "DENK": "tegen",
+      "VVD": "tegen",
+      "SGP": "tegen",
+      "JA21": "tegen",
+      "PvdD": "tegen",
+      "CDA": "tegen",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk07c2c165b6",
@@ -13899,9 +14426,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06024&did=2026D13674",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "Keijzer": "tegen",
+      "JA21": "tegen",
+      "PVV": "tegen",
+      "CU": "tegen",
+      "Gr.Markuszower": "voor",
+      "50PLUS": "tegen",
+      "D66": "tegen",
+      "BBB": "voor",
+      "PvdD": "tegen",
+      "GL-PvdA": "tegen",
+      "SP": "tegen",
+      "CDA": "tegen",
+      "SGP": "tegen",
+      "DENK": "tegen",
+      "VVD": "tegen",
+      "FvD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk708096f568",
@@ -13914,9 +14458,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06023&did=2026D13673",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "SGP": "tegen",
+      "Keijzer": "voor",
+      "CU": "tegen",
+      "DENK": "tegen",
+      "SP": "voor",
+      "GL-PvdA": "tegen",
+      "D66": "tegen",
+      "FvD": "voor",
+      "50PLUS": "tegen",
+      "JA21": "tegen",
+      "VVD": "tegen",
+      "PvdD": "tegen",
+      "CDA": "tegen",
+      "Volt": "tegen",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkd94eda464b",
@@ -13929,9 +14490,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06018&did=2026D13668",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "voor",
+      "50PLUS": "voor",
+      "PVV": "tegen",
+      "CDA": "voor",
+      "GL-PvdA": "voor",
+      "SP": "tegen",
+      "JA21": "voor",
+      "FvD": "tegen",
+      "DENK": "voor",
+      "PvdD": "voor",
+      "SGP": "voor",
+      "Keijzer": "voor",
+      "D66": "voor",
+      "VVD": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkf801b47cfa",
@@ -13944,9 +14522,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06012&did=2026D13662",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SP": "tegen",
+      "PvdD": "voor",
+      "BBB": "voor",
+      "CU": "voor",
+      "CDA": "voor",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "JA21": "voor",
+      "VVD": "voor",
+      "SGP": "voor",
+      "50PLUS": "voor",
+      "Volt": "voor",
+      "FvD": "tegen",
+      "Keijzer": "voor",
+      "DENK": "tegen",
+      "D66": "voor",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk043c406b7e",
@@ -13973,9 +14568,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06013&did=2026D13663",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "voor",
+      "50PLUS": "tegen",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "Keijzer": "voor",
+      "CDA": "voor",
+      "SP": "voor",
+      "Volt": "voor",
+      "GL-PvdA": "voor",
+      "PvdD": "tegen",
+      "BBB": "voor",
+      "DENK": "voor",
+      "JA21": "voor",
+      "SGP": "voor",
+      "CU": "voor",
+      "PVV": "voor",
+      "FvD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkf3f389d0ed",
@@ -13988,9 +14600,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06016&did=2026D13666",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Keijzer": "voor",
+      "CU": "voor",
+      "DENK": "voor",
+      "PVV": "voor",
+      "SP": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "FvD": "tegen",
+      "PvdD": "voor",
+      "CDA": "voor",
+      "BBB": "voor",
+      "50PLUS": "voor",
+      "D66": "voor",
+      "SGP": "voor",
+      "JA21": "voor",
+      "GL-PvdA": "voor",
+      "VVD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkc938a19ad4",
@@ -14003,9 +14632,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06010&did=2026D13660",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "50PLUS": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "tegen",
+      "FvD": "tegen",
+      "CU": "voor",
+      "PVV": "voor",
+      "SGP": "voor",
+      "D66": "voor",
+      "GL-PvdA": "voor",
+      "JA21": "voor",
+      "Keijzer": "voor",
+      "SP": "voor",
+      "DENK": "voor",
+      "PvdD": "voor",
+      "CDA": "voor",
+      "VVD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk48a7e0e0ab",
@@ -14018,9 +14664,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06011&did=2026D13661",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "VVD": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "tegen",
+      "SGP": "voor",
+      "CU": "voor",
+      "Keijzer": "tegen",
+      "CDA": "voor",
+      "PvdD": "voor",
+      "SP": "voor",
+      "BBB": "voor",
+      "50PLUS": "voor",
+      "D66": "voor",
+      "DENK": "voor",
+      "GL-PvdA": "voor",
+      "FvD": "tegen",
+      "PVV": "tegen",
+      "JA21": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk2fb33b8e97",
@@ -14033,9 +14696,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06009&did=2026D13659",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "tegen",
+      "Volt": "voor",
+      "Keijzer": "tegen",
+      "PvdD": "voor",
+      "PVV": "tegen",
+      "D66": "tegen",
+      "GL-PvdA": "voor",
+      "SGP": "tegen",
+      "SP": "voor",
+      "JA21": "tegen",
+      "CDA": "tegen",
+      "Gr.Markuszower": "tegen",
+      "50PLUS": "voor",
+      "CU": "voor",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "FvD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkb717baf4fb",
@@ -14048,9 +14728,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06073&did=2026D13788",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "voor",
+      "SP": "voor",
+      "Gr.Markuszower": "tegen",
+      "VVD": "voor",
+      "Volt": "voor",
+      "PVV": "tegen",
+      "GL-PvdA": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "D66": "voor",
+      "JA21": "tegen",
+      "BBB": "tegen",
+      "PvdD": "voor",
+      "FvD": "tegen",
+      "SGP": "voor",
+      "CU": "voor",
+      "Keijzer": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkd63f7d4cf4",
@@ -14063,9 +14760,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06076&did=2026D13794",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SGP": "voor",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "GL-PvdA": "voor",
+      "JA21": "tegen",
+      "CDA": "voor",
+      "Keijzer": "tegen",
+      "BBB": "tegen",
+      "Gr.Markuszower": "tegen",
+      "PVV": "tegen",
+      "SP": "voor",
+      "PvdD": "voor",
+      "FvD": "tegen",
+      "CU": "voor",
+      "D66": "voor",
+      "Volt": "voor",
+      "VVD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk5f51e1dab1",
@@ -14078,9 +14792,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06075&did=2026D13792",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "50PLUS": "tegen",
+      "CU": "tegen",
+      "SGP": "tegen",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "CDA": "tegen",
+      "VVD": "tegen",
+      "Keijzer": "voor",
+      "GL-PvdA": "tegen",
+      "PVV": "voor",
+      "BBB": "voor",
+      "PvdD": "tegen",
+      "D66": "tegen",
+      "SP": "tegen",
+      "JA21": "tegen",
+      "Volt": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkbe903d60f4",
@@ -14107,9 +14838,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06245&did=2026D14080",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "D66": "tegen",
+      "PvdD": "tegen",
+      "VVD": "tegen",
+      "SP": "tegen",
+      "FvD": "voor",
+      "SGP": "tegen",
+      "JA21": "voor",
+      "50PLUS": "tegen",
+      "CU": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "PVV": "voor",
+      "CDA": "tegen",
+      "GL-PvdA": "tegen",
+      "DENK": "voor",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb7ce6b0d2f",
@@ -14122,9 +14870,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06244&did=2026D14079",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "tegen",
+      "PvdD": "tegen",
+      "Keijzer": "voor",
+      "SGP": "voor",
+      "PVV": "voor",
+      "50PLUS": "voor",
+      "Volt": "tegen",
+      "FvD": "voor",
+      "VVD": "tegen",
+      "CU": "voor",
+      "Gr.Markuszower": "voor",
+      "CDA": "tegen",
+      "DENK": "voor",
+      "D66": "tegen",
+      "SP": "voor",
+      "JA21": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkef3bd73ad8",
@@ -14137,9 +14902,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06242&did=2026D14076",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "D66": "voor",
+      "50PLUS": "voor",
+      "BBB": "voor",
+      "CU": "voor",
+      "DENK": "voor",
+      "SP": "tegen",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "GL-PvdA": "tegen",
+      "Gr.Markuszower": "voor",
+      "SGP": "voor",
+      "JA21": "voor",
+      "PvdD": "tegen",
+      "CDA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk6cd130d483",
@@ -14152,9 +14934,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06241&did=2026D14075",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "voor",
+      "SP": "tegen",
+      "Volt": "voor",
+      "PvdD": "tegen",
+      "CDA": "voor",
+      "JA21": "voor",
+      "Keijzer": "voor",
+      "D66": "voor",
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "GL-PvdA": "tegen",
+      "VVD": "voor",
+      "Gr.Markuszower": "voor",
+      "PVV": "tegen",
+      "DENK": "voor",
+      "FvD": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkdab4793f05",
@@ -14167,9 +14966,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06240&did=2026D14074",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "tegen",
+      "SGP": "tegen",
+      "FvD": "tegen",
+      "VVD": "tegen",
+      "Volt": "voor",
+      "DENK": "voor",
+      "D66": "tegen",
+      "PvdD": "voor",
+      "GL-PvdA": "voor",
+      "50PLUS": "tegen",
+      "PVV": "voor",
+      "Keijzer": "tegen",
+      "BBB": "tegen",
+      "CU": "voor",
+      "Gr.Markuszower": "voor",
+      "JA21": "tegen",
+      "SP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk1c68dd8dc8",
@@ -14196,9 +15012,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06238&did=2026D14071",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SP": "tegen",
+      "PVV": "voor",
+      "FvD": "voor",
+      "SGP": "voor",
+      "Gr.Markuszower": "voor",
+      "BBB": "voor",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "JA21": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "CU": "voor",
+      "D66": "voor",
+      "PvdD": "tegen",
+      "GL-PvdA": "tegen",
+      "CDA": "voor",
+      "VVD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk284c1b288f",
@@ -14211,9 +15044,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06237&did=2026D14070",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "CU": "voor",
+      "BBB": "voor",
+      "FvD": "voor",
+      "Gr.Markuszower": "voor",
+      "JA21": "voor",
+      "SGP": "voor",
+      "CDA": "voor",
+      "GL-PvdA": "tegen",
+      "DENK": "tegen",
+      "SP": "tegen",
+      "Volt": "voor",
+      "VVD": "voor",
+      "PvdD": "tegen",
+      "PVV": "voor",
+      "Keijzer": "voor",
+      "D66": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb382ea7a49",
@@ -14226,9 +15076,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06236&did=2026D14067",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "tegen",
+      "CDA": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "JA21": "voor",
+      "50PLUS": "voor",
+      "BBB": "voor",
+      "SP": "tegen",
+      "D66": "voor",
+      "DENK": "tegen",
+      "PVV": "voor",
+      "Volt": "voor",
+      "Keijzer": "voor",
+      "CU": "voor",
+      "PvdD": "tegen",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkf9f1e7e35e",
@@ -14241,9 +15108,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06235&did=2026D14066",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "tegen",
+      "PvdD": "tegen",
+      "SP": "tegen",
+      "VVD": "tegen",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "PVV": "voor",
+      "FvD": "voor",
+      "DENK": "tegen",
+      "SGP": "voor",
+      "CU": "voor",
+      "Keijzer": "voor",
+      "GL-PvdA": "tegen",
+      "D66": "tegen",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb0d77a3713",
@@ -14399,7 +15283,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06224&did=2026D14047",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk615f493a4c",
@@ -14444,9 +15328,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06219&did=2026D14034",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "GL-PvdA": "tegen",
+      "BBB": "voor",
+      "CU": "voor",
+      "Keijzer": "voor",
+      "PVV": "voor",
+      "VVD": "voor",
+      "JA21": "voor",
+      "Gr.Markuszower": "voor",
+      "PvdD": "tegen",
+      "CDA": "voor",
+      "SP": "tegen",
+      "SGP": "voor",
+      "Volt": "tegen",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "D66": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk9d1126ef8d",
@@ -14459,9 +15360,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06215&did=2026D14029",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "voor",
+      "JA21": "voor",
+      "PVV": "voor",
+      "GL-PvdA": "voor",
+      "CU": "voor",
+      "VVD": "voor",
+      "Keijzer": "tegen",
+      "DENK": "voor",
+      "D66": "voor",
+      "Gr.Markuszower": "voor",
+      "PvdD": "tegen",
+      "Volt": "voor",
+      "BBB": "voor",
+      "FvD": "voor",
+      "SP": "voor",
+      "50PLUS": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk383c5b0d86",
@@ -14474,9 +15392,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06216&did=2026D14030",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "SGP": "voor",
+      "Keijzer": "voor",
+      "GL-PvdA": "voor",
+      "FvD": "voor",
+      "Volt": "voor",
+      "D66": "voor",
+      "PvdD": "tegen",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "SP": "tegen",
+      "CDA": "voor",
+      "JA21": "voor",
+      "CU": "voor",
+      "PVV": "voor",
+      "VVD": "voor",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk2d673c9191",
@@ -14490,7 +15425,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06212&did=2026D14025",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk236535eecc",
@@ -14503,9 +15438,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06218&did=2026D14032",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "voor",
+      "FvD": "voor",
+      "VVD": "voor",
+      "D66": "voor",
+      "CDA": "voor",
+      "PVV": "voor",
+      "Keijzer": "voor",
+      "50PLUS": "voor",
+      "PvdD": "tegen",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "tegen",
+      "SGP": "voor",
+      "Volt": "tegen",
+      "CU": "voor",
+      "GL-PvdA": "tegen",
+      "SP": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk90a8591840",
@@ -14518,9 +15470,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06214&did=2026D14028",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "voor",
+      "DENK": "voor",
+      "CDA": "tegen",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "SP": "voor",
+      "CU": "voor",
+      "PVV": "voor",
+      "SGP": "voor",
+      "VVD": "voor",
+      "PvdD": "tegen",
+      "BBB": "voor",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkd417bae2bb",
@@ -14533,9 +15502,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06211&did=2026D14024",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "SGP": "tegen",
+      "DENK": "voor",
+      "PvdD": "tegen",
+      "Volt": "tegen",
+      "VVD": "tegen",
+      "PVV": "voor",
+      "Gr.Markuszower": "voor",
+      "50PLUS": "tegen",
+      "Keijzer": "voor",
+      "CDA": "tegen",
+      "JA21": "tegen",
+      "FvD": "voor",
+      "D66": "tegen",
+      "SP": "tegen",
+      "GL-PvdA": "tegen",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk75f223bd5c",
@@ -14549,7 +15535,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06210&did=2026D14023",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkbaf89833b4",
@@ -14562,9 +15548,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06207&did=2026D14018",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "voor",
+      "Gr.Markuszower": "voor",
+      "Keijzer": "voor",
+      "DENK": "voor",
+      "CDA": "voor",
+      "FvD": "voor",
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "CU": "voor",
+      "GL-PvdA": "tegen",
+      "PvdD": "voor",
+      "BBB": "voor",
+      "SP": "tegen",
+      "JA21": "voor",
+      "VVD": "voor",
+      "SGP": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkebfa8c068a",
@@ -14591,9 +15594,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06203&did=2026D14012",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "voor",
+      "Keijzer": "tegen",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "D66": "voor",
+      "DENK": "voor",
+      "BBB": "voor",
+      "Volt": "voor",
+      "SGP": "voor",
+      "Gr.Markuszower": "voor",
+      "SP": "voor",
+      "FvD": "voor",
+      "VVD": "voor",
+      "CU": "voor",
+      "50PLUS": "voor",
+      "PvdD": "voor",
+      "JA21": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk84ada3b14b",
@@ -14606,9 +15626,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06202&did=2026D14011",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "tegen",
+      "JA21": "tegen",
+      "PVV": "voor",
+      "CDA": "tegen",
+      "CU": "tegen",
+      "SP": "voor",
+      "Keijzer": "tegen",
+      "GL-PvdA": "voor",
+      "FvD": "voor",
+      "PvdD": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "tegen",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "BBB": "tegen",
+      "50PLUS": "voor",
+      "SGP": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkb26ec04d80",
@@ -14621,9 +15658,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06201&did=2026D14009",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "JA21": "tegen",
+      "SP": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "tegen",
+      "BBB": "tegen",
+      "50PLUS": "tegen",
+      "CDA": "tegen",
+      "SGP": "tegen",
+      "D66": "tegen",
+      "FvD": "tegen",
+      "GL-PvdA": "tegen",
+      "Keijzer": "tegen",
+      "CU": "tegen",
+      "PvdD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk472e3a634f",
@@ -14636,9 +15690,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06200&did=2026D14007",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Keijzer": "tegen",
+      "DENK": "tegen",
+      "GL-PvdA": "voor",
+      "D66": "voor",
+      "CDA": "voor",
+      "PvdD": "voor",
+      "CU": "voor",
+      "FvD": "tegen",
+      "VVD": "voor",
+      "BBB": "tegen",
+      "Gr.Markuszower": "voor",
+      "SGP": "voor",
+      "SP": "voor",
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "JA21": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkc8ccd16b81",
@@ -14651,9 +15722,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06199&did=2026D14005",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "tegen",
+      "VVD": "tegen",
+      "Keijzer": "tegen",
+      "Volt": "voor",
+      "BBB": "tegen",
+      "SGP": "tegen",
+      "CU": "tegen",
+      "DENK": "voor",
+      "CDA": "tegen",
+      "SP": "voor",
+      "FvD": "tegen",
+      "PvdD": "voor",
+      "50PLUS": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "tegen",
+      "GL-PvdA": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb57df8048b",
@@ -14666,9 +15754,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06194&did=2026D13999",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SP": "tegen",
+      "PVV": "voor",
+      "D66": "voor",
+      "BBB": "voor",
+      "CDA": "voor",
+      "JA21": "voor",
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "Keijzer": "voor",
+      "GL-PvdA": "tegen",
+      "PvdD": "tegen",
+      "FvD": "voor",
+      "CU": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "VVD": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk94ab4722b1",
@@ -14681,9 +15786,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06193&did=2026D13997",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "Volt": "voor",
+      "FvD": "voor",
+      "PVV": "voor",
+      "SGP": "voor",
+      "D66": "voor",
+      "VVD": "voor",
+      "CDA": "voor",
+      "SP": "tegen",
+      "GL-PvdA": "tegen",
+      "CU": "voor",
+      "JA21": "voor",
+      "Keijzer": "tegen",
+      "BBB": "voor",
+      "PvdD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk85ac9c05d1",
@@ -14696,9 +15818,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06178&did=2026D13969",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "tegen",
+      "GL-PvdA": "tegen",
+      "PVV": "voor",
+      "CDA": "voor",
+      "SP": "voor",
+      "BBB": "voor",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "VVD": "voor",
+      "DENK": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "voor",
+      "Volt": "voor",
+      "CU": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkf3596d9929",
@@ -14711,9 +15850,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06179&did=2026D13970",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "voor",
+      "SP": "voor",
+      "Keijzer": "voor",
+      "SGP": "voor",
+      "50PLUS": "voor",
+      "PvdD": "voor",
+      "D66": "voor",
+      "Volt": "voor",
+      "FvD": "tegen",
+      "Gr.Markuszower": "voor",
+      "CDA": "voor",
+      "CU": "voor",
+      "DENK": "voor",
+      "VVD": "voor",
+      "PVV": "voor",
+      "JA21": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tka680f56cb9",
@@ -14726,9 +15882,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06176&did=2026D13967",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "tegen",
+      "Keijzer": "voor",
+      "Volt": "tegen",
+      "SP": "tegen",
+      "CU": "tegen",
+      "DENK": "tegen",
+      "SGP": "tegen",
+      "PvdD": "tegen",
+      "PVV": "voor",
+      "D66": "tegen",
+      "VVD": "tegen",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "FvD": "voor",
+      "GL-PvdA": "tegen",
+      "CDA": "tegen",
+      "50PLUS": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkf1cc3c048e",
@@ -14741,9 +15914,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06175&did=2026D13966",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "voor",
+      "GL-PvdA": "voor",
+      "DENK": "voor",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "PvdD": "voor",
+      "BBB": "voor",
+      "SP": "voor",
+      "PVV": "voor",
+      "Gr.Markuszower": "voor",
+      "CU": "voor",
+      "50PLUS": "voor",
+      "Volt": "voor",
+      "CDA": "voor",
+      "VVD": "voor",
+      "SGP": "voor",
+      "JA21": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk84ef476fb2",
@@ -14756,9 +15946,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06177&did=2026D13968",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "tegen",
+      "CDA": "tegen",
+      "FvD": "tegen",
+      "PVV": "tegen",
+      "DENK": "tegen",
+      "PvdD": "voor",
+      "Gr.Markuszower": "tegen",
+      "JA21": "tegen",
+      "D66": "tegen",
+      "VVD": "tegen",
+      "SGP": "voor",
+      "SP": "tegen",
+      "GL-PvdA": "tegen",
+      "Keijzer": "tegen",
+      "50PLUS": "voor",
+      "CU": "voor",
+      "Volt": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkac5ccedd39",
@@ -14771,9 +15978,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06167&did=2026D13958",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "CU": "tegen",
+      "VVD": "tegen",
+      "BBB": "voor",
+      "GL-PvdA": "tegen",
+      "DENK": "voor",
+      "SGP": "tegen",
+      "JA21": "tegen",
+      "Gr.Markuszower": "voor",
+      "SP": "voor",
+      "CDA": "tegen",
+      "PVV": "voor",
+      "50PLUS": "voor",
+      "FvD": "voor",
+      "D66": "tegen",
+      "PvdD": "tegen",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk101c929e95",
@@ -14786,9 +16010,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06170&did=2026D13961",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "tegen",
+      "FvD": "voor",
+      "JA21": "tegen",
+      "Volt": "tegen",
+      "SGP": "voor",
+      "D66": "tegen",
+      "BBB": "voor",
+      "GL-PvdA": "tegen",
+      "SP": "voor",
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "VVD": "tegen",
+      "PvdD": "tegen",
+      "Keijzer": "voor",
+      "CU": "tegen",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk39d772f592",
@@ -14801,9 +16042,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06174&did=2026D13965",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "voor",
+      "CU": "voor",
+      "PvdD": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "JA21": "tegen",
+      "GL-PvdA": "voor",
+      "D66": "voor",
+      "Keijzer": "voor",
+      "BBB": "voor",
+      "SP": "voor",
+      "CDA": "voor",
+      "SGP": "voor",
+      "FvD": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkb62d092bf8",
@@ -14816,9 +16074,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06173&did=2026D13964",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "voor",
+      "BBB": "voor",
+      "DENK": "voor",
+      "VVD": "tegen",
+      "PvdD": "tegen",
+      "GL-PvdA": "tegen",
+      "SGP": "voor",
+      "Volt": "tegen",
+      "Gr.Markuszower": "voor",
+      "SP": "tegen",
+      "CU": "tegen",
+      "CDA": "tegen",
+      "FvD": "voor",
+      "D66": "tegen",
+      "PVV": "voor",
+      "50PLUS": "voor",
+      "Keijzer": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkbb5a2a633b",
@@ -14831,9 +16106,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06172&did=2026D13963",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "tegen",
+      "CDA": "tegen",
+      "GL-PvdA": "tegen",
+      "SGP": "tegen",
+      "50PLUS": "tegen",
+      "Gr.Markuszower": "voor",
+      "CU": "tegen",
+      "JA21": "voor",
+      "Volt": "tegen",
+      "D66": "tegen",
+      "PVV": "voor",
+      "SP": "tegen",
+      "BBB": "tegen",
+      "FvD": "voor",
+      "DENK": "tegen",
+      "Keijzer": "tegen",
+      "VVD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkc1dacef249",
@@ -14846,9 +16138,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06171&did=2026D13962",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "tegen",
+      "CU": "tegen",
+      "Volt": "tegen",
+      "VVD": "tegen",
+      "PvdD": "tegen",
+      "50PLUS": "tegen",
+      "GL-PvdA": "tegen",
+      "DENK": "tegen",
+      "PVV": "voor",
+      "SP": "tegen",
+      "SGP": "tegen",
+      "JA21": "voor",
+      "CDA": "tegen",
+      "BBB": "tegen",
+      "Keijzer": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk072250874a",
@@ -14861,9 +16170,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06165&did=2026D13956",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "VVD": "voor",
+      "SP": "voor",
+      "BBB": "voor",
+      "SGP": "voor",
+      "PvdD": "tegen",
+      "CU": "voor",
+      "CDA": "voor",
+      "D66": "voor",
+      "JA21": "tegen",
+      "GL-PvdA": "voor",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "Gr.Markuszower": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "Volt": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk9bb3da196d",
@@ -14876,9 +16202,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06169&did=2026D13960",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "CDA": "tegen",
+      "DENK": "tegen",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "JA21": "voor",
+      "SGP": "voor",
+      "BBB": "voor",
+      "VVD": "voor",
+      "GL-PvdA": "tegen",
+      "SP": "tegen",
+      "FvD": "voor",
+      "D66": "tegen",
+      "CU": "voor",
+      "PvdD": "tegen",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk188cda56aa",
@@ -14891,9 +16234,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06168&did=2026D13959",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "CU": "tegen",
+      "PvdD": "tegen",
+      "JA21": "tegen",
+      "GL-PvdA": "tegen",
+      "DENK": "voor",
+      "BBB": "voor",
+      "VVD": "tegen",
+      "50PLUS": "voor",
+      "SGP": "tegen",
+      "SP": "voor",
+      "D66": "tegen",
+      "Gr.Markuszower": "voor",
+      "FvD": "voor",
+      "CDA": "tegen",
+      "PVV": "voor",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk5d5e43276d",
@@ -14906,9 +16266,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06166&did=2026D13957",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "Volt": "tegen",
+      "CU": "voor",
+      "Gr.Markuszower": "voor",
+      "JA21": "tegen",
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "CDA": "tegen",
+      "FvD": "tegen",
+      "D66": "tegen",
+      "DENK": "voor",
+      "SGP": "voor",
+      "PvdD": "tegen",
+      "GL-PvdA": "tegen",
+      "VVD": "tegen",
+      "SP": "voor",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkbd290c2f36",
@@ -14921,9 +16298,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06164&did=2026D13955",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "tegen",
+      "DENK": "voor",
+      "SP": "voor",
+      "PvdD": "tegen",
+      "CU": "tegen",
+      "Volt": "tegen",
+      "GL-PvdA": "tegen",
+      "Gr.Markuszower": "voor",
+      "SGP": "tegen",
+      "50PLUS": "tegen",
+      "Keijzer": "tegen",
+      "D66": "tegen",
+      "BBB": "voor",
+      "FvD": "voor",
+      "CDA": "tegen",
+      "PVV": "voor",
+      "VVD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkdbc9c5753b",
@@ -14936,9 +16330,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06163&did=2026D13954",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "50PLUS": "tegen",
+      "Keijzer": "tegen",
+      "VVD": "tegen",
+      "CDA": "tegen",
+      "BBB": "voor",
+      "GL-PvdA": "tegen",
+      "PVV": "voor",
+      "CU": "tegen",
+      "SP": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "tegen",
+      "JA21": "tegen",
+      "PvdD": "tegen",
+      "SGP": "tegen",
+      "Volt": "tegen",
+      "DENK": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkd741ca7fe2",
@@ -14951,9 +16362,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06162&did=2026D13953",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "tegen",
+      "GL-PvdA": "tegen",
+      "50PLUS": "tegen",
+      "DENK": "voor",
+      "JA21": "tegen",
+      "D66": "tegen",
+      "CDA": "tegen",
+      "PVV": "voor",
+      "Keijzer": "tegen",
+      "SP": "voor",
+      "FvD": "voor",
+      "BBB": "tegen",
+      "VVD": "tegen",
+      "Gr.Markuszower": "voor",
+      "SGP": "tegen",
+      "Volt": "tegen",
+      "PvdD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkcab0983816",
@@ -14966,9 +16394,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06161&did=2026D13952",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "tegen",
+      "GL-PvdA": "tegen",
+      "Gr.Markuszower": "voor",
+      "50PLUS": "tegen",
+      "PVV": "voor",
+      "SGP": "tegen",
+      "DENK": "tegen",
+      "FvD": "voor",
+      "BBB": "tegen",
+      "Volt": "tegen",
+      "CDA": "tegen",
+      "PvdD": "tegen",
+      "JA21": "voor",
+      "SP": "tegen",
+      "D66": "tegen",
+      "Keijzer": "voor",
+      "VVD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkf40c4ef96d",
@@ -14981,9 +16426,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06160&did=2026D13951",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "PvdD": "tegen",
+      "FvD": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "SGP": "voor",
+      "CU": "voor",
+      "D66": "voor",
+      "VVD": "voor",
+      "JA21": "voor",
+      "BBB": "voor",
+      "50PLUS": "voor",
+      "Keijzer": "voor",
+      "CDA": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkfa54246492",
@@ -14996,9 +16458,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06159&did=2026D13950",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "GL-PvdA": "tegen",
+      "SGP": "voor",
+      "CDA": "tegen",
+      "PVV": "voor",
+      "BBB": "voor",
+      "Keijzer": "voor",
+      "D66": "tegen",
+      "50PLUS": "voor",
+      "Volt": "tegen",
+      "SP": "voor",
+      "PvdD": "tegen",
+      "CU": "voor",
+      "JA21": "voor",
+      "DENK": "voor",
+      "VVD": "voor",
+      "Gr.Markuszower": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk8a426436b0",
@@ -15011,9 +16490,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06158&did=2026D13949",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "voor",
+      "D66": "voor",
+      "CU": "voor",
+      "GL-PvdA": "voor",
+      "PvdD": "voor",
+      "JA21": "tegen",
+      "Gr.Markuszower": "tegen",
+      "Keijzer": "voor",
+      "CDA": "voor",
+      "BBB": "voor",
+      "PVV": "tegen",
+      "FvD": "tegen",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "SP": "voor",
+      "VVD": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk0affaa10be",
@@ -15026,9 +16522,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06157&did=2026D13948",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Keijzer": "voor",
+      "PvdD": "tegen",
+      "BBB": "voor",
+      "VVD": "tegen",
+      "FvD": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "tegen",
+      "PVV": "voor",
+      "GL-PvdA": "tegen",
+      "JA21": "voor",
+      "Volt": "tegen",
+      "SGP": "tegen",
+      "SP": "tegen",
+      "CU": "tegen",
+      "50PLUS": "tegen",
+      "D66": "tegen",
+      "CDA": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkd6f20861a1",
@@ -15069,9 +16582,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06151&did=2026D13942",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "tegen",
+      "Gr.Markuszower": "tegen",
+      "CU": "tegen",
+      "FvD": "tegen",
+      "PVV": "tegen",
+      "50PLUS": "voor",
+      "BBB": "voor",
+      "GL-PvdA": "voor",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "D66": "voor",
+      "Volt": "voor",
+      "SP": "voor",
+      "PvdD": "voor",
+      "Keijzer": "tegen",
+      "SGP": "tegen",
+      "CDA": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkcde5b12918",
@@ -15098,9 +16628,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06153&did=2026D13944",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SP": "voor",
+      "CDA": "voor",
+      "Gr.Markuszower": "tegen",
+      "PVV": "tegen",
+      "DENK": "voor",
+      "VVD": "voor",
+      "JA21": "tegen",
+      "Keijzer": "tegen",
+      "D66": "voor",
+      "GL-PvdA": "voor",
+      "50PLUS": "voor",
+      "CU": "voor",
+      "SGP": "voor",
+      "FvD": "tegen",
+      "Volt": "voor",
+      "PvdD": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk739b283de6",
@@ -15113,9 +16660,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06154&did=2026D13945",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "D66": "voor",
+      "FvD": "tegen",
+      "DENK": "voor",
+      "GL-PvdA": "voor",
+      "Gr.Markuszower": "voor",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "SP": "voor",
+      "CDA": "voor",
+      "CU": "voor",
+      "SGP": "voor",
+      "PVV": "tegen",
+      "JA21": "voor",
+      "BBB": "voor",
+      "VVD": "tegen",
+      "PvdD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk68384d398b",
@@ -15128,9 +16692,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06139&did=2026D13930",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "voor",
+      "SP": "voor",
+      "PVV": "voor",
+      "50PLUS": "tegen",
+      "Volt": "tegen",
+      "GL-PvdA": "voor",
+      "D66": "tegen",
+      "DENK": "voor",
+      "Keijzer": "tegen",
+      "SGP": "tegen",
+      "Gr.Markuszower": "voor",
+      "CDA": "tegen",
+      "VVD": "tegen",
+      "FvD": "tegen",
+      "JA21": "tegen",
+      "BBB": "tegen",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tka5d58d6aae",
@@ -15143,9 +16724,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06143&did=2026D13934",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "tegen",
+      "50PLUS": "voor",
+      "Gr.Markuszower": "voor",
+      "BBB": "voor",
+      "FvD": "tegen",
+      "PVV": "voor",
+      "PvdD": "voor",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "CU": "voor",
+      "D66": "tegen",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "SGP": "tegen",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "CDA": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk8dc2b9ce28",
@@ -15158,9 +16756,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06148&did=2026D13939",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "voor",
+      "BBB": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "tegen",
+      "SP": "voor",
+      "CU": "tegen",
+      "FvD": "tegen",
+      "PvdD": "voor",
+      "VVD": "tegen",
+      "SGP": "tegen",
+      "Keijzer": "tegen",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "D66": "voor",
+      "CDA": "tegen",
+      "JA21": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkb739b12b94",
@@ -15173,9 +16788,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06149&did=2026D13940",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "tegen",
+      "D66": "tegen",
+      "Gr.Markuszower": "tegen",
+      "CDA": "tegen",
+      "50PLUS": "tegen",
+      "PVV": "tegen",
+      "Keijzer": "tegen",
+      "Volt": "voor",
+      "PvdD": "voor",
+      "SGP": "tegen",
+      "SP": "tegen",
+      "CU": "tegen",
+      "GL-PvdA": "tegen",
+      "BBB": "tegen",
+      "FvD": "tegen",
+      "JA21": "tegen",
+      "VVD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk8b104940c3",
@@ -15188,9 +16820,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06146&did=2026D13937",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "tegen",
+      "D66": "tegen",
+      "SGP": "tegen",
+      "FvD": "tegen",
+      "Keijzer": "tegen",
+      "Gr.Markuszower": "tegen",
+      "PvdD": "voor",
+      "JA21": "tegen",
+      "CU": "voor",
+      "Volt": "voor",
+      "DENK": "tegen",
+      "PVV": "tegen",
+      "SP": "tegen",
+      "CDA": "tegen",
+      "VVD": "tegen",
+      "BBB": "tegen",
+      "GL-PvdA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk7de12b6df7",
@@ -15203,9 +16852,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06150&did=2026D13941",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "PvdD": "voor",
+      "CDA": "voor",
+      "Gr.Markuszower": "tegen",
+      "FvD": "tegen",
+      "50PLUS": "voor",
+      "SP": "voor",
+      "CU": "voor",
+      "GL-PvdA": "voor",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "SGP": "voor",
+      "D66": "voor",
+      "VVD": "voor",
+      "DENK": "voor",
+      "JA21": "tegen",
+      "PVV": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkcd59f4c44c",
@@ -15218,9 +16884,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06144&did=2026D13935",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "VVD": "tegen",
+      "CDA": "tegen",
+      "D66": "voor",
+      "CU": "voor",
+      "JA21": "tegen",
+      "PvdD": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "BBB": "voor",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "SGP": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkd81ee4abc2",
@@ -15233,9 +16916,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06140&did=2026D13931",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "Gr.Markuszower": "tegen",
+      "SGP": "tegen",
+      "Volt": "voor",
+      "DENK": "voor",
+      "VVD": "tegen",
+      "JA21": "tegen",
+      "CDA": "tegen",
+      "PvdD": "tegen",
+      "CU": "tegen",
+      "SP": "voor",
+      "FvD": "tegen",
+      "50PLUS": "voor",
+      "Keijzer": "voor",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "D66": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkc8216cd003",
@@ -15262,9 +16962,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06145&did=2026D13936",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "PVV": "voor",
+      "CU": "tegen",
+      "SP": "voor",
+      "50PLUS": "tegen",
+      "D66": "tegen",
+      "PvdD": "tegen",
+      "SGP": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "tegen",
+      "GL-PvdA": "tegen",
+      "BBB": "voor",
+      "CDA": "tegen",
+      "Keijzer": "voor",
+      "Volt": "tegen",
+      "DENK": "voor",
+      "JA21": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk272cabc9a9",
@@ -15277,9 +16994,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06141&did=2026D13932",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "tegen",
+      "Volt": "voor",
+      "Keijzer": "voor",
+      "CDA": "tegen",
+      "GL-PvdA": "voor",
+      "SGP": "tegen",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "FvD": "voor",
+      "SP": "voor",
+      "CU": "voor",
+      "BBB": "tegen",
+      "50PLUS": "tegen",
+      "PVV": "tegen",
+      "PvdD": "tegen",
+      "D66": "tegen",
+      "Gr.Markuszower": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk129133d21b",
@@ -15292,9 +17026,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06138&did=2026D13929",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "tegen",
+      "FvD": "tegen",
+      "D66": "voor",
+      "JA21": "tegen",
+      "50PLUS": "voor",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "PvdD": "voor",
+      "Keijzer": "tegen",
+      "Volt": "voor",
+      "CDA": "voor",
+      "DENK": "voor",
+      "PVV": "tegen",
+      "SGP": "voor",
+      "VVD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk6888fc771c",
@@ -15307,9 +17058,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06142&did=2026D13933",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "voor",
+      "VVD": "tegen",
+      "CU": "tegen",
+      "SGP": "voor",
+      "CDA": "tegen",
+      "BBB": "voor",
+      "Volt": "tegen",
+      "GL-PvdA": "tegen",
+      "FvD": "voor",
+      "PvdD": "tegen",
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "D66": "tegen",
+      "SP": "voor",
+      "DENK": "voor",
+      "Gr.Markuszower": "voor",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkc679959423",
@@ -15322,9 +17090,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06137&did=2026D13928",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "tegen",
+      "PvdD": "voor",
+      "PVV": "voor",
+      "DENK": "voor",
+      "VVD": "tegen",
+      "JA21": "tegen",
+      "SP": "voor",
+      "SGP": "tegen",
+      "BBB": "voor",
+      "Keijzer": "tegen",
+      "FvD": "tegen",
+      "GL-PvdA": "voor",
+      "50PLUS": "voor",
+      "Volt": "voor",
+      "D66": "tegen",
+      "CDA": "tegen",
+      "CU": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk2fae2bc6fe",
@@ -15337,9 +17122,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06136&did=2026D13927",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "voor",
+      "DENK": "voor",
+      "Gr.Markuszower": "voor",
+      "SGP": "voor",
+      "CU": "voor",
+      "SP": "voor",
+      "VVD": "voor",
+      "PVV": "voor",
+      "JA21": "voor",
+      "CDA": "voor",
+      "D66": "voor",
+      "BBB": "voor",
+      "FvD": "tegen",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "50PLUS": "voor",
+      "PvdD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk1a1139782a",
@@ -15352,9 +17154,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06135&did=2026D13926",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "voor",
+      "D66": "voor",
+      "CDA": "voor",
+      "PvdD": "tegen",
+      "FvD": "tegen",
+      "Keijzer": "voor",
+      "JA21": "tegen",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "BBB": "voor",
+      "VVD": "voor",
+      "Gr.Markuszower": "voor",
+      "PVV": "voor",
+      "CU": "voor",
+      "GL-PvdA": "voor",
+      "SP": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tka918135695",
@@ -15368,7 +17187,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06360&did=2026D14347",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk6b20c03098",
@@ -15382,7 +17201,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06359&did=2026D14346",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk58e0e6237d",
@@ -15396,7 +17215,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06357&did=2026D14344",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk751a1f6ebe",
@@ -15410,7 +17229,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06358&did=2026D14345",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk72e04096dc",
@@ -15424,7 +17243,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06356&did=2026D14343",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkca015e904d",
@@ -15438,7 +17257,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06355&did=2026D14342",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkde2dc5a225",
@@ -15452,7 +17271,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06354&did=2026D14341",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk80eb908834",
@@ -15465,9 +17284,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06256&did=2026D14093",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "50PLUS": "tegen",
+      "SP": "voor",
+      "SGP": "tegen",
+      "PvdD": "voor",
+      "DENK": "voor",
+      "D66": "tegen",
+      "Volt": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "tegen",
+      "CDA": "tegen",
+      "FvD": "voor",
+      "VVD": "tegen",
+      "JA21": "tegen",
+      "CU": "tegen",
+      "GL-PvdA": "tegen",
+      "Keijzer": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk65105f0ba8",
@@ -15480,9 +17316,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06257&did=2026D14094",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Keijzer": "voor",
+      "D66": "tegen",
+      "VVD": "tegen",
+      "SP": "voor",
+      "SGP": "voor",
+      "CU": "tegen",
+      "PvdD": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "JA21": "tegen",
+      "FvD": "voor",
+      "PVV": "voor",
+      "GL-PvdA": "voor",
+      "Volt": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "CDA": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk2fc0b6ee10",
@@ -15495,9 +17348,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06260&did=2026D14102",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "voor",
+      "CDA": "voor",
+      "BBB": "voor",
+      "PVV": "voor",
+      "D66": "voor",
+      "SP": "voor",
+      "PvdD": "voor",
+      "SGP": "voor",
+      "VVD": "voor",
+      "Keijzer": "voor",
+      "GL-PvdA": "voor",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "FvD": "voor",
+      "JA21": "voor",
+      "CU": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tke2085be70f",
@@ -15510,9 +17380,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06266&did=2026D14107",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "voor",
+      "PVV": "voor",
+      "JA21": "tegen",
+      "Gr.Markuszower": "voor",
+      "D66": "tegen",
+      "50PLUS": "voor",
+      "Volt": "tegen",
+      "BBB": "tegen",
+      "VVD": "tegen",
+      "CDA": "tegen",
+      "SGP": "voor",
+      "FvD": "tegen",
+      "Keijzer": "tegen",
+      "SP": "voor",
+      "CU": "voor",
+      "GL-PvdA": "voor",
+      "DENK": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk84f63ae29f",
@@ -15525,9 +17412,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06267&did=2026D14110",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "voor",
+      "BBB": "voor",
+      "Volt": "voor",
+      "PVV": "voor",
+      "FvD": "voor",
+      "VVD": "voor",
+      "D66": "voor",
+      "Keijzer": "tegen",
+      "CDA": "tegen",
+      "JA21": "voor",
+      "GL-PvdA": "voor",
+      "50PLUS": "voor",
+      "SP": "voor",
+      "CU": "voor",
+      "SGP": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk827ca49f36",
@@ -15541,7 +17445,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06262&did=2026D14103",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk45e301818a",
@@ -15568,9 +17472,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06255&did=2026D14092",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "voor",
+      "SP": "voor",
+      "CDA": "tegen",
+      "BBB": "voor",
+      "VVD": "tegen",
+      "DENK": "voor",
+      "JA21": "tegen",
+      "GL-PvdA": "voor",
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "Gr.Markuszower": "tegen",
+      "PvdD": "voor",
+      "FvD": "tegen",
+      "D66": "tegen",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "PVV": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkc2bb1028cd",
@@ -15583,9 +17504,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06321&did=2026D14239",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "PVV": "voor",
+      "PvdD": "tegen",
+      "Volt": "tegen",
+      "FvD": "tegen",
+      "GL-PvdA": "tegen",
+      "DENK": "voor",
+      "VVD": "voor",
+      "CDA": "voor",
+      "JA21": "voor",
+      "CU": "voor",
+      "D66": "tegen",
+      "Keijzer": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "SGP": "voor",
+      "SP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkbb02a8a3c4",
@@ -15598,9 +17536,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06303&did=2026D14190",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "tegen",
+      "50PLUS": "voor",
+      "CDA": "voor",
+      "Keijzer": "voor",
+      "Volt": "tegen",
+      "VVD": "voor",
+      "BBB": "voor",
+      "CU": "voor",
+      "PVV": "voor",
+      "D66": "voor",
+      "JA21": "voor",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "SP": "voor",
+      "FvD": "voor",
+      "GL-PvdA": "voor",
+      "SGP": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkc5a9c53c0c",
@@ -15613,9 +17568,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06304&did=2026D14191",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "BBB": "voor",
+      "SGP": "voor",
+      "D66": "voor",
+      "Keijzer": "tegen",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "GL-PvdA": "voor",
+      "JA21": "voor",
+      "DENK": "voor",
+      "CDA": "voor",
+      "SP": "voor",
+      "50PLUS": "voor",
+      "PvdD": "tegen",
+      "CU": "voor",
+      "PVV": "voor",
+      "Volt": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkbd7ec7598c",
@@ -15628,9 +17600,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06301&did=2026D14187",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "GL-PvdA": "voor",
+      "50PLUS": "voor",
+      "CDA": "tegen",
+      "PvdD": "voor",
+      "VVD": "tegen",
+      "PVV": "voor",
+      "JA21": "tegen",
+      "D66": "tegen",
+      "Keijzer": "tegen",
+      "SGP": "tegen",
+      "DENK": "voor",
+      "BBB": "voor",
+      "Gr.Markuszower": "voor",
+      "SP": "voor",
+      "FvD": "voor",
+      "Volt": "tegen",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk6cded63d48",
@@ -15643,9 +17632,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06300&did=2026D14186",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "voor",
+      "JA21": "voor",
+      "50PLUS": "voor",
+      "CDA": "voor",
+      "GL-PvdA": "voor",
+      "SP": "voor",
+      "Keijzer": "tegen",
+      "SGP": "tegen",
+      "Volt": "voor",
+      "PvdD": "voor",
+      "FvD": "tegen",
+      "BBB": "voor",
+      "PVV": "tegen",
+      "Gr.Markuszower": "voor",
+      "DENK": "voor",
+      "D66": "voor",
+      "VVD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkc3c900512b",
@@ -15658,9 +17664,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06294&did=2026D14179",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SP": "voor",
+      "Keijzer": "tegen",
+      "PVV": "voor",
+      "SGP": "voor",
+      "50PLUS": "voor",
+      "D66": "voor",
+      "BBB": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "Volt": "voor",
+      "GL-PvdA": "voor",
+      "PvdD": "voor",
+      "Gr.Markuszower": "voor",
+      "CDA": "voor",
+      "DENK": "voor",
+      "JA21": "voor",
+      "CU": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk529ca7d14d",
@@ -15673,9 +17696,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06283&did=2026D14162",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "voor",
+      "FvD": "voor",
+      "BBB": "voor",
+      "SP": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "D66": "voor",
+      "PVV": "voor",
+      "CU": "voor",
+      "SGP": "voor",
+      "GL-PvdA": "voor",
+      "PvdD": "tegen",
+      "Keijzer": "voor",
+      "CDA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk8a2024c590",
@@ -15702,9 +17742,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06298&did=2026D14183",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "Volt": "voor",
+      "JA21": "voor",
+      "SP": "voor",
+      "VVD": "voor",
+      "Keijzer": "tegen",
+      "D66": "voor",
+      "FvD": "tegen",
+      "BBB": "voor",
+      "PvdD": "voor",
+      "DENK": "voor",
+      "CU": "voor",
+      "PVV": "tegen",
+      "Gr.Markuszower": "tegen",
+      "GL-PvdA": "voor",
+      "CDA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk91c1e434e3",
@@ -15717,9 +17774,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06299&did=2026D14185",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "CU": "voor",
+      "BBB": "voor",
+      "PVV": "voor",
+      "50PLUS": "voor",
+      "JA21": "voor",
+      "SGP": "voor",
+      "SP": "tegen",
+      "DENK": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "GL-PvdA": "voor",
+      "VVD": "voor",
+      "CDA": "voor",
+      "Keijzer": "tegen",
+      "D66": "voor",
+      "PvdD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk6e35c000f0",
@@ -15732,9 +17806,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06293&did=2026D14178",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "Gr.Markuszower": "voor",
+      "VVD": "tegen",
+      "SP": "tegen",
+      "SGP": "tegen",
+      "BBB": "voor",
+      "GL-PvdA": "tegen",
+      "CDA": "tegen",
+      "PvdD": "tegen",
+      "DENK": "voor",
+      "PVV": "voor",
+      "D66": "tegen",
+      "CU": "tegen",
+      "JA21": "voor",
+      "Keijzer": "voor",
+      "Volt": "tegen",
+      "FvD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk5284be92a8",
@@ -15747,9 +17838,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06284&did=2026D14163",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Volt": "tegen",
+      "VVD": "tegen",
+      "Keijzer": "tegen",
+      "SP": "tegen",
+      "D66": "tegen",
+      "50PLUS": "voor",
+      "DENK": "tegen",
+      "CDA": "tegen",
+      "JA21": "voor",
+      "CU": "tegen",
+      "FvD": "voor",
+      "PVV": "voor",
+      "SGP": "tegen",
+      "Gr.Markuszower": "voor",
+      "GL-PvdA": "tegen",
+      "PvdD": "tegen",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk3d3c3cfc6b",
@@ -15762,9 +17870,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06287&did=2026D14167",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "tegen",
+      "PVV": "tegen",
+      "50PLUS": "voor",
+      "SGP": "tegen",
+      "Keijzer": "voor",
+      "CDA": "voor",
+      "BBB": "tegen",
+      "CU": "tegen",
+      "GL-PvdA": "tegen",
+      "VVD": "voor",
+      "JA21": "voor",
+      "DENK": "voor",
+      "FvD": "tegen",
+      "SP": "tegen",
+      "Volt": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tke28956137a",
@@ -15777,9 +17902,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06288&did=2026D14168",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "FvD": "voor",
+      "SGP": "tegen",
+      "CDA": "voor",
+      "Gr.Markuszower": "voor",
+      "D66": "voor",
+      "PvdD": "tegen",
+      "BBB": "voor",
+      "GL-PvdA": "voor",
+      "SP": "tegen",
+      "CU": "voor",
+      "Keijzer": "tegen",
+      "Volt": "voor",
+      "50PLUS": "voor",
+      "DENK": "voor",
+      "PVV": "voor",
+      "JA21": "voor",
+      "VVD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tka9eaec90e9",
@@ -15792,9 +17934,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06285&did=2026D14164",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CDA": "tegen",
+      "SGP": "tegen",
+      "BBB": "voor",
+      "DENK": "voor",
+      "Keijzer": "voor",
+      "PvdD": "tegen",
+      "SP": "tegen",
+      "Gr.Markuszower": "voor",
+      "D66": "tegen",
+      "GL-PvdA": "tegen",
+      "JA21": "tegen",
+      "FvD": "voor",
+      "PVV": "voor",
+      "Volt": "tegen",
+      "VVD": "tegen",
+      "50PLUS": "voor",
+      "CU": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk00986d71e5",
@@ -15807,9 +17966,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06289&did=2026D14170",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "Gr.Markuszower": "voor",
+      "VVD": "voor",
+      "DENK": "voor",
+      "CDA": "voor",
+      "BBB": "voor",
+      "PvdD": "tegen",
+      "CU": "voor",
+      "D66": "voor",
+      "FvD": "voor",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "Volt": "voor",
+      "SGP": "voor",
+      "JA21": "voor",
+      "Keijzer": "tegen",
+      "50PLUS": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tkec63390269",
@@ -15822,9 +17998,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06292&did=2026D14177",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "D66": "tegen",
+      "JA21": "voor",
+      "FvD": "voor",
+      "GL-PvdA": "tegen",
+      "Volt": "tegen",
+      "VVD": "tegen",
+      "SGP": "tegen",
+      "BBB": "voor",
+      "DENK": "tegen",
+      "CU": "tegen",
+      "SP": "tegen",
+      "PVV": "voor",
+      "Keijzer": "tegen",
+      "Gr.Markuszower": "voor",
+      "CDA": "tegen",
+      "PvdD": "tegen",
+      "50PLUS": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk87be96b87f",
@@ -15837,9 +18030,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06286&did=2026D14166",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "DENK": "tegen",
+      "CDA": "voor",
+      "Gr.Markuszower": "tegen",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "Keijzer": "tegen",
+      "BBB": "tegen",
+      "VVD": "voor",
+      "CU": "voor",
+      "PvdD": "voor",
+      "D66": "voor",
+      "JA21": "tegen",
+      "Volt": "voor",
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "PVV": "tegen",
+      "FvD": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tk4ee51f4d2d",
@@ -15884,9 +18094,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06365&did=2026D14365",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "voor",
+      "CU": "voor",
+      "SGP": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "Keijzer": "voor",
+      "50PLUS": "voor",
+      "GL-PvdA": "tegen",
+      "SP": "voor",
+      "PVV": "voor",
+      "CDA": "voor",
+      "D66": "voor",
+      "Gr.Markuszower": "voor",
+      "Volt": "voor",
+      "BBB": "voor",
+      "PvdD": "tegen",
+      "DENK": "tegen"
+    },
+    "archief": false
   },
   {
     "id": "tkd09552b98b",
@@ -15914,7 +18141,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06362&did=2026D14349",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tke938fc644e",
@@ -15928,7 +18155,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06361&did=2026D14348",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk4a209c10cc",
@@ -15942,7 +18169,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06410&did=2026D14448",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkae4006a7a9",
@@ -15955,9 +18182,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06413&did=2026D14452",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PvdD": "voor",
+      "DENK": "voor",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "BBB": "voor",
+      "50PLUS": "voor",
+      "CU": "voor",
+      "D66": "voor",
+      "JA21": "tegen",
+      "SP": "voor",
+      "SGP": "voor",
+      "FvD": "tegen",
+      "Gr.Markuszower": "tegen",
+      "VVD": "tegen",
+      "Keijzer": "tegen",
+      "CDA": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tke1134ac81c",
@@ -15970,9 +18214,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06469&did=2026D14625",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "50PLUS": "voor",
+      "SGP": "voor",
+      "GL-PvdA": "voor",
+      "Keijzer": "voor",
+      "D66": "voor",
+      "PVV": "voor",
+      "JA21": "voor",
+      "VVD": "voor",
+      "SP": "voor",
+      "DENK": "voor",
+      "PvdD": "voor",
+      "Gr.Markuszower": "voor",
+      "CDA": "voor",
+      "BBB": "voor",
+      "CU": "voor",
+      "FvD": "voor",
+      "Volt": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk4e2858d2f7",
@@ -15999,9 +18260,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06467&did=2026D14623",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SGP": "voor",
+      "JA21": "voor",
+      "DENK": "voor",
+      "CU": "voor",
+      "BBB": "voor",
+      "CDA": "voor",
+      "50PLUS": "voor",
+      "GL-PvdA": "voor",
+      "PVV": "voor",
+      "SP": "voor",
+      "Volt": "voor",
+      "Keijzer": "voor",
+      "Gr.Markuszower": "voor",
+      "PvdD": "voor",
+      "VVD": "voor",
+      "FvD": "voor",
+      "D66": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk0df9d1ff76",
@@ -16014,9 +18292,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06463&did=2026D14616",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "PVV": "voor",
+      "BBB": "voor",
+      "VVD": "voor",
+      "Volt": "voor",
+      "Gr.Markuszower": "voor",
+      "CDA": "voor",
+      "SP": "voor",
+      "GL-PvdA": "voor",
+      "JA21": "voor",
+      "Keijzer": "voor",
+      "SGP": "voor",
+      "CU": "voor",
+      "PvdD": "voor",
+      "DENK": "voor",
+      "FvD": "voor",
+      "50PLUS": "voor",
+      "D66": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk2c1faecfc6",
@@ -16029,9 +18324,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06464&did=2026D14617",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "JA21": "voor",
+      "50PLUS": "voor",
+      "FvD": "voor",
+      "PVV": "voor",
+      "PvdD": "voor",
+      "Volt": "voor",
+      "CU": "voor",
+      "GL-PvdA": "voor",
+      "Gr.Markuszower": "tegen",
+      "VVD": "voor",
+      "CDA": "voor",
+      "D66": "voor",
+      "SGP": "voor",
+      "SP": "voor",
+      "Keijzer": "voor",
+      "DENK": "voor",
+      "BBB": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk865791fe61",
@@ -16646,9 +18958,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06499&did=2026D14693",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SGP": "voor",
+      "CDA": "voor",
+      "FvD": "voor",
+      "BBB": "tegen",
+      "D66": "voor",
+      "PVV": "voor",
+      "DENK": "voor",
+      "50PLUS": "voor",
+      "VVD": "voor",
+      "CU": "voor",
+      "Gr.Markuszower": "voor",
+      "JA21": "tegen",
+      "GL-PvdA": "voor",
+      "Keijzer": "voor",
+      "Volt": "voor",
+      "SP": "voor",
+      "PvdD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk46fc6b99f0",
@@ -16661,9 +18990,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06615&did=2026D14951",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "CU": "voor",
+      "Volt": "voor",
+      "Keijzer": "voor",
+      "PVV": "voor",
+      "SGP": "voor",
+      "CDA": "tegen",
+      "JA21": "voor",
+      "GL-PvdA": "tegen",
+      "PvdD": "tegen",
+      "Gr.Markuszower": "voor",
+      "50PLUS": "tegen",
+      "BBB": "voor",
+      "VVD": "voor",
+      "D66": "voor",
+      "SP": "tegen",
+      "DENK": "tegen",
+      "FvD": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk22f212e8dd",
@@ -16676,9 +19022,26 @@
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06592&did=2026D14912",
     "toelichting": "",
-    "stemmen": {},
-    "archief": false,
-    "stemmen_na": true
+    "stemmen": {
+      "SGP": "voor",
+      "SP": "tegen",
+      "D66": "voor",
+      "50PLUS": "voor",
+      "Gr.Markuszower": "tegen",
+      "GL-PvdA": "voor",
+      "CU": "voor",
+      "BBB": "voor",
+      "PVV": "voor",
+      "PvdD": "tegen",
+      "DENK": "tegen",
+      "FvD": "voor",
+      "JA21": "voor",
+      "Keijzer": "voor",
+      "VVD": "voor",
+      "Volt": "tegen",
+      "CDA": "voor"
+    },
+    "archief": false
   },
   {
     "id": "tk481f8673af",
@@ -16896,7 +19259,7 @@
     "indiener": "JA21",
     "datum": "2026-03-31",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06688&did=2026D15105",
@@ -17124,6 +19487,706 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06665&did=2026D15075",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka008ec9d2e",
+    "titel": "Motie van de leden Moorman en Westerveld over wettelijk regelen dat renovatie- en nieuwbouwprojecten voldoen aan Europese normen voor toegankelijkheid - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06813&did=2026D15350",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkd9b586edd4",
+    "titel": "Motie van het lid Ergin over inzichtelijk maken in hoeverre onderwijshuisvestingsmiddelen daadwerkelijk worden ingezet voor de verbetering van schoolgebouwen - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06810&did=2026D15344",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc16f8c9745",
+    "titel": "Motie van het lid Ergin over uniforme en meetbare indicatoren in de landelijke monitor onderwijshuisvesting - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Asiel & Migratie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06809&did=2026D15343",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkf2b5dd341b",
+    "titel": "Motie van het lid Ergin over een nulmeting van de kwaliteit van schoolgebouwen - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06807&did=2026D15340",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkbba70bf42b",
+    "titel": "Motie van het lid Claassen over de Nederlandse vlag hijsen op hogescholen en universiteiten - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "Gr.Markuszower",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06806&did=2026D15339",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk56e2bd1692",
+    "titel": "Motie van het lid Claassen over structurele aandacht van publieke kennis- en onderwijsinstellingen voor Nederlandse voorbeeldfiguren in wetenschap, innovatie en ondernemerschap - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "Gr.Markuszower",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06804&did=2026D15338",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkcd1415cf9c",
+    "titel": "Motie van het lid Claassen over middelen voor klimaat- en duurzaamheidsdoelen in onderwijshuisvesting heralloceren naar professionalisering en opleiding van leraren - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "Gr.Markuszower",
+    "datum": "2026-04-01",
+    "thema": "Klimaat & Energie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06803&did=2026D15337",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc9d4f446c9",
+    "titel": "Motie van het lid Diederik van Dijk over geen verplichting tot evidence-informed werken in de wet opnemen - Werken in het onderwijs",
+    "indiener": "SGP",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06740&did=2026D15215",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk675037db62",
+    "titel": "Motie van het lid Diederik van Dijk over onderzoeken hoe onderwijservaring een betekenisvol onderdeel kan worden van standaarden, profielen en richtlijnen - Werken in het onderwijs",
+    "indiener": "SGP",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06739&did=2026D15214",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk75cf21bac7",
+    "titel": "Motie van het lid Raijer over bonussen voor het aantrekken van leraren in grote steden beperken of reguleren - Werken in het onderwijs",
+    "indiener": "PVV",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06738&did=2026D15213",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk26ab2d73b2",
+    "titel": "Motie van het lid Boomsma over bezien hoe expliciete directe instructie een prominenter onderdeel kan worden van lerarenopleidingen - Werken in het onderwijs",
+    "indiener": "JA21",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06737&did=2026D15211",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk5169f246e1",
+    "titel": "Motie van het lid Rooderkerk over onderzoek naar de verankering van de rol van de lezende leraar - Werken in het onderwijs",
+    "indiener": "D66",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06736&did=2026D15209",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkf6006cfc82",
+    "titel": "Motie van het lid Rooderkerk over een lerarenraad instellen - Werken in het onderwijs",
+    "indiener": "D66",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06735&did=2026D15208",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk90b1998981",
+    "titel": "Motie van de leden Rooderkerk en Moorman over onderzoek naar een terugkeergarantie voor rijksambtenaren en werknemers die de stap willen maken naar een zij-instroomtraject binnen het onderwijs - Werken in het onderwijs",
+    "indiener": "D66",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06734&did=2026D15207",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkaf470408a7",
+    "titel": "Motie van de leden Moorman en Boomsma over uit blijven gaan van het oplossen en wegwerken van het volledige lerarentekort - Werken in het onderwijs",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06732&did=2026D15205",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka6df704d2a",
+    "titel": "Motie van het lid Moorman over onderzoeken hoeveel onbevoegden voor de klas staan - Werken in het onderwijs",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06730&did=2026D15203",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk3b6ef7f637",
+    "titel": "Motie van het lid Van Houwelingen over onderzoeken hoeveel geld dat schoolbesturen besteden ten goede komt aan de salarissen van leraren die in of voor de klas staan - Werken in het onderwijs",
+    "indiener": "FvD",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06729&did=2026D15202",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk59d3d43535",
+    "titel": "Motie van het lid Van Houwelingen over onderzoek naar een correlatie tussen de omvang van het schoolbestuur en het ziekteverzuim en personeelsverloop onder leraren - Werken in het onderwijs",
+    "indiener": "FvD",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06728&did=2026D15200",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk8f853ab53d",
+    "titel": "Motie van het lid Armut over hybride docentschap stimuleren voor beroepsgerichte vakken - Werken in het onderwijs",
+    "indiener": "CDA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06727&did=2026D15199",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk9e8da21c0b",
+    "titel": "Motie van het lid Tseggai - Wijziging van de Wet educatie en beroepsonderwijs en een aantal andere wetten in verband met het verbeteren van de aansluiting van het beroepsonderwijs op de arbeidsmarkt (verbetering aansluiting beroepsonderwijs-arbeidsmarkt)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06870&did=2026D15488",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tke2d48229a1",
+    "titel": "Motie van de leden Biekman en Tseggai - Wijziging van de Wet educatie en beroepsonderwijs en een aantal andere wetten in verband met het verbeteren van de aansluiting van het beroepsonderwijs op de arbeidsmarkt (verbetering aansluiting beroepsonderwijs-arbeidsmarkt)",
+    "indiener": "D66",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06872&did=2026D15490",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk5ddfcb97db",
+    "titel": "Motie van het lid Van der Plas - Wijziging van de Wet educatie en beroepsonderwijs en een aantal andere wetten in verband met het verbeteren van de aansluiting van het beroepsonderwijs op de arbeidsmarkt (verbetering aansluiting beroepsonderwijs-arbeidsmarkt)",
+    "indiener": "BBB",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06871&did=2026D15489",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk7e1b835cf4",
+    "titel": "Motie van de leden Van Baarle en Ceder - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06859&did=2026D15475",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkeab2672f15",
+    "titel": "Motie van de leden Ceder en Ceulemans - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "CU",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06856&did=2026D15472",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk97c2e04ad9",
+    "titel": "Motie van de leden Ceder en Stoffer - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "CU",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06858&did=2026D15474",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk10cfefc477",
+    "titel": "Motie van het lid Van Baarle - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06862&did=2026D15478",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1eb7b154e4",
+    "titel": "Motie van het lid Van Baarle - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06860&did=2026D15476",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk6825484b71",
+    "titel": "Motie van de leden Stöteler en Wilders - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "PVV",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06865&did=2026D15481",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkdc549ea4b2",
+    "titel": "Motie van het lid Ceulemans - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "JA21",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06863&did=2026D15479",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk520bbde2ca",
+    "titel": "Motie van het lid Ceulemans c.s. - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "JA21",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06864&did=2026D15480",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkf5086fb959",
+    "titel": "Motie van de leden Stoffer en Ceder - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "SGP",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06867&did=2026D15483",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk14fa948dcc",
+    "titel": "Motie van de leden Ceder en Van der Werf - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "CU",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06857&did=2026D15473",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk721f4e04f0",
+    "titel": "Motie van de leden Stoffer en Ceder - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "SGP",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06866&did=2026D15482",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc57757dcd0",
+    "titel": "Motie van de leden Stoffer en Ceulemans - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "SGP",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06868&did=2026D15484",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkdb2186b055",
+    "titel": "Motie van het lid Van Baarle - Vaststelling van de begrotingsstaat van het Ministerie van Buitenlandse Zaken (V) voor het jaar 2026",
+    "indiener": "DENK",
+    "datum": "2026-04-01",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06861&did=2026D15477",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk7431367fa2",
+    "titel": "Gewijzigde motie van de leden Moorman en Beckerman over afspraken om commerciële inhuur af te bouwen (t.v.v. 36800-VIII-94) - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2026",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06841&did=2026D15431",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk2f9b824ad4",
+    "titel": "Motie van het lid Raijer - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "PVV",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06819&did=2026D15357",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk641774e47b",
+    "titel": "Motie van het lid Rooderkerk - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "D66",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06817&did=2026D15355",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk845f91e6ae",
+    "titel": "Motie van het lid Boomsma - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "JA21",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06818&did=2026D15356",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk630d88c144",
+    "titel": "Motie van de leden Moorman en Boomsma - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06815&did=2026D15353",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk3771935a4f",
+    "titel": "Motie van het lid Moorman c.s. - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06816&did=2026D15354",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkfc16248ff6",
+    "titel": "Motie van het lid Moorman - Wijziging van diverse onderwijswetten voor een meer planmatige en doelmatige aanpak van de onderwijshuisvesting in het primair en het voortgezet onderwijs (Wet planmatige aanpak onderwijshuisvesting)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-04-01",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06814&did=2026D15351",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc803ead1d4",
+    "titel": "Gewijzigde motie van het lid Russcher over waarborgen dat boeren nooit zullen worden onteigend ten behoeve van woningbouw (t.v.v. 29435-294) - Nota Ruimte",
+    "indiener": "FvD",
+    "datum": "2026-04-01",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06757&did=2026D15260",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk76fd555594",
+    "titel": "Gewijzigde motie van het lid Wiersma c.s. over bij gebruik van VAB-locaties voor woningbouw borgen dat bestaande agrarische bedrijven niet worden beperkt in hun bedrijfsvoering (t.v.v. 29435-285) - Nota Ruimte",
+    "indiener": "BBB",
+    "datum": "2026-04-01",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06715&did=2026D15153",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk5c7f52406f",
+    "titel": "Motie van het lid Patijn over naast de Arbowet verdere wetgeving uitwerken in lijn met ILO-conventie 190, artikel 3 - Goedkeuring van het op 21 juni 2019 te Genève tot stand gekomen Verdrag inzake het uitbannen van geweld en intimidatie op de werkvloer (Trb. 2020, 2 en Trb. 2020, 34)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-03-31",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06709&did=2026D15145",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk470425b052",
+    "titel": "Motie van de leden Neijenhuis en Patijn over een plan voor het voorkomen en aanpakken van agressie in winkels - Goedkeuring van het op 21 juni 2019 te Genève tot stand gekomen Verdrag inzake het uitbannen van geweld en intimidatie op de werkvloer (Trb. 2020, 2 en Trb. 2020, 34)",
+    "indiener": "D66",
+    "datum": "2026-03-31",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06711&did=2026D15147",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk333c9f458d",
+    "titel": "Motie van de leden Ceulemans en Kisteman over waarborgen dat het verdrag niet leidt tot aanvullende wettelijke verplichtingen, toezichtseisen of juridische druk - Goedkeuring van het op 21 juni 2019 te Genève tot stand gekomen Verdrag inzake het uitbannen van geweld en intimidatie op de werkvloer (Trb. 2020, 2 en Trb. 2020, 34)",
+    "indiener": "JA21",
+    "datum": "2026-03-31",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06712&did=2026D15148",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk40721c2d8d",
+    "titel": "Motie van het lid Van Houwelingen over de definitie van \"psychosociale arbeidsbelasting\" in de Arbowet objectiveren - Goedkeuring van het op 21 juni 2019 te Genève tot stand gekomen Verdrag inzake het uitbannen van geweld en intimidatie op de werkvloer (Trb. 2020, 2 en Trb. 2020, 34)",
+    "indiener": "FvD",
+    "datum": "2026-03-31",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06713&did=2026D15149",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tke3b536894b",
+    "titel": "Motie van de leden Kisteman en Flach over concrete voorstellen voor modernisering en vereenvoudiging van de (Aanvullende) RI&E-verplichtingen - Goedkeuring van het op 21 juni 2019 te Genève tot stand gekomen Verdrag inzake het uitbannen van geweld en intimidatie op de werkvloer (Trb. 2020, 2 en Trb. 2020, 34)",
+    "indiener": "VVD",
+    "datum": "2026-03-31",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06710&did=2026D15146",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk9cbd2fec6e",
+    "titel": "Motie van het lid Patijn over naast de Arbowet verdere wetgeving uitwerken in lijn met ILO-conventie 190, artikel 2 - Goedkeuring van het op 21 juni 2019 te Genève tot stand gekomen Verdrag inzake het uitbannen van geweld en intimidatie op de werkvloer (Trb. 2020, 2 en Trb. 2020, 34)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-03-31",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06708&did=2026D15144",
     "toelichting": "",
     "stemmen": {},
     "archief": false
