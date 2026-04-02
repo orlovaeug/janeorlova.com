@@ -14,15 +14,23 @@ except ImportError:
 
 WIKIPEDIA_URL = "https://en.wikipedia.org/wiki/Next_Dutch_general_election"
 
-WIKI_COLUMNS = [
-    "D66", "PVV", "VVD", "GL/PvdA", "CDA", "JA21",
+# Columns as they appear on this specific page
+SEAT_COLUMNS = [
+    "D66", "PVV", "VVD", "GL-PvdA", "CDA", "JA21",
     "FvD", "BBB", "Denk", "SGP", "PvdD", "CU", "SP", "50+", "Volt",
 ]
+
+# Map GL-PvdA (Wikipedia) -> GL/PvdA (our display name)
+PARTY_NAME_MAP = {
+    "GL-PvdA": "GL/PvdA",
+}
 
 FIRM_MAP = {
     "ipsos i&o": "Ipsos I&O",
     "ipsos":     "Ipsos I&O",
+    "i&o research": "Ipsos I&O",
     "peil.nl":   "Peil.nl",
+    "peil":      "Peil.nl",
     "verian":    "Verian",
     "eenvandaag": "EenVandaag",
     "kantar":    "Kantar",
@@ -31,14 +39,9 @@ FIRM_MAP = {
 EVENTS = [
     {"date": "2025-06-15", "text": "PVV withdraws from Schoof coalition over migration policy, triggering snap election."},
     {"date": "2025-08-01", "text": "NSC leaves caretaker Schoof cabinet, leaving only VVD and BBB as remaining partners."},
-    {"date": "2025-09-10", "text": "CDA surges in polls as stable governance becomes key election theme."},
-    {"date": "2025-10-01", "text": "JA21 and D66 both rise significantly in final polling ahead of election."},
     {"date": "2025-10-29", "text": "General election: D66 and PVV tie at 26 seats. D66 achieves best-ever result. NSC collapses."},
     {"date": "2025-11-03", "text": "Jesse Klaver succeeds Frans Timmermans as leader of GL-PvdA."},
-    {"date": "2025-11-05", "text": "Coalition negotiations begin. GL/PvdA, D66, VVD and CDA seen as likely partners."},
-    {"date": "2025-12-10", "text": "Coalition formation stalls. PVV drops behind GL/PvdA in post-election polling."},
     {"date": "2026-01-20", "text": "Seven MPs leave the PVV to form the Markuszower Group, weakening Wilders bloc."},
-    {"date": "2026-02-15", "text": "GL/PvdA and GroenLinks announce formal party merger in 2026 under single banner."},
     {"date": "2026-02-20", "text": "Caroline van der Plas hands over leadership of BBB to Henk Vermeer."},
     {"date": "2026-02-23", "text": "The Jetten cabinet (D66-VVD-CDA-GL/PvdA) is sworn in."},
     {"date": "2026-03-18", "text": "Dutch municipal elections held. D66 gains; VVD loses significantly in major cities."},
@@ -71,14 +74,19 @@ def normalise_firm(raw):
 
 
 def parse_date(raw):
-    raw = raw.strip()
-    parts = [p.strip() for p in re.split(r"[-\u2013]", raw, maxsplit=1)]
-    candidates = [parts[-1]] if len(parts) > 1 else []
-    candidates.append(raw)
-    for candidate in candidates:
+    raw = re.sub(r'\[.*?\]', '', raw).strip()
+    # Split on en-dash or hyphen, take the end date of the range
+    parts = re.split(r'\s*[\u2013\-]\s*', raw)
+    for part in reversed(parts):
+        part = part.strip()
+        # If bare day number, grab month+year from the original string
+        if re.match(r'^\d{1,2}$', part):
+            my = re.search(r'[A-Za-z]+ \d{4}', raw)
+            if my:
+                part = part + ' ' + my.group(0)
         for fmt in ("%d %b %Y", "%d %B %Y"):
             try:
-                return datetime.datetime.strptime(candidate.strip(), fmt).strftime("%Y-%m-%d")
+                return datetime.datetime.strptime(part.strip(), fmt).strftime("%Y-%m-%d")
             except ValueError:
                 pass
     return None
@@ -90,25 +98,40 @@ def scrape_polls(soup):
 
     for table in tables:
         rows = table.find_all("tr")
-        if not rows:
+        if len(rows) < 3:
             continue
 
-        header_row = rows[0]
-        header_text = header_row.get_text()
-        if "D66" not in header_text or "%" in header_text:
+        # Find the header row that contains party columns
+        header_texts = []
+        for row in rows[:3]:
+            texts = [c.get_text(strip=True) for c in row.find_all(["th", "td"])]
+            if sum(1 for t in texts if t in SEAT_COLUMNS) >= 5:
+                header_texts = texts
+                break
+
+        if not header_texts:
             continue
 
-        headers = [th.get_text(strip=True) for th in header_row.find_all(["th", "td"])]
+        # Skip percentage tables
+        if any('%' in h for h in header_texts):
+            continue
 
+        # Build column index
         col_index = {}
-        for party in WIKI_COLUMNS:
-            if party in headers:
-                col_index[party] = headers.index(party)
-        if not col_index:
-            continue
+        for i, h in enumerate(header_texts):
+            if h in SEAT_COLUMNS:
+                col_index[h] = i
 
-        firm_col = next((i for i, h in enumerate(headers) if "polling" in h.lower() or "firm" in h.lower()), 0)
-        date_col = next((i for i, h in enumerate(headers) if "fieldwork" in h.lower() or "date" in h.lower()), 1)
+        firm_col = next(
+            (i for i, h in enumerate(header_texts)
+             if any(k in h.lower() for k in ["polling", "firm", "pollster"])),
+            0
+        )
+        date_col = next(
+            (i for i, h in enumerate(header_texts)
+             if any(k in h.lower() for k in ["fieldwork", "date"])),
+            1
+        )
 
         for row in rows[1:]:
             cells = row.find_all(["td", "th"])
@@ -118,7 +141,10 @@ def scrape_polls(soup):
             raw_firm = cells[firm_col].get_text(strip=True) if firm_col < len(cells) else ""
             raw_date = cells[date_col].get_text(strip=True) if date_col < len(cells) else ""
 
-            if not raw_firm or "election" in raw_firm.lower():
+            if not raw_firm:
+                continue
+            low = raw_firm.lower()
+            if any(k in low for k in ["election", "result", "average"]):
                 continue
 
             firm = normalise_firm(raw_firm)
@@ -127,20 +153,31 @@ def scrape_polls(soup):
                 continue
 
             data = {}
-            for party, idx in col_index.items():
+            for wiki_name, idx in col_index.items():
                 if idx >= len(cells):
                     continue
-                val_text = cells[idx].get_text(strip=True).replace("-", "").replace("\u2013", "").strip()
-                if val_text.isdigit():
-                    data[party] = int(val_text)
+                val = re.sub(r'\[.*?\]', '', cells[idx].get_text(strip=True)).strip()
+                val = val.replace('\u2013', '').replace('-', '').strip()
+                if val.isdigit():
+                    display_name = PARTY_NAME_MAP.get(wiki_name, wiki_name)
+                    data[display_name] = int(val)
 
-            if not data:
+            if len(data) < 3:
                 continue
 
             polls.append({"date": date, "firm": firm, "data": data})
 
-    polls.sort(key=lambda p: p["date"], reverse=True)
-    return polls
+    # Deduplicate
+    seen = set()
+    unique = []
+    for p in polls:
+        key = p["date"] + "|" + p["firm"]
+        if key not in seen:
+            seen.add(key)
+            unique.append(p)
+
+    unique.sort(key=lambda p: p["date"], reverse=True)
+    return unique
 
 
 def build_output(polls):
