@@ -40,7 +40,7 @@ jobs:
           python fix_moties_json.py
           python embed_moties.py
 
-      # 5️⃣ Commit and push changes
+       # 5️⃣ Commit and push changes
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -48,4 +48,5 @@ jobs:
           git add moties-tracker/moties.json moties-tracker/index.html
           git diff --staged --quiet && echo "Geen wijzigingen" || \
             git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && \
+            git pull --rebase origin main && \
             git push
