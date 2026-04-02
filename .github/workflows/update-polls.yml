@@ -23,6 +23,19 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
+      - name: Fix smart quotes in scraper
+        run: |
+          python3 -c "
+          f = open('polls/update_polls.py', 'rb')
+          data = f.read()
+          f.close()
+          data = data.replace(b'\xe2\x80\x9c', b'\"').replace(b'\xe2\x80\x9d', b'\"')
+          data = data.replace(b'\xe2\x80\x98', b\"'\").replace(b'\xe2\x80\x99', b\"'\")
+          data = data.replace(b'\xe2\x80\x93', b'-').replace(b'\xe2\x80\x94', b'-')
+          open('polls/update_polls.py', 'wb').write(data)
+          print('Smart quotes removed')
+          "
+
       - name: Run scraper
         run: python polls/update_polls.py
 
