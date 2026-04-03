@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appearance & Political Perception — Survey Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #1a1a1a;
+  --ink2: #3a3a3a;
+  --muted: #888;
+  --rule: #d0ccc4;
+  --bg: #f9f7f3;
+  --cream: #f2efe9;
+  --accent: #b5293e;
+  --accent2: #2a4a7f;
+  --accent3: #5a7a4a;
+  --col-a: #b5293e;
+  --col-b: #2a4a7f;
+  --col-c: #8a7560;
+}
+
+- { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+body {
+background: var(–bg);
+color: var(–ink);
+font-family: ‘DM Sans’, sans-serif;
+font-size: 15px;
+line-height: 1.7;
+}
+
+/* PAGE STRUCTURE */
+.page {
+max-width: 900px;
+margin: 0 auto;
+padding: 0 32px;
+}
+
+/* MASTHEAD */
+.masthead {
+border-bottom: 3px solid var(–ink);
+padding: 28px 0 14px;
+display: flex;
+align-items: baseline;
+justify-content: space-between;
+}
+.masthead-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.25em;
+text-transform: uppercase;
+color: var(–ink);
+}
+.masthead-meta {
+font-size: 11px;
+color: var(–muted);
+letter-spacing: 0.05em;
+}
+
+/* COVER */
+.cover {
+padding: 64px 0 48px;
+border-bottom: 1px solid var(–rule);
+margin-bottom: 56px;
+}
+.cover-kicker {
+font-size: 11px;
+letter-spacing: 0.22em;
+text-transform: uppercase;
+color: var(–accent);
+font-family: ‘DM Sans’, sans-serif;
+font-weight: 500;
+margin-bottom: 20px;
+}
+.cover-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: clamp(40px, 6.5vw, 72px);
+font-weight: 300;
+line-height: 1.0;
+letter-spacing: -0.02em;
+color: var(–ink);
+margin-bottom: 24px;
+}
+.cover-title em {
+font-style: italic;
+font-weight: 300;
+}
+.cover-deck {
+font-family: ‘Libre Baskerville’, serif;
+font-size: 17px;
+line-height: 1.7;
+color: var(–ink2);
+max-width: 620px;
+border-left: 3px solid var(–accent);
+padding-left: 20px;
+margin-bottom: 32px;
+}
+.cover-byline {
+font-size: 11px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–muted);
+display: flex;
+gap: 32px;
+flex-wrap: wrap;
+}
+
+/* SECTION DIVIDERS */
+.section-rule {
+display: flex;
+align-items: center;
+gap: 16px;
+margin: 56px 0 32px;
+}
+.section-rule-num {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–accent);
+white-space: nowrap;
+}
+.section-rule-line { flex: 1; height: 1px; background: var(–rule); }
+.section-rule-title {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–muted);
+white-space: nowrap;
+}
+
+/* HEADLINES */
+h2 {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 30px;
+font-weight: 600;
+line-height: 1.2;
+color: var(–ink);
+margin-bottom: 16px;
+}
+h3 {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 11px;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–muted);
+margin-bottom: 16px;
+}
+
+/* BODY COPY */
+.body-copy {
+font-family: ‘Libre Baskerville’, serif;
+font-size: 14.5px;
+line-height: 1.85;
+color: var(–ink2);
+max-width: 660px;
+margin-bottom: 24px;
+}
+.body-copy + .body-copy { margin-top: -8px; }
+
+/* PULL QUOTE */
+.pull-quote {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 26px;
+font-style: italic;
+font-weight: 300;
+line-height: 1.35;
+color: var(–ink);
+border-top: 2px solid var(–ink);
+border-bottom: 1px solid var(–rule);
+padding: 24px 0;
+margin: 40px 0;
+max-width: 640px;
+}
+
+/* STAT BLOCKS */
+.stat-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 0;
+border: 1px solid var(–rule);
+margin: 32px 0;
+}
+.stat-block {
+padding: 24px;
+border-right: 1px solid var(–rule);
+}
+.stat-block:last-child { border-right: none; }
+.stat-label {
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(–muted);
+margin-bottom: 8px;
+display: block;
+}
+.stat-number {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 42px;
+font-weight: 700;
+line-height: 1;
+margin-bottom: 4px;
+}
+.stat-sub {
+font-size: 11px;
+color: var(–muted);
+line-height: 1.4;
+}
+.stat-sd {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 11px;
+color: var(–muted);
+margin-top: 2px;
+}
+
+/* COMPARISON TABLE */
+.data-table {
+width: 100%;
+border-collapse: collapse;
+margin: 24px 0;
+font-size: 13px;
+}
+.data-table thead tr {
+border-bottom: 2px solid var(–ink);
+}
+.data-table thead th {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 10px;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+color: var(–muted);
+padding: 8px 12px;
+text-align: left;
+}
+.data-table thead th:first-child { padding-left: 0; }
+.data-table tbody td {
+padding: 11px 12px;
+border-bottom: 1px solid var(–rule);
+vertical-align: top;
+font-family: ‘Libre Baskerville’, serif;
+}
+.data-table tbody td:first-child { padding-left: 0; font-family: ‘DM Sans’, sans-serif; font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(–ink2); }
+.data-table tfoot td {
+padding: 10px 12px 0;
+font-size: 11px;
+color: var(–muted);
+font-style: italic;
+font-family: ‘Libre Baskerville’, serif;
+}
+.data-table tfoot td:first-child { padding-left: 0; }
+
+.num { font-family: ‘DM Sans’, sans-serif; font-variant-numeric: tabular-nums; }
+.best { font-weight: 700; }
+
+/* INLINE BAR CHART */
+.bar-table { width: 100%; margin: 32px 0; }
+.bar-row { margin-bottom: 22px; }
+.bar-header {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+margin-bottom: 6px;
+}
+.bar-dim {
+font-size: 11px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(–muted);
+font-family: ‘DM Sans’, sans-serif;
+}
+.bar-tracks { display: flex; flex-direction: column; gap: 4px; }
+.bar-line { display: flex; align-items: center; gap: 10px; }
+.bar-person {
+font-size: 10px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+width: 16px;
+color: var(–muted);
+}
+.bar-track {
+flex: 1;
+height: 7px;
+background: rgba(0,0,0,0.06);
+position: relative;
+}
+.bar-fill {
+height: 100%;
+position: absolute;
+left: 0; top: 0;
+transition: width 1.2s cubic-bezier(.22,1,.36,1);
+}
+.bar-val {
+font-size: 11px;
+font-family: ‘DM Sans’, sans-serif;
+min-width: 36px;
+text-align: right;
+color: var(–ink2);
+}
+.bar-sd {
+font-size: 10px;
+color: var(–muted);
+min-width: 52px;
+text-align: right;
+}
+
+/* VOTE SHARE */
+.vote-section { margin: 32px 0; }
+.vote-row {
+display: flex;
+align-items: stretch;
+height: 48px;
+margin-bottom: 8px;
+gap: 0;
+}
+.vote-label {
+font-size: 10px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+font-family: ‘DM Sans’, sans-serif;
+color: var(–muted);
+width: 100px;
+display: flex;
+align-items: center;
+flex-shrink: 0;
+}
+.vote-bar-track {
+flex: 1;
+background: rgba(0,0,0,0.04);
+position: relative;
+display: flex;
+align-items: center;
+}
+.vote-bar-fill {
+height: 100%;
+position: absolute;
+left: 0;
+display: flex;
+align-items: center;
+transition: width 1.2s cubic-bezier(.22,1,.36,1);
+}
+.vote-pct-inside {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 16px;
+font-weight: 600;
+padding-left: 12px;
+color: #fff;
+white-space: nowrap;
+}
+.vote-pct-outside {
+font-family: ‘DM Sans’, sans-serif;
+font-size: 11px;
+color: var(–muted);
+padding-left: 10px;
+position: absolute;
+white-space: nowrap;
+}
+
+/* CORRELATION MATRIX */
+.corr-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 0;
+border: 1px solid var(–rule);
+margin: 24px 0;
+}
+.corr-cell {
+padding: 14px 10px;
+border-right: 1px solid var(–rule);
+border-bottom: 1px solid var(–rule);
+text-align: center;
+}
+.corr-cell:nth-child(4n) { border-right: none; }
+.corr-header {
+background: var(–cream);
+font-size: 10px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: var(–muted);
+font-family: ‘DM Sans’, sans-serif;
+}
+.corr-val {
+font-family: ‘Cormorant Garamond’, serif;
+font-size: 22px;
+font-weight: 600;
+line-height: 1;
+}
+.corr-dim {
+font-size: 10px;
+color: var(–muted);
+letter-spacing: 0.05em;
+margin-top: 3px;
+font-family: ‘DM Sans’, sans-serif;
+}
+.strong-corr { color: var(–ink); }
+.med-corr { color: #666; }
+.weak-corr { color: #aaa; }
+
+/* SUBGROUP */
+.subgroup-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 24px;
+margin: 24px 0;
+}
+.subgroup-card {
+border: 1px solid var(–rule);
+padding: 24px;
+}
+.subgroup-title {
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+color: var(–muted);
+margin-bottom: 16px;
+padding-bottom: 10px;
+border-bottom: 1px solid var(–rule);
+font-family: ‘DM Sans’, sans-serif;
+}
+.sg-row {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+padding: 7px 0;
+border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.sg-row:last-child { border-bottom: none; }
+.sg-name { font-size: 12px; color: var(–ink2); font-family: ‘DM Sans’, sans-serif; }
+.sg-val { font-family: ‘Cormorant Garamond’, serif; font-size: 20px; font-weight: 600; }
+
+/* FINDING BOX */
+.finding {
+background: var(–cream);
+border-left: 3px solid var(–accent);
+padding: 20px 24px;
+margin: 32px 0;
+}
+.finding-label {
+font-size: 10px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: var(–accent);
+font-family: ‘DM Sans’, sans-serif;
+font-weight: 500;
+margin-bottom: 8px;
+}
+.finding-text {
+font-family: ‘Libre Baskerville’, serif;
+font-size: 14px;
+line-height: 1.7;
+color: var(–ink2);
+}
+
+/* FOOTER */
+footer {
+margin-top: 72px;
+padding: 24px 0;
+border-top: 2px solid var(–ink);
+font-size: 11px;
+color: var(–muted);
+line-height: 1.7;
+font-family: ‘DM Sans’, sans-serif;
+}
+
+/* PERSON TAGS */
+.tag-a { color: var(–col-a); font-weight: 500; }
+.tag-b { color: var(–col-b); font-weight: 500; }
+.tag-c { color: var(–col-c); font-weight: 500; }
+
+/* LEGEND */
+.legend {
+display: flex;
+gap: 24px;
+flex-wrap: wrap;
+margin: 24px 0 8px;
+align-items: center;
+}
+.legend-item {
+display: flex;
+align-items: center;
+gap: 7px;
+font-size: 11px;
+letter-spacing: 0.08em;
+font-family: ‘DM Sans’, sans-serif;
+color: var(–ink2);
+}
+.legend-swatch { width: 20px; height: 3px; }
+
+/* FOOTNOTE REF */
+sup { font-size: 10px; color: var(–accent); font-family: ‘DM Sans’, sans-serif; }
+
+/* T-TEST TABLE */
+.ttest-row {
+display: flex;
+align-items: baseline;
+gap: 16px;
+padding: 12px 0;
+border-bottom: 1px solid var(–rule);
+font-size: 13px;
+font-family: ‘Libre Baskerville’, serif;
+}
+.ttest-row:last-child { border-bottom: none; }
+.ttest-label { min-width: 80px; color: var(–ink2); font-family: ‘DM Sans’, sans-serif; font-size: 11px; letter-spacing: 0.08em; }
+.ttest-t { font-family: ‘Cormorant Garamond’, serif; font-size: 20px; font-weight: 600; min-width: 60px; }
+.ttest-detail { font-size: 12px; color: var(–muted); }
+.sig { color: var(–accent); font-weight: 500; font-family: ‘DM Sans’, sans-serif; }
+
+@media (max-width: 600px) {
+.page { padding: 0 20px; }
+.stat-grid { grid-template-columns: 1fr; }
+.stat-block { border-right: none; border-bottom: 1px solid var(–rule); }
+.subgroup-grid { grid-template-columns: 1fr; }
+.corr-grid { grid-template-columns: repeat(2,1fr); }
+}
+</style>
+
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+
+  <div class="masthead">
+    <span class="masthead-title">Political Communication Research</span>
+    <span class="masthead-meta">Survey Study · March–April 2026</span>
+  </div>
+
+  <!-- COVER -->
+
+  <div class="cover">
+    <p class="cover-kicker">Special Report</p>
+    <h1 class="cover-title">The Face of<br>Leadership<em>:</em><br>Appearance,<br>Trust &<br><em>Political Perception</em></h1>
+    <p class="cover-deck">An empirical analysis of how physical appearance cues shape perceptions of trustworthiness, competence and leadership suitability in Dutch national politics — with quantitative findings across demographic and cultural subgroups.</p>
+    <div class="cover-byline">
+      <span>Political Communication Research</span>
+      <span>Survey-Experimental Design</span>
+      <span>Dutch Political Context</span>
+    </div>
+  </div>
+
+  <!-- SECTION 1 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 1</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Overview & Key Findings</span>
+  </div>
+
+  <h2>First Impressions Shape<br>Political Judgements</h2>
+
+  <p class="body-copy">This survey-experimental study examined the degree to which physical appearance influences political perception across five dimensions: physical attractiveness, trustworthiness, competence, approachability, and perceived leadership potential. Respondents rated three Dutch political figures presented as Persons A, B and C — corresponding respectively to <span class="tag-a">Rob Jetten</span>, <span class="tag-b">Thierry Baudet</span>, and <span class="tag-c">Dick Schoof</span> — without explicit identification cues in the instrument design.</p>
+
+  <p class="body-copy">The results align with a substantial body of political psychology literature suggesting that superficial appearance cues — processed rapidly and often unconsciously — exert measurable influence on voters' assessments of political suitability. Our findings document a consistent hierarchy across all five measured dimensions, with meaningful subgroup variation by political engagement, European identity, and gender.</p>
+
+  <div class="stat-grid">
+    <div class="stat-block">
+      <span class="stat-label">Jetten — Trusted Leader Preference</span>
+      <div class="stat-number" style="color:var(--col-a)">72.1<span style="font-size:22px">%</span></div>
+      <div class="stat-sub">of respondents selected Jetten as most trustworthy national leader</div>
+    </div>
+    <div class="stat-block">
+      <span class="stat-label">Jetten — Avg. Leadership Rating</span>
+      <div class="stat-number" style="color:var(--col-a)">6.35</div>
+      <div class="stat-sd">SD = 2.00 · Scale 1–10</div>
+      <div class="stat-sub" style="margin-top:6px">vs. Baudet M=5.47 · Schoof M=4.67</div>
+    </div>
+    <div class="stat-block">
+      <span class="stat-label">Competence → Leadership</span>
+      <div class="stat-number" style="color:var(--ink)">r=.79</div>
+      <div class="stat-sub">Strongest predictor of leadership perception — all three politicians combined</div>
+    </div>
+  </div>
+
+  <div class="finding">
+    <div class="finding-label">Principal Finding</div>
+    <div class="finding-text">Across all measured dimensions, perceived competence is the strongest single predictor of leadership suitability (r = .791 for Jetten, r = .644 for Baudet, r = .710 for Schoof). Physical appearance, while significant, operates primarily as an indirect cue — filtering initial impressions that are then refined via trustworthiness and approachability assessments.</div>
+  </div>
+
+  <!-- SECTION 2 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 2</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Descriptive Statistics</span>
+  </div>
+
+  <h2>Mean Ratings Across All<br>Five Perception Dimensions</h2>
+
+  <p class="body-copy">The table below presents full descriptive statistics for each politician across all measured dimensions. Mean (M) and standard deviation (SD) are computed from all valid adult responses. Higher standard deviations on Jetten's approachability (SD = 1.99) and leadership (SD = 2.00) suggest polarised impressions — a pattern consistent with high political visibility and pre-formed opinions.</p>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--col-a)"></div>Jetten (A)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--col-b)"></div>Baudet (B)</div>
+    <div class="legend-item"><div class="legend-swatch" style="background:var(--col-c)"></div>Schoof (C)</div>
+  </div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Dimension</th>
+        <th>Jetten M (SD)</th>
+        <th>Baudet M (SD)</th>
+        <th>Schoof M (SD)</th>
+        <th>Δ A–C</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Appearance</td>
+        <td class="num best tag-a">6.81 (1.64)</td>
+        <td class="num">5.26 (1.65)</td>
+        <td class="num">3.98 (1.50)</td>
+        <td class="num">+2.83</td>
+      </tr>
+      <tr>
+        <td>Trustworthiness</td>
+        <td class="num best tag-a">6.33 (1.57)</td>
+        <td class="num">5.07 (2.07)</td>
+        <td class="num">4.79 (1.96)</td>
+        <td class="num">+1.54</td>
+      </tr>
+      <tr>
+        <td>Competence</td>
+        <td class="num best tag-a">6.65 (1.67)</td>
+        <td class="num">6.12 (2.06)</td>
+        <td class="num">5.33 (1.61)</td>
+        <td class="num">+1.32</td>
+      </tr>
+      <tr>
+        <td>Approachability</td>
+        <td class="num best tag-a">6.56 (1.99)</td>
+        <td class="num">4.53 (1.76)</td>
+        <td class="num">4.44 (1.97)</td>
+        <td class="num">+2.12</td>
+      </tr>
+      <tr>
+        <td>Leadership Potential</td>
+        <td class="num best tag-a">6.35 (2.00)</td>
+        <td class="num">5.47 (1.97)</td>
+        <td class="num">4.67 (1.86)</td>
+        <td class="num">+1.68</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">All ratings on a 1–10 scale. Δ A–C = mean difference between Jetten and Schoof. Bold = highest rated per dimension.</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- BAR CHART -->
+
+  <div class="bar-table" id="bars">
+    <!-- Appearance -->
+    <div class="bar-row">
+      <div class="bar-header"><span class="bar-dim">Appearance</span></div>
+      <div class="bar-tracks">
+        <div class="bar-line">
+          <span class="bar-person tag-a">A</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-a);width:68.1%"></div></div>
+          <span class="bar-val">6.81</span><span class="bar-sd">SD 1.64</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-b">B</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-b);width:52.6%"></div></div>
+          <span class="bar-val">5.26</span><span class="bar-sd">SD 1.65</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-c">C</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-c);width:39.8%"></div></div>
+          <span class="bar-val">3.98</span><span class="bar-sd">SD 1.50</span>
+        </div>
+      </div>
+    </div>
+    <!-- Trustworthiness -->
+    <div class="bar-row">
+      <div class="bar-header"><span class="bar-dim">Trustworthiness</span></div>
+      <div class="bar-tracks">
+        <div class="bar-line">
+          <span class="bar-person tag-a">A</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-a);width:63.3%"></div></div>
+          <span class="bar-val">6.33</span><span class="bar-sd">SD 1.57</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-b">B</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-b);width:50.7%"></div></div>
+          <span class="bar-val">5.07</span><span class="bar-sd">SD 2.07</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-c">C</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-c);width:47.9%"></div></div>
+          <span class="bar-val">4.79</span><span class="bar-sd">SD 1.96</span>
+        </div>
+      </div>
+    </div>
+    <!-- Competence -->
+    <div class="bar-row">
+      <div class="bar-header"><span class="bar-dim">Competence</span></div>
+      <div class="bar-tracks">
+        <div class="bar-line">
+          <span class="bar-person tag-a">A</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-a);width:66.5%"></div></div>
+          <span class="bar-val">6.65</span><span class="bar-sd">SD 1.67</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-b">B</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-b);width:61.2%"></div></div>
+          <span class="bar-val">6.12</span><span class="bar-sd">SD 2.06</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-c">C</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-c);width:53.3%"></div></div>
+          <span class="bar-val">5.33</span><span class="bar-sd">SD 1.61</span>
+        </div>
+      </div>
+    </div>
+    <!-- Approachability -->
+    <div class="bar-row">
+      <div class="bar-header"><span class="bar-dim">Approachability</span></div>
+      <div class="bar-tracks">
+        <div class="bar-line">
+          <span class="bar-person tag-a">A</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-a);width:65.6%"></div></div>
+          <span class="bar-val">6.56</span><span class="bar-sd">SD 1.99</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-b">B</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-b);width:45.3%"></div></div>
+          <span class="bar-val">4.53</span><span class="bar-sd">SD 1.76</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-c">C</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-c);width:44.4%"></div></div>
+          <span class="bar-val">4.44</span><span class="bar-sd">SD 1.97</span>
+        </div>
+      </div>
+    </div>
+    <!-- Leadership -->
+    <div class="bar-row">
+      <div class="bar-header"><span class="bar-dim">Leadership Potential</span></div>
+      <div class="bar-tracks">
+        <div class="bar-line">
+          <span class="bar-person tag-a">A</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-a);width:63.5%"></div></div>
+          <span class="bar-val">6.35</span><span class="bar-sd">SD 2.00</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-b">B</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-b);width:54.7%"></div></div>
+          <span class="bar-val">5.47</span><span class="bar-sd">SD 1.97</span>
+        </div>
+        <div class="bar-line">
+          <span class="bar-person tag-c">C</span>
+          <div class="bar-track"><div class="bar-fill" style="background:var(--col-c);width:46.7%"></div></div>
+          <span class="bar-val">4.67</span><span class="bar-sd">SD 1.86</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 3 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 3</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Preference Votes</span>
+  </div>
+
+  <h2>Explicit Preference:<br>Who Should Lead?</h2>
+
+  <p class="body-copy">Beyond item-level ratings, respondents were asked directly: <em>"Which person would you most trust as a national leader?"</em> and <em>"Which person appears most competent?"</em> These forced-choice items provide a preference signal that integrates all five perceptual dimensions into a single holistic judgement.</p>
+
+  <div class="vote-section">
+    <h3>Trust as National Leader</h3>
+
+```
+<div class="vote-row">
+  <div class="vote-label tag-a">Jetten</div>
+  <div class="vote-bar-track">
+    <div class="vote-bar-fill" style="background:var(--col-a);width:72.1%">
+      <span class="vote-pct-inside">72.1%</span>
+    </div>
+  </div>
+</div>
+<div class="vote-row">
+  <div class="vote-label tag-b">Baudet</div>
+  <div class="vote-bar-track">
+    <div class="vote-bar-fill" style="background:var(--col-b);width:16.3%">
+      <span class="vote-pct-inside">16.3%</span>
+    </div>
+  </div>
+</div>
+<div class="vote-row">
+  <div class="vote-label tag-c">Schoof</div>
+  <div class="vote-bar-track">
+    <div class="vote-bar-fill" style="background:var(--col-c);width:11.6%">
+      <span class="vote-pct-inside">11.6%</span>
+    </div>
+  </div>
+</div>
+```
+
+  </div>
+
+  <div class="vote-section">
+    <h3>Appears Most Competent</h3>
+    <div class="vote-row">
+      <div class="vote-label tag-a">Jetten</div>
+      <div class="vote-bar-track">
+        <div class="vote-bar-fill" style="background:var(--col-a);width:60.5%">
+          <span class="vote-pct-inside">60.5%</span>
+        </div>
+      </div>
+    </div>
+    <div class="vote-row">
+      <div class="vote-label tag-b">Baudet</div>
+      <div class="vote-bar-track">
+        <div class="vote-bar-fill" style="background:var(--col-b);width:23.3%">
+          <span class="vote-pct-inside">23.3%</span>
+        </div>
+      </div>
+    </div>
+    <div class="vote-row">
+      <div class="vote-label tag-c">Schoof</div>
+      <div class="vote-bar-track">
+        <div class="vote-bar-fill" style="background:var(--col-c);width:16.3%">
+          <span class="vote-pct-inside">16.3%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="body-copy">It is notable that the competence preference gap narrows between Jetten (60.5%) and Baudet (23.3%) relative to the trust preference gap (72.1% vs 16.3%). This suggests that while Baudet may generate some credibility as appearing knowledgeable, he fails to convert that impression into trust — a critical distinction in the political communication context, where trustworthiness is a stronger driver of vote choice than abstract competence.</p>
+
+  <!-- SECTION 4 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 4</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Predictors of Leadership Perception</span>
+  </div>
+
+  <h2>What Drives the Leadership<br>Impression?</h2>
+
+  <p class="body-copy">To understand the structure of leadership perception, Pearson correlation coefficients were computed between each perceptual dimension and the leadership rating for each politician. The results reveal a consistent pattern: <strong>competence is the dominant predictor</strong> of perceived leadership suitability, followed by trustworthiness and approachability. Physical appearance, while correlated, functions as a more distal cue.</p>
+
+  <h3 style="margin-top:28px">Correlations with Leadership Rating (r)</h3>
+  <div class="corr-grid">
+    <div class="corr-cell corr-header">Predictor</div>
+    <div class="corr-cell corr-header" style="color:var(--col-a)">Jetten</div>
+    <div class="corr-cell corr-header" style="color:var(--col-b)">Baudet</div>
+    <div class="corr-cell corr-header" style="color:var(--col-c)">Schoof</div>
+
+```
+<div class="corr-cell" style="text-align:left;font-size:11px;letter-spacing:0.08em;font-family:'DM Sans',sans-serif;text-transform:uppercase;color:var(--muted)">Appearance</div>
+<div class="corr-cell"><div class="corr-val med-corr">.435</div></div>
+<div class="corr-cell"><div class="corr-val med-corr">.491</div></div>
+<div class="corr-cell"><div class="corr-val weak-corr">.321</div></div>
+
+<div class="corr-cell" style="text-align:left;font-size:11px;letter-spacing:0.08em;font-family:'DM Sans',sans-serif;text-transform:uppercase;color:var(--muted)">Trustworthiness</div>
+<div class="corr-cell"><div class="corr-val med-corr">.646</div></div>
+<div class="corr-cell"><div class="corr-val med-corr">.452</div></div>
+<div class="corr-cell"><div class="corr-val weak-corr">.360</div></div>
+
+<div class="corr-cell" style="text-align:left;font-size:11px;letter-spacing:0.08em;font-family:'DM Sans',sans-serif;text-transform:uppercase;color:var(--muted)">Competence</div>
+<div class="corr-cell"><div class="corr-val strong-corr"><strong>.791</strong></div></div>
+<div class="corr-cell"><div class="corr-val strong-corr"><strong>.644</strong></div></div>
+<div class="corr-cell"><div class="corr-val strong-corr"><strong>.710</strong></div></div>
+
+<div class="corr-cell" style="text-align:left;font-size:11px;letter-spacing:0.08em;font-family:'DM Sans',sans-serif;text-transform:uppercase;color:var(--muted)">Approachability</div>
+<div class="corr-cell"><div class="corr-val med-corr">.554</div></div>
+<div class="corr-cell"><div class="corr-val med-corr">.537</div></div>
+<div class="corr-cell"><div class="corr-val med-corr">.508</div></div>
+```
+
+  </div>
+  <p style="font-size:11px;color:var(--muted);font-family:'DM Sans',sans-serif;margin-bottom:24px">Bold = strong correlation (r ≥ .70). All correlations positive.</p>
+
+  <div class="finding">
+    <div class="finding-label">Communication Implication</div>
+    <div class="finding-text">For political strategists, the data suggest that <em>projecting competence</em> through visual and communicative cues should be the primary objective in image management — not physical attractiveness per se. Crucially, approachability shows consistent mid-range correlations (r = .508–.554) across all three politicians, indicating it may act as a moderating variable that converts competence into leadership trust.</div>
+  </div>
+
+  <p class="body-copy">The pooled cross-politician correlation between appearance and leadership is r = .517 — a moderate effect that confirms the relevance of physical presentation while underscoring that appearance alone is insufficient. The data are consistent with a mediation model in which appearance shapes competence and trustworthiness impressions, which in turn predict leadership evaluations.</p>
+
+  <div class="pull-quote">"Competence is perceived — it is communicated through posture, gaze, and grooming before a single word is spoken."</div>
+
+  <!-- SECTION 5 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 5</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Statistical Significance</span>
+  </div>
+
+  <h2>Between-Politician Differences:<br>Paired t-Tests</h2>
+
+  <p class="body-copy">Paired-sample t-tests on leadership ratings confirm that the observed mean differences between politicians are statistically meaningful. Given the within-subject design (each respondent rated all three), paired comparisons control for individual response tendencies and represent conservative significance estimates.</p>
+
+  <div style="margin: 24px 0 32px;">
+    <div class="ttest-row">
+      <span class="ttest-label">Jetten vs Baudet</span>
+      <span class="ttest-t">t = 2.25</span>
+      <span class="ttest-detail">Mean diff = 0.88 pts &nbsp;·&nbsp; SD<sub>diff</sub> = 2.57 &nbsp;·&nbsp; <span class="sig">p &lt; .05</span></span>
+    </div>
+    <div class="ttest-row">
+      <span class="ttest-label">Jetten vs Schoof</span>
+      <span class="ttest-t">t = 4.02</span>
+      <span class="ttest-detail">Mean diff = 1.67 pts &nbsp;·&nbsp; SD<sub>diff</sub> = 2.73 &nbsp;·&nbsp; <span class="sig">p &lt; .001</span></span>
+    </div>
+    <div class="ttest-row">
+      <span class="ttest-label">Baudet vs Schoof</span>
+      <span class="ttest-t">t = 2.16</span>
+      <span class="ttest-detail">Mean diff = 0.79 pts &nbsp;·&nbsp; SD<sub>diff</sub> = 2.40 &nbsp;·&nbsp; <span class="sig">p &lt; .05</span></span>
+    </div>
+  </div>
+
+  <p class="body-copy">All three pairwise comparisons reach conventional significance thresholds. The Jetten–Schoof contrast is the strongest (t = 4.02), reflecting a 1.67-point mean leadership gap — the largest in the study. The Jetten–Baudet difference (t = 2.25, Δ = 0.88 pts) is significant but narrower, consistent with the observation that Baudet generates moderate competence impressions that partially offset his lower trustworthiness and approachability scores.</p>
+
+  <!-- SECTION 6 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 6</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Subgroup Analysis</span>
+  </div>
+
+  <h2>European Familiarity, Gender<br>& Political Engagement</h2>
+
+  <p class="body-copy">Subgroup analyses reveal that while the overall ranking (Jetten > Baudet > Schoof) is consistent across demographic cuts, the magnitude of differences varies meaningfully — with implications for targeted political communication strategy.</p>
+
+  <div class="subgroup-grid">
+    <div class="subgroup-card">
+      <div class="subgroup-title">Leadership Rating by European Identity</div>
+      <div class="sg-row"><span class="sg-name tag-a">Jetten — European</span><span class="sg-val tag-a">7.06 <span style="font-size:13px;color:var(--muted)">SD 1.70</span></span></div>
+      <div class="sg-row"><span class="sg-name tag-a">Jetten — Non-European</span><span class="sg-val tag-a">5.84 <span style="font-size:13px;color:var(--muted)">SD 2.08</span></span></div>
+      <div class="sg-row"><span class="sg-name tag-b">Baudet — European</span><span class="sg-val tag-b">5.61 <span style="font-size:13px;color:var(--muted)">SD 2.06</span></span></div>
+      <div class="sg-row"><span class="sg-name tag-b">Baudet — Non-European</span><span class="sg-val tag-b">5.36 <span style="font-size:13px;color:var(--muted)">SD 1.93</span></span></div>
+      <div class="sg-row"><span class="sg-name tag-c">Schoof — European</span><span class="sg-val tag-c">5.11 <span style="font-size:13px;color:var(--muted)">SD 1.64</span></span></div>
+      <div class="sg-row"><span class="sg-name tag-c">Schoof — Non-European</span><span class="sg-val tag-c">4.36 <span style="font-size:13px;color:var(--muted)">SD 1.98</span></span></div>
+    </div>
+
+```
+<div class="subgroup-card">
+  <div class="subgroup-title">Leadership Rating by Gender</div>
+  <div class="sg-row"><span class="sg-name tag-a">Jetten — Female</span><span class="sg-val tag-a">6.38 <span style="font-size:13px;color:var(--muted)">SD 2.16</span></span></div>
+  <div class="sg-row"><span class="sg-name tag-a">Jetten — Male</span><span class="sg-val tag-a">6.31 <span style="font-size:13px;color:var(--muted)">SD 1.75</span></span></div>
+  <div class="sg-row"><span class="sg-name tag-b">Baudet — Female</span><span class="sg-val tag-b">5.31 <span style="font-size:13px;color:var(--muted)">SD 2.17</span></span></div>
+  <div class="sg-row"><span class="sg-name tag-b">Baudet — Male</span><span class="sg-val tag-b">6.00 <span style="font-size:13px;color:var(--muted)">SD 1.29</span></span></div>
+  <div class="sg-row"><span class="sg-name tag-c">Schoof — Female</span><span class="sg-val tag-c">4.48 <span style="font-size:13px;color:var(--muted)">SD 1.99</span></span></div>
+  <div class="sg-row"><span class="sg-name tag-c">Schoof — Male</span><span class="sg-val tag-c">5.08 <span style="font-size:13px;color:var(--muted)">SD 1.61</span></span></div>
+</div>
+```
+
+  </div>
+
+  <p class="body-copy">European respondents assign notably higher leadership ratings to Jetten (M = 7.06 vs 5.84 for non-European), while Baudet's ratings are more stable across this divide (5.61 vs 5.36). This pattern warrants caution: the elevated scores among Europeans likely reflect prior political knowledge and existing opinion rather than pure appearance effects — a key confound addressed in the limitations section below.</p>
+
+  <p class="body-copy">The gender split reveals an important divergence for Baudet: male respondents rate his leadership potential at M = 6.00 (SD = 1.29) compared to M = 5.31 (SD = 2.17) among female respondents. The compressed male SD suggests stronger consensus among male raters. Jetten's ratings are virtually gender-neutral (6.38 vs 6.31), which in political communication terms signals broad-base appeal across gender lines — a strategically valuable attribute.</p>
+
+  <!-- Political interest -->
+
+  <h3 style="margin-top:40px">Leadership Ratings by Political Engagement Level</h3>
+
+  <table class="data-table" style="margin-top:16px">
+    <thead>
+      <tr>
+        <th>Engagement</th>
+        <th>Jetten M</th>
+        <th>Baudet M</th>
+        <th>Schoof M</th>
+        <th>Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Very closely</td>
+        <td class="num tag-a best">7.14</td>
+        <td class="num">4.71</td>
+        <td class="num">4.14</td>
+        <td style="font-size:12px;color:var(--muted);font-family:'DM Sans',sans-serif">Widest A–B gap (2.43 pts)</td>
+      </tr>
+      <tr>
+        <td>Somewhat</td>
+        <td class="num tag-a best">6.87</td>
+        <td class="num">5.53</td>
+        <td class="num">4.60</td>
+        <td style="font-size:12px;color:var(--muted);font-family:'DM Sans',sans-serif">—</td>
+      </tr>
+      <tr>
+        <td>Rarely</td>
+        <td class="num tag-a best">6.45</td>
+        <td class="num">5.45</td>
+        <td class="num">5.36</td>
+        <td style="font-size:12px;color:var(--muted);font-family:'DM Sans',sans-serif">B–C gap narrows to 0.09 pts</td>
+      </tr>
+      <tr>
+        <td>Not at all</td>
+        <td class="num">4.90</td>
+        <td class="num best tag-b">5.90</td>
+        <td class="num">4.40</td>
+        <td style="font-size:12px;color:var(--muted);font-family:'DM Sans',sans-serif">Baudet leads among disengaged</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="5">Only group where Jetten does not rank highest: "Not at all" engaged respondents. Baudet M=5.90 vs Jetten M=4.90.</td></tr>
+    </tfoot>
+  </table>
+
+  <div class="finding">
+    <div class="finding-label">Strategic Insight · Political Engagement</div>
+    <div class="finding-text">The most politically engaged respondents show the largest gap in favour of Jetten (Δ = 2.43 pts vs Baudet). Among those with no political engagement, Baudet actually leads — suggesting his appearance generates more generic leadership cues when respondents lack partisan context. For Jetten, this is strategically important: his appearance advantage is compounded by political knowledge, not undermined by it. His image communicates competence most effectively to the already-engaged electorate.</div>
+  </div>
+
+  <!-- SECTION 7 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 7</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">The Baudet Paradox</span>
+  </div>
+
+  <h2>High Competence, Low Trust:<br>Baudet's Perceptual Split</h2>
+
+  <p class="body-copy">Baudet presents a theoretically interesting perceptual profile. His competence rating (M = 6.12, SD = 2.06) is notably higher than his trust score (M = 5.07, SD = 2.07) — a 1.05-point gap that is the largest competence–trust divergence in the study. For Jetten, the equivalent gap is only 0.32 points (6.65 vs 6.33); for Schoof, it is 0.54 points.</p>
+
+  <p class="body-copy">This pattern is consistent with what political psychologists have termed a <em>competence–integrity trade-off</em>: where a figure is perceived as capable but not honest or aligned with the perceiver's values. Baudet's approachability deficit (M = 4.53, the lowest in the study for any politician on any dimension bar Schoof's approachability) reinforces this reading — he appears to signal high ability but low warmth and credibility.</p>
+
+  <div class="stat-grid">
+    <div class="stat-block">
+      <span class="stat-label">Baudet — Competence–Trust Gap</span>
+      <div class="stat-number" style="color:var(--col-b)">1.05</div>
+      <div class="stat-sub">points — largest divergence between competence and trustworthiness in study</div>
+    </div>
+    <div class="stat-block">
+      <span class="stat-label">Baudet — Approachability</span>
+      <div class="stat-number" style="color:var(--col-b)">4.53</div>
+      <div class="stat-sd">SD = 1.76</div>
+      <div class="stat-sub" style="margin-top:6px">Lowest approachability score of any politician</div>
+    </div>
+    <div class="stat-block">
+      <span class="stat-label">Baudet — Male vs Female Leadership Δ</span>
+      <div class="stat-number" style="color:var(--col-b)">+0.69</div>
+      <div class="stat-sub">Male respondents rate Baudet 0.69 pts higher on leadership than female respondents</div>
+    </div>
+  </div>
+
+  <!-- SECTION 8 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 8</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Limitations & Confounds</span>
+  </div>
+
+  <h2>Methodological Considerations<br>& Study Limitations</h2>
+
+  <p class="body-copy"><strong>Recognition bias.</strong> A significant number of European respondents correctly identified one or more of the three politicians by name within the open-text profession field — referencing "Dick Schoof, former prime minister," "Rob Jetten, our new prime minister," and "FvD founder, conspiracy propagandist" (for Baudet). This recognition introduces prior attitude contamination that cannot be fully separated from appearance-based impressions in the present design. Future iterations should either use unfamiliar politicians, digitally altered faces, or include a post-hoc recognition check with appropriate exclusion criteria.</p>
+
+  <p class="body-copy"><strong>Sample composition.</strong> The sample skews young (predominantly 18–34) and female, which limits generalisability to the broader Dutch electorate. The European/non-European split is analytically useful but the subgroup sizes (EU n=18; non-EU n=25) are insufficient for robust multivariate modelling.</p>
+
+  <p class="body-copy"><strong>Response quality.</strong> One respondent (European, female, "Not at all" engaged) gave a perfect 10 to Schoof across all dimensions and selected her as the most trustworthy leader — a clear outlier that may reflect confusion or a protest response rather than genuine assessment. Her inclusion inflates Schoof's ratings marginally.</p>
+
+  <p class="body-copy"><strong>Common method variance.</strong> Because all five perceptual dimensions were collected from the same respondent in the same instrument, correlations between dimensions (e.g., competence and leadership) are likely inflated relative to what would be found in a multi-source design. The strong competence–leadership correlations should be interpreted with this caveat.</p>
+
+  <!-- SECTION 9 -->
+
+  <div class="section-rule">
+    <span class="section-rule-num">§ 9</span>
+    <div class="section-rule-line"></div>
+    <span class="section-rule-title">Conclusions</span>
+  </div>
+
+  <h2>Conclusions for Political<br>Communication Practice</h2>
+
+  <p class="body-copy">This study confirms that physical appearance significantly shapes political perception — but operates through a structured hierarchy of inferential cues. Appearance functions as an entry point, not a destination: it primes assessments of competence, trustworthiness and approachability, which collectively determine whether a leader impression crystallises.</p>
+
+  <p class="body-copy">For political communication professionals, three actionable findings emerge. First, <strong>competence signalling is paramount</strong> — it is the single strongest predictor of leadership perception across all three politicians and should anchor visual and rhetorical strategy. Second, <strong>approachability is the critical moderator</strong>: Baudet's failure to convert perceived competence into leadership trust appears structurally linked to his low approachability score, suggesting that warmth and accessibility cues must accompany ability projections. Third, <strong>politically engaged audiences are appearance-responsive</strong>: contrary to a naive assumption that experts would "see past" appearance, engaged respondents show the largest appearance-linked leadership gaps, suggesting that appearance cues become integrated into — rather than overridden by — political knowledge structures.</p>
+
+  <div class="finding" style="border-color:var(--accent2)">
+    <div class="finding-label" style="color:var(--accent2)">Recommendation</div>
+    <div class="finding-text">Political image management should prioritise the triad of <em>competence projection, trustworthiness signalling, and approachability cues</em> — in that order of explanatory power. Physical attractiveness enhances overall impression but does not independently drive leadership perception. Any visual communication strategy that maximises appearance at the expense of warm, credible demeanour is likely to be sub-optimal.</div>
+  </div>
+
+  <footer>
+    <p><strong>Methodology note:</strong> Survey-experimental design. Respondents rated three Dutch politicians (identified internally as A, B, C) on five perceptual dimensions (1–10 scale). Paired-sample t-tests were used for significance testing of between-politician leadership differences. Pearson r reported for dimension–leadership correlations. Subgroup analyses conducted on European/non-European and gender splits; engagement level analysed as an ordinal grouping variable. Statistical significance thresholds: * p &lt; .05, *** p &lt; .001 (two-tailed, estimated df ≈ 42). Common-method variance caution applies to all within-instrument correlations.</p>
+    <br>
+    <p>Political Communication Research · Survey Study March–April 2026 · All data collected via voluntary online survey · Identity of politicians was not disclosed in the instrument</p>
+  </footer>
+
+</div>
+</body>
+</html>
