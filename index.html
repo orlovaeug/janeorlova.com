@@ -456,7 +456,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <div class="hero-footer-strip">
       <div class="hero-stat-item"><strong>2018</strong><span>Based in NL since</span></div>
       <div class="hero-stat-item"><strong>MSc</strong><span>Univ. of Amsterdam</span></div>
-      <div class="hero-stat-item"><strong>3</strong><span>Live data projects</span></div>
+      <div class="hero-stat-item"><strong>4</strong><span>Live data projects</span></div>
     </div>
   </div>
 
@@ -472,7 +472,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       <div class="hsg-item"><div class="hsg-n">NL</div><div class="hsg-l">Based</div></div>
       <div class="hsg-item"><div class="hsg-n">EU</div><div class="hsg-l">Focus</div></div>
       <div class="hsg-item"><div class="hsg-n">MSc</div><div class="hsg-l">UvA</div></div>
-      <div class="hsg-item"><div class="hsg-n">3</div><div class="hsg-l">Projects</div></div>
+      <div class="hsg-item"><div class="hsg-n">4</div><div class="hsg-l">Projects</div></div>
     </div>
   </div>
 </section>
@@ -581,17 +581,20 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <span class="vc-link">Open tracker</span>
 </a>
 
-<div class="viz-card reveal" style="transition-delay:0.2s; cursor:default;">
-  <div class="vc-type">Coming Soon</div>
+<a href="https://janeorlova.com/polls" class="viz-card reveal" style="transition-delay:0.2s">
+  <div class="vc-type">Polling Analysis · Live</div>
   <div class="vc-spark">
     <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <polyline points="0,24 25,24 50,24 75,24 100,24 125,24 150,24 175,24 200,24" fill="none" stroke="var(--rule)" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <!-- multi-party poll lines -->
+      <polyline points="0,32 25,28 50,24 75,26 100,20 125,18 150,22 175,16 200,14" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+      <polyline points="0,18 25,22 50,26 75,24 100,28 125,30 150,28 175,32 200,34" fill="none" stroke="var(--ink-muted)" stroke-width="1" opacity="0.5"/>
+      <polyline points="0,38 25,36 50,38 75,34 100,36 125,32 150,34 175,30 200,28" fill="none" stroke="var(--ink-muted)" stroke-width="1" opacity="0.3"/>
     </svg>
   </div>
-  <h3 class="vc-title">Next Visualisation</h3>
-  <p class="vc-desc">A new data project is in development. Add a description of your next visualisation or data work here — framing analysis, coalition modelling, or another live tool.</p>
-  <span class="vc-link" style="color:var(--ink-muted)">In progress</span>
-</div>
+  <h3 class="vc-title">The Dutch Political Pulse</h3>
+  <p class="vc-desc">Real-time polling synthesis from Ipsos I&amp;O, Verian, and Peil.nl — seat projections, an interactive coalition builder, momentum tracking, and pollster comparison since the October 2025 election.</p>
+  <span class="vc-link">Explore polls</span>
+</a>
 ```
 
   </div>
