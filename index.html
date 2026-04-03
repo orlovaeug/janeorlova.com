@@ -686,170 +686,167 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <span class="footer-copy">© 2026 Jane Orlova · Amsterdam</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-
-/* ── SCROLL REVEAL — desktop only ── */
-if (window.innerWidth >= 961) {
-document.querySelectorAll(’.reveal’).forEach(el => {
-el.style.opacity = ‘0’;
-el.style.transform = ‘translateY(18px)’;
-el.style.transition = ‘opacity 0.65s ease, transform 0.65s ease’;
-});
-const io = new IntersectionObserver(entries => {
-entries.forEach(e => {
-if (e.isIntersecting) {
-e.target.style.opacity = ‘1’;
-e.target.style.transform = ‘none’;
-}
-});
-}, { threshold: 0.05, rootMargin: ‘0px 0px -20px 0px’ });
-document.querySelectorAll(’.reveal’).forEach(el => io.observe(el));
-}
-
-/* ── MOBILE NAV ── */
-const ham = document.querySelector(’.hamburger’);
-const navLinks = document.querySelector(’.nav-links’);
-ham.addEventListener(‘click’, () => {
-const open = navLinks.style.display === ‘flex’;
-if (open) { navLinks.style.display = ‘’; }
-else {
-Object.assign(navLinks.style, {
-display: ‘flex’, flexDirection: ‘column’,
-position: ‘fixed’, top: ‘60px’, left: 0, right: 0,
-background: ‘var(–paper)’, borderBottom: ‘1px solid var(–rule)’,
-padding: ‘2rem’, gap: ‘1.5rem’, zIndex: 99
-});
-}
-});
-
-/* ── BAR CHART (Gemeenteuitslag sample data) ── */
-const parties = [
-{ name: ‘VVD’,  pct: 0.22 },
-{ name: ‘D66’,  pct: 0.17 },
-{ name: ‘GL’,   pct: 0.14 },
-{ name: ‘PvdA’, pct: 0.13 },
-{ name: ‘CDA’,  pct: 0.11 },
-{ name: ‘SP’,   pct: 0.09 },
-{ name: ‘PVV’,  pct: 0.08 },
-];
-
-const chart = document.getElementById(‘bar-chart’);
-chart.innerHTML = parties.map((p, i) => `<div class="bar-row"> <span class="bar-party">${p.name}</span> <div class="bar-track"> <div class="bar-fill" style="width:${p.pct * 100}%; animation-delay:${0.3 + i * 0.1}s"></div> </div> <span class="bar-pct">${Math.round(p.pct * 100)}%</span> </div>`).join(’’);
-
-/* ── LIVE SUBSTACK FEED via allorigins proxy ── */
-async function loadSubstack() {
-const container = document.getElementById(‘substack-feed’);
-const RSS = ‘https://janeorlova.substack.com/feed’;
-
-```
-function showFallback() {
-  container.innerHTML = `
-    <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">First article coming soon</h3><p class="art-p">Posts will appear here automatically once published on Substack.</p></div>
-    <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">More writing on the way</h3><p class="art-p">Check back soon — or visit Substack directly.</p></div>
-    <div class="art"><p class="art-meta">Coming Soon</p><h3 class="art-h">Analysis and essays</h3><p class="art-p">Dutch and European politics published on Substack.</p></div>
-    <div class="art art-more"><p class="art-more-lbl">Visit directly</p><a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>`;
-}
-
-// Try multiple proxies in sequence
-const proxies = [
-  `https://api.allorigins.win/get?url=${encodeURIComponent(RSS)}`,
-  `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS)}&count=3`,
-  `https://cors.sh/${RSS}`
-];
-
-function parseRSS(xmlStr) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(xmlStr, 'text/xml');
-  const items = [...doc.querySelectorAll('item')].slice(0, 3);
-  if (!items.length) throw new Error('no items');
-  return items.map(item => ({
-    title: item.querySelector('title')?.textContent?.trim() || '',
-    link:  item.querySelector('link')?.textContent?.trim() || '#',
-    date:  item.querySelector('pubDate')?.textContent?.trim() || '',
-    desc:  item.querySelector('description')?.textContent?.trim() || ''
-  }));
-}
-
-function renderPosts(posts) {
-  let html = posts.map(p => {
-    const date = p.date ? new Date(p.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-    const tmp = document.createElement('div');
-    tmp.innerHTML = p.desc;
-    const excerpt = (tmp.textContent || '').slice(0, 160).trim() + '…';
-    return `<a href="${p.link}" target="_blank" rel="noopener" class="art">
-      <p class="art-meta">${date}</p>
-      <h3 class="art-h">${p.title}</h3>
-      <p class="art-p">${excerpt}</p>
-    </a>`;
-  }).join('');
-  html += `<div class="art art-more">
-    <p class="art-more-lbl">More on Substack</p>
-    <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a>
-  </div>`;
-  container.innerHTML = html;
-}
-
-try {
-  // Proxy 1: allorigins (returns XML in contents field)
-  const res1 = await fetch(proxies[0], { signal: AbortSignal.timeout(5000) });
-  const json1 = await res1.json();
-  if (json1.contents) {
-    const posts = parseRSS(json1.contents);
-    renderPosts(posts);
-    return;
+<script>
+  /* ── SCROLL REVEAL — desktop only ── */
+  if (window.innerWidth >= 961) {
+    document.querySelectorAll('.reveal').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(18px)';
+      el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
+    });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'none';
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   }
-} catch(e) {}
 
-try {
-  // Proxy 2: rss2json
-  const res2 = await fetch(proxies[1], { signal: AbortSignal.timeout(5000) });
-  const json2 = await res2.json();
-  if (json2.items && json2.items.length) {
-    const posts = json2.items.slice(0,3).map(it => ({
-      title: it.title, link: it.link, date: it.pubDate, desc: it.description
-    }));
-    renderPosts(posts);
-    return;
+  /* ── MOBILE NAV ── */
+  const ham = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  ham.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    if (open) { navLinks.style.display = ''; }
+    else {
+      Object.assign(navLinks.style, {
+        display: 'flex', flexDirection: 'column',
+        position: 'fixed', top: '60px', left: 0, right: 0,
+        background: 'var(--paper)', borderBottom: '1px solid var(--rule)',
+        padding: '2rem', gap: '1.5rem', zIndex: 99
+      });
+    }
+  });
+
+  /* ── BAR CHART ── */
+  const parties = [
+    { name: 'VVD',  pct: 0.22 },
+    { name: 'D66',  pct: 0.17 },
+    { name: 'GL',   pct: 0.14 },
+    { name: 'PvdA', pct: 0.13 },
+    { name: 'CDA',  pct: 0.11 },
+    { name: 'SP',   pct: 0.09 },
+    { name: 'PVV',  pct: 0.08 },
+  ];
+  const chart = document.getElementById('bar-chart');
+  if (chart) {
+    chart.innerHTML = parties.map((p, i) => `
+      <div class="bar-row">
+        <span class="bar-party">${p.name}</span>
+        <div class="bar-track">
+          <div class="bar-fill" style="width:${p.pct*100}%;animation-delay:${0.3+i*0.1}s"></div>
+        </div>
+        <span class="bar-pct">${Math.round(p.pct*100)}%</span>
+      </div>`).join('');
   }
-} catch(e) {}
 
-showFallback();
-```
+  /* ── SUBSTACK FEED ── */
+  async function loadSubstack() {
+    const container = document.getElementById('substack-feed');
+    if (!container) return;
 
-}
+    const FEED = 'https://janeorlova.substack.com/feed';
+    const PROXY = 'https://api.allorigins.win/get?url=' + encodeURIComponent(FEED);
 
-/* ── LIVE MOTIES TRACKER ── */
-async function loadTracker() {
-const feed = document.getElementById(‘tracker-feed’);
-const tagMap = {
-‘aangenomen’:  { cls: ‘tp’,  label: ‘Passed’ },
-‘verworpen’:   { cls: ‘tr’,  label: ‘Rejected’ },
-‘ingetrokken’: { cls: ‘tr’,  label: ‘Withdrawn’ },
-‘aangehouden’: { cls: ‘tpe’, label: ‘Deferred’ },
-};
+    function showEmpty() {
+      container.innerHTML =
+        '<div class="art"><p class="art-meta">No posts yet</p><h3 class="art-h">First article coming soon</h3><p class="art-p">Posts will appear here automatically once published on Substack.</p></div>' +
+        '<div class="art"><p class="art-meta">Writing in progress</p><h3 class="art-h">Dutch &amp; European politics</h3><p class="art-p">Elections, messaging, leadership, and what the data actually means.</p></div>' +
+        '<div class="art"><p class="art-meta">Coming soon</p><h3 class="art-h">Analysis and essays</h3><p class="art-p">Check Substack directly for the latest.</p></div>' +
+        '<div class="art art-more"><p class="art-more-lbl">Read on Substack</p><a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Visit →</a></div>';
+    }
 
-```
-const fallback = [
-  { cls: 'tp',  label: 'Passed',   text: 'Motie klimaatbeleid subsidies — D66, GroenLinks' },
-  { cls: 'tr',  label: 'Rejected', text: 'Motie defensiebudget verhoging — PVV' },
-  { cls: 'tpe', label: 'Pending',  text: 'Motie asielopvang gemeenten — NSC, BBB' },
-  { cls: 'tp',  label: 'Passed',   text: 'Motie woningbouw versnelling — VVD' },
-  { cls: 'tr',  label: 'Rejected', text: 'Motie zorgpersoneel loonsverhoging — SP, PvdA' },
-];
+    function parseAndRender(xml) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(xml, 'text/xml');
+      const items = [...doc.querySelectorAll('item')].slice(0, 3);
+      if (!items.length) { showEmpty(); return; }
 
-const renderRows = items => items.map(r =>
-  `<div class="m-row"><span class="m-tag ${r.cls}">${r.label}</span><span class="m-txt">${r.text}</span></div>`
-).join('');
+      let html = items.map(item => {
+        const title = item.querySelector('title')?.textContent?.trim() || '';
+        const link  = item.querySelector('link')?.textContent?.trim() || '#';
+        const pub   = item.querySelector('pubDate')?.textContent?.trim() || '';
+        const desc  = item.querySelector('description')?.textContent?.trim() || '';
+        const date  = pub ? new Date(pub).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
+        const tmp   = document.createElement('div');
+        tmp.innerHTML = desc;
+        const excerpt = (tmp.textContent || '').slice(0,160).trim() + '…';
+        return '<a href="' + link + '" target="_blank" rel="noopener" class="art">' +
+          '<p class="art-meta">' + date + '</p>' +
+          '<h3 class="art-h">' + title + '</h3>' +
+          '<p class="art-p">' + excerpt + '</p></a>';
+      }).join('');
+      html += '<div class="art art-more"><p class="art-more-lbl">More on Substack</p>' +
+        '<a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>';
+      container.innerHTML = html;
+    }
 
-try {
-  const url = 'https://gegevens.tweedekamer.nl/kamerstukken/moties?$top=5&$orderby=Datum desc&$format=json';
-  const res = await fetch(url, { signal: AbortSignal.timeout(4000) });
-  if (!res.ok) throw new Error('api');
-  const data = await res.json();
-  const items = (data.value || []).slice(0, 5);
-  if (!items.length) throw new Error('empty');
+    try {
+      const r = await fetch(PROXY, { signal: AbortSignal.timeout(6000) });
+      const j = await r.json();
+      if (j.contents) { parseAndRender(j.contents); return; }
+      showEmpty();
+    } catch(e) { showEmpty(); }
+  }
 
-  feed.innerHTML = items.map(m => {
-    const status = (m.Besluit || '').toLowerCase();
-    const tag = tagMap[status] || { cls: 'tpe', label: 
-```
+  /* ── MOTIES TRACKER ── */
+  async function loadTracker() {
+    const feed = document.getElementById('tracker-feed');
+    if (!feed) return;
+
+    /* Always show the curated fallback immediately so something is visible,
+       then try to fetch live data and replace if successful */
+    const fallback = [
+      { cls: 'tp',  label: 'Passed',   text: 'Motie klimaatbeleid subsidies — D66, GroenLinks' },
+      { cls: 'tr',  label: 'Rejected', text: 'Motie defensiebudget verhoging — PVV' },
+      { cls: 'tpe', label: 'Pending',  text: 'Motie asielopvang gemeenten — NSC, BBB' },
+      { cls: 'tp',  label: 'Passed',   text: 'Motie woningbouw versnelling — VVD' },
+      { cls: 'tr',  label: 'Rejected', text: 'Motie zorgpersoneel loonsverhoging — SP, PvdA' },
+    ];
+
+    const renderRows = items => items.map(r =>
+      '<div class="m-row"><span class="m-tag ' + r.cls + '">' + r.label + '</span>' +
+      '<span class="m-txt">' + r.text + '</span></div>'
+    ).join('');
+
+    // Show fallback immediately — no empty loader
+    feed.innerHTML = renderRows(fallback);
+
+    // Try live API in background
+    try {
+      const TK_URL = 'https://gegevens.tweedekamer.nl/kamerstukken/moties?$top=5&$orderby=Datum%20desc&$format=json';
+      const PROXY  = 'https://api.allorigins.win/get?url=' + encodeURIComponent(TK_URL);
+      const r = await fetch(PROXY, { signal: AbortSignal.timeout(6000) });
+      const j = await r.json();
+      const data = JSON.parse(j.contents);
+      const items = (data.value || []).slice(0, 5);
+      if (!items.length) return;
+
+      const tagMap = {
+        'aangenomen':  { cls: 'tp',  label: 'Passed' },
+        'verworpen':   { cls: 'tr',  label: 'Rejected' },
+        'ingetrokken': { cls: 'tr',  label: 'Withdrawn' },
+        'aangehouden': { cls: 'tpe', label: 'Deferred' },
+      };
+
+      feed.innerHTML = items.map(m => {
+        const status = (m.Besluit || '').toLowerCase();
+        const tag = tagMap[status] || { cls: 'tpe', label: 'Pending' };
+        const title = (m.Titel || m.Onderwerp || 'Motie').slice(0, 72);
+        return '<div class="m-row"><span class="m-tag ' + tag.cls + '">' + tag.label + '</span>' +
+               '<span class="m-txt">' + title + '</span></div>';
+      }).join('');
+    } catch(e) {
+      // fallback already shown, do nothing
+    }
+  }
+
+  loadSubstack();
+  loadTracker();
+</script>
+
+</body>
+</html>
