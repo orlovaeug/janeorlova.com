@@ -633,7 +633,25 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <div class="writing-r"><a href="https://janeorlova.substack.com" target="_blank" class="btn-ink">Visit Substack →</a></div>
   </div>
   <div class="articles reveal" id="substack-feed">
-    <div class="feed-loading">Loading latest posts…</div>
+    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-1">
+      <p class="art-meta">Coming soon</p>
+      <h3 class="art-h">First article on the way</h3>
+      <p class="art-p">Posts load here automatically once published. Visit Substack to read the latest.</p>
+    </a>
+    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-2">
+      <p class="art-meta">Dutch &amp; European politics</p>
+      <h3 class="art-h">Elections, messaging &amp; what the data means</h3>
+      <p class="art-p">Analysis of party strategy, framing, and political leadership in the Netherlands and beyond.</p>
+    </a>
+    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-3">
+      <p class="art-meta">Writing in progress</p>
+      <h3 class="art-h">More analysis coming soon</h3>
+      <p class="art-p">Subscribe on Substack to be notified when new pieces are published.</p>
+    </a>
+    <div class="art art-more">
+      <p class="art-more-lbl">Read on Substack</p>
+      <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Visit →</a>
+    </div>
   </div>
 </section>
 
@@ -743,37 +761,29 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       </div>`).join('');
   }
 
-  /* ── SUBSTACK FEED ── */
+  /* ── SUBSTACK FEED — uses Substack's own internal JSON API (CORS-friendly) ── */
   async function loadSubstack() {
     const container = document.getElementById('substack-feed');
     if (!container) return;
 
-    const FEED = 'https://janeorlova.substack.com/feed';
-    const PROXY = 'https://api.allorigins.win/get?url=' + encodeURIComponent(FEED);
+    // Substack's internal API returns JSON with CORS headers — no proxy needed
+    const API = 'https://janeorlova.substack.com/api/v1/posts?limit=3';
 
-    function showEmpty() {
-      container.innerHTML =
-        '<div class="art"><p class="art-meta">No posts yet</p><h3 class="art-h">First article coming soon</h3><p class="art-p">Posts will appear here automatically once published on Substack.</p></div>' +
-        '<div class="art"><p class="art-meta">Writing in progress</p><h3 class="art-h">Dutch &amp; European politics</h3><p class="art-p">Elections, messaging, leadership, and what the data actually means.</p></div>' +
-        '<div class="art"><p class="art-meta">Coming soon</p><h3 class="art-h">Analysis and essays</h3><p class="art-p">Check Substack directly for the latest.</p></div>' +
-        '<div class="art art-more"><p class="art-more-lbl">Read on Substack</p><a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Visit →</a></div>';
-    }
+    try {
+      const r = await fetch(API, { signal: AbortSignal.timeout(8000) });
+      if (!r.ok) return; // keep static cards
+      const posts = await r.json();
+      if (!posts || !posts.length) return; // keep static cards
 
-    function parseAndRender(xml) {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(xml, 'text/xml');
-      const items = [...doc.querySelectorAll('item')].slice(0, 3);
-      if (!items.length) { showEmpty(); return; }
-
-      let html = items.map(item => {
-        const title = item.querySelector('title')?.textContent?.trim() || '';
-        const link  = item.querySelector('link')?.textContent?.trim() || '#';
-        const pub   = item.querySelector('pubDate')?.textContent?.trim() || '';
-        const desc  = item.querySelector('description')?.textContent?.trim() || '';
-        const date  = pub ? new Date(pub).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
-        const tmp   = document.createElement('div');
-        tmp.innerHTML = desc;
-        const excerpt = (tmp.textContent || '').slice(0,160).trim() + '…';
+      let html = posts.slice(0, 3).map(p => {
+        const title = p.title || '';
+        const link  = 'https://janeorlova.substack.com/p/' + (p.slug || '');
+        const date  = p.post_date
+          ? new Date(p.post_date).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'})
+          : '';
+        const tmp = document.createElement('div');
+        tmp.innerHTML = p.subtitle || p.description || '';
+        const excerpt = (tmp.textContent || '').slice(0, 160).trim() + '…';
         return '<a href="' + link + '" target="_blank" rel="noopener" class="art">' +
           '<p class="art-meta">' + date + '</p>' +
           '<h3 class="art-h">' + title + '</h3>' +
@@ -782,14 +792,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       html += '<div class="art art-more"><p class="art-more-lbl">More on Substack</p>' +
         '<a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>';
       container.innerHTML = html;
-    }
-
-    try {
-      const r = await fetch(PROXY, { signal: AbortSignal.timeout(6000) });
-      const j = await r.json();
-      if (j.contents) { parseAndRender(j.contents); return; }
-      showEmpty();
-    } catch(e) { showEmpty(); }
+    } catch(e) { /* static cards remain */ }
   }
 
   /* ── MOTIES TRACKER ── */
