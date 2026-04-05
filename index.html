@@ -244,7 +244,7 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
 
 /* secondary viz cards */
 .viz-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid var(--rule);
 }
 
@@ -256,7 +256,8 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
   transition: background 0.25s;
   position: relative; overflow: hidden;
 }
-.viz-card:last-child { border-right: none; }
+.viz-card:nth-child(even) { border-right: none; }
+.viz-card:nth-last-child(-n+2) { border-bottom: none; }
 .viz-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
 .viz-card:hover { background: var(--paper-2); }
 .viz-card:hover::after { transform: scaleX(1); }
@@ -456,7 +457,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <div class="hero-footer-strip">
       <div class="hero-stat-item"><strong>2018</strong><span>Based in NL since</span></div>
       <div class="hero-stat-item"><strong>MSc</strong><span>Univ. of Amsterdam</span></div>
-      <div class="hero-stat-item"><strong>4</strong><span>Live data projects</span></div>
+      <div class="hero-stat-item"><strong>5</strong><span>Live data projects</span></div>
     </div>
   </div>
 
@@ -472,7 +473,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       <div class="hsg-item"><div class="hsg-n">NL</div><div class="hsg-l">Based</div></div>
       <div class="hsg-item"><div class="hsg-n">EU</div><div class="hsg-l">Focus</div></div>
       <div class="hsg-item"><div class="hsg-n">MSc</div><div class="hsg-l">UvA</div></div>
-      <div class="hsg-item"><div class="hsg-n">4</div><div class="hsg-l">Projects</div></div>
+      <div class="hsg-item"><div class="hsg-n">5</div><div class="hsg-l">Projects</div></div>
     </div>
   </div>
 </section>
@@ -585,7 +586,6 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <div class="vc-type">Polling Analysis · Live</div>
   <div class="vc-spark">
     <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <!-- multi-party poll lines -->
       <polyline points="0,32 25,28 50,24 75,26 100,20 125,18 150,22 175,16 200,14" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
       <polyline points="0,18 25,22 50,26 75,24 100,28 125,30 150,28 175,32 200,34" fill="none" stroke="var(--ink-muted)" stroke-width="1" opacity="0.5"/>
       <polyline points="0,38 25,36 50,38 75,34 100,36 125,32 150,34 175,30 200,28" fill="none" stroke="var(--ink-muted)" stroke-width="1" opacity="0.3"/>
@@ -594,6 +594,30 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <h3 class="vc-title">The Dutch Political Pulse</h3>
   <p class="vc-desc">Real-time polling synthesis from Ipsos I&amp;O, Verian, and Peil.nl — seat projections, an interactive coalition builder, momentum tracking, and pollster comparison since the October 2025 election.</p>
   <span class="vc-link">Explore polls</span>
+</a>
+
+<a href="https://janeorlova.com/politics-report" class="viz-card reveal" style="transition-delay:0.3s">
+  <div class="vc-type">Survey Research · March–April 2026</div>
+  <div class="vc-spark">
+    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
+      <!-- bar chart — three politicians across 5 dimensions -->
+      <rect x="0"  y="8"  width="12" height="40" fill="var(--accent)" opacity="0.9"/>
+      <rect x="14" y="18" width="12" height="30" fill="var(--accent)" opacity="0.55"/>
+      <rect x="28" y="26" width="12" height="22" fill="var(--accent)" opacity="0.3"/>
+      <rect x="50" y="10" width="12" height="38" fill="var(--accent)" opacity="0.9"/>
+      <rect x="64" y="20" width="12" height="28" fill="var(--accent)" opacity="0.55"/>
+      <rect x="78" y="24" width="12" height="24" fill="var(--accent)" opacity="0.3"/>
+      <rect x="100" y="6"  width="12" height="42" fill="var(--accent)" opacity="0.9"/>
+      <rect x="114" y="16" width="12" height="32" fill="var(--accent)" opacity="0.55"/>
+      <rect x="128" y="22" width="12" height="26" fill="var(--accent)" opacity="0.3"/>
+      <rect x="150" y="12" width="12" height="36" fill="var(--accent)" opacity="0.9"/>
+      <rect x="164" y="22" width="12" height="26" fill="var(--accent)" opacity="0.55"/>
+      <rect x="178" y="28" width="12" height="20" fill="var(--accent)" opacity="0.3"/>
+    </svg>
+  </div>
+  <h3 class="vc-title">The Face of Leadership</h3>
+  <p class="vc-desc">Survey-experimental study on how physical appearance shapes perceptions of trustworthiness, competence, and leadership suitability across three Dutch political figures — with full statistical analysis.</p>
+  <span class="vc-link">Read report</span>
 </a>
 ```
 
@@ -634,23 +658,23 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   </div>
   <div class="articles reveal" id="substack-feed">
     <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-1">
-      <p class="art-meta">Coming soon</p>
-      <h3 class="art-h">First article on the way</h3>
-      <p class="art-p">Posts load here automatically once published. Visit Substack to read the latest.</p>
+      <p class="art-meta">Weekend Overview</p>
+      <h3 class="art-h">Mijn Weekend</h3>
+      <p class="art-p">March 30 - April 5</p>
     </a>
-    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-2">
+    <a href="https://janeorlova.substack.com/p/mijn-weekend-5" target="_blank" rel="noopener" class="art" id="ss-post-2">
       <p class="art-meta">Dutch &amp; European politics</p>
-      <h3 class="art-h">Elections, messaging &amp; what the data means</h3>
-      <p class="art-p">Analysis of party strategy, framing, and political leadership in the Netherlands and beyond.</p>
+      <h3 class="art-h">Hungary votes. Europe watches. Moscow too.</h3>
+      <p class="art-p">On 12 April, Hungary holds parliamentary elections. For most European elections, the international attention is proportional to the country’s size — modest, contextual, quickly forgotten. Hungary has 10 million people and 21 votes in the Council of the European Union.</p>
     </a>
-    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-3">
-      <p class="art-meta">Writing in progress</p>
-      <h3 class="art-h">More analysis coming soon</h3>
-      <p class="art-p">Subscribe on Substack to be notified when new pieces are published.</p>
+    <a href="https://janeorlova.substack.com/p/hungary-votes-europe-watches-moscow" target="_blank" rel="noopener" class="art" id="ss-post-3">
+      <p class="art-meta">International Conflicts</p>
+      <h3 class="art-h">The Messaging Trap: Why Trump’s Iran Speech Failed at Its Own Game</h3>
+      <p class="art-p">When the White House announced that Donald Trump would be making a speech to the nation about the war on Iran, it was expected that the president would make a major announcement, but in his remarks which lasted less than 20 minutes, Trump only repeated the same statements he had been circulating for weeks.</p>
     </a>
     <div class="art art-more">
       <p class="art-more-lbl">Read on Substack</p>
-      <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Visit →</a>
+      <a href="https://janeorlova.substack.com/p/the-messaging-trap-why-trumps-iran" target="_blank" class="btn-ghost">Visit →</a>
     </div>
   </div>
 </section>
@@ -761,38 +785,34 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       </div>`).join('');
   }
 
-  /* ── SUBSTACK FEED — uses Substack's own internal JSON API (CORS-friendly) ── */
+  /* ── SUBSTACK — static cards always visible, real posts load if API responds ── */
   async function loadSubstack() {
     const container = document.getElementById('substack-feed');
     if (!container) return;
-
-    // Substack's internal API returns JSON with CORS headers — no proxy needed
-    const API = 'https://janeorlova.substack.com/api/v1/posts?limit=3';
-
+    // Try Substack internal API — works when CORS is permitted by their server
     try {
-      const r = await fetch(API, { signal: AbortSignal.timeout(8000) });
-      if (!r.ok) return; // keep static cards
+      const r = await fetch('https://janeorlova.substack.com/api/v1/posts?limit=3&offset=0', {
+        signal: AbortSignal.timeout(8000),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (!r.ok) return;
       const posts = await r.json();
-      if (!posts || !posts.length) return; // keep static cards
-
-      let html = posts.slice(0, 3).map(p => {
-        const title = p.title || '';
-        const link  = 'https://janeorlova.substack.com/p/' + (p.slug || '');
-        const date  = p.post_date
-          ? new Date(p.post_date).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'})
-          : '';
+      if (!Array.isArray(posts) || !posts.length) return;
+      let html = posts.slice(0,3).map(p => {
+        const link = 'https://janeorlova.substack.com/p/' + (p.slug || '');
+        const date = p.post_date ? new Date(p.post_date).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}) : '';
         const tmp = document.createElement('div');
-        tmp.innerHTML = p.subtitle || p.description || '';
-        const excerpt = (tmp.textContent || '').slice(0, 160).trim() + '…';
-        return '<a href="' + link + '" target="_blank" rel="noopener" class="art">' +
-          '<p class="art-meta">' + date + '</p>' +
-          '<h3 class="art-h">' + title + '</h3>' +
-          '<p class="art-p">' + excerpt + '</p></a>';
+        tmp.innerHTML = p.subtitle || '';
+        const excerpt = (tmp.textContent||'').slice(0,160).trim()+'…';
+        return '<a href="'+link+'" target="_blank" rel="noopener" class="art">'+
+          '<p class="art-meta">'+date+'</p>'+
+          '<h3 class="art-h">'+p.title+'</h3>'+
+          '<p class="art-p">'+excerpt+'</p></a>';
       }).join('');
-      html += '<div class="art art-more"><p class="art-more-lbl">More on Substack</p>' +
+      html += '<div class="art art-more"><p class="art-more-lbl">More on Substack</p>'+
         '<a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>';
       container.innerHTML = html;
-    } catch(e) { /* static cards remain */ }
+    } catch(e) { /* static cards stay */ }
   }
 
   /* ── MOTIES TRACKER ── */
