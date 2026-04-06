@@ -9,891 +9,1067 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --accent: #8B0000;
-    --accent-light: #b00000;
-    --black: #111111;
-    --dark: #1a1a1a;
-    --mid: #444444;
-    --light-mid: #777777;
-    --light: #e8e4df;
-    --bg: #faf9f7;
-    --white: #ffffff;
-    --nav-width: 220px;
-    --font-display: 'Playfair Display', Georgia, serif;
-    --font-body: 'Source Serif 4', Georgia, serif;
-  }
+/* ─── RESET & TOKENS ─────────────────────────────────────────── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
 
-- { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; font-size: 16px; }
-  body { background: var(–bg); color: var(–dark); font-family: var(–font-body); font-weight: 300; line-height: 1.7; }
+:root {
+–red: #8B0000;
+–red-light: #a80000;
+–black: #111;
+–dark: #1c1c1c;
+–mid: #4a4a4a;
+–muted: #7a7a7a;
+–border: #ddd8d2;
+–bg: #f9f8f6;
+–white: #ffffff;
+–nav: 230px;
+–serif: ‘Playfair Display’, Georgia, serif;
+–body: ‘Source Serif 4’, Georgia, serif;
+}
 
-/* TOP LINE */
-.top-line { position: fixed; top: 0; left: 0; right: 0; height: 4px; background: var(–accent); z-index: 1000; }
+body {
+background: var(–bg);
+color: var(–dark);
+font-family: var(–body);
+font-weight: 300;
+line-height: 1.75;
+}
 
-/* SIDE NAV */
+/* kill browser default link blue everywhere */
+a { color: inherit; text-decoration: none; }
+
+/* ─── TOP ACCENT LINE ─────────────────────────────────────────── */
+.topline {
+position: fixed; top:0; left:0; right:0;
+height: 4px; background: var(–red); z-index: 2000;
+}
+
+/* ─── SIDE NAV (desktop only) ─────────────────────────────────── */
 .sidenav {
-position: fixed; top: 4px; left: 0; width: var(–nav-width); height: 100vh;
-background: var(–white); border-right: 1px solid #e0dbd5;
-padding: 2.5rem 1.5rem 2rem; z-index: 900;
-display: flex; flex-direction: column; overflow-y: auto;
+position: fixed; top:4px; left:0; bottom:0;
+width: var(–nav);
+background: var(–white);
+border-right: 1px solid var(–border);
+display: flex; flex-direction: column;
+padding: 2.4rem 1.4rem 1.8rem;
+overflow-y: auto;
+z-index: 900;
 }
-.sidenav-logo { font-family: var(–font-display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(–accent); margin-bottom: 2.5rem; line-height: 1.4; }
-.sidenav-label { font-family: var(–font-display); font-size: 0.6rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(–light-mid); margin-bottom: 0.5rem; margin-top: 1.2rem; }
-.sidenav a { display: block; font-family: var(–font-body); font-size: 0.78rem; font-weight: 300; color: var(–mid); text-decoration: none; padding: 0.28rem 0; border-left: 2px solid transparent; padding-left: 0.6rem; transition: color 0.2s, border-color 0.2s; line-height: 1.4; }
-.sidenav a:hover, .sidenav a.active { color: var(–accent); border-left-color: var(–accent); }
-.sidenav-footer { margin-top: auto; padding-top: 2rem; font-size: 0.65rem; color: var(–light-mid); font-family: var(–font-body); line-height: 1.6; }
-.sidenav-footer a { color: var(–accent); text-decoration: none; border: none; padding: 0; font-size: 0.65rem; display: inline; }
 
-/* MAIN */
-.main { margin-left: var(–nav-width); min-height: 100vh; }
+.nav-logo {
+font-family: var(–serif);
+font-size: 0.68rem; font-weight: 700;
+letter-spacing: 0.2em; text-transform: uppercase;
+color: var(–red); line-height: 1.5;
+margin-bottom: 2.2rem;
+}
 
-/* HERO */
-.hero { padding: 7rem 5rem 4.5rem; border-bottom: 1px solid #d8d3cd; position: relative; overflow: hidden; }
-.hero::before { content: ‘’; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(139,0,0,0.04) 0%, transparent 70%); pointer-events: none; }
-.hero-eyebrow { font-family: var(–font-display); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(–accent); margin-bottom: 1.8rem; display: flex; align-items: center; gap: 0.8rem; }
-.hero-eyebrow::after { content: ‘’; display: inline-block; width: 40px; height: 1px; background: var(–accent); }
-.hero h1 { font-family: var(–font-display); font-size: clamp(2.6rem, 4.5vw, 4rem); font-weight: 900; line-height: 1.1; color: var(–black); max-width: 750px; margin-bottom: 1.6rem; letter-spacing: -0.02em; }
-.hero h1 em { font-style: italic; color: var(–accent); }
-.hero-sub { font-size: 1.05rem; color: var(–mid); max-width: 600px; font-weight: 300; margin-bottom: 2.5rem; font-style: italic; }
-.hero-meta { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
-.hero-badge { font-family: var(–font-display); font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(–light-mid); border: 1px solid #d8d3cd; padding: 0.3rem 0.7rem; }
-.btn-pdf { display: inline-flex; align-items: center; gap: 0.5rem; background: var(–accent); color: var(–white); font-family: var(–font-display); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; padding: 0.75rem 1.5rem; border: none; cursor: pointer; transition: background 0.2s, transform 0.15s; }
-.btn-pdf:hover { background: var(–accent-light); transform: translateY(-1px); }
-.btn-pdf svg { width: 14px; height: 14px; fill: currentColor; }
+.nav-label {
+font-family: var(–serif);
+font-size: 0.57rem; font-weight: 700;
+letter-spacing: 0.22em; text-transform: uppercase;
+color: var(–muted);
+margin: 1.1rem 0 0.4rem;
+}
 
-/* TAB NAVIGATION */
-.tab-bar { position: sticky; top: 4px; z-index: 800; background: var(–white); border-bottom: 2px solid var(–accent); display: flex; }
-.tab-btn { flex: 1; font-family: var(–font-display); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 1rem 0.5rem; background: none; border: none; border-bottom: 3px solid transparent; cursor: pointer; color: var(–light-mid); transition: color 0.2s, border-color 0.2s, background 0.2s; }
-.tab-btn:hover { color: var(–accent); background: rgba(139,0,0,0.03); }
-.tab-btn.active { color: var(–accent); border-bottom-color: var(–accent); background: rgba(139,0,0,0.04); }
-.tab-num { display: block; font-size: 0.55rem; letter-spacing: 0.2em; color: var(–light-mid); margin-bottom: 0.2rem; }
-.tab-btn.active .tab-num { color: var(–accent); }
+.sidenav a {
+display: block;
+font-family: var(–body);
+font-size: 0.76rem; font-weight: 300;
+color: var(–mid);
+padding: 0.26rem 0 0.26rem 0.65rem;
+border-left: 2px solid transparent;
+line-height: 1.45;
+transition: color .18s, border-color .18s;
+}
+.sidenav a:hover, .sidenav a.act {
+color: var(–red);
+border-left-color: var(–red);
+}
 
-/* TAB CONTENT */
-.tab-content { display: none; }
-.tab-content.active { display: block; }
+.nav-foot {
+margin-top: auto; padding-top: 1.8rem;
+font-size: 0.64rem; color: var(–muted);
+line-height: 1.7;
+}
+.nav-foot a { color: var(–red); }
+.nav-foot a:hover { text-decoration: underline; }
 
-/* PART HEADER */
-.part-header { padding: 4rem 5rem 2.5rem; border-bottom: 1px solid #d8d3cd; }
-.part-number { font-family: var(–font-display); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(–accent); margin-bottom: 1rem; }
-.part-header h2 { font-family: var(–font-display); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 900; color: var(–black); line-height: 1.15; max-width: 680px; letter-spacing: -0.01em; }
-.part-header p { margin-top: 1rem; font-size: 0.95rem; color: var(–light-mid); font-style: italic; max-width: 560px; }
+/* ─── MAIN WRAPPER ────────────────────────────────────────────── */
+.main { margin-left: var(–nav); }
 
-/* SECTIONS */
-.section { padding: 3.5rem 5rem; border-bottom: 1px solid #e8e4df; opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.section.visible { opacity: 1; transform: translateY(0); }
-.section h3 { font-family: var(–font-display); font-size: 1.45rem; font-weight: 700; color: var(–black); margin-bottom: 1.4rem; line-height: 1.25; position: relative; padding-left: 1rem; }
-.section h3::before { content: ‘’; position: absolute; left: 0; top: 0.15em; bottom: 0.15em; width: 3px; background: var(–accent); }
-.section h4 { font-family: var(–font-display); font-size: 1.05rem; font-weight: 600; color: var(–dark); margin: 2rem 0 0.7rem; }
-.section p { font-size: 0.95rem; line-height: 1.8; color: var(–dark); margin-bottom: 1.1rem; max-width: 720px; }
-.section p strong { font-weight: 600; color: var(–black); }
-.section ul, .section ol { margin: 0.8rem 0 1.2rem 0; padding-left: 1.2rem; max-width: 700px; }
-.section li { font-size: 0.93rem; line-height: 1.75; color: var(–dark); margin-bottom: 0.3rem; }
+/* ─── HERO ────────────────────────────────────────────────────── */
+.hero {
+padding: 6.5rem 5rem 4.5rem;
+border-bottom: 1px solid var(–border);
+position: relative; overflow: hidden;
+}
+.hero::after {
+content:’’;
+position:absolute; top:-60px; right:-60px;
+width:380px; height:380px; border-radius:50%;
+background: radial-gradient(circle, rgba(139,0,0,.05) 0%, transparent 68%);
+pointer-events:none;
+}
 
-/* PULL QUOTES */
-.pull-quote { border-left: 4px solid var(–accent); margin: 2.2rem 0; padding: 1rem 2rem; background: rgba(139,0,0,0.03); max-width: 680px; }
-.pull-quote p { font-family: var(–font-display); font-size: 1.05rem; font-style: italic; font-weight: 400; color: var(–black); margin: 0; line-height: 1.6; max-width: none; }
+.eyebrow {
+font-family: var(–serif);
+font-size: 0.63rem; font-weight:700;
+letter-spacing: 0.26em; text-transform: uppercase;
+color: var(–red);
+display: flex; align-items:center; gap:.8rem;
+margin-bottom: 1.7rem;
+}
+.eyebrow::after {
+content:’’; display:inline-block;
+width:36px; height:1px; background:var(–red);
+}
 
-/* STAT BOXES */
-.stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1.5rem; margin: 2rem 0; max-width: 720px; }
-.stat-box { border: 1px solid #d8d3cd; padding: 1.2rem; background: var(–white); }
-.stat-box .num { font-family: var(–font-display); font-size: 2rem; font-weight: 900; color: var(–accent); line-height: 1; margin-bottom: 0.4rem; }
-.stat-box .label { font-size: 0.75rem; font-family: var(–font-display); letter-spacing: 0.08em; text-transform: uppercase; color: var(–light-mid); line-height: 1.4; }
+.hero h1 {
+font-family: var(–serif);
+font-size: clamp(2.4rem, 5vw, 3.9rem);
+font-weight: 900; line-height: 1.08;
+color: var(–black); letter-spacing:-.02em;
+max-width: 720px; margin-bottom: 1.5rem;
+}
+.hero h1 em { font-style:italic; color:var(–red); }
 
-/* GOV DIAGRAM */
-.gov-diagram { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; max-width: 680px; }
-.gov-box { border: 1px solid #d8d3cd; padding: 1rem; background: var(–white); text-align: center; }
-.gov-box .gb-num { font-family: var(–font-display); font-size: 1.4rem; font-weight: 900; color: var(–accent); }
-.gov-box .gb-name { font-family: var(–font-display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(–black); margin: 0.3rem 0 0.2rem; }
-.gov-box .gb-desc { font-size: 0.73rem; color: var(–light-mid); line-height: 1.4; }
+.hero-sub {
+font-size: 1rem; font-style:italic;
+color: var(–mid); max-width:580px;
+margin-bottom: 2.2rem; line-height:1.7;
+}
 
-/* INFO BOX */
-.info-box { background: var(–white); border: 1px solid #d8d3cd; border-left: 4px solid var(–accent); padding: 1.2rem 1.5rem; margin: 1.5rem 0; max-width: 680px; font-size: 0.88rem; line-height: 1.7; }
-.info-box strong { font-family: var(–font-display); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(–accent); display: block; margin-bottom: 0.4rem; }
+.hero-meta {
+display: flex; flex-wrap:wrap;
+gap: 0.8rem; align-items:center;
+}
+.badge {
+font-family: var(–serif);
+font-size: 0.62rem; font-weight:600;
+letter-spacing:.1em; text-transform:uppercase;
+color: var(–muted);
+border: 1px solid var(–border);
+padding: .28rem .65rem;
+}
+.btn-pdf {
+display: inline-flex; align-items:center; gap:.45rem;
+background: var(–red); color: var(–white);
+font-family: var(–serif);
+font-size: 0.68rem; font-weight:700;
+letter-spacing:.14em; text-transform:uppercase;
+padding: .7rem 1.4rem;
+border: none; cursor:pointer;
+transition: background .2s, transform .15s;
+}
+.btn-pdf:hover { background:var(–red-light); transform:translateY(-1px); }
+.btn-pdf svg { width:13px; height:13px; fill:currentColor; flex-shrink:0; }
 
-/* CABINET BANNER */
-.cabinet-banner { background: var(–black); color: var(–white); padding: 1.2rem 1.5rem; margin: 1.5rem 0; max-width: 680px; font-size: 0.85rem; line-height: 1.6; }
-.cabinet-banner .cb-label { font-family: var(–font-display); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(–accent); margin-bottom: 0.4rem; }
-.cabinet-banner strong { color: var(–white); }
-.cabinet-banner a { color: #e07070; text-decoration: none; }
-.cabinet-banner a:hover { text-decoration: underline; }
+/* ─── TABS ────────────────────────────────────────────────────── */
+.tabbar {
+position: sticky; top:4px; z-index:800;
+background: var(–white);
+border-bottom: 2px solid var(–red);
+display: flex;
+}
+.tabbtn {
+flex:1;
+font-family: var(–serif);
+font-size: .68rem; font-weight:700;
+letter-spacing:.09em; text-transform:uppercase;
+padding: .9rem .4rem;
+background:none; border:none;
+border-bottom: 3px solid transparent;
+color: var(–muted); cursor:pointer;
+transition: color .18s, background .18s;
+line-height:1.3;
+}
+.tabbtn small {
+display:block; font-size:.52rem;
+letter-spacing:.18em; margin-bottom:.15rem;
+color:var(–muted);
+}
+.tabbtn:hover { color:var(–red); background:rgba(139,0,0,.025); }
+.tabbtn.on { color:var(–red); border-bottom-color:var(–red); background:rgba(139,0,0,.04); }
+.tabbtn.on small { color:var(–red); }
 
-/* TIMELINE */
-.timeline { max-width: 760px; }
-.timeline-year { display: flex; align-items: baseline; gap: 1.5rem; margin-top: 3rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(–accent); }
-.timeline-year .year-num { font-family: var(–font-display); font-size: 1.8rem; font-weight: 900; color: var(–accent); min-width: 60px; }
-.timeline-year .year-context { font-family: var(–font-display); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(–light-mid); font-style: italic; }
-.timeline-item { margin: 1.8rem 0 0 0; padding-left: 1.5rem; border-left: 2px solid #d8d3cd; position: relative; }
-.timeline-item::before { content: ‘’; position: absolute; left: -5px; top: 8px; width: 8px; height: 8px; border-radius: 50%; background: var(–accent); }
-.ti-title { font-family: var(–font-display); font-size: 1rem; font-weight: 700; color: var(–black); margin-bottom: 0.4rem; line-height: 1.3; }
-.ti-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.7rem; }
-.tag { font-size: 0.65rem; font-family: var(–font-display); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.55rem; border: 1px solid currentColor; }
-.tag-expat { color: var(–accent); }
-.tag-student { color: #1a5276; }
-.tag-tax { color: #1e8449; }
-.tag-housing { color: #7d6608; }
-.tag-social { color: #6c3483; }
-.tag-citizenship { color: #17202a; }
-.timeline-item p { font-size: 0.9rem; line-height: 1.75; color: var(–dark); margin-bottom: 0.6rem; max-width: none; }
-.ti-political { font-size: 0.82rem; color: var(–light-mid); font-style: italic; border-top: 1px solid #e8e4df; padding-top: 0.5rem; margin-top: 0.5rem; }
-.ti-source { font-size: 0.75rem; margin-top: 0.4rem; }
-.ti-source a { color: var(–accent); text-decoration: none; font-family: var(–font-display); font-size: 0.7rem; letter-spacing: 0.05em; }
-.ti-source a:hover { text-decoration: underline; }
+.tabpane { display:none; }
+.tabpane.on { display:block; }
 
-/* DICTIONARY */
-.dict-controls { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
-.dict-search { font-family: var(–font-body); font-size: 0.85rem; border: 1px solid #d8d3cd; background: var(–white); padding: 0.55rem 1rem; color: var(–dark); outline: none; width: 240px; transition: border-color 0.2s; }
-.dict-search:focus { border-color: var(–accent); }
-.dict-search::placeholder { color: #aaa; }
-.dict-filter { font-family: var(–font-body); font-size: 0.8rem; border: 1px solid #d8d3cd; background: var(–white); padding: 0.55rem 0.8rem; color: var(–dark); cursor: pointer; outline: none; }
-.dict-count { font-size: 0.75rem; font-family: var(–font-display); color: var(–light-mid); letter-spacing: 0.05em; margin-left: auto; }
-.dict-table-wrap { overflow-x: auto; border: 1px solid #d8d3cd; }
-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; background: var(–white); }
-thead th { background: var(–black); color: var(–white); font-family: var(–font-display); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.9rem 1rem; text-align: left; cursor: pointer; user-select: none; white-space: nowrap; }
-thead th:hover { background: var(–accent); }
-thead th.sorted-asc::after { content: ’ ↑’; }
-thead th.sorted-desc::after { content: ’ ↓’; }
-tbody tr { border-bottom: 1px solid #f0ece8; transition: background 0.15s; }
-tbody tr:hover { background: #fdf9f5; }
-tbody tr:last-child { border-bottom: none; }
-td { padding: 0.85rem 1rem; vertical-align: top; line-height: 1.55; color: var(–dark); }
-.td-term { font-family: var(–font-display); font-weight: 700; color: var(–black); font-size: 0.9rem; white-space: nowrap; }
-.td-ru { font-style: italic; color: var(–mid); font-size: 0.85rem; min-width: 150px; }
-.td-explain { font-size: 0.83rem; color: var(–dark); min-width: 280px; max-width: 400px; }
-.td-freq { white-space: nowrap; font-family: var(–font-display); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
-.freq-high { color: var(–accent); }
-.freq-mid { color: #1a5276; }
-.freq-spec { color: #777; }
+/* ─── PART HEADER ─────────────────────────────────────────────── */
+.phead {
+padding: 3.8rem 5rem 2.4rem;
+border-bottom: 1px solid var(–border);
+}
+.pnum {
+font-family: var(–serif); font-size:.58rem; font-weight:700;
+letter-spacing:.3em; text-transform:uppercase;
+color:var(–red); margin-bottom:.9rem;
+}
+.phead h2 {
+font-family: var(–serif);
+font-size: clamp(1.75rem,3vw,2.7rem);
+font-weight:900; color:var(–black);
+line-height:1.14; max-width:660px; letter-spacing:-.01em;
+}
+.phead p {
+margin-top:.9rem; font-size:.93rem;
+color:var(–muted); font-style:italic; max-width:540px;
+}
 
-/* FOOTER */
-footer { padding: 3rem 5rem; background: var(–black); color: rgba(255,255,255,0.5); font-size: 0.78rem; font-family: var(–font-display); display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; }
-footer .footer-left { max-width: 400px; line-height: 1.7; }
-footer strong { color: rgba(255,255,255,0.85); }
-footer .footer-links { display: flex; flex-direction: column; gap: 0.5rem; text-align: right; }
-footer a { color: var(–accent); text-decoration: none; font-size: 0.78rem; transition: color 0.2s; }
-footer a:hover { color: #c00; }
-footer .accent-line { width: 30px; height: 2px; background: var(–accent); margin-bottom: 0.8rem; }
+/* ─── SECTIONS ────────────────────────────────────────────────── */
+.sec {
+padding: 3.2rem 5rem;
+border-bottom: 1px solid #ede9e4;
+opacity:0; transform:translateY(22px);
+transition: opacity .55s ease, transform .55s ease;
+}
+.sec.vis { opacity:1; transform:none; }
+.sec.instant { opacity:1; transform:none; }
 
-/* PRINT */
+.sec h3 {
+font-family: var(–serif);
+font-size: 1.38rem; font-weight:700;
+color:var(–black); line-height:1.24;
+margin-bottom: 1.3rem;
+padding-left: 1rem;
+position:relative;
+}
+.sec h3::before {
+content:’’; position:absolute;
+left:0; top:.15em; bottom:.15em;
+width:3px; background:var(–red);
+}
+.sec h4 {
+font-family:var(–serif);
+font-size:1rem; font-weight:600;
+color:var(–dark); margin:1.9rem 0 .6rem;
+}
+.sec p {
+font-size:.93rem; line-height:1.82;
+color:var(–dark); margin-bottom:1rem;
+max-width:700px;
+}
+.sec p strong { font-weight:600; color:var(–black); }
+.sec ul, .sec ol { padding-left:1.1rem; margin:.7rem 0 1.1rem; max-width:680px; }
+.sec li { font-size:.91rem; line-height:1.75; color:var(–dark); margin-bottom:.28rem; }
+
+/* links inside sec */
+.sec a, .ti-source a, .cabinet-banner a, .nav-foot a {
+color: var(–red);
+text-decoration: none;
+border-bottom: 1px solid rgba(139,0,0,.25);
+transition: border-color .15s;
+}
+.sec a:hover, .ti-source a:hover, .cabinet-banner a:hover {
+border-bottom-color: var(–red);
+}
+
+/* ─── PULL QUOTE ──────────────────────────────────────────────── */
+.pq {
+border-left: 4px solid var(–red);
+margin: 2rem 0;
+padding: .9rem 1.8rem;
+background: rgba(139,0,0,.03);
+max-width:660px;
+}
+.pq p {
+font-family:var(–serif);
+font-size:1.02rem; font-style:italic;
+color:var(–black); margin:0; max-width:none;
+}
+
+/* ─── STATS ───────────────────────────────────────────────────── */
+.stats {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:1.2rem; margin:1.8rem 0; max-width:700px;
+}
+.stat {
+border:1px solid var(–border);
+padding:1.1rem; background:var(–white);
+}
+.stat .n {
+font-family:var(–serif); font-size:1.85rem;
+font-weight:900; color:var(–red);
+line-height:1; margin-bottom:.35rem;
+}
+.stat .l {
+font-family:var(–serif); font-size:.7rem;
+font-weight:600; letter-spacing:.08em;
+text-transform:uppercase; color:var(–muted); line-height:1.4;
+}
+
+/* ─── GOV DIAGRAM ─────────────────────────────────────────────── */
+.gdiag {
+display:grid; grid-template-columns:repeat(3,1fr);
+gap:1rem; margin:1.4rem 0; max-width:660px;
+}
+.gbox {
+border:1px solid var(–border);
+padding:.9rem; background:var(–white); text-align:center;
+}
+.gbox .gn { font-family:var(–serif); font-size:1.35rem; font-weight:900; color:var(–red); }
+.gbox .gt { font-family:var(–serif); font-size:.66rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; color:var(–black); margin:.25rem 0 .18rem; }
+.gbox .gd { font-size:.7rem; color:var(–muted); line-height:1.38; }
+
+/* ─── INFO BOX ────────────────────────────────────────────────── */
+.ibox {
+background:var(–white); border:1px solid var(–border);
+border-left:4px solid var(–red);
+padding:1.1rem 1.4rem; margin:1.4rem 0;
+max-width:660px; font-size:.86rem; line-height:1.72;
+}
+.ibox strong {
+font-family:var(–serif); font-size:.66rem; font-weight:700;
+letter-spacing:.15em; text-transform:uppercase;
+color:var(–red); display:block; margin-bottom:.38rem;
+}
+
+/* ─── CABINET BANNER ──────────────────────────────────────────── */
+.cbanner {
+background:var(–black); color:rgba(255,255,255,.75);
+padding:1.1rem 1.4rem; margin:1.4rem 0;
+max-width:660px; font-size:.84rem; line-height:1.65;
+}
+.cbanner .cl {
+font-family:var(–serif); font-size:.6rem; font-weight:700;
+letter-spacing:.2em; text-transform:uppercase;
+color:var(–red); margin-bottom:.35rem;
+}
+.cbanner strong { color:var(–white); }
+.cbanner a { color:#e07070; border-bottom:1px solid rgba(224,112,112,.35); }
+
+/* ─── TIMELINE ────────────────────────────────────────────────── */
+.tl { max-width:740px; }
+.tl-year {
+display:flex; align-items:baseline; gap:1.4rem;
+margin-top:2.8rem; padding-bottom:.45rem;
+border-bottom:2px solid var(–red);
+}
+.tl-year .yr {
+font-family:var(–serif); font-size:1.7rem;
+font-weight:900; color:var(–red); min-width:56px;
+}
+.tl-year .ctx {
+font-family:var(–serif); font-size:.68rem;
+font-weight:600; letter-spacing:.08em;
+text-transform:uppercase; color:var(–muted); font-style:italic;
+}
+.titem {
+margin:1.6rem 0 0; padding-left:1.4rem;
+border-left:2px solid var(–border); position:relative;
+}
+.titem::before {
+content:’’; position:absolute;
+left:-5px; top:8px;
+width:8px; height:8px; border-radius:50%;
+background:var(–red);
+}
+.tit { font-family:var(–serif); font-size:.97rem; font-weight:700; color:var(–black); margin-bottom:.38rem; line-height:1.3; }
+.ttags { display:flex; flex-wrap:wrap; gap:.35rem; margin-bottom:.6rem; }
+.tag {
+font-size:.62rem; font-family:var(–serif); font-weight:700;
+letter-spacing:.09em; text-transform:uppercase;
+padding:.18rem .5rem; border:1px solid currentColor;
+}
+.te { color:var(–red); }
+.ts { color:#1a5276; }
+.tt { color:#1e6e44; }
+.th { color:#7d6608; }
+.tp { color:#6c3483; }
+.tc { color:#2c3e50; }
+.titem p { font-size:.88rem; line-height:1.76; color:var(–dark); margin-bottom:.55rem; max-width:none; }
+.tpol { font-size:.8rem; color:var(–muted); font-style:italic; border-top:1px solid #ede9e4; padding-top:.45rem; margin-top:.45rem; }
+.tsrc { font-size:.73rem; margin-top:.35rem; }
+.tsrc a { color:var(–red); border-bottom:1px solid rgba(139,0,0,.25); font-family:var(–serif); font-size:.7rem; letter-spacing:.04em; }
+.tsrc a:hover { border-bottom-color:var(–red); }
+
+/* ─── DICTIONARY ──────────────────────────────────────────────── */
+.dctl {
+display:flex; flex-wrap:wrap;
+align-items:center; gap:.9rem; margin-bottom:1.3rem;
+}
+.dsearch {
+font-family:var(–body); font-size:.83rem;
+border:1px solid var(–border); background:var(–white);
+padding:.5rem .9rem; color:var(–dark); outline:none;
+width:230px; transition:border-color .18s;
+}
+.dsearch:focus { border-color:var(–red); }
+.dsearch::placeholder { color:#bbb; }
+.dsel {
+font-family:var(–body); font-size:.78rem;
+border:1px solid var(–border); background:var(–white);
+padding:.5rem .8rem; color:var(–dark); cursor:pointer; outline:none;
+}
+.dcnt { font-size:.72rem; font-family:var(–serif); color:var(–muted); margin-left:auto; }
+
+.dtw { overflow-x:auto; border:1px solid var(–border); }
+table { width:100%; border-collapse:collapse; background:var(–white); }
+thead th {
+background:var(–black); color:var(–white);
+font-family:var(–serif); font-size:.62rem; font-weight:700;
+letter-spacing:.14em; text-transform:uppercase;
+padding:.85rem .95rem; text-align:left;
+cursor:pointer; user-select:none; white-space:nowrap;
+}
+thead th:hover { background:var(–red); }
+thead th.sa::after { content:’ ↑’; }
+thead th.sd::after { content:’ ↓’; }
+tbody tr { border-bottom:1px solid #f0ece7; transition:background .13s; }
+tbody tr:hover { background:#fdf9f5; }
+tbody tr:last-child { border-bottom:none; }
+td { padding:.8rem .95rem; vertical-align:top; line-height:1.52; color:var(–dark); }
+.dterm { font-family:var(–serif); font-weight:700; color:var(–black); font-size:.88rem; white-space:nowrap; }
+.dru { font-style:italic; color:var(–mid); font-size:.83rem; min-width:140px; }
+.dex { font-size:.8rem; min-width:260px; max-width:380px; }
+.dfreq { white-space:nowrap; font-family:var(–serif); font-size:.68rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
+.fh { color:var(–red); }
+.fm { color:#1a5276; }
+.fs { color:#888; }
+
+/* ─── FOOTER ──────────────────────────────────────────────────── */
+footer {
+padding:2.8rem 5rem;
+background:var(–black); color:rgba(255,255,255,.45);
+font-size:.75rem; font-family:var(–serif);
+display:flex; flex-wrap:wrap;
+justify-content:space-between; gap:1.4rem;
+}
+.fl { max-width:380px; line-height:1.72; }
+footer strong { color:rgba(255,255,255,.82); }
+.flinks { display:flex; flex-direction:column; gap:.45rem; text-align:right; }
+footer a { color:var(–red); }
+footer a:hover { text-decoration:underline; }
+.fbar { width:28px; height:2px; background:var(–red); margin-bottom:.7rem; }
+
+/* ─── PRINT ───────────────────────────────────────────────────── */
 @media print {
-.sidenav, .top-line, .btn-pdf, .dict-controls, .tab-bar { display: none !important; }
-.main { margin-left: 0 !important; }
-.tab-content { display: block !important; }
-body { font-size: 11pt; color: #000; background: #fff; }
-.hero { padding: 2rem; }
-.part-header, .section { padding: 1.5rem 2rem; page-break-inside: avoid; }
-.section { opacity: 1 !important; transform: none !important; }
-h1, h2, h3 { page-break-after: avoid; }
-.timeline-item, tbody tr { page-break-inside: avoid; }
-table { font-size: 8pt; }
-td { padding: 0.4rem 0.5rem; }
-footer { background: #fff; color: #555; border-top: 2px solid #8B0000; padding: 1rem 2rem; }
-footer a { color: #8B0000; }
-body::after { content: ‘janeorlova.com  ·  t.me/tonandtijd’; position: fixed; bottom: 30px; right: 30px; font-family: ‘Playfair Display’, Georgia, serif; font-size: 9pt; color: rgba(139,0,0,0.22); letter-spacing: 0.12em; text-transform: uppercase; transform: rotate(-45deg); pointer-events: none; z-index: 9999; }
-.pull-quote { border-left: 3px solid #8B0000; }
-.cabinet-banner { background: #222; -webkit-print-color-adjust: exact; }
+.sidenav, .topline, .btn-pdf, .dctl, .tabbar, .mbtn { display:none!important; }
+.main { margin-left:0!important; }
+.tabpane { display:block!important; }
+body { font-size:10.5pt; background:#fff; color:#000; }
+.hero { padding:1.5rem 2rem; }
+.phead, .sec { padding:1.2rem 2rem; page-break-inside:avoid; }
+.sec { opacity:1!important; transform:none!important; }
+h1,h2,h3 { page-break-after:avoid; }
+.titem, tbody tr { page-break-inside:avoid; }
+table { font-size:7.5pt; }
+td { padding:.35rem .5rem; }
+footer { background:#fff; color:#555; border-top:2px solid var(–red); padding:1rem 2rem; }
+footer a { color:var(–red); }
+body::after {
+content:‘janeorlova.com  ·  t.me/tonandtijd’;
+position:fixed; bottom:28px; right:28px;
+font-family:Georgia,serif; font-size:8pt;
+color:rgba(139,0,0,.2); letter-spacing:.12em;
+text-transform:uppercase; transform:rotate(-42deg);
+pointer-events:none; z-index:9999;
+}
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-:root { –nav-width: 0px; }
-.sidenav { transform: translateX(-100%); transition: transform 0.3s; width: 220px; }
-.sidenav.open { transform: translateX(0); }
-.main { margin-left: 0; }
-.hero, .part-header, .section { padding-left: 1.5rem; padding-right: 1.5rem; }
-.hero { padding-top: 5rem; }
-footer { padding: 2rem 1.5rem; }
-.gov-diagram { grid-template-columns: 1fr 1fr; }
-.mobile-menu-btn { display: flex !important; }
-.tab-btn { font-size: 0.6rem; padding: 0.8rem 0.3rem; }
+/* ─── MOBILE ──────────────────────────────────────────────────── */
+@media (max-width:860px) {
+.sidenav { display:none!important; }
+.main { margin-left:0; }
+.hero { padding:5rem 1.5rem 3rem; }
+.phead, .sec { padding-left:1.5rem; padding-right:1.5rem; }
+.phead { padding-top:2.5rem; }
+.gdiag { grid-template-columns:1fr 1fr; }
+footer { padding:2rem 1.5rem; }
+footer .flinks { text-align:left; }
+.stats { grid-template-columns:1fr 1fr; }
+.tl { max-width:100%; }
+.dsearch { width:100%; }
 }
-.mobile-menu-btn { display: none; position: fixed; top: 14px; left: 14px; z-index: 1100; background: var(–accent); color: white; border: none; width: 36px; height: 36px; align-items: center; justify-content: center; cursor: pointer; font-size: 1rem; }
+
+@media (max-width:520px) {
+.hero h1 { font-size:2.1rem; }
+.tabbtn { font-size:.58rem; padding:.75rem .25rem; }
+.gdiag { grid-template-columns:1fr; }
+}
+
+/* mobile burger — shown only on small */
+.mbtn {
+display:none;
+position:fixed; top:12px; left:12px; z-index:1100;
+background:var(–red); color:#fff;
+border:none; width:36px; height:36px;
+align-items:center; justify-content:center;
+font-size:1rem; cursor:pointer;
+}
+@media (max-width:860px) { .mbtn { display:flex; } }
 </style>
 
 </head>
 <body>
 
-<div class="top-line"></div>
-<button class="mobile-menu-btn" onclick="toggleNav()" aria-label="Меню">☰</button>
+<div class="topline"></div>
 
-<!-- SIDE NAV -->
-
-<nav class="sidenav" id="sidenav">
-  <div class="sidenav-logo">Нидерланды<br>Политика<br>Гид</div>
-
-  <div class="sidenav-label">Навигация</div>
-  <a href="#" onclick="showTab('tab1');return false;">Часть I — Система</a>
-  <a href="#" onclick="showTab('tab2');return false;">Часть II — Хроника</a>
-  <a href="#" onclick="showTab('tab3');return false;">Часть III — Словарь</a>
-
-  <div class="sidenav-label">Часть I</div>
-  <a href="#s-parliament" onclick="showTab('tab1')">Парламент и коалиции</a>
-  <a href="#s-parties" onclick="showTab('tab1')">Почему много партий</a>
-  <a href="#s-expats" onclick="showTab('tab1')">Решения для экспатов</a>
-  <a href="#s-gemeente" onclick="showTab('tab1')">Местные выборы</a>
-  <a href="#s-vote" onclick="showTab('tab1')">Участие с паспортом</a>
-
-  <div class="sidenav-label">Часть II</div>
-  <a href="#y2018" onclick="showTab('tab2')">2018</a>
-  <a href="#y2019" onclick="showTab('tab2')">2019</a>
-  <a href="#y2020" onclick="showTab('tab2')">2020</a>
-  <a href="#y2021" onclick="showTab('tab2')">2021</a>
-  <a href="#y2022" onclick="showTab('tab2')">2022</a>
-  <a href="#y2023" onclick="showTab('tab2')">2023</a>
-  <a href="#y2024" onclick="showTab('tab2')">2024</a>
-  <a href="#y2025" onclick="showTab('tab2')">2025</a>
-  <a href="#y2026" onclick="showTab('tab2')">2026</a>
-
-  <div class="sidenav-label">Часть III</div>
-  <a href="#" onclick="showTab('tab3');return false;">Словарь (37 терминов)</a>
-
-  <div class="sidenav-footer">
-    <a href="https://janeorlova.com" target="_blank">janeorlova.com</a><br>
-    <a href="https://t.me/tonandtijd" target="_blank">t.me/tonandtijd</a>
-  </div>
-</nav>
+<!-- MAIN — no sidenav on mobile -->
 
 <main class="main">
 
-  <!-- HERO -->
+<!-- ── HERO ───────────────────────────────────────────────────── -->
 
-  <header class="hero">
-    <div class="hero-eyebrow">Политический анализ · Апрель 2026</div>
-    <h1>Нидерланды:<br><em>страна, которую стоит понять</em></h1>
-    <p class="hero-sub">Полный гид по нидерландской политике для русскоязычных экспатов — от архитектуры власти до поправок, изменивших вашу жизнь. Актуально на апрель 2026 года: действует кабинет Jetten I.</p>
-    <div class="hero-meta">
-      <span class="hero-badge">Три части</span>
-      <span class="hero-badge">37 терминов</span>
-      <span class="hero-badge">2018–2026</span>
-      <span class="hero-badge">Kabinet-Jetten актуально</span>
-      <button class="btn-pdf" onclick="window.print()">
-        <svg viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
-        Скачать PDF
-      </button>
-    </div>
-  </header>
-
-  <!-- TABS -->
-
-  <div class="tab-bar">
-    <button class="tab-btn active" id="btn-tab1" onclick="showTab('tab1')">
-      <span class="tab-num">Часть I</span>
-      Система изнутри
-    </button>
-    <button class="tab-btn" id="btn-tab2" onclick="showTab('tab2')">
-      <span class="tab-num">Часть II</span>
-      Хроника 2018–2026
-    </button>
-    <button class="tab-btn" id="btn-tab3" onclick="showTab('tab3')">
-      <span class="tab-num">Часть III</span>
-      Политический словарь
+<header class="hero">
+  <div class="eyebrow">Политический анализ · Апрель 2026</div>
+  <h1>Нидерланды:<br><em>страна, которую<br>стоит понять</em></h1>
+  <p class="hero-sub">Полный гид по нидерландской политике для русскоязычных экспатов — от архитектуры власти до поправок, изменивших вашу жизнь. Актуально: кабинет Jetten I, с 23 февраля 2026.</p>
+  <div class="hero-meta">
+    <span class="badge">Три части</span>
+    <span class="badge">37 терминов</span>
+    <span class="badge">2018–2026</span>
+    <span class="badge">Jetten I ✓</span>
+    <button class="btn-pdf" onclick="window.print()">
+      <svg viewBox="0 0 24 24"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/></svg>
+      Скачать PDF
     </button>
   </div>
+</header>
 
-  <!-- ═══════════════ TAB 1 ═══════════════ -->
+<!-- ── TABS ───────────────────────────────────────────────────── -->
 
-  <div class="tab-content active" id="tab1">
-
-```
-<div class="part-header">
-  <div class="part-number">Часть I</div>
-  <h2>Да, я всё знаю.<br>Но вот чего вы, возможно, не знали</h2>
-  <p>Нидерланды — одна из самых сложных демократий Европы. Не потому что запутана, а потому что намеренно спроектирована так, чтобы не давать власти сосредотачиваться.</p>
+<div class="tabbar" role="tablist">
+  <button class="tabbtn on" id="btn1" onclick="go(1)" role="tab">
+    <small>Часть I</small>Система изнутри
+  </button>
+  <button class="tabbtn" id="btn2" onclick="go(2)" role="tab">
+    <small>Часть II</small>Хроника 2018–2026
+  </button>
+  <button class="tabbtn" id="btn3" onclick="go(3)" role="tab">
+    <small>Часть III</small>Политический словарь
+  </button>
 </div>
 
-<!-- актуальный кабинет -->
-<div class="section visible" style="padding-top: 2rem; padding-bottom: 1.5rem;">
-  <div class="cabinet-banner">
-    <div class="cb-label">Актуально · Апрель 2026</div>
-    <strong>Действующий кабинет: Kabinet-Jetten I</strong> (с 23 февраля 2026)<br>
-    Коалиция: <strong>D66 + VVD + CDA</strong> — <em>миноритарный</em> кабинет (66/150 мест в Tweede Kamer).<br>
-    Премьер-министр: <strong>Роб Йеттен (D66)</strong> — самый молодой премьер в истории Нидерландов.<br>
-    Акккорд «Aan de slag. Bouwen aan een beter Nederland» — <a href="https://www.kabinetsformatie2025.nl/documenten/2026/01/30/aan-de-slag---coalitieakkoord-2026-2030" target="_blank">читать полный текст →</a>
+<!-- ══════════════════ ЧАСТЬ I ══════════════════════════════════ -->
+
+<div class="tabpane on" id="p1">
+
+  <div class="phead">
+    <div class="pnum">Часть I</div>
+    <h2>Да, я всё знаю.<br>Но вот чего вы, возможно, не знали</h2>
+    <p>Нидерланды спроектированы так, чтобы власть не могла сосредоточиться. Это не баг — это дизайн.</p>
+  </div>
+
+  <div class="sec instant">
+    <div class="cbanner">
+      <div class="cl">Актуально · Апрель 2026</div>
+      <strong>Действующий кабинет: Kabinet-Jetten I</strong> — с 23 февраля 2026<br>
+      Коалиция: <strong>D66 + VVD + CDA</strong>, миноритарная (66 из 150 мест).<br>
+      Премьер: <strong>Роб Йеттен (D66)</strong> — самый молодой в истории страны.<br>
+      Соглашение «Aan de slag»: <a href="https://www.kabinetsformatie2025.nl/documenten/2026/01/30/aan-de-slag---coalitieakkoord-2026-2030" target="_blank">читать полный текст →</a>
+    </div>
+  </div>
+
+  <section class="sec" id="s-parl">
+    <h3>Парламент, сенат и вечные коалиции</h3>
+    <p>Нидерланды — парламентская монархия. Король Виллем-Александер подписывает законы, но реальная власть у <strong>Staten-Generaal</strong> — двухпалатного парламента — и правительства, которое перед ним ответственно.</p>
+    <div class="gdiag">
+      <div class="gbox"><div class="gn">150</div><div class="gt">Tweede Kamer</div><div class="gd">Нижняя палата. Прямые выборы. Инициирует законы.</div></div>
+      <div class="gbox"><div class="gn">75</div><div class="gt">Eerste Kamer</div><div class="gd">Сенат. Косвенные выборы. Принимает или блокирует.</div></div>
+      <div class="gbox"><div class="gn">66</div><div class="gt">Jetten I</div><div class="gd">Мест у коалиции — меньше половины. Миноритарный.</div></div>
+    </div>
+    <p><strong>Tweede Kamer</strong> — 150 депутатов, пропорциональная система без реального барьера (0,67%). Если партия набрала 10% — получает 15 мест. Воля избирателей почти не искажается.</p>
+    <p><strong>Eerste Kamer</strong> (сенат) — 75 членов избираются косвенно, через провинциальные парламенты. Создаёт лаг: состав сената может радикально отличаться от нижней палаты. Сенат не вносит поправки — принимает или отклоняет целиком. При кабинете Jetten I у коалиции нет большинства ни там, ни там.</p>
+    <div class="pq"><p>В Нидерландах нет понятия «оппозиция ни за что не проголосует». Межпартийные переговоры идут постоянно. Это не слабость системы — это её дизайн.</p></div>
+
+```
+<h4>Formateur и 93 дня переговоров</h4>
+<p>После выборов 29 октября 2025 года ни одна партия не имела большинства. Путь к Jetten I: <em>verkenner</em> Кольмес → <em>informateurs</em> Буйма и Вейерс (Вейерс отказался из-за утечки сообщения) → <em>informateur</em> Летшерт → <em>formateur</em> Йеттен → присяга 23 февраля 2026. 93 дня — быстро по нидерландским меркам (рекорд: 299 дней в 2021-м).</p>
+<p>Коалиционное соглашение (<em>regeerakkoord</em>) — документ на 50–100 страниц с зафиксированными компромиссами на весь срок. Реальнее предвыборных обещаний. Нарушение — политическая катастрофа.</p>
+```
+
+  </section>
+
+  <section class="sec" id="s-party">
+    <h3>Почему так много партий — и почему это работает</h3>
+    <p>На выборах октября 2025 года в парламент прошли <strong>15 партий</strong>. Барьер — 0,67%. В Германии — 5%. Нидерланды намеренно не ограничивают вход.</p>
+    <div class="stats">
+      <div class="stat"><div class="n">15</div><div class="l">партий в парламенте 2025</div></div>
+      <div class="stat"><div class="n">26</div><div class="l">мест у D66 — победителя</div></div>
+      <div class="stat"><div class="n">26</div><div class="l">мест у PVV — второго</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">мест у NSC — потеряли все 20</div></div>
+    </div>
+    <p>Исторически система строилась вокруг <em>verzuiling</em> — «столпов»: протестанты, католики, социалисты и либералы жили в параллельных вселенных со своими школами, газетами, профсоюзами. К 1970-м столпы рассыпались, но фрагментация осталась.</p>
+    <h4>Карта партий после октября 2025</h4>
+    <p><strong>D66</strong> — прогрессивные либералы, 26 мест. Лидер Роб Йеттен. Впервые в истории возглавили правительство. Победа стала сюрпризом — за месяц до выборов рейтинг был значительно ниже.</p>
+    <p><strong>PVV (Вилдерс)</strong> — 26 мест. Потерял треть от результата 2023 года. Все основные партии отказались от коалиции после опыта кабинета Схоф.</p>
+    <p><strong>VVD</strong> — 23 места. Либерально-консервативные. Лидер Йешилгёз. Вошла в Jetten I, несмотря на напряжение с D66.</p>
+    <p><strong>GL-PvdA</strong> — 20 мест. Объединённые зелёные и социал-демократы. Тиммерманс ушёл в отставку. В 2026-м партии планируют официально слиться.</p>
+    <p><strong>CDA</strong> — 19 мест. Христианские демократы, лидер Бонтенбал. В коалиции Jetten I. Умеренные, акцент на стабильности.</p>
+    <p><strong>NSC</strong> — потеряли все 20 мест. Наказание за участие в кабинете Схоф, который рухнул.</p>
+    <div class="pq"><p>Выборы 2025 года показали: нидерландские избиратели умеют наказывать. NSC вошла в коалицию с PVV — и потеряла всё. Урок короткий: в коалиции с радикалами ты разделяешь их ответственность.</p></div>
+  </section>
+
+  <section class="sec" id="s-exp">
+    <h3>Как принимаются решения, касающиеся экспатов напрямую</h3>
+    <p>Путь закона — от идеи до вашей жизни — занимает 2–4 года. На каждом этапе есть точки, где его можно отследить — и повлиять.</p>
+    <h4>Как следить</h4>
+    <p><strong>Internetconsultatie.nl</strong> — черновики законов до принятия. Любой может оставить комментарий. Лоббисты пользуются. Большинство людей — нет.</p>
+    <p><strong>Kamerstukken.nl</strong> — весь архив парламентских документов. <strong>Rijksoverheid.nl</strong> — официальные новости. Пять минут на поисковые оповещения — и о реформах узнаёте раньше HR-отдела.</p>
+    <h4>Poldermodel и социальные партнёры</h4>
+    <p>По многим трудовым и экономическим вопросам правительство обязано запросить мнение <strong>SER</strong> (совет работодателей, профсоюзов и независимых экспертов) до внесения закона. При миноритарном кабинете Jetten I роль социальных партнёров возросла: каждый закон нуждается в дополнительной поддержке.</p>
+    <div class="ibox"><strong>Полезно знать</strong>Если вас касается какая-либо реформа — поищите её на internetconsultatie.nl. Часто черновик публикуется за 1–2 года до принятия. Это точка входа, пока закон ещё можно изменить.</div>
+  </section>
+
+  <section class="sec" id="s-gem">
+    <h3>Местные выборы — почему важно даже без паспорта</h3>
+    <p><strong>Gemeenteraadsverkiezingen</strong> — следующие в ноябре 2026 года. Граждане стран ЕС без нидерландского паспорта вправе голосовать. Не граждане ЕС — нет, но дискуссия об этом периодически возвращается.</p>
+    <p><strong>Жильё</strong> — распределение, правила аренды, ограничения инвестиционной покупки.</p>
+    <p><strong>Интеграция</strong> — языковые курсы и инбургеринг организует gemeente. Разница между Амстердамом и маленьким городом — огромная.</p>
+    <p><strong>Местные налоги</strong> — OZB, мусорный и канализационный сборы. Ставки устанавливает муниципальный совет.</p>
+    <p><strong>Городская среда</strong> — велодорожки, парковки, зоны с низкими выбросами — местная политика.</p>
+    <div class="ibox"><strong>Практически</strong>Даже без права голоса стоит знать, кто управляет вашим городом. Состав муниципального совета определяет, насколько город помогает с интеграцией и как регулирует рынок аренды.</div>
+  </section>
+
+  <section class="sec" id="s-vote">
+    <h3>Как участвовать, если есть нидерландский паспорт</h3>
+    <p>Натурализация открывает полный спектр участия — но большинство голосует раз в четыре года и останавливается на этом.</p>
+    <p><strong>Уровни выборов:</strong> Tweede Kamer (национальный), provinciale staten (провинциальный, косвенно формирует сенат), gemeenteraad (местный), Europees Parlement. Нидерландцы за рубежом голосуют по почте — явка низкая, каждый голос весит больше среднего.</p>
+    <p><strong>Членство в партии</strong> — открыто, 20–60 €/год, заявка онлайн. При миноритарном кабинете внутрипартийная работа весит больше: каждое голосование в парламенте — переговоры.</p>
+    <p><strong>Burgerinitiatief</strong> — 40 000 подписей обязывают нижнюю палату рассмотреть вопрос. Работает. Депутаты в Нидерландах удивительно доступны — письмо от группы граждан вполне приводит к парламентскому запросу.</p>
+  </section>
+
+</div><!-- /p1 -->
+
+<!-- ══════════════════ ЧАСТЬ II ══════════════════════════════════ -->
+
+<div class="tabpane" id="p2">
+
+  <div class="phead">
+    <div class="pnum">Часть II</div>
+    <h2>Хроника: что менялось для экспатов<br>и иностранных студентов (2018–2026)</h2>
+    <p>Восемь лет поправок, реформ и разворотов — конкретно, без бюрократического языка, со ссылками</p>
+  </div>
+
+  <section class="sec" id="y2018">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2018</span><span class="ctx">Рютте III · VVD+CDA+D66+CU</span></div>
+
+```
+  <div class="titem">
+    <div class="tit">30%-regeling: срок льготы сокращён с 8 до 5 лет</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tt">Налоги</span></div>
+    <p>Поправка к Belastingplan 2019: срок льготы для иностранных специалистов сокращён с 8 до 5 лет. Те, кто пользовался более 5 лет, потеряли её с 1 января 2019 года. Одновременно введена привязка к норме WNT: льгота не распространяется на часть зарплаты выше «нормы Балькененде».</p>
+    <div class="tpol">Инициатива SP и PvdA, поддержана коалицией. Аргумент: льгота несправедлива по отношению к нидерландским специалистам той же квалификации. Работодатели возражали громко — безуспешно.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/internationaal-zakendoen/30-procentsregeling" target="_blank">Rijksoverheid — 30%-regeling →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Ужесточение ответственности работодателей за нелегальный наём</div>
+    <div class="ttags"><span class="tag te">Трудовые мигранты</span></div>
+    <p>Штрафы выросли до €8 000 за человека. Агентство занятости получило расширенные полномочия по проверке «рыночной необходимости» привлечения специалистов из-за рубежа — нужно доказать отсутствие аналогичных кандидатов внутри страны.</p>
+    <div class="tpol">Меры направлены против нелегального труда, но осложнили жизнь малому и среднему бизнесу, нанимающему IT-специалистов вне ЕС.</div>
+    <div class="tsrc"><a href="https://www.uwv.nl/nl/werkgevers/internationaal/buitenlandse-werknemer-in-dienst-nemen" target="_blank">UWV — наём иностранцев →</a></div>
   </div>
 </div>
-
-<section class="section" id="s-parliament">
-  <h3>Как устроена система: парламент, сенат и вечные коалиции</h3>
-  <p>Начнём с базы, которую все знают — и почти никто не понимает до конца. Нидерланды — парламентская монархия. Король Виллем-Александер — конституционный символ, его подпись стоит под законами, но реальная власть у <strong>Staten-Generaal</strong> — двухпалатного парламента — и у правительства, которое перед ним ответственно.</p>
-  <div class="gov-diagram">
-    <div class="gov-box"><div class="gb-num">150</div><div class="gb-name">Tweede Kamer</div><div class="gb-desc">Нижняя палата. Прямые выборы. Инициирует законы.</div></div>
-    <div class="gov-box"><div class="gb-num">75</div><div class="gb-name">Eerste Kamer</div><div class="gb-desc">Сенат. Косвенные выборы. Проверяет законы.</div></div>
-    <div class="gov-box"><div class="gb-num">66</div><div class="gb-name">Jetten I</div><div class="gb-desc">Мест у коалиции — меньше половины. Миноритарный кабинет.</div></div>
-  </div>
-  <p><strong>Tweede Kamer</strong> — 150 депутатов, избираемых раз в четыре года по пропорциональной системе без барьера (точнее, барьер составляет 1/150 ≈ 0,67%). Если партия набрала 10% голосов — получает 15 мест. Система почти не искажает волю избирателей.</p>
-  <p><strong>Eerste Kamer</strong> (сенат) — 75 сенаторов избираются косвенно через провинциальные парламенты. Это создаёт стратегический лаг: состав сената обновляется после провинциальных выборов, и правительство нередко обнаруживает, что большинства там нет. Кабинет Jetten I не имеет большинства ни в Tweede, ни в Eerste Kamer — беспрецедентная слабость, требующая договорённостей с оппозицией по каждому закону.</p>
-  <p>Сенат не вносит поправки — он либо принимает закон, либо отклоняет целиком. Это делает переговоры в Eerste Kamer отдельным политическим искусством.</p>
-  <div class="pull-quote"><p>В Нидерландах нет понятия «оппозиционная партия ни за что не проголосует». Межпартийные переговоры идут постоянно — это не слабость системы. Это её дизайн.</p></div>
-
-  <h4>Formateur и коалиционные переговоры</h4>
-  <p>После выборов 29 октября 2025 года кабинет Jetten I сформировался за 93 дня — быстро по нидерландским меркам. Коалиция D66+VVD+CDA имеет лишь 66 мест из 150, что делает её одним из самых слабых правительств страны за последние десятилетия. Каждое голосование требует переговоров с оппозицией.</p>
-  <p>Путь к кабинету: D66 (победитель) → verkenner Кольмес → informateurs Буйма и Вейерс (Вейерс отказался из-за утечки) → informateur Летшерт → formateur Йеттен → присяга 23 февраля 2026.</p>
-</section>
-
-<section class="section" id="s-parties">
-  <h3>Почему в Нидерландах так много партий — и почему это работает</h3>
-  <p>На выборах октября 2025 года в Tweede Kamer прошли <strong>15 партий</strong>. Барьер для входа — около 0,67% (1/150 голосов). Никакого пятипроцентного порога, как в Германии.</p>
-
-  <div class="stat-row">
-    <div class="stat-box"><div class="num">15</div><div class="label">партий в парламенте 2025</div></div>
-    <div class="stat-box"><div class="num">26</div><div class="label">мест у D66 — победителя</div></div>
-    <div class="stat-box"><div class="num">26</div><div class="label">мест у PVV — второй</div></div>
-    <div class="stat-box"><div class="num">0</div><div class="label">мест у NSC — потеряли все 20</div></div>
-  </div>
-
-  <p>Исторически нидерландская система строилась вокруг <strong>verzuiling</strong> — «столпов» общества: протестанты, католики, социалисты, либералы жили в параллельных вселенных со своими школами, газетами, профсоюзами. К 1970-м столпы рассыпались, но партийная фрагментация осталась.</p>
-
-  <h4>Карта партий после выборов октября 2025</h4>
-  <p><strong>D66</strong> — прогрессивные либералы; 26 мест, лидер Роб Йеттен. Эвтаназия, образование, проевропейская позиция. Впервые возглавляют правительство. Победа стала сюрпризом — за месяц до выборов рейтинг был ниже.</p>
-  <p><strong>PVV (Вилдерс)</strong> — националистическая правая; 26 мест. Потеряла почти треть от результата 2023 года. Все основные партии отказались от коалиции с PVV после опыта кабинета Схоф.</p>
-  <p><strong>VVD</strong> — либерально-консервативная; 23 места. После ухода Рютте в НАТО партию возглавляет Йешилгёз. Вошла в коалицию Jetten I, несмотря на напряжённые отношения с D66.</p>
-  <p><strong>GL-PvdA</strong> — объединённые «Зелёные левые» и социал-демократы; 20 мест. Потеряли 5 мест, Тиммерманс объявил об отставке с поста лидера. В 2026 году партии планируют официальное слияние.</p>
-  <p><strong>CDA</strong> — христианские демократы; 19 мест. Лидер Бонтенбал. Вошли в коалицию Jetten I. Умеренные консерваторы, акцент на стабильности и «сломанном цикле обещаний».</p>
-  <p><strong>NSC (Омтзихт)</strong> — катастрофически потеряли все 20 мест. Причина: NSC участвовал в кабинете Схоф, который рухнул, — избиратели наказали за ненадёжность.</p>
-  <p><strong>BBB</strong> — аграрные популисты; сохранили часть мест. Больше нет в правительстве после падения Схоф.</p>
-
-  <div class="pull-quote"><p>Выборы 2025 года показали: нидерландские избиратели умеют наказывать. NSC потеряла 20 мест из 20. Урок простой: в коалиции с радикалами ты разделяешь их ответственность.</p></div>
-</section>
-
-<section class="section" id="s-expats">
-  <h3>Как принимаются решения, которые касаются жизни экспатов напрямую</h3>
-  <p>Путь закона — от идеи до вашей жизни — занимает 2–4 года. На каждом этапе есть точки, где его можно отследить и даже повлиять.</p>
-  <h4>Этапы законодательного процесса</h4>
-  <p><strong>1. Consultatie.</strong> Министерство публикует черновик на <a href="https://www.internetconsultatie.nl" target="_blank">internetconsultatie.nl</a>. Любой может оставить комментарий. Лоббисты пользуются. Большинство — нет.</p>
-  <p><strong>2. Raad van State.</strong> Высший консультативный орган проверяет законопроект на юридическую последовательность. Мнение не обязательно, но политически весомо.</p>
-  <p><strong>3. Tweede Kamer.</strong> Профильный комитет изучает, приглашает экспертов. Здесь влияние через профессиональные ассоциации.</p>
-  <p><strong>4. Eerste Kamer.</strong> Принимает или отклоняет целиком. При миноритарном кабинете — ключевой фильтр.</p>
-  <p><strong>5. Staatsblad.</strong> Публикация = вступление в силу.</p>
-  <div class="info-box"><strong>Где следить</strong>Kamerstukken.nl — все парламентские документы. Rijksoverheid.nl — официальные новости. Internetconsultatie.nl — черновики до принятия. Пять минут на подписку по ключевым словам — и вы будете знать о реформах раньше HR-отдела.</div>
-  <h4>Poldermodel и SER</h4>
-  <p><strong>SER</strong> — совет работодателей, профсоюзов и экспертов. По многим трудовым и экономическим вопросам правительство обязано запросить мнение SER до внесения закона. При кабинете Jetten I, зависящем от поддержки оппозиции, роль социальных партнёров возросла ещё больше.</p>
-</section>
-
-<section class="section" id="s-gemeente">
-  <h3>Роль местных выборов — почему это важно даже без паспорта</h3>
-  <p><strong>Gemeenteraadsverkiezingen</strong> — выборы в муниципальные советы. Следующие — в ноябре 2026 года. Граждане ЕС без нидерландского паспорта вправе голосовать. Не граждане ЕС — нет, но дискуссия о расширении права голоса периодически возвращается в повестку.</p>
-  <h4>Что gemeente решает напрямую для вас</h4>
-  <p><strong>Жильё:</strong> распределение социального жилья, правила аренды, zelfbewoningsplicht (обязательство проживать в купленной квартире).</p>
-  <p><strong>Интеграция:</strong> языковые курсы, инбургеринг, сопровождение мигрантов. Разница между Амстердамом и маленьким городом — колоссальная.</p>
-  <p><strong>Налоги:</strong> OZB, afvalstoffenheffing, rioolheffing — ставки устанавливает gemeente.</p>
-  <p><strong>Городская среда:</strong> велодорожки, парковки, экологические зоны — это местная политика.</p>
-  <div class="info-box"><strong>Практически</strong>Состав gemeenteraad определяет, насколько ваш город помогает с интеграцией, как регулирует аренду и насколько приветлива среда для экспатов. Даже без права голоса — стоит знать, кто управляет вашим городом.</div>
-</section>
-
-<section class="section" id="s-vote">
-  <h3>Как участвовать, если есть нидерландский паспорт</h3>
-  <p>Натурализация открывает полный спектр участия. Но большинство натурализованных граждан-экспатов голосуют раз в четыре года и на этом останавливаются. Это, мягко говоря, недостаточно.</p>
-  <h4>Голосование</h4>
-  <p>Уровни: Tweede Kamer (национальные), provinciale staten (провинциальные), gemeenteraad (местные), Europees Parlement. За рубежом — по почте после регистрации. Явка нидерландцев за рубежом исторически низкая: каждый голос весит больше среднего.</p>
-  <h4>Членство в партии</h4>
-  <p>Открыто, дёшево (20–60 €/год), онлайн. При миноритарном кабинете Jetten I внутрипартийная работа важна особенно: каждое голосование в парламенте — переговоры.</p>
-  <h4>Burgerinitiatief</h4>
-  <p>40 000 подписей обязывают Tweede Kamer рассмотреть вопрос. Это работает. Депутаты в Нидерландах удивительно доступны — письмо от группы граждан вполне может привести к парламентскому запросу (kamervragen).</p>
-</section>
 ```
 
-  </div><!-- /tab1 -->
+  </section>
 
-  <!-- ═══════════════ TAB 2 ═══════════════ -->
-
-  <div class="tab-content" id="tab2">
+  <section class="sec" id="y2019">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2019</span><span class="ctx">Рютте III · Провинциальные выборы — сюрприз</span></div>
 
 ```
-<div class="part-header">
-  <div class="part-number">Часть II</div>
-  <h2>Хроника: что менялось для экспатов<br>и иностранных студентов (2018–2026)</h2>
-  <p>Восемь лет поправок, реформ и разворотов — конкретно, без бюрократического языка, со ссылками на источники</p>
+  <div class="titem">
+    <div class="tit">Переходный период 30%-regeling завершён — неожиданно для многих</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tt">Налоги</span></div>
+    <p>С 1 января 2019 льгота прекратила действие для пользовавшихся ею более 5 лет. Особенно болезненно для переехавших в 2010–2013 годах в расчёте на полные 8 лет. Экспатское сообщество собрало петицию (40+ тыс. подписей) — парламент рассмотрел, большинства изменений не отменил. Прецедент: условия могут меняться ретроактивно.</p>
+    <div class="tpol">Первый серьёзный сигнал о ненадёжности долгосрочного налогового планирования для иностранных специалистов.</div>
+    <div class="tsrc"><a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/30_procentsregeling/" target="_blank">Belastingdienst →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Провинциальные выборы: коалиция теряет большинство в сенате</div>
+    <div class="ttags"><span class="tag tp">Политика</span></div>
+    <p>Аграрные и правые партии взяли неожиданно много мест в провинциях, изменив состав Eerste Kamer. Рютте III потерял большинство в сенате. Ряд реформ, включая Wet inburgering, был заморожен.</p>
+    <div class="tpol">Азотный кризис — катализатор. Именно это голосование запустило многолетний сдвиг вправо, завершившийся победой PVV в 2023-м.</div>
+    <div class="tsrc"><a href="https://www.kiesraad.nl/actueel/nieuws/2019/03/27/uitslag-provinciale-statenverkiezingen-2019" target="_blank">Kiesraad — результаты 2019 →</a></div>
+  </div>
 </div>
-
-<section class="section" id="y2018">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2018</span>
-      <span class="year-context">Рютте III · VVD+CDA+D66+CU</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">30%-regeling: срок льготы сокращён с 8 до 5 лет</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-tax">Налоги</span></div>
-      <p>Поправка к Belastingplan 2019: срок применения налоговой льготы для иностранных специалистов сокращён с 8 до 5 лет. Переходный период — до 1 января 2019 года. Те, кто пользовался льготой более 5 лет, потеряли её со следующего года. Одновременно введена привязка к норме WNT: льгота не применяется к части зарплаты, превышающей «норму Балькененде».</p>
-      <div class="ti-political">Инициатива SP и PvdA, поддержана коалицией. Аргумент: льгота несправедлива по отношению к нидерландским специалистам той же квалификации. Работодатели (VNO-NCW) возражали громко, но безуспешно.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/internationaal-zakendoen/30-procentsregeling" target="_blank">Rijksoverheid — 30%-regeling →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Wet arbeid vreemdelingen: штрафы за нелегальный наём выросли</div>
-      <div class="ti-tags"><span class="tag tag-expat">Трудовые мигранты</span></div>
-      <p>Штрафы для работодателей за наём иностранцев без надлежащего разрешения выросли до €8 000 за человека. UWV получил расширенные полномочия по проверке «рыночной необходимости» привлечения специалистов из-за рубежа.</p>
-      <div class="ti-political">Меры направлены против нелегального труда (строительство, мясная промышленность), но осложнили жизнь МСБ, нанимающему IT-специалистов вне ЕС.</div>
-      <div class="ti-source">Источник: <a href="https://www.uwv.nl/nl/werkgevers/internationaal/buitenlandse-werknemer-in-dienst-nemen" target="_blank">UWV — наём иностранцев →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2019">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2019</span>
-      <span class="year-context">Рютте III · Провинциальные выборы — сюрприз BBB/FvD</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">30%-regeling: переходный период завершён — неожиданно для многих</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-tax">Налоги</span></div>
-      <p>С 1 января 2019 льгота де-факто прекратила действие для тех, кто пользовался ею более 5 лет. Belastingdienst разослал уведомления, но масштаб оказался неожиданным — особенно для переехавших в 2010–2013 годах. Экспатское сообщество собрало петицию с 40+ тысячами подписей — парламент рассмотрел, но большинства изменений не отменил. Прецедент: условия могут меняться ретроактивно.</p>
-      <div class="ti-political">Первый серьёзный сигнал о ненадёжности долгосрочного налогового планирования для иностранных специалистов в Нидерландах.</div>
-      <div class="ti-source">Источник: <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/30_procentsregeling/" target="_blank">Belastingdienst — 30% →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Провинциальные выборы: коалиция теряет большинство в сенате</div>
-      <div class="ti-tags"><span class="tag tag-social">Политика</span></div>
-      <p>На провинциальных выборах аграрные и правые партии (FvD, BBB-предшественники) взяли неожиданно много мест. Состав Eerste Kamer изменился: Рютте III потерял большинство в сенате. Ряд реформ — включая Wet inburgering — был заморожен.</p>
-      <div class="ti-political">Азотный кризис стал катализатором. Это же голосование запустило многолетний политический сдвиг вправо, завершившийся победой PVV в 2023-м.</div>
-      <div class="ti-source">Источник: <a href="https://www.kiesraad.nl/actueel/nieuws/2019/03/27/uitslag-provinciale-statenverkiezingen-2019" target="_blank">Kiesraad — результаты 2019 →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2020">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2020</span>
-      <span class="year-context">COVID-19 · Toeslagenaffaire · Рютте III</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">NOW: субсидии на зарплаты — экспаты защищены наравне с нидерландцами</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-social">Социальная защита</span></div>
-      <p>Программа NOW (Tijdelijke Noodmaatregel Overbrugging voor Werkgelegenheid) распространялась на всех работников с трудовым договором независимо от гражданства. Экспаты были защищены наравне с нидерландцами. Самозанятые получили TOZO — но требование регистрации в BRP оставило за бортом часть мигрантов без официальной регистрации.</p>
-      <div class="ti-political">Пандемия обнажила: социальная защита завязана на трудовом договоре, а не гражданстве — плюс для высококвалифицированных экспатов, минус для нелегально работающих.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/NOW" target="_blank">Rijksoverheid — NOW →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Toeslagenaffaire: дискриминация по двойному гражданству в алгоритмах налоговой</div>
-      <div class="ti-tags"><span class="tag tag-social">Социальные выплаты</span><span class="tag tag-expat">Мигранты</span></div>
-      <p>Парламентское расследование показало: Belastingdienst годами обвиняла родителей в мошенничестве с детскими пособиями (kinderopvangtoeslag). Непропорционально затронуты семьи с миграционным прошлым. Алгоритмы использовали двойное гражданство как фактор риска — это де-факто дискриминация. Скандал привёл к отставке кабинета Рютте III в январе 2021 года.</p>
-      <div class="ti-political">Юридические последствия продолжаются до сих пор. Кабинет Jetten I сохранил пост staatssecretaris Herstel Toeslagen (внепартийная Sandra Palmen).</div>
-      <div class="ti-source">Источник: <a href="https://www.tweedekamer.nl/kamerstukken/detail?id=2020D48946&did=2020D48946" target="_blank">Tweede Kamer — доклад «Ongekend Onrecht» →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2021">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2021</span>
-      <span class="year-context">Выборы · Рютте IV · 299 дней формирования — рекорд</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Nieuwe Wet inburgering (вступил в силу 1.01.2022)</div>
-      <div class="ti-tags"><span class="tag tag-expat">Мигранты</span><span class="tag tag-social">Интеграция</span><span class="tag tag-citizenship">Гражданство</span></div>
-      <p>С 1 января 2022 ответственность за интеграционные курсы перешла от мигранта к <strong>gemeente</strong>. Город обязан составить личный план (PIP) и обеспечить обучение. Три маршрута: B1-route (стандарт, до B1 нидерландского), Z-route (для людей с ограниченными возможностями обучения), Onderwijsroute (до B2/MBO). Срок — 3 года. Требование касается обладателей разрешений по гуманитарным основаниям и воссоединению семьи. Kennismigranten освобождены, но языковой экзамен для натурализации остаётся.</p>
-      <div class="ti-political">Реформа VVD+CDA+D66+CU. Прежняя система не работала: люди платили за некачественные курсы сами и не сдавали экзамены.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/inburgering" target="_blank">Rijksoverheid — Inburgering →</a> · <a href="https://wetten.overheid.nl/BWBR0044769" target="_blank">Officiële tekst Wet inburgering 2021 →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Wet toelating terbeschikkingstelling: лицензирование уитценбюро (начало процесса)</div>
-      <div class="ti-tags"><span class="tag tag-expat">Трудовые мигранты</span></div>
-      <p>Запущен законодательный процесс по введению обязательного лицензирования для агентств временного труда. Основан на докладе комиссии Ромера «Geen tweederangs werknemers». Закон принят позже — вступил в силу в 2025 году.</p>
-      <div class="ti-political">Широкая надпартийная поддержка: левые — за защиту труда, правые — за честную конкуренцию.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/uitzendbureau/vergunningplicht-uitzendbureaus" target="_blank">Rijksoverheid — лицензирование →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2022">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2022</span>
-      <span class="year-context">Рютте IV · VVD+D66+CDA+CU · Энергетический кризис · Украина</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">30%-regeling: кэп на уровне нормы Балькененде закреплён в коалиционном соглашении</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-tax">Налоги</span></div>
-      <p>Коалиционное соглашение Рютте IV официально закрепило ограничение: льгота применяется только к части зарплаты до нормы Балькененде (€233 000 в 2024 г.). Зарплата выше — льготы нет. Вступило в силу с 1 января 2024 года. Параллельно: усилена проверка наличия подходящих кандидатов внутри страны до оформления kennismigrant.</p>
-      <div class="ti-political">D66 и GroenLinks критиковали льготу как «подарок богатым иностранцам». VVD защищала. Компромисс — кэп — устроил всех ровно настолько, чтобы не разрушить коалицию.</div>
-      <div class="ti-source">Источник: <a href="https://ondernemersplein.overheid.nl/personeel/aannemen/de-30-procent-regeling/" target="_blank">Ondernemersplein — 30%-regeling →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Tijdelijke Wet Opvang Ontheemden: украинские беженцы</div>
-      <div class="ti-tags"><span class="tag tag-expat">Беженцы</span><span class="tag tag-social">Социальные выплаты</span></div>
-      <p>После 24 февраля 2022 ЕС активировал Директиву о временной защите. Нидерланды приняли её через временный закон. Украинцы получили: автоматическое разрешение на пребывание, право на работу без отдельного разрешения, доступ к социальным выплатам через gemeente, образование для детей. Система отличалась от стандартной процедуры убежища — быстрее и мягче.</p>
-      <div class="ti-political">Надпартийная поддержка в первые месяцы. Затем BBB и PVV начали поднимать вопросы о стоимости и «неравном подходе» к беженцам из других регионов.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/vluchtelingen-asielzoekers-en-migranten/opvang-ontheemden-oekraine" target="_blank">Rijksoverheid — Opvang Oekraïne →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Naturalisatiebeleid: требование самодостаточности ужесточено</div>
-      <div class="ti-tags"><span class="tag tag-citizenship">Гражданство</span><span class="tag tag-expat">Экспаты</span></div>
-      <p>Требования к натурализации пересмотрены: период «самодостаточности» без bijstand увеличен с 2 до 3 лет. Те, кто временно использовал социальные выплаты в период COVID, нередко оказались заблокированы.</p>
-      <div class="ti-political">VVD и CDA настаивали на ужесточении. D66 сопротивлялась. Результат — компромисс, оказавшийся жёстче, чем ожидало экспатское сообщество.</div>
-      <div class="ti-source">Источник: <a href="https://ind.nl/nl/nederlander-worden/naturalisatie" target="_blank">IND — Naturalisatie →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2023">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2023</span>
-      <span class="year-context">Падение Рютте IV · Выборы ноябрь · Победа PVV</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Кабинет Рютте IV пал — из-за миграционной политики</div>
-      <div class="ti-tags"><span class="tag tag-social">Политика</span></div>
-      <p>В июле 2023 кабинет ушёл в отставку: CU не смогла принять план по сокращению приёма беженцев. Нидерланды перешли в режим <em>demissionair kabinet</em> до мая 2024 года. На выборах ноября 2023-го PVV Вилдерса неожиданно победила с 37 местами.</p>
-      <div class="ti-political">Первая победа антисистемных националистов такого масштаба в Нидерландах. Формирование кабинета Схоф I заняло почти год.</div>
-      <div class="ti-source">Источник: <a href="https://www.parlement.com/kabinet-rutte-iv" target="_blank">Parlement.com — Рютте IV →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Wet toelating verhuurders и Wet betaalbare huur</div>
-      <div class="ti-tags"><span class="tag tag-housing">Жильё</span><span class="tag tag-expat">Экспаты</span><span class="tag tag-student">Студенты</span></div>
-      <p><strong>Wet toelating verhuurders</strong> обязал арендодателей регистрироваться. Муниципалитеты получили право вводить zelfbewoningsplicht — обязательство жить в купленном жилье до 4 лет. Инвестиционная аренда в крупных городах сократилась.</p>
-      <p><strong>Wet betaalbare huur</strong> расширила зону регулируемых цен: порог поднят до ~€1 100/мес. Для арендаторов — хорошо. Для частного дорогого сегмента — рынок сжался.</p>
-      <div class="ti-political">Реформы продвигал министр жилья Де Йонге (CDA). VVD сопротивлялась, но поддержала в рамках коалиционного соглашения. Кабинет Jetten I готовит частичный пересмотр.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/huurwoning/betaalbare-huur" target="_blank">Rijksoverheid — Betaalbare huur →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Wet internationalisering in balans: ограничения англоязычных программ</div>
-      <div class="ti-tags"><span class="tag tag-student">Студенты</span></div>
-      <p>Законопроект обязал университеты обосновывать необходимость каждой англоязычной программы. Numerus fixus расширен. Ряд вузов (Leiden, TU Delft, TU/e) объявил о сокращении приёма иностранных студентов из-за нехватки жилья и ресурсов. Студенты из-за пределов ЕС платят в 3–5 раз больше нидерландцев.</p>
-      <div class="ti-political">D66 и OCW: нидерландский язык под угрозой в собственных университетах. Работодатели и universiteitslid против: англоязычные программы — крупный доход.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/internationalisering-in-het-hoger-onderwijs" target="_blank">Rijksoverheid — Internationalisering →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2024">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2024</span>
-      <span class="year-context">Kabinet-Schoof I · PVV+VVD+NSC+BBB · С июля 2024</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">30%-regeling: ступенчатая схема 30/20/10 введена, затем частично отменена</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-tax">Налоги</span></div>
-      <p>Коалиционное соглашение Схоф I предусматривало снижение льготы: 30% (первые 20 мес.) → 20% → 10% (последние 20 мес.) при сохранении срока 5 лет. Это вызвало резкую реакцию работодателей и компаний — особенно ASML. В планах к Prinsjesdag 2024 схема была <strong>частично отменена</strong>: льгота зафиксирована на уровне 30% до конца 2026 года, с понижением до 27% с 2027 года.</p>
-      <div class="ti-political">Оценка ASML и исследование PwC показали: ступенчатая схема снизила бы приток kennismigranten на 15–20%. Это отрезвило даже PVV.</div>
-      <div class="ti-source">Источник: <a href="https://ondernemersplein.overheid.nl/wetswijzigingen/vergoeding-30-procent-regeling-expats-wordt-27-procent/" target="_blank">Ondernemersplein — 27% с 2027 →</a> · <a href="https://www.pwc.nl/nl/actueel-en-publicaties/belastingnieuws/loonbelasting-en-sociale-verzekeringen/evaluatie-expat-regeling.html" target="_blank">PwC — оценка →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Wet toelating uitzendbureaus: обязательное лицензирование вступило в силу</div>
-      <div class="ti-tags"><span class="tag tag-expat">Трудовые мигранты</span></div>
-      <p>С 1 января 2025 агентства временного труда обязаны иметь лицензию SNA. Работа без лицензии уголовно наказуема. Для трудовых мигрантов из Польши, Румынии, Болгарии — более жёсткий контроль условий труда и жилья, предоставляемого агентствами.</p>
-      <div class="ti-political">Рекомендации комиссии Ромера воплощены в законе. Критика: переходный период слишком короткий.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/uitzendbureau/vergunningplicht-uitzendbureaus" target="_blank">Rijksoverheid — лицензирование уитценбюро →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Asielcrisiswet: самая жёсткая миграционная реформа «в истории Нидерландов»</div>
-      <div class="ti-tags"><span class="tag tag-expat">Беженцы</span><span class="tag tag-social">Социальные выплаты</span></div>
-      <p>Кабинет Схоф запустил «кризисный режим» в системе убежища: сокращение срока ВНЖ по гуманитарным основаниям (с 5 до 3 лет), 18 месяцев ожидания для воссоединения семьи, региональное распределение беженцев по муниципалитетам. Raad van State выразил серьёзные сомнения в конституционности ряда положений. Часть мер заблокирована судами.</p>
-      <div class="ti-political">PVV — идеолог. NSC пытался смягчить. Именно разногласия по этому закону привели к выходу PVV из коалиции в июне 2025 года и к досрочным выборам.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/asielopvang/asielcrisiswet" target="_blank">Rijksoverheid — Asielcrisiswet →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2025">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2025</span>
-      <span class="year-context">Падение Схоф I (июнь) · Выборы 29 октября · D66 победила</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">PVV выходит из коалиции: падение кабинета Схоф I</div>
-      <div class="ti-tags"><span class="tag tag-social">Политика</span></div>
-      <p>3 июня 2025 года PVV вышла из коалиции из-за разногласий по миграционной политике — парадоксально, именно та партия, ради чьей повестки кабинет создавался, его и разрушила. 23 августа 2025-го NSC также покинул коалицию — из-за позиции по санкциям против Израиля за войну в Газе. Объявлены досрочные выборы на 29 октября.</p>
-      <div class="ti-political">Второй раз за два года Нидерланды идут на досрочные выборы из-за миграционного вопроса. Избиратели наказали все партии Схоф: PVV —11 мест, NSC —20 мест, BBB и VVD потеряли тоже.</div>
-      <div class="ti-source">Источник: <a href="https://nl.wikipedia.org/wiki/Kabinet-Schoof" target="_blank">Wikipedia — Kabinet-Schoof →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">30%-regeling: схема 30/20/10 окончательно отменена — льгота стабилизирована на 30%</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-tax">Налоги</span></div>
-      <p>В рамках Belastingplan 2025 ступенчатая схема отменена. Льгота остаётся на уровне <strong>30%</strong> на 2025 и 2026 год. С 1 января 2027 — снижение до <strong>27%</strong>. Срок — максимум 5 лет. Partiële buitenlandse belastingplicht (частичная нерезидентность по box 2 и box 3) отменена с 2025 года. Переходный период для пользовавшихся старой 30%-regeling до конца декабря 2023: право на partiële plicht сохраняется до 31.12.2026.</p>
-      <div class="ti-political">Решение принято под давлением ASML и VNO-NCW. Бизнес добился стабильности, но полного возврата к прежним условиям не произошло.</div>
-      <div class="ti-source">Источник: <a href="https://ondernemersplein.overheid.nl/personeel/aannemen/de-30-procent-regeling/" target="_blank">Ondernemersplein — актуальные условия →</a> · <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/30_procentsregeling/" target="_blank">Belastingdienst →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Studentenhuisvesting: ограничения иностранного приёма в университетах</div>
-      <div class="ti-tags"><span class="tag tag-student">Студенты</span></div>
-      <p>Университеты получили законодательное право ограничивать приём иностранных студентов на перегруженных специальностях. TU/e в Эйндховене и ряд других вузов использовали эти права немедленно. Иностранные студенты вне ЕС платят в 3–5 раз больше нидерландцев. Студенческое жильё — политически токсичная тема.</p>
-      <div class="ti-political">Тема «иностранные студенты занимают жильё» стала частью предвыборного нарратива 2025 года. Упрощена, но электорально эффективна.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/onderwerpen/internationalisering-in-het-hoger-onderwijs" target="_blank">Rijksoverheid — Internationalisering →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Выборы 29 октября: D66 побеждает, PVV теряет позиции</div>
-      <div class="ti-tags"><span class="tag tag-social">Политика</span></div>
-      <p>D66 (26 мест) и PVV (26 мест) финишировали практически вровень — самый близкий результат с 1956 года. D66 официально подтверждена победителем. D66 почти утроила результат 2023 года. NSC потеряла все 20 мест. Все основные партии отказались от коалиции с PVV. Вилдерс признал невозможность войти в правительство.</p>
-      <div class="ti-political">Нидерланды стали тестом для европейских правых: популизм не безграничен. Результат D66 — крупнейший в истории партии.</div>
-      <div class="ti-source">Источник: <a href="https://en.wikipedia.org/wiki/2025_Dutch_general_election" target="_blank">Wikipedia — выборы 2025 →</a> · <a href="https://www.kiesraad.nl" target="_blank">Kiesraad →</a></div>
-    </div>
-
-  </div>
-</section>
-
-<section class="section" id="y2026">
-  <div class="timeline">
-
-    <div class="timeline-year">
-      <span class="year-num">2026</span>
-      <span class="year-context">Kabinet-Jetten I · D66+VVD+CDA · С 23 февраля 2026</span>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Kabinet-Jetten I: присяга и акккорд «Aan de slag»</div>
-      <div class="ti-tags"><span class="tag tag-social">Политика</span><span class="tag tag-expat">Экспаты</span></div>
-      <p>23 февраля 2026 года присягнул кабинет D66+VVD+CDA под руководством Роба Йеттена (D66) — самого молодого премьера в истории Нидерландов (38 лет). Коалиция миноритарная: 66/150 мест в Tweede Kamer и 22/75 в Eerste Kamer. Каждый закон требует переговоров с оппозицией.</p>
-      <p>Ключевые приоритеты коалиционного соглашения: инвестиции в оборону (до 3,5% ВВП), реформа здравоохранения (eigen risico вырастет с €385 до €460), возврат финансирования образования (отменены сокращения Схоф I), жильё, стикстоф — снижение выбросов на 23–25% к 2030 году.</p>
-      <div class="ti-political">Формирование заняло 93 дня — быстро для Нидерландов. Оппозиция: GL-PvdA (20 мест) признала, что «управление снова в хороших руках», хотя и не согласна с политикой.</div>
-      <div class="ti-source">Источник: <a href="https://www.rijksoverheid.nl/regering" target="_blank">Rijksoverheid — кабинет →</a> · <a href="https://www.kabinetsformatie2025.nl/documenten/2026/01/30/aan-de-slag---coalitieakkoord-2026-2030" target="_blank">Коалиционное соглашение →</a> · <a href="https://www.parlement.com/kabinet-jetten-2026-heden" target="_blank">Parlement.com →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">30%-regeling в 2026: стабильно 30%, переходный период WNT завершён</div>
-      <div class="ti-tags"><span class="tag tag-expat">Экспаты</span><span class="tag tag-tax">Налоги</span></div>
-      <p>В 2026 году льгота составляет <strong>30%</strong> от зарплаты до нормы WNT (€262 000 в 2026 г.). Переходный период для WNT-кэпа завершён с 1 января 2026: ограничение теперь действует для всех, включая тех, кто получил льготу до 2022 года. С 1 января 2027 льгота снизится до <strong>27%</strong>, одновременно вырастет минимальная зарплата для участия (с ~€48 000 до ~€50 400). Partiële buitenlandse belastingplicht окончательно упразднена.</p>
-      <p>Кабинет Jetten I не анонсировал новых изменений в 30%-regeling — акцент в налоговой политике сделан на других приоритетах. D66 исторически поддерживала отмену льготы, но в коалиционных переговорах вопрос не стал приоритетным.</p>
-      <div class="ti-political">Экспатские организации добиваются долгосрочной стабильности правил — чтобы компании могли планировать на горизонт 5+ лет.</div>
-      <div class="ti-source">Источник: <a href="https://ondernemersplein.overheid.nl/wetswijzigingen/vergoeding-30-procent-regeling-expats-wordt-27-procent/" target="_blank">Ondernemersplein — 27% с 2027 →</a> · <a href="https://www.bakertilly.nl/en/inzichten/kennisartikel/new-threshold-amounts-for-expats-and-highly-skilled-migrants-in-2026" target="_blank">Baker Tilly — нормы 2026 →</a></div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="ti-title">Gemeenteraadsverkiezingen 2026: ноябрь</div>
-      <div class="ti-tags"><span class="tag tag-social">Политика</span><span class="tag tag-expat">Экспаты</span></div>
-      <p>Осенью 2026 года пройдут муниципальные выборы по всей стране. Граждане ЕС без нидерландского паспорта вправе голосовать — регистрация через DigiD или форму в gemeente. Ключевые темы в городах с большим числом экспатов: жильё, интеграция, студенческий вопрос. В Амстердаме доминируют GL-PvdA и D66. В Эйндховене сильны промышленные интересы (ASML-эффект). В Гааге — партии с жёсткой позицией по иммиграции.</p>
-      <div class="ti-political">Первые выборы после победы D66 на национальном уровне. Партия ожидает роста и в муниципалитетах — но местная политика живёт своей логикой.</div>
-      <div class="ti-source">Источник: <a href="https://www.kiesraad.nl" target="_blank">Kiesraad — информация о выборах →</a></div>
-    </div>
-
-  </div>
-</section>
 ```
 
-  </div><!-- /tab2 -->
+  </section>
 
-  <!-- ═══════════════ TAB 3 ═══════════════ -->
-
-  <div class="tab-content" id="tab3">
+  <section class="sec" id="y2020">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2020</span><span class="ctx">COVID-19 · Toeslagenaffaire · Рютте III</span></div>
 
 ```
-<div class="part-header">
-  <div class="part-number">Часть III</div>
-  <h2>Политический словарь:<br>37 терминов, которые нужно знать</h2>
-  <p>Нидерландский политический язык — точный и экономный. Один термин часто несёт больше смысла, чем абзац объяснений. Кликните на заголовок столбца для сортировки.</p>
+  <div class="titem">
+    <div class="tit">NOW: субсидии на зарплаты защитили экспатов наравне с нидерландцами</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tp">Социальная защита</span></div>
+    <p>Программа экстренной поддержки занятости распространялась на всех работников с трудовым договором независимо от гражданства. Самозанятые получили отдельную поддержку — но при условии регистрации по месту жительства. Те без официальной регистрации нередко выпадали.</p>
+    <div class="tpol">Пандемия обнажила: защита завязана на трудовом договоре, а не гражданстве — плюс для высококвалифицированных экспатов, минус для нелегально работающих.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19/NOW" target="_blank">Rijksoverheid — NOW →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Toeslagenaffaire: дискриминация мигрантов в алгоритмах налоговой</div>
+    <div class="ttags"><span class="tag tp">Социальные выплаты</span><span class="tag te">Мигранты</span></div>
+    <p>Парламентское расследование показало: налоговая годами обвиняла родителей в мошенничестве с детскими пособиями — непропорционально затрагивая семьи с миграционным прошлым. Алгоритмы использовали двойное гражданство как фактор риска. Де-факто дискриминация. Скандал привёл к отставке кабинета Рютте III в январе 2021 года.</p>
+    <div class="tpol">Юридические последствия продолжаются до сих пор. Кабинет Jetten I сохранил специальный пост для решения этого вопроса.</div>
+    <div class="tsrc"><a href="https://www.tweedekamer.nl/kamerstukken/detail?id=2020D48946&did=2020D48946" target="_blank">Tweede Kamer — доклад «Ongekend Onrecht» →</a></div>
+  </div>
 </div>
-
-<section class="section visible">
-  <div class="dict-controls">
-    <input class="dict-search" type="text" id="dictSearch" placeholder="Поиск по термину или переводу…" oninput="filterTable()">
-    <select class="dict-filter" id="dictFreq" onchange="filterTable()">
-      <option value="">Все частоты</option>
-      <option value="Высокая">Высокая</option>
-      <option value="Средняя">Средняя</option>
-      <option value="Специфическая">Специфическая</option>
-    </select>
-    <span class="dict-count" id="dictCount">37 терминов</span>
-  </div>
-  <div class="dict-table-wrap">
-    <table id="dictTable">
-      <thead>
-        <tr>
-          <th onclick="sortTable(0)">Термин</th>
-          <th onclick="sortTable(1)">Перевод</th>
-          <th>Значение и контекст</th>
-          <th onclick="sortTable(3)">Частота</th>
-        </tr>
-      </thead>
-      <tbody id="dictBody"></tbody>
-    </table>
-  </div>
-</section>
 ```
 
-  </div><!-- /tab3 -->
+  </section>
 
-  <!-- FOOTER -->
+  <section class="sec" id="y2021">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2021</span><span class="ctx">Выборы · Рютте IV · 299 дней — рекорд формирования</span></div>
 
-  <footer>
-    <div class="footer-left">
-      <div class="accent-line"></div>
-      <strong>Политический гид по Нидерландам</strong><br>
-      для русскоязычных экспатов<br><br>
-      Автор: Jane Orlova · 5 мая 2026<br>
-      Актуально на апрель 2026 · Kabinet-Jetten I
+```
+  <div class="titem">
+    <div class="tit">Nieuwe Wet inburgering: ответственность за интеграцию перешла к городу</div>
+    <div class="ttags"><span class="tag te">Мигранты</span><span class="tag tp">Интеграция</span><span class="tag tc">Гражданство</span></div>
+    <p>С 1 января 2022 ответственность за курсы перешла от мигранта к городу. Gemeente обязана составить личный план и обеспечить обучение. Три маршрута: B1 (стандарт), Z-route (ограниченные возможности), Onderwijsroute (до B2/MBO). Срок — 3 года. Затрагивает беженцев и воссоединившихся семьи. Высококвалифицированные мигранты освобождены, но языковой экзамен для натурализации остаётся.</p>
+    <div class="tpol">Прежняя система не работала: люди платили за некачественные курсы самостоятельно и не сдавали экзамены.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/inburgering" target="_blank">Rijksoverheid — Inburgering →</a> · <a href="https://wetten.overheid.nl/BWBR0044769" target="_blank">Текст закона →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Начало процесса лицензирования агентств временного труда</div>
+    <div class="ttags"><span class="tag te">Трудовые мигранты</span></div>
+    <p>Запущен законодательный процесс обязательного лицензирования уитценбюро — на основе доклада «Geen tweederangs werknemers» (Не работники второго сорта). Закон вступил в силу позже — в 2025 году.</p>
+    <div class="tpol">Надпартийная поддержка: левые — за защиту труда, правые — за честную конкуренцию для нидерландских компаний.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/uitzendbureau/vergunningplicht-uitzendbureaus" target="_blank">Rijksoverheid — лицензирование →</a></div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <section class="sec" id="y2022">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2022</span><span class="ctx">Рютте IV · VVD+D66+CDA+CU · Украина · Энергокризис</span></div>
+
+```
+  <div class="titem">
+    <div class="tit">30%-regeling: потолок на уровне нормы Балькененде закреплён</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tt">Налоги</span></div>
+    <p>Коалиционное соглашение Рютте IV официально закрепило ограничение: льгота применяется только к части зарплаты до ~€233 000 (норма WNT, вступила в силу с 2024 г.). Параллельно усилена проверка: нужно доказать отсутствие подходящих кандидатов внутри страны до оформления высококвалифицированного мигранта.</p>
+    <div class="tpol">D66 и GroenLinks критиковали льготу. VVD защищала. Кэп — компромисс, устроивший всех ровно настолько, чтобы не разрушить коалицию.</div>
+    <div class="tsrc"><a href="https://ondernemersplein.overheid.nl/personeel/aannemen/de-30-procent-regeling/" target="_blank">Ondernemersplein — 30%-regeling →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Украинские беженцы: временная защита ЕС реализована через нидерландский закон</div>
+    <div class="ttags"><span class="tag te">Беженцы</span><span class="tag tp">Социальные выплаты</span></div>
+    <p>После 24 февраля ЕС активировал Директиву о временной защите. Нидерланды реализовали её через временный закон. Украинцы получили: автоматическое разрешение на пребывание, право на работу без отдельного разрешения, социальные выплаты через город, образование для детей — и всё это значительно быстрее стандартной процедуры убежища.</p>
+    <div class="tpol">Надпартийная поддержка в первые месяцы. Затем BBB и PVV начали поднимать вопросы о стоимости и «неравном подходе» к беженцам из других регионов.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/vluchtelingen-asielzoekers-en-migranten/opvang-ontheemden-oekraine" target="_blank">Rijksoverheid — приём украинцев →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Ужесточение требований к натурализации: 3 года без пособий вместо 2</div>
+    <div class="ttags"><span class="tag tc">Гражданство</span><span class="tag te">Экспаты</span></div>
+    <p>Период «самодостаточности» без использования социальных пособий увеличен с 2 до 3 лет. Те, кто временно использовал выплаты в период COVID, нередко оказались заблокированы при подаче на натурализацию.</p>
+    <div class="tpol">VVD и CDA настаивали на ужесточении. D66 сопротивлялась. Итог — жёстче, чем ожидало экспатское сообщество.</div>
+    <div class="tsrc"><a href="https://ind.nl/nl/nederlander-worden/naturalisatie" target="_blank">IND — Naturalisatie →</a></div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <section class="sec" id="y2023">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2023</span><span class="ctx">Падение Рютте IV · Выборы ноябрь · Победа PVV</span></div>
+
+```
+  <div class="titem">
+    <div class="tit">Кабинет Рютте IV пал из-за разногласий по миграции</div>
+    <div class="ttags"><span class="tag tp">Политика</span></div>
+    <p>В июле 2023 кабинет ушёл в отставку: партия CU не смогла принять план по сокращению приёма беженцев. Нидерланды перешли в режим «уходящего правительства». На выборах ноября 2023-го PVV Вилдерса победила с 37 местами — неожиданно для большинства.</p>
+    <div class="tpol">Первая победа антисистемных националистов такого масштаба. Формирование кабинета Схоф заняло почти год.</div>
+    <div class="tsrc"><a href="https://www.parlement.com/kabinet-rutte-iv" target="_blank">Parlement.com — Рютте IV →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Реформа рынка аренды: ограничения для арендодателей и потолок цен</div>
+    <div class="ttags"><span class="tag th">Жильё</span><span class="tag te">Экспаты</span><span class="tag ts">Студенты</span></div>
+    <p>Принят закон, обязывающий арендодателей регистрироваться. Города получили право вводить <em>zelfbewoningsplicht</em> — обязательство жить в купленной квартире до 4 лет. Параллельно введён потолок регулируемой аренды около €1 100/мес. — огромный сегмент рынка стал регулируемым. Инвестиционная аренда в крупных городах резко сократилась.</p>
+    <div class="tpol">VVD сопротивлялась, но поддержала в рамках соглашения. Кабинет Jetten I готовит частичный откат.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/huurwoning/betaalbare-huur" target="_blank">Rijksoverheid — Betaalbare huur →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Ограничения англоязычных программ и приёма иностранных студентов</div>
+    <div class="ttags"><span class="tag ts">Студенты</span></div>
+    <p>Университеты обязали обосновывать каждую англоязычную программу. Квоты приёма расширены на новые специальности. TU/e, TU Delft и ряд других вузов объявили о сокращении иностранного набора из-за нехватки жилья. Студенты вне ЕС платят в 3–5 раз больше нидерландцев.</p>
+    <div class="tpol">Аргумент: нидерландский язык под угрозой в собственных университетах. Работодатели и университеты — против: англоязычные программы приносят значительный доход.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/internationalisering-in-het-hoger-onderwijs" target="_blank">Rijksoverheid — Internationalisering →</a></div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <section class="sec" id="y2024">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2024</span><span class="ctx">Kabinet-Schoof I · PVV+VVD+NSC+BBB · с июля 2024</span></div>
+
+```
+  <div class="titem">
+    <div class="tit">30%-regeling: ступенчатая схема 30/20/10 введена — и тут же частично отменена</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tt">Налоги</span></div>
+    <p>Коалиционное соглашение Схоф I предусмотрело снижение льготы: 30% (первые 20 мес.) → 20% → 10%. Это вызвало резкую реакцию работодателей и крупных компаний. К осени 2024 схема была <strong>частично отменена</strong>: льгота зафиксирована на уровне 30% до конца 2026 года, с понижением до 27% с 2027-го.</p>
+    <div class="tpol">Независимая оценка показала: ступенчатая схема снизила бы приток специалистов на 15–20%. Это отрезвило даже PVV.</div>
+    <div class="tsrc"><a href="https://ondernemersplein.overheid.nl/wetswijzigingen/vergoeding-30-procent-regeling-expats-wordt-27-procent/" target="_blank">Ondernemersplein — 27% с 2027 →</a> · <a href="https://www.pwc.nl/nl/actueel-en-publicaties/belastingnieuws/loonbelasting-en-sociale-verzekeringen/evaluatie-expat-regeling.html" target="_blank">PwC — оценка →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Обязательное лицензирование агентств временного труда вступило в силу</div>
+    <div class="ttags"><span class="tag te">Трудовые мигранты</span></div>
+    <p>С 1 января 2025 уитценбюро обязаны иметь лицензию. Работа без неё уголовно наказуема. Для трудовых мигрантов из Польши, Румынии, Болгарии — более жёсткий контроль условий труда и жилья, предоставляемого агентствами.</p>
+    <div class="tpol">Критика: переходный период слишком короткий, часть агентств просто исчезла с рынка без замены.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/uitzendbureau/vergunningplicht-uitzendbureaus" target="_blank">Rijksoverheid →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">«Самая жёсткая миграционная реформа в истории» — и её конституционные проблемы</div>
+    <div class="ttags"><span class="tag te">Беженцы</span><span class="tag tp">Социальные выплаты</span></div>
+    <p>Кабинет Схоф запустил «кризисный режим»: сокращение ВНЖ по гуманитарным основаниям (с 5 до 3 лет), 18 месяцев ожидания воссоединения семьи вместо 3, принудительное распределение беженцев по городам. Высший консультативный орган выразил серьёзные сомнения в конституционности. Часть мер заблокирована судами.</p>
+    <div class="tpol">PVV — идеолог. Именно разногласия по этому закону привели к выходу PVV из коалиции в июне 2025-го и досрочным выборам.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/onderwerpen/asielopvang/asielcrisiswet" target="_blank">Rijksoverheid — Asielcrisiswet →</a></div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <section class="sec" id="y2025">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2025</span><span class="ctx">Падение Схоф (июнь) · Выборы 29 октября · Победа D66</span></div>
+
+```
+  <div class="titem">
+    <div class="tit">PVV выходит из коалиции — кабинет Схоф рухнул</div>
+    <div class="ttags"><span class="tag tp">Политика</span></div>
+    <p>3 июня 2025 PVV покинула коалицию из-за разногласий по миграции — та самая партия, ради чьей повестки кабинет создавался, его и разрушила. 23 августа NSC также вышел — из-за позиции по санкциям против Израиля. Объявлены досрочные выборы на 29 октября.</p>
+    <div class="tpol">Второй раз за два года — досрочные выборы из-за миграции. Избиратели наказали все партии Схоф I.</div>
+    <div class="tsrc"><a href="https://nl.wikipedia.org/wiki/Kabinet-Schoof" target="_blank">Wikipedia — Kabinet-Schoof →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">30%-regeling стабилизирована: схема 30/20/10 окончательно отменена</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tt">Налоги</span></div>
+    <p>В рамках Belastingplan 2025 ступенчатая схема отменена. Льгота остаётся <strong>30%</strong> на 2025 и 2026 год. С 1 января 2027 — снижение до <strong>27%</strong>. Максимальный срок — 5 лет. Частичная нерезидентность (partiële buitenlandse belastingplicht) отменена с 2025-го; переходный период — до 31.12.2026 для пользовавшихся льготой до декабря 2023-го.</p>
+    <div class="tpol">Решение принято под давлением крупных работодателей. Стабильность достигнута, но полного возврата к прежним условиям не произошло.</div>
+    <div class="tsrc"><a href="https://ondernemersplein.overheid.nl/personeel/aannemen/de-30-procent-regeling/" target="_blank">Ondernemersplein — актуальные условия →</a> · <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/internationaal/30_procentsregeling/" target="_blank">Belastingdienst →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Выборы 29 октября: D66 победила, PVV потеряла треть мест, NSC — все 20</div>
+    <div class="ttags"><span class="tag tp">Политика</span></div>
+    <p>D66 (26 мест) и PVV (26 мест) финишировали вровень — самый близкий результат с 1956 года. D66 официально подтверждена победителем. D66 почти утроила результат 2023 года. Все основные партии отказались от коалиции с PVV. Вилдерс признал невозможность войти в правительство.</p>
+    <div class="tpol">Нидерланды стали тестом для европейских правых: популизм не безграничен. Результат D66 — крупнейший в истории партии.</div>
+    <div class="tsrc"><a href="https://en.wikipedia.org/wiki/2025_Dutch_general_election" target="_blank">Wikipedia — выборы 2025 →</a> · <a href="https://www.kiesraad.nl" target="_blank">Kiesraad →</a></div>
+  </div>
+</div>
+```
+
+  </section>
+
+  <section class="sec" id="y2026">
+    <div class="tl">
+      <div class="tl-year"><span class="yr">2026</span><span class="ctx">Kabinet-Jetten I · D66+VVD+CDA · с 23 февраля 2026</span></div>
+
+```
+  <div class="titem">
+    <div class="tit">Kabinet-Jetten I: присяга, соглашение «Aan de slag» и миноритарная реальность</div>
+    <div class="ttags"><span class="tag tp">Политика</span><span class="tag te">Экспаты</span></div>
+    <p>23 февраля 2026 присягнул кабинет D66+VVD+CDA. Роб Йеттен (38 лет) — самый молодой премьер в истории. Коалиция миноритарная: 66/150 мест в нижней и 22/75 в верхней палате. Ключевые приоритеты: оборона (до 3,5% ВВП), реформа здравоохранения (eigen risico вырастет с €385 до €460), возврат финансирования образования, жильё, снижение азотных выбросов на 23–25% к 2030 году.</p>
+    <div class="tpol">93 дня формирования. Оппозиция GL-PvdA признала, что «управление снова в хороших руках» — хотя и не согласна с политикой.</div>
+    <div class="tsrc"><a href="https://www.rijksoverheid.nl/regering" target="_blank">Rijksoverheid — кабинет →</a> · <a href="https://www.kabinetsformatie2025.nl/documenten/2026/01/30/aan-de-slag---coalitieakkoord-2026-2030" target="_blank">Коалиционное соглашение →</a> · <a href="https://www.parlement.com/kabinet-jetten-2026-heden" target="_blank">Parlement.com →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">30%-regeling в 2026: 30% сохраняется, с 2027 — 27%</div>
+    <div class="ttags"><span class="tag te">Экспаты</span><span class="tag tt">Налоги</span></div>
+    <p>В 2026 году льгота составляет <strong>30%</strong> от зарплаты до нормы WNT (€262 000). Переходный период для WNT-кэпа завершён: ограничение действует для всех с 1 января 2026. С 1 января 2027 льгота снизится до <strong>27%</strong>, минимальная зарплата для участия вырастет (~€50 400). Кабинет Jetten I не анонсировал новых изменений в этой льготе.</p>
+    <div class="tpol">Экспатские организации добиваются долгосрочной стабильности — чтобы компании могли планировать на горизонт 5+ лет.</div>
+    <div class="tsrc"><a href="https://ondernemersplein.overheid.nl/wetswijzigingen/vergoeding-30-procent-regeling-expats-wordt-27-procent/" target="_blank">Ondernemersplein — 27% с 2027 →</a> · <a href="https://www.bakertilly.nl/en/inzichten/kennisartikel/new-threshold-amounts-for-expats-and-highly-skilled-migrants-in-2026" target="_blank">Baker Tilly — нормы 2026 →</a></div>
+  </div>
+
+  <div class="titem">
+    <div class="tit">Муниципальные выборы — ноябрь 2026: граждане ЕС вправе голосовать</div>
+    <div class="ttags"><span class="tag tp">Политика</span><span class="tag te">Экспаты</span></div>
+    <p>Осенью 2026 — муниципальные выборы по всей стране. Граждане ЕС без нидерландского паспорта вправе голосовать — регистрация через DigiD или форму в городском офисе. Ключевые темы в городах с большим числом экспатов: жильё, интеграция, студенческий вопрос.</p>
+    <div class="tpol">Первые выборы после национальной победы D66. Но местная политика живёт своей логикой — результат национальных выборов не гарантирует местного доминирования.</div>
+    <div class="tsrc"><a href="https://www.kiesraad.nl" target="_blank">Kiesraad →</a></div>
+  </div>
+</div>
+```
+
+  </section>
+
+</div><!-- /p2 -->
+
+<!-- ══════════════════ ЧАСТЬ III ═════════════════════════════════ -->
+
+<div class="tabpane" id="p3">
+
+  <div class="phead">
+    <div class="pnum">Часть III</div>
+    <h2>Политический словарь:<br>37 терминов</h2>
+    <p>Слова, которые объясняют, как работает эта страна — и почему она работает именно так</p>
+  </div>
+
+  <section class="sec instant">
+    <div class="dctl">
+      <input class="dsearch" id="ds" type="text" placeholder="Поиск…" oninput="df()">
+      <select class="dsel" id="dfreq" onchange="df()">
+        <option value="">Все частоты</option>
+        <option value="Высокая">Высокая</option>
+        <option value="Средняя">Средняя</option>
+        <option value="Специфическая">Специфическая</option>
+      </select>
+      <span class="dcnt" id="dcnt">37 терминов</span>
     </div>
-    <div class="footer-links">
-      <a href="https://janeorlova.com" target="_blank">janeorlova.com</a>
-      <a href="https://t.me/tonandtijd" target="_blank">t.me/tonandtijd</a>
+    <div class="dtw">
+      <table id="dt">
+        <thead>
+          <tr>
+            <th onclick="ds(0)">Термин</th>
+            <th onclick="ds(1)">Перевод</th>
+            <th>Значение и контекст</th>
+            <th onclick="ds(3)">Частота</th>
+          </tr>
+        </thead>
+        <tbody id="db"></tbody>
+      </table>
     </div>
-  </footer>
+  </section>
+
+</div><!-- /p3 -->
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="fl">
+    <div class="fbar"></div>
+    <strong>Политический гид по Нидерландам</strong><br>
+    для русскоязычных экспатов<br><br>
+    Автор: Jane Orlova · 5 мая 2026<br>
+    Актуально на апрель 2026 · Kabinet-Jetten I
+  </div>
+  <div class="flinks">
+    <a href="https://janeorlova.com" target="_blank">janeorlova.com</a>
+    <a href="https://t.me/tonandtijd" target="_blank">t.me/tonandtijd</a>
+  </div>
+</footer>
 
 </main>
 
 <script>
-// ── DICTIONARY DATA ────────────────────────────────────────────
-const dictData = [
-  ["Tweede Kamer","Нижняя палата парламента","150 депутатов, прямые выборы раз в 4 года. Принимает законы, контролирует правительство. Когда говорят «парламент» — обычно имеют в виду именно её.","Высокая"],
-  ["Eerste Kamer","Сенат / Верхняя палата","75 сенаторов, косвенные выборы через провинции. Не вносит поправки, но блокирует законы целиком. При кабинете Jetten I у коалиции нет большинства ни там, ни там.","Высокая"],
-  ["Formateur","Переговорщик / будущий премьер","Политик, ведущий финальный этап переговоров о коалиции. Обычно становится премьером. Роб Йеттен стал formateur в феврале 2026.","Высокая"],
-  ["Informateur","Разведчик / предварительный переговорщик","Выясняет, какие партии готовы говорить между собой, до начала реальных коалиционных переговоров.","Средняя"],
-  ["Formatie","Процесс формирования коалиции","Весь путь от выборов до присяги кабинета. Кабинет Jetten I сформировался за 93 дня — быстро по нидерландским меркам.","Высокая"],
-  ["Regeerakkoord","Коалиционное соглашение","Документ 50–100+ стр., фиксирующий компромиссы на весь срок. Реальный политический документ — важнее предвыборных обещаний. Для Jetten I — «Aan de slag».","Высокая"],
-  ["Demissionair kabinet","«Уходящий» / действующий кабинет","Правительство после отставки, продолжающее работу. Не принимает политически спорных решений («controversieel verklaard»). Нидерланды были в этом статусе дважды за 2023–2026.","Высокая"],
-  ["Minderheidskabinet","Миноритарный кабинет","Правительство без большинства в парламенте. Нынешний кабинет Jetten I — 66/150 мест. Каждое голосование требует переговоров с оппозицией.","Высокая"],
-  ["Poldermodel","Польдерная модель","Нидерландская традиция консенсуса между работодателями, профсоюзами и государством. Медленно, но устойчиво. Фирменный «бренд» нидерландской политики.","Высокая"],
-  ["Verzuiling","«Столпизация»","Исторический феномен: общество разделено на религиозные и идеологические «столпы» со своими институтами. К 1970-м рассыпалось, но партийная система хранит память.","Средняя"],
-  ["Gedoogbeleid","Политика «закрытых глаз»","Формально нелегальное, но официально терпимое. Классика — продажа марихуаны в кофешопах. Нелегальна по закону, но не преследуется при условии соблюдения правил.","Средняя"],
-  ["Motie van wantrouwen","Вотум недоверия","Инструмент свержения правительства или министра. Требует большинства. Применяется редко — политически дорого.","Средняя"],
-  ["Motie van afkeuring","Порицание","Более мягкая альтернатива вотуму недоверия. Выражает неодобрение, но не обязывает к отставке. Политический сигнал.","Средняя"],
-  ["Kamervragen","Парламентские вопросы","Депутаты задают письменные вопросы министрам. Ответы публикуются. Механизм контроля — и один из инструментов, которым граждане могут пользоваться через своих депутатов.","Средняя"],
-  ["Staatssecretaris","Государственный секретарь","Заместитель министра. Часто именно staatssecretaris ведёт миграционную политику — один из важнейших постов для экспатов.","Высокая"],
-  ["Raad van State","Государственный совет","Высший консультативный орган: заключения на законопроекты + административные споры. Мнение не обязательно, но политически весомо.","Средняя"],
-  ["Bijstand","Социальное пособие по нуждаемости","Минимальное социальное пособие. Использование bijstand влияет на возможность натурализации: нельзя получать 3 года до подачи заявки.","Высокая"],
-  ["Inburgering","Интеграция / гражданская адаптация","Юридически обязательный процесс языкового и гражданского обучения для ряда мигрантов. Завершается экзаменом. Не путать с натурализацией.","Высокая"],
-  ["Naturalisatie","Натурализация","Получение нидерландского паспорта. Требования: 5 лет легального проживания, B1 нидерландского, самодостаточность, как правило — отказ от предыдущего гражданства.","Высокая"],
-  ["Kennismigrant","Высококвалифицированный мигрант","Юридическая категория: специалист с зарплатой выше установленного порога (€48 013/год в 2026). Упрощённое разрешение, доступ к 30%-regeling, освобождение от инбургеринга.","Высокая"],
-  ["30%-regeling","Налоговая льгота для экспатов","Работодатель платит до 30% зарплаты необлагаемой надбавкой за «экстратерриториальные расходы». В 2026 — 30%, с 2027 — 27%. Максимум 5 лет. Потолок — €262 000.","Высокая"],
-  ["Expatregeling","Новое название 30%-regeling","С 2025 года официальное название — expatregeling. На практике термин 30%-regeling используется повсеместно. По сути одна и та же льгота.","Высокая"],
-  ["Gemeenteraad","Городской / муниципальный совет","Местный законодательный орган. Граждане ЕС вправе голосовать без нидерландского паспорта. Определяет жильё, интеграцию, налоги на местах.","Высокая"],
-  ["Wethouder","Член исполнительного комитета","Аналог вице-мэра. Отвечает за конкретные сферы: жильё, интеграция, финансы. Реальный исполнитель политики в городе.","Средняя"],
-  ["Burgemeester","Мэр / бургомистр","В Нидерландах мэр не избирается — назначается правительством по рекомендации gemeenteraad. Роль церемониальная и административная.","Высокая"],
-  ["Burgerinitiatief","Гражданская инициатива","40 000 подписей обязывают Tweede Kamer рассмотреть вопрос. Реально работающий инструмент прямой демократии.","Средняя"],
-  ["Internetconsultatie","Онлайн-консультация по законопроектам","Министерство публикует черновики на internetconsultatie.nl. Любой может оставить комментарий. Лоббисты пользуются постоянно.","Средняя"],
-  ["Controversieel verklaren","Объявить законопроект спорным","Tweede Kamer «замораживает» законопроекты при demissionair kabinet. Закон не продвигается до нового правительства.","Специфическая"],
-  ["SER","Социально-экономический совет","Tripartite орган: работодатели, профсоюзы, независимые эксперты. Консультирует правительство. Часть poldermodel.","Средняя"],
-  ["Staatsblad","Государственная газета","Официальное издание, где публикуются принятые законы. Публикация = вступление в силу.","Специфическая"],
-  ["BSN","Гражданский сервисный номер (ИНН)","Индивидуальный номер. Без BSN невозможно открыть счёт, получить медпомощь, работать. Ключ ко всей системе.","Высокая"],
-  ["DigiD","Цифровое удостоверение","Система идентификации для всех госсервисов. Нужна для налоговой декларации, регистрации на выборах, пособий.","Высокая"],
-  ["BRP","Регистр населения","Basisregistratie Personen — регистрация по месту жительства. Обязательна и открывает доступ к большинству социальных сервисов.","Высокая"],
-  ["Zelfbewoningsplicht","Обязательство проживания","Муниципальные правила, обязывающие купившего жильё жить в нём (до 4 лет). Введено против инвестиционной аренды в крупных городах.","Средняя"],
-  ["PIP","Личный интеграционный план","Plan Inburgering en Participatie — составляется gemeente для каждого мигранта, обязанного пройти инбургеринг. Включает выбор маршрута обучения.","Средняя"],
-  ["Numerus fixus","Ограничение приёма","Квота на число принимаемых студентов на конкретную программу. После 2023 расширен на многие специальности, особенно в перегруженных вузах.","Средняя"],
-  ["Verkenner","Исследователь / scout","Первый этап после выборов: политик, выясняющий общую картину перед назначением informateur. В 2025-м — Воутер Кольмес (D66).","Специфическая"]
+/* ── DICTIONARY DATA ──────────────────────────────────────── */
+const D = [
+  ["Gedoogbeleid","Политика закрытых глаз","Официально терпимое, но формально нелегальное. Продажа мягких наркотиков в кофешопах — самый известный пример. Нидерланды не легализовали, но и не преследуют при соблюдении условий. Термин постоянно всплывает в дебатах об иммиграции и сексуальной работе.","Высокая"],
+  ["Poldermodel","Польдерная модель","Нидерландская традиция консенсуса между работодателями, профсоюзами и государством. Медленно. Устойчиво. Буквально — как осушали польдеры: все вместе или никак. Международный бренд нидерландской политики.","Высокая"],
+  ["Verzuiling","Столпизация","Исторический феномен: общество разделено на религиозные и идеологические «столпы» со своими институтами. Рассыпалось к 1970-м, но партийная фрагментация — его прямое наследие.","Средняя"],
+  ["Ontzuiling","Распад столпов","Процесс постепенного разрушения verzuiling начиная с 1960-х. Объясняет, почему нидерландцы стали голосовать менее предсказуемо и почему возникли новые партии.","Средняя"],
+  ["Coalitiepartner","Коалиционный партнёр","Партия, разделяющая правительство с другими. В системе без большинства — ключевое слово. Быть coalitiepartner значит нести ответственность за всю политику кабинета.","Высокая"],
+  ["Regeerakkoord","Коалиционное соглашение","Документ 50–100+ стр., фиксирующий компромиссы на весь срок. Важнее предвыборных обещаний. Если партия нарушает — это политическая катастрофа.","Высокая"],
+  ["Formatie","Формирование коалиции","Весь путь от выборов до присяги кабинета. Может занимать от нескольких недель до года. Нидерланды держат европейский рекорд: 299 дней в 2021-м.","Высокая"],
+  ["Minderheidskabinet","Миноритарный кабинет","Правительство без парламентского большинства. Редкость в истории Нидерландов — и норма с 2026 года. Каждое голосование требует переговоров с оппозицией.","Высокая"],
+  ["Demissionair","Уходящий / технический","Правительство после отставки, продолжающее работу до нового. Не принимает политически спорных решений. Нидерланды были в этом статусе дважды за 2023–2026.","Высокая"],
+  ["Controversieel verklaren","Заморозить законопроект","Parlament объявляет тему «спорной» при demissionair kabinet — и закон не продвигается до нового правительства. Инструмент сдержек в переходный период.","Средняя"],
+  ["Polder","Польдер — осушенная земля","Буквально: земля ниже уровня моря, отвоёванная у воды. Метафора коллективного выживания, ставшая синонимом нидерландского консенсуса. Без дамб — всё затопит. Без компромисса — то же самое.","Средняя"],
+  ["Paars kabinet","Пурпурный кабинет","Исторический термин: коалиция социал-демократов и либералов без христианских демократов (1994–2002). Первая за 80 лет без CDA. Провела легализацию эвтаназии и однополых браков.","Средняя"],
+  ["Linkse kerk","Левая церковь","Ироничное прозвище левого интеллектуального консенсуса в медиа, образовании и культуре. Используется правыми как упрёк, левыми — иногда с гордостью.","Средняя"],
+  ["Regeerakkoord","Коалиционный договор","Синоним coalitieakkoord. Документ, определяющий политику на весь срок кабинета. Читать его — значит понимать, что будет с вашей жизнью в ближайшие четыре года.","Высокая"],
+  ["Gedelegeerde wetgeving","Делегированное законодательство","Правительство получает от парламента право принимать подзаконные акты без отдельного голосования. Используется часто — и критикуется оппозицией за снижение парламентского контроля.","Специфическая"],
+  ["Motie","Парламентское предложение / резолюция","Формальное предложение, которое ставится на голосование в парламенте. Может выражать поддержку, критику или требование к правительству. Инструмент давления.","Высокая"],
+  ["Kamerdebat","Парламентские дебаты","Публичные слушания в нижней палате. Транслируются онлайн. Ключевой ритуал нидерландской демократии — где министры публично отвечают за каждое решение.","Высокая"],
+  ["Wetsvoorstel","Законопроект","Формальное предложение закона, внесённое в парламент. До принятия — публикуется для общественного обсуждения. После — проходит обе палаты.","Высокая"],
+  ["Bezuinigingen","Сокращение расходов / жёсткая экономия","Одно из главных политических слов. Каждый кабинет с 2008-го объявлял bezuinigingen. Кто режет, где и насколько — определяет коалиционное соглашение.","Высокая"],
+  ["Investeringsklimaat","Инвестиционный климат","Условия для привлечения бизнеса и специалистов. Именно через эту рамку обсуждают 30%-regeling и права экспатов: мешает ли ужесточение конкурентоспособности страны?","Высокая"],
+  ["Vestigingsklimaat","Условия для размещения бизнеса","Синоним investeringsklimaat, но чаще применяется к решениям компаний о переезде в Нидерланды или из них. Ключевой аргумент работодателей против ужесточения льгот для экспатов.","Высокая"],
+  ["Extreemrechts","Крайне правые","Партии и движения с радикальной националистической, антимигрантской или авторитарной повесткой. В нидерландском контексте — прежде всего PVV и FvD.","Высокая"],
+  ["Populisme","Популизм","Политическая стратегия: «народ» против «элиты». В нидерландских СМИ — часто нейтральное аналитическое слово, не только ругательство.","Высокая"],
+  ["Asielzoekers","Ищущие убежища / соискатели убежища","Люди, подавшие заявку на статус беженца. Не путать с vluchtelingen (признанные беженцы) и ongedocumenteerden (нелегальные мигранты). В политических дебатах — часто смешиваются намеренно.","Высокая"],
+  ["Inburgering","Гражданская интеграция","Юридически обязательный процесс языкового и гражданского обучения для ряда мигрантов. Завершается экзаменом. Не путать с натурализацией — это разные процедуры.","Высокая"],
+  ["Naturalisatie","Натурализация","Получение нидерландского паспорта. Требования: 5 лет легального проживания, уровень языка B1, самодостаточность, как правило — отказ от предыдущего гражданства.","Высокая"],
+  ["Tweederangs burger","Гражданин второго сорта","Риторический концепт, используемый в дебатах о правах мигрантов, трудовых мигрантов и людей с непривилегированным фоном. Название доклада Ромера о трудовых мигрантах.","Средняя"],
+  ["Eigen risico","Личный взнос в здравоохранении","Обязательная сумма, которую каждый платит сам перед тем, как страховка начинает покрывать расходы. В 2026 — €385, кабинет Jetten I поднимает до €460. Политически болезненная тема.","Высокая"],
+  ["Huurcrisis","Кризис аренды","Острая нехватка доступного жилья, особенно в крупных городах. Центральная тема выборов 2025 года. Затрагивает прежде всего молодёжь, студентов и — экспатов.","Высокая"],
+  ["Zelfbewoningsplicht","Обязательство жить в купленном","Муниципальное правило: купивший жильё обязан в нём проживать (обычно 2–4 года). Введено против инвестиционной аренды. Резко сократило рынок в Амстердаме и Гааге.","Средняя"],
+  ["Vrijheidsbijdrage","Взнос за свободу","Новый налог кабинета Jetten I для финансирования роста оборонных расходов. Одна из самых спорных мер соглашения «Aan de slag».","Средняя"],
+  ["Stikstofdossier","Азотный вопрос","Политически токсичная тема: Нидерланды должны резко сократить выбросы азота для защиты природных зон. Фермеры против. BBB возник именно из этого конфликта.","Высокая"],
+  ["Draagvlak","Общественная поддержка / консенсус","Буквально «несущая поверхность». Политик без draagvlak не может провести закон. Ключевое слово в дебатах о любой реформе — «есть ли под этим поддержка?»","Высокая"],
+  ["Polderoverleg","Польдерные переговоры","Консультации по методу poldermodel. Правительство, работодатели и профсоюзы садятся за стол до принятия закона. Медленно — но результат устойчив.","Средняя"],
+  ["Rechtsstaat","Правовое государство","Государство, где власть ограничена законом. В нидерландских дебатах — частый аргумент против «кризисных мер», которые обходят обычные процедуры.","Высокая"],
+  ["Sociaal akkoord","Социальный договор","Соглашение между правительством и социальными партнёрами (работодателями, профсоюзами) по вопросам труда и доходов. Предшествует законодательным изменениям.","Средняя"],
+  ["Vreemdelingenrecht","Право иностранцев","Отрасль права, регулирующая въезд, пребывание и высылку иностранцев. В Нидерландах — один из наиболее политически чувствительных правовых массивов.","Специфическая"]
 ];
 
-function freqClass(f) {
-  if (f === "Высокая") return "freq-high";
-  if (f === "Средняя") return "freq-mid";
-  return "freq-spec";
+/* render */
+function fc(f){ return f==="Высокая"?"fh":f==="Средняя"?"fm":"fs"; }
+function render(data){
+  document.getElementById("db").innerHTML = data.map(r=>`<tr>
+    <td class="dterm">${r[0]}</td>
+    <td class="dru">${r[1]}</td>
+    <td class="dex">${r[2]}</td>
+    <td class="dfreq ${fc(r[3])}">${r[3]}</td>
+  </tr>`).join("");
+  document.getElementById("dcnt").textContent = data.length+" терминов";
 }
 
-function renderTable(data) {
-  const tbody = document.getElementById("dictBody");
-  tbody.innerHTML = data.map(row => `
-    <tr>
-      <td class="td-term">${row[0]}</td>
-      <td class="td-ru">${row[1]}</td>
-      <td class="td-explain">${row[2]}</td>
-      <td class="td-freq ${freqClass(row[3])}">${row[3]}</td>
-    </tr>
-  `).join("");
-  document.getElementById("dictCount").textContent = `${data.length} терминов`;
-}
+let cur=[...D], sc=-1, sd=1;
 
-let currentData = [...dictData];
-let sortCol = -1, sortDir = 1;
-
-function filterTable() {
-  const search = document.getElementById("dictSearch").value.toLowerCase();
-  const freq = document.getElementById("dictFreq").value;
-  currentData = dictData.filter(row => {
-    const matchSearch = !search || row[0].toLowerCase().includes(search) || row[1].toLowerCase().includes(search) || row[2].toLowerCase().includes(search);
-    const matchFreq = !freq || row[3] === freq;
-    return matchSearch && matchFreq;
+function df(){
+  const q=document.getElementById("ds").value.toLowerCase();
+  const f=document.getElementById("dfreq").value;
+  cur=D.filter(r=>{
+    const m=!q||r[0].toLowerCase().includes(q)||r[1].toLowerCase().includes(q)||r[2].toLowerCase().includes(q);
+    return m&&(!f||r[3]===f);
   });
-  sortAndRender();
+  render(cur);
 }
 
-function sortTable(col) {
-  if (sortCol === col) sortDir *= -1;
-  else { sortCol = col; sortDir = 1; }
-  document.querySelectorAll("thead th").forEach((th, i) => {
-    th.classList.remove("sorted-asc","sorted-desc");
-    if (i === col) th.classList.add(sortDir === 1 ? "sorted-asc" : "sorted-desc");
+function ds(col){
+  if(sc===col) sd*=-1; else{sc=col;sd=1;}
+  document.querySelectorAll("thead th").forEach((t,i)=>{
+    t.classList.remove("sa","sd");
+    if(i===col) t.classList.add(sd===1?"sa":"sd");
   });
-  sortAndRender();
+  const s=[...cur].sort((a,b)=>a[col]<b[col]?-sd:a[col]>b[col]?sd:0);
+  render(s);
 }
 
-function sortAndRender() {
-  const sorted = [...currentData].sort((a, b) => {
-    if (sortCol < 0) return 0;
-    if (a[sortCol] < b[sortCol]) return -sortDir;
-    if (a[sortCol] > b[sortCol]) return sortDir;
-    return 0;
+render(D);
+
+/* ── TABS ──────────────────────────────────────────────────── */
+function go(n){
+  [1,2,3].forEach(i=>{
+    document.getElementById("p"+i).classList.remove("on");
+    document.getElementById("btn"+i).classList.remove("on");
   });
-  renderTable(sorted);
-}
-
-renderTable(dictData);
-
-// ── TABS ──────────────────────────────────────────────────────
-function showTab(id) {
-  document.querySelectorAll(".tab-content").forEach(el => el.classList.remove("active"));
-  document.querySelectorAll(".tab-btn").forEach(el => el.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
-  document.getElementById("btn-" + id).classList.add("active");
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  // re-trigger animations
-  document.querySelectorAll("#" + id + " .section").forEach(s => {
-    s.classList.remove("visible");
-    setTimeout(() => observer.observe(s), 50);
+  document.getElementById("p"+n).classList.add("on");
+  document.getElementById("btn"+n).classList.add("on");
+  window.scrollTo({top:0,behavior:"smooth"});
+  // re-observe animations in new pane
+  document.querySelectorAll("#p"+n+" .sec:not(.instant)").forEach(s=>{
+    s.classList.remove("vis");
+    obs.observe(s);
   });
 }
 
-// ── SCROLL ANIMATIONS ─────────────────────────────────────────
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); observer.unobserve(e.target); } });
-}, { threshold: 0.06 });
-
-document.querySelectorAll(".section:not(.visible)").forEach(s => observer.observe(s));
-
-// ── ACTIVE NAV LINKS ──────────────────────────────────────────
-const navLinks = document.querySelectorAll(".sidenav a[href^='#']");
-window.addEventListener("scroll", () => {
-  let current = "";
-  document.querySelectorAll("[id]").forEach(s => {
-    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+/* ── SCROLL ANIMATIONS ─────────────────────────────────────── */
+const obs = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add("vis"); obs.unobserve(e.target); }
   });
-  navLinks.forEach(a => {
-    a.classList.remove("active");
-    if (a.getAttribute("href") === "#" + current) a.classList.add("active");
-  });
-});
+},{threshold:0.07});
 
-// ── MOBILE NAV ────────────────────────────────────────────────
-function toggleNav() { document.getElementById("sidenav").classList.toggle("open"); }
+document.querySelectorAll(".sec:not(.instant)").forEach(s=>obs.observe(s));
 </script>
 
 </body>
