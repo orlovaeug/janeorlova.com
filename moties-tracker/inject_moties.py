@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-“””
+"""
 inject_moties.py — injects moties.json data into index.html’s INIT array.
 
 Must be run AFTER fetch_moties.py and fix_moties_json.py.
 Reads moties.json, finds the INIT= line in index.html, replaces it.
 
 Usage: python3 inject_moties.py
-“””
+"""
 import json
 import re
 import sys
 import os
 from datetime import date
 
-MOTIES_FILE = ‘moties.json’
-HTML_FILE   = ‘index.html’
+MOTIES_FILE = 'moties.json'
+HTML_FILE   = 'index.html'
 
 def main():
 print(f’inject_moties.py — {date.today().isoformat()}’)
