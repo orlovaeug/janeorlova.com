@@ -74,12 +74,13 @@ white-space:nowrap;flex-shrink:0;letter-spacing:-.01em;
 
 /* ── HERO STRIP ── */
 #hero{
-background:var(–ink);
+background:#0D0D0F; /* explicit hex, never transparent */
 border-radius:var(–rad);
-padding:28px 32px;
-margin-bottom:24px;
+padding:24px 28px;
+margin-bottom:20px;
 position:relative;
 overflow:hidden;
+min-height:100px; /* ensures dark bg always visible even before JS runs */
 }
 #hero::before{
 content:’’;position:absolute;inset:0;
@@ -87,14 +88,27 @@ background:radial-gradient(ellipse at 80% 50%, rgba(200,65,42,.18) 0%, transpare
 pointer-events:none;
 }
 .hero-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
-.hs{padding:0 28px;border-right:1px solid rgba(255,255,255,.08)}
+.hs{padding:0 22px;border-right:1px solid rgba(255,255,255,.08)}
 .hs:first-child{padding-left:0}.hs:last-child{border-right:none}
-.hsl{font-size:9px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.12em;font-weight:700;margin-bottom:8px;font-family:“DM Mono”,monospace}
-.hsv{font-family:“Libre Baskerville”,serif;font-size:44px;font-weight:700;line-height:.9;letter-spacing:-.03em;color:#fff}
-.hss{font-size:11px;color:rgba(255,255,255,.3);margin-top:8px;font-family:“DM Mono”,monospace}
-.hsa{font-size:11px;margin-top:6px;display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:100px;font-weight:700}
-.hsa-g{background:rgba(42,107,69,.35);color:#7DDBA8}
-.hsa-r{background:rgba(200,65,42,.35);color:#F5A090}
+.hsl{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:7px;font-family:“DM Mono”,monospace}
+.hsv{font-family:“Libre Baskerville”,serif;font-size:38px;font-weight:700;line-height:.9;letter-spacing:-.03em;color:#ffffff !important}
+.hss{font-size:10px;color:rgba(255,255,255,.35);margin-top:7px;font-family:“DM Mono”,monospace}
+.hsa{font-size:10px;margin-top:6px;display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:100px;font-weight:700}
+.hsa-g{background:rgba(42,107,69,.4);color:#7DDBA8}
+.hsa-r{background:rgba(200,65,42,.4);color:#F5A090}
+
+/* Mobile hero: 2-column grid */
+@media(max-width:600px){
+#hero{padding:18px 16px}
+.hero-grid{grid-template-columns:1fr 1fr;gap:16px}
+.hs{padding:0 !important;border-right:none !important;border-bottom:none !important}
+.hsv{font-size:30px}
+}
+@media(min-width:601px) and (max-width:900px){
+.hero-grid{grid-template-columns:repeat(3,1fr)}
+.hs:nth-child(n+4){display:none}
+.hsv{font-size:32px}
+}
 
 /* ── SEARCH / FILTER ── */
 #srow{display:flex;gap:10px;margin-bottom:10px}
@@ -383,13 +397,13 @@ MODALS
 /* ── SUPPORT / FOOTER ── */
 #supsec{background:#fff;border-top:1.5px solid var(–border);padding:48px 28px}
 #supin{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
-.suptxt h3{font-family:“Libre Baskerville”,serif;font-size:22px;font-weight:700;color:var(–ink);margin-bottom:8px}
+.suptxt h3{font-family:“Libre Baskerville”,serif;font-size:22px;font-weight:700;color:#0D0D0F;margin-bottom:8px}
 .suptxt p{font-size:13px;color:var(–mid);line-height:1.75;max-width:480px}
-.supcard{background:var(–ink);border-radius:20px;padding:26px 30px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:240px;max-width:280px}
+.supcard{background:#0D0D0F;border-radius:20px;padding:26px 30px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:12px;min-width:240px;max-width:280px}
 .supct{font-size:10px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.12em;text-align:center;font-family:“DM Mono”,monospace}
 .supcd{font-size:12px;color:rgba(255,255,255,.55);text-align:center;line-height:1.65;max-width:200px}
-.supbtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;background:#fff;color:var(–ink);border:none;border-radius:100px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;text-decoration:none;width:100%;font-family:“Syne”,sans-serif}
-.supbtn:hover{background:var(–paper2);transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
+.supbtn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;background:#ffffff;color:#0D0D0F;border:none;border-radius:100px;font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;text-decoration:none;width:100%;font-family:“Syne”,sans-serif}
+.supbtn:hover{background:#EDEAE3;transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,0,0,.2)}
 #footer{background:var(–ink);padding:44px 28px 32px}
 #fotin{max-width:1280px;margin:0 auto}
 .ftop{display:grid;grid-template-columns:1fr auto;gap:36px;margin-bottom:28px;align-items:start}
@@ -413,21 +427,20 @@ MODALS
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
-.hero-grid{grid-template-columns:repeat(3,1fr)}.hs:nth-child(n+4){display:none}
 .kpi-strip{grid-template-columns:repeat(2,1fr)}
 .stat-2col,.stat-3col{grid-template-columns:1fr}
 .akkpi{grid-template-columns:1fr 1fr;gap:14px}.akk{padding:0;border-right:none}
 }
-@media(max-width:768px){
-#nv{padding:0 16px;gap:10px}
-#main{padding:16px 16px 44px}
-#hero{padding:20px}
-.hero-grid{grid-template-columns:1fr 1fr;gap:12px}
-.hs{padding:0 0 12px;border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
-.hs:nth-child(odd){padding-right:8px;border-right:1px solid rgba(255,255,255,.08);border-bottom:none}
-.hs:nth-child(even){padding-left:8px;border-bottom:none}
+/* Tablet: 3-col hero, hide last 2 */
+@media(min-width:601px) and (max-width:900px){
+.hero-grid{grid-template-columns:repeat(3,1fr)}
 .hs:nth-child(n+4){display:none}
-.hsv{font-size:34px}
+.hsv{font-size:32px}
+}
+@media(max-width:768px){
+#nv{padding:0 16px;gap:8px}
+#nsub,#nv .n-sep{display:none}
+#main{padding:14px 14px 44px}
 #fp{grid-template-columns:1fr}
 .ov{align-items:flex-end}
 .modal,.fetchm,.delm{border-radius:20px 20px 0 0;max-width:100%;max-height:95vh;width:100%}
@@ -437,10 +450,21 @@ MODALS
 #supin{flex-direction:column}
 .supcard{width:100%;max-width:100%}
 }
+/* Mobile: 2-col hero */
+@media(max-width:600px){
+#hero{padding:18px 16px}
+.hero-grid{grid-template-columns:1fr 1fr;gap:14px 8px}
+.hs{padding:0 !important;border-right:none !important;border-bottom:none !important}
+.hs:nth-child(n+5){display:none}
+.hsv{font-size:28px !important}
+.hsl{font-size:8px}
+.hss,.hsa{font-size:9px}
+}
 @media(max-width:480px){
-.kpi-strip{grid-template-columns:1fr}
+.kpi-strip{grid-template-columns:1fr 1fr}
 .party-grid{grid-template-columns:repeat(auto-fill,minmax(90px,1fr))}
-.hbc-label{width:100px;font-size:10px}
+.hbc-label{width:90px;font-size:10px}
+.stat-2col{grid-template-columns:1fr}
 }
 </style>
 
@@ -472,7 +496,7 @@ MODALS
 <div id="main">
   <!-- MOTIES -->
   <div id="pnm">
-    <div id="hero">
+    <div id="hero" style="background:#0D0D0F;min-height:100px">
       <div class="hero-grid" id="hbar"></div>
     </div>
     <div id="refresh-row" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:12px 16px;flex-wrap:wrap;gap:8px">
@@ -829,7 +853,16 @@ function renderMoties(){
   var filtered=getFiltered(false);
   var fc=g("fcount");if(fc)fc.textContent=filtered.length+' motie'+(filtered.length!==1?'s':'')+ ' weergegeven';
   if(!filtered.length){
-    list.innerHTML='<div id="emsg"><p>Geen moties gevonden</p><span>Pas de zoekterm of filters aan.</span></div>';
+    // Check if there are archived items (in behandeling)
+    var archived=getArchived();
+    if(archived.length){
+      list.innerHTML='<div id="emsg"><p>Alle moties zijn in behandeling</p>'
+        +'<span>Er zijn '+archived.length+' moties die wachten op stemuitslag.</span>'
+        +'<br><br><button onclick="showPane(\'tab-ar\')" style="margin-top:4px;padding:10px 20px;background:var(--ink);color:#fff;border:none;border-radius:100px;font-size:13px;font-weight:700;cursor:pointer;font-family:\'Syne\',sans-serif">⏳ Bekijk In Process →</button>'
+        +'</div>';
+    } else {
+      list.innerHTML='<div id="emsg"><p>Geen moties gevonden</p><span>Pas de zoekterm of filters aan.</span></div>';
+    }
     return;
   }
   list.innerHTML=filtered.map(renderMotie).join("");
