@@ -2,52 +2,52 @@ name: Update Moties
 
 on:
   schedule:
-    - cron: '0 8 * * *'   # 09:00 NL — ochtendscrape
-    - cron: '0 17 * * *'  # 18:00 NL — na stemmingen
-  workflow_dispatch:       # handmatig starten via GitHub UI
-
-permissions:
-  contents: write
+    - cron: '0 8 * * *'   # dagelijks 08:00 UTC
+  workflow_dispatch:       # handmatig triggeren
 
 jobs:
-  fetch-moties:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    permissions:
+      contents: write
 
     steps:
-      # 1️⃣ Checkout repo
-      - uses: actions/checkout@v4.2.2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
-      # 2️⃣ Setup Python
-      - uses: actions/setup-python@v5.3.0
+      - name: Python setup
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # 3️⃣ Install dependencies if requirements.txt exists
       - name: Install dependencies
-        run: |
-          if [ -f moties-tracker/requirements.txt ]; then
-            pip install -r moties-tracker/requirements.txt
-          fi
+        run: pip install requests --break-system-packages 2>/dev/null || pip install requests
 
-      # 4️⃣ Run all Python scripts in moties-tracker
-      - name: Run motie scripts
+      - name: Run fetch_moties
         working-directory: moties-tracker
+        run: python3 fetch_moties.py
+
+      - name: Run fix_moties_json
+        working-directory: moties-tracker
+        run: python3 fix_moties_json.py
+
+      - name: Commit & push
         run: |
-          python fetch_moties.py
-          python fix_moties_json.py
-          python embed_moties.py
-          
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # ── KEY FIX: stash any local changes before pulling ──
+          git stash --include-untracked
+
           git pull --rebase origin main
+
+          # Restore stashed changes (our updated files)
+          git stash pop || true
+
           git add moties-tracker/moties.json moties-tracker/index.html
-          git diff --staged --quiet && echo "Geen wijzigingen" || \
-            git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && \
-            git push
-    
-    
+
+          git diff --staged --quiet \
+            && echo "Geen wijzigingen" \
+            || git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && git push
