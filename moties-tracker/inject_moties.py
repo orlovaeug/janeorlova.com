@@ -10,7 +10,7 @@ import os
 from datetime import date
 
 MOTIES_FILE = 'moties.json'
-HTML_FILE = 'index.html'
+HTML_FILE = 'moties-tracker/index.html'
 
 
 def main():
