@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-inject_moties.py — injects moties.json into index.html
+inject_moties.py — injects moties.json data into index.html's INIT array.
 """
 
 import json
@@ -32,20 +32,52 @@ def main():
     with open(HTML_FILE, encoding='utf-8') as f:
         html = f.read()
 
-    pattern = r'var\s+INIT\s*=\s*\[.*?\];'
-    data = json.dumps(moties, ensure_ascii=False, separators=(',', ':'))
-    replacement = f'var INIT={data};'
+    new_html = html  # ensure defined
 
-    new_html, n = re.subn(pattern, replacement, html, flags=re.DOTALL)
+    # ── Inject INIT ──
+    moties_json = json.dumps(moties, ensure_ascii=False, separators=(',', ':'))
+
+    new_html, n = re.subn(
+        r'var\s+INIT\s*=\s*\[.*?\];',
+        f'var INIT={moties_json};',
+        new_html,
+        flags=re.DOTALL
+    )
 
     if n == 0:
-        print('ERROR: INIT niet gevonden', file=sys.stderr)
-        sys.exit(1)
+        print('WAARSCHUWING: INIT niet gevonden')
+    else:
+        print(f'INIT bijgewerkt: {len(moties)} moties')
 
+    # ── Inject AGENDA ──
+    if os.path.exists('agenda.json'):
+        with open('agenda.json', encoding='utf-8') as f:
+            agenda = json.load(f)
+
+        agenda_json = json.dumps(agenda, ensure_ascii=False, separators=(',', ':'))
+
+        new_html, n2 = re.subn(
+            r'var\s+AGENDA\s*=\s*\[.*?\];',
+            f'var AGENDA={agenda_json};',
+            new_html,
+            flags=re.DOTALL
+        )
+
+        if n2 > 0:
+            print(f'AGENDA bijgewerkt: {len(agenda)} items')
+        else:
+            print('AGENDA niet gevonden — overgeslagen')
+
+    # ── Write file ──
     with open(HTML_FILE, 'w', encoding='utf-8') as f:
         f.write(new_html)
 
-    print('Klaar: index.html bijgewerkt')
+    # ── Stats ──
+    aang = sum(1 for m in moties if m.get('status') == 'aangenomen')
+    verw = sum(1 for m in moties if m.get('status') == 'verworpen')
+    inb = sum(1 for m in moties if m.get('status') == 'in_behandeling')
+
+    print(f'Klaar — aangenomen:{aang} verworpen:{verw} in_behandeling:{inb}')
 
 
 if __name__ == '__main__':
