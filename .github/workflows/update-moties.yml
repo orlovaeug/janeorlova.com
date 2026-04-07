@@ -2,36 +2,63 @@ name: Update Moties
 
 on:
   schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: '0 8 * * *'   # dagelijks 08:00 UTC
+  workflow_dispatch:       # handmatig triggeren
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python
+      - name: Python setup
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.12'
 
-      - name: Run moties pipeline
+      - name: Install dependencies
+        run: pip install requests --break-system-packages 2>/dev/null || pip install requests
+
+      # Step 1: Fetch new moties from tweedekamer.nl
+      - name: Run fetch_moties
         working-directory: moties-tracker
-        run: |
-          python3 fetch_moties.py
-          python3 fix_moties_json.py
-          python3 inject_moties.py
+        run: python3 fetch_moties.py
 
-      - name: Commit & push changes
+      # Step 2: Fix/enrich existing moties via OData
+      - name: Run fix_moties_json
+        working-directory: moties-tracker
+        run: python3 fix_moties_json.py
+
+      # Step 3: KEY STEP - inject moties.json into index.html INIT array
+      # Without this step, the website shows no data
+      - name: Inject moties into HTML
+        working-directory: moties-tracker
+        run: python3 inject_moties.py
+
+      # Step 4: Commit and push
+      - name: Commit and push
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "Auto-update moties data" || echo "No changes"
-          git push
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stash local changes before pulling to avoid rebase conflict
+          git stash --include-untracked
+
+          git pull --rebase origin main
+
+          # Restore our updated files from the stash
+          git stash pop || true
+
+          # Stage all output files
+          git add moties-tracker/moties.json moties-tracker/index.html || true
+          git add moties-tracker/agenda.json 2>/dev/null || true
+
+          git diff --staged --quiet \
+            && echo "Geen wijzigingen - niets te committen" \
+            || (git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && git push)
