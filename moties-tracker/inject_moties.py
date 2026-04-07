@@ -9,8 +9,8 @@ import sys
 import os
 from datetime import date
 
-MOTIES_FILE = 'moties-tracker/moties.json'
-HTML_FILE = 'moties-tracker/index.html'
+MOTIES_FILE = 'moties.json'
+HTML_FILE = 'index.html'
 
 
 def main():
