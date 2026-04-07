@@ -1,5 +1,66 @@
 [
   {
+    "id": "g60e7617690c6",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Binnenskamers | Jetten kan op bezoek bij Trump weinig met lessen voorgangers",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://www.nu.nl/politiek/6391717/jetten-kan-op-bezoek-bij-trump-weinig-met-lessen-voorgangers.html"
+  },
+  {
+    "id": "gfbb4c44109e5",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten kan op bezoek bij Trump weinig met lessen voorgangers - NU",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTE9wZmNuVFJlREJXaGlzMGtObmM3b0Z2SlR1T1RIREFocE1Tb21CXzI0NG1Zb1VObnFDV2VwWFlSS0ZobklBYVhLa285UWpYVEl1QnN1QmN2d1BWWVZJYm84Zl9ZWnRMZ0w1T1BVNzdYTDFWSGlieFp1TV9kMUUxbENtbVFsc05BVGZvVVJobGRfaHh0dWFGdWFWVWtUajdKZFE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g965dc45fd6be",
+    "type": "nl",
+    "src": "NU",
+    "title": "Voorganger Jetten dacht beste advies voor omgang met Trump te hebben - NU",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNYzNuQmE5UkdXOE9sb2wta1AxdTctb3J0cmZ0bm1fOUNaR0g2aVZaN1gtSlQ4UEV4VVVnbFh6eGY2emRGWjBfbFlMRFVNMi1pb0c5ZWZVWmdTeDJmeE9sdnBSVWJNRXlxa2Y1ZXlRZDJxZi1NZVRsU1JzVmFLaWFSZC1qandIZVduOVJyUkU5ZEhockE2TkpJV05BRUJRRmd4eVBZY3l3NU5xVHVM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g68b500490008",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet op de grill in Eerste Kamer: gaat vandaag definitief de stekker uit het AOW-plan? - AD.nl",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaFREcG03dWl3RmR3aFk5dTRjZHdvOER0QldkdnBBcUNEeWYxRGJIVXZsUTBHSzJBMmJ1c05PeU01elh4b2RpWkVVdnFDOS1OMTNMc0tVZUZVeDZ3dnlyUFR3OGVhOWRzWG56MXNqdVFIWDBWYVNDNFpaT3hXdnZOdU1DbkFsQkFFUWZGNnp6WlN3bHRWaGc3dFRNSF82OElUYkt1SDNFbzBvVUVWSUd6WDdkTDZ3dHhzbzNudkVfUFVudw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g126af7a99644",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rookgordijn rond NAVO-miljarden: waarom doet kabinet geheimzinnig over mega-investering in vitale infrastructuur? - De Telegraaf",
+    "date": "2026-04-07",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQU0syMTcwdEpXQ3R2c3RqZVBOdDhhdHdjQTFYOGc3bmdrRWtEWjgxWUJvdlJNVjc4X25BQm52aS1sOEpQaFl2SVRhS1gtNGphMWpXSnpPcHgtNWE4MG83OF9SYUpTUWVFX0FGV0pEM3hQUzBuYl8wWk5JejFicWtYN2VUWjhKUDU3OGN2VGVxQkJ6YWZZRHZ2aWhhN0t2SWNiNENsbVBNRjVyTEN5bkZpcHBZMUswbDVwWlViUmk5WHVMZzFEaEtZTDdTQlZDWWJfbXZjUGtEcE9qMHRESXdqc191TWNjcnZNTnZCV1gxR1EwQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g8b3516a73b4d",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Kabinet op de grill in Eerste Kamer: gaat vandaag definitief de stekker uit het AOW-plan? - Het Parool",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNT3NseVlGTkJ4S0t0UVhuN2FFYTh5Y05kN21USXFId0lmLWo1RG9VRWltSnRrUkcxX2dLZmFqaUxPRUowb29rX0NDbDRYdE13bjFSVkM0VnJHTDh3Tk91SFc5SGE4Nk9LNjZxWVdGQmhFVzNZOURzUW1tY3A3c2VGWEVMLUlZMllHQ2tWNHdSSUZpcUVReE02alBRNElWbWp6YlBtenV1THg0MG9qaHpka1RNei1fSGRsNFRGalY3b0dSdmhScWNvUw?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "ge4749f114163",
     "type": "nl",
     "src": "Trouw",
@@ -20,6 +81,16 @@
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNbl9NRlJmTk1CeTN4ejR6WVN0cVFDQl9HTGhGNXlTVnVsOE9ud09VRzVHczVXV0JseXBubzRJU1BHUGVCdFE3cEpTQVNrb0d4eDRmNlE4SnFma1dZU1RDZnlyMmNWY2o2ZGhCZldrVVlkdmpjRDRzNlcxQ2R0VW5yb2hwSHV5cl9PaFlwZXBLeWV0Rzl6U2V1aGxsTWdzb1ExSE9qNWVoTDJSSTM5V0sxNTExSkE2aFlQaTBPZ0Q5eGZWRVBxYV9R?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g95b568e3a755",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Voorstellen door de Eerste Kamer krijgen wordt een hele klus voor premier Jetten - Het Financieele Dagblad",
+    "date": "2026-04-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaFVNN2ZRV3VGVHh5c1ZkYk4ySzB0SEVJMjdYcGhiem5BbHl4TkRaZXF2M3lQVVUxS1ROUDFaN1l4R196YU1CTzJDbGlia0FaUGJXVm1hdURyMXNoZEFNNTg0OGgyMGxYdzhNV0NpMGlyNlRpRTZNbVVSU0dPemFyaGxIRlpVVkZMWGJWR1M0QkFXWXp6bVc0c2J3a3dLUWVzOUV0Vl9ISURldTY0eTEzTg?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gaf62fbc41886",
@@ -183,6 +254,16 @@
     "date": "2026-04-04",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSDNzeTBqdlB6NHdpcUNoclVFNjFST1J3MnQ2T21nMDBId3RMdzFpMWg0Skc0MkZUWEtGNHdYUkxuT01rMENtVEJqQkFhY2VtUWcyZDBSTGtTdmRrQXBoSGotUUdRR0NTeWs0VDAzUi1qdUY4MmY2blQxMFlnS3VNUGd0R1N0RDJPdG5LN1N0dkdYeVprTFRwU1lMcTNSOUN2TTNuQW9RcmRSUmV6dXc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gaf3011c89b2d",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Waarom andere landen al wel ingrijpen bij de hoge energieprijzen en Nederland niet - De Gelderlander",
+    "date": "2026-04-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQaTRkdmZ2S0c2ckFTYVE1S0w1RGlUcTA3UXlQZkRlMm1yejN3WC11UUREQ01KbUsyMS16ZjJJd1dxR1p6Nm9RLXl3ZzMtdmVURUhSSE1YcDkwLU16M3d6Q2JDMGlxME1Gb2gyRUc4d0RkUnA4WnN5Z3BISzRkcS05WGthek5zVHdpOFRSbThPZi1aYWg4QlZEM2dQWTJ5c3RlRGVnSjFGQ3p4UlpHOU1PWVNpZ3VJVVZmanhMRnBRNkJ6dG9POG9ybg?oc=5",
     "icon": "📰"
   },
   {
@@ -740,6 +821,16 @@
     "icon": "📰"
   },
   {
+    "id": "g8779256548e1",
+    "type": "nl",
+    "src": "Studio 040",
+    "title": "ASML-ceo Christophe Fouquet bezoekt minister-president Rob Jetten - Studio 040",
+    "date": "2026-04-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSGZUa2dDZ01EcTRWbUVyVHI3SUpxM3BjZ3lEa25FX1ktckhHaFlQUjdaa3VfRVBWMU9pYS1EXy1LSkMyTnFVdmlaTEJMQlNSRWlvdTBkMmpXemtpU3Jic0xxNGJ6MlBHbUtTMV9iRERySWFIcDdLX1VIRVJvVXZGUjkxaHRkZXhqWHQ2NmVkemFPSGlPX0N5Q2tsVm96VDFzeFBF?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g2b78cc1ee902",
     "type": "intl",
     "src": "Times of Suriname",
@@ -889,6 +980,16 @@
     "date": "2026-03-31",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPU1FSNHdkWk0xalc5U2pPUEhGMXRqNF9ud29XRVM0QXBpVklfOGJZU3E2c2ptVXpPMjZTTlhRUklnVEFZcDNuVGZkOFNrOWNDa3Y2MmEtVHM0WFdiYjNPSTVxTzg5WjBzaHN3aU1Fa1VUQjF2bUV1SXY4a24wdWFPUmVEOEVKZXZCMHZvV19WRFlEcTRwXzNVUU4zMFQxNVRyN2toeEdlR2x0c1l1clp3QXFPUFFtWDRRWlHSAcgBQVVfeXFMUGFOS1dpcUdtTUpBSnY0dFE5QkExcjg0RDEtazJIejFhNGlSQ1lUZlc4dmVudTc3OThPa1ltY1VlVm92NE5Bdm10Sm1SakRSNDVZOWpLR1NlNWgxQWlldTEtZU5EUHdJVDE0ckhIT3F4bVViek5nYWVKUjJhY0kxOXYyLXNuNElhN1B4M09BanJfaS1PRnJ3THRDZThEU2UyMkUtcGhVblc5czRRdFpCQS1JY0RlaDFYWnVVQlpKQlBhX3UxdWN3MGg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8eebab266987",
+    "type": "intl",
+    "src": "pm.gc.ca",
+    "title": "Le premier ministre Carney s’entretient avec le premier ministre des Pays-Bas, Rob Jetten - pm.gc.ca",
+    "date": "2026-03-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOdy03MVBTdkZzc0YwX0JLWlN1THhNeTdIV0lWV0VkNTVJQmRvTmxvZnJob3dWbXJ6d2k0VmxLVnBQaG90T09pWG5nSVFBbEtDVnVVSmdva2FhQkU5TU1tZW56TGNaMXFNVE1VcmszejdqTzV2NS1vOUZGQXJTVkJqc002azYycFJjOWR5QktYR0ltYktRNlFtY2F0U0xTbGlXbUlramNvSF9wNlM5bENsQnc5MXEzRWVHdFZ1aHNB?oc=5",
     "flag": "🌍"
   },
   {
@@ -3310,6 +3411,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gada6fcffcfcb",
+    "type": "intl",
+    "src": "ft.com",
+    "title": "Liberal Netherlands is back at heart of EU, says new PM Rob Jetten - ft.com",
+    "date": "2026-03-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQMkFFejd2dHY4QlpFZWdqelNyd3l3ZWNHVEdQU2U2MEtTelhPbjNjb0tobGM4dTM0Qk9ZLTI4aDZaSjFLVTVkSzVYWEhMT1M0Y1VfRC1Wb1lzZTJDRlZ3WVhVMG14c1dlQkRRa2F1QWVrQXR5N2cySlJfRkhXMjc0bnNCeVA?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g374729cc9747",
     "type": "nl",
     "src": "Suriname Herald",
@@ -3828,6 +3939,16 @@
     "flag": "🇺🇦"
   },
   {
+    "id": "g80baab5be4a3",
+    "type": "intl",
+    "src": "zdf.de",
+    "title": "Antrittsbesuch Jetten: Niederlande und Deutschland zeigen Zusammenhalt - zdf.de",
+    "date": "2026-03-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQamNUV3Fhd2hvekN3VTNjQThqOE9sdmpuSkNLZkhaT0dDRGI0OXJ2bFBSZWZodXdxTkFVN09vOWhERDFrdjZ6WmkyQ2d1eE1TVVpwNXd2b1ZjVXQ5UG9Nakc5eld6Rmw4QjQ2VnRLMEFaWjRBWnhjSmZUcExYRFdKTHRQSGl0WC0zWER5ckdEdlJNd1FMX1pJa0RWVW9fWktrbENGOE5iUDFZOXNDbDdGY19ISG1rUk1QQWxaNTZzR1Z3dzZjUjF2OUhicHZRZ3RrVEFYMGpDSFllc2V2Z1RGV2cwc1g?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "g8a35a9165efd",
     "type": "nl",
     "src": "De Gelderlander",
@@ -4206,6 +4327,16 @@
     "icon": "📰"
   },
   {
+    "id": "g8aea059fdda7",
+    "type": "intl",
+    "src": "World Socialist Web Site",
+    "title": "The Dutch ruling elite, its royals, and the war against Iran - World Socialist Web Site",
+    "date": "2026-03-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtUDRhWW1hWmt3bWd3OU5DS29FUDZPTGFOcDNsQm01R3VmbHFnbHZvZnJSOVpUcURzdm4yOC1qMkFrZHNYNGZjdFgwbUxNeXFDVGloaDFlNDV5N3lPdGV6YzVVLUZiWGZy?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g922828f83ef1",
     "type": "intl",
     "src": "Ouest-France",
@@ -4293,6 +4424,16 @@
     "date": "2026-03-09",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPZVRBMXZYaUU2Qzd2WlVBaFgyWTFXdHp0NGF4c251MDFMQ3owb0RlSlpURmV3T0U1eFVBNkN4ZVJKTnNNcUZBYTJUc0d4TFhSRzlyMDlwNU01V2ViM3pqZDRMeFBaQ0NRc1dTekUzR0Q1WDRHNGZJV3Q3bGoxaDZiTHkzYlRJSU9WeUdvWDZLUE4tNmJKUzUtejNqajJ1WkYxOFAyZVZ6MHNfRU04LTBpWnowTGk2eE5Hb3RsMnRMckk0MGdVaUJMb2lRWUFobXN4a0hkWXlKYlA1MUwzYkI5c1ppTVdJMGN2RmZUeHl4VzljN3dhUWNrYVBibDRHVGhOT2Q5MlhtODBRTWVFR19JQUlTNUNHdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "geaec7dd23663",
+    "type": "intl",
+    "src": "Polska Agencja Prasowa SA",
+    "title": "Усиление оборонного партнерства между Польшей и Нидерландами - Polska Agencja Prasowa SA",
+    "date": "2026-03-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQM1BWVDZjSE5weHJRYmxVTUtGWXNhYWJ6XzZ6N2t5enVDX3ZfU2tlWlNxN19hNWlXSllzVmQxQXlDcHlEemRlSHVfRVpDQjRpd1RfWmtQaGdJMkdtSjlEU1QwOHlFNDBBbFlUZnAtZjVlR255dkp1a3g4dmhQUTFNb01YSFIyT3RrejB0bC0wZVFvR010TmRTanhaU0I?oc=5",
     "flag": "🌍"
   },
   {
@@ -4874,6 +5015,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vbmZRNFFacWgzdW5YeFhFcEFmMGVrUldRRXNDSEY2eDZVMXBDa0ZiSWlCMlVvaDFtNjQzOF9PakNnaFl0Zkxqd1JQZDRFdnZacEU3RFY0eVgxdEpZbFlZ0gFrQVVfeXFMTmUwaC1uRUR6U1E4X0Q4ekdKNldUQS1ybzVNamJuTmxkTmpxdk5fQXZWUVBFRFFxTGpfSUx4b2loVmJhLVdfUG5tdXNlaXgtVVN6UVVzMmhRNDNRdmJqejNHU25Zd08wano4ams?oc=5",
     "flag": "🇺🇦"
+  },
+  {
+    "id": "gad849003096b",
+    "type": "intl",
+    "src": "wiadomosci.gazeta.pl",
+    "title": "Holandia chce rozwijać produkcję dronów razem z Ukrainą. \"Mamy ambicje i zamiary\" - wiadomosci.gazeta.pl",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOUhRdDRuelVIeFRrYzVtUlJVOEZ2UDFWSnhtZ29rTEg3RVNNT1ZhNXpJRjc5SjJXWHNNWGdvbHNWTVZKeVhPdXZkX0R1MFNfamNSY1RWM3dtOEk2MHZXTnRnY0o3QTA2N1dIalFDT1dnMGhOS2dtbndFNHByWV85Y045cUZKQmZYNVpkWDRjM0V1RzJXMG1zVUdoTDlWVU4yUE1XazFrTklqVWM5cUg5QmYtMTJydGFDb293SERn?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ge961dea86589",
@@ -5516,6 +5667,16 @@
     "flag": "🇫🇮"
   },
   {
+    "id": "gfff721a25095",
+    "type": "intl",
+    "src": "style.news.am",
+    "title": "Роб Йеттен и Николас Кинан: история любви премьер-министра и хоккеиста, покорившая Нидерланды - style.news.am",
+    "date": "2026-03-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRnNHdVhzNmpsUF9oaXJXM1Nnem8tTHd4RnZPN0tXa3ByNHptOFlibUF2TFlZYlRjeXhGaTBmUGc5bURWRHVxMGNzbWhsbDZ3dkJNWlgybDluV3d0RFRnMU5FVldaVWRuSzFybmJDR1phRmx3bTJlTmlibzBZY1lXWlJCYTcyQkw0OWc2Y0VveUVMczZyODJBNi1aUFBqUGh0bDlDTVVha2VPQW5fajUtMWFLZjZ4LW1ualdVWVBUYm11YzlDYXNGekJSZmVBT3ZoMFNINk9RMA?oc=5",
+    "flag": "🇫🇮"
+  },
+  {
     "id": "g8b93ee4bfc9e",
     "type": "intl",
     "src": "Libertad Digital",
@@ -5962,6 +6123,16 @@
     "lr": "right"
   },
   {
+    "id": "ga730b0d8abbc",
+    "type": "intl",
+    "src": "przegladsportowy.onet.pl",
+    "title": "Oto kim jest partner nowego premiera Holandii. To znana postać - przegladsportowy.onet.pl",
+    "date": "2026-02-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdlY2UTV3dWQydFVmdk1WY3h6c3NTd254TmZWQnd1SjdzUEt2a3JZcGlGZnhCbVMxOU1lYV95VmZSUlJSTkR5c1AtMEw0OG52V2VEelFLSm9taHl3OXU5dzFLU3oxUDdnR2RUb01paGZwWnJfLXhvczJ4VDJsVWg1UFFtSWpJQ3cwbEFfZ19BRk9WSjByLU0yYTdJeXRfQ2hIdVZ0R18tUEpiYm50UUE?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
     "id": "ps02",
     "type": "pol-stat",
     "date": "2026-02-25",
@@ -6142,6 +6313,16 @@
     "date": "2026-02-25",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPQ1FHTU1ScWo1R0t1OU1Dd0NkYk45X3h4ZlZKR016QUNGb2dfQmdYQ2NCbDJtNVBicWZYVFJ4Yk9TM1hTNFkzOG1QQk5BbUJBTEhxMm1EM0VaT0NHbU9YT3JFeTNscnBzTnJxc1hsUThIdVkzSlVPVDNWZ0x4em0tbm9OblRyOHBOU0dyWWZqN2hxQnhxSUJOajNqczJzZ2RKTDl2UmFIVEdjMklGNkN4VDJQMzVkWFo1dkhoeHJqVGNQV0RCODZKVTJsYUVzRHc5cWtSNkZZSlliRWJTRVlQS25DdFptS2o1Ti1aTEx2Szlhbmw5bGgyMEpGOUxoY1BQ0gGUAkFVX3lxTE9SZVdHZXk5ZllnZ1ZYSnMwZU41Q2FHVENjZ0pScnpLdWZMeDNSWDBXci1wU0wxY1BMRDY2RXpaUk96d0Zzblk4V3lCcDJQNlBtM2dfSnN4WDdhRjAxSkxLUkc3a2VJRVhSRzlVeHQta2lUTm1JWkhNVlNfX3ZfLTFTX09jaEJ1ZGtneWlGV3Z3LTViZkkxc1cxMXd3MzFQNGpVOUdVeWVidEZ0bnQyWnlOX0p2dnVOTVUwZG9YRGtvV2x6ajBwa01Tc3FlMmxKLW92cnBmSDRVcGE5QTVBcThPYnlTZV9UWXNCekt2SFBNbWlaTTVONXNQZWhhUHlYSG5jaVVpa1I3QTdBOUw0ZVU0dnhmZg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd9b1b4c4b722",
+    "type": "intl",
+    "src": "lasexta.com",
+    "title": "VÍDEO | Juan Sanguino cuenta la historia de amor de Rob Jetten, primer ministro de Países Bajos: \"Tiene - lasexta.com",
+    "date": "2026-02-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOdDNwbU9VbGx4R01PX3Q0SW1zSmJjdjU4RS1WbEZESFNOQjl5WWZaVmtna2h2VkpSWmNYek5hcnR5XzVhSU94c3Q4WDFYREgxUHUxS1dhWndWLTZjWDlQWUZOUzhfNzFwRlRtTVEzbzBIR3VxMjA5ZFpPZDd2ZWtFc3NhTWxaZU5XdWk5bTFqTkx6YjFqSXNOLUpWdnVjby1CR20xVFhjcnFSWjB0TG5TdFpVaTdDdDU0NFNOdVhDUE15a0lfOVBiYnhNOU1HcGpmWHNqd2xNT2R0Z1BmWVR6MVptbldqMWxCZjJtcU5HNHItWFNHb0JNZ3dadzV2MUFLYnBZemN4LTAxaW4wb184Mk1LbDQxYU9B0gGYAkFVX3lxTE5XNlZTWTJRTjZzMjJ2Y0M2c3ZiZDROVkxCbUFwbVhYZGJ4cEd4amZzellJRjdRMFdMWHdLN1ZVVnl6VXNFdDB4X2xOQkRmNVdMZ2F6QkJWMDlETGQtWGhCWFV4Z05idzBzRkpuR2Zkcl9pbUxKeVVDVWxDNnBzSXgzcnlzcC14V0NXd0hNaS15cGJYWGJXa3pQWnp6M21XYjhOcVhqUTVGQVl2VzU1Z0JkUEM3dUJwbjdhNHk4c0YyVnZncFEwRjNUbk51Y3ZxWm1hakc2Nl9rejJ6Rmp6bmswM0xubzY3VUwyYldPdnFNVG1ITkVfUlhBdTN2Qnl0T1JKenRodWM2U3hRNHVuMkxDVTZnM3NfYVM?oc=5",
     "flag": "🌍"
   },
   {
@@ -6585,6 +6766,36 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ01rNmZNc3I0S1dJd0J1RG1Kc2hIZkJ4XzJuNkd2S1RKRFZKWmhvbnZaRWtnOXA5Z0hfazFnUnNRR043WDE1dlU3VTI3MG5ZZmMyVFdydGR3VkItX3FidjB1TnhBZVhsRkpGdHNxMDFiekFVVkhmSGdmZ0dUNVJHaXNvRDJtU0NCYlBxcnZaT3BKWkIxd0l5RHZFeDdCSEVkeXBN?oc=5",
     "flag": "🇪🇺"
+  },
+  {
+    "id": "g4062e32f0356",
+    "type": "intl",
+    "src": "news.sky.com",
+    "title": "Rob Jetten becomes Netherlands' first openly gay prime minister - news.sky.com",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVG1ndzZmNGJlblV6OTNtRHFQMTJCOVlIa2xVREc4Mmprek1EWGo2WFpyTUdUTXU0bEpGOEtpMFBvaTF6dFVfWGJWVUZ6SDlmSm03OGI2NzItOHVYVk1qSFotNTl3X1hIU2lhalY1bm8xZS1Ucm1LRTVVdXNsQTBaaDk0VXNya2FMMUdBbnlpMW1Wa0lwWm1rM1NIdzNwV2M?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g651705839869",
+    "type": "intl",
+    "src": "Kyiv Post",
+    "title": "Нідерланди збільшать витрати на оборону та допомогу Україні при новому прем’єрі - Kyiv Post",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHLXhPbEhwWW1QMUVqOVNsWDViMEh1Y0liT1lLY0RtRDJvYm1WT3BfNlZWUV9RUGd4LUcya3luek1SX243aENIdHpOLTNSS0E?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "g37eb5b3ca3be",
+    "type": "intl",
+    "src": "Укрінформ",
+    "title": "Новий прем’єр Нідерландів уперше долучився до засідання Коаліції охочих - Укрінформ",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbkZJVGRZYTVGbnNIVGQwOUtkUFV0MFlTRk9KT0JGa0FLNTdMX203S3plcVpkZTctZ2ZXN29YcjBneTNZNF9ZbWpVLW53b3dVVUxmZVladFJ5MkV0VF9SWEZZRm0yTGJXWG5wVTgySU5samVVV3dRSzZXQndzOWxlYUg5eFIzVXhWQmQ1bkhoc3g5cU1WVk0wVHh2QXZpeVZzOFlhNDB2SV83X3dGUERST21BTlY2WlFBNFFrYUVUSzZWZ9IBxwFBVV95cUxQTVBvRXBINEpOdnQ2Yjg5dlprbzZMQXFKeVBjcjBpSGVSV3BNamV1b0FoMXM4eEk1Nm84WEtjRDNkRkdqZlhzV3dBLU4xcTA5S2lZTUtUX1A1b1JfTmtCVGxrN3JJU2NVMkNldlhrYThlSVI2SmN3OTFLUXpDbFFTV2dnZnNZZDJGcDkzaWxoa0s5YmRYdjBPSkFpeWtjM3VvOUJNbFRUb1VNNkNuOTBmMzFaRFZqdjYyS05mX0NST01VempZd2FB?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "nl001",
@@ -8724,6 +8935,56 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTXc3Y2pxU2I0QzlNOU8zTGFRNkJjVFdkeFpoUFRKOHY2MXFFZUxBT0p2SnlBNTVaVVY4aGQ0Mmd3TEhlNlBxTk13MHJGYzNzek5TdE92aFQ5V1JZa0c1VzZhdkNkemphVHRnQnNjWlNxWVlFUnlPaVlOQkxFcWJvU3BBQkczOXpiX0N4a19Ed011U05Td3cwcDFn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8af0189f11b1",
+    "type": "intl",
+    "src": "apnews.com",
+    "title": "From ‘Robot Jetten’ to prime minister: The rise of the Netherlands’ youngest leader - apnews.com",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUElJR05PRFlnYmszRXFoNHVLcGhRY28xVTZBeUU2WXMxdjJ3Q1hqNjNkZkxvZXRaOVFWR3BqYlN2bEVjREVZXzlia3VCSnFPblVMMmtSbjZQN21DTjFvdlRZUUU3TVl1Vld2b3EteEx5aTM5dTVWT3I1NzhNRHlaVHdKeERhcnJ5bE1SSnlBVWpFUDFzS3VzbWhmdUdIQk9S?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6bb6b3655424",
+    "type": "intl",
+    "src": "aa.com.tr",
+    "title": "Rob Jetten becomes youngest Dutch premier as new minority Cabinet inaugurated - aa.com.tr",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNa1JPNzlTSk9zYnVJSGJsaWlqM2FnbU1WdUdsX0dPNFo5TWgxY1gwejlWOC1hcDNxcnU0QWE1Sk5LOUlWS0l5SUpaTWlqREtRdTlJZ09nMEh3N1R6alVTemp1U1YwU20tUHEyZ0JjSE1CN2VFRGdjQU5hNUswUHVwNm4xZElGeE9oTDJzQnRodGZFWk5yY0JLWmZqdFcyQmJ6UVlaWEtSemIwYzlxZWdSZjNDcmtvOGQx?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5bab412f0f63",
+    "type": "intl",
+    "src": "it.euronews.com",
+    "title": "Paesi Bassi, ha giurato il nuovo governo: Jetten primo ministro - it.euronews.com",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQS1dWNHhvQlh2cGhnbFpqQmsyM3BtQUN1Rm93YUZIQlVtbWI4dVBCOWJwS05xWFJ5SHRXZ29ZaXJ6OWN1WGt3eExOX19OYVFJeE9nRl9RT2tNS0VfTG1JdzlWWDJoVHBoa3VrbFJFS3cwa1gteXcxUEhBWXNuMUVBTTVPcjdZOG9Xek1jVVo2R3JoTEFJSUFGV1N3Zmd4RWc1SmFJSUxQWHFlanEzQVgyWGVNN2VvWmpnbUZZdGZLdEJOTFU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd3f0f5255160",
+    "type": "intl",
+    "src": "it.euronews.com",
+    "title": "Video. Paesi Bassi, ha giurato il nuovo governo: Jetten primo ministro - it.euronews.com",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNkxoaGE2VFd1VnY3QkdyUFhKZVI0YW5OdlBCOE8wVkwydVdmWmxaOXduZG5Zd1ZrMDhMakZSUnV6V3FoUEo0dlNhdldrRVk3UlUxQWp6TjhpcmxzY0ZUQUNFYU9nSEdpbXdyLWZhVEhFQUl1M3hzYXhzeXl6R0ZwN29XOFpZZHd0YXRrc25jVXNVMkJHemdzX1IyREVhcGlZQnBPLXBwd3lwQ2xlQ081RndnM3F1NEo0ZDVfcmxYRjJRRjV2ZmpBOFdfVQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1280f8e35e1a",
+    "type": "intl",
+    "src": "Гордон",
+    "title": "В Нидерландах правительство впервые возглавил открытый гей. Он – самый молодой премьер в истории страны - Гордон",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORXk1NnBxaDZkTWVYTHc0eGUybktRS3kxcnJrTVBuY0tSYnBOa0U4ZU9Pbmpmdkh4aTFVb0MtTjZPclJzeHJtdEZVY0o2V0V1Zkw3M1E0QkRENzAzd1dvY1FXOHBzLXNtLWpiWlBJUUpBa0NoQ1lNSGZ0YWc0NzVwZFlvSTNDZml4bWRfdjNDLUNvTnZUdmI2clliTUxCa0doTDQ4VmRnc1lBdUdPdzFJTVk3d0NVZjVjSGJ5SEFzSjNqZG9KcUlUcnhhTEtfOEdLbDNBcnBUUWJqOEJSenJFWFln0gHnAUFVX3lxTFBaYU1RbzVBTENESnIzWTVTZE9wdGZJUTJNM3JaX0llRmh5Q2llNVVDVzZ5aWwxMjdmNVdqMGJJWl91RW9DRTJPR0lMUXhHTHFQNDRpZGZyV1Q3R2xtQ1hNaW9zcGFFVjhwYmlWLUJ6ZFZxMEg4V0J4MXVscHB0TDFOWDdLY1Qzb29BM3ZiWTZ4X0g1Y3lwbUs2TzR3N1BuQnZCcUhTdWd4TEhSMHpHMFYzWWVISFUtR28xOUZybGhUSk1oNUQwT3NtTW84UFVkSnk0cmRKcjZzUVUxTWdXWXNXc3hrdkJqTQ?oc=5",
     "flag": "🌍"
   }
 ]
