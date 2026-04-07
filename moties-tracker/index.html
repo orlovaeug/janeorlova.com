@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Google Analytics (veilig onderaan geplaatst, maar eerst de rest) -->
 <title>Motie Tracker — Kabinet-Jetten</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,220 +31,271 @@ li{list-style:none}
 
 /* scrollbar */
 ::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:var(--paper2)}
-::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
+::-webkit-scrollbar-track{background:var(–paper2)}
+::-webkit-scrollbar-thumb{background:var(–border2);border-radius:3px}
 
 /* nav */
 #nav{background:#0D0D0F;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.06);}
-#nv{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:14px;height:var(--nav-h)}
-#nb{font-family:"Libre Baskerville",serif;font-size:17px;font-weight:700;color:#fff;white-space:nowrap;flex-shrink:0}
+#nv{max-width:1280px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:10px;height:var(–nav-h)}
+#nb{font-family:“Libre Baskerville”,serif;font-size:17px;font-weight:700;color:#fff;white-space:nowrap;flex-shrink:0}
 .n-sep{width:1px;height:20px;background:rgba(255,255,255,.12);flex-shrink:0}
-#nsub{font-size:10px;color:rgba(255,255,255,.32);letter-spacing:.08em;font-weight:600;flex-shrink:0;white-space:nowrap;font-family:"DM Mono",monospace;text-transform:uppercase}
-#nright{display:flex;gap:8px;flex-shrink:0;margin-left:auto}
-.nbs{padding:7px 14px;border-radius:100px;border:1px solid rgba(255,255,255,.18);background:transparent;color:rgba(255,255,255,.7);font-size:11px;font-weight:600;transition:all .2s}
+#nsub{font-size:10px;color:rgba(255,255,255,.32);letter-spacing:.08em;font-weight:600;flex-shrink:0;white-space:nowrap;font-family:“DM Mono”,monospace;text-transform:uppercase;
+/* hide on very small screens */
+}
+#nright{display:flex;gap:6px;flex-shrink:0;margin-left:auto}
+.nbs{padding:7px 12px;border-radius:100px;border:1px solid rgba(255,255,255,.18);background:transparent;color:rgba(255,255,255,.7);font-size:11px;font-weight:600;transition:all .2s}
 .nbs:hover{border-color:rgba(255,255,255,.45);color:#fff}
-.nbp{padding:7px 16px;border-radius:100px;border:none;background:#fff;color:var(--ink);font-size:11px;font-weight:700}
-.nbp:hover{background:var(--paper2)}
+.nbp{padding:7px 14px;border-radius:100px;border:none;background:#fff;color:var(–ink);font-size:11px;font-weight:700}
+.nbp:hover{background:var(–paper2)}
 
 /* tabs */
 #ntabs-row{background:rgba(0,0,0,.25);border-top:1px solid rgba(255,255,255,.06)}
-#ntabs{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;gap:0;overflow-x:auto}
+#ntabs{max-width:1280px;margin:0 auto;padding:0 16px;display:flex;gap:0;overflow-x:auto}
 #ntabs::-webkit-scrollbar{display:none}
-.nt{padding:9px 18px;border:none;border-bottom:2px solid transparent;background:transparent;color:rgba(255,255,255,.42);font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.nt{padding:9px 14px;border:none;border-bottom:2px solid transparent;background:transparent;color:rgba(255,255,255,.42);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
 .nt.on{border-bottom-color:#fff;color:#fff}
 .nt:hover:not(.on){color:rgba(255,255,255,.72);background:rgba(255,255,255,.04)}
 
 /* main */
-#main{max-width:1280px;margin:0 auto;padding:28px 28px 72px}
+#main{max-width:1280px;margin:0 auto;padding:16px 16px 72px}
 
-/* hero */
-#hero{background:#0D0D0F;border-radius:var(--rad);padding:24px 28px;margin-bottom:20px;min-height:100px}
-.hero-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0}
-.hs{padding:0 22px;border-right:1px solid rgba(255,255,255,.08)}
+/* hero — FIXED: always 2-col on mobile, no cut-off */
+#hero{background:#0D0D0F;border-radius:var(–rad);padding:20px 16px;margin-bottom:16px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(min-width:700px){.hero-grid{grid-template-columns:repeat(5,1fr);gap:0}}
+.hs{padding:0}
+@media(min-width:700px){
+.hs{padding:0 20px;border-right:1px solid rgba(255,255,255,.08)}
 .hs:first-child{padding-left:0}.hs:last-child{border-right:none}
-.hsl{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:7px;font-family:"DM Mono",monospace}
-.hsv{font-family:"Libre Baskerville",serif;font-size:38px;font-weight:700;line-height:.9;letter-spacing:-.03em;color:#ffffff !important}
-.hss{font-size:10px;color:rgba(255,255,255,.35);margin-top:7px}
+}
+.hsl{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:6px;font-family:“DM Mono”,monospace}
+.hsv{font-family:“Libre Baskerville”,serif;font-size:30px;font-weight:700;line-height:.95;letter-spacing:-.03em;color:#ffffff}
+@media(min-width:700px){.hsv{font-size:36px}}
+.hss{font-size:10px;color:rgba(255,255,255,.35);margin-top:6px}
 .hsa{font-size:10px;margin-top:6px;display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:100px;font-weight:700}
 .hsa-g{background:rgba(42,107,69,.4);color:#7DDBA8}
 .hsa-r{background:rgba(200,65,42,.4);color:#F5A090}
-@media(max-width:600px){.hero-grid{grid-template-columns:1fr 1fr;gap:16px}.hs{padding:0!important;border-right:none!important}.hsv{font-size:30px}}
-@media(min-width:601px) and (max-width:900px){.hero-grid{grid-template-columns:repeat(3,1fr)}.hs:nth-child(n+4){display:none}.hsv{font-size:32px}}
 
 /* search/filter */
-#srow{display:flex;gap:10px;margin-bottom:10px}
+#srow{display:flex;gap:8px;margin-bottom:10px}
 #sw{position:relative;flex:1}
-#si{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--mid);font-size:14px;pointer-events:none}
-#sinp{width:100%;padding:11px 14px 11px 40px;border:1.5px solid var(--border);border-radius:100px;font-size:13px;outline:none;background:#fff}
-#sinp:focus{border-color:var(--ink);box-shadow:0 0 0 3px rgba(13,13,15,.06)}
-.tbtn{padding:9px 18px;border-radius:100px;border:1.5px solid var(--border);background:#fff;color:var(--ink2);font-size:11px;font-weight:700;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-.tbtn:hover,.tbtn.on{border-color:var(--ink);background:var(--ink);color:#fff}
-#fp{background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:16px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:10px}
-#fp select{padding:9px 30px 9px 13px;border:1.5px solid var(--border);border-radius:100px;font-size:12px;background:var(--paper);appearance:none}
-#fcount{font-size:11px;color:var(--mid);grid-column:1/-1;text-align:right}
+#si{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(–mid);font-size:14px;pointer-events:none}
+#sinp{width:100%;padding:11px 14px 11px 40px;border:1.5px solid var(–border);border-radius:100px;font-size:13px;outline:none;background:#fff}
+#sinp:focus{border-color:var(–ink);box-shadow:0 0 0 3px rgba(13,13,15,.06)}
+.tbtn{padding:9px 16px;border-radius:100px;border:1.5px solid var(–border);background:#fff;color:var(–ink2);font-size:11px;font-weight:700;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.tbtn:hover,.tbtn.on{border-color:var(–ink);background:var(–ink);color:#fff}
+#fp{background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+@media(min-width:600px){#fp{grid-template-columns:1fr 1fr 1fr}}
+#fp select{padding:9px 30px 9px 13px;border:1.5px solid var(–border);border-radius:100px;font-size:12px;background:var(–paper);appearance:none}
+#fcount{font-size:11px;color:var(–mid);grid-column:1/-1;text-align:right}
 
 /* motie cards */
 #ml{display:flex;flex-direction:column;gap:8px}
-.mc{background:#fff;border-radius:var(--rad);border:1.5px solid var(--border)}
-.mc:hover{box-shadow:var(--shadow);transform:translateY(-1px)}
-.mc.open{box-shadow:var(--shadow-lg);border-color:var(--border2)}
+.mc{background:#fff;border-radius:var(–rad);border:1.5px solid var(–border);transition:box-shadow .2s,transform .2s}
+.mc:hover{box-shadow:var(–shadow);transform:translateY(-1px)}
+.mc.open{box-shadow:var(–shadow-lg);border-color:var(–border2)}
 .mh{display:flex;align-items:stretch;cursor:pointer;min-height:66px}
-.ms{width:4px;flex-shrink:0}
-.mb{flex:1;padding:14px 18px}
+.ms{width:4px;flex-shrink:0;border-radius:var(–rad) 0 0 var(–rad)}
+.mb{flex:1;padding:14px 14px}
 .mm{display:flex;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap}
-.mdt{font-size:10px;color:var(--mid);font-family:"DM Mono",monospace}
-.msep{color:var(--border2);font-size:11px}
-.mi{font-size:10px;font-weight:700;background:var(--ink);color:#fff;padding:2px 9px;border-radius:100px}
-.mth{font-size:10px;padding:2px 9px;background:var(--paper2);color:var(--ink2);border-radius:100px;border:1px solid var(--border)}
-.mt{font-family:"Libre Baskerville",serif;font-size:14px;font-weight:400;line-height:1.4;margin-bottom:7px}
+.mdt{font-size:10px;color:var(–mid);font-family:“DM Mono”,monospace}
+.msep{color:var(–border2);font-size:11px}
+.mi{font-size:10px;font-weight:700;background:var(–ink);color:#fff;padding:2px 9px;border-radius:100px}
+.mth{font-size:10px;padding:2px 9px;background:var(–paper2);color:var(–ink2);border-radius:100px;border:1px solid var(–border)}
+.mt{font-family:“Libre Baskerville”,serif;font-size:14px;font-weight:400;line-height:1.4;margin-bottom:7px}
 .mbg{display:flex;gap:5px;flex-wrap:wrap}
-.mch{padding-right:18px;color:var(--mid);font-size:11px;display:flex;align-items:center;transition:transform .2s}
+.mch{padding-right:14px;color:var(–mid);font-size:11px;display:flex;align-items:center;flex-shrink:0;transition:transform .2s}
 .mc.open .mch{transform:rotate(180deg)}
-.md{border-top:1.5px solid var(--paper2);padding:18px 22px 20px;background:var(--paper)}
-.mtl{font-size:13px;color:var(--ink2);line-height:1.75;border-left:3px solid var(--ink);padding-left:12px;margin-bottom:14px;font-family:"Libre Baskerville",serif;font-style:italic}
-.tkl{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:7px 14px;border:1.5px solid var(--border2);border-radius:100px;margin-bottom:14px;font-weight:700;background:#fff}
-.tkl:hover{background:var(--ink);color:#fff}
+.md{border-top:1.5px solid var(–paper2);padding:16px 18px 18px;background:var(–paper);border-radius:0 0 var(–rad) var(–rad)}
+.mtl{font-size:13px;color:var(–ink2);line-height:1.75;border-left:3px solid var(–ink);padding-left:12px;margin-bottom:14px;font-family:“Libre Baskerville”,serif;font-style:italic}
+.tkl{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:7px 14px;border:1.5px solid var(–border2);border-radius:100px;margin-bottom:14px;font-weight:700;background:#fff}
+.tkl:hover{background:var(–ink);color:#fff}
 .badge{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;font-size:10px;font-weight:700;border:1px solid;border-radius:100px}
-.vs{margin-top:14px;padding-top:12px;border-top:1.5px solid var(--border)}
-.vl{font-size:9px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
+.vs{margin-top:14px;padding-top:12px;border-top:1.5px solid var(–border)}
+.vl{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
 .vg{display:flex;align-items:flex-start;gap:8px;margin-bottom:7px;flex-wrap:wrap}
 .vp{font-size:10px;font-weight:700;padding:2px 9px;border:1px solid;white-space:nowrap;border-radius:100px}
 .vc2{display:flex;flex-wrap:wrap;gap:3px}
 .vcp{font-size:10px;font-weight:600;padding:2px 7px;border:1px solid;border-radius:100px}
-.vem{font-size:12px;color:var(--mid);font-style:italic}
-#emsg{text-align:center;padding:72px 20px;color:var(--mid);background:#fff;border-radius:var(--rad);border:1.5px solid var(--border)}
-#emsg p{font-family:"Libre Baskerville",serif;font-size:20px;color:var(--ink);margin-bottom:8px}
+.vem{font-size:12px;color:var(–mid);font-style:italic}
+#emsg{text-align:center;padding:72px 20px;color:var(–mid);background:#fff;border-radius:var(–rad);border:1.5px solid var(–border)}
+#emsg p{font-family:“Libre Baskerville”,serif;font-size:20px;color:var(–ink);margin-bottom:8px}
 
 /* stats */
-.stat-section-label{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);font-family:"DM Mono",monospace;margin-bottom:12px;border-bottom:1px solid var(--border);padding-bottom:8px}
-.kpi-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:4px}
-.kpi{background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:20px 22px}
-.kpi-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:10px}
-.kpi-val{font-family:"Libre Baskerville",serif;font-size:44px;font-weight:700;line-height:.9;letter-spacing:-.03em}
-.kpi-sub{font-size:11px;color:var(--mid);margin-top:8px}
-.kpi-green{color:var(--green)}.kpi-amber{color:var(--amber)}
-.stat-2col{display:grid;grid-template-columns:3fr 2fr;gap:16px}
-.sc{background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:22px 24px}
-.sc-title{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:16px}
+.stat-section-label{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(–mid);font-family:“DM Mono”,monospace;margin-bottom:12px;border-bottom:1px solid var(–border);padding-bottom:8px}
+.kpi-strip{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:4px}
+@media(min-width:600px){.kpi-strip{grid-template-columns:repeat(4,1fr)}}
+.kpi{background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:16px 18px}
+.kpi-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(–mid);margin-bottom:10px}
+.kpi-val{font-family:“Libre Baskerville”,serif;font-size:38px;font-weight:700;line-height:.9;letter-spacing:-.03em}
+.kpi-sub{font-size:11px;color:var(–mid);margin-top:8px}
+.kpi-green{color:var(–green)}.kpi-amber{color:var(–amber)}
+.stat-2col{display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:768px){.stat-2col{grid-template-columns:3fr 2fr}}
+.sc{background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:20px 22px}
+.sc-title{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(–mid);margin-bottom:16px}
 .hbar-chart{display:flex;flex-direction:column;gap:9px}
 .hbc-row{display:flex;align-items:center;gap:10px}
-.hbc-label{font-size:11px;color:var(--ink2);width:148px;flex-shrink:0;text-align:right;font-weight:600}
-.hbc-track{flex:1;background:var(--paper2);border-radius:100px;height:7px}
+.hbc-label{font-size:11px;color:var(–ink2);width:120px;flex-shrink:0;text-align:right;font-weight:600}
+.hbc-track{flex:1;background:var(–paper2);border-radius:100px;height:7px}
 .hbc-fill{height:100%;border-radius:100px}
 .hbc-val{font-size:11px;font-weight:700;width:22px;text-align:right}
 .donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .donut-legend{display:flex;flex-direction:column;gap:9px}
 .donut-li{display:flex;align-items:center;gap:8px}
 .donut-dot{width:9px;height:9px;border-radius:50%}
-.donut-lbl{font-size:12px;color:var(--ink2);flex:1;font-weight:600}
-.donut-val{font-size:13px;font-weight:700;font-family:"DM Mono",monospace}
+.donut-lbl{font-size:12px;color:var(–ink2);flex:1;font-weight:600}
+.donut-val{font-size:13px;font-weight:700;font-family:“DM Mono”,monospace}
 .col-chart{display:flex;align-items:flex-end;gap:3px;height:80px;margin-top:8px}
 .col-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px}
 .col-bar-wrap{flex:1;width:100%;display:flex;flex-direction:column;justify-content:flex-end}
 .col-bar{border-radius:4px 4px 0 0;width:100%;min-height:3px}
-.col-label{font-size:8px;color:var(--mid);text-align:center;font-family:"DM Mono",monospace}
-.party-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(108px,1fr));gap:8px;margin-top:4px}
-.party-card{background:var(--paper);border-radius:8px;padding:11px 13px}
-.party-name{font-size:9px;font-weight:700;color:var(--mid);text-transform:uppercase;margin-bottom:5px}
+.col-label{font-size:8px;color:var(–mid);text-align:center;font-family:“DM Mono”,monospace}
+.party-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:4px}
+.party-card{background:var(–paper);border-radius:8px;padding:11px 13px}
+.party-name{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;margin-bottom:5px}
 .party-pct{font-size:22px;font-weight:700;line-height:1;margin-bottom:7px}
-.party-bar{height:3px;background:var(--border);border-radius:100px}
+.party-bar{height:3px;background:var(–border);border-radius:100px}
 .party-bar-f{height:100%;border-radius:100px}
 .coal-opp{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.coal-block{background:var(--paper);border-radius:var(--rads);padding:14px 16px}
-.coal-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mid);margin-bottom:10px}
-.coal-big{font-family:"Libre Baskerville",serif;font-size:32px;font-weight:700;line-height:1}
-.coal-sub{font-size:11px;color:var(--mid);margin-top:5px}
+.coal-block{background:var(–paper);border-radius:var(–rads);padding:14px 16px}
+.coal-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(–mid);margin-bottom:10px}
+.coal-big{font-family:“Libre Baskerville”,serif;font-size:32px;font-weight:700;line-height:1}
+.coal-sub{font-size:11px;color:var(–mid);margin-top:5px}
 .top-table{display:flex;flex-direction:column;gap:6px;margin-top:4px}
-.top-row{display:flex;align-items:center;gap:12px;padding:9px 12px;background:var(--paper);border-radius:8px}
-.top-rank{font-size:11px;font-weight:700;color:var(--mid);width:20px;text-align:center}
+.top-row{display:flex;align-items:center;gap:12px;padding:9px 12px;background:var(–paper);border-radius:8px}
+.top-rank{font-size:11px;font-weight:700;color:var(–mid);width:20px;text-align:center}
 .top-name{flex:1;font-size:13px;font-weight:700}
-.top-party{font-size:10px;color:var(--mid);font-weight:600}
-.top-count{font-size:13px;font-weight:700;font-family:"DM Mono",monospace}
+.top-party{font-size:10px;color:var(–mid);font-weight:600}
+.top-count{font-size:13px;font-weight:700;font-family:“DM Mono”,monospace}
 .top-badge{font-size:9px;font-weight:700;padding:2px 8px;border-radius:100px}
 .feed{display:flex;flex-direction:column;gap:0}
-.feed-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--border)}
+.feed-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(–border)}
 .feed-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px;border:2px solid}
 .feed-title{font-size:12px;font-weight:700;line-height:1.4;margin-bottom:3px}
-.feed-meta{font-size:10px;color:var(--mid)}
+.feed-meta{font-size:10px;color:var(–mid)}
 
-/* akkoord */
-.ak-hero{background:#0D0D0F;border-radius:var(--rad);padding:20px 22px 18px;margin-bottom:16px;color:#fff}
-.ak-hero-row{display:flex;align-items:center;gap:6px;margin-bottom:14px;flex-wrap:wrap}
-.ak-hstat{flex:1;text-align:center}
-.ak-hbig{font-family:"Libre Baskerville",serif;font-size:22px;font-weight:700;line-height:1;color:#fff}
-.ak-hlabel{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.38)}
+/* akkoord — FIXED: all themes show, better mobile layout */
+.ak-hero{background:#0D0D0F;border-radius:var(–rad);padding:20px;margin-bottom:16px;color:#fff}
+.ak-hero-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+@media(min-width:600px){.ak-hero-row{grid-template-columns:repeat(4,1fr)}}
+.ak-hstat{text-align:center;background:rgba(255,255,255,.06);border-radius:10px;padding:12px 8px}
+.ak-hbig{font-family:“Libre Baskerville”,serif;font-size:22px;font-weight:700;line-height:1;color:#fff}
+.ak-hlabel{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.38);margin-top:4px}
 .ak-hero-bar{margin-top:6px}
+.ak-hero-barlabel{font-size:9px;color:rgba(255,255,255,.4);margin-bottom:6px}
 .ak-hero-track{height:4px;background:rgba(255,255,255,.12);border-radius:2px}
 .ak-hero-fill{height:100%;background:#fff;border-radius:2px}
-.akklist{display:flex;flex-direction:column;gap:10px}
-.akcard{background:#fff;border-radius:var(--rads);border:1.5px solid var(--border);overflow:hidden}
-.akhead{display:flex;align-items:center;gap:12px;padding:16px 18px;cursor:pointer}
-.akhead:hover{background:var(--paper)}
-.akicon{font-size:18px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:var(--paper2);border-radius:8px}
-.akname{font-family:"Libre Baskerville",serif;font-size:14px}
-.aksub2{font-size:10px;color:var(--mid);margin-top:2px}
+.ak-hero-barsub{font-size:9px;color:rgba(255,255,255,.3);margin-top:5px}
+
+/* akkoord cards — FIXED: always show punten, match logic improved */
+.akklist{display:flex;flex-direction:column;gap:8px}
+.akcard{background:#fff;border-radius:var(–rads);border:1.5px solid var(–border);overflow:hidden}
+.akhead{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
+.akhead:hover{background:var(–paper)}
+.akicon{font-size:18px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:var(–paper2);border-radius:8px;flex-shrink:0}
+.akinfo{flex:1;min-width:0}
+.akname{font-family:“Libre Baskerville”,serif;font-size:14px}
+.aksub2{font-size:10px;color:var(–mid);margin-top:2px}
+.akbdgs{display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0}
 .akbdg{font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;border:1px solid;white-space:nowrap}
-.akbdg-g{color:var(--green);background:var(--greenbg);border-color:var(--greenbd)}
-.akbdg-r{color:var(--accent);background:var(--accentbg);border-color:var(--accentbd)}
-.akbody{padding:0 18px 18px;border-top:1.5px solid var(--paper2)}
-.akptitle{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mid);margin:14px 0 8px}
-.akplist li{font-size:12px;color:var(--ink2);padding-left:18px;position:relative;line-height:1.55}
-.akplist li::before{content:"›";position:absolute;left:0}
-.akmc2{background:var(--paper);border-radius:8px;padding:12px 14px;margin-bottom:8px;border:1px solid var(--border)}
-.akmc2d{font-size:10px;color:var(--mid);margin-bottom:4px}
-.akmc2t{font-size:13px;font-weight:600;margin-bottom:6px}
+.akbdg-g{color:var(–green);background:var(–greenbg);border-color:var(–greenbd)}
+.akbdg-r{color:var(–accent);background:var(–accentbg);border-color:var(–accentbd)}
+.akbdg-n{color:var(–mid);background:var(–paper2);border-color:var(–border)}
+.akchev{color:var(–mid);font-size:10px;flex-shrink:0;transition:transform .2s;margin-left:4px}
+.akcard.akopen .akchev{transform:rotate(180deg)}
+.akbody{padding:0 16px 16px;border-top:1.5px solid var(–paper2)}
+.akptitle{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(–mid);margin:14px 0 8px}
+.akplist{display:flex;flex-direction:column;gap:4px;margin-bottom:4px}
+.akplist li{font-size:12px;color:var(–ink2);padding-left:18px;position:relative;line-height:1.55}
+.akplist li::before{content:”›”;position:absolute;left:0;color:var(–mid)}
+.akmc2{background:var(–paper);border-radius:8px;padding:12px 14px;margin-bottom:6px;border:1px solid var(–border)}
+.akmc2d{font-size:10px;color:var(–mid);margin-bottom:4px;font-family:“DM Mono”,monospace}
+.akmc2t{font-size:13px;font-weight:600;margin-bottom:6px;line-height:1.4}
+.akmc2b{display:flex;gap:4px;flex-wrap:wrap}
+
+/* ── FIX: theme heatmap ── */
+.theme-heatmap{display:flex;flex-direction:column;gap:8px}
+.th-row{display:flex;align-items:center;gap:10px}
+.th-label{font-size:11px;color:var(–ink2);width:120px;flex-shrink:0;font-weight:600;text-align:right}
+.th-pills{display:flex;gap:4px;flex-shrink:0}
+.th-pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:100px}
+.th-g{background:var(–greenbg);color:var(–green);border:1px solid var(–greenbd)}
+.th-r{background:var(–accentbg);color:var(–accent);border:1px solid var(–accentbd)}
+.th-bar-bg{flex:1;height:5px;background:var(–paper2);border-radius:100px;overflow:hidden}
+.th-bar-f{height:100%;background:var(–ink);border-radius:100px}
 
 /* archief */
-.arch-month{margin-bottom:.5rem;border:1.5px solid var(--border);border-radius:var(--rads);background:#fff}
+.arch-month{margin-bottom:.5rem;border:1.5px solid var(–border);border-radius:var(–rads);background:#fff}
 .arch-mtitle{padding:12px 16px;display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:12px;cursor:pointer}
-.arch-cnt{margin-left:auto;background:var(--paper3);border-radius:99px;padding:.1rem .55rem;font-size:10px}
+.arch-cnt{margin-left:auto;background:var(–paper3);border-radius:99px;padding:.1rem .55rem;font-size:10px}
 .arch-items{padding:.5rem}
 
-/* agenda */
+/* agenda — FIXED: better time display, remove “2026-” bug */
 #ag-wrap a{color:inherit}
+.ag-item{display:block;background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:14px 16px;margin-bottom:8px;transition:box-shadow .15s}
+.ag-item:hover{box-shadow:var(–shadow);border-color:var(–border2)}
+.ag-item-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ag-item-left{flex:1;min-width:0}
+.ag-time{font-size:10px;font-weight:700;color:var(–mid);margin-bottom:4px;font-family:“DM Mono”,monospace}
+.ag-title{font-weight:700;font-size:14px;line-height:1.35}
+.ag-loc{font-size:11px;color:var(–mid);margin-top:4px}
+.ag-soort{font-size:10px;padding:4px 10px;border-radius:100px;background:var(–paper2);white-space:nowrap;flex-shrink:0;font-weight:600;border:1px solid var(–border)}
+
 /* leaderboard */
-#lb-wrap .top-row{border:1px solid var(--border);margin-bottom:6px}
+#lb-wrap .top-row{border:1px solid var(–border);margin-bottom:6px}
+
 /* modals */
-.ov{position:fixed;inset:0;background:rgba(13,13,15,.55);z-index:300;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px)}
-.modal{background:#fff;width:100%;max-width:560px;max-height:92vh;overflow:auto;border-radius:22px}
-.mhd{padding:26px 30px 18px;display:flex;justify-content:space-between;border-bottom:1px solid var(--paper2)}
-.mhd h2{font-family:"Libre Baskerville",serif;font-size:20px}
-.xb{background:var(--paper2);border:none;width:32px;height:32px;border-radius:50%;font-size:17px}
-.xb:hover{background:var(--ink);color:#fff}
-.mbd{padding:20px 30px 10px;display:flex;flex-direction:column;gap:13px}
-.mg2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
-.fld label{font-size:9px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:5px}
-.fld input,.fld select,.fld textarea{width:100%;padding:10px 13px;border:1.5px solid var(--border2);border-radius:var(--rads);font-size:13px;outline:none;background:var(--paper)}
-.fld input:focus{border-color:var(--ink);background:#fff}
-.mft{padding:14px 30px 26px;display:flex;gap:10px}
-.bcan{flex:1;padding:12px;border:1.5px solid var(--border2);background:#fff;font-size:12px;font-weight:700;border-radius:100px}
-.bcan:hover{border-color:var(--ink);color:var(--ink)}
+.ov{position:fixed;inset:0;background:rgba(13,13,15,.55);z-index:300;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);padding:16px}
+.modal{background:#fff;width:100%;max-width:560px;max-height:90vh;overflow:auto;border-radius:22px}
+.mhd{padding:22px 24px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(–paper2)}
+.mhd h2{font-family:“Libre Baskerville”,serif;font-size:18px}
+.xb{background:var(–paper2);border:none;width:32px;height:32px;border-radius:50%;font-size:17px;flex-shrink:0}
+.xb:hover{background:var(–ink);color:#fff}
+.mbd{padding:18px 24px 8px;display:flex;flex-direction:column;gap:12px}
+.mg2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fld label{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:5px}
+.fld input,.fld select,.fld textarea{width:100%;padding:10px 13px;border:1.5px solid var(–border2);border-radius:var(–rads);font-size:13px;outline:none;background:var(–paper)}
+.fld input:focus{border-color:var(–ink);background:#fff}
+.mft{padding:12px 24px 22px;display:flex;gap:10px}
+.bcan{flex:1;padding:12px;border:1.5px solid var(–border2);background:#fff;font-size:12px;font-weight:700;border-radius:100px}
+.bcan:hover{border-color:var(–ink);color:var(–ink)}
 .bsav{flex:2;padding:12px;border:none;background:#0D0D0F;color:#fff;font-size:12px;font-weight:700;border-radius:100px}
-.slbl{font-size:9px;font-weight:700;color:var(--mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:9px;display:block}
+.slbl{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:9px;display:block}
 .sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
-.sgrid select{width:100%;padding:5px 7px;border:1.5px solid var(--border);border-radius:8px;font-size:11px}
-.delm{background:#fff;width:100%;max-width:360px;padding:38px 32px;text-align:center;border-radius:22px}
-.delm h3{font-family:"Libre Baskerville",serif;font-size:22px;margin:10px 0 8px}
-.dbtns{display:flex;gap:9px}
+.sgrid select{width:100%;padding:5px 7px;border:1.5px solid var(–border);border-radius:8px;font-size:11px}
+.delm{background:#fff;width:100%;max-width:360px;padding:36px 28px;text-align:center;border-radius:22px}
+.delm h3{font-family:“Libre Baskerville”,serif;font-size:22px;margin:10px 0 8px}
+.dbtns{display:flex;gap:9px;margin-top:16px}
 .bdc,.bdo{flex:1;padding:12px;border-radius:100px;font-size:12px;font-weight:700}
-.bdc{border:1.5px solid var(--border2);background:#fff}
-.bdo{border:none;background:var(--accent);color:#fff}
-.fetchm{background:#fff;max-width:640px;width:100%;max-height:90vh;overflow:auto;border-radius:22px}
-.fri{border:1.5px solid var(--border);cursor:pointer;background:#fff;border-radius:var(--rads);margin-bottom:7px}
-.fri.on{border-color:var(--ink);background:var(--paper)}
+.bdc{border:1.5px solid var(–border2);background:#fff}
+.bdo{border:none;background:var(–accent);color:#fff}
+
+/* FIXED: fetch modal — better mobile layout */
+.fetchm{background:#fff;max-width:540px;width:100%;max-height:88vh;overflow:auto;border-radius:22px}
+.fhd{padding:22px 24px 14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid var(–paper2)}
+.fhd h2{font-family:“Libre Baskerville”,serif;font-size:18px;margin-bottom:4px}
+.fhd p{font-size:12px;color:var(–mid)}
+.fbd{padding:16px 20px}
+.fri{border:1.5px solid var(–border);cursor:pointer;background:#fff;border-radius:var(–rads);margin-bottom:7px}
+.fri.on{border-color:var(–ink);background:var(–paper)}
 .frii{display:flex;align-items:stretch}
-.fris{width:4px;flex-shrink:0;border-radius:var(--rads) 0 0 var(--rads)}
+.fris{width:4px;flex-shrink:0;border-radius:var(–rads) 0 0 var(–rads)}
 .frib{flex:1;padding:11px 14px}
-.frit{font-family:"Libre Baskerville",serif;font-size:13px;margin-bottom:5px}
-.frichk{display:flex;align-items:center;padding:0 16px}
-.chk{width:20px;height:20px;border:2px solid var(--border2);border-radius:6px;display:flex;align-items:center;justify-content:center;background:#fff}
-.chk.on{background:var(--ink);border-color:var(--ink);color:#fff}
-#toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(80px);opacity:0;background:#0D0D0F;color:#fff;padding:11px 20px;font-size:12px;font-weight:700;border-radius:100px;transition:all .3s;pointer-events:none}
+.frit{font-family:“Libre Baskerville”,serif;font-size:13px;margin-bottom:5px}
+.frichk{display:flex;align-items:center;padding:0 14px}
+.chk{width:20px;height:20px;border:2px solid var(–border2);border-radius:6px;display:flex;align-items:center;justify-content:center;background:#fff}
+.chk.on{background:var(–ink);border-color:var(–ink);color:#fff}
+#toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(80px);opacity:0;background:#0D0D0F;color:#fff;padding:11px 20px;font-size:12px;font-weight:700;border-radius:100px;transition:all .3s;pointer-events:none;z-index:999}
 #toast.show{transform:translateX(-50%) translateY(0);opacity:1}
-.spin{width:30px;height:30px;border:3px solid var(--border);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
+.spin{width:30px;height:30px;border:3px solid var(–border);border-top-color:var(–ink);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
 @keyframes spin{to{transform:rotate(360deg)}}
-@media(max-width:768px){#nv{padding:0 16px}#main{padding:14px}.mg2{grid-template-columns:1fr}.stat-2col{grid-template-columns:1fr}.kpi-strip{grid-template-columns:1fr 1fr}}
+
+/* mobile hide subtitle */
+@media(max-width:500px){#nsub{display:none}.n-sep{display:none}}
+@media(max-width:768px){.mg2{grid-template-columns:1fr}}
 </style>
+
 </head>
 <body>
 
@@ -252,9 +303,9 @@ li{list-style:none}
   <div id="nv">
     <span id="nb">Motie Tracker</span>
     <div class="n-sep"></div>
-    <span id="nsub">Kabinet-Jetten · D66–VVD–CDA · "Aan de slag"</span>
+    <span id="nsub">Kabinet-Jetten · D66–VVD–CDA</span>
     <div id="nright">
-      <button class="nbs" id="btn-fetch">↻ Nieuwe moties</button>
+      <button class="nbs" id="btn-fetch">↻ Importeren</button>
       <button class="nbp" id="btn-add">+ Toevoegen</button>
     </div>
   </div>
@@ -274,7 +325,7 @@ li{list-style:none}
   <div id="pnm">
     <div id="hero"><div class="hero-grid" id="hbar"></div></div>
     <div id="refresh-row" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:12px 16px;flex-wrap:wrap;gap:8px">
-      <div><span style="font-size:18px">📋</span><div><div style="font-size:12px;font-weight:700">Moties beheren</div><div id="last-checked" style="font-size:10px;color:var(--mid)">Dagelijks bijgewerkt via tweedekamer.nl</div></div></div>
+      <div style="display:flex;align-items:center;gap:10px"><span style="font-size:18px">📋</span><div><div style="font-size:12px;font-weight:700">Moties beheren</div><div id="last-checked" style="font-size:10px;color:var(--mid)">Dagelijks bijgewerkt via tweedekamer.nl</div></div></div>
       <div style="display:flex;gap:8px"><button class="tbtn" id="btn-fetch2">↻ Importeren</button><button class="nbp" id="btn-add2">+ Toevoegen</button></div>
     </div>
     <div id="srow"><div id="sw"><span id="si">🔍</span><input id="sinp" placeholder="Zoek op titel, indiener of thema…"/></div><button class="tbtn" id="fbtn">⚙ Filter</button></div>
@@ -293,15 +344,45 @@ li{list-style:none}
   <div id="pnlb" style="display:none"><div id="lb-wrap"></div></div>
 </div>
 
-<div id="supsec" style="background:#fff;border-top:1.5px solid var(--border);padding:48px 28px"><div id="supin" style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap"><div class="suptxt"><h3 style="font-family:'Libre Baskerville',serif;font-size:22px">♡ Steun dit project</h3><p style="font-size:13px;color:var(--mid)">Motie Tracker is een onafhankelijk vrijwilligersproject. Geen advertenties, geen subsidie — alleen passie voor transparante democratie.</p></div><div class="supcard" style="background:#0D0D0F;border-radius:20px;padding:26px 30px;text-align:center"><div class="supct" style="font-size:10px;color:rgba(255,255,255,.4)">✨ Vrijwillige bijdrage</div><div class="supcd" style="font-size:12px;color:rgba(255,255,255,.55);margin:12px 0">Help de tracker draaiende te houden — elk bedrag telt.</div><a class="supbtn" href="https://buy.stripe.com/6oU7sM2sj68i6Ry8aD63K00" target="_blank" style="display:inline-block;background:#fff;color:#0D0D0F;padding:12px 22px;border-radius:100px;font-weight:700">💙 Doneer nu</a></div></div></div>
+<div id="supsec" style="background:#fff;border-top:1.5px solid var(--border);padding:48px 20px">
+  <div id="supin" style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+    <div class="suptxt">
+      <h3 style="font-family:'Libre Baskerville',serif;font-size:22px">♡ Steun dit project</h3>
+      <p style="font-size:13px;color:var(--mid);margin-top:8px">Motie Tracker is een onafhankelijk vrijwilligersproject. Geen advertenties, geen subsidie — alleen passie voor transparante democratie.</p>
+    </div>
+    <div class="supcard" style="background:#0D0D0F;border-radius:20px;padding:24px 28px;text-align:center">
+      <div style="font-size:10px;color:rgba(255,255,255,.4)">✨ Vrijwillige bijdrage</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.55);margin:12px 0">Help de tracker draaiende te houden — elk bedrag telt.</div>
+      <a href="https://buy.stripe.com/6oU7sM2sj68i6Ry8aD63K00" target="_blank" style="display:inline-block;background:#fff;color:#0D0D0F;padding:12px 22px;border-radius:100px;font-weight:700">💙 Doneer nu</a>
+    </div>
+  </div>
+</div>
 
-<footer id="footer" style="background:#0D0D0F;padding:44px 28px 32px"><div id="fotin" style="max-width:1280px;margin:0 auto"><div class="ftop" style="display:grid;grid-template-columns:1fr auto;gap:36px"><div><h3 style="font-family:'Libre Baskerville',serif;font-size:18px;color:#fff">Motie Tracker</h3><p style="font-size:12px;color:rgba(255,255,255,.38)">Een vrijwilligersproject dat parlementaire moties vergelijkt met het coalitieakkoord van Kabinet-Jetten. Controleer altijd via <a href="https://www.tweedekamer.nl" target="_blank">tweedekamer.nl</a>.</p></div><div class="ftls"><a class="flink" href="https://t.me/tonandtijd" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:#fff">✈ Telegram — Ton & Tijd</a><a class="flink" href="https://janeorlova.substack.com" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:#fff">📨 Substack — Jane Orlova</a></div></div><div class="fbot" style="border-top:1px solid rgba(255,255,255,.07);padding-top:18px;display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.2)"><p>Motie Tracker © 2026 · Vrijwilligersproject</p><a href="https://www.tweedekamer.nl" target="_blank">Tweede Kamer →</a></div></div></footer>
+<footer id="footer" style="background:#0D0D0F;padding:40px 20px 28px">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:24px">
+      <div>
+        <h3 style="font-family:'Libre Baskerville',serif;font-size:18px;color:#fff;margin-bottom:8px">Motie Tracker</h3>
+        <p style="font-size:12px;color:rgba(255,255,255,.38);line-height:1.6">Een vrijwilligersproject dat parlementaire moties vergelijkt met het coalitieakkoord van Kabinet-Jetten. Controleer altijd via <a href="https://www.tweedekamer.nl" target="_blank" style="color:rgba(255,255,255,.5)">tweedekamer.nl</a>.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <a href="https://t.me/tonandtijd" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:#fff;font-size:12px">✈ Telegram — Ton &amp; Tijd</a>
+        <a href="https://janeorlova.substack.com" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:#fff;font-size:12px">📨 Substack — Jane Orlova</a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:16px;display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.2)">
+      <p>Motie Tracker © 2026 · Vrijwilligersproject</p>
+      <a href="https://www.tweedekamer.nl" target="_blank" style="color:rgba(255,255,255,.2)">Tweede Kamer →</a>
+    </div>
+  </div>
+</footer>
 
 <div id="toast"></div>
 
 <!-- Modals -->
-<div id="ovm" class="ov" style="display:none"><div class="modal"><div class="mhd"><h2 id="mttl">Motie toevoegen</h2><button class="xb" id="mx">×</button></div><div class="mbd"><div class="mg2"><div class="fld"><label>Datum</label><input id="fdat" type="date"/></div><div class="fld"><label>Indiener</label><select id="find"></select></div></div><div class="fld"><label>Titel</label><input id="ftit"/></div><div class="mg2"><div class="fld"><label>Thema</label><select id="fthm"></select></div><div class="fld"><label>Vergadering</label><input id="fverg"/></div></div><div class="mg2"><div class="fld"><label>Status</label><select id="fsta"></select></div><div class="fld"><label>Relatie akkoord</label><select id="fali"></select></div></div><div class="fld"><label>Toelichting</label><textarea id="ftoe" rows="3"></textarea></div><div class="fld"><label>Link tweedekamer.nl</label><input id="furl"/></div><div><span class="slbl">Stemming per fractie</span><div class="sgrid" id="sgrid"></div></div></div><div class="mft"><button class="bdel" id="mdel" style="display:none;background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:100px">🗑 Verwijderen</button><button class="bcan" id="mcan">Annuleren</button><button class="bsav" id="msav">Opslaan</button></div></div></div>
-<div id="ovd" class="ov" style="display:none"><div class="delm"><div style="font-size:40px">🗑</div><h3>Motie verwijderen?</h3><p>Deze actie kan niet ongedaan worden gemaakt.</p><div class="dbtns"><button class="bdc" id="dcan">Annuleren</button><button class="bdo" id="dok">Verwijderen</button></div></div></div>
+
+<div id="ovm" class="ov" style="display:none"><div class="modal"><div class="mhd"><h2 id="mttl">Motie toevoegen</h2><button class="xb" id="mx">×</button></div><div class="mbd"><div class="mg2"><div class="fld"><label>Datum</label><input id="fdat" type="date"/></div><div class="fld"><label>Indiener</label><select id="find"></select></div></div><div class="fld"><label>Titel</label><input id="ftit"/></div><div class="mg2"><div class="fld"><label>Thema</label><select id="fthm"></select></div><div class="fld"><label>Vergadering</label><input id="fverg"/></div></div><div class="mg2"><div class="fld"><label>Status</label><select id="fsta"></select></div><div class="fld"><label>Relatie akkoord</label><select id="fali"></select></div></div><div class="fld"><label>Toelichting</label><textarea id="ftoe" rows="3"></textarea></div><div class="fld"><label>Link tweedekamer.nl</label><input id="furl"/></div><div><span class="slbl">Stemming per fractie</span><div class="sgrid" id="sgrid"></div></div></div><div class="mft"><button class="bdel" id="mdel" style="display:none;background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700">🗑 Verwijderen</button><button class="bcan" id="mcan">Annuleren</button><button class="bsav" id="msav">Opslaan</button></div></div></div>
+<div id="ovd" class="ov" style="display:none"><div class="delm"><div style="font-size:40px">🗑</div><h3>Motie verwijderen?</h3><p style="font-size:13px;color:var(--mid)">Deze actie kan niet ongedaan worden gemaakt.</p><div class="dbtns"><button class="bdc" id="dcan">Annuleren</button><button class="bdo" id="dok">Verwijderen</button></div></div></div>
 <div id="ovf" class="ov" style="display:none"><div class="fetchm"><div class="fhd"><div><h2>Nieuwe moties importeren</h2><p>Recente moties die raken aan het coalitieakkoord</p></div><button class="xb" id="fx">×</button></div><div class="fbd"><div id="fcon"></div></div><div id="fftr" class="mft" style="display:none"><button class="bcan" id="fcan">Annuleren</button><button class="bsav" id="fimp">Importeren</button></div></div></div>
 
 <script>
@@ -343,24 +424,33 @@ const AKKOORD=[
 ];
 let moties=[];
 let openId=null, editId=null, delId=null, _archiefOpen={}, fetchSel={}, _akOpen={};
-let AGENDA=[{"datum":"2026-04-07","tijd":"","titel":"Stemmingen","locatie":"Plenaire zaal","soort":"Stemmingen","url":"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02872"},{"datum":"2026-04-08","tijd":"","titel":"Regeling van werkzaamheden","locatie":"Plenaire zaal","soort":"Regeling van werkzaamheden","url":"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02874"}];
+let AGENDA=[
+  {"datum":"2026-04-07","tijd":"","titel":"Stemmingen","locatie":"Plenaire zaal","soort":"Stemmingen","url":"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02872"},
+  {"datum":"2026-04-08","tijd":"","titel":"Regeling van werkzaamheden","locatie":"Plenaire zaal","soort":"Regeling van werkzaamheden","url":"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02874"}
+];
 const MONTH_NL=['','jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
 const MAANDEN=['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
 const DAG_NL=["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"];
 
-// ---------- HELPER FUNCTIONS ----------
+// ---------- HELPERS ----------
 function g(id){return document.getElementById(id);}
 function esc(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
 function toast(msg){let t=g("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3000);}
-function showLoading(){let ml=g("ml");if(ml) ml.innerHTML='<div style="text-align:center;padding:48px 20px"><div class="spin"></div><div style="margin-top:16px">Moties laden…</div></div>';}
+function showLoading(){let ml=g("ml");if(ml) ml.innerHTML='<div style="text-align:center;padding:48px 20px"><div class="spin"></div><div style="margin-top:16px;font-size:13px;color:var(--mid)">Moties laden…</div></div>';}
 function saveDB(){try{localStorage.setItem(SK,JSON.stringify(moties));}catch(e){}}
 function bdg(k,cfg){let c=cfg[k];if(!c) return ""; return `<span class="badge" style="color:${c.c};background:${c.b};border-color:${c.bd}">${c.i?c.i+" ":""}${esc(c.l)}</span>`;}
 
-// ---------- INITIAL DATA (fallback) ----------
-// Minimal fallback to prevent empty page (real data will come from JSON)
-const INIT = []; // Will be filled by JSON fetch, but we keep an empty array as fallback
+// ── FIX: robust thema normalizer for matching ──
+// Strips accents + lowercases + collapses whitespace for fuzzy matching
+function normThema(s){
+  return String(s||"").toLowerCase()
+    .replace(/[àáâãäå]/g,"a").replace(/[èéêë]/g,"e").replace(/[ìíîï]/g,"i")
+    .replace(/[òóôõö]/g,"o").replace(/[ùúûü]/g,"u").replace(/ç/g,"c")
+    .replace(/[^a-z0-9&]/g," ").replace(/\s+/g," ").trim();
+}
+function themasMatch(a,b){ return normThema(a)===normThema(b); }
 
-// ---------- RENDER FUNCTIONS ----------
+// ---------- RENDER HERO ----------
 function renderHero(){
   let tot=moties.length, aang=0, verw=0, conf=0, str=0;
   for(let m of moties){
@@ -372,8 +462,9 @@ function renderHero(){
   let succes=tot?Math.round(aang/tot*100):0;
   let conformPct=tot?Math.round(conf/tot*100):0;
   let hb=g("hbar"); if(!hb) return;
-  hb.innerHTML=`<div class="hs"><div class="hsl">Moties totaal</div><div class="hsv">${tot}</div><div class="hss">Kabinet-Jetten</div></div>
-    <div class="hs"><div class="hsl">Aangenomen</div><div class="hsv" style="color:#7DDBA8">${aang}</div><div class="hsa hsa-g">${succes}% slagingsratio</div></div>
+  hb.innerHTML=`
+    <div class="hs"><div class="hsl">Moties totaal</div><div class="hsv">${tot}</div><div class="hss">Kabinet-Jetten</div></div>
+    <div class="hs"><div class="hsl">Aangenomen</div><div class="hsv" style="color:#7DDBA8">${aang}</div><div class="hsa hsa-g">${succes}% ratio</div></div>
     <div class="hs"><div class="hsl">Verworpen</div><div class="hsv" style="color:#F5A090">${verw}</div><div class="hss">${tot?Math.round(verw/tot*100):0}% van totaal</div></div>
     <div class="hs"><div class="hsl">Conform akkoord</div><div class="hsv" style="color:#7DDBA8">${conf}</div><div class="hss">${conformPct}% van moties</div></div>
     <div class="hs"><div class="hsl">Strijdig akkoord</div><div class="hsv" style="color:#F5A090">${str}</div><div class="hsa hsa-r">${tot?Math.round(str/tot*100):0}% strijdig</div></div>`;
@@ -398,7 +489,7 @@ function renderMotie(m){
   let sc=SC[m.status]||SC.in_behandeling;
   let ac=AC[m.alignment]||AC.neutraal;
   let open=(openId==m.id);
-  let stripe=m.alignment==='conform'?'var(--green)':m.alignment==='strijdig'?'var(--accent)':'var(--mid)';
+  let stripe=m.alignment==='conform'?'var(--green)':m.alignment==='strijdig'?'var(--accent)':'var(--border)';
   let detail='';
   if(open){
     detail=`<div class="md">${m.toelichting?`<div class="mtl">${esc(m.toelichting)}</div>`:''}${m.tk_url?`<a href="${esc(m.tk_url)}" target="_blank" class="tkl">🔗 Kamerstuk op tweedekamer.nl →</a>`:''}<div class="vs">${renderVotes(m.stemmen,m.score)}</div></div>`;
@@ -414,7 +505,7 @@ function getFiltered(includeArchief){
   return moties.filter(m=>{
     if(!includeArchief&&m.archief) return false;
     let qok=!q||(m.titel||"").toLowerCase().includes(q)||(m.indiener||"").toLowerCase().includes(q)||(m.thema||"").toLowerCase().includes(q);
-    return qok&&(!fa||m.alignment===fa)&&(!ft||m.thema===ft)&&(!fs||m.status===fs);
+    return qok&&(!fa||m.alignment===fa)&&(!ft||themasMatch(m.thema,ft))&&(!fs||m.status===fs);
   }).sort((a,b)=>(b.datum||'').localeCompare(a.datum||''));
 }
 
@@ -440,7 +531,7 @@ function renderArchief(){
   let byMonth={};
   archived.forEach(m=>{let ym=(m.datum||'').slice(0,7); if(ym) byMonth[ym]=byMonth[ym]||[]; byMonth[ym].push(m);});
   let months=Object.keys(byMonth).sort().reverse();
-  let html=`<div style="margin-bottom:20px"><div style="font-size:22px;font-weight:700">⏳ Moties in behandeling</div><p style="font-size:12px;color:var(--mid)">${archived.length} moties wachten op stemuitslag</p></div>`;
+  let html=`<div style="margin-bottom:20px"><div style="font-size:22px;font-weight:700">⏳ Moties in behandeling</div><p style="font-size:12px;color:var(--mid);margin-top:4px">${archived.length} moties wachten op stemuitslag</p></div>`;
   months.forEach(ym=>{
     let items=byMonth[ym];
     let open=!!_archiefOpen[ym];
@@ -451,31 +542,79 @@ function renderArchief(){
   wrap.querySelectorAll(".mh[data-toggle]").forEach(el=>el.addEventListener("click",function(){let id=this.getAttribute("data-toggle"); openId=(openId===id)?null:id; renderArchief();}));
 }
 
+// ── FIX: renderAkkoord — use themasMatch(), show ALL themes ──
 function renderAkkoord(){
   let wrap=g("akwrap"); if(!wrap) return;
   let totalPunten=AKKOORD.reduce((a,ak)=>a+ak.punten.length,0);
-  let themasMetMotie=AKKOORD.filter(ak=>moties.some(m=>m.thema===ak.thema)).length;
+
+  // Use fuzzy match so "Bereikbaarheid & Mobiliteit" matches regardless of exact spacing/accents
+  let themasMetMotie=AKKOORD.filter(ak=>moties.some(m=>themasMatch(m.thema,ak.thema))).length;
   let totalConform=moties.filter(m=>m.alignment==="conform").length;
   let totalStrijdig=moties.filter(m=>m.alignment==="strijdig").length;
   let dekkingPct=Math.round(themasMetMotie/AKKOORD.length*100);
   let conformPct=moties.length?Math.round(totalConform/moties.length*100):0;
-  let summaryHtml=`<div class="ak-hero"><div class="ak-hero-row"><div class="ak-hstat"><div class="ak-hbig">${themasMetMotie}/${AKKOORD.length}</div><div class="ak-hlabel">Thema's gedekt</div></div><div class="ak-hsep"></div><div class="ak-hstat"><div class="ak-hbig" style="color:#7DDBA8">${conformPct}%</div><div class="ak-hlabel">Conform akkoord</div></div><div class="ak-hsep"></div><div class="ak-hstat"><div class="ak-hbig">${totalPunten}</div><div class="ak-hlabel">Standpunten</div></div><div class="ak-hsep"></div><div class="ak-hstat"><div class="ak-hbig">${AKKOORD.length}</div><div class="ak-hlabel">Hoofdstukken</div></div></div><div class="ak-hero-bar"><div class="ak-hero-barlabel">Thema-dekking</div><div class="ak-hero-track"><div class="ak-hero-fill" style="width:${dekkingPct}%"></div></div><div class="ak-hero-barsub">${dekkingPct}% van ${AKKOORD.length} thema's heeft minimaal 1 motie</div></div></div>`;
+
+  let summaryHtml=`<div class="ak-hero">
+    <div class="ak-hero-row">
+      <div class="ak-hstat"><div class="ak-hbig">${themasMetMotie}/${AKKOORD.length}</div><div class="ak-hlabel">Thema's gedekt</div></div>
+      <div class="ak-hstat"><div class="ak-hbig" style="color:#7DDBA8">${conformPct}%</div><div class="ak-hlabel">Conform akkoord</div></div>
+      <div class="ak-hstat"><div class="ak-hbig">${totalPunten}</div><div class="ak-hlabel">Standpunten</div></div>
+      <div class="ak-hstat"><div class="ak-hbig">${AKKOORD.length}</div><div class="ak-hlabel">Hoofdstukken</div></div>
+    </div>
+    <div class="ak-hero-bar">
+      <div class="ak-hero-barlabel">Thema-dekking</div>
+      <div class="ak-hero-track"><div class="ak-hero-fill" style="width:${dekkingPct}%"></div></div>
+      <div class="ak-hero-barsub">${dekkingPct}% van ${AKKOORD.length} thema's heeft minimaal 1 motie</div>
+    </div>
+  </div>`;
+
   let html='';
   AKKOORD.forEach(ak=>{
-    let mots=moties.filter(m=>m.thema===ak.thema);
+    // ── FIX: use themasMatch for motie lookup ──
+    let mots=moties.filter(m=>themasMatch(m.thema,ak.thema));
     let conf=mots.filter(m=>m.alignment==="conform").length;
     let str=mots.filter(m=>m.alignment==="strijdig").length;
     let open=!!_akOpen[ak.thema];
-    let badge='';
-    if(conf>0&&str>0) badge=`<span class="akbdg akbdg-g">✓ ${conf}</span><span class="akbdg akbdg-r">✗ ${str}</span>`;
-    else if(str>0) badge=`<span class="akbdg akbdg-r">✗ ${str} strijdig</span>`;
-    else if(conf>0) badge=`<span class="akbdg akbdg-g">✓ ${conf}</span>`;
-    else badge=`<span class="akbdg akbdg-n">–</span>`;
+
+    let badges='';
+    if(conf>0) badges+=`<span class="akbdg akbdg-g">✓ ${conf}</span>`;
+    if(str>0) badges+=`<span class="akbdg akbdg-r">✗ ${str}</span>`;
+    if(!conf&&!str) badges=`<span class="akbdg akbdg-n">– geen moties</span>`;
+
     let accent=str>0?'var(--accent)':conf>0?'var(--green)':'var(--border)';
-    html+=`<div class="akcard${open?' akopen':''}" style="border-left:4px solid ${accent}"><div class="akhead" data-akthema="${esc(ak.thema)}"><div class="akicon">${ak.emoji}</div><div class="akinfo"><div class="akname">${esc(ak.thema)}</div><div class="aksub2">${ak.punten.length} akkoordpunten · ${mots.length?mots.length+' motie'+(mots.length!==1?'s':''):'nog geen moties'}</div></div><div class="akbdgs">${badge}</div><div class="akchev">${open?'▲':'▼'}</div></div>${open?`<div class="akbody"><div class="akptitle">Akkoordpunten</div><ul class="akplist">${ak.punten.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>${mots.length?`<div class="akptitle">Gerelateerde moties</div><div class="akml2">${mots.map(m=>`<div class="akmc2"><div class="akmc2d">${esc(m.datum||'')}</div><div class="akmc2t">${esc(m.titel)}</div><div class="akmc2b">${bdg(m.status,SC)} ${bdg(m.alignment,AC)}</div></div>`).join('')}</div>`:''}</div>`:''}</div>`;
+
+    let motieCards=mots.length?`
+      <div class="akptitle">Gerelateerde moties (${mots.length})</div>
+      <div>${mots.map(m=>`<div class="akmc2">
+        <div class="akmc2d">${esc(m.datum||'')} · ${esc(m.indiener||'')}</div>
+        <div class="akmc2t">${esc(m.titel)}</div>
+        <div class="akmc2b">${bdg(m.status,SC)} ${bdg(m.alignment,AC)}</div>
+      </div>`).join('')}</div>`:'';
+
+    html+=`<div class="akcard${open?' akopen':''}" style="border-left:4px solid ${accent}">
+      <div class="akhead" data-akthema="${esc(ak.thema)}">
+        <div class="akicon">${ak.emoji}</div>
+        <div class="akinfo">
+          <div class="akname">${esc(ak.thema)}</div>
+          <div class="aksub2">${ak.punten.length} akkoordpunten${mots.length?' · '+mots.length+' motie'+(mots.length!==1?'s':''):''}</div>
+        </div>
+        <div class="akbdgs">${badges}</div>
+        <div class="akchev">${open?'▲':'▼'}</div>
+      </div>
+      ${open?`<div class="akbody">
+        <div class="akptitle">Akkoordpunten</div>
+        <ul class="akplist">${ak.punten.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+        ${motieCards}
+      </div>`:''}
+    </div>`;
   });
+
   wrap.innerHTML=summaryHtml+'<div class="akklist">'+html+'</div>';
-  wrap.querySelectorAll('.akhead').forEach(el=>el.addEventListener('click',function(){let thema=this.getAttribute('data-akthema'); _akOpen[thema]=!_akOpen[thema]; renderAkkoord();}));
+  wrap.querySelectorAll('.akhead').forEach(el=>el.addEventListener('click',function(){
+    let thema=this.getAttribute('data-akthema');
+    _akOpen[thema]=!_akOpen[thema];
+    renderAkkoord();
+  }));
 }
 
 function renderStats(){
@@ -508,7 +647,6 @@ function renderStats(){
       let ym=`${yr}-${mo<10?'0'+mo:mo}`;
       if(!byMonth2[ym]) byMonth2[ym]={tot:0,a:0,v:0};
       byMonth2[ym].tot++; if(m.status==="aangenomen") byMonth2[ym].a++; if(m.status==="verworpen") byMonth2[ym].v++;
-      // week number
       let dayNum=d.getUTCDay()||7; d.setUTCDate(d.getUTCDate()+4-dayNum); let yearStart=new Date(Date.UTC(d.getUTCFullYear(),0,1)); let weekNo=Math.ceil(((d-yearStart)/86400000+1)/7);
       let wk=d.getUTCFullYear()+'-W'+String(weekNo).padStart(2,'0');
       byWeek[wk]=(byWeek[wk]||0)+1;
@@ -543,13 +681,13 @@ function renderStats(){
   }
   function timelineHTML(keys,getVal,maxVal,color){
     if(!keys.length) return '';
-    return `<div class="timeline-wrap"><div class="timeline-chart" style="display:flex;gap:2px;height:64px;min-width:400px">${keys.map(k=>{let v=getVal(k); let h=Math.max(2,Math.round(v/maxVal*60)); return `<div class="tl-col" style="flex:1;display:flex;flex-direction:column;justify-content:flex-end"><div class="tl-bar" style="height:${h}px;background:${color};border-radius:2px 2px 0 0"></div></div>`;}).join('')}</div></div>`;
+    return `<div style="display:flex;gap:2px;height:64px">${keys.map(k=>{let v=getVal(k); let h=Math.max(2,Math.round(v/maxVal*60)); return `<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end"><div style="height:${h}px;background:${color};border-radius:2px 2px 0 0"></div></div>`;}).join('')}</div>`;
   }
   let moBarHTML=`<div class="col-chart">${monthKeys.map(k=>{let d=byMonth2[k]; let hTot=Math.max(3,Math.round(d.tot/maxMo*70)); let hA=d.tot?Math.round(d.a/d.tot*hTot):0; let hV=d.tot?Math.round(d.v/d.tot*hTot):0; let mo=k.split('-')[1]; let moLabel=MONTH_NL[parseInt(mo)]||mo; return `<div class="col-item"><div class="col-bar-wrap"><div class="col-bar" style="height:${hA}px;background:var(--green)"></div><div class="col-bar" style="height:${hV}px;background:var(--accent);margin-top:1px"></div></div><div class="col-label">${moLabel}</div></div>`;}).join('')}</div>`;
   let html=`<div class="stat-section-label">Overzicht</div><div class="kpi-strip"><div class="kpi"><div class="kpi-label">Totaal moties</div><div class="kpi-val">${tot}</div><div class="kpi-sub">Kabinet-Jetten · 2026</div></div><div class="kpi"><div class="kpi-label">Slagingsratio</div><div class="kpi-val kpi-green">${slagingsPct}%</div><div class="kpi-sub">${aang} van ${tot} aangenomen</div></div><div class="kpi"><div class="kpi-label">Conform akkoord</div><div class="kpi-val">${conformPct}%</div><div class="kpi-sub">${conform} conform · ${strijdig} strijdig</div></div><div class="kpi"><div class="kpi-label">In behandeling</div><div class="kpi-val kpi-amber">${inb}</div><div class="kpi-sub">${aang_h} aangehouden</div></div></div>`;
   html+=`<div class="stat-section-label" style="margin-top:8px">Uitslag & Positie</div><div class="stat-2col"><div class="sc"><div class="sc-title">Stemuitslag</div>${donutSVG([{v:aang,c:'var(--green)',l:'Aangenomen'},{v:verw,c:'var(--accent)',l:'Verworpen'},{v:aang_h,c:'var(--mid)',l:'Aangehouden'},{v:inb,c:'var(--paper3)',l:'In behandeling'}],String(tot),'moties')}</div><div class="sc"><div class="sc-title">Relatie coalitieakkoord</div>${donutSVG([{v:conform,c:'var(--green)',l:'Conform akkoord'},{v:strijdig,c:'var(--accent)',l:'Strijdig'},{v:neutraal,c:'var(--mid)',l:'Neutraal'},{v:ond,c:'var(--amber)',l:'Onduidelijk'}],conformPct+'%','conform')}</div></div>`;
   html+=`<div class="stat-section-label" style="margin-top:8px">Activiteit per maand</div><div class="sc"><div class="sc-title">Moties per maand — <span style="color:var(--green)">■ aangenomen</span> <span style="color:var(--accent)">■ verworpen</span></div>${moBarHTML}</div>`;
-  html+=`<div class="stat-section-label" style="margin-top:8px">Thema's & Herkomst</div><div class="stat-2col"><div class="sc"><div class="sc-title">Moties per thema</div><div class="hbar-chart">${themaArr.map(th=>{let d=byThema[th]; let w=Math.round(d.tot/maxTh*100); let col=d.s>d.c?'var(--accent)':d.c>d.s?'var(--green)':'var(--mid)'; return `<div class="hbc-row"><div class="hbc-label">${esc(th)}</div><div class="hbc-track"><div class="hbc-fill" style="width:${w}%;background:${col}"></div></div><div class="hbc-val">${d.tot}</div></div>`;}).join('')}</div></div><div class="sc"><div class="sc-title">Coalitie vs Oppositie</div><div class="coal-opp"><div class="coal-block" style="border-left:3px solid var(--green)"><div class="coal-label">Coalitie (VVD · D66 · CDA)</div><div class="coal-big">${coalConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:6px"><div class="coal-big" style="font-size:20px;color:var(--accent)">${coalStrijdig}</div><div class="coal-sub">strijdig</div></div></div><div class="coal-block" style="border-left:3px solid var(--accent)"><div class="coal-label">Oppositie</div><div class="coal-big">${oppConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:6px"><div class="coal-big" style="font-size:20px;color:var(--accent)">${oppStrijdig}</div><div class="coal-sub">strijdig</div></div></div></div><div style="margin-top:16px"><div class="sc-title">Weekritme</div>${timelineHTML(weekKeys,k=>byWeek[k],maxWk,'var(--ink)')}<div style="font-size:9px;color:var(--mid);margin-top:4px">${weekKeys.length} weken · elke balk = 1 week</div></div></div></div>`;
+  html+=`<div class="stat-section-label" style="margin-top:8px">Thema's & Herkomst</div><div class="stat-2col"><div class="sc"><div class="sc-title">Moties per thema</div><div class="hbar-chart">${themaArr.map(th=>{let d=byThema[th]; let w=Math.round(d.tot/maxTh*100); let col=d.s>d.c?'var(--accent)':d.c>d.s?'var(--green)':'var(--mid)'; return `<div class="hbc-row"><div class="hbc-label">${esc(th)}</div><div class="hbc-track"><div class="hbc-fill" style="width:${w}%;background:${col}"></div></div><div class="hbc-val">${d.tot}</div></div>`;}).join('')}</div></div><div class="sc"><div class="sc-title">Coalitie vs Oppositie</div><div class="coal-opp"><div class="coal-block" style="border-left:3px solid var(--green)"><div class="coal-label">Coalitie (VVD · D66 · CDA)</div><div class="coal-big">${coalConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:6px"><div class="coal-big" style="font-size:20px;color:var(--accent)">${coalStrijdig}</div><div class="coal-sub">strijdig</div></div></div><div class="coal-block" style="border-left:3px solid var(--accent)"><div class="coal-label">Oppositie</div><div class="coal-big">${oppConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:6px"><div class="coal-big" style="font-size:20px;color:var(--accent)">${oppStrijdig}</div><div class="coal-sub">strijdig</div></div></div></div><div style="margin-top:16px"><div class="sc-title">Weekritme</div>${timelineHTML(weekKeys,k=>byWeek[k],maxWk,'var(--ink)')}<div style="font-size:9px;color:var(--mid);margin-top:4px">${weekKeys.length} weken</div></div></div></div>`;
   html+=`<div class="stat-section-label" style="margin-top:8px">Top indieners</div><div class="sc"><div class="sc-title">Meest actieve indieners (top 10)</div><div class="top-table">`;
   let medals=['🥇','🥈','🥉'];
   topParties.forEach((p,i)=>{let d=byParty[p]; let pct=Math.round(d.a/Math.max(d.tot,1)*100); let col=pct>=60?'var(--green)':pct>=40?'var(--mid)':'var(--accent)'; html+=`<div class="top-row"><div class="top-rank">${i<3?medals[i]:i+1}</div><div style="flex:1"><div class="top-name">${esc(p)}</div><div class="top-party">${d.tot} moties · ${d.a} aangenomen · ${d.v} verworpen</div></div><span class="top-badge" style="background:${col};color:#fff;padding:4px 10px">${pct}%</span></div>`;});
@@ -566,23 +704,48 @@ function renderStats(){
   pns.innerHTML=html;
 }
 
+// ── FIX: renderAgenda — proper time display, no "2026-" shown as time ──
 function renderAgenda(){
   let wrap=g("ag-wrap"); if(!wrap) return;
-  let html=`<div style="margin-bottom:24px"><div style="font-size:26px;font-weight:700">📅 Tweede Kamer Agenda</div><p style="font-size:11px;color:var(--mid)">Komende plenaire vergaderingen · dagelijks bijgewerkt</p></div>`;
-  if(!AGENDA.length){html+=`<div style="padding:40px;text-align:center"><p>Geen agenda beschikbaar. <a href="https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen" target="_blank">Bekijk tweedekamer.nl ↗</a></p></div>`; wrap.innerHTML=html; return;}
+  let html=`<div style="margin-bottom:24px"><div style="font-size:26px;font-weight:700">📅 Tweede Kamer Agenda</div><p style="font-size:11px;color:var(--mid);margin-top:4px">Komende plenaire vergaderingen · dagelijks bijgewerkt</p></div>`;
+  if(!AGENDA.length){
+    html+=`<div style="padding:40px;text-align:center"><p>Geen agenda beschikbaar. <a href="https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen" target="_blank">Bekijk tweedekamer.nl ↗</a></p></div>`;
+    wrap.innerHTML=html; return;
+  }
   let byDate={};
-  AGENDA.forEach(it=>{let k=it.datum||''; if(k) byDate[k]=byDate[k]||[]; byDate[k].push(it);});
+  AGENDA.forEach(it=>{let k=it.datum||''; if(!byDate[k]) byDate[k]=[]; byDate[k].push(it);});
   let today=new Date().toISOString().split('T')[0];
   Object.keys(byDate).sort().forEach(dt=>{
     let its=byDate[dt];
-    let dag=dt.length===10?DAG_NL[new Date(dt).getDay()]||'':'';
-    let label=dt.length===10?`${new Date(dt).getDate()} ${MAANDEN[new Date(dt).getMonth()]} ${new Date(dt).getFullYear()}`:dt;
+    let dayIdx=new Date(dt).getDay();
+    let dag=dt.length===10?DAG_NL[dayIdx]:'';
+    let d=new Date(dt);
+    let label=`${d.getDate()} ${MAANDEN[d.getMonth()]} ${d.getFullYear()}`;
     let isToday=dt===today;
-    html+=`<div style="margin-bottom:20px"><div style="display:flex;align-items:center;gap:10px;margin-bottom:10px"><div style="font-size:10px;font-weight:700;text-transform:uppercase;color:var(--mid)">${isToday?'<span style="background:var(--ink);color:#fff;padding:2px 9px;border-radius:100px;margin-right:6px">VANDAAG</span>':''}${dag}${dag&&label?' · ':''}${label}</div><div style="flex:1;height:1px;background:var(--border)"></div></div>`;
-    its.forEach(it=>{html+=`<a href="${esc(it.url||'#')}" target="_blank" style="display:block;background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:16px 20px;margin-bottom:8px"><div style="display:flex;justify-content:space-between"><div><div style="font-size:10px;font-weight:700;color:var(--mid);margin-bottom:5px">🕐 ${esc(it.tijd||'Tijd onbekend')}</div><div style="font-weight:700;font-size:14px">${esc(it.titel)}</div>${it.locatie&&it.locatie!=="Plenaire zaal"?`<div style="font-size:11px;color:var(--mid);margin-top:4px">🏛 ${esc(it.locatie)}</div>`:''}</div><span style="font-size:10px;padding:4px 10px;border-radius:100px;background:var(--paper2);white-space:nowrap">${esc(it.soort)}</span></div></a>`;});
+    let todayBadge=isToday?'<span style="background:var(--ink);color:#fff;padding:3px 10px;border-radius:100px;font-size:9px;font-weight:700;margin-right:8px;letter-spacing:.05em;text-transform:uppercase">Vandaag</span>':'';
+    html+=`<div style="margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:var(--mid);letter-spacing:.06em">${todayBadge}${dag}${dag?' · ':''}${label}</div>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+      </div>`;
+    its.forEach(it=>{
+      // ── FIX: show time only if it's a real HH:MM time, not a year ──
+      let tidDisplay='Tijd onbekend';
+      if(it.tijd && /^\d{1,2}:\d{2}/.test(it.tijd)) tidDisplay=it.tijd;
+      html+=`<a class="ag-item" href="${esc(it.url||'#')}" target="_blank">
+        <div class="ag-item-top">
+          <div class="ag-item-left">
+            <div class="ag-time">🕐 ${esc(tidDisplay)}</div>
+            <div class="ag-title">${esc(it.titel)}</div>
+            ${it.locatie&&it.locatie!=="Plenaire zaal"?`<div class="ag-loc">🏛 ${esc(it.locatie)}</div>`:''}
+          </div>
+          <span class="ag-soort">${esc(it.soort)}</span>
+        </div>
+      </a>`;
+    });
     html+=`</div>`;
   });
-  html+=`<p style="font-size:10px;color:var(--mid);text-align:center;margin-top:8px">Bron: <a href="https://www.tweedekamer.nl" target="_blank">tweedekamer.nl</a> Open Data</p>`;
+  html+=`<p style="font-size:10px;color:var(--mid);text-align:center;margin-top:8px">Bron: <a href="https://www.tweedekamer.nl" target="_blank" style="color:var(--mid)">tweedekamer.nl</a> Open Data</p>`;
   wrap.innerHTML=html;
 }
 
@@ -593,13 +756,13 @@ function renderLeaderboard(){
   moties.forEach(m=>{let persoon=extractPersoon(m.titel)||m.indiener||"Onbekend"; if(!tally[persoon]) tally[persoon]={naam:persoon,partij:m.indiener||"",tot:0,a:0,v:0,c:0,s:0}; tally[persoon].tot++; if(m.status==="aangenomen") tally[persoon].a++; if(m.status==="verworpen") tally[persoon].v++; if(m.alignment==="conform") tally[persoon].c++; if(m.alignment==="strijdig") tally[persoon].s++; });
   let rows=Object.values(tally).sort((a,b)=>b.tot-a.tot);
   let medals=['🥇','🥈','🥉'];
-  let html=`<div style="margin-bottom:24px"><div style="font-size:26px;font-weight:700">🏆 Indiener Leaderboard</div><p style="font-size:11px;color:var(--mid)">${moties.length} moties — gerangschikt op aantal ingediend</p></div><div style="display:flex;flex-direction:column;gap:8px">`;
-  rows.forEach((r,i)=>{let pct=r.tot?Math.round(r.a/r.tot*100):0; let col=pct>=60?'var(--green)':pct>=40?'var(--amber)':'var(--accent)'; let bgcol=pct>=60?'var(--greenbg)':pct>=40?'var(--amberbg)':'var(--accentbg)'; let bdcol=pct>=60?'var(--greenbd)':pct>=40?'var(--amberbd)':'var(--accentbd)'; html+=`<div style="background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:14px 18px;display:flex;align-items:center;gap:14px"><div style="font-size:${i<3?'20':'12'}px;font-weight:700;color:var(--mid);width:28px;text-align:center">${i<3?medals[i]:i+1}</div><div style="flex:1"><div style="font-weight:700;font-size:14px">${esc(r.naam)}</div>${r.partij&&r.partij!==r.naam?`<div style="font-size:10px;color:var(--mid)">${esc(r.partij)}</div>`:''}</div><div style="display:flex;align-items:center;gap:12px"><div style="text-align:center"><div style="font-size:20px;font-weight:700">${r.tot}</div><div style="font-size:9px;color:var(--mid)">moties</div></div><div style="width:1px;height:36px;background:var(--border)"></div><div style="text-align:center;min-width:46px"><div style="font-size:12px;font-weight:700;color:var(--green)">${r.a} ✓</div><div style="font-size:12px;font-weight:700;color:var(--accent)">${r.v} ✗</div></div><div style="background:${bgcol};border:1.5px solid ${bdcol};border-radius:10px;padding:6px 12px;text-align:center;min-width:58px"><div style="font-size:17px;font-weight:700;color:${col}">${pct}%</div><div style="font-size:9px;color:${col}">score</div></div></div></div>`; });
+  let html=`<div style="margin-bottom:24px"><div style="font-size:26px;font-weight:700">🏆 Indiener Leaderboard</div><p style="font-size:11px;color:var(--mid);margin-top:4px">${moties.length} moties — gerangschikt op aantal ingediend</p></div><div style="display:flex;flex-direction:column;gap:8px">`;
+  rows.forEach((r,i)=>{let pct=r.tot?Math.round(r.a/r.tot*100):0; let col=pct>=60?'var(--green)':pct>=40?'var(--amber)':'var(--accent)'; let bgcol=pct>=60?'var(--greenbg)':pct>=40?'var(--amberbg)':'var(--accentbg)'; let bdcol=pct>=60?'var(--greenbd)':pct>=40?'var(--amberbd)':'var(--accentbd)'; html+=`<div style="background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:14px 16px;display:flex;align-items:center;gap:12px"><div style="font-size:${i<3?'20':'12'}px;font-weight:700;color:var(--mid);width:28px;text-align:center">${i<3?medals[i]:i+1}</div><div style="flex:1;min-width:0"><div style="font-weight:700;font-size:14px">${esc(r.naam)}</div>${r.partij&&r.partij!==r.naam?`<div style="font-size:10px;color:var(--mid)">${esc(r.partij)}</div>`:''}</div><div style="display:flex;align-items:center;gap:10px"><div style="text-align:center"><div style="font-size:20px;font-weight:700">${r.tot}</div><div style="font-size:9px;color:var(--mid)">moties</div></div><div style="width:1px;height:36px;background:var(--border)"></div><div style="text-align:center"><div style="font-size:12px;font-weight:700;color:var(--green)">${r.a} ✓</div><div style="font-size:12px;font-weight:700;color:var(--accent)">${r.v} ✗</div></div><div style="background:${bgcol};border:1.5px solid ${bdcol};border-radius:10px;padding:6px 10px;text-align:center;min-width:52px"><div style="font-size:17px;font-weight:700;color:${col}">${pct}%</div><div style="font-size:9px;color:${col}">score</div></div></div></div>`; });
   html+=`</div>`;
   wrap.innerHTML=html;
 }
 
-// ---------- DATA LOADING (fetch moties.json) ----------
+// ---------- DATA LOADING ----------
 function applyUserEdits(serverData){
   try{
     let saved=JSON.parse(localStorage.getItem(SK)||'[]');
@@ -616,24 +779,21 @@ function loadAndRender(){
     .then(data=>{
       if(!Array.isArray(data)||data.length===0) throw new Error('Lege JSON');
       moties = applyUserEdits(data);
-      moties.forEach(m=>{ if(m.status==="in_behandeling") m.stemmen={}; });
+      moties.forEach(m=>{ if(m.status==="in_behandeling"&&!m.stemmen) m.stemmen={}; });
       renderMoties();
-      // Also load agenda.json if exists
       fetch('agenda.json?v='+Date.now()).then(r=>r.ok?r.json():[]).then(d=>{AGENDA=Array.isArray(d)?d:AGENDA; renderAgenda();}).catch(()=>{});
     })
     .catch(err=>{
       console.warn('Fetch failed, using localStorage fallback:',err);
-      // fallback: try localStorage
       let saved=[];
       try{ saved=JSON.parse(localStorage.getItem(SK)||'[]'); }catch(e){}
-      if(saved.length) moties=saved;
-      else moties=[]; // empty but user can add manually
-      moties.forEach(m=>{ if(m.status==="in_behandeling") m.stemmen={}; });
+      moties=saved.length?saved:[];
+      moties.forEach(m=>{ if(m.status==="in_behandeling"&&!m.stemmen) m.stemmen={}; });
       renderMoties();
     });
 }
 
-// ---------- MODAL & FETCH ----------
+// ---------- MODAL ----------
 function openModal(id){
   editId=id||null;
   let m=id?moties.find(x=>x.id===id):null;
@@ -653,7 +813,7 @@ function openModal(id){
     let parties=["VVD","D66","CDA","NSC","BBB","PVV","GL-PvdA","SP","PvdD","Volt","CU","SGP","DENK","50PLUS","JA21","FvD","Gr.Markuszower"];
     let opts='<option value="">—</option><option value="voor">voor</option><option value="tegen">tegen</option><option value="onthouden">onthouden</option>';
     sg.innerHTML=parties.map(p=>`<label style="display:flex;align-items:center;gap:6px;font-size:11px"><select data-party="${p}" style="font-size:11px;padding:2px 4px">${opts}</select><span>${p}</span></label>`).join('');
-    sg.querySelectorAll("select").forEach(sel=>{let party=sel.getAttribute("data-party"); if(stemmen[party]) sel.value=stemmen[party];});
+    sg.querySelectorAll("select").forEach(sel=>{let party=sel.getAttribute("data-party"); if(stemmen&&stemmen[party]) sel.value=stemmen[party];});
   }
   g("mdel").style.display=id?"inline-block":"none";
   g("ovm").style.display="flex";
@@ -676,14 +836,20 @@ function closeFetch(){ g("ovf").style.display="none"; }
 function buildFetch(){
   let fcon=g("fcon"), fftr=g("fftr");
   fetchSel={};
-  fcon.innerHTML=`<div style="text-align:center;padding:40px 20px"><div class="spin"></div><div>Nieuwe moties ophalen...</div></div>`;
-  // Simulate: no external API, just show manual add option
+  fcon.innerHTML=`<div style="text-align:center;padding:32px 20px"><div class="spin"></div><div style="margin-top:14px;font-size:13px;color:var(--mid)">Nieuwe moties ophalen…</div></div>`;
   setTimeout(()=>{
-    fcon.innerHTML=`<div style="background:var(--paper);border:1.5px solid var(--border);border-radius:var(--rads);padding:20px"><strong>🔍 Geen nieuwe moties gevonden</strong><p style="margin-top:8px">Je kunt handmatig moties toevoegen via de knop + Toevoegen.</p><div style="margin-top:14px"><button onclick="closeFetch(); openModal(null);" style="padding:8px 16px;background:var(--ink);color:#fff;border:none;border-radius:100px">+ Handmatig toevoegen</button></div></div>`;
+    fcon.innerHTML=`<div style="background:var(--paper);border:1.5px solid var(--border);border-radius:var(--rads);padding:18px">
+      <div style="font-weight:700;font-size:14px;margin-bottom:8px">🔍 Geen nieuwe moties gevonden</div>
+      <p style="font-size:12px;color:var(--mid);line-height:1.6">Voeg moties handmatig toe of importeer ze via de Tweede Kamer website.</p>
+      <div style="margin-top:14px;display:flex;gap:8px">
+        <button onclick="closeFetch();openModal(null);" style="padding:9px 16px;background:var(--ink);color:#fff;border:none;border-radius:100px;font-size:12px;font-weight:700;cursor:pointer">+ Handmatig toevoegen</button>
+        <a href="https://www.tweedekamer.nl/kamerstukken/moties" target="_blank" style="padding:9px 16px;border:1.5px solid var(--border);border-radius:100px;font-size:12px;font-weight:700;display:inline-flex;align-items:center">Tweedekamer.nl →</a>
+      </div>
+    </div>`;
     if(fftr) fftr.style.display="none";
-  }, 500);
+  }, 600);
 }
-function doImport(){ /* dummy */ }
+function doImport(){}
 
 // ---------- PANE SWITCHING ----------
 function showPane(id){
@@ -700,20 +866,19 @@ function showPane(id){
   if(paneId==="pnar") renderArchief();
   if(paneId==="pnag") renderAgenda();
   if(paneId==="pnlb") renderLeaderboard();
+  window.scrollTo(0,0);
 }
 
 // ---------- INIT ----------
-// Populate theme filter and modal selects
 let fth=g("fth"); if(fth) THEMAS.forEach(t=>{let o=document.createElement("option"); o.value=t; o.textContent=t; fth.appendChild(o);});
 let PARTIES=["VVD","D66","CDA","NSC","BBB","PVV","GL-PvdA","SP","PvdD","Volt","CU","SGP","DENK","50PLUS","JA21","FvD","Gr.Markuszower"];
 let fi=g("find"); if(fi&&!fi.options.length) PARTIES.forEach(p=>{let o=document.createElement("option"); o.value=p; o.textContent=p; fi.appendChild(o);});
 let fthm=g("fthm"); if(fthm&&!fthm.options.length) THEMAS.forEach(t=>{let o=document.createElement("option"); o.value=t; o.textContent=t; fthm.appendChild(o);});
 let fsta=g("fsta"); if(fsta&&!fsta.options.length) [["aangenomen","Aangenomen"],["verworpen","Verworpen"],["in_behandeling","In behandeling"],["aangehouden","Aangehouden"]].forEach(s=>{let o=document.createElement("option"); o.value=s[0]; o.textContent=s[1]; fsta.appendChild(o);});
-let fali=g("fali"); if(fali&&!fali.options.length) [["conform","Conform akkoord"],["strijdig","Strijdig"],["neutraal","Neutraal"],["onduidelijk","Onduidelijk"]].forEach(s=>{let o=document.createElement("option"); o.value=s[0]; o.textContent=s[1]; fali.appendChild(o);});
+let fali2=g("fali"); if(fali2&&!fali2.options.length) [["conform","Conform akkoord"],["strijdig","Strijdig"],["neutraal","Neutraal"],["onduidelijk","Onduidelijk"]].forEach(s=>{let o=document.createElement("option"); o.value=s[0]; o.textContent=s[1]; fali2.appendChild(o);});
 
 loadAndRender();
 
-// Event listeners
 ["btn-fetch","btn-fetch2"].forEach(id=>{let b=g(id); if(b) b.addEventListener("click",openFetch);});
 ["btn-add","btn-add2"].forEach(id=>{let b=g(id); if(b) b.addEventListener("click",()=>openModal(null));});
 ["tab-m","tab-ar","tab-a","tab-s","tab-ag","tab-lb"].forEach(id=>{let b=g(id); if(b) b.addEventListener("click",()=>showPane(id));});
@@ -727,9 +892,8 @@ g("fx")?.addEventListener("click",closeFetch);
 g("fcan")?.addEventListener("click",closeFetch);
 g("sinp")?.addEventListener("input",renderMoties);
 ["fal","fth","fst"].forEach(id=>{let el=g(id); if(el) el.addEventListener("change",renderMoties);});
-g("fbtn")?.addEventListener("click",()=>{let fp=g("fp"); if(fp){ let open=fp.style.display!=="none"; fp.style.display=open?"none":"grid"; g("fbtn").style.background=open?"":"var(--ink)"; g("fbtn").style.color=open?"":"#fff"; }});
+g("fbtn")?.addEventListener("click",()=>{let fp=g("fp"); if(fp){ let open=fp.style.display!=="none"; fp.style.display=open?"none":"grid"; g("fbtn").classList.toggle("on",!open); }});
 
-// Expose some functions globally for onclick
 window.showPane=showPane;
 window.openModal=openModal;
 window.closeFetch=closeFetch;
@@ -737,13 +901,13 @@ window.openFetch=openFetch;
 window.doImport=doImport;
 })();
 
-// Google Analytics placed at the very end to avoid blocking
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-9SV5Y8BZ24');
 </script>
-<!-- Google Analytics script (async, non-blocking) -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
+
 </body>
 </html>
