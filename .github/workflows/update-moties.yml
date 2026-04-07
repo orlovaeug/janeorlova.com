@@ -1,64 +1,98 @@
-name: Update Moties
+#!/usr/bin/env python3
+"""
+inject_moties.py — injects moties.json data into index.html’s INIT array.
 
-on:
-  schedule:
-    - cron: '0 8 * * *'   # dagelijks 08:00 UTC
-  workflow_dispatch:       # handmatig triggeren
+Must be run AFTER fetch_moties.py and fix_moties_json.py.
+Reads moties.json, finds the INIT= line in index.html, replaces it.
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+Usage: python3 inject_moties.py
+"""
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+import json
+import re
+import sys
+import os
+from datetime import date
 
-      - name: Python setup
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+MOTIES_FILE = 'moties.json'
+HTML_FILE = 'index.html'
+AGENDA_FILE = 'agenda.json'
 
-      - name: Install dependencies
-        run: pip install requests --break-system-packages 2>/dev/null || pip install requests
 
-      # Step 1: Fetch new moties from tweedekamer.nl
-      - name: Run fetch_moties
-        working-directory: moties-tracker
-        run: python3 fetch_moties.py
+def load_json_file(path):
+    if not os.path.exists(path):
+        return None
+    with open(path, encoding='utf-8') as f:
+        return json.load(f)
 
-      # Step 2: Fix/enrich existing moties via OData
-      - name: Run fix_moties_json
-        working-directory: moties-tracker
-        run: python3 fix_moties_json.py
 
-      # Step 3: KEY STEP - inject moties.json into index.html INIT array
-      # Without this step, the website shows no data
-      - name: Inject moties into HTML
-        working-directory: moties-tracker
-        run: python3 inject_moties.py
+def replace_js_array(html, var_name, data):
+    """
+    Replaces a JS variable like:
+    var INIT=[...];
 
-      # Step 4: Commit and push
-      - name: Commit and push
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+    Works even if there are spaces or line breaks.
+    """
+    pattern = rf'var\s+{var_name}\s*=\s*\[.*?\];'
+    json_data = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
+    replacement = f'var {var_name}={json_data};'
 
-          # Stash local changes before pulling to avoid rebase conflict
-          git stash --include-untracked
+    new_html, count = re.subn(pattern, replacement, html, flags=re.DOTALL)
+    return new_html, count
 
-          git pull --rebase origin main
 
-          # Restore our updated files from the stash
-          git stash pop || true
+def main():
+    print(f'inject_moties.py — {date.today().isoformat()}')
 
-          # Stage all output files
-          git add moties-tracker/moties.json moties-tracker/index.html || true
-          git add moties-tracker/agenda.json 2>/dev/null || true
+    # ── Load moties.json ──
+    moties = load_json_file(MOTIES_FILE)
+    if moties is None:
+        print(f'ERROR: {MOTIES_FILE} niet gevonden', file=sys.stderr)
+        sys.exit(1)
 
-          git diff --staged --quiet \
-            && echo "Geen wijzigingen - niets te committen" \
-            || (git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && git push)
+    print(f'Geladen: {len(moties)} moties uit {MOTIES_FILE}')
+
+    # ── Load index.html ──
+    if not os.path.exists(HTML_FILE):
+        print(f'ERROR: {HTML_FILE} niet gevonden', file=sys.stderr)
+        sys.exit(1)
+
+    with open(HTML_FILE, encoding='utf-8') as f:
+        html = f.read()
+
+    # ── Replace INIT ──
+    html, count = replace_js_array(html, 'INIT', moties)
+    if count == 0:
+        print('ERROR: INIT variabele niet gevonden in index.html', file=sys.stderr)
+        sys.exit(1)
+
+    print(f'INIT vervangen: {len(moties)} moties geïnjecteerd')
+
+    # ── Replace AGENDA (optional) ──
+    agenda = load_json_file(AGENDA_FILE)
+    if agenda is not None:
+        html, count_agenda = replace_js_array(html, 'AGENDA', agenda)
+        if count_agenda > 0:
+            print(f'AGENDA vervangen: {len(agenda)} items geïnjecteerd')
+        else:
+            print('AGENDA variabele niet gevonden, overgeslagen')
+
+    # ── Write back ──
+    with open(HTML_FILE, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print(f'Klaar: {HTML_FILE} bijgewerkt')
+
+    # ── Stats ──
+    aangenomen = sum(1 for m in moties if m.get('status') == 'aangenomen')
+    verworpen = sum(1 for m in moties if m.get('status') == 'verworpen')
+    in_behandeling = sum(1 for m in moties if m.get('status') == 'in_behandeling')
+
+    print('Stats:')
+    print(f'  Aangenomen: {aangenomen}')
+    print(f'  Verworpen: {verworpen}')
+    print(f'  In behandeling: {in_behandeling}')
+
+
+if __name__ == '__main__':
+    main()
