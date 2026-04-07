@@ -43,22 +43,13 @@ jobs:
 
       # Step 4: Commit and push
       - name: Commit and push
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+  run: |
+    git config user.name  "github-actions[bot]"
+    git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stash local changes before pulling to avoid rebase conflict
-          git stash --include-untracked
+    git add moties-tracker/moties.json moties-tracker/index.html
+    git add moties-tracker/agenda.json 2>/dev/null || true
 
-          git pull --rebase origin main
-
-          # Restore our updated files from the stash
-          git stash pop || true
-
-          # Stage all output files
-          git add moties-tracker/moties.json moties-tracker/index.html || true
-          git add moties-tracker/agenda.json 2>/dev/null || true
-
-          git diff --staged --quiet \
-            && echo "Geen wijzigingen - niets te committen" \
-            || (git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && git push)
+    git diff --staged --quiet \
+      && echo "Geen wijzigingen" \
+      || (git commit -m "Auto-update: moties $(date +'%Y-%m-%d %H:%M')" && git push)
