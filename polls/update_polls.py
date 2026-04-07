@@ -121,10 +121,10 @@ def scrape_polls(soup):
                 col_index[party] = i
     if len(col_index) > len(best_col_index):
         best_col_index = col_index
-        best_headers = texts
+best_headers = texts
 
-        best_col_index = {}
-        best_headers = []
+best_col_index = {}
+best_headers = []
 
         for row in rows[:3]:
             cells = row.find_all(["th", "td"])
