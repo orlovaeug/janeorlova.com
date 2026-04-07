@@ -111,17 +111,25 @@ def scrape_polls(soup):
     polls = []
     tables = soup.find_all("table", class_="wikitable")
 
-    for row in rows[:3]:
+    best_col_index = {}
+best_headers = []
+
+for row in rows[:3]:
+    # fetch all cells in the row
     cells = row.find_all(["th", "td"])
+    # clean text from footnotes
     texts = [re.sub(r'\[.*?\]', '', c.get_text(strip=True)) for c in cells]
+
     col_index = {}
     for i, t in enumerate(texts):
         for party in SEAT_COLUMNS:
             if party in t:
                 col_index[party] = i
+
+    # keep the row with the most party matches
     if len(col_index) > len(best_col_index):
         best_col_index = col_index
-best_headers = texts
+        best_headers = texts
 
 best_col_index = {}
 best_headers = []
