@@ -8,28 +8,15 @@ on:
 jobs:
   compute:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4 lxml
-
-      - name: Fix quote encoding in script
-        working-directory: politics-report
-        run: |
-          sed -i 's/\xe2\x80\x9c/"/g; s/\xe2\x80\x9d/"/g; s/\xe2\x80\x98/'"'"'/g; s/\xe2\x80\x99/'"'"'/g' emotion_map_nl.py
-
-      - name: Run emotion map script
+      - run: pip install requests beautifulsoup4 lxml
+      - name: Run script
         working-directory: politics-report
         run: python3 emotion_map_nl.py
-
       - name: Commit results
         working-directory: politics-report
         run: |
