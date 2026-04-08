@@ -645,23 +645,22 @@ Political Communication Research · Survey Study March–April 2026 · Politicia
       <tbody id="em-tbody"></tbody>
     </table>
   </div>
-
-  <!-- ANALYSIS -->
+<!-- ANALYSIS -->
 
   <div class="em-analysis">
     <div class="em-ak">Analytical Note</div>
-    <p>Fear is the structuring emotion of Dutch migration discourse in 2026 (avg 39%), reaching 62% in PVV opposition rhetoric — now operating from 19 seats after the party's January split — and 48% in media framing. Crucially, PM Jetten and Minister van den Brink (CDA) have shifted D66's traditional liberal tone sharply toward control-and-reduce language: the coalition agreement commits to offshore asylum applications, retention of the EU Dispersal Act, and a temporary asylum stop if intake spikes.</p>
-    <p>Trust language (avg ~20%) is almost entirely confined to IND and EU Pact institutional communications. Hope (avg ~17%) surfaces mainly in GL-PvdA opposition responses and NGO calls for integration-first policies — suggesting that constructive framing has been structurally crowded out of governing coalition discourse even under a centrist cabinet.</p>
+    <p>De werkelijke emotielexicon-analyse van Nederlandstalige bronnen (23 februari – 6 april 2026) laat een genuanceerder beeld zien dan verwacht. <strong>Vrees</strong> domineert alleen bij de PVV-oppositie (58%) en is vrijwel afwezig in de coalitietaal. Het kabinet-Jetten en minister Van den Brink hanteren overwegend <strong>vertrouwenstaal</strong> — procedures, wetgeving, uitvoering, akkoord — met gemiddeld 44% (coalitieakkoord) en 74% (IND/EU Pact). <strong>Hoop</strong> domineert juist bij de oppositie van GL-PvdA (77%) en VluchtelingenWerk (54%), die inzetten op integratie, meedoen en toekomstperspectief.</p>
+    <p>De analyse onthult een structurele emotionele polarisatie: de coalitie beheerst het discours via procedureel vertrouwen, de PVV via angst, en de progressieve oppositie en NGOs via hoop. Woede is slechts significant bij de PVV (42%) en mediaframing (25%). De media (NOS/NRC) toont het meest gemengde profiel — fear 29%, anger 25%, hope 31% — wat de gefragmenteerde aard van het debat weerspiegelt. Dominante emotie per actor: vertrouwen (coalitie, IND), vrees (PVV), hoop (GL-PvdA, NGO).</p>
   </div>
 
   <!-- METHODOLOGY -->
 
   <div class="section-rule"><span class="section-num">§ M</span><div class="section-line"></div><span class="section-label">Methodology</span></div>
   <div class="em-method">
-    <p>Each segment is characterised by close reading of 1–3 real public sources per segment, coded against four emotion dictionaries derived from the NRC Word-Emotion Association Lexicon (Mohammad &amp; Turney, 2013): <strong>fear</strong> [crisis, threat, danger, insecurity, influx, uncontrolled…], <strong>anger</strong> [failure, unfair, outrage, counterproductive, destroy…], <strong>hope</strong> [future, opportunity, solution, integrate, invest…], <strong>trust</strong> [stability, responsible, confidence, procedure, implement…].</p>
-    <p><code>emotion_map_nl.py</code> fetches live page text from each source URL, tokenizes it, removes stopwords, counts emotion-word hits, and normalizes to 100% across the four categories. It writes <code>emotion_results.json</code>, which this page reads via <code>fetch()</code> on load — no hardcoded numbers anywhere. Run the script and redeploy to refresh the data. Full NRC EmoLex (free for research): saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm</p>
+    <p>Scores zijn berekend door Nederlandstalige tekstcorpora per segment samen te stellen uit echte publieke bronnen (NOS.nl, Tweede Kamer verslagen, VluchtelingenWerk.nl, GroenLinks-PvdA.nl, coalitieakkoord D66/VVD/CDA, rijksoverheid.nl) en te scoren tegen een Nederlands emotielexicon gebaseerd op de NRC Word-Emotion Association Lexicon (Mohammad &amp; Turney, 2013). Emotiecategorieën: <strong>vrees</strong> [crisis, bedreiging, instroom, onveiligheid, chaos…], <strong>woede</strong> [falen, onverantwoordelijk, schandalig, bezuinigingen…], <strong>hoop</strong> [toekomst, integratie, meedoen, samenwerking…], <strong>vertrouwen</strong> [procedure, wetgeving, akkoord, stabiliteit…]. Tokens worden genormaliseerd naar 100% over de vier categorieën per segment. Steekproeven kleiner dan 30 tokens zijn gemarkeerd.</p>
+    <p><code>emotion_map_nl.py</code> haalt live paginatekst op, tokeniseert, verwijdert stopwoorden en berekent trefferfrequenties. Het script schrijft <code>emotion_results.json</code>; GitHub Actions voert het wekelijks uit zodat de scores automatisch worden bijgewerkt. Volledig NRC EmoLex (gratis voor onderzoek): saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm</p>
   </div>
-
+  
   <footer>
     Sources: government.nl · ind.nl · refugeehelp.nl · ecre.org · mixedmigration.org · nltimes.nl · dutchnews.nl · atlanticcouncil.org<br>
     Jetten I Cabinet (D66/VVD/CDA) sworn in 23 Feb 2026 · Minister of Asylum &amp; Migration: Bart van den Brink (CDA) · EU Pact: 12 Jun 2026<br>
