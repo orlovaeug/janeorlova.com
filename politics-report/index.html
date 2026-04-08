@@ -745,7 +745,7 @@ function buildEmotionMap() {
     if (i > 0) { var hr=document.createElement('hr'); hr.className='em-cdiv'; chart.appendChild(hr); }
     var g = document.createElement('div'); g.className='em-chart-row';
     var meta = document.createElement('div'); meta.className='em-row-meta';
-    var low = row.low_sample ? '<div style="font-family:'DM Sans',sans-serif;font-size:8px;color:#D4A017;margin-top:2px;">⚠ kleine steekproef</div>' : '';
+    var low = row.low_sample ? '<div style="font-family:\'DM Sans\',sans-serif;font-size:8px;color:#D4A017;margin-top:2px;">⚠ kleine steekproef</div>' : '';
     meta.innerHTML = '<div class="em-row-seg">'+row.label+'</div><div class="em-row-actor">'+row.actor+'</div>'+low;
     g.appendChild(meta);
     var bars = document.createElement('div'); bars.className='em-bars';
