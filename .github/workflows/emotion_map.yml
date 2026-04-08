@@ -1,23 +1,35 @@
-name: Run Emotion Map
+name: Emotion Map — Compute & Commit
+
 on:
   schedule:
-    - cron: '0 6 * * 1'   # every Monday at 6am
-  workflow_dispatch:        # or manually triggered
+    - cron: '0 6 * * 1'   # every Monday 06:00 UTC
+  workflow_dispatch:        # also runnable manually from GitHub Actions tab
 
 jobs:
-  run:
+  compute:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install requests beautifulsoup4 lxml
-      - run: python3 emotion_map_nl.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: results
-          path: |
-            emotion_results.csv
-            emotion_map.html
-            fetch_log.txt
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml
+
+      - name: Run emotion map script
+        working-directory: politics-report   # ← script lives here
+        run: python3 emotion_map_nl.py
+
+      - name: Commit results back to repo
+        working-directory: politics-report
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add emotion_results.json emotion_results.csv fetch_log.txt
+          git diff --cached --quiet || git commit -m "chore: update emotion scores $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
