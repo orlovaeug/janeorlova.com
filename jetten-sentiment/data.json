@@ -1,5 +1,86 @@
 [
   {
+    "id": "g3219da5b6446",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Jetten op z’n Ruttes in debat met Eerste Kamer - EWmagazine.nl",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQ0NWN2xELXA4Y0ZzU1owYkY1cUpBN3NlVmdGbTVELThxbWdhcEhaTEJJT3RnQXNhOXZ3dVU3bUdnZTByZ2JmVXFpOE9ENk5TLU82RFFHd0d0aHUtczltbmpxbV9JTHFpckJVVnZKLVdWUWdpQVgtYlBmTE51WXpYdzBmdW44US1lT2gxUDhUa2Rzb0FVMnRENXFjLUxabGRDWmREaUZ0QWkyaEF2NUU0TVhB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gec8133b3c6fd",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Bezoek aan Trump wordt niet afgezegd, ‘afzeggen zou weinig indruk maken’ - bnr.nl",
+    "date": "2026-04-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPREtxTEF5MVUzTENFUEQ2andJWnVBLXg4ZUNOWllERVZRdFBES3NpT1Z6YW9tSlJhdHhkRlRFUlNqcmRGZ05WeUhfRTc3WjNTUExMZXpUWUZYOUxQTkhGaHBkRWpNTkdvOURTdjlzTFlyUmUwNlZDWjZMdmp6bXFBOU9FcEJsYVNOYXRUYmJzWHBGR3VzNDAyQWg1bHhYVmFGUmxfVXVnNDZxTnVIdDhqN1VWTXlSNFZnY1paZg?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g4453dede26f9",
+    "type": "nl",
+    "src": "Metronieuws.nl",
+    "title": "Zoveel geld lever je als werknemer in door nieuwe plannen kabinet-Jetten - Metronieuws.nl",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaWNNYWlObVJZREVrdVJUQ0NCWVRRcXBXeEZMdGh0ay0tcUd5YXY3UWJUQmZlM1BNZTRNdWhydndldlQweXhLaGN4NjlZbXBBcWRsLV91cERGRmYwcVRsTmtsOVNCSkNtWWVsdk9lai1qTi00a21xZ0JYUmUxWUVwemFVY1YyaW5GbURQOGRXU3BONlZvTUtpOTgwNEg4TklqR2tJTVZTNzRaejJqak0zLW9sTC1fYzJ5d3c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7fb86c1580cb",
+    "type": "nl",
+    "src": "Nederlands Dagblad",
+    "title": "Trumps dreigement richting Iran zet bezoek Jetten en koningspaar aan de VS onder hoogspanning - Nederlands Dagblad",
+    "date": "2026-04-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSmoxOGQ3WERNeW5KQ2poSXBFUEQ3RnMwWGpCUnlwV2lLYmZMbWxxVEV6Tl9GNlFtVlNKdzJQNmhDWGpGbXkxSVQxemN1VHlZZUw3clZEVnNYUjF6ZXNhSkhzQjNuTFJsX1hINU1MVjBVQXhBOHp1SVFDNDl2S2VvSlRNR3pPbjJBYW1OZmp6MG5tdTJDVnR2RGVoT0FmOXhZZGZRc3JR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5725d8c8ff64",
+    "type": "blog",
+    "src": "cnv.nl",
+    "title": "CNV-analyse: werknemer levert tot 500 euro in door kabinet-Jetten - cnv.nl",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdVhBR1ZaeDJpUk0wT3JITUtPa3MtY3ljQnBTYm5KdkVDTDIxWVNsSXEtbWxjMlE4TUhkT1I5b05fcVplcHZMRE1TbnNicmFJRlpQTUZZcWdEckl2SXBoeGtFZUx5U1pReVRqX1l5elljejVyNzV5SGN1T2hxQ3NIaE1rdURwVlNlVG02X3c3cHU2SFNHS1E?oc=5",
+    "icon": "✍️"
+  },
+  {
+    "id": "g904900bc770e",
+    "type": "nl",
+    "src": "nieuws.nl",
+    "title": "FNV prijst Senaat, weigert overleg met kabinet-Jetten - nieuws.nl",
+    "date": "2026-04-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNeVc4ZlNIeVYyUTNnMXQ0WWoyd01pTWI5dkNLay1mdnhmQlNZR2FiQ0VSTG90c19naW9MaGFwcXRVUEpBNDZsWGhfblRqZUVPM2EtV21iMW10aGI0Wm1fTkU0NndyRFpZcTE5R1B3ZDhHNmhpYlhBR2NESkhWa0dkT2J4Um1sQ3pjWmdjU05JNm81Zw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g84e3b93189c9",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "FNV prijst Eerste Kamer en weigert overleg met kabinet-Jetten - Welingelichte Kringen",
+    "date": "2026-04-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNS2ljU04xS3l0cTFwX0YzQlhPaFVsVlR5OGpxTE9GbEo1ZXFSUzZGTFBwNFhzYnpkR2k0dkxWZmZMbUYyQ1prT0tTazh0RkxVQWc3QkxpMzNjam94TzZwT0VsTXN2ZHpXNW9sZW5NNmIydFE3cFJpbzJDRjhlTEFQSURJUjFfczNOandWcEZKbEdFeXRUWjZkbml0LXlndmZJMGhDa2NvQTAxQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf9e386173514",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Senate axes Dutch government's plan for faster increase in state pension age - NL Times",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUTRFdWFLWXlVNzhjVkdpcjZSR2V0MXBmRU5YcWtfbm5Zdi1MRGFaZVVoWk5zanBPSVJLX2wxYUhIZmpjWnBlZVBWX29FTktOcVVoWXpjaDJOMW11S253dWh4eEpkb1IzZjlzWHYzejJLTFhvMm53Q2JxbHlRYnNEMGdtSEJiZGpHTUMwbENkVkdrcWZxemttbkVvdEcxc0U?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
     "id": "g60e7617690c6",
     "type": "nl",
     "src": "NU.nl",
@@ -61,6 +142,154 @@
     "icon": "📰"
   },
   {
+    "id": "g5f54fba0850c",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten hoopt op terughoudendheid na Trumps dreigementen tegen Iran",
+    "date": "2026-04-07",
+    "sent": "p",
+    "link": "https://nos.nl/l/2609504"
+  },
+  {
+    "id": "gc8b2d2c69d4b",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Trumps dreigement richting Iran zet bezoek Jetten en koningspaar aan de VS onder hoogspanning - de Volkskrant",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOdGFVYVctX1U5R0lfcVJzcnRZZXlDSW9CX0hOZVI1UGp1TVNCUWdKRS1NQXYyTEwzM0IxaXhGZEdiNVFOU0xuelJkSm9wNlFnYWZYUGJSXzlqa2dWTXNIVGdNc19UOXYwWjR5NC0yeXpnck5ZS2ZXek9zVU1hRE5KMWR0cXV1SnNETm40c0tIZlZ4TDgtdHdtcFVXS3RCOHdKV0V2VDA5NEdsakpMdHFkRlNCdjlsZTBuOVpONmhibkdlUTdLQnVrMlhXZlB4NnN5T053ag?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g7ccbc71229b1",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rob Jetten direct gecorrigeerd na pijnlijk slippertje in debat - De Telegraaf",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPanJ5SmhtenA2aUlITVpHbEZNcEFfYVg0cVZZdFZzU0NmWDNuRDJaMUlnUjdiUjdKbW1SMWdacU8yaE43LW9IRlZoQXN3em93VzNjRHM1SGR3Nl9ScUdTeWw5bXUwVkxPVlJnby1ONTUwTDZYSTZpOXVKSEdOQVh3cXN4aGcwQm1zSlowMzVlcGk3ODB0TnJLMWRHdFRiUXFKakoxN19PX0VqNFpB?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc95190c58ecb",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Premier Jetten wil dreigementen Trump niet expliciet veroordelen: ‘Continu reageren op elke post op sociale media heeft geen zin’ - NRC",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQTlZVYnlST0swXzl3aE5kU2t4dllaN0ZYOGp2T1JIZDhmelhGZDVWbUkwOVlTWnFTTkdKV1BtNkRhX2NLbW44MlpSdExlODZMYWxUNWVXb3ZORkQ3T0FLUlBOZG1uWHFvUmxSRkVGbzd3cGw0T2l0SXpMbHBvTDFYMklEWkd4ZFhPeUhSOV9HOFhCX1ZjVDlrX0E1YjlJMUxrQnhhUzIyVUlMT2RSaXVCZnREOUZSLWRMbGF3VTBJQjNKclpoTGd0Y3pQNWR0NU1NSWJaRXI2UHNORnRUWmRrdTg4UTg1Y2UtcDJnaUpSUGVod2NxVDNzakFpekpFWjhZa2c?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g6624f39714b9",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "Premier Jetten reageert op genocide-dreiging Trump: 'Dat hoort gewoon niet' - bnnvara.nl",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNTlvT3Q1MXJVcnFwWTdXcE1RYXRUX0tRdDdmTi1LZ1ZxanV0NnJoNzNMM3AxbHZ2UUFEVzdqWTJfNWNKTzVmS2Q4dXdLbV9NTGx5ZjV2NXI5OVdPQlEtTVBGbm5TQ3JrVFA4VzVNT3BWY1pYeExidHZlMHhKOVJ0WWVacGQ4YklERGVFLVJ0ZmgtU0pKc0RDcUtGc1FoUmF5cmhxUlF0alo2X1p0d1hn?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g875c119e18d0",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Jetten neemt stap voor stap afscheid van omstreden plan om AOW-leeftijd te verhogen - de Volkskrant",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQODZIcmo3ZndQMlVjaFpfM29paUVyQlJSNEZ1T0QyVmx1OVBlX2N6SEtqVUtzTWFvUFhpMzNILTRlUG83YUlMMEd4SkQwRkFqMkxwTGxZTjlBdFBRQ2NCbVhqT09Fb25Eb3BGLTVQNF90WFdzX09sWjhXUmpyaWJYR1lYMmFBQlpnTXpOWnl3UUV5WnFqMWJnQXZPZFZlNmZMa1FWaDU1SnBQaElSQmZLU3QyOFZOVjBhbF9vRUlRTjloeGFDazdv?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g96f1dc0645f9",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Met ons valt niet te spotten, zegt de Eerste Kamer in het eerste grote debat tegen het kabinet - NRC",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcnI2RmlDclgxMnlxQTRic0I4QzZSb29wemxNUDJua2RJUmlSVTQ4MDFSSW5PM2I1Tm05b1JGbFJBMS1NdW5saDlDLUlGeFljOHJGcFYzR3EtVVZOX0Z4WW91Zi1HdGdVdEw0djRDdmtOck9NR3FFZjZCM2gzLW9HY0ZFV21BdE8xeUZNWUR3Y2FJdWxiS1hxRnhSVWFsd3Q5TldjaWRkX211N04wSUZKMjBnMnAxVnJDTHFkOW5wSjZ2TkswOGI3OHJKOU9xazh5NkJvVzln?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g9685469928f0",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "D66 zet in senaat deur open voor schrappen verhoging AOW-leeftijd - De Telegraaf",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTFZmY25BSHozVHpwa0h2YkFVZ212NnZ4SUwtZmFQWGlwOVk4cXRqck9IM0pvUDBSX0Z1aHNmRUdHb00xemQzSzVFUks5ZnJkZ3BPNXVCTjB3WjNIeXNJMDl5SE10VDROZTBUWk42VEYzdVFlVWtiQzdaWFQtdmlXNlZ1ak5salQ2TWVZcGFLQkdVaUxiVVVPbjI3WDlhWXBnUGxQMk1iMEx1OHZxcVBHdm16UVA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gfac5d59b6d14",
+    "type": "nl",
+    "src": "Nieuw Wij",
+    "title": "‘Buig niet’ zegt Ad van Nieuwpoort. Ook niet voor het kabinet Jetten? - Nieuw Wij",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc0cxbXo3QWdySHd2OTVpM2k1Qjk2TmVxOXkwZENORHRCZFdrT2V3VFVPdWxrTzl2RFVEenlodWdJVzI3ODZ6QURoSHl1RDVWbWwtU2s5amFaYUg4X0RmVks0ZjJIMW9DTHB3cm1zU2JxYThjQTlZNE1ZZmVvdkpVbEY2NUZuaDR3NDdnQUdJaUpQUWtSRENFelVzUWJPZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3bc572a0ca0c",
+    "type": "nl",
+    "src": "Schuttevaer.nl",
+    "title": "Kabinet reserveert extra miljarden voor nieuw 1 gigawatt windpark op Noordzee - Schuttevaer.nl",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdUJkbC04QlYycER0S05YZlA5SldJVS1RcHJEMWVsWlE1YUc5UXFVVWtBZE5pM3RqVWRBcnNoSkdMakd6SDVqSzUwSWNwemZyZ05WcjZNdU8tSFRiV3RrMS1VS2k3a1dmU2xZVS04bXpUb2NlbWx6aFJzRDVDYS1TOE10WnZTazdsTUdsalc2Q3JkMnZmcWlrYzBGakNZQk1QZWJsV19VOXR1blp0YmptRi1uakN5emZRR1g2bmtLWFpScDlIQWgweHlISQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g941884fca214",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "minderheidskabinet-Jetten zoekt naar steun in parlement - Trouw",
+    "date": "2026-04-07",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVzY3LXJ5TTIzNG11amx6R3ZGNkNOaGN3SWxlbWZPSThadVE1WG1CcHMzNkJIRTJZa0F0UDBfeHlKeDdQbVBEXzZ6cURoUEtaMmFDZFdSZGtTZm5zYzdEdU50VGp0ek1XOTVrd28zZjVqTTFyWE9HXzJld2tmVzhaRE4wek9DaFFuNTMyUWF6OV9RVWZpVlJyMzdtbw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g7f4a9c7ef54b",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Handen af van benzine- en dieselaccijnzen, kabinet-Jetten! Pas de wegenbelasting voor elektrische auto’s aan - EWmagazine.nl",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNN293Qnh4TGZBNTdURzFYRktzcXo0aWc3a3h6X0xRNFNRVHdtN0tUWUdicnFFNlhlSXM3OWExNHZ2Vjl5R2l4UGd1c05QSlh4Rlo5YVNVN1pjVEZBTUZBR21SSE9UdXNjUjRvbkR5TlVibEU3N3FGTjk0R3FkazFnVTNFcVNtUVJTTEhhQ0ZqSTExa0F2WVFKT0JTT1VOX19JZWhObUZkTGlBRXlIT21BQlZKMncyX1h6dnN4aWVjcmpZOEtwVUVuTGIzcFV4NzVHdVEyVmMzenN5N0wteDd6OWZxYVV5ejVWTnpSNmNTc3haQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g778fc45348a5",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Bij Kabinet-Jetten is de Eerste Kamer machtiger dan ooit - De Gelderlander",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa3AwVUY2OG56Wk5PNW53RFpKLTNJWk9JSFJHMlMzajJQUlBYeFRtTV9hc1AwUHlXTGwtaFpXRUU3am1ZQ3BOMDlmdjZjdVpscEVsQVVjSGFyRWNGWjRPMm9NVlM0YmNQZWN4ZmlQZE82M01vQ1FsTTAxTTZUdE5rdDFub1BOc2xfS2s2YzFn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g65d8e3f7f9d6",
+    "type": "intl",
+    "src": "Recharge News",
+    "title": "Dutch to stage double 2026 offshore wind tender volume 'in the face of geopolitical unrest' - Recharge News",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOYVZENGRaTGs5eWFFWjRmdVpmejg2M2JLdTF6cjVoV0tTRTktR09XNzg4aW1Fdm85VndwcHA1Q2VwcHM2cnRDQ0pEMDBJSm1hZVBMeE40ZzUxXzdwSHNUWjl0X0psaXhIeTV5Y1JWdTBxZjNXZ3BIc0NEbVpVS0o4STlDQWFxWHBqZjUxMURVV2xoMGJMNnJrR09PT2JiekFkSFRKRVJSY21UbG9fcU84NkhXaXdkQ0FxWlNDTEc4VHptb3F3UGIxMmZ6ZE0zdk5CSGhjZEh6VkU5TENy?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge4749f114163",
     "type": "nl",
     "src": "Trouw",
@@ -90,6 +319,16 @@
     "date": "2026-04-06",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaFVNN2ZRV3VGVHh5c1ZkYk4ySzB0SEVJMjdYcGhiem5BbHl4TkRaZXF2M3lQVVUxS1ROUDFaN1l4R196YU1CTzJDbGlia0FaUGJXVm1hdURyMXNoZEFNNTg0OGgyMGxYdzhNV0NpMGlyNlRpRTZNbVVSU0dPemFyaGxIRlpVVkZMWGJWR1M0QkFXWXp6bVc0c2J3a3dLUWVzOUV0Vl9ISURldTY0eTEzTg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g956a8e16f61c",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Van 7 naar 0 procent: Duitse btw-maatregelen mogelijk aanstaande vanwege stijgende prijzen | Foto - De Gelderlander",
+    "date": "2026-04-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPQkhITTJFZXZDbTZ6MUdVakRCbFdRRFRVMzRXN2lsOVNDU1lKcFJaQ3JROGN4Q3BvX0F0aGROeWJlalVxQVBLSFQxQ2gxcy0yb1loeVg2djMtWlE4Q1dHai1RVGdyQ0Uzb2pMa3BYb0JtS3dXNXZhQlZxN1hTbjU1SEpVZkMxQmoxYjZLN0FqQVZ0NHFyOWx0MGtTTWdRZDRDcXVRcG5OdzlYQzZWNS03andzTDJNdWdldWdTTG80R0dFOHh0UlpjcVBPOFExRUtSNnFfd2M4eFl0S3hjYXVB?oc=5",
     "icon": "📰"
   },
   {
@@ -174,6 +413,17 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTEh0azluWDlwbG1vZS1WTXhZX1VQUFB6bDIzSkVreXdydFZ0eGs0ektPVHc5dXYzbUo0cmMzcURwaVJiVkZyS1JqdnJiN1Y0bDFkblZBbkRkOTdZdFR0VUtDcUNVNkdhV0ZEMWhDc0tIRHVHSXNMLUwtUjlkcFp3UlNtczRpY3BSUVY2a2k5bFBsTnlza0V0Wk9wQW9IVDloLWcxVkUyZHdrYm9TNjkwQjgyYnhMWTluMGxScDRBZ2ZIa2NSdzZBSg?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gfb731a53838d",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "Italiaanse vliegvelden waarschuwen voor brandstofbeperkingen, kabinet-Jetten weet nog steeds niet welke maatregelen er genomen moeten worden - bnnvara.nl",
+    "date": "2026-04-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQbV9nZ2Z2T3pzOW5yMUFweThtY3F3dUw5allDWUY3NmxESXBqeGYzSUMyay1WRWM2TFI1NHZ5Q3o5cXFicHJ3ZWRpbFlvelBEMG1JYkV6TG90Qmt1b0JqUVNlS2hsMXdadUxxR2tyUS1HODUyOG1xdWxxNzE1YXoweGNDN0JhVTZuVkJ0bEhDRzRLLXI5UTFPWGlxaU1XWE1DVElYS1QtMEI5VTFadld0c3A2VTYtbzZuWnpGX0ozSXViZ0hTcEp3Y1daSzdEUkhWWHdhaHdiR0ZEbTBUOVdhNFpNUVBDaUVLRGpldjFab2JMWmRYNmV3VEFyb2FNVWtGMnc?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "g72cd7dd24304",
@@ -829,6 +1079,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSGZUa2dDZ01EcTRWbUVyVHI3SUpxM3BjZ3lEa25FX1ktckhHaFlQUjdaa3VfRVBWMU9pYS1EXy1LSkMyTnFVdmlaTEJMQlNSRWlvdTBkMmpXemtpU3Jic0xxNGJ6MlBHbUtTMV9iRERySWFIcDdLX1VIRVJvVXZGUjkxaHRkZXhqWHQ2NmVkemFPSGlPX0N5Q2tsVm96VDFzeFBF?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g3b9d333224e8",
+    "type": "intl",
+    "src": "starcitytv.com",
+    "title": "Amsterdam marks 25 years of gay marriage with weddings - starcitytv.com",
+    "date": "2026-04-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPYlNKYXluVl9YMFNmenR2MnkxWU9TYWJFVnlmZ2lJTmlxQ2h4TGkzTkJPSzdHbGVxS3R2cl9iRktzT3VwUlUyTzVnWlRBR2lwYjBEbTUzUWlQRXJOeEd1dkQ3RWJua2VJVDVCT3VJS1BqV3B4bmh4dVpyRndaUm85YjJaNUJ5Y3MwT21WM3RmRzlUTU1xc01TTENjb2pnTkFvS0JPcFk1SUJmdmliT3ZYRXl6U21mVkRwTm9KclFKb0x2aGZZUFZBaUdubDFteHFsUHhjVlhlTk1SMzFRQ3c?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g2b78cc1ee902",
@@ -5027,6 +5287,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g3ff6f447c70a",
+    "type": "intl",
+    "src": "sud.ua",
+    "title": "Нідерланди планують обговорити умови вступу України до ЄС – прем’єр Роб Єттен - sud.ua",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeFBSU3VMN1ZlR1dDWF9HS2c0NWFoRDRXZnpOeUFaS3o3X3k0dFRPYmd3b1ktVjdsZVdpSnc4eDJnU0tHZGM0eFZrUG9jeGZHOGROQTNzV3BWYmtUZjROT3BlbElKWk5qalhCWVhsQ2RlYlAtNk5Qb0szNjdqSHNIVUY3dUpjSXExTi1NV25UTlk5TXV6Vk9SVHR5dml3Rks0QkdxbTk2MW95NnlrbVg3dExWT1M1TWtsN3Jr?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge961dea86589",
     "type": "intl",
     "src": "politico.eu",
@@ -6795,6 +7065,26 @@
     "date": "2026-02-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbkZJVGRZYTVGbnNIVGQwOUtkUFV0MFlTRk9KT0JGa0FLNTdMX203S3plcVpkZTctZ2ZXN29YcjBneTNZNF9ZbWpVLW53b3dVVUxmZVladFJ5MkV0VF9SWEZZRm0yTGJXWG5wVTgySU5samVVV3dRSzZXQndzOWxlYUg5eFIzVXhWQmQ1bkhoc3g5cU1WVk0wVHh2QXZpeVZzOFlhNDB2SV83X3dGUERST21BTlY2WlFBNFFrYUVUSzZWZ9IBxwFBVV95cUxQTVBvRXBINEpOdnQ2Yjg5dlprbzZMQXFKeVBjcjBpSGVSV3BNamV1b0FoMXM4eEk1Nm84WEtjRDNkRkdqZlhzV3dBLU4xcTA5S2lZTUtUX1A1b1JfTmtCVGxrN3JJU2NVMkNldlhrYThlSVI2SmN3OTFLUXpDbFFTV2dnZnNZZDJGcDkzaWxoa0s5YmRYdjBPSkFpeWtjM3VvOUJNbFRUb1VNNkNuOTBmMzFaRFZqdjYyS05mX0NST01VempZd2FB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gdb6789b82997",
+    "type": "intl",
+    "src": "kyivpost.com",
+    "title": "New Dutch PM Jetten Vows ‘Undiminished Support’ for Ukraine on First Day in Office - kyivpost.com",
+    "date": "2026-02-24",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAxeF9Mb3AzT0RROWNTZGRiRGFVeEFkSTQwTnBrOEFUaUZaZmMxZTdvMGtWdm0tTE81a210ZGlTR19RdEZ6djA1M0Y0SQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g63fea2a187a5",
+    "type": "intl",
+    "src": "elpais.com",
+    "title": "Rob Jetten y Nicolás Keenan, la historia de amor del primer ministro y el jugador de hockey que ha conquistado a un país - elpais.com",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNR09wRlJrdDR5V2hVZFRlNExHQUEyUWlkZkhEWFp6alMteGZXNDhQWGVXcEJ5bUJWRXVtdTZicTZQczBfVXZFZkFqTlNwZEFKU1M1VHo1MWFwRW8ycVIyNFJQTUxCWnU0WElfMThKTzU5OGQzeFp2NlduMzZKQ2FBNlk3VjZZbmotX1dHa1lXQWE5VUZ6VmxrOW9oZWsyWUJSd0dNWUlUdlV2ZTM3YndiMEx2d21iOHYwb2tHMVFta1VXdE1LU25aQmNzOEsxaHJFWjRVNHNqeEc4a25RQmk3Slp2N0h2WHI3ejZlU0Z1enYyUdIBhgJBVV95cUxOdjZhbkJqcGVlU2dBcmIyQjhRWTczTG15aFZjRW5YRmdnZkdlRlBEajhsdlBJMml4eUR6N0tOOWxuZEdBa2FwQUZNS0R5VXR3RzlfeXBfOUJ0OHdaMzRlalRsZUE1NTNSOE0xcTMwQXBiczZGd1pNczJyVW9YSnlQVzlRLVA0WkV0LU9la2ZTeW52eHBaLUQ4ZVU4c3hqUHk1M3NObXBNTEVDNlpQTEJZVXJlMVJIRXZ0dlNJVmhrSDdlbVMzWTR6UGxEZExvYlhqN2JTRXlWLXlCLXUwNnoydU1qOThQbnpoclkxbmR5TEo3dG1kUXlrTDVzS0U1anZRMkVOV2dR?oc=5",
     "flag": "🌍"
   },
   {
@@ -8985,6 +9275,36 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORXk1NnBxaDZkTWVYTHc0eGUybktRS3kxcnJrTVBuY0tSYnBOa0U4ZU9Pbmpmdkh4aTFVb0MtTjZPclJzeHJtdEZVY0o2V0V1Zkw3M1E0QkRENzAzd1dvY1FXOHBzLXNtLWpiWlBJUUpBa0NoQ1lNSGZ0YWc0NzVwZFlvSTNDZml4bWRfdjNDLUNvTnZUdmI2clliTUxCa0doTDQ4VmRnc1lBdUdPdzFJTVk3d0NVZjVjSGJ5SEFzSjNqZG9KcUlUcnhhTEtfOEdLbDNBcnBUUWJqOEJSenJFWFln0gHnAUFVX3lxTFBaYU1RbzVBTENESnIzWTVTZE9wdGZJUTJNM3JaX0llRmh5Q2llNVVDVzZ5aWwxMjdmNVdqMGJJWl91RW9DRTJPR0lMUXhHTHFQNDRpZGZyV1Q3R2xtQ1hNaW9zcGFFVjhwYmlWLUJ6ZFZxMEg4V0J4MXVscHB0TDFOWDdLY1Qzb29BM3ZiWTZ4X0g1Y3lwbUs2TzR3N1BuQnZCcUhTdWd4TEhSMHpHMFYzWWVISFUtR28xOUZybGhUSk1oNUQwT3NtTW84UFVkSnk0cmRKcjZzUVUxTWdXWXNXc3hrdkJqTQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2ab138aa7bc4",
+    "type": "intl",
+    "src": "washingtonblade.com",
+    "title": "Rob Jetten becomes first gay Dutch prime minister - washingtonblade.com",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdk5WeGF3MEFEYmJzT3ZBOTd5b2JDZ21UU09JcUpOWXR2V0FXTXhRV29ld3h3Uk5GRTVrV3RRVUYzcEpwdGpqX2praTFCbFRJc196V2pGODdSMElKMFpsSnZ3RWYzOHVjWU45Y2J1cHItb0hMQkZaMGJ2aG1ZOHJTRUFJejZvTTVWTDFmNVdxODkyUFBnQWE0dg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g70bb0c46e94e",
+    "type": "intl",
+    "src": "Il Fatto Quotidiano",
+    "title": "Rob Jetten nuovo premier dell’Olanda: è il più giovane e il primo dichiaratamente gay nella storia dei Paesi Bassi - Il Fatto Quotidiano",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQ0pXVGgyMHNpeXVqeDdHek5jSVlCRmJwT1BiWmRHX0pweUNiNVJRR21DYVZZYUFDaHdHRC1reFRud293SURxdmlSdjBkTGZ1bE1JTkhTMFRLc0pqbkUxbjFQZDNXM1BzMXFUUUk5b09uQ1ZhTmZrMGlpcUQ5RWlYLXViaHF6dDdLYk1MVDZVRFVHeGN0WWRiNUt4ZVFBdw?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "gd5b9d75e213e",
+    "type": "intl",
+    "src": "unn.ua",
+    "title": "Нідерланди отримали наймолодшого прем'єр-міністра в історії - король прийняв присягу нового коаліційного уряду - unn.ua",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQcVdzeWNsVFRHWk1xZTRDOFpmZGZSLWdoRllOU013aGlQY0YtRF90dTc2UUgtY1FjeTlzeGNuZUNlMzRvREgxZEJqSmp0QnBUMWw2ald5SDFiX3ZHajdDMkxiM2tIQmJKTVJDTmZ1VzRrU25YcHhqeWhmWG02TUZMc0lZY1pJRTNwV2pqa0JCeXg4MC0weUprbGE5Sk9qeWxoMGdodFJ0T2dEZVdsWFduSGZJUGk4ako3T3NTWXktTTM4QXZ0V2dra0diY2_SAcsBQVVfeXFMTWdzb295c09XVnRJVTZxZ2RtQ040b0JKSmk1UTFZMEhjbEtNUkNObzAzVjZlaEFBWFM4MlVkNU1Dbzg0UU16UmFsRDlOQlNRWTdsdkVqUkc0NzRHZjlkdE1iMXljMUhWREg2dVpZT0FCMzh0cDVOZTE4aXZ2SGtnbUpaZzNaMEFqTEdoQUxQNEo2SzQteDZuczBrRTV4eFpDNGgwYzc5WUhQcGh6RW93UDhqYWkyeG1nTzgwWlFuM3drckxCVFlMTjVBLUE?oc=5",
     "flag": "🌍"
   }
 ]
