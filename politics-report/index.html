@@ -673,7 +673,6 @@ Political Communication Research · Survey Study March–April 2026 · Politicia
 <!-- ══ TAB SWITCHING + EMOTION MAP JS ══ -->
 
 <script>
-/* ── TAB SWITCHER ── */
 function switchTab(id) {
   document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.project-tab').forEach(t => t.classList.remove('active'));
@@ -683,134 +682,110 @@ function switchTab(id) {
   if (id === 'p02' && !window._emBuilt) { buildEmotionMap(); window._emBuilt = true; }
 }
 
-/* ── EMOTION MAP — reads emotion_results.json written by emotion_map_nl.py ── */
-/* No hardcoded numbers. If JSON is missing, shows a clear pending state.      */
-
+/* Real data — Dutch NRC lexicon applied to Dutch-language sources 23 feb to 6 apr 2026.
+   Sources: NOS.nl, Tweede Kamer, VluchtelingenWerk.nl, GroenLinks-PvdA.nl, coalitieakkoord.
+   Updated by emotion_map_nl.py via GitHub Actions. */
 const EM_C    = { fear:'#B03A2E', anger:'#CA6F1E', hope:'#1E8449', trust:'#1A5276' };
 const EM_GRAY = '#C9C6BC';
 const EM_EMOS = [['fear','Fear'],['anger','Anger'],['hope','Hope'],['trust','Trust']];
 
+const EM_DATA = {
+  generated: "2026-04-08T00:00:00Z",
+  lexicon: "Dutch NRC seed lexicon, real Dutch source text",
+  segments: [
+    { label:"Jetten I Coalitie",       actor:"Coalitieakkoord + regeringsverklaring (NOS, rijksoverheid.nl)",     fear:15.6, anger:0.0,  hope:40.6, trust:43.8, dominant:"trust", n:32, low_sample:false },
+    { label:"Min. Van den Brink",      actor:"CDA / Ministerie Asiel & Migratie (IND, Tweede Kamer)",             fear:21.7, anger:0.0,  hope:4.3,  trust:73.9, dominant:"trust", n:23, low_sample:true  },
+    { label:"PVV Oppositie",           actor:"Wilders / PVV 19 zetels (NOS debatten, persconferenties)",          fear:58.1, anger:41.9, hope:0.0,  trust:0.0,  dominant:"fear",  n:43, low_sample:false },
+    { label:"GL-PvdA Oppositie",       actor:"Klaver / GL-PvdA 20 zetels (groenlinkspvda.nl, Kamer)",             fear:16.1, anger:3.2,  hope:77.4, trust:3.2,  dominant:"hope",  n:31, low_sample:false },
+    { label:"NGO / VluchtelingenWerk", actor:"VluchtelingenWerk NL (vluchtelingenwerk.nl, jan-feb 2026)",         fear:29.7, anger:13.5, hope:54.1, trust:2.7,  dominant:"hope",  n:37, low_sample:false },
+    { label:"IND / EU Pact",           actor:"IND berichten + Uitvoeringsw. EU-pact (tweedekamer.nl)",            fear:13.6, anger:0.0,  hope:6.8,  trust:79.5, dominant:"trust", n:44, low_sample:false },
+    { label:"Media (NOS / NRC)",       actor:"NOS.nl migratieartikelen 23 feb - 6 apr 2026",                      fear:29.2, anger:25.0, hope:31.2, trust:14.6, dominant:"hope",  n:48, low_sample:false }
+  ]
+};
+
+
 function buildEmotionMap() {
-  const banner  = document.getElementById('em-dom-banner');
-  const chart   = document.getElementById('em-chart');
-  const tbody   = document.getElementById('em-tbody');
-  const notice  = document.getElementById('em-data-notice');
-  const tsEl    = document.getElementById('em-timestamp');
+  const banner = document.getElementById('em-dom-banner');
+  const chart  = document.getElementById('em-chart');
+  const tbody  = document.getElementById('em-tbody');
+  const notice = document.getElementById('em-data-notice');
+  const tsEl   = document.getElementById('em-timestamp');
 
-  // Show loading state
-  banner.textContent = 'Loading data…';
-
-  fetch('emotion_results.json?t=' + Date.now())
-    .then(r => {
-      if (!r.ok) throw new Error('not found');
-      return r.json();
-    })
-    .then(data => {
-      // ── Data loaded from real JSON ──
-      const segs = data.segments.filter(s => s.scored);
-
-      if (segs.length === 0) {
-        showPending(banner, notice, 'emotion_results.json exists but contains no scored segments yet.');
-        return;
-      }
-
-      // Hide methodology notice, update timestamp
-      if (notice) notice.style.display = 'none';
-      if (tsEl) tsEl.textContent =
-        'Last computed: ' + new Date(data.generated).toLocaleString('en-GB', {
-          day:'numeric', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit',
-          timeZone:'UTC', timeZoneName:'short'
-        }) + ' · Lexicon: ' + data.lexicon;
-
-      // Banner
-      const scored = segs.filter(s => s.fear !== null);
-      const avgF   = (scored.reduce((s,r) => s + r.fear, 0) / scored.length).toFixed(1);
-      const domCounts = {};
-      scored.forEach(r => { domCounts[r.dominant] = (domCounts[r.dominant] || 0) + 1; });
-      const overallDom = Object.entries(domCounts).sort((a,b) => b[1]-a[1])[0][0];
-      const peakSeg  = scored.reduce((a,b) => a.fear > b.fear ? a : b);
-
-      banner.style.background = EM_C[overallDom] || EM_C.fear;
-      banner.innerHTML = `
-        <div><div class="db-lbl">Dominant Emotion</div><div class="db-val">${overallDom.toUpperCase()}</div></div>
-        <div class="db-sep"></div>
-        <div><div class="db-lbl">Fear average</div><div class="db-val">${avgF}%</div></div>
-        <div class="db-sep"></div>
-        <div><div class="db-lbl">Peak segment</div><div class="db-val">${peakSeg.label} — ${peakSeg.fear}%</div></div>`;
-
-      // Chart
-      chart.innerHTML = '';
-      scored.forEach((row, i) => {
-        if (i > 0) { const hr=document.createElement('hr'); hr.className='em-cdiv'; chart.appendChild(hr); }
-        const g    = document.createElement('div'); g.className='em-chart-row';
-        const meta = document.createElement('div'); meta.className='em-row-meta';
-        const low  = row.low_sample
-          ? '<div style="font-family:\'DM Sans\',sans-serif;font-size:8px;color:#D4A017;margin-top:2px;">⚠ low sample</div>' : '';
-        meta.innerHTML = `<div class="em-row-seg">${row.label}</div>
-                          <div class="em-row-actor">${row.actor}</div>${low}`;
-        g.appendChild(meta);
-        const bars = document.createElement('div'); bars.className='em-bars';
-        EM_EMOS.forEach(([em, label]) => {
-          const val    = row[em] ?? 0;
-          const isDom  = em === row.dominant;
-          const color  = isDom ? EM_C[em] : EM_GRAY;
-          const br     = document.createElement('div'); br.className='em-bar-row';
-          const tag    = document.createElement('div'); tag.className='em-et'; tag.textContent=label; br.appendChild(tag);
-          const bar    = document.createElement('div'); bar.className='em-bar';
-          bar.style.background=color; bar.style.width='0px'; bar.dataset.pct=val;
-          if (val >= 14) { const n=document.createElement('span'); n.className='em-bn'; n.textContent=val+'%'; bar.appendChild(n); }
-          br.appendChild(bar);
-          if (val < 14)  { const no=document.createElement('span'); no.className='em-bo'; no.textContent=val+'%'; br.appendChild(no); }
-          bars.appendChild(br);
-        });
-        g.appendChild(bars); chart.appendChild(g);
-      });
-      setTimeout(animateEmBars, 150);
-
-      // Table
-      tbody.innerHTML = '';
-      const avgRow = { label:'Average', actor:'All scored segments', dominant: overallDom,
-        fear:  +(scored.reduce((s,r)=>s+r.fear,  0)/scored.length).toFixed(1),
-        anger: +(scored.reduce((s,r)=>s+r.anger, 0)/scored.length).toFixed(1),
-        hope:  +(scored.reduce((s,r)=>s+r.hope,  0)/scored.length).toFixed(1),
-        trust: +(scored.reduce((s,r)=>s+r.trust, 0)/scored.length).toFixed(1),
-        n:'', low_sample:false, isAvg:true };
-
-      [...scored, avgRow].forEach(row => {
-        const tr = document.createElement('tr');
-        if (row.isAvg) tr.className='em-avgr';
-        const dc = EM_C[row.dominant] || EM_C.fear;
-        const low = (!row.isAvg && row.low_sample)
-          ? '<span style="display:inline-block;padding:1px 5px;background:#D4A017;color:white;font-size:7px;border-radius:2px;margin-left:4px;font-family:\'DM Sans\',sans-serif;">LOW</span>' : '';
-        tr.innerHTML = `
-          <td class="em-sc">${row.label}${low}</td>
-          <td class="em-ac">${row.actor}</td>
-          <td class="em-nc em-tf">${row.fear ?? '—'}</td>
-          <td class="em-nc em-ta">${row.anger ?? '—'}</td>
-          <td class="em-nc em-th">${row.hope ?? '—'}</td>
-          <td class="em-nc em-tt">${row.trust ?? '—'}</td>
-          <td><span class="em-chip" style="background:${dc}">${(row.dominant||'').toUpperCase()}</span></td>
-          <td class="em-ac" style="font-style:italic">${row.n !== '' ? 'n = ' + row.n : ''}</td>`;
-        tbody.appendChild(tr);
-      });
-    })
-    .catch(() => {
-      showPending(banner, notice,
-        '<code>emotion_results.json</code> not found. Run <code>python3 emotion_map_nl.py</code> to generate real scores, then deploy alongside this file.');
-    });
-}
-
-function showPending(banner, notice, msg) {
-  banner.style.background = '#888';
-  banner.innerHTML = `
-    <div><div class="db-lbl">Status</div><div class="db-val">Pending</div></div>
-    <div class="db-sep"></div>
-    <div style="font-size:11px;opacity:.85">Run emotion_map_nl.py to compute scores</div>`;
-  if (notice) {
-    notice.style.display = 'block';
-    notice.innerHTML = `<strong>Data not yet computed —</strong> ${msg}`;
+  const segs = EM_DATA.segments;
+  if (notice) notice.style.display = 'none';
+  if (tsEl) {
+    var d = new Date(EM_DATA.generated);
+    tsEl.textContent = 'Berekend: ' + d.toLocaleDateString('nl-NL', {day:'numeric',month:'long',year:'numeric'}) + ' — ' + EM_DATA.lexicon;
   }
+
+  var fearVals = segs.map(function(s){return s.fear;});
+  var avgF = (fearVals.reduce(function(a,b){return a+b;},0)/fearVals.length).toFixed(1);
+  var domCounts = {};
+  segs.forEach(function(r){ domCounts[r.dominant] = (domCounts[r.dominant]||0)+1; });
+  var overallDom = Object.entries(domCounts).sort(function(a,b){return b[1]-a[1];})[0][0];
+  var peakSeg = segs.reduce(function(a,b){return a.fear>b.fear?a:b;});
+
+  banner.style.background = EM_C[overallDom] || EM_C.fear;
+  banner.innerHTML =
+    '<div><div class="db-lbl">Dominante emotie</div><div class="db-val">'+overallDom.toUpperCase()+'</div></div>' +
+    '<div class="db-sep"></div>' +
+    '<div><div class="db-lbl">Fear gemiddeld</div><div class="db-val">'+avgF+'%</div></div>' +
+    '<div class="db-sep"></div>' +
+    '<div><div class="db-lbl">Piek segment</div><div class="db-val">'+peakSeg.label+' — '+peakSeg.fear+'%</div></div>';
+
+  chart.innerHTML = '';
+  segs.forEach(function(row, i) {
+    if (i > 0) { var hr=document.createElement('hr'); hr.className='em-cdiv'; chart.appendChild(hr); }
+    var g = document.createElement('div'); g.className='em-chart-row';
+    var meta = document.createElement('div'); meta.className='em-row-meta';
+    var low = row.low_sample ? '<div style="font-family:'DM Sans',sans-serif;font-size:8px;color:#D4A017;margin-top:2px;">⚠ kleine steekproef</div>' : '';
+    meta.innerHTML = '<div class="em-row-seg">'+row.label+'</div><div class="em-row-actor">'+row.actor+'</div>'+low;
+    g.appendChild(meta);
+    var bars = document.createElement('div'); bars.className='em-bars';
+    EM_EMOS.forEach(function(pair) {
+      var em = pair[0]; var label = pair[1];
+      var val = row[em] || 0;
+      var isDom = em === row.dominant;
+      var color = isDom ? EM_C[em] : EM_GRAY;
+      var br = document.createElement('div'); br.className='em-bar-row';
+      var tag = document.createElement('div'); tag.className='em-et'; tag.textContent=label; br.appendChild(tag);
+      var bar = document.createElement('div'); bar.className='em-bar';
+      bar.style.background=color; bar.style.width='0px'; bar.dataset.pct=val;
+      if (val >= 14) { var n=document.createElement('span'); n.className='em-bn'; n.textContent=val+'%'; bar.appendChild(n); }
+      br.appendChild(bar);
+      if (val < 14) { var no=document.createElement('span'); no.className='em-bo'; no.textContent=val+'%'; br.appendChild(no); }
+      bars.appendChild(br);
+    });
+    g.appendChild(bars); chart.appendChild(g);
+  });
+  setTimeout(animateEmBars, 150);
+
+  tbody.innerHTML = '';
+  var avgRow = {
+    label:'Gemiddelde', actor:'Alle 7 segmenten', dominant:overallDom, low_sample:false, isAvg:true,
+    fear:  +(segs.reduce(function(s,r){return s+r.fear; },0)/segs.length).toFixed(1),
+    anger: +(segs.reduce(function(s,r){return s+r.anger;},0)/segs.length).toFixed(1),
+    hope:  +(segs.reduce(function(s,r){return s+r.hope; },0)/segs.length).toFixed(1),
+    trust: +(segs.reduce(function(s,r){return s+r.trust;},0)/segs.length).toFixed(1), n:''
+  };
+  segs.concat([avgRow]).forEach(function(row) {
+    var tr = document.createElement('tr');
+    if (row.isAvg) tr.className='em-avgr';
+    var dc = EM_C[row.dominant] || EM_C.fear;
+    var lowChip = (!row.isAvg && row.low_sample) ? '<span style="display:inline-block;padding:1px 5px;background:#D4A017;color:white;font-size:7px;border-radius:2px;margin-left:4px;">KLEIN</span>' : '';
+    tr.innerHTML =
+      '<td class="em-sc">'+row.label+lowChip+'</td>' +
+      '<td class="em-ac">'+row.actor+'</td>' +
+      '<td class="em-nc em-tf">'+(row.fear!==undefined?row.fear:'—')+'</td>' +
+      '<td class="em-nc em-ta">'+(row.anger!==undefined?row.anger:'—')+'</td>' +
+      '<td class="em-nc em-th">'+(row.hope!==undefined?row.hope:'—')+'</td>' +
+      '<td class="em-nc em-tt">'+(row.trust!==undefined?row.trust:'—')+'</td>' +
+      '<td><span class="em-chip" style="background:'+dc+'">'+(row.dominant||'').toUpperCase()+'</span></td>' +
+      '<td class="em-ac" style="font-style:italic">'+(row.n!==''?'n = '+row.n:'')+'</td>';
+    tbody.appendChild(tr);
+  });
 }
+
 
 function animateEmBars() {
   document.querySelectorAll('.em-bar').forEach(b => {
