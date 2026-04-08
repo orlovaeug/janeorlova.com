@@ -1,0 +1,98 @@
+{
+  "generated": "2026-04-08T09:35:46.933358+00:00",
+  "lexicon": "Dutch NRC seed lexicon",
+  "note": "Scores computed from Dutch-language source text. See fetch_log.txt.",
+  "segments": [
+    {
+      "id": "jetten_coalition",
+      "label": "Jetten I Coalition",
+      "actor": "Coalitieakkoord + regeringsverklaring Jetten",
+      "fear": null,
+      "anger": null,
+      "hope": null,
+      "trust": null,
+      "dominant": null,
+      "n": 0,
+      "low_sample": true,
+      "scored": false
+    },
+    {
+      "id": "min_vdbrink",
+      "label": "Min. Van den Brink",
+      "actor": "CDA / Ministerie van Asiel en Migratie",
+      "fear": 22.2,
+      "anger": 0.0,
+      "hope": 66.7,
+      "trust": 11.1,
+      "dominant": "hope",
+      "n": 9,
+      "low_sample": true,
+      "scored": true
+    },
+    {
+      "id": "pvv_opposition",
+      "label": "PVV Oppositie",
+      "actor": "Wilders / PVV, 19 zetels",
+      "fear": 30.0,
+      "anger": 0.0,
+      "hope": 40.0,
+      "trust": 30.0,
+      "dominant": "hope",
+      "n": 10,
+      "low_sample": true,
+      "scored": true
+    },
+    {
+      "id": "glpvda_opposition",
+      "label": "GL-PvdA Oppositie",
+      "actor": "Klaver / GroenLinks-PvdA, 20 zetels",
+      "fear": 0.0,
+      "anger": 0.0,
+      "hope": 75.0,
+      "trust": 25.0,
+      "dominant": "hope",
+      "n": 4,
+      "low_sample": true,
+      "scored": true
+    },
+    {
+      "id": "ngo_ecre",
+      "label": "NGO / VluchtelingenWerk",
+      "actor": "VluchtelingenWerk NL, Amnesty NL",
+      "fear": null,
+      "anger": null,
+      "hope": null,
+      "trust": null,
+      "dominant": null,
+      "n": 0,
+      "low_sample": true,
+      "scored": false
+    },
+    {
+      "id": "ind_eu_pact",
+      "label": "IND / EU Pact",
+      "actor": "IND berichten + EU Migratiepact",
+      "fear": 20.0,
+      "anger": 0.0,
+      "hope": 60.0,
+      "trust": 20.0,
+      "dominant": "hope",
+      "n": 5,
+      "low_sample": true,
+      "scored": true
+    },
+    {
+      "id": "media_framing",
+      "label": "Media Framing",
+      "actor": "NOS, NRC, de Volkskrant",
+      "fear": null,
+      "anger": null,
+      "hope": null,
+      "trust": null,
+      "dominant": null,
+      "n": 0,
+      "low_sample": true,
+      "scored": false
+    }
+  ]
+}

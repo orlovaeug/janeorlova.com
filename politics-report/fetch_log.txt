@@ -1,0 +1,23 @@
+Run: 2026-04-08T09:35:25.062170+00:00
+FAIL https://www.government.nl/binaries/government/officieel-bekendgemaakt/2026/02/23/regeerakkoord-2026/Coalition+Agreement+2026.pdf -- 404 Client Error: Not Found for url: https://www.government.nl/binaries/governme
+FAIL https://www.rijksoverheid.nl/actueel/nieuws/2026/02/23/regeringsverklaring-premier-jetten -- 404 Client Error: Not Found for url: https://www.rijksoverheid.nl/actueel/nieuws
+EMPTY jetten_coalition
+FAIL https://ind.nl/nl/nieuws/asielaanvragen-en-gezinshereniging-actuele-ontwikkelingen -- 404 Client Error: Not Found for url: https://ind.nl/nl/nieuws/asielaanvragen-en-
+OK   https://www.rijksoverheid.nl/ministeries/ministerie-van-justitie-en-veiligheid/nieuws (2682 chars)
+SCORE min_vdbrink F=22.2 A=0.0 H=66.7 T=11.1 n=9
+FAIL https://www.pvv.nl/nieuws.html -- 403 Client Error: Forbidden for url: https://www.pvv.nl/nieuws.html
+OK   https://www.tweedekamer.nl/kamerstukken/plenaire_verslagen (6258 chars)
+SCORE pvv_opposition F=30.0 A=0.0 H=40.0 T=30.0 n=10
+OK   https://groenlinks.nl/nieuws (3620 chars)
+FAIL https://www.pvda.nl/nieuws -- 403 Client Error: Forbidden for url: https://www.pvda.nl/nieuws
+SCORE glpvda_opposition F=0.0 A=0.0 H=75.0 T=25.0 n=4
+FAIL https://www.vluchtelingenwerk.nl/nieuws -- 404 Client Error: Not Found for url: https://www.vluchtelingenwerk.nl/nieuws
+FAIL https://www.amnesty.nl/actueel/themas/vluchtelingen-en-migranten -- 404 Client Error: Not Found for url: https://www.amnesty.nl/actueel/themas/vluch
+EMPTY ngo_ecre
+OK   https://ind.nl/nl/nieuws (1845 chars)
+FAIL https://www.rijksoverheid.nl/onderwerpen/asielbeleid/europees-migratiepact -- 404 Client Error: Not Found for url: https://www.rijksoverheid.nl/onderwerpen/as
+SCORE ind_eu_pact F=20.0 A=0.0 H=60.0 T=20.0 n=5
+FAIL https://nos.nl/thema/migratie -- 404 Client Error: Not Found for url: https://nos.nl/thema/migratie
+OK   https://www.nrc.nl/tag/migratie/ (91 chars)
+FAIL https://www.volkskrant.nl/nieuws-achtergrond/migratie/ -- 403 Client Error: Forbidden for url: https://www.volkskrant.nl/nieuws-achtergron
+EMPTY media_framing
