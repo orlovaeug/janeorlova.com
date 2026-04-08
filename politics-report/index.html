@@ -249,11 +249,11 @@ footer{margin-top:80px;padding:24px 0 48px;border-top:2px solid var(–ink);font
 
 <div class="project-tabs-wrap">
   <div class="project-tabs">
-    <a href="#" class="project-tab active" id="tab-p01" onclick="switchTab('p01');return false;">
+    <a href="javascript:void(0)" class="project-tab active" id="tab-p01">
       <span class="tab-label">Project 01</span>
       <span class="tab-title">Appearance & Leadership</span>
     </a>
-    <a href="#" class="project-tab" id="tab-p02" onclick="switchTab('p02');return false;">
+    <a href="javascript:void(0)" class="project-tab" id="tab-p02">
       <span class="tab-label">Project 02</span>
       <span class="tab-title">Migration Emotion Map</span>
     </a>
@@ -674,13 +674,20 @@ Political Communication Research · Survey Study March–April 2026 · Politicia
 
 <script>
 function switchTab(id) {
-  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.project-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.project-tab').forEach(function(t) { t.classList.remove('active'); });
   document.getElementById('panel-' + id).classList.add('active');
   document.getElementById('tab-' + id).classList.add('active');
   window.scrollTo({top: 0, behavior: 'smooth'});
   if (id === 'p02' && !window._emBuilt) { buildEmotionMap(); window._emBuilt = true; }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var t1 = document.getElementById('tab-p01');
+  var t2 = document.getElementById('tab-p02');
+  if (t1) t1.addEventListener('click', function(e) { e.preventDefault(); switchTab('p01'); });
+  if (t2) t2.addEventListener('click', function(e) { e.preventDefault(); switchTab('p02'); });
+});
 
 /* Real data — Dutch NRC lexicon applied to Dutch-language sources 23 feb to 6 apr 2026.
    Sources: NOS.nl, Tweede Kamer, VluchtelingenWerk.nl, GroenLinks-PvdA.nl, coalitieakkoord.
