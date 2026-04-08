@@ -1,40 +1,8 @@
 [
   {
-    "datum": "2026-04-07",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02872"
-  },
-  {
-    "datum": "2026-04-07",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02873"
-  },
-  {
-    "datum": "2026-04-07",
-    "tijd": "2026-",
-    "titel": "Debat over de intentieverklaring met Tata Steel",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (debat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A07367"
-  },
-  {
-    "datum": "2026-04-08",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02874"
-  },
-  {
     "datum": "2026-04-08",
     "tijd": "2026-",
-    "titel": "Tweeminutendebat Fiche: Mededeling Apply AI-strategie (22112-4279)",
+    "titel": "Tweeminutendebat Mededeling Apply AI-strategie (22112-4279)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01699"
@@ -74,6 +42,14 @@
   {
     "datum": "2026-04-08",
     "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02874"
+  },
+  {
+    "datum": "2026-04-08",
+    "tijd": "2026-",
     "titel": "Wijziging van de Tijdelijke wet Groningen en de Mijnbouwwet in verband met de uitvoering van diverse maatregelen uit de kabinetsreactie op het rapport van de parlementaire enquêtecommissie aardgaswinning Groningen (36836)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
@@ -86,5 +62,21 @@
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02875"
+  },
+  {
+    "datum": "2026-04-09",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Klimaatbeleid gebouwde omgeving (CD 25/3)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02614"
+  },
+  {
+    "datum": "2026-04-09",
+    "tijd": "2026-",
+    "titel": "Wet toekomstbestendige huurcommissie (36791)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A00969"
   }
 ]
