@@ -606,9 +606,10 @@ Political Communication Research · Survey Study March–April 2026 · Politicia
     </div>
   </div>
 
-  <div class="em-notice">
-    <strong>Methodology note —</strong> Percentages below are expert-coded qualitative estimates based on close reading of real verified sources (government.nl, ind.nl, ecre.org, nltimes.nl and others). A computational version using the NRC Word-Emotion Association Lexicon is available as <code>emotion_map_nl.py</code> — run it with live internet access to generate fully automated scores from fetched page text.
+  <div class="em-notice" id="em-data-notice">
+    <strong>Data pending —</strong> Run <code>python3 emotion_map_nl.py</code> and deploy <code>emotion_results.json</code> alongside this file. The chart and table will populate automatically with real computed scores — no editing required.
   </div>
+  <div id="em-timestamp" style="font-family:'DM Sans',sans-serif;font-size:10px;color:var(--muted);margin-bottom:20px;letter-spacing:.04em;"></div>
 
   <!-- DOMINANT BANNER — rendered by JS -->
 
@@ -658,7 +659,7 @@ Political Communication Research · Survey Study March–April 2026 · Politicia
   <div class="section-rule"><span class="section-num">§ M</span><div class="section-line"></div><span class="section-label">Methodology</span></div>
   <div class="em-method">
     <p>Each segment is characterised by close reading of 1–3 real public sources per segment, coded against four emotion dictionaries derived from the NRC Word-Emotion Association Lexicon (Mohammad &amp; Turney, 2013): <strong>fear</strong> [crisis, threat, danger, insecurity, influx, uncontrolled…], <strong>anger</strong> [failure, unfair, outrage, counterproductive, destroy…], <strong>hope</strong> [future, opportunity, solution, integrate, invest…], <strong>trust</strong> [stability, responsible, confidence, procedure, implement…].</p>
-    <p>The automated pipeline (<code>emotion_map_nl.py</code>) fetches live page text, tokenizes, removes stopwords, and computes real word-frequency scores. The scores shown here are expert estimates pending a live run. All source URLs are listed in the script. Full NRC EmoLex: saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm</p>
+    <p><code>emotion_map_nl.py</code> fetches live page text from each source URL, tokenizes it, removes stopwords, counts emotion-word hits, and normalizes to 100% across the four categories. It writes <code>emotion_results.json</code>, which this page reads via <code>fetch()</code> on load — no hardcoded numbers anywhere. Run the script and redeploy to refresh the data. Full NRC EmoLex (free for research): saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm</p>
   </div>
 
   <footer>
@@ -682,89 +683,133 @@ function switchTab(id) {
   if (id === 'p02' && !window._emBuilt) { buildEmotionMap(); window._emBuilt = true; }
 }
 
-/* ── EMOTION MAP DATA ── */
-const EM_ROWS = [
-  { seg:"Jetten I Coalition", actor:"Coalition agr. + PM Jetten statement", f:44, an:18, ho:20, tr:18, dom:"fear",
-    ins:"PM Jetten deploys \"uncontrolled migration\" and \"influx reduction\" language — a sharp D66 shift from its 2022 pro-integration stance." },
-  { seg:"Min. Van den Brink", actor:"CDA / Ministry of Asylum & Migration", f:40, an:14, ho:22, tr:24, dom:"fear",
-    ins:"More procedural than Faber-era. Trust and hope score higher via EU Pact focus; fear of influx remains the anchor." },
-  { seg:"PVV Opposition", actor:"Wilders / PVV · 19 seats post-split", f:62, an:28, ho:3, tr:7, dom:"fear",
-    ins:"Highest fear score. After losing 7 MPs in Jan 2026, Wilders intensifies \"asylum tsunami\" and \"destruction\" framing from opposition." },
-  { seg:"GL-PvdA Opposition", actor:"Klaver / GroenLinks-PvdA · 20 seats", f:22, an:30, ho:32, tr:16, dom:"hope",
-    ins:"Only segment where hope exceeds fear. Anger at coalition's rightward shift; Klaver frames it as a \"false start\"." },
-  { seg:"NGO / ECRE", actor:"ECRE, DCR, legal NGOs", f:27, an:45, ho:18, tr:10, dom:"anger",
-    ins:"Anger highest here. NGOs condemn continued family reunification restrictions and dual-status system from previous Schoof cabinet." },
-  { seg:"IND / EU Pact", actor:"IND comms + EU Pact documents", f:17, an:6, ho:29, tr:48, dom:"trust",
-    ins:"Highest trust score. IND language around 12 Jun 2026 procedural transition is deliberately reassuring." },
-  { seg:"Media Framing", actor:"NLTimes · DutchNews.nl · NOS", f:48, an:20, ho:15, tr:17, dom:"fear",
-    ins:"Media amplifies minority-government fragility and \"asylum system in flux\" narrative; fear nears PVV levels." }
-];
+/* ── EMOTION MAP — reads emotion_results.json written by emotion_map_nl.py ── */
+/* No hardcoded numbers. If JSON is missing, shows a clear pending state.      */
 
-const EM_C = { fear:'#B03A2E', anger:'#CA6F1E', hope:'#1E8449', trust:'#1A5276' };
+const EM_C    = { fear:'#B03A2E', anger:'#CA6F1E', hope:'#1E8449', trust:'#1A5276' };
 const EM_GRAY = '#C9C6BC';
-const EM_EMOS = [['f','Fear'],['an','Anger'],['ho','Hope'],['tr','Trust']];
-const EM_EKEYS = { f:'fear', an:'anger', ho:'hope', tr:'trust' };
+const EM_EMOS = [['fear','Fear'],['anger','Anger'],['hope','Hope'],['trust','Trust']];
 
 function buildEmotionMap() {
-  // DOM banner
-  const avgF = (EM_ROWS.reduce((s,r)=>s+r.f,0)/EM_ROWS.length).toFixed(1);
-  const banner = document.getElementById('em-dom-banner');
-  banner.innerHTML = `
-    <div><div class="db-lbl">Dominant Emotion</div><div class="db-val">FEAR</div></div>
-    <div class="db-sep"></div>
-    <div><div class="db-lbl">Fear average</div><div class="db-val">${avgF}%</div></div>
-    <div class="db-sep"></div>
-    <div><div class="db-lbl">Peak segment</div><div class="db-val">PVV — 62%</div></div>`;
+  const banner  = document.getElementById('em-dom-banner');
+  const chart   = document.getElementById('em-chart');
+  const tbody   = document.getElementById('em-tbody');
+  const notice  = document.getElementById('em-data-notice');
+  const tsEl    = document.getElementById('em-timestamp');
 
-  // Chart
-  const chart = document.getElementById('em-chart');
-  EM_ROWS.forEach((row, i) => {
-    if (i > 0) { const hr=document.createElement('hr'); hr.className='em-cdiv'; chart.appendChild(hr); }
-    const g = document.createElement('div'); g.className='em-chart-row';
-    const meta = document.createElement('div'); meta.className='em-row-meta';
-    meta.innerHTML = `<div class="em-row-seg">${row.seg}</div><div class="em-row-actor">${row.actor}</div>`;
-    g.appendChild(meta);
-    const bars = document.createElement('div'); bars.className='em-bars';
-    EM_EMOS.forEach(([em, label]) => {
-      const val = row[em];
-      const isDom = EM_EKEYS[em] === row.dom;
-      const color = isDom ? EM_C[EM_EKEYS[em]] : EM_GRAY;
-      const br = document.createElement('div'); br.className='em-bar-row';
-      const tag = document.createElement('div'); tag.className='em-et'; tag.textContent=label; br.appendChild(tag);
-      const bar = document.createElement('div'); bar.className='em-bar';
-      bar.style.background=color; bar.style.width='0px'; bar.dataset.pct=val;
-      if (val >= 14) { const n=document.createElement('span'); n.className='em-bn'; n.textContent=val+'%'; bar.appendChild(n); }
-      br.appendChild(bar);
-      if (val < 14) { const no=document.createElement('span'); no.className='em-bo'; no.textContent=val+'%'; br.appendChild(no); }
-      bars.appendChild(br);
+  // Show loading state
+  banner.textContent = 'Loading data…';
+
+  fetch('emotion_results.json?t=' + Date.now())
+    .then(r => {
+      if (!r.ok) throw new Error('not found');
+      return r.json();
+    })
+    .then(data => {
+      // ── Data loaded from real JSON ──
+      const segs = data.segments.filter(s => s.scored);
+
+      if (segs.length === 0) {
+        showPending(banner, notice, 'emotion_results.json exists but contains no scored segments yet.');
+        return;
+      }
+
+      // Hide methodology notice, update timestamp
+      if (notice) notice.style.display = 'none';
+      if (tsEl) tsEl.textContent =
+        'Last computed: ' + new Date(data.generated).toLocaleString('en-GB', {
+          day:'numeric', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit',
+          timeZone:'UTC', timeZoneName:'short'
+        }) + ' · Lexicon: ' + data.lexicon;
+
+      // Banner
+      const scored = segs.filter(s => s.fear !== null);
+      const avgF   = (scored.reduce((s,r) => s + r.fear, 0) / scored.length).toFixed(1);
+      const domCounts = {};
+      scored.forEach(r => { domCounts[r.dominant] = (domCounts[r.dominant] || 0) + 1; });
+      const overallDom = Object.entries(domCounts).sort((a,b) => b[1]-a[1])[0][0];
+      const peakSeg  = scored.reduce((a,b) => a.fear > b.fear ? a : b);
+
+      banner.style.background = EM_C[overallDom] || EM_C.fear;
+      banner.innerHTML = `
+        <div><div class="db-lbl">Dominant Emotion</div><div class="db-val">${overallDom.toUpperCase()}</div></div>
+        <div class="db-sep"></div>
+        <div><div class="db-lbl">Fear average</div><div class="db-val">${avgF}%</div></div>
+        <div class="db-sep"></div>
+        <div><div class="db-lbl">Peak segment</div><div class="db-val">${peakSeg.label} — ${peakSeg.fear}%</div></div>`;
+
+      // Chart
+      chart.innerHTML = '';
+      scored.forEach((row, i) => {
+        if (i > 0) { const hr=document.createElement('hr'); hr.className='em-cdiv'; chart.appendChild(hr); }
+        const g    = document.createElement('div'); g.className='em-chart-row';
+        const meta = document.createElement('div'); meta.className='em-row-meta';
+        const low  = row.low_sample
+          ? '<div style="font-family:\'DM Sans\',sans-serif;font-size:8px;color:#D4A017;margin-top:2px;">⚠ low sample</div>' : '';
+        meta.innerHTML = `<div class="em-row-seg">${row.label}</div>
+                          <div class="em-row-actor">${row.actor}</div>${low}`;
+        g.appendChild(meta);
+        const bars = document.createElement('div'); bars.className='em-bars';
+        EM_EMOS.forEach(([em, label]) => {
+          const val    = row[em] ?? 0;
+          const isDom  = em === row.dominant;
+          const color  = isDom ? EM_C[em] : EM_GRAY;
+          const br     = document.createElement('div'); br.className='em-bar-row';
+          const tag    = document.createElement('div'); tag.className='em-et'; tag.textContent=label; br.appendChild(tag);
+          const bar    = document.createElement('div'); bar.className='em-bar';
+          bar.style.background=color; bar.style.width='0px'; bar.dataset.pct=val;
+          if (val >= 14) { const n=document.createElement('span'); n.className='em-bn'; n.textContent=val+'%'; bar.appendChild(n); }
+          br.appendChild(bar);
+          if (val < 14)  { const no=document.createElement('span'); no.className='em-bo'; no.textContent=val+'%'; br.appendChild(no); }
+          bars.appendChild(br);
+        });
+        g.appendChild(bars); chart.appendChild(g);
+      });
+      setTimeout(animateEmBars, 150);
+
+      // Table
+      tbody.innerHTML = '';
+      const avgRow = { label:'Average', actor:'All scored segments', dominant: overallDom,
+        fear:  +(scored.reduce((s,r)=>s+r.fear,  0)/scored.length).toFixed(1),
+        anger: +(scored.reduce((s,r)=>s+r.anger, 0)/scored.length).toFixed(1),
+        hope:  +(scored.reduce((s,r)=>s+r.hope,  0)/scored.length).toFixed(1),
+        trust: +(scored.reduce((s,r)=>s+r.trust, 0)/scored.length).toFixed(1),
+        n:'', low_sample:false, isAvg:true };
+
+      [...scored, avgRow].forEach(row => {
+        const tr = document.createElement('tr');
+        if (row.isAvg) tr.className='em-avgr';
+        const dc = EM_C[row.dominant] || EM_C.fear;
+        const low = (!row.isAvg && row.low_sample)
+          ? '<span style="display:inline-block;padding:1px 5px;background:#D4A017;color:white;font-size:7px;border-radius:2px;margin-left:4px;font-family:\'DM Sans\',sans-serif;">LOW</span>' : '';
+        tr.innerHTML = `
+          <td class="em-sc">${row.label}${low}</td>
+          <td class="em-ac">${row.actor}</td>
+          <td class="em-nc em-tf">${row.fear ?? '—'}</td>
+          <td class="em-nc em-ta">${row.anger ?? '—'}</td>
+          <td class="em-nc em-th">${row.hope ?? '—'}</td>
+          <td class="em-nc em-tt">${row.trust ?? '—'}</td>
+          <td><span class="em-chip" style="background:${dc}">${(row.dominant||'').toUpperCase()}</span></td>
+          <td class="em-ac" style="font-style:italic">${row.n !== '' ? 'n = ' + row.n : ''}</td>`;
+        tbody.appendChild(tr);
+      });
+    })
+    .catch(() => {
+      showPending(banner, notice,
+        '<code>emotion_results.json</code> not found. Run <code>python3 emotion_map_nl.py</code> to generate real scores, then deploy alongside this file.');
     });
-    g.appendChild(bars); chart.appendChild(g);
-  });
-  setTimeout(animateEmBars, 150);
+}
 
-  // Table
-  const tbody = document.getElementById('em-tbody');
-  const avgRow = { seg:'Average', actor:'All 7 segments',
-    f: Math.round(EM_ROWS.reduce((s,r)=>s+r.f,0)/EM_ROWS.length),
-    an: Math.round(EM_ROWS.reduce((s,r)=>s+r.an,0)/EM_ROWS.length),
-    ho: Math.round(EM_ROWS.reduce((s,r)=>s+r.ho,0)/EM_ROWS.length),
-    tr: Math.round(EM_ROWS.reduce((s,r)=>s+r.tr,0)/EM_ROWS.length),
-    dom:'fear', ins:'', isAvg:true };
-  [...EM_ROWS, avgRow].forEach(row => {
-    const tr = document.createElement('tr');
-    if (row.isAvg) tr.className='em-avgr';
-    const dc = EM_C[row.dom] || EM_C.fear;
-    tr.innerHTML = `
-      <td class="em-sc">${row.seg}</td>
-      <td class="em-ac">${row.actor}</td>
-      <td class="em-nc em-tf">${row.f}</td>
-      <td class="em-nc em-ta">${row.an}</td>
-      <td class="em-nc em-th">${row.ho}</td>
-      <td class="em-nc em-tt">${row.tr}</td>
-      <td><span class="em-chip" style="background:${dc}">${row.dom.toUpperCase()}</span></td>
-      <td class="em-ac" style="font-style:italic">${row.ins}</td>`;
-    tbody.appendChild(tr);
-  });
+function showPending(banner, notice, msg) {
+  banner.style.background = '#888';
+  banner.innerHTML = `
+    <div><div class="db-lbl">Status</div><div class="db-val">Pending</div></div>
+    <div class="db-sep"></div>
+    <div style="font-size:11px;opacity:.85">Run emotion_map_nl.py to compute scores</div>`;
+  if (notice) {
+    notice.style.display = 'block';
+    notice.innerHTML = `<strong>Data not yet computed —</strong> ${msg}`;
+  }
 }
 
 function animateEmBars() {
