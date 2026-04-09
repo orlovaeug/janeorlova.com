@@ -1532,6 +1532,144 @@ function switchTab(name) {
   renderEvents(data.events||[]);
 })();
 </script>
+<!-- BANNER -->
+<div id="cookie-banner">
+  <span class="banner-text">
+    We use cookies to keep the site running, understand traffic, and support social features.
+    <a href="#" onclick="openModal(); return false;">Manage preferences</a> · <a href="/privacy">Privacy Policy</a>
+  </span>
+  <div class="banner-actions">
+    <button class="btn btn-text" onclick="openModal()">Manage</button>
+    <button class="btn btn-ghost" onclick="declineAll()">Decline</button>
+    <button class="btn btn-primary" onclick="acceptAll()">Accept all</button>
+  </div>
+</div>
 
+<!-- MODAL -->
+<div id="cookie-modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+
+    <div id="prefs-view">
+      <p class="modal-label">janeorlova.com / Cookies</p>
+      <h2 class="modal-title">Your privacy,<br>your choice.</h2>
+      <p class="modal-desc">
+        Choose which cookies you're comfortable with. Essential cookies are always on — they keep the site working. Everything else is optional.
+        <a href="/privacy">Privacy Policy →</a>
+      </p>
+
+      <!-- Essential -->
+      <div class="cookie-row">
+        <div class="row-header" onclick="toggleDetail('d-essential', this)">
+          <span class="row-expand">▶</span>
+          <div class="row-info">
+            <div class="row-name">Essential</div>
+            <div class="row-sub">Always active — required for the site to work</div>
+          </div>
+          <label class="toggle">
+            <input type="checkbox" checked disabled>
+            <span class="track"></span>
+          </label>
+        </div>
+        <div class="row-detail" id="d-essential">
+          These cookies are strictly necessary — they handle session management, security, and basic navigation. They cannot be turned off.
+        </div>
+      </div>
+
+      <!-- Analytics -->
+      <div class="cookie-row">
+        <div class="row-header" onclick="toggleDetail('d-analytics', this)">
+          <span class="row-expand">▶</span>
+          <div class="row-info">
+            <div class="row-name">Analytics</div>
+            <div class="row-sub">Google Analytics — anonymous usage data</div>
+          </div>
+          <label class="toggle" onclick="event.stopPropagation()">
+            <input type="checkbox" id="tog-analytics">
+            <span class="track"></span>
+          </label>
+        </div>
+        <div class="row-detail" id="d-analytics">
+          These cookies help us understand how visitors use the site — which pages are most visited, how long people stay, and where they come from. All data is anonymous. No personal information is stored.
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="cookie-row">
+        <div class="row-header" onclick="toggleDetail('d-social', this)">
+          <span class="row-expand">▶</span>
+          <div class="row-info">
+            <div class="row-name">Social Media</div>
+            <div class="row-sub">Embedded content & sharing buttons</div>
+          </div>
+          <label class="toggle" onclick="event.stopPropagation()">
+            <input type="checkbox" id="tog-social">
+            <span class="track"></span>
+          </label>
+        </div>
+        <div class="row-detail" id="d-social">
+          These cookies are set by social platforms (Instagram, Pinterest, etc.) when embedded content or share buttons appear on a page. They may track your activity on those platforms if you're logged in.
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-modal btn-modal-outline" onclick="declineAll()">Decline all</button>
+        <button class="btn-modal btn-modal-outline" onclick="savePrefs()">Save my choices</button>
+        <button class="btn-modal btn-modal-primary" onclick="acceptAll()">Accept all</button>
+      </div>
+    </div>
+
+    <div id="confirmed">
+      <div class="mark">[✓]</div>
+      <h3>Preferences saved</h3>
+      <p>You can update your choices anytime via the cookie link in the footer.</p>
+    </div>
+  </div>
+</div>
+<script>
+  if (localStorage.getItem('cookieConsent')) {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+
+  function openModal() {
+    const s = JSON.parse(localStorage.getItem('cookieConsent') || '{}');
+    document.getElementById('tog-analytics').checked = s.analytics || false;
+    document.getElementById('tog-social').checked    = s.social    || false;
+    document.getElementById('cookie-modal').classList.add('open');
+    document.getElementById('prefs-view').style.display = '';
+    document.getElementById('confirmed').classList.remove('show');
+  }
+
+  function closeModal() {
+    document.getElementById('cookie-modal').classList.remove('open');
+  }
+
+  function save(prefs) {
+    localStorage.setItem('cookieConsent', JSON.stringify(prefs));
+    document.getElementById('cookie-banner').style.display = 'none';
+    document.getElementById('prefs-view').style.display = 'none';
+    document.getElementById('confirmed').classList.add('show');
+    setTimeout(closeModal, 1800);
+  }
+
+  function acceptAll()  { save({ essential: true, analytics: true, social: true }); }
+  function declineAll() { save({ essential: true, analytics: false, social: false }); }
+  function savePrefs()  {
+    save({
+      essential: true,
+      analytics: document.getElementById('tog-analytics').checked,
+      social:    document.getElementById('tog-social').checked,
+    });
+  }
+
+  function toggleDetail(id, header) {
+    document.getElementById(id).classList.toggle('open');
+    header.classList.toggle('open');
+  }
+
+  document.getElementById('cookie-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+</script>
 </body>
 </html>
