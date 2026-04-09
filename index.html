@@ -897,6 +897,21 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   loadSubstack();
   loadTracker();
 </script>
+<!-- Cookie Banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;font-family:sans-serif;font-size:14px;z-index:9999;">
+  <span>🍪 We use cookies to improve your experience. <a href="/privacy" style="color:#f0c040;">Learn more</a></span>
+  <button onclick="acceptCookies()" style="background:#f0c040;color:#000;border:none;padding:8px 20px;cursor:pointer;border-radius:4px;font-weight:bold;margin-left:16px;">Got it</button>
+</div>
+
+<script>
+  if(localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookie-banner').style.display='none';
+  }
+  function acceptCookies() {
+    localStorage.setItem('cookiesAccepted','true');
+    document.getElementById('cookie-banner').style.display='none';
+  }
+</script>
 
 </body>
 </html>
