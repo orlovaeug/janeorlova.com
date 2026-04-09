@@ -896,424 +896,222 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 
   loadSubstack();
   loadTracker();
-<!DOCTYPE html>
+<!-- ============ COOKIE BANNER ============ -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cookie Preferences – janeorlova.com</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  #cookie-banner {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background: #1a1a1a !important;
+    color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 24px !important;
+    padding: 18px 40px !important;
+    z-index: 999999 !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 13px !important;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.35) !important;
+  }
+  #cookie-banner a { color: #fff !important; text-decoration: underline !important; }
+  #cookie-banner .cb-text { color: #ccc !important; font-weight: 300 !important; line-height: 1.5 !important; }
+  #cookie-banner .cb-actions { display: flex !important; gap: 8px !important; flex-shrink: 0 !important; flex-wrap: wrap !important; }
+  #cookie-banner .cb-btn {
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 11px !important; font-weight: 500 !important;
+    letter-spacing: 0.1em !important; text-transform: uppercase !important;
+    cursor: pointer !important; border: none !important;
+    padding: 9px 20px !important; white-space: nowrap !important;
+    transition: all 0.15s !important;
+  }
+  .cb-btn-primary { background: #fff !important; color: #000 !important; }
+  .cb-btn-primary:hover { background: #ddd !important; }
+  .cb-btn-ghost { background: transparent !important; color: #aaa !important; border: 1px solid #444 !important; }
+  .cb-btn-ghost:hover { color: #fff !important; border-color: #888 !important; }
+  .cb-btn-text { background: transparent !important; color: #aaa !important; text-decoration: underline !important; padding: 9px 10px !important; }
+  .cb-btn-text:hover { color: #fff !important; }
 
-:root {
-–black: #0a0a0a;
-–white: #ffffff;
-–gray-1: #f2f2f2;
-–gray-2: #d8d8d8;
-–gray-3: #999999;
-–gray-4: #555555;
-}
-
-body {
-font-family: ‘DM Sans’, sans-serif;
-background: var(–gray-1);
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.demo { font-family: ‘DM Mono’, monospace; font-size: 12px; color: var(–gray-3); letter-spacing: 0.05em; }
-
-/* BANNER */
-#cookie-banner {
-position: fixed;
-bottom: 0; left: 0; right: 0;
-background: var(–black);
-color: var(–white);
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 24px;
-padding: 16px 40px;
-z-index: 9999;
-transform: translateY(100%);
-animation: up 0.5s 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
-}
-
-@keyframes up { to { transform: translateY(0); } }
-
-.banner-text {
-font-size: 13px;
-font-weight: 300;
-color: var(–gray-2);
-line-height: 1.5;
-}
-
-.banner-text a {
-color: var(–white);
-text-decoration: underline;
-text-underline-offset: 3px;
-}
-
-.banner-actions {
-display: flex;
-align-items: center;
-gap: 8px;
-flex-shrink: 0;
-}
-
-.btn {
-font-family: ‘DM Sans’, sans-serif;
-font-size: 11px;
-font-weight: 500;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-cursor: pointer;
-border: none;
-padding: 9px 20px;
-transition: all 0.15s;
-white-space: nowrap;
-}
-
-.btn-primary { background: var(–white); color: var(–black); }
-.btn-primary:hover { background: var(–gray-2); }
-
-.btn-ghost {
-background: transparent;
-color: var(–gray-3);
-border: 1px solid #333;
-}
-.btn-ghost:hover { color: var(–white); border-color: #666; }
-
-.btn-text {
-background: transparent;
-color: var(–gray-3);
-border: none;
-padding: 9px 12px;
-text-decoration: underline;
-text-underline-offset: 3px;
-}
-.btn-text:hover { color: var(–white); }
-
-/* MODAL */
-#cookie-modal {
-display: none;
-position: fixed;
-inset: 0;
-background: rgba(0,0,0,0.55);
-z-index: 10000;
-align-items: flex-end;
-justify-content: center;
-}
-#cookie-modal.open { display: flex; }
-
-.modal-box {
-background: var(–white);
-width: 100%;
-max-width: 580px;
-margin: 0 auto;
-padding: 48px;
-position: relative;
-animation: slideUp 0.35s cubic-bezier(0.22,1,0.36,1);
-max-height: 90vh;
-overflow-y: auto;
-}
-
-@keyframes slideUp {
-from { transform: translateY(32px); opacity: 0; }
-to   { transform: translateY(0);    opacity: 1; }
-}
-
-.modal-close {
-position: absolute;
-top: 20px; right: 24px;
-background: none; border: none;
-font-size: 16px; cursor: pointer;
-color: var(–gray-3);
-font-family: ‘DM Mono’, monospace;
-}
-.modal-close:hover { color: var(–black); }
-
-.modal-label {
-font-family: ‘DM Mono’, monospace;
-font-size: 10px;
-letter-spacing: 0.18em;
-text-transform: uppercase;
-color: var(–gray-3);
-margin-bottom: 10px;
-}
-
-.modal-title {
-font-size: 26px;
-font-weight: 300;
-color: var(–black);
-margin-bottom: 14px;
-line-height: 1.2;
-}
-
-.modal-desc {
-font-size: 13px;
-color: var(–gray-4);
-line-height: 1.7;
-margin-bottom: 28px;
-}
-
-.modal-desc a { color: var(–black); }
-
-/* ROWS */
-.cookie-row { border-top: 1px solid var(–gray-2); padding: 16px 0; }
-.cookie-row:last-of-type { border-bottom: 1px solid var(–gray-2); }
-
-.row-header {
-display: flex;
-align-items: center;
-gap: 12px;
-cursor: pointer;
-user-select: none;
-}
-
-.row-expand {
-font-family: ‘DM Mono’, monospace;
-font-size: 10px;
-color: var(–gray-3);
-transition: transform 0.2s;
-flex-shrink: 0;
-width: 14px;
-}
-.row-header.open .row-expand { transform: rotate(90deg); }
-
-.row-info { flex: 1; }
-.row-name  { font-size: 13px; font-weight: 500; color: var(–black); margin-bottom: 2px; }
-.row-sub   { font-family: ‘DM Mono’, monospace; font-size: 10px; color: var(–gray-3); letter-spacing: 0.04em; }
-
-.row-detail {
-display: none;
-font-size: 12px;
-color: var(–gray-4);
-line-height: 1.7;
-margin-top: 10px;
-padding-left: 26px;
-}
-.row-detail.open { display: block; }
-
-/* Toggle */
-.toggle { position: relative; width: 40px; height: 22px; flex-shrink: 0; }
-.toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
-.track {
-position: absolute; inset: 0;
-background: var(–gray-2);
-cursor: pointer;
-transition: background 0.2s;
-}
-.toggle input:checked + .track { background: var(–black); }
-.track::after {
-content: ‘’;
-position: absolute;
-top: 3px; left: 3px;
-width: 16px; height: 16px;
-background: white;
-transition: transform 0.2s;
-}
-.toggle input:checked + .track::after { transform: translateX(18px); }
-.toggle input:disabled + .track { background: var(–black); opacity: 0.3; cursor: not-allowed; }
-
-/* Footer */
-.modal-footer {
-display: flex;
-gap: 8px;
-margin-top: 28px;
-flex-wrap: wrap;
-}
-
-.btn-modal {
-font-family: ‘DM Sans’, sans-serif;
-font-size: 11px;
-font-weight: 500;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-border: none;
-cursor: pointer;
-padding: 12px 20px;
-transition: all 0.15s;
-flex: 1;
-min-width: 110px;
-}
-
-.btn-modal-primary { background: var(–black); color: var(–white); }
-.btn-modal-primary:hover { background: #222; }
-
-.btn-modal-outline {
-background: transparent;
-color: var(–gray-4);
-border: 1px solid var(–gray-2);
-}
-.btn-modal-outline:hover { border-color: var(–black); color: var(–black); }
-
-/* Confirmed */
-#confirmed { display: none; text-align: center; padding: 48px 24px; }
-#confirmed.show { display: block; }
-#confirmed .mark { font-family: ‘DM Mono’, monospace; font-size: 28px; margin-bottom: 16px; }
-#confirmed h3 { font-size: 20px; font-weight: 300; margin-bottom: 8px; }
-#confirmed p  { font-size: 12px; color: var(–gray-3); }
-
-@media (max-width: 600px) {
-#cookie-banner { flex-direction: column; align-items: flex-start; padding: 20px 24px; }
-.modal-box { padding: 32px 20px; }
-}
+  #cookie-modal {
+    display: none;
+    position: fixed !important; inset: 0 !important;
+    background: rgba(0,0,0,0.6) !important;
+    z-index: 9999999 !important;
+    align-items: flex-end !important; justify-content: center !important;
+  }
+  #cookie-modal.open { display: flex !important; }
+  .cm-box {
+    background: #fff !important; color: #111 !important;
+    width: 100% !important; max-width: 560px !important;
+    padding: 44px !important; position: relative !important;
+    max-height: 90vh !important; overflow-y: auto !important;
+    font-family: 'DM Sans', sans-serif !important;
+    animation: cmUp 0.35s cubic-bezier(0.22,1,0.36,1);
+  }
+  @keyframes cmUp {
+    from { transform: translateY(32px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+  .cm-close {
+    position: absolute !important; top: 18px !important; right: 22px !important;
+    background: none !important; border: none !important;
+    font-size: 16px !important; cursor: pointer !important; color: #999 !important;
+  }
+  .cm-close:hover { color: #111 !important; }
+  .cm-label { font-family: 'DM Mono', monospace !important; font-size: 10px !important; letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #999 !important; margin-bottom: 10px !important; }
+  .cm-title { font-size: 26px !important; font-weight: 300 !important; color: #111 !important; margin-bottom: 14px !important; line-height: 1.2 !important; }
+  .cm-desc { font-size: 13px !important; color: #555 !important; line-height: 1.7 !important; margin-bottom: 28px !important; }
+  .cm-desc a { color: #111 !important; }
+  .cm-row { border-top: 1px solid #e5e5e5 !important; padding: 16px 0 !important; }
+  .cm-row:last-of-type { border-bottom: 1px solid #e5e5e5 !important; }
+  .cm-row-header { display: flex !important; align-items: center !important; gap: 12px !important; cursor: pointer !important; user-select: none !important; }
+  .cm-chevron { font-family: 'DM Mono', monospace !important; font-size: 10px !important; color: #999 !important; transition: transform 0.2s !important; flex-shrink: 0 !important; width: 14px !important; }
+  .cm-row-header.open .cm-chevron { transform: rotate(90deg) !important; }
+  .cm-row-info { flex: 1 !important; }
+  .cm-row-name { font-size: 13px !important; font-weight: 500 !important; color: #111 !important; margin-bottom: 2px !important; }
+  .cm-row-sub { font-family: 'DM Mono', monospace !important; font-size: 10px !important; color: #999 !important; letter-spacing: 0.04em !important; }
+  .cm-detail { display: none !important; font-size: 12px !important; color: #555 !important; line-height: 1.7 !important; margin-top: 10px !important; padding-left: 26px !important; }
+  .cm-detail.open { display: block !important; }
+  .cm-toggle { position: relative !important; width: 40px !important; height: 22px !important; flex-shrink: 0 !important; }
+  .cm-toggle input { opacity: 0 !important; width: 0 !important; height: 0 !important; position: absolute !important; }
+  .cm-track { position: absolute !important; inset: 0 !important; background: #ddd !important; cursor: pointer !important; transition: background 0.2s !important; }
+  .cm-toggle input:checked + .cm-track { background: #111 !important; }
+  .cm-track::after { content: '' !important; position: absolute !important; top: 3px !important; left: 3px !important; width: 16px !important; height: 16px !important; background: white !important; transition: transform 0.2s !important; }
+  .cm-toggle input:checked + .cm-track::after { transform: translateX(18px) !important; }
+  .cm-toggle input:disabled + .cm-track { background: #111 !important; opacity: 0.3 !important; cursor: not-allowed !important; }
+  .cm-footer { display: flex !important; gap: 8px !important; margin-top: 28px !important; flex-wrap: wrap !important; }
+  .cm-btn {
+    font-family: 'DM Sans', sans-serif !important; font-size: 11px !important;
+    font-weight: 500 !important; letter-spacing: 0.1em !important;
+    text-transform: uppercase !important; border: none !important;
+    cursor: pointer !important; padding: 12px 20px !important;
+    transition: all 0.15s !important; flex: 1 !important; min-width: 110px !important;
+  }
+  .cm-btn-primary { background: #111 !important; color: #fff !important; }
+  .cm-btn-primary:hover { background: #333 !important; }
+  .cm-btn-outline { background: transparent !important; color: #555 !important; border: 1px solid #ddd !important; }
+  .cm-btn-outline:hover { border-color: #111 !important; color: #111 !important; }
+  #cm-confirmed { display: none !important; text-align: center !important; padding: 48px 24px !important; }
+  #cm-confirmed.show { display: block !important; }
+  #cm-confirmed .cm-mark { font-family: 'DM Mono', monospace !important; font-size: 28px !important; margin-bottom: 16px !important; }
+  #cm-confirmed h3 { font-size: 20px !important; font-weight: 300 !important; margin-bottom: 8px !important; }
+  #cm-confirmed p { font-size: 12px !important; color: #999 !important; }
+  @media (max-width: 600px) {
+    #cookie-banner { flex-direction: column !important; align-items: flex-start !important; padding: 20px 24px !important; }
+    .cm-box { padding: 28px 20px !important; }
+  }
 </style>
 
-</head>
-<body>
-
-<p class="demo">janeorlova.com — cookie preferences demo</p>
-
 <!-- BANNER -->
-
-<div id="cookie-banner">
-  <span class="banner-text">
+<div id="cookie-banner" style="display:none">
+  <span class="cb-text">
     We use cookies to keep the site running, understand traffic, and support social features.
-    <a href="#" onclick="openModal(); return false;">Manage preferences</a> · <a href="/privacy">Privacy Policy</a>
+    <a href="#" onclick="cmOpen(); return false;">Manage preferences</a> · <a href="/privacy">Privacy Policy</a>
   </span>
-  <div class="banner-actions">
-    <button class="btn btn-text" onclick="openModal()">Manage</button>
-    <button class="btn btn-ghost" onclick="declineAll()">Decline</button>
-    <button class="btn btn-primary" onclick="acceptAll()">Accept all</button>
+  <div class="cb-actions">
+    <button class="cb-btn cb-btn-text" onclick="cmOpen()">Manage</button>
+    <button class="cb-btn cb-btn-ghost" onclick="cmDeclineAll()">Decline</button>
+    <button class="cb-btn cb-btn-primary" onclick="cmAcceptAll()">Accept all</button>
   </div>
 </div>
 
 <!-- MODAL -->
-
 <div id="cookie-modal">
-  <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">✕</button>
+  <div class="cm-box">
+    <button class="cm-close" onclick="cmClose()">✕</button>
+    <div id="cm-prefs">
+      <p class="cm-label">janeorlova.com / Cookies</p>
+      <h2 class="cm-title">Your privacy,<br>your choice.</h2>
+      <p class="cm-desc">Choose which cookies you're comfortable with. Essential cookies are always on. Everything else is optional. <a href="/privacy">Privacy Policy →</a></p>
 
-```
-<div id="prefs-view">
-  <p class="modal-label">janeorlova.com / Cookies</p>
-  <h2 class="modal-title">Your privacy,<br>your choice.</h2>
-  <p class="modal-desc">
-    Choose which cookies you're comfortable with. Essential cookies are always on — they keep the site working. Everything else is optional.
-    <a href="/privacy">Privacy Policy →</a>
-  </p>
-
-  <!-- Essential -->
-  <div class="cookie-row">
-    <div class="row-header" onclick="toggleDetail('d-essential', this)">
-      <span class="row-expand">▶</span>
-      <div class="row-info">
-        <div class="row-name">Essential</div>
-        <div class="row-sub">Always active — required for the site to work</div>
+      <div class="cm-row">
+        <div class="cm-row-header" onclick="cmToggleDetail('cm-d-essential', this)">
+          <span class="cm-chevron">▶</span>
+          <div class="cm-row-info">
+            <div class="cm-row-name">Essential</div>
+            <div class="cm-row-sub">Always active — required for the site to work</div>
+          </div>
+          <label class="cm-toggle"><input type="checkbox" checked disabled><span class="cm-track"></span></label>
+        </div>
+        <div class="cm-detail" id="cm-d-essential">Necessary for session management, security, and basic navigation. Cannot be turned off.</div>
       </div>
-      <label class="toggle">
-        <input type="checkbox" checked disabled>
-        <span class="track"></span>
-      </label>
-    </div>
-    <div class="row-detail" id="d-essential">
-      These cookies are strictly necessary — they handle session management, security, and basic navigation. They cannot be turned off.
-    </div>
-  </div>
 
-  <!-- Analytics -->
-  <div class="cookie-row">
-    <div class="row-header" onclick="toggleDetail('d-analytics', this)">
-      <span class="row-expand">▶</span>
-      <div class="row-info">
-        <div class="row-name">Analytics</div>
-        <div class="row-sub">Google Analytics — anonymous usage data</div>
+      <div class="cm-row">
+        <div class="cm-row-header" onclick="cmToggleDetail('cm-d-analytics', this)">
+          <span class="cm-chevron">▶</span>
+          <div class="cm-row-info">
+            <div class="cm-row-name">Analytics</div>
+            <div class="cm-row-sub">Google Analytics — anonymous usage data</div>
+          </div>
+          <label class="cm-toggle" onclick="event.stopPropagation()"><input type="checkbox" id="cm-tog-analytics"><span class="cm-track"></span></label>
+        </div>
+        <div class="cm-detail" id="cm-d-analytics">Helps us understand how visitors use the site. All data is anonymous — no personal information is stored.</div>
       </div>
-      <label class="toggle" onclick="event.stopPropagation()">
-        <input type="checkbox" id="tog-analytics">
-        <span class="track"></span>
-      </label>
-    </div>
-    <div class="row-detail" id="d-analytics">
-      These cookies help us understand how visitors use the site — which pages are most visited, how long people stay, and where they come from. All data is anonymous. No personal information is stored.
-    </div>
-  </div>
 
-  <!-- Social Media -->
-  <div class="cookie-row">
-    <div class="row-header" onclick="toggleDetail('d-social', this)">
-      <span class="row-expand">▶</span>
-      <div class="row-info">
-        <div class="row-name">Social Media</div>
-        <div class="row-sub">Embedded content & sharing buttons</div>
+      <div class="cm-row">
+        <div class="cm-row-header" onclick="cmToggleDetail('cm-d-social', this)">
+          <span class="cm-chevron">▶</span>
+          <div class="cm-row-info">
+            <div class="cm-row-name">Social Media</div>
+            <div class="cm-row-sub">Embedded content & sharing buttons</div>
+          </div>
+          <label class="cm-toggle" onclick="event.stopPropagation()"><input type="checkbox" id="cm-tog-social"><span class="cm-track"></span></label>
+        </div>
+        <div class="cm-detail" id="cm-d-social">Set by social platforms (Instagram, Pinterest, etc.) when embedded content or share buttons appear. May track activity on those platforms if you're logged in.</div>
       </div>
-      <label class="toggle" onclick="event.stopPropagation()">
-        <input type="checkbox" id="tog-social">
-        <span class="track"></span>
-      </label>
+
+      <div class="cm-footer">
+        <button class="cm-btn cm-btn-outline" onclick="cmDeclineAll()">Decline all</button>
+        <button class="cm-btn cm-btn-outline" onclick="cmSavePrefs()">Save my choices</button>
+        <button class="cm-btn cm-btn-primary" onclick="cmAcceptAll()">Accept all</button>
+      </div>
     </div>
-    <div class="row-detail" id="d-social">
-      These cookies are set by social platforms (Instagram, Pinterest, etc.) when embedded content or share buttons appear on a page. They may track your activity on those platforms if you're logged in.
+
+    <div id="cm-confirmed">
+      <div class="cm-mark">[✓]</div>
+      <h3>Preferences saved</h3>
+      <p>You can update your choices anytime via the cookie link in the footer.</p>
     </div>
-  </div>
-
-  <div class="modal-footer">
-    <button class="btn-modal btn-modal-outline" onclick="declineAll()">Decline all</button>
-    <button class="btn-modal btn-modal-outline" onclick="savePrefs()">Save my choices</button>
-    <button class="btn-modal btn-modal-primary" onclick="acceptAll()">Accept all</button>
-  </div>
-</div>
-
-<div id="confirmed">
-  <div class="mark">[✓]</div>
-  <h3>Preferences saved</h3>
-  <p>You can update your choices anytime via the cookie link in the footer.</p>
-</div>
-```
-
   </div>
 </div>
 
 <script>
-  if (localStorage.getItem('cookieConsent')) {
-    document.getElementById('cookie-banner').style.display = 'none';
-  }
+  (function() {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookie-banner').style.display = 'flex';
+    }
+  })();
 
-  function openModal() {
-    const s = JSON.parse(localStorage.getItem('cookieConsent') || '{}');
-    document.getElementById('tog-analytics').checked = s.analytics || false;
-    document.getElementById('tog-social').checked    = s.social    || false;
+  function cmOpen() {
+    var s = JSON.parse(localStorage.getItem('cookieConsent') || '{}');
+    document.getElementById('cm-tog-analytics').checked = s.analytics || false;
+    document.getElementById('cm-tog-social').checked    = s.social    || false;
     document.getElementById('cookie-modal').classList.add('open');
-    document.getElementById('prefs-view').style.display = '';
-    document.getElementById('confirmed').classList.remove('show');
+    document.getElementById('cm-prefs').style.display = '';
+    document.getElementById('cm-confirmed').classList.remove('show');
   }
-
-  function closeModal() {
-    document.getElementById('cookie-modal').classList.remove('open');
-  }
-
-  function save(prefs) {
+  function cmClose() { document.getElementById('cookie-modal').classList.remove('open'); }
+  function cmSave(prefs) {
     localStorage.setItem('cookieConsent', JSON.stringify(prefs));
     document.getElementById('cookie-banner').style.display = 'none';
-    document.getElementById('prefs-view').style.display = 'none';
-    document.getElementById('confirmed').classList.add('show');
-    setTimeout(closeModal, 1800);
+    document.getElementById('cm-prefs').style.display = 'none';
+    document.getElementById('cm-confirmed').classList.add('show');
+    setTimeout(cmClose, 1800);
   }
-
-  function acceptAll()  { save({ essential: true, analytics: true, social: true }); }
-  function declineAll() { save({ essential: true, analytics: false, social: false }); }
-  function savePrefs()  {
-    save({
-      essential: true,
-      analytics: document.getElementById('tog-analytics').checked,
-      social:    document.getElementById('tog-social').checked,
-    });
-  }
-
-  function toggleDetail(id, header) {
+  function cmAcceptAll()  { cmSave({ essential: true, analytics: true, social: true }); }
+  function cmDeclineAll() { cmSave({ essential: true, analytics: false, social: false }); }
+  function cmSavePrefs()  { cmSave({ essential: true, analytics: document.getElementById('cm-tog-analytics').checked, social: document.getElementById('cm-tog-social').checked }); }
+  function cmToggleDetail(id, header) {
     document.getElementById(id).classList.toggle('open');
     header.classList.toggle('open');
   }
+  document.getElementById('cookie-modal').addEventListener('click', function(e) { if (e.target === this) cmClose(); });
+</script>
+<!-- ============ END COOKIE BANNER ============ -->
 
-  document.getElementById('cookie-modal').addEventListener('click', function(e) {
-    if (e.target === this) closeModal();
-  });
 </script>
 
 </body>
