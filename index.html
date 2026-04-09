@@ -460,6 +460,48 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   </style>
 </head>
 <body>
+<div id="cookie-banner">
+  <p>This website uses cookies to improve your experience.</p>
+  <div id="cookie-buttons">
+    <button id="cookie-accept">Accept</button>
+    <button id="cookie-reject">Reject</button>
+  </div>
+</div>
+
+    <script>
+  (function () {
+    function getConsent() {
+      try { return localStorage.getItem('cookieConsent'); } 
+      catch (e) { return null; }
+    }
+    function setConsent(val) {
+      try { localStorage.setItem('cookieConsent', val); } 
+      catch (e) {}
+    }
+
+    var banner = document.getElementById('cookie-banner');
+
+    if (!banner) return;
+
+    if (getConsent()) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    banner.style.display = 'flex';
+
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+      setConsent('accepted');
+      banner.style.opacity = '0';
+      setTimeout(function () { banner.style.display = 'none'; }, 400);
+    });
+
+    document.getElementById('cookie-reject').addEventListener('click', function () {
+      banner.style.opacity = '0';
+      setTimeout(function () { banner.style.display = 'none'; }, 400);
+    });
+  })();
+</script>
 
 
 <!-- NAV -->
@@ -960,48 +1002,6 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   loadSubstack();
   loadTracker();
 //
-  <div id="cookie-banner">
-  <p>This website uses cookies to improve your experience.</p>
-  <div id="cookie-buttons">
-    <button id="cookie-accept">Accept</button>
-    <button id="cookie-reject">Reject</button>
-  </div>
-</div>
-
-    <script>
-  (function () {
-    function getConsent() {
-      try { return localStorage.getItem('cookieConsent'); } 
-      catch (e) { return null; }
-    }
-    function setConsent(val) {
-      try { localStorage.setItem('cookieConsent', val); } 
-      catch (e) {}
-    }
-
-    var banner = document.getElementById('cookie-banner');
-
-    if (!banner) return;
-
-    if (getConsent()) {
-      banner.style.display = 'none';
-      return;
-    }
-
-    banner.style.display = 'flex';
-
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      setConsent('accepted');
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-
-    document.getElementById('cookie-reject').addEventListener('click', function () {
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-  })();
-</script>
 
 
 </body>
