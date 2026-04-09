@@ -539,6 +539,30 @@ const THEMA_ALIASES = {
   "Bestaanszekerheid": "Werk & Bestaanszekerheid",
   "Economie": "Economie & Ondernemen"
 };
+  function normThema(s){
+  return String(s || "").toLowerCase()
+    .replace(/[àáâãäå]/g,"a").replace(/[èéêë]/g,"e")
+    .replace(/[ìíîï]/g,"i").replace(/[òóôõö]/g,"o")
+    .replace(/[ùúûü]/g,"u").replace(/ç/g,"c")
+    .replace(/[^a-z0-9]/g," ")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+function themasMatch(a, b){
+  let na = normThema(a);
+  let nb = normThema(b);
+
+  if (na === nb) return true;
+
+  // alias resolution
+  return (
+    THEMA_ALIASES[na] === nb ||
+    THEMA_ALIASES[nb] === na
+  );
+}
+
+//
 const SC={
   aangenomen:{l:"Aangenomen",i:"✓",c:"var(--green)",b:"var(--greenbg)",bd:"var(--greenbd)"},
   verworpen:{l:"Verworpen",i:"✗",c:"var(--accent)",b:"var(--accentbg)",bd:"var(--accentbd)"},
