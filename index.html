@@ -394,6 +394,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   .footer-links { flex-wrap: wrap; justify-content: center; }
 }
     #cookie-banner {
+  display: none;    
   position: fixed;
   bottom: 0;
   left: 0;
@@ -448,7 +449,6 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 @media (max-width: 480px) {
   #cookie-banner { flex-direction: column; align-items: flex-start; }
 }
-  
 }
 
 
@@ -970,16 +970,32 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 
     <script>
   (function () {
+    function getConsent() {
+      try { return localStorage.getItem('cookieConsent'); } 
+      catch (e) { return null; }
+    }
+    function setConsent(val) {
+      try { localStorage.setItem('cookieConsent', val); } 
+      catch (e) {}
+    }
+
     var banner = document.getElementById('cookie-banner');
-    if (localStorage.getItem('cookieConsent')) {
+
+    if (!banner) return;
+
+    if (getConsent()) {
       banner.style.display = 'none';
       return;
     }
+
+    banner.style.display = 'flex';
+
     document.getElementById('cookie-accept').addEventListener('click', function () {
-      localStorage.setItem('cookieConsent', 'accepted');
+      setConsent('accepted');
       banner.style.opacity = '0';
       setTimeout(function () { banner.style.display = 'none'; }, 400);
     });
+
     document.getElementById('cookie-reject').addEventListener('click', function () {
       banner.style.opacity = '0';
       setTimeout(function () { banner.style.display = 'none'; }, 400);
