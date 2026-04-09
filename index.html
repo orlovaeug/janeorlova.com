@@ -896,89 +896,69 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 
   loadSubstack();
   loadTracker();
-<link rel="stylesheet" id="silktide-consent-manager-css" href="path-to-css/silktide-consent-manager.css">
-<script src="path-to-js/silktide-consent-manager.js"></script>
-<script>
-silktideCookieBannerManager.updateCookieBannerConfig({
-  background: {
-    showBackground: true
-  },
-  cookieIcon: {
-    position: "bottomLeft"
-  },
-  cookieTypes: [
-    {
-      id: "necessary",
-      name: "Necessary",
-      description: "<p>These cookies are necessary for the website to function properly and cannot be switched off. They help with things like logging in and setting your privacy preferences.</p>",
-      required: true,
-      onAccept: function() {
-        console.log('Add logic for the required Necessary here');
-      }
-    },
-    {
-      id: "analytics",
-      name: "Analytics",
-      description: "<p>These cookies help us improve the site by tracking which pages are most popular and how visitors move around the site.</p>",
-      defaultValue: true,
-      onAccept: function() {
-        gtag('consent', 'update', {
-          analytics_storage: 'granted',
-        });
-        dataLayer.push({
-          'event': 'consent_accepted_analytics',
-        });
-      },
-      onReject: function() {
-        gtag('consent', 'update', {
-          analytics_storage: 'denied',
-        });
-      }
-    },
-    {
-      id: "advertising",
-      name: "Advertising",
-      description: "<p>These cookies provide extra features and personalization to improve your experience. They may be set by us or by partners whose services we use.</p>",
-      onAccept: function() {
-        gtag('consent', 'update', {
-          ad_storage: 'granted',
-          ad_user_data: 'granted',
-          ad_personalization: 'granted',
-        });
-        dataLayer.push({
-          'event': 'consent_accepted_advertising',
-        });
-      },
-      onReject: function() {
-        gtag('consent', 'update', {
-          ad_storage: 'denied',
-          ad_user_data: 'denied',
-          ad_personalization: 'denied',
-        });
-      }
-    }
-  ],
-  text: {
-    banner: {
-      description: "<p>We use cookies on our site to enhance your user experience, provide personalized content, and analyze our traffic. <a href=\"https://your-website.com/cookie-policy\" target=\"_blank\">Cookie Policy.</a></p>",
-      acceptAllButtonText: "Accept all",
-      acceptAllButtonAccessibleLabel: "Accept all cookies",
-      rejectNonEssentialButtonText: "Reject non-essential",
-      rejectNonEssentialButtonAccessibleLabel: "Reject non-essential",
-      preferencesButtonText: "Preferences",
-      preferencesButtonAccessibleLabel: "Toggle preferences"
-    },
-    preferences: {
-      title: "Customize your cookie preferences",
-      description: "<p>We respect your right to privacy. You can choose not to allow some types of cookies. Your cookie preferences will apply across our website.</p>",
-      creditLinkText: "Get this banner for free",
-      creditLinkAccessibleLabel: "Get this banner for free"
-    }
-  },
-  position: {
-    banner: "bottomLeft"
+// Cookie Consent Banner JavaScript
+(function() {
+  function setCookie(name, value, days) {
+    const expires = new Date();
+    expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/';
   }
-});
-</script>
+
+  function getCookie(name) {
+    const nameEQ = name + '=';
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function createBanner() {
+    const banner = document.createElement('div');
+    banner.id = 'cookieConsentBanner';
+    banner.className = 'cookie-consent-banner';
+    banner.style.cssText = `position: fixed; bottom: 0; left: 0; right: 0; z-index: 10000; padding: 20px; box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); background: #ffffff; color: #1f2937; border: 1px solid #e5e7eb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;`;
+    
+    banner.innerHTML = `
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 250px;">
+          <p style="margin: 0; line-height: 1.6;">
+            We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. 
+            By clicking "Accept", you consent to our use of cookies.
+            
+          </p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <button onclick="acceptCookies()" style="padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; background: #3b82f6; color: white;">
+            Accept
+          </button>
+          <button onclick="declineCookies()" style="padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; background: #6b7280; color: white;">Decline</button>
+        </div>
+      </div>
+    `;
+    
+    document.body.appendChild(banner);
+  }
+
+  window.acceptCookies = function() {
+    setCookie('cookie_consent', 'accepted', 365);
+    const banner = document.getElementById('cookieConsentBanner');
+    if (banner) banner.style.display = 'none';
+    if (typeof gtag !== "undefined") { gtag("consent", "update", { analytics_storage: "granted" }); }
+  };
+
+  window.declineCookies = function() {
+    setCookie('cookie_consent', 'declined', 365);
+    const banner = document.getElementById('cookieConsentBanner');
+    if (banner) banner.style.display = 'none';
+    if (typeof gtag !== "undefined") { gtag("consent", "update", { analytics_storage: "denied" }); }
+  };
+
+  if (!getCookie('cookie_consent')) {
+    createBanner();
+  }
+})();
 </body>
 </html>
