@@ -1561,7 +1561,7 @@ function switchTab(name) {
   renderEvents(data.events||[]);
 })();
 </script>
-<!-- ============ COOKIE BANNER ============ -->
+<<!-- ============ COOKIE BANNER ============ -->
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -1744,39 +1744,55 @@ function switchTab(name) {
 </div>
 
 <script>
-  (function() {
-    if (!localStorage.getItem('cookieConsent')) {
-      document.getElementById('cookie-banner').style.display = 'flex';
-    }
-  })();
-
-  function cmOpen() {
+  window.cmOpen = function() {
     var s = JSON.parse(localStorage.getItem('cookieConsent') || '{}');
     document.getElementById('cm-tog-analytics').checked = s.analytics || false;
     document.getElementById('cm-tog-social').checked    = s.social    || false;
     document.getElementById('cookie-modal').classList.add('open');
     document.getElementById('cm-prefs').style.display = '';
     document.getElementById('cm-confirmed').classList.remove('show');
-  }
-  function cmClose() { document.getElementById('cookie-modal').classList.remove('open'); }
-  function cmSave(prefs) {
+  };
+
+  window.cmClose = function() {
+    document.getElementById('cookie-modal').classList.remove('open');
+  };
+
+  window.cmSave = function(prefs) {
     localStorage.setItem('cookieConsent', JSON.stringify(prefs));
     document.getElementById('cookie-banner').style.display = 'none';
     document.getElementById('cm-prefs').style.display = 'none';
     document.getElementById('cm-confirmed').classList.add('show');
-    setTimeout(cmClose, 1800);
-  }
-  function cmAcceptAll()  { cmSave({ essential: true, analytics: true, social: true }); }
-  function cmDeclineAll() { cmSave({ essential: true, analytics: false, social: false }); }
-  function cmSavePrefs()  { cmSave({ essential: true, analytics: document.getElementById('cm-tog-analytics').checked, social: document.getElementById('cm-tog-social').checked }); }
-  function cmToggleDetail(id, header) {
+    setTimeout(window.cmClose, 1800);
+  };
+
+  window.cmAcceptAll  = function() { window.cmSave({ essential: true, analytics: true, social: true }); };
+  window.cmDeclineAll = function() { window.cmSave({ essential: true, analytics: false, social: false }); };
+  window.cmSavePrefs  = function() {
+    window.cmSave({
+      essential: true,
+      analytics: document.getElementById('cm-tog-analytics').checked,
+      social:    document.getElementById('cm-tog-social').checked
+    });
+  };
+
+  window.cmToggleDetail = function(id, header) {
     document.getElementById(id).classList.toggle('open');
     header.classList.toggle('open');
-  }
-  document.getElementById('cookie-modal').addEventListener('click', function(e) { if (e.target === this) cmClose(); });
+  };
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (!localStorage.getItem('cookieConsent')) {
+      document.getElementById('cookie-banner').style.display = 'flex';
+    }
+    var modal = document.getElementById('cookie-modal');
+    if (modal) {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) window.cmClose();
+      });
+    }
+  });
 </script>
 <!-- ============ END COOKIE BANNER ============ -->
-
 </body>
 </html>
 </script>
