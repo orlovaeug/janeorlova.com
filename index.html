@@ -407,37 +407,48 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   gap: 16px;
   font-family: sans-serif;
   font-size: 14px;
-  z-index: 9999;
+  z-index: 999999;
   transition: opacity 0.4s ease;
+  pointer-events: all;
 }
 
-#cookie-banner p {
-  margin: 0;
+#cookie-banner p { margin: 0; }
+
+#cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
-#cookie-accept {
-  background: #ffffff;
-  color: #1a1a1a;
+#cookie-accept, #cookie-reject {
   border: none;
   padding: 8px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
-  white-space: nowrap;
-  flex-shrink: 0;
+  pointer-events: all;
 }
 
-#cookie-accept:hover {
-  background: #e0e0e0;
+#cookie-accept {
+  background: #ffffff;
+  color: #1a1a1a;
 }
+
+#cookie-accept:hover { background: #e0e0e0; }
+
+#cookie-reject {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#cookie-reject:hover { background: rgba(255,255,255,0.1); }
 
 @media (max-width: 480px) {
-  #cookie-banner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  #cookie-banner { flex-direction: column; align-items: flex-start; }
 }
+
 
   </style>
 </head>
