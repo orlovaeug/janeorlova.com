@@ -990,7 +990,51 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     </div>
   </div>
 </div>
+<script>
+  if (localStorage.getItem('cookieConsent')) {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
 
+  function openModal() {
+    const s = JSON.parse(localStorage.getItem('cookieConsent') || '{}');
+    document.getElementById('tog-analytics').checked = s.analytics || false;
+    document.getElementById('tog-social').checked    = s.social    || false;
+    document.getElementById('cookie-modal').classList.add('open');
+    document.getElementById('prefs-view').style.display = '';
+    document.getElementById('confirmed').classList.remove('show');
+  }
+
+  function closeModal() {
+    document.getElementById('cookie-modal').classList.remove('open');
+  }
+
+  function save(prefs) {
+    localStorage.setItem('cookieConsent', JSON.stringify(prefs));
+    document.getElementById('cookie-banner').style.display = 'none';
+    document.getElementById('prefs-view').style.display = 'none';
+    document.getElementById('confirmed').classList.add('show');
+    setTimeout(closeModal, 1800);
+  }
+
+  function acceptAll()  { save({ essential: true, analytics: true, social: true }); }
+  function declineAll() { save({ essential: true, analytics: false, social: false }); }
+  function savePrefs()  {
+    save({
+      essential: true,
+      analytics: document.getElementById('tog-analytics').checked,
+      social:    document.getElementById('tog-social').checked,
+    });
+  }
+
+  function toggleDetail(id, header) {
+    document.getElementById(id).classList.toggle('open');
+    header.classList.toggle('open');
+  }
+
+  document.getElementById('cookie-modal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+</script>
 
 </body>
 </html>
