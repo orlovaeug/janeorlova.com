@@ -506,16 +506,39 @@ li{list-style:none}
 (function(){
 // ---------- CONSTANTS & DATA ----------
 const SK="motie-v20260404";
-const THEMAS=["Wonen & Bouwen","Defensie","Klimaat & Groene Groei","Landbouw, Natuur & Stikstof","Asiel, Migratie & Integratie","Zorg & Preventie","Onderwijs & Wetenschap","Werk & Bestaanszekerheid","Economie & Ondernemen","Europa & Buitenlandse Zaken","Democratie & Rechtsstaat","Veiligheid & Justitie","Slagvaardige Overheid","Nationale Veiligheid","Digitalisering & AI","Bereikbaarheid & Mobiliteit","Overheidsfinancien","Sociale Cohesie & Cultuur", "Zorg": "Zorg preventie",
-  "Bereikbaarheid": "Bereikbaarheid Mobiliteit",
+const THEMAS = [
+  "Wonen & Bouwen",
+  "Defensie",
+  "Klimaat & Groene Groei",
+  "Landbouw, Natuur & Stikstof",
+  "Asiel, Migratie & Integratie",
+  "Zorg & Preventie",
+  "Onderwijs & Wetenschap",
+  "Werk & Bestaanszekerheid",
+  "Economie & Ondernemen",
+  "Europa & Buitenlandse Zaken",
+  "Democratie & Rechtsstaat",
+  "Veiligheid & Justitie",
+  "Slagvaardige Overheid",
+  "Nationale Veiligheid",
+  "Digitalisering & AI",
+  "Bereikbaarheid & Mobiliteit",
+  "Overheidsfinancien",
+  "Sociale Cohesie & Cultuur"
+];
+
+const THEMA_ALIASES = {
+  "Zorg": "Zorg & Preventie",
+  "Bereikbaarheid": "Bereikbaarheid & Mobiliteit",
   "Financien": "Overheidsfinancien",
-  "Asiel Migratie": "Asiel Migratie Integratie"
-  "Klimaat Energie": "Klimaat Groene Groei",
-  "Landbouw Natuur": "Landbouw Natuur Stikstof",
-  "Buitenlandse Zaken": "Europa Buitenlandse Zaken",
-  "Onderwijs": "Onderwijs Wetenschap",
-  "Bestaanszekerheid": "Werk Bestaanszekerheid",
-  "Economie": "Economie ondernemen"];
+  "Asiel Migratie": "Asiel, Migratie & Integratie",
+  "Klimaat Energie": "Klimaat & Groene Groei",
+  "Landbouw Natuur": "Landbouw, Natuur & Stikstof",
+  "Buitenlandse Zaken": "Europa & Buitenlandse Zaken",
+  "Onderwijs": "Onderwijs & Wetenschap",
+  "Bestaanszekerheid": "Werk & Bestaanszekerheid",
+  "Economie": "Economie & Ondernemen"
+};
 const SC={
   aangenomen:{l:"Aangenomen",i:"✓",c:"var(--green)",b:"var(--greenbg)",bd:"var(--greenbd)"},
   verworpen:{l:"Verworpen",i:"✗",c:"var(--accent)",b:"var(--accentbg)",bd:"var(--accentbd)"},
