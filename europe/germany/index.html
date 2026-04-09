@@ -61,250 +61,91 @@ pointer-events: none;
 }
 .hero-eyebrow {
 font-family: ‘IBM Plex Mono’, monospace;
-font-size: 11px;
-letter-spacing: 4px;
-text-transform: uppercase;
-color: #e89a90;
-margin-bottom: 20px;
-position: relative;
+font-size: 11px; letter-spacing: 4px; text-transform: uppercase;
+color: #e89a90; margin-bottom: 20px; position: relative;
 }
 .hero h1 {
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: clamp(60px, 9vw, 144px);
-line-height: 0.9;
-letter-spacing: 2px;
-color: #f0ece4;
-position: relative;
+line-height: 0.9; letter-spacing: 2px;
+color: #f0ece4; position: relative;
 }
 .hero h1 span { color: #ff6b5b; }
 .hero-sub {
-font-size: 15px;
-color: rgba(240,236,228,0.6);
-max-width: 520px;
-margin-top: 28px;
-line-height: 1.8;
-position: relative;
-font-weight: 300;
+font-size: 15px; color: rgba(240,236,228,0.6);
+max-width: 520px; margin-top: 28px;
+line-height: 1.8; position: relative; font-weight: 300;
 }
 .hero-stats {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
+display: grid; grid-template-columns: repeat(3, 1fr);
 margin-top: 52px;
 border-top: 1px solid rgba(240,236,228,0.14);
 position: relative;
 }
-.hero-stat {
-padding: 24px 36px 0 0;
-border-right: 1px solid rgba(240,236,228,0.1);
-}
+.hero-stat { padding: 24px 36px 0 0; border-right: 1px solid rgba(240,236,228,0.1); }
 .hero-stat:last-child { border-right: none; padding-right: 0; }
-.hero-stat .num {
-font-family: ‘Bebas Neue’, sans-serif;
-font-size: 50px;
-line-height: 1;
-color: #ff6b5b;
-}
-.hero-stat .label {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 10px;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: rgba(240,236,228,0.4);
-margin-top: 5px;
-}
+.hero-stat .num { font-family: ‘Bebas Neue’, sans-serif; font-size: 50px; line-height: 1; color: #ff6b5b; }
+.hero-stat .label { font-family: ‘IBM Plex Mono’, monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(240,236,228,0.4); margin-top: 5px; }
 
 /* ── SECTION CHROME ─────────────────────── */
-section {
-padding: 68px 80px;
-border-bottom: 1px solid var(–border);
-}
+section { padding: 68px 80px; border-bottom: 1px solid var(–border); }
 section:nth-child(odd)  { background: var(–bg); }
 section:nth-child(even) { background: var(–surface); }
 
 .section-label {
 font-family: ‘IBM Plex Mono’, monospace;
-font-size: 10px;
-letter-spacing: 3px;
-text-transform: uppercase;
-color: var(–red);
-margin-bottom: 32px;
-display: flex;
-align-items: center;
-gap: 14px;
+font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+color: var(–red); margin-bottom: 32px;
+display: flex; align-items: center; gap: 14px;
 }
-.section-label::after {
-content: ‘’;
-flex: 1;
-height: 1px;
-background: var(–border);
-}
+.section-label::after { content: ‘’; flex: 1; height: 1px; background: var(–border); }
+
 h2 {
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: clamp(30px, 4.2vw, 60px);
-line-height: 1;
-margin-bottom: 32px;
-letter-spacing: 1px;
-color: var(–ink);
+line-height: 1; margin-bottom: 32px; letter-spacing: 1px; color: var(–ink);
 }
-p.lead {
-font-size: 14px;
-color: var(–muted);
-max-width: 620px;
-line-height: 1.85;
-margin-bottom: 28px;
-}
+p.lead { font-size: 14px; color: var(–muted); max-width: 620px; line-height: 1.85; margin-bottom: 28px; }
 
 /* ── CARDS ──────────────────────────────── */
-.card {
-background: var(–card);
-border: 1px solid var(–border);
-border-radius: 5px;
-box-shadow: 0 1px 3px rgba(30,27,24,0.07);
-}
+.card { background: var(–card); border: 1px solid var(–border); border-radius: 5px; box-shadow: 0 1px 3px rgba(30,27,24,0.07); }
 
 /* ── TRIPLE COMPARE ─────────────────────── */
-.triple-compare {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 10px;
-}
-.tc-card {
-background: var(–card);
-border: 1px solid var(–border);
-border-radius: 5px;
-padding: 32px;
-text-align: center;
-box-shadow: 0 1px 3px rgba(30,27,24,0.07);
-}
-.tc-year {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 10px;
-letter-spacing: 3px;
-text-transform: uppercase;
-color: var(–muted);
-margin-bottom: 12px;
-}
-.tc-pct {
-font-family: ‘Bebas Neue’, sans-serif;
-font-size: 84px;
-line-height: 0.9;
-color: var(–red);
-}
+.triple-compare { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.tc-card { background: var(–card); border: 1px solid var(–border); border-radius: 5px; padding: 32px; text-align: center; box-shadow: 0 1px 3px rgba(30,27,24,0.07); }
+.tc-year { font-family: ‘IBM Plex Mono’, monospace; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(–muted); margin-bottom: 12px; }
+.tc-pct { font-family: ‘Bebas Neue’, sans-serif; font-size: 84px; line-height: 0.9; color: var(–red); }
 .tc-pct.dim { color: #c58070; }
 .tc-pct.mid { color: #c0503a; }
-.tc-label {
-font-size: 12px;
-color: var(–muted);
-margin-top: 12px;
-line-height: 1.65;
-}
-.tc-delta {
-display: inline-block;
-margin-top: 12px;
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 11px;
-padding: 4px 12px;
-border-radius: 3px;
-letter-spacing: 1px;
-}
+.tc-label { font-size: 12px; color: var(–muted); margin-top: 12px; line-height: 1.65; }
+.tc-delta { display: inline-block; margin-top: 12px; font-family: ‘IBM Plex Mono’, monospace; font-size: 11px; padding: 4px 12px; border-radius: 3px; letter-spacing: 1px; }
 .delta-up   { color: var(–red);   background: var(–red-light);   border: 1px solid #e8a09a; }
 .delta-flat { color: var(–muted); background: var(–surface-alt); border: 1px solid var(–border); }
 
 /* ── RESULTS BARS ───────────────────────── */
-.results-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 10px;
-}
-.results-card {
-background: var(–card);
-border: 1px solid var(–border);
-border-radius: 5px;
-padding: 32px;
-box-shadow: 0 1px 3px rgba(30,27,24,0.07);
-}
-.results-card h3 {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 10px;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: var(–muted);
-margin-bottom: 22px;
-padding-bottom: 10px;
-border-bottom: 1px solid var(–border);
-}
-.party-row {
-display: flex;
-align-items: center;
-gap: 12px;
-margin-bottom: 12px;
-}
-.party-name {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 11px;
-width: 75px;
-color: var(–body);
-flex-shrink: 0;
-}
-.bar-wrap {
-flex: 1;
-height: 7px;
-background: var(–surface-alt);
-border-radius: 2px;
-overflow: hidden;
-}
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.results-card { background: var(–card); border: 1px solid var(–border); border-radius: 5px; padding: 32px; box-shadow: 0 1px 3px rgba(30,27,24,0.07); }
+.results-card h3 { font-family: ‘IBM Plex Mono’, monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(–muted); margin-bottom: 22px; padding-bottom: 10px; border-bottom: 1px solid var(–border); }
+.party-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.party-name { font-family: ‘IBM Plex Mono’, monospace; font-size: 11px; width: 75px; color: var(–body); flex-shrink: 0; }
+.bar-wrap { flex: 1; height: 7px; background: var(–surface-alt); border-radius: 2px; overflow: hidden; }
 .bar-fill { height: 100%; border-radius: 2px; }
-.pct {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 12px;
-width: 46px;
-text-align: right;
-color: var(–ink);
-font-weight: 500;
-}
+.pct { font-family: ‘IBM Plex Mono’, monospace; font-size: 12px; width: 46px; text-align: right; color: var(–ink); font-weight: 500; }
 .afd-highlight { color: var(–red); font-weight: 600; }
 
 /* ── TABLES ─────────────────────────────── */
-.table-wrap {
-background: var(–card);
-border: 1px solid var(–border);
-border-radius: 5px;
-overflow: hidden;
-box-shadow: 0 1px 3px rgba(30,27,24,0.07);
-}
+.table-wrap { background: var(–card); border: 1px solid var(–border); border-radius: 5px; overflow: hidden; box-shadow: 0 1px 3px rgba(30,27,24,0.07); }
 table { width:100%; border-collapse:collapse; font-size:13px; }
 thead tr { background: var(–ink); }
-thead th {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 9px;
-letter-spacing: 2px;
-text-transform: uppercase;
-padding: 13px 16px;
-text-align: left;
-color: rgba(240,236,228,0.65);
-font-weight: 400;
-}
-tbody tr {
-border-bottom: 1px solid var(–border);
-transition: background 0.12s;
-}
+thead th { font-family: ‘IBM Plex Mono’, monospace; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; padding: 13px 16px; text-align: left; color: rgba(240,236,228,0.65); font-weight: 400; }
+tbody tr { border-bottom: 1px solid var(–border); transition: background 0.12s; }
 tbody tr:last-child { border-bottom: none; }
 tbody tr:hover { background: #fdf6f2; }
 tbody tr.row-east { border-left: 3px solid var(–red); }
 tbody tr.row-west { border-left: 3px solid var(–border); }
 tbody td { padding: 12px 16px; vertical-align: middle; color: var(–body); }
 .state-name { font-weight: 400; color: var(–ink); }
-.region-tag {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 8px;
-letter-spacing: 1px;
-padding: 2px 5px;
-border-radius: 2px;
-display: inline-block;
-margin-left: 5px;
-vertical-align: middle;
-font-weight: 500;
-}
+.region-tag { font-family: ‘IBM Plex Mono’, monospace; font-size: 8px; letter-spacing: 1px; padding: 2px 5px; border-radius: 2px; display: inline-block; margin-left: 5px; vertical-align: middle; font-weight: 500; }
 .tag-east { background: var(–red-light);  color: var(–red);  border: 1px solid #e8a09a; }
 .tag-west { background: var(–blue-light); color: var(–blue); border: 1px solid #9fc3e0; }
 .pct-cell { font-family: ‘IBM Plex Mono’, monospace; font-weight: 500; }
@@ -312,167 +153,228 @@ font-weight: 500;
 .pct-cell.mid-high { color: var(–amber); }
 .pct-cell.lower    { color: var(–muted); }
 .change-up { font-family:‘IBM Plex Mono’,monospace; font-size:11px; color:var(–red); font-weight:600; }
-.mini-bar-wrap {
-width: 70px; height: 5px;
-background: var(–surface-alt);
-display: inline-block; vertical-align: middle;
-margin-right: 5px; border-radius: 2px; overflow: hidden;
-}
+.mini-bar-wrap { width: 70px; height: 5px; background: var(–surface-alt); display: inline-block; vertical-align: middle; margin-right: 5px; border-radius: 2px; overflow: hidden; }
 .mini-bar { height: 100%; border-radius: 2px; }
-
-/* ── HEAT MAP GRID ──────────────────────── */
-.map-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 8px;
-}
-.state-card {
-border-radius: 5px;
-padding: 18px 16px;
-border: 1px solid var(–border);
-transition: transform 0.15s, box-shadow 0.15s;
-cursor: default;
-}
-.state-card:hover { transform: translateY(-2px); box-shadow: 0 5px 14px rgba(30,27,24,0.1); }
-.state-card.h4 { background: #fce8e6; border-color: #e8a09a; }
-.state-card.h3 { background: #fdf2ef; border-color: #ecc0b8; }
-.state-card.h2 { background: #fdf7f4; border-color: #ddd4cc; }
-.state-card.h1 { background: #f9f8f5; border-color: var(–border); }
-.sc-name {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 9px;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: var(–muted);
-margin-bottom: 5px;
-}
-.sc-pct { font-family:‘Bebas Neue’,sans-serif; font-size:36px; line-height:1; }
-.sc-pct.t4 { color: var(–red); }
-.sc-pct.t3 { color: #c05540; }
-.sc-pct.t2 { color: var(–amber); }
-.sc-pct.t1 { color: var(–muted); }
-.sc-sub { font-size:10px; color:var(–muted); margin-top:3px; line-height:1.4; }
-
-/* ── LEGEND ─────────────────────────────── */
-.legend { display:flex; gap:16px; flex-wrap:wrap; margin-top:18px; }
-.legend-item { display:flex; align-items:center; gap:7px; font-size:10px; color:var(–muted); font-family:‘IBM Plex Mono’,monospace; }
-.legend-dot { width:10px; height:10px; border-radius:2px; border:1px solid; }
 
 /* ── DEMOGRAPHICS ───────────────────────── */
 .demo-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
-.demo-card {
-background: var(–card);
-border: 1px solid var(–border);
-border-radius: 5px;
-padding: 30px;
-box-shadow: 0 1px 3px rgba(30,27,24,0.07);
-}
-.demo-card h3 {
-font-family: ‘IBM Plex Mono’, monospace;
-font-size: 10px;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: var(–muted);
-margin-bottom: 22px;
-padding-bottom: 10px;
-border-bottom: 1px solid var(–border);
-}
+.demo-card { background: var(–card); border: 1px solid var(–border); border-radius: 5px; padding: 30px; box-shadow: 0 1px 3px rgba(30,27,24,0.07); }
+.demo-card h3 { font-family: ‘IBM Plex Mono’, monospace; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(–muted); margin-bottom: 22px; padding-bottom: 10px; border-bottom: 1px solid var(–border); }
 .demo-row { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
 .demo-label { font-size:12px; width:110px; flex-shrink:0; color:var(–body); }
 .demo-bar-wrap { flex:1; height:8px; background:var(–surface-alt); border-radius:3px; overflow:hidden; }
 .demo-bar { height:100%; border-radius:3px; }
 .demo-pct { font-family:‘IBM Plex Mono’,monospace; font-size:12px; width:40px; text-align:right; font-weight:500; }
-.demo-note {
-margin-top:14px; padding-top:12px;
-border-top: 1px solid var(–border);
-font-size:11px; color:var(–muted);
-line-height:1.8; font-family:‘IBM Plex Mono’,monospace;
-}
-.demo-sub {
-font-family:‘IBM Plex Mono’,monospace;
-font-size:9px; letter-spacing:2px;
-text-transform:uppercase; color:var(–muted);
-margin:16px 0 10px;
-}
+.demo-note { margin-top:14px; padding-top:12px; border-top: 1px solid var(–border); font-size:11px; color:var(–muted); line-height:1.8; font-family:‘IBM Plex Mono’,monospace; }
+.demo-sub { font-family:‘IBM Plex Mono’,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); margin:16px 0 10px; }
 
 /* ── MOTIVE CARDS ───────────────────────── */
 .motive-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
-.motive-card {
-background: var(–card);
-border: 1px solid var(–border);
-border-radius: 5px;
-padding: 26px;
-box-shadow: 0 1px 3px rgba(30,27,24,0.07);
-}
+.motive-card { background: var(–card); border: 1px solid var(–border); border-radius: 5px; padding: 26px; box-shadow: 0 1px 3px rgba(30,27,24,0.07); }
 .motive-icon { font-size:22px; margin-bottom:10px; }
 .motive-title { font-family:‘Bebas Neue’,sans-serif; font-size:20px; letter-spacing:1px; color:var(–ink); margin-bottom:8px; }
 .motive-body  { font-size:12px; line-height:1.8; color:var(–muted); }
-.motive-tag {
-display:inline-block; margin-top:12px;
-font-family:‘IBM Plex Mono’,monospace; font-size:10px;
-padding:3px 10px; background:var(–red-light);
-color:var(–red); border:1px solid #e8a09a;
-border-radius:3px; letter-spacing:1px; font-weight:500;
-}
+.motive-tag { display:inline-block; margin-top:12px; font-family:‘IBM Plex Mono’,monospace; font-size:10px; padding:3px 10px; background:var(–red-light); color:var(–red); border:1px solid #e8a09a; border-radius:3px; letter-spacing:1px; font-weight:500; }
 
 /* ── TIMELINE ───────────────────────────── */
 .timeline { padding-left:30px; position:relative; }
-.tl-line {
-position:absolute; left:0; top:8px; bottom:8px;
-width:2px; background:linear-gradient(to bottom, var(–red), var(–border));
-border-radius:2px;
-}
+.tl-line { position:absolute; left:0; top:8px; bottom:8px; width:2px; background:linear-gradient(to bottom, var(–red), var(–border)); border-radius:2px; }
 .tl-item { margin-bottom:34px; position:relative; }
-.tl-dot {
-position:absolute; left:-36px; top:5px;
-width:10px; height:10px; border-radius:50%;
-background:var(–red); border:2px solid var(–bg);
-box-shadow:0 0 0 2px var(–red);
-}
+.tl-dot { position:absolute; left:-36px; top:5px; width:10px; height:10px; border-radius:50%; background:var(–red); border:2px solid var(–bg); box-shadow:0 0 0 2px var(–red); }
 .tl-year { font-family:‘IBM Plex Mono’,monospace; font-size:10px; letter-spacing:2px; color:var(–red); margin-bottom:3px; font-weight:500; }
 .tl-pct  { font-family:‘Bebas Neue’,sans-serif; font-size:30px; color:var(–ink); line-height:1.15; margin-bottom:2px; }
 .tl-text { font-size:13px; line-height:1.8; color:var(–body); max-width:660px; }
 
 /* ── CALLOUT ─────────────────────────────── */
-.callout {
-background: var(–red-light);
-border-left: 3px solid var(–red);
-border-radius: 0 5px 5px 0;
-padding: 20px 24px;
-margin-top: 24px;
-}
-.callout-label {
-font-family:‘IBM Plex Mono’,monospace;
-font-size:9px; letter-spacing:2px;
-text-transform:uppercase; color:var(–red);
-margin-bottom:7px; font-weight:600;
-}
+.callout { background: var(–red-light); border-left: 3px solid var(–red); border-radius: 0 5px 5px 0; padding: 20px 24px; margin-top: 24px; }
+.callout-label { font-family:‘IBM Plex Mono’,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(–red); margin-bottom:7px; font-weight:600; }
 .callout-body { font-size:13px; line-height:1.8; color:var(–ink); }
 
 /* ── DATA NOTE ───────────────────────────── */
-.data-note {
-margin-top:12px; font-size:11px;
-font-family:‘IBM Plex Mono’,monospace;
-color:var(–muted); line-height:1.7;
+.data-note { margin-top:12px; font-size:11px; font-family:‘IBM Plex Mono’,monospace; color:var(–muted); line-height:1.7; }
+
+/* ── REGION CARDS ───────────────────────── */
+.region-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:24px; }
+.region-card { background:var(–card); border:1px solid var(–border); border-radius:5px; padding:22px; box-shadow:0 1px 3px rgba(30,27,24,0.07); }
+.east-card { border-top:3px solid var(–red); }
+.west-card { border-top:3px solid var(–blue); }
+.city-card { border-top:3px solid var(–muted); }
+.rc-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.rc-badge { font-family:‘IBM Plex Mono’,monospace; font-size:9px; letter-spacing:2px; padding:3px 8px; border-radius:2px; font-weight:600; }
+.rc-badge.east { background:var(–red-light); color:var(–red); border:1px solid #e8a09a; }
+.rc-badge.west { background:var(–blue-light); color:var(–blue); border:1px solid #9fc3e0; }
+.rc-badge.city { background:var(–surface-alt); color:var(–muted); border:1px solid var(–border); }
+.rc-avg { font-family:‘Bebas Neue’,sans-serif; font-size:22px; color:var(–ink); }
+.rc-states { font-family:‘IBM Plex Mono’,monospace; font-size:9px; color:var(–muted); letter-spacing:0.5px; margin-bottom:10px; line-height:1.6; }
+.rc-body { font-size:12px; line-height:1.8; color:var(–body); margin-bottom:14px; }
+.rc-stats { display:flex; gap:0; border-top:1px solid var(–border); padding-top:12px; }
+.rc-stat { flex:1; text-align:center; border-right:1px solid var(–border); }
+.rc-stat:last-child { border-right:none; }
+.rc-stat-n { font-family:‘Bebas Neue’,sans-serif; font-size:17px; color:var(–ink); }
+.rc-stat-l { font-family:‘IBM Plex Mono’,monospace; font-size:9px; color:var(–muted); letter-spacing:0.5px; margin-top:2px; }
+
+/* ═══════════════════════════════════════════
+MAP SECTION STYLES
+═══════════════════════════════════════════ */
+.map-outer {
+background: var(–card);
+border: 1px solid var(–border);
+border-radius: 5px;
+overflow: hidden;
+box-shadow: 0 2px 12px rgba(30,27,24,0.09);
+display: grid;
+grid-template-columns: 1fr 300px;
 }
+.map-svg-area {
+background: #e8e0d0;
+position: relative;
+padding: 20px;
+border-right: 1px solid var(–border);
+display: flex; flex-direction: column;
+}
+.map-meta-row {
+display: flex; justify-content: space-between; align-items: flex-start;
+margin-bottom: 12px;
+}
+.map-source-note { font-family:‘IBM Plex Mono’,monospace; font-size:9px; color:var(–muted); line-height:1.6; }
+
+#germany-map { width:100%; height:auto; display:block; }
+
+/* State fill tiers — RED palette */
+.r-t5 { fill: #5a0800; }   /* 38%+      */
+.r-t4 { fill: #8f1209; }   /* 34–37.9%  */
+.r-t3 { fill: #b82c1e; }   /* 30–33.9%  */
+.r-t2 { fill: #d9776e; }   /* 20–29.9%  */
+.r-t1 { fill: #e8b0aa; }   /* 15–19.9%  */
+.r-t0 { fill: #f5deda; }   /* <15%      */
+
+.state-path {
+stroke: #f4f0e8;
+stroke-width: 1.3;
+cursor: pointer;
+transition: filter 0.12s, stroke-width 0.12s;
+}
+.state-path:hover { filter:brightness(1.12); stroke:#1e1b18; stroke-width:2; }
+.state-path.active { stroke:#1e1b18 !important; stroke-width:2.5 !important; filter:brightness(1.08); }
+
+/* Labels on map */
+.lbl-name {
+font-family:‘IBM Plex Sans’,sans-serif; font-size:10.5px; font-weight:600;
+fill:#fff; text-anchor:middle; dominant-baseline:middle;
+pointer-events:none;
+}
+.lbl-name.dk { fill:#3c1a14; }
+.lbl-pct {
+font-family:‘IBM Plex Mono’,monospace; font-size:10px; font-weight:700;
+fill:rgba(255,255,255,0.92); text-anchor:middle; dominant-baseline:middle;
+pointer-events:none;
+}
+.lbl-pct.dk { fill:#3c1a14; }
+.co-line { stroke:#5a2a20; stroke-width:0.8; fill:none; pointer-events:none; }
+.co-name { font-family:‘IBM Plex Sans’,sans-serif; font-size:10px; font-weight:600; fill:#3c1a14; text-anchor:middle; dominant-baseline:middle; pointer-events:none; }
+.co-pct  { font-family:‘IBM Plex Mono’,monospace; font-size:9.5px; font-weight:700; fill:#5a0800; text-anchor:middle; dominant-baseline:middle; pointer-events:none; }
+
+/* Legend */
+.map-legend { display:flex; align-items:center; gap:16px; margin-top:14px; flex-wrap:wrap; }
+.legend-title { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); }
+.legend-steps { display:flex; gap:0; }
+.legend-step { width:30px; height:10px; }
+.legend-step:first-child { border-radius:3px 0 0 3px; }
+.legend-step:last-child  { border-radius:0 3px 3px 0; }
+.legend-lbls { display:flex; justify-content:space-between; font-family:‘IBM Plex Mono’,monospace; font-size:8px; color:var(–muted); margin-top:3px; width:180px; }
+
+/* Map tooltip */
+#map-tt {
+position:fixed; pointer-events:none; z-index:9999;
+background:var(–ink); color:#f0ece4;
+font-family:‘IBM Plex Mono’,monospace; font-size:11px;
+padding:9px 13px; border-radius:4px;
+box-shadow:0 4px 18px rgba(0,0,0,0.3);
+line-height:1.6; display:none; white-space:nowrap;
+transform:translate(14px,-50%);
+}
+#map-tt strong { font-family:‘Bebas Neue’,sans-serif; font-size:20px; display:block; line-height:1; margin-bottom:2px; color:#ff8a7a; }
+
+/* Side panel */
+.map-panel { display:flex; flex-direction:column; overflow:hidden; }
+.mp-header { background:var(–ink); padding:18px 20px 16px; flex-shrink:0; }
+.mp-eyebrow { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:3px; text-transform:uppercase; color:rgba(240,236,228,0.4); margin-bottom:4px; }
+.mp-title { font-family:‘Bebas Neue’,sans-serif; font-size:22px; letter-spacing:1px; color:#fff; }
+
+/* Panel legend */
+.mp-legend { padding:14px 18px; border-bottom:1px solid var(–border); flex-shrink:0; }
+.mp-legend-ttl { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); margin-bottom:9px; }
+.mp-leg-row { display:flex; align-items:center; gap:8px; margin-bottom:5px; }
+.mp-leg-sw { width:18px; height:12px; border-radius:2px; border:1px solid rgba(0,0,0,0.1); flex-shrink:0; }
+.mp-leg-lbl { font-family:‘IBM Plex Mono’,monospace; font-size:10px; color:var(–body); }
+
+/* National stats */
+.mp-stats { padding:12px 18px; border-bottom:1px solid var(–border); flex-shrink:0; }
+.mp-stats-ttl { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); margin-bottom:8px; }
+.mp-stat-row { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+.mp-stat-lbl { font-size:11px; color:var(–muted); }
+.mp-stat-val { font-family:‘Bebas Neue’,sans-serif; font-size:20px; color:var(–ink); line-height:1; }
+.mp-stat-val.red { color:var(–red); }
+
+/* Default state list */
+#mp-default { flex:1; display:flex; flex-direction:column; overflow:hidden; }
+.mp-list-ttl { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); padding:10px 18px 7px; border-bottom:1px solid var(–border); flex-shrink:0; }
+.state-list { flex:1; overflow-y:auto; }
+.state-list::-webkit-scrollbar { width:3px; }
+.state-list::-webkit-scrollbar-thumb { background:var(–border); border-radius:2px; }
+.sl-row { display:flex; align-items:center; gap:8px; padding:6px 14px; border-bottom:1px solid var(–border); cursor:pointer; transition:background 0.1s; }
+.sl-row:hover { background:#fdf6f2; }
+.sl-row.active { background:var(–red-light); border-left:3px solid var(–red); }
+.sl-dot { width:7px; height:7px; border-radius:1px; flex-shrink:0; }
+.sl-name { font-family:‘IBM Plex Mono’,monospace; font-size:10px; color:var(–body); flex:1; }
+.sl-bw { width:40px; height:4px; background:var(–surface-alt); border-radius:2px; overflow:hidden; }
+.sl-bf { height:100%; border-radius:2px; }
+.sl-pct { font-family:‘Bebas Neue’,sans-serif; font-size:16px; color:var(–ink); }
+.sl-tag { font-family:‘IBM Plex Mono’,monospace; font-size:7px; letter-spacing:1px; text-transform:uppercase; padding:1px 5px; border-radius:2px; font-weight:600; flex-shrink:0; }
+.tg-e { background:var(–red-light); color:var(–red); border:1px solid #e8a09a; }
+.tg-w { background:var(–blue-light); color:var(–blue); border:1px solid #9fc3e0; }
+.tg-c { background:var(–surface-alt); color:var(–muted); border:1px solid var(–border); }
+
+/* Detail pane */
+#mp-detail { flex:1; display:none; flex-direction:column; overflow:hidden; }
+#mp-detail.vis { display:flex; }
+.dp-back { display:flex; align-items:center; gap:7px; padding:9px 16px; background:var(–surface); border-bottom:1px solid var(–border); cursor:pointer; font-family:‘IBM Plex Mono’,monospace; font-size:9px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); transition:background 0.1s; flex-shrink:0; }
+.dp-back:hover { background:var(–surface-alt); }
+.dp-hero { padding:14px 18px 12px; border-bottom:1px solid var(–border); flex-shrink:0; }
+.dp-badge { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:2px; text-transform:uppercase; padding:2px 7px; border-radius:2px; display:inline-block; margin-bottom:5px; font-weight:600; }
+.dp-name { font-family:‘Bebas Neue’,sans-serif; font-size:20px; letter-spacing:1px; color:var(–ink); line-height:1.1; margin-bottom:7px; }
+.dp-pct-row { display:flex; align-items:baseline; gap:9px; }
+.dp-pct { font-family:‘Bebas Neue’,sans-serif; font-size:46px; line-height:1; color:var(–red); }
+.dp-chg { font-family:‘IBM Plex Mono’,monospace; font-size:11px; color:var(–red); font-weight:600; }
+.dp-bars { padding:10px 18px 8px; border-bottom:1px solid var(–border); flex-shrink:0; }
+.dp-bar-ttl { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:2px; text-transform:uppercase; color:var(–muted); margin-bottom:8px; }
+.dp-bar-row { display:flex; align-items:center; gap:7px; margin-bottom:5px; }
+.dp-bar-yr { font-family:‘IBM Plex Mono’,monospace; font-size:9px; color:var(–muted); width:28px; }
+.dp-bar-outer { flex:1; height:8px; background:var(–surface-alt); border-radius:2px; overflow:hidden; }
+.dp-bar-inner { height:100%; border-radius:2px; }
+.dp-bar-pct { font-family:‘IBM Plex Mono’,monospace; font-size:10px; font-weight:600; width:36px; text-align:right; }
+.dp-grid { display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid var(–border); flex-shrink:0; }
+.dp-cell { padding:9px 14px; border-right:1px solid var(–border); }
+.dp-cell:nth-child(even) { border-right:none; }
+.dp-cell-val { font-family:‘Bebas Neue’,sans-serif; font-size:19px; color:var(–red); line-height:1; margin-bottom:1px; }
+.dp-cell-lbl { font-family:‘IBM Plex Mono’,monospace; font-size:8px; letter-spacing:1px; text-transform:uppercase; color:var(–muted); }
+.dp-ctx { padding:12px 18px; flex:1; overflow-y:auto; }
+.dp-ctx p { font-size:11.5px; line-height:1.85; color:var(–body); }
+.dp-ctx::-webkit-scrollbar { width:3px; }
+.dp-ctx::-webkit-scrollbar-thumb { background:var(–border); border-radius:2px; }
 
 /* ── FOOTER ─────────────────────────────── */
-footer {
-background: var(–ink);
-padding: 48px 80px;
-color: rgba(240,236,228,0.45);
-font-family:‘IBM Plex Mono’,monospace;
-font-size:10px; letter-spacing:0.5px; line-height:1.9;
-}
+footer { background: var(–ink); padding: 48px 80px; color: rgba(240,236,228,0.45); font-family:‘IBM Plex Mono’,monospace; font-size:10px; letter-spacing:0.5px; line-height:1.9; }
 footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
 
 /* ── RESPONSIVE ──────────────────────────── */
 @media (max-width: 960px) {
 .hero, section, footer { padding:36px 20px; }
-.triple-compare, .results-grid, .demo-grid, .motive-grid { grid-template-columns:1fr; }
+.triple-compare, .results-grid, .demo-grid, .motive-grid, .region-cards { grid-template-columns:1fr; }
 .hero-stats { grid-template-columns:1fr; }
 .hero-stat { border-right:none; border-bottom:1px solid rgba(240,236,228,0.1); padding-bottom:16px; margin-bottom:16px; }
-.map-grid { grid-template-columns:repeat(2,1fr); }
+.map-outer { grid-template-columns:1fr; }
+.map-svg-area { border-right:none; border-bottom:1px solid var(–border); }
 }
 </style>
 
@@ -624,118 +526,93 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
     <table>
       <thead>
         <tr>
-          <th>State</th>
-          <th>2021 %</th>
-          <th>2025 %</th>
-          <th>Change</th>
-          <th>Visual</th>
-          <th>2026 Poll Est.</th>
+          <th>State</th><th>2021 %</th><th>2025 %</th><th>Change</th><th>Visual</th><th>2026 Poll Est.</th>
         </tr>
       </thead>
       <tbody>
         <tr class="row-east">
           <td class="state-name">Thuringia <span class="region-tag tag-east">EAST</span></td>
-          <td class="pct-cell lower">25.8%</td>
-          <td class="pct-cell high">38.5%</td>
+          <td class="pct-cell lower">25.8%</td><td class="pct-cell high">38.5%</td>
           <td class="change-up">↑ +12.7</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:97%;background:var(--red);display:block;"></span></span></td>
           <td class="pct-cell high">~39%</td>
         </tr>
         <tr class="row-east">
           <td class="state-name">Saxony-Anhalt <span class="region-tag tag-east">EAST</span></td>
-          <td class="pct-cell lower">25.5%</td>
-          <td class="pct-cell high">36.2%</td>
+          <td class="pct-cell lower">25.5%</td><td class="pct-cell high">36.2%</td>
           <td class="change-up">↑ +10.7</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:91%;background:var(--red);display:block;"></span></span></td>
           <td class="pct-cell high">~39–40%</td>
         </tr>
         <tr class="row-east">
           <td class="state-name">Saxony <span class="region-tag tag-east">EAST</span></td>
-          <td class="pct-cell lower">25.9%</td>
-          <td class="pct-cell high">35.2%</td>
+          <td class="pct-cell lower">25.9%</td><td class="pct-cell high">35.2%</td>
           <td class="change-up">↑ +9.3</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:89%;background:var(--red);display:block;"></span></span></td>
           <td class="pct-cell mid-high">~34%</td>
         </tr>
         <tr class="row-east">
           <td class="state-name">Mecklenburg-Vorp. <span class="region-tag tag-east">EAST</span></td>
-          <td class="pct-cell lower">21.8%</td>
-          <td class="pct-cell high">34.5%</td>
+          <td class="pct-cell lower">21.8%</td><td class="pct-cell high">34.5%</td>
           <td class="change-up">↑ +12.7</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:87%;background:var(--red);display:block;"></span></span></td>
           <td class="pct-cell high">~38%</td>
         </tr>
         <tr class="row-east">
           <td class="state-name">Brandenburg <span class="region-tag tag-east">EAST</span></td>
-          <td class="pct-cell lower">19.9%</td>
-          <td class="pct-cell high">32.5%</td>
+          <td class="pct-cell lower">19.9%</td><td class="pct-cell high">32.5%</td>
           <td class="change-up">↑ +12.6</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:82%;background:var(--red);display:block;"></span></span></td>
           <td class="pct-cell mid-high">~34%</td>
         </tr>
         <tr class="row-west">
           <td class="state-name">Saarland <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">11.1%</td>
-          <td class="pct-cell mid-high">21.6%</td>
+          <td class="pct-cell lower">11.1%</td><td class="pct-cell mid-high">21.6%</td>
           <td class="change-up">↑ +10.5</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:55%;background:var(--amber);display:block;"></span></span></td>
           <td class="pct-cell lower">—</td>
         </tr>
         <tr class="row-west">
           <td class="state-name">Rhineland-Palatinate <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">9.8%</td>
-          <td class="pct-cell mid-high">20.1%</td>
+          <td class="pct-cell lower">9.8%</td><td class="pct-cell mid-high">20.1%</td>
           <td class="change-up">↑ +10.3</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:51%;background:var(--amber);display:block;"></span></span></td>
           <td class="pct-cell mid-high">~19–22%</td>
         </tr>
         <tr class="row-west">
           <td class="state-name">North Rhine-Westphalia <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">8.1%</td>
-          <td class="pct-cell lower">17.2%</td>
+          <td class="pct-cell lower">8.1%</td><td class="pct-cell lower">17.2%</td>
           <td class="change-up">↑ +9.1</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:43%;background:#c0985a;display:block;"></span></span></td>
           <td class="pct-cell lower">~19%</td>
         </tr>
         <tr class="row-west">
           <td class="state-name">Hesse <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">9.4%</td>
-          <td class="pct-cell lower">17.8%</td>
+          <td class="pct-cell lower">9.4%</td><td class="pct-cell lower">17.8%</td>
           <td class="change-up">↑ +8.4</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:45%;background:#c0985a;display:block;"></span></span></td>
           <td class="pct-cell lower">~20%</td>
         </tr>
         <tr class="row-west">
           <td class="state-name">Baden-Württemberg <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">10.2%</td>
-          <td class="pct-cell lower">17.7%</td>
+          <td class="pct-cell lower">10.2%</td><td class="pct-cell lower">17.7%</td>
           <td class="change-up">↑ +7.5</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:45%;background:#c0985a;display:block;"></span></span></td>
           <td class="pct-cell lower">~21%</td>
         </tr>
         <tr class="row-west">
           <td class="state-name">Bavaria <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">7.7%</td>
-          <td class="pct-cell lower">15.5%</td>
+          <td class="pct-cell lower">7.7%</td><td class="pct-cell lower">15.5%</td>
           <td class="change-up">↑ +7.8</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:39%;background:#a09898;display:block;"></span></span></td>
           <td class="pct-cell lower">—</td>
         </tr>
         <tr class="row-west">
-          <td class="state-name">Berlin <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">8.4% (W) / 20.5% (E)</td>
-          <td class="pct-cell lower">16.4%</td>
-          <td class="change-up">↑ mixed</td>
-          <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:41%;background:#a09898;display:block;"></span></span></td>
-          <td class="pct-cell lower">~16%</td>
-        </tr>
-        <tr class="row-west">
           <td class="state-name">Hamburg <span class="region-tag tag-west">WEST</span></td>
-          <td class="pct-cell lower">6.1%</td>
-          <td class="pct-cell lower">12.5%</td>
+          <td class="pct-cell lower">6.1%</td><td class="pct-cell lower">12.5%</td>
           <td class="change-up">↑ +6.4</td>
           <td><span class="mini-bar-wrap"><span class="mini-bar" style="width:31%;background:#a09898;display:block;"></span></span></td>
-          <td class="pct-cell lower">~7.5%</td>
+          <td class="pct-cell lower">~11%</td>
         </tr>
       </tbody>
     </table>
@@ -743,34 +620,287 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
   <p class="data-note">Sources: Federal Returning Officer · Wikipedia results data · PolitPro poll trend (2026). State-level 2025 figures are second-vote shares from final federal returns by Land.</p>
 </section>
 
-<!-- 04 · HEAT MAP -->
+<!-- 04 · CHOROPLETH MAP -->
 
 <section>
-  <div class="section-label">04 · Intensity Heat Map</div>
-  <h2>AfD SUPPORT BY STATE — 2025</h2>
-  <p class="lead">All 16 states colour-coded by AfD intensity. Eastern Germany represents a categorically different political landscape.</p>
-  <div class="map-grid">
-    <div class="state-card h4"><div class="sc-name">Thuringia</div><div class="sc-pct t4">38.5%</div><div class="sc-sub">Highest nationally · East</div></div>
-    <div class="state-card h4"><div class="sc-name">Saxony-Anhalt</div><div class="sc-pct t4">36.2%</div><div class="sc-sub">2nd highest · East</div></div>
-    <div class="state-card h4"><div class="sc-name">Saxony</div><div class="sc-pct t4">35.2%</div><div class="sc-sub">1st place in state · East</div></div>
-    <div class="state-card h4"><div class="sc-name">Mecklenburg-Vorp.</div><div class="sc-pct t4">34.5%</div><div class="sc-sub">4th highest · East</div></div>
-    <div class="state-card h3"><div class="sc-name">Brandenburg</div><div class="sc-pct t3">32.5%</div><div class="sc-sub">Lowest East German state</div></div>
-    <div class="state-card h3"><div class="sc-name">Saarland</div><div class="sc-pct t3">21.6%</div><div class="sc-sub">Strongest in the West</div></div>
-    <div class="state-card h3"><div class="sc-name">Rhineland-Palat.</div><div class="sc-pct t3">20.1%</div><div class="sc-sub">2nd strongest West result</div></div>
-    <div class="state-card h2"><div class="sc-name">Hesse</div><div class="sc-pct t2">17.8%</div><div class="sc-sub">Western state</div></div>
-    <div class="state-card h2"><div class="sc-name">NRW</div><div class="sc-pct t2">17.2%</div><div class="sc-sub">Most populous state</div></div>
-    <div class="state-card h2"><div class="sc-name">Lower Saxony</div><div class="sc-pct t2">17.0%</div><div class="sc-sub">Western state</div></div>
-    <div class="state-card h2"><div class="sc-name">Berlin</div><div class="sc-pct t2">16.4%</div><div class="sc-sub">City-state</div></div>
-    <div class="state-card h2"><div class="sc-name">Bavaria</div><div class="sc-pct t2">15.5%</div><div class="sc-sub">CSU stronghold</div></div>
-    <div class="state-card h1"><div class="sc-name">Baden-Württemberg</div><div class="sc-pct t1">14.2%</div><div class="sc-sub">Greens traditionally strong</div></div>
-    <div class="state-card h1"><div class="sc-name">Schleswig-Holstein</div><div class="sc-pct t1">14.0%</div><div class="sc-sub">Northernmost state</div></div>
-    <div class="state-card h1"><div class="sc-name">Hamburg</div><div class="sc-pct t1">12.5%</div><div class="sc-sub">Metropolitan city-state</div></div>
-    <div class="state-card h1" style="display:flex;flex-direction:column;justify-content:flex-end;">
-      <div class="legend">
-        <div class="legend-item"><div class="legend-dot" style="background:#fce8e6;border-color:#e8a09a;"></div>30%+ Dominant</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#fdf2ef;border-color:#ecc0b8;"></div>20–30% Strong</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#fdf7f4;border-color:#ddd4cc;"></div>15–20% Growing</div>
-        <div class="legend-item"><div class="legend-dot" style="background:#f9f8f5;border-color:#cdc8c0;"></div>&lt;15% Below avg.</div>
+  <div class="section-label">04 · Geographic Distribution</div>
+  <h2>AfD SUPPORT MAP — 2025</h2>
+  <p class="lead">State names and vote shares plotted directly on the map. Click any state for detailed results and regional context. Deep red eastern states represent a fundamentally different political landscape.</p>
+
+  <div class="map-outer">
+    <!-- SVG MAP -->
+    <div class="map-svg-area">
+      <div class="map-meta-row">
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div class="legend-title">AfD Vote Share 2025</div>
+          <div class="legend-steps">
+            <div class="legend-step" style="background:#f5deda;"></div>
+            <div class="legend-step" style="background:#e8b0aa;"></div>
+            <div class="legend-step" style="background:#d9776e;"></div>
+            <div class="legend-step" style="background:#b82c1e;"></div>
+            <div class="legend-step" style="background:#8f1209;"></div>
+            <div class="legend-step" style="background:#5a0800;"></div>
+          </div>
+          <div class="legend-lbls"><span>&lt;15%</span><span>20%</span><span>28%</span><span>34%</span><span>38%+</span></div>
+        </div>
+        <div class="map-source-note">Bundeswahlleiterin.de<br>Feb 23, 2025</div>
+      </div>
+
+```
+  <svg id="germany-map" viewBox="0 0 560 640" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Schleswig-Holstein 14.2% -->
+    <path id="SH" data-state="SH" class="state-path r-t0"
+      d="M 196 30 L 208 22 L 224 15 L 240 12 L 256 13 L 268 20 L 272 30 L 268 40 L 260 50 L 250 58 L 238 64 L 226 66 L 214 64 L 202 56 L 192 46 L 190 36 Z"/>
+
+    <!-- Hamburg 12.5% -->
+    <path id="HH" data-state="HH" class="state-path r-t0"
+      d="M 226 66 L 238 64 L 244 70 L 246 80 L 242 88 L 234 90 L 226 88 L 220 82 L 220 72 Z"/>
+
+    <!-- Mecklenburg-Vorpommern 34.5% -->
+    <path id="MV" data-state="MV" class="state-path r-t3"
+      d="M 260 26 L 278 20 L 300 15 L 324 13 L 348 14 L 370 18 L 392 24 L 410 32 L 420 44 L 416 56 L 404 64 L 386 70 L 362 74 L 338 76 L 314 76 L 292 74 L 272 68 L 260 62 L 252 54 L 252 42 Z"/>
+
+    <!-- Brandenburg 32.5% -->
+    <path id="BB" data-state="BB" class="state-path r-t3"
+      d="M 280 74 L 302 74 L 324 74 L 348 72 L 370 68 L 380 80 L 386 94 L 384 110 L 376 126 L 364 138 L 350 146 L 334 150 L 316 150 L 300 144 L 286 132 L 276 118 L 270 104 L 270 90 Z"/>
+
+    <!-- Berlin 16.4% -->
+    <path id="BE" data-state="BE" class="state-path r-t1"
+      d="M 318 108 L 326 106 L 332 112 L 330 120 L 322 124 L 314 120 L 312 112 Z"/>
+
+    <!-- Lower Saxony 17.0% -->
+    <path id="NI" data-state="NI" class="state-path r-t1"
+      d="M 98 68 L 122 60 L 148 52 L 174 48 L 196 46 L 216 50 L 230 58 L 232 68 L 228 80 L 220 94 L 208 106 L 192 116 L 174 122 L 154 124 L 134 120 L 116 112 L 102 100 L 92 88 L 90 76 Z"/>
+
+    <!-- Bremen 12.8% -->
+    <path id="HB" data-state="HB" class="state-path r-t0"
+      d="M 160 106 L 170 104 L 174 112 L 172 120 L 162 122 L 156 116 L 156 110 Z"/>
+
+    <!-- Saxony-Anhalt 36.2% -->
+    <path id="ST" data-state="ST" class="state-path r-t4"
+      d="M 228 90 L 236 88 L 246 88 L 258 90 L 268 92 L 274 106 L 278 122 L 272 134 L 260 142 L 246 146 L 232 144 L 220 136 L 212 124 L 210 112 L 216 102 Z"/>
+
+    <!-- Saxony 35.2% -->
+    <path id="SN" data-state="SN" class="state-path r-t4"
+      d="M 286 136 L 300 146 L 316 152 L 334 154 L 350 150 L 362 140 L 372 154 L 368 168 L 356 180 L 340 188 L 322 190 L 304 184 L 290 172 L 282 158 L 282 144 Z"/>
+
+    <!-- Thuringia 38.5% -->
+    <path id="TH" data-state="TH" class="state-path r-t5"
+      d="M 212 138 L 230 146 L 246 150 L 260 146 L 274 138 L 284 150 L 282 164 L 274 176 L 258 182 L 242 182 L 226 174 L 216 162 L 212 150 Z"/>
+
+    <!-- North Rhine-Westphalia 17.2% -->
+    <path id="NW" data-state="NW" class="state-path r-t1"
+      d="M 74 124 L 92 112 L 112 106 L 132 102 L 152 104 L 168 110 L 184 114 L 200 116 L 212 122 L 216 134 L 212 146 L 200 158 L 184 164 L 166 166 L 148 162 L 132 154 L 116 144 L 100 134 L 86 126 Z"/>
+
+    <!-- Hesse 17.8% -->
+    <path id="HE" data-state="HE" class="state-path r-t1"
+      d="M 198 120 L 210 124 L 218 134 L 220 148 L 216 160 L 206 168 L 196 170 L 186 168 L 180 160 L 184 150 L 194 138 Z"/>
+
+    <!-- Rhineland-Palatinate 20.1% -->
+    <path id="RP" data-state="RP" class="state-path r-t2"
+      d="M 90 150 L 106 140 L 122 148 L 138 156 L 154 162 L 170 166 L 186 164 L 196 174 L 192 190 L 182 202 L 166 210 L 150 208 L 134 200 L 118 188 L 104 176 Z"/>
+
+    <!-- Saarland 21.6% -->
+    <path id="SL" data-state="SL" class="state-path r-t2"
+      d="M 150 208 L 166 210 L 170 220 L 162 228 L 150 226 L 142 218 L 142 212 Z"/>
+
+    <!-- Baden-Württemberg 17.7% -->
+    <path id="BW" data-state="BW" class="state-path r-t1"
+      d="M 166 210 L 182 202 L 196 196 L 210 200 L 220 214 L 224 234 L 222 256 L 214 276 L 202 290 L 186 298 L 168 296 L 154 284 L 146 268 L 142 250 L 142 230 L 150 220 Z"/>
+
+    <!-- Bavaria 15.5% -->
+    <path id="BY" data-state="BY" class="state-path r-t0"
+      d="M 222 170 L 234 174 L 248 180 L 264 184 L 282 168 L 284 154 L 292 174 L 306 186 L 322 192 L 340 190 L 358 182 L 370 170 L 376 156 L 380 170 L 376 188 L 368 208 L 356 226 L 342 244 L 324 260 L 302 272 L 278 278 L 256 274 L 238 264 L 226 250 L 220 234 L 218 216 L 220 198 L 220 182 Z"/>
+
+    <!-- ═══ LABELS ON MAP ═══ -->
+    <g pointer-events="none">
+      <!-- Mecklenburg-Vorpommern -->
+      <text class="lbl-name" x="336" y="40">Mecklenburg-</text>
+      <text class="lbl-name" x="336" y="54">Vorpommern</text>
+      <text class="lbl-pct"  x="336" y="67">34.5%</text>
+
+      <!-- Schleswig-Holstein -->
+      <text class="lbl-name" x="228" y="36">Schleswig-</text>
+      <text class="lbl-name" x="228" y="48">Holstein</text>
+      <text class="lbl-pct dk" x="228" y="59">14.2%</text>
+
+      <!-- Lower Saxony -->
+      <text class="lbl-name dk" x="160" y="84">Lower</text>
+      <text class="lbl-name dk" x="160" y="96">Saxony</text>
+      <text class="lbl-pct dk" x="160" y="108">17.0%</text>
+
+      <!-- Brandenburg -->
+      <text class="lbl-name" x="328" y="108">Brandenburg</text>
+      <text class="lbl-pct"  x="328" y="121">32.5%</text>
+
+      <!-- Saxony-Anhalt -->
+      <text class="lbl-name" x="244" y="110">Saxony-</text>
+      <text class="lbl-name" x="244" y="122">Anhalt</text>
+      <text class="lbl-pct"  x="244" y="134">36.2%</text>
+
+      <!-- Saxony -->
+      <text class="lbl-name" x="326" y="162">Saxony</text>
+      <text class="lbl-pct"  x="326" y="175">35.2%</text>
+
+      <!-- Thuringia -->
+      <text class="lbl-name" x="247" y="157">Thuringia</text>
+      <text class="lbl-pct"  x="247" y="170">38.5%</text>
+
+      <!-- North Rhine-Westphalia -->
+      <text class="lbl-name dk" x="142" y="130">North Rhine-</text>
+      <text class="lbl-name dk" x="142" y="142">Westphalia</text>
+      <text class="lbl-pct dk" x="142" y="154">17.2%</text>
+
+      <!-- Hesse -->
+      <text class="lbl-name dk" x="204" y="142">Hesse</text>
+      <text class="lbl-pct dk" x="204" y="154">17.8%</text>
+
+      <!-- Rhineland-Palatinate -->
+      <text class="lbl-name dk" x="140" y="174">Rhineland-</text>
+      <text class="lbl-name dk" x="140" y="186">Palatinate</text>
+      <text class="lbl-pct dk" x="140" y="197">20.1%</text>
+
+      <!-- Baden-Württemberg -->
+      <text class="lbl-name dk" x="184" y="248">Baden-</text>
+      <text class="lbl-name dk" x="184" y="260">Württemberg</text>
+      <text class="lbl-pct dk" x="184" y="272">17.7%</text>
+
+      <!-- Bavaria -->
+      <text class="lbl-name dk" x="298" y="228">Bavaria</text>
+      <text class="lbl-pct dk" x="298" y="241">15.5%</text>
+
+      <!-- CALLOUTS for small states -->
+      <!-- Hamburg -->
+      <line class="co-line" x1="236" y1="76" x2="204" y2="22"/>
+      <text class="co-name" x="196" y="14">Hamburg</text>
+      <text class="co-pct"  x="196" y="25">12.5%</text>
+
+      <!-- Bremen -->
+      <line class="co-line" x1="164" y1="113" x2="128" y2="138"/>
+      <text class="co-name" x="108" y="136">Bremen</text>
+      <text class="co-pct"  x="108" y="148">12.8%</text>
+
+      <!-- Berlin -->
+      <line class="co-line" x1="328" y1="116" x2="428" y2="100"/>
+      <text class="co-name" x="450" y="96">Berlin</text>
+      <text class="co-pct"  x="450" y="107">16.4%</text>
+
+      <!-- Saarland -->
+      <line class="co-line" x1="154" y1="218" x2="116" y2="240"/>
+      <text class="co-name" x="98" y="238">Saarland</text>
+      <text class="co-pct"  x="98" y="250">21.6%</text>
+    </g>
+  </svg>
+</div>
+
+<!-- SIDE PANEL -->
+<div class="map-panel">
+  <div class="mp-header">
+    <div class="mp-eyebrow">Federal Election · Feb 23, 2025</div>
+    <div class="mp-title">AfD by State</div>
+  </div>
+  <div class="mp-legend">
+    <div class="mp-legend-ttl">Scale</div>
+    <div class="mp-leg-row"><div class="mp-leg-sw" style="background:#5a0800;"></div><span class="mp-leg-lbl">38%+ · Dominant East</span></div>
+    <div class="mp-leg-row"><div class="mp-leg-sw" style="background:#8f1209;"></div><span class="mp-leg-lbl">34 – 37.9%</span></div>
+    <div class="mp-leg-row"><div class="mp-leg-sw" style="background:#b82c1e;"></div><span class="mp-leg-lbl">30 – 33.9%</span></div>
+    <div class="mp-leg-row"><div class="mp-leg-sw" style="background:#d9776e;"></div><span class="mp-leg-lbl">20 – 29.9%</span></div>
+    <div class="mp-leg-row"><div class="mp-leg-sw" style="background:#e8b0aa;"></div><span class="mp-leg-lbl">15 – 19.9%</span></div>
+    <div class="mp-leg-row"><div class="mp-leg-sw" style="background:#f5deda;"></div><span class="mp-leg-lbl">&lt;15%</span></div>
+  </div>
+  <div class="mp-stats">
+    <div class="mp-stats-ttl">National figures</div>
+    <div class="mp-stat-row"><span class="mp-stat-lbl">2021 result</span><span class="mp-stat-val">10.4%</span></div>
+    <div class="mp-stat-row"><span class="mp-stat-lbl">2025 result</span><span class="mp-stat-val red">20.8%</span></div>
+    <div class="mp-stat-row"><span class="mp-stat-lbl">East avg</span><span class="mp-stat-val red">35.4%</span></div>
+    <div class="mp-stat-row"><span class="mp-stat-lbl">West avg</span><span class="mp-stat-val">17.1%</span></div>
+  </div>
+  <div id="mp-default">
+    <div class="mp-list-ttl">All states · ranked by result</div>
+    <div class="state-list" id="state-list"></div>
+  </div>
+  <div id="mp-detail">
+    <div class="dp-back" id="dp-back">← All states</div>
+    <div class="dp-hero">
+      <div id="dp-badge" class="dp-badge"></div>
+      <div id="dp-name" class="dp-name"></div>
+      <div class="dp-pct-row">
+        <div id="dp-pct" class="dp-pct"></div>
+        <div id="dp-chg" class="dp-chg"></div>
+      </div>
+    </div>
+    <div class="dp-bars">
+      <div class="dp-bar-ttl">2021 → 2025 → 2026 poll</div>
+      <div class="dp-bar-row">
+        <div class="dp-bar-yr">2021</div>
+        <div class="dp-bar-outer"><div id="b21" class="dp-bar-inner" style="background:#c0a090;"></div></div>
+        <div id="v21" class="dp-bar-pct" style="color:var(--muted);"></div>
+      </div>
+      <div class="dp-bar-row">
+        <div class="dp-bar-yr">2025</div>
+        <div class="dp-bar-outer"><div id="b25" class="dp-bar-inner" style="background:var(--red);"></div></div>
+        <div id="v25" class="dp-bar-pct" style="color:var(--red);"></div>
+      </div>
+      <div class="dp-bar-row">
+        <div class="dp-bar-yr">2026↗</div>
+        <div class="dp-bar-outer"><div id="b26" class="dp-bar-inner" style="background:#d9776e;opacity:0.7;"></div></div>
+        <div id="v26" class="dp-bar-pct" style="color:var(--muted);font-size:9px;"></div>
+      </div>
+    </div>
+    <div class="dp-grid">
+      <div class="dp-cell"><div id="dg-rank" class="dp-cell-val"></div><div class="dp-cell-lbl">Rank / 16</div></div>
+      <div class="dp-cell"><div id="dg-gain" class="dp-cell-val"></div><div class="dp-cell-lbl">Pts gained</div></div>
+      <div class="dp-cell"><div id="dg-ravg" class="dp-cell-val"></div><div class="dp-cell-lbl">Region avg</div></div>
+      <div class="dp-cell"><div id="dg-vnat" class="dp-cell-val"></div><div class="dp-cell-lbl">Vs national</div></div>
+    </div>
+    <div class="dp-ctx"><p id="dp-ctx-text"></p></div>
+  </div>
+</div>
+```
+
+  </div>
+
+  <!-- REGIONAL ANALYSIS CARDS -->
+
+  <div class="region-cards">
+    <div class="region-card east-card">
+      <div class="rc-header">
+        <div class="rc-badge east">EAST GERMANY</div>
+        <div class="rc-avg">Ø 35.4%</div>
+      </div>
+      <div class="rc-states">Thuringia · Saxony-Anhalt · Saxony · Mecklenburg-Vorp. · Brandenburg</div>
+      <p class="rc-body">The former East Germany is AfD's electoral heartland. In all five eastern states the party was the single largest force in 2025, averaging over 35% — nearly double the national result. Structural roots: higher unemployment, lower wages, deindustrialisation, and a post-reunification identity of being culturally "left behind."</p>
+      <div class="rc-stats">
+        <div class="rc-stat"><div class="rc-stat-n">32.5–38.5%</div><div class="rc-stat-l">Range in 2025</div></div>
+        <div class="rc-stat"><div class="rc-stat-n">+12pts</div><div class="rc-stat-l">Avg gain vs 2021</div></div>
+        <div class="rc-stat"><div class="rc-stat-n">~39%</div><div class="rc-stat-l">2026 poll avg</div></div>
+      </div>
+    </div>
+    <div class="region-card west-card">
+      <div class="rc-header">
+        <div class="rc-badge west">WEST GERMANY</div>
+        <div class="rc-avg">Ø 17.1%</div>
+      </div>
+      <div class="rc-states">NRW · Bavaria · Baden-Württemberg · Hesse · Lower Saxony · Rhineland-Palatinate · Saarland · Schleswig-Holstein</div>
+      <p class="rc-body">AfD more than doubled its vote nearly everywhere in the west, yet still sits below the national east-west divide. Strongest western results in Saarland (21.6%) and Rhineland-Palatinate (20.1%). The party is no longer just a regional eastern phenomenon.</p>
+      <div class="rc-stats">
+        <div class="rc-stat"><div class="rc-stat-n">12.5–21.6%</div><div class="rc-stat-l">Range in 2025</div></div>
+        <div class="rc-stat"><div class="rc-stat-n">+8.5pts</div><div class="rc-stat-l">Avg gain vs 2021</div></div>
+        <div class="rc-stat"><div class="rc-stat-n">~19%</div><div class="rc-stat-l">2026 poll avg</div></div>
+      </div>
+    </div>
+    <div class="region-card city-card">
+      <div class="rc-header">
+        <div class="rc-badge city">CITY-STATES</div>
+        <div class="rc-avg">Ø 13.8%</div>
+      </div>
+      <div class="rc-states">Berlin · Hamburg · Bremen</div>
+      <p class="rc-body">Germany's three city-states register the lowest AfD support. Dense, diverse, and educated urban electorates have consistently resisted far-right politics. Berlin is split: west Berlin returns ~8–10%, while former east Berlin gives AfD over 20%, reflecting the broader East–West cleavage within a single city.</p>
+      <div class="rc-stats">
+        <div class="rc-stat"><div class="rc-stat-n">12.5–16.4%</div><div class="rc-stat-l">Range in 2025</div></div>
+        <div class="rc-stat"><div class="rc-stat-n">+7pts</div><div class="rc-stat-l">Avg gain vs 2021</div></div>
+        <div class="rc-stat"><div class="rc-stat-n">~15%</div><div class="rc-stat-l">2026 poll avg</div></div>
       </div>
     </div>
   </div>
@@ -785,120 +915,40 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
   <div class="demo-grid">
     <div class="demo-card">
       <h3>By Age Group — 2025 Federal Election</h3>
-      <div class="demo-row">
-        <div class="demo-label">18–24</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:53%;background:var(--amber);"></div></div>
-        <div class="demo-pct" style="color:var(--amber);">21%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">25–34</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:53%;background:var(--amber);"></div></div>
-        <div class="demo-pct" style="color:var(--amber);">~21%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">30–44</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:65%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">26%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">45–59</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:60%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">~24%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">60+</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:38%;background:#a09898;"></div></div>
-        <div class="demo-pct" style="color:var(--muted);">~15%</div>
-      </div>
+      <div class="demo-row"><div class="demo-label">18–24</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:53%;background:var(--amber);"></div></div><div class="demo-pct" style="color:var(--amber);">21%</div></div>
+      <div class="demo-row"><div class="demo-label">25–34</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:53%;background:var(--amber);"></div></div><div class="demo-pct" style="color:var(--amber);">~21%</div></div>
+      <div class="demo-row"><div class="demo-label">30–44</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:65%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">26%</div></div>
+      <div class="demo-row"><div class="demo-label">45–59</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:60%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">~24%</div></div>
+      <div class="demo-row"><div class="demo-label">60+</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:38%;background:#a09898;"></div></div><div class="demo-pct" style="color:var(--muted);">~15%</div></div>
       <div class="demo-note">30–44 year-olds are the strongest cohort.<br>Among 18–24, support rose +14 pts vs 2021.<br>40% of all 2025 voters were aged 60+.</div>
     </div>
     <div class="demo-card">
       <h3>By Gender — 2024 / 2025 Data</h3>
       <div class="demo-sub">Men</div>
-      <div class="demo-row">
-        <div class="demo-label">18–29 Men</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:63%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">25%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">30–44 Men</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:58%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">23%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">45–59 Men</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:63%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">25%</div>
-      </div>
+      <div class="demo-row"><div class="demo-label">18–29 Men</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:63%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">25%</div></div>
+      <div class="demo-row"><div class="demo-label">30–44 Men</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:58%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">23%</div></div>
+      <div class="demo-row"><div class="demo-label">45–59 Men</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:63%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">25%</div></div>
       <div class="demo-sub" style="margin-top:18px;">Women</div>
-      <div class="demo-row">
-        <div class="demo-label">18–29 Women</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:35%;background:#a09898;"></div></div>
-        <div class="demo-pct" style="color:var(--muted);">14%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">30–44 Women</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:38%;background:#a09898;"></div></div>
-        <div class="demo-pct" style="color:var(--muted);">15%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">45–59 Women</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:30%;background:#a09898;"></div></div>
-        <div class="demo-pct" style="color:var(--muted);">12%</div>
-      </div>
+      <div class="demo-row"><div class="demo-label">18–29 Women</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:35%;background:#a09898;"></div></div><div class="demo-pct" style="color:var(--muted);">14%</div></div>
+      <div class="demo-row"><div class="demo-label">30–44 Women</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:38%;background:#a09898;"></div></div><div class="demo-pct" style="color:var(--muted);">15%</div></div>
+      <div class="demo-row"><div class="demo-label">45–59 Women</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:30%;background:#a09898;"></div></div><div class="demo-pct" style="color:var(--muted);">12%</div></div>
       <div class="demo-note">Men vote AfD at nearly double the rate of women in younger cohorts. Among 18–24 men: 25%; women: 14%.</div>
     </div>
     <div class="demo-card">
       <h3>By Education Level</h3>
-      <div class="demo-row">
-        <div class="demo-label">No Abitur</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:72%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">High</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">Vocational</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:65%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">High</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">Abitur</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:44%;background:var(--amber);"></div></div>
-        <div class="demo-pct" style="color:var(--amber);">Mid</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">University</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:26%;background:#a09898;"></div></div>
-        <div class="demo-pct" style="color:var(--muted);">Low</div>
-      </div>
+      <div class="demo-row"><div class="demo-label">No Abitur</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:72%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">High</div></div>
+      <div class="demo-row"><div class="demo-label">Vocational</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:65%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">High</div></div>
+      <div class="demo-row"><div class="demo-label">Abitur</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:44%;background:var(--amber);"></div></div><div class="demo-pct" style="color:var(--amber);">Mid</div></div>
+      <div class="demo-row"><div class="demo-label">University</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:26%;background:#a09898;"></div></div><div class="demo-pct" style="color:var(--muted);">Low</div></div>
       <div class="demo-note">Education gap is ~10 pts between lower and higher educated voters. This gap is widening in younger cohorts, especially in eastern Germany.</div>
     </div>
     <div class="demo-card">
       <h3>By Geography</h3>
-      <div class="demo-row">
-        <div class="demo-label">East Germany</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:100%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">32%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">West Germany</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:56%;background:var(--amber);"></div></div>
-        <div class="demo-pct" style="color:var(--amber);">18%</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">Rural areas</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:78%;background:var(--red);"></div></div>
-        <div class="demo-pct" style="color:var(--red);">High</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">Urban centres</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:32%;background:#a09898;"></div></div>
-        <div class="demo-pct" style="color:var(--muted);">Low</div>
-      </div>
-      <div class="demo-row">
-        <div class="demo-label">Former non-voters</div>
-        <div class="demo-bar-wrap"><div class="demo-bar" style="width:55%;background:var(--amber);"></div></div>
-        <div class="demo-pct" style="color:var(--amber);">~22%</div>
-      </div>
+      <div class="demo-row"><div class="demo-label">East Germany</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:100%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">32%</div></div>
+      <div class="demo-row"><div class="demo-label">West Germany</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:56%;background:var(--amber);"></div></div><div class="demo-pct" style="color:var(--amber);">18%</div></div>
+      <div class="demo-row"><div class="demo-label">Rural areas</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:78%;background:var(--red);"></div></div><div class="demo-pct" style="color:var(--red);">High</div></div>
+      <div class="demo-row"><div class="demo-label">Urban centres</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:32%;background:#a09898;"></div></div><div class="demo-pct" style="color:var(--muted);">Low</div></div>
+      <div class="demo-row"><div class="demo-label">Former non-voters</div><div class="demo-bar-wrap"><div class="demo-bar" style="width:55%;background:var(--amber);"></div></div><div class="demo-pct" style="color:var(--amber);">~22%</div></div>
       <div class="demo-note">Rural–urban divide highly significant. Strong mobilization of former abstainers. Young men in rural East = core growth constituency.</div>
     </div>
   </div>
@@ -910,42 +960,12 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
   <div class="section-label">06 · Why People Vote AfD</div>
   <h2>KEY VOTER MOTIVATIONS</h2>
   <div class="motive-grid">
-    <div class="motive-card">
-      <div class="motive-icon">🚫</div>
-      <div class="motive-title">Immigration</div>
-      <div class="motive-body">Anti-immigration remains the AfD's signature issue. The party advocates strict border controls and deportations. 41% of young Germans (14–29) cited immigration as a top concern in 2024 studies.</div>
-      <div class="motive-tag">#1 Issue</div>
-    </div>
-    <div class="motive-card">
-      <div class="motive-icon">💸</div>
-      <div class="motive-title">Economic Anxiety</div>
-      <div class="motive-body">Cost-of-living pressures, energy costs, and deindustrialization hit eastern Germany hardest. AfD surged amid the collapse of the SPD-led coalition and growing mainstream discontent.</div>
-      <div class="motive-tag">#2 Issue</div>
-    </div>
-    <div class="motive-card">
-      <div class="motive-icon">🗳️</div>
-      <div class="motive-title">Protest / Veto Vote</div>
-      <div class="motive-body">Over 100,000 voters switched from Die Linke to AfD in 2025 — a "veto vote" against the establishment. The party has never been in federal government, making it a credible anti-system choice.</div>
-      <div class="motive-tag">~30–40% of voters</div>
-    </div>
-    <div class="motive-card">
-      <div class="motive-icon">🏛️</div>
-      <div class="motive-title">EU Scepticism</div>
-      <div class="motive-body">AfD advocates reducing EU competences and returning power to nation-states. Alice Weidel has called for dismantling the EU "superstructure." The party aligns with Orbán's Hungary in the EP.</div>
-      <div class="motive-tag">Core Policy</div>
-    </div>
-    <div class="motive-card">
-      <div class="motive-icon">📱</div>
-      <div class="motive-title">Social Media Reach</div>
-      <div class="motive-body">Weidel's TikTok and YouTube presence attracted young voters. The new "Generation Deutschland" youth wing launched in late 2025 institutionalizes this digital outreach strategy.</div>
-      <div class="motive-tag">Youth Driver</div>
-    </div>
-    <div class="motive-card">
-      <div class="motive-icon">🧭</div>
-      <div class="motive-title">Eastern Identity</div>
-      <div class="motive-body">A distinct post-reunification identity plays a major role in the east. Eastern voters perceive themselves as economically and culturally "left behind." The AfD frames itself as their voice.</div>
-      <div class="motive-tag">East Factor</div>
-    </div>
+    <div class="motive-card"><div class="motive-icon">🚫</div><div class="motive-title">Immigration</div><div class="motive-body">Anti-immigration remains the AfD's signature issue. The party advocates strict border controls and deportations. 41% of young Germans (14–29) cited immigration as a top concern in 2024 studies.</div><div class="motive-tag">#1 Issue</div></div>
+    <div class="motive-card"><div class="motive-icon">💸</div><div class="motive-title">Economic Anxiety</div><div class="motive-body">Cost-of-living pressures, energy costs, and deindustrialization hit eastern Germany hardest. AfD surged amid the collapse of the SPD-led coalition and growing mainstream discontent.</div><div class="motive-tag">#2 Issue</div></div>
+    <div class="motive-card"><div class="motive-icon">🗳️</div><div class="motive-title">Protest / Veto Vote</div><div class="motive-body">Over 100,000 voters switched from Die Linke to AfD in 2025 — a "veto vote" against the establishment. The party has never been in federal government, making it a credible anti-system choice.</div><div class="motive-tag">~30–40% of voters</div></div>
+    <div class="motive-card"><div class="motive-icon">🏛️</div><div class="motive-title">EU Scepticism</div><div class="motive-body">AfD advocates reducing EU competences and returning power to nation-states. Alice Weidel has called for dismantling the EU "superstructure." The party aligns with Orbán's Hungary in the EP.</div><div class="motive-tag">Core Policy</div></div>
+    <div class="motive-card"><div class="motive-icon">📱</div><div class="motive-title">Social Media Reach</div><div class="motive-body">Weidel's TikTok and YouTube presence attracted young voters. The new "Generation Deutschland" youth wing launched in late 2025 institutionalizes this digital outreach strategy.</div><div class="motive-tag">Youth Driver</div></div>
+    <div class="motive-card"><div class="motive-icon">🧭</div><div class="motive-title">Eastern Identity</div><div class="motive-body">A distinct post-reunification identity plays a major role in the east. Eastern voters perceive themselves as economically and culturally "left behind." The AfD frames itself as their voice.</div><div class="motive-tag">East Factor</div></div>
   </div>
 </section>
 
@@ -956,54 +976,14 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
   <h2>THE AfD TRAJECTORY</h2>
   <div class="timeline">
     <div class="tl-line"></div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">2013 — Founded</div>
-      <div class="tl-pct">4.7%</div>
-      <div class="tl-text">Founded by economists opposing euro bailouts. Narrowly missed the 5% threshold in its first federal election. Original focus: euro scepticism, not immigration.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">2017 — Enters Bundestag</div>
-      <div class="tl-pct">12.6%</div>
-      <div class="tl-text">Capitalizing on the 2015 refugee crisis, AfD entered the Bundestag as the third-largest party with 94 seats. Leadership pivoted decisively toward immigration and national identity.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">2021 — Slips to 5th Place</div>
-      <div class="tl-pct">10.4%</div>
-      <div class="tl-text">Lost 2.3 percentage points, fell to fifth place. SPD won under Scholz; Greens surged. AfD base remained in the East but appeared to plateau nationally.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">2024 — State Election Breakthroughs</div>
-      <div class="tl-pct">32.8% (Thuringia)</div>
-      <div class="tl-text">AfD became the first far-right party to win a state election plurality since the Nazi era — taking first in Thuringia, Saxony, and Brandenburg. Three eastern branches classified as "definitely extremist."</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">Feb 2025 — Federal Election Record</div>
-      <div class="tl-pct">20.8%</div>
-      <div class="tl-text">AfD doubled its federal vote share to 20.8% — its best-ever national result. Became 2nd-largest party with 151 seats. Won almost all direct constituencies in eastern Germany. CDU refused coalition; the Brandmauer held.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">May 2025 — Designated Extremist</div>
-      <div class="tl-pct"></div>
-      <div class="tl-text">Federal intelligence agency BfV classified the whole AfD as a "confirmed right-wing extremist" organization in a 1,100-page report. AfD called the designation politically motivated.</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">Late 2025 — Surpasses CDU in Polls</div>
-      <div class="tl-pct">~26–27%</div>
-      <div class="tl-text">AfD recorded its highest-ever national figures, surpassing CDU/CSU in several surveys for the first time. CDU fell from 33% to ~24% as AfD rose to ~27% in a GMS poll (January 2026).</div>
-    </div>
-    <div class="tl-item">
-      <div class="tl-dot"></div>
-      <div class="tl-year">2026 State Elections — Ongoing</div>
-      <div class="tl-pct">~39–40% (Saxony-Anhalt polls)</div>
-      <div class="tl-text">Five state elections in 2026. AfD polling near 40% in Saxony-Anhalt and Mecklenburg-Vorpommern — figures that could force mainstream parties to consider cooperation. AfD won 19.5% in Rhineland-Palatinate (March 2026), more than doubling its 2021 result.</div>
-    </div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2013 — Founded</div><div class="tl-pct">4.7%</div><div class="tl-text">Founded by economists opposing euro bailouts. Narrowly missed the 5% threshold in its first federal election. Original focus: euro scepticism, not immigration.</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2017 — Enters Bundestag</div><div class="tl-pct">12.6%</div><div class="tl-text">Capitalizing on the 2015 refugee crisis, AfD entered the Bundestag as the third-largest party with 94 seats. Leadership pivoted decisively toward immigration and national identity.</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2021 — Slips to 5th Place</div><div class="tl-pct">10.4%</div><div class="tl-text">Lost 2.3 percentage points, fell to fifth place. SPD won under Scholz; Greens surged. AfD base remained in the East but appeared to plateau nationally.</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2024 — State Election Breakthroughs</div><div class="tl-pct">32.8% (Thuringia)</div><div class="tl-text">AfD became the first far-right party to win a state election plurality since the Nazi era — taking first in Thuringia, Saxony, and Brandenburg. Three eastern branches classified as "definitely extremist."</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Feb 2025 — Federal Election Record</div><div class="tl-pct">20.8%</div><div class="tl-text">AfD doubled its federal vote share to 20.8% — its best-ever national result. Became 2nd-largest party with 151 seats. Won almost all direct constituencies in eastern Germany. CDU refused coalition; the Brandmauer held.</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">May 2025 — Designated Extremist</div><div class="tl-pct"></div><div class="tl-text">Federal intelligence agency BfV classified the whole AfD as a "confirmed right-wing extremist" organization in a 1,100-page report. AfD called the designation politically motivated.</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Late 2025 — Surpasses CDU in Polls</div><div class="tl-pct">~26–27%</div><div class="tl-text">AfD recorded its highest-ever national figures, surpassing CDU/CSU in several surveys for the first time. CDU fell from 33% to ~24% as AfD rose to ~27% in a GMS poll (January 2026).</div></div>
+    <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2026 State Elections — Ongoing</div><div class="tl-pct">~39–40% (Saxony-Anhalt polls)</div><div class="tl-text">Five state elections in 2026. AfD polling near 40% in Saxony-Anhalt and Mecklenburg-Vorpommern — figures that could force mainstream parties to consider cooperation. AfD won 19.5% in Rhineland-Palatinate (March 2026), more than doubling its 2021 result.</div></div>
   </div>
 </section>
 
@@ -1016,14 +996,7 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
   <div class="table-wrap">
     <table>
       <thead>
-        <tr>
-          <th>State</th>
-          <th>Election Date</th>
-          <th>AfD Poll 2026</th>
-          <th>Leading Party</th>
-          <th>AfD Rank</th>
-          <th>Assessment</th>
-        </tr>
+        <tr><th>State</th><th>Election Date</th><th>AfD Poll 2026</th><th>Leading Party</th><th>AfD Rank</th><th>Assessment</th></tr>
       </thead>
       <tbody>
         <tr class="row-west">
@@ -1094,6 +1067,157 @@ footer strong { color:rgba(240,236,228,0.7); font-weight:500; }
   <strong>Classification:</strong> BfV report, May 2025 ·
   Note: 2026 figures are polling estimates, not election results. For analytical and research purposes · janeorlova.com
 </footer>
+
+<!-- MAP TOOLTIP -->
+
+<div id="map-tt">
+  <strong id="tt-pct"></strong>
+  <span id="tt-name"></span><br>
+  <span id="tt-chg" style="color:#ff8a7a;font-size:9px;"></span>
+</div>
+
+<script>
+const DATA = {
+  SH: { name:'Schleswig-Holstein',     region:'west', p25:14.2, p21:6.4,  p26n:14, p26:'~14%',
+    ctx:'Germany\'s northernmost state. Traditionally CDU-led with a moderate electorate. AfD more than doubled its vote here but remains below the national average. Coastal economy, Danish minority presence, and relatively prosperous agricultural sector dampen protest-vote potential.' },
+  HH: { name:'Hamburg',                region:'city', p25:12.5, p21:5.5,  p26n:11, p26:'~11%',
+    ctx:'The lowest AfD result in Germany. Cosmopolitan port city with high education levels and a large migrant-background population. SPD and Greens dominate. AfD doubled but from a very low base.' },
+  MV: { name:'Mecklenburg-Vorp.',      region:'east', p25:34.5, p21:21.8, p26n:38, p26:'~38%',
+    ctx:'Sparsely populated with high unemployment and significant outmigration since reunification. AfD leads here and is polling near 38% for 2026 state elections. A complex 3–4 party coalition would be needed to exclude the largest party if the Brandmauer holds.' },
+  BB: { name:'Brandenburg',            region:'east', p25:32.5, p21:19.9, p26n:34, p26:'~34%',
+    ctx:'Surrounding Berlin. AfD topped the 2024 state election at 29.2% and consolidated at 32.5% federally. Large rural swaths and structural underemployment drive the vote.' },
+  BE: { name:'Berlin',                 region:'city', p25:16.4, p21:9.0,  p26n:16, p26:'~16%',
+    ctx:'Deep internal contrasts: west Berlin ~8–10%, east Berlin over 20%. AfD trails CDU, Die Linke, and SPD in citywide polls for the September 2026 state election.' },
+  NI: { name:'Lower Saxony',           region:'west', p25:17.0, p21:9.4,  p26n:17, p26:'~17%',
+    ctx:'Large western state with a strong SPD tradition. AfD nearly doubled but stays below 20%. Volkswagen-anchored industrial towns provide some economic stability that dampens protest-voting.' },
+  HB: { name:'Bremen',                 region:'city', p25:12.8, p21:6.1,  p26n:13, p26:'~13%',
+    ctx:'Germany\'s smallest state and poorest by GDP per capita. Strong trade union culture and SPD/Greens dominance keep AfD underperforming despite high poverty.' },
+  ST: { name:'Saxony-Anhalt',          region:'east', p25:36.2, p21:25.5, p26n:40, p26:'~40%',
+    ctx:'Polling 39–40% in 2026 estimates — the highest in Germany. Germany\'s fastest-shrinking state with persistent wage gaps. The AfD branch is classified as "definitely right-wing extremist" by the BfV. The 2026 state election is the clearest test of whether the Brandmauer can hold.' },
+  SN: { name:'Saxony',                 region:'east', p25:35.2, p21:25.9, p26n:34, p26:'~34%',
+    ctx:'AfD\'s longest-standing stronghold. Dresden — birth of the Pegida movement in 2014 — leads in AfD support. In 2024, AfD took 30.6% in the state election, narrowly second to CDU.' },
+  TH: { name:'Thuringia',              region:'east', p25:38.5, p21:25.8, p26n:39, p26:'~39%',
+    ctx:'AfD\'s strongest federal result. In 2024 Thuringia became the first state where AfD topped a state election (32.8%) — the first far-right plurality in any German state since the Nazi era. Led by convicted extremist Björn Höcke; the branch is under full BfV surveillance.' },
+  NW: { name:'North Rhine-Westphalia', region:'west', p25:17.2, p21:8.1,  p26n:19, p26:'~19%',
+    ctx:'Germany\'s most populous state. The Ruhr\'s deindustrialisation created AfD pockets in former mining towns like Gelsenkirchen and Duisburg. March 2026 state election: AfD in third at ~19%, behind CDU (~29%) and SPD (~23%).' },
+  HE: { name:'Hesse',                  region:'west', p25:17.8, p21:9.4,  p26n:20, p26:'~20%',
+    ctx:'Home to Frankfurt\'s financial industry. AfD roughly doubled, strongest in rural northern Hesse. The Frankfurt metro area keeps overall numbers moderate. AfD became second-largest party here in the 2023 state election.' },
+  RP: { name:'Rhineland-Palatinate',   region:'west', p25:20.1, p21:9.8,  p26n:19, p26:'~19%',
+    ctx:'Second-strongest western result. Diverse state with wine regions, military bases, and struggling manufacturing towns. AfD more than doubled. Won 19.5% in the March 2026 state election — confirming western consolidation.' },
+  SL: { name:'Saarland',               region:'west', p25:21.6, p21:11.1, p26n:20, p26:'~20%',
+    ctx:'Strongest AfD result in western Germany. Tiny former coal-and-steel state bordering France with high unemployment. SPD won the 2022 state election outright — yet AfD simultaneously gained 12 points in 2025, a pure protest vote.' },
+  BW: { name:'Baden-Württemberg',      region:'west', p25:17.7, p21:10.2, p26n:21, p26:'~21%',
+    ctx:'Historically prosperous and Greens-friendly state. March 2026 election puts AfD at ~21%, overtaking the collapsing Greens (down from 33% in 2021). CDU leads at ~29%.' },
+  BY: { name:'Bavaria',                region:'west', p25:15.5, p21:7.7,  p26n:16, p26:'~16%',
+    ctx:'The CSU\'s stronghold with the lowest AfD result among non-city western states. Low unemployment, strong economy, and CSU hard-line rhetoric on migration limit AfD\'s ceiling. The CSU partially absorbs conservative protest voters.' }
+};
+
+const NAT = 20.8;
+const SORTED = Object.entries(DATA).sort((a,b) => b[1].p25 - a[1].p25);
+const MAX_PCT = SORTED[0][1].p25;
+
+function tierColor(p){
+  if(p>=38) return '#5a0800';
+  if(p>=34) return '#8f1209';
+  if(p>=30) return '#b82c1e';
+  if(p>=20) return '#d9776e';
+  if(p>=15) return '#e8b0aa';
+  return '#f5deda';
+}
+
+function regionAvg(r){
+  const vals = Object.values(DATA).filter(d=>d.region===r).map(d=>d.p25);
+  return (vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(1);
+}
+
+// Build list
+const listEl = document.getElementById('state-list');
+SORTED.forEach(([id, d]) => {
+  const row = document.createElement('div');
+  row.className = 'sl-row'; row.id = 'li-'+id;
+  const bw = Math.round((d.p25/MAX_PCT)*100);
+  const tg = d.region==='east'?'tg-e':d.region==='city'?'tg-c':'tg-w';
+  const tl = d.region==='east'?'EAST':d.region==='city'?'CITY':'WEST';
+  row.innerHTML = `
+    <div class="sl-dot" style="background:${tierColor(d.p25)};"></div>
+    <div class="sl-name">${d.name}</div>
+    <div class="sl-bw"><div class="sl-bf" style="width:${bw}%;background:${tierColor(d.p25)};"></div></div>
+    <div class="sl-pct">${d.p25}%</div>
+    <div class="sl-tag ${tg}">${tl}</div>
+  `;
+  row.addEventListener('click', ()=>showDetail(id));
+  listEl.appendChild(row);
+});
+
+// Tooltip
+const tt  = document.getElementById('map-tt');
+const ttp = document.getElementById('tt-pct');
+const ttn = document.getElementById('tt-name');
+const ttc = document.getElementById('tt-chg');
+
+document.querySelectorAll('.state-path').forEach(path => {
+  const id = path.id;
+  const d  = DATA[id];
+  if(!d) return;
+  path.addEventListener('mousemove', e => {
+    const chg = (d.p25-d.p21).toFixed(1);
+    ttp.textContent = d.p25+'%'; ttn.textContent = d.name;
+    ttc.textContent = '↑ +'+chg+' pts vs 2021';
+    tt.style.display='block'; tt.style.left=e.clientX+'px'; tt.style.top=e.clientY+'px';
+  });
+  path.addEventListener('mouseleave', ()=>{ tt.style.display='none'; });
+  path.addEventListener('click', ()=>{ tt.style.display='none'; showDetail(id); });
+});
+
+function showDetail(id){
+  const d = DATA[id]; if(!d) return;
+  document.querySelectorAll('.state-path').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id)?.classList.add('active');
+  document.querySelectorAll('.sl-row').forEach(r=>r.classList.remove('active'));
+  document.getElementById('li-'+id)?.classList.add('active');
+
+  const rank = SORTED.findIndex(([k])=>k===id)+1;
+  const chg  = (d.p25-d.p21).toFixed(1);
+  const ravg = regionAvg(d.region);
+  const vnat = (d.p25-NAT).toFixed(1);
+
+  const badge = document.getElementById('dp-badge');
+  const bLabel = d.region==='east'?'East Germany':d.region==='city'?'City-State':'West Germany';
+  const bStyle = d.region==='east'
+    ?'background:var(--red-light);color:var(--red);border:1px solid #e8a09a;'
+    :d.region==='city'
+    ?'background:var(--surface-alt);color:var(--muted);border:1px solid var(--border);'
+    :'background:var(--blue-light);color:var(--blue);border:1px solid #9fc3e0;';
+  badge.textContent=bLabel; badge.setAttribute('style',bStyle);
+  document.getElementById('dp-name').textContent=d.name;
+  document.getElementById('dp-pct').textContent=d.p25+'%';
+  document.getElementById('dp-chg').textContent='↑ +'+chg+' pts vs 2021';
+
+  const scale=42;
+  document.getElementById('b21').style.width=Math.round((d.p21/scale)*100)+'%';
+  document.getElementById('v21').textContent=d.p21+'%';
+  document.getElementById('b25').style.width=Math.round((d.p25/scale)*100)+'%';
+  document.getElementById('v25').textContent=d.p25+'%';
+  document.getElementById('b26').style.width=Math.round((d.p26n/scale)*100)+'%';
+  document.getElementById('v26').textContent=d.p26;
+
+  document.getElementById('dg-rank').textContent='#'+rank;
+  document.getElementById('dg-gain').textContent='+'+chg;
+  document.getElementById('dg-ravg').textContent=ravg+'%';
+  document.getElementById('dg-vnat').textContent=(vnat>=0?'+':'')+vnat+'%';
+  document.getElementById('dp-ctx-text').textContent=d.ctx;
+
+  document.getElementById('mp-default').style.display='none';
+  document.getElementById('mp-detail').classList.add('vis');
+}
+
+document.getElementById('dp-back').addEventListener('click', ()=>{
+  document.getElementById('mp-detail').classList.remove('vis');
+  document.getElementById('mp-default').style.display='flex';
+  document.querySelectorAll('.state-path').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.sl-row').forEach(r=>r.classList.remove('active'));
+});
+</script>
 
 </body>
 </html>
