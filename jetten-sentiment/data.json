@@ -1,5 +1,75 @@
 [
   {
+    "id": "g08092fc24d52",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Jetten spreekt maandag Amerikaanse oud-minister Pompeo in Washington",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/jetten-spreekt-maandag-amerikaanse-oud-minister-pompeo-in-washington~a2d6b5ff/"
+  },
+  {
+    "id": "g7185e3f32691",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Koninklijk bezoek aan president Donald Trump ongepast? Ruim helft vindt het kunnen, maar grootste groep wil wel dat premier Rob Jetten zich uitspreekt over zijn beleid - EenVandaag",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxOUjcycTdaTzN4QmRLdmJQTXFhb2dJNlpiSzVTN1pLaVhMVkM1aVZnWVBNbnp2aE5ZM0d3c3VkSlVoQTlhRjc4dlNmUDdkVDh4Z09jcXlsRUs2YU1nekotTlg4NlBFSTJEWjdreXgtRVB0MEViaThWVnlzTG1zdEVIY1hwZXBuc0d2T2l3Y0FUa2ItSGZRNXYyd3I4TGhNNWE1MURLU2hqWkFLRG5sdXZrZ1RGSlY1NzdWSWlLMkhTZGFnOGJ4cGxNa0hPZ1lTMzNneUtseUJ5TVRwR0hsTlg1N2J4SGloR0JyTVViMDZ6RVFfc0tld0ttNWYzOWlBMVF2bWllbmFFOXFCNEtRbGdYMUZtSk9GVGtQeHhIaFp4VDV2NWlZVkJTYnZiSHRFd3N2TTMtc1lNNnFPSEo5OGZYckpsd2dYMVFM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc943555f5bea",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten spreekt maandag Amerikaanse oud-minister Pompeo in Washington - AD.nl",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPNC1VQjhWXy1RS0xGSXJlQ0NWeDcwbE1ybHc3VktMS0c3ZUl3TTFpNGJ5UlQwQnIzMEtuVWhEbVlBWlJVbVMwa0ZUVGJfLXowZGdHdVhPc1d0a3ZOaEVhT0lEUF9zSGpFLXlSSFJlVkZLREpwdDB0ZVE2c1l0S0VySy1hSncySUFGcHhIclBHZFJMajkxOGJqYlFKUzRLcU5GY3UzZEdJdVg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g207d87884999",
+    "type": "nl",
+    "src": "demorgen.be",
+    "title": "Nederlands premier Jetten ontdekt het nadeel van een minderheidsregering: geen meerderheid hebben - demorgen.be",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQTQ0R3kyaDVnVmZPVlNVcTVxQXpCek93d19WSzg4WFJPMi12WGs5dWhONlZISS0yNklxY3VsTkJVaThWWWNwX2xJczd6UkpmdHVDeG16WjI4dE42Qm1JcnQwLU9Jajh2Nm10MzV4ZUNPRldxUm1jdGhaMG5IWlZUN2YtSy1TYlp0VVphMWJqTHdBLTRkaUlMN1dubUtpbGt4ZEpzckxJNmlkU0dXQzk3ZXBxYTZJd0xGY0ExYy1IemlCX0toS0FuRnVkcmV3dFJCa0hKRw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g41854597fe2d",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "'Heel ongebruikelijk': koning slaapt maandag in het Witte Huis - RTL.nl",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbTBsbVZoTDBRUGpZVnhzd05zTGtrN1kxQTY5ZktaV3RUdlE2VlZQQVhYSVozeTNPSVpDa1hmb0hVV0lIeEZuUGRKSlI5Vlk0amdVM1Y4M3hReGVac04wNzA1eXdIVXVQdm1JUGRtcHIwZGlIVnFSQTBzQnc4RW1pT2pKR25rdXc1Q0JiTHJMYmp3d05IdnpZ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6853f9a37cfb",
+    "type": "intl",
+    "src": "ZeelandNet, startpagina van Zeeland",
+    "title": "Jetten spreekt maandag oud-minister en senatoren in Washington - ZeelandNet, startpagina van Zeeland",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNN0tnTVhUU1EtcUFKNEQzYVQ2aG8xdldoUmo1bU9rUjhnQl9Lb2l0OWFSR1lEN3c0RUhMTWZaWUhBcnY1VHU2S1hSYTVYVGtiQzRDWnBqd01WbDVvQ0JfNmkxMzVqdUs2TWpCbWNDc1Z2X1F6SkJtSDB4XzhhNTlMaEdWdzN1X2RUay01SDdRaTh1NVJaNTR3d3habw?oc=5",
+    "flag": "🇵🇹"
+  },
+  {
+    "id": "g83013dddfa6a",
+    "type": "intl",
+    "src": "Infobae",
+    "title": "Primer ministro y reyes de Países Bajos viajan a Washington en plena tensión sobre la OTAN - Infobae",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNeTF0eHRDUnpRNkZhUTNWR2xmYWt0dVdBUzE1MWctcV9kVUlWOGp3YnZmWjJsNDVpMHQ5RVNtUVBOcnU0ZTJKSlVENzh4TG1wQmxRbXNXWUJiYVZuNVJXaUI2dEJJX3hZbzZlTkNsbUxwZ1MzbE9zbFNLZHFrQWdNQW83bTZlNERSMnN5b0QtaTRkY1lZNW9tQVNDUkd3Wm4xNkQ4NDBpLTZ5SVJtZmI5M0t6OWN2cUY2YklJWE5Wb3pQX3JYQURIRXNIR2tWWVllQW95aTR2MmRiU3fSAfYBQVVfeXFMTlJuRzVNTkEwM2RXd0FRdkF5NVdmdkl0SnVuZGRGanAwZ1k0aUxLeG1oNDh1bmJGYmdfQ25oZEV2MGt3Q2ZFb2RLSmFtUGF5RjRFZWRHWGhZSXlhN2wwQk9UX1pUTzhZWEx3NDFJSGVvdFBsUGZDUERDcGVqMWtWNm5LbE5qYldDeG9UQm56dXE5bXJzQ3g5eGlrNjUwVjRiVml3VU5vNXdMRTNaUWpXZXdCMWY1MlRnR0hfNTFSUFZISjRTcEdiWl83a3ZmdUxxVzY3NmdtMVNQb0pDellEamlzeGd6cVZZUGtSRXZTRTZseVdmZzNR?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g9da8aa9eb5f0",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -89,6 +159,47 @@
     "date": "2026-04-09",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14dmdJN3VsMnZ0Y0pESFRRWVBISFBjejZLVzA5VlowT0x5ZEtZZXIyWV9OQTVpZnFwcmVUdlBXdUJlQnNZcGFKTGxDbXFDTU5UZmRmaXlrNnE1Ujg4dHJnMjg2WEkxS1U?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g86231fc5b8f6",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Eerst Rutte, dan Jetten: hoe Nederland Trump benadert in gespannen tijden - EWmagazine.nl",
+    "date": "2026-04-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYWFGWHBTd3N5NWtPSXhxaFBfWWdGT2lSM0V1OHdnRHh2aFZhYXh3bjd0dzhlNHYxUmRjcm12ZDFOREhOX1ljTkNFajZEaEc4eWpFc2N1UWZVUmtyVGFJNXNDV2pBZ0tESVJnc2VpZ0ZkNWpQQ3ktS2lpYTd5NUo3WldqdVl1emgzMUQxV2RjX3R3WjZZVk5NOV9EUm1mTDVvejZXWk1MTUJDdXc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gaa6cacd9ec82",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet-Jetten mist eigen 2030-klimaatdoel met huidige plannen - bnnvara",
+    "date": "2026-04-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQazVUMkdNNmxGeGhLdm01aVRsQ1FiRVpYZUxOXzd4a1I4OVVKa0dBUVo4aEgwQnB6QUVzRGdaRnRXTlBxODhVaUhwMFYxLWRxMmc1MDNZd215VHA1b0xTV2ZqSzdZVjhBWk8zMHJLVnRTY0UxRjZZOWVCd0tIeEZpS2M3b2FCX28yV0xjQ2N0OUVJN3dnVFE4b2RVeWhUQWRpc084R1o4S2IyczNE?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g8528959226ad",
+    "type": "nl",
+    "src": "Oxfam Novib",
+    "title": "Gevangenisstraf Israëliërs, doodstraf voor Palestijnen. - Oxfam Novib",
+    "date": "2026-04-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUnloMTl6bEZXZlZnUHVGaFgyMXl6QjNMZUVScTBNYUNSR054SGhEZmV0MFRmT1VGYkdXdDEtX200WDIwY0VVNFhNQlE3LThoemYzM1N1QmNnTHl0NmNqSzhZV0g3bWQ4bDlHUEp3OGptdWUxTElEQjhna1o1dk80YUMxOXJDUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf38f1097f4fe",
+    "type": "intl",
+    "src": "وكالة الأنباء السعودية",
+    "title": "HRH the Crown Prince, Dutch Prime Minister Discuss Regional Developments; Jetten Affirms Solidarity with Saudi Arabia - وكالة الأنباء السعودية",
+    "date": "2026-04-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9WM1NUQ21VLVRNNkh1OEg0Q2FzSG5fOGRfWkhrQmU3VHduVUhWNFRzZHJyNkMycE43cG11QnF0NjQ1QUJIVDNZSFln?oc=5",
     "flag": "🌍"
   },
   {
@@ -262,6 +373,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZXE1ZmszNkZEM3B1NWNFbFBsZVNMRUFSOUIzSzB6ME84cXYxR3cwd2EwbGlMenRDd2pILWFoTHNtTXpHakJRUFUyaHNUM1hQMEJURmJKTm40bjhYMFZreDlRcnZkVEEweF93ZGhldkUyTXJjNnFjN0RBbWt0amd1X0JvWmRSU0gycVdINkt2SmtSS2NtcjdpdHlR?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g8bcf68ba09af",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kabinet schrapt verhoging AOW-leeftijd niet, eerst praten over alternatieven - NOS",
+    "date": "2026-04-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZ2lsTHo5Zk0tWVFRYkZIMTlzajBJaXkxT2RETVlickJ0RmFVVmFuR280Zzlya1Fkajk2bjNCZ1phU25OX2xaX1FFdVVmRjh3MnZIQlFBQmlGNWxhZFY0eXQzbkFKRkRZYWpSaktoZ2lseDJHQkl0R01HdFZid2lmcGNiX0cxUmhCZS1icU9nT0RGQTBlTE5ZMllNeWRSLXhmSjZLYlpaYllyUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g73f4da67eead",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "Trump’s statements no reason to cancel royal visit, Jetten says - DutchNews.nl",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVjN6UW1sOXRBX3l2S3haRk15RVI3N3RZbldTeVk0dDlSVUZjbXAyYy1RNVB6bXBwVTFWZVlEVzQzRGhKbFdtRkN1ckFIblh3WFVPNHNjMjMwcENNUllxVDMxWDRSd0dfaTRaQ1R6ZFB5bWxFU3I5SVFLaTZvUTBvRGpCYzRpdDZPMWE1MG9XdWxGWm5uUWpLTGM1TQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g60e7617690c6",
@@ -482,6 +613,26 @@
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNTlvT3Q1MXJVcnFwWTdXcE1RYXRUX0tRdDdmTi1LZ1ZxanV0NnJoNzNMM3AxbHZ2UUFEVzdqWTJfNWNKTzVmS2Q4dXdLbV9NTGx5ZjV2NXI5OVdPQlEtTVBGbm5TQ3JrVFA4VzVNT3BWY1pYeExidHZlMHhKOVJ0WWVacGQ4YklERGVFLVJ0ZmgtU0pKc0RDcUtGc1FoUmF5cmhxUlF0alo2X1p0d1hn?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g93d52d8d40d1",
+    "type": "nl",
+    "src": "de Stentor",
+    "title": "Bij Kabinet-Jetten is de Eerste Kamer machtiger dan ooit - de Stentor",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQR0p6aDlOMWIwQzBvNENhWEhlUnBZQ2Q4N29xaEh0VU14NHRtOHRhbFdGaW9VU01kaF9mLUwybEdoU0ItR0tSNVlyTDQ1NnhsWlRNWkJ2VTdLS0JUMU9rdGhheGpMUUY2YVFpSGJpb2ZvT3h2a0wxM1hwSTF5WkF0akpRdTBwWk0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g91de2067c577",
+    "type": "intl",
+    "src": "mezha.net",
+    "title": "Dutch PM warns that Trump’s Iran rhetoric risks attacks on civilian infrastructure - mezha.net",
+    "date": "2026-04-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qREV0WTZvWEVIU0s2czhFTDdnRkRlTFQ2MzVYLUFNUTZsa3VWTjNzRW5TOHItTkRmbWRVRWtNNnlZMFFIQll1U2tJWi00YkhDdjE2WVdB?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ge4749f114163",
@@ -983,6 +1134,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQjZlSmtsdTVwRXlWY2tRMEpoN09OaEtDNTAyWXk2R0N0TlZyUzQtT0xWTkdJd3F4dmg2V0JRU25iZkFkem1VVENqNXBYRUFONF9scVdpSU1PRTJtdElGRU56VE9LR0JycFFKMDJocGhfRUE1TlZuRVZDbVhwa2JzOEVTSFZtaHpuZ3Y5dkNKNVdUdTN6VVVfeVBvWG1qN1JVeGdielBvWFduS2VheDk2MlBtWDZLajJq?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "ga33924ffe331",
+    "type": "nl",
+    "src": "Studio Europa Maastricht",
+    "title": "De geopolitieke vuurdoop van kabinet-Jetten - Studio Europa Maastricht",
+    "date": "2026-04-02",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMi1HREdfUlVtd0tHUEhrZUk1YjlHc0V6OE1iblAtWGhsLTdXY3V2ZjFBXzJCOWxYMU5QdktSWjN3elpyVzV5Y3B3SVpPWVdYVVlDaGd3TXJpNGp4aktzRDN1OG5rWG9KRnFIRUZmQjV2TzhNTERpUEV0dExLWEhXTm1OZmh6U2ZyX1BNZHgtYXEtSTktekc4?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gc1c40601e4e1",
@@ -1952,6 +2113,16 @@
     "type": "intl",
     "src": "uk.news.yahoo.com",
     "title": "Keir Starmer holds bilat with new Dutch PM Rob Jetten - uk.news.yahoo.com",
+    "date": "2026-03-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBhemFUUTZXWGdEU0lNc2I2R3lTQlRrbExiTkpBbWZ2RVJQU191WVpMRmdVdU9pMnI3VmFZek5hZnc1SExhcEFlTXNNZjltRG9nM3dCYlA1bUpxYWo5c2c1VWxTdkpnRURWV25aLXpHaHZkc05Uamg1WG1IMA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g51d7c1b94df1",
+    "type": "intl",
+    "src": "Yahoo News UK",
+    "title": "Keir Starmer holds bilat with new Dutch PM Rob Jetten - Yahoo News UK",
     "date": "2026-03-26",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBhemFUUTZXWGdEU0lNc2I2R3lTQlRrbExiTkpBbWZ2RVJQU191WVpMRmdVdU9pMnI3VmFZek5hZnc1SExhcEFlTXNNZjltRG9nM3dCYlA1bUpxYWo5c2c1VWxTdkpnRURWV25aLXpHaHZkc05Uamg1WG1IMA?oc=5",
@@ -4941,6 +5112,16 @@
     "icon": "📰"
   },
   {
+    "id": "g0d76447783b4",
+    "type": "intl",
+    "src": "Portal Samorządowy",
+    "title": "Rozpoczęło się spotkanie premiera Donalda Tuska z szefem rządu Holandii - Portal Samorządowy",
+    "date": "2026-03-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVGtHTXFCeGNtOUZPT1U5S3ZjMV9iRlRnUGEzVkswZzdWTEtFd2tjZDhWNHFkQ1ltelBSSFJCOFZPbDJRckV2M3BWcG1mbG1qOUM0U1docXllcDhIUDRGeVB5NWlDVHZoQVlHQnROeldDUnd1NTRvYXg1cDIzcUE5LTVPQ3NhNEthNFJHY3JiSElNcURvX0M4X1Q4dno1OEpDS29ndTJlY0FBR2EwZ2R3R1NXM0xYbVkxbG5HQVh6WVBEWlZLQk55bG5Xd0hTV3JlSk9tZ2dpdW4?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7952b343b3df",
     "type": "intl",
     "src": "Міністерство розвитку громад та територій України",
@@ -5561,6 +5742,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gb34465c8c608",
+    "type": "intl",
+    "src": "Новини.LIVE",
+    "title": "В Украину с визитом прибыл премьер-министр Нидерландов - Новини.LIVE",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTXpqNktickd2Skl6VUJGX19rNDFYbWhlUjF5dTZhS0dqVTVjT0l4bkFaMnUwMFN6dktZRHlZU245TmtHd29Vb2JYWFFmTlpDMVBtczltZ2d0bXRNbklQS0hsR1ZjM0twbHRCTFNiQ2ZrSkRMblBLMGNzck9QNVNJMml4U1A3N3BjR2k4Q2dpQVZZcWE4ampIRNIBngFBVV95cUxPZnlPaGVBdUtBcTZYaVBfdWVCcWZRS2hCeGRRQm1aTXNFRnpCMHJzWkdDc3BNbWNxeHp2ZW1DazR0UmxRaDBhMFFTX1hLVFZyUW4tSDlqMGU0WTRDQXJneDZYZHNKekZIUXlHNHZnekNwZ3JFbzlzQ01LdGJSMzhURWFfUEs2eXpJMFNNRnZIUVlFNmo5YjZDMF81cUQzUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge961dea86589",
     "type": "intl",
     "src": "politico.eu",
@@ -5991,6 +6182,17 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMDNwSWp3eGNHZ3AwaHN2YWJxWlJlTWxqT3BjeHRGUDlMWnh4aVBwUFlORk54U3BFV042TGp6a1djRzBmUm16WU5vWV93R21QVnZBelR1eC0xMmJRcXA5RE9IYkUxblQwLWhNUDJKWEtJOVp5RUU5NDMtU3MxeUJmSjFKRHI1UEhidVdLNHpwUHUwcEJkaWdsaGFtVkU?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g7a1f9ffec202",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten: ‘EU moet minder vaak besluiten nemen op basis van unanimiteit’ - bnr.nl",
+    "date": "2026-03-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOVdWNGNwYml1ekVIdUU5NnRkZnBqVGtrSVFzRE1lRE0wWE1vYVVMNUcxQVZWLUpPaGtIU3pMdFFBak1PeDJzYVlsVE5hTTRqajZCN0lPRGhKbDNwRDFlY1JvbERXR1MzNmlDQmJWZjhsTl9YTVF5dDVhUWRKTjhTUXFZRzdpZEhQYl9IVjY5RkFaSDdiYVRlVGpRaUt6NEJnY3pXeUQ0clpOUUxhS1JmNlZMTWZmVEFWNmc?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "g605d05308005",
