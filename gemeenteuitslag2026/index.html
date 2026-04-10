@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9SV5Y8BZ24');
+  </script>
+
+  <!-- Google Tag Manager -->
+
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
+
+  <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
@@ -129,108 +147,10 @@ tr.popr td{padding:0;border-bottom:2px solid #111;}
 .demo-foot{margin-top:13px;padding-top:9px;border-top:1px solid #d0ccc2;font-size:9px;color:#888;line-height:1.9;}
 
 footer{border-top:2px solid #111;padding:7px 16px;display:flex;justify-content:space-between;font-size:9px;color:#888!important;background:#fff!important;flex-wrap:wrap;gap:4px;letter-spacing:.05em;}
-#cookie-banner {
-  display: none;    
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #1a1a1a;
-  color: #f5f5f5;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  font-family: sans-serif;
-  font-size: 14px;
-  z-index: 999999;
-  transition: opacity 0.4s ease;
-  pointer-events: all;
-}
-
-#cookie-banner p { margin: 0; }
-
-#cookie-buttons {
-  display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-#cookie-accept, #cookie-reject {
-  border: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  pointer-events: all;
-}
-
-#cookie-accept {
-  background: #ffffff;
-  color: #1a1a1a;
-}
-
-#cookie-accept:hover { background: #e0e0e0; }
-
-#cookie-reject {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-#cookie-reject:hover { background: rgba(255,255,255,0.1); }
-
-@media (max-width: 480px) {
-  #cookie-banner { flex-direction: column; align-items: flex-start; }
-}
-}
 </style>
 </head>
 <body>
-<div id="cookie-banner">
-  <p>This website uses cookies to improve your experience.</p>
-  <div id="cookie-buttons">
-    <button id="cookie-accept">Accept</button>
-    <button id="cookie-reject">Reject</button>
-  </div>
-</div>
 
-    <script>
-  (function () {
-    function getConsent() {
-      try { return localStorage.getItem('cookieConsent'); } 
-      catch (e) { return null; }
-    }
-    function setConsent(val) {
-      try { localStorage.setItem('cookieConsent', val); } 
-      catch (e) {}
-    }
-
-    var banner = document.getElementById('cookie-banner');
-
-    if (!banner) return;
-
-    if (getConsent()) {
-      banner.style.display = 'none';
-      return;
-    }
-
-    banner.style.display = 'flex';
-
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      setConsent('accepted');
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-
-    document.getElementById('cookie-reject').addEventListener('click', function () {
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-  })();
-</script>
 <div class="mast">
   <div class="mast-top">
     <div class="mast-ttl">GR2026 —<br><em id="citySubtitle">per stadsdeel</em></div>
@@ -1374,6 +1294,6 @@ if(document.readyState==='loading'){
 } else {
   init();
 }
-
+</script>
 </body>
 </html>
