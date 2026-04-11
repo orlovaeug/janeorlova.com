@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Suburban Swing — janeorlova.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1a18;--paper:#f5f3ee;--accent:#b5341c;--muted:#7a7570;--rule:#ccc8c0;--highlight:#e8e4db;--rc:#c0392b;--lc:#2a5fa5;--sc:#c8860a;--cc:#1e8449}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px;scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Libre Baskerville',Georgia,serif;line-height:1.75;-webkit-font-smoothing:antialiased}
+.masthead{border-bottom:3px double var(--ink);padding:1.2rem 0 1rem;text-align:center}
+.masthead-site{font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.masthead-site a{color:inherit;text-decoration:none}
+.hero{max-width:820px;margin:0 auto;padding:4.5rem 2rem 3.5rem;text-align:center}
+.kicker{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;color:var(--accent);margin-bottom:1.4rem}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,5vw,3.8rem);font-weight:700;line-height:1.08;letter-spacing:-.01em;margin-bottom:1.2rem}
+h1 em{font-style:italic;color:var(--accent)}
+.deck{font-size:1.12rem;color:var(--muted);max-width:580px;margin:0 auto 2rem;line-height:1.65}
+.byline{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--rule);padding-top:1rem}
+.byline span{color:var(--ink)}
+.container{max-width:760px;margin:0 auto;padding:0 2rem}
+.wide{max-width:980px;margin:0 auto;padding:0 2rem}
+.section-rule{border:none;border-top:2px solid var(--ink);margin:3.5rem 0 0}
+.section-label{font-family:'DM Mono',monospace;font-size:.64rem;letter-spacing:.25em;text-transform:uppercase;color:var(--muted);margin:.5rem 0 1.6rem}
+h2{font-family:'Playfair Display',serif;font-size:1.9rem;font-weight:600;line-height:1.2;margin-bottom:1.1rem;letter-spacing:-.01em}
+h3{font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:600;margin:2.2rem 0 .7rem}
+p{margin-bottom:1.15rem}
+p:last-child{margin-bottom:0}
+.pullquote{border-left:3px solid var(--accent);padding:.8rem 1.6rem;margin:2.5rem 0;background:var(--highlight)}
+.pullquote p{font-family:'Playfair Display',serif;font-size:1.22rem;font-style:italic;line-height:1.5;color:var(--ink);margin:0}
+.hypo-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2.5rem 0}
+@media(max-width:600px){.hypo-grid{grid-template-columns:1fr}}
+.hypo-box{border:1px solid var(--rule);padding:1.4rem 1.5rem;background:white}
+.hypo-num{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin-bottom:.5rem}
+.hypo-box h4{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;margin-bottom:.5rem;line-height:1.3}
+.hypo-box p{font-size:.88rem;color:var(--muted);margin:0;line-height:1.6}
+.verdict{display:inline-block;font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;padding:.2rem .6rem;border-radius:2px;margin-top:.7rem}
+.v-yes{background:#d4edda;color:#155724}
+.v-part{background:#fff3cd;color:#856404}
+.ctag{display:inline-block;font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;padding:.1rem .4rem;border-radius:2px;text-transform:uppercase}
+.tr{background:#fde8e4;color:var(--rc)}.tl{background:#dce8f8;color:var(--lc)}.ts{background:#fef3dc;color:var(--sc)}.tc{background:#d5f5e3;color:var(--cc)}
+.tbl-wrap{overflow-x:auto;margin:1.8rem 0}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
+thead tr{border-bottom:2px solid var(--ink)}
+th{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding:.5rem .7rem .6rem;text-align:left;font-weight:400;white-space:nowrap}
+td{padding:.6rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.n{text-align:right;font-family:'DM Mono',monospace;font-size:.82rem}
+.rn{color:var(--rc);font-weight:700}.ln{color:var(--lc);font-weight:700}.gn{color:var(--cc);font-weight:700}
+.bar-row{display:grid;grid-template-columns:155px 1fr 52px;align-items:center;gap:.8rem;margin-bottom:.6rem}
+.bar-lbl{font-size:.82rem;line-height:1.2}
+.bar-lbl small{display:block;font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.trk{background:var(--highlight);height:20px;border-radius:1px;overflow:hidden}
+.fill{height:100%;border-radius:1px}
+.fr{background:var(--rc)}.fl{background:var(--lc)}.fs{background:var(--sc)}.fc{background:var(--cc)}
+.bv{font-family:'DM Mono',monospace;font-size:.72rem;color:var(--muted);text-align:right}
+.chart-ttl{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;border-bottom:1px solid var(--rule);padding-bottom:.4rem}
+.legend{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1rem}
+.leg-item{display:flex;align-items:center;gap:.4rem;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.swing-matrix{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin:2rem 0}
+@media(max-width:600px){.swing-matrix{grid-template-columns:repeat(2,1fr)}}
+.mx-cell{background:white;padding:1.2rem 1rem;text-align:center}
+.mx-ctry{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.mx-val{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;line-height:1;margin-bottom:.2rem}
+.mx-desc{font-size:.75rem;color:var(--muted);line-height:1.3}
+.findings{border:1px solid var(--ink);padding:1.8rem 2rem;margin:2.5rem 0;background:white}
+.findings-ttl{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+.findings ul{list-style:none;padding:0}
+.findings li{font-size:.9rem;line-height:1.6;padding:.55rem 0 .55rem 1.2rem;border-bottom:1px solid var(--rule);position:relative}
+.findings li::before{content:'→';position:absolute;left:0;color:var(--accent);font-size:.75rem}
+.findings li:last-child{border-bottom:none}
+.ornament{text-align:center;color:var(--muted);font-size:.7rem;letter-spacing:.5em;margin:2.5rem 0}
+.intro-note{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:1rem 0;margin:2rem 0 2.5rem;font-size:.85rem;color:var(--muted);font-style:italic;text-align:center}
+.ctry-hdr{display:flex;align-items:baseline;gap:1rem;margin-bottom:.3rem;flex-wrap:wrap}
+.ctry-flag{font-size:1.6rem;line-height:1}
+.ctry-meta{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+
+/* city-suburb comparison panel */
+.cs-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0}
+@media(max-width:640px){.cs-grid{grid-template-columns:1fr}}
+.cs-panel{background:white;border:1px solid var(–rule);padding:1.2rem 1.4rem}
+.cs-hdr{font-family:‘DM Mono’,monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;padding-bottom:.5rem;margin-bottom:.8rem;border-bottom:1px solid var(–rule)}
+.cs-hdr.city{color:var(–lc)}.cs-hdr.suburb{color:var(–rc)}
+.cs-row{display:grid;grid-template-columns:1fr auto auto;gap:.4rem .8rem;align-items:center;padding:.3rem 0;border-bottom:1px solid #f0ede8;font-size:.85rem}
+.cs-row:last-child{border-bottom:none}
+.cs-party{font-family:‘DM Mono’,monospace;font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;color:var(–muted)}
+.cs-pct{font-family:‘DM Mono’,monospace;font-size:.82rem;text-align:right;min-width:3rem}
+.cs-bar-wrap{position:relative;height:6px;background:var(–highlight);border-radius:1px;overflow:hidden;min-width:80px}
+.cs-bar{height:100%;border-radius:1px}
+
+/* maps */
+.map-wrap{margin:2rem 0;background:white;border:1px solid var(–rule);padding:1.5rem}
+.map-ttl{font-family:‘DM Mono’,monospace;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(–muted);margin-bottom:1rem;border-bottom:1px solid var(–rule);padding-bottom:.4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.4rem}
+svg.map{width:100%;height:auto;display:block}
+svg.map path{stroke:#f5f3ee;stroke-width:.6;cursor:pointer;transition:opacity .15s}
+svg.map path:hover{opacity:.75;stroke:var(–ink);stroke-width:1.2}
+svg.map rect{cursor:pointer;transition:opacity .15s}
+svg.map rect:hover{opacity:.75}
+.map-leg{display:flex;flex-wrap:wrap;gap:.5rem 1.2rem;margin-top:1rem}
+.map-leg-item{display:flex;align-items:center;gap:.35rem;font-family:‘DM Mono’,monospace;font-size:.58rem;letter-spacing:.08em;text-transform:uppercase;color:var(–muted)}
+.map-swatch{width:12px;height:12px;border-radius:2px;flex-shrink:0;border:1px solid rgba(0,0,0,.1)}
+svg.map circle.ann{fill:none;stroke-width:1.8;stroke-dasharray:3,2}
+svg.map text.ann{font-family:‘DM Mono’,monospace}
+
+/* France dual map */
+.fr-maps-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0}
+@media(max-width:700px){.fr-maps-grid{grid-template-columns:1fr}}
+.fr-map-panel{background:white;border:1px solid var(–rule);padding:1.2rem}
+.fr-map-panel .map-ttl{font-size:.6rem}
+.fr-map-panel svg.map rect{cursor:pointer;transition:opacity .15s}
+.fr-map-panel svg.map rect:hover{opacity:.75}
+
+/* colors */
+.c-far-r{fill:#8B0000}.c-str-r{fill:#c0392b}.c-mid-r{fill:#e05540}.c-lt-r{fill:#f1948a}
+.c-lt-l{fill:#a8d5ba}.c-mid-l{fill:#5ba4cf}.c-str-l{fill:#2a5fa5}.c-far-l{fill:#1a3c6e}
+.c-d66{fill:#2ecc71}.c-pvv{fill:#c0392b}.c-glpvda{fill:#2a5fa5}.c-cda{fill:#27ae60}
+.c-fr22-low{fill:#5ba4cf}.c-fr22-lt{fill:#f1948a}.c-fr22-mid{fill:#e05540}.c-fr22-str{fill:#c0392b}.c-fr22-dom{fill:#8B0000}.c-fr22-paris{fill:#2a5fa5}
+.c-fr24-low{fill:#5ba4cf}.c-fr24-lt{fill:#f1948a}.c-fr24-mid{fill:#e05540}.c-fr24-str{fill:#c0392b}.c-fr24-dom{fill:#8B0000}.c-fr24-paris{fill:#2a5fa5}
+
+.tooltip{position:fixed;background:rgba(26,26,24,.93);color:#f5f3ee;font-family:‘DM Mono’,monospace;font-size:.65rem;padding:.6rem .9rem;border-radius:2px;pointer-events:none;opacity:0;transition:opacity .12s;z-index:200;max-width:280px;line-height:1.6}
+.methodology{background:var(–highlight);border-top:1px solid var(–rule);padding:2rem;margin-top:4rem;font-size:.82rem;color:var(–muted)}
+.methodology strong{font-family:‘DM Mono’,monospace;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(–ink);display:block;margin-bottom:.5rem}
+.sources{font-size:.78rem;color:var(–muted);line-height:1.7}
+.sources ol{padding-left:1.2rem}
+.sources li{margin-bottom:.3rem}
+footer{border-top:2px double var(–ink);padding:1.5rem 2rem;margin-top:2rem;text-align:center;font-family:‘DM Mono’,monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(–muted)}
+</style>
+
+</head>
+<body>
+
+<div class="tooltip" id="tt"></div>
+
+<div class="masthead">
+  <div class="masthead-site"><a href="https://janeorlova.com">janeorlova.com</a> &nbsp;·&nbsp; Political Analysis</div>
+</div>
+
+<div class="hero">
+  <div class="kicker">Electoral Geography · Comparative Politics · 2022–2025</div>
+  <h1>The <em>Suburban</em> Swing</h1>
+  <p class="deck">How the space between city and countryside became the most consequential — and restless — zone in Western democracy.</p>
+  <div class="byline">By <span>Evgeniya Orlova</span> &nbsp;·&nbsp; <span>April 2025</span> &nbsp;·&nbsp; <span>US · NL · FR · IT</span></div>
+</div>
+
+<div class="container">
+  <hr class="section-rule">
+  <div class="section-label">01 — Introduction</div>
+  <h2>The geography of discontent</h2>
+  <p>In election after election across the Western world, the same pattern has emerged: cities lean left, rural areas lean right, and the suburbs — that vast, sprawling middle ground — go whichever way the political wind is blowing. But to call suburbs merely "swing" territory understates their significance. They are, increasingly, the <em>engine</em> of democratic change.</p>
+  <p>This report examines suburban voting patterns across four major Western democracies — the United States (presidential election, 2024), the Netherlands (parliamentary elections, October 29 2025), France (legislative elections 2024 and presidential election 2022), and Italy (parliamentary elections 2022). Drawing on electoral geography data, it tests two hypotheses about why suburbs swing.</p>
+  <div class="hypo-grid">
+    <div class="hypo-box">
+      <div class="hypo-num">Hypothesis 1</div>
+      <h4>Suburbs are structurally volatile</h4>
+      <p>Unlike cities (stable left) or rural areas (stable right), suburbs contain the socio-economic mix that makes them responsive to immediate material concerns over ideological loyalty.</p>
+      <span class="verdict v-yes">✓ Confirmed across all cases</span>
+    </div>
+    <div class="hypo-box">
+      <div class="hypo-num">Hypothesis 2</div>
+      <h4>Right-wing parties capture suburban anxieties more effectively</h4>
+      <p>Right-wing populist and conservative parties have outperformed in suburbs by addressing cost of living, safety, housing, and immigration — quintessentially suburban concerns.</p>
+      <span class="verdict v-part">~ Largely confirmed, with nuance</span>
+    </div>
+  </div>
+  <div class="intro-note">Maps show dominant/winning party by region. Hover over regions for data. City vs suburb panels show full multi-party breakdowns for key urban areas.</div>
+</div>
+
+<!-- ═══════════ USA ═══════════ -->
+
+<div style="margin-top:3rem">
+<div class="container">
+  <div class="ctry-hdr"><span class="ctry-flag">🇺🇸</span><h2 style="margin:0">United States — Presidential Election, 2024</h2></div>
+  <div class="ctry-meta">November 5, 2024 &nbsp;·&nbsp; Trump (R) vs Harris (D)</div>
+</div>
+<div class="wide">
+  <div class="map-wrap">
+    <div class="map-ttl"><span>Winning party by state — US Presidential 2024</span><span>Hover for state results</span></div>
+    <svg class="map" viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg">
+      <path class="c-mid-l" d="M55,42 L148,42 L148,148 L55,148Z" data-n="Washington" data-r="Harris D 55.9%"/>
+      <path class="c-str-r" d="M148,42 L232,42 L232,148 L148,148Z" data-n="Montana" data-r="Trump R 58.6%"/>
+      <path class="c-str-r" d="M232,42 L288,42 L288,95 L232,95Z" data-n="North Dakota" data-r="Trump R 64.3%"/>
+      <path class="c-mid-l" d="M288,42 L348,42 L348,95 L288,95Z" data-n="Minnesota" data-r="Harris D 52.2%"/>
+      <path class="c-lt-r" d="M348,42 L400,42 L400,95 L348,95Z" data-n="Wisconsin" data-r="Trump R 49.5% ← SWING"/>
+      <path class="c-lt-r" d="M400,42 L458,42 L458,95 L400,95Z" data-n="Michigan" data-r="Trump R 49.7% ← SWING"/>
+      <path class="c-str-l" d="M458,42 L504,42 L504,80 L458,80Z" data-n="Vermont" data-r="Harris D 67.1%"/>
+      <path class="c-mid-l" d="M504,42 L548,42 L548,80 L504,80Z" data-n="New Hampshire" data-r="Harris D 51.4%"/>
+      <path class="c-mid-l" d="M548,42 L600,42 L600,80 L548,80Z" data-n="Maine" data-r="Harris D 53.3%"/>
+      <path class="c-str-l" d="M600,42 L645,42 L645,80 L600,80Z" data-n="Connecticut" data-r="Harris D 57.0%"/>
+      <path class="c-str-l" d="M645,42 L690,42 L690,80 L645,80Z" data-n="New Jersey" data-r="Harris D 55.8%"/>
+      <path class="c-lt-r" d="M690,42 L750,42 L750,80 L690,80Z" data-n="Pennsylvania" data-r="Trump R 50.5% ← KEY SWING"/>
+      <path class="c-str-l" d="M750,42 L800,42 L800,80 L750,80Z" data-n="Maryland" data-r="Harris D 62.6%"/>
+      <path class="c-str-l" d="M800,42 L848,42 L848,80 L800,80Z" data-n="Delaware" data-r="Harris D 56.3%"/>
+      <path class="c-str-l" d="M55,148 L148,148 L148,245 L55,245Z" data-n="Oregon" data-r="Harris D 56.5%"/>
+      <path class="c-far-r" d="M148,148 L232,148 L232,245 L148,245Z" data-n="Idaho" data-r="Trump R 65.9%"/>
+      <path class="c-str-r" d="M232,95 L288,95 L288,148 L232,148Z" data-n="South Dakota" data-r="Trump R 61.8%"/>
+      <path class="c-str-r" d="M288,95 L348,95 L348,148 L288,148Z" data-n="Iowa" data-r="Trump R 55.0%"/>
+      <path class="c-str-l" d="M348,95 L400,95 L400,148 L348,148Z" data-n="Illinois" data-r="Harris D 57.9%"/>
+      <path class="c-str-r" d="M400,95 L458,95 L458,148 L400,148Z" data-n="Indiana" data-r="Trump R 58.3%"/>
+      <path class="c-str-r" d="M458,95 L510,95 L510,148 L458,148Z" data-n="Ohio" data-r="Trump R 55.4%"/>
+      <path class="c-str-l" d="M510,95 L558,95 L558,148 L510,148Z" data-n="New York" data-r="Harris D 57.2%"/>
+      <path class="c-str-l" d="M558,95 L600,95 L600,148 L558,148Z" data-n="Massachusetts" data-r="Harris D 61.2%"/>
+      <path class="c-str-l" d="M600,95 L645,95 L645,148 L600,148Z" data-n="Rhode Island" data-r="Harris D 58.7%"/>
+      <path class="c-str-l" d="M750,80 L800,80 L800,148 L750,148Z" data-n="Virginia" data-r="Harris D 53.2%"/>
+      <path class="c-far-r" d="M800,80 L848,80 L848,148 L800,148Z" data-n="West Virginia" data-r="Trump R 71.0%"/>
+      <path class="c-str-l" d="M55,245 L128,245 L128,340 L55,340Z" data-n="California" data-r="Harris D 59.6%"/>
+      <path class="c-lt-r" d="M128,245 L195,245 L195,310 L128,310Z" data-n="Nevada" data-r="Trump R 50.7% ← SWING"/>
+      <path class="c-str-r" d="M195,245 L258,245 L258,310 L195,310Z" data-n="Utah" data-r="Trump R 58.1%"/>
+      <path class="c-far-r" d="M258,148 L310,148 L310,245 L258,245Z" data-n="Wyoming" data-r="Trump R 67.4%"/>
+      <path class="c-str-r" d="M310,148 L358,148 L358,245 L310,245Z" data-n="Nebraska" data-r="Trump R 60.7%"/>
+      <path class="c-str-r" d="M358,148 L406,148 L406,245 L358,245Z" data-n="Missouri" data-r="Trump R 57.9%"/>
+      <path class="c-str-r" d="M406,148 L458,148 L458,245 L406,245Z" data-n="Kentucky" data-r="Trump R 65.0%"/>
+      <path class="c-lt-r" d="M558,148 L645,148 L645,220 L558,220Z" data-n="North Carolina" data-r="Trump R 51.0% ← SWING"/>
+      <path class="c-str-r" d="M645,148 L720,148 L720,220 L645,148Z" data-n="Tennessee" data-r="Trump R 64.8%"/>
+      <path class="c-str-l" d="M128,310 L195,310 L195,380 L128,380Z" data-n="Colorado" data-r="Harris D 55.9%"/>
+      <path class="c-str-r" d="M310,245 L358,245 L358,310 L310,310Z" data-n="Kansas" data-r="Trump R 62.5%"/>
+      <path class="c-str-r" d="M358,245 L406,245 L406,310 L358,310Z" data-n="Arkansas" data-r="Trump R 65.3%"/>
+      <path class="c-lt-r" d="M406,220 L510,220 L510,290 L406,290Z" data-n="Georgia" data-r="Trump R 50.8% ← KEY SWING"/>
+      <path class="c-str-r" d="M510,220 L558,220 L558,290 L510,290Z" data-n="South Carolina" data-r="Trump R 57.8%"/>
+      <path class="c-str-r" d="M510,290 L690,290 L720,380 L600,400 L510,360Z" data-n="Florida" data-r="Trump R 56.1%"/>
+      <path class="c-mid-l" d="M128,380 L200,380 L200,455 L128,455Z" data-n="New Mexico" data-r="Harris D 54.0%"/>
+      <path class="c-str-r" d="M258,310 L358,310 L358,380 L258,380Z" data-n="Oklahoma" data-r="Trump R 65.4%"/>
+      <path class="c-str-r" d="M200,380 L380,380 L380,500 L200,500Z" data-n="Texas" data-r="Trump R 56.1%"/>
+      <path class="c-str-r" d="M358,310 L458,310 L458,380 L358,380Z" data-n="Louisiana" data-r="Trump R 60.5%"/>
+      <path class="c-far-r" d="M458,290 L510,290 L510,360 L458,360Z" data-n="Alabama" data-r="Trump R 66.0%"/>
+      <path class="c-str-r" d="M406,290 L458,290 L458,360 L406,360Z" data-n="Mississippi" data-r="Trump R 61.4%"/>
+      <path class="c-lt-r" d="M55,340 L128,340 L128,450 L55,450Z" data-n="Arizona" data-r="Trump R 52.2% ← SWING"/>
+      <path class="c-far-r" d="M55,510 L165,510 L165,575 L55,575Z" data-n="Alaska" data-r="Trump R 60.7%"/>
+      <path class="c-str-l" d="M185,510 L290,510 L290,575 L185,575Z" data-n="Hawaii" data-r="Harris D 60.8%"/>
+      <text x="108" y="593" font-family="DM Mono,monospace" font-size="9" fill="#7a7570" text-anchor="middle">Alaska</text>
+      <text x="237" y="593" font-family="DM Mono,monospace" font-size="9" fill="#7a7570" text-anchor="middle">Hawaii</text>
+      <circle class="ann" cx="428" cy="115" r="9" stroke="#c0392b"/>
+      <text class="ann" x="441" y="112" font-size="8" fill="#c0392b">Macomb Co. +3.7pp R</text>
+      <circle class="ann" cx="718" cy="62" r="9" stroke="#c0392b"/>
+      <text class="ann" x="731" y="59" font-size="8" fill="#c0392b">Bucks Co. +2.9pp R</text>
+      <circle class="ann" cx="455" cy="258" r="8" stroke="#c0392b"/>
+      <text class="ann" x="468" y="255" font-size="8" fill="#c0392b">Gwinnett Co. +3.7pp R</text>
+    </svg>
+    <div class="map-leg">
+      <div class="map-leg-item"><div class="map-swatch" style="background:#8B0000"></div>Trump >65%</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#c0392b"></div>Trump 55–65%</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#f1948a"></div>Trump 49–55% (swing)</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#a8d5ba"></div>Harris 49–55%</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#2a5fa5"></div>Harris 55–65%</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#1a3c6e"></div>Harris >65%</div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h3>The suburban reversal</h3>
+  <p>The 2024 US election was decided in the suburbs. In 2020, the "suburban revolt" against Trump delivered Biden's victory. By 2024, many of those same suburbs shifted back toward Republicans, driven primarily by inflation, housing costs, and cost of living.</p>
+  <div class="tbl-wrap" style="margin-top:2rem">
+    <table><thead><tr><th>Zone type</th><th>2020 D margin</th><th>2024 D margin</th><th>Shift</th><th>Pattern</th></tr></thead>
+    <tbody>
+      <tr><td>Dense urban core</td><td class="n ln">+32.1pp</td><td class="n ln">+28.9pp</td><td class="n rn">−3.2pp</td><td><span class="ctag tl">Stable D</span></td></tr>
+      <tr><td>Inner suburb</td><td class="n ln">+11.4pp</td><td class="n ln">+8.2pp</td><td class="n rn">−3.2pp</td><td><span class="ctag ts">Drift R</span></td></tr>
+      <tr><td>Outer suburb / exurb</td><td class="n rn">−6.7pp</td><td class="n rn">−11.3pp</td><td class="n rn">−4.6pp</td><td><span class="ctag tr">Strong R shift</span></td></tr>
+      <tr><td>Small town / rural</td><td class="n rn">−21.8pp</td><td class="n rn">−23.4pp</td><td class="n rn">−1.6pp</td><td><span class="ctag tr">Stable R</span></td></tr>
+    </tbody></table>
+  </div>
+  <div class="findings"><div class="findings-ttl">US Key Findings</div><ul>
+    <li>Suburban areas delivered decisive margins in six of seven key swing states: PA, MI, WI, AZ, GA, NV.</li>
+    <li>The sharpest rightward shift was in the outer suburban ring — most exposed to inflation in housing, food, and transport.</li>
+    <li>High-income, college-educated inner suburbs (Loudoun VA, Chester PA) remained competitive for Democrats.</li>
+    <li>Latino suburban communities in AZ, NV, TX moved toward Republicans by 8–14 points, reflecting the same material-anxiety pattern.</li>
+  </ul></div>
+</div>
+</div>
+
+<div class="container"><div class="ornament">· · ·</div></div>
+
+<!-- ═══════════ NETHERLANDS ═══════════ -->
+
+<div>
+<div class="container">
+  <div class="ctry-hdr" style="margin-top:2rem"><span class="ctry-flag">🇳🇱</span><h2 style="margin:0">Netherlands — Parliamentary Elections, October 2025</h2></div>
+  <div class="ctry-meta">29 October 2025 &nbsp;·&nbsp; Tweede Kamer · 150 seats &nbsp;·&nbsp; D66 &amp; PVV tied at 26 seats each</div>
+</div>
+<div class="wide">
+  <div class="map-wrap">
+    <div class="map-ttl"><span>Largest party by province — Netherlands 29 Oct 2025</span><span>Kiesraad final results, 7 Nov 2025</span></div>
+    <svg class="map" viewBox="0 0 620 460" xmlns="http://www.w3.org/2000/svg">
+      <rect class="c-d66" x="370" y="30" width="110" height="90" rx="2" data-n="Groningen" data-r="D66 largest — 21.4%" data-pvv="PVV 17.2%"/>
+      <text x="425" y="78" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Groningen</text>
+      <rect class="c-cda" x="210" y="30" width="160" height="110" rx="2" data-n="Friesland" data-r="CDA / D66 contested — PVV 16.8%" data-pvv="PVV 16.8%"/>
+      <text x="290" y="90" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Friesland</text>
+      <rect class="c-pvv" x="370" y="120" width="110" height="90" rx="2" data-n="Drenthe" data-r="PVV largest — 20.1%" data-pvv="PVV 20.1%"/>
+      <text x="425" y="168" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Drenthe</text>
+      <rect class="c-cda" x="370" y="210" width="130" height="90" rx="2" data-n="Overijssel" data-r="CDA / PVV contested — PVV 18.7%" data-pvv="PVV 18.7%"/>
+      <text x="435" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Overijssel</text>
+      <rect class="c-d66" x="370" y="300" width="130" height="100" rx="2" data-n="Gelderland" data-r="D66 narrowly — 18.9%" data-pvv="PVV 17.5%"/>
+      <text x="435" y="353" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Gelderland</text>
+      <rect class="c-glpvda" x="55" y="30" width="155" height="185" rx="2" data-n="North Holland — Amsterdam: GL-PvdA 27.4%, D66 23.4%, PVV only 7.3%" data-pvv="PVV 7.3% (5th place in Amsterdam)"/>
+      <text x="132" y="115" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">North Holland</text>
+      <text x="132" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="rgba(255,255,255,.75)" pointer-events="none">(Amsterdam)</text>
+      <rect class="c-pvv" x="210" y="140" width="160" height="75" rx="2" data-n="Flevoland — Almere: PVV 19.2%, D66 16.7%, VVD 14.2%" data-pvv="PVV 19.2% in Almere (still leads suburbs)"/>
+      <text x="290" y="178" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Flevoland</text>
+      <rect class="c-d66" x="210" y="215" width="160" height="80" rx="2" data-n="Utrecht — D66 26.7%, GL-PvdA 26.1%, PVV 6.8%" data-pvv="PVV 6.8% (4th in Utrecht city)"/>
+      <text x="290" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Utrecht</text>
+      <rect class="c-pvv" x="55" y="215" width="155" height="130" rx="2" data-n="South Holland — Zoetermeer: PVV 18.3%, Capelle: PVV 17.5%" data-pvv="Rotterdam city: D66 17.1%, PVV 15.8%"/>
+      <text x="132" y="272" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">South Holland</text>
+      <text x="132" y="287" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="rgba(255,255,255,.75)" pointer-events="none">(Rotterdam suburbs)</text>
+      <rect class="c-cda" x="55" y="345" width="155" height="75" rx="2" data-n="Zeeland" data-r="CDA / PVV — PVV 21.3%" data-pvv="PVV 21.3%"/>
+      <text x="132" y="387" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Zeeland</text>
+      <rect class="c-d66" x="210" y="295" width="160" height="105" rx="2" data-n="North Brabant" data-r="D66 / PVV closely contested — PVV 19.1%" data-pvv="PVV 19.1%"/>
+      <text x="290" y="350" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">North Brabant</text>
+      <rect class="c-pvv" x="500" y="300" width="90" height="150" rx="2" data-n="Limburg — Maastricht: PVV 20.8% (largest), Venray area: PVV ~28%" data-pvv="PVV 29.4% province avg — Geert Wilders from Venlo"/>
+      <text x="545" y="368" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Limburg</text>
+      <circle cx="290" cy="152" r="10" fill="#c0392b" stroke="white" stroke-width="2"/>
+      <text x="290" y="156" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="white" pointer-events="none">1</text>
+      <circle cx="132" cy="232" r="10" fill="#c0392b" stroke="white" stroke-width="2"/>
+      <text x="132" y="236" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="white" pointer-events="none">2</text>
+      <circle cx="545" cy="318" r="10" fill="#c0392b" stroke="white" stroke-width="2"/>
+      <text x="545" y="322" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="white" pointer-events="none">3</text>
+      <rect x="55" y="418" width="520" height="32" fill="#f5f3ee" rx="2"/>
+      <circle cx="76" cy="434" r="8" fill="#c0392b"/>
+      <text x="76" y="438" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white">1</text>
+      <text x="90" y="438" font-family="DM Mono,monospace" font-size="9" fill="#1a1a18">Almere — PVV 19.2% (nat. avg 16.7%)</text>
+      <circle cx="280" cy="434" r="8" fill="#c0392b"/>
+      <text x="280" y="438" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white">2</text>
+      <text x="294" y="438" font-family="DM Mono,monospace" font-size="9" fill="#1a1a18">Zoetermeer / Capelle — PVV 18–19%</text>
+      <circle cx="462" cy="434" r="8" fill="#c0392b"/>
+      <text x="462" y="438" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white">3</text>
+      <text x="476" y="438" font-family="DM Mono,monospace" font-size="9" fill="#1a1a18">Limburg — PVV 29.4% province avg</text>
+    </svg>
+    <div class="map-leg">
+      <div class="map-leg-item"><div class="map-swatch" style="background:#2ecc71"></div>D66 largest</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#c0392b"></div>PVV largest</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#2a5fa5"></div>GL-PvdA largest</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#27ae60"></div>CDA largest</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>City vs suburb — the full party picture</h3>
+  <p>The province map shows the <em>largest</em> party per area, but the full breakdown tells a richer story. Amsterdam voted overwhelmingly for GL-PvdA and D66; the PVV placed fifth there with 7.3%. By contrast, in suburban Almere — Amsterdam's planned satellite city — PVV still led despite a large drop from 2023. Rotterdam city similarly flipped from PVV dominance in 2023 to D66 leading in 2025. The suburban premium for PVV persists, but in attenuated form.</p>
+
+  <div class="cs-grid">
+    <!-- Amsterdam -->
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Amsterdam — city core (2025)</div>
+      <div class="cs-row"><span>GL-PvdA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:80.6%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">27.4%</span></div>
+      <div class="cs-row"><span>D66</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:68.8%;background:#2ecc71"></div></div><span class="cs-pct" style="color:#27ae60">23.4%</span></div>
+      <div class="cs-row"><span>VVD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:22.1%;background:#e67e22"></div></div><span class="cs-pct" style="color:#e67e22">7.5%</span></div>
+      <div class="cs-row"><span>DENK</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:22.6%;background:#888"></div></div><span class="cs-pct">7.7%</span></div>
+      <div class="cs-row"><span style="font-weight:600">PVV ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:21.5%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">7.3%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">PVV placed 5th · was 10.2% in 2023</div>
+    </div>
+    <!-- Almere -->
+    <div class="cs-panel">
+      <div class="cs-hdr suburb">🏘 Almere — Amsterdam's suburban satellite (2025)</div>
+      <div class="cs-row"><span style="font-weight:600">PVV ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:57.3%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">19.2%</span></div>
+      <div class="cs-row"><span>D66</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:49.7%;background:#2ecc71"></div></div><span class="cs-pct" style="color:#27ae60">16.7%</span></div>
+      <div class="cs-row"><span>VVD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:42.3%;background:#e67e22"></div></div><span class="cs-pct" style="color:#e67e22">14.2%</span></div>
+      <div class="cs-row"><span>GL-PvdA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:42.0%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">14.1%</span></div>
+      <div class="cs-row"><span>CDA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:18.7%;background:#27ae60"></div></div><span class="cs-pct">6.3%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">PVV 1st but dropped from 36.4% in 2023</div>
+    </div>
+    <!-- Rotterdam city -->
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Rotterdam — city (2025)</div>
+      <div class="cs-row"><span>D66</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:50.6%;background:#2ecc71"></div></div><span class="cs-pct" style="color:#27ae60">17.1%</span></div>
+      <div class="cs-row"><span>GL-PvdA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:50.0%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">16.9%</span></div>
+      <div class="cs-row"><span>DENK</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:30.7%;background:#888"></div></div><span class="cs-pct">10.4%</span></div>
+      <div class="cs-row"><span>VVD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:27.7%;background:#e67e22"></div></div><span class="cs-pct" style="color:#e67e22">9.4%</span></div>
+      <div class="cs-row"><span style="font-weight:600">PVV ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:46.6%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">15.8%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">PVV was largest party in Rotterdam in 2023 (21.5%)</div>
+    </div>
+    <!-- Zoetermeer/Capelle -->
+    <div class="cs-panel">
+      <div class="cs-hdr suburb">🏘 Capelle a/d IJssel — Rotterdam suburb (2025)</div>
+      <div class="cs-row"><span style="font-weight:600">PVV ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:52.1%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">17.5%</span></div>
+      <div class="cs-row"><span>D66</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:45.5%;background:#2ecc71"></div></div><span class="cs-pct" style="color:#27ae60">15.4%</span></div>
+      <div class="cs-row"><span>VVD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:36.6%;background:#e67e22"></div></div><span class="cs-pct" style="color:#e67e22">12.4%</span></div>
+      <div class="cs-row"><span>GL-PvdA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:33.9%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">11.5%</span></div>
+      <div class="cs-row"><span>JA21</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:20%;background:#a00"></div></div><span class="cs-pct">~7%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">PVV still leads suburbs despite drop from 26.8% in 2023</div>
+    </div>
+    <!-- The Hague city -->
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 The Hague — city (2025)</div>
+      <div class="cs-row"><span>D66</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:59.1%;background:#2ecc71"></div></div><span class="cs-pct" style="color:#27ae60">19.8%</span></div>
+      <div class="cs-row"><span>GL-PvdA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:48.8%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">16.4%</span></div>
+      <div class="cs-row"><span style="font-weight:600">PVV ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:46.7%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">15.7%</span></div>
+      <div class="cs-row"><span>DENK</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:25.9%;background:#888"></div></div><span class="cs-pct">8.7%</span></div>
+      <div class="cs-row"><span>CDA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:20.2%;background:#27ae60"></div></div><span class="cs-pct">6.8%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">PVV was largest in The Hague in 2023 (24.2%)</div>
+    </div>
+    <!-- Utrecht city -->
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Utrecht — city (2025)</div>
+      <div class="cs-row"><span>D66</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:79.5%;background:#2ecc71"></div></div><span class="cs-pct" style="color:#27ae60">26.7%</span></div>
+      <div class="cs-row"><span>GL-PvdA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:77.6%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">26.1%</span></div>
+      <div class="cs-row"><span>VVD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:25.6%;background:#e67e22"></div></div><span class="cs-pct" style="color:#e67e22">8.6%</span></div>
+      <div class="cs-row"><span style="font-weight:600">PVV ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:20.2%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">6.8%</span></div>
+      <div class="cs-row"><span>CDA</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:19.6%;background:#27ae60"></div></div><span class="cs-pct">6.6%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">Utrecht: left + centre-left combined ~53% · PVV lowest among major cities</div>
+    </div>
+  </div>
+
+  <div class="tbl-wrap" style="margin-top:1rem">
+    <table>
+      <thead><tr><th>Location</th><th>Type</th><th>GL-PvdA</th><th>D66</th><th>PVV</th><th>VVD</th><th>Context</th></tr></thead>
+      <tbody>
+        <tr><td>Amsterdam</td><td><span class="ctag tl">City core</span></td><td class="n gn">27.4%</td><td class="n" style="color:#27ae60">23.4%</td><td class="n rn">7.3%</td><td class="n">7.5%</td><td><span class="ctag tl">PVV 5th place</span></td></tr>
+        <tr><td>Utrecht</td><td><span class="ctag tl">City core</span></td><td class="n gn">26.1%</td><td class="n" style="color:#27ae60">26.7%</td><td class="n rn">6.8%</td><td class="n">8.6%</td><td><span class="ctag tl">PVV 4th place</span></td></tr>
+        <tr><td>The Hague</td><td><span class="ctag tl">City core</span></td><td class="n gn">16.4%</td><td class="n" style="color:#27ae60">19.8%</td><td class="n rn">15.7%</td><td class="n">—</td><td><span class="ctag tl">PVV 3rd, fell from 1st</span></td></tr>
+        <tr><td>Rotterdam</td><td><span class="ctag tl">City core</span></td><td class="n gn">16.9%</td><td class="n" style="color:#27ae60">17.1%</td><td class="n rn">15.8%</td><td class="n">9.4%</td><td><span class="ctag tl">PVV 3rd, fell from 1st</span></td></tr>
+        <tr><td>Almere</td><td><span class="ctag tr">Suburb</span></td><td class="n">14.1%</td><td class="n">16.7%</td><td class="n rn">19.2%</td><td class="n">14.2%</td><td><span class="ctag tr">PVV leads suburb</span></td></tr>
+        <tr><td>Capelle a/d IJssel</td><td><span class="ctag tr">Suburb</span></td><td class="n">11.5%</td><td class="n">15.4%</td><td class="n rn">17.5%</td><td class="n">12.4%</td><td><span class="ctag tr">PVV leads suburb</span></td></tr>
+        <tr><td>Maastricht</td><td><span class="ctag ts">Regional city</span></td><td class="n">17.0%</td><td class="n">19.2%</td><td class="n rn">20.8%</td><td class="n">12.6%</td><td><span class="ctag tr">PVV leads (Wilders effect)</span></td></tr>
+        <tr><td>National avg</td><td>—</td><td class="n">12.8%</td><td class="n">16.9%</td><td class="n rn">16.7%</td><td class="n">14.2%</td><td>—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="findings"><div class="findings-ttl">Netherlands 2025 Key Findings</div><ul>
+    <li>Amsterdam voted GL-PvdA + D66 combined 50.8% — PVV placed fifth with 7.3%, one of its lowest scores anywhere. The "Amsterdam = PVV" framing is factually wrong.</li>
+    <li>Rotterdam and The Hague flipped: PVV was largest in both cities in 2023, but fell to 3rd in 2025 as D66 surged from ~7–8% to ~17–20%.</li>
+    <li>Almere and Capelle illustrate the persistent suburban PVV premium: PVV leads, but its margins have roughly halved since 2023 (from 36% to 19% in Almere; 27% to 18% in Capelle).</li>
+    <li>Utrecht is the most left-leaning large city: PVV at 6.8%, with D66 and GL-PvdA nearly tied at ~26% each.</li>
+    <li>The combined far-right (PVV + JA21 + FvD = 42 seats) still grew vs 2023's 40, even as PVV individually fell — suburban anxiety redistributed within the right bloc.</li>
+  </ul></div>
+</div>
+</div>
+
+<div class="container"><div class="ornament">· · ·</div></div>
+
+<!-- ═══════════ FRANCE ═══════════ -->
+
+<div>
+<div class="container">
+  <div class="ctry-hdr" style="margin-top:2rem"><span class="ctry-flag">🇫🇷</span><h2 style="margin:0">France — Presidential 2022 &amp; Legislative 2024</h2></div>
+  <div class="ctry-meta">Two-round system &nbsp;·&nbsp; RN périurbain dominance &nbsp;·&nbsp; Le Pen / RN</div>
+  <p style="margin-top:1rem;font-size:.92rem;color:var(--muted)">Two elections, the same suburban geography. The maps below show Le Pen's 2nd-round share in 2022 and RN's 1st-round share in 2024 — calibrated independently to each election's range.</p>
+</div>
+
+<div class="wide">
+  <div class="fr-maps-grid">
+    <!-- MAP 1: 2022 -->
+    <div class="fr-map-panel">
+      <div class="map-ttl"><span>Presidential 2022 — Le Pen 2nd-round %</span><span style="color:var(--accent)">Macron vs Le Pen</span></div>
+      <svg class="map" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
+        <rect class="c-fr22-low" x="20" y="20" width="65" height="55" rx="2" data-n="Bretagne" data-rn22="Le Pen 26.8% (2nd round)" data-note="Lowest RN region"/>
+        <text x="52" y="51" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Bretagne</text>
+        <text x="52" y="63" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">26.8%</text>
+        <rect class="c-fr22-lt" x="85" y="20" width="75" height="55" rx="2" data-n="Normandie" data-rn22="Le Pen 39.1% (2nd round)"/>
+        <text x="122" y="51" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Normandie</text>
+        <text x="122" y="63" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">39.1%</text>
+        <rect class="c-fr22-paris" x="160" y="20" width="48" height="55" rx="2" data-n="Paris core (arr. 1–12)" data-rn22="Le Pen 17.1% — Macron 82.9%" data-note="Strongest left zone"/>
+        <text x="184" y="46" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Paris</text>
+        <text x="184" y="68" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">17.1%</text>
+        <rect class="c-fr22-str" x="208" y="20" width="85" height="55" rx="2" data-n="IDF périurbain — Seine-et-Marne, Yvelines, Essonne, Val-d'Oise" data-rn22="Le Pen 46.2% (2nd round)" data-note="Gap vs Paris core: +29pp"/>
+        <text x="250" y="43" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">IDF périurbain</text>
+        <text x="250" y="66" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">46.2% ↑</text>
+        <rect class="c-fr22-dom" x="293" y="20" width="87" height="55" rx="2" data-n="Hauts-de-France" data-rn22="Le Pen 53.4% — majority" data-note="Le Pen won majority — ex-industrial suburbs of Lille, Douai"/>
+        <text x="336" y="46" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Hauts-de-France</text>
+        <text x="336" y="58" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">53.4% ★</text>
+        <rect class="c-fr22-lt" x="20" y="75" width="65" height="65" rx="2" data-n="Pays de la Loire" data-rn22="Le Pen 36.8%"/>
+        <text x="52" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Pays de la Loire</text>
+        <text x="52" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">36.8%</text>
+        <rect class="c-fr22-mid" x="85" y="75" width="75" height="65" rx="2" data-n="Centre-Val de Loire" data-rn22="Le Pen 43.7%"/>
+        <text x="122" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Centre-Val Loire</text>
+        <text x="122" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">43.7%</text>
+        <rect class="c-fr22-mid" x="160" y="75" width="133" height="65" rx="2" data-n="Bourgogne-Franche-Comté" data-rn22="Le Pen 42.3%"/>
+        <text x="226" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Bourgogne–Franche-Comté</text>
+        <text x="226" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">42.3%</text>
+        <rect class="c-fr22-mid" x="293" y="75" width="87" height="65" rx="2" data-n="Grand Est" data-rn22="Le Pen 42.8%"/>
+        <text x="336" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Grand Est</text>
+        <text x="336" y="118" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">42.8%</text>
+        <rect class="c-fr22-lt" x="20" y="140" width="135" height="80" rx="2" data-n="Nouvelle-Aquitaine" data-rn22="Le Pen 36.9%"/>
+        <text x="87" y="183" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Nouvelle-Aquitaine</text>
+        <text x="87" y="196" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">36.9%</text>
+        <rect class="c-fr22-str" x="155" y="140" width="145" height="80" rx="2" data-n="Auvergne-Rhône-Alpes périurbain" data-rn22="Le Pen 47.8% (périurbain avg)" data-note="Lyon city 32% vs Lyon suburbs 48% — +15pp gap"/>
+        <text x="227" y="176" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Auv–Rhône-Alpes</text>
+        <text x="227" y="188" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">périurbain 47.8% ↑</text>
+        <rect class="c-fr22-mid" x="300" y="140" width="80" height="80" rx="2" data-n="Occitanie" data-rn22="Le Pen 43.1%"/>
+        <text x="340" y="183" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Occitanie</text>
+        <text x="340" y="196" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">43.1%</text>
+        <rect class="c-fr22-dom" x="155" y="220" width="225" height="75" rx="2" data-n="PACA — Marseille périurbain, Var, Alpes-Maritimes" data-rn22="Le Pen 54.2% — strongest region" data-note="Marseille city 38%, outer ring 54%+. Le Pen won majority here."/>
+        <text x="267" y="255" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">PACA</text>
+        <text x="267" y="267" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">54.2% ★ highest</text>
+        <rect class="c-fr22-lt" x="348" y="220" width="32" height="75" rx="2" data-n="Corse" data-rn22="Le Pen 28.1%" data-note="Corsican nationalists dominant"/>
+        <text x="364" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white" pointer-events="none">Corse</text>
+        <circle cx="250" cy="32" r="9" fill="#c0392b" stroke="white" stroke-width="2"/>
+        <text x="250" y="36" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">1</text>
+        <circle cx="227" cy="153" r="9" fill="#c0392b" stroke="white" stroke-width="2"/>
+        <text x="227" y="157" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">2</text>
+        <circle cx="230" cy="235" r="9" fill="#c0392b" stroke="white" stroke-width="2"/>
+        <text x="230" y="239" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">3</text>
+        <rect x="20" y="307" width="360" height="55" fill="#f5f3ee" rx="2"/>
+        <circle cx="37" cy="322" r="7" fill="#c0392b"/><text x="37" y="326" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white">1</text>
+        <text x="49" y="326" font-family="DM Mono,monospace" font-size="8" fill="#1a1a18">IDF périurbain 46.2% vs Paris core 17.1%</text>
+        <circle cx="37" cy="339" r="7" fill="#c0392b"/><text x="37" y="343" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white">2</text>
+        <text x="49" y="343" font-family="DM Mono,monospace" font-size="8" fill="#1a1a18">Lyon périurbain 47.8% vs Lyon city 32%</text>
+        <circle cx="37" cy="356" r="7" fill="#c0392b"/><text x="37" y="360" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white">3</text>
+        <text x="49" y="360" font-family="DM Mono,monospace" font-size="8" fill="#1a1a18">PACA 54.2% — Marseille ring decisive</text>
+        <text x="20" y="378" font-family="DM Mono,monospace" font-size="7.5" fill="#7a7570">★ Le Pen won outright majority in this region</text>
+      </svg>
+      <div class="map-leg" style="margin-top:.8rem">
+        <div class="map-leg-item"><div class="map-swatch" style="background:#8B0000"></div>&gt;50%</div>
+        <div class="map-leg-item"><div class="map-swatch" style="background:#c0392b"></div>44–50%</div>
+        <div class="map-leg-item"><div class="map-swatch" style="background:#e05540"></div>40–44%</div>
+        <div class="map-leg-item"><div class="map-swatch" style="background:#f1948a"></div>30–40%</div>
+        <div class="map-leg-item"><div class="map-swatch" style="background:#5ba4cf"></div>&lt;30%</div>
+        <div class="map-leg-item"><div class="map-swatch" style="background:#2a5fa5"></div>Paris core (&lt;20%)</div>
+      </div>
+    </div>
+
+```
+<!-- MAP 2: 2024 -->
+<div class="fr-map-panel">
+  <div class="map-ttl"><span>Legislative 2024 — RN 1st-round %</span><span style="color:var(--accent)">RN vs NFP vs Ensemble</span></div>
+  <svg class="map" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
+    <rect class="c-fr24-low" x="20" y="20" width="65" height="55" rx="2" data-n="Bretagne" data-rn24="RN 19.4%" data-nfp="NFP 32.1%" data-note="Lowest RN region"/>
+    <text x="52" y="51" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Bretagne</text>
+    <text x="52" y="63" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">19.4%</text>
+    <rect class="c-fr24-mid" x="85" y="20" width="75" height="55" rx="2" data-n="Normandie" data-rn24="RN 34.2%" data-nfp="NFP 26.8%"/>
+    <text x="122" y="51" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Normandie</text>
+    <text x="122" y="63" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">34.2%</text>
+    <rect class="c-fr24-paris" x="160" y="20" width="48" height="55" rx="2" data-n="Paris core — NFP won 12 of 18 seats" data-rn24="RN 14.2%" data-nfp="NFP ~55% (won 12/18 seats)" data-note="NFP dominant — RN won zero seats in Paris proper"/>
+    <text x="184" y="46" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Paris</text>
+    <text x="184" y="68" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">14.2%</text>
+    <rect class="c-fr24-str" x="208" y="20" width="85" height="55" rx="2" data-n="IDF périurbain — Seine-et-Marne, Yvelines, Essonne, Val-d'Oise" data-rn24="RN 38.9%" data-nfp="NFP 18.3%" data-note="Gap vs Paris core: +24.7pp — same pattern as 2022"/>
+    <text x="250" y="43" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">IDF périurbain</text>
+    <text x="250" y="66" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">38.9% ↑</text>
+    <rect class="c-fr24-dom" x="293" y="20" width="87" height="55" rx="2" data-n="Hauts-de-France" data-rn24="RN 42.1%" data-nfp="NFP 22.4%" data-note="RN all-conquering outside cities — Calais to Besançon"/>
+    <text x="336" y="46" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Hauts-de-France</text>
+    <text x="336" y="58" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">42.1%</text>
+    <rect class="c-fr24-lt" x="20" y="75" width="65" height="65" rx="2" data-n="Pays de la Loire" data-rn24="RN 28.6%" data-nfp="NFP 25.4%"/>
+    <text x="52" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Pays de la Loire</text>
+    <text x="52" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">28.6%</text>
+    <rect class="c-fr24-mid" x="85" y="75" width="75" height="65" rx="2" data-n="Centre-Val de Loire" data-rn24="RN 35.1%" data-nfp="NFP 22.1%"/>
+    <text x="122" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Centre-Val Loire</text>
+    <text x="122" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">35.1%</text>
+    <rect class="c-fr24-mid" x="160" y="75" width="133" height="65" rx="2" data-n="Bourgogne-Franche-Comté" data-rn24="RN 33.8%" data-nfp="NFP 23.9%"/>
+    <text x="226" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Bourgogne–Franche-Comté</text>
+    <text x="226" y="130" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">33.8%</text>
+    <rect class="c-fr24-mid" x="293" y="75" width="87" height="65" rx="2" data-n="Grand Est" data-rn24="RN 34.7%" data-nfp="NFP 22.6%"/>
+    <text x="336" y="106" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Grand Est</text>
+    <text x="336" y="118" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">34.7%</text>
+    <rect class="c-fr24-lt" x="20" y="140" width="135" height="80" rx="2" data-n="Nouvelle-Aquitaine" data-rn24="RN 29.1%" data-nfp="NFP 26.8%"/>
+    <text x="87" y="183" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Nouvelle-Aquitaine</text>
+    <text x="87" y="196" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">29.1%</text>
+    <rect class="c-fr24-str" x="155" y="140" width="145" height="80" rx="2" data-n="Auvergne-Rhône-Alpes périurbain" data-rn24="RN 36.2%" data-nfp="NFP 19.4%" data-note="Lyon city: RN 22%. Lyon suburbs: RN 36%. NFP won Lyon city seats."/>
+    <text x="227" y="176" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="white" pointer-events="none">Auv–Rhône-Alpes</text>
+    <text x="227" y="188" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">périurbain 36.2% ↑</text>
+    <rect class="c-fr24-mid" x="300" y="140" width="80" height="80" rx="2" data-n="Occitanie" data-rn24="RN 35.5%" data-nfp="NFP 24.2%"/>
+    <text x="340" y="183" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">Occitanie</text>
+    <text x="340" y="196" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">35.5%</text>
+    <rect class="c-fr24-dom" x="155" y="220" width="225" height="75" rx="2" data-n="PACA — Marseille périurbain, Var, Alpes-Maritimes" data-rn24="RN 44.3%" data-nfp="NFP 15.1%" data-note="Highest RN nationally. Marseille city resisted but suburbs decisive. RN won 3 seats in Nice, 3 in Marseille."/>
+    <text x="267" y="255" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">PACA</text>
+    <text x="267" y="267" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="rgba(255,255,255,.85)" pointer-events="none">44.3% ★ highest nationally</text>
+    <rect class="c-fr24-low" x="348" y="220" width="32" height="75" rx="2" data-n="Corse" data-rn24="RN 20.1%" data-note="Corsican nationalists dominant"/>
+    <text x="364" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white" pointer-events="none">Corse</text>
+    <circle cx="250" cy="32" r="9" fill="#c0392b" stroke="white" stroke-width="2"/>
+    <text x="250" y="36" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">1</text>
+    <circle cx="227" cy="153" r="9" fill="#c0392b" stroke="white" stroke-width="2"/>
+    <text x="227" y="157" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">2</text>
+    <circle cx="230" cy="235" r="9" fill="#c0392b" stroke="white" stroke-width="2"/>
+    <text x="230" y="239" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white" pointer-events="none">3</text>
+    <rect x="20" y="307" width="360" height="55" fill="#f5f3ee" rx="2"/>
+    <circle cx="37" cy="322" r="7" fill="#c0392b"/><text x="37" y="326" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white">1</text>
+    <text x="49" y="326" font-family="DM Mono,monospace" font-size="8" fill="#1a1a18">IDF périurbain RN 38.9% vs Paris 14.2%</text>
+    <circle cx="37" cy="339" r="7" fill="#c0392b"/><text x="37" y="343" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white">2</text>
+    <text x="49" y="343" font-family="DM Mono,monospace" font-size="8" fill="#1a1a18">Lyon périurbain RN 36.2% vs city 22%</text>
+    <circle cx="37" cy="356" r="7" fill="#c0392b"/><text x="37" y="360" text-anchor="middle" font-family="DM Mono,monospace" font-size="7" fill="white">3</text>
+    <text x="49" y="360" font-family="DM Mono,monospace" font-size="8" fill="#1a1a18">PACA RN 44.3% · NFP only 15.1%</text>
+    <text x="20" y="378" font-family="DM Mono,monospace" font-size="7.5" fill="#7a7570">★ Highest RN nationally</text>
+  </svg>
+  <div class="map-leg" style="margin-top:.8rem">
+    <div class="map-leg-item"><div class="map-swatch" style="background:#8B0000"></div>&gt;40%</div>
+    <div class="map-leg-item"><div class="map-swatch" style="background:#c0392b"></div>36–40%</div>
+    <div class="map-leg-item"><div class="map-swatch" style="background:#e05540"></div>30–36%</div>
+    <div class="map-leg-item"><div class="map-swatch" style="background:#f1948a"></div>20–30%</div>
+    <div class="map-leg-item"><div class="map-swatch" style="background:#5ba4cf"></div>&lt;20%</div>
+    <div class="map-leg-item"><div class="map-swatch" style="background:#2a5fa5"></div>Paris core (&lt;15%)</div>
+  </div>
+</div>
+```
+
+  </div>
+
+  <div style="background:var(--highlight);border:1px solid var(--rule);padding:.9rem 1.2rem;margin-bottom:1rem;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.08em;color:var(--muted)">
+    Same 3 suburban zones pinned on both maps — geography is identical across both elections · Color scales calibrated independently · Hover for full data
+  </div>
+</div>
+
+<div class="container">
+  <h3>City vs suburb in France — the full party breakdown</h3>
+  <p>France's city-suburb divide is the sharpest in this dataset. Paris, Marseille, Lyon, and Toulouse voted predominantly NFP in 2024; RN won just seven seats in urban areas nationally, all in the south-east. But outside city boundaries, RN is "all-conquering" across the north and Mediterranean coast. The table below shows the full multi-bloc picture.</p>
+
+  <div class="cs-grid">
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Paris city — Legislative 2024 (1st round)</div>
+      <div class="cs-row"><span>NFP (left bloc)</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~55%</span></div>
+      <div class="cs-row"><span>Ensemble (Macron)</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:52%;background:#f0b429"></div></div><span class="cs-pct" style="color:#c8860a">~29%</span></div>
+      <div class="cs-row"><span style="font-weight:600">RN ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:25.8%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">14.2%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">NFP won 12 of 18 Paris seats · RN won zero seats in Paris proper</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr suburb">🏘 IDF périurbain — Legislative 2024 (1st round)</div>
+      <div class="cs-row"><span style="font-weight:600">RN ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">38.9%</span></div>
+      <div class="cs-row"><span>Ensemble</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:53%;background:#f0b429"></div></div><span class="cs-pct" style="color:#c8860a">~21%</span></div>
+      <div class="cs-row"><span>NFP</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:47%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">18.3%</span></div>
+      <div style="font-family:'DM Mono,monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">Gap vs Paris core: +24.7pp for RN — same pattern as 2022</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Lyon city — Presidential 2022 (2nd round est.)</div>
+      <div class="cs-row"><span>Macron</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#f0b429"></div></div><span class="cs-pct" style="color:#c8860a">~68%</span></div>
+      <div class="cs-row"><span style="font-weight:600">Le Pen ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:47%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">~32%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">Lyon is strongly Macronist / left — NFP won Lyon city seats in 2024</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr suburb">🏘 Lyon périurbain (Ain, Isère outskirts) — 2022</div>
+      <div class="cs-row"><span style="font-weight:600">Le Pen ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">~48%</span></div>
+      <div class="cs-row"><span>Macron</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:108%;background:#f0b429"></div></div><span class="cs-pct" style="color:#c8860a">~52%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">+15pp gap vs Lyon city · RN 36.2% in 2024 legislative (1st round)</div>
+    </div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table><thead><tr>
+      <th>Zone</th><th>Le Pen 2022 (2nd rd)</th><th>RN 2024 (1st rd)</th><th>NFP 2024</th><th>Pattern</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Paris city</td><td class="n">17.1%</td><td class="n">14.2%</td><td class="n ln">~55%</td><td><span class="ctag tl">Left dominant · RN 0 seats</span></td></tr>
+      <tr><td>Major cities (Lyon, Marseille, Toulouse, Bordeaux)</td><td class="n">~30–38%</td><td class="n">~22–30%</td><td class="n ln">~35–45%</td><td><span class="ctag tl">NFP / left dominant</span></td></tr>
+      <tr><td>IDF périurbain (outer ring)</td><td class="n rn">46.2%</td><td class="n rn">38.9%</td><td class="n">18.3%</td><td><span class="ctag tr">RN dominant</span></td></tr>
+      <tr><td>Hauts-de-France</td><td class="n rn">53.4%</td><td class="n rn">42.1%</td><td class="n">22.4%</td><td><span class="ctag tr">RN all-conquering outside cities</span></td></tr>
+      <tr><td>Lyon périurbain (Ain, Isère)</td><td class="n rn">47.8%</td><td class="n rn">36.2%</td><td class="n">19.4%</td><td><span class="ctag tr">RN dominant</span></td></tr>
+      <tr><td>PACA / Marseille suburbs</td><td class="n rn">54.2%</td><td class="n rn">44.3%</td><td class="n">15.1%</td><td><span class="ctag tr">RN strongest nationally</span></td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="findings"><div class="findings-ttl">France Key Findings — 2022 &amp; 2024</div><ul>
+    <li>Paris, Lyon, Marseille, Toulouse, Bordeaux all voted predominantly NFP in the 2024 legislative election. RN won only 7 seats in urban areas nationally — all in the south-east (3 in Nice, 3 in Marseille, 1 in Montpellier).</li>
+    <li>The périurbain–city gap is the sharpest in the dataset: IDF outer ring vs Paris core = +29pp in 2022, +24.7pp in 2024 — consistent across both elections.</li>
+    <li>Le Pen won outright majority in PACA (54.2%) and Hauts-de-France (53.4%) in 2022 — both dominated by périurbain and ex-industrial suburban voters.</li>
+    <li>The figures between the two maps are not directly comparable (2nd round vs 1st round format), but the geographic ranking is identical — same zones lead in both years.</li>
+    <li>Macron's coalition lost the périurbain entirely — it now concentrates in city centres and upper-income inner suburbs only.</li>
+  </ul></div>
+</div>
+</div>
+
+<div class="container"><div class="ornament">· · ·</div></div>
+
+<!-- ═══════════ ITALY ═══════════ -->
+
+<div>
+<div class="container">
+  <div class="ctry-hdr" style="margin-top:2rem"><span class="ctry-flag">🇮🇹</span><h2 style="margin:0">Italy — Parliamentary Elections, September 2022</h2></div>
+  <div class="ctry-meta">Camera dei Deputati &nbsp;·&nbsp; FdI 26% nationally &nbsp;·&nbsp; Right coalition majority</div>
+</div>
+<div class="wide">
+  <div class="map-wrap">
+    <div class="map-ttl"><span>FdI vote share by region — Italian general election 2022</span><span>Ministero dell'Interno</span></div>
+    <svg class="map" viewBox="0 0 760 500" xmlns="http://www.w3.org/2000/svg">
+      <rect class="c-mid-r" x="40"  y="30"  width="55"  height="60" rx="2" data-n="Valle d'Aosta" data-fdi="FdI 18.2%" data-r="Right coalition 43.1%"/>
+      <text x="67"  y="64"  text-anchor="middle" font-family="DM Mono,monospace" font-size="8"  fill="white" pointer-events="none">V.d'Aosta</text>
+      <rect class="c-mid-r" x="95"  y="30"  width="120" height="60" rx="2" data-n="Piemonte" data-fdi="FdI 24.8%" data-r="Right coalition 47.2% — Turin city: PD 24%, FdI 19%"/>
+      <text x="155" y="64"  text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Piemonte</text>
+      <rect class="c-lt-r"  x="215" y="30"  width="90"  height="60" rx="2" data-n="Trentino-Alto Adige" data-fdi="FdI 12.4%" data-r="Autonomist parties dominant"/>
+      <text x="260" y="58"  text-anchor="middle" font-family="DM Mono,monospace" font-size="9"  fill="white" pointer-events="none">Trentino–Alto Adige</text>
+      <rect class="c-mid-r" x="305" y="30"  width="185" height="60" rx="2" data-n="Lombardia" data-fdi="FdI 23.6% region avg — Milano suburbs 28.9%" data-r="Right coalition 51.2% — Milano city: PD led, FdI 18.7%"/>
+      <text x="397" y="64"  text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Lombardia</text>
+      <rect class="c-mid-r" x="490" y="30"  width="145" height="60" rx="2" data-n="Veneto" data-fdi="FdI 24.2%" data-r="Right coalition 53.7%"/>
+      <text x="562" y="64"  text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Veneto</text>
+      <rect class="c-mid-r" x="635" y="30"  width="90"  height="60" rx="2" data-n="Friuli-Venezia Giulia" data-fdi="FdI 26.4%" data-r="Right coalition 53.1%"/>
+      <text x="680" y="57"  text-anchor="middle" font-family="DM Mono,monospace" font-size="9"  fill="white" pointer-events="none">Friuli-V.G.</text>
+      <rect class="c-mid-r" x="95"  y="90"  width="120" height="55" rx="2" data-n="Liguria" data-fdi="FdI 25.1%" data-r="Right coalition 49.3%"/>
+      <text x="155" y="121" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Liguria</text>
+      <rect class="c-mid-r" x="95"  y="145" width="400" height="70" rx="2" data-n="Emilia-Romagna" data-fdi="FdI 24.5% region avg — Bologna hinterland 29.7% vs Bologna city 19.5%" data-r="Right coalition 44.1% — ex-Red Belt cracking in suburban ring"/>
+      <text x="295" y="177" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Emilia-Romagna</text>
+      <text x="295" y="192" text-anchor="middle" font-family="DM Mono,monospace" font-size="8"  fill="rgba(255,255,255,.8)" pointer-events="none">ex-Red Belt — Bologna hinterland FdI 29.7% vs city 19.5%</text>
+      <rect class="c-mid-r" x="495" y="145" width="230" height="70" rx="2" data-n="Marche" data-fdi="FdI 30.2%" data-r="Right coalition 55.4%"/>
+      <text x="610" y="183" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Marche</text>
+      <rect class="c-lt-r"  x="95"  y="215" width="190" height="80" rx="2" data-n="Toscana" data-fdi="FdI 21.3% — Florence: PD dominated, FdI cross-cut from right &amp; former M5S" data-r="Right coalition 40.2%"/>
+      <text x="190" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Toscana</text>
+      <rect class="c-mid-r" x="285" y="215" width="120" height="80" rx="2" data-n="Umbria" data-fdi="FdI 27.1%" data-r="Right coalition 52.3%"/>
+      <text x="345" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Umbria</text>
+      <rect class="c-str-r"  x="405" y="215" width="160" height="80" rx="2" data-n="Lazio" data-fdi="FdI 30.5% — Roma hinterland: FdI 31.4% (home turf)" data-r="Right coalition 55.1% — Roma city: PD ~22%, FdI ~21%"/>
+      <text x="485" y="251" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Lazio</text>
+      <text x="485" y="266" text-anchor="middle" font-family="DM Mono,monospace" font-size="8"  fill="rgba(255,255,255,.8)" pointer-events="none">Roma hinterland 31.4%</text>
+      <rect class="c-str-r"  x="565" y="215" width="160" height="80" rx="2" data-n="Abruzzo" data-fdi="FdI 29.4%" data-r="Right coalition 53.8%"/>
+      <text x="645" y="258" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Abruzzo</text>
+      <rect class="c-lt-r"  x="95"  y="295" width="230" height="80" rx="2" data-n="Campania" data-fdi="FdI 19.8%" data-r="Right coalition 37.2% — M5S dominant in Naples"/>
+      <text x="210" y="338" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Campania</text>
+      <rect class="c-mid-r" x="325" y="295" width="80"  height="40" rx="2" data-n="Molise" data-fdi="FdI 26.1%" data-r="Right coalition 51.2%"/>
+      <text x="365" y="319" text-anchor="middle" font-family="DM Mono,monospace" font-size="9"  fill="white" pointer-events="none">Molise</text>
+      <rect class="c-mid-r" x="405" y="295" width="160" height="80" rx="2" data-n="Puglia" data-fdi="FdI 26.8%" data-r="Right coalition 49.1%"/>
+      <text x="485" y="338" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Puglia</text>
+      <rect class="c-mid-r" x="325" y="335" width="80"  height="40" rx="2" data-n="Basilicata" data-fdi="FdI 25.3%" data-r="Right coalition 50.4%"/>
+      <text x="365" y="358" text-anchor="middle" font-family="DM Mono,monospace" font-size="9"  fill="white" pointer-events="none">Basilicata</text>
+      <rect class="c-mid-r" x="95"  y="375" width="230" height="70" rx="2" data-n="Calabria" data-fdi="FdI 24.1%" data-r="Right coalition 47.8%"/>
+      <text x="210" y="414" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Calabria</text>
+      <rect class="c-mid-r" x="325" y="375" width="240" height="70" rx="2" data-n="Sicilia" data-fdi="FdI 23.7%" data-r="Right coalition 48.5%"/>
+      <text x="445" y="414" text-anchor="middle" font-family="DM Mono,monospace" font-size="11" fill="white" pointer-events="none">Sicilia</text>
+      <rect class="c-mid-r" x="40"  y="295" width="55"  height="150" rx="2" data-n="Sardegna" data-fdi="FdI 20.4%" data-r="Right coalition 42.1%"/>
+      <text x="67"  y="372" text-anchor="middle" font-family="DM Mono,monospace" font-size="9"  fill="white" pointer-events="none">Sardegna</text>
+      <circle cx="397" cy="48" r="12" fill="#c0392b" stroke="white" stroke-width="2.5"/>
+      <text x="397" y="53" text-anchor="middle" font-family="DM Mono,monospace" font-size="10" fill="white" pointer-events="none">1</text>
+      <circle cx="295" cy="163" r="12" fill="#c0392b" stroke="white" stroke-width="2.5"/>
+      <text x="295" y="167" text-anchor="middle" font-family="DM Mono,monospace" font-size="10" fill="white" pointer-events="none">2</text>
+      <circle cx="485" cy="233" r="12" fill="#c0392b" stroke="white" stroke-width="2.5"/>
+      <text x="485" y="237" text-anchor="middle" font-family="DM Mono,monospace" font-size="10" fill="white" pointer-events="none">3</text>
+      <rect x="40" y="458" width="685" height="34" fill="#f5f3ee" rx="2"/>
+      <circle cx="64"  cy="475" r="9" fill="#c0392b"/><text x="64"  y="479" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white">1</text>
+      <text x="78"  y="479" font-family="DM Mono,monospace" font-size="9" fill="#1a1a18">Milano suburbs FdI 28.9% vs Milano city 18.7% (+10.2pp)</text>
+      <circle cx="330" cy="475" r="9" fill="#c0392b"/><text x="330" y="479" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white">2</text>
+      <text x="344" y="479" font-family="DM Mono,monospace" font-size="9" fill="#1a1a18">Bologna hinterland FdI 29.7% vs Bologna city 19.5% (+10.2pp)</text>
+      <circle cx="560" cy="475" r="9" fill="#c0392b"/><text x="560" y="479" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="white">3</text>
+      <text x="574" y="479" font-family="DM Mono,monospace" font-size="9" fill="#1a1a18">Roma hinterland FdI 31.4% (home turf) vs Roma city ~21%</text>
+    </svg>
+    <div class="map-leg">
+      <div class="map-leg-item"><div class="map-swatch" style="background:#c0392b"></div>FdI >28%</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#e05540"></div>FdI 23–28%</div>
+      <div class="map-leg-item"><div class="map-swatch" style="background:#f1948a"></div>FdI &lt;23%</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>City vs suburb in Italy — the full party breakdown</h3>
+  <p>Italian cities largely held for the centre-left and PD in 2022, while FdI's gains were concentrated in suburban commuter belts. The "Red Belt" cities of Turin, Milan, and Florence retained PD pluralities in their centres; Bologna and Florence's suburban rings told a different story. In southern cities, M5S rather than the right captured the urban discontented vote.</p>
+
+  <div class="cs-grid">
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Bologna — city centre (2022 est.)</div>
+      <div class="cs-row"><span>PD (centre-left)</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~28%</span></div>
+      <div class="cs-row"><span>M5S</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:55%;background:#888"></div></div><span class="cs-pct">~15%</span></div>
+      <div class="cs-row"><span style="font-weight:600">FdI ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:70%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">19.5%</span></div>
+      <div class="cs-row"><span>Lega</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:35%;background:#e67e22"></div></div><span class="cs-pct">~9%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">Red Belt city — PD still leads, FdI at 19.5%</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr suburb">🏘 Bologna hinterland — suburban ring (2022)</div>
+      <div class="cs-row"><span style="font-weight:600">FdI ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">29.7%</span></div>
+      <div class="cs-row"><span>PD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:65%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~19%</span></div>
+      <div class="cs-row"><span>Lega</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:38%;background:#e67e22"></div></div><span class="cs-pct">~11%</span></div>
+      <div class="cs-row"><span>M5S</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:35%;background:#888"></div></div><span class="cs-pct">~10%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">FdI leads suburbs — +10.2pp vs city centre</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Milano — city centre (2022 est.)</div>
+      <div class="cs-row"><span>PD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~22%</span></div>
+      <div class="cs-row"><span>M5S</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:73%;background:#888"></div></div><span class="cs-pct">~16%</span></div>
+      <div class="cs-row"><span style="font-weight:600">FdI ⬇</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:85%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">18.7%</span></div>
+      <div class="cs-row"><span>Lega</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:45%;background:#e67e22"></div></div><span class="cs-pct">~10%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">PD leads city · FdI drew cross-party votes incl. former M5S/Lega</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr suburb">🏘 Milano suburbs — commuter belt (2022)</div>
+      <div class="cs-row"><span style="font-weight:600">FdI ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">28.9%</span></div>
+      <div class="cs-row"><span>PD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:55%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~16%</span></div>
+      <div class="cs-row"><span>Lega</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:52%;background:#e67e22"></div></div><span class="cs-pct">~12%</span></div>
+      <div class="cs-row"><span>FI</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:38%;background:#27ae60"></div></div><span class="cs-pct">~9%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">Right coalition ~50%+ in commuter belt — FdI leads at 28.9%</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Naples — city (2022)</div>
+      <div class="cs-row"><span style="font-weight:600">M5S ⬆</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#888"></div></div><span class="cs-pct">~30%</span></div>
+      <div class="cs-row"><span>PD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:63%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~19%</span></div>
+      <div class="cs-row"><span>FdI</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:66%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">~20%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">M5S dominant in Naples — right bloc weaker in southern cities</div>
+    </div>
+    <div class="cs-panel">
+      <div class="cs-hdr city">🏙 Roma — city centre (2022 est.)</div>
+      <div class="cs-row"><span>PD</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:100%;background:#2a5fa5"></div></div><span class="cs-pct" style="color:#2a5fa5">~22%</span></div>
+      <div class="cs-row"><span style="font-weight:600">FdI ↔</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:95%;background:#c0392b"></div></div><span class="cs-pct" style="color:#c0392b">~21%</span></div>
+      <div class="cs-row"><span>M5S</span><div class="cs-bar-wrap"><div class="cs-bar" style="width:68%;background:#888"></div></div><span class="cs-pct">~15%</span></div>
+      <div style="font-family:'DM Mono',monospace;font-size:.6rem;color:var(--muted);margin-top:.6rem">Roma city competitive · Roma hinterland (Lazio): FdI 31.4% (home turf)</div>
+    </div>
+  </div>
+
+  <div class="tbl-wrap">
+    <table><thead><tr><th>Zone</th><th>FdI</th><th>PD</th><th>M5S</th><th>Lega</th><th>Right coalition</th><th>Pattern</th></tr></thead>
+    <tbody>
+      <tr><td>G5 city cores</td><td class="n rn">20.8%</td><td class="n ln">22.1%</td><td class="n">14.3%</td><td class="n">6.2%</td><td class="n">37.1%</td><td><span class="ctag tl">PD leads cities</span></td></tr>
+      <tr><td>Suburban commuter belt</td><td class="n rn">29.3%</td><td class="n">15.2%</td><td class="n">17.8%</td><td class="n">10.1%</td><td class="n rn">49.4%</td><td><span class="ctag tr">FdI leads suburbs</span></td></tr>
+      <tr><td>Small towns 5–50k</td><td class="n rn">27.1%</td><td class="n">14.8%</td><td class="n">19.2%</td><td class="n">11.4%</td><td class="n rn">48.2%</td><td><span class="ctag tr">FdI strong</span></td></tr>
+      <tr><td>Rural / southern</td><td class="n">24.2%</td><td class="n">13.1%</td><td class="n rn">27.4%</td><td class="n">6.8%</td><td class="n">41.1%</td><td><span class="ctag ts">M5S competes south</span></td></tr>
+    </tbody></table>
+  </div>
+  <div class="findings"><div class="findings-ttl">Italy Key Findings</div><ul>
+    <li>PD led FdI in city cores nationally (22.1% vs 20.8%) — the right's urban underperformance mirrors the pattern in France and the Netherlands.</li>
+    <li>FdI's suburban premium averaged +9pp over city cores: Bologna hinterland 29.7% vs city 19.5%; Milano suburbs 28.9% vs city 18.7%.</li>
+    <li>Lazio (Roma hinterland) is FdI's home turf — the Castelli Romani and Pomezia belt where the party has deep local roots. Roma city itself was more contested.</li>
+    <li>In southern cities (Naples, Palermo), M5S remained dominant, limiting FdI and preventing a simple right-suburb equation in the south.</li>
+    <li>FdI drew broadly: ~70% of its 2022 voters came from other centre-right parties (Lega, FI), with ~17% from former M5S and ~11% from PD — cross-cutting suburban appeal.</li>
+  </ul></div>
+</div>
+</div>
+
+<!-- ═══════════ SYNTHESIS ═══════════ -->
+
+<div class="container">
+  <div class="ornament">· · ·</div>
+  <hr class="section-rule">
+  <div class="section-label">03 — Comparative Synthesis</div>
+  <h2>The suburban premium: cross-national</h2>
+
+  <div class="swing-matrix">
+    <div class="mx-cell"><div class="mx-ctry">🇺🇸 USA 2024</div><div class="mx-val" style="color:var(--rc)">+4.6pp</div><div class="mx-desc">R gain in outer suburbs vs 2020</div></div>
+    <div class="mx-cell"><div class="mx-ctry">🇳🇱 NL 2025</div><div class="mx-val" style="color:var(--rc)">+7–13pp</div><div class="mx-desc">PVV above national avg in Randstad &amp; Limburg suburbs</div></div>
+    <div class="mx-cell"><div class="mx-ctry">🇫🇷 FR 2024</div><div class="mx-val" style="color:var(--rc)">+15pp</div><div class="mx-desc">RN in périurbain vs national 1st round</div></div>
+    <div class="mx-cell"><div class="mx-ctry">🇮🇹 IT 2022</div><div class="mx-val" style="color:var(--rc)">+9pp</div><div class="mx-desc">FdI suburban premium over city cores</div></div>
+  </div>
+
+  <div class="pullquote"><p>The suburban voter is not voting against democracy. They are voting against the price of a litre of milk, a mortgage renewal, and a 45-minute commute on a road that hasn't been resurfaced since 2009.</p></div>
+
+  <h3>The Dutch exception — what it tells us</h3>
+  <p>The 2025 Netherlands election introduces a crucial nuance. D66's surge showed that suburban voters can be pulled back from the far right when a credible alternative contests their material concerns — above all, housing. But D66 did not win the suburbs; it won the cities. Almere, Capelle, and Maastricht all stayed with PVV even as Rotterdam and The Hague flipped. The far-right total (PVV + JA21 + FvD = 42 seats) actually grew. This is the key analytical finding: suburban swing operates primarily <em>within</em> the right bloc, not between left and right.</p>
+
+  <hr class="section-rule">
+  <div class="section-label">04 — Conclusions</div>
+  <h2>Who owns the suburb?</h2>
+  <p>For now, the right — but cities remain reliably left or centre-left across all four cases. Amsterdam voted GL-PvdA + D66 at over 50%. Paris gave RN 14%, with NFP winning 12 of 18 seats. Bologna and Turin's city centres stayed with PD even as their hinterlands moved right. This urban-suburban polarity is the defining electoral geography of the 2020s.</p>
+  <p>The suburb's defining characteristic is volatility, conditional on material outcomes. The Netherlands 2025 case is the strongest proof: the same suburban electorate that gave PVV a landslide in 2023 punished it in 2025 — while still not moving left. Whether centre-left parties can reclaim the suburb depends on whether they can rebuild a vocabulary of material concern that speaks to the périurbain, the Randstad commuter belt, and the Roman hinterland. So far, they have not.</p>
+
+  <div class="hypo-grid" style="margin-top:2rem">
+    <div class="hypo-box">
+      <div class="hypo-num">H1 — Final Verdict</div>
+      <h4>Suburbs are structurally volatile</h4>
+      <p>Confirmed across all four cases. NL 2025 is the strongest proof: PVV's suburban base punished it severely in one cycle while cities remained stable for left and centre parties.</p>
+      <span class="verdict v-yes">✓ Confirmed</span>
+    </div>
+    <div class="hypo-box">
+      <div class="hypo-num">H2 — Final Verdict</div>
+      <h4>Right parties capture suburban anxieties</h4>
+      <p>Largely confirmed. The NL 2025 nuance: suburban swing operates within the right bloc rather than between left and right, suggesting the right's suburban advantage is structural but not unconditional.</p>
+      <span class="verdict v-part">~ Confirmed with conditionality</span>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+  <div class="section-label">05 — Methodology &amp; Sources</div>
+</div>
+
+<div class="methodology wide">
+  <strong>Methodology Note</strong>
+  <p>"Suburban" is operationalised via population density quintiles, commuting flow data (Eurostat; US Census LEHD), and housing typology. Maps show administrative boundaries schematically — accurate but not pixel-perfect GIS. The Netherlands section reflects the 29 October 2025 election per Kiesraad official results (7 November 2025). City-level Dutch results sourced from ANP Election Service / DutchNews.nl municipal breakdowns. France section: 2024 legislative first-round results per Ministère de l'Intérieur; city vs suburb breakdown from CEVIPOF/Wiley analysis (Bendjaballah 2025) and Sciences Po CEVIPOF post-election report. The two France maps use independently calibrated colour scales — not directly comparable (2nd round vs 1st round format). Italy: 2022 results per Ministero dell'Interno; city vs suburb splits from CISE (Improta et al.) and Who Governs Europe analysis.</p>
+  <div class="sources" style="margin-top:1.5rem">
+    <strong>Sources &amp; Data</strong>
+    <ol>
+      <li>US: AP/NYT county-level results 2024 &amp; 2020; Catalist voter file; Edison Research exit polls</li>
+      <li>Netherlands: Kiesraad official results 7 Nov 2025; ANP Election Service gemeente data; DutchNews.nl municipal breakdown (30 Oct 2025); NL Times; CKZ Vandaag (Capelle results); iamexpat.nl; Euronews; Wikipedia 2025 Dutch general election</li>
+      <li>France: Ministère de l'Intérieur results 2022 &amp; 2024; Bendjaballah (2025) EJPR Political Data Yearbook; Sciences Po CEVIPOF July 2024; Connexion France second-round breakdown; Guilluy, C. (2014) <em>La France Périphérique</em>; Tandfonline "The deluge" (Modern &amp; Contemporary France, 2024)</li>
+      <li>Italy: Ministero dell'Interno 2022; CISE — Improta, Pedrazzani et al. (2022) <em>Voters, Issues, and Party Loyalty</em>; Who Governs Europe spatial analysis; Geopolitique.eu election post-mortem</li>
+      <li>Comparative: Oesch &amp; Rennwald (2018), <em>West European Politics</em>; Gougou (2023) suburban comparative study</li>
+    </ol>
+  </div>
+</div>
+
+<footer>
+  <div>© 2025 Evgeniya Orlova &nbsp;·&nbsp; janeorlova.com &nbsp;·&nbsp; Political Analysis</div>
+  <div style="margin-top:.5rem">Data: official electoral commissions &nbsp;·&nbsp; Design &amp; analysis: E. Orlova</div>
+</footer>
+
+<script>
+const tt = document.getElementById('tt');
+document.querySelectorAll('svg.map path[data-n], svg.map rect[data-n]').forEach(el => {
+  el.addEventListener('mousemove', e => {
+    const d = el.dataset;
+    let lines = [`<strong style="font-size:.72rem;letter-spacing:.08em">${d.n}</strong>`];
+    if (d.r && !d.fdi && !d.pvv && !d.rn22 && !d.rn24) lines.push(d.r);
+    if (d.r && d.pvv) { lines.push(d.r); lines.push(d.pvv); }
+    if (d.rn22 && !d.rn24) {
+      lines.push(`Presidential 2022 (2nd round): Le Pen ${d.rn22}`);
+      if (d.note) lines.push(`<em>${d.note}</em>`);
+    }
+    if (d.rn24 && !d.rn22) {
+      lines.push(`Legislative 2024 (1st round): RN ${d.rn24}`);
+      if (d.nfp) lines.push(`NFP: ${d.nfp}`);
+      if (d.note) lines.push(`<em>${d.note}</em>`);
+    }
+    if (d.fdi) lines.push(d.fdi);
+    if (d.r && d.fdi) lines.push(d.r);
+    tt.innerHTML = lines.join('<br>');
+    tt.style.opacity = '1';
+    tt.style.left = (e.clientX + 16) + 'px';
+    tt.style.top  = (e.clientY - 14) + 'px';
+  });
+  el.addEventListener('mouseleave', () => { tt.style.opacity = '0'; });
+});
+</script>
+
+</body>
+</html>
