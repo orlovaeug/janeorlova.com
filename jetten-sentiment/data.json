@@ -1,5 +1,15 @@
 [
   {
+    "id": "gd215d9327866",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Van samenwerking naar strijd: Nexperia en Chinese eigenaar drijven verder uit elkaar - Het Financieele Dagblad",
+    "date": "2026-04-12",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMkk4cHA3cFZyWXNjejhwQm9kUmtDdU9JV3h2WWt0NjBLdE04Z19LdFc0aHVMenFNTGJoUmZvcF9xc2hmQnhwMEN0dDBic1JfX05rTGF6VE1zRlJfRGZUWnc4V3NFWnhaRFQxT05fYkhEaV9wbkJleTNIT2lSZjJMTzZoaTNIbkQxcVZYZDJCSnc4cHdMRFl5ZzlOaGR0cnB5aVE5VkJ4RzVQdWpMT2ZIU0tHY2p6d016Q1Yw?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4d78bbe86eda",
     "type": "nl",
     "src": "De Telegraaf",
@@ -31,6 +41,39 @@
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQU3JERlNockJtLTNVTnVlRUVhSUNFaUJobHZOY0gtcWJCT0hKSVBZNDFsVElGMHlUWmczTnNCZmszdHFndS1uTHh5MGM1TFh2RWZyYzNpcjhjRFA3RE1rX3hpVDdhaDgwaWdMX1FrWFRyaTdVcWFrSHNZSUExcHFuUEFZVHItZFpOOXl4SDN3anduc1RHd01KRnctaWFhV3h0X1gtdWlxcGRMb0VYZkpzeGVSVW5uckNQZFkxa0VEODA1dEQwZVhXOXJtaUhrWGFDclRGQ0swU21RQQ?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "gf1f11f34f0b9",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Het kabinet-Jetten levert Bonaire een luizenstreek - bnnvara",
+    "date": "2026-04-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOOTJtZGtrYTN1TkpVOTRFbFNXVTVwWUl4QTlubk5SdFJtUkRub0Vab2VqOHZ0NVZkc05jZ0JORl9FZ2RTOXp1VkFUMTc3ajZibkVwMkZCTWVQS3BLcERyS0piNWVvYmdIcnF0SGh6Y01YQzVTV3Y1UXQ0YXdkLWx0UEhST0VxcUlwLTBENnVmeHBxZw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g8cd2fa87a889",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet-Jetten laat de allerarmsten in de samenleving opzettelijk in de shit zitten - bnnvara",
+    "date": "2026-04-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZmVtRzJCUU50NWpJbTZwdUFmVG5MbDJ0QU5odXBtbV8zQTNuOXZwZFI2OExKcjhFbENNQjcza0s0bTdBdlk1R1N4RmdLd2E2OFk3MDhTaF9Cc1M5UTlOaEhZdm5TenpkQVpmZTJfZ1N3WC03ZUN5WDkwYWgyWnZfLXEtbTJJWjVyRjhTSDE5V01FX1R0cWZWa3R5alRuaVl0ZFFtQVZCUkl0RHA3U1FOU2ZHVUpiTWE5VWRnN1p3?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g95a77ac8ecf8",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Ombudsman verwijt kabinet hulp aan kwetsbaarste burgers te schrappen - Trouw",
+    "date": "2026-04-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVFAzbmJjNXRHUG9QbzVPRk5nVDNUa1R2RkIwS2Q5bGdSNGJUaU1DbUR0VlNsNXozczJqalBqVHJUdmRySzRSVENMclpWb0JHSDZJdHlOYzRmY1ZUV1RMbWNmc3AxNS1PZlJtZTZmaE1oRE12c0J1cV90T2Q3MWI5MWhtU0p3dTk1UzRNVDEwQnY3clNlX2tjTFlsT3NjZG9aS0JGTW96U21FRHk4SWtr?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "g08092fc24d52",
@@ -244,6 +287,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbkdtU0hTUXNzM1ltaFJzZXZFR1RoeXVqcnY5Wl9LaWFvRGdEaTRieUVMZlg4NE5LWThDakpTNDByalA5SGpjTzBYQnpBTTZfQlZKNVloRnE4RjZBYTVQY2hIZGhGMUlwdHNhbmFjcklaa2xUVlBEbEVJMzJaVEpqcmtuOEpRUjItYThaZnROU3QweWZGb1pSWEJxZmo4d0MwbUppY3JseUEyTnZR?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g9ab9cb209b7e",
+    "type": "nl",
+    "src": "Blik op nieuws",
+    "title": "Premier Jetten brengt een bezoek aan Trump in de Verenigde Staten - Blik op nieuws",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTVTM2I2c2hzczBlTDdrV3lWSDFZejFXTE05UHFBTEFHT1FhUV9zcXFOclBlMlNjYi1oaTNaa3doSnMzdV9iSEp0Y2hCOW0zcFk1aXNDSmFlbDNoSGVJSnZYcy1rRGliaW9jNzFSbHpEUl8tV3R3OGpMMURBV3hnR3h5c1pyOEhaQXRRek9HcUpLaWR3WWI2VzVybFZhaTNrLTh1YndEV3E4QkxWS1JuTkdR?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g9da8aa9eb5f0",
@@ -1200,6 +1253,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNckwwbWR6YzVOWlJOc1VSWWFtVGFQTzRHQ0xySDBKaFMxZXJ2WjdrWHdMRVR2M2V3S1V5c3lOcldrQVJyWjg3cTBJYmprRzhZVmF3dmVnbEp6aURQQWtJNThhUUhXcWVjZXptNDBQb1lHd0hYMUFERUNaSm5JZjhuemg0RFJNNzB4c09YUExqMm9iT1daMnJhZWNR?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g262d4ccd62ea",
+    "type": "intl",
+    "src": "Royal House of the Netherlands",
+    "title": "King Willem-Alexander and Queen Máxima to pay working visit to Pennsylvania, Washington, DC and Florida - Programme - Royal House of the Netherlands",
+    "date": "2026-04-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxObDR4VFRQZjVFMThxNGc4T1hGWUJoUmc0WUNwRFlCSTZtYnZFRDB2YzlOR0FTZm1qNllGUjdVcU5LbjZlckZldHd2QWhtN0xlREI5bS1vUE5VOGJ5amhoU2J5cDJyQV9KeERXOHBMcFpJVXAtMGhPWFhLeGJaT1IxOXFEMFY4NXdqWU5Sd1FOM08xWkprX3YyakVXS05MTlBBMmxFQWczMXRZZG5sM2NjYV9yeWxWNm1fVzBLWTc4bDRLSmZTS3lLdHBhS3BnZVRfdG5Xd0dDOXpOV0F3QWFWcHRpY0drVklzTldqSFVSZ1NKcTg?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g6d0dae1b370b",
@@ -9998,5 +10061,25 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQcldxRTlLZ0kwSF85bXZNaWoxWVJTOHY1dTBPZmxvNkFobDlqRkNxR3NsZ2tKeENIR1o5QzNFM3VPSlkxNVBFR0cycE1xSXltU09mQ1E5eGpRd09BZUd4bEhEZURweDcyUlRHTXNMVzlGWFJtVlJ0ak9PLUNwcVRWWkMyMmgzQ2pERkhFR1FxamVMMHkteEY4a3lIYjZGTzFVSkZDajBRTDRZUQ?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g7b95754ee07e",
+    "type": "intl",
+    "src": "Euronews",
+    "title": "Rob Jetten se convierte en el primer ministro más joven de Países Bajos tras 117 días de negociación - Euronews",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR0RxUlhlVFczaVdXQUJaZGNMZGUzOUdpVWd3bER4enR4UGFtVW9EcG0wd1FLZGxhbGgzbktWQlZpdWpuaWFHWFVmRVJXU3NHSE14alhIdEEyODg2d2RiNlRxcnZqR1dncVZ3YndBaUNKZE42dktpQ0NXeHZ5SGpXTUFTXzVWMGlKbmVZ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3c9ed0417cda",
+    "type": "intl",
+    "src": "Diario Público",
+    "title": "El liberal progresista Rob Jetten,de 38 años, se convierte en el primer ministro más joven de la historia de Países Bajos - Diario Público",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZkRWMnVscEFUMmMwZHVDdzhjdlVNZjZYREFOWWpoWEJXUkdsQzBha3RyNXZXR3gxTUloNVp4NjFjOEppMFdnSndfd0dSRkh0ZlA4aHd5dEVKendiWnZyU0Y2Q2piUjRiV1RqY20xWXNYMW00c09ScndtMVVKTGhkbzJUVjFjeXo5T0VhZTdkUUxHM0hoUnNYQU10bi1uXy0ycGpGWDBHdVNSakFsRmotdlRMUzN5UkxITnhPVkIwRi1NWWxXb1NZNmlwM09BNm_SAdQBQVVfeXFMT2tKRnV4WEIyT2M4RDhNSmRoZEluRzAxVzExNVV0aE1DMzMtZUM1Y0g3d3R1SExaeVpsMDlSYUJtS2l1Z0tFZlc5U3ZfeTc5cVlPTW5DM1FoSGMwb1RlTnN2X2lvVzRvOE5nWEgzdFhxWGE3eUM1WGVnVlIwazFKaHNtMmMwSDh2Q3BqNm1hcmFDa3B5aXZQN1ZuSmFtTmp0cWlFd3VqZWFQcUU4d3BrQVRhbzFSazRyRXdFNDljTnlqM0k2MFpVYkxyY3ZEcmNHbEpsUDQ?oc=5",
+    "flag": "🌍"
   }
 ]
