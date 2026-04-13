@@ -1,5 +1,36 @@
 [
   {
+    "id": "g691be09de075",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Koningspaar dineert met Jetten bij Trump: ‘Bezoek speelt Amerikanen in de kaart’ - bnr.nl",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNV1VtdHVOZDRpNi1HTnR1TmxER0R3cjBlQ2F1RXZhSmI5R0MxNGw5eWNLYkxuUmlxRDN3QThkMHVmbVlfTXVPUkFVMEV3Vm9zVUZnNGZoLW1zcjJzSVdTcjZtX2RvTV9URkc3dHk2eUJCM1cwY3pLTmRjRE44c29uZTI5Z053ODNUc3hPTElQM3Zaa2c0RmJVTzc5TnZrX2ZvZlQ2WDVDV2NFNS1lQkxjSHdRSFJIbVE1MWVXcS1XdW9kUjJRc2c?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf6cfb27020aa",
+    "type": "intl",
+    "src": "The New York Times",
+    "title": "‘The Strangest Sleepover Ever’: Dutch Skeptical as Their Royals Visit Trump - The New York Times",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQXzZaNG93VUEwS3g5YUtsLXpBek9HTHFkNEN4T01KY0lvU0lONWk0LTRtSGRiQ3AzWUlUeEhfM243TXJtQXZnQ1ozRXZiMnZyczh1ZjR3YU9KeHlYLVRCOHQ5bEhTX1lCeF8zMWlKYmhjVTVuZVJUM29LWVEtWk5ZNnE3RUR3YWNiODZvRUhwSjFxZw?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g141e6f8373a6",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "“A new step for Hungary,” Dutch PM Jetten says about Peter Magyar’s election win - NL Times",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUVRlc2hBRHJKMUYxSUh4ZmZ2UWwwOW8zNEpEcTFOR0ppb18xaWNmeE1qb1RJMFJCRW9BXzA2OVdnSDFQQnBmTF9mMFRPX2MtYWk4R1dTUVNtLTUxampuUkd1Y094eEpMU2V5Nm1nSldaVXV1RVN2ODJ4NkEtZTcwNjg5Q2VMdDBtMW9zV0tYSzE4bmZkNDRfNTdB?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
     "id": "gd215d9327866",
     "type": "nl",
     "src": "Het Financieele Dagblad",
@@ -8,6 +39,110 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMkk4cHA3cFZyWXNjejhwQm9kUmtDdU9JV3h2WWt0NjBLdE04Z19LdFc0aHVMenFNTGJoUmZvcF9xc2hmQnhwMEN0dDBic1JfX05rTGF6VE1zRlJfRGZUWnc4V3NFWnhaRFQxT05fYkhEaV9wbkJleTNIT2lSZjJMTzZoaTNIbkQxcVZYZDJCSnc4cHdMRFl5ZzlOaGR0cnB5aVE5VkJ4RzVQdWpMT2ZIU0tHY2p6d016Q1Yw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g921ecf6dae89",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Het Witte Huis als mijnenveld voor regeringsleiders: dit scenario wil Jetten voorkomen",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/het-witte-huis-als-mijnenveld-voor-regeringsleiders-dit-scenario-wil-jetten-voorkomen~a1b32846/"
+  },
+  {
+    "id": "gd272c5d1cd2d",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "‘De vraag is of Jetten zijn zorgen aan Trump durft te uiten’",
+    "date": "2026-04-12",
+    "sent": "n",
+    "link": "https://www.trouw.nl/binnenland/bellen-met-vs-correspondent-barbara-noordermeer-de-vraag-is-of-jetten-zijn-zorgen-aan-trump-durft-te-uiten~b5ca78c6/",
+    "lr": "left"
+  },
+  {
+    "id": "gc6d6f9692703",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Jetten, Yeşilgöz en Europese leiders verwelkomen Hongaars verkiezingsresultaat - Trouw",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMGs4cDR0NWhBam1nMHkxczBmcXJGVV9ZdnlhRTRIUWpENExramxBU1RjaXVOU3pUWlJDOGMxN2ZJU1lFZXRDc0h5N0xfU2F3dGdkYUxMcXpZdjdtMlVPWThRNUZyRWJqcXhKVk5GMmtNT0txQVFsNk5iUmtVam5UcWRmTmxsNWxhUDVOVGliSzR0MnJSZVZmTlAwS2VYV0dUU0ZOeXhxSjJjTC1IOXhkbHdFWDhBUExfal9N?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g60281b617f4f",
+    "type": "nl",
+    "src": "NU",
+    "title": "'Het bezoek van het koningspaar en Jetten aan Trump is ongepast' - NU",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOemxfMk5Rb0xlYjNxc2JsUnNRZ2RnSkpMWXZQbEZ1OEd2S3NCYjNwdy1GQnlRMXFfSTBJZVFNZlJ3ME1Uenh6VUsxY3VZVldlRFVSWlFWbjl4WVpuT0wzUk9hQzlGdXF2YW9VUk1sUDBnTUxRR201bEY4TGVHZ0hGZ19jZEU5cEt0cWp0dVpXckhsQVdRYmZmR0hZLUx6UE1uUnFtUjdyQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g125dd8fb5bff",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Trumps uitnodiging weigeren doe je niet zomaar, weten ze in Duitsland en het VK - NOS",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbVFLeHIwVmU0Y05IQVlzTEtGOHJtMDlWSk1yZHlYT3dOeFFtUzZuYTVIT3BfMXl6eXhrbU5PMk1zc3ZaQ0w0ZFVDWFdUN1AwUS12SEF4NlhYSmgxdFRkelotLWVGSjdHSGxtSHl1cHg3eGxzczFMMTA3d2ptWEEyNzg1MHc1dFhrdDNPU1B0UnhkVFhYNnV6NThjTW1uMWhoQnJ4c09iSVFJZFAtUlFYT0Eza1lYN0lCN1ZZ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g24ce0fe3ee22",
+    "type": "nl",
+    "src": "Nieuws.nl",
+    "title": "Jetten: overwinning Magyar markeert nieuwe stap voor Hongarije - Nieuws.nl",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb281ZHNWYTIwS3JqNTNENlFUbjUtWlR6RHpIcDNhT3BsTk0yOEdEcjFXQTdMdTR5RWFwZS1BMFU4UHE0dWFzNGRzTS01SV9tTDRDeC1Oa2lreE9sT25zTVc3MVRwbnMyRF9rd29xMEs0dHFZVGJjcjN6WWUtYlppNl9DWjVzb3pJTGdHTDE2cUhPQWxScGNwb29xZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g05aaccf2562d",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Bart Nijman: koningshuis snapt dat band met VS veel verder teruggaat dan Donald Trump - De Telegraaf",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPdmRvclVwRXFFUHVRNVJtUWtpelRUTGNjOWFSenJ3aFFIRzV4UUJhclZLZjNSOEFVY1hDQ0VWWHY4dHR3aEdhNDhNR3lsZDlwcUFyMF9OR2plbHlJTkxEWEgtVHBWa2xGNnZUN2Y3SWw5ZldkbmhtSnJCVE5MSEtzMFlsdjdIVzlvRW82VUVkNFpKLUtFc1VPS3RHRldQb2hCVW9BLVF6WlBac0NxSFZfVlRSMmVNVEE5bUxmRHNQVXYyVzdvTjZFVE83Zw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g187e37843a40",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Opinie: Laat het kabinet-Jetten de ondoordachte Faberwetten als wisselgeld gebruiken - de Volkskrant",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObEhRUjlOVGlvM3BxWDFxcFQtc2U3dXE3SHRpT3J1cnI5Q0YyeGlZcWJPX0Y0WW45MnY4TmJ1UHN6UVI0NzU1ZEJYZFN5SHJrWVJ2WkN5X1NMWjdvTzFYNjJaU1Y4V0JUOG4zTUdZN0lLTEkwYklRUkc2QU43ckpZNHZBcC1IeFNmVU9FaTBxZVM2c01uUFNpVzM5MEM1TkE5clJnZnl0SE9aRm9XejQ2YVR1MjFEQTRiQzN0bGR2VjBLSDNOdjQwcjRPcWFGNWc?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gd0d2c9625510",
+    "type": "nl",
+    "src": "Hart van Nederland",
+    "title": "Nog weinig enthousiasme voor kabinet-Jetten: dit zijn de populairste ministers - Hart van Nederland",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcXJEeFBNZjNDaVBsNXlRTGJpMUJqai15VEJxYzh1RjVzMWFpVXBoMTBqVXJJWmhNOUNRa054N2pIdGVxQXN2NVJ6MEZ1dHZpVUVlMFBpMTQ0T05ab3BhWFpDcTdfNXEwWUZQQjhwN2hiWmtKLW9VUnhuMTFuMmdSWTNSY2kxRXdOOWNQMkQyMU90bUgydUN1ZzRndHRmcEpDM0xOWmE4OHpsb1AwT2lCQm5MRkx3T0dONU9rbm5XTkg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g23a426731b2f",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch lawmakers uneasy over Jetten and royals’ White House dinner with Trump - NL Times",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQUENSTFZZWkhVeVI0LUwtY0VkSHlramlCSlF4NGJnLUhJNVpBNF82QzF5T2lJbzBfNWtocGQwWmIwbTN3QWxKWjBLZ3h4cUJFQm5xV185ZzZOTklkRHNCcGh2WW5QTVJteFZrWm14bzRfU0JxankxcEJsMUh6ZURtaHE4VlZYOVA3c3NraE1QdTloNzhsQmc?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g4d78bbe86eda",
@@ -296,6 +431,36 @@
     "date": "2026-04-10",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTVTM2I2c2hzczBlTDdrV3lWSDFZejFXTE05UHFBTEFHT1FhUV9zcXFOclBlMlNjYi1oaTNaa3doSnMzdV9iSEp0Y2hCOW0zcFk1aXNDSmFlbDNoSGVJSnZYcy1rRGliaW9jNzFSbHpEUl8tV3R3OGpMMURBV3hnR3h5c1pyOEhaQXRRek9HcUpLaWR3WWI2VzVybFZhaTNrLTh1YndEV3E4QkxWS1JuTkdR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfef00f158882",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Jetten spreekt maandag Amerikaanse oud-minister Pompeo in Washington - Eindhovens Dagblad",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOR1FtOTg2cjNaZlh2c1FLTjBBdGZXaFVMOXh3c0RjYXBKMUZreC1MQVl4NWJYQVBkWHB6Umh1cGVjcTZHTDBndXVtX3U1ZGk1UWJWT0VJc25WdmFFMTBoWGRNNm9fRXNTUnJQM2diZmVMYkpNZXZndkRVbWJnR0d0RU42bFN5LUxTdDBzb2pLNlJFeTE5N3VJR3dGWWdKWUVTdzVHWW1oNXo?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2c04f92eb68a",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Waarom Rob Jetten toch met zweethandjes naar Trump gaat - De Gelderlander",
+    "date": "2026-04-10",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPQzFDZHVxUDBEMktIM0c4bkZEaktMNmhnU25tXzVFWHZZYm9UOXRpdnBaRVpic0N3ZTRjVm02MTJFSHRyRTN5bmxxdUZFVkVnUDhKcGhNTjc1RTRWaXhEVHVPVUg3ZnJ5a0xlbjd1TEp0UnRLby00bUY4bElQZFBhQ0Y1Um1GM2VfdmljNHB3dmh3SDUxWFZMZEJLVEMzU0lTZ2V2OA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga20482cd67be",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Yeşilgöz: bezoek Jetten aan Trump ‘ongemakkelijk’ maar ‘heel waardevol’ - EWmagazine.nl",
+    "date": "2026-04-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVDdLQ0tET0Y4NVVzZmYxc1JMYlhUSFR3bF9SamFMdWYtOFVMVWp5ZlhKQndIR1dCc0RlQzZSSHdzcEJpYTBZYWxIWjBRV182dEduRU5GamlZM09yb1FIVWtMYVIwcHNkRlp1SldDV1lzelY4TkozY3V5WEFZYmtuWEVmd2FxV05uRHR5b0RJd18?oc=5",
     "icon": "📰"
   },
   {
@@ -872,6 +1037,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qREV0WTZvWEVIU0s2czhFTDdnRkRlTFQ2MzVYLUFNUTZsa3VWTjNzRW5TOHItTkRmbWRVRWtNNnlZMFFIQll1U2tJWi00YkhDdjE2WVdB?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g893342c9f0f5",
+    "type": "nl",
+    "src": "Eerste Kamer der Staten-Generaal",
+    "title": "Senaat roept regering op af te zien van versneld verhogen AOW-leeftijd - Eerste Kamer der Staten-Generaal",
+    "date": "2026-04-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1MaTM4ZmVEdHZuQlFJSl9tRUh1Nkk0bzZ4QXFnWXF6Nmt3QTI4bnhJZTYycGxvX2R6dTdVcnFmb3JGM0xMSlBvdzlaTFl5TFZjdm1MV2U2clM1M3lnTU82NmxfM2JGNjhmcGtEQUc1YVpPNmVtdldnY0Z0cWxmdw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "ge4749f114163",
@@ -1722,6 +1897,16 @@
     "date": "2026-04-01",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPSGZtYUFBMjJHWHdENjZYYTFFQ3NROWtaeWZhb2JEdHZYNjFzek9WOTBhWFNaQU1TcEd5Vl9jTHcxWE9LazZMaThmU3lvX19wX0NwaTNHT1hYaEhiVXJtSUNTSjF2VGJwaHZWdzc3Y3JQSHRZaTFVZFU3R2QwU2p2Z1lJT21oVW1mOUFpR0R1ZlZCMmlaTUtZeDZiVUFGN1hMa1ZzQWw5c0FYSkQ4Q2pjMm1Eem5IUUd5ZXZheEVxcDlIUHo4V2Y0Y1h6WW55VWYyUVpFR3h2cEV5SHVTeWEzVW0zaw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb1fa2e869cd0",
+    "type": "intl",
+    "src": "Yahoo News UK",
+    "title": "Dutch PM Rob Jetten celebrates 25 years of same-sex marriage as Amsterdam hosts landmark weddings - Yahoo News UK",
+    "date": "2026-04-01",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBSLTlPdThiSVh5bWVva296U2lYWXBFcEM0UEo2THBCT0Y1bE1oMkozVWhBdlR6NjdXMVNpbzBUX0xFNzU1c2l5RmJMTmllUEZsVDFfNDhzd1R4dHFmOUVzbzBBWHF4a3dXLXp3emZjZTBHaHlOQzFOSlVjcw?oc=5",
     "flag": "🌍"
   },
   {
@@ -3182,6 +3367,16 @@
     "date": "2026-03-21",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPVVFKeFlIWE5mNFFEUWpqS2NKRjVlNVFhVGtWc2s1YXpOdnpTX2tKMUJqM0gtbFNjMzdTT3JOYzBwQVRzWXNPYk5URVFYZzdDYmE3YzZwU0VKSWZvQkhXS29oTGtuTFhGQnZhWjg4c0FUOXV5Y2g5SFVISDVkQU9QaXZlbXB6ZnEtNGM3UmdkTkQwN2JMdjVPWjJwRlg?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g19205c18d217",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch Cabinet holds off on energy cuts despite International Energy Agency warning - NL Times",
+    "date": "2026-03-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRW5iaUlvOEtkRnB6SmhaaGt1dXNlNG9Bc2xiTG9tTHYtTkp5cjc3aUZ2Rkp4dW9vMVZVMEJYY2dmWXp2LWVPZW9hRXVXUTc1SzZjVXhINVhSOE5EYkRZMFFrOTd1QVBacmt6dDB2Uzg4aFdySFdtOVFaWVVDdmg3dXdxdlN1RlNxckFjMkpEZmxLWDlGU21QTjI4OXNuOE9FR09qSDROcWs?oc=5",
     "flag": "🇬🇧"
   },
   {
@@ -10080,6 +10275,26 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZkRWMnVscEFUMmMwZHVDdzhjdlVNZjZYREFOWWpoWEJXUkdsQzBha3RyNXZXR3gxTUloNVp4NjFjOEppMFdnSndfd0dSRkh0ZlA4aHd5dEVKendiWnZyU0Y2Q2piUjRiV1RqY20xWXNYMW00c09ScndtMVVKTGhkbzJUVjFjeXo5T0VhZTdkUUxHM0hoUnNYQU10bi1uXy0ycGpGWDBHdVNSakFsRmotdlRMUzN5UkxITnhPVkIwRi1NWWxXb1NZNmlwM09BNm_SAdQBQVVfeXFMT2tKRnV4WEIyT2M4RDhNSmRoZEluRzAxVzExNVV0aE1DMzMtZUM1Y0g3d3R1SExaeVpsMDlSYUJtS2l1Z0tFZlc5U3ZfeTc5cVlPTW5DM1FoSGMwb1RlTnN2X2lvVzRvOE5nWEgzdFhxWGE3eUM1WGVnVlIwazFKaHNtMmMwSDh2Q3BqNm1hcmFDa3B5aXZQN1ZuSmFtTmp0cWlFd3VqZWFQcUU4d3BrQVRhbzFSazRyRXdFNDljTnlqM0k2MFpVYkxyY3ZEcmNHbEpsUDQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcf2862efc51e",
+    "type": "intl",
+    "src": "Euronews",
+    "title": "Paesi Bassi, ha giurato il nuovo governo: Jetten primo ministro - Euronews",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQS1dWNHhvQlh2cGhnbFpqQmsyM3BtQUN1Rm93YUZIQlVtbWI4dVBCOWJwS05xWFJ5SHRXZ29ZaXJ6OWN1WGt3eExOX19OYVFJeE9nRl9RT2tNS0VfTG1JdzlWWDJoVHBoa3VrbFJFS3cwa1gteXcxUEhBWXNuMUVBTTVPcjdZOG9Xek1jVVo2R3JoTEFJSUFGV1N3Zmd4RWc1SmFJSUxQWHFlanEzQVgyWGVNN2VvWmpnbUZZdGZLdEJOTFU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g834e032fd86c",
+    "type": "intl",
+    "src": "Euronews",
+    "title": "Video. Paesi Bassi, ha giurato il nuovo governo: Jetten primo ministro - Euronews",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNkxoaGE2VFd1VnY3QkdyUFhKZVI0YW5OdlBCOE8wVkwydVdmWmxaOXduZG5Zd1ZrMDhMakZSUnV6V3FoUEo0dlNhdldrRVk3UlUxQWp6TjhpcmxzY0ZUQUNFYU9nSEdpbXdyLWZhVEhFQUl1M3hzYXhzeXl6R0ZwN29XOFpZZHd0YXRrc25jVXNVMkJHemdzX1IyREVhcGlZQnBPLXBwd3lwQ2xlQ081RndnM3F1NEo0ZDVfcmxYRjJRRjV2ZmpBOFdfVQ?oc=5",
     "flag": "🌍"
   }
 ]
