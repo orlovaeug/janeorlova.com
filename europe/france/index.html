@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -577,83 +578,189 @@
 
     .tm-cell {
       position: relative;
-      padding: 14px 14px 12px;
+      padding: 10px 10px 9px;
       cursor: pointer;
-      transition: filter 0.15s;
-      min-height: 90px;
+      transition: filter 0.15s, outline 0.1s;
+      min-height: 80px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       overflow: hidden;
+      outline: 2px solid transparent;
+      outline-offset: -2px;
     }
-    .tm-cell:hover { filter: brightness(1.07); }
-    .tm-cell:hover .tm-tooltip { display: block; }
+    .tm-cell:hover { filter: brightness(1.09); }
+    .tm-cell:focus-visible { outline-color: rgba(255,255,255,0.7); }
+    .tm-cell.active-cell { outline: 2.5px solid #fff; outline-offset: -2.5px; filter: brightness(1.06); }
 
     .tm-cell.span2 { grid-column: span 2; }
     .tm-cell.span-col { grid-row: span 2; }
 
+    /* subtle "click" hint icon bottom-right */
+    .tm-cell::after {
+      content: '↗';
+      position: absolute;
+      bottom: 6px;
+      right: 7px;
+      font-size: 9px;
+      opacity: 0.35;
+      font-family: 'DM Mono', monospace;
+      transition: opacity 0.15s;
+    }
+    .tm-cell:hover::after { opacity: 0.65; }
+
     .tm-name {
       font-family: 'DM Mono', monospace;
-      font-size: 10px;
-      letter-spacing: 0.1em;
+      font-size: 9.5px;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       line-height: 1.3;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
+      opacity: 0.9;
     }
     .tm-pct {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 1.45rem;
       font-weight: 700;
       line-height: 1;
     }
     .tm-sub {
       font-family: 'DM Mono', monospace;
-      font-size: 9px;
-      letter-spacing: 0.06em;
-      margin-top: 5px;
-      opacity: 0.85;
-      line-height: 1.4;
+      font-size: 8px;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+      opacity: 0.78;
+      line-height: 1.35;
     }
     .tm-badge {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      width: 20px;
-      height: 20px;
+      top: 7px;
+      right: 7px;
+      width: 17px;
+      height: 17px;
       border-radius: 50%;
-      background: rgba(0,0,0,0.35);
+      background: rgba(0,0,0,0.38);
       color: #fff;
       font-family: 'DM Mono', monospace;
-      font-size: 10px;
+      font-size: 9px;
       font-weight: 700;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    /* DARK TOOLTIP */
-    .tm-tooltip {
-      display: none;
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(14,14,14,0.93);
-      padding: 14px;
-      z-index: 5;
+    /* ── DETAIL PANEL (click-to-open, fixed bottom) ── */
+    .region-panel {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: #0e0e0e;
+      color: #f5f2ec;
+      z-index: 100;
+      transform: translateY(100%);
+      transition: transform 0.28s cubic-bezier(0.22,1,0.36,1);
+      border-top: 2px solid rgba(255,255,255,0.12);
+      max-height: 52vh;
+      overflow-y: auto;
     }
-    .tm-tooltip .ttr {
+    .region-panel.open { transform: translateY(0); }
+
+    .panel-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px 28px 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    .panel-close {
+      position: absolute;
+      top: 14px; right: 18px;
+      background: none;
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #f5f2ec;
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      font-size: 15px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.15s;
+      line-height: 1;
+    }
+    .panel-close:hover { background: rgba(255,255,255,0.1); }
+
+    .panel-region-name {
       font-family: 'Playfair Display', serif;
-      font-size: 13px;
+      font-size: 1.25rem;
       font-weight: 600;
       color: #fff;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
-    .tm-tooltip .ttd {
+    .panel-pct-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #fff;
+    }
+    .panel-pct-label {
       font-family: 'DM Mono', monospace;
-      font-size: 9.5px;
-      color: #ccc;
-      line-height: 1.7;
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.45);
+      margin-top: 4px;
     }
-    .tm-tooltip .ttd span { color: #fff; font-weight: 500; }
+    .panel-col-head {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .panel-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 12.5px;
+    }
+    .panel-row:last-child { border-bottom: none; }
+    .panel-row .label { color: rgba(255,255,255,0.55); font-family: 'DM Mono',monospace; font-size: 10px; }
+    .panel-row .val   { color: #fff; font-weight: 400; }
+    .panel-note-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 10.5px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      font-style: italic;
+    }
+    .panel-trend-badge {
+      display: inline-block;
+      padding: 3px 9px;
+      font-family: 'DM Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      border-radius: 2px;
+      margin-top: 8px;
+    }
+    .panel-trend-badge.up   { background: rgba(192,57,43,0.35); color: #f1948a; }
+    .panel-trend-badge.hold { background: rgba(255,255,255,0.1); color: #ccc; }
+
+    /* overlay scrim */
+    .panel-scrim {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      z-index: 99;
+    }
+    .panel-scrim.open { display: block; }
 
     /* CALLOUT STRIP */
     .callout-strip {
@@ -742,16 +849,19 @@
       .map-container { max-width: 380px; margin: 0 auto; }
     }
   </style>
+
 </head>
 <body>
 
   <!-- MASTHEAD -->
+
   <header class="masthead">
     <a class="masthead-brand" href="/">Jane Orlova · Political Analytics</a>
     <span class="masthead-meta">France · April 2027</span>
   </header>
 
   <!-- HERO -->
+
   <div class="hero">
     <div class="hero-kicker">Analysis · French Politics</div>
     <h1 class="hero-title">The <em>Far-Right</em> Threshold</h1>
@@ -765,435 +875,445 @@
   </div>
 
   <!-- ARTICLE BODY -->
+
   <article>
 
-    <!-- KEY NUMBERS -->
-    <div class="stat-row">
-      <div class="stat-cell">
-        <div class="number red">36%</div>
-        <div class="label">Bardella<br>1st round (Odoxa, Nov 2025)</div>
-      </div>
-      <div class="stat-cell">
-        <div class="number">18–25%</div>
-        <div class="label">Édouard Philippe<br>1st round range</div>
-      </div>
-      <div class="stat-cell">
-        <div class="number">11%</div>
-        <div class="label">Macron approval<br>(Verian Group, 2025)</div>
-      </div>
+```
+<!-- KEY NUMBERS -->
+<div class="stat-row">
+  <div class="stat-cell">
+    <div class="number red">36%</div>
+    <div class="label">Bardella<br>1st round (Odoxa, Nov 2025)</div>
+  </div>
+  <div class="stat-cell">
+    <div class="number">18–25%</div>
+    <div class="label">Édouard Philippe<br>1st round range</div>
+  </div>
+  <div class="stat-cell">
+    <div class="number">11%</div>
+    <div class="label">Macron approval<br>(Verian Group, 2025)</div>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<h2 class="section-title">Context: The Void Macron Leaves</h2>
+
+<p>
+  The 2027 race begins with a structural rupture: for the first time since 2002, neither of the two candidates who reached the previous final round is eligible to run again. Emmanuel Macron, constitutionally barred from a third consecutive term, is now also a political liability rather than an asset to his allies. His approval rating — recorded at <strong>11%</strong> by the Verian Group in late 2025, matching the historic low of François Hollande — has turned the Macronist centre into a damaged brand.
+</p>
+<p>
+  Marine Le Pen, who reached the second round in both 2017 and 2022, faces a separate barrier: a criminal conviction for embezzlement of European Parliament funds, which resulted in a five-year ban on holding public office, issued in March 2025. Her appeal will be heard in summer 2026. Until that ruling, the question of who will carry the Rassemblement National into the election remains legally unresolved.
+</p>
+
+<blockquote class="pull">
+  For the first time in two decades, France is navigating a presidential race with no incumbency and no safe return to the familiar.
+  <cite>— Contextual framing, Jane Orlova analysis</cite>
+</blockquote>
+
+<!-- SECTION 2 -->
+<h2 class="section-title">The Field: Who Is Running</h2>
+
+<h3 class="sub-title">Far Right — Rassemblement National</h3>
+<div class="candidate-grid">
+  <div class="candidate-card">
+    <div class="stripe rn"></div>
+    <div class="body">
+      <div class="name">Jordan Bardella</div>
+      <div class="party-tag">RN · Likely candidate</div>
+      <div class="desc">President of the Rassemblement National since 2022. Aged 29, he has no university degree and no ministerial experience, but commands a formidable digital following — particularly on TikTok — and has conducted a national tour designed to position himself as a governing candidate. If Le Pen's appeal fails, Bardella becomes the de facto RN standard-bearer.</div>
+      <div class="status"><span class="pill up">Leading all polls</span></div>
     </div>
-
-    <!-- SECTION 1 -->
-    <h2 class="section-title">Context: The Void Macron Leaves</h2>
-
-    <p>
-      The 2027 race begins with a structural rupture: for the first time since 2002, neither of the two candidates who reached the previous final round is eligible to run again. Emmanuel Macron, constitutionally barred from a third consecutive term, is now also a political liability rather than an asset to his allies. His approval rating — recorded at <strong>11%</strong> by the Verian Group in late 2025, matching the historic low of François Hollande — has turned the Macronist centre into a damaged brand.
-    </p>
-    <p>
-      Marine Le Pen, who reached the second round in both 2017 and 2022, faces a separate barrier: a criminal conviction for embezzlement of European Parliament funds, which resulted in a five-year ban on holding public office, issued in March 2025. Her appeal will be heard in summer 2026. Until that ruling, the question of who will carry the Rassemblement National into the election remains legally unresolved.
-    </p>
-
-    <blockquote class="pull">
-      For the first time in two decades, France is navigating a presidential race with no incumbency and no safe return to the familiar.
-      <cite>— Contextual framing, Jane Orlova analysis</cite>
-    </blockquote>
-
-    <!-- SECTION 2 -->
-    <h2 class="section-title">The Field: Who Is Running</h2>
-
-    <h3 class="sub-title">Far Right — Rassemblement National</h3>
-    <div class="candidate-grid">
-      <div class="candidate-card">
-        <div class="stripe rn"></div>
-        <div class="body">
-          <div class="name">Jordan Bardella</div>
-          <div class="party-tag">RN · Likely candidate</div>
-          <div class="desc">President of the Rassemblement National since 2022. Aged 29, he has no university degree and no ministerial experience, but commands a formidable digital following — particularly on TikTok — and has conducted a national tour designed to position himself as a governing candidate. If Le Pen's appeal fails, Bardella becomes the de facto RN standard-bearer.</div>
-          <div class="status"><span class="pill up">Leading all polls</span></div>
-        </div>
-      </div>
-      <div class="candidate-card">
-        <div class="stripe rn"></div>
-        <div class="body">
-          <div class="name">Marine Le Pen</div>
-          <div class="party-tag">RN · Conditionally eligible</div>
-          <div class="desc">The party's historic figurehead and two-time finalist. Currently banned from office pending appeal. If the Court of Appeal overturns her conviction in summer 2026, the RN leadership has stated she would be their candidate, with Bardella stepping aside. Polls in April 2025 showed her at approximately 32% — nearly indistinguishable from Bardella's support levels.</div>
-          <div class="status"><span class="pill down">Appeal pending · Summer 2026</span></div>
-        </div>
-      </div>
+  </div>
+  <div class="candidate-card">
+    <div class="stripe rn"></div>
+    <div class="body">
+      <div class="name">Marine Le Pen</div>
+      <div class="party-tag">RN · Conditionally eligible</div>
+      <div class="desc">The party's historic figurehead and two-time finalist. Currently banned from office pending appeal. If the Court of Appeal overturns her conviction in summer 2026, the RN leadership has stated she would be their candidate, with Bardella stepping aside. Polls in April 2025 showed her at approximately 32% — nearly indistinguishable from Bardella's support levels.</div>
+      <div class="status"><span class="pill down">Appeal pending · Summer 2026</span></div>
     </div>
+  </div>
+</div>
 
-    <h3 class="sub-title">Centre — Macronist successors</h3>
-    <div class="candidate-grid">
-      <div class="candidate-card">
-        <div class="stripe centre"></div>
-        <div class="body">
-          <div class="name">Édouard Philippe</div>
-          <div class="party-tag">Horizons · Confirmed candidate</div>
-          <div class="desc">Former Prime Minister (2017–2020), now Mayor of Le Havre, re-elected in the 2026 municipal elections. Philippe is the only confirmed major candidate. He founded his own centrist party, Horizons, and has publicly distanced himself from Macron, calling on the president to resign early. Consistently the second-most popular politician in France despite a visible polling slide since mid-2025.</div>
-          <div class="status"><span class="pill up">Confirmed · Re-elected Le Havre 2026</span></div>
-        </div>
-      </div>
-      <div class="candidate-card">
-        <div class="stripe centre"></div>
-        <div class="body">
-          <div class="name">François Bayrou</div>
-          <div class="party-tag">MoDem · Considering bid</div>
-          <div class="desc">President of the Democratic Movement and former Prime Minister (2024–2025). Has run for president three times previously without success. Considered a possible fourth bid; no formal announcement as of early 2026.</div>
-          <div class="status"><span class="pill out">Unconfirmed</span></div>
-        </div>
-      </div>
-      <div class="candidate-card">
-        <div class="stripe centre"></div>
-        <div class="body">
-          <div class="name">Gabriel Attal</div>
-          <div class="party-tag">Renaissance · Possible</div>
-          <div class="desc">Former Prime Minister and Macron ally. A potential successor to the Macronist base, though current polls show him at approximately 7–9% in first-round scenarios — trailing Philippe significantly.</div>
-          <div class="status"><span class="pill out">Unconfirmed</span></div>
-        </div>
-      </div>
+<h3 class="sub-title">Centre — Macronist successors</h3>
+<div class="candidate-grid">
+  <div class="candidate-card">
+    <div class="stripe centre"></div>
+    <div class="body">
+      <div class="name">Édouard Philippe</div>
+      <div class="party-tag">Horizons · Confirmed candidate</div>
+      <div class="desc">Former Prime Minister (2017–2020), now Mayor of Le Havre, re-elected in the 2026 municipal elections. Philippe is the only confirmed major candidate. He founded his own centrist party, Horizons, and has publicly distanced himself from Macron, calling on the president to resign early. Consistently the second-most popular politician in France despite a visible polling slide since mid-2025.</div>
+      <div class="status"><span class="pill up">Confirmed · Re-elected Le Havre 2026</span></div>
     </div>
-
-    <h3 class="sub-title">Right — Conservatives</h3>
-    <div class="candidate-grid">
-      <div class="candidate-card">
-        <div class="stripe right"></div>
-        <div class="body">
-          <div class="name">Bruno Retailleau</div>
-          <div class="party-tag">Les Républicains · Declared</div>
-          <div class="desc">Interior Minister and conservative hardliner who officially launched his 2027 campaign, emphasising immigration reduction, law and order, and citizen referendums. Polls at approximately 7.5% in first-round scenarios. Laurent Wauquiez has urged the right-wing camp to consolidate around a single candidate.</div>
-          <div class="status"><span class="pill new">Declared candidate</span></div>
-        </div>
-      </div>
+  </div>
+  <div class="candidate-card">
+    <div class="stripe centre"></div>
+    <div class="body">
+      <div class="name">François Bayrou</div>
+      <div class="party-tag">MoDem · Considering bid</div>
+      <div class="desc">President of the Democratic Movement and former Prime Minister (2024–2025). Has run for president three times previously without success. Considered a possible fourth bid; no formal announcement as of early 2026.</div>
+      <div class="status"><span class="pill out">Unconfirmed</span></div>
     </div>
-
-    <h3 class="sub-title">Left — Fragmented bloc</h3>
-    <div class="candidate-grid">
-      <div class="candidate-card">
-        <div class="stripe left"></div>
-        <div class="body">
-          <div class="name">Raphaël Glucksmann</div>
-          <div class="party-tag">PS / Place Publique · Likely</div>
-          <div class="desc">Centre-left MEP and lead Socialist figure in the 2024 European elections. Likely to represent the Parti Socialiste but has declined to participate in the "Front Populaire 2027" united-left primary (scheduled October 2026). Polls between 11.5–13% in first-round scenarios.</div>
-          <div class="status"><span class="pill up">Likely candidate</span></div>
-        </div>
-      </div>
-      <div class="candidate-card">
-        <div class="stripe left"></div>
-        <div class="body">
-          <div class="name">Jean-Luc Mélenchon</div>
-          <div class="party-tag">LFI · Possible (4th bid)</div>
-          <div class="desc">Veteran far-left leader who reached 21.95% in 2022's first round, narrowly missing the run-off. LFI refuses to join the united-left primary. Mélenchon is considering a fourth presidential bid but remains unconfirmed. His polarising profile shows him losing a hypothetical second round against Bardella by 74–26.</div>
-          <div class="status"><span class="pill out">Considering · Unconfirmed</span></div>
-        </div>
-      </div>
-      <div class="candidate-card">
-        <div class="stripe left2"></div>
-        <div class="body">
-          <div class="name">Front Populaire 2027 Primary</div>
-          <div class="party-tag">PS · Greens · PCF · Independents</div>
-          <div class="desc">A coalition of Socialists, Greens, Communists, and independent left figures announced an open primary for October 11, 2026, requiring 500 mayoral endorsements to enter. A united candidate from this process could pool fragmented left votes; however, without LFI participation, the primary represents only a portion of the left electorate.</div>
-          <div class="status"><span class="pill new">Primary · Oct 2026</span></div>
-        </div>
-      </div>
+  </div>
+  <div class="candidate-card">
+    <div class="stripe centre"></div>
+    <div class="body">
+      <div class="name">Gabriel Attal</div>
+      <div class="party-tag">Renaissance · Possible</div>
+      <div class="desc">Former Prime Minister and Macron ally. A potential successor to the Macronist base, though current polls show him at approximately 7–9% in first-round scenarios — trailing Philippe significantly.</div>
+      <div class="status"><span class="pill out">Unconfirmed</span></div>
     </div>
+  </div>
+</div>
 
-    <!-- SECTION 3 -->
-    <h2 class="section-title">The Polls: First Round</h2>
-
-    <p>
-      Aggregating surveys from Odoxa, Elabe, and Ifop conducted between November 2025 and April 2026, a clear hierarchy emerges in the first-round field — with the Rassemblement National candidate commanding roughly twice the support of the nearest competitor.
-    </p>
-
-    <!-- BAR CHART: FIRST ROUND -->
-    <div class="chart-block">
-      <div class="chart-title">First-Round Voting Intentions — Composite Average (Nov 2025 – Apr 2026)</div>
-
-      <div class="bar-row">
-        <div class="bar-label">Bardella / Le Pen<small>RN</small></div>
-        <div class="bar-track"><div class="bar-fill rn" style="width:36%;animation-delay:0.1s"></div></div>
-        <div class="bar-pct">~36%</div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label">Édouard Philippe<small>Horizons / Centre</small></div>
-        <div class="bar-track"><div class="bar-fill centre" style="width:21%;animation-delay:0.2s"></div></div>
-        <div class="bar-pct">~21%</div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label">Raphaël Glucksmann<small>PS / Place Publique</small></div>
-        <div class="bar-track"><div class="bar-fill left" style="width:12%;animation-delay:0.3s"></div></div>
-        <div class="bar-pct">~12%</div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label">Jean-Luc Mélenchon<small>LFI</small></div>
-        <div class="bar-track"><div class="bar-fill left2" style="width:11%;animation-delay:0.4s"></div></div>
-        <div class="bar-pct">~11%</div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label">Bruno Retailleau<small>LR / Right</small></div>
-        <div class="bar-track"><div class="bar-fill right" style="width:7.5%;animation-delay:0.5s"></div></div>
-        <div class="bar-pct">~7.5%</div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label">Gabriel Attal<small>Renaissance</small></div>
-        <div class="bar-track"><div class="bar-fill right" style="width:8%;animation-delay:0.55s"></div></div>
-        <div class="bar-pct">~8%</div>
-      </div>
-      <div class="bar-row">
-        <div class="bar-label">Marine Tondelier<small>EELV / Greens</small></div>
-        <div class="bar-track"><div class="bar-fill far" style="width:5%;animation-delay:0.6s"></div></div>
-        <div class="bar-pct">~5%</div>
-      </div>
-
-      <div class="chart-note">Sources: Odoxa (Nov 2025, Apr 2026), Elabe (Nov 2025), Ifop (various). Values represent composite estimates; individual polls vary by ±2–3 pp. Bars scaled to 40% max.</div>
+<h3 class="sub-title">Right — Conservatives</h3>
+<div class="candidate-grid">
+  <div class="candidate-card">
+    <div class="stripe right"></div>
+    <div class="body">
+      <div class="name">Bruno Retailleau</div>
+      <div class="party-tag">Les Républicains · Declared</div>
+      <div class="desc">Interior Minister and conservative hardliner who officially launched his 2027 campaign, emphasising immigration reduction, law and order, and citizen referendums. Polls at approximately 7.5% in first-round scenarios. Laurent Wauquiez has urged the right-wing camp to consolidate around a single candidate.</div>
+      <div class="status"><span class="pill new">Declared candidate</span></div>
     </div>
+  </div>
+</div>
 
-    <!-- SECTION 4 -->
-    <h2 class="section-title">Second-Round Scenarios</h2>
-
-    <p>
-      France's two-round system traditionally produces a "Republican Front" dynamic in which mainstream parties coalesce against the RN in the run-off. This barrier held in both 2002 (Chirac vs. Jean-Marie Le Pen) and 2017 and 2022 (Macron vs. Marine Le Pen). The 2027 data suggests this firewall is under severe strain.
-    </p>
-    <p>
-      The most important recent shift comes from Polymarket's prediction market data (updated April 7, 2026): while Bardella leads comfortably in first-round intentions, <strong>Édouard Philippe now edges him in projected run-off matchups at 51–52% vs 48–49%</strong> — a near-collapse of the anti-RN margin that previously stood at 20+ percentage points.
-    </p>
-
-    <div class="runoff-header">Hypothetical Second-Round Scenarios — Bardella vs. field (Odoxa, Nov 2025)</div>
-    <div class="runoff-grid">
-      <div class="runoff-card">
-        <div class="side winner">Bardella<small>RN</small></div>
-        <div class="score-block"><span class="s1">53</span><span class="sep">—</span><span class="s2">47</span></div>
-        <div class="side">Édouard Philippe<small>Horizons</small></div>
-      </div>
-      <div class="runoff-card">
-        <div class="side winner">Bardella<small>RN</small></div>
-        <div class="score-block"><span class="s1">56</span><span class="sep">—</span><span class="s2">44</span></div>
-        <div class="side">Gabriel Attal<small>Renaissance</small></div>
-      </div>
-      <div class="runoff-card">
-        <div class="side winner">Bardella<small>RN</small></div>
-        <div class="score-block"><span class="s1">58</span><span class="sep">—</span><span class="s2">42</span></div>
-        <div class="side">Raphaël Glucksmann<small>PS</small></div>
-      </div>
-      <div class="runoff-card">
-        <div class="side winner">Bardella<small>RN</small></div>
-        <div class="score-block"><span class="s1">74</span><span class="sep">—</span><span class="s2">26</span></div>
-        <div class="side">Jean-Luc Mélenchon<small>LFI</small></div>
-      </div>
+<h3 class="sub-title">Left — Fragmented bloc</h3>
+<div class="candidate-grid">
+  <div class="candidate-card">
+    <div class="stripe left"></div>
+    <div class="body">
+      <div class="name">Raphaël Glucksmann</div>
+      <div class="party-tag">PS / Place Publique · Likely</div>
+      <div class="desc">Centre-left MEP and lead Socialist figure in the 2024 European elections. Likely to represent the Parti Socialiste but has declined to participate in the "Front Populaire 2027" united-left primary (scheduled October 2026). Polls between 11.5–13% in first-round scenarios.</div>
+      <div class="status"><span class="pill up">Likely candidate</span></div>
     </div>
-    <p style="font-size:12px;color:var(--muted);font-family:'DM Mono',monospace;margin-top:-28px;margin-bottom:32px;">
-      Note: Polymarket consensus (Apr 2026) gives Philippe a slight edge in run-off matchups (51–52%) — more recent data suggests the Republican Front may still hold, barely.
-    </p>
-
-    <!-- SECTION 5 -->
-    <h2 class="section-title">What Changed From 2022</h2>
-
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th>Dimension</th>
-          <th>2022</th>
-          <th>2027 (current picture)</th>
-          <th>Direction</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>RN first-round share</strong></td>
-          <td>Le Pen: 23.1%</td>
-          <td>Bardella/Le Pen: ~36%</td>
-          <td><span class="pill up">+12–13 pp</span></td>
-        </tr>
-        <tr>
-          <td><strong>Republican Front margin</strong></td>
-          <td>Macron wins run-off 58.5% vs 41.5%</td>
-          <td>Philippe edges run-off 51–52% (Polymarket)</td>
-          <td><span class="pill down">Collapsed ~7 pp barrier</span></td>
-        </tr>
-        <tr>
-          <td><strong>RN candidate</strong></td>
-          <td>Marine Le Pen (confirmed)</td>
-          <td>Le Pen (conditionally) or Bardella</td>
-          <td><span class="pill down">Legal uncertainty</span></td>
-        </tr>
-        <tr>
-          <td><strong>Incumbent standing</strong></td>
-          <td>Macron runs, wins</td>
-          <td>Macron constitutionally barred</td>
-          <td><span class="pill out">Open field</span></td>
-        </tr>
-        <tr>
-          <td><strong>Macron approval</strong></td>
-          <td>~36% at re-election</td>
-          <td>11% (Verian, 2025)</td>
-          <td><span class="pill down">Historic low</span></td>
-        </tr>
-        <tr>
-          <td><strong>Centre candidate</strong></td>
-          <td>Macron (sitting president)</td>
-          <td>Philippe (mayor of Le Havre)</td>
-          <td><span class="pill new">New face, weakened brand</span></td>
-        </tr>
-        <tr>
-          <td><strong>Left performance</strong></td>
-          <td>Mélenchon: 21.95% (nearly 2nd)</td>
-          <td>Left fragmented; primary planned Oct 2026</td>
-          <td><span class="pill down">More fragmented</span></td>
-        </tr>
-        <tr>
-          <td><strong>Far-right unity</strong></td>
-          <td>Le Pen (RN) + Zemmour (Reconquête, 7.1%)</td>
-          <td>Reconquête marginalised; RN consolidating</td>
-          <td><span class="pill up">More consolidated</span></td>
-        </tr>
-        <tr>
-          <td><strong>Rightward shift (population)</strong></td>
-          <td>~35% self-identify right</td>
-          <td>41% self-identify right (Ipsos, 2025, +6.5 pp)</td>
-          <td><span class="pill down">Structural realignment</span></td>
-        </tr>
-        <tr>
-          <td><strong>Prediction market favourite</strong></td>
-          <td>Macron (clear)</td>
-          <td>Philippe 26.5%, Bardella 19.5% (Polymarket, Apr 2026)</td>
-          <td><span class="pill new">Genuinely open race</span></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- SECTION 6 -->
-    <h2 class="section-title">Political Interpretation</h2>
-
-    <p>
-      Three structural forces are reshaping the 2027 race in ways that go beyond individual candidacies.
-    </p>
-    <p>
-      <strong>First, the RN has solved its pensioner problem.</strong> In 2022, older voters were among the last demographic resisting Le Pen. November 2025 polling by Elabe shows Bardella and Le Pen now attracting roughly one-third of senior voters — closing what had been a critical ceiling on RN support. Combined with the party's established dominance among younger working-class voters, this demographic broadening explains the jump from 23% to 36%.
-    </p>
-    <p>
-      <strong>Second, the centre is trapped by the Macron brand.</strong> Édouard Philippe cannot fully distance himself from the government in which he served, leaving him, as Elabe's pollster Sananès observed, unable "to distinguish himself from Macronism or present himself as the face of change." His first-round share has fallen by five points since spring 2025, even as he remains the establishment's strongest hope.
-    </p>
-    <p>
-      <strong>Third, the left's arithmetic remains brutal.</strong> Even if Glucksmann, the Greens, and the Communists successfully unite behind a single candidate from the October 2026 primary, combined polling suggests they would still finish third — unable to deny Bardella the run-off. Without LFI, the left primary is structurally incomplete. With Mélenchon, as the 74–26 second-round figure suggests, the Republican Front becomes an impossibility.
-    </p>
-
-    <div class="insight">
-      <div class="label">Key Analytical Insight</div>
-      <p>
-        The French two-round system was designed as a filter against extremism. In 2027, it may instead become its vehicle. <strong>Bardella leads every tested run-off except one</strong> — against Philippe — and even that margin has narrowed to a statistical dead heat in the most recent Polymarket data. Whether the Republican Front holds will depend less on formal coalitions than on whether centrist and moderate-left voters treat a Philippe vote as a genuine alternative rather than a capitulation. That is the decisive political question of the cycle.
-      </p>
+  </div>
+  <div class="candidate-card">
+    <div class="stripe left"></div>
+    <div class="body">
+      <div class="name">Jean-Luc Mélenchon</div>
+      <div class="party-tag">LFI · Possible (4th bid)</div>
+      <div class="desc">Veteran far-left leader who reached 21.95% in 2022's first round, narrowly missing the run-off. LFI refuses to join the united-left primary. Mélenchon is considering a fourth presidential bid but remains unconfirmed. His polarising profile shows him losing a hypothetical second round against Bardella by 74–26.</div>
+      <div class="status"><span class="pill out">Considering · Unconfirmed</span></div>
     </div>
+  </div>
+  <div class="candidate-card">
+    <div class="stripe left2"></div>
+    <div class="body">
+      <div class="name">Front Populaire 2027 Primary</div>
+      <div class="party-tag">PS · Greens · PCF · Independents</div>
+      <div class="desc">A coalition of Socialists, Greens, Communists, and independent left figures announced an open primary for October 11, 2026, requiring 500 mayoral endorsements to enter. A united candidate from this process could pool fragmented left votes; however, without LFI participation, the primary represents only a portion of the left electorate.</div>
+      <div class="status"><span class="pill new">Primary · Oct 2026</span></div>
+    </div>
+  </div>
+</div>
 
-    <!-- SECTION 7 -->
-    <h2 class="section-title">Key Variables and Uncertainties</h2>
+<!-- SECTION 3 -->
+<h2 class="section-title">The Polls: First Round</h2>
 
-    <p>
-      Several factors could materially alter the race before April 2027:
-    </p>
-    <p>
-      <strong>Le Pen's appeal ruling (summer 2026).</strong> If the Court of Appeal overturns her conviction, Le Pen re-enters as the RN candidate, likely displacing Bardella. If upheld, Bardella's path to the Élysée becomes unambiguous — though polls suggest his support levels are comparable to hers.
-    </p>
-    <p>
-      <strong>Left primary consolidation (October 2026).</strong> A credible, unified left candidate who can bring PS, Green, and Communist voters behind a single figure could change the arithmetic of the first round — potentially displacing either Philippe or the left candidate as the run-off contender against Bardella.
-    </p>
-    <p>
-      <strong>Economic conditions.</strong> France's public debt, stalled pension reform, and economic stagnation have been primary drivers of institutional distrust. A deterioration in economic conditions between now and spring 2027 would likely accelerate the rightward shift; improvement might partially restore credibility to establishment candidates.
-    </p>
-    <p>
-      <strong>Bardella's governing credibility.</strong> Critics, including political communications expert Philippe Moreau Chevrolet, have noted that Bardella's lack of government experience and limited formal education may become liabilities in a sustained campaign. Whether this translates into polling erosion remains to be tested.
-    </p>
+<p>
+  Aggregating surveys from Odoxa, Elabe, and Ifop conducted between November 2025 and April 2026, a clear hierarchy emerges in the first-round field — with the Rassemblement National candidate commanding roughly twice the support of the nearest competitor.
+</p>
 
-    <!-- PRIMER -->
-    <h2 class="section-title">How French Presidential Elections Actually Work</h2>
-    <p><em>For the complete newcomer and the person who thinks they already know.</em></p>
+<!-- BAR CHART: FIRST ROUND -->
+<div class="chart-block">
+  <div class="chart-title">First-Round Voting Intentions — Composite Average (Nov 2025 – Apr 2026)</div>
+
+  <div class="bar-row">
+    <div class="bar-label">Bardella / Le Pen<small>RN</small></div>
+    <div class="bar-track"><div class="bar-fill rn" style="width:36%;animation-delay:0.1s"></div></div>
+    <div class="bar-pct">~36%</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Édouard Philippe<small>Horizons / Centre</small></div>
+    <div class="bar-track"><div class="bar-fill centre" style="width:21%;animation-delay:0.2s"></div></div>
+    <div class="bar-pct">~21%</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Raphaël Glucksmann<small>PS / Place Publique</small></div>
+    <div class="bar-track"><div class="bar-fill left" style="width:12%;animation-delay:0.3s"></div></div>
+    <div class="bar-pct">~12%</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Jean-Luc Mélenchon<small>LFI</small></div>
+    <div class="bar-track"><div class="bar-fill left2" style="width:11%;animation-delay:0.4s"></div></div>
+    <div class="bar-pct">~11%</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Bruno Retailleau<small>LR / Right</small></div>
+    <div class="bar-track"><div class="bar-fill right" style="width:7.5%;animation-delay:0.5s"></div></div>
+    <div class="bar-pct">~7.5%</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Gabriel Attal<small>Renaissance</small></div>
+    <div class="bar-track"><div class="bar-fill right" style="width:8%;animation-delay:0.55s"></div></div>
+    <div class="bar-pct">~8%</div>
+  </div>
+  <div class="bar-row">
+    <div class="bar-label">Marine Tondelier<small>EELV / Greens</small></div>
+    <div class="bar-track"><div class="bar-fill far" style="width:5%;animation-delay:0.6s"></div></div>
+    <div class="bar-pct">~5%</div>
+  </div>
+
+  <div class="chart-note">Sources: Odoxa (Nov 2025, Apr 2026), Elabe (Nov 2025), Ifop (various). Values represent composite estimates; individual polls vary by ±2–3 pp. Bars scaled to 40% max.</div>
+</div>
+
+<!-- SECTION 4 -->
+<h2 class="section-title">Second-Round Scenarios</h2>
+
+<p>
+  France's two-round system traditionally produces a "Republican Front" dynamic in which mainstream parties coalesce against the RN in the run-off. This barrier held in both 2002 (Chirac vs. Jean-Marie Le Pen) and 2017 and 2022 (Macron vs. Marine Le Pen). The 2027 data suggests this firewall is under severe strain.
+</p>
+<p>
+  The most important recent shift comes from Polymarket's prediction market data (updated April 7, 2026): while Bardella leads comfortably in first-round intentions, <strong>Édouard Philippe now edges him in projected run-off matchups at 51–52% vs 48–49%</strong> — a near-collapse of the anti-RN margin that previously stood at 20+ percentage points.
+</p>
+
+<div class="runoff-header">Hypothetical Second-Round Scenarios — Bardella vs. field (Odoxa, Nov 2025)</div>
+<div class="runoff-grid">
+  <div class="runoff-card">
+    <div class="side winner">Bardella<small>RN</small></div>
+    <div class="score-block"><span class="s1">53</span><span class="sep">—</span><span class="s2">47</span></div>
+    <div class="side">Édouard Philippe<small>Horizons</small></div>
+  </div>
+  <div class="runoff-card">
+    <div class="side winner">Bardella<small>RN</small></div>
+    <div class="score-block"><span class="s1">56</span><span class="sep">—</span><span class="s2">44</span></div>
+    <div class="side">Gabriel Attal<small>Renaissance</small></div>
+  </div>
+  <div class="runoff-card">
+    <div class="side winner">Bardella<small>RN</small></div>
+    <div class="score-block"><span class="s1">58</span><span class="sep">—</span><span class="s2">42</span></div>
+    <div class="side">Raphaël Glucksmann<small>PS</small></div>
+  </div>
+  <div class="runoff-card">
+    <div class="side winner">Bardella<small>RN</small></div>
+    <div class="score-block"><span class="s1">74</span><span class="sep">—</span><span class="s2">26</span></div>
+    <div class="side">Jean-Luc Mélenchon<small>LFI</small></div>
+  </div>
+</div>
+<p style="font-size:12px;color:var(--muted);font-family:'DM Mono',monospace;margin-top:-28px;margin-bottom:32px;">
+  Note: Polymarket consensus (Apr 2026) gives Philippe a slight edge in run-off matchups (51–52%) — more recent data suggests the Republican Front may still hold, barely.
+</p>
+
+<!-- SECTION 5 -->
+<h2 class="section-title">What Changed From 2022</h2>
+
+<table class="compare-table">
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>2022</th>
+      <th>2027 (current picture)</th>
+      <th>Direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>RN first-round share</strong></td>
+      <td>Le Pen: 23.1%</td>
+      <td>Bardella/Le Pen: ~36%</td>
+      <td><span class="pill up">+12–13 pp</span></td>
+    </tr>
+    <tr>
+      <td><strong>Republican Front margin</strong></td>
+      <td>Macron wins run-off 58.5% vs 41.5%</td>
+      <td>Philippe edges run-off 51–52% (Polymarket)</td>
+      <td><span class="pill down">Collapsed ~7 pp barrier</span></td>
+    </tr>
+    <tr>
+      <td><strong>RN candidate</strong></td>
+      <td>Marine Le Pen (confirmed)</td>
+      <td>Le Pen (conditionally) or Bardella</td>
+      <td><span class="pill down">Legal uncertainty</span></td>
+    </tr>
+    <tr>
+      <td><strong>Incumbent standing</strong></td>
+      <td>Macron runs, wins</td>
+      <td>Macron constitutionally barred</td>
+      <td><span class="pill out">Open field</span></td>
+    </tr>
+    <tr>
+      <td><strong>Macron approval</strong></td>
+      <td>~36% at re-election</td>
+      <td>11% (Verian, 2025)</td>
+      <td><span class="pill down">Historic low</span></td>
+    </tr>
+    <tr>
+      <td><strong>Centre candidate</strong></td>
+      <td>Macron (sitting president)</td>
+      <td>Philippe (mayor of Le Havre)</td>
+      <td><span class="pill new">New face, weakened brand</span></td>
+    </tr>
+    <tr>
+      <td><strong>Left performance</strong></td>
+      <td>Mélenchon: 21.95% (nearly 2nd)</td>
+      <td>Left fragmented; primary planned Oct 2026</td>
+      <td><span class="pill down">More fragmented</span></td>
+    </tr>
+    <tr>
+      <td><strong>Far-right unity</strong></td>
+      <td>Le Pen (RN) + Zemmour (Reconquête, 7.1%)</td>
+      <td>Reconquête marginalised; RN consolidating</td>
+      <td><span class="pill up">More consolidated</span></td>
+    </tr>
+    <tr>
+      <td><strong>Rightward shift (population)</strong></td>
+      <td>~35% self-identify right</td>
+      <td>41% self-identify right (Ipsos, 2025, +6.5 pp)</td>
+      <td><span class="pill down">Structural realignment</span></td>
+    </tr>
+    <tr>
+      <td><strong>Prediction market favourite</strong></td>
+      <td>Macron (clear)</td>
+      <td>Philippe 26.5%, Bardella 19.5% (Polymarket, Apr 2026)</td>
+      <td><span class="pill new">Genuinely open race</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECTION 6 -->
+<h2 class="section-title">Political Interpretation</h2>
+
+<p>
+  Three structural forces are reshaping the 2027 race in ways that go beyond individual candidacies.
+</p>
+<p>
+  <strong>First, the RN has solved its pensioner problem.</strong> In 2022, older voters were among the last demographic resisting Le Pen. November 2025 polling by Elabe shows Bardella and Le Pen now attracting roughly one-third of senior voters — closing what had been a critical ceiling on RN support. Combined with the party's established dominance among younger working-class voters, this demographic broadening explains the jump from 23% to 36%.
+</p>
+<p>
+  <strong>Second, the centre is trapped by the Macron brand.</strong> Édouard Philippe cannot fully distance himself from the government in which he served, leaving him, as Elabe's pollster Sananès observed, unable "to distinguish himself from Macronism or present himself as the face of change." His first-round share has fallen by five points since spring 2025, even as he remains the establishment's strongest hope.
+</p>
+<p>
+  <strong>Third, the left's arithmetic remains brutal.</strong> Even if Glucksmann, the Greens, and the Communists successfully unite behind a single candidate from the October 2026 primary, combined polling suggests they would still finish third — unable to deny Bardella the run-off. Without LFI, the left primary is structurally incomplete. With Mélenchon, as the 74–26 second-round figure suggests, the Republican Front becomes an impossibility.
+</p>
+
+<div class="insight">
+  <div class="label">Key Analytical Insight</div>
+  <p>
+    The French two-round system was designed as a filter against extremism. In 2027, it may instead become its vehicle. <strong>Bardella leads every tested run-off except one</strong> — against Philippe — and even that margin has narrowed to a statistical dead heat in the most recent Polymarket data. Whether the Republican Front holds will depend less on formal coalitions than on whether centrist and moderate-left voters treat a Philippe vote as a genuine alternative rather than a capitulation. That is the decisive political question of the cycle.
+  </p>
+</div>
+
+<!-- SECTION 7 -->
+<h2 class="section-title">Key Variables and Uncertainties</h2>
+
+<p>
+  Several factors could materially alter the race before April 2027:
+</p>
+<p>
+  <strong>Le Pen's appeal ruling (summer 2026).</strong> If the Court of Appeal overturns her conviction, Le Pen re-enters as the RN candidate, likely displacing Bardella. If upheld, Bardella's path to the Élysée becomes unambiguous — though polls suggest his support levels are comparable to hers.
+</p>
+<p>
+  <strong>Left primary consolidation (October 2026).</strong> A credible, unified left candidate who can bring PS, Green, and Communist voters behind a single figure could change the arithmetic of the first round — potentially displacing either Philippe or the left candidate as the run-off contender against Bardella.
+</p>
+<p>
+  <strong>Economic conditions.</strong> France's public debt, stalled pension reform, and economic stagnation have been primary drivers of institutional distrust. A deterioration in economic conditions between now and spring 2027 would likely accelerate the rightward shift; improvement might partially restore credibility to establishment candidates.
+</p>
+<p>
+  <strong>Bardella's governing credibility.</strong> Critics, including political communications expert Philippe Moreau Chevrolet, have noted that Bardella's lack of government experience and limited formal education may become liabilities in a sustained campaign. Whether this translates into polling erosion remains to be tested.
+</p>
+
+<!-- PRIMER -->
+<h2 class="section-title">How French Presidential Elections Actually Work</h2>
+<p><em>For the complete newcomer and the person who thinks they already know.</em></p>
+```
 
   </article>
 
   <div class="primer-section">
 
-    <div class="primer-grid">
-      <div class="primer-card">
-        <div class="primer-num">01</div>
-        <div class="primer-head">Two rounds, not one</div>
-        <div class="primer-body">France doesn't elect a president in a single vote. Everyone runs in Round 1. The top two finishers — regardless of margin — advance to Round 2, two weeks later, where it's a straight head-to-head. This is why first-round polls are only half the story.</div>
-        <div class="primer-myth"><span class="myth-tag">Common mistake</span> Treating first-round polling as a prediction of who wins. Le Pen has led the first round in every poll for a year. That doesn't mean she — or Bardella — wins the presidency.</div>
-      </div>
-      <div class="primer-card">
-        <div class="primer-num">02</div>
-        <div class="primer-head">The Republican Front</div>
-        <div class="primer-body">Since 2002, French parties across the centre-left, left, and centre-right have tacitly agreed to vote for whichever mainstream candidate faces the far-right in Round 2 — even if they hate them. This is called the <em>front républicain</em>. It kept Le Pen at 41.5% in 2022 despite her leading Round 1 momentum.</div>
-        <div class="primer-myth"><span class="myth-tag">Common mistake</span> Assuming the front républicain will hold again. The margin is collapsing. In 2017 it was 66–34. In 2022 it was 58–42. Current polls suggest Philippe would win a run-off 51–52% — barely, and that's the <em>best</em> non-RN scenario.</div>
-      </div>
-      <div class="primer-card">
-        <div class="primer-num">03</div>
-        <div class="primer-head">What RN actually is</div>
-        <div class="primer-body">The Rassemblement National (National Rally) was founded as the Front National by Jean-Marie Le Pen in 1972 — explicitly neo-fascist and antisemitic. His daughter Marine spent 15 years "de-demonising" it: softening rhetoric, distancing from her father, dropping some EU-exit positions. Jordan Bardella, her protégé and RN president since 2022, continues this normalisation strategy.</div>
-        <div class="primer-myth"><span class="myth-tag">Common mistake</span> Saying RN is "just" a protest vote or has fully changed. Its core policy agenda — severe immigration restriction, legal preference for French nationals, hostility to Islam — is structurally continuous with its founding ideology, however the packaging has changed.</div>
-      </div>
-      <div class="primer-card">
-        <div class="primer-num">04</div>
-        <div class="primer-head">Why the left can't win</div>
-        <div class="primer-body">The French left is split into at least four blocs that dislike each other nearly as much as they dislike the right: LFI (far-left, Mélenchon), PS (social democrats, Glucksmann), Greens (EELV), and Communists (PCF). In 2022, Mélenchon nearly made the run-off alone at 21.9%. In 2027, these votes are dispersed again — and their combined total still isn't enough to reach the run-off against Bardella.</div>
-        <div class="primer-myth"><span class="myth-tag">Common mistake</span> Thinking a left primary will solve this. The October 2026 primary excludes LFI — the largest left party. A "united" left without LFI is not united. And combined polling puts any left candidate in third place.</div>
-      </div>
-      <div class="primer-card">
-        <div class="primer-num">05</div>
-        <div class="primer-head">The suburban divide</div>
-        <div class="primer-body">France's most consistent political fault line is not left vs right — it's Paris vs everywhere else, and city centre vs périurbain (the commuter belt ringing every major city). In 2022, the Paris core gave Macron 36% and Le Pen 14%. The IDF périurbain gave Le Pen 39% to Macron's 25%. Marseille city centre voted Mélenchon. Marseille's surrounding ring voted Le Pen. This pattern repeats in Lyon, Toulouse, and Bordeaux.</div>
-        <div class="primer-myth"><span class="myth-tag">Common mistake</span> Reading regional data as uniform. A region "won" by Macron in 2022 may have 10 rural departments inside it that voted Le Pen.</div>
-      </div>
-      <div class="primer-card">
-        <div class="primer-num">06</div>
-        <div class="primer-head">Why Macron matters even though he's gone</div>
-        <div class="primer-body">Macron is constitutionally barred from running again. But he defines the race anyway. Every centrist candidate (Philippe, Bayrou, Attal) served in his government and must answer for his record: pension reform protests, 28% abstention in 2022, an approval rating of 11%. The RN campaign essentially <em>is</em> a campaign against Macron's legacy. Philippe's entire pitch depends on voters believing he is distinct from that legacy — a very hard sell.</div>
-        <div class="primer-myth"><span class="myth-tag">Common mistake</span> Treating the 2027 race as starting fresh. For most voters, the question is whether they trust anyone from the last five years of French politics — and the answer is largely no.</div>
-      </div>
-    </div>
+```
+<div class="primer-grid">
+  <div class="primer-card">
+    <div class="primer-num">01</div>
+    <div class="primer-head">Two rounds, not one</div>
+    <div class="primer-body">France doesn't elect a president in a single vote. Everyone runs in Round 1. The top two finishers — regardless of margin — advance to Round 2, two weeks later, where it's a straight head-to-head. This is why first-round polls are only half the story.</div>
+    <div class="primer-myth"><span class="myth-tag">Common mistake</span> Treating first-round polling as a prediction of who wins. Le Pen has led the first round in every poll for a year. That doesn't mean she — or Bardella — wins the presidency.</div>
+  </div>
+  <div class="primer-card">
+    <div class="primer-num">02</div>
+    <div class="primer-head">The Republican Front</div>
+    <div class="primer-body">Since 2002, French parties across the centre-left, left, and centre-right have tacitly agreed to vote for whichever mainstream candidate faces the far-right in Round 2 — even if they hate them. This is called the <em>front républicain</em>. It kept Le Pen at 41.5% in 2022 despite her leading Round 1 momentum.</div>
+    <div class="primer-myth"><span class="myth-tag">Common mistake</span> Assuming the front républicain will hold again. The margin is collapsing. In 2017 it was 66–34. In 2022 it was 58–42. Current polls suggest Philippe would win a run-off 51–52% — barely, and that's the <em>best</em> non-RN scenario.</div>
+  </div>
+  <div class="primer-card">
+    <div class="primer-num">03</div>
+    <div class="primer-head">What RN actually is</div>
+    <div class="primer-body">The Rassemblement National (National Rally) was founded as the Front National by Jean-Marie Le Pen in 1972 — explicitly neo-fascist and antisemitic. His daughter Marine spent 15 years "de-demonising" it: softening rhetoric, distancing from her father, dropping some EU-exit positions. Jordan Bardella, her protégé and RN president since 2022, continues this normalisation strategy.</div>
+    <div class="primer-myth"><span class="myth-tag">Common mistake</span> Saying RN is "just" a protest vote or has fully changed. Its core policy agenda — severe immigration restriction, legal preference for French nationals, hostility to Islam — is structurally continuous with its founding ideology, however the packaging has changed.</div>
+  </div>
+  <div class="primer-card">
+    <div class="primer-num">04</div>
+    <div class="primer-head">Why the left can't win</div>
+    <div class="primer-body">The French left is split into at least four blocs that dislike each other nearly as much as they dislike the right: LFI (far-left, Mélenchon), PS (social democrats, Glucksmann), Greens (EELV), and Communists (PCF). In 2022, Mélenchon nearly made the run-off alone at 21.9%. In 2027, these votes are dispersed again — and their combined total still isn't enough to reach the run-off against Bardella.</div>
+    <div class="primer-myth"><span class="myth-tag">Common mistake</span> Thinking a left primary will solve this. The October 2026 primary excludes LFI — the largest left party. A "united" left without LFI is not united. And combined polling puts any left candidate in third place.</div>
+  </div>
+  <div class="primer-card">
+    <div class="primer-num">05</div>
+    <div class="primer-head">The suburban divide</div>
+    <div class="primer-body">France's most consistent political fault line is not left vs right — it's Paris vs everywhere else, and city centre vs périurbain (the commuter belt ringing every major city). In 2022, the Paris core gave Macron 36% and Le Pen 14%. The IDF périurbain gave Le Pen 39% to Macron's 25%. Marseille city centre voted Mélenchon. Marseille's surrounding ring voted Le Pen. This pattern repeats in Lyon, Toulouse, and Bordeaux.</div>
+    <div class="primer-myth"><span class="myth-tag">Common mistake</span> Reading regional data as uniform. A region "won" by Macron in 2022 may have 10 rural departments inside it that voted Le Pen.</div>
+  </div>
+  <div class="primer-card">
+    <div class="primer-num">06</div>
+    <div class="primer-head">Why Macron matters even though he's gone</div>
+    <div class="primer-body">Macron is constitutionally barred from running again. But he defines the race anyway. Every centrist candidate (Philippe, Bayrou, Attal) served in his government and must answer for his record: pension reform protests, 28% abstention in 2022, an approval rating of 11%. The RN campaign essentially <em>is</em> a campaign against Macron's legacy. Philippe's entire pitch depends on voters believing he is distinct from that legacy — a very hard sell.</div>
+    <div class="primer-myth"><span class="myth-tag">Common mistake</span> Treating the 2027 race as starting fresh. For most voters, the question is whether they trust anyone from the last five years of French politics — and the answer is largely no.</div>
+  </div>
+</div>
+```
 
   </div>
 
   <!-- MAP: TREEMAP BLOCK STYLE -->
+
   <div class="map-section">
 
-    <div class="map-header">
-      <div class="map-title-block">
-        <div class="map-kicker">Regional breakdown · First round · 13 metropolitan regions</div>
-        <div class="map-title" id="mapMainTitle">RN First-Round % by Region — 2022 Results</div>
-      </div>
-      <div class="map-tabs" id="mapTabs">
-        <button class="tab-btn active" data-view="2022">2022 Results</button>
-        <button class="tab-btn" data-view="2027">2027 Projection</button>
-      </div>
-    </div>
+```
+<div class="map-header">
+  <div class="map-title-block">
+    <div class="map-kicker">Regional breakdown · First round · 13 metropolitan regions</div>
+    <div class="map-title" id="mapMainTitle">RN First-Round % by Region — 2022 Results</div>
+  </div>
+  <div class="map-tabs" id="mapTabs">
+    <button class="tab-btn active" data-view="2022">2022 Results</button>
+    <button class="tab-btn" data-view="2027">2027 Projection</button>
+  </div>
+</div>
 
-    <!-- TREEMAP GRID -->
-    <div class="treemap" id="treemap">
-      <!-- Populated by JS -->
-    </div>
+<!-- TREEMAP GRID -->
+<div class="treemap" id="treemap">
+  <!-- Populated by JS -->
+</div>
 
-    <!-- CALLOUT ANNOTATIONS -->
-    <div class="callout-strip" id="calloutStrip">
-      <!-- Populated by JS -->
-    </div>
+<!-- CALLOUT ANNOTATIONS -->
+<div class="callout-strip" id="calloutStrip">
+  <!-- Populated by JS -->
+</div>
 
-    <!-- LEGEND -->
-    <div class="tm-legend" id="tmLegend">
-      <!-- Populated by JS -->
-    </div>
+<!-- LEGEND -->
+<div class="tm-legend" id="tmLegend">
+  <!-- Populated by JS -->
+</div>
 
-    <div class="map-note" id="mapNote">
-      Sources: French Interior Ministry official 1st-round results, April 10 2022. Block size reflects approximate regional electorate weight.
-    </div>
+<div class="map-note" id="mapNote">
+  Sources: French Interior Ministry official 1st-round results, April 10 2022. Block size reflects approximate regional electorate weight.
+</div>
+```
 
   </div>
 
   <article style="padding-top:0">
 
-    <!-- SOURCES -->
-    <h2 class="section-title">Sources</h2>
-    <p style="font-size:12.5px;color:var(--muted);font-family:'DM Mono',monospace;line-height:2;">
-      Odoxa (Nov 2025, Apr 2026) · Elabe (Nov 2025) · Ifop / Toluna Harris Interactive (Jul 2024) · Ipsos-BVA for La Tribune Dimanche (Dec 2025) · Verian Group approval tracking (2025) · Polymarket prediction market (updated Apr 7, 2026) · Wikipedia: 2027 French presidential election · The Local France (Apr 2025, Mar 2026) · Connexion France (Apr 2026) · Grokipedia opinion polling digest (Feb 2026)
-    </p>
+```
+<!-- SOURCES -->
+<h2 class="section-title">Sources</h2>
+<p style="font-size:12.5px;color:var(--muted);font-family:'DM Mono',monospace;line-height:2;">
+  Odoxa (Nov 2025, Apr 2026) · Elabe (Nov 2025) · Ifop / Toluna Harris Interactive (Jul 2024) · Ipsos-BVA for La Tribune Dimanche (Dec 2025) · Verian Group approval tracking (2025) · Polymarket prediction market (updated Apr 7, 2026) · Wikipedia: 2027 French presidential election · The Local France (Apr 2025, Mar 2026) · Connexion France (Apr 2026) · Grokipedia opinion polling digest (Feb 2026)
+</p>
+```
 
   </article>
 
@@ -1202,165 +1322,217 @@
     <span class="note">Political Analytics · April 2026 · France 2027</span>
   </footer>
 
+<!-- REGION DETAIL PANEL -->
+
+<div class="panel-scrim" id="panelScrim"></div>
+<div class="region-panel" id="regionPanel" role="dialog" aria-modal="true" aria-label="Region detail">
+  <button class="panel-close" id="panelClose" aria-label="Close">✕</button>
+  <div class="panel-inner" id="panelInner"></div>
+</div>
+
 <script>
 // ── NEW TREEMAP ENGINE ────────────────────────────────────────
 const REGIONS = [
   { id:"bre",  name:"Bretagne",              short:"Bretagne",
-    d22:{ leader:"Macron",   party:"Centre", pct:32.5, color:"#2980b9", p2:"Mélenchon 22.2%", p3:"Le Pen 19.8%" },
-    d27:{ leader:"Philippe", party:"Centre", pct:30,   color:"#2565a0", trend:"— –2.5 pp", note:"Last reliable centre bastion in the west" } },
+    d22:{ leader:"Macron",   party:"Centre", pct:32.5, color:"#2980b9", p2:"Mélenchon", p2pct:"22.2", p3:"Le Pen", p3pct:"19.8" },
+    d27:{ leader:"Philippe", party:"Centre", pct:30,   color:"#2565a0", trend:"— –2.5 pp", tdir:"hold", note:"Last reliable centre bastion in the west. Historically resistant to RN." } },
   { id:"nor",  name:"Normandie",             short:"Normandie",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:27.8, color:"#c0392b", p2:"Macron 27.0%",    p3:"Mélenchon 20.5%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:34,   color:"#c0392b", trend:"↑ +6.2 pp", note:"Philippe's home region — still competitive" } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:27.8, color:"#c0392b", p2:"Macron",    p2pct:"27.0", p3:"Mélenchon", p3pct:"20.5" },
+    d27:{ leader:"Bardella", party:"RN",     pct:34,   color:"#c0392b", trend:"↑ +6.2 pp", tdir:"up", note:"Philippe's home region keeps it competitive for centre, but RN leads." } },
   { id:"idf",  name:"Paris (core)",          short:"Paris",
-    d22:{ leader:"Macron",   party:"Centre", pct:36.5, color:"#1a3a5c", p2:"Mélenchon 26.2%", p3:"Le Pen 14.2%", callout:1 },
-    d27:{ leader:"Philippe", party:"Centre", pct:33,   color:"#1a3a5c", trend:"— –3.5 pp", note:"Paris arrondissements: strongly anti-RN; left and centre split vote" } },
+    d22:{ leader:"Macron",   party:"Centre", pct:36.5, color:"#1a3a5c", p2:"Mélenchon", p2pct:"26.2", p3:"Le Pen", p3pct:"14.2", callout:1 },
+    d27:{ leader:"Philippe", party:"Centre", pct:33,   color:"#1a3a5c", trend:"— –3.5 pp", tdir:"hold", note:"Paris arrondissements: strongly anti-RN. Left and centre split the vote." } },
   { id:"idfp", name:"IDF périurbain",        short:"IDF périurbain",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:38.9, color:"#9b1d12", p2:"Macron 25.1%",    p3:"Mélenchon 22.5%", callout:1 },
-    d27:{ leader:"Bardella", party:"RN",     pct:45,   color:"#7a1209", trend:"↑ +6.1 pp", note:"Commuter belt: fastest-swinging zone in France. Same metropole as Paris, 25 pp apart." } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:38.9, color:"#9b1d12", p2:"Macron",    p2pct:"25.1", p3:"Mélenchon", p3pct:"22.5", callout:1 },
+    d27:{ leader:"Bardella", party:"RN",     pct:45,   color:"#7a1209", trend:"↑ +6.1 pp", tdir:"up", note:"Commuter belt: fastest-swinging zone in France. Same metropole as Paris, 25 pp apart." } },
   { id:"hdf",  name:"Hauts-de-France",       short:"Hauts-de-France",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:33.5, color:"#9b1d12", p2:"Macron 24.1%",    p3:"Mélenchon 22.8%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:42,   color:"#7a1209", trend:"↑ +8.5 pp", note:"De-industrialised north: deepest RN roots in metropolitan France" } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:33.5, color:"#9b1d12", p2:"Macron",    p2pct:"24.1", p3:"Mélenchon", p3pct:"22.8" },
+    d27:{ leader:"Bardella", party:"RN",     pct:42,   color:"#7a1209", trend:"↑ +8.5 pp", tdir:"up", note:"De-industrialised north: deepest RN roots in metropolitan France." } },
   { id:"pdl",  name:"Pays de la Loire",      short:"Pays de la Loire",
-    d22:{ leader:"Macron",   party:"Centre", pct:29.8, color:"#2980b9", p2:"Le Pen 23.5%",    p3:"Mélenchon 21.0%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:30,   color:"#c0392b", trend:"↑ +6.5 pp (flip)", note:"Barely flipping to RN — a bellwether; Philippe within reach" } },
+    d22:{ leader:"Macron",   party:"Centre", pct:29.8, color:"#2980b9", p2:"Le Pen",    p2pct:"23.5", p3:"Mélenchon", p3pct:"21.0" },
+    d27:{ leader:"Bardella", party:"RN",     pct:30,   color:"#c0392b", trend:"↑ +6.5 pp (flip)", tdir:"up", note:"Barely flipping to RN — a bellwether. Philippe within 2 pp." } },
   { id:"cvl",  name:"Centre-Val de Loire",   short:"Centre-Val Loire",
-    d22:{ leader:"Macron",   party:"Centre", pct:28.2, color:"#2980b9", p2:"Le Pen 26.8%",    p3:"Mélenchon 19.5%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:33,   color:"#c0392b", trend:"↑ +6.2 pp (flip)", note:"Tipping from narrow centre lead to RN" } },
-  { id:"bfc",  name:"Bourgogne-Franche-Comté","short":"Bourgogne-FC",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:28.5, color:"#c0392b", p2:"Macron 26.8%",    p3:"Mélenchon 20.2%", callout:2 },
-    d27:{ leader:"Bardella", party:"RN",     pct:36,   color:"#c0392b", trend:"↑ +7.5 pp", note:"Rural interior consolidating heavily for RN" } },
+    d22:{ leader:"Macron",   party:"Centre", pct:28.2, color:"#2980b9", p2:"Le Pen",    p2pct:"26.8", p3:"Mélenchon", p3pct:"19.5" },
+    d27:{ leader:"Bardella", party:"RN",     pct:33,   color:"#c0392b", trend:"↑ +6.2 pp (flip)", tdir:"up", note:"Tipping from narrow centre lead to RN." } },
+  { id:"bfc",  name:"Bourgogne-Franche-Comté", short:"Bourgogne-FC",
+    d22:{ leader:"Le Pen",   party:"RN",     pct:28.5, color:"#c0392b", p2:"Macron",    p2pct:"26.8", p3:"Mélenchon", p3pct:"20.2", callout:2 },
+    d27:{ leader:"Bardella", party:"RN",     pct:36,   color:"#c0392b", trend:"↑ +7.5 pp", tdir:"up", note:"Rural interior consolidating heavily for RN." } },
   { id:"ara",  name:"Auvergne-Rhône-Alpes",  short:"Auv-Rhône périurb.",
-    d22:{ leader:"Macron",   party:"Centre", pct:28.2, color:"#2980b9", p2:"Le Pen 24.5%",    p3:"Mélenchon 22.8%", callout:2 },
-    d27:{ leader:"Bardella", party:"RN",     pct:32,   color:"#c0392b", trend:"↑ +7.5 pp (flip)", note:"Lyon city vs périurbain pattern mirrors Paris: 22% vs 36%" } },
+    d22:{ leader:"Macron",   party:"Centre", pct:28.2, color:"#2980b9", p2:"Le Pen",    p2pct:"24.5", p3:"Mélenchon", p3pct:"22.8", callout:2 },
+    d27:{ leader:"Bardella", party:"RN",     pct:32,   color:"#c0392b", trend:"↑ +7.5 pp (flip)", tdir:"up", note:"Lyon city vs périurbain mirrors Paris: 22% vs 36% in 2022." } },
   { id:"gest", name:"Grand Est",             short:"Grand Est",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:29.8, color:"#9b1d12", p2:"Macron 26.5%",    p3:"Mélenchon 18.2%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:38,   color:"#9b1d12", trend:"↑ +8.2 pp", note:"Alsace & Lorraine post-industrial east: deep, consolidated RN territory" } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:29.8, color:"#9b1d12", p2:"Macron",    p2pct:"26.5", p3:"Mélenchon", p3pct:"18.2" },
+    d27:{ leader:"Bardella", party:"RN",     pct:38,   color:"#9b1d12", trend:"↑ +8.2 pp", tdir:"up", note:"Alsace & Lorraine post-industrial east: deep, consolidated RN territory." } },
   { id:"naq",  name:"Nouvelle-Aquitaine",    short:"Nouvelle-Aquitaine",
-    d22:{ leader:"Macron",   party:"Centre", pct:28.5, color:"#2980b9", p2:"Le Pen 24.2%",    p3:"Mélenchon 22.8%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:31,   color:"#c0392b", trend:"↑ +6.8 pp (flip)", note:"Rural areas swinging hard right; Bordeaux & Biarritz resist" } },
+    d22:{ leader:"Macron",   party:"Centre", pct:28.5, color:"#2980b9", p2:"Le Pen",    p2pct:"24.2", p3:"Mélenchon", p3pct:"22.8" },
+    d27:{ leader:"Bardella", party:"RN",     pct:31,   color:"#c0392b", trend:"↑ +6.8 pp (flip)", tdir:"up", note:"Rural areas swinging hard right; Bordeaux & Biarritz resist." } },
   { id:"occ",  name:"Occitanie",             short:"Occitanie",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:28.5, color:"#c0392b", p2:"Mélenchon 25.5%", p3:"Macron 23.5%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:36,   color:"#9b1d12", trend:"↑ +7.5 pp", note:"Toulouse left enclave vs Perpignan/ring: RN dominant outside cities" } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:28.5, color:"#c0392b", p2:"Mélenchon", p2pct:"25.5", p3:"Macron",    p3pct:"23.5" },
+    d27:{ leader:"Bardella", party:"RN",     pct:36,   color:"#9b1d12", trend:"↑ +7.5 pp", tdir:"up", note:"Toulouse left enclave vs Perpignan/ring: RN dominant outside cities." } },
   { id:"paca", name:"PACA",                  short:"PACA",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:31.2, color:"#9b1d12", p2:"Macron 24.8%",    p3:"Mélenchon 23.0%", callout:3 },
-    d27:{ leader:"Bardella", party:"RN",     pct:40,   color:"#7a1209", trend:"↑ +8.8 pp", note:"Historic RN heartland: largest projected swing nationally. Marseille ring decisive." } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:31.2, color:"#9b1d12", p2:"Macron",    p2pct:"24.8", p3:"Mélenchon", p3pct:"23.0", callout:3 },
+    d27:{ leader:"Bardella", party:"RN",     pct:40,   color:"#7a1209", trend:"↑ +8.8 pp", tdir:"up", note:"Historic RN heartland: largest projected swing nationally. Marseille ring decisive." } },
   { id:"cor",  name:"Corse",                 short:"Corse",
-    d22:{ leader:"Le Pen",   party:"RN",     pct:27.5, color:"#c0392b", p2:"Nationalists 20.2%", p3:"Macron 18.8%" },
-    d27:{ leader:"Bardella", party:"RN",     pct:33,   color:"#c0392b", trend:"↑ +5.5 pp", note:"Corsican nationalist vote still complicates RN supremacy here" } },
+    d22:{ leader:"Le Pen",   party:"RN",     pct:27.5, color:"#c0392b", p2:"Nationalists", p2pct:"20.2", p3:"Macron", p3pct:"18.8" },
+    d27:{ leader:"Bardella", party:"RN",     pct:33,   color:"#c0392b", trend:"↑ +5.5 pp", tdir:"up", note:"Corsican nationalist vote still complicates RN supremacy here." } },
 ];
 
-// Grid layout: [regionId, gridColumn, gridRow, colSpan, rowSpan]
-// 5 columns, 3 rows — approximate geographic north→south, west→east
 const LAYOUT = [
-  ["bre",  1,1,1,1], ["nor",  2,1,1,1], ["idf",  3,1,1,1], ["idfp",4,1,1,1], ["hdf",  5,1,1,1],
-  ["pdl",  1,2,1,1], ["cvl",  2,2,1,1], ["bfc",  3,2,1,1], ["ara",  4,2,1,1], ["gest", 5,2,1,1],
-  ["naq",  1,3,1,1], ["occ",  2,3,1,1], ["paca", 3,3,2,1], ["cor",  5,3,1,1],
+  ["bre",1,1,1,1],["nor",2,1,1,1],["idf",3,1,1,1],["idfp",4,1,1,1],["hdf",5,1,1,1],
+  ["pdl",1,2,1,1],["cvl",2,2,1,1],["bfc",3,2,1,1],["ara", 4,2,1,1],["gest",5,2,1,1],
+  ["naq",1,3,1,1],["occ",2,3,1,1],["paca",3,3,2,1],["cor",5,3,1,1],
 ];
 
-// Colour scale
-function bg22(d) { return d.color; }
-function op22(pct) {
-  var t = Math.min(1, Math.max(0, (pct - 19) / (40 - 19)));
-  return 0.42 + t * 0.58;
+var LEGEND22=[{c:"#7a1209",l:">32%  RN dominant"},{c:"#9b1d12",l:"28–32%  RN strong"},{c:"#c0392b",l:"24–28%  RN leading"},{c:"#2980b9",l:"<24%  Centre leading"},{c:"#1a3a5c",l:"Paris core (<20% RN)"}];
+var LEGEND27=[{c:"#5c0a02",l:">44%  RN dominant"},{c:"#7a1209",l:"40–44%  RN very strong"},{c:"#9b1d12",l:"36–40%  RN strong"},{c:"#c0392b",l:"30–36%  RN leading"},{c:"#2565a0",l:"<30%  Centre leading"}];
+var CALLS22=[{n:"1",t:"IDF périurbain 38.9% Le Pen vs Paris core 14.2% — the same metropole, 25 pp apart"},{n:"2",t:"Lyon périurbain RN 36.2% vs Lyon city 22% — the city/commuter-belt divide repeats everywhere"},{n:"3",t:"PACA 31.2% — highest RN share in metropolitan France 2022. Marseille's surrounding ring was decisive."}];
+var CALLS27=[{n:"1",t:"IDF périurbain projected ~45% for Bardella — the single fastest-swinging zone in France"},{n:"2",t:"Lyon périurbain expected to track PACA trajectory as the périurbain → RN pattern deepens"},{n:"3",t:"PACA projected ~40% — highest nationally. Same 3 suburban zones mark both maps."}];
+
+function bg22(d){return d.color;}
+function op22(pct){var t=Math.min(1,Math.max(0,(pct-19)/(40-19)));return 0.42+t*0.58;}
+function bg27(pct){if(pct>=44)return"#5c0a02";if(pct>=40)return"#7a1209";if(pct>=36)return"#9b1d12";if(pct>=32)return"#c0392b";if(pct>=28)return"#d4685e";return"#2565a0";}
+
+var currentView="2022";
+var activeId=null;
+
+// ── PANEL ─────────────────────────────────────────────────────
+var panel=document.getElementById("regionPanel");
+var scrim=document.getElementById("panelScrim");
+var panelClose=document.getElementById("panelClose");
+var panelInner=document.getElementById("panelInner");
+
+function openPanel(regionId){
+  var r=REGIONS.find(function(x){return x.id===regionId;});
+  if(!r)return;
+  var is27=(currentView==="2027");
+  var d=is27?r.d27:r.d22;
+  activeId=regionId;
+
+  // highlight active cell
+  document.querySelectorAll(".tm-cell").forEach(function(c){
+    c.classList.toggle("active-cell", c.dataset.id===regionId);
+  });
+
+  var col1 =
+    '<div class="panel-col-head">'+(is27?"Projected":"2022 Result")+'</div>'+
+    '<div class="panel-row"><span class="label">Region</span><span class="val">'+r.name+'</span></div>'+
+    '<div class="panel-row"><span class="label">'+(is27?"Proj. share":"Vote share")+'</span><span class="val" style="font-size:1.35rem;font-family:\'Playfair Display\',serif;font-weight:700">'+d.pct+'%</span></div>'+
+    '<div class="panel-row"><span class="label">Leader</span><span class="val">'+d.leader+' <span style="opacity:.55;font-size:10px">('+d.party+')</span></span></div>';
+
+  var col2, col3;
+  if(is27){
+    col2 =
+      '<div class="panel-col-head">Change vs 2022</div>'+
+      '<div class="panel-row"><span class="label">2022 leader</span><span class="val">'+r.d22.leader+' '+r.d22.pct+'%</span></div>'+
+      '<div class="panel-row"><span class="label">Swing</span><span class="val">'+d.trend+'</span></div>'+
+      '<div style="margin-top:8px"><span class="panel-trend-badge '+d.tdir+'">'+d.trend+'</span></div>';
+    col3 =
+      '<div class="panel-col-head">Context</div>'+
+      '<div class="panel-note-text">'+d.note+'</div>';
+  } else {
+    col2 =
+      '<div class="panel-col-head">Full Round 1 Result</div>'+
+      '<div class="panel-row"><span class="label">1st</span><span class="val">'+d.leader+' ('+d.party+') — '+d.pct+'%</span></div>'+
+      '<div class="panel-row"><span class="label">2nd</span><span class="val">'+d.p2+' — '+d.p2pct+'%</span></div>'+
+      '<div class="panel-row"><span class="label">3rd</span><span class="val">'+d.p3+' — '+d.p3pct+'%</span></div>';
+    col3 =
+      '<div class="panel-col-head">2027 Outlook</div>'+
+      '<div class="panel-row"><span class="label">Proj. leader</span><span class="val">'+r.d27.leader+'</span></div>'+
+      '<div class="panel-row"><span class="label">Proj. share</span><span class="val">'+r.d27.pct+'%</span></div>'+
+      '<div style="margin-top:8px"><span class="panel-trend-badge up">'+r.d27.trend+'</span></div>';
+  }
+
+  panelInner.innerHTML=col1+col2+col3;
+  panel.classList.add("open");
+  scrim.classList.add("open");
+  panelClose.focus();
 }
-function bg27(pct) {
-  if (pct >= 44) return "#5c0a02";
-  if (pct >= 40) return "#7a1209";
-  if (pct >= 36) return "#9b1d12";
-  if (pct >= 32) return "#c0392b";
-  if (pct >= 28) return "#d4685e";
-  return "#2565a0";
+
+function closePanel(){
+  panel.classList.remove("open");
+  scrim.classList.remove("open");
+  document.querySelectorAll(".tm-cell").forEach(function(c){c.classList.remove("active-cell");});
+  activeId=null;
 }
 
-var LEGEND22 = [
-  {c:"#7a1209", l:">32%  RN dominant"},
-  {c:"#9b1d12", l:"28–32%  RN strong"},
-  {c:"#c0392b", l:"24–28%  RN leading"},
-  {c:"#2980b9", l:"<24%  Centre leading"},
-  {c:"#1a3a5c", l:"Paris core (<20% RN)"},
-];
-var LEGEND27 = [
-  {c:"#5c0a02", l:">44%  RN dominant"},
-  {c:"#7a1209", l:"40–44%  RN very strong"},
-  {c:"#9b1d12", l:"36–40%  RN strong"},
-  {c:"#c0392b", l:"30–36%  RN leading"},
-  {c:"#2565a0", l:"<30%  Centre leading"},
-];
-var CALLS22 = [
-  {n:"1", t:"IDF périurbain 38.9% Le Pen vs Paris core 14.2% — the same metropole, 25 percentage points apart"},
-  {n:"2", t:"Lyon périurbain RN 36.2% vs Lyon city 22% — the city/commuter-belt divide repeats across every major French city"},
-  {n:"3", t:"PACA 31.2% — highest RN share in metropolitan France 2022. Marseille's surrounding ring was decisive."},
-];
-var CALLS27 = [
-  {n:"1", t:"IDF périurbain projected ~45% for Bardella — the single fastest-swinging zone in France, up from 38.9%"},
-  {n:"2", t:"Lyon périurbain expected to track PACA trajectory as the périurbain → RN pattern deepens everywhere"},
-  {n:"3", t:"PACA projected ~40% — highest nationally. Same 3 suburban zones mark both maps."},
-];
+panelClose.addEventListener("click",closePanel);
+scrim.addEventListener("click",closePanel);
+document.addEventListener("keydown",function(e){
+  if(e.key==="Escape") closePanel();
+  // arrow key navigation between cells
+  if((e.key==="ArrowRight"||e.key==="ArrowLeft"||e.key==="ArrowDown"||e.key==="ArrowUp") && activeId){
+    var ids=LAYOUT.map(function(l){return l[0];});
+    var idx=ids.indexOf(activeId);
+    var next=e.key==="ArrowRight"||e.key==="ArrowDown" ? idx+1 : idx-1;
+    if(next>=0 && next<ids.length) openPanel(ids[next]);
+  }
+});
 
-var currentView = "2022";
+// ── BUILD TREEMAP ─────────────────────────────────────────────
+function buildTreemap(view){
+  var tm=document.getElementById("treemap");
+  tm.innerHTML="";
+  var is27=(view==="2027");
+  closePanel();
 
-function buildTreemap(view) {
-  var tm = document.getElementById("treemap");
-  tm.innerHTML = "";
-  var is27 = (view === "2027");
+  document.getElementById("mapMainTitle").textContent=is27
+    ?"RN / Bardella Projected First-Round % by Region — 2027"
+    :"Leading Candidate First-Round % by Region — 2022 (Official Results)";
 
-  document.getElementById("mapMainTitle").textContent = is27
-    ? "RN / Bardella Projected First-Round % by Region — 2027"
-    : "Leading Candidate First-Round % by Region — 2022 (Official Results)";
+  LAYOUT.forEach(function(L){
+    var id=L[0],gc=L[1],gr=L[2],cs=L[3],rs=L[4];
+    var r=REGIONS.find(function(x){return x.id===id;});
+    if(!r)return;
+    var d=is27?r.d27:r.d22;
+    var bgColor=is27?bg27(d.pct):bg22(d);
+    var opacity=is27?1:op22(d.pct);
+    var badge=(!is27&&r.d22.callout)?r.d22.callout:null;
+    var sub=is27?d.trend:(d.party+" · "+d.leader);
 
-  LAYOUT.forEach(function(L) {
-    var id=L[0], gc=L[1], gr=L[2], cs=L[3], rs=L[4];
-    var r = REGIONS.find(function(x){return x.id===id;});
-    if (!r) return;
-    var d = is27 ? r.d27 : r.d22;
-    var bgColor = is27 ? bg27(d.pct) : bg22(d);
-    var opacity = is27 ? 1 : op22(d.pct);
-    var badge = (!is27 && r.d22.callout) ? r.d22.callout : (is27 && r.d27 && r.d27.callout) ? r.d27.callout : null;
-    var sub = is27 ? d.trend : (d.party + " · " + d.leader);
-    var ttBody = is27
-      ? "<span>Leader</span>: <span>"+d.leader+" ("+d.party+")</span><br><span>Projected share</span>: <span>"+d.pct+"%</span><br><span>vs 2022</span>: <span>"+d.trend+"</span><br><em style='color:#bbb;font-size:9px'>"+d.note+"</em>"
-      : "<span>1st</span>: <span>"+d.leader+" ("+d.party+") "+d.pct+"%</span><br><span>2nd</span>: <span>"+d.p2+"</span><br><span>3rd</span>: <span>"+d.p3+"</span>";
+    var cell=document.createElement("div");
+    cell.className="tm-cell";
+    cell.dataset.id=id;
+    cell.setAttribute("tabindex","0");
+    cell.setAttribute("role","button");
+    cell.setAttribute("aria-label",r.name+" "+d.pct+"%");
+    cell.style.cssText="background:"+bgColor+";opacity:"+opacity+";color:#fff;grid-column:"+gc+" / span "+cs+";grid-row:"+gr+" / span "+rs+";";
 
-    var cell = document.createElement("div");
-    cell.className = "tm-cell";
-    cell.style.cssText = "background:"+bgColor+";opacity:"+opacity+";color:#fff;grid-column:"+gc+" / span "+cs+";grid-row:"+gr+" / span "+rs+";";
-    cell.innerHTML =
+    cell.innerHTML=
       "<div>"+
         "<div class='tm-name'>"+r.short+"</div>"+
         "<div class='tm-pct'>"+d.pct+"%</div>"+
         "<div class='tm-sub'>"+sub+"</div>"+
       "</div>"+
-      (badge ? "<div class='tm-badge'>"+badge+"</div>" : "")+
-      "<div class='tm-tooltip'>"+
-        "<div class='ttr'>"+r.name+"</div>"+
-        "<div class='ttd'>"+ttBody+"</div>"+
-      "</div>";
+      (badge?"<div class='tm-badge'>"+badge+"</div>":"");
+
+    cell.addEventListener("click",function(){openPanel(id);});
+    cell.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();openPanel(id);}});
     tm.appendChild(cell);
   });
 
   // Callouts
-  var calls = is27 ? CALLS27 : CALLS22;
-  document.getElementById("calloutStrip").innerHTML = calls.map(function(c){
+  var calls=is27?CALLS27:CALLS22;
+  document.getElementById("calloutStrip").innerHTML=calls.map(function(c){
     return "<div class='callout-item'><div class='callout-num'>"+c.n+"</div><div>"+c.t+"</div></div>";
   }).join("");
 
   // Legend
-  var items = is27 ? LEGEND27 : LEGEND22;
-  document.getElementById("tmLegend").innerHTML =
-    "<span class='tm-legend-label'>% range →</span>" +
+  var items=is27?LEGEND27:LEGEND22;
+  document.getElementById("tmLegend").innerHTML=
+    "<span class='tm-legend-label'>% range →</span>"+
     items.map(function(i){
       return "<div class='tm-legend-item'><div class='tm-legend-swatch' style='background:"+i.c+"'></div><span>"+i.l+"</span></div>";
     }).join("");
 
-  document.getElementById("mapNote").innerHTML = is27
-    ? "2027 projections based on Odoxa/Elabe regional polling trends and 2024 European Parliament results by region. Projections carry ±3–4 pp uncertainty. IDF périurbain shown separately from Paris core to illustrate the suburban divide. Hover each block for full breakdown."
-    : "Source: French Interior Ministry official 1st-round results, April 10 2022. IDF périurbain shown separately from Paris arrondissements. Opacity intensity reflects vote share strength. Hover each block for full breakdown.";
+  document.getElementById("mapNote").innerHTML=is27
+    ?"2027 projections based on Odoxa/Elabe regional polling trends and 2024 European Parliament results by region. Projections carry ±3–4 pp uncertainty. IDF périurbain shown separately from Paris core. <strong style='color:var(--ink)'>Click any block to explore.</strong>"
+    :"Source: French Interior Ministry official 1st-round results, April 10 2022. IDF périurbain shown separately from Paris arrondissements. <strong style='color:var(--ink)'>Click any block to explore.</strong>";
 }
 
 document.querySelectorAll(".tab-btn").forEach(function(btn){
-  btn.addEventListener("click", function(){
-    currentView = btn.dataset.view;
-    document.querySelectorAll(".tab-btn").forEach(function(b){ b.classList.remove("active"); });
+  btn.addEventListener("click",function(){
+    currentView=btn.dataset.view;
+    document.querySelectorAll(".tab-btn").forEach(function(b){b.classList.remove("active");});
     btn.classList.add("active");
     buildTreemap(currentView);
   });
