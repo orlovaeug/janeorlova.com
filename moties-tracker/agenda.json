@@ -1,35 +1,19 @@
 [
   {
-    "datum": "2026-04-14",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03117"
-  },
-  {
-    "datum": "2026-04-14",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
+    "datum": "2026-04-15",
+    "tijd": "",
+    "titel": "Aansluitend: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03118"
-  },
-  {
-    "datum": "2026-04-14",
-    "tijd": "2026-",
-    "titel": "Debat over het rapport van de taskforce Antisemitisme ‘Gevangen in vrijheden’",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (debat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01172"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03119"
   },
   {
     "datum": "2026-04-15",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
+    "titel": "Aanvang middagvergadering: Stemmingen (van dinsdag 14 april 2026)",
     "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03119"
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03117"
   },
   {
     "datum": "2026-04-15",
@@ -66,9 +50,33 @@
   {
     "datum": "2026-04-16",
     "tijd": "2026-",
-    "titel": "Wijziging van de Luchtvaartwet BES ter invoering grondslag openbare dienstverplichting (36862)",
+    "titel": "Tweeminutendebat Hersteloperatie kinderopvangtoeslag (CD 19/3)",
     "locatie": "Plenaire zaal",
-    "soort": "Hamerstukken",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03082"
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02473"
+  },
+  {
+    "datum": "2026-04-16",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Leven Lang Ontwikkelen en laaggeletterdheid (CD 4/3)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01803"
+  },
+  {
+    "datum": "2026-04-16",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Onderzoeks- en Wetenschapsbeleid (CD 2/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02979"
+  },
+  {
+    "datum": "2026-04-16",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Hoger onderwijs, studiefinanciering en DUO (CD 8/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03096"
   }
 ]
