@@ -8,9 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -18,16 +16,16 @@
     gtag('js', new Date());
     gtag('config', 'G-9SV5Y8BZ24');
   </script>
-
   <!-- Google Tag Manager -->
-
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
-
   <!-- End Google Tag Manager -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 ```
 :root {
   --ink:       #0c0c0c;
@@ -152,7 +150,6 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
   opacity: 0.2;
 }
 
-/* ★ DOMINANT — 300px ★ */
 .headshot-ring {
   position: relative; z-index: 1;
   width: 300px; height: 300px; border-radius: 50%;
@@ -235,29 +232,24 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
 .viz-link::after { content: '→'; transition: transform 0.2s; }
 .viz-link:hover::after { transform: translateX(4px); }
 
-/* Mini bar chart SVG */
-.viz-featured-chart {
+/* Featured viz — right panel: static description */
+.viz-featured-detail {
   padding: 3.5rem 4rem;
-  display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+  display: flex; flex-direction: column; justify-content: center;
   background: #111;
 }
 
-.chart-label { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(180,164,138,0.6); margin-bottom: 1.5rem; }
+.viz-detail-label { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(180,164,138,0.6); margin-bottom: 1.5rem; }
 
-.bar-chart { width: 100%; }
-
-.bar-row { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.9rem; }
-.bar-row:last-child { margin-bottom: 0; }
-
-.bar-party { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.08em; color: rgba(247,245,240,0.5); width: 2.8rem; flex-shrink: 0; text-align: right; }
-
-.bar-track { flex: 1; height: 10px; background: rgba(255,255,255,0.06); position: relative; overflow: hidden; }
-
-.bar-fill { height: 100%; background: var(--accent); transform-origin: left; animation: growBar 1.2s cubic-bezier(0.4,0,0.2,1) forwards; transform: scaleX(0); }
-
-@keyframes growBar { to { transform: scaleX(1); } }
-
-.bar-pct { font-family: 'DM Mono', monospace; font-size: 0.56rem; color: rgba(247,245,240,0.4); width: 2.5rem; flex-shrink: 0; }
+.viz-detail-points { list-style: none; }
+.viz-detail-points li {
+  font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.07em;
+  color: rgba(247,245,240,0.55); padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.viz-detail-points li:last-child { border-bottom: none; }
+.viz-detail-points li::before { content: ''; width: 4px; height: 4px; background: var(--accent); flex-shrink: 0; }
 
 /* secondary viz cards */
 .viz-grid {
@@ -291,31 +283,6 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
 .vc-link::after { content: '→'; transition: transform 0.2s; }
 .viz-card:hover .vc-link::after { transform: translateX(4px); }
 
-/* ─── TRACKER LIVE ─── */
-#tracker { padding: 6rem 5rem; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; border-bottom: 1px solid var(--rule); }
-
-.tracker-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--red); color: white; font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 0.28rem 0.75rem; margin-bottom: 1.5rem; }
-.tracker-pill::before { content: ''; width: 5px; height: 5px; background: white; border-radius: 50%; animation: pulse 1.6s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
-.tracker-h { font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 4vw, 3.8rem); font-weight: 700; line-height: 1.08; margin-bottom: 1.2rem; }
-.tracker-h em { font-style: italic; font-weight: 400; }
-.tracker-p { font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; max-width: 44ch; margin-bottom: 2.5rem; }
-
-.t-screen { background: var(--ink); padding: 2.5rem; }
-.ts-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
-.ts-lbl { font-family: 'DM Mono', monospace; font-size: 0.59rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
-.live-dot { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.1em; color: #4ade80; display: flex; align-items: center; gap: 0.4rem; }
-.live-dot::before { content: ''; width: 5px; height: 5px; background: #4ade80; border-radius: 50%; animation: pulse 1.6s infinite; }
-
-.m-row { display: flex; align-items: center; gap: 0.8rem; padding: 0.78rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
-.m-row:last-child { border-bottom: none; }
-.m-tag { font-family: 'DM Mono', monospace; font-size: 0.5rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.48rem; flex-shrink: 0; }
-.tp { background: rgba(74,222,128,0.15); color: #4ade80; }
-.tr { background: rgba(239,68,68,0.15); color: #f87171; }
-.tpe { background: rgba(251,191,36,0.15); color: #fbbf24; }
-.m-txt { font-family: 'EB Garamond', serif; font-size: 0.84rem; color: rgba(247,245,240,0.62); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
 /* ─── WRITING ─── */
 #writing { padding: 6rem 5rem; border-bottom: 1px solid var(--rule); }
 .writing-top { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
@@ -332,10 +299,6 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
 .art-p { font-size: 0.91rem; color: var(--ink-soft); line-height: 1.6; }
 .art-more { background: var(--paper-2); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1.2rem; }
 .art-more-lbl { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rule); }
-
-.feed-loading { grid-column: 1/-1; display: flex; align-items: center; justify-content: center; padding: 4rem; font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); gap: 0.75rem; }
-.feed-loading::before { content: ''; width: 14px; height: 14px; border: 1px solid var(--rule); border-top-color: var(--ink); border-radius: 50%; animation: spin 0.8s linear infinite; }
-@keyframes spin { to { transform: rotate(360deg); } }
 
 /* ─── CONTACT ─── */
 #contact { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid var(--ink); }
@@ -368,8 +331,23 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 .footer-links a:hover { color: var(--ink); }
 .footer-copy { font-family: 'DM Mono', monospace; font-size: 0.57rem; color: var(--ink-muted); letter-spacing: 0.08em; }
 
-/* ─── REVEAL ─── */
-/* reveal handled by JS for desktop only — all elements visible on mobile */
+/* ─── COOKIE BANNER ─── */
+#cookie-banner {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: #1a1a1a; color: #f5f5f5;
+  padding: 16px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  font-family: sans-serif; font-size: 14px;
+  z-index: 999999; transition: opacity 0.4s ease; pointer-events: all;
+}
+#cookie-banner p { margin: 0; }
+#cookie-buttons { display: flex; gap: 10px; flex-shrink: 0; }
+#cookie-accept, #cookie-reject { border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; pointer-events: all; }
+#cookie-accept { background: #ffffff; color: #1a1a1a; }
+#cookie-accept:hover { background: #e0e0e0; }
+#cookie-reject { background: transparent; color: #ffffff; border: 1px solid #ffffff; }
+#cookie-reject:hover { background: rgba(255,255,255,0.1); }
 
 /* ─── MOBILE ─── */
 @media (max-width: 960px) {
@@ -389,11 +367,9 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   .datawork-head { padding: 3rem 1.5rem 0; }
   .viz-featured { grid-template-columns: 1fr; }
   .viz-featured-info { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .viz-featured-chart { padding: 2.5rem 1.5rem; }
+  .viz-featured-detail { padding: 2.5rem 1.5rem; }
   .viz-grid { grid-template-columns: 1fr; }
   .viz-card { border-right: none; }
-
-  #tracker { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
 
   #writing { padding: 3rem 1.5rem; }
   .writing-top { grid-template-columns: 1fr; gap: 1.5rem; }
@@ -409,74 +385,17 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
 
   footer { flex-direction: column; gap: 1.2rem; text-align: center; padding: 2rem 1.5rem; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
+
+  @media (max-width: 480px) {
+    #cookie-banner { flex-direction: column; align-items: flex-start; }
+  }
 }
-    #cookie-banner {
-  display: none;    
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #1a1a1a;
-  color: #f5f5f5;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  font-family: sans-serif;
-  font-size: 14px;
-  z-index: 999999;
-  transition: opacity 0.4s ease;
-  pointer-events: all;
-}
-
-#cookie-banner p { margin: 0; }
-
-#cookie-buttons {
-  display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-#cookie-accept, #cookie-reject {
-  border: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  pointer-events: all;
-}
-
-#cookie-accept {
-  background: #ffffff;
-  color: #1a1a1a;
-}
-
-#cookie-accept:hover { background: #e0e0e0; }
-
-#cookie-reject {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-#cookie-reject:hover { background: rgba(255,255,255,0.1); }
-
-@media (max-width: 480px) {
-  #cookie-banner { flex-direction: column; align-items: flex-start; }
-}
-}
-
-
-  </style>
-</head>
-
 ```
 
   </style>
 </head>
 <body>
+
 <div id="cookie-banner">
   <p>This website uses cookies to improve your experience.</p>
   <div id="cookie-buttons">
@@ -485,34 +404,23 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   </div>
 </div>
 
-    <script>
+<script>
   (function () {
     function getConsent() {
-      try { return localStorage.getItem('cookieConsent'); } 
-      catch (e) { return null; }
+      try { return localStorage.getItem('cookieConsent'); } catch (e) { return null; }
     }
     function setConsent(val) {
-      try { localStorage.setItem('cookieConsent', val); } 
-      catch (e) {}
+      try { localStorage.setItem('cookieConsent', val); } catch (e) {}
     }
-
     var banner = document.getElementById('cookie-banner');
-
     if (!banner) return;
-
-    if (getConsent()) {
-      banner.style.display = 'none';
-      return;
-    }
-
+    if (getConsent()) { banner.style.display = 'none'; return; }
     banner.style.display = 'flex';
-
     document.getElementById('cookie-accept').addEventListener('click', function () {
       setConsent('accepted');
       banner.style.opacity = '0';
       setTimeout(function () { banner.style.display = 'none'; }, 400);
     });
-
     document.getElementById('cookie-reject').addEventListener('click', function () {
       banner.style.opacity = '0';
       setTimeout(function () { banner.style.display = 'none'; }, 400);
@@ -520,19 +428,18 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   })();
 </script>
 
-
 <!-- NAV -->
 
 <nav>
   <a href="#" class="nav-brand">
     <div class="nav-headshot">
- <img src="IMG_0513.jpeg" alt="Jane Orlova">
+      <img src="IMG_0513.jpeg" alt="Jane Orlova">
+    </div>
     <span class="nav-wordmark">Jane Orlova</span>
   </a>
   <ul class="nav-links">
     <li><a href="#about">Profile</a></li>
     <li><a href="#datawork">Data Work</a></li>
-    <li><a href="#tracker">Tracker</a></li>
     <li><a href="#writing">Writing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -571,21 +478,21 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       <h1 class="hero-name">Jane<br><em>Orlova</em></h1>
       <p class="hero-lead">International Relations &amp; Political Communication researcher. Writing about Dutch and European politics — elections, policy, messaging, and the people shaping it.</p>
       <div class="hero-actions">
-        <a href="/cdn-cgi/l/email-protection#08677a64677e695762487169606767266b6765" class="btn-ink">Email me directly</a>
+        <a href="mailto:orlova_j@yahoo.com" class="btn-ink">Email me directly</a>
         <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read Substack</a>
       </div>
     </div>
     <div class="hero-footer-strip">
       <div class="hero-stat-item"><strong>2018</strong><span>Based in NL since</span></div>
       <div class="hero-stat-item"><strong>MSc</strong><span>Univ. of Amsterdam</span></div>
-      <div class="hero-stat-item"><strong>5</strong><span>Live data projects</span></div>
+      <div class="hero-stat-item"><strong>5</strong><span>Data projects</span></div>
     </div>
   </div>
 
   <div class="hero-sidebar">
     <div class="photo-panel">
       <div class="headshot-ring">
-         <img src="IMG_0513.jpeg" alt="Jane Orlova">
+        <img src="IMG_0513.jpeg" alt="Jane Orlova">
       </div>
       <p class="headshot-name">Jane Orlova</p>
       <p class="headshot-sub">Political Researcher · Amsterdam</p>
@@ -639,7 +546,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       <h2 class="sec-h">Data Work &amp; <em>Visualisations</em></h2>
       <div class="sec-rule"></div>
     </div>
-    <p class="datawork-intro">Political data made legible — from election outcomes and parliamentary voting patterns to live sentiment tracking. Each project combines original data collection with analysis and visual storytelling.</p>
+    <p class="datawork-intro">Political data made legible — from election outcomes and parliamentary voting patterns to sentiment tracking. Each project combines original data collection with analysis and visual storytelling.</p>
   </div>
 
   <!-- FEATURED: Gemeenteuitslag -->
@@ -652,15 +559,20 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       <div class="viz-meta-row">
         <div class="viz-meta-item"><strong>380+</strong><span>Municipalities</span></div>
         <div class="viz-meta-item"><strong>2026</strong><span>Election cycle</span></div>
-        <div class="viz-meta-item"><strong>Live</strong><span>Data</span></div>
+        <div class="viz-meta-item"><strong>Full</strong><span>Analysis</span></div>
       </div>
       <a href="https://janeorlova.com/gemeenteuitslag2026" class="viz-link">Explore results</a>
     </div>
-    <div class="viz-featured-chart">
-      <div class="chart-label">Party vote share · sample municipalities</div>
-      <div class="bar-chart" id="bar-chart">
-        <!-- Rendered by JS -->
-      </div>
+    <div class="viz-featured-detail">
+      <div class="viz-detail-label">What this project covers</div>
+      <ul class="viz-detail-points">
+        <li>Interactive maps of results across all Dutch municipalities</li>
+        <li>Party vote share breakdowns and seat allocations</li>
+        <li>Urban vs. rural voting pattern analysis</li>
+        <li>Coalition formation scenarios and dynamics</li>
+        <li>Comparison with 2022 baseline election results</li>
+        <li>Contextual commentary on key local shifts</li>
+      </ul>
     </div>
   </div>
 
@@ -685,7 +597,6 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <div class="vc-type">Parliamentary Data</div>
   <div class="vc-spark">
     <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <!-- mini histogram bars -->
       <rect x="0"  y="28" width="16" height="20" fill="var(--accent)" opacity="0.5"/>
       <rect x="20" y="18" width="16" height="30" fill="var(--accent)" opacity="0.6"/>
       <rect x="40" y="10" width="16" height="38" fill="var(--accent)" opacity="0.8"/>
@@ -699,12 +610,12 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     </svg>
   </div>
   <h3 class="vc-title">Moties Tracker</h3>
-  <p class="vc-desc">Live tracking of parliamentary motions in the Tweede Kamer — who proposes, who votes, what passes. Patterns in party alliances and opposition strategies over time.</p>
+  <p class="vc-desc">Tracking of parliamentary motions in the Tweede Kamer — who proposes, who votes, what passes. Patterns in party alliances and opposition strategies over time.</p>
   <span class="vc-link">Open tracker</span>
 </a>
 
 <a href="https://janeorlova.com/polls" class="viz-card reveal" style="transition-delay:0.2s">
-  <div class="vc-type">Polling Analysis · Live</div>
+  <div class="vc-type">Polling Analysis</div>
   <div class="vc-spark">
     <svg viewBox="0 0 200 48" preserveAspectRatio="none">
       <polyline points="0,32 25,28 50,24 75,26 100,20 125,18 150,22 175,16 200,14" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
@@ -713,7 +624,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     </svg>
   </div>
   <h3 class="vc-title">The Dutch Political Pulse</h3>
-  <p class="vc-desc">Real-time polling synthesis from Ipsos I&amp;O, Verian, and Peil.nl — seat projections, an interactive coalition builder, momentum tracking, and pollster comparison since the October 2025 election.</p>
+  <p class="vc-desc">Polling synthesis from Ipsos I&amp;O, Verian, and Peil.nl — seat projections, an interactive coalition builder, momentum tracking, and pollster comparison since the October 2025 election.</p>
   <span class="vc-link">Explore polls</span>
 </a>
 
@@ -721,7 +632,6 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <div class="vc-type">Survey Research · March–April 2026</div>
   <div class="vc-spark">
     <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <!-- bar chart — three politicians across 5 dimensions -->
       <rect x="0"  y="8"  width="12" height="40" fill="var(--accent)" opacity="0.9"/>
       <rect x="14" y="18" width="12" height="30" fill="var(--accent)" opacity="0.55"/>
       <rect x="28" y="26" width="12" height="22" fill="var(--accent)" opacity="0.3"/>
@@ -740,59 +650,28 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   <p class="vc-desc">Survey-experimental study on how physical appearance shapes perceptions of trustworthiness, competence, and leadership suitability across three Dutch political figures — with full statistical analysis.</p>
   <span class="vc-link">Read report</span>
 </a>
-<!-- ===================== -->
-<!-- EUROPE SECTION LABEL -->
-<!-- ===================== -->
+
 <div class="viz-card viz-split reveal">
-
   <div class="vc-type">European Analysis · Countries</div>
-
   <div class="vc-spark">
     <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <polyline points="0,34 25,30 50,26 75,28 100,22 125,20 150,24 175,18 200,16"
-        fill="none" stroke="var(--accent)" stroke-width="1.5"/>
-      <polyline points="0,20 25,24 50,28 75,26 100,30 125,32 150,30 175,34 200,36"
-        fill="none" stroke="var(--ink-muted)" stroke-width="1" opacity="0.6"/>
+      <polyline points="0,34 25,30 50,26 75,28 100,22 125,20 150,24 175,18 200,16" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+      <polyline points="0,20 25,24 50,28 75,26 100,30 125,32 150,30 175,34 200,36" fill="none" stroke="var(--ink-muted)" stroke-width="1" opacity="0.6"/>
     </svg>
   </div>
-
   <h3 class="vc-title">Europe — Political Systems</h3>
-
-  <p class="vc-desc">
-    Comparative analysis of electoral systems, coalition dynamics, and political fragmentation.
-  </p>
-
-  <!-- 👇 THIS IS THE IMPORTANT PART -->
-  <div class="vc-split-links">
-    <a href="/europe/france">France →</a>
-    <a href="/europe/germany">Germany →</a>
+  <p class="vc-desc">Comparative analysis of electoral systems, coalition dynamics, and political fragmentation across European countries.</p>
+  <div style="display:flex; gap:1rem; margin-top:auto;">
+    <a href="/europe/france" style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;">France →</a>
+    <a href="/europe/germany" style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;">Germany →</a>
   </div>
+</div>
 ```
 
   </div>
 </section>
 
-<!-- TRACKER LIVE -->
-
-<section id="tracker">
-  <div class="reveal">
-    <div class="tracker-pill">Live Tool</div>
-    <h2 class="tracker-h">Motion<br><em>Tracker</em></h2>
-    <p class="tracker-p">Track every parliamentary motion in real time — who proposes, who votes, what passes. Built to make Dutch democracy legible.</p>
-    <a href="https://janeorlova.com/moties-tracker" class="btn-ink">Open full tracker →</a>
-  </div>
-  <div class="t-screen reveal" style="transition-delay:0.15s">
-    <div class="ts-head">
-      <span class="ts-lbl">Tweede Kamer · Recent Moties</span>
-      <span class="live-dot">Live</span>
-    </div>
-    <div id="tracker-feed">
-      <div class="feed-loading">Loading recent motions…</div>
-    </div>
-  </div>
-</section>
-
-<!-- WRITING — LIVE SUBSTACK -->
+<!-- WRITING — STATIC SUBSTACK POSTS -->
 
 <section id="writing">
   <div class="sec-hd reveal">
@@ -801,28 +680,28 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <div class="sec-rule"></div>
   </div>
   <div class="writing-top reveal">
-    <p class="writing-desc">Essays, analysis, and takes on Dutch and international politics. Published on Substack — covering elections, messaging, leadership, and what the numbers actually mean. Posts load automatically.</p>
+    <p class="writing-desc">Essays, analysis, and takes on Dutch and international politics. Published on Substack — covering elections, messaging, leadership, and what the numbers actually mean.</p>
     <div class="writing-r"><a href="https://janeorlova.substack.com" target="_blank" class="btn-ink">Visit Substack →</a></div>
   </div>
-  <div class="articles reveal" id="substack-feed">
-    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art" id="ss-post-1">
+  <div class="articles reveal">
+    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art">
       <p class="art-meta">Weekend Overview</p>
       <h3 class="art-h">Mijn Weekend</h3>
-      <p class="art-p">March 30 - April 5</p>
+      <p class="art-p">March 30 – April 5</p>
     </a>
-    <a href="https://janeorlova.substack.com/p/mijn-weekend-5" target="_blank" rel="noopener" class="art" id="ss-post-2">
-      <p class="art-meta">Dutch &amp; European politics</p>
+    <a href="https://janeorlova.substack.com/p/mijn-weekend-5" target="_blank" rel="noopener" class="art">
+      <p class="art-meta">Dutch &amp; European Politics</p>
       <h3 class="art-h">Hungary votes. Europe watches. Moscow too.</h3>
-      <p class="art-p">On 12 April, Hungary holds parliamentary elections. For most European elections, the international attention is proportional to the country’s size — modest, contextual, quickly forgotten. Hungary has 10 million people and 21 votes in the Council of the European Union.</p>
+      <p class="art-p">On 12 April, Hungary holds parliamentary elections. For most European elections, the international attention is proportional to the country's size — modest, contextual, quickly forgotten. Hungary has 10 million people and 21 votes in the Council of the European Union.</p>
     </a>
-    <a href="https://janeorlova.substack.com/p/hungary-votes-europe-watches-moscow" target="_blank" rel="noopener" class="art" id="ss-post-3">
+    <a href="https://janeorlova.substack.com/p/the-messaging-trap-why-trumps-iran" target="_blank" rel="noopener" class="art">
       <p class="art-meta">International Conflicts</p>
-      <h3 class="art-h">The Messaging Trap: Why Trump’s Iran Speech Failed at Its Own Game</h3>
-      <p class="art-p">When the White House announced that Donald Trump would be making a speech to the nation about the war on Iran, it was expected that the president would make a major announcement, but in his remarks which lasted less than 20 minutes, Trump only repeated the same statements he had been circulating for weeks.</p>
+      <h3 class="art-h">The Messaging Trap: Why Trump's Iran Speech Failed at Its Own Game</h3>
+      <p class="art-p">When the White House announced that Donald Trump would be making a speech to the nation about the war on Iran, it was expected that the president would make a major announcement — but his remarks only repeated the same statements he had been circulating for weeks.</p>
     </a>
     <div class="art art-more">
       <p class="art-more-lbl">Read on Substack</p>
-      <a href="https://janeorlova.substack.com/p/the-messaging-trap-why-trumps-iran" target="_blank" class="btn-ghost">Visit →</a>
+      <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Visit →</a>
     </div>
   </div>
 </section>
@@ -839,7 +718,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <p class="contact-desc">Available for research collaboration, media commentary, writing commissions, and advisory roles within political agencies across the Netherlands and Europe.</p>
     <div class="email-block">
       <span class="email-lbl">Write to me directly</span>
-      <a href="mailto:orlova_j@yahoo.com" class="email-addr"><span class="__cf_email__" data-cfemail="orlova_j@yahoo.com">[orlova_j@yahoo.com]</span></a>
+      <a href="mailto:orlova_j@yahoo.com" class="email-addr">orlova_j@yahoo.com</a>
     </div>
     <div class="avail-grid">
       <div class="av-tag">Research</div>
@@ -871,7 +750,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <li><a href="#about">Profile</a></li>
     <li><a href="#datawork">Data Work</a></li>
     <li><a href="https://janeorlova.substack.com" target="_blank">Substack</a></li>
-    <li><a href="/cdn-cgi/l/email-protection#543b26383b22350b3e142d353c3b3b7a373b39">Contact</a></li>
+    <li><a href="mailto:orlova_j@yahoo.com">Contact</a></li>
   </ul>
   <span class="footer-copy">© 2026 Jane Orlova · Amsterdam</span>
 </footer>
@@ -910,115 +789,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
       });
     }
   });
-
-  /* ── BAR CHART ── */
-  const parties = [
-    { name: 'VVD',  pct: 0.22 },
-    { name: 'D66',  pct: 0.17 },
-    { name: 'GL',   pct: 0.14 },
-    { name: 'PvdA', pct: 0.13 },
-    { name: 'CDA',  pct: 0.11 },
-    { name: 'SP',   pct: 0.09 },
-    { name: 'PVV',  pct: 0.08 },
-  ];
-  const chart = document.getElementById('bar-chart');
-  if (chart) {
-    chart.innerHTML = parties.map((p, i) => `
-      <div class="bar-row">
-        <span class="bar-party">${p.name}</span>
-        <div class="bar-track">
-          <div class="bar-fill" style="width:${p.pct*100}%;animation-delay:${0.3+i*0.1}s"></div>
-        </div>
-        <span class="bar-pct">${Math.round(p.pct*100)}%</span>
-      </div>`).join('');
-  }
-
-  /* ── SUBSTACK — static cards always visible, real posts load if API responds ── */
-  async function loadSubstack() {
-    const container = document.getElementById('substack-feed');
-    if (!container) return;
-    // Try Substack internal API — works when CORS is permitted by their server
-    try {
-      const r = await fetch('https://janeorlova.substack.com/api/v1/posts?limit=3&offset=0', {
-        signal: AbortSignal.timeout(8000),
-        headers: { 'Accept': 'application/json' }
-      });
-      if (!r.ok) return;
-      const posts = await r.json();
-      if (!Array.isArray(posts) || !posts.length) return;
-      let html = posts.slice(0,3).map(p => {
-        const link = 'https://janeorlova.substack.com/p/' + (p.slug || '');
-        const date = p.post_date ? new Date(p.post_date).toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}) : '';
-        const tmp = document.createElement('div');
-        tmp.innerHTML = p.subtitle || '';
-        const excerpt = (tmp.textContent||'').slice(0,160).trim()+'…';
-        return '<a href="'+link+'" target="_blank" rel="noopener" class="art">'+
-          '<p class="art-meta">'+date+'</p>'+
-          '<h3 class="art-h">'+p.title+'</h3>'+
-          '<p class="art-p">'+excerpt+'</p></a>';
-      }).join('');
-      html += '<div class="art art-more"><p class="art-more-lbl">More on Substack</p>'+
-        '<a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read All →</a></div>';
-      container.innerHTML = html;
-    } catch(e) { /* static cards stay */ }
-  }
-
-  /* ── MOTIES TRACKER ── */
-  async function loadTracker() {
-    const feed = document.getElementById('tracker-feed');
-    if (!feed) return;
-
-    /* Always show the curated fallback immediately so something is visible,
-       then try to fetch live data and replace if successful */
-    const fallback = [
-      { cls: 'tp',  label: 'Passed',   text: 'Motie klimaatbeleid subsidies — D66, GroenLinks' },
-      { cls: 'tr',  label: 'Rejected', text: 'Motie defensiebudget verhoging — PVV' },
-      { cls: 'tpe', label: 'Pending',  text: 'Motie asielopvang gemeenten — NSC, BBB' },
-      { cls: 'tp',  label: 'Passed',   text: 'Motie woningbouw versnelling — VVD' },
-      { cls: 'tr',  label: 'Rejected', text: 'Motie zorgpersoneel loonsverhoging — SP, PvdA' },
-    ];
-
-    const renderRows = items => items.map(r =>
-      '<div class="m-row"><span class="m-tag ' + r.cls + '">' + r.label + '</span>' +
-      '<span class="m-txt">' + r.text + '</span></div>'
-    ).join('');
-
-    // Show fallback immediately — no empty loader
-    feed.innerHTML = renderRows(fallback);
-
-    // Try live API in background
-    try {
-      const TK_URL = 'https://gegevens.tweedekamer.nl/kamerstukken/moties?$top=5&$orderby=Datum%20desc&$format=json';
-      const PROXY  = 'https://api.allorigins.win/get?url=' + encodeURIComponent(TK_URL);
-      const r = await fetch(PROXY, { signal: AbortSignal.timeout(6000) });
-      const j = await r.json();
-      const data = JSON.parse(j.contents);
-      const items = (data.value || []).slice(0, 5);
-      if (!items.length) return;
-
-      const tagMap = {
-        'aangenomen':  { cls: 'tp',  label: 'Passed' },
-        'verworpen':   { cls: 'tr',  label: 'Rejected' },
-        'ingetrokken': { cls: 'tr',  label: 'Withdrawn' },
-        'aangehouden': { cls: 'tpe', label: 'Deferred' },
-      };
-
-      feed.innerHTML = items.map(m => {
-        const status = (m.Besluit || '').toLowerCase();
-        const tag = tagMap[status] || { cls: 'tpe', label: 'Pending' };
-        const title = (m.Titel || m.Onderwerp || 'Motie').slice(0, 72);
-        return '<div class="m-row"><span class="m-tag ' + tag.cls + '">' + tag.label + '</span>' +
-               '<span class="m-txt">' + title + '</span></div>';
-      }).join('');
-    } catch(e) {
-      // fallback already shown, do nothing
-    }
-  }
-
-  loadSubstack();
-  loadTracker();
-//
-
+</script>
 
 </body>
 </html>
