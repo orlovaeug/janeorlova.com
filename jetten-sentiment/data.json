@@ -1,5 +1,190 @@
 [
   {
+    "id": "g3af8a8ce8893",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Nederland heeft zijn zorgen kunnen overbrengen, zegt premier Jetten na het diner met Trump",
+    "date": "2026-04-14",
+    "sent": "n",
+    "link": "https://www.trouw.nl/binnenland/nederland-heeft-zijn-zorgen-kunnen-overbrengen-zegt-premier-jetten-na-het-diner-met-trump~bb195a21/",
+    "lr": "left"
+  },
+  {
+    "id": "gf1bffbcfeb53",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Willem-Alexander, Máxima en Jetten tafelen met Trump: 'Begrijp het ongemak'",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://www.nu.nl/buitenland/6392484/willem-alexander-maxima-en-jetten-tafelen-met-trump-begrijp-het-ongemak.html"
+  },
+  {
+    "id": "gbcd3b24b2d7e",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Rob Jetten grapt over diner bij Donald Trump in het Witte Huis: 'Geen McDonald's'",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://www.rtl.nl/boulevard/video/164c0e53-11aa-441a-91d6-f3ff4064748b/rob-jetten-doet-grapt-over-diner-bij-trump"
+  },
+  {
+    "id": "g0744c8d55273",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Rob Jetten na diner met Donald Trump: 'Dit heb ik hem duidelijk proberen te maken'",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/video/rob-jetten-na-diner-met-donald-trump-dit-heb-ik-hem-duidelijk-proberen-te-maken/145720600.html",
+    "lr": "right"
+  },
+  {
+    "id": "gdc24a394359c",
+    "type": "nl",
+    "src": "NU",
+    "title": "Willem-Alexander, Máxima en Jetten tafelen met Trump: 'Begrijp het ongemak' - NU",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaDl3R1VJa2RBQ2VaZHJJYTFLWWtvVF9FZmlxcG1uTWpTQ2FmejJyTUc3dUVvVkJvMXY0OFRhS3RqY2c1QnotOWczdElSZ29rSXc3QnFqRGxjU0l1MTB5ZWNKd1JPc1FuS3pWRVRHa1dkV0M1SkFTSzVuVEtncFB2RnNLVU1LRUV6NmMwRlh2RUtxWVhyT0J0M0xIdGR4eDRPUk4xMUxqeDh5VHl3RG1wVHVfVQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4623c3cea5ec",
+    "type": "nl",
+    "src": "LINDA.nl",
+    "title": "Koningspaar en premier Rob Jetten spraken Donald Trump in het Witte Huis: 'Open en constructief gesprek' - LINDA.nl",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQc2JfZEtJSFkxYnJqZEs4ei1xa0VuRGtvelRNcFVBRVlfSEhqdkFPUW9JWFRta1k0RVUwX2N6d2h1NEs5Q1dfdkNKQWhnNEhGbUpwb3laZGFmLWkxZlFWeFoxam5RXzVQeXJ1VUZOVFk2a09MWk05dFYzdTB2cERCWU1TcXNib3c2VFdEVVVNbm8xTldrSC1tZGhB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0b30b83b0f68",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten en het koningspaar op bezoek bij het Witte Huis: 'Er kon van alles ter sprake komen' - NOS",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQbGpWWkpxWFozMzZJc1JvWVNWOW90b0w2ZFZtVUlzUVliaG9XU2tRX1JBaUhtYUtfWF9vcldyc2J1SkI0aHo2anN2QzNrWGFJaUo5SWk1Z2otSFYtSEJmQUQzM3duYlpQUXlGdlEyRnNjT3RGd2U2aWplQ2U3Yjc5TVpjalBPUTBIeFlrZUJRWGt3SC13MUtPR2F0N3NmU3dMLVVhNmdfczU2SGVRNFVfc0F1aDZuZi1z?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfceabf73c8f1",
+    "type": "nl",
+    "src": "HLN",
+    "title": "Nederlands koningspaar en premier Rob Jetten ontvangen in het Witte Huis - HLN",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbHc4akhOaWhWX3NYbEZwcnhMeWx1N3AxUF9FMUFiUUpPUzZSZzBmUkdISjdmbEYwdldWUVVkV2FzTnlPdy1BXzhHZy1Qc0xPLThTUVo0WGZrS2RiQnVPQkUxbzY1WU9jbDR6QlNyeEdVeUg3ejUwZmxQSWNXbWFZNDZLajROdzB0bnlkbHZIMDhuWkx3MUkzSjRJWnA4elRLY05PRE55SDZvZmNuSDFBaXBDZXpMVHQx?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8c5fcd5fc670",
+    "type": "intl",
+    "src": "VRT",
+    "title": "Willem-Alexander met Máxima en premier Jetten ontvangen op Witte Huis voor veelbesproken diner: \"We agree to disagree\" - VRT",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZE5DS1hfRDVwNEd1cjZ3UEdpbzlMeDBVLXAxV2FQcDRsN1JHYUlEWlRpSEluVXhZYUprMTNsYzA3RjlscnpRMEpoaW9RWWNQbGNWeHVWNklOY2wtWTBHZ0pzMXBKdG5iWlNBTmhCb2NBQVQ3YV9ZSXZfTDM5Q0txME9GMEZIVGN0THZTdW5n?oc=5",
+    "flag": "🇧🇪"
+  },
+  {
+    "id": "g0c02bcc37fa4",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Trump ontvangt koning en koningin in Witte Huis, ‘open en constructief gesprek’ met Jetten - bnr.nl",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNbmd5Y3VUNzRzaUFaNUZ3eXl5eFNRdk85VDNfMFl4TnpzOHhReEZ3QndMaXRMUFJtdHRNWFlBbXJnNVcwYzZWMDdKOVYxd1BpTVRWdGU5c3VWZjFKRy0tbVlFQUJhVkUwejdBWUk1VFp3NDBhc0xkQlpxM1UxWTdLUVVMNjJHTFFPcWFBMjhMNGpUdVpxbzJ6elhjdVNpaGZwblRXZ2NJRE9MeDJ2Z2lLcEpLNFh1Q3M3a1BTaGVnajBYZWNvQ2xVWFBRbGVnMWEwTFFV?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc61cf1cac38f",
+    "type": "nl",
+    "src": "NU",
+    "title": "Video | Premier Jetten na diner in Witte Huis: 'Agree to disagree' - NU",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPZURuZkJaSzFXUHBxdWxyTWhabmJrWlA1VWZVcWFWaXl3ci1QVTJSdXppVFFtY01XNW9vXzNQNDJyWGJKaFJMSktyUFIxdkEwM0RZVkpMbmI5cWYwZUo2RUVaZ3JCYXhuTGdlb1JqUUJ6WkJPS0Z4N0lXMGFINTBKMTR5bjRBSGYyMERlcDVaejAzak9TSnc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf171f6dec156",
+    "type": "nl",
+    "src": "Wnl.tv",
+    "title": "Jetten vindt Amerikaanse blokkade van Iran onwenselijk - Wnl.tv",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQMkh2UGlpcFdBOGxscFlFTl96NldvSUp4Rl9yYXIyaXQwbzhsbUNnZHlNOWVpYUU5UzI3dmhCRVEtNWNZaUpzekhYSDduX2tHcTZ6QWU2Rl82OWlacUZpR0lOcVFkb09PM1ZJXzNzbE5FcXlENEFYMEktcjFWd2tBNnFCcjZsVE0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g99a054554446",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Nederland heeft zijn zorgen kunnen overbrengen, zegt premier Jetten na diner met Trump - Trouw",
+    "date": "2026-04-14",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSWhrb3FfdEZmUFRwYlF6eEZ1RTA4VzhyR3Z4LWltNFljSlpMaWVicFl4NzhKRVBrbU9kZ1B6Ti1iRzFLZWd1djRGUHhLWTN5anJTbk9odXlSNXNyaDBoSXVBaTlOc0MyU3kzTzBsZHpaS0Vsckp2RDJueDV2UE5ibmM2ckRlM2w5SFNWLWhxajJKdV9Pb0t5QmRNYlVxVWJab3h1SUtaSHhoTVJCak9wSE5rd1JqWndHdnZoTlVIUHh4MXBWeWc?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ge2247df15181",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten en het koningspaar op bezoek bij Trump: 'Open en eerlijk gesprek' - NOS",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPR3VKLUM2elE5Rks5VURnUFU3MVVPcmZxMkxwUkhKLW9ZYWY2Vk5mUTlFMlNodWY2eXdXNEtkb2VLUWNXMHBDOXdFSVNoaUtscjdNREk1WV9iaGI5VXd1SlRlSHduaTZjT1pFVEJ3Y1pQUzhxSWJUdGdzcGcyNU1Sc1dXQ0RCU2lHT2VFajJqZXFOU0YyZUdTRC1MZDFxRHc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3a1a59450592",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Koning Willem-Alexander ontmoet Donald Trump bij Witte Huis: ‘Zeer gerespecteerde mensen’ - De Telegraaf",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONEUtSHhvYzRVeEUtWHFwdDBYemFnbDBuTUNycjVtRWJKRTVGOUhpWHJjQmZsRTJJdElJSEg3cnN1RmVUZHVZVVlLN2JlU25oWVk1Rm5KUnBOOWEwQ1VMSkw0MTBfM0FXMHBmeDhlaTY3cVhnQnlRNzUtYVMtS1ZET1VSVy1lcE1oVDlya3NSMHlPTjMxSHhpa3Y1cFFrWk5tM2RTS2pYVnBaY0Z6dVAwcnA3ZE9kVVZZSWVoX0FLMjhCNVMzUm9wa2VjVXI?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gcc2e36ac1bcd",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Dit was het veelbesproken diner van het koningspaar bij president Trump: ‘Alles is gezegd, maar: agree to disagree’ - AD.nl",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOeXdrQlc2cmRTYVZNaGdIVUZ2SWRiM2U1YzRvQ2JPa3NaMjRWNmkyR1JyeTlsYm41V253UHR2ZmkzeGdSQUlxQXAtcWEtY2NoUVlpcjFTa0RFMzM1M0x0WGFmRF9VdXVpdkVtS0hvT3pIX3ZRQ3hPUktpV3h0UlpCZDFNSzE0TWdwdGw3NFlGX3FoQVM0Vm9lVVhDRUhNRzhSbnp1bmMtUUxQQnR6RzBLdUVQY1JqTmx0U290dlZOeS1TclVoMDFpVEhZMlJvR0NKYmwtQUpCaXA2bFBBZlBLdFBCaw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g475cb4bc84ee",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Op bezoek bij Trump legt Jetten zorgen over Iran en Oekraïne op tafel - Het Financieele Dagblad",
+    "date": "2026-04-14",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOM01ENE9Dc3B2T1JJZmNvNjdUek41ek9XSFh4NjlLclhjWlBaNmZFSFZSZEpDek5DSFNiNXE5WjhOZzNaZktHZ21hZHpaZmhCUzRQZi1iUGRWbTdKVGpjRUtqeFhXVkpBMF9fMUx4bEJ5ZkJHRE4zbWhGVUVQRnJpMW5McjVtS3VRT3ZpNDVvQVh0eEhYc08zdVk2cXV5ZUxDVkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g86a1c8d53271",
+    "type": "nl",
+    "src": "HLN",
+    "title": "Premier Jetten na diner in Witte Huis: \"Het was een hele goede avond\" - HLN",
+    "date": "2026-04-14",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSzdNX21OVHFvMWVBQVBNTnI4NW5mN2FpQjFEeWxXdGphUzc5TFVMRF9yaXFNYm5KMGtHNllBdjB6QmJnRmE1U0tiZ1BTSWpqMnV6SUNMZVozUVgyaDRSOHRoUmxlUlJMNHBZYU96N1dtd1NqY0VkVDNhbllMekVuYlllSk9CcC13alE?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g691be09de075",
     "type": "nl",
     "src": "bnr.nl",
@@ -29,6 +214,77 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUVRlc2hBRHJKMUYxSUh4ZmZ2UWwwOW8zNEpEcTFOR0ppb18xaWNmeE1qb1RJMFJCRW9BXzA2OVdnSDFQQnBmTF9mMFRPX2MtYWk4R1dTUVNtLTUxampuUkd1Y094eEpMU2V5Nm1nSldaVXV1RVN2ODJ4NkEtZTcwNjg5Q2VMdDBtMW9zV0tYSzE4bmZkNDRfNTdB?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g5954c4e7b6cf",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet-Jetten ruikt kans: lagere wegenbelasting in plaats van minder accijns – nu snel een elektrische auto kopen? - EWmagazine.nl",
+    "date": "2026-04-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNR2FROGp6S2xuQ1RkclVfbjVKZHVHVllHenFPSUEwMy0xQ3h0Nm8tLWMwX2oydzF1enZfeUIxaFNRbWVtanM5NmlucnRjSzFOZTFmc1VOaXN3NDlIUTZpbUxHeU5PbDdyZUpkQXR4UzAxNU5rSEdGYnNCVlhzQTVaYlZITVBISGFRSUFqSEhWdFlhQUE4eVB4M3lIWWpNTmNUbU5GZFdHVE1qekZMNzlNV1kwdkxtSDVRUFhkVkgyNVpvYVUxcVp0THViNHMzNE9JdnlOUUlPMWtIX0M2N18zQ1NqajhMRmdBazctLTdB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g246aacfaaea6",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Kabinet komt met excuses aan afstandsmoeders en hun kinderen - Trouw",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOczFJYXYxdE5WNjdZUFV3enIwUlJZOGozLVVydlZxcTAyOUd0dWJtTjF2MTdjM2Y0by03aE4wUUxkcTFqenhhczJGLUk4QUpRQ05qbDZDZmZfV2QtN1BSZVl1RFJBZ3VaOXE2T3NORF9UZXpfUUlXWS1DeU9aU3ItTTdlVWE4aVZRY3JxVUljeHM4cThrOUdTbVBHN29pSzVRaFE?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ga5569beccc63",
+    "type": "intl",
+    "src": "Rutland Herald",
+    "title": "US Netherlands Trump - Rutland Herald",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVFZCSjcxX21zU2tFVkFjWkNDTmtpR085YnRNSS1PcUc4LVhCNkJiTzQ3eVFKY2s2Um5saUxmNGdMUlFZN2NmdGJlc1NjTFFkU0xMYzdHaEhEdDA5LWZ0Z3I0LWF0bENjOExwYzN3a3N1U2ZoRHAwMEFLSHBXbmxMQXR2QkNPalpZWUtVT0hYU1kyRWVPel9sd3B0Q1ktenAweWZQWEVTTU1VcHJUelQw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "geea9a68ecb78",
+    "type": "intl",
+    "src": "Goshen News",
+    "title": "US Netherlands Trump - Goshen News",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN2ZSZHpEV2NpWTlYeFhUNHdhTzI4Ty1mZzl1aDRuNXBIMDFiLVYwdFF0MWh3T3JwNUNIZ0FQY2FQQkJ4cFVNRGkxYWlVN0RRU05Rd0FEdk4zV1AwRWV5Zm5FN2JwcGlUOTR1bzlabUZ0dGJQTjlsRXRPN1JfWFN4ZDlFWUV5a0dUUFNQVjdXcG5iQldmcXdscTZNeWN3clFPN3hMR3JmbjRueFNSRnZkTHA5bUM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g51d501d64fbf",
+    "type": "intl",
+    "src": "dailyrecordnews.com",
+    "title": "US Netherlands Trump - dailyrecordnews.com",
+    "date": "2026-04-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQSUF2dEVETk5iQUZGdFowMWE1eENyczlJSThIbjdya2puaDUxV2x1RzVFZnlUY3hpeFZ4ZEFhb2V3Y29lNzVLaFhJREFCZGJHTU1KZVFWdzhOOXFpOFdWeVhNVHlTWUFua3I3N1FCRXdMamdWY2RLS2VUQ2VrZzNKLXZVSkZfX0pNZEdwSUxKUTlOQ1RVNGFCajF3MHNyYWl0dDNNX3hFOHJnV01IVi1QcQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0aa5b0299d3a",
+    "type": "intl",
+    "src": "The New York Times",
+    "title": "La visita de los reyes de los Países Bajos a la Casa Blanca crea polémica - The New York Times",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQzVVaV9Xa1FjQlp5U0J2eVRaaEpwZUxTSlNBeEU4QVUxTElFeWlsVk1mTzNsV2pOVU5YNmYxMURZMFVJd010TU9TOVhMVVNhaVdtaTN5aGUxTnZ3UWJteXlWMzBVUFNJVHlJNWR1RTA4eVNtaU5YWm5ha09IWkEya1ZpNDRoaS1yRGlZX0c5Y1NzOWdhVDl2UkZNQQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g88989e3ec188",
+    "type": "intl",
+    "src": "AlbertoNews - Periodismo sin censura",
+    "title": "María Corina Machado se reunirá con el primer ministro de Países Bajos en La Haya este #15Abr - AlbertoNews - Periodismo sin censura",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVE1CMllCUHJfZ0ZxYW9hZEhGYXE4dnc4X01RWVRIQ3lvbU5NQUU3bUdHNUVMM3FaR3l3M0RwX0tJWVhpNlg5bjhjeW1SUU9jZ2tsUzhfM0xNb1c2SHJvVDRTamZHdzFRVHhLNnEtNldKN04wQXRUckkycmYxU3h1TXpzWUtheWJnZ1JsNElZV3JJNzVfVHREbVFlSnZUTGlTdERTNURZQzdlSzVsYnlRUEtzUHd3WExKeElsZ1M4QkdpNXg5MUxNWVhoT21SeUh0THd0TTFibw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gd215d9327866",
@@ -464,6 +720,17 @@
     "icon": "📰"
   },
   {
+    "id": "g7311618f74c0",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Voor premier Jetten is het bezoek aan Trump zowel een unieke kans, als een groot risico - NRC",
+    "date": "2026-04-10",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNVFotdnA1U3FYRUpJYUFQdnhsUmpWY19YMW1yWUc3TzBBWGV2Y2lRMkd2UkZPeGs2LUNiYnlCbmkyQTZ1NHNDdmliaEFvNU5hclVXOWRkRTJIRTRWRWpseG91YndHbk5MSGNOSDVDZFhjMXFMZ0tkcjFNbjdJYkQwTUVkQ2lrcVZFMW9jX2xlQWZCeElQMS01OXh4cEh2Q0hhTENqaTFUYnhka2Vub2ZTeXg3OUF1Z29vYXRySUw1ODVNeXhqcUNrSEhNM18?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "g9da8aa9eb5f0",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -797,6 +1064,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVjN6UW1sOXRBX3l2S3haRk15RVI3N3RZbldTeVk0dDlSVUZjbXAyYy1RNVB6bXBwVTFWZVlEVzQzRGhKbFdtRkN1ckFIblh3WFVPNHNjMjMwcENNUllxVDMxWDRSd0dfaTRaQ1R6ZFB5bWxFU3I5SVFLaTZvUTBvRGpCYzRpdDZPMWE1MG9XdWxGWm5uUWpLTGM1TQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g5fa902de4662",
+    "type": "nl",
+    "src": "NU",
+    "title": "WW- en WIA-plannen zijn volgend doelwit nu AOW-plan op losse schroeven staat - NU",
+    "date": "2026-04-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNHpEcDJkSXMzVmNHc3pOTzd3blhBQkRTNURrMmNaUktSdWtLYkcwWW5nT3gwUi16RGRNejVzbmNxbXRtUkpPdG1vTTN3MlktNzE4a3BKaWNyY0RiTTdaNXVKMzhjaEM4djlpRVY5WkdiZDNhcVNlTU9SWHFzRmJfWVUxdmV5Z05tcW9jdkVqa19acjFQYkNrLWFaVWIxcjVfYWc2TEVGQ2VjQXlDVldRTTJCN192UQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g60e7617690c6",
@@ -10296,5 +10573,15 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNkxoaGE2VFd1VnY3QkdyUFhKZVI0YW5OdlBCOE8wVkwydVdmWmxaOXduZG5Zd1ZrMDhMakZSUnV6V3FoUEo0dlNhdldrRVk3UlUxQWp6TjhpcmxzY0ZUQUNFYU9nSEdpbXdyLWZhVEhFQUl1M3hzYXhzeXl6R0ZwN29XOFpZZHd0YXRrc25jVXNVMkJHemdzX1IyREVhcGlZQnBPLXBwd3lwQ2xlQ081RndnM3F1NEo0ZDVfcmxYRjJRRjV2ZmpBOFdfVQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g558dfe0a820a",
+    "type": "intl",
+    "src": "Bloomberg",
+    "title": "Rob Jetten's New Centrist Dutch Government Faces Complex Trade Challenges - Bloomberg",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdEp2dEtVNEloR2dCR0hHVFJ1M205Zll0VFNDZXpnbnBOVngteC0yNzE0TUdITGR0UDJOSnQ3RlhiRHp1ZzNQZlZiV0lXT2ItSEh6OEowdHlFV1diRkhJRlpMYkhLaF96RjIxdFo3R0VYQmNtQXNoN05EYU9kYWY2SXRtUW5BMjJvTlh0Q0xjcG53aDdPZkR2OTdDLVg4Yi03V1ZaV2tXSlNBUzdraXpORA?oc=5",
+    "flag": "🇺🇸"
   }
 ]
