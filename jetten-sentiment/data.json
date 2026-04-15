@@ -1,5 +1,55 @@
 [
   {
+    "id": "g18d3822c9c96",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Jetten bezoekt Starmer: wijst Rolls-Royce de weg naar onafhankelijkheid van Trump en Poetin?",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://www.ad.nl/buitenland/jetten-bezoekt-starmer-wijst-rolls-royce-de-weg-naar-onafhankelijkheid-van-trump-en-poetin~ac15e7200/"
+  },
+  {
+    "id": "g508ad6a386a6",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nederland en Verenigd Koninkrijk slaan handen ineen om energiekosten te drukken - AD.nl",
+    "date": "2026-04-15",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWWtKeVUwUldlMmN2SzZfSFI1TEQ0V2sxMDhnT3BWRlJWbS1scWlsVjBQVlAzcUItTnN0YjJkY1VfMTFsY21ZcUU3TFdvamQ3ZXd1Vkl4a3JfRjVXQV9vU3dmUWtLWWY5YTA0dm9pbFRrU0NwZFlVWUNGYnZfck5rY1BmZnZiLVVXeVkxeUdleGZpQkh4aEI1NVAyYUJjQmxVLUF3VmlBdDZzRV9SRkhrOEplcEk2dU12UW80?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "geb391aaf8f65",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten bezoekt Starmer: wijst Rolls Royce de weg naar onafhankelijkheid van Trump en Poetin? - AD.nl",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQY2lHeXVnVGdLdW9odnRJTElBZGZ4VUtGSWEwTkU2SElLdnlvMFBBc05tU1RpSjhoNzl0MWJHMFVGSEFQN1VTNC1WeWpYTWlOek5vZ3hPOS1fcXpZaGhUZGRfUXFSSGg0ellMM2lJM0tQMnIyM0tEaXN6ajNGZmxqMjVpQTRNc05GQUR0N1NRVHpnTjBlVFA2V3JUVzJvaDlJOUJSSFJYUWctR2JHRzNuNTllWlJFMzBWeUpqNXpDU1QtUUpzSFFpSEVn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb8dfc4fceb6f",
+    "type": "intl",
+    "src": "Ukrinform - Ukrainian National News Agency",
+    "title": "Dutch PM meets with Trump to discuss Ukraine and war in Middle East - Ukrinform - Ukrainian National News Agency",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbGIyMjFNOFY5VzYyVWdoTGdKQXJQTzBjaWdsSnNOQ25qZHpYZ0kxWjVqT1NNMUozUTJMMHozQjEwMHh1Q3FaS2xNNnZXQzhSR25XR1E1S19veUlLWngzc0xNaVBROHZfYk5naEhrT2doNXlVcDk5b2Ryc215eUhVZUtkQ0NaOE9HaXNzZVR3TFhycnhGYVhjT2VHR2FUYU5CRGN4TzVLdnd2SXA0alRta2kzUVNrNm4xSE45d0NDY9IBxAFBVV95cUxNcWdfbi1OZ0p4UV92cm4xbXNNQXV1UkY5ZmdLQjR1SEYzejZ2VHV1OGFOQnI0RFlzOVp5TVlreFJiUmVUX1RySUtMQm03TGJxWXFWLUU4bXRkVzBER3Z0Q1p4ZnpSR1poZWg2eTdHeEdraGFLWTZ6a2xCTWdtX0Roc1BvRXZ1b0JDbWVTR2hlWXFxYXJQS3ljQk1ZeGdhT0c2WnhCcDVfQTc0eWoyQzVGYUpkZU85YWhqel9CZUhOX2dlZVBJ?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "g98f0e503e0f2",
+    "type": "intl",
+    "src": "Dagbladet",
+    "title": "«Den rareste overnattingen noensinne» - Dagbladet",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMmVPd0hoTzdQRV8zdHhfZEl2dWxmSzhRajBuMFdHSV8yVUVNMTdSc2c4c1VlQVdmWnNyanZoaXdob0FIY29sbENuUnI2eDhnTFpWOXl5YnpIdnVHTW5yNkU5RDhQWFVDaHdXU3RYVmFMUFphVmlaZldsdTJoSU1NV0RaNA?oc=5",
+    "flag": "🇳🇴"
+  },
+  {
     "id": "g3af8a8ce8893",
     "type": "nl",
     "src": "Trouw",
@@ -183,6 +233,292 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNSzdNX21OVHFvMWVBQVBNTnI4NW5mN2FpQjFEeWxXdGphUzc5TFVMRF9yaXFNYm5KMGtHNllBdjB6QmJnRmE1U0tiZ1BTSWpqMnV6SUNMZVozUVgyaDRSOHRoUmxlUlJMNHBZYU96N1dtd1NqY0VkVDNhbllMekVuYlllSk9CcC13alE?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g02f465a117a7",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Van Washington door naar Londen: Jetten op kennismakingsbezoek bij Starmer",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://nos.nl/l/2610468"
+  },
+  {
+    "id": "g0b3b24d28fc9",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Raad van State: belastingverhoging kabinet-Jetten onevenwichtig en ambtenarenbezuiniging onzeker",
+    "date": "2026-04-14",
+    "sent": "n",
+    "link": "https://www.nrc.nl/nieuws/2026/04/14/raad-van-state-belastingverhoging-kabinet-jetten-onevenwichtig-en-ambtenarenbezuiniging-onzeker-a4925494",
+    "lr": "right"
+  },
+  {
+    "id": "gee5f38691a4b",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Na eerste optreden premier Rob Jetten in chaotisch debat is duidelijk: minderheidskabinet kan nog alle kanten op - EenVandaag",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5Dbkd6cng4VlY2YnFyUWlvWlBhUTdDNFJrUlpwcVVVUDBCUkJJWlg2Wk9NSzJPakR1cmJFV1I0S3V3NFRVUDQtODB1bVpzVHY3VmhLMDFXVnhUbHJuVVh3WW13?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcdd8ea4dcc0f",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Een ‘saai’ bezoek aan Trump? Echt niet, Jetten boekt succes met zijn optreden - EWmagazine.nl",
+    "date": "2026-04-14",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObTVPWW9hNElfbm1PVHYxalZKUVBta3dCTjdLcE04bmI1WnMxOFAzWWQ3bks1THJWYS1VeEs1RXlOQ0lSMnN4clhOelByWlFtQW1QQU05alpKd2Q3T0pEWWpaVXBiS2Q2Ul85SG4tRUlNLXA5VGR2VG1sRGx6S251SjlWUWxkTm1OQXBqU1daVDVKMGZCYTJvRi1RczBBYUxLMVh4SVlnblZqNjFqanZRRDlB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga99b1b376b34",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Van 'klimaatdrammer' naar jongste premier ooit: dit is de weg van Rob Jetten naar het bordes - EenVandaag",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9fYkNSQmgtWElLSFB1ejZRdVZuOVNfS0dRdnk5bjlDNjNCd3F0enVLR1FQTy1lQmlmeEcwS3dGS19HbXRHQl9EWDNrMzMyYWFJMUFsc1I5czZKOUd4djV2cGRR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7b6267836408",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Politici lyrisch over bezoek koningspaar aan Trump: 'Dit vertolkt hoe samenleving ernaar kijkt' - De Telegraaf",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPX20tYnNpb3dRczFBcE1rMFdjQWVFVDY3blFmSkcxN3FkVUV3YnUzMzJLS1FlejByLVhCYWRQTmlyNkVXbEptU0JFUy02cFJtdTh5QVFqNDdpR3NJa0pwLWswZ1BnQ3VRSkJHdlE3b1dUbUFLZGlxbTZldWppbmpuSGZWRTI2RTFqTmZ5Z0hva3JkQlUxakJXV0l5U0MxNzFDSTRKc3JYODFrYjFQTjNhUkJiTEtTZDhRMGlGVDZZeHFZM0pDRS1KSWNZUnlwb3lwNkxwdQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ga795849df661",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "'Er gebeurde eigenlijk niks geks': Amerika-verslaggever Tom van 't Einde over koninklijk bezoek aan president Donald Trump - EenVandaag",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPVE5ZY0ZucUNtUl9KYVhHb1FYdmtPQVpwMnhTVS03M2txY2FJdmowNlBuU3hTRklRTkVhaXV5UmdrNzJpUGZuNktGSDRwTDM4aE00RDRoTl81ZURyTGNtbElEQnJTZWJ4Qm1hTzA1Rm5ZRkVJM29fLVZMN1FuVzhXSFd5cl9vUzNQYWlRaXVaNmhZT0d1TGw3RWlqbFh3aWRoZk14d0prTnVFeGl0cFB0QjA0b21lNHBBUTFBXy1VaWxUYkhnRmMyUmtFVU1FRlZWOVY1ZlVDSWZNeWpZOTRzYkNXYmo2Q3p5Q3NfaWE3ZGNDcVd6YUE3NXdR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8decdc45e81e",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Raad van State: belastingverhoging kabinet-Jetten onevenwichtig en ambtenarenbezuiniging onzeker - NRC",
+    "date": "2026-04-14",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVExjbVdPcFVGd19zWGhfWmhMNHBlTTM0R1l6Uzh6dU1vUjhXTTRwRjhXLVhzNkVnS204LXNYMWxHWXdZeC1saUN6a1ZKaU8ta2hTbnhaUHFsV2pXdnJSZlZ6MjhZZnQ2TTRoNGg3SV9fZWVtQXg5R1F6ZFdwT3p5SjJlanFyQzlmNUdHNGRDQVlvbEY4V1ZNeHFNcmJCSGVJVnB0ZTA5dEtNeFlENDJzcUhsTThZT0kyT1RXVm1kMFdWM2pBYndfa2M3V3hTV0t3VnZWNUIteFQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g868199af9b92",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet-Jetten ruikt kans: lagere wegenbelasting in plaats van minder accijns – toch snel een elektrische auto kopen? - EWmagazine.nl",
+    "date": "2026-04-14",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNR2FROGp6S2xuQ1RkclVfbjVKZHVHVllHenFPSUEwMy0xQ3h0Nm8tLWMwX2oydzF1enZfeUIxaFNRbWVtanM5NmlucnRjSzFOZTFmc1VOaXN3NDlIUTZpbUxHeU5PbDdyZUpkQXR4UzAxNU5rSEdGYnNCVlhzQTVaYlZITVBISGFRSUFqSEhWdFlhQUE4eVB4M3lIWWpNTmNUbU5GZFdHVE1qekZMNzlNV1kwdkxtSDVRUFhkVkgyNVpvYVUxcVp0THViNHMzNE9JdnlOUUlPMWtIX0M2N18zQ1NqajhMRmdBazctLTdB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5b6ca8418c8a",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Raad van State waarschuwt: Kabinet legt rekening eenzijdig bij werkenden - Trouw",
+    "date": "2026-04-14",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3lYZ0lfNlpZWEp6UFNxTENlS3VMSTdkQ1U4VnJUZ3NGaXprb2VrNzNFd1ZaSlhDWTJvVU1zOF85b1NRLS05U3FwYV80clViV3ZVSXVrb20ydGh2RFQ0TUcyenFLdm1OajM0WXYxcHBBS0p2VVdQUzdzU1lGZFgtT3NPV21PODZXbExUQUpPVng2VURBdlp2Nkh4R1Fwd2ZOT2ZrQld3WUFpNTdEX3hvXw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gd687f1736683",
+    "type": "nl",
+    "src": "cfo.nl",
+    "title": "Is Kabinet Jetten I nu al toe aan een nieuwe CFO? - cfo.nl",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9kMGdzVVdpekZRZmU3TW1XbDNfZktBZFM0VXNheml1RVZoaEpLVEYxMFgtdWMtWUZPN0plSWlicUdxcDJlaHN1ZG94cGIxLWJDQUcyUkJHVnBzcjVBeGVBZ1JKZTdsMkt4ZXNkYURndUlQZ2ROa2gxZENiWQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5d48be00d360",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Raad van State kritisch op financiële keuzes kabinet-Jetten - Noordhollands Dagblad",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeDZqbVhlNy1jY2FhdVNoQnM4TGlDS1lIZVRPZlhRYkRHallYLWdzTTZQUUh4c3dPZXd1U0dLZDA4S2JkUnprSXg0VjRqVkRZRFI2U2c4ME1tTnJlMHBadk5hRXFkdnJLS19JbHRRYVhjWUVtVXlldmRnNU9tX3JmY21ZTmI3TnJXTnYzMlhwc2JYcWRlWFVLYXNlMWpVcUpyRVpraUo2cmU1MU9vdzdpUjNTeFBfTEJUUEZSODR3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcbcea27fc266",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Raad van State kraakt financiële keuzes kabinet-Jetten: legt rekening bij werkenden - bnnvara",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQSW54Ujd3eXU3ajdrb1ZCN2VJUDE3a0Y0N2VNbm5zcXBYeUQ4ekYxb0IxTERXdmdkcGxsSkszdXZKdHJzTkJ6a2oxa0ljQTZOWm1yRkRGcFVqTEZaMjIyS2NocUFCT0libzRzSTRlVDcxOFdQV3YxMDFEbDYyZ2JWYllCT0dDXzQzLXhLeWZJZWVNbUdwVGlFWXBDWnQzVVBRNG05U3pEVHZvZ3VSc0FMeHg3OW8yNVllRjRRbA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gc410d19317b9",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Bezuinigingen op ambtenaren: Raad van State steunt kabinet maar wil concrete keuzes - De Telegraaf",
+    "date": "2026-04-14",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWlozSjZzel80UDI4d3JEMDQ3N3daeFR2OG9OcVlZREllZ3NKYmp4MkRvWlhtWi0zMkpKdFo2UHg5Q081bW9ObmVCekZpMkhXc2FlamhpcmJOOEl4dll2dzR3R1hYOFlhWHpYSURCNEtJS01odkxDdm9Kak9RR3BCWmlxOXEtTThwdE9hUl9DQTJlSzdNMVZsU3U5cnRNYTFXZFlGZUtrdXhJc3JYNkxKUGxxWHl3YzRoZ1JrM2dPSW1yd0lhb3VlVkVWQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ga088b85efb4d",
+    "type": "intl",
+    "src": "ZeelandNet, startpagina van Zeeland",
+    "title": "Raad van State kritisch op financiële keuzes kabinet-Jetten - ZeelandNet, startpagina van Zeeland",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTjNNLUhrcHdEQ3dZVWw0dGppTGNoSVh3ajE0RWlGd05xX2pKRV81a1VBN2tkMzdDQUg4MkZ6X3lhUHd6OFhSNmNqeUJyRS1KcGRWaTBScHBFMlBNRUlVMWJ4eVpWdG1HT3F0cEtGX18yWjlQbGptNVhXRUlNcno0TUZRR2JVQjJOWjRGSmVuSURxSGJRUlhJ?oc=5",
+    "flag": "🇵🇹"
+  },
+  {
+    "id": "g849d509d9ee7",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "Raad van State kritisch op financiële keuzes kabinet-Jetten - Welingelichte Kringen",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbjRuS0puWENRQUdFNGFZc2Fwd3M3MXhINHBZcFFQVTE1NzIzRThhX2h2MVFoNVFSRG1aVzZ4RVdTOF9HZHAyQ04xQllRTVQyd0VscVk0RTNZLWlST0RzbVFtSTlSQjViN2I0QUczeHlZei1NMVpUMVlpTjJpYnI5d2NDaE9tdzZDMTlhekt0SWtKTV94dEI5VVhjbWRJWFFuS28yQTBiU0VDVUE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g14c650f49107",
+    "type": "intl",
+    "src": "DVIDS",
+    "title": "Prime Minister of the Kingdom of the Netherlands Rob Jetten Visits ANC [Image 30 of 40] - DVIDS",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSTZUQlhUYi0xbE5yR205MGUwRS1ROFFoLVY4UHNLWXdiR0pnUHRkdU9sQWZjbUlQaGVTV3dsNW9GajNUMGNOSlpTNXhWOU1tT1ZCVm1uQ1NkZ0ZySmx0QjhISEtpY0hrNHJMMUxCSFBYb1ptOXVxMlNwQjlxT3pDcFRVSXdVVEszLWxlV2o2emFBWlJoZmNCTUxqTQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9e07a4a71f87",
+    "type": "intl",
+    "src": "GOV.UK",
+    "title": "PM meeting with Prime minister Jetten of Netherlands: 14 April 2026 - GOV.UK",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUGF0ZVA0QkdLbFdVd0Vzb3U2QzFCdzdMRmxoTk0zSV9iUmNtaWdHM0ZzLU9sdmJvbVRkd1VPZ0Zfb2RUdldqU3dLeXJlXzVEYUpDc2lCTTF0bWhfVUJPQ0NHc0tfUEcyR2VuQXdfaE9TcDE1N2JNaDFpeU9qNVRnWmo5dHVoNHlFY0JJUjA5aE9fNzhEVnVuc2hoVlcyVmRVQWpz?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2a8623dee404",
+    "type": "intl",
+    "src": "GazetteXtra",
+    "title": "Britain Netherlands - GazetteXtra",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcEhNNXB5UzVYRHBDdUgxOVV0ZkZKNnF1T0lWc1lMOVphZmg2Vm9fWU83RE02eWw2aS1Bcll5UmdBbU9ZVERuNDFQam5GNTJiTDFfczl5UXE3Y1JTMVlxUHVZVmhCX09XZ2MxazVsaG12S05faGhURUxna3NTRTF5VDk1TldhZjUteC1UTkN3QWpmcEpSaTR0YnFVSlgyUkowNEhmekFmdkpkQ1J4cU9md1dTbw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9dd0d6d042d7",
+    "type": "intl",
+    "src": "Bloomberg.com",
+    "title": "Starmer, Jetten Meet Energy Leaders as War Disrupts Supplies - Bloomberg.com",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaEJ0SE1oaFlXSzMweVpzTU9ZemdpTGlfRTcwNFJsUmp5aFp4a0NKVWNUdmNHbldqTVYzS2Z0bXNKRGNPN0RNZk9PQmtodUZNTS12RDlCM3FVa1gwUy1sd2M4ZjNPa2toTmJoTThIVXF5bVhvMlZOdmEwVmt5aXJVV3REX2NpbUdJNVNvUUR0cmt4WXZ0SnVJSGtIdU1tWXpuSW9ZU3g2WENPNF9xdVRVajZzdw?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "gd08061a91fbe",
+    "type": "intl",
+    "src": "Anadolu Ajansı",
+    "title": "UK, Netherlands leaders hold talks on security, Ukraine and migration - Anadolu Ajansı",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUm5sZXZpblpLNEY3bllScHI5S0xfZjd0MDVaNG1JUmtxUjNMU0p4VVR4a000d0VWN0k5SlBnX1otMTBVOU1id21hSVdTaFNOSVFPY19mZEJhckU3bmJEZ2RkZm9HZEZkQjVlZFdvSHVaYVBJVzhDZjdwMWY3UEN2M3NqcXg1bXZhNjA3U1NkYTVSTHg5cTZ0YVdLMTlYNm51WWtxYUIwd0h6NF9vWlE?oc=5",
+    "flag": "🇹🇷"
+  },
+  {
+    "id": "g659ad97e80ac",
+    "type": "intl",
+    "src": "thenewworld.co.uk",
+    "title": "The Netherlands almost has a government – almost - thenewworld.co.uk",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMnAwb3lUam1mWnJET1d0TUtNdEw4d0hHRTZ2SzZuMVJjNEdIYkxzS0JCMndsck5fcUVhRGNsUHVGMXlreWpwRU5Wams3X0FqLUQyT3lIbXR4SWtKWTNrZEcydmtBcHROOE5JYk4tYy1iaVctaU15R1ozeHFpWTUxZjJRQ2x2NmRTdlllaXIzOGJSNllLQ0RVSUN3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8d21a5f4348c",
+    "type": "intl",
+    "src": "The Herald Journal",
+    "title": "Britain Netherlands - The Herald Journal",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPZVJ6dF9SdGlSTmNsOGFwb196UHl0YUVfNElIM29MSG9mT1lsRTRjU2VNWEw5aGNuaktFU2E3NzduM0xoRW56YlczWWJmMkMwQlVKRGNDNi1FdjNhSVQxR3dBOXZ5QXMxcUROQ3V4WV9rV25KclQ3M0xuRXUycE9LSDVkQVhJNmZwSU9hNXJGeU9oeS02XzB0TVNkeTY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g340f354dd116",
+    "type": "intl",
+    "src": "Mint",
+    "title": "‘Too short to convince’: What really happened at Trump’s dinner with Dutch royals and PM - Mint",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPSkVrbzRwR1RTZkVnMkJqOEc2NmwwTDR4aEIzcXduN2I5am9MRl9hT212OVg5Qnl0LXlOclpxbDRxbnZhUVFPU2lSb3BtNXgyREYzZGFBTXRaaWFLbGVZVUtleGxCZ21yVGp6NUFkaHVLcGZsd2s0cThBUjItSllKX2xKYlAtbXhrTVhNYXAtN2g4dUlQM3RoTXBoMEFuS1NvYXdhSzlPV21qNVZKZjYzYnMwZHVuMFNjZHFSLUVveFpHamh6LTlCcm1fc3R1SjA2cFVDSnpqOXZ6cW_SAeABQVVfeXFMTnVhb2tnbTFNVk83NWh4RHZlVHdIaFJ3Qlk5OXA5azByQXJyajdNMkRLcXJ2bEhXRWhRdlJ1UEt6SEphV2xXQnViSTBITmZDZXJFVE5Bc3NqdktWVWJSTl8xUmtRZkpWZVFCbTNGYU5kcDJrUHJPMGY5WGVCR2pMN1daVDRBLUtqODBONEZLSHpMRmdXQlU2dzdSQ1FiVEQzbTJzQnVHTHZ5S0ZLY2JvN0FFZnMwZUpoWTJ2ZVFwNWtFZHN3d2Q5a1cyTmFKeUZqRVRHUFpKZS1xbzhDd1gwakc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga52fae5d3366",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Jetten: Dinner with U.S. president Trump \"constructive,\" but did not convince each other - NL Times",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNklCWkF2d0dLMnFWREVIbTU2UGV6dmNJQ0J4T09LZVg2d3dHREwzUTdEQzlIWENFd1dEYUZteEJmdkhqdFNvMGVpMjFPVElQaGxEWV9GX1FSX2ZzNHh3VDR5ckhCUldJWXpKOEszTjJMSGJzYUlTR2xCcFRFdEYxX2NnVjlidWZJSDVkaw?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "ge7218bd7abdd",
+    "type": "intl",
+    "src": "Goshen News",
+    "title": "Britain Netherlands - Goshen News",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU281LWZEUXVNNFNjOGxvTzU2d042YjhTNUtkcjgzVXdTVFhBU2ZFclprRXhhcEFXNjFyMUgwTXN5YXc4UnZyQ0tOSU9GcGYtOF9EcW04ZzUyYmw0bFBJM19pN2lwYnFtZ2RoXzZSVzMzUzIyc0xfQmF2N0xQZnNIQVA0UFlrR0FTR3hvUHVxRlRXLUNxR2UxVlJleTVpeWhpcWJGQ05IdTRqdjNSeVpUOU9KYw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g558da89fa2ba",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Netherlands planning €1 billion economic relief package; Won’t cut petrol or diesel tax - NL Times",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTF9wUldSMU5zRW1tR3NDcEM1cEp2SW5tRkpRZ0JuWHR6T2RiOVNMOUdiaFZmVF9OX0lMR1U0eTVfNGtEQmNTamtRa0RrdEk5RWliLXpfT28xYmVFZERZZzdtS1VQRGFQZWU4Q0tqOGwzRzFYSER1WWZHYzdZSUZFQVF0ZHF5TjRUa0lkZnZ4N05sWVE0RmxPVVlMbl9ER1BJSDFENkdfMWtXcGVxRFh0Sms4SQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g916d0a0cf9f8",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Netherlands pushes back against proposed U.S. export limits on ASML - NL Times",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNS2lId0lFUFZZRld5TGVycGVmekZLb2h1RHY0RTBhZG5Kb21MSEtlM1dUcXRFSUpjendPa21nemF1RlJWVWt2WkxDb2pnRWRZM0dMLVgtejNneFdnTW95LUgxdTNsTE4zUkZPNmhBQjN3Mlc1M3pNSFdqVTdHY3N4Q3Q5MVpaX3Y0bjZ4aA?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g691be09de075",
@@ -401,6 +737,16 @@
     "flag": "🇬🇧"
   },
   {
+    "id": "ge9f6c537013c",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Zo kan het misgaan bij Trump: lessen voor Jetten in het Witte Huis - AD.nl",
+    "date": "2026-04-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQT0JPOGNRd0RnTldaRS00ZFZqTEZCejhRYU9qeG1LZjEtYXVubkZQZlhpQjRyZkwybkdfX2FzM190N1JZam5PSkNBWUdPYjBXbWRvMnd0V1g4elczNnVIRHVubHhweHVsZ3hsUl91ODVtQ0tOTG1uWmwxU3dGN1Z6dXktTnhLd1dvY1h4UDlEN195UjJQTjNOazluS1MwcGs?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4d78bbe86eda",
     "type": "nl",
     "src": "De Telegraaf",
@@ -465,6 +811,16 @@
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOVFAzbmJjNXRHUG9QbzVPRk5nVDNUa1R2RkIwS2Q5bGdSNGJUaU1DbUR0VlNsNXozczJqalBqVHJUdmRySzRSVENMclpWb0JHSDZJdHlOYzRmY1ZUV1RMbWNmc3AxNS1PZlJtZTZmaE1oRE12c0J1cV90T2Q3MWI5MWhtU0p3dTk1UzRNVDEwQnY3clNlX2tjTFlsT3NjZG9aS0JGTW96U21FRHk4SWtr?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g61e9675600f1",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Het Witte Huis als mijnenveld voor regeringsleiders: dit scenario wil premier Jetten voorkomen - Het Parool",
+    "date": "2026-04-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaGppajdtcHJsaHJja0NxUEVNSGNSeUg4WHlucExFMW9PWUx5ZVotSlpFMTBjOWZidnZCVkM0YndYaE9NbDdfQzM5MFY1SThkWmZTRDZtRUxEZ0YyZmU2dUZhejJJMnlYXzJHc05IWTE1cmRkTk5LVkc5UEtyMTYwZW4tME9SMlVQWUFNaWpzQU41RmV5dFRydFhUbnFORzVydGw0OEZNZ0VMR2xlVVlMZTV3WEdJemdOYUJEZ2xMYXo0dm5IM09vbWNUVWw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g08092fc24d52",
@@ -871,6 +1227,16 @@
     "date": "2026-04-09",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBIdnV1QnI1MUU2cGI0MU5tNVRGYVQ5UWpIUkJFMVVLTExraDNsMjZPWnZudWxFSV9BVGplaDlBbWVkbElvX2p0SVJFdEJDVC10REZ4Mg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4eebac5db642",
+    "type": "intl",
+    "src": "Irish America",
+    "title": "Taoiseach holds ‘positive and constructive’ meeting with Dutch Prime Minister Rob Jetten - Irish America",
+    "date": "2026-04-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdzBkeGhoQkg2RzdWdGxYVFNJS0gxclRZX2gzalcxNTF4bUJ0eHBKYUZKV3QwMDNJTXFpbkpXNHFhNHRTNmloWmk5Tms1bkk1N2RfWVZPVnVnSEt2UjJ5UzgxajR2RlB4Y2NKa2hGOHdJRGlncnZLR0FLR1FaWEJpc3dWTzlqZ3pILTRldWhyRl8wOUZqeG9GX1FmRGV4eFk5bTdGMXFaNEJ1Y1hoLXBtRW8wX2tWbGt3TF9hT1lyeUc0Zw?oc=5",
     "flag": "🌍"
   },
   {
@@ -5335,6 +5701,16 @@
     "flag": "🇩🇪"
   },
   {
+    "id": "gef21fe322f2a",
+    "type": "intl",
+    "src": "Aftenposten",
+    "title": "Merz: Vi kommer ikke til å delta i Iran-krigen - Aftenposten",
+    "date": "2026-03-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNLWcxVUdfY1RUWGxhZE5DS05DaGNtRWgxZU1aRXBBdm5feTlOV3liWlV6OU5KYV9XTDQ1bEU0ZGtVUDhqMzl5ZzZKNkpYTHBBSElvdlVUR0VXWHdHSE44SnF0MkpRQ1ZjT25QSGxlaW1zM2RVcUgwWXdPMXpyUl9fUlQwelhxZFNVd0Y4RDhURGR6WEk?oc=5",
+    "flag": "🇳🇴"
+  },
+  {
     "id": "g8a35a9165efd",
     "type": "nl",
     "src": "De Gelderlander",
@@ -8295,6 +8671,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gfa4ae345a5eb",
+    "type": "intl",
+    "src": "ALDE Party",
+    "title": "Rob Jetten becomes youngest ever prime minister in new Dutch coalition government - ALDE Party",
+    "date": "2026-02-24",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcngtYkZHNnpQZlNjZy1DMUk2dVM3Um8tUmVLcFdNWlFhNlJVUlY0M21hdGxKT0lNbGhZR29ZU0ZLV0JUOThWQmJ3enAzdUpzWHc1V0xOZjF6MmdJNnV0X0FkTnZmVlJ6QjN1bkF1M1VMM2Y5X0Jta3UwakJmNl8tZG1KNlJfV25kTXBkUWFSd0FUWGE0V182VG1DZFgyWElxTjhPMVpFbGptYkNaZllCd0c4X200anNlX1dTTHpZOXk?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "nl001",
     "type": "nl",
     "src": "NOS",
@@ -10583,5 +10969,15 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdEp2dEtVNEloR2dCR0hHVFJ1M205Zll0VFNDZXpnbnBOVngteC0yNzE0TUdITGR0UDJOSnQ3RlhiRHp1ZzNQZlZiV0lXT2ItSEh6OEowdHlFV1diRkhJRlpMYkhLaF96RjIxdFo3R0VYQmNtQXNoN05EYU9kYWY2SXRtUW5BMjJvTlh0Q0xjcG53aDdPZkR2OTdDLVg4Yi03V1ZaV2tXSlNBUzdraXpORA?oc=5",
     "flag": "🇺🇸"
+  },
+  {
+    "id": "g61be8371211a",
+    "type": "intl",
+    "src": "Yahoo News New Zealand",
+    "title": "New Dutch minority government sworn in under centrist Prime Minister Rob Jetten - Yahoo News New Zealand",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQkcwLWx0cG9lZUZSaktYRlJLeFN4Yk96ck5WNmFEQU5Yb0pwUUM1QW5GRmN1YzJYY3dHSlVSeVh4ZllYVEJLcks4c2VYMjdLRm9BYW1HbHJqOGtoV0pkVDBpcXEwMmJuaFRLbm9FZklKbzRyY3F6SFFmeUdKSzRLX21xZGY?oc=5",
+    "flag": "🌍"
   }
 ]
