@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gender & Speaking Time · 2023 vs 2025 · Jane Orlova</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0f0e0c;--paper:#f5f1eb;--warm:#ece7de;--rule:#ccc8bf;--red:#b5292a;--gold:#8a6e2a;--muted:#7a7570;--green:#2d6e4a;--blue:#2a5a8a;--serif:'Playfair Display',Georgia,serif;--body:'Lora',Georgia,serif;--mono:'DM Mono',monospace}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px}
+nav{position:sticky;top:0;z-index:100;background:var(--ink);display:flex;align-items:center;justify-content:space-between;padding:.7rem 2.5rem;border-bottom:2px solid var(--red)}
+.nav-site{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#666}
+.nav-title{font-family:var(--serif);font-style:italic;color:#ccc;font-size:.95rem}
+.nav-links{display:flex;gap:1.75rem}
+.nav-links a{font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;transition:color .15s}
+.nav-links a:hover{color:#ccc}
+/* HERO */
+.hero{background:var(--ink);color:#e8e4dc;display:grid;grid-template-columns:1fr 1fr;padding:5rem 2.5rem 4rem;gap:4rem;align-items:end}
+.hero-kicker{font-family:var(--mono);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:1.25rem}
+.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,4.2rem);font-weight:400;line-height:1.08}
+.hero h1 em{color:var(--red)}
+.hero-intro{margin-top:1.5rem;font-size:.9rem;line-height:1.8;color:#999;max-width:460px}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
+.hstat{border-top:1px solid #2a2a2a;padding-top:1.1rem}
+.hstat-n{font-family:var(--serif);font-size:3rem;font-weight:400;line-height:1;color:#e8e4dc}
+.hstat-n sub{font-size:1.3rem;color:var(--red);font-weight:400;vertical-align:baseline}
+.hstat-n.pos sub{color:#5ba87a}
+.hstat-l{font-family:var(--mono);font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:#555;margin-top:.4rem}
+.hero-note{grid-column:1/-1;font-family:var(--mono);font-size:.57rem;color:#333;letter-spacing:.06em;border-top:1px solid #222;padding-top:.85rem;margin-top:.5rem}
+/* COMPARE BANNER */
+.compare-banner{background:var(--warm);border-bottom:1px solid var(--rule);padding:.85rem 2.5rem;display:flex;gap:3rem;flex-wrap:wrap;align-items:center}
+.cb-item{display:flex;align-items:center;gap:.75rem}
+.cb-year{font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;font-weight:400}
+.cb-dot{width:10px;height:10px;border-radius:50%}
+.cb-note{font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-left:auto}
+/* SECTIONS */
+.section{padding:4rem 2.5rem;border-bottom:1px solid var(--rule)}
+.section-hdr{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:baseline;margin-bottom:2.5rem}
+.sn{font-family:var(--serif);font-size:5rem;font-weight:700;color:var(--rule);line-height:1}
+.sk{font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:.35rem}
+.st{font-family:var(--serif);font-size:1.75rem;font-weight:400;line-height:1.2}
+.st em{font-style:italic}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:2rem 0}
+.prose p{font-size:.9rem;line-height:1.85;margin-bottom:1rem;color:#2a2827}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--ink)}
+/* PULL */
+.pull{background:var(--red);color:#fff;padding:2rem 2.5rem;margin:2.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center}
+.pull-n{font-family:var(--serif);font-size:6rem;font-weight:700;line-height:1;opacity:.2}
+.pull-text{font-family:var(--serif);font-size:1.35rem;font-style:italic;line-height:1.45}
+.pull-cite{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;margin-top:.65rem;opacity:.75}
+.pull-green{background:var(--green)}
+/* STAT CARDS */
+.stat-row{display:flex;gap:1.25rem;margin:2rem 0;flex-wrap:wrap}
+.scard{border:1px solid var(--rule);padding:1.25rem 1.5rem;flex:1;min-width:150px;background:#fff}
+.scard-n{font-family:var(--serif);font-size:2.2rem;font-weight:400;line-height:1}
+.scard-l{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
+.scard-delta{font-family:var(--mono);font-size:.62rem;margin-top:.45rem;display:flex;align-items:center;gap:.3rem}
+.up{color:var(--green)}
+.dn{color:var(--red)}
+/* CHARTS */
+.chart-full{background:#fff;border:1px solid var(--rule);padding:1.75rem;margin:2rem 0}
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0}
+.chart-box{background:#fff;border:1px solid var(--rule);padding:1.75rem}
+.cl{font-family:var(--mono);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.ch{font-family:var(--serif);font-size:.95rem;font-weight:700;margin-bottom:.2rem}
+.cs{font-family:var(--body);font-size:.75rem;color:var(--muted);font-style:italic;margin-bottom:1.25rem}
+.csrc{font-family:var(--mono);font-size:.54rem;color:var(--muted);margin-top:.75rem;letter-spacing:.07em}
+/* TABLE */
+.ptable{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.83rem}
+.ptable th{font-family:var(--mono);font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);text-align:left;padding:.6rem .75rem;border-bottom:2px solid var(--ink)}
+.ptable td{padding:.65rem .75rem;border-bottom:1px solid var(--rule);font-family:var(--body);vertical-align:middle}
+.ptable tr:hover td{background:var(--warm)}
+.tag{font-family:var(--mono);font-size:.56rem;letter-spacing:.09em;padding:.15rem .45rem}
+.tag-r{background:#fde8e8;color:var(--red)}.tag-g{background:#e5f2eb;color:var(--green)}.tag-a{background:#fef3e2;color:#7a5010}
+.arrow-up{color:var(--green);font-size:.8rem}.arrow-dn{color:var(--red);font-size:.8rem}.arrow-eq{color:var(--muted)}
+/* METHOD */
+.method{background:var(--warm);border-left:3px solid var(--gold);padding:1rem 1.25rem;font-size:.8rem;line-height:1.7;color:#444;font-style:italic;margin:1.5rem 0}
+/* LEGEND */
+.legend{display:flex;gap:1.5rem;margin:.75rem 0;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.58rem;color:var(--muted)}
+.leg-dot{width:10px;height:10px;border-radius:50%}
+footer{background:var(--ink);color:#333;padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center}
+.fl{font-family:var(--serif);font-style:italic;font-size:.95rem;color:#666}
+.fr{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;text-align:right;line-height:1.8;color:#444}
+@media(max-width:700px){.hero,.two-col,.chart-grid{grid-template-columns:1fr}.hero,.section{padding:2.5rem 1.25rem}nav{padding:.7rem 1.25rem}.compare-banner{padding:.85rem 1.25rem;gap:1rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-site">janeorlova.com</span>
+  <span class="nav-title">Gender & Speaking Time · 2023 vs 2025</span>
+  <div class="nav-links">
+    <a href="#s1">Overview</a><a href="#s2">By Party</a><a href="#s3">Topics</a><a href="#s4">Trend</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="hero-kicker">Research · Tweede Kamer · 2023 term vs. 2025 term · Updated Apr 2026</div>
+    <h1>Two Terms,<br>Two Kamers,<br><em>One Gap.</em></h1>
+    <p class="hero-intro">The 2025 elections set a record: 65 women (43.3%). PVV shrank from 37 to 26 seats; D66 surged from 9 to 26. This study compares female representation and speaking patterns across both terms.</p>
+  </div>
+  <div>
+    <div class="hero-stats">
+      <div class="hstat">
+        <div class="hstat-n">59<sub>/150</sub></div>
+        <div class="hstat-l">Women, 2023 Kamer — 39.3%</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-n pos">65<sub>/150</sub></div>
+        <div class="hstat-l">Women, 2025 Kamer — 43.3% ★ record</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-n">+4<sub>pp</sub></div>
+        <div class="hstat-l">Seat share gain, 2023→2025</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-n">0</div>
+        <div class="hstat-l">All-male parties in 2025 with &gt;1 seat*</div>
+      </div>
+    </div>
+    <div class="hero-note">*SGP (3), DENK (3) and Volt (1) still have 0 women · 2023 data: Kiesraad Dec 2023 / Parlement.com · 2025 data: Kiesraad Nov 2025 / Parlement.com · Speaking time: Handelingen XML proxy · Kabinet-Jetten (D66·VVD·CDA) sworn 23 Feb 2026</div>
+  </div>
+</div>
+
+<div class="compare-banner">
+  <div class="cb-item"><div class="cb-dot" style="background:var(--ink)"></div><span class="cb-year" style="color:var(--ink)">2023 term</span><span style="font-family:var(--mono);font-size:.58rem;color:var(--muted)"> Dec 2023 – Nov 2025 · PVV largest (37) · Kabinet-Schoof</span></div>
+  <div class="cb-item"><div class="cb-dot" style="background:var(--red)"></div><span class="cb-year" style="color:var(--red)">2025 term</span><span style="font-family:var(--mono);font-size:.58rem;color:var(--muted)"> Nov 2025– · D66/PVV tied (26) · Kabinet-Jetten · 65 women record</span></div>
+  <span class="cb-note">Where 2025 speaking data is marked ↗ estimated, full Handelingen analysis forthcoming</span>
+</div>
+
+<!-- S1: OVERVIEW -->
+
+<section class="section" id="s1">
+  <div class="section-hdr">
+    <div class="sn">01</div>
+    <div><div class="sk">Representation Shift</div><div class="st">Record seats in 2025.<br><em>Does the floor follow?</em></div></div>
+  </div>
+
+  <div class="stat-row">
+    <div class="scard">
+      <div class="scard-n">39.3%</div>
+      <div class="scard-l">Female seat share · 2023</div>
+      <div class="scard-delta"><span>59 of 150 MPs</span></div>
+    </div>
+    <div class="scard">
+      <div class="scard-n" style="color:var(--green)">43.3%</div>
+      <div class="scard-l">Female seat share · 2025 ★</div>
+      <div class="scard-delta up">↑ +4pp · historic record</div>
+    </div>
+    <div class="scard">
+      <div class="scard-n" style="color:var(--red)">19%</div>
+      <div class="scard-l">PVV female share · 2023</div>
+      <div class="scard-delta dn">7 of 37 · lowest of large parties</div>
+    </div>
+    <div class="scard">
+      <div class="scard-n">19%</div>
+      <div class="scard-l">PVV female share · 2025</div>
+      <div class="scard-delta arrow-eq">5 of 26 · unchanged ratio</div>
+    </div>
+  </div>
+
+  <div class="two-col">
+    <div class="prose">
+      <p>The 2025 elections transformed the Tweede Kamer's composition. PVV lost 11 seats (37→26); D66 gained 17 (9→26). NSC, which held 20 seats in 2023, was entirely wiped out. CDA surged from 5 to 18. The result: a Kamer with a markedly different gender geography, because the parties that grew — D66, CDA — had much higher female representation than the parties that dominated in 2023.</p>
+      <p>65 women were installed on 12 November 2025 — a record. They come from 12 of 15 parties. Only SGP (3 seats), DENK (3 seats), and Volt (1 seat, sole MP) have zero women. Compared to 2023 — when four parties sent all-male delegations including FvD, JA21, DENK, and SGP — this represents structural progress.</p>
+    </div>
+    <div class="prose">
+      <p>The key structural change is the collapse of PVV's dominance. In the 2023 term, PVV's 37 seats and 19% female share structurally depressed Kamer-wide speaking averages, particularly in the asylum and migration debates that dominated 2024-25. With PVV now at 26 seats (and effectively 19 after the Groep-Markuszower split in January 2026), this structural drag is reduced.</p>
+      <p>D66's rise is the most significant gender story of 2025. From 9 seats (5 women, 56%) to 26 seats (13 women, 50%) — it is now both the joint-largest party and a majority-female delegation. With Rob Jetten as PM and D66 anchoring the Jetten cabinet, the party that leads the government is also one with near-parity internal composition. Whether this translates to speaking time parity is the question the 2025 Handelingen data will answer.</p>
+    </div>
+  </div>
+
+  <div class="pull">
+    <div class="pull-n">+6</div>
+    <div>
+      <div class="pull-text">"Six more women in 2025 than 2023 — but the real shift is structural: the parties that grew (D66 +17, CDA +13) have far higher female shares than the parties that shrank (PVV −11, NSC −20)."</div>
+      <div class="pull-cite">FINDING 01 · Gender & Speaking Time · 2023 vs 2025 · Data: Kiesraad / Parlement.com</div>
+    </div>
+  </div>
+
+  <div class="chart-full">
+    <div class="cl">Figure 1</div>
+    <div class="ch">Female MPs per party — 2023 vs. 2025 (official Kamer composition)</div>
+    <div class="cs">Percentage of seats held by women, by party, both terms. 2023 in dark, 2025 in red. Ordered by 2025 seat count.</div>
+    <canvas id="c1" height="100"></canvas>
+    <div class="csrc">2023: Kiesraad 1 Dec 2023 · 2025: Kiesraad 7 Nov 2025 · Gender registry: Parlement.com/PDC · Stem op een Vrouw</div>
+  </div>
+</section>
+
+<!-- S2: BY PARTY -->
+
+<section class="section" id="s2">
+  <div class="section-hdr">
+    <div class="sn">02</div>
+    <div><div class="sk">Party Breakdown</div><div class="st">Who improved.<br><em>Who didn't.</em></div></div>
+  </div>
+
+  <table class="ptable">
+    <thead>
+      <tr>
+        <th>Party</th>
+        <th>Seats 2023</th>
+        <th>F% 2023</th>
+        <th>Seats 2025</th>
+        <th>F MPs 2025</th>
+        <th>F% 2025</th>
+        <th>Change</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>D66</strong></td><td>9</td><td>56%</td><td>26</td><td>13</td><td>50%</td><td><span class="arrow-up">↑ +17 seats</span></td><td><span class="tag tag-g">Coalition PM party</span></td></tr>
+      <tr><td><strong>PVV</strong></td><td>37</td><td>19%</td><td>26</td><td>5</td><td>19%</td><td><span class="arrow-dn">↓ −11 seats</span></td><td><span class="tag tag-r">Ratio unchanged</span></td></tr>
+      <tr><td><strong>VVD</strong></td><td>24</td><td>54%</td><td>22</td><td>7</td><td>32%</td><td><span class="arrow-dn">↓ −2 seats, F↓</span></td><td><span class="tag tag-a">Coalition (Jetten)</span></td></tr>
+      <tr><td><strong>GL-PvdA</strong></td><td>25</td><td>56%</td><td>20</td><td>14</td><td>70%</td><td><span class="arrow-dn">↓ −5 seats</span></td><td><span class="tag tag-g">F% up despite loss</span></td></tr>
+      <tr><td><strong>CDA</strong></td><td>5</td><td>40%</td><td>18</td><td>9</td><td>50%</td><td><span class="arrow-up">↑ +13 seats</span></td><td><span class="tag tag-g">Coalition (Jetten)</span></td></tr>
+      <tr><td><strong>JA21</strong></td><td>1</td><td>0%</td><td>9</td><td>2</td><td>22%</td><td><span class="arrow-up">↑ +8 seats</span></td><td><span class="tag tag-a">2 women · gain</span></td></tr>
+      <tr><td><strong>FvD</strong></td><td>3</td><td>0%</td><td>7</td><td>1</td><td>14%</td><td><span class="arrow-up">↑ +4 seats</span></td><td><span class="tag tag-r">Still low</span></td></tr>
+      <tr><td><strong>BBB</strong></td><td>7</td><td>57%</td><td>4</td><td>2</td><td>50%</td><td><span class="arrow-dn">↓ −3 seats</span></td><td><span class="tag tag-g">Parity maintained</span></td></tr>
+      <tr><td><strong>DENK</strong></td><td>3</td><td>0%</td><td>3</td><td>0</td><td>0%</td><td>—</td><td><span class="tag tag-r">All male</span></td></tr>
+      <tr><td><strong>SGP</strong></td><td>3</td><td>0%</td><td>3</td><td>0</td><td>0%</td><td>—</td><td><span class="tag tag-r">All male</span></td></tr>
+      <tr><td><strong>PvdD</strong></td><td>3</td><td>67%+</td><td>3</td><td>2</td><td>67%</td><td>—</td><td><span class="tag tag-g">Majority F</span></td></tr>
+      <tr><td><strong>CU</strong></td><td>3</td><td>33%</td><td>3</td><td>1</td><td>33%</td><td>—</td><td><span class="tag tag-a">Unchanged</span></td></tr>
+      <tr><td><strong>SP</strong></td><td>5</td><td>40%</td><td>3</td><td>2</td><td>67%</td><td><span class="arrow-dn">↓ −2 seats</span></td><td><span class="tag tag-g">F% up</span></td></tr>
+      <tr><td><strong>50PLUS</strong></td><td>—</td><td>—</td><td>2</td><td>1</td><td>50%</td><td>New entry</td><td><span class="tag tag-a">Parity</span></td></tr>
+      <tr><td><strong>Volt</strong></td><td>2</td><td>50%</td><td>1</td><td>0</td><td>0%</td><td><span class="arrow-dn">↓ 1-person faction</span></td><td><span class="tag tag-r">Solo male MP</span></td></tr>
+      <tr><td><strong>NSC</strong></td><td>20</td><td>40%</td><td>0</td><td>—</td><td>—</td><td><span class="arrow-dn">↓ wiped out</span></td><td><span class="tag tag-r">Eliminated</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="method">The most significant gender story of 2025 is compositional, not numerical: GL-PvdA's female share rose to 70% even as the party lost 5 seats. VVD's female share fell from 54% to 32% — a sharp reversal. The CDA surge (+13 seats, 50% female) is the largest positive contribution to the 2025 record. NSC's elimination removed 8 female MPs from the equation but also 12 males; its disappearance net-improved the Kamer's gender balance.</div>
+
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="cl">Figure 2a</div>
+      <div class="ch">Seat count change 2023→2025</div>
+      <div class="cs">Gain/loss of seats. D66 +17, CDA +13, JA21 +8; NSC −20, PVV −11.</div>
+      <canvas id="c2" height="220"></canvas>
+      <div class="csrc">Kiesraad 2023 & 2025</div>
+    </div>
+    <div class="chart-box">
+      <div class="cl">Figure 2b</div>
+      <div class="ch">Female % per party — 2025 Kamer</div>
+      <div class="cs">Ordered by seat size. Colour = above/at/below parity.</div>
+      <canvas id="c3" height="220"></canvas>
+      <div class="csrc">Parlement.com female MP registry · Nov 2025</div>
+    </div>
+  </div>
+</section>
+
+<!-- S3: SPEAKING & TOPICS -->
+
+<section class="section" id="s3">
+  <div class="section-hdr">
+    <div class="sn">03</div>
+    <div><div class="sk">Speaking Time & Topics</div><div class="st">Seat share moved.<br><em>Speaking patterns are slower to shift.</em></div></div>
+  </div>
+
+  <div class="two-col">
+    <div class="prose">
+      <p>The 2023-term Handelingen analysis documented a consistent topic segregation: women spoke above their 39.3% seat share in health, education, and social affairs, and well below it in defence, foreign affairs, and asylum. The asylum debate was the most imbalanced: PVV's 81% male delegation drove floor time in the politically dominant topic of 2024-25.</p>
+      <p>The 2025 term (from November 2025) is still early — full Handelingen analysis is forthcoming. But the structural conditions for change are present. The dominant topic has shifted: asylum has given way to European defence, housing, and climate. The parties most associated with those topics (D66, GL-PvdA, CDA) have higher female representation. The compositional engine driving speaking segregation in 2023 is smaller.</p>
+    </div>
+    <div class="prose">
+      <p>Two early signals from 2025-term plenary records (November 2025 – April 2026) suggest the gap is narrowing. In defence debates — historically the most male-dominated — Dilan Yeşilgöz (VVD) as minister and the cabinet's European defence focus have elevated female voices on a topic that was previously male-dominated by PVV and Schoof-era ministers. In housing debates, the topic remains female-led but now with more prominence.</p>
+      <p>The topic segregation hypothesis for 2025: women will continue to lead on health, education, and social affairs. The question is whether European defence — now the politically central topic under Jetten — follows the pattern of the 2023 asylum debates (male-dominated) or begins to shift as the minister herself is female. The Handelingen data will answer this in the coming months.</p>
+    </div>
+  </div>
+
+  <div class="chart-full">
+    <div class="cl">Figure 3</div>
+    <div class="ch">Estimated female word share by debate topic — 2023 term vs. 2025 term (early)</div>
+    <div class="cs">Dashed lines = female seat share per term (39.3% in 2023, 43.3% in 2025). 2025 figures are preliminary estimates; full analysis forthcoming from Handelingen XML.</div>
+    <canvas id="c4" height="100"></canvas>
+    <div class="csrc">2023: Handelingen XML analysis · 2025: preliminary estimates Nov 2025–Apr 2026 · officielebekendmakingen.nl · Topic by Tweede Kamer committee</div>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="leg-dot" style="background:var(--ink)"></div>2023 term</div>
+    <div class="legend-item"><div class="leg-dot" style="background:var(--red)"></div>2025 term (preliminary)</div>
+    <div class="legend-item"><div class="leg-dot" style="background:var(--green)"></div>Above seat share (both terms)</div>
+  </div>
+</section>
+
+<!-- S4: HISTORICAL TREND -->
+
+<section class="section" id="s4">
+  <div class="section-hdr">
+    <div class="sn">04</div>
+    <div><div class="sk">Historical Trend</div><div class="st">The record is real.<br><em>The structural challenge remains.</em></div></div>
+  </div>
+
+  <div class="chart-full">
+    <div class="cl">Figure 4</div>
+    <div class="ch">Female MPs in the Tweede Kamer — 2010 to 2025 (% of seats)</div>
+    <div class="cs">2025 is the all-time record: 65 women (43.3%). Note: the 2023 figure (39.3%) is unchanged from 2021 despite near-record status — PVV's dominance offset progressive party parity.</div>
+    <canvas id="c5" height="75"></canvas>
+    <div class="csrc">Source: Parlement.com · Kiesraad · Stem op een Vrouw · PDC biographical archive</div>
+  </div>
+
+  <div class="two-col">
+    <div class="prose">
+      <p>The 2023 Kamer stalled at 39.3% — identical to 2021 — because PVV's 37-seat surge (19% female) offset the near-parity delegations of progressive parties. It was, as Stem op een Vrouw noted, "een klein wonder" the percentage didn't fall.</p>
+      <p>2025 breaks the pattern because the seat gains went to parties with higher female shares: D66 (+17, 50% female) and CDA (+13, 50% female) together added 30 seats, of which approximately 15 are women. PVV's loss of 11 seats removed 2 female MPs but 9 males — net positive for female share.</p>
+    </div>
+    <div class="prose">
+      <p>Three parties still send all-male delegations: SGP (3 seats, on religious grounds), DENK (3 seats), and Volt — now a one-person faction with a male MP. Together they hold 7 seats, compared to 10 in 2023. Progress, but not elimination.</p>
+      <p>The gender composition of the Jetten cabinet (36% female, with Yeşilgöz at Defence) reflects a similar pattern: formal progress, persistent gaps in high-profile portfolios. The research continues tracking whether the 2025 Kamer's record composition translates into proportional floor time — the metric that actually measures political voice.</p>
+    </div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="cl">Figure 5a</div>
+      <div class="ch">Kamer-wide female % — 2023 vs 2025 vs historical</div>
+      <div class="cs">Bar comparison: where does 43.3% sit historically?</div>
+      <canvas id="c6" height="200"></canvas>
+      <div class="csrc">Parlement.com · Kiesraad 1948–2025</div>
+    </div>
+    <div class="chart-box">
+      <div class="cl">Figure 5b</div>
+      <div class="ch">All-male parties: 2023 vs 2025</div>
+      <div class="cs">Parties with 0% female MPs, seat count per term.</div>
+      <canvas id="c7" height="200"></canvas>
+      <div class="csrc">Kiesraad 2023 & 2025 · Parlement.com gender registry</div>
+    </div>
+  </div>
+
+  <div class="method">Data sources: Kiesraad official results (1 Dec 2023 & 7 Nov 2025) · Parlement.com/PDC biographical gender registry · Stem op een Vrouw · Handelingen XML (officielebekendmakingen.nl) for speaking time · Kabinet-Jetten composition: Rijksoverheid.nl 23 Feb 2026. Speaking time data: word count in Handelingen transcripts as proxy. 2025 topic estimates are preliminary (Nov 2025–Apr 2026 sessions only); full analysis will be published when the complete term Handelingen data is available. Gender coded binary per Parlement.com registry; PvdD non-binary member noted separately.</div>
+</section>
+
+<footer>
+  <div class="fl">Jane Orlova · Political Researcher · Amsterdam</div>
+  <div class="fr">Gender & Speaking Time · 2023 vs 2025<br>janeorlova.com · orlova_j@yahoo.com · April 2026</div>
+</footer>
+
+<script>
+const INK='#0f0e0c',R='#b5292a',G='#2d6e4a',A='#8a6e2a',GR='#ece7de',M='#aaa',BL='#2a5a8a';
+const mf={family:'DM Mono',size:9};
+
+/* C1 — female % per party 2023 vs 2025, grouped */
+const parties=['D66','PVV','VVD','GL-PvdA','CDA','JA21','FvD','BBB','DENK','SGP','PvdD','CU','SP','Volt'];
+const f23=[56,19,54,56,40,0,0,57,0,0,67,33,40,50];
+const f25=[50,19,32,70,50,22,14,50,0,0,67,33,67,0];
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:parties,datasets:[
+  {label:'2023',data:f23,backgroundColor:INK+'cc',barPercentage:.4},
+  {label:'2025',data:f25,backgroundColor:R+'cc',barPercentage:.4}
+]},options:{plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:12}}},scales:{x:{grid:{display:false},ticks:{font:mf,color:'#555'}},y:{grid:{color:GR},ticks:{font:mf,color:M,callback:v=>v+'%'},max:80,min:0}}}});
+
+/* C2 — seat change */
+const seatParties=['D66','CDA','JA21','FvD','50PLUS','SP→','SGP=','PvdD=','CU=','DENK=','Volt↓','BBB','VVD','GL-PvdA','PVV','NSC'];
+const changes=[17,13,8,4,2,0,0,0,0,0,-1,-3,-2,-5,-11,-20];
+new Chart(document.getElementById('c2'),{type:'bar',data:{labels:seatParties,datasets:[{data:changes,backgroundColor:changes.map(v=>v>0?G:v<0?R:'#ccc'),barThickness:18}]},options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M},title:{display:true,text:'Seat change (2023→2025)',font:mf,color:M}},y:{grid:{display:false},ticks:{font:mf,color:'#555'}}}}});
+
+/* C3 — female % 2025 ordered by seats */
+const p3=['D66 (26)','PVV (26)','VVD (22)','GL-PvdA (20)','CDA (18)','JA21 (9)','FvD (7)','BBB (4)','DENK (3)','SGP (3)','PvdD (3)','CU (3)','SP (3)','50PLUS (2)','Volt (1)'];
+const v3=[50,19,32,70,50,22,14,50,0,0,67,33,67,50,0];
+new Chart(document.getElementById('c3'),{type:'bar',data:{labels:p3,datasets:[{data:v3,backgroundColor:v3.map(v=>v>=43?G:v>=30?A:v>0?R:'#ccc'),barThickness:20}]},options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M,callback:v=>v+'%'},max:80},y:{grid:{display:false},ticks:{font:mf,color:'#555'}}}}});
+
+/* C4 — topic female word share 2023 vs 2025 */
+const topics=['Health & Care','Education','Social Affairs','Housing','Environment','Finance','Justice','Foreign Affairs','Defence & Security'];
+const t23=[51,46,43,41,39,26,30,23,16];
+const t25=[54,48,46,44,42,30,32,28,26];
+new Chart(document.getElementById('c4'),{type:'bar',data:{labels:topics,datasets:[
+  {label:'2023 term',data:t23,backgroundColor:INK+'bb',barPercentage:.4},
+  {label:'2025 term (est.)',data:t25,backgroundColor:R+'bb',barPercentage:.4},
+  {data:Array(9).fill(39.3),type:'line',borderColor:INK,borderWidth:1,borderDash:[4,4],pointRadius:0,label:'2023 seat share (39.3%)'},
+  {data:Array(9).fill(43.3),type:'line',borderColor:R,borderWidth:1,borderDash:[4,4],pointRadius:0,label:'2025 seat share (43.3%)'}
+]},options:{indexAxis:'y',plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:16}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M,callback:v=>v+'%'},max:65},y:{grid:{display:false},ticks:{font:mf,color:'#555'}}}}});
+
+/* C5 — historical line */
+new Chart(document.getElementById('c5'),{type:'line',data:{labels:['2010','2012','2017','2021','2023','2025'],datasets:[{data:[42.7,40,36,39.3,39.3,43.3],borderColor:R,backgroundColor:R+'15',fill:true,tension:.35,pointRadius:5,pointBackgroundColor:[M,M,M,M,INK,R],borderWidth:2,pointHoverRadius:7}]},options:{plugins:{legend:{display:false}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:'#555'}},y:{grid:{color:GR},ticks:{font:mf,color:M,callback:v=>v+'%'},min:30,max:50}}}});
+
+/* C6 — bar: historical comparison */
+new Chart(document.getElementById('c6'),{type:'bar',data:{labels:['2010','2012','2017','2021','2023','2025★'],datasets:[{data:[42.7,40,36,39.3,39.3,43.3],backgroundColor:[M,M,M,A,INK,R],barThickness:32}]},options:{plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{font:mf,color:'#555'}},y:{grid:{color:GR},ticks:{font:mf,color:M,callback:v=>v+'%'},min:30,max:48}}}});
+
+/* C7 — all-male parties */
+new Chart(document.getElementById('c7'),{type:'bar',data:{labels:['SGP','FvD','DENK','JA21','Volt'],datasets:[
+  {label:'2023 seats',data:[3,3,3,1,0],backgroundColor:INK+'cc',barPercentage:.4},
+  {label:'2025 seats',data:[3,7,3,0,1],backgroundColor:R+'cc',barPercentage:.4}
+]},options:{plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:12}}},scales:{x:{grid:{display:false},ticks:{font:mf,color:'#555'}},y:{grid:{color:GR},ticks:{font:mf,color:M},max:10,min:0,title:{display:true,text:'Seats (0% female)',font:mf,color:M}}}}});
+</script>
+
+</body>
+</html>
