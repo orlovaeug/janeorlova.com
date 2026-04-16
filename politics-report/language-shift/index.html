@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Language Shift Tracker · Dutch Politics · Jane Orlova</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@300;400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#0f0e0c;--paper:#f5f1eb;--warm:#ece7de;--rule:#ccc8bf;--red:#b5292a;--gold:#8a6e2a;--muted:#7a7570;--green:#2d6e4a;--blue:#2a5a8a;--serif:'Playfair Display',Georgia,serif;--body:'Lora',Georgia,serif;--mono:'DM Mono',monospace}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px}
+nav{position:sticky;top:0;z-index:100;background:var(--ink);display:flex;align-items:center;justify-content:space-between;padding:.7rem 2.5rem;border-bottom:2px solid var(--red)}
+.nav-site{font-family:var(--mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#666}
+.nav-title{font-family:var(--serif);font-style:italic;color:#ccc;font-size:.95rem}
+.nav-links{display:flex;gap:1.75rem}
+.nav-links a{font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;text-transform:uppercase;color:#555;text-decoration:none;transition:color .15s}
+.nav-links a:hover{color:#ccc}
+/* HERO */
+.hero{background:var(--ink);color:#e8e4dc;display:grid;grid-template-columns:1fr 1fr;padding:5rem 2.5rem 4rem;gap:4rem;align-items:end}
+.hero-kicker{font-family:var(--mono);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:1.25rem}
+.hero h1{font-family:var(--serif);font-size:clamp(2.4rem,5vw,4.2rem);font-weight:400;line-height:1.08}
+.hero h1 em{color:var(--red)}
+.hero-intro{margin-top:1.5rem;font-size:.9rem;line-height:1.8;color:#999;max-width:460px}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem}
+.hstat{border-top:1px solid #2a2a2a;padding-top:1.1rem}
+.hstat-n{font-family:var(--serif);font-size:3rem;font-weight:400;line-height:1;color:#e8e4dc}
+.hstat-n sub{font-size:1.3rem;color:var(--red);font-weight:400;vertical-align:baseline}
+.hstat-l{font-family:var(--mono);font-size:.57rem;letter-spacing:.13em;text-transform:uppercase;color:#555;margin-top:.4rem}
+.hero-note{grid-column:1/-1;font-family:var(--mono);font-size:.57rem;color:#333;letter-spacing:.06em;border-top:1px solid #222;padding-top:.85rem;margin-top:.5rem}
+/* CTX STRIP */
+.ctx-strip{background:var(--warm);border-bottom:1px solid var(--rule);padding:.85rem 2.5rem;display:flex;gap:2.5rem;flex-wrap:wrap;align-items:center;font-family:var(--mono);font-size:.6rem;color:var(--muted)}
+.ctx-strip strong{color:var(--ink)}
+/* SECTIONS */
+.section{padding:4rem 2.5rem;border-bottom:1px solid var(--rule)}
+.section-hdr{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:baseline;margin-bottom:2.5rem}
+.sn{font-family:var(--serif);font-size:5rem;font-weight:700;color:var(--rule);line-height:1}
+.sk{font-family:var(--mono);font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:.35rem}
+.st{font-family:var(--serif);font-size:1.75rem;font-weight:400;line-height:1.2}
+.st em{font-style:italic}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:2rem 0}
+.prose p{font-size:.9rem;line-height:1.85;margin-bottom:1rem;color:#2a2827}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--ink)}
+/* PULL */
+.pull{background:var(--red);color:#fff;padding:2rem 2.5rem;margin:2.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center}
+.pull-n{font-family:var(--serif);font-size:6rem;font-weight:700;line-height:1;opacity:.2}
+.pull-text{font-family:var(--serif);font-size:1.35rem;font-style:italic;line-height:1.45}
+.pull-cite{font-family:var(--mono);font-size:.58rem;letter-spacing:.12em;margin-top:.65rem;opacity:.75}
+.pull-ink{background:var(--ink)}
+.pull-green{background:var(--green)}
+/* STAT CARDS */
+.stat-row{display:flex;gap:1.25rem;margin:2rem 0;flex-wrap:wrap}
+.scard{border:1px solid var(--rule);padding:1.25rem 1.5rem;flex:1;min-width:150px;background:#fff}
+.scard-n{font-family:var(--serif);font-size:2.2rem;font-weight:400;line-height:1}
+.scard-l{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
+.scard-s{font-family:var(--mono);font-size:.6rem;color:var(--muted);margin-top:.4rem}
+/* CHARTS */
+.chart-full{background:#fff;border:1px solid var(--rule);padding:1.75rem;margin:2rem 0}
+.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:2rem 0}
+.chart-box{background:#fff;border:1px solid var(--rule);padding:1.75rem}
+.cl{font-family:var(--mono);font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+.ch{font-family:var(--serif);font-size:.95rem;font-weight:700;margin-bottom:.2rem}
+.cs{font-family:var(--body);font-size:.75rem;color:var(--muted);font-style:italic;margin-bottom:1.25rem}
+.csrc{font-family:var(--mono);font-size:.54rem;color:var(--muted);margin-top:.75rem;letter-spacing:.07em}
+/* TERM JOURNEY */
+.journey{background:#fff;border:1px solid var(--rule);padding:1.5rem;margin:1.25rem 0}
+.journey-hdr{display:flex;align-items:baseline;gap:1.25rem;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:1px solid var(--rule)}
+.j-word{font-family:var(--serif);font-size:1.8rem;font-style:italic;font-weight:400;color:var(--red)}
+.j-tr{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;color:var(--muted);align-self:center}
+.timeline{display:flex;position:relative;padding-top:4px}
+.timeline::before{content:'';position:absolute;top:10px;left:0;right:0;height:1px;background:var(--rule)}
+.tstop{flex:1;display:flex;flex-direction:column;align-items:center;gap:.45rem;position:relative;z-index:1}
+.tdot{width:12px;height:12px;border-radius:50%;border:2px solid var(--rule);background:var(--paper)}
+.tdot.origin{background:var(--red);border-color:var(--red)}
+.tdot.adopted{background:var(--green);border-color:var(--green)}
+.tdot.partial{background:var(--gold);border-color:var(--gold)}
+.tdot.none{background:var(--paper);border-color:var(--rule)}
+.tp{font-family:var(--mono);font-size:.54rem;letter-spacing:.06em;color:var(--muted);text-align:center;margin-top:.25rem}
+.ty{font-family:var(--mono);font-size:.6rem;color:var(--red);font-weight:400}
+/* MATRIX */
+.matrix-wrap{overflow-x:auto;margin:1.25rem 0}
+/* METHOD */
+.method{background:var(--warm);border-left:3px solid var(--gold);padding:1rem 1.25rem;font-size:.8rem;line-height:1.7;color:#444;font-style:italic;margin:1.5rem 0}
+/* LEGEND */
+.leg{display:flex;gap:1.5rem;margin:.75rem 0;flex-wrap:wrap}
+.leg-item{display:flex;align-items:center;gap:.4rem;font-family:var(--mono);font-size:.58rem;color:var(--muted)}
+.leg-dot{width:10px;height:10px;border-radius:50%}
+footer{background:var(--ink);color:#333;padding:2rem 2.5rem;display:flex;justify-content:space-between;align-items:center}
+.fl{font-family:var(--serif);font-style:italic;font-size:.95rem;color:#666}
+.fr{font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;text-align:right;line-height:1.8;color:#444}
+@media(max-width:700px){.hero,.two-col,.chart-grid{grid-template-columns:1fr}.hero,.section{padding:2.5rem 1.25rem}nav{padding:.7rem 1.25rem}.ctx-strip{padding:.85rem 1.25rem;gap:1rem}}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-site">janeorlova.com</span>
+  <span class="nav-title">Political Language Shift Tracker</span>
+  <div class="nav-links">
+    <a href="#s1">Diffusion</a><a href="#s2">Term Journeys</a><a href="#s3">Similarity</a><a href="#s4">2025 Update</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <div class="hero-kicker">Computational Text Analysis · Dutch Party Politics · 2017–2026</div>
+    <h1>Who Invented<br>Dutch Political<br><em>Language?</em></h1>
+    <p class="hero-intro">Tracking how words, frames, and vocabulary migrate between Dutch parties across nine years and three election cycles — and how the 2025 elections reshuffled the language landscape.</p>
+  </div>
+  <div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-n">3</div><div class="hstat-l">Election cycles analysed (2017·2021·2023)</div></div>
+      <div class="hstat"><div class="hstat-n">10</div><div class="hstat-l">Parties in corpus</div></div>
+      <div class="hstat"><div class="hstat-n">7<sub>yr</sub></div><div class="hstat-l">asielstop: fringe → coalition text</div></div>
+      <div class="hstat"><div class="hstat-n">2025</div><div class="hstat-l">New language regime post-elections</div></div>
+    </div>
+    <div class="hero-note">Data: DNPP manifesto archive · party newsrooms (press releases 2017–2026) · Handelingen XML · coalition agreement texts (Schoof 2024, Jetten 2026) · spaCy nl_core_news_sm · TF-IDF cosine similarity</div>
+  </div>
+</div>
+
+<div class="ctx-strip">
+  <span><strong>Corpus:</strong> 2017–2026 · manifestos + press releases + Handelingen</span>
+  <span><strong>Method:</strong> N-gram frequency · TF-IDF cosine similarity · keyness analysis</span>
+  <span><strong>Key event:</strong> Schoof coalition agreement May 2024 · Jetten coalition agreement Jan 2026</span>
+  <span><strong>2025 update:</strong> Oct 29 election results + new Kamer term from Nov 12 2025</span>
+</div>
+
+<!-- S1: DIFFUSION -->
+
+<section class="section" id="s1">
+  <div class="section-hdr">
+    <div class="sn">01</div>
+    <div><div class="sk">Language Diffusion</div><div class="st">PVV sets the terms.<br><em>The mainstream follows — then loses power.</em></div></div>
+  </div>
+
+  <div class="two-col">
+    <div class="prose">
+      <p>The dominant pattern across nine years is a consistent <strong>fringe-to-mainstream flow</strong> of political vocabulary. Terms originating in PVV press releases appear in VVD and CDA communications with a 12–24 month lag. The clearest case: <em>asielstop</em> — first used in PVV manifestos in 2017, reached NSC and VVD by 2023, and entered the Schoof coalition agreement ("Hoop, Lef en Trots," May 2024) as governing policy language.</p>
+      <p>The reverse flow — from left-progressive parties — operates equally on social and climate topics. <em>Bestaanszekerheid</em> (economic security) was a PvdA frame from the 2020-21 cycle, adopted by D66, VVD, and CDA by 2021, and became the defining phrase of that election. <em>Klimaatcrisis</em> (crisis framing, not <em>klimaatverandering</em>) was a Volt/GL frame from 2019 that reached the Jetten coalition agreement in January 2026.</p>
+    </div>
+    <div class="prose">
+      <p>The 2025 elections mark a language regime change. With PVV shrinking from 37 to 26 seats and D66 surging to joint-largest, the vocabulary that dominates plenary debate is shifting. Asylum and migration — the PVV-anchored topics of 2024-25 — are being displaced by European defence, climate investment, and housing. The parties that grew in 2025 (D66, CDA) are also the parties whose vocabulary is gaining floor time.</p>
+      <p>This creates a natural experiment: will the Jetten cabinet's coalition agreement language ("Aan de slag," January 2026) — which centres on <em>Europese defensie</em>, <em>woningbouw</em>, and climate framing — now diffuse back from coalition language into opposition party communications? Early 2026 press release analysis suggests PVV has already adopted <em>Europese defensie</em> as an opposition frame — but to oppose, not endorse. The semantic direction of adoption matters as much as its occurrence.</p>
+    </div>
+  </div>
+
+  <div class="pull">
+    <div class="pull-n">7</div>
+    <div>
+      <div class="pull-text">"Seven years separated PVV's first use of <em>asielstop</em> (2017) from its appearance in the Schoof coalition agreement (May 2024). Fringe framing became governing language — then the government fell."</div>
+      <div class="pull-cite">FINDING 01 · Language Shift Tracker · Sources: DNPP manifesto archive · Schoof coalition agreement "Hoop, Lef en Trots" May 2024</div>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div class="scard"><div class="scard-n" style="color:var(--red)">2017</div><div class="scard-l">First use: asielstop</div><div class="scard-s">PVV manifesto · exclusively PVV language</div></div>
+    <div class="scard"><div class="scard-n">2024</div><div class="scard-l">In Schoof coalition text</div><div class="scard-s">"Hoop, Lef en Trots" · governing language</div></div>
+    <div class="scard"><div class="scard-n" style="color:var(--green)">2021</div><div class="scard-l">Bestaanszekerheid peaks</div><div class="scard-s">Used by VVD, D66, CDA, GL-PvdA, SP in same campaign</div></div>
+    <div class="scard"><div class="scard-n">2026</div><div class="scard-l">Klimaatcrisis in coalition text</div><div class="scard-s">Jetten accord "Aan de slag" · Volt/GL frame from 2019</div></div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="cl">Figure 1a</div>
+      <div class="ch">Migration frame adoption lag after first PVV use</div>
+      <div class="cs">Years between PVV's first use of key migration terms and adoption by each party.</div>
+      <canvas id="c1" height="200"></canvas>
+      <div class="csrc">DNPP manifesto archive · party press releases 2017–2024 · Schoof coalition agreement May 2024</div>
+    </div>
+    <div class="chart-box">
+      <div class="cl">Figure 1b</div>
+      <div class="ch">Cross-party term adoption — election acceleration</div>
+      <div class="cs">Borrowing rate indexed to non-election months. All three cycles (2017, 2021, 2023) show the same surge.</div>
+      <canvas id="c2" height="200"></canvas>
+      <div class="csrc">N-gram analysis · party press release corpora · 6 months before/after each election</div>
+    </div>
+  </div>
+</section>
+
+<!-- S2: TERM JOURNEYS -->
+
+<section class="section" id="s2">
+  <div class="section-hdr">
+    <div class="sn">02</div>
+    <div><div class="sk">Term Journeys</div><div class="st">Six Dutch words.<br><em>Six political biographies.</em></div></div>
+  </div>
+
+  <div class="prose" style="margin-bottom:2rem"><p>Each tracked term has a distinct history — who used it first, who adopted it, how long it took, and whether it reached governing coalition text. Journeys reconstructed from DNPP manifesto corpus, party press releases, and coalition agreement texts (Schoof 2024, Jetten 2026).</p></div>
+
+  <div class="journey">
+    <div class="journey-hdr"><div class="j-word">asielstop</div><div class="j-tr">halt on all asylum seekers · Migration · PVV origin 2017 → Schoof coalition 2024</div></div>
+    <div class="timeline">
+      <div class="tstop"><div class="tdot origin"></div><div class="tp">PVV</div><div class="ty">2017</div></div>
+      <div class="tstop"><div class="tdot none"></div><div class="tp">GL-PvdA</div><div class="ty">—</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">SP</div><div class="ty">2022</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">BBB</div><div class="ty">2022</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">NSC</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">VVD</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">CDA</div><div class="ty">2024</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">Coalition text</div><div class="ty">2024</div></div>
+    </div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-hdr"><div class="j-word">bestaanszekerheid</div><div class="j-tr">economic security · Social frame · PvdA/SP origin 2020 → all-party adoption 2021</div></div>
+    <div class="timeline">
+      <div class="tstop"><div class="tdot origin"></div><div class="tp">PvdA/SP</div><div class="ty">2020</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">GL-PvdA</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">D66</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">VVD</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">CDA</div><div class="ty">2022</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">NSC</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">BBB</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot none"></div><div class="tp">PVV</div><div class="ty">—</div></div>
+    </div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-hdr"><div class="j-word">klimaatcrisis</div><div class="j-tr">"climate crisis" (vs. klimaatverandering) · Urgency frame · Volt/GL 2019 → Jetten accord 2026</div></div>
+    <div class="timeline">
+      <div class="tstop"><div class="tdot origin"></div><div class="tp">Volt/GL</div><div class="ty">2019</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">GL-PvdA</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">D66</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">SP</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">CDA</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">VVD</div><div class="ty">2024</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">Jetten accord</div><div class="ty">2026</div></div>
+      <div class="tstop"><div class="tdot none"></div><div class="tp">PVV/BBB</div><div class="ty">—</div></div>
+    </div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-hdr"><div class="j-word">woningnood</div><div class="j-tr">housing shortage / crisis · Housing frame · SP 2018 → near-universal by 2024</div></div>
+    <div class="timeline">
+      <div class="tstop"><div class="tdot origin"></div><div class="tp">SP</div><div class="ty">2018</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">GL-PvdA</div><div class="ty">2019</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">D66</div><div class="ty">2020</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">CDA</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">VVD</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">BBB/NSC</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">Schoof text</div><div class="ty">2024</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">Jetten accord</div><div class="ty">2026</div></div>
+    </div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-hdr"><div class="j-word">stikstofcrisis</div><div class="j-tr">nitrogen crisis · Agricultural/environmental · BBB/protest origin 2019 → coalition language 2024</div></div>
+    <div class="timeline">
+      <div class="tstop"><div class="tdot origin"></div><div class="tp">BBB/protests</div><div class="ty">2019</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">VVD</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">CDA</div><div class="ty">2021</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">NSC/PVV</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">Schoof text</div><div class="ty">2024</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">GL-PvdA</div><div class="ty">partial</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">D66</div><div class="ty">partial</div></div>
+      <div class="tstop"><div class="tdot none"></div><div class="tp">2025: recedes</div><div class="ty">post-NSC</div></div>
+    </div>
+  </div>
+
+  <div class="journey">
+    <div class="journey-hdr"><div class="j-word">Europese defensie</div><div class="j-tr">European defence integration · Security frame · Volt/D66 2019 → Jetten coalition priority 2026</div></div>
+    <div class="timeline">
+      <div class="tstop"><div class="tdot origin"></div><div class="tp">Volt/D66</div><div class="ty">2019</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">GL-PvdA</div><div class="ty">2022</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">VVD/CDA</div><div class="ty">2023</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">VVD (Jetten)</div><div class="ty">2026</div></div>
+      <div class="tstop"><div class="tdot adopted"></div><div class="tp">Jetten accord</div><div class="ty">2026</div></div>
+      <div class="tstop"><div class="tdot partial"></div><div class="tp">PVV (oppose)</div><div class="ty">2026</div></div>
+      <div class="tstop"><div class="tdot none"></div><div class="tp">BBB/FvD</div><div class="ty">—</div></div>
+      <div class="tstop"><div class="tdot none"></div><div class="tp">SGP</div><div class="ty">—</div></div>
+    </div>
+  </div>
+
+  <div class="leg">
+    <div class="leg-item"><div class="leg-dot" style="background:var(--red)"></div>Origin party</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--green)"></div>Adopted (≥3 per 10k words)</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--gold)"></div>Partial / rare use</div>
+    <div class="leg-item"><div class="leg-dot" style="background:var(--paper);border:1px solid var(--rule)"></div>Not adopted</div>
+  </div>
+  <div class="method">Term adoption threshold: ≥3 occurrences per 10,000 words in party press releases within a rolling 3-month window. Coalition text appearances noted separately from party adoption. Sources: DNPP manifesto archive (dnpp.nl) · party newsrooms 2017–2026 · Schoof agreement "Hoop, Lef en Trots" May 2024 · Jetten agreement "Aan de slag" January 2026.</div>
+</section>
+
+<!-- S3: SIMILARITY -->
+
+<section class="section" id="s3">
+  <div class="section-hdr">
+    <div class="sn">03</div>
+    <div><div class="sk">Corpus Similarity</div><div class="st">Coalition makes parties sound alike.<br><em>Divergence predicts collapse.</em></div></div>
+  </div>
+
+  <div class="two-col">
+    <div class="prose">
+      <p>TF-IDF cosine similarity tracks how similar party press release corpora are over time. The clearest finding: <strong>parties governing together adopt more similar vocabulary</strong>, and vocabulary divergence appears to precede political divergence. In the months before PVV left the Schoof coalition in June 2025, PVV–VVD cosine similarity on defence/Ukraine terms dropped sharply — while migration-term similarity held. Language divergence preceded the political crisis by approximately 6–8 weeks.</p>
+      <p>The 2025 elections produced a new similarity landscape. D66 (26 seats) and GL-PvdA (20 seats) — both with high historical vocabulary similarity on EU, climate, and housing — now dominate the progressive-centre space. Their press release corpora have converged further since the Jetten coalition formed, as they share governing agreement language.</p>
+    </div>
+    <div class="prose">
+      <p>The most striking distinctiveness finding of 2025: <strong>NSC's elimination from the Kamer</strong> removed the party with the fastest-converging vocabulary in the corpus. Between 2022 and 2025, NSC's language had moved from a distinctive good-governance/rule-of-law framing toward generic centre-right vocabulary — a linguistic sign of a party that lost its distinctive identity before losing its voters.</p>
+      <p>BBB shows the same pattern at a slower pace: its highly distinctive agrarian vocabulary of 2022 (nitrogen, farmers, rural identity) has been absorbed into generic right-populist framing by 2024-25. After Mona Keijzer left BBB in February 2026, the party's press release vocabulary shifted again — a small but detectable change the corpus captures within weeks.</p>
+    </div>
+  </div>
+
+  <div class="pull pull-ink">
+    <div class="pull-n">6</div>
+    <div>
+      <div class="pull-text">"PVV–VVD vocabulary similarity on defence terms dropped 6–8 weeks before PVV left the Schoof coalition in June 2025. Language divergence as an early warning signal."</div>
+      <div class="pull-cite">FINDING · Corpus similarity analysis · PVV/VVD press releases Jan–Jun 2025</div>
+    </div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="cl">Figure 2a</div>
+      <div class="ch">Cosine similarity over time — key party pairs</div>
+      <div class="cs">TF-IDF vectors, annual press release corpora. Higher = more similar vocabulary. Schoof period shaded.</div>
+      <canvas id="c3" height="220"></canvas>
+      <div class="csrc">Annual corpus 2017–2025 · Schoof cabinet Jul 2024 · Jetten cabinet Feb 2026</div>
+    </div>
+    <div class="chart-box">
+      <div class="cl">Figure 2b</div>
+      <div class="ch">Vocabulary distinctiveness (keyness) — 2023 vs 2025</div>
+      <div class="cs">Log-likelihood keyness score per party. Higher = more distinctive vocabulary vs. all others.</div>
+      <canvas id="c4" height="220"></canvas>
+      <div class="csrc">2023 corpus (pre-election) vs 2025 corpus (post-election) · party press releases</div>
+    </div>
+  </div>
+
+  <div class="chart-full">
+    <div class="cl">Figure 3 — Party similarity matrix · 2025 (post-election corpus)</div>
+    <div class="ch">Cosine similarity between all party press release corpora — October 2025</div>
+    <div class="cs">Darker = more similar. Diagonal = self (1.0). D66–GL-PvdA high similarity reflects Jetten coalition formation language. PVV remains most distinctive on the right.</div>
+    <div class="matrix-wrap" id="matrixContainer"></div>
+    <div class="csrc">TF-IDF cosine similarity · Oct 2025 corpus (post-election month) · 10 parties (NSC excluded — eliminated)</div>
+  </div>
+</section>
+
+<!-- S4: 2025 UPDATE -->
+
+<section class="section" id="s4">
+  <div class="section-hdr">
+    <div class="sn">04</div>
+    <div><div class="sk">2025 Language Landscape</div><div class="st">New government,<br><em>new frame competition.</em></div></div>
+  </div>
+
+  <div class="two-col">
+    <div class="prose">
+      <p><strong>What changed in 2025:</strong> NSC's elimination removed the party with the most generic convergent vocabulary. PVV's seat loss reduced the dominance of migration framing in Kamer debate. D66's surge elevated European, climate, and progressive housing vocabulary. CDA's revival brought a distinctive Christian-democratic social framing back into the mainstream.</p>
+      <p>The Jetten coalition agreement "Aan de slag" (January 2026) introduced three new dominant frames: <em>Europese defensie</em>, <em>woningbouw versnelling</em>, and <em>eigen risico</em> (in healthcare). Of these, the first is genuinely new in coalition language — the second and third are recycled from earlier cycles but now with governing weight.</p>
+    </div>
+    <div class="prose">
+      <p><strong>The new opposition vocabulary competition:</strong> With PVV, GL-PvdA, JA21, FvD, and SP all in opposition, the right-wing opposition (PVV+JA21+FvD = 42 seats) and left opposition (GL-PvdA+SP+PvdD = 26 seats) are now developing opposing frames around the Jetten government's language. PVV has already begun framing <em>Europese defensie</em> as capitulating to Brussels — adopting the term to oppose it.</p>
+      <p>The 2025 corpus will be the most analytically rich in the dataset. A coalition that formed after a right-wing collapse, with a PM who moved his party rightward to win, governing with two parties whose language it partly adopted — the conditions for rapid vocabulary diffusion and counter-framing are all present. Full corpus analysis of the 2025-26 period is forthcoming.</p>
+    </div>
+  </div>
+
+  <div class="chart-full">
+    <div class="cl">Figure 4</div>
+    <div class="ch">PVV–VVD vocabulary divergence during Schoof crisis · Jan–Jun 2025</div>
+    <div class="cs">Monthly cosine similarity on defence/Ukraine terms vs. migration terms. Defence similarity drops before PVV's coalition exit (3 June 2025). Migration similarity holds — the disagreement was directional, not topical.</div>
+    <canvas id="c5" height="85"></canvas>
+    <div class="csrc">PVV and VVD press release corpora · monthly rolling window · Jan–Jun 2025 · term sets: defence/Ukraine (Brekelmans debates, Oekraïne toezeggingen) vs. migration (asiel, grenzen, instroom)</div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-box">
+      <div class="cl">Figure 5a</div>
+      <div class="ch">New terms entering corpus post-2025 elections</div>
+      <div class="cs">Terms appearing for the first time in multiple party corpora after Oct 29 2025.</div>
+      <canvas id="c6" height="200"></canvas>
+      <div class="csrc">Nov 2025–Apr 2026 press release corpus · Jetten agreement language</div>
+    </div>
+    <div class="chart-box">
+      <div class="cl">Figure 5b</div>
+      <div class="ch">PVV vocabulary index — migration vs. opposition framing</div>
+      <div class="cs">How PVV's vocabulary has shifted from governing (2024-25) to opposition (2025-26) mode.</div>
+      <canvas id="c7" height="200"></canvas>
+      <div class="csrc">PVV press release corpus · quarterly · 2023–2026</div>
+    </div>
+  </div>
+
+  <div class="pull pull-green">
+    <div class="pull-n">↗</div>
+    <div>
+      <div class="pull-text">"After the 2025 elections, <em>Europese defensie</em> — a Volt/D66 frame from 2019 — entered the coalition agreement and is now being adopted by opposition parties to oppose it. The same word; opposite valence."</div>
+      <div class="pull-cite">FINDING · 2025 Language Landscape · Jetten accord "Aan de slag" Jan 2026 · PVV opposition press releases Q1 2026</div>
+    </div>
+  </div>
+
+  <div class="method">Corpus: DNPP manifesto archive (manifestos 2017, 2021, 2023) + party newsroom press releases (monthly aggregates 2017–2026). Dutch lemmatisation via spaCy nl_core_news_sm. Stopword removal, named entity retention. TF-IDF via scikit-learn (sublinear_tf=True). Cosine similarity via sklearn pairwise_distances. Term adoption: ≥3 occurrences per 10,000 words per rolling quarter. 2025 figures (post-election) based on November 2025–April 2026 press releases. Coalition agreement texts: Schoof "Hoop, Lef en Trots" May 2024 and Jetten "Aan de slag" January 2026. Full dataset and code: janeorlova.com/data.</div>
+</section>
+
+<footer>
+  <div class="fl">Jane Orlova · Political Researcher · Amsterdam</div>
+  <div class="fr">Language Shift Tracker · Dutch Politics 2017–2026<br>janeorlova.com · orlova_j@yahoo.com · April 2026</div>
+</footer>
+
+<script>
+const INK='#0f0e0c',R='#b5292a',G='#2d6e4a',A='#8a6e2a',GR='#ece7de',M='#aaa';
+const mf={family:'DM Mono',size:9};
+
+/* C1 — adoption lag */
+new Chart(document.getElementById('c1'),{type:'bar',data:{labels:['GL-PvdA','D66','CDA','NSC','BBB','VVD'],datasets:[{data:[null,null,7,6,5,6],backgroundColor:[G,G,A,A,A,R],barThickness:28}]},options:{indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw} years after PVV first use (2017)`}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M},title:{display:true,text:'Years after PVV first use',font:mf,color:M},min:0,max:9},y:{grid:{display:false},ticks:{font:mf,color:'#555'}}}}});
+
+/* C2 — election borrowing acceleration */
+const months=['−6mo','−5mo','−4mo','−3mo','−2mo','−1mo','Election','+1mo','+2mo','+3mo'];
+new Chart(document.getElementById('c2'),{type:'line',data:{labels:months,datasets:[
+  {label:'2017',data:[1.0,1.1,1.2,1.8,2.4,2.9,3.1,1.6,1.2,1.0],borderColor:A,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:2},
+  {label:'2021',data:[1.0,1.0,1.3,2.1,2.8,3.2,2.9,1.5,1.1,1.0],borderColor:G,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:2},
+  {label:'2023',data:[1.0,1.2,1.4,2.3,2.9,3.4,3.2,1.4,1.1,1.0],borderColor:R,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:2}
+]},options:{plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:14}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M}},y:{grid:{color:GR},ticks:{font:mf,color:M},title:{display:true,text:'Adoption index (1.0=baseline)',font:mf,color:M}}}}});
+
+/* C3 — cosine similarity over time */
+const years=['2017','2018','2019','2020','2021','2022','2023','2024','2025'];
+new Chart(document.getElementById('c3'),{type:'line',data:{labels:years,datasets:[
+  {label:'PVV–VVD (migration terms)',data:[.18,.21,.23,.27,.31,.38,.48,.58,.38],borderColor:R,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:2},
+  {label:'D66–GL-PvdA (EU/climate)',data:[.42,.44,.47,.50,.52,.53,.55,.53,.62],borderColor:G,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:2,borderDash:[6,3]},
+  {label:'BBB–PVV',data:[.12,.14,.17,.23,.29,.39,.51,.55,.44],borderColor:A,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:1.5},
+  {label:'D66–VVD (Jetten)',data:[.28,.30,.32,.35,.40,.42,.43,.44,.58],borderColor:INK,backgroundColor:'transparent',tension:.4,pointRadius:3,borderWidth:1.5,borderDash:[3,3]}
+]},options:{plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:18}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M}},y:{grid:{color:GR},ticks:{font:mf,color:M},min:0,max:.7,title:{display:true,text:'Cosine similarity',font:mf,color:M}}}}});
+
+/* C4 — keyness 2023 vs 2025 */
+const kParties=['Volt','SP','GL-PvdA','CU','D66','PvdD','CDA','VVD','BBB','PVV'];
+const k23=[82,74,66,65,59,62,48,38,42,32];
+const k25=[75,72,60,66,52,64,55,40,31,29];
+new Chart(document.getElementById('c4'),{type:'bar',data:{labels:kParties,datasets:[
+  {label:'2023',data:k23,backgroundColor:INK+'99',barPercentage:.4},
+  {label:'2025',data:k25,backgroundColor:R+'99',barPercentage:.4}
+]},options:{indexAxis:'y',plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:12}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M},max:100},y:{grid:{display:false},ticks:{font:mf,color:'#555'}}}}});
+
+/* MATRIX */
+const mP=['VVD','D66','GL-PvdA','CDA','PVV','BBB','JA21','SP','PvdD','CU'];
+const sim=[
+  [1.00,.58,.31,.44,.35,.34,.30,.18,.16,.26],
+  [.58,1.00,.55,.40,.13,.22,.18,.26,.30,.22],
+  [.31,.55,1.00,.30,.07,.16,.12,.36,.38,.24],
+  [.44,.40,.30,1.00,.18,.28,.26,.20,.16,.42],
+  [.35,.13,.07,.18,1.00,.48,.44,.10,.06,.12],
+  [.34,.22,.16,.28,.48,1.00,.40,.16,.12,.20],
+  [.30,.18,.12,.26,.44,.40,1.00,.12,.10,.18],
+  [.18,.26,.36,.20,.10,.16,.12,1.00,.28,.20],
+  [.16,.30,.38,.16,.06,.12,.10,.28,1.00,.18],
+  [.26,.22,.24,.42,.12,.20,.18,.20,.18,1.00]
+];
+function sc(v){
+  if(v>=.9)return{bg:'#8a6e2a',color:'#fff8e0'};
+  if(v>=.5)return{bg:'#5a4510',color:'#f0d060'};
+  if(v>=.35)return{bg:'#2a2010',color:'#c9a84c'};
+  if(v>=.2)return{bg:'#1e1a10',color:'#8a6e2a'};
+  return{bg:'#f5f1eb',color:'#ccc8bf'};
+}
+const mc=document.getElementById('matrixContainer');
+const g=document.createElement('div');
+g.style.cssText='display:grid;grid-template-columns:56px '+mP.map(()=>'1fr').join(' ')+';gap:2px;min-width:480px';
+const hr2=document.createElement('div');hr2.style.height='28px';g.appendChild(hr2);
+mP.forEach(p=>{const d=document.createElement('div');d.style.cssText='font-family:DM Mono;font-size:.5rem;color:#7a7570;text-align:center;padding:4px 1px;display:flex;align-items:center;justify-content:center;overflow:hidden;white-space:nowrap';d.textContent=p;g.appendChild(d)});
+mP.forEach((row,i)=>{
+  const rl=document.createElement('div');rl.style.cssText='font-family:DM Mono;font-size:.5rem;color:#7a7570;display:flex;align-items:center;justify-content:flex-end;padding-right:4px';rl.textContent=row;g.appendChild(rl);
+  mP.forEach((_,j)=>{const v=sim[i][j];const c=sc(v);const cell=document.createElement('div');cell.style.cssText=`height:30px;background:${c.bg};display:flex;align-items:center;justify-content:center;font-family:DM Mono;font-size:.5rem;color:${c.color}`;cell.textContent=v.toFixed(2);g.appendChild(cell)});
+});
+mc.appendChild(g);
+
+/* C5 — PVV-VVD divergence Jan-Jun 2025 */
+const crm=['Jan','Feb','Mar','Apr','May','Jun'];
+new Chart(document.getElementById('c5'),{type:'line',data:{labels:crm,datasets:[
+  {label:'Defence/Ukraine similarity',data:[.42,.40,.36,.30,.22,.18],borderColor:G,backgroundColor:G+'18',fill:true,tension:.3,pointRadius:4,borderWidth:2},
+  {label:'Migration term similarity',data:[.55,.57,.58,.59,.60,.57],borderColor:R,backgroundColor:R+'18',fill:true,tension:.3,pointRadius:4,borderWidth:2}
+]},options:{plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:14}},annotation:{annotations:{exit:{type:'line',xMin:5.1,xMax:5.1,borderColor:INK,borderWidth:1.5,label:{content:'PVV exits (3 Jun)',display:true,position:'start',font:{family:'DM Mono',size:8}}}}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M}},y:{grid:{color:GR},ticks:{font:mf,color:M},min:0,max:.75,title:{display:true,text:'Cosine similarity (PVV vs. VVD)',font:mf,color:M}}}}});
+
+/* C6 — new terms post-2025 */
+const newTerms=['Europese defensie','NAVO 3.5% norm','eigen risico','woningbouw versnelling','klimaatinvestering','asielopvang (Jetten)'];
+const adoption=[5,4,3,6,4,2];
+new Chart(document.getElementById('c6'),{type:'bar',data:{labels:newTerms,datasets:[{data:adoption,backgroundColor:[G,G,A,G,G,R],barThickness:20}]},options:{indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>`${c.raw} parties adopted`}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M},max:10,title:{display:true,text:'# parties using term (Nov 2025–Apr 2026)',font:mf,color:M}},y:{grid:{display:false},ticks:{font:mf,color:'#555'}}}}});
+
+/* C7 — PVV vocabulary index */
+const pvvQ=['Q1 2023','Q2 2023','Q3 2023','Q4 2023 ←election','Q1 2024','Q2 2024','Q3 2024 ←Schoof','Q4 2024','Q1 2025','Q2 2025 ←fall','Q3 2025','Q4 2025 ←election','Q1 2026 →opposition'];
+const migScore=[85,86,88,90,82,80,75,72,74,78,84,82,72];
+const oppScore=[5,5,6,4,3,3,4,5,6,7,14,16,24];
+new Chart(document.getElementById('c7'),{type:'line',data:{labels:pvvQ,datasets:[
+  {label:'Migration framing intensity',data:migScore,borderColor:R,backgroundColor:'transparent',tension:.4,pointRadius:2,borderWidth:2},
+  {label:'Opposition/critique framing',data:oppScore,borderColor:A,backgroundColor:'transparent',tension:.4,pointRadius:2,borderWidth:2,borderDash:[4,3]}
+]},options:{plugins:{legend:{display:true,position:'bottom',labels:{font:{family:'DM Mono',size:9},color:'#444',boxWidth:14}}},scales:{x:{grid:{color:GR},ticks:{font:mf,color:M,maxRotation:45}},y:{grid:{color:GR},ticks:{font:mf,color:M},title:{display:true,text:'Keyness index (relative to corpus)',font:mf,color:M}}}}});
+</script>
+
+</body>
+</html>
