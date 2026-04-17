@@ -9563,7 +9563,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05320&did=2026D12193",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk6454496a9d",
@@ -9912,7 +9912,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05313&did=2026D12171",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9c558fca35",
@@ -9990,7 +9990,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z05309&did=2026D12166",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk90f2590de4",
@@ -27792,7 +27792,7 @@
     "indiener": "JA21",
     "datum": "2026-04-16",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z08011&did=2026D18048",
