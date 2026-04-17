@@ -1,5 +1,66 @@
 [
   {
+    "id": "gb8564ec4df78",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Kabinet zet verhoging eigen risico door, zonder zicht op steun uit de Kamer - de Volkskrant",
+    "date": "2026-04-17",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ1FTZkx4MXlteDZxTW5IWGUxTGlYSWlqdjRjZ3hfcTN0bWRaSEVPVzdMNnVLV1FtRHZyVXVoRkxvZTVNOURLcDBpbU9qZGVseTFZY05vdDhqcW1hUlZrZkFmNVBvNFVXNUwzQ2tjVWxoNE9MZXNodkl2RVE3YllIRDRNTkVIWjViWjNsMzFhcDZHTElTQjhYMlY4TTY1MUE4MGN3OUdmczZ5aHBpTmd5R19mTU9MQS1INkNz?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g4d4b37909e71",
+    "type": "nl",
+    "src": "Cvandaag",
+    "title": "Video: PVV'er vraagt SGP-senator of kabinet Jetten op de brede of smalle weg loopt - Cvandaag",
+    "date": "2026-04-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONjZCSzlsczYxdkVkRjc1U3J5Z2RnOUJfclNKUDNOQUUzWWhBZm1wSlVvdFM5eldOQzh0d3dfYVlFTkVRZW50aDAzV2hkU2Qyak9KOVFxV1lFRVQ1Smw1NEk2TU9zaVZXc0tIV2JDMjRqUXhzMUFnM0kxNlNqeHVvOGRYOEVXRmZ5a1pIaGtGbUI5c3BIQi1mdFZ3bkdaLWpiQ3NBS25COG1EVTg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g462c720762b5",
+    "type": "nl",
+    "src": "Dagblad van het Noorden",
+    "title": "Protest in Groningen. Vakbond FNV roept op tot verzet tegen ‘asociaal afbraakbeleid kabinet-Jetten’ - Dagblad van het Noorden",
+    "date": "2026-04-17",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOU0F3aWhXdEVMZk9EVDktVzhjdHh1UEd3YzFnd2xESENDV3Nrbm9feUhYX3RPdkJmRzFaV1Z4d3dab2hFbElHcTV3a3JHN01qeHZjdGVtOS0yS0RQNkR6QktxSjN0MVgtYk9raXVmVTF6WnplZGpxS3VxeC1zdHBjRFVkN1RHTzl6M0FrYWI5NWM2OThhejF5SnlwSTdvd0VILWFwZm1MeS1uYWhIUUM0NzlqNEhwdTVZUjhzRy1oTzlwTTNlbG13cGplY1FqVExJb2c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g62d65786dd39",
+    "type": "intl",
+    "src": "Kyiv Post",
+    "title": "Ukraine, Netherlands Launch Joint Drone Deal - Kyiv Post",
+    "date": "2026-04-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9RdzdhSFlHdmhPRWVVdUxRamRGQWJ6M0kxRjJiY04zY3JHVHlrV1R2UjhYUEpDTHk2TWhxWFNqOWxjajAyZUtVVVhsSQ?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "g9903f7a6ed60",
+    "type": "intl",
+    "src": "Caliber.Az",
+    "title": "Zelenskyy, Dutch PM visit Ukrainian troops training on mine countermeasure vessel - PHOTO - Caliber.Az",
+    "date": "2026-04-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQR2dSeGdDV2EzeXN3MzhzR2hZN2NpMEt2QnR5Zkxac2hlUk80WFZYZWdpTjBWU3dWVVdCU0FzRzVpeFJQODE1dV9iXzRrcTdEeFZsMzRWakJVZ3B0TDQ4cldfYjlKZjVKZzhvME8tRVFlcXhaaFpCTXY4bHFfUnR6NXBsSzdmenM4dThnMFNVZUlGWmo4dkNMVnhYOUg5S0Q0cE1YYnI5ZUZKeEE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8c1da09a1c71",
+    "type": "intl",
+    "src": "UKR.NET",
+    "title": "Нідерланди інвестують в оборону України 482 млн євро - UKR.NET",
+    "date": "2026-04-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBVMDQ5RVpmSk9HbWZ5WjRIbHc2ZXNmTnhIZEEyZVZsRXU0aTZ3VDVrc3BpeGs4TGJjYXBRcy1TWVl3bnNBcVJNbm5aNXk0Y21ySXJDa2FYSlk4OGtZVWN2QWFhTXkwbl9m?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7fb30cd7d657",
     "type": "nl",
     "src": "Noordhollands Dagblad",
@@ -37,6 +98,348 @@
     "date": "2026-04-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9TOFNFZEpKejNtUlhWdnRrYnFVZkJpMnA3RjUyR2t1MVdFZWdMUXM3VEFQcHhhby1CYVV4VXdrdXR0TXFGZ25wS010cUR3UGdFOEFjRGNoZ0xkWUtrMnRnOGlXV2ZUMmpIeDBNRzRqckh3T2xjd3c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge53f680c134a",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Jetten niet onder indruk van Russische dreigementen aan Nederlandse dronemakers: ‘Laten ons niet intimideren’",
+    "date": "2026-04-16",
+    "sent": "n",
+    "link": "https://www.ad.nl/binnenland/jetten-niet-onder-indruk-van-russische-dreigementen-aan-nederlandse-dronemakers-laten-ons-niet-intimideren~a9f85930/"
+  },
+  {
+    "id": "gd5879c726781",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten niet onder indruk van Russische dreigementen aan Nederlandse dronemakers: ‘Laten ons niet intimideren’ - AD.nl",
+    "date": "2026-04-16",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPTVRlNDE1OEpFXzItNFROcGVfT3EwMFBSVHVrSW5xbmNENFJDd2xJS2d2eUFaWDhLMHVCQlhlOFFnT1FWa1g5VlRYRjBKdWl1a1E0aS12ZjVRekFzb2NCYk8yblZRNDZQdXBRQklRMGVzUTRydklyMTR5Rm95N1ZXekZLWXdUeE9ONi1NNndHeFJsVWlvVEtRVWFrQWJITGFvM0xTYTdwUFU5cWxKTzRzSXBxeVZ3ZlVOV1oyd1Z2MmZzRkpZNWFUTXpRYmJRSTFVdzNxakZRODd4aHZJUWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga653527a5aff",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "’Ik ga van het Witte Huis naar witte goud!’ zegt Rob Jetten tijdens aspergediner - De Telegraaf",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcUhWTnJFWUFvLXI0U0FwaUo3WEdLWndNY1VnaDZVUzVqMHM1MWRfRjk3V1QtUjFTMU1wVDNwV1R6N1VVakVXbFdpZU85NXNwVl93LXV5T2VPYWxtQW91UGZuNGhZYVhnTjItTEktM21FWE9pOGpmdFJ5RjBReFJ6YU0zQjlwSHZ0VHQ0LXhLalZUM1E4NFd2NUhlcEU5NTJwVHlnc1ZDZUowaHBRRzZmYXhhaUFjUjI4eXJjak5uUHVfR3gtZkNmVU92V0NRNVFtMHdj?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g39e5226460ed",
+    "type": "nl",
+    "src": "RTV Oost",
+    "title": "Premier Jetten niet bang na Russisch dreigement aan Hengeloos defensiebedrijf - RTV Oost",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNd1hYdEpnMC1BOFdfWWJtanI4QTMzcnFYMGVjRDdONUVkQmJjRVRORDB0dGhMVGtqblRCWDBnS0lsdW5nbk1hOTFzZl9SVE9sLXFCWlVBZVZ6S183OE0ybFJPSm5Gamc5ZkZCaGRMa05JTDJjd3NTZkFGTHVBdFVQaWhSLUNvekJ1UTZPM0FPZVZjbXl0TkNHVmJTc0FNLWpmRkFVWHdOaEloeVBNMFRPVXFR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2ba6708204c1",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Zelensky krijgt Four Freedoms Award: ‘Hij is hét symbool van de vrijheid’, zegt Jetten - De Gelderlander",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOVG1FNFpRQlRua2ptLUtVdEE0SEktbEQzcDBMRUlJT3RjUnpIamZkSHRZTjlMaGwwcVRIOE9KRm9zc1EwWm1mTXo2QXVta3VBZldSWWxVV1FabkFHbnExa2VITEhzTjEyM0RfZ3BlcnJjc1JOQjE4UGhvOUhHVjhXZHZkT0lCWWp5RHFZUjhsbFZQSzdxWnpVNGRYcFBhX09UT1o2c0l6c1QwblBEcEZMeGd4OXNuUHc1MmxIdTRXX05VWW5SQWhSTnlnaw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5c14b5a3c948",
+    "type": "nl",
+    "src": "De Ondernemer",
+    "title": "1 lasrobot vervangt 4 lassers: premier Jetten ziet hoe maakbedrijven innoveren en omgaan met personeelstekort - De Ondernemer",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQWHVDUTRkWXlfTlZ0WTV5bDdJdkttX21kS3lha29KaUJjNkh0ZmNtNVVHTzlFaElWMDRiRnlPSUhUNm1qaE4zNlVRM0wteGRmbmI0Rm84SXoxekhPU0V6NGNycUVrWGRxbl9aRzl6X0xpOE1NWEZXZWJoWXU1MVpndXJESGNmMzlqMVF6SWpzb2Ezdk91ZGQ3RjE3OVV2R2pTblowLW43RUdoV210RF8tSnpjaDluR0xJd2x6WDRhWkY2QQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g23b497b9157c",
+    "type": "nl",
+    "src": "Eva (AVROTROS)",
+    "title": "Het bezoek van Zelensky aan Nederland: \"Het is belangrijk dat Oekraïne steun krijgt\" - Eva (AVROTROS)",
+    "date": "2026-04-16",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMU91QWV4NGt3bmpXbWZIRVp6YThyMVk4MW95TGQ3VDJuc2I1NDFmdzExdGpWU3lzQTRRZW10QzFiVVk0UlMwbzBzRzB2dHhvVjYtbGlUNlhVN0tHMVlTRlYwUFFYRDlPRlhvbGtLX2hZNEg5NE5QdWhaLVE0NnYyX0t4UTVON3Z2SXJhTVV0bG1xRDkyOVk2aVhzbkdCdGRKa0RRMEF0ejBXTXl5UE5vanpKX1V3enpvemc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3717138313dd",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "De VS en mkb’ers staan niet gek ver van elkaar af, ziet Jetten in de Kop van Noord-Holland - Het Financieele Dagblad",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeEd1cUhMUkZkNm9Gd0dsb0YyYlFsVlRGbGltbmpQTjlVNEdhWjJpLXBQNVYyLXN3VFZKTG11b3lzeG1DNk9RQzNtZExuc1JTZ2xpWDlKZDlhQWp0Nnl1NDFFSjlCR0JsN1NKTGMyZTdsNW43OEFqbmpvR3V5NzVSYm51NzlfVlo2WmZUZERScFZib3ZGaWVETHhGbU1KYXhxTl83dGtQM0hPMnB3R0xybjl0aVJaazhwbVhKc1NySmRMUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g05fc45e8a2e6",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Voormalig ASML-topman Peter Wennink geeft Kabinet Jetten veelzeggend rapportcijfer - EWmagazine.nl",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUTFFa1FIWUxXN1hiOEppYTY0aFZiNmplSlloMWVkUUJrRDRScUctbVYteGttaVREclZBMVJxeDNXQlJGUmllZkFqa1hkZnc2eHlpMXMydk5MV2dFUHUxdXJ4T2UycHBoMFJUQTRYSjRRcXhkYUtjNjluTVg3NEN0Y2xMYkhUeHo1TE9YbXQweklNSVN1X1pHeDgzOTlSZng2UXNHSkNiWktUM2hfQm9wN0wyUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd80fb1f0ac52",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Wouter de Winther: impasse over asielwetten ligt in eerste plaats aan coalitie - De Telegraaf",
+    "date": "2026-04-16",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUHJBQmxhMkVqOHlRcVBxWjJ4dVhhT3N3MVZ1NG9qYVN6ZVFHUlVWRTB5a1ptcnZlV1FzWk5fU25ZdkxJT1AzcmRIV1FGLVpZNi1fVTlTaE1GVl9Vd0lRbFRTWW11Wm5GYjVoSk4wTXJWdmp0b2JPckFJOHhIQXE3bmtKTi1OVjEzeTFGUU9hSXBhVld3RHBCdFNSYUxmSFducUkxVVNGMUloMGVpaDQtLWlwQVVva0Nsalk0SDlSQ0tSOG9i?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g3ba868a0a359",
+    "type": "intl",
+    "src": "Ukrinform - Ukrainian National News Agency",
+    "title": "Zelensky meets King and Prime Minister of Netherlands - Ukrinform - Ukrainian National News Agency",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPazZRc01FODQ3Y3E1NmoxcFVObGFxYnZhNUhhaVZXd0wyMzY3NXhpU09ReFdYZ1NLS2FyLXU0bzhoaGE5XzVWT3hzaHNuTUVabTJGZ2FBaU9ISVpmeFdoRmhYWURhVFpHQVNKTmVwdndaNFkxM0trTGFrRWFoNHl1d080bXpXSlFEeENBVk9EdjVhMUluQnZWd2RNLXNXclBRVC00T3Jwa292UXhw0gGyAUFVX3lxTE9SZlpWS1Fyb0hucnN6Zy1CMVZuNTU1anJkZnZ0SGtUNUtoWDlJaHRQcnB3bmRKN3RaSVZINnVNakxjTUpWYVZEVFU0d21BRXBFQy1BQnUxN3FWMzdLa3dwX2tLQ1E0Ym5hZWEyQkZYVzhvd01EbVd3TUhwU3FZNXBRRVJqOTRQMGs2aFpJRXBzZmNUNUowblYxLXJlVUFOd05MVUt4MDcyelI2b1ZxR3hqcUE?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "g6477fb8ad75e",
+    "type": "intl",
+    "src": "Ukrinform - Ukrainian National News Agency",
+    "title": "Zelensky, Jetten honor WWII victims - Ukrinform - Ukrainian National News Agency",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORnZHRmFMLTBJVld1M3JZbE56R0d2VGlxUEdCVFpidENjM1NHQlQtczU0RlJ0ZVJzTlY1dXZkYTJYMDc4bFFJV0pDdUkxQTJ5N2ttWVAxV1I2eFIxRkRIZUVHYmEtdU5Ma0JJRWJXcVM2M1FrVzh0VHpRVG9mdmxyYVZQal9mNlNKdEpfMk1aSFFNOW_SAZgBQVVfeXFMT1g1Yzl0dGNlZVJKeFJaTVNTQU1tNXNxbUJ3SENyRE9kWHZKRHRxenV4RkltQjJIeTI5dTI0S2w3Rk04MlNEQldGLWt4d3VHTndjWWdzWE1PSV95dk40R3JiU2xOWFN6TFB5OG01bldhOTh5Z3ZnWGhqazNEUmkyNi1xN0gyQXRiUWtsNTNmUXJ4UnhEeG9TUmU?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "g97ff174df534",
+    "type": "intl",
+    "src": "Офіційне інтернет-представництво Президента України",
+    "title": "Ukraine and the Netherlands Have Already Begun Work on the Comprehensive Development of All Air Defense Capabilities – Volodymyr Zelenskyy Following His Meeting with Rob Jetten — Official website of the President of Ukraine - Офіційне інтернет-представництво Президента України",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ1BHR0ZKVzRxMVNORXpFazdpQ3lYNXJNeGNoMkdqbmtpNVR1b01Xd0FkTVVkUGxaZEpQSTUxTmtoWVhZZzhSX3JOdFNFZmhzUW45aC0yazVPMUpxaEZpam9WVDl2WXVpZmQ3Ml9xQ0dYclN5Ny1zcWNDNzJEZnpKRFRjOEp2NndUV3k3RFdweVZXR1JZSHh3R2EzVlFvXzVPZkZVb0gwQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g588a9d21fb34",
+    "type": "intl",
+    "src": "GazetteXtra",
+    "title": "Netherlands Four Freedoms Award - GazetteXtra",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVGZxaWVVQzh1OEFyWnJEeEVERUtUVlVKZnhHcXIweWNTSzREQWM3bjNZU3lYUi1nV2paa1p2ejV2XzNvcGpHV3F4dEdSdXdoLU9oWDNwOTVXSmNuVXpIM3JnQVhLVnIwV2tpeFJhUGU1U1RBYm5RZTVoSk9qaXFBYW9qWFM5d2F1SGZPd3M2Z1NMb0RRYTBldXRQeW1NTDR2MDNJS2hwU0p3NjFaZncyUzNBd3ZsWlFxXzBVUzBubWN2dGM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc41359c48b69",
+    "type": "intl",
+    "src": "Офіційне інтернет-представництво Президента України",
+    "title": "President of Ukraine and Prime Minister of the Netherlands Honored the Memory of World War II Victims - Офіційне інтернет-представництво Президента України",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQTk9paDB6RTFuWkRJaXBlTXJTUFkxYjRyMTJXYm95M2FkY2tFV29zSVlucjFMT0hnT3R0MGFSWmpEUGxNWDBETVhlZUo5T2k3NmJQcjlMWWxHclplb0kwM3M4dlpDdUNNblNjU0FwYUphVnRIcXE3N2MxeDZsRzJFSE8zOWZXZ1R6TVdveUh1RDhfOXVnVzkxR3FCUkpUZ1h1VlJsT2dn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge2d48e0c5c48",
+    "type": "intl",
+    "src": "Anadolu Ajansı",
+    "title": "Netherlands, Ukraine sign framework for joint drone production deal - Anadolu Ajansı",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOURKUE9yM3lyVkJBVHdDeWxldmJ3V09ZUG5WclRGekREZmVxRlg1bHZLVlVrR3p5WXQ3RERheHlFRkdQcUUwUlR2bU1TOG1TU1FaNm5TNFV0WnRTMmFKbS1iS3N0TUNDdHYtVkxtVjNxR2MyLTZrSDgtVTdNdUJUb20ybDdSVWgtNmZnNXNLQUlwMXBJRGlpaDY0NUQ1X1RzMU1GWHRZMW1aR0E?oc=5",
+    "flag": "🇹🇷"
+  },
+  {
+    "id": "g1ad785099929",
+    "type": "intl",
+    "src": "Ukrinform",
+    "title": "Niederlande wollen Verteidigungskooperation mit der Ukraine vertiefen und 248 Mio. Euro in die Drohnenprodukti - Ukrinform",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPYmhmMGJBLS1nZDFoYUFJT3Y1MTdDWGNOaksxdDk5QmgyTWl3M2FZYjA1LVBLVWN5a1VGVEllWWYxTVlpa1Fzc0RSa2JXbUxsd25aM0VZajY1Vjc2NzZUemVocnRKYXZTajlrcXdrZ2QyNGZQZlc2MFJUOGRueUZPNG43ZUhYMS1yRWtCLV8tdm45TDFaY05QcmZMSFBGUmozSWRMcDJ2ak15bEpnaEVlMW8xTzhONEZwdXRSeG9kOTdUc3JVN29kaE5GOGN0eUVYTEdoN3BTaG1qRTdjVTJQU1ZQTDJOdVA1RHk1bnlyMFFUaHdKckc2Qm43UEhCb2NYZ1HSAYcCQVVfeXFMT25uMFM5X0F1cGxqeHJpMTlVbVM1c000OWtwWlRKNERHVnRSNllnTlUxTG5NU2luaXFvaDdVZWRLbllYZmtqNkVYOXRtLTBERW5qRk9LQzhLVE9QVVNZNF9CREswb3dkNk5ObjBUdGMzSmRmOEJmTUV5LWFsM0RPaXhCWTBpQ0FSMXhZZTZGc1NXWnJDa1ZJSTluMURldE4tN0NpWTJXMFhaX05GR3VQcllTbGMyRm5rVEp0Yk9VLTgwTl84V1ZqLXRxZWlkQ2lwOE5pQzRSMmFhYmVGeHNYVzRMdmNPS3k2M2NidGwyalFzelREd19SRlZOMXZKcFdCLTdobXM4ZzA?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "g461e4cdb27df",
+    "type": "intl",
+    "src": "Anadolu Ajansı",
+    "title": "Zelensky arrive aux Pays-Bas pour des entretiens avec le Premier ministre néerlandais - Anadolu Ajansı",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONGkwUjEwWUE5TU1qblViYnUzQjAyTGUya2NIMHhiQ1AzbXBFaDFRRnJSQzFKQmdocThVWWVDbEpTMFkxM3ZOTUJZXzdnVUMzMzdzeEVzelVvRDhMcU5zNFJrSFdXTXRTSHk2UkFDSUQ2XzBQLVEzRXU4aS1peElRampaX0M4VEdyclRCTXJ3MFBQSF9meFFZM0xhU3EtMGwtNkw1RHNjUzh2bGdyeWpEMVFBbmNBclJCakMybjlJdlZ2dW5FVjVETg?oc=5",
+    "flag": "🇹🇷"
+  },
+  {
+    "id": "ga48d41a7f7b9",
+    "type": "intl",
+    "src": "news.liga.net",
+    "title": "Украина и Нидерланды подписали документ об оборонном сотрудничестве - news.liga.net",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOejNENVBmaXNzY0Q0azhCQkFla3NJZ3RJQVlWQVJWUDJNQjVmN3liN1Bna1ZHUzNYRWZ6Y2NjT2dwVU82ZUFqMFdJTXFJeUVkMUQ4VkdhNUk2cmlBQUU2TkxwS2dqb3Rjcy14Wllham5lWTN4eEtQQkdybG1IOGEtc1EyVFM5Q1dUazdJTUppcmd4cENFSEFPVHZKQ0NzZllxbkxCNURCa9IBrAFBVV95cUxPQnZnYURpVV9qWWl1elBRaU1qSS1CZWctUmtTZ3FEcVV0bzF2NmxFY1l2LV9WSzNNWHc2cG53amlJeDdUX3hURGRlNUZDbDllTEtLMkt2aDJEcmhKMjUtcjdBY1lhTjEybC1IYTF2WGFyREV3T0ZZWmhvMVlhVWNmOFVyeFJKMDhvRjYyc2Z4ME1Dc1d0Tlo2bU1ZMmlvQU1wV0ZRTFZ3eHZuZURY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1f77737ff741",
+    "type": "intl",
+    "src": "Obozrevatel",
+    "title": "Украина и Нидерланды согласовали совместное производство дронов: Зеленский и Йеттен рассказали подробности - Obozrevatel",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNS0Q4OTJmU3o1V09PcjNwS2xvSjlqMU8tYk1kVkRzQnlpSTc0V1YtWFlVRTFraV9pWWw1U0hpY0JZMHF1dmRodlhPNjJRTkRoUWpwMms2LUIxM1FDV0dLckhCUHFEZWhjZHhBa3pEYkpXZmhqaUJtSjR4MUl0eU9WZDA2VFhSY2NBWmY0b1k2NXI3ZEtBSV9fNGtFRU9tbDZmTFZwdDdxVUowWWJpTm1yYjVlbUpMaTZJZlVQbUNhb19ra0ptbGFZcUxpMnlsZUpONVVCTEtuOWg5RTRzZGJhLVZGQ1hsSDjSAewBQVVfeXFMUGJsWnNCZTVHOXN4RzhiRWFLbUJPaXdsRUNkUmV3U0JjVWpFSXFqcTdlMVhZbEJQNk1yMEhsTS1DOFhua2F4TFRKVktuLVJ6WEE5SEJaR2phMUJzSVJRV21rSVFTRmg3NTR1QnZQTlZHZkZUUS16clZuYnlxX0JCOFJmVkRSbE1NTURhNGZEb2c3TXJsNk1ITVVwQVl5UDc1X2thcEFJVS16ZjkzbzcyYTdIb2t5SWdQbWtRRUx3a29JeThxWWNqZFduc2dMd3RmRUItUUxJckExdC1XV196OEkxcWRiLXZWSGlJcG4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd0a473b4f6c2",
+    "type": "intl",
+    "src": "nv.ua",
+    "title": "Нидерланды инвестируют в оборону Украины 482 млн евро в рамках соглашения о партнерстве — премьер - nv.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYTZhc1NSSFNSODRubkdWeHJEY3BRLVpxRHFpVVBIOTVjanBJVktnR1Vnc05mN0pQV09pYVhvMmtWM2NWWm1xN1NjTHZ0RFF3MExPYnlnMmdzYkdLSEpCRElGaHVodU13bXNwNUlpV1MwenVDeThqT0VVRjBkdjVpOUM5ODdkWUExMW1wU2ZXZGZ0WWtjb09SNlo5ekZZZVIyVndYZW5PVVFIa0pDYjlocTlYUdIBoAFBVV95cUxPX1l1WFNneml6V3BjRXJiRWhzMW1ZLWpPNHdDaTFHUnh4bWFPZjdPX0xFNDh6QTZHZXFrcnJRT1NBSzBINmJrZFdVUFpvcHVjMjhoS3lGVm45ang5bnBvQXhOSDZ2R1d4dlJZOHpqWm9QcXpTNFg4SVlQbmRuQU9QMnk1eEtSYU5icnhDbXpka1lKTUlGUmpJQWRrYm1OMzFy?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3f8357069e34",
+    "type": "intl",
+    "src": "Obozrevatel",
+    "title": "Зеленский в Нидерландах встретился с королем и премьером страны: о чем договорились. Фото и видео - Obozrevatel",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSXo1cENxTUQyYldMRUxFYk5sdnR4TWpadDhqODA3bHpkNnRVY3ZRZmNDMEpTNHp3MXhpMjhRQVU1XzRXWE5GcldLa0EyZDZJZ0Q1YzVTNWYtQjhnLTdYTENGMEUxeTkydVNQVmdXQmFMM0ZHTWJtUVpIeXNVSHU0QUhwcHJFLVh2Ny1Ka0dKLXVGencycV9LYzJLckdSWXpqSTE0aWNtMGFRZm53Zkt1TkhOMHB6WEVuVzU5aWlBMGczaUVGSV84WkFB0gHPAUFVX3lxTE1PaEZBM0Z5ZnV0VVA5U2lfYkU1OUlEZmpzazR5ZTBlM0dMb3FwdUlqQkYxN2FxcVQ3ODl0WWozOGZuamZFT280OFBYWkhkSnd2WnFCbjZFZkwxUVY1LW5qSzdEQzVqTTdqOW01WFd4U19tMXhmNU1rZzlidUNkMmp0b2JReGRCNDhONjVTc09iLUE4SzJDMnF0ZnA0d0R5SU1Qa1U5SjVaTG1GWnViYWNpMVRjRk5UN1JVODBqUzJldHE5WFdoR01OaVZHTENwYw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1710220cfc21",
+    "type": "intl",
+    "src": "Радіо Свобода",
+    "title": "Нідерланди інвестують в оборонну співпрацю з Україною 482 млн євро – прем’єр - Радіо Свобода",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdTV4SHhuTXU2YzBjM2x1djdGQzQ3WjRmQkdrM3NWN0NSTU92LUJDWG1POFdMaVBPT0IzTXUyVHY1Q0RSbE9JYUh0YW5YUTZQdWZkLVRLd2tEUEl0MS1FNklMZE13MEZvY2RNaEdWWnRhTmNtNUd1NzYydDJqZEdwdmR4X0EyZ3dWclVQWVdrSEJVZWx4bFHSAZYBQVVfeXFMTnU1eEh4bk11NmMwYzNsdXY3RkM0N1o0ZkJHazNzVjdDUk1Pdi1CQ1htTzhXTGlQT09CM011MlR2NUNEUmxPSWFIdGFuWFE2UHVmZC1US3drRFBJdDEtRTZJTGRNdzBGb2NkTWhHVlp0YU5jbTVHdTc2MnQyamRHcHZkeF9BMmd3VnJVUFlXa0hCVWVseGxR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g867348d57267",
+    "type": "intl",
+    "src": "nv.ua",
+    "title": "Нідерланди інвестують в оборону України 482 млн євро в межах угоди про партнерство — прем'єр - nv.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUy1fSkhVT3FfNXBQZU1hdHV1VjR0RUd6VU81RW1fUVU0MTZuTkNrN3llcG8wX0F6ZjlDUlY1ZmZBTlBfcFEwWGZHS19zdUdhd1lEdmJwM1VMTE1BQzU0UllHaHRUNzNzWkFaTGhCazRReWlrazQ0ZEk5M3hhWTBoUERCbkVBSTgwR3JTUU4tWGY2Wlo1ZHdEanRrXzJNMWh4NFRiUXRqM2JvOC1fdU15cGhHNlQyUdIBowFBVV95cUxNa2NlUElCSVVHV3g0UVZaaExZN1JrMTl3LURwemVoVkxITVVXaWo0Y2hqejJaZ1BXdl9WUzM3UzJlcDNqbVFHUWZIcUNyZXZVclRnMVAzMjlDQUI3SW9WbmpVZmVSSnVzM0hPU2NIZmhTRFNIQjlGLVRjZlpVdkVXTFlha2I1TFJ5dVpOc2tWY095NVJRUFdHVVVpSjJ4Q3ZpS3Y4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g17b2deabe48f",
+    "type": "intl",
+    "src": "RFI",
+    "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - RFI",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwARBVV95cUxOWjJVVnk2UWFvanFhZ1FoM2tJMnhZTVI2UHAzTlNWRlhTRmt6QjdPR2JlNzA2S0hYUEFYM3BSQ0NLY2pHenZKMXJQaDFHMm5KX2xJLUg4X1BHeGxDNnMwcnJvaTlNRzZ3LVNPemNhcHNESjVYcXQyN2ZlTElPZkh3VmFIT0M4cWdNQmJOaFJkQmpWMldjNUZxQlVONHhEOXplT1NpMEZrbEZHTTJTSVloV2tPQkoxLURKZURkV1hfcjdjVWtWZHpaWkpsd2p4NUFzSktLbmJrbk82ekZERDJBaWRURW8xTlkxYlJWQ3hkcXoxMjZybFEyVkRFUGNrMjRhczVJZ2NqU2FJeXpzdW1BVmpNdW9ITUJrMW85NmhzcGhuMXlZcFluQ0hsdDZjQi1KYWszcS0zVmxfSm54LUF6NmVsUjlkc1VtODBhdFdwMklBaVZlNkRCbTR0NVFVNWV2dU5SYTdkWE1TalFCYXA5VWRhcnFkbEZMdFhtMzdpYVBBcEFDUXpDdW8xUzVnRlY2YWFrM1BiLUU3M1c1alVPRGpVaXQybklrLXJmek00bEE2RktucWJlOU5fV21JdEtidHV5RmNITV9JUm9JVFJnLVlrUnB0eGlNRUJTZGhfUm1XZkNIX21RbGo5TXVIMEdCbzNJR1dEaGlsRFhTRGZ1cGNwTTFRbENqdEhVZEY1LTZZUlNCQ0pTVHdtVlNQSkpJRmczNzMwWmFrYWtTQ2dUel94TENzU3A1eUFvWkJuMGc?oc=5",
+    "flag": "🇫🇷"
+  },
+  {
+    "id": "ge7f33c2969fd",
+    "type": "intl",
+    "src": "Рубрика",
+    "title": "Україна та Нідерланди почали роботу щодо комплексного розвитку всіх спроможностей захисту неба: Зеленський за результатами зустрічі з Єттеном - Рубрика",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxORl9tNUx6bWlvSm52akk1bl9GUlRiTktUMndRREZYTmVxbzhYQUxkS0I2TnlRWUtmNl9QN0gyWHZGOGlvVE9vM3N4dWI3RE85YzZtTmJ6VXRSOWxOYjdVQkVRaXJscWpFOWxObjRPSlhhVmdnQ2dqRDQxUG83dURRam13NXZIOE1TTTlrWEwyYlVfYU4yd0NqblB1UkRmQW43dmI0ZUJEWl80dWtXcmVwUDQ5UENCVi1Ma1QxdUFtUnVqZVc1aHV6T2hFZi1URXoxVWpfR1VWRFhGOUxiZFBNSVJSY05sNTNKcnZXUHcyNWI2Q1M0b3djVWJIdUdkaHpHa2NPNnFQNkM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g23bff5582047",
+    "type": "intl",
+    "src": "Суспільне | Новини",
+    "title": "Угода про партнерство та інвестиції в оборону: результати зустрічі Зеленського із прем'єром Нідерландів Єттеном - Суспільне | Новини",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSlBnNUZjLU1KRmF6Qk5xQmtoYVFXdVd3TmZ4NEk5OUctUjdYQnJrczdyQ1NPSEJyWVRDUEZhRGYwT3RPYTlGSm05bWNLNlh4Q1N3YkZNWVp3Vjh1T0hPYmdtYVBxcTQ4WTFoT1FhNExvb1E1T2lUMnVlM2F0bXJUTWI2VGtHa0NvNXRmU2pPb2ZseGZSZXpmZU9PY3VNMjk0U2tDamdMYUlyOU9zYnVCOENCd0ZvaGNuRTFNNXVzTV9feTduOUZjd2V0NFByc3NTVVpQTUJn0gHbAUFVX3lxTE5LNTNldkNzS01rU1RiSUFCNm1HZHhhakotZXQwbkp1X1ZFUGtUdlZPRE4zZXBmZURHTjFBRTBod3RnUTNkZ3JJczlqTFR1V1VyLTlzUy1nV1ZZemJrV2tYRXVmOHdVMXM1Um45V2Nod0VHa19acEVOcjJycHhqeU0zZUtLRTB5MkxseHVvYVFUMUNkc241WlpwWG9HZENjMEQ2VFluVlktcVhCcTgwU0QyYm5HZ3RJWHJfdjMtRURMN0d4TGdaRUI4N1BVelBUS0ZBcVNZU3YyRGpQOA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9f0dbe556d49",
+    "type": "intl",
+    "src": "Львівський портал",
+    "title": "Нідерланди готові інвестувати 482 млн євро у виробництво українських дронів - Львівський портал",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSkl5UnpDZXJPeTBZN1ZxSWFubXptamdXa1VsTE9XZ1R5YUY2QldQRXJxYUtTcl9OSklaekdEakFhd3R2QnphQnB1Sk42eF8taUJmNWg0QlFWZzhSQl9OMG5NZENuZGFPSnphajI0S0EwTHl4R0hHa0FhMG9YUG9KaWRJWm9hYlFVMk92X2dLd3JZeEk5Z2lMR2dKWG5uSS1fNENCSHFtOXBpbTJIV3NNbmhRemNjYlk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd052f68e42ad",
+    "type": "intl",
+    "src": "news.liga.net",
+    "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - news.liga.net",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbWN5c0ZlVjNwTEpfTnU0cnRWOFhLUk9yaWZTZm9YZjNLTDhLbnY4dFBtU3lkZzFLeVNGY2g3LXd0QnlTaWdaMktabWg1U3ktTExfc1NJamQwLWNJc25pT2k4Q0RSVGg1dXZKX0wyaTFZbTZ0VFFKQVptazRQc194NVQ3QUlaOEltdVNnZFJHWW0yWkdQaWUyNjFyVHB3ZW01ZEhacHRUNNIBrAFBVV95cUxQckVycEd3Q1VNSl93LWdjVDNaUm96Zi1YcHA5Z2JNalBjYVE5UEVIYmhfQ1lrYWd1SEFPNXlZaXJwbjNzODNxMTN3bXZ0Z3pRVFJnOWxjVjBvSGNoLUpLWWlZT1JObmZHSkdnWWVVRVhCQ01GZmJ5YnlRYkF0cXZzQTg0TGFqaGE4VG1HWGVVeTNESHllOC0xeGw4TFI5VzNERHI3enVDRDBSWWJK?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf28828239578",
+    "type": "intl",
+    "src": "Інтерфакс-Україна",
+    "title": "Нідерланди інвестують EUR482 млн в ОПК в рамках нової угоди про партнерство з Україною – прем'єр - Інтерфакс-Україна",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4tbHhtUUVnbGZCTThURkx1SFpQMDFjcmNIeW5VTnB5Mzk1YUoxQjAwWnd6Y0pNWFFZZTJBSTFFem15TnRQY2tFbnB5VUtGbWt1UHJyTmt6YlFMNngwaEIzaEtCWdIBaEFVX3lxTE1SSDFHU2pFOGdCTUxDbG9rTkdENTFaWWRGWV93ZUVYNkFtX0JKNTlkZXdHOWJDUTRrb2hUaDRoeE1YaHpnX3pILUtlaDg2ekR2dUNiS1gyeG1mMGhwRXRrWEdxMTQ5NjhL?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1321a9ca4fe1",
+    "type": "intl",
+    "src": "Obozrevatel",
+    "title": "Україна та Нідерланди погодили спільне виробництво дронів: Зеленський і Єттен розповіли подробиці - Obozrevatel",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeHQ3TXNxT2NBS3JSb2RGcHR6TmdmSUNINmlKcFpnQWJkRVBqckJ0SkllNE5ocUQyaGo5bDgzSWJ1R1lfOXdBODBnSmZkbVZCRTVpdFZSMTMwSHVVZ0VuWEtVejF0Yk82azljdDRkd3dqWV8xR1hTVTAzSFh5QnBGVkk3TkcyZjJvVElSYS1aZXRzMFVtN2M4emhYYzdnY21rMjc4WU5hS0FYbmx6Y2FLbl8ydmt1QzQydUZFR2l3eXBScVZmSkt5YUZUOE16dFFZUXJWcDFfdTk0S0NPdlV30gHkAUFVX3lxTE1XZ2Z6ZlMzd3QwRjJhZlBHYnlwYWR4M3dVM0k5UU5hTGZyUkk3bWI4Tkp5MjVvdFd5YjA4NWVhZ1YzVHJtNnJiQWhkMzhUb1pNM3ZrS1RLOUhXcmtnV1hKdmxoa3VuQWFQS1ZXSmpRRE5yVjVWRFo4ZGExWE03T3J3UnphYkl5aHBYTW1yMnFpM09mek0yTVN6cDlKOV9zeW96clgwSzlKeUtXNUdDTGFMVHpobzR0a3FmY2dyZW0xSmMyOUxtYjNIck9MTGNHa2xmVy1VVDVlWlRPMDRYQ0dzX2Ztag?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gac399b3c933c",
+    "type": "intl",
+    "src": "Головне в Україні",
+    "title": "Україна та Нідерланди домовилися про спільне виробництво дронів - Головне в Україні",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQell3dUVpTmRYUkNSUzlkRmplT0docU9leWxpMlBlV0E5MjA1SzFESzZYZ2pSMHJsUGVsM05MTG1hYXRta2x4a1ZfRjJFRjlFUE1kblFFYzV4QkN6SzZ3Y1hiYlEzbUxiTmpZUzNsaVZSd205WGllNDJVQzVZNEFXUmtCY3hDVFQycmhKZm5tUzZjV2wybmpV0gGcAUFVX3lxTE1FT1lXNi1DZm10b0RHYTBWWkxtem92SXE3T2ozUVJINGlOMXEzUjRlR1dBY1lPZGt0aGlaSlNKN19HRW9CcjJQTGhCVVBHLUtIbEZNOEQwVWdYWlhCcU9WXzZRbUN4R2dCb0U3UklJUkotX1lONVRtZTc2MC1GTnNndlQ5VnJQQzBiQy1hTzZyZEh5d3hzMlFiREhzeg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gae8b4e001816",
+    "type": "intl",
+    "src": "fakty.com.ua",
+    "title": "Україна отримала від Нідерландів корабель для посилення бойового флоту – Єттен - fakty.com.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXNXSU00Y0NNeGxHaUpaSGlTTFhmRGZpOWg4ckEyWFVYX1JCaTdpZXhkeW1tcVNfcEprcUVhbDQxMHQ5d0NWVlNhUDExc1hNdnlTU19qZTRPM3dNb1pLRkNWbXVhWE54NThFMlNSNFBYTndHbUJsakw0OWR3MTVNSkZ0OHpJWXVJLXNxNk5Rdnl1d0NKaDlsTEt2V2trTmctSG5ZcEZGNGVRZ0YybkQ4WE9ENXREMkcwM3ZwdG9WRW5Cckx40gHKAUFVX3lxTFBYSGY0eUNmN0J2R0pYREoxVVpiY05oWGdxV2ZHSTlNaUYySFI2MGo2M2RBcTVfOEpBMVNscUdENjFJZTJuTnBPODNFTm1TSHhUM0h4ZDlMczY3RU9NQ19TZVVLdGtRN1dKSUlrVFBhWHFVVG5lU1JrQjZacm42bzU4QUxyVDlCYk11VlFoVlBsZjgyZ3hFTEFYd0ZuZy1oQXc3NG9ad2JwSjg2VmdmRXp4VWpsNm5EcTB5bXl6ZEhmNVl2YnN1SnBIakE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gba0abece7f77",
+    "type": "intl",
+    "src": "nv.ua",
+    "title": "Зеленський заявив, що Нідерланди передадуть влітку 2026-го Україні протимінний корабель і підготують моряків - nv.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSGFHNTRjeFVINzBDZUV2RTNROTY0eVZKTGFrcE9ybkE5U0VhbHExZktHNUFlVFpwbEFxN0Z2SlZ6R1FOMzYyelI4ejNBanlZN0RRc3VUVXktWTBfaFprN3Nrb3ZYTEotZDFjWVUxc3N2WWVRZy1GeURaZ0lrRlNxbXN3S0N2ZmtDVHQxTzVqVWNhaVk3bzk4di1LTVBtczJ6RXJHQjRPbko1dkJZd0tTOXdxbnpFZ0Z5RVplWUJtRkQ4d9IBrwFBVV95cUxQWGgxZ0hDX1h5YXphTHRiVjJ6bE51akh1SF9PclBTWWgwb2FoUjczMHpOVHVHdHk3clhLYkhqelNlZ1d2ckFoLXo2MkFlQlY5azVtZ24zR0NYZ29ENjMwV0p3ejNNdTdILXVMbVBQdVVnWmxlOXc4R2VHbEJwV3VadDk3RnZCRjhDSk15RHNhakItOUdoUkJLemdCTGZtX2p1aUhwbmhFbGhtdXpOb0N3?oc=5",
     "flag": "🌍"
   },
   {
@@ -260,6 +663,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNGVHeFdVVWp1dHd0UnU0ZlA1Vk5XbTZYX1plY1AydGdaN3VNcU1FZWZnVkZ0VHdBU2NETXVzMUgzZ2xadS1IMDJwLVY3R0xWVTdkdDRVaHB1Z0hfWEdxNzlPdzBYbnBtNlZPNkdoLVVpU2JQUl9vTl9qeC1jR1lvMWYzVTRjQzBWcTRuaXFDOGVrVk1waGdwMGZ3eW5MZzhfbjRfdkxHV0tpRWM?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gf70372df7a25",
+    "type": "nl",
+    "src": "pzc.nl",
+    "title": "Jetten bezoekt Starmer: wijst Rolls-Royce de weg naar onafhankelijkheid van Trump en Poetin? - pzc.nl",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZDBVYm96TkgzdThKbHJUYkRTM0I5bWJkc0NYR1UtcThlbGdkSUpoRWlBMXpobHJWeHZiRlNqS3dFRWlMOGZjWXVaNE5adHlsc3lnd01CcnYzXy1Nb2JXY29OdUdSbnZ4QTRYeWJJUzg5UFFHdkJoeFFPaDNhY05pb294VmxEYXlIMVdYMXpxQkRrQk8wd1NiTnhtdTRNYlJKaDRjVGkzNm5SWEowZFlpcW5GN1RMbmhVOEgwY2U4OWdhTGYwU1MzRFp5Zw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g3af8a8ce8893",
@@ -926,6 +1339,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gad103f8a49fb",
+    "type": "nl",
+    "src": "Dagblad010",
+    "title": "Raad van State kritisch op financiële keuzes kabinet-Jetten - Dagblad010",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYWNnSmxhSi1XTnNZV1hTUy1ISTA3WHVERl9kemNXQ2x5dlJkd0RaMURuYVdUZkNyY2FTdnFQYUxRZjJRUllsTks5bUUtU0RaMGtIV20yc2VuWmZQdk00UDBEVDVRaFZDQ1hsNTdkcUpLaGNNVi1kNzZCQU1PZWxlRzd5MmxCSV9SbGhDakdadHBVZGt1?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g691be09de075",
     "type": "nl",
     "src": "bnr.nl",
@@ -1046,6 +1469,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNkNpbDRQbjVYWTVCZ1BqUkJIZ29kU3lCVzFjUG5Sbk5WM2R2bUlYSC1lUFZ5dWJ3bV9DbVl4VGc3S21JVFg3TU9sY2Z6NlJTNTVoSWVBQXBONWJLcGZ3QU4tdUt1eEY4U3pxRE03TDlfWnJUYm44NHo0MHJhNzhuazVJdG9GaWc3QXlZZ1BaRDI0RlRXQU13OFNhaHcybUJWTFdXaGJqX1g1ZlVyRjdvSlVnWXF4VHV2cmM1TGg3ZzB1VEZG?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gb0c491a82ce3",
+    "type": "intl",
+    "src": "The New York Times",
+    "title": "La visita de los reyes de los Países Bajos a la Casa Blanca de Trump crea polémica - The New York Times",
+    "date": "2026-04-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQzVVaV9Xa1FjQlp5U0J2eVRaaEpwZUxTSlNBeEU4QVUxTElFeWlsVk1mTzNsV2pOVU5YNmYxMURZMFVJd010TU9TOVhMVVNhaVdtaTN5aGUxTnZ3UWJteXlWMzBVUFNJVHlJNWR1RTA4eVNtaU5YWm5ha09IWkEya1ZpNDRoaS1yRGlZX0c5Y1NzOWdhVDl2UkZNQQ?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "gd215d9327866",
@@ -7304,6 +7737,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g64bd827febad",
+    "type": "intl",
+    "src": "Українська правда",
+    "title": "Премьер-министр Нидерландов прибыл с первым визитом в Киев - Українська правда",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Gal80X3VJbTlySElPb1BjaThTS3pVSUUtSVZ2WFZMMTRpWHVLRjJ5RU14N21LbWhBVlFKR2JoSW5TQ0ZzZm1mcDVDWGluZVNxdXBkUFR2UTc2dEtfcGgwM2dWdm7SAXBBVV95cUxOZ2lkYlRNZlEyNWZ0NWhQY08ybVF5bDlobTV6NnFUb1ZHT0dCM2UwbW5XZUs2UDZTMzlWYTNRQnJVR0NSZXhUR1VLVEpuTGh2VnNleXdXb1NUakltcXZ3ZDhONDBCMmVkcUdORmRWcnV6?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge961dea86589",
     "type": "intl",
     "src": "politico.eu",
@@ -9133,6 +9576,26 @@
     "date": "2026-02-24",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcngtYkZHNnpQZlNjZy1DMUk2dVM3Um8tUmVLcFdNWlFhNlJVUlY0M21hdGxKT0lNbGhZR29ZU0ZLV0JUOThWQmJ3enAzdUpzWHc1V0xOZjF6MmdJNnV0X0FkTnZmVlJ6QjN1bkF1M1VMM2Y5X0Jta3UwakJmNl8tZG1KNlJfV25kTXBkUWFSd0FUWGE0V182VG1DZFgyWElxTjhPMVpFbGptYkNaZllCd0c4X200anNlX1dTTHpZOXk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga3ae57191ad3",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "AOW-plan kabinet gekraakt: bonden kondigen acties aan als het niet van tafel gaat | Nieuws - AD.nl",
+    "date": "2026-02-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVjljTC1jY3k4aWdIM193c2c2SnBhVHZGak5zSGFTTlFia0pfc0tldnBMRHFmQ2ZubmRxSGREVDJ2ODNYQm0wV0ZFbGowbXNSREpoTjJnRUtRUjdnMVBPeG9sUVJfdTNrRmhWNDdpRXg4QjMwanhqMkp4eUd0NHBmeFZKUDBCMzFQOFgyTjctbS16WllLRWtRcWVTdHhYbXhYYy1lUnBzQ2hTY0E5dm85WmJvb1RxVC1O?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc90dd95b0f1f",
+    "type": "intl",
+    "src": "Turkish Minute",
+    "title": "Turkey-born Dilan Yeşilgöz takes charge of defense as new Dutch cabinet takes office - Turkish Minute",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPTHotcDFZVjRtVE1XOTVVeHcwNG8xbVJWQWFJR1kwNm9GQmNvZWszMlhBZ3BHMmZXaHdmTlRabnk3M3BuZG9yNjBPWlFFeVVzdU1mQXM3V1JYX003bDBlY18zY3FBS3hVSGViVlp0VUVfMF9fb3JTeXlPaDZDaGxGZ01hTW5pS1FyeXlfVDhEUUtFWHNHa1RTYWt4QVZBN0s1cFBSMzl5LXE0UHJGdXFmNkp2RjNGQU9pZTVCTk4zSdIBxAFBVV95cUxOWGVMNkYxbWdoRnZXYThXazhmWmJHOGVyYl9yRno4OWQyYnBkSU44V2x0eWZLY2NuWTVablVDVWFDQkZqTmdhWi03M0ZXMmQ4YkZ2MzZ6cFVLMDhJTzFvVkc3am1DWmp2UDFWVC1tOFNVUEREclNOQzBXUTZaOURDUHltc21rSjgyZnFkNWdoS1RNazBmMFZKTXZWa0dESUY3OThBREkwZ3YwMTN6UURyZkZGaVZ4WnozSVkxZXVSOE1lS0Ux?oc=5",
     "flag": "🌍"
   },
   {
@@ -11433,6 +11896,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNQkcwLWx0cG9lZUZSaktYRlJLeFN4Yk96ck5WNmFEQU5Yb0pwUUM1QW5GRmN1YzJYY3dHSlVSeVh4ZllYVEJLcks4c2VYMjdLRm9BYW1HbHJqOGtoV0pkVDBpcXEwMmJuaFRLbm9FZklKbzRyY3F6SFFmeUdKSzRLX21xZGY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfc94556d8db3",
+    "type": "intl",
+    "src": "Norwalk Hour",
+    "title": "New era of Dutch politics opens as Jetten is sworn in to lead minority coalition - Norwalk Hour",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOOHc3cjZ0bzJPVUNNOWZWQ2NJdWV1R3RoMzJubHRLd2VEUVd1SERrUGY4Z25NVndUUXRJbGs3NGpFWUtsSjBLdk55bmhRX0Q5cllIWEdRTVRsRl9hVy10QlA5WFVFWUZuOENsS1lDemxBcU9DeDlGRWpfZWFJT3JyaC1ndFFCNDVwQTkzZDA2RmRaODhQblRoNVJZelRXR3FJOFFEaGZwRQ?oc=5",
     "flag": "🌍"
   }
 ]
