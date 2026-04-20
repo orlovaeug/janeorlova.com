@@ -87,6 +87,45 @@ body{background:#fff!important;color:#111!important;font-family:'JetBrains Mono'
 .sea-bg{fill:#c8d8e8;}
 .sea-lines{stroke:#b0c4d8;stroke-width:.6;fill:none;opacity:.6;}
 
+/* ── CARTOGRAM (Fryslân) ── */
+#cartoView{display:none;background:#f5f2ec;overflow-y:auto;height:calc(100svh - 152px);}
+.carto-inner{padding:0;}
+.carto-hdr{padding:10px 16px 8px;border-bottom:1px solid #d0ccc2;display:flex;justify-content:space-between;align-items:center;}
+.carto-hdr-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888;}
+.carto-hdr-sub{font-size:9px;color:#888;letter-spacing:.06em;}
+.carto-rows{padding:12px 14px;display:flex;flex-direction:column;gap:3px;}
+.carto-row{display:flex;gap:3px;}
+.carto-cell{position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:5px 3px 6px;transition:filter .12s;overflow:hidden;}
+.carto-cell:hover{filter:brightness(1.1);}
+.carto-cell.sel{outline:2.5px solid #111;outline-offset:-2px;filter:brightness(1.12);}
+.carto-ann-badge{position:absolute;top:5px;left:50%;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:500;color:#111;}
+.carto-cn{font-size:9px;font-weight:500;color:#fff;text-align:center;line-height:1.2;text-shadow:0 1px 2px rgba(0,0,0,.4);}
+.carto-cs{font-size:7px;color:rgba(255,255,255,.78);text-align:center;margin-top:1px;text-shadow:0 1px 2px rgba(0,0,0,.35);}
+.carto-annbar{padding:7px 14px;border-top:1px solid #d0ccc2;display:flex;gap:14px;flex-wrap:wrap;}
+.carto-ann-item{display:flex;align-items:center;gap:5px;font-size:9px;color:#444;white-space:nowrap;}
+.carto-ann-num{width:15px;height:15px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:500;color:#fff;flex-shrink:0;}
+.carto-leg{padding:8px 14px 10px;display:flex;flex-wrap:wrap;gap:5px 14px;border-top:1px solid #d0ccc2;}
+.carto-leg-item{display:flex;align-items:center;gap:4px;font-size:9px;color:#444;}
+.carto-leg-sq{width:9px;height:9px;flex-shrink:0;}
+.carto-panel{display:none;background:#fff;border-top:2px solid #111;padding:14px 16px;}
+.carto-panel.open{display:block;}
+.carto-panel-close{float:right;background:none;border:none;font-size:18px;cursor:pointer;color:#888;line-height:1;}
+.carto-panel-close:hover{color:#111;}
+.carto-pname{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;color:#111;margin-bottom:2px;}
+.carto-pmeta{font-size:9px;color:#888;letter-spacing:.06em;margin-bottom:11px;}
+.carto-pwin{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;margin-bottom:11px;border-left:4px solid;}
+.carto-pwlbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1px;}
+.carto-pwnm{font-family:‘Playfair Display’,serif;font-size:13px;font-weight:700;}
+.carto-pwpct{font-family:‘Playfair Display’,serif;font-size:26px;font-weight:900;}
+.carto-popk{padding:8px 10px;background:#f7f5f0;border-left:3px solid #888;margin-bottom:11px;font-size:9px;}
+.carto-ptitle{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #d0ccc2;}
+.carto-pr{display:flex;align-items:center;gap:5px;margin-bottom:4px;}
+.carto-prk{font-size:9px;color:#888;width:13px;flex-shrink:0;}
+.carto-prn{font-size:9px;font-weight:500;width:128px;flex-shrink:0;}
+.carto-prb{flex:1;background:#eae6de;height:6px;}
+.carto-prf{height:100%;}
+.carto-prp{font-family:‘Playfair Display’,serif;font-size:11px;font-weight:700;width:32px;text-align:right;flex-shrink:0;}
+
 #listView{display:none;background:#fff!important;padding:18px;}
 .li-intro{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:13px;padding-bottom:7px;border-bottom:1px solid #d0ccc2;}
 table.wt{width:100%;border-collapse:collapse;min-width:480px;}
@@ -170,6 +209,25 @@ footer{border-top:2px solid #111;padding:7px 16px;display:flex;justify-content:s
   <div class="overlay" id="overlay">
     <div class="ov-hd"><div class="ov-ttl" id="ovTtl">–</div><button class="ov-cls" onclick="closeOv()">✕</button></div>
     <div class="ov-bd" id="ovBd"></div>
+  </div>
+</div>
+
+<div id="cartoView">
+  <div class="carto-inner">
+    <div class="carto-hdr">
+      <div>
+        <div class="carto-hdr-lbl">Winnaar per gemeente — Fryslân GR2026</div>
+        <div class="carto-hdr-sub">Vlakgrootte ~ aantal geldige stemmen · klik voor details</div>
+      </div>
+      <div style="font-size:9px;color:#888;text-align:right;letter-spacing:.06em">GEMEENTE<br>FRYSLÂN<br>18 MRT 2026</div>
+    </div>
+    <div class="carto-rows" id="cartoRows"></div>
+    <div class="carto-annbar" id="cartoAnnbar"></div>
+    <div class="carto-leg" id="cartoLeg"></div>
+    <div class="carto-panel" id="cartoPanel">
+      <button class="carto-panel-close" onclick="closeCartoPanel()">✕</button>
+      <div id="cartoPanelContent"></div>
+    </div>
   </div>
 </div>
 
@@ -395,7 +453,7 @@ CITIES.amstelveen={name:'Amstelveen',subtitle:'per stadsdeel',meta:'36.284 geldi
 CITIES.diemen={name:'Diemen',subtitle:'per wijk',meta:'11.547 geldige stemmen\n47,0% opkomst\n18 maart 2026',avgOpk:47.0,noDemo:true,seats:[{n:12,l:'GL/PvdA'},{n:7,l:'D66'},{n:5,l:'VVD'},{n:5,l:'Onafh. Diemen'},{n:4,l:'Ons Diemen'},{n:3,l:'Ouderenpartij'}],footer:['Bron: Gemeente Diemen · GR2026','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'ond',name:'Ons Diemen',color:'#c0392b'},{id:'d66',name:'D66',color:'#00883c'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'opd',name:'Ouderenpartij',color:'#887000'},{id:'odi',name:'Onafh. Diemen',color:'#555555'}],wijken:[{id:'Diemen-Noord',lbl:[330,130],gel:4600,opk:48,pv:{glpvda:1656,ond:460,d66:920,vvd:644,opd:322,odi:598}},{id:'Diemen-Zuid',lbl:[340,360],gel:3800,opk:46,pv:{glpvda:1330,ond:304,d66:836,vvd:608,opd:228,odi:494}},{id:'Diemen-Centrum',lbl:[348,232],gel:2200,opk:46,pv:{glpvda:594,ond:308,d66:352,vvd:198,opd:242,odi:374}},{id:'Bergwijkpark',lbl:[570,230],gel:947,opk:46,pv:{glpvda:289,ond:93,d66:170,vvd:142,opd:75,odi:132}}],svgClip:'152,82 268,52 390,46 498,62 574,102 620,158 636,226 622,296 586,354 532,398 462,424 382,432 302,420 230,392 170,350 126,296 108,232 116,166',svgPolygons:[{id:'Diemen-Noord',pts:'152,82 268,52 390,46 498,62 540,130 500,180 420,200 340,194 260,180 196,150 152,110'},{id:'Diemen-Centrum',pts:'196,150 260,180 340,194 420,200 500,180 520,240 480,280 400,296 320,288 248,262 200,220'},{id:'Bergwijkpark',pts:'540,130 498,62 574,102 620,158 636,226 622,296 580,320 530,310 500,260 520,240 500,180'},{id:'Diemen-Zuid',pts:'200,220 248,262 320,288 400,296 480,280 530,310 580,320 586,354 532,398 462,424 382,432 302,420 230,392 170,350 126,296 108,232'}],demo:[],demoFoot:''};
 
 // ─────────────────────────────────────────────────────────────────────────────
-// FRYSLÂN — per gemeente
+// FRYSLÂN — per gemeente  (data: cartogram GR2026, 18 maart 2026)
 // ─────────────────────────────────────────────────────────────────────────────
 CITIES.fryslan = {
   name: 'Fryslân',
@@ -407,85 +465,84 @@ CITIES.fryslan = {
     {n:9,l:'GROENLINKS/PvdA'},{n:9,l:'CDA'},{n:7,l:'FNP'},
     {n:5,l:'D66'},{n:4,l:'VVD'},{n:'15×lokaal',l:'Overig'}
   ],
-  footer: ['Bron: Gemeenten Fryslân · GR2026 · Voorlopige uitslag · 18 maart 2026','Geaggregeerd per gemeente · eilanden, Heerenveen, Leeuwarden e.a.'],
+  footer: [
+    'Bron: Gemeenten Fryslân · GR2026 · Voorlopige uitslag · 18 maart 2026',
+    'Geaggregeerd per gemeente · 18 gemeenten incl. eilanden'
+  ],
   parties: [
-    {id:'fnp',   name:'FNP',                          color:'#006633'},
-    {id:'glpvda',name:'GROENLINKS / PvdA',             color:'#2d8a2d'},
-    {id:'cda',   name:'CDA',                           color:'#1a7a42'},
-    {id:'vvd',   name:'VVD',                           color:'#d44000'},
-    {id:'d66',   name:'D66',                           color:'#009040'},
-    {id:'forum', name:'Forum voor Democratie',         color:'#781818'},
-    {id:'cu',    name:'ChristenUnie',                  color:'#005898'},
-    {id:'pvv',   name:'PVV',                           color:'#002878'},
-    {id:'bbb',   name:'BBB',                           color:'#8a7000'},
-    {id:'sgp',   name:'SGP',                           color:'#003888'},
-    {id:'sp',    name:'SP',                            color:'#aa0000'},
-    {id:'pvdd',  name:'Partij voor de Dieren',         color:'#006830'},
-    {id:'j21',   name:'JA21',                          color:'#1a3a6a'},
-    {id:'hvl',   name:'Heerenveen Lokaal',             color:'#c05020'},
-    {id:'opb',   name:'Opsterlands Belang',            color:'#8b4513'},
-    {id:'gbdan', name:'Gemeentebelangen Dantumadiel',  color:'#607040'},
-    {id:'sam',   name:'SAM Waadhoeke',                 color:'#b05030'},
-    {id:'wsb',   name:'Weststellingwerfs Belang',      color:'#506070'},
-    {id:'vpo',   name:'Vrije Partij Ooststellingwerf', color:'#708040'},
-    {id:'ama',   name:'AmelandEén',                    color:'#4a6080'},
-    {id:'lt',    name:'Leefbaar Terschelling',         color:'#7a3060'},
-    {id:'nlv',   name:'Nieuw Liberaal Vlieland',       color:'#4070a0'},
-    {id:'sl',    name:'Sociaal Links',                 color:'#aa2255'},
-    {id:'bft',   name:'Better Foar Tytsjerksteradiel', color:'#557755'},
-    {id:'smb',   name:'Smallingerlands Belang',        color:'#708090'},
-    {id:'gbwdk', name:'Gemeentebelangen',              color:'#5a7050'},
-    {id:'ob',    name:'Ons Belang',                    color:'#888855'},
-    {id:'lnf',   name:'Liberaal Noardeast-Fryslân',    color:'#3a6890'},
-    {id:'gb058', name:'GB058',                         color:'#604080'},
-    {id:'pvdagl',name:'PvdA-GroenLinks',               color:'#2a7a2a'},
-    {id:'hw',    name:'Hart voor Weststellingwerf',    color:'#607858'},
-    {id:'elp',   name:'Eérste Lokale Partij',          color:'#806040'},
-    {id:'osb',   name:'OoststellingwerfsBelang',       color:'#607848'},
-    {id:'snf',   name:'S!N-Sociaal in Noardeast',      color:'#904060'},
-    {id:'gbn',   name:'Gemeentebelangen Noardeast',    color:'#508060'},
-    {id:'frisse',name:'Frisse Wind 21',                color:'#406080'},
-    {id:'hlb',   name:'Harlinger Belang',              color:'#806840'},
+    {id:'glpvda',name:'GROENLINKS/PvdA',            color:'#2d8a2d'},
+    {id:'cda',   name:'CDA',                         color:'#1a7a42'},
+    {id:'fnp',   name:'FNP',                         color:'#006633'},
+    {id:'vvd',   name:'VVD',                         color:'#d44000'},
+    {id:'d66',   name:'D66',                         color:'#009040'},
+    {id:'forum', name:'FvD',                         color:'#781818'},
+    {id:'cu',    name:'ChristenUnie',                color:'#005898'},
+    {id:'pvv',   name:'PVV',                         color:'#002878'},
+    {id:'bbb',   name:'BBB',                         color:'#8a7000'},
+    {id:'sgp',   name:'SGP',                         color:'#003888'},
+    {id:'sp',    name:'SP',                          color:'#aa0000'},
+    {id:'gb058', name:'GB058',                       color:'#604080'},
+    {id:'hvl',   name:'Heerenveen Lokaal',           color:'#c05020'},
+    {id:'opb',   name:'Opsterlands Belang',          color:'#8b4513'},
+    {id:'gbdan', name:'Gem.bel. Dantumadiel',        color:'#607040'},
+    {id:'sam',   name:'SAM Waadhoeke',               color:'#b05030'},
+    {id:'wsb',   name:'Weststellingwerfs Belang',    color:'#506070'},
+    {id:'vpo',   name:'Vrije Partij Oost.',          color:'#708040'},
+    {id:'ama',   name:'AmelandEén',                  color:'#4a6080'},
+    {id:'lt',    name:'Leefbaar Terschelling',       color:'#7a3060'},
+    {id:'nlv',   name:'Nieuw Lib. Vlieland',         color:'#4070a0'},
+    {id:'sl',    name:'Sociaal Links',               color:'#aa2255'},
+    {id:'bft',   name:'Better Foar Tytsjerk.',       color:'#557755'},
+    {id:'smb',   name:'Smallingerlands Belang',      color:'#708090'},
+    {id:'gbwdk', name:'Gemeentebelangen',            color:'#5a7050'},
+    {id:'ob',    name:'Ons Belang',                  color:'#888855'},
+    {id:'lnf',   name:'Lib. Noardeast-Fryslân',      color:'#3a6890'},
+    {id:'pvdagl',name:'PvdA-GroenLinks',             color:'#2a7a2a'},
+    {id:'hw',    name:'Hart v. Weststellingwerf',    color:'#607858'},
+    {id:'elp',   name:'Eérste Lokale Partij',        color:'#806040'},
+    {id:'osb',   name:'Oost.werfsBelang',            color:'#607848'},
+    {id:'snf',   name:'S!N Sociaal',                 color:'#904060'},
+    {id:'gbn',   name:'Gem.bel. Noardeast',          color:'#508060'},
+    {id:'hlb',   name:'Harlinger Belang',            color:'#806840'},
   ],
   wijken: [
     {id:'Leeuwarden',         lbl:[368,240], gel:53761, opk:57.0,
-     pv:{glpvda:12030,d66:6337,vvd:5610,cda:5228,gb058:4932,fnp:4890,forum:4415,j21:2595,pvdd:2304,cu:2238,sp:1819,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{glpvda:12042,d66:6344,vvd:5591,cda:5215,gb058:4946,fnp:4892,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
     {id:'Súdwest-Fryslân',    lbl:[188,432], gel:41701, opk:53.0,
-     pv:{cda:9433,glpvda:6989,fnp:4794,forum:3769,vvd:3767,d66:3209,bbb:2754,gbwdk:2589,pvv:2166,cu:1210,sp:1140,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{cda:9424,glpvda:7006,fnp:4796,forum:3753,vvd:3753,d66:3211,bbb:0,gbwdk:0,pvv:0,cu:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0,sgp:0}},
     {id:'Smallingerland',     lbl:[448,318], gel:23463, opk:58.0,
-     pv:{cda:3553,glpvda:3493,smb:3111,elp:2950,cu:2472,vvd:2320,fnp:1866,d66:1645,sp:1291,sgp:762,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,j21:0,pvdd:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,forum:0,osb:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{cda:3543,glpvda:3496,smb:3121,elp:2956,cu:2464,vvd:2323,fnp:0,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,osb:0,snf:0,gbn:0,hlb:0}},
     {id:'Heerenveen',         lbl:[468,432], gel:23720, opk:56.0,
-     pv:{hvl:4343,glpvda:4210,cda:2818,d66:2476,fnp:2466,forum:2238,vvd:2138,frisse:1496,cu:879,sp:723,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,j21:0,pvdd:0,sgp:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
-    {id:'Noardeast-Fryslân',  lbl:[548,180], gel:19634, opk:54.0,
-     pv:{cda:3522,fnp:3205,lnf:2844,snf:2789,cu:1748,gbn:1558,bbb:1463,vvd:1333,pvdagl:1222,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,d66:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,sp:0,hw:0,elp:0,osb:0,frisse:0,hlb:0,glpvda:0}},
-    {id:'Waadhoeke',          lbl:[205,222], gel:20169, opk:56.0,
-     pv:{sam:4932,gbwdk:3943,cda:3712,vvd:2887,bbb:2150,fnp:1811,cu:734,lt:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,d66:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gb058:0,ob:0,lnf:0,pvdagl:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Opsterland',         lbl:[330,440], gel:14282, opk:55.0,
-     pv:{opb:5207,fnp:2318,glpvda:1865,cda:1394,cu:1208,vvd:1060,d66:832,sp:398,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Tytsjerksteradiel',  lbl:[468,250], gel:15614, opk:57.0,
-     pv:{cda:3234,bft:3092,fnp:2545,glpvda:2450,vvd:2188,cu:1211,d66:894,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Achtkarspelen',      lbl:[523,228], gel:11232, opk:52.0,
-     pv:{fnp:2462,cda:2410,forum:1542,glpvda:1424,cu:1356,pvv:1161,gbdan:908,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,bbb:0,d66:0,vvd:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{hvl:4341,glpvda:4198,cda:2823,d66:2467,fnp:2467,forum:2230,vvd:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
     {id:'De Fryske Marren',   lbl:[285,378], gel:25397, opk:53.0,
-     pv:{fnp:5125,cda:5123,glpvda:3380,forum:2968,vvd:2127,d66:1661,cu:923,bbb:931,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Dantumadiel',        lbl:[544,228], gel:9158, opk:52.0,
-     pv:{gbdan:2136,sl:1930,cda:1813,cu:982,bbb:860,sgp:723,fnp:645,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,d66:0,vvd:0,forum:0,j21:0,pvdd:0,hvl:0,opb:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{fnp:5130,cda:5130,glpvda:3378,forum:2971,vvd:2133,d66:1651,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Noardeast-Fryslân',  lbl:[548,180], gel:19634, opk:54.0,
+     pv:{cda:3514,fnp:3200,lnf:2847,snf:2788,cu:1747,gbn:1551,glpvda:0,vvd:0,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,hlb:0}},
+    {id:'Waadhoeke',          lbl:[205,222], gel:20169, opk:56.0,
+     pv:{sam:4941,gbwdk:3953,cda:3711,vvd:2884,bbb:2158,fnp:1815,glpvda:0,d66:0,forum:0,cu:0,pvv:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Opsterland',         lbl:[330,440], gel:14282, opk:55.0,
+     pv:{opb:5213,fnp:2314,glpvda:1871,cda:1400,cu:1214,vvd:1057,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Tytsjerksteradiel',  lbl:[468,250], gel:15614, opk:57.0,
+     pv:{cda:3232,bft:3092,fnp:2545,glpvda:2451,vvd:2186,cu:1218,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Achtkarspelen',      lbl:[523,228], gel:11232, opk:52.0,
+     pv:{fnp:2460,cda:2415,forum:1539,glpvda:1426,cu:1359,pvv:1157,vvd:0,d66:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Dantumadiel',        lbl:[544,228], gel:9158,  opk:52.0,
+     pv:{gbdan:2134,sl:1932,cda:1813,cu:980,bbb:861,sgp:723,fnp:0,glpvda:0,vvd:0,d66:0,forum:0,pvv:0,sp:0,hvl:0,opb:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
     {id:'Weststellingwerf',   lbl:[358,512], gel:12442, opk:52.0,
-     pv:{wsb:2005,vvd:1945,hw:1748,cda:1646,forum:1578,d66:1141,sp:1085,bbb:635,lt:0,sam:0,vpo:0,ama:0,nlv:0,pvv:0,cu:0,fnp:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,glpvda:0,elp:0,osb:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{wsb:2003,vvd:1941,hw:1754,cda:1642,forum:1580,d66:1145,fnp:0,glpvda:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
     {id:'Ooststellingwerf',   lbl:[543,378], gel:11426, opk:53.0,
-     pv:{vpo:2122,glpvda:2076,osb:1971,vvd:1867,cda:1437,d66:746,cu:705,lt:0,sam:0,wsb:0,ama:0,nlv:0,pvv:0,bbb:0,fnp:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Harlingen',          lbl:[142,202], gel:6669, opk:55.0,
-     pv:{cda:1744,pvdagl:1343,hlb:1029,vvd:900,d66:448,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,fnp:0,cu:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0}},
-    {id:'Ameland',            lbl:[352,104], gel:2198, opk:62.0,
-     pv:{ama:662,cda:592,vvd:150,lt:0,sam:0,wsb:0,vpo:0,nlv:0,pvv:0,bbb:0,fnp:0,d66:0,cu:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,pvdagl:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Terschelling',       lbl:[148,104], gel:2805, opk:60.0,
-     pv:{lt:612,pvdagl:394,cda:266,vvd:484,lt2:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,fnp:0,d66:0,cu:0,forum:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,ob:0,lnf:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Schiermonnikoog',    lbl:[462,64], gel:648, opk:65.0,
-     pv:{ob:242,lt:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,pvv:0,bbb:0,fnp:0,d66:0,cu:0,forum:0,vvd:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,cda:0,lnf:0,pvdagl:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
-    {id:'Vlieland',           lbl:[74,142], gel:653, opk:58.0,
-     pv:{nlv:239,ob:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,pvv:0,bbb:0,fnp:0,d66:0,cu:0,forum:0,vvd:0,j21:0,pvdd:0,sgp:0,hvl:0,opb:0,gbdan:0,sl:0,bft:0,smb:0,gbwdk:0,gb058:0,cda:0,lnf:0,pvdagl:0,glpvda:0,hw:0,elp:0,osb:0,sp:0,snf:0,gbn:0,frisse:0,hlb:0}},
+     pv:{vpo:2125,glpvda:2080,osb:1977,vvd:1862,cda:1440,d66:743,fnp:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,snf:0,gbn:0,hlb:0}},
+    {id:'Harlingen',          lbl:[142,202], gel:6669,  opk:55.0,
+     pv:{cda:1747,pvdagl:1340,hlb:1027,vvd:900,d66:447,fnp:0,glpvda:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,hw:0,elp:0,osb:0,snf:0,gbn:0}},
+    {id:'Ameland',            lbl:[352,104], gel:2198,  opk:62.0,
+     pv:{ama:662,cda:591,vvd:149,fnp:0,glpvda:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Terschelling',       lbl:[148,104], gel:2805,  opk:60.0,
+     pv:{lt:611,vvd:485,pvdagl:393,cda:266,fnp:0,glpvda:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Schiermonnikoog',    lbl:[462,64],  gel:648,   opk:65.0,
+     pv:{ob:242,fnp:0,glpvda:0,cda:0,vvd:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Vlieland',           lbl:[74,142],  gel:653,   opk:58.0,
+     pv:{nlv:239,fnp:0,glpvda:0,cda:0,vvd:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
   ],
-  // Sea-blue background + Frisian province outline
   svgClip: '70,130 120,100 180,80 250,65 320,55 395,48 470,50 540,58 600,75 648,100 678,132 695,168 698,208 690,252 672,295 648,338 618,378 582,412 540,440 492,462 438,478 378,486 315,480 255,462 200,438 152,408 112,370 82,330 60,288 50,244 54,196',
   svgPolygons: [
     {id:'Vlieland',           pts:'50,118 82,108 100,126 94,148 58,152 44,136'},
@@ -558,6 +615,25 @@ function topParties(w, city, n) {
 }
 
 function buildSVG(city) {
+  // For Fryslân we use the cartogram, not SVG
+  var cartoV = document.getElementById('cartoView');
+  var mapSvgEl = document.getElementById('mapSvg');
+  var mhint = document.getElementById('mhint');
+  var ptyleg = document.querySelector('.ptyleg');
+  var overlay = document.getElementById('overlay');
+  if(city === 'fryslan') {
+    document.getElementById('mapView').style.display = 'none';
+    cartoV.style.display = 'block';
+    if(overlay) overlay.classList.remove('open');
+    buildCarto();
+    return;
+  } else {
+    document.getElementById('mapView').style.display = 'block';
+    cartoV.style.display = 'none';
+    mapSvgEl.style.display = '';
+    if(mhint) mhint.style.display = '';
+    if(ptyleg) ptyleg.style.display = '';
+  }
   var c = CITIES[city];
   var svg = document.getElementById('mapSvg');
   svg.innerHTML = '';
@@ -651,6 +727,7 @@ function buildSVG(city) {
 }
 
 function buildLegend(city) {
+  if(city === 'fryslan') return; // legend rendered inside cartoView
   var c=CITIES[city];var seen={};
   c.wijken.forEach(function(w){var win=getWinnerObj(w,city);seen[win.id]={color:win.color,name:win.name};});
   var grid=document.getElementById('ptyGrid');grid.innerHTML='';
@@ -821,7 +898,10 @@ function switchTab(t){
   document.getElementById('tabM').classList.toggle('active',t==='map');
   document.getElementById('tabL').classList.toggle('active',t==='list');
   document.getElementById('tabD').classList.toggle('active',t==='demo');
-  document.getElementById('mapView').style.display=t==='map'?'block':'none';
+  // For fryslan 'map' tab shows cartoView; for all others shows mapView
+  var isFryslan = currentCity==='fryslan';
+  document.getElementById('mapView').style.display=(t==='map'&&!isFryslan)?'block':'none';
+  document.getElementById('cartoView').style.display=(t==='map'&&isFryslan)?'block':'none';
   document.getElementById('listView').style.display=t==='list'?'block':'none';
   document.getElementById('demoView').style.display=t==='demo'?'block':'none';
   if(t==='list'&&document.getElementById('listBody').children.length===0)buildList(currentCity);
@@ -838,6 +918,188 @@ function init(){
   document.getElementById('footerRight').textContent=c.footer[1];
   document.getElementById('listIntro').textContent='Uitslag GR2026 '+c.name+' · klik op een rij voor details';
 }
+
+// ══════════════════════════════════════════════════════════════════════════════
+// CARTOGRAM ENGINE — Fryslân only
+// ══════════════════════════════════════════════════════════════════════════════
+var CARTO_DATA = [
+  {id:'Leeuwarden',       gel:53761, opk:57.0, wn:'GROENLINKS/PvdA', wc:'#2d8a2d', wp:22.4,
+   top:[['GROENLINKS/PvdA','#2d8a2d',22.4],['D66','#009040',11.8],['VVD','#d44000',10.4],['CDA','#1a7a42',9.7],['GB058','#604080',9.2],['FNP','#006633',9.1]]},
+  {id:'Súdwest-Fryslân',  gel:41701, opk:53.0, wn:'CDA',            wc:'#1a7a42', wp:22.6,
+   top:[['CDA','#1a7a42',22.6],['GROENLINKS/PvdA','#2d8a2d',16.8],['FNP','#006633',11.5],['FvD','#781818',9.0],['VVD','#d44000',9.0],['D66','#009040',7.7]]},
+  {id:'Smallingerland',   gel:23463, opk:58.0, wn:'CDA',            wc:'#1a7a42', wp:15.1,
+   top:[['CDA','#1a7a42',15.1],['GROENLINKS/PvdA','#2d8a2d',14.9],['Smallingerlands Belang','#708090',13.3],['Eérste Lokale Partij','#806040',12.6],['ChristenUnie','#005898',10.5],['VVD','#d44000',9.9]]},
+  {id:'Heerenveen',       gel:23720, opk:56.0, wn:'Heerenveen Lokaal',wc:'#c05020',wp:18.3,
+   top:[['Heerenveen Lokaal','#c05020',18.3],['GROENLINKS/PvdA','#2d8a2d',17.7],['CDA','#1a7a42',11.9],['D66','#009040',10.4],['FNP','#006633',10.4],['FvD','#781818',9.4]]},
+  {id:'De Fryske Marren', gel:25397, opk:53.0, wn:'FNP',            wc:'#006633', wp:20.2,
+   top:[['FNP','#006633',20.2],['CDA','#1a7a42',20.2],['GROENLINKS/PvdA','#2d8a2d',13.3],['FvD','#781818',11.7],['VVD','#d44000',8.4],['D66','#009040',6.5]]},
+  {id:'Noardeast-Fryslân',gel:19634, opk:54.0, wn:'CDA',            wc:'#1a7a42', wp:17.9,
+   top:[['CDA','#1a7a42',17.9],['FNP','#006633',16.3],['Lib. Noardeast','#3a6890',14.5],['S!N Sociaal','#904060',14.2],['ChristenUnie','#005898',8.9],['Gem.belangen Noardeast','#508060',7.9]]},
+  {id:'Waadhoeke',        gel:20169, opk:56.0, wn:'SAM Waadhoeke',  wc:'#b05030', wp:24.5,
+   top:[['SAM Waadhoeke','#b05030',24.5],['Gemeentebelangen','#5a7050',19.6],['CDA','#1a7a42',18.4],['VVD','#d44000',14.3],['BBB','#8a7000',10.7],['FNP','#006633',9.0]]},
+  {id:'Opsterland',       gel:14282, opk:55.0, wn:'Opsterlands Belang',wc:'#8b4513',wp:36.5,
+   top:[['Opsterlands Belang','#8b4513',36.5],['FNP','#006633',16.2],['GROENLINKS/PvdA','#2d8a2d',13.1],['CDA','#1a7a42',9.8],['ChristenUnie','#005898',8.5],['VVD','#d44000',7.4]]},
+  {id:'Tytsjerksteradiel',gel:15614, opk:57.0, wn:'CDA',            wc:'#1a7a42', wp:20.7,
+   top:[['CDA','#1a7a42',20.7],['Better Foar Tytsjerk','#557755',19.8],['FNP','#006633',16.3],['GROENLINKS/PvdA','#2d8a2d',15.7],['VVD','#d44000',14.0],['ChristenUnie','#005898',7.8]]},
+  {id:'Achtkarspelen',    gel:11232, opk:52.0, wn:'FNP',            wc:'#006633', wp:21.9,
+   top:[['FNP','#006633',21.9],['CDA','#1a7a42',21.5],['FvD','#781818',13.7],['GROENLINKS/PvdA','#2d8a2d',12.7],['ChristenUnie','#005898',12.1],['PVV','#002878',10.3]]},
+  {id:'Dantumadiel',      gel:9158,  opk:52.0, wn:'Gem.bel. Dantumadiel',wc:'#607040',wp:23.3,
+   top:[['Gem.bel. Dantumadiel','#607040',23.3],['Sociaal Links','#aa2255',21.1],['CDA','#1a7a42',19.8],['ChristenUnie','#005898',10.7],['BBB','#8a7000',9.4],['SGP','#003888',7.9]]},
+  {id:'Weststellingwerf', gel:12442, opk:52.0, wn:'Weststellingwerfs Belang',wc:'#506070',wp:16.1,
+   top:[['Weststellingwerfs Belang','#506070',16.1],['VVD','#d44000',15.6],['Hart v. Weststellingwerf','#607858',14.1],['CDA','#1a7a42',13.2],['FvD','#781818',12.7],['D66','#009040',9.2]]},
+  {id:'Ooststellingwerf', gel:11426, opk:53.0, wn:'Vrije Partij Oost.',wc:'#708040',wp:18.6,
+   top:[['Vrije Partij Oost.','#708040',18.6],['GROENLINKS/PvdA','#2d8a2d',18.2],['Oost.werfsBelang','#607848',17.3],['VVD','#d44000',16.3],['CDA','#1a7a42',12.6],['D66','#009040',6.5]]},
+  {id:'Harlingen',        gel:6669,  opk:55.0, wn:'CDA',            wc:'#1a7a42', wp:26.2,
+   top:[['CDA','#1a7a42',26.2],['PvdA-GroenLinks','#2a7a2a',20.1],['Harlinger Belang','#806840',15.4],['VVD','#d44000',13.5],['D66','#009040',6.7]]},
+  {id:'Ameland',          gel:2198,  opk:62.0, wn:'AmelandEén',     wc:'#4a6080', wp:30.1,
+   top:[['AmelandEén','#4a6080',30.1],['CDA','#1a7a42',26.9],['VVD','#d44000',6.8]]},
+  {id:'Terschelling',     gel:2805,  opk:60.0, wn:'Leefbaar Terschelling',wc:'#7a3060',wp:21.8,
+   top:[['Leefbaar Terschelling','#7a3060',21.8],['VVD','#d44000',17.3],['PvdA-GroenLinks','#2a7a2a',14.0],['CDA','#1a7a42',9.5]]},
+  {id:'Schiermonnikoog',  gel:648,   opk:65.0, wn:'Ons Belang',     wc:'#888855', wp:37.3,
+   top:[['Ons Belang','#888855',37.3]]},
+  {id:'Vlieland',         gel:653,   opk:58.0, wn:'Nieuw Lib. Vlieland',wc:'#4070a0',wp:36.6,
+   top:[['Nieuw Lib. Vlieland','#4070a0',36.6]]},
+];
+
+var CARTO_LAYOUT = [
+  ['Vlieland','Terschelling','Ameland','Schiermonnikoog'],
+  ['Harlingen','Waadhoeke','Leeuwarden','Tytsjerksteradiel','Dantumadiel','Achtkarspelen','Noardeast-Fryslân'],
+  ['Súdwest-Fryslân','De Fryske Marren','Smallingerland','Heerenveen','Ooststellingwerf'],
+  ['Opsterland','Weststellingwerf'],
+];
+
+var CARTO_ANNOTATIONS = {
+  'Leeuwarden':  {n:1, txt:'Grootste stad: 22.4% GROENLINKS/PvdA'},
+  'Heerenveen':  {n:2, txt:'Lokale partij wint van CDA'},
+  'Opsterland':  {n:3, txt:'Sterkste lokale overwinning: 36.5%'},
+};
+
+var cartoBuilt = false;
+var cartoActive = null;
+
+function buildCarto() {
+  if(cartoBuilt) return;
+  cartoBuilt = true;
+
+  // rows
+  var rowsEl = document.getElementById('cartoRows');
+  rowsEl.innerHTML = '';
+  CARTO_LAYOUT.forEach(function(row, ri) {
+    var rowEl = document.createElement('div');
+    rowEl.className = 'carto-row';
+    var rowGel = row.reduce(function(s, id) {
+      var d = CARTO_DATA.find(function(x){return x.id===id;});
+      return s + (d ? d.gel : 0);
+    }, 0);
+    row.forEach(function(id) {
+      var d = CARTO_DATA.find(function(x){return x.id===id;});
+      if(!d) return;
+      var frac = rowGel > 0 ? d.gel / rowGel : 0;
+      var cell = document.createElement('div');
+      cell.className = 'carto-cell';
+      cell.id = 'cc-' + id.replace(/[^a-zA-Z0-9]/g,'_');
+      cell.style.flex = String(frac * 100);
+      var h = ri === 0 ? Math.max(44, Math.min(62, Math.round(frac*160+28))) : Math.max(48, Math.round(frac*210+32));
+      cell.style.minHeight = h + 'px';
+      cell.style.background = d.wc;
+
+      if(CARTO_ANNOTATIONS[id]) {
+        var badge = document.createElement('div');
+        badge.className = 'carto-ann-badge';
+        badge.textContent = CARTO_ANNOTATIONS[id].n;
+        cell.appendChild(badge);
+      }
+
+      var nm = document.createElement('div'); nm.className='carto-cn'; nm.textContent=id;
+      var sc = document.createElement('div'); sc.className='carto-cs'; sc.textContent=d.wp+'%';
+      cell.appendChild(nm); cell.appendChild(sc);
+      cell.addEventListener('click', function(){ openCartoPanel(id); });
+      rowEl.appendChild(cell);
+    });
+    rowsEl.appendChild(rowEl);
+  });
+
+  // annotation bar
+  var annbar = document.getElementById('cartoAnnbar');
+  annbar.innerHTML = '';
+  Object.keys(CARTO_ANNOTATIONS).forEach(function(id) {
+    var a = CARTO_ANNOTATIONS[id];
+    var d = CARTO_DATA.find(function(x){return x.id===id;});
+    var item = document.createElement('div'); item.className='carto-ann-item';
+    var num = document.createElement('div'); num.className='carto-ann-num';
+    num.style.background = d.wc; num.textContent = a.n;
+    item.appendChild(num);
+    var txt = document.createElement('span'); txt.textContent = a.txt;
+    item.appendChild(txt);
+    annbar.appendChild(item);
+  });
+
+  // legend
+  var leg = document.getElementById('cartoLeg');
+  leg.innerHTML = '';
+  var seen = {};
+  CARTO_DATA.forEach(function(d) { if(!seen[d.wn]) seen[d.wn] = d.wc; });
+  Object.keys(seen).forEach(function(nm) {
+    var item = document.createElement('div'); item.className='carto-leg-item';
+    var sq = document.createElement('div'); sq.className='carto-leg-sq'; sq.style.background=seen[nm];
+    item.appendChild(sq);
+    var t = document.createElement('span'); t.textContent=nm; item.appendChild(t);
+    leg.appendChild(item);
+  });
+}
+
+function openCartoPanel(id) {
+  var d = CARTO_DATA.find(function(x){return x.id===id;});
+  if(!d) return;
+  // highlight cell
+  document.querySelectorAll('.carto-cell').forEach(function(c){c.classList.remove('sel');});
+  var cel = document.getElementById('cc-' + id.replace(/[^a-zA-Z0-9]/g,'_'));
+  if(cel) cel.classList.add('sel');
+  cartoActive = id;
+
+  var mx = d.top[0][2];
+  var rows = '';
+  d.top.forEach(function(t, i) {
+    var bw = mx > 0 ? Math.round(t[2]/mx*100) : 0;
+    rows += '<div class="carto-pr">'+
+      '<div class="carto-prk">'+(i+1)+'</div>'+
+      '<div class="carto-prn" style="color:'+t[1]+'">'+t[0]+'</div>'+
+      '<div class="carto-prb"><div class="carto-prf" style="width:'+bw+'%;background:'+t[1]+'"></div></div>'+
+      '<div class="carto-prp" style="color:'+t[1]+'">'+t[2]+'%</div>'+
+    '</div>';
+  });
+
+  var opkClr = d.opk>=57?'#2a7a2a':d.opk>=50?'#b87800':'#c00000';
+  var opkCmp = d.opk>=57?'Boven gemiddeld (55%)':d.opk>=50?'Rond gemiddeld (55%)':'Onder gemiddeld (55%)';
+
+  document.getElementById('cartoPanelContent').innerHTML =
+    '<div class="carto-pname">'+id+'</div>'+
+    '<div class="carto-pmeta">'+d.gel.toLocaleString('nl')+' geldige stemmen &nbsp;·&nbsp; GR2026 Fryslân</div>'+
+    '<div class="carto-pwin" style="border-left-color:'+d.wc+';background:'+d.wc+'12">'+
+      '<div>'+
+        '<div class="carto-pwlbl" style="color:'+d.wc+'">Winnaar</div>'+
+        '<div class="carto-pwnm" style="color:'+d.wc+'">'+d.wn+'</div>'+
+      '</div>'+
+      '<div class="carto-pwpct" style="color:'+d.wc+'">'+d.wp+'%</div>'+
+    '</div>'+
+    '<div class="carto-popk">'+
+      '<span style="font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#888">Opkomst</span><br>'+
+      '<span style="font-family:\'Playfair Display\',serif;font-size:20px;font-weight:700;color:'+opkClr+'">'+d.opk+'%</span>'+
+      '<span style="font-size:9px;color:#888;margin-left:8px">'+opkCmp+'</span>'+
+    '</div>'+
+    '<div class="carto-ptitle">Alle partijen</div>'+rows;
+
+  var panel = document.getElementById('cartoPanel');
+  panel.classList.add('open');
+  setTimeout(function(){ panel.scrollIntoView({behavior:'smooth',block:'nearest'}); }, 60);
+}
+
+function closeCartoPanel() {
+  document.getElementById('cartoPanel').classList.remove('open');
+  document.querySelectorAll('.carto-cell').forEach(function(c){c.classList.remove('sel');});
+  cartoActive = null;
+}
+
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 </script>
 
