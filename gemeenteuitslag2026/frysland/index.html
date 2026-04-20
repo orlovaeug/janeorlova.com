@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GR2026 — Fryslân</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html,body{background:#fff;color:#111;font-family:‘JetBrains Mono’,monospace;height:100%;}
+
+/* ── HEADER ── */
+.mast{background:#fff;border-bottom:3px solid #111;padding:10px 16px 7px;}
+.mast-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;flex-wrap:wrap;}
+.mast-ttl{font-family:‘Playfair Display’,serif;font-size:clamp(15px,3.5vw,26px);font-weight:900;letter-spacing:-.02em;line-height:1.05;}
+.mast-ttl em{font-style:italic;font-weight:400;color:#c0392b;}
+.mast-meta{font-size:9px;color:#888;text-align:right;letter-spacing:.06em;line-height:1.9;}
+.deck{display:flex;flex-wrap:wrap;border-top:1px solid #d0ccc2;padding-top:5px;margin-top:7px;}
+.di{display:flex;align-items:baseline;gap:4px;padding:2px 9px;border-right:1px solid #d0ccc2;white-space:nowrap;}
+.di:first-child{padding-left:0;}.di:last-child{border:none;}
+.dn{font-family:‘Playfair Display’,serif;font-size:14px;font-weight:700;}
+.dl{font-size:8px;color:#888;letter-spacing:.1em;text-transform:uppercase;}
+
+/* ── LAYOUT ── */
+.layout{display:flex;gap:0;height:calc(100vh - 110px);min-height:500px;}
+.map-col{flex:1;position:relative;background:#c8d8ec;overflow:hidden;}
+.side-col{width:320px;flex-shrink:0;border-left:2px solid #111;display:flex;flex-direction:column;background:#fff;}
+
+@media(max-width:720px){
+.layout{flex-direction:column;height:auto;}
+.map-col{height:55vw;min-height:300px;}
+.side-col{width:100%;border-left:none;border-top:2px solid #111;}
+}
+
+/* ── MAP ── */
+#map-svg{width:100%;height:100%;display:block;}
+.gemeente-path{stroke:#fff;stroke-width:1;cursor:pointer;transition:opacity .1s;}
+.gemeente-path:hover{opacity:.85;stroke:#111;stroke-width:1.5;}
+.gemeente-path.active{stroke:#111;stroke-width:2.5;opacity:1;}
+.sea{fill:#c8d8ec;}
+.sea-lines{fill:none;stroke:#b0c8de;stroke-width:.5;}
+
+.map-hint{
+position:absolute;bottom:14px;left:50%;transform:translateX(-50%);
+background:rgba(255,255,255,.94);border:1px solid #bbb;
+padding:5px 14px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+color:#888;pointer-events:none;white-space:nowrap;
+}
+
+/* ── LEGEND ── */
+.legend{
+position:absolute;top:12px;left:12px;
+background:rgba(255,255,255,.96);border:1.5px solid #bbb;
+padding:9px 11px;max-width:190px;
+}
+.legend-title{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#888;margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid #e0e0e0;}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:9px;color:#333;margin-bottom:4px;white-space:nowrap;}
+.legend-dot{width:10px;height:10px;border-radius:1px;flex-shrink:0;border:1px solid rgba(0,0,0,.12);}
+
+/* ── SIDEBAR ── */
+.s-header{background:#111;color:#fff;padding:12px 15px;flex-shrink:0;}
+.s-sub{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#888;margin-bottom:3px;}
+.s-name{font-family:‘Playfair Display’,serif;font-size:19px;font-weight:700;color:#fff;}
+.s-name.empty{color:#555;font-style:italic;font-size:14px;font-weight:400;}
+
+.s-body{flex:1;overflow-y:auto;padding:15px;}
+
+.placeholder{text-align:center;padding:40px 16px;color:#bbb;font-size:11px;line-height:1.8;}
+.placeholder .ico{font-size:28px;margin-bottom:10px;}
+
+/* winner card */
+.win-card{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;margin-bottom:13px;border-left:4px solid;}
+.wc-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px;}
+.wc-nm{font-family:‘Playfair Display’,serif;font-size:14px;font-weight:700;}
+.wc-pct{font-family:‘Playfair Display’,serif;font-size:28px;font-weight:900;}
+
+/* turnout */
+.turnout-box{padding:9px 11px;margin-bottom:13px;background:#f7f5f0;border-left:3px solid #888;}
+.tb-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:2px;}
+.tb-val{font-family:‘Playfair Display’,serif;font-size:18px;font-weight:700;}
+.tb-sub{font-size:9px;color:#888;margin-top:2px;}
+
+/* bars */
+.sec-title{font-size:8px;letter-spacing:.13em;text-transform:uppercase;color:#888;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #e0e0e0;}
+.bar-row{display:flex;align-items:center;gap:5px;margin-bottom:6px;}
+.bar-rank{font-size:9px;color:#aaa;width:12px;flex-shrink:0;}
+.bar-name{font-size:9px;font-weight:500;flex:0 0 110px;line-height:1.3;}
+.bar-track{flex:1;background:#eae6de;height:7px;}
+.bar-fill{height:100%;}
+.bar-pct{font-family:‘Playfair Display’,serif;font-size:11px;font-weight:700;width:34px;text-align:right;flex-shrink:0;}
+.bar-v{font-size:8px;color:#aaa;width:44px;text-align:right;flex-shrink:0;}
+
+.ov-note{font-size:9px;color:#888;font-style:italic;margin-top:12px;padding-top:9px;border-top:1px solid #e0e0e0;line-height:1.7;}
+
+/* footer */
+footer{border-top:2px solid #111;padding:6px 16px;display:flex;justify-content:space-between;font-size:8px;color:#888;flex-wrap:wrap;gap:4px;letter-spacing:.05em;}
+
+/* loading */
+#loading{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#888;}
+</style>
+
+</head>
+<body>
+
+<div class="mast">
+  <div class="mast-top">
+    <div class="mast-ttl">GR2026 — <em>Fryslân</em><br><span style="font-size:.6em;font-weight:400;font-family:'JetBrains Mono',monospace;color:#888;font-style:normal">per gemeente · 18 maart 2026</span></div>
+    <div class="mast-meta">18 gemeenten<br>~270.000 stemmen<br>~55% opkomst</div>
+  </div>
+  <div class="deck" id="deck"></div>
+</div>
+
+<div class="layout">
+  <div class="map-col" id="map-col">
+    <svg id="map-svg"></svg>
+    <div class="legend" id="legend"><div class="legend-title">Winnaar per gemeente</div></div>
+    <div class="map-hint" id="map-hint">Klik op een gemeente voor details</div>
+    <div id="loading">Kaart laden…</div>
+  </div>
+  <div class="side-col">
+    <div class="s-header">
+      <div class="s-sub">Gemeente</div>
+      <div class="s-name empty" id="s-name">Selecteer een gemeente</div>
+    </div>
+    <div class="s-body" id="s-body">
+      <div class="placeholder">
+        <div class="ico">🗺</div>
+        Klik op een gemeente op de kaart om de verkiezingsuitslag te bekijken.
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Bron: Gemeenten Fryslân · GR2026 · Voorlopige uitslag · 18 maart 2026</span>
+  <span>Kaartdata: cartomap.github.io/nl (CBS 2026, CC-BY)</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+<script>
+// ── ELECTION DATA ──────────────────────────────────────────────────────────
+const PARTY_COLORS = {
+  'FNP':                          '#006633',
+  'Fryske Nasjonale Partij':      '#006633',
+  'GROENLINKS / PvdA':            '#2d8a2d',
+  'PvdA-GroenLinks':              '#2a7a2a',
+  'CDA':                          '#1a7a42',
+  'VVD':                          '#d44000',
+  'D66':                          '#009040',
+  'Forum voor Democratie':        '#781818',
+  'ChristenUnie':                 '#005898',
+  'PVV':                          '#002878',
+  'BBB':                          '#8a7000',
+  'SGP':                          '#003888',
+  'SP':                           '#aa0000',
+  'Partij voor de Dieren':        '#006830',
+  'JA21':                         '#1a3a6a',
+  'Heerenveen Lokaal':            '#c05020',
+  'Opsterlands Belang':           '#8b4513',
+  'Gemeentebelangen Dantumadiel': '#607040',
+  'SAM Waadhoeke':                '#b05030',
+  'Weststellingwerfs Belang':     '#506070',
+  'Vrije Partij Ooststellingwerf':'#708040',
+  'AmelandEén':                   '#4a6080',
+  'Leefbaar Terschelling':        '#7a3060',
+  'Nieuw Liberaal Vlieland':      '#4070a0',
+  'Sociaal Links':                '#aa2255',
+  'Better Foar Tytsjerksteradiel':'#557755',
+  'Smallingerlands Belang':       '#708090',
+  'Gemeentebelangen':             '#5a7050',
+  'Ons Belang':                   '#888855',
+  'Liberaal Noardeast-Fryslân':   '#3a6890',
+  'GB058':                        '#604080',
+  'Hart voor Weststellingwerf':   '#607858',
+  'Eérste Lokale Partij':         '#806040',
+  'OoststellingwerfsBelang':      '#607848',
+  'S!N-Sociaal in Noardeast-Fryslân':'#904060',
+  'Gemeentebelangen Noardeast-Fryslân':'#508060',
+  'Frisse Wind 21':               '#406080',
+  'Harlinger Belang':             '#806840',
+};
+
+function getColor(name) {
+  if (PARTY_COLORS[name]) return PARTY_COLORS[name];
+  for (const [k, v] of Object.entries(PARTY_COLORS)) {
+    if (name.includes(k) || k.includes(name)) return v;
+  }
+  return '#888';
+}
+
+// CBS gemeente codes for Friesland municipalities (2026 boundaries)
+const FRYSLAN_CODES = new Set([
+  'GM0059','GM0060','GM0072','GM0074','GM0080',
+  'GM0085','GM0086','GM0088','GM0090','GM0093',
+  'GM0096','GM0098','GM1891','GM1900','GM1940',
+  'GM1949','GM1969','GM1970'
+]);
+
+// Match CBS name → our election data key
+const NAME_MAP = {
+  'Achtkarspelen':      'Achtkarspelen',
+  'Ameland':            'Ameland',
+  'Harlingen':          'Harlingen',
+  'Heerenveen':         'Heerenveen',
+  'Leeuwarden':         'Leeuwarden',
+  'Ooststellingwerf':   'Ooststellingwerf',
+  'Opsterland':         'Opsterland',
+  'Schiermonnikoog':    'Schiermonnikoog',
+  'Smallingerland':     'Smallingerland',
+  'Súdwest-Fryslân':    'Súdwest-Fryslân',
+  'Terschelling':       'Terschelling',
+  'Tytsjerksteradiel':  'Tytsjerksteradiel',
+  'Vlieland':           'Vlieland',
+  'Waadhoeke':          'Waadhoeke',
+  'Weststellingwerf':   'Weststellingwerf',
+  'De Fryske Marren':   'De Fryske Marren',
+  'Dantumadiel':        'Dantumadiel',
+  'Noardeast-Fryslân':  'Noardeast-Fryslân',
+};
+
+const DATA = {
+  'Leeuwarden':         {opk:57.0, total:53761, parties:[
+    {name:'GROENLINKS / PvdA',votes:12030},{name:'D66',votes:6337},{name:'VVD',votes:5610},
+    {name:'CDA',votes:5228},{name:'GB058',votes:4932},{name:'FNP',votes:4890},
+    {name:'Forum voor Democratie',votes:4415},{name:'JA21',votes:2595},
+    {name:'Partij voor de Dieren',votes:2304},{name:'ChristenUnie',votes:2238},
+    {name:'SP',votes:1819},{name:'Overig',votes:1393}]},
+  'Súdwest-Fryslân':    {opk:53.0, total:41701, parties:[
+    {name:'CDA',votes:9433},{name:'GROENLINKS / PvdA',votes:6989},{name:'FNP',votes:4794},
+    {name:'Forum voor Democratie',votes:3769},{name:'VVD',votes:3767},{name:'D66',votes:3209},
+    {name:'BBB',votes:2754},{name:'Gemeentebelangen',votes:2589},{name:'PVV',votes:2166},
+    {name:'ChristenUnie',votes:1210},{name:'SP',votes:1140}]},
+  'Smallingerland':     {opk:58.0, total:23463, parties:[
+    {name:'CDA',votes:3553},{name:'GROENLINKS / PvdA',votes:3493},
+    {name:'Smallingerlands Belang',votes:3111},{name:'Eérste Lokale Partij',votes:2950},
+    {name:'ChristenUnie',votes:2472},{name:'VVD',votes:2320},{name:'FNP',votes:1866},
+    {name:'D66',votes:1645},{name:'SP',votes:1291},{name:'SGP',votes:762}]},
+  'Heerenveen':         {opk:56.0, total:23720, parties:[
+    {name:'Heerenveen Lokaal',votes:4343},{name:'GROENLINKS / PvdA',votes:4210},
+    {name:'CDA',votes:2818},{name:'D66',votes:2476},{name:'FNP',votes:2466},
+    {name:'Forum voor Democratie',votes:2238},{name:'VVD',votes:2138},
+    {name:'Frisse Wind 21',votes:1496},{name:'ChristenUnie',votes:879},{name:'SP',votes:723}]},
+  'Noardeast-Fryslân':  {opk:54.0, total:19634, parties:[
+    {name:'CDA',votes:3522},{name:'FNP',votes:3205},
+    {name:'Liberaal Noardeast-Fryslân',votes:2844},
+    {name:'S!N-Sociaal in Noardeast-Fryslân',votes:2789},
+    {name:'ChristenUnie',votes:1748},{name:'Gemeentebelangen Noardeast-Fryslân',votes:1558},
+    {name:'BBB',votes:1463},{name:'VVD',votes:1333},{name:'PvdA-GroenLinks',votes:1222}]},
+  'Waadhoeke':          {opk:56.0, total:20169, parties:[
+    {name:'SAM Waadhoeke',votes:4932},{name:'Gemeentebelangen',votes:3943},
+    {name:'CDA',votes:3712},{name:'VVD',votes:2887},{name:'BBB',votes:2150},
+    {name:'FNP',votes:1811},{name:'ChristenUnie',votes:734}]},
+  'Opsterland':         {opk:55.0, total:14282, parties:[
+    {name:'Opsterlands Belang',votes:5207},{name:'FNP',votes:2318},
+    {name:'GROENLINKS / PvdA',votes:1865},{name:'CDA',votes:1394},
+    {name:'ChristenUnie',votes:1208},{name:'VVD',votes:1060},
+    {name:'D66',votes:832},{name:'SP',votes:398}]},
+  'Tytsjerksteradiel':  {opk:57.0, total:15614, parties:[
+    {name:'CDA',votes:3234},{name:'Better Foar Tytsjerksteradiel',votes:3092},
+    {name:'FNP',votes:2545},{name:'GROENLINKS / PvdA',votes:2450},
+    {name:'VVD',votes:2188},{name:'ChristenUnie',votes:1211},{name:'D66',votes:894}]},
+  'Achtkarspelen':      {opk:52.0, total:11232, parties:[
+    {name:'FNP',votes:2462},{name:'CDA',votes:2410},
+    {name:'Forum voor Democratie',votes:1542},{name:'GROENLINKS / PvdA',votes:1424},
+    {name:'ChristenUnie',votes:1356},{name:'PVV',votes:1161},
+    {name:'Gemeentebelangen Dantumadiel',votes:908}]},
+  'De Fryske Marren':   {opk:53.0, total:25397, parties:[
+    {name:'Fryske Nasjonale Partij',votes:5125},{name:'CDA',votes:5123},
+    {name:'GROENLINKS / PvdA',votes:3380},{name:'Forum voor Democratie',votes:2968},
+    {name:'VVD',votes:2127},{name:'D66',votes:1661},{name:'ChristenUnie',votes:923},
+    {name:'BBB',votes:931}]},
+  'Dantumadiel':        {opk:52.0, total:9158, parties:[
+    {name:'Gemeentebelangen Dantumadiel',votes:2136},{name:'Sociaal Links',votes:1930},
+    {name:'CDA',votes:1813},{name:'ChristenUnie',votes:982},{name:'BBB',votes:860},
+    {name:'SGP',votes:723},{name:'FNP',votes:645}]},
+  'Weststellingwerf':   {opk:52.0, total:12442, parties:[
+    {name:'Weststellingwerfs Belang',votes:2005},{name:'VVD',votes:1945},
+    {name:'Hart voor Weststellingwerf',votes:1748},{name:'CDA',votes:1646},
+    {name:'Forum voor Democratie',votes:1578},{name:'D66',votes:1141},
+    {name:'SP',votes:1085},{name:'BBB',votes:635}]},
+  'Ooststellingwerf':   {opk:53.0, total:11426, parties:[
+    {name:'Vrije Partij Ooststellingwerf',votes:2122},
+    {name:'GROENLINKS / PvdA',votes:2076},
+    {name:'OoststellingwerfsBelang',votes:1971},{name:'VVD',votes:1867},
+    {name:'CDA',votes:1437},{name:'D66',votes:746},{name:'ChristenUnie',votes:705}]},
+  'Harlingen':          {opk:55.0, total:6669, parties:[
+    {name:'CDA',votes:1744},{name:'PvdA-GroenLinks',votes:1343},
+    {name:'Harlinger Belang',votes:1029},{name:'VVD',votes:900},
+    {name:'D66',votes:448}]},
+  'Ameland':            {opk:62.0, total:2198, parties:[
+    {name:'AmelandEén',votes:662},{name:'CDA',votes:592},
+    {name:'Gemeentebelangen',votes:300},{name:'VVD',votes:150}]},
+  'Terschelling':       {opk:60.0, total:2805, parties:[
+    {name:'Leefbaar Terschelling',votes:612},{name:'PvdA-GroenLinks',votes:394},
+    {name:'VVD',votes:484},{name:'CDA',votes:266}]},
+  'Schiermonnikoog':    {opk:65.0, total:648, parties:[
+    {name:'Ons Belang',votes:242},{name:'Schiermonnikoogs Belang',votes:208},
+    {name:'SAMEN',votes:198}]},
+  'Vlieland':           {opk:58.0, total:653, parties:[
+    {name:'Nieuw Liberaal Vlieland',votes:239},{name:'GroenWit',votes:162},
+    {name:'Lijst Fier',votes:162}]},
+};
+
+// ── SEAT DECK ──────────────────────────────────────────────────────────────
+const SEATS = [
+  {n:9,l:'GL/PvdA'},{n:9,l:'CDA'},{n:7,l:'FNP'},
+  {n:5,l:'D66'},{n:4,l:'VVD'},{n:'15×',l:'Lokaal/Overig'}
+];
+const deck = document.getElementById('deck');
+SEATS.forEach(s => {
+  const d = document.createElement('div'); d.className = 'di';
+  d.innerHTML = `<span class="dn">${s.n}</span><span class="dl">${s.l}</span>`;
+  deck.appendChild(d);
+});
+
+// ── MAP ────────────────────────────────────────────────────────────────────
+const svg = d3.select('#map-svg');
+const mapCol = document.getElementById('map-col');
+let activeGem = null;
+
+function getWinner(gem) {
+  const d = DATA[gem];
+  if (!d) return null;
+  return [...d.parties].sort((a,b)=>b.votes-a.votes)[0];
+}
+
+function renderSidebar(gemName) {
+  const d = DATA[gemName];
+  if (!d) return;
+  const sorted = [...d.parties].sort((a,b)=>b.votes-a.votes);
+  const winner = sorted[0];
+  const wColor = getColor(winner.name);
+  const wPct = (winner.votes/d.total*100).toFixed(1);
+  const avgOpk = 55;
+  const opkColor = d.opk >= avgOpk+5 ? '#2a7a2a' : d.opk >= avgOpk-5 ? '#b87800' : '#c00000';
+  const opkLabel = d.opk >= avgOpk+5 ? 'Boven gemiddeld' : d.opk >= avgOpk-5 ? 'Rond gemiddeld' : 'Onder gemiddeld';
+  const maxV = sorted[0].votes;
+
+  document.getElementById('s-name').textContent = gemName;
+  document.getElementById('s-name').className = 's-name';
+
+  let html = `
+    <div class="win-card" style="border-left-color:${wColor};background:${wColor}12">
+      <div>
+        <div class="wc-lbl" style="color:${wColor}">Winnaar</div>
+        <div class="wc-nm" style="color:${wColor}">${winner.name}</div>
+      </div>
+      <div class="wc-pct" style="color:${wColor}">${wPct}%</div>
+    </div>
+    <div class="turnout-box">
+      <div class="tb-lbl">Opkomst</div>
+      <div class="tb-val" style="color:${opkColor}">${d.opk}%</div>
+      <div class="tb-sub">${opkLabel} · gem. ${avgOpk}%</div>
+    </div>
+    <div class="sec-title">Alle partijen</div>
+  `;
+
+  sorted.forEach((p, i) => {
+    const pct = (p.votes/d.total*100).toFixed(1);
+    const bw = Math.round(p.votes/maxV*100);
+    const col = getColor(p.name);
+    html += `
+      <div class="bar-row">
+        <div class="bar-rank">${i+1}</div>
+        <div class="bar-name" style="color:${col}">${p.name}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${bw}%;background:${col}"></div></div>
+        <div class="bar-pct" style="color:${col}">${pct}%</div>
+        <div class="bar-v">${p.votes.toLocaleString('nl')}</div>
+      </div>`;
+  });
+
+  html += `<div class="ov-note">Geldige stemmen: ${d.total.toLocaleString('nl')} · Gegevens per gemeente geaggregeerd uit officiële GR2026 uitslag.</div>`;
+  document.getElementById('s-body').innerHTML = html;
+}
+
+function clearSidebar() {
+  document.getElementById('s-name').textContent = 'Selecteer een gemeente';
+  document.getElementById('s-name').className = 's-name empty';
+  document.getElementById('s-body').innerHTML = `
+    <div class="placeholder">
+      <div class="ico">🗺</div>
+      Klik op een gemeente op de kaart om de verkiezingsuitslag te bekijken.
+    </div>`;
+}
+
+// ── LOAD GEOJSON & DRAW ────────────────────────────────────────────────────
+const GEOJSON_URL = 'https://cartomap.github.io/nl/wgs84/gemeente_2026.geojson';
+
+d3.json(GEOJSON_URL).then(nl => {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('map-hint').style.display = '';
+
+  // Filter to Friesland only using code
+  const fryslan = {
+    type: 'FeatureCollection',
+    features: nl.features.filter(f => {
+      const code = f.properties.statcode || f.properties.GM_CODE || f.properties.code || '';
+      const name = f.properties.statnaam || f.properties.GM_NAAM || f.properties.name || '';
+      return FRYSLAN_CODES.has(code) || NAME_MAP[name];
+    })
+  };
+
+  const rect = mapCol.getBoundingClientRect();
+  const width = rect.width || 600;
+  const height = rect.height || 520;
+
+  const projection = d3.geoMercator().fitSize([width, height], fryslan);
+  const path = d3.geoPath().projection(projection);
+
+  // Sea background
+  svg.append('rect').attr('width', width).attr('height', height).attr('class', 'sea');
+
+  // Sea texture lines
+  const seaG = svg.append('g').attr('class','sea-lines');
+  for (let y = 0; y < height; y += 18) {
+    seaG.append('line').attr('x1',0).attr('y1',y).attr('x2',width).attr('y2',y);
+  }
+
+  // Draw municipalities
+  const gemGroup = svg.append('g');
+
+  fryslan.features.forEach(feature => {
+    const rawName = feature.properties.statnaam || feature.properties.GM_NAAM || feature.properties.name || '';
+    const gemName = NAME_MAP[rawName] || rawName;
+    const winner = getWinner(gemName);
+    const fillColor = winner ? getColor(winner.name) : '#aaa';
+
+    gemGroup.append('path')
+      .datum(feature)
+      .attr('d', path)
+      .attr('class', 'gemeente-path')
+      .attr('fill', fillColor)
+      .attr('data-name', gemName)
+      .on('click', function(event) {
+        event.stopPropagation();
+        // Deactivate previous
+        gemGroup.selectAll('.gemeente-path').classed('active', false);
+        d3.select(this).classed('active', true);
+        activeGem = gemName;
+        document.getElementById('map-hint').style.display = 'none';
+        renderSidebar(gemName);
+      })
+      .append('title').text(() => {
+        const w = winner;
+        return w ? `${gemName}\n${w.name} — ${(w.votes/DATA[gemName].total*100).toFixed(1)}%` : gemName;
+      });
+  });
+
+  // Click on sea = deselect
+  svg.on('click', () => {
+    gemGroup.selectAll('.gemeente-path').classed('active', false);
+    activeGem = null;
+    document.getElementById('map-hint').style.display = '';
+    clearSidebar();
+  });
+
+  // ── LEGEND ──────────────────────────────────────────────────────────────
+  const seenWinners = new Map();
+  fryslan.features.forEach(f => {
+    const rawName = f.properties.statnaam || f.properties.GM_NAAM || f.properties.name || '';
+    const gemName = NAME_MAP[rawName] || rawName;
+    const winner = getWinner(gemName);
+    if (winner && !seenWinners.has(winner.name)) {
+      seenWinners.set(winner.name, getColor(winner.name));
+    }
+  });
+
+  const legendEl = document.getElementById('legend');
+  seenWinners.forEach((color, name) => {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    const short = name.length > 22 ? name.substring(0,20)+'…' : name;
+    item.innerHTML = `<div class="legend-dot" style="background:${color}"></div><span>${short}</span>`;
+    legendEl.appendChild(item);
+  });
+
+  // Responsive resize
+  window.addEventListener('resize', () => {
+    const r = mapCol.getBoundingClientRect();
+    const w2 = r.width, h2 = r.height;
+    projection.fitSize([w2, h2], fryslan);
+    svg.attr('width', w2).attr('height', h2);
+    gemGroup.selectAll('.gemeente-path').attr('d', path);
+    svg.select('rect.sea').attr('width', w2).attr('height', h2);
+  });
+
+}).catch(err => {
+  document.getElementById('loading').textContent = 'Kaartdata kon niet worden geladen.';
+  console.error(err);
+});
+</script>
+
+</body>
+</html>
