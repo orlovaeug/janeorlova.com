@@ -27556,7 +27556,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07872&did=2026D17748",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkad86bb47e9",
@@ -27570,7 +27570,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07870&did=2026D17746",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkad58d33079",
@@ -27584,7 +27584,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07868&did=2026D17743",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkeecb3176a0",
@@ -27598,7 +27598,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07866&did=2026D17741",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk95e7896ce4",
@@ -27612,7 +27612,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07867&did=2026D17742",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk80202b3741",
@@ -27626,7 +27626,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07861&did=2026D17731",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk4a4d1546d2",
@@ -27640,7 +27640,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07862&did=2026D17733",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tka020ea9e3d",
@@ -27654,7 +27654,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07855&did=2026D17719",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk5aabcb73a8",
@@ -27682,7 +27682,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07857&did=2026D17722",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tka52b920d2f",
@@ -27696,7 +27696,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07858&did=2026D17724",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd93e6c7453",
@@ -27710,7 +27710,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07854&did=2026D17717",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk300deceb6a",
@@ -27724,7 +27724,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07853&did=2026D17716",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkad88102dd6",
@@ -28008,7 +28008,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07976&did=2026D17989",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk7419ddcbe0",
@@ -28022,7 +28022,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07977&did=2026D17990",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk050d24c9ee",
@@ -28036,7 +28036,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07974&did=2026D17986",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkbf5fedc238",
@@ -29620,6 +29620,34 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z08340&did=2026D18701",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk6804be22a3",
+    "titel": "Gewijzigde motie van het lid Vondeling over onaangekondigde en structurele kamercontroles in alle azc's (t.v.v. 19637-3538) - Vreemdelingenbeleid",
+    "indiener": "PVV",
+    "datum": "2026-04-21",
+    "thema": "Asiel & Migratie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z08446&did=2026D19005",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkdb5714221a",
+    "titel": "Gewijzigde motie van het lid Dobbe over onderzoeken welke stappen moeten worden gezet om voldoende praktijkruimtes voor huisartsen te waarborgen (t.v.v. 33578-173) - Eerstelijnszorg",
+    "indiener": "SP",
+    "datum": "2026-04-21",
+    "thema": "Zorg",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z08436&did=2026D18988",
     "toelichting": "",
     "stemmen": {},
     "archief": false
