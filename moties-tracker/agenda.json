@@ -1,37 +1,5 @@
 [
   {
-    "datum": "2026-04-21",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03301"
-  },
-  {
-    "datum": "2026-04-21",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03302"
-  },
-  {
-    "datum": "2026-04-21",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Drugsbeleid (CD 12/3)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02267"
-  },
-  {
-    "datum": "2026-04-21",
-    "tijd": "2026-",
-    "titel": "Debat over het rapport van de taskforce Antisemitisme ‘Gevangen in vrijheden’",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (debat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01172"
-  },
-  {
     "datum": "2026-04-22",
     "tijd": "",
     "titel": "Aansluitend: Regeling van werkzaamheden",
@@ -66,9 +34,49 @@
   {
     "datum": "2026-04-23",
     "tijd": "",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Telecomraad en eventueel over moties ingediend bij het onder voorbehoud geagendeerde Tweeminutendebat Landbouw- en Visserijraad)",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03459"
+  },
+  {
+    "datum": "2026-04-23",
+    "tijd": "",
     "titel": "Aansluitend: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03304"
+  },
+  {
+    "datum": "2026-04-23",
+    "tijd": "2026-",
+    "titel": "Wijziging van Boek 6 van het Burgerlijk Wetboek in verband met de implementatie van Richtlijn (EU) 2024/825 van het Europees Parlement en de Raad van 28 februari 2024 tot wijziging van de Richtlijnen 2005/29/EG en 2011/83/EU wat betreft het versterken van de positie van de consument voor de groene transitie door middel van betere informatie en door middel van bescherming tegen oneerlijke praktijken (PbEU 2024, L 825) (Implementatiewet richtlijn betere duurzaamheidsinformatie voor consumenten) (36873)",
+    "locatie": "Plenaire zaal",
+    "soort": "Hamerstukken",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03346"
+  },
+  {
+    "datum": "2026-04-23",
+    "tijd": "2026-",
+    "titel": "(onder voorbehoud) Tweeminutendebat Landbouw- en Visserijraad 27 april 2026 (21501-32-1776)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03460"
+  },
+  {
+    "datum": "2026-04-23",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Telecomraad (2026Z08378)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03461"
+  },
+  {
+    "datum": "2026-04-23",
+    "tijd": "2026-",
+    "titel": "Debat over de Voorjaarsnota 2026 (36 915, nr. 1)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (overig)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01765"
   }
 ]
