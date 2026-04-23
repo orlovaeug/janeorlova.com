@@ -1,17 +1,16 @@
 name: Update Amsterdam Motions Data
 
 on:
-  schedule:
-    - cron: "0 6 * * 2"
   push:
     branches: [main]
     paths:
+      - "amsterdam-analysis/tracker/moties.xlsx"
       - "amsterdam-analysis/tracker/scraper.py"
       - ".github/workflows/update-amsterdam.yml"
   workflow_dispatch:
 
 jobs:
-  scrape:
+  convert:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,6 +18,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -26,9 +27,9 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install openpyxl
 
-      - name: Run scraper
+      - name: Convert Excel to JSON
         run: python amsterdam-analysis/tracker/scraper.py
 
       - name: Check if motions.json changed
@@ -42,8 +43,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add amsterdam-analysis/tracker/motions.json
-          git commit -m "chore(amsterdam): update motions data"
-          for i in 1 2 3; do git push && break || sleep 10; done
+          git commit -m "chore(amsterdam): update motions from Excel"
+          git pull --rebase origin main
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
