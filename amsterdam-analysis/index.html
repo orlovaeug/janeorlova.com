@@ -32,33 +32,33 @@
 
 body {
 font-family: ‘DM Sans’, sans-serif;
-background: var(–paper);
-color: var(–ink);
+background: #faf9f6;
+color: #1a1a1a;
 font-size: 16px;
 line-height: 1.7;
 }
 
 /* ── MASTHEAD ── */
 .masthead {
-border-bottom: 3px double var(–rule);
+border-bottom: 3px double #d8d4c8;
 padding: 1.5rem 0 1rem;
 text-align: center;
-background: var(–paper);
+background: #faf9f6;
 }
 .masthead-site {
 font-family: ‘Playfair Display’, serif;
 font-size: 11px;
 letter-spacing: 0.3em;
 text-transform: uppercase;
-color: var(–ink-light);
+color: #888888;
 margin-bottom: 0.25rem;
 }
-.masthead-date { font-size: 11px; color: var(–ink-light); letter-spacing: 0.1em; }
+.masthead-date { font-size: 11px; color: #888888; letter-spacing: 0.1em; }
 
 /* ── TABS ── */
 .tab-nav {
-background: var(–paper);
-border-bottom: 2px solid var(–rule);
+background: #faf9f6;
+border-bottom: 2px solid #d8d4c8;
 display: flex;
 justify-content: center;
 gap: 0;
@@ -69,21 +69,29 @@ z-index: 100;
 .tab-btn {
 font-family: ‘DM Sans’, sans-serif;
 font-size: 11px;
-letter-spacing: 0.15em;
+letter-spacing: 0.12em;
 text-transform: uppercase;
-font-weight: 500;
-color: var(–ink-light);
-background: none;
+font-weight: 600;
+color: #999999;
+background: #faf9f6;
 border: none;
-border-bottom: 3px solid transparent;
-padding: 1rem 2rem;
+border-bottom: 4px solid transparent;
+padding: 1rem 1.2rem;
 cursor: pointer;
 transition: all 0.2s;
 margin-bottom: -2px;
 }
-.tab-btn:hover { color: var(–ink); }
-.tab-btn.active { color: var(–d66); border-bottom-color: var(–d66); }
-.tab-btn.active-equity { color: var(–equity); border-bottom-color: var(–equity); }
+.tab-btn:hover { color: #1a1a1a; }
+.tab-btn.active {
+color: #1a5e9c;
+border-bottom-color: #1a5e9c;
+background: #eaf2fb;
+}
+.tab-btn.active-equity {
+color: #6a1b9a;
+border-bottom-color: #6a1b9a;
+background: #f3eafb;
+}
 
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
@@ -98,20 +106,20 @@ padding: 0 1.5rem;
 /* ── HERO ── */
 .hero {
 padding: 3rem 0 2rem;
-border-bottom: 1px solid var(–rule);
+border-bottom: 1px solid #d8d4c8;
 margin-bottom: 2.5rem;
 }
 .kicker {
 font-size: 11px;
 letter-spacing: 0.18em;
 text-transform: uppercase;
-color: var(–d66);
+color: #1a5e9c;
 margin-bottom: 1rem;
 display: flex;
 align-items: center;
 gap: 10px;
 }
-.kicker.equity-kicker { color: var(–equity); }
+.kicker.equity-kicker { color: #6a1b9a; }
 .kicker::after {
 content: ‘’;
 flex: 1;
@@ -125,15 +133,15 @@ font-family: ‘Playfair Display’, serif;
 font-size: clamp(26px, 5vw, 40px);
 font-weight: 600;
 line-height: 1.15;
-color: var(–ink);
+color: #1a1a1a;
 margin-bottom: 1.25rem;
 }
-h1 em { font-style: italic; color: var(–d66); }
-h1 em.equity-em { color: var(–equity); }
+h1 em { font-style: italic; color: #1a5e9c; }
+h1 em.equity-em { color: #6a1b9a; }
 .standfirst {
 font-size: 17px;
 font-weight: 300;
-color: var(–ink-mid);
+color: #4a4a4a;
 line-height: 1.65;
 margin-bottom: 1.5rem;
 max-width: 620px;
@@ -143,19 +151,19 @@ display: flex;
 align-items: center;
 gap: 1.5rem;
 font-size: 12px;
-color: var(–ink-light);
+color: #888888;
 flex-wrap: wrap;
 }
-.byline-name { font-weight: 500; color: var(–ink-mid); }
+.byline-name { font-weight: 500; color: #4a4a4a; }
 .tag-pill {
 display: inline-block;
 font-size: 10px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 padding: 3px 10px;
-border: 1px solid var(–rule);
+border: 1px solid #d8d4c8;
 border-radius: 20px;
-color: var(–ink-light);
+color: #888888;
 }
 
 /* ── SECTIONS ── */
@@ -164,40 +172,40 @@ h2 {
 font-family: ‘Playfair Display’, serif;
 font-size: 22px;
 font-weight: 600;
-color: var(–ink);
+color: #1a1a1a;
 margin-bottom: 0.5rem;
 margin-top: 2.5rem;
 padding-top: 2rem;
-border-top: 1px solid var(–rule);
+border-top: 1px solid #d8d4c8;
 }
 h3 {
 font-size: 13px;
 font-weight: 500;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: var(–ink-light);
+color: #888888;
 margin-bottom: 1rem;
 }
-p { margin-bottom: 1.1rem; color: var(–ink-mid); font-weight: 300; }
-p strong { font-weight: 500; color: var(–ink); }
+p { margin-bottom: 1.1rem; color: #4a4a4a; font-weight: 300; }
+p strong { font-weight: 500; color: #1a1a1a; }
 
 /* ── PULL QUOTE ── */
 .pullquote {
-border-left: 3px solid var(–d66);
+border-left: 3px solid #1a5e9c;
 padding: 1rem 1.5rem;
 margin: 2rem 0;
-background: var(–d66-light);
+background: #e8f0f9;
 border-radius: 0 4px 4px 0;
 }
 .pullquote.equity-quote {
-border-left-color: var(–equity);
-background: #f3e5f5;
+border-left-color: #6a1b9a;
+background: #f3eafb;
 }
 .pullquote p {
 font-family: ‘Playfair Display’, serif;
 font-size: 18px;
 font-style: italic;
-color: var(–ink);
+color: #1a1a1a;
 margin-bottom: 0.5rem;
 font-weight: 400;
 }
@@ -205,25 +213,25 @@ font-weight: 400;
 font-size: 11px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: var(–d66);
+color: #1a5e9c;
 font-style: normal;
 }
-.pullquote.equity-quote cite { color: var(–equity); }
+.pullquote.equity-quote cite { color: #6a1b9a; }
 
 /* ── METRIC STRIP ── */
 .metric-strip {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1px;
-background: var(–rule);
-border: 1px solid var(–rule);
+background: #d8d4c8;
+border: 1px solid #d8d4c8;
 border-radius: 4px;
 overflow: hidden;
 margin: 2rem 0;
 }
 .metric-strip.three-col { grid-template-columns: repeat(3, 1fr); }
 .metric-cell {
-background: var(–paper);
+background: #faf9f6;
 padding: 1.25rem 1rem;
 text-align: center;
 }
@@ -231,15 +239,15 @@ text-align: center;
 font-family: ‘Playfair Display’, serif;
 font-size: 28px;
 font-weight: 600;
-color: var(–ink);
+color: #1a1a1a;
 display: block;
 line-height: 1;
 margin-bottom: 6px;
 }
-.metric-label { font-size: 11px; color: var(–ink-light); line-height: 1.4; }
+.metric-label { font-size: 11px; color: #888888; line-height: 1.4; }
 .metric-delta { font-size: 11px; margin-top: 4px; font-weight: 500; }
-.delta-up { color: var(–positive); }
-.delta-down { color: var(–danger); }
+.delta-up { color: #2e7d32; }
+.delta-down { color: #c62828; }
 .delta-warn { color: #e65100; }
 
 /* ── POLICY COMPARISON TABLE ── */
@@ -254,21 +262,21 @@ text-align: left;
 font-size: 10px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: var(–ink-light);
+color: #888888;
 padding: 8px 10px;
-border-bottom: 2px solid var(–rule);
+border-bottom: 2px solid #d8d4c8;
 font-weight: 500;
 }
 .policy-table td {
 padding: 10px 10px;
-border-bottom: 1px solid var(–cream);
-color: var(–ink-mid);
+border-bottom: 1px solid #f2f0ea;
+color: #4a4a4a;
 vertical-align: top;
 font-size: 13px;
 line-height: 1.5;
 }
 .policy-table tr:last-child td { border-bottom: none; }
-.policy-table .dossier-col { font-weight: 500; color: var(–ink); width: 15%; font-size: 12px; }
+.policy-table .dossier-col { font-weight: 500; color: #1a1a1a; width: 15%; font-size: 12px; }
 .policy-table .goal-col { width: 35%; }
 .policy-table .reality-col { width: 35%; }
 .policy-table .gap-col { width: 15%; text-align: center; }
@@ -283,22 +291,22 @@ border-radius: 20px;
 .gap-critical { background: #fdecea; color: #c62828; }
 .gap-behind { background: #fff3e0; color: #e65100; }
 .gap-ontrack { background: #e8f5e9; color: #2e7d32; }
-.col-goal { color: var(–d66); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
-.col-reality { color: var(–ink-mid); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.col-goal { color: #1a5e9c; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.col-reality { color: #4a4a4a; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
 
 /* ── CHART AREA ── */
 .chart-wrap { margin: 1.5rem 0; }
-.chart-label { font-size: 12px; font-weight: 500; color: var(–ink); margin-bottom: 3px; }
-.chart-sublabel { font-size: 11px; color: var(–ink-light); margin-bottom: 1rem; }
+.chart-label { font-size: 12px; font-weight: 500; color: #1a1a1a; margin-bottom: 3px; }
+.chart-sublabel { font-size: 11px; color: #888888; margin-bottom: 1rem; }
 .chart-canvas-wrap { position: relative; width: 100%; }
-.source { font-size: 10px; color: var(–ink-light); margin-top: 6px; letter-spacing: 0.05em; }
+.source { font-size: 10px; color: #888888; margin-top: 6px; letter-spacing: 0.05em; }
 .legend-row {
 display: flex;
 flex-wrap: wrap;
 gap: 14px;
 margin-bottom: 10px;
 font-size: 11px;
-color: var(–ink-mid);
+color: #4a4a4a;
 }
 .legend-row span { display: flex; align-items: center; gap: 5px; }
 .swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
@@ -315,19 +323,19 @@ text-align: left;
 font-size: 10px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: var(–ink-light);
+color: #888888;
 padding: 6px 8px;
-border-bottom: 2px solid var(–rule);
+border-bottom: 2px solid #d8d4c8;
 font-weight: 500;
 }
 .buurt-table td {
 padding: 7px 8px;
-border-bottom: 1px solid var(–cream);
-color: var(–ink-mid);
+border-bottom: 1px solid #f2f0ea;
+color: #4a4a4a;
 vertical-align: middle;
 }
 .buurt-table tr:last-child td { border-bottom: none; }
-.buurt-table .buurt-name { font-weight: 500; color: var(–ink); }
+.buurt-table .buurt-name { font-weight: 500; color: #1a1a1a; }
 .risk-dot {
 display: inline-block;
 width: 9px; height: 9px;
@@ -335,12 +343,12 @@ border-radius: 50%;
 margin-right: 4px;
 vertical-align: middle;
 }
-.score-bar-bg { background: var(–cream); border-radius: 2px; height: 6px; width: 80px; display: inline-block; vertical-align: middle; }
+.score-bar-bg { background: #f2f0ea; border-radius: 2px; height: 6px; width: 80px; display: inline-block; vertical-align: middle; }
 .score-bar-fill { height: 6px; border-radius: 2px; display: block; }
-.rank-num { font-family: ‘Playfair Display’, serif; font-weight: 600; color: var(–ink); }
-.equity-score-high { color: var(–equity); font-weight: 500; }
+.rank-num { font-family: ‘Playfair Display’, serif; font-weight: 600; color: #1a1a1a; }
+.equity-score-high { color: #6a1b9a; font-weight: 500; }
 .equity-score-med { color: #e65100; font-weight: 500; }
-.equity-score-low { color: var(–positive); font-weight: 500; }
+.equity-score-low { color: #2e7d32; font-weight: 500; }
 
 /* ── DOSSIER CARDS ── */
 .dossier-grid {
@@ -350,31 +358,31 @@ gap: 16px;
 margin: 1.5rem 0;
 }
 .dossier-card {
-border: 1px solid var(–rule);
+border: 1px solid #d8d4c8;
 border-radius: 4px;
 padding: 1.25rem;
-background: var(–paper);
+background: #faf9f6;
 }
 .dossier-tag {
 font-size: 10px;
 letter-spacing: 0.12em;
 text-transform: uppercase;
-color: var(–d66);
+color: #1a5e9c;
 font-weight: 500;
 margin-bottom: 0.5rem;
 }
-.dossier-tag.equity-tag { color: var(–equity); }
+.dossier-tag.equity-tag { color: #6a1b9a; }
 .dossier-title {
 font-family: ‘Playfair Display’, serif;
 font-size: 15px;
 font-weight: 600;
-color: var(–ink);
+color: #1a1a1a;
 margin-bottom: 0.5rem;
 line-height: 1.3;
 }
 .dossier-text {
 font-size: 12px;
-color: var(–ink-mid);
+color: #4a4a4a;
 line-height: 1.55;
 margin-bottom: 0;
 }
@@ -382,7 +390,7 @@ margin-bottom: 0;
 font-family: ‘Playfair Display’, serif;
 font-size: 22px;
 font-weight: 600;
-color: var(–ink);
+color: #1a1a1a;
 margin-bottom: 2px;
 display: block;
 }
@@ -394,14 +402,14 @@ gap: 20px;
 flex-wrap: wrap;
 margin: 1rem 0;
 font-size: 11px;
-color: var(–ink-mid);
+color: #4a4a4a;
 }
 .risk-legend span { display: flex; align-items: center; gap: 6px; }
 
 /* ── HORIZONTAL RULE ── */
 .rule-ornament {
 text-align: center;
-color: var(–rule);
+color: #d8d4c8;
 margin: 2rem 0;
 font-size: 20px;
 letter-spacing: 8px;
@@ -409,15 +417,15 @@ letter-spacing: 8px;
 
 /* ── FOOTER ── */
 footer {
-border-top: 3px double var(–rule);
+border-top: 3px double #d8d4c8;
 padding: 2rem 0;
 text-align: center;
 font-size: 11px;
-color: var(–ink-light);
+color: #888888;
 letter-spacing: 0.08em;
 margin-top: 3rem;
 }
-footer a { color: var(–d66); text-decoration: none; }
+footer a { color: #1a5e9c; text-decoration: none; }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 560px) {
@@ -747,17 +755,17 @@ h1 { font-size: 24px; }
 ```
 <div class="metric-strip three-col">
   <div class="metric-cell">
-    <span class="metric-value" style="color:var(--heat);">+3,8°C</span>
+    <span class="metric-value" style="color:#d84315;">+3,8°C</span>
     <div class="metric-label">Extra gevoelstemperatuur Zuidoost vs. Vondelpark tijdens hittegolf</div>
     <div class="metric-delta delta-down">↑ door verharding &amp; gebrek aan groen</div>
   </div>
   <div class="metric-cell">
-    <span class="metric-value" style="color:var(--flood);">34%</span>
+    <span class="metric-value" style="color:#1565c0;">34%</span>
     <div class="metric-label">Buurten met hoog wateroverlastrisico én benedenmodaal inkomen</div>
     <div class="metric-delta delta-down">Geen zelfbescherming mogelijk</div>
   </div>
   <div class="metric-cell">
-    <span class="metric-value" style="color:var(--equity);">2,3×</span>
+    <span class="metric-value" style="color:#6a1b9a;">2,3×</span>
     <div class="metric-label">Meer klimaatsubsidie per woning in Centrum vs. Zuidoost</div>
     <div class="metric-delta delta-down">Omgekeerde verdeling</div>
   </div>
@@ -782,9 +790,9 @@ h1 { font-size: 24px; }
       <canvas id="bubbleChart"></canvas>
     </div>
     <div class="risk-legend">
-      <span><span class="risk-dot" style="background:var(--heat);"></span> Hogere hittestress</span>
-      <span><span class="risk-dot" style="background:var(--flood);"></span> Hoger waterrisico (belgrootte)</span>
-      <span><span class="risk-dot" style="background:var(--equity);"></span> Lager inkomen → hoger rechtvaardigheidsrisico</span>
+      <span><span class="risk-dot" style="background:#d84315;"></span> Hogere hittestress</span>
+      <span><span class="risk-dot" style="background:#1565c0;"></span> Hoger waterrisico (belgrootte)</span>
+      <span><span class="risk-dot" style="background:#6a1b9a;"></span> Lager inkomen → hoger rechtvaardigheidsrisico</span>
     </div>
     <p class="source">Bron: KNMI Klimaatatlas 2024 · CBS Kerncijfers Wijken 2024 · Gemeente Amsterdam Riolering Basisrioleringsplan 2024</p>
   </section>
@@ -832,8 +840,8 @@ h1 { font-size: 24px; }
   <div class="chart-label">Klimaatsubsidie per woning per stadsdeel (€, gemiddelde 2022–2025)</div>
   <div class="chart-sublabel">Centrum en Zuid ontvangen het meest, Noord en Zuidoost het minst — ondanks hogere klimaatrisico's in de laatste twee.</div>
   <div class="legend-row">
-    <span><span class="swatch" style="background:var(--equity);"></span>Subsidie per woning (€)</span>
-    <span><span class="swatch" style="background:var(--heat); opacity:0.6;"></span>KRI-score (rechtsas)</span>
+    <span><span class="swatch" style="background:#6a1b9a;"></span>Subsidie per woning (€)</span>
+    <span><span class="swatch" style="background:#d84315; opacity:0.6;"></span>KRI-score (rechtsas)</span>
   </div>
   <div class="chart-canvas-wrap" style="height:260px;">
     <canvas id="subsidieChart"></canvas>
@@ -875,8 +883,8 @@ h1 { font-size: 24px; }
       <div class="chart-label">Gemiddelde KRI-score versus aardgasvrije woningen per stadsdeel (2025)</div>
       <div class="chart-sublabel">Er is een negatief verband: hoe hoger het klimaatrechtvaardigheidsrisico, hoe lager de verduurzaming. Noord en Zuidoost zijn de uitschieters.</div>
       <div class="legend-row">
-        <span><span class="swatch" style="background:var(--equity);"></span>Gem. KRI-score (hogere balk = meer ongelijkheid)</span>
-        <span><span class="swatch" style="background:var(--positive); opacity:0.7;"></span>% aardgasvrij (hogere balk = meer verduurzaamd)</span>
+        <span><span class="swatch" style="background:#6a1b9a;"></span>Gem. KRI-score (hogere balk = meer ongelijkheid)</span>
+        <span><span class="swatch" style="background:#2e7d32; opacity:0.7;"></span>% aardgasvrij (hogere balk = meer verduurzaamd)</span>
       </div>
       <div class="chart-canvas-wrap" style="height:260px;">
         <canvas id="stadsdeelChart"></canvas>
@@ -1065,13 +1073,13 @@ buurtData.forEach(b => {
     <tr>
       <td><span class="rank-num">${b.rank}</span></td>
       <td class="buurt-name">${b.name}</td>
-      <td style="font-size:11px;color:var(--ink-light);">${b.sd}</td>
-      <td style="color:var(--heat);font-weight:500;">+${b.hitte}°C</td>
+      <td style="font-size:11px;color:#888888;">${b.sd}</td>
+      <td style="color:#d84315;font-weight:500;">+${b.hitte}°C</td>
       <td><span class="risk-dot" style="background:${waterColor};"></span>${b.water}</td>
       <td style="font-size:11px;">${b.inkomen}</td>
       <td>
         <span class="${kriCls}">${b.kri}</span>
-        <div style="margin-top:3px;"><div class="score-bar-bg"><div class="score-bar-fill" style="width:${barW}%;background:var(--equity);opacity:0.7;"></div></div></div>
+        <div style="margin-top:3px;"><div class="score-bar-bg"><div class="score-bar-fill" style="width:${barW}%;background:#6a1b9a;opacity:0.7;"></div></div></div>
       </td>
     </tr>`;
 });
