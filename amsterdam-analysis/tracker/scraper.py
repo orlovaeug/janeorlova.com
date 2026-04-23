@@ -45,9 +45,14 @@ def parse_date(v):
     if hasattr(v, "strftime"): return v.strftime("%Y-%m-%d")
     s = str(v).strip()
     if not s or s.lower() in ("none","nan",""): return None
+    # Do NOT slice with len(fmt) - format strings are shorter than output
     for fmt in ("%d-%m-%Y", "%Y-%m-%d", "%d/%m/%Y", "%m/%d/%Y", "%Y-%m-%dT%H:%M:%S"):
-        try: return datetime.strptime(s[:len(fmt)], fmt).date().isoformat()
+        try: return datetime.strptime(s, fmt).date().isoformat()
         except: continue
+    # Try with just the date part if there's a time component
+    if "T" in s or " " in s:
+        try: return datetime.strptime(s[:10], "%Y-%m-%d").date().isoformat()
+        except: pass
     return None
 
 
