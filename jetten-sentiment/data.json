@@ -1,5 +1,35 @@
 [
   {
+    "id": "gb8b95776b7e5",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet reikt Klaver de hand, maar houdt steunpakket verder vooralsnog beperkt - EWmagazine.nl",
+    "date": "2026-04-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVWdYc1l0b1hfTlBYWXBaWVhqanl2XzNNLWo1MWRlLVMtZFN2RzNjRmtxQThoZ2VoSVIyWHY2cnBJQUNDMTR1LUwzaHFIYmJVUXlLcFpnRGhUQWlrUWhHc1FQTnU4YVVBSVlSVUJVTi1lZ0ZyTF9VWE43cW9IR0h4X2RwZDZmZXE4Q1ZRZjkxQlhrZ0t4VUZaM2x5Z185a2ZhamIweV9RZHB4RTNOSjBYY1p6WGV5UDFBSGxLdnRyQlZCWHZodnl3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g171e0bfa3de2",
+    "type": "nl",
+    "src": "Brusselse Nieuwe",
+    "title": "Speelschema | Jetten naar Cyprus, debat over Voorjaarsnota en rondetafelgesprek mensenrechten - Brusselse Nieuwe",
+    "date": "2026-04-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa2xnZjJXa1VGcHg0M2VRajJuci1BQmxKaWZjeFRCTVF0UFRpLTRkY0dscGhIcTA2dEVjNkRzZ0lndktaM0hQTy1BSldkY1R0RXNyVHJnQ1kxSmp4SFZoMDhLcXRtUnZCYTZnRkpoRDhRclR5b3RhczBlV21ib1Q1djlLdFE4d3FaN2h1a1Y2OWpoMk11N2NEYktDQU1LT3V3cVZkclROV0FjMEhjRVJmVHJrdVJ1T1VaS3c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc97cacca4cc5",
+    "type": "intl",
+    "src": "Al-Monitor",
+    "title": "A longer Iran conflict could boost risk for Ukraine securing missile defences, Zelenskiy says - Al-Monitor",
+    "date": "2026-04-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTW45YTNpbjM3blNKZVF5cThhR2MwaDl1Q0FPZDI2M2RlYlUxWG1mc2F2SzZwa0FlekExeTF0OVBsekhQLVBIU1NxbFYzX3ozZ3NUZHNId2Nqb05vd0ZielJ0S0t2Ri1hSGU1Sjhrdzd2LUFUcHhOZkRuUnc4bW4xRjRNRUhXSjN3YTh1anU1QnJlOW90YmdveTFEQjJUWkZTR0RaTEd2TXhRelhmVHZNT2JiOF9FVkVHYzhGVU83WFBHaXBq?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g528871ebca91",
     "type": "nl",
     "src": "EWmagazine.nl",
@@ -8,6 +38,220 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPLVhENWV1eXZfMUMwZlFGb1pPOTVmbzNhVmx0OUN0eHF5TWhZNVZBZ3hWYXNkcnprNzdRcEZoN2dqTlQ0OW1tM1J4bEgzbWZlUDQtUXNfbHNOdWdZbG1HUkphWEdYYUczd0dtZzJ6SF9VTHVNWXlKVEp3S3VMdDZYZVVLXzRkQzlLOG53dDYxTkZBRnJYV1FwcEpJdDZHNXF6RUNaY0lKYVFyczhxTkhpYkdtVHFZdw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g88ac74e4a928",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Premier Jetten: binnen twee weken nieuwe wetsvoorstellen asiel",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://nos.nl/l/2611537"
+  },
+  {
+    "id": "gd0832d43cc3d",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Met belofte over goedkope treinkaart, en sussende teksten, manoeuvreert Jetten door energiedebat",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://www.ad.nl/politiek/met-belofte-over-goedkope-treinkaart-en-sussende-teksten-manoeuvreert-jetten-door-energiedebat~a3731e8c/"
+  },
+  {
+    "id": "gf7b779c7a0a1",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Nicolás Keenan 'stierf van zenuwen' toen relatie met Rob Jetten bekend werd",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://www.nu.nl/achterklap/6393475/nicolas-keenan-stierf-van-zenuwen-toen-relatie-met-rob-jetten-bekend-werd.html"
+  },
+  {
+    "id": "g6da95b8e0c83",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Premier Jetten na weggestemde asielwet: ‘D66-senatoren hebben zich netjes gehouden aan coalitieakkoord’ - AD.nl",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOMkV5a3ItOXVJVEt1b21fWHNvSE8tV3hZQVdXMFdQN2JUdkc4QUtwWFFKY1c4NjUwUVlQWVYwZU9SOXVYNXZBUmN2Ump1dnphUi1faVFjMVRwS3pqS1R0T2lrdUNBTlQ2RERjSGdjZ0JTclRIajV4dHBTbXNOMW1qR0lOaVA3UnBsdlZlcVZmZ0tkVE1lSS1yczFrc2ZIWnFQRDAzTDJqZW0wY3I2cGNQdWhDdl9Yekt5aTNKWUJyLUN5dmhxb1pZUlFoNlVCaUVHUFlR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gee1a5a4f8740",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "LIVE | Premier Jetten omarmt PN-plan voor goedkope treinkaartjes in de zomer - De Telegraaf",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZ3hWQ2d1cHp1TXpmTExGMFpNQTcyQ1hvcjhEYl90Vk9yUjJHNHpqNm41T2xIRWRQZ3hCZ0F3MkpvX1JpaDhDUkxTZjhidlR0VkhQMmZRcWNGMl9kaDlKa0s2MFVoc3QtOFp4TXRYVnVyQVVnLTZlMUJSRk1SZTIxSWZ6SkhZNXJUTE9GZm5PamdGMkM1a1pqWHZqWUdEcDhNQTRIS2I2UEtqb1VrQzVmV0hRdVdaNlRJZ1R1YkJlS1Y?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc02f70954144",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Het vlot nog niet erg met de kopjes koffie van Jetten - Het Financieele Dagblad",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQLUFuR3ZMRGFRU2RjUjdyMUFyM3J0OG1qZUNEeFlGaWxDeGNXY29PN0FGV2lfWFU4QWN4M2Jlc1NBbERFYTRLem5zeW5xMFRCYW9KNUJ1UTdhMl9VcllMOTJEMFd1QjJ1dUZXUnMzZlRoUXltVUVSc1NQOWVwb3Z6ZlhVNHE0QjRJSlp5cw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g941277ae150a",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Met belofte over goedkope treinkaart, en sussende teksten, manoeuvreert Jetten door energiedebat - De Gelderlander",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRlFwdlhfendaNjBHZDc4V1NucndMb2E0eGU5WnpuYnYwTzFsaWZrQ3JEbHBKbThjV0NFR3RNaDlWbk4xdktXVlVFZ2N5R1E1S195T2dDR1VUMTVOZWVMMnZ1TUxaNkpVQUtVS3VoZW9KLUF0blZPaG5PTE80bUQwQWtZNGpYeGVCOHJrLVlZU0RtTkJtcDBULUdXRmVLbDUyR2k0QXdZb1puYTB4X2xhMDF2WXM1NVphTlpOUlZqd1M0MkstTmgyOUc0SERyQ1phNHhfSA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfef59a26d96e",
+    "type": "nl",
+    "src": "Nederlands Dagblad",
+    "title": "Zelden was het bordje van een premier zo volgeladen als nu bij Rob Jetten - Nederlands Dagblad",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRE5kWkxCNDVsZHpNSndQS0RPOGxEV25vT0Utb1dzbGl1WDBZeVRKNWd4Vmx1R1dsWTZpNlJ1ekVhM3l6UF9YMUJ0c0dOSkZCaXpJbzBNQVR2QXN3ek16R1p0c3F4UUNldXRlTFpCX1ZJNUg1NXBPRFJrX25tQ25odXljRHNYeHNWNW90Tl9kb2VJVFVrU2hkVTNiaGplWjhUajk4YnV3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb629d1c38a5f",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Hockeyvriend (28) Rob Jetten openhartig over relatie met minister-president: 'Daar schaam ik me nog voor' - Sportnieuws.nl",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPV1JFSTdYYkVyS2FvdXVVUVVxU2J6V3E3Q0FGU0l3bFZ3WEVhMzNvNmRUM3V6ZUU0VVZSSmcyZElzZ3lnX09DNVNLQkhxU1V3QUx6TmliU1lraWZlZmF1RTB4azR3VmNfbnVsVWVvcEltRGJTcnRIeGFJM0c0N0JreTZoTm1WSERiY2V4a1NxYkd4a3lDQ3JyTzRYSVp5elpfVUlFaTlXOUJLUVk5TEIyaWVSMVZKNk94b2p0S1lOdGo1OXcybDlCQXRXazFHa2MtQ1ZVb3FvMXdPYUQ3RFBwV2xnTUpnQVN0dzdUWXpDbVhrWDg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2ff38296570e",
+    "type": "nl",
+    "src": "mobiliteit.nl",
+    "title": "Premier Jetten bevestigt dat kabinet zich gaat inzetten voor goedkope treintickets in de zomer - mobiliteit.nl",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQaVdvMUh3aEhkYkZJN0N3TlpsS3FadE1vN2ZUcmdIXzNTZW54aElucW1ZY1FhWm1ldm83M0ROSmcyNzZIcUNhUFZRMWEzQTBGZUNHZHJLcFV6ckwxaW93WjJlYzhpdlQyb1cyRTRHN243RTFHVWNpUWRyeFE4ZmVpamFzYWhxcEt5cVZzN3VvNVEzcXR5UERpVWlyX2ZvRFdMZzVWd3pDS2p0TUJidUp0QWNDTHJ2TC15bXlrSlkwV3RQWVdwQzFkVUhEZFhidm9j?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8befd55691c7",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Premier Jetten na weggestemde asielwet: ‘D66-senatoren hebben zich netjes gehouden aan coalitieakkoord’ - Het Parool",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNaTA0ZkNlTWdzRHhSdUtneHVsX2lCeVF2dzMwRUxtNU1IdGFlbGtla29LX2xsbEpma3Jld3MzQllRR1J4ZWp2MlRTUnhSZXp4d3liMkQwR2ZsOHdWX3V3d2plZ0xGcjM2Y1cxN3RPSkpDUW5FeDBkbERqcFg3SFE5NkwyaDFTV0NfMkdCcFBYWG5SWGh1ajJNR1J0ZWtnQk0zRmxUbVhpbTZVbko5UkVfUkNrUElZODc5VDZXeHJKNDhvTU5VbHNROFRxbGxpSEJqNnhRS2hoYk5FQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g96d1192290f9",
+    "type": "nl",
+    "src": "pzc.nl",
+    "title": "Premier Jetten na weggestemde asielwet: ‘D66-senatoren hebben zich netjes gehouden aan coalitieakkoord’ | Foto - pzc.nl",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaVUwcHo5Y1dqOExCNnFzTEc5amEzQS1qQ1RMdl9jcUc1dkhNUzlHQjRDemJvRlVweTI3X3dSODJkS0dsMEdCOTNqT3BFLV9EMzVNVWx3ZUhKc1NLdzJTS0dDVElyNlFaTS1UanlQUlBKQ3lyYmM4MEltckczV1dkMGU2OTZrbHpBVjJYaDByOWFpa3NacE9uQW9RX3RNUWVJbml6NTdIemRIWGRvelBOUXVic19BZC1GeWVZUFExZk92V0ppa1o4V2dDSXpFLTNLZGNQcFdISmM0aVNUREs0ZWxB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g695baea5b3a0",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Hockeyende verloofde (28) van premier Rob Jetten spreekt zich uit over kinderwens: 'Dat zag ik voor me' - Sportnieuws.nl",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMVV5UkgzeFBNWHo5aHpEY2ZibGNhaE1FMEVDdDd3Y29UX1pGaG5aYXZsSGhBYm1JUTFNNms3TVRNT3VUQ0xVWFVYS0FrdzYxMXkwOTB4LXNsTEZXTFdKS09QcUNpMTBCWFZTQ2JxdTVlaGprdFNBLTByV0M5aVN0YTlkc0Z1MGJGWlo3MWtaQ0piUHVoWFJ5cHBlUG5sSG1oOTlpMkNIQVdUaDVFek0tcnA5SXlYYWNPcFpPTHpVQ2JhZ25DcTBTbDBTT2hyTENuZXBiZ3JyZWNHUGtaYXY2X0tLbC13SE0tYklPV3Y0dTM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga817627d646d",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Nederland terughoudend over taks op ’overwinst’ oliebedrijven: ’Eerst de feiten’ - De Telegraaf",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVzNkbHVzM0VONU9uTkpBR0h2NzNZOTllR0p5cFJfWjY2RldtbkNPS0VaRm1pWmNxbWsybS1JTVRqcjJqNS1ZNDc0Vmg1REpvYnJnd0hicWhJcV9oNkQwVnF0RjBybmJGdHVyNGFUdE94bmU3WXlBbmdOWHNJanhPZkdDb2JTa29LaFJIWlBWcWJVZXJlUDJheFloc2dsM3ZBY3o2NnkwTzNjQkJaTm5jekNvbFU0d1JKd21LeDdyeVNaZw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gbd452a506134",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Premier Jetten: binnen twee weken nieuwe wetsvoorstellen asiel - NOS",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQWpndTVhTUhCVXZtbXRldUs1SUFEX0JsdzJVR3NTOU1jTVYwN0R0QWdjYTVjSjdYaEc1SnYyZG5JaDhJZzhDa0pTdGc2UXNjWDlCOXMxcHlFdTdsdGpYYU16YnoyODlsZG5QUmpYbmdmY3hwUnV2Q0tZT1p2Nk9uVEtIQTZoTmpOQVhnRmVsblRJdGV6aElJ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5491cd78262d",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Kabinet dealt een beetje met links én een beetje met rechts in crisispakket - NRC",
+    "date": "2026-04-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONnNfaTg1Q0lldlRTNWxUNlpjenczUmNUVjNEOHVTQUV0WkFmQUNRWlFMd3pPWTRrc1VDS19FOFg1QkxCVEhWb2hYa096YWJyaExzeDZxUHN3eDRXSGZ4MnJCVVZuQkdQZG9KUzBfNERzeHVNMmNnNUxERGlzVWxjcXFHNWQteVR0aldtVXpsWmE3dEtWZUlJckQxeGl5LWYxVDRBTmNwME42YXVBcERSYzlHYlBNcFVjNHJkX0Zn?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g654b269ebdc7",
+    "type": "nl",
+    "src": "Treinreiziger",
+    "title": "Nederlandticket stap verder – kabinet werkt aan voordeelticket van 49 euro voor treinreizen in de zomer - Treinreiziger",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWjdGcUtzUkd4UkFkN3RmbzVXRGpyNXp2S283bk9teWhVRGJ6OU1JZTFocVlsd2lHZ0VjVl9HVTl0bDhwVTdzU3paeHZlTEZBSHZXc0FKRDNHR3l4b0NRYVNib3ZrZWFmc3hCN1M1ZW93R1k1OFg0M0RVWEZuMlozQjA4bVhsMjlTNUJ2WXlaX2otVmhPdXp6NmJiWlVNcDFSMDZoakNuY1NxQTAzZFNfVDh4dGVTdVRaaUVxZnE3TENydlo4dGlyN25Ob9IB0AFBVV95cUxPbXhIZjEzdF81amg3YkNUSHlvTnB0bGhrNFE1M2c2MmV0cjFRdVhKWkZDUW5DYWlkUjU0SHNkV2xQREI1T1NOQVNaeWdXSE1FUHdudUFqTjQxS1JDeDZMdGVDMEoxSXVmQVBrNW40X0RJaGk4WlJORkNsbXA4bWlzbHdjZnBocjVVWndwSEtIQTlZLVkzTVFFUEwtMGhHU3pkQUdKT0x0OFI1YUt0YkFKYmE0SmlYaDR5ZFpFVVZQdTZ3LTZQODhpazRHUG5LTjVW?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g22bf6e30cf32",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten: binnen twee weken nieuwe asielmaatregelen, minister gaat ’broeden’ op strafbaarstelling illegaliteit - De Telegraaf",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPcjZHMGNXdjNMZnkwZGY5ekxUQldxeXhwQTY3Z1VNc3l0NU9RdE1jdUpBanloZ2FqcHdYbXN2N0JlbkxEcmUwWXF4TjZLQndTNmJsNFZMRm96b0pvUHp3QkpKU3BvZHFJYkZaWERpYVBRZGxucTZPazlfQ0NjSkw4WnZtdWpnMXJFejNRaGxKRWlpRkhnZXppSnBDLVdXZHd4ZWgxVnk2OXY1VGVObTdsNjIwcmU3OGQ4NFhmNE9HejU0bWpGSVdzazlBSG5sYUN0ejU5YUZQbk14T0dQbWhvcHpDUl91SnBl?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc7baefdf0287",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Kabinet houdt poot stijf: geen accijnsverlaging brandstof - Het Financieele Dagblad",
+    "date": "2026-04-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbjNlNS15OXNQVE9RWUMxcWVNalFWVXAya3U1SXBqQm5PSVVHbWZkalBEME9obzVZRU5uLVNwb0pwQ0tHTThoWkhEajlSYkxteThFaWJzWi1UR1hOQU96dmJPcG1BajdmcWlmNUtNUVdFOC12bWhKYmprMHk3Zm5VQ3VtZUZTLUR5WVY1Vy1qRXllWXJEX19TQ3lqREFzZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4d0da67ee87e",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Met belofte over goedkope treinkaart, en sussende teksten, manoeuvreert Jetten door energiedebat - AD.nl",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVHZESmxsMlNuNEZnSWJKQTY3ZlVtWE9jcHd3bzQwOGFRYzEzQmg0QWpuZ214cDdzYWpsZUk1eEc5eTNXd0dDSDRQUXdQaHVPNWdfejZ0bEFuTEo2V3VreUIyYmpneTJRVDdoVU8yd2lQODFlM2RRSU9nRzlocm4yeEIzYnlNN3YwcmtWQ2tfYmZlMWQyb054Wl9wYU5fZWJZMkZwWU5VSU1fclJkeVBIV2xFMEpreUc4X1d2NmNUNW5NNzZ1bmgxd3BpYw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gce0ad0dc0ca4",
+    "type": "intl",
+    "src": "NRZ",
+    "title": "Schlappe für Ministerpräsident Jetten: Asylreform in Niederlanden gescheitert - NRZ",
+    "date": "2026-04-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPRFgtbFNvekhZMzE3bUNSRGEtd0NUMGVpQ2R4QS0taEFmd2F5UEdmQm1QNnJDMUpONFg0MjN5a0w3dEFVZFhTWTc4WXBoOVNuNkdkVkdweGI3SnVXdk9BS2JBUTRES2lweHVzRVFIZXFBZjc3SkFmaG53Snc5bExoa3N1WUpQS2laTlZsQUlmQzlmNHliQWIwT25oemxzOFozdWdDaDNaSGdYN004ak5XUHVLZ1NQcnNGWW1JTlZubWRLRlRsN1REOU9ndw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g4a4e8836d2d7",
@@ -294,6 +538,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxQQ1d3ZVA3QXBuNFFvZklEdllWdXlkNVdTWWphLUVDQmhrZk9fOHoxYk96dm96cmowMy04d1FzOGpQS2xPY2lCSTVyX3RQZDRGVElFMEpYSGo3SllGa2hEcGg3ZUxQZjdrdFZhQVJUNEJpSTFKNzFGdTYxbXFBam9pN0Y4clpYb3VHTkFBLUV1MGhjVTJZWWVZMjNBNmItSUV1N19vQmJCYU1rQTZMemVFQ0ZmZkVJS0NCUWotNVZMdnEyU2xnMjZQU21LSzJxX3IxaG10amtXRXhJRHMxenEwYWdGLTZEWEh4c3VwS05JWW16NzVNSFJsbndhZW9qaWN1NnVLS1NfNU9YRi1WMnhGbWZXTTc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gfdca017c95b3",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Coalitie zit klem na asieldebacle en leert een harde les over PVV en eigen formatiefout - AD.nl",
+    "date": "2026-04-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPaGpBWUhxc2o3Q05vR0hfRVEycTZtc0pEcVJyZ1djYUgweFB1RXpqSXV5SFVvMGkwaENyQjhKM0s5dUhMWm5OM2RiajFjeGprYmVtY0pvNTRQZXc1X3phQ0syaG1BbUdmUnptZXVOTmVzckctN0thZG9nVXUzcHFONUt6ek9mS3owaWZNSTdxX0Y3TmN0MzFhVXp2MWs3NmktUGp5X1NwYjRDSUFjUTNDVWdQU0pvX2hOWjNPMmUtM0Fldw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0765c4e6795a",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet belooft Nederland-ticket: voor 49 euro onbeperkt reizen met ov buiten spits in zomer - AD.nl",
+    "date": "2026-04-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNDZWSHBwVDhoZVNleUtwdU1taGpYczlseXdjZlhuYUc3MWVzREtUcl9ZQzRTaGJ1Z001OXI0MmVldnVHTWpjYWVZQklDTlJWaGFzaTFJNFZTdmNwTWROWG1FTlE1NkNmQTRDMmNqSzVIYXhGbVV4QldYMGRsMVBCeFB5WnVNcy1PRm1NZk0zcDBRejBTSEtTblA1dmJaMWFGaUt4SzBRbEFjbzZWaDhGMXk5VUhtek12bjM5MjYyNmtjeEJXNUlz?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gd95220061e84",
@@ -2311,6 +2575,26 @@
     "date": "2026-04-14",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPUDVYcEdERU5nNUx0aFFLYXFlZ05PTXZtTUJoMjNlTWs1MDV6V3ktQW54VUVxVjQtTjdFLWRRVUdqNmhNZm81ZXp4MG1tcDdsZHpwc1ZlYUpoOVlkUDJ1U3RuQVE4d1NFT2xWRDl2b1dRNFZVczFvaTFNdGhfY0cxUk40NlllWmlCajhQamoyNTFKNzBpWmxuXy10ZzRlb25jSWxmQkpQVkNGdm9YY3MwcnRNMnd6bDMzY0pScF9YNVJhN2E1bzFMNHFmUXpxdUFFOExR?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "gbdfc81b5776f",
+    "type": "intl",
+    "src": "DVIDS",
+    "title": "Prime Minister of the Kingdom of the Netherlands Rob Jetten Visits ANC [Image 15 of 40] - DVIDS",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYk80YjJfT19OaDEzS3drSU9xQkFpbHJiaUtKUnhSOFJhYkJZWWxqLU84VjQyNW16WXE2eEdlaFhpcDZIRlpBWlNXUlY2NU52RUdOOFVSRkxnUzBrS3dIb1QxN29ZejFJSUVDbkxBblZReDdHMmlGbTNkR2oyOUVlM1FpQVhOb0hLdGpPTklOaDFYRUswdVhWVjBUZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb97e73234ded",
+    "type": "intl",
+    "src": "reutersconnect.com",
+    "title": "Britain's Prime Minister Keir Starmer welcomes Rob Jetten, Prime Minister of the Netherlands, to 10 Downing Street in London - reutersconnect.com",
+    "date": "2026-04-14",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNM0RRUFRwYlVXNGFRMC1ha1BRVjkyZjJYam9nTmNpUTNjTmVIWG1yX2FsT29IdUlUZHhTTU5pMjB5UzVJWmNmNnc5UjR5Wl9BVTE3YnBxV3gtMG9aRHh0Z0NzcUkxWVBsS2VyaU5IcnNCbUp0M1JJOC14SXJvRkRWelg5Nld3XzJlbm5jeEdYMVJnYi1sLXl3NS11c2ZKaU9PYk83ZFFKZG5TblRNLXBHVjhNcVUwRUsydmRUSGcyVHZza0JDb0RLTUdfVzEzTDZnYjBVQzhhLWxfa2JUbFVkZnljaW1KZHh0YlNTMGJIMXppVThqUXNXVkVZNVlnTzNCOE5VaS1rSHlSWlRRWE5FLVNNNG02eFhsc01ITEVsNzFESmZGSTM1UFdhdFlTNE1lNVE0VElYcw?oc=5",
     "flag": "🇺🇸"
   },
   {
@@ -6105,6 +6389,17 @@
     "icon": "📰"
   },
   {
+    "id": "g07c4fbb78647",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "EU gaat een handje helpen, maar lidstaten moeten vooral zelf aan de bak om huishoudens en bedrijven te helpen tegen torenhoge energiekosten - De Telegraaf",
+    "date": "2026-03-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQV1JtTjBmQ1UzVGpROERZZjh0dmZtSG00VHliVUxQYzVfX2VOb21EZVVtb1huR2RyT3lFYnZyaGtSSnBQUnRwdlRmQzN6QzVVdE0xVmZpWUhLZlZHa2YwZjB4OEN1T0hJRFIxVWlFOVJuR01jbEFxNHpnQ0dkSEZob0ZnaUplUHNwLU9nYWFQd2FURG1MVk9qMHRlSEtUNThGVzJzanpVWHl3VXZwdFVBT0JEWVNvZm9IZFhnYlVGN3JUWmFvamJOc0NUMXYwWHJhSGNMdlh6SU81OEh6UVRoOVYxX3V5SEc0ODBHa2dGdE96WUFDWlJFd0xiWGpMcE1QNTJfdEhYQWNqTDhWRU9ucGQ4Si1UWG5h?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "g148c8083bb1a",
     "type": "nl",
     "src": "AD",
@@ -8729,6 +9024,16 @@
     "date": "2026-03-08",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Gal80X3VJbTlySElPb1BjaThTS3pVSUUtSVZ2WFZMMTRpWHVLRjJ5RU14N21LbWhBVlFKR2JoSW5TQ0ZzZm1mcDVDWGluZVNxdXBkUFR2UTc2dEtfcGgwM2dWdm7SAXBBVV95cUxOZ2lkYlRNZlEyNWZ0NWhQY08ybVF5bDlobTV6NnFUb1ZHT0dCM2UwbW5XZUs2UDZTMzlWYTNRQnJVR0NSZXhUR1VLVEpuTGh2VnNleXdXb1NUakltcXZ3ZDhONDBCMmVkcUdORmRWcnV6?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g27cbc102cd41",
+    "type": "intl",
+    "src": "Wiadomości - Gazeta.pl",
+    "title": "Holandia chce rozwijać produkcję dronów razem z Ukrainą. \"Mamy ambicje i zamiary\" - Wiadomości - Gazeta.pl",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOUhRdDRuelVIeFRrYzVtUlJVOEZ2UDFWSnhtZ29rTEg3RVNNT1ZhNXpJRjc5SjJXWHNNWGdvbHNWTVZKeVhPdXZkX0R1MFNfamNSY1RWM3dtOEk2MHZXTnRnY0o3QTA2N1dIalFDT1dnMGhOS2dtbndFNHByWV85Y045cUZKQmZYNVpkWDRjM0V1RzJXMG1zVUdoTDlWVU4yUE1XazFrTklqVWM5cUg5QmYtMTJydGFDb293SERn?oc=5",
     "flag": "🌍"
   },
   {
