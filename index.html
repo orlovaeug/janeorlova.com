@@ -367,11 +367,15 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   #about { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
 
   .datawork-head { padding: 3rem 1.5rem 0; }
-  .viz-featured { grid-template-columns: 1fr; }
-  .viz-featured-info { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
-  .viz-featured-detail { padding: 2.5rem 1.5rem; }
+  .viz-featured { grid-template-columns: 1fr; background: var(--ink); }
+  .viz-featured-info { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); background: var(--ink); }
+  .viz-featured-detail { padding: 2.5rem 1.5rem; background: #111; }
+  .viz-tag { color: var(--accent); }
+  .viz-title { color: var(--paper); }
+  .viz-desc { color: rgba(247,245,240,0.6); }
   .viz-grid { grid-template-columns: 1fr; }
-  .viz-card { border-right: none; }
+  .viz-card { border-right: none; border-bottom: 1px solid var(--rule); }
+  .viz-card:last-child { border-bottom: none; }
 
   #writing { padding: 3rem 1.5rem; }
   .writing-top { grid-template-columns: 1fr; gap: 1.5rem; }
