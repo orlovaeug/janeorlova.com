@@ -1,35 +1,55 @@
 #!/usr/bin/env python3
+# Amsterdam Motions Tracker - scraper
+# Uses the Open Raadsinformatie Elasticsearch API (public, no auth)
+# Endpoint: https://api.openraadsinformatie.nl/v1/elastic/
 import json, time, logging, re
 from datetime import date, datetime
 from pathlib import Path
 import requests
-from bs4 import BeautifulSoup
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
-BASE = "https://amsterdam.raadsinformatie.nl"
+ORI_BASE = "https://api.openraadsinformatie.nl/v1/elastic"
 START_DATE = date(2025, 6, 1)
 OUTPUT_FILE = Path(__file__).parent / "motions.json"
-DELAY = 1.5
+DELAY = 0.5
+PAGE_SIZE = 100
 
 S = requests.Session()
 S.headers.update({
-    "User-Agent": "Mozilla/5.0 (compatible; AmsterdamMotionsTracker/1.0)",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "User-Agent": "AmsterdamMotionsTracker/1.0 (civic project)",
 })
 
 
-def fetch(url, params=None):
-    try:
-        r = S.get(url, params=params, timeout=30)
-        log.info("GET %s -> %d (%d bytes)", url, r.status_code, len(r.content))
-        r.raise_for_status()
-        return r
-    except Exception as exc:
-        log.error("fetch failed %s: %s", url, exc)
-        return None
+def post(url, body, retries=3):
+    for attempt in range(1, retries + 1):
+        try:
+            r = S.post(url, json=body, timeout=30)
+            log.info("POST %s -> %d", url, r.status_code)
+            r.raise_for_status()
+            return r.json()
+        except Exception as exc:
+            log.warning("Attempt %d failed: %s", attempt, exc)
+            if attempt < retries:
+                time.sleep(3 * attempt)
+    return None
+
+
+def get(url, retries=3):
+    for attempt in range(1, retries + 1):
+        try:
+            r = S.get(url, timeout=30)
+            log.info("GET %s -> %d", url, r.status_code)
+            r.raise_for_status()
+            return r.json()
+        except Exception as exc:
+            log.warning("Attempt %d failed: %s", attempt, exc)
+            if attempt < retries:
+                time.sleep(3 * attempt)
+    return None
 
 
 def clean(t):
@@ -37,40 +57,23 @@ def clean(t):
     return " ".join(str(t).split())
 
 
-def parse_dutch_date(text):
-    months = {"januari":1,"februari":2,"maart":3,"april":4,"mei":5,"juni":6,
-              "juli":7,"augustus":8,"september":9,"oktober":10,"november":11,"december":12}
-    text = clean(text).lower()
-    m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", text)
-    if m:
-        day, mon, yr = m.group(1), m.group(2), m.group(3)
-        mo = months.get(mon)
-        if mo:
-            try: return date(int(yr), mo, int(day)).isoformat()
-            except: pass
-    m2 = re.search(r"(\d{4})-(\d{2})-(\d{2})", text)
-    if m2:
-        return m2.group(0)
-    return None
-
-
 def map_status(raw):
     s = str(raw).lower()
-    if any(k in s for k in ("aangenomen", "passed", "approved", "aanvaard")): return "Aangenomen"
-    if any(k in s for k in ("verworpen", "rejected", "afgekeurd")): return "Verworpen"
-    if any(k in s for k in ("aangehouden", "ingetrokken", "withdrawn", "pending")): return "Aangehouden"
-    if any(k in s for k in ("geamendeerd", "amended", "gewijzigd")): return "Geamendeerd"
+    if any(k in s for k in ("aangenomen","passed","approved","aanvaard")): return "Aangenomen"
+    if any(k in s for k in ("verworpen","rejected","afgekeurd")): return "Verworpen"
+    if any(k in s for k in ("aangehouden","ingetrokken","withdrawn","pending")): return "Aangehouden"
+    if any(k in s for k in ("geamendeerd","amended","gewijzigd")): return "Geamendeerd"
     return "Onbekend"
 
 
 def infer_topic(text):
     t = text.lower()
     rules = [
-        ("Housing",     ["wonen","huur","woningbouw","airbnb","woonruimte","sociale huur"]),
-        ("Mobility",    ["fiets","verkeer","metro","tram","parkeer","bereikbaar"]),
-        ("Climate",     ["klimaat","groen","duurzaam","energie","aardgas","co2","plastic"]),
-        ("Safety",      ["veiligheid","politie","camera","criminaliteit","handhaving","overlast"]),
-        ("Social",      ["zorg","armoed","daklozen","welzijn","jeugd","schulden"]),
+        ("Housing",     ["wonen","huur","woningbouw","airbnb","woonruimte"]),
+        ("Mobility",    ["fiets","verkeer","metro","tram","parkeer"]),
+        ("Climate",     ["klimaat","groen","duurzaam","energie","aardgas","co2"]),
+        ("Safety",      ["veiligheid","politie","camera","handhaving","overlast"]),
+        ("Social",      ["zorg","armoed","daklozen","welzijn","jeugd"]),
         ("Education",   ["school","integratie","discriminatie","onderwijs"]),
         ("PublicSpace", ["openbare ruimte","park","plein","markt","toilet"]),
         ("Finance",     ["begroting","subsidie","budget","financ"]),
@@ -81,134 +84,181 @@ def infer_topic(text):
     return "Other"
 
 
-def scrape_motions():
+def parse_date(raw):
+    if not raw: return None
+    for fmt in ("%Y-%m-%dT%H:%M:%S","%Y-%m-%d %H:%M:%S","%Y-%m-%d"):
+        try: return datetime.strptime(str(raw)[:19], fmt).date().isoformat()
+        except ValueError: continue
+    return str(raw)[:10] if len(str(raw)) >= 10 else None
+
+
+def discover_amsterdam_index():
+    """Find the Amsterdam index name in ORI elastic."""
+    data = get(ORI_BASE + "/_cat/indices?format=json&h=index")
+    if not data:
+        log.warning("Could not list indices")
+        return None
+    log.info("Available indices: %s", [d.get("index") for d in data])
+    # Look for amsterdam index
+    for item in data:
+        idx = item.get("index", "")
+        if "amsterdam" in idx.lower() or "ori_ams" in idx.lower():
+            log.info("Found Amsterdam index: %s", idx)
+            return idx
+    # Fallback: try known pattern
+    for item in data:
+        idx = item.get("index", "")
+        if idx.startswith("ori_"):
+            log.info("Candidate index: %s", idx)
+    return None
+
+
+def fetch_motions_from_index(index):
+    """Query ORI elastic for motions in the Amsterdam index."""
     results = []
-    # Fetch the moties listing page
-    url = BASE + "/modules/6/moties/view"
-    r = fetch(url)
-    if not r:
-        log.error("Cannot reach moties listing page")
-        return results
-
-    soup = BeautifulSoup(r.text, "html.parser")
-
-    # Debug: show page title
-    title = soup.find("title")
-    log.info("Page title: %s", title.get_text() if title else "none")
-
-    # Find all links to individual motions
-    # Pattern: /modules/6/moties/NNNNNN
-    found_links = []
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        m = re.search(r"/modules/6/moties/(\d+)", href)
-        if m:
-            mid = m.group(1)
-            full_url = BASE + "/modules/6/moties/" + mid
-            label = clean(a.get_text())
-            if mid not in [x[0] for x in found_links]:
-                found_links.append((mid, full_url, label))
-
-    log.info("Found %d motion links on listing page", len(found_links))
-
-    # Also try to find table rows with dates
-    rows = soup.select("table tr") or soup.select(".list-item") or soup.select("li")
-    log.info("Found %d table/list rows", len(rows))
-
-    # Debug: log raw HTML snippet (first 2000 chars) to understand structure
-    log.info("HTML snippet: %s", r.text[:2000].replace("\n", " "))
-
-    for mid, link, label in found_links:
+    page_from = 0
+    url = ORI_BASE + "/" + index + "/_search"
+    while True:
+        body = {
+            "from": page_from,
+            "size": PAGE_SIZE,
+            "sort": [{"startDate": {"order": "desc"}}],
+            "query": {
+                "bool": {
+                    "must": [
+                        {"terms": {"types": ["Motie","Motion","motie","motion"]}}
+                    ],
+                    "filter": [
+                        {"range": {"startDate": {"gte": START_DATE.isoformat()}}}
+                    ]
+                }
+            }
+        }
+        data = post(url, body)
+        if not data:
+            log.error("No response from ORI elastic")
+            break
+        hits = data.get("hits", {}).get("hits", [])
+        total = data.get("hits", {}).get("total", {})
+        total_n = total.get("value", 0) if isinstance(total, dict) else int(total or 0)
+        log.info("Page from=%d: got %d hits (total=%d)", page_from, len(hits), total_n)
+        if not hits: break
+        for hit in hits:
+            src = hit.get("_source", {})
+            motion = parse_ori_hit(src, hit.get("_id",""))
+            if motion:
+                results.append(motion)
+        page_from += PAGE_SIZE
+        if page_from >= total_n: break
         time.sleep(DELAY)
-        dr = fetch(link)
-        if not dr:
-            continue
-        dsoup = BeautifulSoup(dr.text, "html.parser")
-
-        # Extract title
-        h1 = dsoup.find("h1") or dsoup.find("h2")
-        title_text = clean(h1.get_text()) if h1 else label
-
-        # Extract date from meta or content
-        date_str = None
-        for el in dsoup.find_all(["td","dd","span","div","p"])[:30]:
-            d = parse_dutch_date(el.get_text())
-            if d:
-                date_str = d
-                break
-        if not date_str:
-            date_str = datetime.utcnow().date().isoformat()
-
-        # Skip if before start date
-        if date_str < START_DATE.isoformat():
-            log.info("Skipping %s (date %s before cutoff)", mid, date_str)
-            continue
-
-        # Extract status
-        status_raw = ""
-        status = "Onbekend"
-        for dt in dsoup.find_all("dt"):
-            lbl = clean(dt.get_text()).lower()
-            dd = dt.find_next_sibling("dd")
-            if not dd: continue
-            val = clean(dd.get_text())
-            if any(k in lbl for k in ("besluit","uitslag","resultaat","status","beslissing")):
-                status_raw = val
-                status = map_status(val)
-        # Also check page text for common status words
-        page_text = clean(dsoup.get_text()[:3000]).lower()
-        if not status_raw:
-            for word in ("aangenomen","verworpen","aangehouden","geamendeerd"):
-                if word in page_text:
-                    status = map_status(word)
-                    status_raw = word
-                    break
-
-        # Extract parties
-        parties = []
-        for dt in dsoup.find_all("dt"):
-            lbl = clean(dt.get_text()).lower()
-            dd = dt.find_next_sibling("dd")
-            if not dd: continue
-            if any(k in lbl for k in ("indiener","partij","fractie","penvoerder")):
-                val = clean(dd.get_text())
-                if val:
-                    parties = [p.strip() for p in re.split(r"[,;/]", val) if p.strip()]
-
-        # Extract summary
-        summary = ""
-        body = dsoup.find("div", class_=re.compile(r"body|content|tekst|motie", re.I))
-        if body:
-            paras = [clean(p.get_text()) for p in body.find_all("p") if p.get_text().strip()]
-            summary = " ".join(paras[:3])[:500]
-
-        results.append({
-            "id": mid,
-            "title": title_text,
-            "date": date_str,
-            "party": parties[0] if parties else "",
-            "parties": parties,
-            "topic": infer_topic(title_text + " " + summary),
-            "status": status,
-            "status_raw": status_raw,
-            "for": 0,
-            "against": 0,
-            "abstain": 0,
-            "summary": summary,
-            "link": link,
-        })
-        log.info("Scraped: %s | %s | %s | %s", mid, date_str, status, title_text[:60])
-
-    log.info("Total scraped: %d motions", len(results))
     return results
+
+
+def fetch_motions_global():
+    """Query across all ORI indices filtering by Amsterdam."""
+    results = []
+    page_from = 0
+    # Try searching all indices with Amsterdam filter
+    url = ORI_BASE + "/_search"
+    while True:
+        body = {
+            "from": page_from,
+            "size": PAGE_SIZE,
+            "sort": [{"startDate": {"order": "desc"}}],
+            "query": {
+                "bool": {
+                    "must": [
+                        {"terms": {"types": ["Motie","Motion","motie","motion"]}}
+                    ],
+                    "filter": [
+                        {"range": {"startDate": {"gte": START_DATE.isoformat()}}},
+                        {"multi_match": {
+                            "query": "Amsterdam",
+                            "fields": ["organization","municipality","sources.description"]
+                        }}
+                    ]
+                }
+            }
+        }
+        data = post(url, body)
+        if not data:
+            log.warning("Global search failed, trying match_all")
+            break
+        hits = data.get("hits", {}).get("hits", [])
+        total = data.get("hits", {}).get("total", {})
+        total_n = total.get("value", 0) if isinstance(total, dict) else int(total or 0)
+        log.info("Global page from=%d: %d hits (total=%d)", page_from, len(hits), total_n)
+        if not hits: break
+        for hit in hits:
+            src = hit.get("_source", {})
+            motion = parse_ori_hit(src, hit.get("_id",""))
+            if motion:
+                results.append(motion)
+        page_from += PAGE_SIZE
+        if page_from >= total_n or page_from > 2000: break
+        time.sleep(DELAY)
+    return results
+
+
+def parse_ori_hit(src, hit_id):
+    """Convert an ORI elasticsearch hit into our schema."""
+    date_str = parse_date(src.get("startDate") or src.get("date") or src.get("modified"))
+    if not date_str:
+        return None
+    if date_str < START_DATE.isoformat():
+        return None
+    motion_id = str(src.get("id") or src.get("@id") or hit_id or "")
+    title = clean(src.get("name") or src.get("title") or src.get("description","")[:120])
+    summary = clean(src.get("description") or src.get("text") or "")
+    # Parties / indieners
+    parties = []
+    for p in (src.get("submitter") or src.get("creator") or []):
+        if isinstance(p, dict):
+            parties.append(clean(p.get("name","")))
+        elif isinstance(p, str):
+            parties.append(clean(p))
+    # Status / result
+    status_raw = clean(src.get("result") or src.get("outcome") or src.get("status") or "")
+    status = map_status(status_raw) if status_raw else "Onbekend"
+    # Votes
+    votes = src.get("votes") or src.get("voteEvent") or {}
+    if isinstance(votes, list) and votes:
+        votes = votes[0]
+    v_for = int(votes.get("for", votes.get("voors", 0)) or 0) if isinstance(votes, dict) else 0
+    v_against = int(votes.get("against", votes.get("tegens", 0)) or 0) if isinstance(votes, dict) else 0
+    v_abstain = int(votes.get("abstain", votes.get("onthoudingen", 0)) or 0) if isinstance(votes, dict) else 0
+    # Link
+    sources = src.get("sources") or []
+    link = ""
+    if sources and isinstance(sources, list):
+        link = sources[0].get("url","") if isinstance(sources[0], dict) else ""
+    link = link or src.get("url") or "https://amsterdam.raadsinformatie.nl"
+    topic = infer_topic(title + " " + summary)
+    if not title:
+        return None
+    log.debug("Motion %s: %s | %s | %s", motion_id, date_str, status, title[:60])
+    return {
+        "id": motion_id,
+        "title": title,
+        "date": date_str,
+        "party": parties[0] if parties else "",
+        "parties": parties,
+        "topic": topic,
+        "status": status,
+        "status_raw": status_raw,
+        "for": v_for,
+        "against": v_against,
+        "abstain": v_abstain,
+        "summary": summary[:500],
+        "link": link,
+    }
 
 
 def load_existing():
     if OUTPUT_FILE.exists():
         try:
-            return json.loads(OUTPUT_FILE.read_text(encoding="utf-8")).get("motions", [])
-        except Exception:
-            pass
+            return json.loads(OUTPUT_FILE.read_text(encoding="utf-8")).get("motions",[])
+        except Exception: pass
     return []
 
 
@@ -228,16 +278,26 @@ def merge(existing, fresh):
 
 def main():
     log.info("Scraper starting, coverage from %s", START_DATE)
-    fresh = scrape_motions()
+    fresh = []
+    # Step 1: find Amsterdam-specific index
+    idx = discover_amsterdam_index()
+    if idx:
+        fresh = fetch_motions_from_index(idx)
+        log.info("Index search returned %d motions", len(fresh))
+    # Step 2: global search across all indices
     if not fresh:
-        log.warning("No motions found. Check the HTML snippet above in the logs.")
+        log.info("Trying global ORI search...")
+        fresh = fetch_motions_global()
+        log.info("Global search returned %d motions", len(fresh))
+    if not fresh:
+        log.warning("No motions found from ORI API. Check logs for index list.")
     existing = load_existing()
     merged = merge(existing, fresh)
     meta = {
         "last_updated": datetime.utcnow().isoformat() + "Z",
         "total": len(merged),
         "start_date": START_DATE.isoformat(),
-        "source": "amsterdam.raadsinformatie.nl",
+        "source": "api.openraadsinformatie.nl",
     }
     OUTPUT_FILE.write_text(
         json.dumps({"meta": meta, "motions": merged}, ensure_ascii=False, indent=2),
