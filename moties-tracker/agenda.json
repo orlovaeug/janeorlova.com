@@ -1,40 +1,8 @@
 [
   {
-    "datum": "2026-04-22",
-    "tijd": "",
-    "titel": "Aansluitend: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03303"
-  },
-  {
-    "datum": "2026-04-22",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Marktordening en consumentenbescherming (CD 19/3)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02468"
-  },
-  {
-    "datum": "2026-04-22",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Werknemersverzekeringen (CD 8/4)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03092"
-  },
-  {
-    "datum": "2026-04-22",
-    "tijd": "2026-",
-    "titel": "Debat over de maatregelen van het kabinet inzake de hoge energie-en brandstofprijzen",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (debat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02996"
-  },
-  {
     "datum": "2026-04-23",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Telecomraad en eventueel over moties ingediend bij het onder voorbehoud geagendeerde Tweeminutendebat Landbouw- en Visserijraad)",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Telecomraad, Tweeminutendebat Landbouw- en Visserijraad en over moties ingediend bij het Debat over de maatregelen van het kabinet inzake de hoge energie-en brandstofprijzen)",
     "locatie": "Plenaire zaal",
     "soort": "Stemmingen",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03459"
@@ -58,7 +26,7 @@
   {
     "datum": "2026-04-23",
     "tijd": "2026-",
-    "titel": "(onder voorbehoud) Tweeminutendebat Landbouw- en Visserijraad 27 april 2026 (21501-32-1776)",
+    "titel": "Tweeminutendebat Landbouw- en Visserijraad 27 april 2026 ",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03460"
@@ -66,7 +34,7 @@
   {
     "datum": "2026-04-23",
     "tijd": "2026-",
-    "titel": "Tweeminutendebat Telecomraad (2026Z08378)",
+    "titel": "Tweeminutendebat Telecomraad (21501-33, nr. 1195)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03461"
@@ -78,5 +46,77 @@
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (overig)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01765"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Wijziging van de Embryowet naar aanleiding van de derde wetsevaluatie (36677) (rest)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03294"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Herindeling van de gemeenten Hilversum en Wijdemeren (36865)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03348"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Wet startprocedure b3-scholen en hardvochtigheden vso en pro (36745) ",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A01872"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Goedkeuring van de op 17 oktober 2022 te Bali tot stand gekomen Uitgebreide Luchtvervoersovereenkomst tussen de lidstaten van de Associatie van Zuidoost-Aziatische Staten, enerzijds, en de Europese Unie en haar lidstaten, anderzijds (Trb. 2022, 132) (36634)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A05289"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Tweeminutendebat Personen- en familierecht (CD 16/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03452"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Tweeminutendebat Luchtvaart (CD 21/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03506"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Tweeminutendebat Openbaar Vervoer en taxi (CD 14/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03351"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Tweeminutendebat GGZ / Suïcidepreventie (CD 26/3)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02739"
+  },
+  {
+    "datum": "2026-05-11",
+    "tijd": "",
+    "titel": "Tweeminutendebat Verdienvermogen van Nederland (CD 9/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03248"
   }
 ]
