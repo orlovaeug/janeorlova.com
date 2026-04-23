@@ -1,109 +1,95 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="nl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amsterdam Motions Tracker</title>
+<title>Motietracker Gemeenteraad Amsterdam</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ffd:'Playfair Display',Georgia,serif;
-  --ffb:'IBM Plex Sans',system-ui,sans-serif;
-  --bg:#f8f7f4;--card:#fff;--surf:#f0efe9;
-  --ink:#181816;--muted:#636360;--faint:#a0a09a;
-  --bdr:#e2e1db;--bdr2:#cccbc4;
-  --pass:#2d6a09;--passbg:#e8f3de;
-  --rej:#9b2626;--rejbg:#faeaea;
-  --pend:#7a4a08;--pendbg:#faecd8;
-  --amnd:#1455a0;--amndbg:#e4f0fb}
-body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100vh;padding:0 0 4rem}
-.page{max-width:860px;margin:0 auto;padding:0 1.25rem}
+:root{--ffd:'Playfair Display',Georgia,serif;--ffb:'IBM Plex Sans',system-ui,sans-serif;
+--bg:#f8f7f4;--card:#fff;--surf:#f0efe9;--ink:#181816;--muted:#636360;--faint:#a0a09a;
+--bdr:#e2e1db;--bdr2:#cccbc4;
+--pass:#2d6a09;--passbg:#e8f3de;--rej:#9b2626;--rejbg:#faeaea;
+--pend:#7a4a08;--pendbg:#faecd8;--amnd:#1455a0;--amndbg:#e4f0fb}
+body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100vh;padding:0 0 5rem}
+.page{max-width:900px;margin:0 auto;padding:0 1.25rem}
 
-/* ── Hero ── */
-.hero{padding:2.5rem 0 0;border-bottom:1px solid var(–bdr2);margin-bottom:2rem}
+/* Hero */
+.hero{padding:2.5rem 0 1.25rem;border-bottom:1px solid var(–bdr2);margin-bottom:1.75rem}
 .eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.5rem}
-.hero h1{font-family:var(–ffd);font-size:clamp(24px,5vw,34px);font-weight:400;line-height:1.15;margin-bottom:.4rem}
-.hero-sub{font-size:13px;color:var(–muted);font-weight:300;max-width:560px;line-height:1.6;margin-bottom:1rem}
-.hero-meta{display:flex;gap:1.5rem;padding:.75rem 0;border-top:.5px solid var(–bdr);font-size:11px;color:var(–faint);flex-wrap:wrap}
-.hero-meta strong{color:var(–muted)}
+.hero h1{font-family:var(–ffd);font-size:clamp(24px,5vw,36px);font-weight:400;line-height:1.15;margin-bottom:.4rem}
+.hero-sub{font-size:13px;color:var(–muted);font-weight:300;line-height:1.65;max-width:620px;margin-bottom:1rem}
+.council-strip{display:flex;gap:.4rem;flex-wrap:wrap;padding:.75rem 0;border-top:.5px solid var(–bdr);align-items:center}
+.cs-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(–faint);font-weight:500;margin-right:.3rem}
+.cs-party{display:flex;align-items:center;gap:4px;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;white-space:nowrap}
+.upd-line{font-size:11px;color:var(–faint);margin-top:.5rem}
 
-/* ── Stats ── */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:2rem}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem}
 @media(max-width:540px){.stats{grid-template-columns:repeat(2,1fr)}}
 .stat{background:var(–card);border:1px solid var(–bdr);border-radius:8px;padding:.85rem 1rem;position:relative;overflow:hidden}
-.stat::before{content:’’;position:absolute;top:0;left:0;right:0;height:3px;background:var(–accent,var(–bdr2))}
-.stat.s-pass::before{–accent:var(–pass)}
-.stat.s-rej::before{–accent:var(–rej)}
-.stat.s-pend::before{–accent:var(–pend)}
-.slbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.35rem}
+.stat::before{content:””;position:absolute;top:0;left:0;right:0;height:3px;background:var(–bdr2)}
+.stat.s-pass::before{background:var(–pass)}.stat.s-rej::before{background:var(–rej)}.stat.s-pend::before{background:var(–pend)}
+.slbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.3rem}
 .sval{font-size:26px;font-family:var(–ffd);font-weight:500;color:var(–ink)}
 .sval.p{color:var(–pass)}.sval.r{color:var(–rej)}.sval.o{color:var(–pend)}
 .srate{font-size:11px;color:var(–faint);margin-top:.2rem}
 
-/* ── Party bar ── */
-.party-section{background:var(–card);border:1px solid var(–bdr);border-radius:8px;padding:1.25rem;margin-bottom:2rem}
-.party-section h2{font-family:var(–ffd);font-size:16px;font-weight:400;margin-bottom:1rem;color:var(–ink)}
-.party-bars{display:flex;flex-direction:column;gap:.6rem}
-.pb-row{display:grid;grid-template-columns:90px 1fr 32px;gap:.5rem;align-items:center;font-size:12px}
-.pb-name{color:var(–ink);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer}
+/* Analysis panels */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.75rem}
+@media(max-width:620px){.panels{grid-template-columns:1fr}}
+.panel{background:var(–card);border:1px solid var(–bdr);border-radius:8px;padding:1.1rem 1.25rem}
+.panel h2{font-family:var(–ffd);font-size:15px;font-weight:400;margin-bottom:1rem;color:var(–ink)}
+.pb-row{display:grid;grid-template-columns:80px 1fr 52px;gap:.5rem;align-items:center;font-size:11px;margin-bottom:.5rem}
+.pb-name{font-weight:500;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pb-name:hover{text-decoration:underline}
-.pb-track{background:var(–bdr);border-radius:2px;height:8px;overflow:hidden}
-.pb-fill{height:100%;border-radius:2px;transition:width .4s ease}
-.pb-count{color:var(–muted);text-align:right}
+.pb-track{background:var(–bdr);border-radius:2px;height:7px;overflow:hidden}
+.pb-fill{height:100%;border-radius:2px}
+.pb-meta{font-size:10px;color:var(–faint);text-align:right;line-height:1.3}
 
-/* ── Tabs ── */
+/* Tabs */
 .tabs{display:flex;border-bottom:1px solid var(–bdr2);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tab{font-size:12px;font-weight:500;letter-spacing:.05em;padding:.55rem 1.1rem;cursor:pointer;color:var(–muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .12s,border-color .12s;user-select:none}
 .tab.active{color:var(–ink);border-bottom-color:var(–ink)}
 .tab:hover{color:var(–ink)}
 
-/* ── Controls ── */
+/* Controls */
 .controls{display:flex;gap:8px;margin-bottom:1.25rem;flex-wrap:wrap}
 .controls input,.controls select{font-family:var(–ffb);font-size:13px;padding:.45rem .8rem;border:1px solid var(–bdr2);border-radius:5px;background:var(–card);color:var(–ink);outline:none;transition:border-color .15s}
 .controls input:focus,.controls select:focus{border-color:var(–muted)}
 .controls input{flex:1;min-width:180px}
-
-/* ── Count label ── */
 .seclbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(–muted);font-weight:500;border-bottom:.5px solid var(–bdr);padding-bottom:.4rem;margin-bottom:.75rem}
 
-/* ── Motion rows ── */
+/* Motion rows */
 .row{border-bottom:.5px solid var(–bdr);padding:1rem .25rem;cursor:pointer;border-radius:5px;transition:background .12s}
 .row:hover{background:var(–surf);padding-left:.5rem;padding-right:.5rem}
 .rtop{display:flex;align-items:flex-start;gap:10px;margin-bottom:.45rem}
 .rtitle{font-size:14px;font-weight:500;line-height:1.45;flex:1}
-
-/* ── Badges ── */
 .badge{font-size:10px;font-weight:500;letter-spacing:.06em;padding:3px 9px;border-radius:3px;white-space:nowrap;flex-shrink:0}
 .badge.Aangenomen{background:var(–passbg);color:var(–pass)}
 .badge.Verworpen{background:var(–rejbg);color:var(–rej)}
 .badge.Aangehouden{background:var(–pendbg);color:var(–pend)}
 .badge.Geamendeerd{background:var(–amndbg);color:var(–amnd)}
 .badge.Onbekend{background:#eee;color:#555}
-
-/* ── Meta line ── */
 .meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(–muted);align-items:center}
 .pty-dot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.mpty{font-weight:500;color:var(–ink)}
-.mid{color:var(–faint)}
+.mpty{font-weight:500;color:var(–ink)}.mid{color:var(–faint)}
+.mtype{font-size:10px;background:var(–surf);padding:1px 6px;border-radius:2px;color:var(–muted);border:.5px solid var(–bdr)}
 
-/* ── Expanded ── */
+/* Expanded */
 .exp{background:var(–surf);border-radius:6px;padding:1rem 1.25rem;margin-top:.75rem;border:1px solid var(–bdr)}
-.exp-summary{font-size:13px;color:var(–muted);line-height:1.65;margin-bottom:.75rem;font-style:italic}
-.exp-toelichting{font-size:12px;color:var(–muted);line-height:1.6;margin-bottom:.75rem;padding:.6rem .75rem;background:var(–card);border-radius:4px;border-left:2px solid var(–bdr2)}
-.ptags{display:flex;gap:6px;flex-wrap:wrap;margin-top:.6rem}
-.ptag{font-size:11px;background:var(–bdr);color:var(–muted);padding:2px 7px;border-radius:3px}
-.slink{font-size:11px;color:#1455a0;margin-top:.6rem;display:inline-block;text-decoration:none}
+.exp-toelichting{font-size:12px;color:var(–muted);line-height:1.65;padding:.65rem .85rem;background:var(–card);border-radius:4px;border-left:2px solid var(–bdr2);margin-bottom:.75rem;font-style:italic}
+.ptags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.6rem}
+.ptag{font-size:11px;padding:2px 8px;border-radius:3px;font-weight:500}
+.slink{font-size:11px;color:#1455a0;display:inline-block;text-decoration:none}
 .slink:hover{text-decoration:underline}
 
-/* ── Notice ── */
 .notice{text-align:center;padding:3rem 1rem;color:var(–muted);font-size:13px;line-height:1.6}
 .notice strong{display:block;font-size:15px;color:var(–ink);margin-bottom:.5rem;font-family:var(–ffd)}
-
-/* ── Footer ── */
 .foot{font-size:11px;color:var(–faint);margin-top:3rem;padding-top:1rem;border-top:.5px solid var(–bdr);line-height:1.8}
 .foot a{color:inherit}
 </style>
@@ -111,64 +97,112 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
 </head>
 <body>
 <div class="page">
+
+<!-- Hero -->
+
 <div class="hero">
-  <div class="eyebrow">Gemeenteraad Amsterdam &mdash; Live Tracker</div>
-  <h1>Amsterdam Motions Tracker</h1>
-  <p class="hero-sub">Every motion and amendment voted on in the Amsterdam city council since January 2026 &mdash; searchable, filterable, by party.</p>
-  <div class="hero-meta">
-    <span><strong>Council 2026&ndash;2030:</strong> PRO Amsterdam (17) &middot; D66 (8) &middot; VVD (6) &middot; PvdD (3) &middot; Volt (2) &middot; JA21 (2) &middot; DENK (2) &middot; BIJ1 (2) &middot; CDA (1) &middot; FvD (1) &middot; SP (1)</span>
-    <span id="updSpan"></span>
+  <div class="eyebrow">Gemeenteraad Amsterdam &mdash; Motietracker</div>
+  <h1>Moties &amp; amendementen</h1>
+  <p class="hero-sub">Alle moties en amendementen ingediend in de Amsterdamse gemeenteraad sinds januari 2026 &mdash; doorzoekbaar op partij, onderwerp en uitslag.</p>
+  <div class="council-strip" id="councilStrip">
+    <span class="cs-label">Raad 2026&ndash;30</span>
+  </div>
+  <div class="upd-line" id="updLine"></div>
+</div>
+
+<!-- Stats -->
+
+<div class="stats">
+  <div class="stat"><div class="slbl">Totaal moties</div><div class="sval" id="sT">0</div><div class="srate" id="sRate"></div></div>
+  <div class="stat s-pass"><div class="slbl">Aangenomen</div><div class="sval p" id="sP">0</div><div class="srate" id="sPct"></div></div>
+  <div class="stat s-rej"><div class="slbl">Verworpen</div><div class="sval r" id="sR">0</div><div class="srate" id="sRPct"></div></div>
+  <div class="stat s-pend"><div class="slbl">Aangehouden / geamendeerd</div><div class="sval o" id="sO">0</div><div class="srate" id="sOPct"></div></div>
+</div>
+
+<!-- Analysis panels -->
+
+<div class="panels" id="panels" style="display:none">
+  <div class="panel">
+    <h2>Moties per fractie</h2>
+    <div id="partyBars"></div>
+  </div>
+  <div class="panel">
+    <h2>Slagingspercentage per fractie</h2>
+    <div id="successBars"></div>
   </div>
 </div>
 
-<div class="stats">
-  <div class="stat"><div class="slbl">Total motions</div><div class="sval" id="sT">0</div><div class="srate" id="sRate"></div></div>
-  <div class="stat s-pass"><div class="slbl">Passed</div><div class="sval p" id="sP">0</div><div class="srate" id="sPct"></div></div>
-  <div class="stat s-rej"><div class="slbl">Rejected</div><div class="sval r" id="sR">0</div><div class="srate" id="sRPct"></div></div>
-  <div class="stat s-pend"><div class="slbl">Pending / amended</div><div class="sval o" id="sO">0</div><div class="srate" id="sOPct"></div></div>
-</div>
-
-<div class="party-section" id="partySection" style="display:none">
-  <h2>Motions by party</h2>
-  <div class="party-bars" id="partyBars"></div>
-</div>
+<!-- Tabs -->
 
 <div class="tabs" id="tabs">
-  <div class="tab active" data-tab="all">All</div>
-  <div class="tab" data-tab="Aangenomen">Passed</div>
-  <div class="tab" data-tab="Verworpen">Rejected</div>
-  <div class="tab" data-tab="Aangehouden">Pending</div>
-  <div class="tab" data-tab="Geamendeerd">Amended</div>
+  <div class="tab active" data-tab="all">Alle moties</div>
+  <div class="tab" data-tab="Aangenomen">Aangenomen</div>
+  <div class="tab" data-tab="Verworpen">Verworpen</div>
+  <div class="tab" data-tab="Aangehouden">Aangehouden</div>
+  <div class="tab" data-tab="Geamendeerd">Geamendeerd</div>
 </div>
 
+<!-- Controls -->
+
 <div class="controls">
-  <input type="text" id="sq" placeholder="Search title, party, topic, keyword..." oninput="render()">
-  <select id="ts" onchange="render()"><option value="">All topics</option></select>
-  <select id="ps" onchange="render()"><option value="">All parties</option></select>
+  <input type="text" id="sq" placeholder="Zoek op titel, partij, onderwerp, trefwoord..." oninput="render()">
+  <select id="ts" onchange="render()"><option value="">Alle onderwerpen</option></select>
+  <select id="ps" onchange="render()"><option value="">Alle fracties</option></select>
 </div>
-<div class="seclbl" id="lbl">0 motions</div>
+<div class="seclbl" id="lbl">0 moties</div>
 <div id="lst"></div>
 
 <div class="foot">
-  <strong>Data source:</strong> <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a> (Excel export).
-  Updated manually &mdash; download the Excel, upload <code>moties.xlsx</code> to the repo, Actions converts it automatically.
-  &mdash; Built by <a href="https://janeorlova.com">janeorlova.com</a>
+  <strong>Databron:</strong> <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a> (Excel-export).
+  Data wordt bijgewerkt door <code>moties.xlsx</code> in de repository te plaatsen &mdash; GitHub Actions converteert dit automatisch.
+  &mdash; <a href="https://janeorlova.com">janeorlova.com</a>
 </div>
 </div>
 
 <script>
 var M = [], activeTab = "all", xid = null;
 
-var PARTY_COLORS = {
-  "GroenLinks":"#5aab00","PvdA":"#e8000b","PRO Amsterdam":"#5aab00",
-  "D66":"#00a651","VVD":"#ff7d00","CDA":"#007b5e","PvdD":"#006b2d",
-  "Volt":"#502379","SP":"#c02020","JA21":"#003082","DENK":"#00a89c",
-  "BIJ1":"#f7b500","FvD":"#901c1c","FvD/Forum voor Democratie":"#901c1c"
-};
+var COUNCIL = [
+  {name:"PRO Amsterdam", seats:17, color:"#5aab00"},
+  {name:"D66",           seats:8,  color:"#00a651"},
+  {name:"VVD",           seats:6,  color:"#ff7d00"},
+  {name:"PvdD",          seats:3,  color:"#006b2d"},
+  {name:"Volt",          seats:2,  color:"#502379"},
+  {name:"JA21",          seats:2,  color:"#003082"},
+  {name:"DENK",          seats:2,  color:"#00a89c"},
+  {name:"BIJ1",          seats:2,  color:"#f7b500"},
+  {name:"CDA",           seats:1,  color:"#007b5e"},
+  {name:"FvD",           seats:1,  color:"#901c1c"},
+  {name:"SP",            seats:1,  color:"#c02020"}
+];
+
+var PARTY_COLORS = {};
+COUNCIL.forEach(function(c){ PARTY_COLORS[c.name] = c.color; });
+PARTY_COLORS["GroenLinks"] = "#5aab00";
+PARTY_COLORS["PvdA"] = "#e8000b";
+PARTY_COLORS["GroenLinks-PvdA"] = "#5aab00";
+
 function partyColor(p) {
   if (!p) return "#bbb";
-  for (var k in PARTY_COLORS) { if (p.toLowerCase().includes(k.toLowerCase())) return PARTY_COLORS[k]; }
+  if (PARTY_COLORS[p]) return PARTY_COLORS[p];
+  for (var k in PARTY_COLORS) {
+    if (p.toLowerCase().includes(k.toLowerCase())) return PARTY_COLORS[k];
+  }
   return "#888";
+}
+
+// Build council seat strip
+function buildCouncilStrip() {
+  var strip = document.getElementById("councilStrip");
+  COUNCIL.forEach(function(c) {
+    var el = document.createElement("span");
+    el.className = "cs-party";
+    el.style.background = c.color + "18";
+    el.style.color = c.color;
+    el.style.border = "1px solid " + c.color + "44";
+    el.innerHTML = c.name + " <strong>" + c.seats + "</strong>";
+    strip.appendChild(el);
+  });
 }
 
 document.getElementById("tabs").addEventListener("click", function(e) {
@@ -181,6 +215,7 @@ document.getElementById("tabs").addEventListener("click", function(e) {
 });
 
 async function boot() {
+  buildCouncilStrip();
   try {
     var r = await fetch("motions.json?_=" + Date.now());
     if (!r.ok) throw new Error("HTTP " + r.status);
@@ -188,16 +223,16 @@ async function boot() {
     M = d.motions || [];
     if (d.meta && d.meta.last_updated) {
       var dt = new Date(d.meta.last_updated);
-      document.getElementById("updSpan").innerHTML =
-        "<strong>Updated:</strong> " + dt.toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+      document.getElementById("updLine").textContent =
+        "Bijgewerkt op " + dt.toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"});
     }
     buildFilters();
-    buildPartyBars();
+    buildPanels();
     renderStats();
     render();
   } catch(e) {
     document.getElementById("lst").innerHTML =
-      '<div class="notice"><strong>Could not load data</strong>' + e.message + "</div>";
+      '<div class="notice"><strong>Gegevens konden niet worden geladen</strong>' + e.message + "</div>";
   }
 }
 
@@ -218,40 +253,57 @@ function filt() {
 }
 
 function renderStats() {
-  var n  = M.length;
-  var p  = M.filter(function(m){return m.status==="Aangenomen";}).length;
-  var r  = M.filter(function(m){return m.status==="Verworpen";}).length;
-  var o  = M.filter(function(m){return m.status==="Aangehouden"||m.status==="Geamendeerd";}).length;
+  var n = M.length, p = 0, r = 0, o = 0;
+  M.forEach(function(m) {
+    if (m.status==="Aangenomen") p++;
+    else if (m.status==="Verworpen") r++;
+    else if (m.status==="Aangehouden"||m.status==="Geamendeerd") o++;
+  });
   document.getElementById("sT").textContent = n;
   document.getElementById("sP").textContent = p;
   document.getElementById("sR").textContent = r;
   document.getElementById("sO").textContent = o;
-  document.getElementById("sPct").textContent  = n ? Math.round(p/n*100)+"% pass rate" : "";
-  document.getElementById("sRPct").textContent = n ? Math.round(r/n*100)+"% of total" : "";
-  document.getElementById("sOPct").textContent = n ? Math.round(o/n*100)+"% of total" : "";
+  document.getElementById("sPct").textContent  = n ? Math.round(p/n*100)+"% van totaal" : "";
+  document.getElementById("sRPct").textContent = n ? Math.round(r/n*100)+"% van totaal" : "";
+  document.getElementById("sOPct").textContent = n ? Math.round(o/n*100)+"% van totaal" : "";
 }
 
-function buildPartyBars() {
+function buildPanels() {
   if (!M.length) return;
-  var counts = {};
+
+  // Party motion counts
+  var counts = {}, passed = {};
   M.forEach(function(m) {
-    var p = m.party || "Unknown";
+    var p = m.party || "Onbekend";
     counts[p] = (counts[p]||0) + 1;
+    if (m.status==="Aangenomen") passed[p] = (passed[p]||0) + 1;
   });
-  var sorted = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a]; }).slice(0,10);
-  var max = counts[sorted[0]];
-  var html = sorted.map(function(p) {
-    var c = counts[p];
-    var pct = Math.round(c/max*100);
-    var col = partyColor(p);
+  var sorted = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a]; }).slice(0,8);
+  var maxC = counts[sorted[0]] || 1;
+
+  // Bar 1: total motions per party
+  document.getElementById("partyBars").innerHTML = sorted.map(function(p) {
+    var c = counts[p], pct = Math.round(c/maxC*100), col = partyColor(p);
     return '<div class="pb-row">'
-      + '<span class="pb-name" onclick="filterParty(\''+esc(p)+'\')">'+ esc(p) +'</span>'
+function escQ(s) { return String(s||""); }
       + '<div class="pb-track"><div class="pb-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'
-      + '<span class="pb-count">'+c+'</span>'
+      + '<span class="pb-meta">'+c+' moties</span>'
       + '</div>';
   }).join("");
-  document.getElementById("partyBars").innerHTML = html;
-  document.getElementById("partySection").style.display = "";
+
+  // Bar 2: success rate per party (min 3 motions)
+  var eligible = sorted.filter(function(p){ return counts[p] >= 3; });
+  document.getElementById("successBars").innerHTML = eligible.map(function(p) {
+    var rate = passed[p] ? Math.round((passed[p]/counts[p])*100) : 0;
+    var col = partyColor(p);
+    return '<div class="pb-row">'
+function escQ(s) { return String(s||""); }
+      + '<div class="pb-track"><div class="pb-fill" style="width:'+rate+'%;background:'+col+'"></div></div>'
+      + '<span class="pb-meta">'+rate+'%<br>'+( passed[p]||0)+'/'+counts[p]+'</span>'
+      + '</div>';
+  }).join("");
+
+  document.getElementById("panels").style.display = "";
 }
 
 function filterParty(p) {
@@ -267,8 +319,12 @@ function buildFilters() {
     if (m.party) parties[m.party] = 1;
   });
   var tsel = document.getElementById("ts");
+  var TOPIC_NL = {Housing:"Wonen",Mobility:"Mobiliteit",Climate:"Klimaat & Groen",
+    Safety:"Veiligheid",Social:"Zorg & Welzijn",Education:"Onderwijs & Integratie",
+    PublicSpace:"Openbare Ruimte",Finance:"Financien",Governance:"Bestuur",Other:"Overige"};
   Object.keys(topics).sort().forEach(function(t) {
-    var o = document.createElement("option"); o.value=t; o.textContent=t; tsel.appendChild(o);
+    var o = document.createElement("option");
+    o.value = t; o.textContent = TOPIC_NL[t] || t; tsel.appendChild(o);
   });
   var psel = document.getElementById("ps");
   Object.keys(parties).sort().forEach(function(p) {
@@ -279,40 +335,50 @@ function buildFilters() {
 function esc(s) {
   return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 }
+function escQ(s) { return String(s||""); }
 function sl(s) {
-  return {Aangenomen:"Passed",Verworpen:"Rejected",Aangehouden:"Pending",Geamendeerd:"Amended",Onbekend:"Unknown"}[s]||s;
+  return {Aangenomen:"Aangenomen",Verworpen:"Verworpen",Aangehouden:"Aangehouden",
+          Geamendeerd:"Geamendeerd",Onbekend:"Onbekend"}[s]||s;
 }
 function fd(iso) {
-  try { return new Date(iso).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}); }
-  catch(e) { return iso; }
+  try { return new Date(iso).toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"}); }
+  catch(e){ return iso; }
 }
+
+var TOPIC_NL = {Housing:"Wonen",Mobility:"Mobiliteit",Climate:"Klimaat & Groen",
+  Safety:"Veiligheid",Social:"Zorg & Welzijn",Education:"Onderwijs & Integratie",
+  PublicSpace:"Openbare Ruimte",Finance:"Financien",Governance:"Bestuur",Other:"Overige"};
 
 function render() {
   var f = filt();
-  document.getElementById("lbl").textContent = f.length + " motion" + (f.length!==1?"s":"");
+  document.getElementById("lbl").textContent = f.length + " " + (f.length===1?"motie":"moties");
   var lst = document.getElementById("lst");
   if (!M.length) {
-    lst.innerHTML = '<div class="notice"><strong>No data loaded yet</strong>Upload moties.xlsx to the repo to populate this tracker.</div>';
+    lst.innerHTML = '<div class="notice"><strong>Nog geen gegevens geladen</strong>Upload moties.xlsx naar de repository om de tracker te vullen.</div>';
     return;
   }
   if (!f.length) {
-    lst.innerHTML = '<div class="notice">No motions match your filters.</div>';
+    lst.innerHTML = '<div class="notice">Geen moties gevonden met de huidige filters.</div>';
     return;
   }
   var html = "";
   f.forEach(function(m) {
     var open = xid === m.id;
     var col  = partyColor(m.party);
+    var topicNL = TOPIC_NL[m.topic] || m.topic || "";
     var ex = "";
     if (open) {
       ex = '<div class="exp">';
       if (m.summary) ex += '<div class="exp-toelichting">' + esc(m.summary) + '</div>';
-      if (m.parties && m.parties.length > 1) {
+      if (m.parties && m.parties.length) {
         ex += '<div class="ptags">';
-        m.parties.forEach(function(p){ ex += '<span class="ptag">'+esc(p)+'</span>'; });
+        m.parties.forEach(function(p) {
+          var pc = partyColor(p);
+          ex += '<span class="ptag" style="background:'+pc+'18;color:'+pc+';border:1px solid '+pc+'44">'+esc(p)+'</span>';
+        });
         ex += '</div>';
       }
-      ex += '<a class="slink" href="'+esc(m.link)+'" target="_blank" rel="noopener">View on amsterdam.raadsinformatie.nl &rarr;</a>';
+      ex += '<a class="slink" href="'+esc(m.link)+'" target="_blank" rel="noopener">Bekijk op amsterdam.raadsinformatie.nl &rarr;</a>';
       ex += '</div>';
     }
     html += '<div class="row" onclick="tog(\''+esc(m.id)+'\')">'
@@ -320,8 +386,8 @@ function render() {
       + '<div class="meta">'
       + '<span>'+fd(m.date)+'</span>'
       + (m.party ? '<span>&middot;</span><span class="pty-dot" style="background:'+col+'"></span><span class="mpty">'+esc(m.party)+'</span>' : "")
-      + (m.topic ? '<span>&middot;</span><span>'+esc(m.topic)+'</span>' : "")
-      + '<span>&middot;</span><span class="mid">'+esc(m.id)+'</span>'
+      + (topicNL ? '<span>&middot;</span><span>'+esc(topicNL)+'</span>' : "")
+      + (m.type && m.type!=="Motie" ? '<span>&middot;</span><span class="mtype">'+esc(m.type)+'</span>' : "")
       + '</div>'
       + ex + '</div>';
   });
