@@ -30,17 +30,17 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
 .tabs{display:flex;border-bottom:1px solid var(--bdr2);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tab{font-size:12px;font-weight:500;letter-spacing:.06em;padding:.5rem 1rem;cursor:pointer;
-  color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;
-  white-space:nowrap;transition:color .12s,border-color .12s;user-select:none}
+color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;
+white-space:nowrap;transition:color .12s,border-color .12s;user-select:none}
 .tab.active{color:var(--ink);border-bottom-color:var(--ink)}
 .tab:hover{color:var(--ink)}
 .ctrls{display:flex;gap:8px;margin-bottom:1.25rem;flex-wrap:wrap}
 .ctrls input,.ctrls select{font-family:var(--ffb);font-size:13px;padding:.45rem .75rem;
-  border:1px solid var(--bdr2);border-radius:4px;background:var(--card);color:var(--ink);outline:none}
+border:1px solid var(--bdr2);border-radius:4px;background:var(--card);color:var(--ink);outline:none}
 .ctrls input:focus,.ctrls select:focus{border-color:var(--muted)}
 .ctrls input{flex:1;min-width:160px}
 .seclbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
-  font-weight:500;border-bottom:.5px solid var(--bdr);padding-bottom:.4rem;margin-bottom:.75rem}
+font-weight:500;border-bottom:.5px solid var(--bdr);padding-bottom:.4rem;margin-bottom:.75rem}
 .row{border-bottom:.5px solid var(--bdr);padding:1rem .5rem;cursor:pointer;border-radius:4px;transition:background .12s}
 .row:hover{background:var(--surf)}
 .rtop{display:flex;align-items:flex-start;gap:10px;margin-bottom:.4rem}
@@ -69,11 +69,8 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
 .ptag{font-size:11px;background:var(--bdr);color:var(--muted);padding:2px 7px;border-radius:3px}
 .slink{font-size:11px;color:#1455a0;margin-top:.6rem;display:inline-block;text-decoration:none}
 .slink:hover{text-decoration:underline}
-.empty{text-align:center;padding:3rem 0;color:var(--muted);font-size:13px}
-.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--bdr);
-  border-top-color:var(--muted);border-radius:50%;animation:sp .8s linear infinite;
-  vertical-align:middle;margin-left:6px}
-@keyframes sp{to{transform:rotate(360deg)}}
+.notice{text-align:center;padding:2.5rem 1rem;color:var(--muted);font-size:13px;line-height:1.6}
+.notice strong{display:block;margin-bottom:.4rem;color:var(--ink);font-size:14px}
 .foot{font-size:11px;color:var(--faint);margin-top:2.5rem;padding-top:1rem;border-top:.5px solid var(--bdr);line-height:1.7}
 .foot a{color:inherit}
 </style>
@@ -83,8 +80,8 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
 <div class="masthead">
   <div class="ey">Gemeenteraad Amsterdam &mdash; Live Tracker</div>
   <h1>Amsterdam Motions Tracker</h1>
-  <p class="sub">Motions &amp; votes in the Amsterdam city council &mdash; June 2025 onwards</p>
-  <span class="upd" id="upd">Loading&hellip;</span>
+  <p class="sub">Motions &amp; votes in the Amsterdam city council &mdash; January 2026 onwards</p>
+  <span class="upd" id="upd"></span>
 </div>
 <div class="stats">
   <div class="stat"><div class="slbl">Total motions</div><div class="sval" id="sT">0</div></div>
@@ -105,12 +102,11 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
   <select id="ys" onchange="render()">
     <option value="">All periods</option>
     <option value="2026">2026</option>
-    <option value="2025">2025</option>
+
   </select>
 </div>
 <div class="seclbl" id="lbl">0 motions</div>
-<div id="lst"><div class="empty">Loading data<span class="spin"></span></div></div>
-<div class="empty" id="emp" style="display:none">No motions match your filters.</div>
+<div id="lst"></div>
 <div class="foot">
   <strong>Data source:</strong>
   <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a>
@@ -121,38 +117,40 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
 <script>
 var M = [], activeTab = "all", xid = null;
 
-// Tab click handler - attached via event delegation
 document.getElementById(“tabs”).addEventListener(“click”, function(e) {
-var tab = e.target.closest(”.tab”);
-if (!tab) return;
-document.querySelectorAll(”.tab”).forEach(function(t) { t.classList.remove(“active”); });
-tab.classList.add(“active”);
-activeTab = tab.dataset.tab;
+var t = e.target.closest(”.tab”);
+if (!t) return;
+document.querySelectorAll(”#tabs .tab”).forEach(function(x){ x.classList.remove(“active”); });
+t.classList.add(“active”);
+activeTab = t.getAttribute(“data-tab”);
 render();
 });
 
 async function boot() {
+document.getElementById(“upd”).textContent = “Loading…”;
+document.getElementById(“lst”).innerHTML = “”;
 try {
 var r = await fetch(“motions.json?_=” + Date.now());
 if (!r.ok) throw new Error(“HTTP “ + r.status);
 var d = await r.json();
 M = d.motions || [];
+var upd = “”;
 if (d.meta && d.meta.last_updated) {
 var dt = new Date(d.meta.last_updated);
-document.getElementById(“upd”).textContent =
-“Last updated: “ + dt.toLocaleDateString(“en-GB”, {day:“numeric”,month:“short”,year:“numeric”});
-} else {
-document.getElementById(“upd”).textContent = “”;
+upd = “Last updated: “ + dt.toLocaleDateString(“en-GB”,{day:“numeric”,month:“short”,year:“numeric”});
 }
-topics(); stats(); render();
+document.getElementById(“upd”).textContent = upd;
+buildTopics();
+stats();
+render();
 } catch(e) {
-document.getElementById(“lst”).innerHTML =
-“<div class="empty">Could not load motions.json. “ + e.message + “</div>”;
+document.getElementById(“upd”).textContent = “Error loading data”;
+document.getElementById(“lst”).innerHTML = ‘<div class="notice"><strong>Could not load motions.json</strong>’ + e.message + “</div>”;
 }
 }
 
 function filt() {
-var q = document.getElementById(“sq”).value.toLowerCase();
+var q = document.getElementById(“sq”).value.toLowerCase().trim();
 var tp = document.getElementById(“ts”).value;
 var yr = document.getElementById(“ys”).value;
 return M.filter(function(m) {
@@ -160,8 +158,8 @@ if (activeTab !== “all” && m.status !== activeTab) return false;
 if (tp && m.topic !== tp) return false;
 if (yr && !m.date.startsWith(yr)) return false;
 if (q) {
-var h = (m.title + “ “ + (m.parties||[]).join(” “) + “ “ + m.topic + “ “ + (m.summary||””)).toLowerCase();
-if (!h.includes(q)) return false;
+var h = (m.title + “ “ + (m.parties||[]).join(” “) + “ “ + (m.topic||””) + “ “ + (m.summary||””)).toLowerCase();
+if (h.indexOf(q) === -1) return false;
 }
 return true;
 });
@@ -174,8 +172,10 @@ document.getElementById(“sR”).textContent = M.filter(function(m){return m.st
 document.getElementById(“sO”).textContent = M.filter(function(m){return m.status===“Aangehouden”||m.status===“Geamendeerd”;}).length;
 }
 
-function topics() {
-var ts = […new Set(M.map(function(m){return m.topic;}).filter(Boolean))].sort();
+function buildTopics() {
+var seen = {}, ts = [];
+M.forEach(function(m){ if(m.topic && !seen[m.topic]){ seen[m.topic]=1; ts.push(m.topic); }});
+ts.sort();
 var sel = document.getElementById(“ts”);
 ts.forEach(function(t) {
 var o = document.createElement(“option”);
@@ -184,52 +184,73 @@ o.value = t; o.textContent = t; sel.appendChild(o);
 }
 
 function esc(s) {
-return String(s).replace(/&/g,”&”).replace(/</g,”<”).replace(/>/g,”>”).replace(/”/g,”"”);
+return String(s||””).replace(/&/g,”&”).replace(/</g,”<”).replace(/>/g,”>”).replace(/”/g,”"”);
 }
 function sl(s) {
-return {Aangenomen:“Passed”,Verworpen:“Rejected”,Aangehouden:“Pending”,Geamendeerd:“Amended”,Onbekend:“Unknown”}[s]||s;
+var map = {Aangenomen:“Passed”,Verworpen:“Rejected”,Aangehouden:“Pending”,Geamendeerd:“Amended”,Onbekend:“Unknown”};
+return map[s] || s;
 }
 function fd(iso) {
-return new Date(iso).toLocaleDateString(“en-GB”,{day:“numeric”,month:“short”,year:“numeric”});
+try { return new Date(iso).toLocaleDateString(“en-GB”,{day:“numeric”,month:“short”,year:“numeric”}); }
+catch(e){ return iso; }
 }
 
 function render() {
-var f = filt(), n = f.length;
-document.getElementById(“lbl”).textContent = n + “ motion” + (n !== 1 ? “s” : “”);
-document.getElementById(“emp”).style.display = (n === 0 && M.length > 0) ? “block” : “none”;
+var f = filt();
+document.getElementById(“lbl”).textContent = f.length + “ motion” + (f.length !== 1 ? “s” : “”);
 var lst = document.getElementById(“lst”);
 if (M.length === 0) {
-lst.innerHTML = “<div class="empty">No data yet. Trigger the GitHub Actions workflow.</div>”;
+lst.innerHTML = ‘<div class="notice"><strong>No data yet</strong>The scraper has not fetched any motions yet.<br>Trigger the GitHub Actions workflow to populate the data.</div>’;
 return;
 }
-lst.innerHTML = f.map(function(m) {
-var tot = m.for + m.against + m.abstain;
-var fp = tot ? Math.round(m.for / tot * 100) : 0;
-var ap = tot ? Math.round(m.against / tot * 100) : 0;
+if (f.length === 0) {
+lst.innerHTML = ‘<div class="notice">No motions match your filters.</div>’;
+return;
+}
+var html = “”;
+f.forEach(function(m) {
+var tot = (m.for||0) + (m.against||0) + (m.abstain||0);
+var fp  = tot ? Math.round((m.for||0) / tot * 100) : 0;
+var ap  = tot ? Math.round((m.against||0) / tot * 100) : 0;
 var abp = tot ? 100 - fp - ap : 0;
 var open = xid === m.id;
 var vb = tot > 0
-? ‘<div class="vwrap"><div class="vbar"><div class="vf" style="width:' + fp + '%"></div><div class="va" style="width:' + ap + '%"></div><div class="vab" style="width:' + abp + '%"></div></div><span class="vleg">’ + m.for + ‘–’ + m.against + ‘</span></div>’
+? ‘<div class="vwrap"><div class="vbar"><div class="vf" style="width:'+fp+'%"></div><div class="va" style="width:'+ap+'%"></div><div class="vab" style="width:'+abp+'%"></div></div><span class="vleg">’+(m.for||0)+’–’+(m.against||0)+’</span></div>’
 : ‘<div class="vpend">Vote not yet recorded</div>’;
-var ex = open
-? ‘<div class="exp">’
-+ (m.summary ? ‘<p>’ + esc(m.summary) + ‘</p>’ : “”)
-+ (tot > 0 ? ‘<div class="bkdn"><div class="bk"><div class="bkn f">’ + m.for + ‘</div><div class="bkl">For</div></div><div class="bk"><div class="bkn a">’ + m.against + ‘</div><div class="bkl">Against</div></div><div class="bk"><div class="bkn ab">’ + m.abstain + ‘</div><div class="bkl">Abstain</div></div></div>’ : “”)
-+ ((m.parties && m.parties.length) ? ‘<div class="ptags">’ + m.parties.map(function(p){return ‘<span class="ptag">’ + esc(p) + ‘</span>’;}).join(””) + ‘</div>’ : “”)
-+ ‘<a class="slink" href="' + esc(m.link) + '" target="_blank" rel="noopener">View source →</a>’
-+ ‘</div>’
-: “”;
-return ‘<div class="row" onclick="tog(\'' + esc(m.id) + '\')">’
-+ ‘<div class="rtop"><div class="rtitle">’ + esc(m.title) + ‘</div><span class="badge ' + esc(m.status) + '">’ + sl(m.status) + ‘</span></div>’
-+ ‘<div class="meta"><span>’ + fd(m.date) + ‘</span>’
-+ (m.party ? ‘<span>·</span><span class="mpty">’ + esc(m.party) + ‘</span>’ : “”)
-+ (m.topic ? ‘<span>·</span><span>’ + esc(m.topic) + ‘</span>’ : “”)
-+ ‘<span>·</span><span class="mid">’ + esc(m.id) + ‘</span></div>’
+var ex = “”;
+if (open) {
+ex = ‘<div class="exp">’;
+if (m.summary) ex += ‘<p>’ + esc(m.summary) + ‘</p>’;
+if (tot > 0) {
+ex += ‘<div class="bkdn">’;
+ex += ‘<div class="bk"><div class="bkn f">’+(m.for||0)+’</div><div class="bkl">For</div></div>’;
+ex += ‘<div class="bk"><div class="bkn a">’+(m.against||0)+’</div><div class="bkl">Against</div></div>’;
+ex += ‘<div class="bk"><div class="bkn ab">’+(m.abstain||0)+’</div><div class="bkl">Abstain</div></div>’;
+ex += ‘</div>’;
+}
+if (m.parties && m.parties.length) {
+ex += ‘<div class="ptags">’;
+m.parties.forEach(function(p){ ex += ‘<span class="ptag">’+esc(p)+’</span>’; });
+ex += ‘</div>’;
+}
+ex += ‘<a class="slink" href="'+esc(m.link)+'" target="_blank" rel="noopener">View source →</a>’;
+ex += ‘</div>’;
+}
+html += ‘<div class="row" onclick="tog(\''+esc(m.id)+'\')">’
++ ‘<div class="rtop"><div class="rtitle">’+esc(m.title)+’</div><span class="badge '+esc(m.status)+'">’+sl(m.status)+’</span></div>’
++ ‘<div class="meta"><span>’+fd(m.date)+’</span>’
++ (m.party ? ‘<span>·</span><span class="mpty">’+esc(m.party)+’</span>’ : “”)
++ (m.topic ? ‘<span>·</span><span>’+esc(m.topic)+’</span>’ : “”)
++ ‘<span>·</span><span class="mid">’+esc(m.id)+’</span></div>’
 + vb + ex + ‘</div>’;
-}).join(””);
+});
+lst.innerHTML = html;
 }
 
-function tog(id) { xid = xid === id ? null : id; render(); }
+function tog(id) {
+xid = (xid === id) ? null : id;
+render();
+}
 
 boot();
 </script>
