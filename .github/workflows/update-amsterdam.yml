@@ -28,7 +28,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests beautifulsoup4
 
       - name: Run scraper
         run: python amsterdam-analysis/tracker/scraper.py
@@ -44,11 +44,11 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add amsterdam-analysis/tracker/motions.json
-          git commit -m "chore(amsterdam): update motions data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git commit -m "chore(amsterdam): update motions data"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: No changes detected
         if: steps.diff.outputs.changed == 'false'
-        run: echo "motions.json is already up to date — nothing to commit."
+        run: echo "motions.json already up to date"
