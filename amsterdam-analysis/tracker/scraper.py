@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-import json
-import re
-import time
-import logging
+import json, re, time, logging
 from datetime import date, datetime
 from pathlib import Path
 import requests
@@ -18,7 +15,7 @@ REQUEST_DELAY = 0.4
 MAX_PAGES = 60
 
 SESSION = requests.Session()
-SESSION.headers.update({“Accept”: “application/json”, “User-Agent”: “AmsterdamMotionsTracker/1.0”})
+SESSION.headers.update({“Accept”: “application/json”, “User-Agent”: “AmsterdamTracker/1.0”})
 
 def get_json(url, params=None, retries=3):
 for attempt in range(1, retries + 1):
@@ -57,22 +54,22 @@ if any(k in s for k in (“verworpen”, “rejected”, “afgekeurd”)):
 return “Verworpen”
 if any(k in s for k in (“aangehouden”, “ingetrokken”, “pending”, “withdrawn”)):
 return “Aangehouden”
-if any(k in s for k in (“geamendeerd”, “amended”, “gewijzigd”)):
+if any(k in s for k in (“geamendeerd”, “amended”)):
 return “Geamendeerd”
 return “Onbekend”
 
 def infer_topic(title, summary):
 text = (title + “ “ + summary).lower()
 rules = [
-(“Housing”,     [“wonen”, “huur”, “woningbouw”, “airbnb”, “woonruimte”]),
+(“Housing”,     [“wonen”, “huur”, “woningbouw”, “airbnb”]),
 (“Mobility”,    [“fiets”, “verkeer”, “metro”, “tram”, “parkeer”]),
-(“Climate”,     [“klimaat”, “groen”, “duurzaam”, “energie”, “co2”, “aardgas”]),
-(“Safety”,      [“veiligheid”, “politie”, “camera”, “criminaliteit”, “handhaving”]),
-(“Social”,      [“zorg”, “armoed”, “daklozen”, “jeugd”, “welzijn”]),
-(“Education”,   [“school”, “integratie”, “discriminatie”, “onderwijs”]),
-(“PublicSpace”, [“openbare ruimte”, “park”, “plein”, “markt”, “toilet”]),
-(“Finance”,     [“begroting”, “subsidie”, “economie”, “budget”]),
-(“Governance”,  [“democratie”, “bestuur”, “motie”, “amendement”]),
+(“Climate”,     [“klimaat”, “groen”, “duurzaam”, “energie”, “aardgas”]),
+(“Safety”,      [“veiligheid”, “politie”, “camera”, “handhaving”]),
+(“Social”,      [“zorg”, “armoed”, “daklozen”, “welzijn”]),
+(“Education”,   [“school”, “integratie”, “onderwijs”]),
+(“PublicSpace”, [“openbare ruimte”, “park”, “plein”, “markt”]),
+(“Finance”,     [“begroting”, “subsidie”, “budget”]),
+(“Governance”,  [“democratie”, “bestuur”, “raad”]),
 ]
 for topic, keywords in rules:
 if any(k in text for k in keywords):
@@ -83,13 +80,11 @@ def fetch_organisation_id():
 data = get_json(BASE_URL + “/organisations”, params={“slug”: ORG_SLUG})
 for org in data.get(“items”, data.get(“results”, [])):
 if org.get(“slug”) == ORG_SLUG:
-log.info(“Found org id=%s”, org.get(“id”))
 return org.get(“id”)
 data2 = get_json(BASE_URL + “/organisations”)
 for org in data2.get(“items”, data2.get(“results”, [])):
 name = str(org.get(“name”, “”)).lower()
 if “amsterdam” in name and “gemeente” in name:
-log.info(“Fallback org id=%s”, org.get(“id”))
 return org.get(“id”)
 return None
 
@@ -117,8 +112,8 @@ lead_party = parties[0] if parties else str(raw.get(“party”, “”))
 status_raw = raw.get(“result”) or raw.get(“status”) or raw.get(“decision”) or “”
 status = map_status(status_raw)
 votes = raw.get(“votes”) or raw.get(“vote_counts”) or {}
-v_for     = int(votes.get(“for”,     votes.get(“voors”,        votes.get(“pro”,    0))) or 0)
-v_against = int(votes.get(“against”, votes.get(“tegens”,       votes.get(“contra”, 0))) or 0)
+v_for     = int(votes.get(“for”,     votes.get(“voors”,  votes.get(“pro”,    0))) or 0)
+v_against = int(votes.get(“against”, votes.get(“tegens”, votes.get(“contra”, 0))) or 0)
 v_abstain = int(votes.get(“abstain”, votes.get(“onthoudingen”, 0)) or 0)
 topic_raw = clean_text(raw.get(“topic”) or raw.get(“category”) or “”)
 topic = topic_raw if topic_raw else infer_topic(title, summary)
@@ -132,7 +127,6 @@ return {
 }
 
 def fetch_via_ori(org_id):
-log.info(“Trying ORI fallback API”)
 results = []
 params = {”@type”: “Motion”, “organization.name”: “Gemeente Amsterdam”, “size”: 100, “from”: 0}
 page = 0
@@ -186,7 +180,7 @@ log.info(“Merge: %d added, %d updated, %d total”, added, updated, len(by_id)
 return sorted(by_id.values(), key=lambda m: m[“date”], reverse=True)
 
 def main():
-log.info(“Scraper started, from %s”, START_DATE.isoformat())
+log.info(“Scraper started from %s”, START_DATE.isoformat())
 fresh = []
 org_id = fetch_organisation_id()
 if not org_id:
@@ -210,7 +204,7 @@ if page >= total_pages:
 break
 page += 1
 time.sleep(REQUEST_DELAY)
-log.info(“Fetched %d motions from NotuBiz”, len(fresh))
+log.info(“Fetched %d motions”, len(fresh))
 if not fresh:
 fresh = fetch_via_ori(org_id or 0)
 existing = load_existing()
