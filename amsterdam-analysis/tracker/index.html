@@ -9,52 +9,50 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ff-d:'Playfair Display',Georgia,serif;
-  --ff-b:'IBM Plex Sans',system-ui,sans-serif;
-  --bg:#fafaf8;--card:#fff;--surf:#f4f3ef;
-  --ink:#1a1a18;--muted:#6b6b65;--faint:#a3a39c;
-  --bdr:#e4e3de;--bdr2:#d0cfc8;
-  --pass:#2d6a09;--pass-bg:#e8f3de;
-  --rej:#9b2626;--rej-bg:#faeaea;
-  --pend:#7a4a08;--pend-bg:#faecd8;
-  --amnd:#1455a0;--amnd-bg:#e4f0fb;
-}
-body{font-family:var(--ff-b);background:var(--bg);color:var(--ink);min-height:100vh;padding:2rem 1rem 4rem}
+:root{--ffd:'Playfair Display',Georgia,serif;--ffb:'IBM Plex Sans',system-ui,sans-serif;
+--bg:#fafaf8;--card:#fff;--surf:#f4f3ef;--ink:#1a1a18;--muted:#6b6b65;--faint:#a3a39c;
+--bdr:#e4e3de;--bdr2:#d0cfc8;
+--pass:#2d6a09;--passbg:#e8f3de;--rej:#9b2626;--rejbg:#faeaea;
+--pend:#7a4a08;--pendbg:#faecd8;--amnd:#1455a0;--amndbg:#e4f0fb}
+body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100vh;padding:2rem 1rem 4rem}
 .page{max-width:820px;margin:0 auto}
 .masthead{border-bottom:1px solid var(--bdr2);padding-bottom:1.25rem;margin-bottom:1.75rem}
-.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.4rem}
-.masthead h1{font-family:var(--ff-d);font-size:clamp(22px,5vw,30px);font-weight:400;line-height:1.2;margin-bottom:.3rem}
+.ey{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.4rem}
+.masthead h1{font-family:var(--ffd);font-size:clamp(22px,5vw,30px);font-weight:400;line-height:1.2;margin-bottom:.3rem}
 .sub{font-size:13px;color:var(--muted);font-weight:300;margin-bottom:.35rem}
-.updated{font-size:11px;color:var(--faint)}
+.upd{font-size:11px;color:var(--faint)}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem}
 @media(max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}}
 .stat{background:var(--surf);border-radius:6px;padding:.75rem 1rem}
-.stat-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.3rem}
-.stat-val{font-size:24px;font-family:var(--ff-d);font-weight:500}
-.stat-val.p{color:var(--pass)}.stat-val.r{color:var(--rej)}.stat-val.o{color:var(--pend)}
+.slbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.3rem}
+.sval{font-size:24px;font-family:var(--ffd);font-weight:500;color:var(--ink)}
+.sval.p{color:var(--pass)}.sval.r{color:var(--rej)}.sval.o{color:var(--pend)}
 .tabs{display:flex;border-bottom:1px solid var(--bdr2);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{font-size:12px;font-weight:500;letter-spacing:.06em;padding:.5rem 1rem;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .12s,border-color .12s}
-.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
-.tab:hover:not(.on){color:var(--ink)}
+.tab{font-size:12px;font-weight:500;letter-spacing:.06em;padding:.5rem 1rem;cursor:pointer;
+  color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;
+  white-space:nowrap;transition:color .12s,border-color .12s;user-select:none}
+.tab.active{color:var(--ink);border-bottom-color:var(--ink)}
+.tab:hover{color:var(--ink)}
 .ctrls{display:flex;gap:8px;margin-bottom:1.25rem;flex-wrap:wrap}
-.ctrls input,.ctrls select{font-family:var(--ff-b);font-size:13px;padding:.45rem .75rem;border:1px solid var(--bdr2);border-radius:4px;background:var(--card);color:var(--ink);outline:none}
+.ctrls input,.ctrls select{font-family:var(--ffb);font-size:13px;padding:.45rem .75rem;
+  border:1px solid var(--bdr2);border-radius:4px;background:var(--card);color:var(--ink);outline:none}
 .ctrls input:focus,.ctrls select:focus{border-color:var(--muted)}
 .ctrls input{flex:1;min-width:160px}
-.sec-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;border-bottom:.5px solid var(--bdr);padding-bottom:.4rem;margin-bottom:.75rem}
+.seclbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  font-weight:500;border-bottom:.5px solid var(--bdr);padding-bottom:.4rem;margin-bottom:.75rem}
 .row{border-bottom:.5px solid var(--bdr);padding:1rem .5rem;cursor:pointer;border-radius:4px;transition:background .12s}
 .row:hover{background:var(--surf)}
-.row-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:.4rem}
-.row-title{font-size:14px;font-weight:500;line-height:1.45;flex:1}
+.rtop{display:flex;align-items:flex-start;gap:10px;margin-bottom:.4rem}
+.rtitle{font-size:14px;font-weight:500;line-height:1.45;flex:1}
 .badge{font-size:10px;font-weight:500;letter-spacing:.06em;padding:3px 8px;border-radius:3px;white-space:nowrap;flex-shrink:0}
-.badge.Aangenomen{background:var(--pass-bg);color:var(--pass)}
-.badge.Verworpen{background:var(--rej-bg);color:var(--rej)}
-.badge.Aangehouden{background:var(--pend-bg);color:var(--pend)}
-.badge.Geamendeerd{background:var(--amnd-bg);color:var(--amnd)}
+.badge.Aangenomen{background:var(--passbg);color:var(--pass)}
+.badge.Verworpen{background:var(--rejbg);color:var(--rej)}
+.badge.Aangehouden{background:var(--pendbg);color:var(--pend)}
+.badge.Geamendeerd{background:var(--amndbg);color:var(--amnd)}
 .badge.Onbekend{background:#eee;color:#555}
 .meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted)}
-.meta-pty{font-weight:500;color:var(--ink)}.meta-id{color:var(--faint)}
+.mpty{font-weight:500;color:var(--ink)}.mid{color:var(--faint)}
 .vwrap{margin-top:.6rem;display:flex;align-items:center;gap:8px}
 .vbar{flex:1;height:4px;background:var(--bdr);border-radius:2px;overflow:hidden;display:flex}
 .vf{background:var(--pass);height:100%}.va{background:var(--rej);height:100%}.vab{background:var(--bdr2);height:100%}
@@ -64,15 +62,17 @@ body{font-family:var(--ff-b);background:var(--bg);color:var(--ink);min-height:10
 .exp p{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:.75rem}
 .bkdn{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:.5rem}
 .bk{text-align:center}
-.bk-n{font-size:20px;font-weight:500;font-family:var(--ff-d)}
-.bk-n.f{color:var(--pass)}.bk-n.a{color:var(--rej)}.bk-n.ab{color:var(--pend)}
-.bk-l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.bkn{font-size:20px;font-weight:500;font-family:var(--ffd)}
+.bkn.f{color:var(--pass)}.bkn.a{color:var(--rej)}.bkn.ab{color:var(--pend)}
+.bkl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .ptags{display:flex;gap:6px;flex-wrap:wrap;margin-top:.75rem}
 .ptag{font-size:11px;background:var(--bdr);color:var(--muted);padding:2px 7px;border-radius:3px}
 .slink{font-size:11px;color:#1455a0;margin-top:.6rem;display:inline-block;text-decoration:none}
 .slink:hover{text-decoration:underline}
 .empty{text-align:center;padding:3rem 0;color:var(--muted);font-size:13px}
-.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--bdr);border-top-color:var(--muted);border-radius:50%;animation:sp .8s linear infinite;vertical-align:middle;margin-left:6px}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--bdr);
+  border-top-color:var(--muted);border-radius:50%;animation:sp .8s linear infinite;
+  vertical-align:middle;margin-left:6px}
 @keyframes sp{to{transform:rotate(360deg)}}
 .foot{font-size:11px;color:var(--faint);margin-top:2.5rem;padding-top:1rem;border-top:.5px solid var(--bdr);line-height:1.7}
 .foot a{color:inherit}
@@ -81,23 +81,23 @@ body{font-family:var(--ff-b);background:var(--bg);color:var(--ink);min-height:10
 <body>
 <div class="page">
 <div class="masthead">
-  <div class="eyebrow">Gemeenteraad Amsterdam &mdash; Live Tracker</div>
+  <div class="ey">Gemeenteraad Amsterdam &mdash; Live Tracker</div>
   <h1>Amsterdam Motions Tracker</h1>
   <p class="sub">Motions &amp; votes in the Amsterdam city council &mdash; June 2025 onwards</p>
-  <span class="updated" id="upd">Loading&hellip;</span>
+  <span class="upd" id="upd">Loading&hellip;</span>
 </div>
 <div class="stats">
-  <div class="stat"><div class="stat-lbl">Total motions</div><div class="stat-val" id="sT">0</div></div>
-  <div class="stat"><div class="stat-lbl">Passed</div><div class="stat-val p" id="sP">0</div></div>
-  <div class="stat"><div class="stat-lbl">Rejected</div><div class="stat-val r" id="sR">0</div></div>
-  <div class="stat"><div class="stat-lbl">Pending / amended</div><div class="stat-val o" id="sO">0</div></div>
+  <div class="stat"><div class="slbl">Total motions</div><div class="sval" id="sT">0</div></div>
+  <div class="stat"><div class="slbl">Passed</div><div class="sval p" id="sP">0</div></div>
+  <div class="stat"><div class="slbl">Rejected</div><div class="sval r" id="sR">0</div></div>
+  <div class="stat"><div class="slbl">Pending / amended</div><div class="sval o" id="sO">0</div></div>
 </div>
-<div class="tabs">
-  <div class="tab on" onclick="sw(this,'all')">All</div>
-  <div class="tab" onclick="sw(this,'Aangenomen')">Passed</div>
-  <div class="tab" onclick="sw(this,'Verworpen')">Rejected</div>
-  <div class="tab" onclick="sw(this,'Aangehouden')">Pending</div>
-  <div class="tab" onclick="sw(this,'Geamendeerd')">Amended</div>
+<div class="tabs" id="tabs">
+  <div class="tab active" data-tab="all">All</div>
+  <div class="tab" data-tab="Aangenomen">Passed</div>
+  <div class="tab" data-tab="Verworpen">Rejected</div>
+  <div class="tab" data-tab="Aangehouden">Pending</div>
+  <div class="tab" data-tab="Geamendeerd">Amended</div>
 </div>
 <div class="ctrls">
   <input type="text" id="sq" placeholder="Search title, party, topic..." oninput="render()">
@@ -108,106 +108,129 @@ body{font-family:var(--ff-b);background:var(--bg);color:var(--ink);min-height:10
     <option value="2025">2025</option>
   </select>
 </div>
-<div class="sec-lbl" id="lbl">0 motions</div>
+<div class="seclbl" id="lbl">0 motions</div>
 <div id="lst"><div class="empty">Loading data<span class="spin"></span></div></div>
 <div class="empty" id="emp" style="display:none">No motions match your filters.</div>
 <div class="foot">
   <strong>Data source:</strong>
   <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a>
-  via the <a href="https://api.notubiz.nl" target="_blank">NotuBiz API</a>.
+  via <a href="https://openraadsinformatie.nl" target="_blank">Open Raadsinformatie API</a>.
   Refreshed every Monday by GitHub Actions.
 </div>
 </div>
 <script>
-var M=[], tab='all', xid=null;
+var M = [], activeTab = "all", xid = null;
 
-async function boot(){
-try{
-var r=await fetch(‘motions.json?_=’+Date.now());
-if(!r.ok)throw new Error(‘HTTP ‘+r.status);
-var d=await r.json();
-M=d.motions||[];
-if(d.meta&&d.meta.last_updated){
-var dt=new Date(d.meta.last_updated);
-document.getElementById(‘upd’).textContent=‘Last updated: ‘+dt.toLocaleDateString(‘en-GB’,{day:‘numeric’,month:‘short’,year:‘numeric’});
-} else { document.getElementById(‘upd’).textContent=’’; }
+// Tab click handler - attached via event delegation
+document.getElementById(“tabs”).addEventListener(“click”, function(e) {
+var tab = e.target.closest(”.tab”);
+if (!tab) return;
+document.querySelectorAll(”.tab”).forEach(function(t) { t.classList.remove(“active”); });
+tab.classList.add(“active”);
+activeTab = tab.dataset.tab;
+render();
+});
+
+async function boot() {
+try {
+var r = await fetch(“motions.json?_=” + Date.now());
+if (!r.ok) throw new Error(“HTTP “ + r.status);
+var d = await r.json();
+M = d.motions || [];
+if (d.meta && d.meta.last_updated) {
+var dt = new Date(d.meta.last_updated);
+document.getElementById(“upd”).textContent =
+“Last updated: “ + dt.toLocaleDateString(“en-GB”, {day:“numeric”,month:“short”,year:“numeric”});
+} else {
+document.getElementById(“upd”).textContent = “”;
+}
 topics(); stats(); render();
-} catch(e){
-document.getElementById(‘lst’).innerHTML=’<div class="empty">Could not load motions.json. Serve locally with: python -m http.server<br><small>’+e.message+’</small></div>’;
+} catch(e) {
+document.getElementById(“lst”).innerHTML =
+“<div class="empty">Could not load motions.json. “ + e.message + “</div>”;
 }
 }
 
-function filt(){
-var q=document.getElementById(‘sq’).value.toLowerCase();
-var tp=document.getElementById(‘ts’).value;
-var yr=document.getElementById(‘ys’).value;
-return M.filter(function(m){
-if(tab!==‘all’&&m.status!==tab)return false;
-if(tp&&m.topic!==tp)return false;
-if(yr&&!m.date.startsWith(yr))return false;
-if(q){var h=(m.title+’ ‘+(m.parties||[]).join(’ ‘)+’ ‘+m.topic+’ ‘+(m.summary||’’)).toLowerCase();if(!h.includes(q))return false;}
+function filt() {
+var q = document.getElementById(“sq”).value.toLowerCase();
+var tp = document.getElementById(“ts”).value;
+var yr = document.getElementById(“ys”).value;
+return M.filter(function(m) {
+if (activeTab !== “all” && m.status !== activeTab) return false;
+if (tp && m.topic !== tp) return false;
+if (yr && !m.date.startsWith(yr)) return false;
+if (q) {
+var h = (m.title + “ “ + (m.parties||[]).join(” “) + “ “ + m.topic + “ “ + (m.summary||””)).toLowerCase();
+if (!h.includes(q)) return false;
+}
 return true;
 });
 }
 
-function stats(){
-var p=M.filter(function(m){return m.status===‘Aangenomen’}).length;
-var r=M.filter(function(m){return m.status===‘Verworpen’}).length;
-var o=M.filter(function(m){return m.status===‘Aangehouden’||m.status===‘Geamendeerd’}).length;
-document.getElementById(‘sT’).textContent=M.length;
-document.getElementById(‘sP’).textContent=p;
-document.getElementById(‘sR’).textContent=r;
-document.getElementById(‘sO’).textContent=o;
+function stats() {
+document.getElementById(“sT”).textContent = M.length;
+document.getElementById(“sP”).textContent = M.filter(function(m){return m.status===“Aangenomen”;}).length;
+document.getElementById(“sR”).textContent = M.filter(function(m){return m.status===“Verworpen”;}).length;
+document.getElementById(“sO”).textContent = M.filter(function(m){return m.status===“Aangehouden”||m.status===“Geamendeerd”;}).length;
 }
 
-function topics(){
-var ts=[…new Set(M.map(function(m){return m.topic}).filter(Boolean))].sort();
-var sel=document.getElementById(‘ts’);
-ts.forEach(function(t){var o=document.createElement(‘option’);o.value=t;o.textContent=t;sel.appendChild(o);});
+function topics() {
+var ts = […new Set(M.map(function(m){return m.topic;}).filter(Boolean))].sort();
+var sel = document.getElementById(“ts”);
+ts.forEach(function(t) {
+var o = document.createElement(“option”);
+o.value = t; o.textContent = t; sel.appendChild(o);
+});
 }
 
-function e(s){return String(s).replace(/&/g,”&”).replace(/</g,”<”).replace(/>/g,”>”).replace(/”/g,”"”);}
-function sl(s){return{Aangenomen:‘Passed’,Verworpen:‘Rejected’,Aangehouden:‘Pending’,Geamendeerd:‘Amended’,Onbekend:‘Unknown’}[s]||s;}
-function fd(iso){return new Date(iso).toLocaleDateString(‘en-GB’,{day:‘numeric’,month:‘short’,year:‘numeric’});}
+function esc(s) {
+return String(s).replace(/&/g,”&”).replace(/</g,”<”).replace(/>/g,”>”).replace(/”/g,”"”);
+}
+function sl(s) {
+return {Aangenomen:“Passed”,Verworpen:“Rejected”,Aangehouden:“Pending”,Geamendeerd:“Amended”,Onbekend:“Unknown”}[s]||s;
+}
+function fd(iso) {
+return new Date(iso).toLocaleDateString(“en-GB”,{day:“numeric”,month:“short”,year:“numeric”});
+}
 
-function render(){
-var f=filt(), n=f.length;
-document.getElementById(‘lbl’).textContent=n+’ motion’+(n!==1?‘s’:’’);
-document.getElementById(‘emp’).style.display=(n===0&&M.length>0)?‘block’:‘none’;
-var lst=document.getElementById(‘lst’);
-if(M.length===0){
-lst.innerHTML=’<div class="empty">No data yet. Trigger the GitHub Actions workflow to fetch motions.</div>’;
+function render() {
+var f = filt(), n = f.length;
+document.getElementById(“lbl”).textContent = n + “ motion” + (n !== 1 ? “s” : “”);
+document.getElementById(“emp”).style.display = (n === 0 && M.length > 0) ? “block” : “none”;
+var lst = document.getElementById(“lst”);
+if (M.length === 0) {
+lst.innerHTML = “<div class="empty">No data yet. Trigger the GitHub Actions workflow.</div>”;
 return;
 }
-lst.innerHTML=f.map(function(m){
-var tot=m.for+m.against+m.abstain;
-var fp=tot?Math.round(m.for/tot*100):0;
-var ap=tot?Math.round(m.against/tot*100):0;
-var abp=tot?100-fp-ap:0;
-var op=xid===m.id;
-var vb=tot>0?(’<div class="vwrap"><div class="vbar"><div class="vf" style="width:'+fp+'%"></div><div class="va" style="width:'+ap+'%"></div><div class="vab" style="width:'+abp+'%"></div></div><span class="vleg">’+m.for+’–’+m.against+’</span></div>’):’<div class="vpend">Vote not yet recorded</div>’;
-var ex=op?(’<div class="exp">’
-+(m.summary?’<p>’+e(m.summary)+’</p>’:’’)
-+(tot>0?’<div class="bkdn"><div class="bk"><div class="bk-n f">’+m.for+’</div><div class="bk-l">For</div></div><div class="bk"><div class="bk-n a">’+m.against+’</div><div class="bk-l">Against</div></div><div class="bk"><div class="bk-n ab">’+m.abstain+’</div><div class="bk-l">Abstain</div></div></div>’:’’)
-+((m.parties&&m.parties.length)?’<div class="ptags">’+m.parties.map(function(p){return’<span class="ptag">’+e(p)+’</span>’;}).join(’’)+’</div>’:’’)
-+’<a class="slink" href="'+e(m.link)+'" target="_blank" rel="noopener">View source →</a>’
-+’</div>’):’’  ;
-return ‘<div class="row" onclick="tog(\'' +e(m.id)+ '\'">’
-+’<div class="row-top"><div class="row-title">’+e(m.title)+’</div><span class="badge '+e(m.status)+'">’+sl(m.status)+’</span></div>’
-+’<div class="meta"><span>’+fd(m.date)+’</span>’
-+(m.party?’<span>·</span><span class="meta-pty">’+e(m.party)+’</span>’:’’)
-+(m.topic?’<span>·</span><span>’+e(m.topic)+’</span>’:’’)
-+’<span>·</span><span class="meta-id">’+e(m.id)+’</span></div>’
-+vb+ex
-+’</div>’;
-}).join(’’);
+lst.innerHTML = f.map(function(m) {
+var tot = m.for + m.against + m.abstain;
+var fp = tot ? Math.round(m.for / tot * 100) : 0;
+var ap = tot ? Math.round(m.against / tot * 100) : 0;
+var abp = tot ? 100 - fp - ap : 0;
+var open = xid === m.id;
+var vb = tot > 0
+? ‘<div class="vwrap"><div class="vbar"><div class="vf" style="width:' + fp + '%"></div><div class="va" style="width:' + ap + '%"></div><div class="vab" style="width:' + abp + '%"></div></div><span class="vleg">’ + m.for + ‘–’ + m.against + ‘</span></div>’
+: ‘<div class="vpend">Vote not yet recorded</div>’;
+var ex = open
+? ‘<div class="exp">’
++ (m.summary ? ‘<p>’ + esc(m.summary) + ‘</p>’ : “”)
++ (tot > 0 ? ‘<div class="bkdn"><div class="bk"><div class="bkn f">’ + m.for + ‘</div><div class="bkl">For</div></div><div class="bk"><div class="bkn a">’ + m.against + ‘</div><div class="bkl">Against</div></div><div class="bk"><div class="bkn ab">’ + m.abstain + ‘</div><div class="bkl">Abstain</div></div></div>’ : “”)
++ ((m.parties && m.parties.length) ? ‘<div class="ptags">’ + m.parties.map(function(p){return ‘<span class="ptag">’ + esc(p) + ‘</span>’;}).join(””) + ‘</div>’ : “”)
++ ‘<a class="slink" href="' + esc(m.link) + '" target="_blank" rel="noopener">View source →</a>’
++ ‘</div>’
+: “”;
+return ‘<div class="row" onclick="tog(\'' + esc(m.id) + '\')">’
++ ‘<div class="rtop"><div class="rtitle">’ + esc(m.title) + ‘</div><span class="badge ' + esc(m.status) + '">’ + sl(m.status) + ‘</span></div>’
++ ‘<div class="meta"><span>’ + fd(m.date) + ‘</span>’
++ (m.party ? ‘<span>·</span><span class="mpty">’ + esc(m.party) + ‘</span>’ : “”)
++ (m.topic ? ‘<span>·</span><span>’ + esc(m.topic) + ‘</span>’ : “”)
++ ‘<span>·</span><span class="mid">’ + esc(m.id) + ‘</span></div>’
++ vb + ex + ‘</div>’;
+}).join(””);
 }
 
-function sw(el,t){
-document.querySelectorAll(’.tab’).forEach(function(x){x.classList.remove(‘on’);});
-el.classList.add(‘on’); tab=t; render();
-}
-function tog(id){xid=xid===id?null:id;render();}
+function tog(id) { xid = xid === id ? null : id; render(); }
+
 boot();
 </script>
 
