@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T17:32:03.544593Z",
+    "last_updated": "2026-04-23T17:41:44.185027Z",
     "total": 0,
     "start_date": "2026-01-01",
-    "source": "amsterdam.raadsinformatie.nl (meeting pages)"
+    "source": "api.notubiz.nl or manual Excel upload"
   },
   "motions": []
 }
