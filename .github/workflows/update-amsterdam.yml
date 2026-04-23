@@ -1,0 +1,57 @@
+name: Update Amsterdam Motions Data
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
+    paths:
+      - "amsterdam-analysis/tracker/scraper.py"
+      - "amsterdam-analysis/tracker/requirements.txt"
+      - ".github/workflows/update-amsterdam.yml"
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: amsterdam-analysis/tracker/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r amsterdam-analysis/tracker/requirements.txt
+
+      - name: Run scraper
+        run: python amsterdam-analysis/tracker/scraper.py
+
+      - name: Check if motions.json changed
+        id: diff
+        run: |
+          git diff --quiet amsterdam-analysis/tracker/motions.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated data
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add amsterdam-analysis/tracker/motions.json
+          git commit -m "chore(amsterdam): update motions data [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: No changes detected
+        if: steps.diff.outputs.changed == 'false'
+        run: echo "motions.json is already up to date — nothing to commit."
