@@ -5,155 +5,190 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
 BASE = "https://amsterdam.raadsinformatie.nl"
 START_DATE = date(2025, 6, 1)
 OUTPUT_FILE = Path(__file__).parent / "motions.json"
-DELAY = 1.0
+DELAY = 1.5
 
-SESSION = requests.Session()
-SESSION.headers.update({
-    "User-Agent": "Mozilla/5.0 AmsterdamMotionsTracker/1.0",
+S = requests.Session()
+S.headers.update({
+    "User-Agent": "Mozilla/5.0 (compatible; AmsterdamMotionsTracker/1.0)",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
 })
 
 
-def get(url, params=None, retries=3):
-    for attempt in range(1, retries + 1):
-        try:
-            r = SESSION.get(url, params=params, timeout=20)
-            r.raise_for_status()
-            return r
-        except requests.RequestException as e:
-            log.warning("Attempt %d failed: %s", attempt, e)
-            if attempt < retries:
-                time.sleep(3 * attempt)
+def fetch(url, params=None):
+    try:
+        r = S.get(url, params=params, timeout=30)
+        log.info("GET %s -> %d (%d bytes)", url, r.status_code, len(r.content))
+        r.raise_for_status()
+        return r
+    except Exception as exc:
+        log.error("fetch failed %s: %s", url, exc)
+        return None
+
+
+def clean(t):
+    if not t: return ""
+    return " ".join(str(t).split())
+
+
+def parse_dutch_date(text):
+    months = {"januari":1,"februari":2,"maart":3,"april":4,"mei":5,"juni":6,
+              "juli":7,"augustus":8,"september":9,"oktober":10,"november":11,"december":12}
+    text = clean(text).lower()
+    m = re.search(r"(\d{1,2})\s+(\w+)\s+(\d{4})", text)
+    if m:
+        day, mon, yr = m.group(1), m.group(2), m.group(3)
+        mo = months.get(mon)
+        if mo:
+            try: return date(int(yr), mo, int(day)).isoformat()
+            except: pass
+    m2 = re.search(r"(\d{4})-(\d{2})-(\d{2})", text)
+    if m2:
+        return m2.group(0)
     return None
-
-
-def clean(text):
-    if not text:
-        return ""
-    return " ".join(str(text).split())
 
 
 def map_status(raw):
     s = str(raw).lower()
-    if any(k in s for k in ("aangenomen", "passed", "approved")):
-        return "Aangenomen"
-    if any(k in s for k in ("verworpen", "rejected")):
-        return "Verworpen"
-    if any(k in s for k in ("aangehouden", "ingetrokken", "withdrawn")):
-        return "Aangehouden"
-    if any(k in s for k in ("geamendeerd", "amended")):
-        return "Geamendeerd"
+    if any(k in s for k in ("aangenomen", "passed", "approved", "aanvaard")): return "Aangenomen"
+    if any(k in s for k in ("verworpen", "rejected", "afgekeurd")): return "Verworpen"
+    if any(k in s for k in ("aangehouden", "ingetrokken", "withdrawn", "pending")): return "Aangehouden"
+    if any(k in s for k in ("geamendeerd", "amended", "gewijzigd")): return "Geamendeerd"
     return "Onbekend"
 
 
 def infer_topic(text):
     t = text.lower()
     rules = [
-        ("Housing",     ["wonen", "huur", "woningbouw", "airbnb", "woonruimte"]),
-        ("Mobility",    ["fiets", "verkeer", "metro", "tram", "parkeer"]),
-        ("Climate",     ["klimaat", "groen", "duurzaam", "energie", "aardgas", "co2"]),
-        ("Safety",      ["veiligheid", "politie", "camera", "handhaving"]),
-        ("Social",      ["zorg", "armoed", "daklozen", "welzijn"]),
-        ("Education",   ["school", "integratie", "onderwijs"]),
-        ("PublicSpace", ["openbare ruimte", "park", "plein", "markt"]),
-        ("Finance",     ["begroting", "subsidie", "budget"]),
-        ("Governance",  ["democratie", "bestuur", "raad"]),
+        ("Housing",     ["wonen","huur","woningbouw","airbnb","woonruimte","sociale huur"]),
+        ("Mobility",    ["fiets","verkeer","metro","tram","parkeer","bereikbaar"]),
+        ("Climate",     ["klimaat","groen","duurzaam","energie","aardgas","co2","plastic"]),
+        ("Safety",      ["veiligheid","politie","camera","criminaliteit","handhaving","overlast"]),
+        ("Social",      ["zorg","armoed","daklozen","welzijn","jeugd","schulden"]),
+        ("Education",   ["school","integratie","discriminatie","onderwijs"]),
+        ("PublicSpace", ["openbare ruimte","park","plein","markt","toilet"]),
+        ("Finance",     ["begroting","subsidie","budget","financ"]),
+        ("Governance",  ["democratie","bestuur","raad","motie"]),
     ]
     for topic, kws in rules:
-        if any(k in t for k in kws):
-            return topic
+        if any(k in t for k in kws): return topic
     return "Other"
 
 
-def fetch_motion_detail(url):
-    r = get(url)
-    if not r:
-        return {}, "", ""
-    soup = BeautifulSoup(r.text, "html.parser")
-    detail = {}
-    summary = ""
-    parties = ""
-    # Try to get summary from description paragraphs
-    body = soup.find("div", class_="document-body") or soup.find("div", class_="motie-body")
-    if body:
-        paras = [clean(p.get_text()) for p in body.find_all("p") if p.get_text().strip()]
-        summary = " ".join(paras[:3])[:500]
-    # Try to get party/indiener info from metadata
-    for dt in soup.find_all("dt"):
-        label = clean(dt.get_text()).lower()
-        dd = dt.find_next_sibling("dd")
-        if not dd:
-            continue
-        val = clean(dd.get_text())
-        if "indiener" in label or "partij" in label or "fractie" in label:
-            parties = val
-        if "besluit" in label or "uitslag" in label or "resultaat" in label:
-            detail["status_raw"] = val
-    return detail, summary, parties
-
-
-def scrape_list_page(page_num):
-    url = BASE + "/modules/6/moties/view"
-    params = {"ContentType": "Motie", "page": page_num}
-    r = get(url, params=params)
-    if not r:
-        return [], False
-    soup = BeautifulSoup(r.text, "html.parser")
-    motions = []
-    rows = soup.select("table tbody tr") or soup.select(".module-item") or soup.select(".list-item")
-    if not rows:
-        # Try any link containing /moties/ with an ID
-        links = soup.find_all("a", href=True)
-        rows = [l for l in links if "/moties/" in l["href"] and l["href"].split("/")[-1].isdigit()]
-    for row in rows:
-        motions.append(row)
-    has_next = bool(soup.find("a", string=lambda s: s and "volgende" in s.lower()))
-    return motions, has_next
-
-
-def scrape_motions_module():
-    log.info("Scraping amsterdam.raadsinformatie.nl moties module")
+def scrape_motions():
     results = []
+    # Fetch the moties listing page
     url = BASE + "/modules/6/moties/view"
-    r = get(url)
+    r = fetch(url)
     if not r:
-        log.error("Could not reach raadsinformatie.nl")
+        log.error("Cannot reach moties listing page")
         return results
+
     soup = BeautifulSoup(r.text, "html.parser")
-    # Find all motion links
-    all_links = soup.find_all("a", href=True)
-    motion_links = []
-    for a in all_links:
+
+    # Debug: show page title
+    title = soup.find("title")
+    log.info("Page title: %s", title.get_text() if title else "none")
+
+    # Find all links to individual motions
+    # Pattern: /modules/6/moties/NNNNNN
+    found_links = []
+    for a in soup.find_all("a", href=True):
         href = a["href"]
-        if "/moties/" in href:
-            parts = href.rstrip("/").split("/")
-            if parts[-1].isdigit():
-                full = BASE + href if href.startswith("/") else href
-                motion_links.append((parts[-1], full, clean(a.get_text())))
-    log.info("Found %d motion links on listing page", len(motion_links))
-    seen = set()
-    for mid, link, title_text in motion_links:
-        if mid in seen:
+        m = re.search(r"/modules/6/moties/(\d+)", href)
+        if m:
+            mid = m.group(1)
+            full_url = BASE + "/modules/6/moties/" + mid
+            label = clean(a.get_text())
+            if mid not in [x[0] for x in found_links]:
+                found_links.append((mid, full_url, label))
+
+    log.info("Found %d motion links on listing page", len(found_links))
+
+    # Also try to find table rows with dates
+    rows = soup.select("table tr") or soup.select(".list-item") or soup.select("li")
+    log.info("Found %d table/list rows", len(rows))
+
+    # Debug: log raw HTML snippet (first 2000 chars) to understand structure
+    log.info("HTML snippet: %s", r.text[:2000].replace("\n", " "))
+
+    for mid, link, label in found_links:
+        time.sleep(DELAY)
+        dr = fetch(link)
+        if not dr:
             continue
-        seen.add(mid)
-        log.info("Fetching motion %s", mid)
-        detail, summary, parties_str = fetch_motion_detail(link)
-        status_raw = detail.get("status_raw", "")
-        status = map_status(status_raw) if status_raw else "Onbekend"
-        title = title_text or "Motie " + mid
+        dsoup = BeautifulSoup(dr.text, "html.parser")
+
+        # Extract title
+        h1 = dsoup.find("h1") or dsoup.find("h2")
+        title_text = clean(h1.get_text()) if h1 else label
+
+        # Extract date from meta or content
+        date_str = None
+        for el in dsoup.find_all(["td","dd","span","div","p"])[:30]:
+            d = parse_dutch_date(el.get_text())
+            if d:
+                date_str = d
+                break
+        if not date_str:
+            date_str = datetime.utcnow().date().isoformat()
+
+        # Skip if before start date
+        if date_str < START_DATE.isoformat():
+            log.info("Skipping %s (date %s before cutoff)", mid, date_str)
+            continue
+
+        # Extract status
+        status_raw = ""
+        status = "Onbekend"
+        for dt in dsoup.find_all("dt"):
+            lbl = clean(dt.get_text()).lower()
+            dd = dt.find_next_sibling("dd")
+            if not dd: continue
+            val = clean(dd.get_text())
+            if any(k in lbl for k in ("besluit","uitslag","resultaat","status","beslissing")):
+                status_raw = val
+                status = map_status(val)
+        # Also check page text for common status words
+        page_text = clean(dsoup.get_text()[:3000]).lower()
+        if not status_raw:
+            for word in ("aangenomen","verworpen","aangehouden","geamendeerd"):
+                if word in page_text:
+                    status = map_status(word)
+                    status_raw = word
+                    break
+
+        # Extract parties
+        parties = []
+        for dt in dsoup.find_all("dt"):
+            lbl = clean(dt.get_text()).lower()
+            dd = dt.find_next_sibling("dd")
+            if not dd: continue
+            if any(k in lbl for k in ("indiener","partij","fractie","penvoerder")):
+                val = clean(dd.get_text())
+                if val:
+                    parties = [p.strip() for p in re.split(r"[,;/]", val) if p.strip()]
+
+        # Extract summary
+        summary = ""
+        body = dsoup.find("div", class_=re.compile(r"body|content|tekst|motie", re.I))
+        if body:
+            paras = [clean(p.get_text()) for p in body.find_all("p") if p.get_text().strip()]
+            summary = " ".join(paras[:3])[:500]
+
         results.append({
             "id": mid,
-            "title": title,
-            "date": datetime.utcnow().date().isoformat(),
-            "party": parties_str,
-            "parties": [parties_str] if parties_str else [],
-            "topic": infer_topic(title + " " + summary),
+            "title": title_text,
+            "date": date_str,
+            "party": parties[0] if parties else "",
+            "parties": parties,
+            "topic": infer_topic(title_text + " " + summary),
             "status": status,
             "status_raw": status_raw,
             "for": 0,
@@ -162,88 +197,10 @@ def scrape_motions_module():
             "summary": summary,
             "link": link,
         })
-        time.sleep(DELAY)
+        log.info("Scraped: %s | %s | %s | %s", mid, date_str, status, title_text[:60])
+
+    log.info("Total scraped: %d motions", len(results))
     return results
-
-
-def try_notubiz_api():
-    log.info("Trying notubiz API")
-    results = []
-    # Amsterdam organisation ID on notubiz is 281
-    # Confirmed from raadzaam.amsterdam.nl referencing api.notubiz.nl documents
-    ORG_ID = 281
-    base = "https://api.notubiz.nl"
-    page = 1
-    while page <= 60:
-        try:
-            r = SESSION.get(
-                base + "/events/motions",
-                params={
-                    "organisation_id": ORG_ID,
-                    "page": page,
-                    "per_page": 50,
-                    "sort": "date",
-                    "order": "desc",
-                },
-                timeout=20,
-            )
-            r.raise_for_status()
-            data = r.json()
-        except Exception as e:
-            log.warning("Notubiz API error: %s", e)
-            break
-        items = data.get("items", data.get("results", []))
-        if not items:
-            break
-        stop = False
-        for raw in items:
-            date_str = _parse_date(raw.get("date") or raw.get("meeting_date"))
-            if not date_str:
-                continue
-            if date_str < START_DATE.isoformat():
-                stop = True
-                break
-            parties_raw = raw.get("parties") or raw.get("submitters") or []
-            if isinstance(parties_raw, list):
-                parties = [clean(p.get("name", p) if isinstance(p, dict) else str(p)) for p in parties_raw]
-            else:
-                parties = []
-            title = clean(raw.get("title") or raw.get("name") or "")
-            summary = clean(raw.get("summary") or raw.get("description") or "")
-            status_raw = raw.get("result") or raw.get("status") or ""
-            results.append({
-                "id": str(raw.get("id", "")),
-                "title": title,
-                "date": date_str,
-                "party": parties[0] if parties else "",
-                "parties": parties,
-                "topic": infer_topic(title + " " + summary),
-                "status": map_status(status_raw),
-                "status_raw": clean(str(status_raw)),
-                "for": 0,
-                "against": 0,
-                "abstain": 0,
-                "summary": summary[:500],
-                "link": raw.get("url") or "https://amsterdam.raadsinformatie.nl",
-            })
-        total_pages = data.get("meta", {}).get("total_pages", page)
-        if stop or page >= total_pages:
-            break
-        page += 1
-        time.sleep(DELAY)
-    log.info("Notubiz API returned %d motions", len(results))
-    return results
-
-
-def _parse_date(raw):
-    if not raw:
-        return None
-    for fmt in ("%Y-%m-%dT%H:%M:%S", "%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
-        try:
-            return datetime.strptime(str(raw)[:19], fmt).date().isoformat()
-        except ValueError:
-            continue
-    return None
 
 
 def load_existing():
@@ -261,10 +218,9 @@ def merge(existing, fresh):
     for m in fresh:
         mid = m["id"]
         if mid not in by_id:
-            by_id[mid] = m
-            added += 1
+            by_id[mid] = m; added += 1
         else:
-            by_id[mid].update({k: m[k] for k in ("status", "status_raw", "for", "against", "abstain")})
+            by_id[mid].update({k: m[k] for k in ("status","status_raw","for","against","abstain")})
             updated += 1
     log.info("Merge: +%d new, ~%d updated, %d total", added, updated, len(by_id))
     return sorted(by_id.values(), key=lambda m: m["date"], reverse=True)
@@ -272,13 +228,9 @@ def merge(existing, fresh):
 
 def main():
     log.info("Scraper starting, coverage from %s", START_DATE)
-    # Try notubiz API first (fastest)
-    fresh = try_notubiz_api()
-    # If that gave nothing, scrape the portal directly
+    fresh = scrape_motions()
     if not fresh:
-        log.info("API empty, scraping portal")
-        fresh = scrape_motions_module()
-    log.info("Total fresh: %d", len(fresh))
+        log.warning("No motions found. Check the HTML snippet above in the logs.")
     existing = load_existing()
     merged = merge(existing, fresh)
     meta = {
