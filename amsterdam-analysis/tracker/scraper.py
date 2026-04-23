@@ -12,7 +12,10 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 log = logging.getLogger(__name__)
 
 START_DATE  = date(2026, 1, 1)
-XLSX_FILE   = Path(__file__).parent / "moties.xlsx"
+# Accept both .xlsx and .xls formats
+_xlsx = Path(__file__).parent / "moties.xlsx"
+_xls  = Path(__file__).parent / "moties.xls"
+XLSX_FILE = _xlsx if _xlsx.exists() else _xls
 OUTPUT_FILE = Path(__file__).parent / "motions.json"
 
 
@@ -69,6 +72,10 @@ def col_idx(headers, *names):
 
 def load_xlsx():
     import openpyxl
+    if XLSX_FILE.suffix.lower() == ".xls":
+        log.error("File is .xls (old format). Please re-save as .xlsx in Excel/Numbers and re-upload.")
+        log.error("Or rename: git mv amsterdam-analysis/tracker/moties.xls amsterdam-analysis/tracker/moties.xlsx")
+        return []
     wb = openpyxl.load_workbook(XLSX_FILE, read_only=True, data_only=True)
     ws = wb.active
     rows = list(ws.iter_rows(values_only=True))
@@ -162,7 +169,7 @@ def load_xlsx():
 def main():
     log.info("Converting moties.xlsx to motions.json")
     if not XLSX_FILE.exists():
-        log.error("Excel file missing: %s", XLSX_FILE)
+        log.error("Excel file missing. Looked for moties.xlsx and moties.xls")
         log.error("Download from: https://amsterdam.raadsinformatie.nl/modules/6/moties/view")
         log.error("Save as amsterdam-analysis/tracker/moties.xlsx and commit to repo")
         # Write empty JSON so site does not break
