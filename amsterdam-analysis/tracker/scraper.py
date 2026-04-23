@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 “””
-Amsterdam Motions Tracker — Scraper
+Amsterdam Motions Tracker - Scraper
 Fetches motions (moties) from the NotuBiz API for Gemeente Amsterdam
 and writes structured JSON to motions.json.
 
@@ -25,7 +25,7 @@ datefmt=”%Y-%m-%d %H:%M:%S”,
 )
 log = logging.getLogger(**name**)
 
-# ── Constants ──────────────────────────────────────────────────────────────────
+# – Constants ——————————————————————
 
 BASE_URL = “https://api.notubiz.nl”
 
@@ -36,7 +36,7 @@ ORG_SLUG = “gemeente-amsterdam”
 # We only care about motions from this date onwards
 
 START_DATE = date(2025, 6, 1)
-OUTPUT_FILE = Path(**file**).parent / “motions.json”  # → amsterdam-analysis/tracker/motions.json
+OUTPUT_FILE = Path(**file**).parent / “motions.json”  # -> amsterdam-analysis/tracker/motions.json
 
 # Polite delay between API calls (seconds)
 
@@ -54,7 +54,7 @@ SESSION.headers.update(
 }
 )
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+# – Helpers ––––––––––––––––––––––––––––––––––
 
 def get_json(url: str, params: dict | None = None, retries: int = 3) -> dict:
 “”“GET a JSON endpoint with simple retry logic.”””
@@ -124,7 +124,7 @@ if any(k in text for k in keywords):
 return topic
 return “Other”
 
-# ── Core fetch logic ───────────────────────────────────────────────────────────
+# – Core fetch logic ———————————————————–
 
 def fetch_organisation_id() -> int | None:
 “”“Resolve the numeric organisation ID for gemeente-amsterdam.”””
@@ -242,7 +242,7 @@ return {
 }
 ```
 
-# ── Fallback: scrape the raadsinformatie portal ────────────────────────────────
+# – Fallback: scrape the raadsinformatie portal ––––––––––––––––
 
 def fetch_via_ori_api(org_id: int) -> list[dict]:
 “””
@@ -294,7 +294,7 @@ page += 1
 time.sleep(REQUEST_DELAY)
 return results
 
-# ── Merge with existing data ───────────────────────────────────────────────────
+# – Merge with existing data —————————————————
 
 def load_existing() -> list[dict]:
 if OUTPUT_FILE.exists():
@@ -321,10 +321,10 @@ updated += 1
 log.info(“Merge: %d added, %d updated, %d total”, added, updated, len(by_id))
 return sorted(by_id.values(), key=lambda m: m[“date”], reverse=True)
 
-# ── Main ───────────────────────────────────────────────────────────────────────
+# – Main ———————————————————————–
 
 def main() -> None:
-log.info(”=== Amsterdam Motions Tracker — Scraper started ===”)
+log.info(”=== Amsterdam Motions Tracker - Scraper started ===”)
 log.info(“Fetching motions from %s onwards”, START_DATE.isoformat())
 
 ```
@@ -351,7 +351,7 @@ else:
         for raw in items:
             motion = parse_motion(raw)
             if motion is None:
-                # Date is before our cutoff — all subsequent are older too
+                # Date is before our cutoff - all subsequent are older too
                 stop = True
                 break
             fresh.append(motion)
