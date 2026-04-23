@@ -1,61 +1,30 @@
 #!/usr/bin/env python3
-# Amsterdam Motions Tracker
-# Scrapes council meeting pages which are publicly accessible (unlike the listing page)
-# Meeting pages contain motions with title, date, party, status
-# Strategy: fetch known recent meeting IDs, parse motions from each page
+# Amsterdam Motions Tracker - hybrid scraper
+# Strategy 1: Notubiz API (api.notubiz.nl) - tries Amsterdam org directly
+# Strategy 2: Excel fallback - reads moties.xlsx if present
+#
+# To update manually:
+#   1. Download Excel from amsterdam.raadsinformatie.nl/modules/6/moties/view
+#   2. Save as amsterdam-analysis/tracker/moties.xlsx and commit
 
-import json, time, logging, re
+import json, logging, sys, re, time
 from datetime import date, datetime
 from pathlib import Path
 import requests
-from bs4 import BeautifulSoup
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
 
-BASE = "https://amsterdam.raadsinformatie.nl"
 START_DATE = date(2026, 1, 1)
 OUTPUT_FILE = Path(__file__).parent / "motions.json"
-DELAY = 1.5
-
-# Known recent RAAD (city council, not committee) meeting IDs from search results
-# Format: (meeting_id, meeting_date_approx)
-# The scraper will also discover new meetings from the calendar
-KNOWN_MEETINGS = [
-    1483059,  # TAR 15-04-2026
-    1475000,  # approx
-    1470000,  # approx
-    1465452,  # RAAD 18-02-2026
-    1461820,  # commissie 12-02-2026
-    1460000,  # approx
-    1455000,  # approx
-    1450000,  # approx
-]
+XLSX_FILE   = Path(__file__).parent / "moties.xlsx"
 
 S = requests.Session()
-S.headers.update({
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-})
+S.headers.update({"Accept": "application/json", "User-Agent": "AmsterdamMotionsTracker/1.0"})
 
 
-def get_html(url):
-    try:
-        r = S.get(url, timeout=20)
-        log.info("GET %s -> %d", url, r.status_code)
-        if r.status_code == 200:
-            return r.text
-        return None
-    except Exception as e:
-        log.warning("Failed %s: %s", url, e)
-        return None
-
-
-def clean(t):
-    return " ".join(str(t).split()) if t else ""
+def clean(v):
+    return " ".join(str(v).split()) if v else ""
 
 
 def map_status(raw):
@@ -85,222 +54,220 @@ def infer_topic(text):
     return "Other"
 
 
-def parse_date_dutch(text):
-    months = {"jan":1,"feb":2,"mrt":3,"maa":3,"apr":4,"mei":5,"jun":6,
-              "jul":7,"aug":8,"sep":9,"okt":10,"nov":11,"dec":12}
-    text = clean(text).lower()
-    m = re.search(r"(\d{1,2})[\s\-](\w{3})[\w]*[\s\-](\d{4})", text)
-    if m:
-        mo = months.get(m.group(2)[:3])
-        if mo:
-            try: return date(int(m.group(3)), mo, int(m.group(1))).isoformat()
-            except: pass
-    m2 = re.search(r"(\d{2})-(\d{2})-(\d{4})", text)
-    if m2:
-        try: return date(int(m2.group(3)), int(m2.group(2)), int(m2.group(1))).isoformat()
-        except: pass
-    m3 = re.search(r"(\d{4})-(\d{2})-(\d{2})", text)
-    if m3:
-        return m3.group(0)
+def parse_date(v):
+    if not v: return None
+    if hasattr(v, "strftime"): return v.strftime("%Y-%m-%d")
+    s = str(v).strip()
+    for fmt in ("%d-%m-%Y", "%Y-%m-%d", "%d/%m/%Y", "%Y-%m-%dT%H:%M:%S"):
+        try: return datetime.strptime(s[:len(fmt)], fmt).date().isoformat()
+        except: continue
     return None
 
 
-def fetch_calendar_meeting_ids():
-    """Fetch the calendar page to discover recent RAAD meeting IDs."""
-    meeting_ids = []
-    html = get_html(BASE + "/kalender")
-    if not html:
-        return meeting_ids
-    soup = BeautifulSoup(html, "html.parser")
-    for a in soup.find_all("a", href=True):
-        m = re.search(r"/vergadering/(\d+)", a["href"])
-        if m:
-            mid = int(m.group(1))
-            text = clean(a.get_text()).upper()
-            if "RAAD" in text and mid not in meeting_ids:
-                meeting_ids.append(mid)
-    log.info("Calendar: found %d RAAD meeting IDs", len(meeting_ids))
-    return meeting_ids
+# ---- Strategy 1: Notubiz API ----
+
+def try_notubiz_api():
+    """Try to fetch motions from api.notubiz.nl with Amsterdam org IDs."""
+    # Amsterdam has multiple possible org IDs in Notubiz.
+    # We try a range of plausible IDs and see which one returns motions.
+    # Confirmed from raadzaam.amsterdam.nl that they use api.notubiz.nl
+    results = []
+    base = "https://api.notubiz.nl"
+
+    # First: list all organisations and find Amsterdam
+    try:
+        r = S.get(base + "/organisations", timeout=15)
+        log.info("Notubiz /organisations -> %d", r.status_code)
+        if r.ok:
+            orgs = r.json()
+            items = orgs.get("items", orgs.get("results", orgs if isinstance(orgs, list) else []))
+            for org in items:
+                name = str(org.get("name","")).lower()
+                if "amsterdam" in name:
+                    log.info("Found org: %s id=%s", org.get("name"), org.get("id"))
+    except Exception as e:
+        log.warning("Notubiz orgs failed: %s", e)
+
+    # Try known Amsterdam organisation IDs
+    # amsterdam.notubiz.nl -> typical ID range for large cities is 1-500
+    for org_id in [281, 280, 479, 478, 1, 2, 3, 4, 5, 10, 20, 50, 100]:
+        try:
+            r = S.get(base + "/events/meetings",
+                      params={"organisation_id": org_id, "page": 1, "per_page": 5},
+                      timeout=15)
+            if r.ok:
+                data = r.json()
+                items = data.get("items", data.get("results", []))
+                if items:
+                    # Check if this looks like Amsterdam
+                    sample = str(items[0]).lower()
+                    if "amsterdam" in sample or len(items) > 0:
+                        log.info("Org %d: found %d meetings - trying motions", org_id, len(items))
+                        motions = fetch_notubiz_motions(base, org_id)
+                        if motions:
+                            log.info("Org %d: found %d motions!", org_id, len(motions))
+                            return motions
+        except Exception as e:
+            log.debug("Org %d failed: %s", org_id, e)
+        time.sleep(0.2)
+    return results
 
 
-def scrape_meeting(meeting_id):
-    """Scrape motions from a single meeting page."""
-    url = BASE + "/vergadering/" + str(meeting_id)
-    html = get_html(url)
-    if not html:
+def fetch_notubiz_motions(base, org_id):
+    results = []
+    page = 1
+    while page <= 50:
+        try:
+            r = S.get(base + "/events/motions",
+                      params={"organisation_id": org_id, "page": page,
+                              "per_page": 50, "sort": "date", "order": "desc"},
+                      timeout=20)
+            if not r.ok: break
+            data = r.json()
+            items = data.get("items", data.get("results", []))
+            if not items: break
+            for raw in items:
+                d = parse_date(raw.get("date") or raw.get("meeting_date"))
+                if not d: continue
+                if d < START_DATE.isoformat(): return results
+                title = clean(raw.get("title") or raw.get("name") or "")
+                if not title: continue
+                parties_raw = raw.get("parties") or raw.get("submitters") or []
+                parties = [clean(p.get("name",p) if isinstance(p,dict) else p) for p in parties_raw]
+                status_raw = clean(raw.get("result") or raw.get("status") or "")
+                results.append({
+                    "id": str(raw.get("id","")),
+                    "title": title,
+                    "date": d,
+                    "party": parties[0] if parties else "",
+                    "parties": parties,
+                    "topic": infer_topic(title),
+                    "status": map_status(status_raw),
+                    "status_raw": status_raw,
+                    "for": 0, "against": 0, "abstain": 0,
+                    "summary": clean(raw.get("summary") or raw.get("description") or ""),
+                    "link": raw.get("url") or "https://amsterdam.raadsinformatie.nl",
+                })
+            total_pages = data.get("meta",{}).get("total_pages", page)
+            if page >= total_pages: break
+            page += 1
+            time.sleep(0.3)
+        except Exception as e:
+            log.warning("Page %d error: %s", page, e)
+            break
+    return results
+
+
+# ---- Strategy 2: Excel fallback ----
+
+def try_excel():
+    if not XLSX_FILE.exists():
+        log.info("No Excel file found at %s", XLSX_FILE)
         return []
-    soup = BeautifulSoup(html, "html.parser")
-    page_text = soup.get_text()
-
-    # Extract meeting date from page title or header
-    meeting_date = None
-    title_el = soup.find("h1") or soup.find("title")
-    if title_el:
-        meeting_date = parse_date_dutch(title_el.get_text())
-    if not meeting_date:
-        # Try any date pattern on the page
-        m = re.search(r"(\d{2})-(\d{2})-(\d{4})", page_text)
-        if m:
-            try: meeting_date = date(int(m.group(3)), int(m.group(2)), int(m.group(1))).isoformat()
-            except: pass
-
-    if not meeting_date or meeting_date < START_DATE.isoformat():
-        log.info("Meeting %d: date %s before cutoff, skipping", meeting_id, meeting_date)
+    try:
+        import openpyxl
+    except ImportError:
+        log.error("pip install openpyxl needed for Excel fallback")
         return []
 
-    log.info("Meeting %d: date=%s, parsing motions...", meeting_id, meeting_date)
+    log.info("Reading Excel: %s", XLSX_FILE)
+    wb = openpyxl.load_workbook(XLSX_FILE, read_only=True, data_only=True)
+    ws = wb.active
+    rows = list(ws.iter_rows(values_only=True))
+    wb.close()
+
+    # Find header row
+    header_idx = None
+    for i, row in enumerate(rows):
+        if any("titel" in str(c).lower() for c in row if c):
+            header_idx = i; break
+    if header_idx is None:
+        log.error("No TITEL column found in Excel")
+        return []
+
+    headers = [str(c).lower().strip() if c else "" for c in rows[header_idx]]
+    log.info("Excel headers: %s", list(rows[header_idx]))
+
+    def col(*names):
+        for name in names:
+            for i, h in enumerate(headers):
+                if name in h or h in name:
+                    return i
+        return None
+
+    c_title  = col("titel", "title")
+    c_date   = col("datum indiening", "indiening", "datum")
+    c_party  = col("fractie", "indiener", "partij")
+    c_status = col("uitslag", "besluit", "resultaat")
+    c_event  = col("gekoppeld evenement", "evenement")
+    c_settled= col("datum afdoening", "afdoening")
+
     motions = []
-
-    # Find all motion/amendment links and text blocks
-    # Pattern: links containing /modules/6/moties/ or text mentioning Motie NNN
-    seen_ids = set()
-
-    # Method 1: find explicit motion links
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/modules/6/moties/" in href or "/modules/7/" in href:
-            m = re.search(r"/(\d+)$", href.rstrip("/"))
-            if not m: continue
-            doc_id = m.group(1)
-            if doc_id in seen_ids: continue
-            seen_ids.add(doc_id)
-            title = clean(a.get_text())
-            if not title or len(title) < 5: continue
-            # Look for status near this element
-            parent = a.find_parent(["li","div","tr","section"])
-            context = clean(parent.get_text()) if parent else ""
-            status_raw = ""
-            for word in ("aangenomen","verworpen","aangehouden","geamendeerd","ingetrokken"):
-                if word in context.lower():
-                    status_raw = word
-                    break
-            # Extract party from context (look for known parties)
-            party = extract_party(context)
-            motions.append({
-                "id": "AMS-" + doc_id,
-                "title": title,
-                "date": meeting_date,
-                "party": party,
-                "parties": [party] if party else [],
-                "topic": infer_topic(title),
-                "status": map_status(status_raw),
-                "status_raw": status_raw,
-                "for": 0, "against": 0, "abstain": 0,
-                "summary": "",
-                "link": BASE + "/vergadering/" + str(meeting_id),
-            })
-
-    # Method 2: find motion text patterns like "Motie 044 van het lid X inzake Y"
-    # when not captured by links
-    for m in re.finditer(r"(Motie|Amendement)\s+(\d+)\s+van\s+([^\n]{10,120})", page_text):
-        doc_type = m.group(1)
-        num = m.group(2)
-        rest = clean(m.group(3))
-        full_title = doc_type + " " + num + " van " + rest
-        mid = "AMS-TXT-" + num + "-" + meeting_date.replace("-","")
-        if mid in seen_ids: continue
-        # Skip if we already have this motion number from a link
-        already = any(num in existing["id"] for existing in motions)
-        if already: continue
-        seen_ids.add(mid)
-        # Look for status in surrounding text
-        start = m.start()
-        context = page_text[max(0,start-100):start+300].lower()
-        status_raw = ""
-        for word in ("aangenomen","verworpen","aangehouden","geamendeerd","ingetrokken"):
-            if word in context:
-                status_raw = word
-                break
+    for i, row in enumerate(rows[header_idx+1:], start=header_idx+2):
+        def cell(c):
+            if c is None or c >= len(row): return ""
+            return clean(row[c])
+        title = cell(c_title)
+        if not title: continue
+        raw_date = row[c_date] if c_date is not None and c_date < len(row) else None
+        if not raw_date and c_settled is not None:
+            raw_date = row[c_settled] if c_settled < len(row) else None
+        d = parse_date(raw_date)
+        if not d or d < START_DATE.isoformat(): continue
+        party_raw = cell(c_party)
+        parties = [p.strip() for p in re.split(r"[,;/]", party_raw) if p.strip()]
+        status_raw = cell(c_status)
+        num = (re.search(r"\b(\d{3})\b", title) or re.search(r"\b(\d+)\b", title))
+        num = num.group(1) if num else str(i)
+        motion_id = "M" + d[:4] + "-" + num
         motions.append({
-            "id": mid,
-            "title": full_title[:200],
-            "date": meeting_date,
-            "party": "",
-            "parties": [],
-            "topic": infer_topic(full_title),
+            "id": motion_id,
+            "title": title,
+            "date": d,
+            "party": parties[0] if parties else "",
+            "parties": parties,
+            "topic": infer_topic(title),
             "status": map_status(status_raw),
             "status_raw": status_raw,
             "for": 0, "against": 0, "abstain": 0,
-            "summary": "",
-            "link": BASE + "/vergadering/" + str(meeting_id),
+            "summary": cell(c_event),
+            "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view",
         })
-
-    log.info("Meeting %d: found %d motions", meeting_id, len(motions))
+        log.info("  %s | %s | %s | %s", motion_id, d, map_status(status_raw), title[:60])
+    log.info("Excel: loaded %d motions", len(motions))
     return motions
 
 
-def extract_party(text):
-    parties = ["GroenLinks","PvdA","D66","VVD","CDA","SP","PvdD","BIJ1","DENK",
-               "JA21","FvD","ChristenUnie","SGP","Volt","PRO","De Vonk",
-               "Kune Burgers","Daan Wijnants","Havelaar","Kreuger","Van Berkel",
-               "Von Gerhardt","Van Schijndel","Moeskops","IJmker","Belkasmi"]
-    for p in parties:
-        if p.lower() in text.lower():
-            return p
-    return ""
-
-
-def discover_meeting_ids():
-    """Build list of meeting IDs to scrape."""
-    ids = set(KNOWN_MEETINGS)
-    # Try calendar
-    cal_ids = fetch_calendar_meeting_ids()
-    ids.update(cal_ids)
-    # Also probe a range around known IDs to find unlisted ones
-    # Recent meetings are in range 1440000-1490000 based on search results
-    probe_ids = list(range(1440000, 1490001, 1000))
-    ids.update(probe_ids)
-    return sorted(ids, reverse=True)
-
-
-def load_existing():
-    if OUTPUT_FILE.exists():
-        try: return json.loads(OUTPUT_FILE.read_text(encoding="utf-8")).get("motions", [])
-        except Exception: pass
-    return []
-
-
-def merge(existing, fresh):
-    by_id = {m["id"]: m for m in existing}
-    added = updated = 0
-    for m in fresh:
-        mid = m["id"]
-        if mid not in by_id:
-            by_id[mid] = m; added += 1
-        else:
-            by_id[mid].update({k: m[k] for k in ("status","status_raw")})
-            updated += 1
-    log.info("Merge: +%d new, ~%d updated, %d total", added, updated, len(by_id))
-    return sorted(by_id.values(), key=lambda m: m["date"], reverse=True)
-
-
 def main():
-    log.info("Scraper starting, from %s", START_DATE)
-    meeting_ids = discover_meeting_ids()
-    log.info("Will probe %d meeting IDs", len(meeting_ids))
-    fresh = []
-    seen_motions = set()
-    for mid in meeting_ids:
-        motions = scrape_meeting(mid)
-        for m in motions:
-            if m["id"] not in seen_motions:
-                seen_motions.add(m["id"])
-                fresh.append(m)
-        time.sleep(DELAY)
-    log.info("Total fresh motions: %d", len(fresh))
-    existing = load_existing()
-    merged = merge(existing, fresh)
+    log.info("Scraper starting from %s", START_DATE)
+
+    # Try Notubiz API first
+    motions = try_notubiz_api()
+
+    # Fall back to Excel if API gave nothing
+    if not motions:
+        log.info("API returned nothing, trying Excel fallback")
+        motions = try_excel()
+
+    if not motions:
+        log.warning("No motions found from any source.")
+        log.warning("To populate data manually:")
+        log.warning("  1. Go to amsterdam.raadsinformatie.nl/modules/6/moties/view")
+        log.warning("  2. Export to Excel")
+        log.warning("  3. Save as amsterdam-analysis/tracker/moties.xlsx and commit")
+
+    motions.sort(key=lambda m: m["date"], reverse=True)
     meta = {
         "last_updated": datetime.utcnow().isoformat() + "Z",
-        "total": len(merged),
+        "total": len(motions),
         "start_date": START_DATE.isoformat(),
-        "source": "amsterdam.raadsinformatie.nl (meeting pages)",
+        "source": "api.notubiz.nl or manual Excel upload",
     }
     OUTPUT_FILE.write_text(
-        json.dumps({"meta": meta, "motions": merged}, ensure_ascii=False, indent=2),
+        json.dumps({"meta": meta, "motions": motions}, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
-    log.info("Written %d motions to %s", len(merged), OUTPUT_FILE)
+    log.info("Written %d motions to %s", len(motions), OUTPUT_FILE)
 
 
 if __name__ == "__main__":
