@@ -1,25 +1,13 @@
 #!/usr/bin/env python3
-
-# Amsterdam Motions Tracker - Scraper
-
-# Fetches motions from the NotuBiz API for Gemeente Amsterdam
-
-# and writes structured JSON to motions.json.
-
 import json
 import re
 import time
 import logging
 from datetime import date, datetime
 from pathlib import Path
-
 import requests
 
-logging.basicConfig(
-level=logging.INFO,
-format=”%(asctime)s %(levelname)s %(message)s”,
-datefmt=”%Y-%m-%d %H:%M:%S”,
-)
+logging.basicConfig(level=logging.INFO)
 log = logging.getLogger(**name**)
 
 BASE_URL = “https://api.notubiz.nl”
@@ -30,10 +18,7 @@ REQUEST_DELAY = 0.4
 MAX_PAGES = 60
 
 SESSION = requests.Session()
-SESSION.headers.update({
-“Accept”: “application/json”,
-“User-Agent”: “AmsterdamMotionsTracker/1.0”,
-})
+SESSION.headers.update({“Accept”: “application/json”, “User-Agent”: “AmsterdamMotionsTracker/1.0”})
 
 def get_json(url, params=None, retries=3):
 for attempt in range(1, retries + 1):
@@ -42,10 +27,9 @@ resp = SESSION.get(url, params=params, timeout=20)
 resp.raise_for_status()
 return resp.json()
 except requests.RequestException as exc:
-log.warning(“Attempt %d/%d failed for %s: %s”, attempt, retries, url, exc)
+log.warning(“Attempt %d/%d failed: %s”, attempt, retries, exc)
 if attempt < retries:
 time.sleep(2 ** attempt)
-log.error(“All retries exhausted for %s”, url)
 return {}
 
 def parse_date(raw):
@@ -61,17 +45,17 @@ return str(raw)[:10] if len(str(raw)) >= 10 else None
 def clean_text(text):
 if not text:
 return “”
-return re.sub(r”\s+”, “ “, str(text)).strip()
+return “ “.join(str(text).split())
 
 def map_status(raw):
 if not raw:
 return “Onbekend”
 s = str(raw).lower().strip()
-if any(k in s for k in (“aangenomen”, “passed”, “approved”, “aanvaard”)):
+if any(k in s for k in (“aangenomen”, “passed”, “approved”)):
 return “Aangenomen”
-if any(k in s for k in (“verworpen”, “rejected”, “afgekeurd”, “niet aangenomen”)):
+if any(k in s for k in (“verworpen”, “rejected”, “afgekeurd”)):
 return “Verworpen”
-if any(k in s for k in (“aangehouden”, “ingetrokken”, “pending”, “uitgesteld”, “withdrawn”)):
+if any(k in s for k in (“aangehouden”, “ingetrokken”, “pending”, “withdrawn”)):
 return “Aangehouden”
 if any(k in s for k in (“geamendeerd”, “amended”, “gewijzigd”)):
 return “Geamendeerd”
@@ -80,15 +64,15 @@ return “Onbekend”
 def infer_topic(title, summary):
 text = (title + “ “ + summary).lower()
 rules = [
-(“Housing”,               [“wonen”, “huur”, “woningbouw”, “sociale huur”, “airbnb”, “woonruimte”]),
-(“Mobility”,              [“fiets”, “verkeer”, “ov”, “metro”, “tram”, “parkeer”, “bereikbaar”]),
-(“Green & Climate”,       [“klimaat”, “groen”, “duurzaam”, “energie”, “co2”, “plastic”, “aardgas”]),
-(“Safety & Public Order”, [“veiligheid”, “politie”, “camera”, “criminaliteit”, “handhaving”, “overlast”]),
-(“Social & Care”,         [“zorg”, “armoed”, “daklozen”, “jeugd”, “welzijn”, “schulden”]),
-(“Education”,             [“school”, “integratie”, “discriminatie”, “antisemit”, “onderwijs”]),
-(“Public Space”,          [“openbare ruimte”, “park”, “plein”, “markt”, “toilet”]),
-(“Finance”,               [“begroting”, “subsidie”, “economie”, “budget”, “financ”]),
-(“Governance”,            [“democratie”, “bestuur”, “motie”, “amendement”, “raad”]),
+(“Housing”,     [“wonen”, “huur”, “woningbouw”, “airbnb”, “woonruimte”]),
+(“Mobility”,    [“fiets”, “verkeer”, “metro”, “tram”, “parkeer”]),
+(“Climate”,     [“klimaat”, “groen”, “duurzaam”, “energie”, “co2”, “aardgas”]),
+(“Safety”,      [“veiligheid”, “politie”, “camera”, “criminaliteit”, “handhaving”]),
+(“Social”,      [“zorg”, “armoed”, “daklozen”, “jeugd”, “welzijn”]),
+(“Education”,   [“school”, “integratie”, “discriminatie”, “onderwijs”]),
+(“PublicSpace”, [“openbare ruimte”, “park”, “plein”, “markt”, “toilet”]),
+(“Finance”,     [“begroting”, “subsidie”, “economie”, “budget”]),
+(“Governance”,  [“democratie”, “bestuur”, “motie”, “amendement”]),
 ]
 for topic, keywords in rules:
 if any(k in text for k in keywords):
@@ -97,27 +81,20 @@ return “Other”
 
 def fetch_organisation_id():
 data = get_json(BASE_URL + “/organisations”, params={“slug”: ORG_SLUG})
-items = data.get(“items”, data.get(“results”, []))
-for org in items:
+for org in data.get(“items”, data.get(“results”, [])):
 if org.get(“slug”) == ORG_SLUG:
-log.info(“Found org: %s (id=%s)”, org.get(“name”), org.get(“id”))
+log.info(“Found org id=%s”, org.get(“id”))
 return org.get(“id”)
 data2 = get_json(BASE_URL + “/organisations”)
 for org in data2.get(“items”, data2.get(“results”, [])):
 name = str(org.get(“name”, “”)).lower()
 if “amsterdam” in name and “gemeente” in name:
-log.info(“Fallback found: %s (id=%s)”, org.get(“name”), org.get(“id”))
+log.info(“Fallback org id=%s”, org.get(“id”))
 return org.get(“id”)
 return None
 
 def fetch_motions_page(org_id, page=1, per_page=50):
-params = {
-“organisation_id”: org_id,
-“page”: page,
-“per_page”: per_page,
-“sort”: “date”,
-“order”: “desc”,
-}
+params = {“organisation_id”: org_id, “page”: page, “per_page”: per_page, “sort”: “date”, “order”: “desc”}
 data = get_json(BASE_URL + “/events/motions”, params=params)
 if not data or (“items” not in data and “results” not in data):
 params[“type”] = “Motie”
@@ -125,93 +102,61 @@ data = get_json(BASE_URL + “/documents”, params=params)
 return data
 
 def parse_motion(raw):
-date_str = parse_date(
-raw.get(“date”) or raw.get(“meeting_date”) or raw.get(“created_at”)
-)
+date_str = parse_date(raw.get(“date”) or raw.get(“meeting_date”) or raw.get(“created_at”))
 if not date_str or date_str < START_DATE.isoformat():
 return None
-
-```
-motion_id = str(raw.get("id", ""))
-title = clean_text(raw.get("title") or raw.get("name") or "")
-summary = clean_text(raw.get("summary") or raw.get("description") or raw.get("text") or "")
-
-parties_raw = raw.get("parties") or raw.get("submitters") or raw.get("initiators") or []
+motion_id = str(raw.get(“id”, “”))
+title = clean_text(raw.get(“title”) or raw.get(“name”) or “”)
+summary = clean_text(raw.get(“summary”) or raw.get(“description”) or raw.get(“text”) or “”)
+parties_raw = raw.get(“parties”) or raw.get(“submitters”) or raw.get(“initiators”) or []
 if isinstance(parties_raw, list):
-    parties = [clean_text(p.get("name", p) if isinstance(p, dict) else str(p)) for p in parties_raw]
+parties = [clean_text(p.get(“name”, p) if isinstance(p, dict) else str(p)) for p in parties_raw]
 else:
-    parties = []
-lead_party = parties[0] if parties else str(raw.get("party", ""))
-
-status_raw = raw.get("result") or raw.get("status") or raw.get("decision") or raw.get("outcome") or ""
+parties = []
+lead_party = parties[0] if parties else str(raw.get(“party”, “”))
+status_raw = raw.get(“result”) or raw.get(“status”) or raw.get(“decision”) or “”
 status = map_status(status_raw)
-
-votes = raw.get("votes") or raw.get("vote_counts") or {}
-v_for     = int(votes.get("for",     votes.get("voors",        votes.get("pro",    0))) or 0)
-v_against = int(votes.get("against", votes.get("tegens",       votes.get("contra", 0))) or 0)
-v_abstain = int(votes.get("abstain", votes.get("onthoudingen", 0)) or 0)
-
-topic_raw = clean_text(raw.get("topic") or raw.get("category") or raw.get("theme") or "")
+votes = raw.get(“votes”) or raw.get(“vote_counts”) or {}
+v_for     = int(votes.get(“for”,     votes.get(“voors”,        votes.get(“pro”,    0))) or 0)
+v_against = int(votes.get(“against”, votes.get(“tegens”,       votes.get(“contra”, 0))) or 0)
+v_abstain = int(votes.get(“abstain”, votes.get(“onthoudingen”, 0)) or 0)
+topic_raw = clean_text(raw.get(“topic”) or raw.get(“category”) or “”)
 topic = topic_raw if topic_raw else infer_topic(title, summary)
-
-link = raw.get("url") or raw.get("link") or raw.get("source_url") or "https://amsterdam.raadsinformatie.nl"
-
+link = raw.get(“url”) or raw.get(“link”) or “https://amsterdam.raadsinformatie.nl”
 return {
-    "id":         motion_id,
-    "title":      title,
-    "date":       date_str,
-    "party":      lead_party,
-    "parties":    parties,
-    "topic":      topic,
-    "status":     status,
-    "status_raw": clean_text(str(status_raw)),
-    "for":        v_for,
-    "against":    v_against,
-    "abstain":    v_abstain,
-    "summary":    summary[:500],
-    "link":       link,
+“id”: motion_id, “title”: title, “date”: date_str,
+“party”: lead_party, “parties”: parties, “topic”: topic,
+“status”: status, “status_raw”: clean_text(str(status_raw)),
+“for”: v_for, “against”: v_against, “abstain”: v_abstain,
+“summary”: summary[:500], “link”: link,
 }
-```
 
-def fetch_via_ori_api(org_id):
-log.info(“Trying ORI fallback API…”)
+def fetch_via_ori(org_id):
+log.info(“Trying ORI fallback API”)
 results = []
-base = “https://id.openraadsinformatie.nl”
-params = {
-“@type”: “Motion”,
-“organization.name”: “Gemeente Amsterdam”,
-“size”: 100,
-“from”: 0,
-“sort”: “startDate:desc”,
-}
+params = {”@type”: “Motion”, “organization.name”: “Gemeente Amsterdam”, “size”: 100, “from”: 0}
 page = 0
 while page < MAX_PAGES:
 params[“from”] = page * 100
-data = get_json(base + “/search”, params=params)
+data = get_json(“https://id.openraadsinformatie.nl/search”, params=params)
 hits = data.get(“hits”, {}).get(“hits”, data.get(“results”, []))
 if not hits:
 break
 for hit in hits:
 src = hit.get(”_source”, hit)
-date_str = parse_date(src.get(“startDate”) or src.get(“date”) or src.get(“created_at”))
+date_str = parse_date(src.get(“startDate”) or src.get(“date”))
 if not date_str or date_str < START_DATE.isoformat():
 continue
 title   = clean_text(src.get(“name”) or src.get(“title”) or “”)
 summary = clean_text(src.get(“description”) or src.get(“text”) or “”)
 results.append({
-“id”:         str(src.get(“id”, src.get(”@id”, “ORI-” + str(len(results))))),
-“title”:      title,
-“date”:       date_str,
-“party”:      “”,
-“parties”:    [],
-“topic”:      infer_topic(title, summary),
-“status”:     map_status(src.get(“result”) or src.get(“status”) or “”),
-“status_raw”: “”,
-“for”:        0,
-“against”:    0,
-“abstain”:    0,
-“summary”:    summary[:500],
-“link”:       src.get(“url”) or “https://amsterdam.raadsinformatie.nl”,
+“id”: str(src.get(“id”, “ORI-” + str(len(results)))),
+“title”: title, “date”: date_str, “party”: “”, “parties”: [],
+“topic”: infer_topic(title, summary),
+“status”: map_status(src.get(“result”) or “”),
+“status_raw”: “”, “for”: 0, “against”: 0, “abstain”: 0,
+“summary”: summary[:500],
+“link”: src.get(“url”) or “https://amsterdam.raadsinformatie.nl”,
 })
 page += 1
 time.sleep(REQUEST_DELAY)
@@ -241,61 +186,46 @@ log.info(“Merge: %d added, %d updated, %d total”, added, updated, len(by_id)
 return sorted(by_id.values(), key=lambda m: m[“date”], reverse=True)
 
 def main():
-log.info(“Amsterdam Motions Tracker - Scraper started”)
-log.info(“Fetching motions from %s onwards”, START_DATE.isoformat())
-
-```
+log.info(“Scraper started, from %s”, START_DATE.isoformat())
 fresh = []
 org_id = fetch_organisation_id()
-
 if not org_id:
-    log.warning("Could not resolve org ID; skipping NotuBiz primary fetch")
+log.warning(“Could not resolve org ID”)
 else:
-    log.info("Organisation ID: %s", org_id)
-    page = 1
-    stop = False
-    while page <= MAX_PAGES and not stop:
-        log.info("Fetching page %d...", page)
-        data = fetch_motions_page(org_id, page=page)
-        items = data.get("items", data.get("results", []))
-        if not items:
-            log.info("No more items at page %d", page)
-            break
-        for raw in items:
-            motion = parse_motion(raw)
-            if motion is None:
-                stop = True
-                break
-            fresh.append(motion)
-        total_pages = data.get("meta", {}).get("total_pages", data.get("total_pages", page))
-        if page >= total_pages:
-            break
-        page += 1
-        time.sleep(REQUEST_DELAY)
-    log.info("Fetched %d fresh motions from NotuBiz", len(fresh))
-
+page = 1
+stop = False
+while page <= MAX_PAGES and not stop:
+data = fetch_motions_page(org_id, page=page)
+items = data.get(“items”, data.get(“results”, []))
+if not items:
+break
+for raw in items:
+motion = parse_motion(raw)
+if motion is None:
+stop = True
+break
+fresh.append(motion)
+total_pages = data.get(“meta”, {}).get(“total_pages”, data.get(“total_pages”, page))
+if page >= total_pages:
+break
+page += 1
+time.sleep(REQUEST_DELAY)
+log.info(“Fetched %d motions from NotuBiz”, len(fresh))
 if not fresh:
-    log.warning("Primary API returned nothing; trying ORI fallback")
-    fresh = fetch_via_ori_api(org_id or 0)
-    log.info("ORI fallback returned %d motions", len(fresh))
-
+fresh = fetch_via_ori(org_id or 0)
 existing = load_existing()
-merged   = merge(existing, fresh)
-
+merged = merge(existing, fresh)
 meta = {
-    "last_updated": datetime.utcnow().isoformat() + "Z",
-    "total":        len(merged),
-    "start_date":   START_DATE.isoformat(),
-    "source":       "api.notubiz.nl + fallback openraadsinformatie.nl",
+“last_updated”: datetime.utcnow().isoformat() + “Z”,
+“total”: len(merged),
+“start_date”: START_DATE.isoformat(),
+“source”: “api.notubiz.nl”,
 }
-
 OUTPUT_FILE.write_text(
-    json.dumps({"meta": meta, "motions": merged}, ensure_ascii=False, indent=2),
-    encoding="utf-8",
+json.dumps({“meta”: meta, “motions”: merged}, ensure_ascii=False, indent=2),
+encoding=“utf-8”,
 )
-log.info("Written %d motions to %s", len(merged), OUTPUT_FILE)
-log.info("Done")
-```
+log.info(“Written %d motions to %s”, len(merged), OUTPUT_FILE)
 
 if **name** == “**main**”:
 main()
