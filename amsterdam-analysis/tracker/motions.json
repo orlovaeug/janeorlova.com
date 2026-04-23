@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T16:36:45.443947Z",
+    "last_updated": "2026-04-23T16:47:56.233567Z",
     "total": 0,
     "start_date": "2025-06-01",
-    "source": "amsterdam.raadsinformatie.nl"
+    "source": "api.openraadsinformatie.nl"
   },
   "motions": []
 }
