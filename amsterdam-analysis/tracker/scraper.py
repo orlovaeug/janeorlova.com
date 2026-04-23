@@ -6,15 +6,8 @@
 
 # and writes structured JSON to motions.json.
 
-# 
-
-# Data source: api.notubiz.nl (public, no auth required)
-
-# Amsterdam organisation slug: gemeente-amsterdam
-
 import json
 import re
-import sys
 import time
 import logging
 from datetime import date, datetime
@@ -24,7 +17,7 @@ import requests
 
 logging.basicConfig(
 level=logging.INFO,
-format=”%(asctime)s  %(levelname)s  %(message)s”,
+format=”%(asctime)s %(levelname)s %(message)s”,
 datefmt=”%Y-%m-%d %H:%M:%S”,
 )
 log = logging.getLogger(**name**)
@@ -39,7 +32,7 @@ MAX_PAGES = 60
 SESSION = requests.Session()
 SESSION.headers.update({
 “Accept”: “application/json”,
-“User-Agent”: “AmsterdamMotionsTracker/1.0 (civic data project)”,
+“User-Agent”: “AmsterdamMotionsTracker/1.0”,
 })
 
 def get_json(url, params=None, retries=3):
@@ -89,13 +82,13 @@ text = (title + “ “ + summary).lower()
 rules = [
 (“Housing”,               [“wonen”, “huur”, “woningbouw”, “sociale huur”, “airbnb”, “woonruimte”]),
 (“Mobility”,              [“fiets”, “verkeer”, “ov”, “metro”, “tram”, “parkeer”, “bereikbaar”]),
-(“Green & Climate”,       [“klimaat”, “groen”, “duurzaam”, “energie”, “co2”, “plastic”, “biodiversiteit”, “aardgas”]),
+(“Green & Climate”,       [“klimaat”, “groen”, “duurzaam”, “energie”, “co2”, “plastic”, “aardgas”]),
 (“Safety & Public Order”, [“veiligheid”, “politie”, “camera”, “criminaliteit”, “handhaving”, “overlast”]),
 (“Social & Care”,         [“zorg”, “armoed”, “daklozen”, “jeugd”, “welzijn”, “schulden”]),
-(“Education & Integration”, [“school”, “integratie”, “discriminatie”, “antisemit”, “onderwijs”]),
-(“Public Space”,          [“openbare ruimte”, “park”, “plein”, “markt”, “toilet”, “graffiti”]),
-(“Finance & Economy”,     [“begroting”, “subsidie”, “economie”, “budget”, “financ”]),
-(“Democracy & Governance”, [“democratie”, “bestuur”, “motie”, “amendement”, “raad”]),
+(“Education”,             [“school”, “integratie”, “discriminatie”, “antisemit”, “onderwijs”]),
+(“Public Space”,          [“openbare ruimte”, “park”, “plein”, “markt”, “toilet”]),
+(“Finance”,               [“begroting”, “subsidie”, “economie”, “budget”, “financ”]),
+(“Governance”,            [“democratie”, “bestuur”, “motie”, “amendement”, “raad”]),
 ]
 for topic, keywords in rules:
 if any(k in text for k in keywords):
@@ -109,7 +102,6 @@ for org in items:
 if org.get(“slug”) == ORG_SLUG:
 log.info(“Found org: %s (id=%s)”, org.get(“name”), org.get(“id”))
 return org.get(“id”)
-# fallback: list all and match by name
 data2 = get_json(BASE_URL + “/organisations”)
 for org in data2.get(“items”, data2.get(“results”, [])):
 name = str(org.get(“name”, “”)).lower()
@@ -128,18 +120,15 @@ params = {
 }
 data = get_json(BASE_URL + “/events/motions”, params=params)
 if not data or (“items” not in data and “results” not in data):
-params2 = dict(params)
-params2[“type”] = “Motie”
-data = get_json(BASE_URL + “/documents”, params=params2)
+params[“type”] = “Motie”
+data = get_json(BASE_URL + “/documents”, params=params)
 return data
 
 def parse_motion(raw):
 date_str = parse_date(
 raw.get(“date”) or raw.get(“meeting_date”) or raw.get(“created_at”)
 )
-if not date_str:
-return None
-if date_str < START_DATE.isoformat():
+if not date_str or date_str < START_DATE.isoformat():
 return None
 
 ```
@@ -154,23 +143,18 @@ else:
     parties = []
 lead_party = parties[0] if parties else str(raw.get("party", ""))
 
-status_raw = (
-    raw.get("result") or raw.get("status") or raw.get("decision") or raw.get("outcome") or ""
-)
+status_raw = raw.get("result") or raw.get("status") or raw.get("decision") or raw.get("outcome") or ""
 status = map_status(status_raw)
 
 votes = raw.get("votes") or raw.get("vote_counts") or {}
-v_for     = int(votes.get("for",     votes.get("voors",         votes.get("pro",    0))) or 0)
-v_against = int(votes.get("against", votes.get("tegens",        votes.get("contra", 0))) or 0)
-v_abstain = int(votes.get("abstain", votes.get("onthoudingen",  0)) or 0)
+v_for     = int(votes.get("for",     votes.get("voors",        votes.get("pro",    0))) or 0)
+v_against = int(votes.get("against", votes.get("tegens",       votes.get("contra", 0))) or 0)
+v_abstain = int(votes.get("abstain", votes.get("onthoudingen", 0)) or 0)
 
 topic_raw = clean_text(raw.get("topic") or raw.get("category") or raw.get("theme") or "")
 topic = topic_raw if topic_raw else infer_topic(title, summary)
 
-link = (
-    raw.get("url") or raw.get("link") or raw.get("source_url")
-    or "https://amsterdam.raadsinformatie.nl"
-)
+link = raw.get("url") or raw.get("link") or raw.get("source_url") or "https://amsterdam.raadsinformatie.nl"
 
 return {
     "id":         motion_id,
@@ -257,7 +241,7 @@ log.info(“Merge: %d added, %d updated, %d total”, added, updated, len(by_id)
 return sorted(by_id.values(), key=lambda m: m[“date”], reverse=True)
 
 def main():
-log.info(”=== Amsterdam Motions Tracker - Scraper started ===”)
+log.info(“Amsterdam Motions Tracker - Scraper started”)
 log.info(“Fetching motions from %s onwards”, START_DATE.isoformat())
 
 ```
@@ -310,7 +294,7 @@ OUTPUT_FILE.write_text(
     encoding="utf-8",
 )
 log.info("Written %d motions to %s", len(merged), OUTPUT_FILE)
-log.info("=== Done ===")
+log.info("Done")
 ```
 
 if **name** == “**main**”:
