@@ -2,583 +2,212 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amsterdam Motions Tracker</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-```
-:root {
-  --ff-display: 'Playfair Display', Georgia, serif;
-  --ff-body: 'IBM Plex Sans', system-ui, sans-serif;
-  --c-bg: #fafaf8;
-  --c-card: #ffffff;
-  --c-surface: #f4f3ef;
-  --c-ink: #1a1a18;
-  --c-muted: #6b6b65;
-  --c-faint: #a3a39c;
-  --c-border: #e4e3de;
-  --c-border-mid: #d0cfc8;
-  --passed:      #2d6a09;
-  --passed-bg:   #e8f3de;
-  --rejected:    #9b2626;
-  --rejected-bg: #faeaea;
-  --pending:     #7a4a08;
-  --pending-bg:  #faecd8;
-  --amended:     #1455a0;
-  --amended-bg:  #e4f0fb;
-  --unknown:     #555;
-  --unknown-bg:  #eee;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amsterdam Motions Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ff-d:'Playfair Display',Georgia,serif;
+  --ff-b:'IBM Plex Sans',system-ui,sans-serif;
+  --bg:#fafaf8;--card:#fff;--surf:#f4f3ef;
+  --ink:#1a1a18;--muted:#6b6b65;--faint:#a3a39c;
+  --bdr:#e4e3de;--bdr2:#d0cfc8;
+  --pass:#2d6a09;--pass-bg:#e8f3de;
+  --rej:#9b2626;--rej-bg:#faeaea;
+  --pend:#7a4a08;--pend-bg:#faecd8;
+  --amnd:#1455a0;--amnd-bg:#e4f0fb;
 }
-
-body {
-  font-family: var(--ff-body);
-  background: var(--c-bg);
-  color: var(--c-ink);
-  min-height: 100vh;
-  padding: 2.5rem 1rem 4rem;
-}
-
-.container {
-  max-width: 820px;
-  margin: 0 auto;
-}
-
-/* ── Masthead ── */
-.masthead {
-  border-bottom: 1px solid var(--c-border-mid);
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.75rem;
-}
-.masthead-eyebrow {
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--c-muted);
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-}
-.masthead-title {
-  font-family: var(--ff-display);
-  font-size: 28px;
-  font-weight: 400;
-  color: var(--c-ink);
-  line-height: 1.2;
-  margin-bottom: 0.35rem;
-}
-.masthead-sub {
-  font-size: 13px;
-  color: var(--c-muted);
-  font-weight: 300;
-}
-.updated-badge {
-  display: inline-block;
-  margin-top: 0.6rem;
-  font-size: 11px;
-  color: var(--c-faint);
-}
-
-/* ── Stats row ── */
-.stats-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 1.75rem;
-}
-@media (max-width: 540px) {
-  .stats-row { grid-template-columns: repeat(2, 1fr); }
-}
-.stat {
-  background: var(--c-surface);
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-}
-.stat-label {
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--c-muted);
-  font-weight: 500;
-  margin-bottom: 0.3rem;
-}
-.stat-value {
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--c-ink);
-  font-family: var(--ff-display);
-}
-.stat-value.passed  { color: var(--passed); }
-.stat-value.rejected{ color: var(--rejected); }
-.stat-value.pending { color: var(--pending); }
-
-/* ── Tabs ── */
-.tabs {
-  display: flex;
-  gap: 0;
-  border-bottom: 1px solid var(--c-border-mid);
-  margin-bottom: 1.25rem;
-  overflow-x: auto;
-}
-.tab {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding: 0.5rem 1.1rem;
-  cursor: pointer;
-  color: var(--c-muted);
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-  transition: color 0.1s, border-color 0.1s;
-  white-space: nowrap;
-}
-.tab.active { color: var(--c-ink); border-bottom-color: var(--c-ink); }
-.tab:hover:not(.active) { color: var(--c-ink); }
-
-/* ── Controls ── */
-.controls {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 1.25rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.controls input[type=text],
-.controls select {
-  font-family: var(--ff-body);
-  font-size: 13px;
-  padding: 0.45rem 0.75rem;
-  border: 1px solid var(--c-border-mid);
-  border-radius: 4px;
-  background: var(--c-card);
-  color: var(--c-ink);
-  outline: none;
-  transition: border-color 0.15s;
-}
-.controls input[type=text]:focus,
-.controls select:focus { border-color: var(--c-muted); }
-.controls input[type=text] { flex: 1; min-width: 180px; }
-
-/* ── Section label ── */
-.section-label {
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--c-muted);
-  font-weight: 500;
-  border-bottom: 0.5px solid var(--c-border);
-  padding-bottom: 0.4rem;
-  margin-bottom: 0.75rem;
-}
-
-/* ── Motion rows ── */
-.motion-list { display: flex; flex-direction: column; }
-.motion-row {
-  border-bottom: 0.5px solid var(--c-border);
-  padding: 1rem 0.5rem;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background 0.12s;
-}
-.motion-row:hover { background: var(--c-surface); }
-
-.motion-top {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  justify-content: space-between;
-  margin-bottom: 0.4rem;
-}
-.motion-title {
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--c-ink);
-  line-height: 1.45;
-  flex: 1;
-}
-
-/* ── Badges ── */
-.badge {
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  padding: 3px 8px;
-  border-radius: 3px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.badge.Aangenomen  { background: var(--passed-bg);   color: var(--passed); }
-.badge.Verworpen   { background: var(--rejected-bg); color: var(--rejected); }
-.badge.Aangehouden { background: var(--pending-bg);  color: var(--pending); }
-.badge.Geamendeerd { background: var(--amended-bg);  color: var(--amended); }
-.badge.Onbekend    { background: var(--unknown-bg);  color: var(--unknown); }
-
-/* ── Meta line ── */
-.motion-meta {
-  display: flex;
-  gap: 10px;
-  font-size: 12px;
-  color: var(--c-muted);
-  flex-wrap: wrap;
-}
-.motion-party { font-weight: 500; color: var(--c-ink); }
-
-/* ── Vote bar ── */
-.vote-bar-wrap {
-  margin-top: 0.6rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.vote-bar {
-  flex: 1;
-  height: 4px;
-  background: var(--c-border);
-  border-radius: 2px;
-  overflow: hidden;
-  display: flex;
-}
-.vote-for     { background: var(--passed);   height: 100%; }
-.vote-against { background: var(--rejected);  height: 100%; }
-.vote-abs     { background: var(--c-border-mid); height: 100%; }
-.vote-legend  { font-size: 11px; color: var(--c-muted); white-space: nowrap; }
-
-/* ── Expanded detail ── */
-.expanded-detail {
-  background: var(--c-surface);
-  border-radius: 6px;
-  padding: 1rem 1.25rem;
-  margin-top: 0.75rem;
-}
-.expanded-detail p {
-  font-size: 13px;
-  color: var(--c-muted);
-  line-height: 1.65;
-  margin-bottom: 0.75rem;
-}
-.vote-breakdown {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  margin-top: 0.5rem;
-}
-.vb-item { text-align: center; }
-.vb-num {
-  font-size: 20px;
-  font-weight: 500;
-  font-family: var(--ff-display);
-}
-.vb-num.for     { color: var(--passed); }
-.vb-num.against { color: var(--rejected); }
-.vb-num.abs     { color: var(--pending); }
-.vb-label {
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--c-muted);
-}
-.party-tags {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin-top: 0.75rem;
-}
-.party-tag {
-  font-size: 11px;
-  background: var(--c-border);
-  color: var(--c-muted);
-  padding: 2px 7px;
-  border-radius: 3px;
-}
-.source-link {
-  font-size: 11px;
-  color: #1455a0;
-  margin-top: 0.5rem;
-  display: inline-block;
-  text-decoration: none;
-}
-.source-link:hover { text-decoration: underline; }
-
-/* ── Empty / loading ── */
-.empty, .loading {
-  text-align: center;
-  padding: 3rem 0;
-  color: var(--c-muted);
-  font-size: 13px;
-}
-.loading::after {
-  content: '';
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid var(--c-border);
-  border-top-color: var(--c-muted);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  vertical-align: middle;
-  margin-left: 8px;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* ── Error banner ── */
-.error-banner {
-  background: var(--rejected-bg);
-  color: var(--rejected);
-  border: 1px solid #f0c0c0;
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  font-size: 13px;
-  margin-bottom: 1rem;
-}
-
-/* ── Footer note ── */
-.data-note {
-  font-size: 11px;
-  color: var(--c-faint);
-  margin-top: 2.5rem;
-  padding-top: 1rem;
-  border-top: 0.5px solid var(--c-border);
-  line-height: 1.7;
-}
-.data-note a { color: inherit; }
-```
-
-  </style>
+body{font-family:var(--ff-b);background:var(--bg);color:var(--ink);min-height:100vh;padding:2rem 1rem 4rem}
+.page{max-width:820px;margin:0 auto}
+.masthead{border-bottom:1px solid var(--bdr2);padding-bottom:1.25rem;margin-bottom:1.75rem}
+.eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.4rem}
+.masthead h1{font-family:var(--ff-d);font-size:clamp(22px,5vw,30px);font-weight:400;line-height:1.2;margin-bottom:.3rem}
+.sub{font-size:13px;color:var(--muted);font-weight:300;margin-bottom:.35rem}
+.updated{font-size:11px;color:var(--faint)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem}
+@media(max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--surf);border-radius:6px;padding:.75rem 1rem}
+.stat-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.3rem}
+.stat-val{font-size:24px;font-family:var(--ff-d);font-weight:500}
+.stat-val.p{color:var(--pass)}.stat-val.r{color:var(--rej)}.stat-val.o{color:var(--pend)}
+.tabs{display:flex;border-bottom:1px solid var(--bdr2);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{font-size:12px;font-weight:500;letter-spacing:.06em;padding:.5rem 1rem;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .12s,border-color .12s}
+.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
+.tab:hover:not(.on){color:var(--ink)}
+.ctrls{display:flex;gap:8px;margin-bottom:1.25rem;flex-wrap:wrap}
+.ctrls input,.ctrls select{font-family:var(--ff-b);font-size:13px;padding:.45rem .75rem;border:1px solid var(--bdr2);border-radius:4px;background:var(--card);color:var(--ink);outline:none}
+.ctrls input:focus,.ctrls select:focus{border-color:var(--muted)}
+.ctrls input{flex:1;min-width:160px}
+.sec-lbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:500;border-bottom:.5px solid var(--bdr);padding-bottom:.4rem;margin-bottom:.75rem}
+.row{border-bottom:.5px solid var(--bdr);padding:1rem .5rem;cursor:pointer;border-radius:4px;transition:background .12s}
+.row:hover{background:var(--surf)}
+.row-top{display:flex;align-items:flex-start;gap:10px;margin-bottom:.4rem}
+.row-title{font-size:14px;font-weight:500;line-height:1.45;flex:1}
+.badge{font-size:10px;font-weight:500;letter-spacing:.06em;padding:3px 8px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.badge.Aangenomen{background:var(--pass-bg);color:var(--pass)}
+.badge.Verworpen{background:var(--rej-bg);color:var(--rej)}
+.badge.Aangehouden{background:var(--pend-bg);color:var(--pend)}
+.badge.Geamendeerd{background:var(--amnd-bg);color:var(--amnd)}
+.badge.Onbekend{background:#eee;color:#555}
+.meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted)}
+.meta-pty{font-weight:500;color:var(--ink)}.meta-id{color:var(--faint)}
+.vwrap{margin-top:.6rem;display:flex;align-items:center;gap:8px}
+.vbar{flex:1;height:4px;background:var(--bdr);border-radius:2px;overflow:hidden;display:flex}
+.vf{background:var(--pass);height:100%}.va{background:var(--rej);height:100%}.vab{background:var(--bdr2);height:100%}
+.vleg{font-size:11px;color:var(--muted);white-space:nowrap}
+.vpend{margin-top:.5rem;font-size:12px;color:var(--faint)}
+.exp{background:var(--surf);border-radius:6px;padding:1rem 1.25rem;margin-top:.75rem}
+.exp p{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:.75rem}
+.bkdn{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:.5rem}
+.bk{text-align:center}
+.bk-n{font-size:20px;font-weight:500;font-family:var(--ff-d)}
+.bk-n.f{color:var(--pass)}.bk-n.a{color:var(--rej)}.bk-n.ab{color:var(--pend)}
+.bk-l{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.ptags{display:flex;gap:6px;flex-wrap:wrap;margin-top:.75rem}
+.ptag{font-size:11px;background:var(--bdr);color:var(--muted);padding:2px 7px;border-radius:3px}
+.slink{font-size:11px;color:#1455a0;margin-top:.6rem;display:inline-block;text-decoration:none}
+.slink:hover{text-decoration:underline}
+.empty{text-align:center;padding:3rem 0;color:var(--muted);font-size:13px}
+.spin{display:inline-block;width:16px;height:16px;border:2px solid var(--bdr);border-top-color:var(--muted);border-radius:50%;animation:sp .8s linear infinite;vertical-align:middle;margin-left:6px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.foot{font-size:11px;color:var(--faint);margin-top:2.5rem;padding-top:1rem;border-top:.5px solid var(--bdr);line-height:1.7}
+.foot a{color:inherit}
+</style>
 </head>
 <body>
-<div class="container">
-
-  <div class="masthead">
-    <div class="masthead-eyebrow">Gemeenteraad Amsterdam — live tracker</div>
-    <h1 class="masthead-title">Amsterdam Motions Tracker</h1>
-    <p class="masthead-sub">Motions &amp; votes in the Amsterdam city council — June 2025 onwards</p>
-    <span class="updated-badge" id="updatedBadge">Loading data…</span>
-  </div>
-
-  <div class="stats-row" id="statsRow">
-    <div class="stat"><div class="stat-label">Total</div><div class="stat-value">—</div></div>
-    <div class="stat"><div class="stat-label">Passed</div><div class="stat-value passed">—</div></div>
-    <div class="stat"><div class="stat-label">Rejected</div><div class="stat-value rejected">—</div></div>
-    <div class="stat"><div class="stat-label">Pending/Amended</div><div class="stat-value pending">—</div></div>
-  </div>
-
-  <div class="tabs">
-    <div class="tab active" data-tab="all"        onclick="switchTab(this,'all')">All motions</div>
-    <div class="tab"        data-tab="Aangenomen" onclick="switchTab(this,'Aangenomen')">Passed</div>
-    <div class="tab"        data-tab="Verworpen"  onclick="switchTab(this,'Verworpen')">Rejected</div>
-    <div class="tab"        data-tab="Aangehouden" onclick="switchTab(this,'Aangehouden')">Pending</div>
-    <div class="tab"        data-tab="Geamendeerd" onclick="switchTab(this,'Geamendeerd')">Amended</div>
-  </div>
-
-  <div class="controls">
-    <input type="text" id="searchInput" placeholder="Search title, party, topic…" oninput="renderList()">
-    <select id="topicFilter" onchange="renderList()">
-      <option value="">All topics</option>
-    </select>
-    <select id="yearFilter" onchange="renderList()">
-      <option value="">All periods</option>
-      <option value="2026">2026</option>
-      <option value="2025">2025</option>
-    </select>
-  </div>
-
-  <div id="errorBanner" class="error-banner" style="display:none;"></div>
-
-  <div class="section-label" id="resultLabel">— motions</div>
-  <div class="motion-list" id="motionList">
-    <div class="loading">Fetching latest motions</div>
-  </div>
-  <div class="empty" id="emptyState" style="display:none;">No motions match your filters.</div>
-
-  <div class="data-note">
-    <strong>Data source:</strong>
-    <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a>
-    via the <a href="https://api.notubiz.nl" target="_blank">NotuBiz API</a> and
-    <a href="https://openraadsinformatie.nl" target="_blank">Open Raadsinformatie</a>.
-    Data is refreshed automatically every Monday by a GitHub Actions workflow.
-    Votes and statuses reflect the official council record; minor delays may occur.
-    <br><br>
-    <strong>GitHub:</strong>
-    See the <a href="https://github.com/your-username/amsterdam-motions-tracker" target="_blank">repository</a>
-    for the scraper source and full data history.
-  </div>
-
+<div class="page">
+<div class="masthead">
+  <div class="eyebrow">Gemeenteraad Amsterdam &mdash; Live Tracker</div>
+  <h1>Amsterdam Motions Tracker</h1>
+  <p class="sub">Motions &amp; votes in the Amsterdam city council &mdash; June 2025 onwards</p>
+  <span class="updated" id="upd">Loading&hellip;</span>
 </div>
-
+<div class="stats">
+  <div class="stat"><div class="stat-lbl">Total motions</div><div class="stat-val" id="sT">0</div></div>
+  <div class="stat"><div class="stat-lbl">Passed</div><div class="stat-val p" id="sP">0</div></div>
+  <div class="stat"><div class="stat-lbl">Rejected</div><div class="stat-val r" id="sR">0</div></div>
+  <div class="stat"><div class="stat-lbl">Pending / amended</div><div class="stat-val o" id="sO">0</div></div>
+</div>
+<div class="tabs">
+  <div class="tab on" onclick="sw(this,'all')">All</div>
+  <div class="tab" onclick="sw(this,'Aangenomen')">Passed</div>
+  <div class="tab" onclick="sw(this,'Verworpen')">Rejected</div>
+  <div class="tab" onclick="sw(this,'Aangehouden')">Pending</div>
+  <div class="tab" onclick="sw(this,'Geamendeerd')">Amended</div>
+</div>
+<div class="ctrls">
+  <input type="text" id="sq" placeholder="Search title, party, topic..." oninput="render()">
+  <select id="ts" onchange="render()"><option value="">All topics</option></select>
+  <select id="ys" onchange="render()">
+    <option value="">All periods</option>
+    <option value="2026">2026</option>
+    <option value="2025">2025</option>
+  </select>
+</div>
+<div class="sec-lbl" id="lbl">0 motions</div>
+<div id="lst"><div class="empty">Loading data<span class="spin"></span></div></div>
+<div class="empty" id="emp" style="display:none">No motions match your filters.</div>
+<div class="foot">
+  <strong>Data source:</strong>
+  <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a>
+  via the <a href="https://api.notubiz.nl" target="_blank">NotuBiz API</a>.
+  Refreshed every Monday by GitHub Actions.
+</div>
+</div>
 <script>
-// ── State ────────────────────────────────────────────────────────────────────
-let MOTIONS = [];
-let activeTab = 'all';
-let expandedId = null;
+var M=[], tab='all', xid=null;
 
-// ── Boot ─────────────────────────────────────────────────────────────────────
-async function boot() {
-  try {
-    const resp = await fetch('motions.json?_=' + Date.now());
-    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-    const data = await resp.json();
-    MOTIONS = data.motions || [];
-
-    // Update last-updated badge
-    if (data.meta?.last_updated) {
-      const d = new Date(data.meta.last_updated);
-      document.getElementById('updatedBadge').textContent =
-        'Last updated: ' + d.toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
-    } else {
-      document.getElementById('updatedBadge').textContent = '';
-    }
-
-    populateTopics();
-    renderStats();
-    renderList();
-  } catch (err) {
-    const banner = document.getElementById('errorBanner');
-    banner.textContent = 'Could not load motions data. If running locally, serve this folder with a static server (e.g. python -m http.server). Error: ' + err.message;
-    banner.style.display = 'block';
-    document.getElementById('motionList').innerHTML = '';
-  }
+async function boot(){
+try{
+var r=await fetch(‘motions.json?_=’+Date.now());
+if(!r.ok)throw new Error(‘HTTP ‘+r.status);
+var d=await r.json();
+M=d.motions||[];
+if(d.meta&&d.meta.last_updated){
+var dt=new Date(d.meta.last_updated);
+document.getElementById(‘upd’).textContent=‘Last updated: ‘+dt.toLocaleDateString(‘en-GB’,{day:‘numeric’,month:‘short’,year:‘numeric’});
+} else { document.getElementById(‘upd’).textContent=’’; }
+topics(); stats(); render();
+} catch(e){
+document.getElementById(‘lst’).innerHTML=’<div class="empty">Could not load motions.json. Serve locally with: python -m http.server<br><small>’+e.message+’</small></div>’;
+}
 }
 
-// ── Filters ──────────────────────────────────────────────────────────────────
-function getFiltered() {
-  const q     = document.getElementById('searchInput').value.toLowerCase();
-  const topic = document.getElementById('topicFilter').value;
-  const year  = document.getElementById('yearFilter').value;
-
-  return MOTIONS.filter(m => {
-    if (activeTab !== 'all' && m.status !== activeTab) return false;
-    if (topic && m.topic !== topic) return false;
-    if (year  && !m.date.startsWith(year)) return false;
-    if (q) {
-      const hay = (m.title + ' ' + m.parties.join(' ') + ' ' + m.topic + ' ' + m.summary).toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
-    return true;
-  });
+function filt(){
+var q=document.getElementById(‘sq’).value.toLowerCase();
+var tp=document.getElementById(‘ts’).value;
+var yr=document.getElementById(‘ys’).value;
+return M.filter(function(m){
+if(tab!==‘all’&&m.status!==tab)return false;
+if(tp&&m.topic!==tp)return false;
+if(yr&&!m.date.startsWith(yr))return false;
+if(q){var h=(m.title+’ ‘+(m.parties||[]).join(’ ‘)+’ ‘+m.topic+’ ‘+(m.summary||’’)).toLowerCase();if(!h.includes(q))return false;}
+return true;
+});
 }
 
-// ── Render stats ─────────────────────────────────────────────────────────────
-function renderStats() {
-  const total    = MOTIONS.length;
-  const passed   = MOTIONS.filter(m => m.status === 'Aangenomen').length;
-  const rejected = MOTIONS.filter(m => m.status === 'Verworpen').length;
-  const other    = MOTIONS.filter(m => m.status === 'Aangehouden' || m.status === 'Geamendeerd').length;
-
-  document.getElementById('statsRow').innerHTML = `
-    <div class="stat"><div class="stat-label">Total motions</div><div class="stat-value">${total}</div></div>
-    <div class="stat"><div class="stat-label">Passed</div><div class="stat-value passed">${passed}</div></div>
-    <div class="stat"><div class="stat-label">Rejected</div><div class="stat-value rejected">${rejected}</div></div>
-    <div class="stat"><div class="stat-label">Pending / amended</div><div class="stat-value pending">${other}</div></div>
-  `;
+function stats(){
+var p=M.filter(function(m){return m.status===‘Aangenomen’}).length;
+var r=M.filter(function(m){return m.status===‘Verworpen’}).length;
+var o=M.filter(function(m){return m.status===‘Aangehouden’||m.status===‘Geamendeerd’}).length;
+document.getElementById(‘sT’).textContent=M.length;
+document.getElementById(‘sP’).textContent=p;
+document.getElementById(‘sR’).textContent=r;
+document.getElementById(‘sO’).textContent=o;
 }
 
-// ── Populate topic dropdown ───────────────────────────────────────────────────
-function populateTopics() {
-  const topics = [...new Set(MOTIONS.map(m => m.topic).filter(Boolean))].sort();
-  const sel = document.getElementById('topicFilter');
-  // Clear everything except the first "All topics" option
-  while (sel.options.length > 1) sel.remove(1);
-  topics.forEach(t => {
-    const o = document.createElement('option');
-    o.value = t; o.textContent = t;
-    sel.appendChild(o);
-  });
+function topics(){
+var ts=[…new Set(M.map(function(m){return m.topic}).filter(Boolean))].sort();
+var sel=document.getElementById(‘ts’);
+ts.forEach(function(t){var o=document.createElement(‘option’);o.value=t;o.textContent=t;sel.appendChild(o);});
 }
 
-// ── Helpers ───────────────────────────────────────────────────────────────────
-function statusLabel(s) {
-  return { Aangenomen:'Passed', Verworpen:'Rejected', Aangehouden:'Pending', Geamendeerd:'Amended', Onbekend:'Unknown' }[s] || s;
+function e(s){return String(s).replace(/&/g,”&”).replace(/</g,”<”).replace(/>/g,”>”).replace(/”/g,”"”);}
+function sl(s){return{Aangenomen:‘Passed’,Verworpen:‘Rejected’,Aangehouden:‘Pending’,Geamendeerd:‘Amended’,Onbekend:‘Unknown’}[s]||s;}
+function fd(iso){return new Date(iso).toLocaleDateString(‘en-GB’,{day:‘numeric’,month:‘short’,year:‘numeric’});}
+
+function render(){
+var f=filt(), n=f.length;
+document.getElementById(‘lbl’).textContent=n+’ motion’+(n!==1?‘s’:’’);
+document.getElementById(‘emp’).style.display=(n===0&&M.length>0)?‘block’:‘none’;
+var lst=document.getElementById(‘lst’);
+if(M.length===0){
+lst.innerHTML=’<div class="empty">No data yet. Trigger the GitHub Actions workflow to fetch motions.</div>’;
+return;
+}
+lst.innerHTML=f.map(function(m){
+var tot=m.for+m.against+m.abstain;
+var fp=tot?Math.round(m.for/tot*100):0;
+var ap=tot?Math.round(m.against/tot*100):0;
+var abp=tot?100-fp-ap:0;
+var op=xid===m.id;
+var vb=tot>0?(’<div class="vwrap"><div class="vbar"><div class="vf" style="width:'+fp+'%"></div><div class="va" style="width:'+ap+'%"></div><div class="vab" style="width:'+abp+'%"></div></div><span class="vleg">’+m.for+’–’+m.against+’</span></div>’):’<div class="vpend">Vote not yet recorded</div>’;
+var ex=op?(’<div class="exp">’
++(m.summary?’<p>’+e(m.summary)+’</p>’:’’)
++(tot>0?’<div class="bkdn"><div class="bk"><div class="bk-n f">’+m.for+’</div><div class="bk-l">For</div></div><div class="bk"><div class="bk-n a">’+m.against+’</div><div class="bk-l">Against</div></div><div class="bk"><div class="bk-n ab">’+m.abstain+’</div><div class="bk-l">Abstain</div></div></div>’:’’)
++((m.parties&&m.parties.length)?’<div class="ptags">’+m.parties.map(function(p){return’<span class="ptag">’+e(p)+’</span>’;}).join(’’)+’</div>’:’’)
++’<a class="slink" href="'+e(m.link)+'" target="_blank" rel="noopener">View source →</a>’
++’</div>’):’’  ;
+return ‘<div class="row" onclick="tog(\'' +e(m.id)+ '\'">’
++’<div class="row-top"><div class="row-title">’+e(m.title)+’</div><span class="badge '+e(m.status)+'">’+sl(m.status)+’</span></div>’
++’<div class="meta"><span>’+fd(m.date)+’</span>’
++(m.party?’<span>·</span><span class="meta-pty">’+e(m.party)+’</span>’:’’)
++(m.topic?’<span>·</span><span>’+e(m.topic)+’</span>’:’’)
++’<span>·</span><span class="meta-id">’+e(m.id)+’</span></div>’
++vb+ex
++’</div>’;
+}).join(’’);
 }
 
-function fmtDate(iso) {
-  return new Date(iso).toLocaleDateString('en-GB', { day:'numeric', month:'short', year:'numeric' });
+function sw(el,t){
+document.querySelectorAll(’.tab’).forEach(function(x){x.classList.remove(‘on’);});
+el.classList.add(‘on’); tab=t; render();
 }
-
-function esc(str) {
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-// ── Render list ───────────────────────────────────────────────────────────────
-function renderList() {
-  const filtered = getFiltered();
-  document.getElementById('resultLabel').textContent =
-    `${filtered.length} motion${filtered.length !== 1 ? 's' : ''}`;
-  document.getElementById('emptyState').style.display = filtered.length ? 'none' : 'block';
-
-  const list = document.getElementById('motionList');
-
-  if (MOTIONS.length === 0) {
-    list.innerHTML = '<div class="empty">No motion data loaded yet. Run the scraper first, or trigger the GitHub Actions workflow.</div>';
-    return;
-  }
-
-  list.innerHTML = filtered.map(m => {
-    const total  = m.for + m.against + m.abstain;
-    const forPct = total ? Math.round((m.for / total) * 100) : 0;
-    const agPct  = total ? Math.round((m.against / total) * 100) : 0;
-    const absPct = total ? 100 - forPct - agPct : 0;
-    const isOpen = expandedId === m.id;
-
-    const voteBar = total > 0
-      ? `<div class="vote-bar-wrap">
-           <div class="vote-bar">
-             <div class="vote-for"     style="width:${forPct}%"></div>
-             <div class="vote-against" style="width:${agPct}%"></div>
-             <div class="vote-abs"     style="width:${absPct}%"></div>
-           </div>
-           <span class="vote-legend">${m.for}–${m.against}</span>
-         </div>`
-      : `<div style="margin-top:0.5rem;font-size:12px;color:var(--c-faint)">Vote not yet recorded</div>`;
-
-    const expanded = isOpen ? `
-      <div class="expanded-detail">
-        ${m.summary ? `<p>${esc(m.summary)}</p>` : ''}
-        ${total > 0 ? `
-          <div class="vote-breakdown">
-            <div class="vb-item"><div class="vb-num for">${m.for}</div><div class="vb-label">For</div></div>
-            <div class="vb-item"><div class="vb-num against">${m.against}</div><div class="vb-label">Against</div></div>
-            <div class="vb-item"><div class="vb-num abs">${m.abstain}</div><div class="vb-label">Abstain</div></div>
-          </div>` : ''}
-        ${m.parties.length ? `<div class="party-tags">${m.parties.map(p => `<span class="party-tag">${esc(p)}</span>`).join('')}</div>` : ''}
-        <a class="source-link" href="${esc(m.link)}" target="_blank" rel="noopener">
-          View on amsterdam.raadsinformatie.nl ↗
-        </a>
-      </div>` : '';
-
-    return `
-      <div class="motion-row" onclick="toggleExpand('${esc(m.id)}')">
-        <div class="motion-top">
-          <div class="motion-title">${esc(m.title)}</div>
-          <span class="badge ${esc(m.status)}">${statusLabel(m.status)}</span>
-        </div>
-        <div class="motion-meta">
-          <span>${fmtDate(m.date)}</span>
-          ${m.party ? `<span>·</span><span class="motion-party">${esc(m.party)}</span>` : ''}
-          ${m.topic  ? `<span>·</span><span>${esc(m.topic)}</span>` : ''}
-          <span>·</span><span style="color:var(--c-faint)">${esc(m.id)}</span>
-        </div>
-        ${voteBar}
-        ${expanded}
-      </div>`;
-  }).join('');
-}
-
-// ── Interactions ──────────────────────────────────────────────────────────────
-function switchTab(el, tab) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  el.classList.add('active');
-  activeTab = tab;
-  renderList();
-}
-
-function toggleExpand(id) {
-  expandedId = expandedId === id ? null : id;
-  renderList();
-}
-
-// ── Go ────────────────────────────────────────────────────────────────────────
+function tog(id){xid=xid===id?null:id;render();}
 boot();
 </script>
 
