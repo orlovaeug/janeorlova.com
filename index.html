@@ -300,6 +300,8 @@ h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); 
 .art-more { background: var(--paper-2); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1.2rem; }
 .art-more-lbl { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rule); }
 
+
+
 /* ─── CONTACT ─── */
 #contact { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid var(--ink); }
 
@@ -378,6 +380,7 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
   .art { border-right: none; }
   .art:nth-last-child(-n+2) { border-bottom: 1px solid var(--rule); }
   .art:last-child { border-bottom: none; }
+
 
   #contact { grid-template-columns: 1fr; }
   .contact-ink { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
@@ -666,12 +669,34 @@ footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content
     <a href="/europe/germany" style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink);text-decoration:none;">Germany →</a>
   </div>
 </div>
+
+<a href="https://janeorlova.com/amsterdam-analysis" class="viz-card reveal" style="transition-delay:0.4s">
+  <div class="vc-type">City Analysis · Amsterdam</div>
+  <div class="vc-spark">
+    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
+      <!-- Canal rings schematic -->
+      <circle cx="100" cy="24" r="22" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.25"/>
+      <circle cx="100" cy="24" r="16" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.40"/>
+      <circle cx="100" cy="24" r="10" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.60"/>
+      <circle cx="100" cy="24" r="4"  fill="none" stroke="var(--accent)" stroke-width="1.5" opacity="0.85"/>
+      <circle cx="100" cy="24" r="1.5" fill="var(--accent)" opacity="0.9"/>
+      <!-- Radial lines -->
+      <line x1="100" y1="2"  x2="100" y2="46" stroke="var(--accent)" stroke-width="0.5" opacity="0.15"/>
+      <line x1="78"  y1="24" x2="122" y2="24" stroke="var(--accent)" stroke-width="0.5" opacity="0.15"/>
+      <line x1="84"  y1="8"  x2="116" y2="40" stroke="var(--accent)" stroke-width="0.5" opacity="0.10"/>
+      <line x1="116" y1="8"  x2="84"  y2="40" stroke="var(--accent)" stroke-width="0.5" opacity="0.10"/>
+    </svg>
+  </div>
+  <h3 class="vc-title">Amsterdam Analysis</h3>
+  <p class="vc-desc">Living in Amsterdam since 2018 — writing about housing, mobility, tourism politics, local democracy, and the city as a site of policy experiment and urban negotiation.</p>
+  <span class="vc-link">Explore analysis</span>
+</a>
 ```
 
   </div>
 </section>
 
-<!-- WRITING — STATIC SUBSTACK POSTS -->
+<!-- WRITING -->
 
 <section id="writing">
   <div class="sec-hd reveal">
