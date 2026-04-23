@@ -1,9 +1,2117 @@
 {
   "meta": {
-    "last_updated": "2026-04-23T21:16:07.434774Z",
-    "total": 0,
+    "last_updated": "2026-04-23T21:22:22.447356Z",
+    "total": 119,
     "start_date": "2026-01-01",
     "source": "amsterdam.raadsinformatie.nl (Excel)"
   },
-  "motions": []
+  "motions": [
+    {
+      "id": "M2026-044",
+      "title": "Motie 044 van het lid Havelaar inzake vast contracten voor tijdelijke krachten na 12 maanden bij inzameling",
+      "date": "2026-04-16",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van Partij van de Arbeid, GroenLinks, D66, Kune Burgers, Daan Wijnants en de fractie van DENK is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-119",
+      "title": "Motie 119 van het lid Pels inzake de opkomst bevorderen in de wijken waar die het laagst is",
+      "date": "2026-04-01",
+      "party": "PRO Amsterdam",
+      "parties": [
+        "PRO Amsterdam"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-120",
+      "title": "Motie 120 van het lid Pels inzake aanstellen van de formateur",
+      "date": "2026-04-01",
+      "party": "PRO Amsterdam",
+      "parties": [
+        "PRO Amsterdam"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stem tegen van SP is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-055",
+      "title": "Motie 055 van de leden Von Gerhardt en Van Berkel inzake tijdig en daadkrachtig handelen voor bewoners Stek Oost (Motie van Afkeuring)",
+      "date": "2026-02-18",
+      "party": "VVD en JA21",
+      "parties": [
+        "VVD en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21 en Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-057",
+      "title": "Motie 057 van het lid Van Schijndel inzake het falende en onverantwoorde bestuurlijk handelen bij Stek Oost jegens wethouders Zita Pels en Rutger Groot Wassink (Motie van afkeuring)",
+      "date": "2026-02-18",
+      "party": "FVD",
+      "parties": [
+        "FVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stem voor van Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-117",
+      "title": "Motie 117 van het lid Emmerik inzake historisch besef rond ontslagen Joodse gemeentelijke ambtenaren",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-116",
+      "title": "Motie 116 van de leden Von Gerhardt, Garmy, Van Berkel, Lust, Havelaar en Emmerik inzake voorkom antisemitisme in de Amsterdamse klaslokalen",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD",
+        "VOLT",
+        "JA21",
+        "D66",
+        "CDA en Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-084",
+      "title": "Motie 084 van de leden Garmy, Wijnants en Lust inzake publieksuitgave over Joods leven in Amsterdam",
+      "date": "2026-02-18",
+      "party": "VOLT",
+      "parties": [
+        "VOLT",
+        "VVD en D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-083",
+      "title": "Motie 083 van de leden Garmy, Wijnants en Lust inzake Joods leven zichtbaar maken",
+      "date": "2026-02-18",
+      "party": "VOLT",
+      "parties": [
+        "VOLT",
+        "VVD en D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-092",
+      "title": "Motie 092 van de leden Van der Veen, Taj, Veldhuyzen, Broersen, Minderhoud, Emmerik en Kabamba inzake De nacht van is ons: versterk het mandaat van de Amsterdamse nacht",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "De Vonk",
+        "VOLT",
+        "PvdA",
+        "Partij voor de Dieren en Partij voor Morgen"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stem tegen van het CDA aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-072",
+      "title": "Motie 072 van de leden Moeskops en Broersen inzake ruimte om te raven, ruimte om te leven",
+      "date": "2026-02-18",
+      "party": "D66 en VOLT",
+      "parties": [
+        "D66 en VOLT"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-053",
+      "title": "Motie 053 van het lid Van Berkel inzake stop per direct met statushouders en studenten samen huisvesten",
+      "date": "2026-02-18",
+      "party": "JA21",
+      "parties": [
+        "JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van JA21 en Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-054",
+      "title": "Motie 054 van de leden Van Berkel en Von Gerhardt inzake stop per direct met grote gemengde woonvormen",
+      "date": "2026-02-18",
+      "party": "JA21 en VVD",
+      "parties": [
+        "JA21 en VVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21 en Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-037",
+      "title": "Amendement 037 van het lid Havelaar inzake kwijtschelding van de afvalstoffenheffing tot maximaal 80%",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Other",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-110",
+      "title": "Motie 110 van het lid Broersen, Yemane, Khan, Aslami, Krom en Belkasmi inzake nieuwkomers makkelijker naar vrijwilligerswerk",
+      "date": "2026-02-18",
+      "party": "VOLT",
+      "parties": [
+        "VOLT",
+        "GroenLinks",
+        "DENK",
+        "D66",
+        "Partij voor de Dieren en PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van JA21 aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-048",
+      "title": "Amendement 048 van de leden IJmker, Asruf en Koyuncu inzake verbodsgebieden beperken",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "PvdA en DENK"
+      ],
+      "topic": "Other",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, Partij voor de Dieren, JA21 en Forum voor Democratie is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-049",
+      "title": "Amendement 049 van de leden IJmker, Asruf en Koyuncu inzake verkeersonveiligheid komt door te snel fietsen en niet door lopen",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "PvdA en DENK"
+      ],
+      "topic": "Mobility",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-090",
+      "title": "Motie 090 van de leden Yemane, Bentoumya, Khan, Belkasmi, Aslami, Schmit, Broersen, Ahmadi, Krom en Kabamba inzake voortgang programma ongedocumenteerden",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "DENK",
+        "PvdA",
+        "D66",
+        "VOLT",
+        "De Vonk",
+        "Partij voor de Dieren en Partij voor Morgen"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-050",
+      "title": "Amendement 050 van de leden IJmker, Asruf en Koyuncu inzake verkeersoverlast aanpakken i.p.v. gedrag",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "PvdA en DENK"
+      ],
+      "topic": "Mobility",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en Forum voor Democratie is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-051",
+      "title": "Motie 051 van de leden IJmker en Asruf inzake zo snel mogelijk maatregelen voor alle e-bikes",
+      "date": "2026-02-18",
+      "party": "GroenLinks en PvdA",
+      "parties": [
+        "GroenLinks en PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-089",
+      "title": "Motie 089 van de leden Yemane, IJmker, Belkasmi, Khan, Broersen, Krom, Kabamba en Ahmadi inzake vouchingsysteem als registratie",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "PvdA",
+        "DENK",
+        "VOLT",
+        "Partij voor Morgen en De Vonk"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-075",
+      "title": "Motie 075 van het lid Asruf inzake onderzoek naar verdere uitbreiding APV naar alle e-bikes op drukke plekken",
+      "date": "2026-02-18",
+      "party": "PvdA",
+      "parties": [
+        "PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, Partij voor de Dieren, JA21, CDA en Forum voor Democratie is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-046",
+      "title": "Motie 046 van de leden Yemane en Hofland inzake informele organisaties en Buurtteams; een gouden combinatie",
+      "date": "2026-02-18",
+      "party": "GroenLinks en D66",
+      "parties": [
+        "GroenLinks en D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en Forum voor Democratie is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-088",
+      "title": "Motie 088 van de leden Yemane, Aslami, Belkasmi, Khan, Ahmadi, Broersen, Krom en Kabamba inzake uitspreken tegen strafbaarstelling illegaliteit",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "D66",
+        "PvdA",
+        "DENK",
+        "De Vonk",
+        "VOLT",
+        "Partij voor de Dieren en Partij voor Morgen"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-042",
+      "title": "Motie 042 van de leden Krom en Broersen inzake vaststellen nieuwe kantorenstrategie",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren en VOLT",
+      "parties": [
+        "Partij voor de Dieren en VOLT"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, Partij voor de Dieren. DENK, SP, Volt, De Vonk en de Partij voor Morgen en een stemonthouding van het lid Wijnants is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-061",
+      "title": "Motie 061 van de leden Ahmadi, Belkasmi en Yemane inzake het inzetten voor kennisverbreding van zorgverleners met betrekking tot zorg voor ongedocumenteerden",
+      "date": "2026-02-18",
+      "party": "De Vonk",
+      "parties": [
+        "De Vonk",
+        "PvdA en GroenLinks"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-056",
+      "title": "Motie 056 van de leden IJmker en Krom inzake maak tijdelijke noodopvang in kantoren mogelijk",
+      "date": "2026-02-18",
+      "party": "GroenLinks en Partij voor de Dieren",
+      "parties": [
+        "GroenLinks en Partij voor de Dieren"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met een stemonthouding van de heer Wijnants en de stemmen tegen van JA21 en Forum voor Democratie is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-060",
+      "title": "Motie 060 van het lid Schmit inzake Amsterdam AI-Tech Hoofdstad van Europa: ruimte voor innovatie",
+      "date": "2026-02-18",
+      "party": "D66",
+      "parties": [
+        "D66"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van de PvdA, met uitzondering van mevrouw Heinhuis, D66, VVD, Volt, D66 en CDA is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-058",
+      "title": "Motie 058 van de leden Emmerik, Taj, Aslami en Minderhoud inzake borging Hoofdgroenstructuur in nieuw antennebeleid",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren",
+        "GroenLinks",
+        "D66 en PvdA"
+      ],
+      "topic": "Climate",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en CDA is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-059",
+      "title": "Motie 059 van de leden Koyuncu, Kabamba, Veldhuyzen, Asruf en Minderhoud inzake zorgvuldige mobiliteitsuitvoering K-midden",
+      "date": "2026-02-18",
+      "party": "DENK",
+      "parties": [
+        "DENK",
+        "Partij voor Morgen",
+        "De Vonk en PvdA"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van Partij voor de Dieren is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-063",
+      "title": "Motie 063 van het lid Kabamba inzake geen onderwijsnadeel voor jongeren uit Zuidoost bij wijziging metro 53",
+      "date": "2026-02-18",
+      "party": "Partij voor Morgen",
+      "parties": [
+        "Partij voor Morgen"
+      ],
+      "topic": "Mobility",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van DENK, De Vonk en Partij voor Morgen is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-109",
+      "title": "Motie 109 van het lid Wijnants inzake tanken moet mogelijk blijven",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, De Vonk, CDA en Partij voor Morgen verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-108",
+      "title": "Motie 108 van het lid Wijnants inzake nu geen nieuwe pilot Weesperstraat",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, CDA, Partij voor Morgen en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-113",
+      "title": "Motie 113 van het lid Asruf inzake eenmalige schoonmaak station Lelylaan",
+      "date": "2026-02-18",
+      "party": "PvdA",
+      "parties": [
+        "PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-115",
+      "title": "Motie 115 van het lid Asruf inzake zeg nee tegen de Kabelbaan over ’t IJ",
+      "date": "2026-02-18",
+      "party": "PvdA",
+      "parties": [
+        "PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van D66, VVD, JA21 en CDA is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-105",
+      "title": "Motie 105 van de leden Bakker, Haijen, Garmy, Koyuncu, Veldhuyzen en Kabamba inzake een streep zetten door de kabelbaan",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren",
+        "SP",
+        "VOLT",
+        "DENK",
+        "De Vonk en Partij voor Morgen"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, SP, Volt, De Vonk, Partij voor Morgen en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-112",
+      "title": "Motie 112 van het lid Krom inzake bescherm voedselinitiatieven in de stad beter en geef ze toekomstperspectief voor de lange termijn",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, SP, De Vonk en Partij voor Morgen verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-111",
+      "title": "Motie 111 van het lid Krom inzake geef het Groene Veld en Rugbyclub Amsterdam de ruimte",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Climate",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, SP en De Vonk verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-114",
+      "title": "Motie 114 van de leden Emmerik en Taj inzake vergroening tuinen en binnentuinen betrekken bij verduurzaming huurwoningen",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren en GroenLinks",
+      "parties": [
+        "Partij voor de Dieren en GroenLinks"
+      ],
+      "topic": "Housing",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-107",
+      "title": "Motie 107 van het lid Van Munster inzake een circulaire stad heeft een stadsbrede infrastructuur nodig",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-106",
+      "title": "Motie 106 van de leden Van Munster, De Jager en Bakker inzake een duurzame stad maakt geen ruimte voor ultra fast fashion",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "D66 en Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA, Forum voor Democratie en mevrouw Heinhuis aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-041",
+      "title": "Motie 041 van de leden Havelaar en Van Berkel inzake een onafhankelijke expertmeeting over gezondheidsrisico's windturbines",
+      "date": "2026-02-18",
+      "party": "CDA en JA21",
+      "parties": [
+        "CDA en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, Volt, CDA, Partij voor Morgen en Forum voor Democratie is verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-040",
+      "title": "Motie 040 van de leden Havelaar, Van der Kamp, Van Berkel, Haijen, Bakker en Kabamba inzake besluitvorming windturbines in afwachting van het Luchthavenindelingbesluit Schiphol",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA",
+        "VVD",
+        "JA21",
+        "SP",
+        "Partij voor de Dieren en Partij voor Morgen"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van PvdA, GroenLinks, D66, DENK en De Vonk verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-087",
+      "title": "Motie 087 van de leden Aslami, De Jager en Von Gerhardt inzake netcongestie aanpakken voor een gezond Vereveningsfonds en realiseerbare gebiedsontwikkeling",
+      "date": "2026-02-18",
+      "party": "D66 en VVD",
+      "parties": [
+        "D66 en VVD"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-035",
+      "title": "Motie 035 van de leden Von Gerhardt, Havelaar en Van Berkel inzake geen uitnamen uit vereveningsfonds",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD",
+        "CDA en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van Partij van de Arbeid, GroenLinks, D66, SP, De Vonk en Partij voor Morgen verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-099",
+      "title": "Motie 099 van de leden Staartjes, Havelaar en Van Berkel inzake stel de spijtoptantenregeling opnieuw open",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD",
+        "CDA en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, Volt, CDA en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-036",
+      "title": "Motie 036 van de leden Havelaar, Von Gerhardt en Van Berkel inzake consumentenbescherming bij erfpacht",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA",
+        "VVD en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, Volt, CDA en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-103",
+      "title": "Motie 103 van de leden Von Gerhardt, Broersen, Aslami, Havelaar, Veldhuyzen, Koyuncu en Emmerik inzake alles op alles voor een combinatie van Ponthaven en evenementenlocatie",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD",
+        "VOLT",
+        "D66",
+        "CDA",
+        "De Vonk",
+        "DENK en Partij voor de Dieren"
+      ],
+      "topic": "PublicSpace",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-102",
+      "title": "Motie 102 van het lid Emmerik inzake lobby bij het Rijk voor handelingsperspectief bij verouderde datacentervergunningen",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, JA21, DENK, SP, De Vonk, Partij voor Morgen en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-101",
+      "title": "Motie 101 van het lid Emmerik inzake datacenters: lessen trekken uit het hyperscale dataproject Plimsollweg",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, JA21, DENK, SP, De Vonk, Partij voor Morgen en Forum voor Democratie is verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-100",
+      "title": "Motie 100 van het lid Emmerik inzake datacenters: niet opnieuw verrast worden over grote energieslurpende projecten",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Climate",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, JA21, DENK, SP, De Vonk, Partij voor Morgen en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-097",
+      "title": "Motie 097 van de leden Van Munster en IJmker inzake nieuwe ontwikkelingen Microsoft datacenter",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, de heer Van Berkel en CDA is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-096",
+      "title": "Motie 096 van het lid Emmerik inzake stel een kansenkaart op voor actief tuinieren",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-095",
+      "title": "Motie 095 van het lid Emmerik inzake verken nutstuinen op het Gasunieterrein bij Wijkergouw",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-098",
+      "title": "Motie 098 van het lid Emmerik inzake stillegging ICL via Artikel 175",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, SP, De Vonk, Partij voor Morgen en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-085",
+      "title": "Motie 085 van de leden Aslami, Van Munster, Minderhoud en Alberts over vertrouwen geschaad, handhaving vereist bij ICL",
+      "date": "2026-02-18",
+      "party": "D66",
+      "parties": [
+        "D66",
+        "GroenLinks",
+        "PvdA en SP"
+      ],
+      "topic": "Safety",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-077",
+      "title": "Motie 077 van de leden Runderkamp en Haijen inzake familieschool in beweging",
+      "date": "2026-02-18",
+      "party": "PvdA en SP",
+      "parties": [
+        "PvdA en SP"
+      ],
+      "topic": "Education",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-082",
+      "title": "Motie 082 van het lid Hofland inzake in gesprek met particulier onderwijs over het melden van thuiszitters",
+      "date": "2026-02-18",
+      "party": "D66",
+      "parties": [
+        "D66"
+      ],
+      "topic": "Education",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-081",
+      "title": "Motie 081 van het lid Hofland inzake expertisepunt leerrecht",
+      "date": "2026-02-18",
+      "party": "D66",
+      "parties": [
+        "D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-080",
+      "title": "Motie 080 van het lid Hofland inzake inzicht in schoolcapaciteit",
+      "date": "2026-02-18",
+      "party": "D66",
+      "parties": [
+        "D66"
+      ],
+      "topic": "Education",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-079",
+      "title": "Motie 079 van de leden Hofland en Yemane inzake leerrecht",
+      "date": "2026-02-18",
+      "party": "D66 en GroenLinks",
+      "parties": [
+        "D66 en GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-078",
+      "title": "Motie 078 van de leden Emmerik, Yemane en Hofland inzake oog voor vrouwengezondheid voorkomt thuiszitten",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren",
+        "GroenLinks en D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-071",
+      "title": "Motie 071 van het lid Nadif inzake ook in de zorg: besluiten over aanbod voor Amsterdammers niet zonder Amsterdammers",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-039",
+      "title": "Motie 039 van het lid Havelaar inzake zoek ook binnen de Ring A10 naar woonwagenlocaties",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-047",
+      "title": "Motie 047 van de leden Asruf, Moeskops, Alberts en Bakker inzake meer internationale bushaltes rondom Sloterdijk",
+      "date": "2026-02-18",
+      "party": "PvdA",
+      "parties": [
+        "PvdA",
+        "D66",
+        "SP en Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-038",
+      "title": "Motie 038 van het lid Wijnants inzake verplaatsing PTA",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, Volt, CDA en Forum voor Democratie is verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-052",
+      "title": "Motie 052 van de leden Havelaar en Van Berkel inzake besluitvorming zeecruise in samenhang met rijks-investeringen",
+      "date": "2026-02-18",
+      "party": "CDA en JA21",
+      "parties": [
+        "CDA en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-073",
+      "title": "Motie 073 van het lid Havelaar inzake organiseer een rondetafelgesprek over de toekomst van de zeecruise in Amsterdam",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, Volt, CDA en Forum voor Democratie is verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-074",
+      "title": "Motie 074 van de leden Wijnants, Havelaar en Van Berkel inzake aanvullend onderzoek verplaatsing PTA",
+      "date": "2026-02-18",
+      "party": "VVD",
+      "parties": [
+        "VVD",
+        "CDA en JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, DENK, CDA en Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-064",
+      "title": "Motie 064 van het lid Krom inzake duidelijk meetbare doelstellingen voor plantaardig",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van GroenLinks, Partij voor de Dieren en De Vonk is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-065",
+      "title": "Motie 065 van het lid Krom inzake betaal de eerlijke prijs voor voedsel",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, SP en De Vonk is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-066",
+      "title": "Motie 066 van het lid Krom inzake plantaardig de norm bij de gemeentelijke banqueting",
+      "date": "2026-02-18",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren en De Vonk is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-068",
+      "title": "Motie 068 van het lid Schmit inzake scenario’s in beeld te brengen voor een toekomstbestendige inrichting van de BAC (Bedrijfsafval Commercieel)",
+      "date": "2026-02-18",
+      "party": "D66",
+      "parties": [
+        "D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van GroenLinks en Partij voor Morgen is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-069",
+      "title": "Motie 069 van het lid Havelaar inzake hondenpoepbakken bij het verwijderen van afvalbakken",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-044",
+      "title": "Motie 044 van het lid van het lid Havelaar inzake vaste contracten voor tijdelijke krachten na 12 maanden bij Inzameling",
+      "date": "2026-02-18",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Onbekend",
+      "status_raw": "staking van stemmen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "Staking van de stemmen Met de stemmen tegen van de leden Farley Asruf, Mohamed Belkasmi, Lian Heinhuis, Hamza Kacha, Bastiaan Minderhoud, Amel Namane, Geert Noordzij, Igor Runderkamp, Yasmine Bentoumya, Elisabeth IJmker, Imane Nadif, Ayoub Taj, Kris van der Veen, Carlo van Munster, Milka Yemane, Suleyman Aslami, Daniëlle de Jager, Rob Hofland, Marja Lust, Elise Moeskops, Erik Schmit Met de stemmen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-045",
+      "title": "Motie 045 van de leden Van Munster, Schmit en Krom inzake geen werk aanbieden dat niet kan",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "D66 en Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stem tegen van CDA is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-062",
+      "title": "Motie 062 van de leden Garmy, Havelaar, Krom en Kabamba inzake ziekteverzuim bij Afval en Grondstoffen",
+      "date": "2026-02-18",
+      "party": "VOLT",
+      "parties": [
+        "VOLT",
+        "CDA",
+        "Partij voor de Dieren en Partij voor Morgen"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, JA21, DENK, Volt, De Vonk, CDA, Partij voor Morgen en Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-091",
+      "title": "Motie 091 van de leden Havelaar en Krom inzake Raad aan de voorkant bij gemeentelijke organisatieontwikkeling",
+      "date": "2026-02-18",
+      "party": "CDA en Partij voor de Dieren",
+      "parties": [
+        "CDA en Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, JA21, DENK, SP, De Vonk, CDA, Partij voor Morgen en Forum voor Democratie is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-086",
+      "title": "Motie 086 van het lid Khan inzake onverwachte bondgenoten tegen anti-lhbti-geweld",
+      "date": "2026-02-18",
+      "party": "DENK",
+      "parties": [
+        "DENK"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-093",
+      "title": "Motie 093 van het lid Veldhuyzen inzake Microsoft uit Amsterdam Economic Board",
+      "date": "2026-02-18",
+      "party": "De Vonk",
+      "parties": [
+        "De Vonk"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, SP, De Vonk en Partij voor Morgen is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-094",
+      "title": "Motie 094 van het lid Veldhuyzen inzake breng banden met VS in kaart",
+      "date": "2026-02-18",
+      "party": "De Vonk",
+      "parties": [
+        "De Vonk"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, De Vonk en Partij voor Morgen is verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-043",
+      "title": "Motie 043 van de leden IJmker, Belkasmi en Garmy inzake recht op menselijk contact",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "PvdA en VOLT"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-067",
+      "title": "Motie 067 van de leden IJmker en Garmy inzake zet de cloud effe out",
+      "date": "2026-02-18",
+      "party": "GroenLinks en VOLT",
+      "parties": [
+        "GroenLinks en VOLT"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-076",
+      "title": "Motie 076 van het lid IJmker inzake Lobbystrategie voor digitale autonomie",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 18-02-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-070",
+      "title": "Motie 070 van het lid Nadif inzake aanpak personeelstekorten in de zorg; maak een loopbaanperspectief",
+      "date": "2026-02-18",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van JA21 is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-584",
+      "title": "Motie 584 van het lid Staartjes inzake niet praten maar planten",
+      "date": "2026-01-30",
+      "party": "VVD",
+      "parties": [
+        "VVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, JA21, Partij voor Morgen, CDA en Forum voor Democratie verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-582",
+      "title": "Motie 582 van het lid Van Pijpen inzake bestuurlijke reactie bij de adviezen van het Burgerberaad Groene Stad",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Climate",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, DENK, JA21, CDA en Forum voor Democratie aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-583",
+      "title": "Amendement 583 van het lid Van Pijpen inzake gewijzigd overnemen van advies 6 van het Burgerberaad Groen over de Groene Ring A10",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Climate",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, DENK, JA21, CDA en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-578",
+      "title": "Amendement 578 van het lid Havelaar inzake schrap uitsluiting parkeervergunningen nieuwbouw Weesp",
+      "date": "2026-01-21",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Mobility",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, DENK, JA21, Partij voor Morgen, CDA en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-580",
+      "title": "Motie 580 van het lid Van Pijpen inzake lokale lessen, landelijke verandering: versterking van de aanpak huiselijk en eer gerelateerd geweld",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 21-01-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-586",
+      "title": "Motie 586 van het lid Emmerik inzake huisdierenmishandeling is huiselijk geweld",
+      "date": "2026-01-21",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, SP, De Vonk en Partij voor Morgen verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-587",
+      "title": "Motie 587 van het lid Emmerik inzake integrale preventie van huiselijk geweld",
+      "date": "2026-01-21",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, SP, De Vonk en Partij voor Morgen verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-574",
+      "title": "Amendement 574 van de leden Van Munster en Staartjes inzake de Verordening kwaliteit vergunningverlening, toezicht en handhaving omgevingsrecht gemeente Amsterdam",
+      "date": "2026-01-21",
+      "party": "GroenLinks en VVD",
+      "parties": [
+        "GroenLinks en VVD"
+      ],
+      "topic": "Safety",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-581",
+      "title": "Motie 581 van de leden Minderhoud en Taj inzake waarborg structureel betaalbare huurwoningen in Nieuwe Meer Oost door corporaties effectief te betrekken bij gebiedsontwikkeling",
+      "date": "2026-01-21",
+      "party": "PvdA en GroenLinks",
+      "parties": [
+        "PvdA en GroenLinks"
+      ],
+      "topic": "Housing",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van JA21 en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-585",
+      "title": "Motie 585 van de leden Von Gerhardt, Taj en Minderhoud inzake supermarkt Riekerpark",
+      "date": "2026-01-21",
+      "party": "VVD",
+      "parties": [
+        "VVD",
+        "GroenLinks en PvdA"
+      ],
+      "topic": "PublicSpace",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen is aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-590",
+      "title": "Motie 590 van het lid Van Munster inzake een leefbare Westelijke Grachtengordel",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 21-01-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-591",
+      "title": "Motie 591 van het lid Van Munster inzake een duurzaam perspectief voor taxichauffeurs in een leefbare binnenstad",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Climate",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 21-01-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-579",
+      "title": "Motie 579 van het lid Havelaar inzake babyautostoeltjes in deelbakfietsen",
+      "date": "2026-01-21",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Mobility",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 21-01-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-592",
+      "title": "Motie 592 van de leden IJmker en Asruf inzake duidelijk maken wanneer deelscooters een succes zijn",
+      "date": "2026-01-21",
+      "party": "GroenLinks en PvdA",
+      "parties": [
+        "GroenLinks en PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stem tegen van Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-575",
+      "title": "Motie 575 van het lid Havelaar inzake elke ondernemer een passende plek voor afval",
+      "date": "2026-01-21",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van VVD, Volt, DENK, JA21, Partij voor Morgen, CDA en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-576",
+      "title": "Motie 576 van het lid Havelaar inzake verbeteren gemeentelijke dienstverlening rondom bedrijfsafval",
+      "date": "2026-01-21",
+      "party": "CDA",
+      "parties": [
+        "CDA"
+      ],
+      "topic": "Governance",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 21-01-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-597",
+      "title": "Motie 597 van het lid Kreuger inzake de omgang met de ombudsman door de burgemeester (Motie van Afkeuring)",
+      "date": "2026-01-21",
+      "party": "JA21",
+      "parties": [
+        "JA21"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van JA21 en Forum voor Democratie verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-572",
+      "title": "Motie 572 van het lid Van Schijndel inzake de procedurele gang van zaken rond rapport van de Ombudsman inzake Bureau Integriteit",
+      "date": "2026-01-21",
+      "party": "FVD",
+      "parties": [
+        "FVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van JA21 en Forum voor Democratie verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-593",
+      "title": "Motie 593 van de leden Koyuncu en Ahmadi inzake het extern beleggen van meldingen over sociale veiligheid",
+      "date": "2026-01-21",
+      "party": "DENK en De Vonk",
+      "parties": [
+        "DENK en De Vonk"
+      ],
+      "topic": "Safety",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van DENK, De Vonk, JA21 en Partij voor Morgen verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-573",
+      "title": "Motie 573 van het lid Van Schijndel inzake de omvang van de inlichtingenplicht van de burgemeester aan de raad in relatie tot de Maccabi rellen van november 2024",
+      "date": "2026-01-21",
+      "party": "FVD",
+      "parties": [
+        "FVD"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stem voor van Forum voor Democratie verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-594",
+      "title": "Motie 594 van het lid Van Pijpen inzake breng de maatschappelijke waarde van de huishoudelijke zorg in beeld",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD en CDA aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-595",
+      "title": "Motie 595 van het lid Van Pijpen inzake Amsterdam zet de toon voor overdracht middelen naar het sociale en preventiedomein",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-598",
+      "title": "Motie 598 van het lid Emmerik inzake Amsterdam gezonder voor mens, dier en milieu",
+      "date": "2026-01-21",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, het lid Veldhuyzen en CDA verworpen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-577",
+      "title": "Motie 577 van de leden Haijen, Runderkamp, Van der Veen en Wehkamp inzake onderzoek de signalen over afwijzingen van aanvragen voor informele PGB’s bij ‘intensief zorgbehoevende Amsterdammers",
+      "date": "2026-01-21",
+      "party": "SP",
+      "parties": [
+        "SP",
+        "PvdA en GroenLinks"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-596",
+      "title": "Motie 596 van het lid Broersen inzake verduidelijking van de werkwijze bij het eerste contact met het Ouder- en Kindteam omtrent jeugdhulp",
+      "date": "2026-01-21",
+      "party": "VOLT",
+      "parties": [
+        "VOLT"
+      ],
+      "topic": "Social",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-599",
+      "title": "Motie 599 van de leden Aslami, Yemane, Broersen, Kacha, Krom en Havelaar inzake de gemeente als voorbeeldwerkgever",
+      "date": "2026-01-21",
+      "party": "D66",
+      "parties": [
+        "D66",
+        "GroenLinks",
+        "PvdA",
+        "Partij voor de Dieren",
+        "VOLT en CDA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-600",
+      "title": "Motie 600 van de leden Aslami, Yemane, Broersen, Kacha, Krom en Havelaar inzake ambitie verhogen en pilot asielzoekers aan het werk opschalen",
+      "date": "2026-01-21",
+      "party": "D66",
+      "parties": [
+        "D66",
+        "GroenLinks",
+        "PvdA",
+        "Partij voor de Dieren",
+        "VOLT en CDA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-601",
+      "title": "Motie 601 van de leden Aslami, Yemane, Broersen, Kacha, Krom en Havelaar inzake inzetten op duurzaam werk en toekomstsectoren",
+      "date": "2026-01-21",
+      "party": "D66",
+      "parties": [
+        "D66",
+        "GroenLinks",
+        "PvdA",
+        "Partij voor de Dieren",
+        "VOLT en CDA"
+      ],
+      "topic": "Climate",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21 en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-588",
+      "title": "Motie 588 van de leden Van Munster, De Jager en Noordzij inzake in Amsterdam is alleen plaats voor bedrijven die hun maatschappelijke verantwoordelijkheid nemen",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "D66 en PvdA"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-589",
+      "title": "Motie 589 van de leden Van Munster, De Jager en Noordzij inzake ook de grootste CO2-uitstoter van Amsterdam moet leveren",
+      "date": "2026-01-21",
+      "party": "GroenLinks",
+      "parties": [
+        "GroenLinks",
+        "D66 en PvdA"
+      ],
+      "topic": "Climate",
+      "status": "Aangehouden",
+      "status_raw": "ingetrokken",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "(RAAD 21-01-2026 13:00)",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-602",
+      "title": "Motie 602 van de leden Broersen, Taj, Von Gerhardt, Haijen en Aslami inzake convenant studenten- en jongerenhuisvesting",
+      "date": "2026-01-21",
+      "party": "VOLT",
+      "parties": [
+        "VOLT",
+        "GroenLinks",
+        "VVD",
+        "SP en D66"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met algemene stemmen aangenomen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-603",
+      "title": "Motie 603 van het lid Emmerik inzake onafhankelijk onderzoek PFAS Amsterdamse Bos",
+      "date": "2026-01-21",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, Volt, DENK, SP, De Vonk en Partij voor Morgen verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-604",
+      "title": "Motie 604 van het lid Emmerik inzake transparantie en data-sharing door Schiphol (PFAS)",
+      "date": "2026-01-21",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Verworpen",
+      "status_raw": "verworpen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen voor van Partij voor de Dieren, DENK, SP, De Vonk en Partij voor Morgen is verworpen",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    },
+    {
+      "id": "M2026-605",
+      "title": "Motie 605 van het lid Emmerik inzake duidelijkheid PFAS-verontreiniging watersysteem Schiphol",
+      "date": "2026-01-21",
+      "party": "Partij voor de Dieren",
+      "parties": [
+        "Partij voor de Dieren"
+      ],
+      "topic": "Governance",
+      "status": "Aangenomen",
+      "status_raw": "aangenomen",
+      "for": 0,
+      "against": 0,
+      "abstain": 0,
+      "summary": "met de stemmen tegen van VVD, JA21, CDA en Forum voor Democratie aangenomen.",
+      "link": "https://amsterdam.raadsinformatie.nl/modules/6/moties/view"
+    }
+  ]
 }
