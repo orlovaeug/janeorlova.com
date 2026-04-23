@@ -111,6 +111,7 @@ def load_xlsx():
              c_title, c_date, c_party, c_status, c_event)
 
     motions = []
+    last_date = None  # carry forward date across grouped rows
     for i, row in enumerate(rows[hdr_idx + 1:], start=hdr_idx + 2):
         def cell(c):
             if c is None or c >= len(row): return ""
@@ -119,13 +120,17 @@ def load_xlsx():
         title = cell(c_title)
         if not title: continue
 
-        # Use submission date, fall back to settlement date
+        # Date may only appear on first row of a grouped motion - carry it forward
         raw_date = (row[c_date] if c_date is not None and c_date < len(row) else None)
         if not raw_date and c_settled is not None:
             raw_date = row[c_settled] if c_settled < len(row) else None
         d = parse_date(raw_date)
+        if d:
+            last_date = d  # update carried date whenever we see a new one
+        else:
+            d = last_date  # use last known date
         if not d:
-            log.warning("Row %d: no date, skipping: %s", i, title[:50])
+            log.warning("Row %d: no date at all, skipping: %s", i, title[:50])
             continue
         if d < START_DATE.isoformat():
             continue
