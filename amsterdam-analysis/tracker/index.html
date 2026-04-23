@@ -9,131 +9,166 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--ffd:'Playfair Display',Georgia,serif;--ffb:'IBM Plex Sans',system-ui,sans-serif;
---bg:#f8f7f4;--card:#fff;--surf:#f0efe9;--ink:#181816;--muted:#636360;--faint:#a0a09a;
---bdr:#e2e1db;--bdr2:#cccbc4;
---pass:#2d6a09;--passbg:#e8f3de;--rej:#9b2626;--rejbg:#faeaea;
---pend:#7a4a08;--pendbg:#faecd8;--amnd:#1455a0;--amndbg:#e4f0fb}
-body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100vh;padding:0 0 5rem}
-.page{max-width:900px;margin:0 auto;padding:0 1.25rem}
+:root{
+  --ffd:'Playfair Display',Georgia,serif;
+  --ffb:'IBM Plex Sans',system-ui,sans-serif;
+  --bg:#f7f6f2;--card:#ffffff;--surf:#efede7;
+  --ink:#17170f;--muted:#5e5e58;--faint:#9e9e98;
+  --bdr:#dddcd6;--bdr2:#c8c7c0;
+  --pass:#256b05;--passbg:#e4f2d8;
+  --rej:#8f2020;--rejbg:#f8e8e8;
+  --pend:#7a4a08;--pendbg:#faecd8;
+  --amnd:#1255a0;--amndbg:#e2eff9;
+  --tab-active:#17170f;
+}
+body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100vh;padding-bottom:5rem}
+.wrap{max-width:880px;margin:0 auto;padding:0 1.25rem}
 
-/* Hero */
-.hero{padding:2.5rem 0 1.25rem;border-bottom:1px solid var(–bdr2);margin-bottom:1.75rem}
-.eyebrow{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.5rem}
-.hero h1{font-family:var(–ffd);font-size:clamp(24px,5vw,36px);font-weight:400;line-height:1.15;margin-bottom:.4rem}
-.hero-sub{font-size:13px;color:var(–muted);font-weight:300;line-height:1.65;max-width:620px;margin-bottom:1rem}
-.council-strip{display:flex;gap:.4rem;flex-wrap:wrap;padding:.75rem 0;border-top:.5px solid var(–bdr);align-items:center}
-.cs-label{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(–faint);font-weight:500;margin-right:.3rem}
-.cs-party{display:flex;align-items:center;gap:4px;font-size:11px;font-weight:500;padding:2px 8px;border-radius:10px;white-space:nowrap}
-.upd-line{font-size:11px;color:var(–faint);margin-top:.5rem}
+/* HERO */
+.hero{padding:2.25rem 0 1.25rem;border-bottom:1.5px solid var(–bdr2);margin-bottom:1.75rem}
+.ey{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.5rem}
+.hero h1{font-family:var(–ffd);font-size:clamp(26px,5vw,38px);font-weight:400;line-height:1.1;margin-bottom:.4rem}
+.hero-sub{font-size:13px;color:var(–muted);line-height:1.65;max-width:580px;margin-bottom:1.1rem;font-weight:300}
+.council{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:.85rem;align-items:center}
+.cl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(–faint);font-weight:500;margin-right:4px}
+.cp{font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px;white-space:nowrap;letter-spacing:.02em}
+.upd{font-size:11px;color:var(–faint)}
 
-/* Stats */
+/* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem}
-@media(max-width:540px){.stats{grid-template-columns:repeat(2,1fr)}}
-.stat{background:var(–card);border:1px solid var(–bdr);border-radius:8px;padding:.85rem 1rem;position:relative;overflow:hidden}
-.stat::before{content:””;position:absolute;top:0;left:0;right:0;height:3px;background:var(–bdr2)}
-.stat.s-pass::before{background:var(–pass)}.stat.s-rej::before{background:var(–rej)}.stat.s-pend::before{background:var(–pend)}
-.slbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.3rem}
-.sval{font-size:26px;font-family:var(–ffd);font-weight:500;color:var(–ink)}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(–card);border:1px solid var(–bdr);border-radius:8px;padding:.9rem 1rem;position:relative;overflow:hidden}
+.stat::after{content:””;position:absolute;bottom:0;left:0;right:0;height:3px}
+.stat.s-all::after{background:var(–faint)}
+.stat.s-pass::after{background:var(–pass)}
+.stat.s-rej::after{background:var(–rej)}
+.stat.s-pend::after{background:var(–pend)}
+.slbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.3rem}
+.sval{font-size:28px;font-family:var(–ffd);font-weight:400;color:var(–ink);line-height:1}
 .sval.p{color:var(–pass)}.sval.r{color:var(–rej)}.sval.o{color:var(–pend)}
-.srate{font-size:11px;color:var(–faint);margin-top:.2rem}
+.spct{font-size:11px;color:var(–faint);margin-top:.25rem}
 
-/* Analysis panels */
+/* PANELS */
 .panels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.75rem}
-@media(max-width:620px){.panels{grid-template-columns:1fr}}
+@media(max-width:600px){.panels{grid-template-columns:1fr}}
 .panel{background:var(–card);border:1px solid var(–bdr);border-radius:8px;padding:1.1rem 1.25rem}
-.panel h2{font-family:var(–ffd);font-size:15px;font-weight:400;margin-bottom:1rem;color:var(–ink)}
-.pb-row{display:grid;grid-template-columns:80px 1fr 52px;gap:.5rem;align-items:center;font-size:11px;margin-bottom:.5rem}
-.pb-name{font-weight:500;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pb-name:hover{text-decoration:underline}
-.pb-track{background:var(–bdr);border-radius:2px;height:7px;overflow:hidden}
-.pb-fill{height:100%;border-radius:2px}
-.pb-meta{font-size:10px;color:var(–faint);text-align:right;line-height:1.3}
+.panel-title{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);font-weight:500;margin-bottom:.9rem}
+.pb{display:grid;grid-template-columns:76px 1fr 48px;gap:6px;align-items:center;margin-bottom:7px}
+.pbn{font-size:12px;font-weight:500;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(–ink)}
+.pbn:hover{text-decoration:underline}
+.pbt{height:8px;background:var(–surf);border-radius:4px;overflow:hidden}
+.pbf{height:100%;border-radius:4px;transition:width .5s ease}
+.pbv{font-size:10px;color:var(–faint);text-align:right;line-height:1.4}
 
-/* Tabs */
-.tabs{display:flex;border-bottom:1px solid var(–bdr2);margin-bottom:1.25rem;overflow-x:auto;scrollbar-width:none}
+/* TABS */
+.tabs{display:flex;border-bottom:2px solid var(–bdr);margin-bottom:1.1rem;overflow-x:auto;scrollbar-width:none;gap:0}
 .tabs::-webkit-scrollbar{display:none}
-.tab{font-size:12px;font-weight:500;letter-spacing:.05em;padding:.55rem 1.1rem;cursor:pointer;color:var(–muted);border-bottom:2px solid transparent;margin-bottom:-1px;white-space:nowrap;transition:color .12s,border-color .12s;user-select:none}
-.tab.active{color:var(–ink);border-bottom-color:var(–ink)}
-.tab:hover{color:var(–ink)}
+.tab{
+font-size:12px;font-weight:500;letter-spacing:.04em;
+padding:.6rem 1.1rem;cursor:pointer;
+color:var(–faint);
+border-bottom:3px solid transparent;
+margin-bottom:-2px;
+white-space:nowrap;
+transition:color .15s,border-color .15s;
+user-select:none;
+background:none;
+}
+.tab:hover{color:var(–muted)}
+.tab.active{
+color:var(–ink) !important;
+border-bottom-color:var(–ink) !important;
+font-weight:600;
+}
 
-/* Controls */
-.controls{display:flex;gap:8px;margin-bottom:1.25rem;flex-wrap:wrap}
-.controls input,.controls select{font-family:var(–ffb);font-size:13px;padding:.45rem .8rem;border:1px solid var(–bdr2);border-radius:5px;background:var(–card);color:var(–ink);outline:none;transition:border-color .15s}
-.controls input:focus,.controls select:focus{border-color:var(–muted)}
-.controls input{flex:1;min-width:180px}
-.seclbl{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(–muted);font-weight:500;border-bottom:.5px solid var(–bdr);padding-bottom:.4rem;margin-bottom:.75rem}
+/* CONTROLS */
+.ctrls{display:flex;gap:8px;margin-bottom:1.1rem;flex-wrap:wrap}
+.ctrls input,.ctrls select{
+font-family:var(–ffb);font-size:13px;
+padding:.5rem .85rem;
+border:1.5px solid var(–bdr2);border-radius:6px;
+background:var(–card);color:var(–ink);outline:none;
+transition:border-color .15s,box-shadow .15s;
+}
+.ctrls input:focus,.ctrls select:focus{
+border-color:var(–ink);
+box-shadow:0 0 0 3px rgba(23,23,15,.07);
+}
+.ctrls input{flex:1;min-width:180px}
+.seclbl{
+font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+color:var(–muted);font-weight:500;
+border-bottom:1px solid var(–bdr);
+padding-bottom:.4rem;margin-bottom:.6rem;
+}
 
-/* Motion rows */
-.row{border-bottom:.5px solid var(–bdr);padding:1rem .25rem;cursor:pointer;border-radius:5px;transition:background .12s}
-.row:hover{background:var(–surf);padding-left:.5rem;padding-right:.5rem}
-.rtop{display:flex;align-items:flex-start;gap:10px;margin-bottom:.45rem}
-.rtitle{font-size:14px;font-weight:500;line-height:1.45;flex:1}
-.badge{font-size:10px;font-weight:500;letter-spacing:.06em;padding:3px 9px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+/* ROWS */
+.mrow{
+border-bottom:1px solid var(–bdr);
+padding:.9rem .4rem;
+cursor:pointer;border-radius:5px;
+transition:background .1s;
+}
+.mrow:hover{background:var(–surf)}
+.mrow:last-child{border-bottom:none}
+.rt{display:flex;align-items:flex-start;gap:10px;margin-bottom:.4rem}
+.rtitle{font-size:14px;font-weight:500;line-height:1.45;flex:1;color:var(–ink)}
+.badge{font-size:10px;font-weight:600;letter-spacing:.05em;padding:3px 9px;border-radius:3px;white-space:nowrap;flex-shrink:0}
 .badge.Aangenomen{background:var(–passbg);color:var(–pass)}
 .badge.Verworpen{background:var(–rejbg);color:var(–rej)}
 .badge.Aangehouden{background:var(–pendbg);color:var(–pend)}
 .badge.Geamendeerd{background:var(–amndbg);color:var(–amnd)}
-.badge.Onbekend{background:#eee;color:#555}
-.meta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(–muted);align-items:center}
-.pty-dot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}
-.mpty{font-weight:500;color:var(–ink)}.mid{color:var(–faint)}
-.mtype{font-size:10px;background:var(–surf);padding:1px 6px;border-radius:2px;color:var(–muted);border:.5px solid var(–bdr)}
+.badge.Onbekend{background:#eee;color:#666}
+.rmeta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(–muted);align-items:center}
+.rdot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.rpty{font-weight:600;color:var(–ink)}
+.rtag{font-size:10px;background:var(–surf);padding:1px 6px;border-radius:2px;border:.5px solid var(–bdr2);color:var(–muted)}
+.rmid{color:var(–faint);font-size:11px}
 
-/* Expanded */
-.exp{background:var(–surf);border-radius:6px;padding:1rem 1.25rem;margin-top:.75rem;border:1px solid var(–bdr)}
-.exp-toelichting{font-size:12px;color:var(–muted);line-height:1.65;padding:.65rem .85rem;background:var(–card);border-radius:4px;border-left:2px solid var(–bdr2);margin-bottom:.75rem;font-style:italic}
-.ptags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.6rem}
-.ptag{font-size:11px;padding:2px 8px;border-radius:3px;font-weight:500}
-.slink{font-size:11px;color:#1455a0;display:inline-block;text-decoration:none}
-.slink:hover{text-decoration:underline}
+/* EXPANDED */
+.exp{
+background:var(–surf);border-radius:6px;
+padding:.9rem 1.1rem;margin-top:.65rem;
+border:1px solid var(–bdr);
+}
+.exp-vote{
+font-size:12px;color:var(–muted);line-height:1.6;
+padding:.6rem .8rem;background:var(–card);
+border-radius:4px;border-left:3px solid var(–bdr2);
+margin-bottom:.65rem;
+}
+.exp-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.6rem}
+.exp-tag{font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px}
+.exp-link{font-size:11px;color:#1255a0;text-decoration:none;display:inline-block}
+.exp-link:hover{text-decoration:underline}
 
-.notice{text-align:center;padding:3rem 1rem;color:var(–muted);font-size:13px;line-height:1.6}
-.notice strong{display:block;font-size:15px;color:var(–ink);margin-bottom:.5rem;font-family:var(–ffd)}
-.foot{font-size:11px;color:var(–faint);margin-top:3rem;padding-top:1rem;border-top:.5px solid var(–bdr);line-height:1.8}
+.empty{text-align:center;padding:3rem 1rem;color:var(–muted);font-size:13px;line-height:1.6}
+.empty strong{display:block;font-size:16px;font-family:var(–ffd);font-weight:400;color:var(–ink);margin-bottom:.4rem}
+
+.foot{font-size:11px;color:var(–faint);margin-top:3rem;padding-top:1rem;border-top:1px solid var(–bdr);line-height:1.8}
 .foot a{color:inherit}
 </style>
 
 </head>
 <body>
-<div class="page">
-
-<!-- Hero -->
-
+<div class="wrap">
 <div class="hero">
-  <div class="eyebrow">Gemeenteraad Amsterdam &mdash; Motietracker</div>
+  <div class="ey">Gemeenteraad Amsterdam &mdash; Live Motietracker</div>
   <h1>Moties &amp; amendementen</h1>
-  <p class="hero-sub">Alle moties en amendementen ingediend in de Amsterdamse gemeenteraad sinds januari 2026 &mdash; doorzoekbaar op partij, onderwerp en uitslag.</p>
-  <div class="council-strip" id="councilStrip">
-    <span class="cs-label">Raad 2026&ndash;30</span>
-  </div>
-  <div class="upd-line" id="updLine"></div>
+  <p class="hero-sub">Alle moties en amendementen ingediend in de Amsterdamse gemeenteraad since januari 2026 &mdash; doorzoekbaar op fractie, onderwerp en uitslag.</p>
+  <div class="council" id="council"><span class="cl">Raad 2026&ndash;30</span></div>
+  <div class="upd" id="upd"></div>
 </div>
-
-<!-- Stats -->
-
 <div class="stats">
-  <div class="stat"><div class="slbl">Totaal moties</div><div class="sval" id="sT">0</div><div class="srate" id="sRate"></div></div>
-  <div class="stat s-pass"><div class="slbl">Aangenomen</div><div class="sval p" id="sP">0</div><div class="srate" id="sPct"></div></div>
-  <div class="stat s-rej"><div class="slbl">Verworpen</div><div class="sval r" id="sR">0</div><div class="srate" id="sRPct"></div></div>
-  <div class="stat s-pend"><div class="slbl">Aangehouden / geamendeerd</div><div class="sval o" id="sO">0</div><div class="srate" id="sOPct"></div></div>
+  <div class="stat s-all"><div class="slbl">Totaal ingediend</div><div class="sval" id="sT">0</div><div class="spct" id="sRate">&nbsp;</div></div>
+  <div class="stat s-pass"><div class="slbl">Aangenomen</div><div class="sval p" id="sP">0</div><div class="spct" id="sPct">&nbsp;</div></div>
+  <div class="stat s-rej"><div class="slbl">Verworpen</div><div class="sval r" id="sR">0</div><div class="spct" id="sRPct">&nbsp;</div></div>
+  <div class="stat s-pend"><div class="slbl">Aangehouden / geam.</div><div class="sval o" id="sO">0</div><div class="spct" id="sOPct">&nbsp;</div></div>
 </div>
-
-<!-- Analysis panels -->
-
 <div class="panels" id="panels" style="display:none">
-  <div class="panel">
-    <h2>Moties per fractie</h2>
-    <div id="partyBars"></div>
-  </div>
-  <div class="panel">
-    <h2>Slagingspercentage per fractie</h2>
-    <div id="successBars"></div>
-  </div>
+  <div class="panel"><div class="panel-title">Moties per fractie</div><div id="partyBars"></div></div>
+  <div class="panel"><div class="panel-title">Slagingspercentage per fractie</div><div id="successBars"></div></div>
 </div>
-
-<!-- Tabs -->
-
 <div class="tabs" id="tabs">
   <div class="tab active" data-tab="all">Alle moties</div>
   <div class="tab" data-tab="Aangenomen">Aangenomen</div>
@@ -141,262 +176,245 @@ body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100
   <div class="tab" data-tab="Aangehouden">Aangehouden</div>
   <div class="tab" data-tab="Geamendeerd">Geamendeerd</div>
 </div>
-
-<!-- Controls -->
-
-<div class="controls">
-  <input type="text" id="sq" placeholder="Zoek op titel, partij, onderwerp, trefwoord..." oninput="render()">
+<div class="ctrls">
+  <input type="text" id="sq" placeholder="Zoek op titel, fractie, trefwoord..." oninput="render()">
   <select id="ts" onchange="render()"><option value="">Alle onderwerpen</option></select>
   <select id="ps" onchange="render()"><option value="">Alle fracties</option></select>
 </div>
-<div class="seclbl" id="lbl">0 moties</div>
+<div class="seclbl" id="lbl">laden...</div>
 <div id="lst"></div>
-
 <div class="foot">
-  <strong>Databron:</strong> <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a> (Excel-export).
-  Data wordt bijgewerkt door <code>moties.xlsx</code> in de repository te plaatsen &mdash; GitHub Actions converteert dit automatisch.
-  &mdash; <a href="https://janeorlova.com">janeorlova.com</a>
+  <strong>Databron:</strong> <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a> (Excel-export). Bijgewerkt door <code>moties.xlsx</code> in de repository te uploaden &mdash; GitHub Actions converteert automatisch. &mdash; <a href="https://janeorlova.com">janeorlova.com</a>
 </div>
 </div>
-
 <script>
-var M = [], activeTab = "all", xid = null;
+
+var M = [], tab = “all”, xid = null;
 
 var COUNCIL = [
-  {name:"PRO Amsterdam", seats:17, color:"#5aab00"},
-  {name:"D66",           seats:8,  color:"#00a651"},
-  {name:"VVD",           seats:6,  color:"#ff7d00"},
-  {name:"PvdD",          seats:3,  color:"#006b2d"},
-  {name:"Volt",          seats:2,  color:"#502379"},
-  {name:"JA21",          seats:2,  color:"#003082"},
-  {name:"DENK",          seats:2,  color:"#00a89c"},
-  {name:"BIJ1",          seats:2,  color:"#f7b500"},
-  {name:"CDA",           seats:1,  color:"#007b5e"},
-  {name:"FvD",           seats:1,  color:"#901c1c"},
-  {name:"SP",            seats:1,  color:"#c02020"}
+{n:“PRO Amsterdam”,s:17,c:”#5aab00”},
+{n:“D66”,          s:8, c:”#00a651”},
+{n:“VVD”,          s:6, c:”#ff7d00”},
+{n:“PvdD”,         s:3, c:”#006b2d”},
+{n:“Volt”,         s:2, c:”#502379”},
+{n:“JA21”,         s:2, c:”#003082”},
+{n:“DENK”,         s:2, c:”#00a89c”},
+{n:“BIJ1”,         s:2, c:”#f7b500”},
+{n:“CDA”,          s:1, c:”#007b5e”},
+{n:“FvD”,          s:1, c:”#901c1c”},
+{n:“SP”,           s:1, c:”#c02020”}
 ];
 
-var PARTY_COLORS = {};
-COUNCIL.forEach(function(c){ PARTY_COLORS[c.name] = c.color; });
-PARTY_COLORS["GroenLinks"] = "#5aab00";
-PARTY_COLORS["PvdA"] = "#e8000b";
-PARTY_COLORS["GroenLinks-PvdA"] = "#5aab00";
+var PC = {};
+COUNCIL.forEach(function(x){ PC[x.n] = x.c; });
+PC[“GroenLinks”] = “#5aab00”;
+PC[“PvdA”] = “#e8000b”;
+PC[“GroenLinks-PvdA”] = “#5aab00”;
 
-function partyColor(p) {
-  if (!p) return "#bbb";
-  if (PARTY_COLORS[p]) return PARTY_COLORS[p];
-  for (var k in PARTY_COLORS) {
-    if (p.toLowerCase().includes(k.toLowerCase())) return PARTY_COLORS[k];
-  }
-  return "#888";
+function pc(p) {
+if (!p) return “#bbb”;
+if (PC[p]) return PC[p];
+var lo = p.toLowerCase();
+for (var k in PC) { if (lo.includes(k.toLowerCase())) return PC[k]; }
+return “#888”;
 }
 
-// Build council seat strip
-function buildCouncilStrip() {
-  var strip = document.getElementById("councilStrip");
-  COUNCIL.forEach(function(c) {
-    var el = document.createElement("span");
-    el.className = "cs-party";
-    el.style.background = c.color + "18";
-    el.style.color = c.color;
-    el.style.border = "1px solid " + c.color + "44";
-    el.innerHTML = c.name + " <strong>" + c.seats + "</strong>";
-    strip.appendChild(el);
-  });
-}
+var TOPIC = {
+Housing:“Wonen”, Mobility:“Mobiliteit”, Climate:“Klimaat & Groen”,
+Safety:“Veiligheid”, Social:“Zorg & Welzijn”, Education:“Onderwijs”,
+PublicSpace:“Openbare Ruimte”, Finance:“Financi\u00ebn”, Governance:“Bestuur”, Other:“Overige”
+};
 
-document.getElementById("tabs").addEventListener("click", function(e) {
-  var t = e.target.closest(".tab");
-  if (!t) return;
-  document.querySelectorAll("#tabs .tab").forEach(function(x){ x.classList.remove("active"); });
-  t.classList.add("active");
-  activeTab = t.getAttribute("data-tab");
-  render();
+// Build council strip
+(function(){
+var strip = document.getElementById(“council”);
+COUNCIL.forEach(function(x){
+var el = document.createElement(“span”);
+el.className = “cp”;
+el.style.cssText = “background:”+x.c+“1a;color:”+x.c+”;border:1.5px solid “+x.c+“55”;
+el.textContent = x.n + “ “ + x.s;
+strip.appendChild(el);
+});
+})();
+
+// Tab click
+document.getElementById(“tabs”).addEventListener(“click”, function(e){
+var t = e.target.closest(”.tab”);
+if (!t) return;
+document.querySelectorAll(”.tab”).forEach(function(x){ x.classList.remove(“active”); });
+t.classList.add(“active”);
+tab = t.dataset.tab;
+render();
 });
 
-async function boot() {
-  buildCouncilStrip();
-  try {
-    var r = await fetch("motions.json?_=" + Date.now());
-    if (!r.ok) throw new Error("HTTP " + r.status);
-    var d = await r.json();
-    M = d.motions || [];
-    if (d.meta && d.meta.last_updated) {
-      var dt = new Date(d.meta.last_updated);
-      document.getElementById("updLine").textContent =
-        "Bijgewerkt op " + dt.toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"});
-    }
-    buildFilters();
-    buildPanels();
-    renderStats();
-    render();
-  } catch(e) {
-    document.getElementById("lst").innerHTML =
-      '<div class="notice"><strong>Gegevens konden niet worden geladen</strong>' + e.message + "</div>";
-  }
+async function boot(){
+try {
+var r = await fetch(“motions.json?_=”+Date.now());
+if (!r.ok) throw new Error(“HTTP “+r.status);
+var d = await r.json();
+M = d.motions || [];
+if (d.meta && d.meta.last_updated) {
+var dt = new Date(d.meta.last_updated);
+document.getElementById(“upd”).textContent =
+“Bijgewerkt op “+dt.toLocaleDateString(“nl-NL”,{day:“numeric”,month:“long”,year:“numeric”});
+}
+buildFilters();
+renderStats();
+renderPanels();
+render();
+} catch(e) {
+document.getElementById(“lst”).innerHTML =
+‘<div class="empty"><strong>Gegevens konden niet worden geladen</strong>’+e.message+’</div>’;
+document.getElementById(“lbl”).textContent = “”;
+}
 }
 
-function filt() {
-  var q  = document.getElementById("sq").value.toLowerCase().trim();
-  var tp = document.getElementById("ts").value;
-  var ps = document.getElementById("ps").value;
-  return M.filter(function(m) {
-    if (activeTab !== "all" && m.status !== activeTab) return false;
-    if (tp && m.topic !== tp) return false;
-    if (ps && m.party !== ps && (m.parties||[]).indexOf(ps) === -1) return false;
-    if (q) {
-      var h = (m.title+" "+(m.parties||[]).join(" ")+" "+(m.topic||"")+" "+(m.summary||"")).toLowerCase();
-      if (h.indexOf(q) === -1) return false;
-    }
-    return true;
-  });
+function filt(){
+var q  = document.getElementById(“sq”).value.toLowerCase().trim();
+var tp = document.getElementById(“ts”).value;
+var ps = document.getElementById(“ps”).value;
+return M.filter(function(m){
+if (tab !== “all” && m.status !== tab) return false;
+if (tp && m.topic !== tp) return false;
+if (ps && m.party !== ps && (m.parties||[]).indexOf(ps) < 0) return false;
+if (q) {
+var h = (m.title+” “+(m.parties||[]).join(” “)+” “+(m.topic||””)+” “+(m.summary||””)).toLowerCase();
+if (h.indexOf(q) < 0) return false;
+}
+return true;
+});
 }
 
-function renderStats() {
-  var n = M.length, p = 0, r = 0, o = 0;
-  M.forEach(function(m) {
-    if (m.status==="Aangenomen") p++;
-    else if (m.status==="Verworpen") r++;
-    else if (m.status==="Aangehouden"||m.status==="Geamendeerd") o++;
-  });
-  document.getElementById("sT").textContent = n;
-  document.getElementById("sP").textContent = p;
-  document.getElementById("sR").textContent = r;
-  document.getElementById("sO").textContent = o;
-  document.getElementById("sPct").textContent  = n ? Math.round(p/n*100)+"% van totaal" : "";
-  document.getElementById("sRPct").textContent = n ? Math.round(r/n*100)+"% van totaal" : "";
-  document.getElementById("sOPct").textContent = n ? Math.round(o/n*100)+"% van totaal" : "";
+function renderStats(){
+var n=M.length, p=0, r=0, o=0;
+M.forEach(function(m){
+if (m.status===“Aangenomen”) p++;
+else if (m.status===“Verworpen”) r++;
+else if (m.status===“Aangehouden”||m.status===“Geamendeerd”) o++;
+});
+document.getElementById(“sT”).textContent = n;
+document.getElementById(“sP”).textContent = p;
+document.getElementById(“sR”).textContent = r;
+document.getElementById(“sO”).textContent = o;
+if (n) {
+document.getElementById(“sPct”).textContent  = Math.round(p/n*100)+”% van totaal”;
+document.getElementById(“sRPct”).textContent = Math.round(r/n*100)+”% van totaal”;
+document.getElementById(“sOPct”).textContent = Math.round(o/n*100)+”% van totaal”;
+}
 }
 
-function buildPanels() {
-  if (!M.length) return;
+function renderPanels(){
+if (!M.length) return;
+var counts={}, pass={};
+M.forEach(function(m){
+var p = m.party||“Onbekend”;
+counts[p]=(counts[p]||0)+1;
+if (m.status===“Aangenomen”) pass[p]=(pass[p]||0)+1;
+});
+var sorted = Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];}).slice(0,8);
+var maxC = counts[sorted[0]]||1;
 
-  // Party motion counts
-  var counts = {}, passed = {};
-  M.forEach(function(m) {
-    var p = m.party || "Onbekend";
-    counts[p] = (counts[p]||0) + 1;
-    if (m.status==="Aangenomen") passed[p] = (passed[p]||0) + 1;
-  });
-  var sorted = Object.keys(counts).sort(function(a,b){ return counts[b]-counts[a]; }).slice(0,8);
-  var maxC = counts[sorted[0]] || 1;
+document.getElementById(“partyBars”).innerHTML = sorted.map(function(p){
+var c=counts[p], col=pc(p), w=Math.round(c/maxC*100);
+return ‘<div class=“pb” onclick=“filterP(’’+p.replace(/’/g,””)+’’)”>’
++’<span class="pbn">’+e(p)+’</span>’
++’<div class="pbt"><div class="pbf" style="width:'+w+'%;background:'+col+'"></div></div>’
++’<span class="pbv">’+c+’</span>’
++’</div>’;
+}).join(””);
 
-  // Bar 1: total motions per party
-  document.getElementById("partyBars").innerHTML = sorted.map(function(p) {
-    var c = counts[p], pct = Math.round(c/maxC*100), col = partyColor(p);
-    return '<div class="pb-row">'
-function escQ(s) { return String(s||""); }
-      + '<div class="pb-track"><div class="pb-fill" style="width:'+pct+'%;background:'+col+'"></div></div>'
-      + '<span class="pb-meta">'+c+' moties</span>'
-      + '</div>';
-  }).join("");
+var elig = sorted.filter(function(p){return counts[p]>=2;});
+document.getElementById(“successBars”).innerHTML = elig.map(function(p){
+var rate = pass[p] ? Math.round(pass[p]/counts[p]*100) : 0;
+var col=pc(p);
+return ‘<div class=“pb” onclick=“filterP(’’+p.replace(/’/g,””)+’’)”>’
++’<span class="pbn">’+e(p)+’</span>’
++’<div class="pbt"><div class="pbf" style="width:'+rate+'%;background:'+col+'"></div></div>’
++’<span class="pbv">’+rate+’%<br><small>’+(pass[p]||0)+’/’+counts[p]+’</small></span>’
++’</div>’;
+}).join(””);
 
-  // Bar 2: success rate per party (min 3 motions)
-  var eligible = sorted.filter(function(p){ return counts[p] >= 3; });
-  document.getElementById("successBars").innerHTML = eligible.map(function(p) {
-    var rate = passed[p] ? Math.round((passed[p]/counts[p])*100) : 0;
-    var col = partyColor(p);
-    return '<div class="pb-row">'
-function escQ(s) { return String(s||""); }
-      + '<div class="pb-track"><div class="pb-fill" style="width:'+rate+'%;background:'+col+'"></div></div>'
-      + '<span class="pb-meta">'+rate+'%<br>'+( passed[p]||0)+'/'+counts[p]+'</span>'
-      + '</div>';
-  }).join("");
-
-  document.getElementById("panels").style.display = "";
+document.getElementById(“panels”).style.display = “”;
 }
 
-function filterParty(p) {
-  document.getElementById("ps").value = p;
-  render();
-  document.getElementById("lst").scrollIntoView({behavior:"smooth"});
+function filterP(p){
+document.getElementById(“ps”).value = p;
+render();
+document.getElementById(“lst”).scrollIntoView({behavior:“smooth”});
 }
 
-function buildFilters() {
-  var topics = {}, parties = {};
-  M.forEach(function(m) {
-    if (m.topic) topics[m.topic] = 1;
-    if (m.party) parties[m.party] = 1;
-  });
-  var tsel = document.getElementById("ts");
-  var TOPIC_NL = {Housing:"Wonen",Mobility:"Mobiliteit",Climate:"Klimaat & Groen",
-    Safety:"Veiligheid",Social:"Zorg & Welzijn",Education:"Onderwijs & Integratie",
-    PublicSpace:"Openbare Ruimte",Finance:"Financien",Governance:"Bestuur",Other:"Overige"};
-  Object.keys(topics).sort().forEach(function(t) {
-    var o = document.createElement("option");
-    o.value = t; o.textContent = TOPIC_NL[t] || t; tsel.appendChild(o);
-  });
-  var psel = document.getElementById("ps");
-  Object.keys(parties).sort().forEach(function(p) {
-    var o = document.createElement("option"); o.value=p; o.textContent=p; psel.appendChild(o);
-  });
+function buildFilters(){
+var topics={}, parties={};
+M.forEach(function(m){ if(m.topic) topics[m.topic]=1; if(m.party) parties[m.party]=1; });
+var ts = document.getElementById(“ts”);
+Object.keys(topics).sort().forEach(function(t){
+var o=document.createElement(“option”); o.value=t; o.textContent=TOPIC[t]||t; ts.appendChild(o);
+});
+var ps = document.getElementById(“ps”);
+Object.keys(parties).sort().forEach(function(p){
+var o=document.createElement(“option”); o.value=p; o.textContent=p; ps.appendChild(o);
+});
 }
 
-function esc(s) {
-  return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+function e(s){
+return String(s||””).replace(/&/g,”&”).replace(/</g,”<”).replace(/>/g,”>”).replace(/”/g,”"”);
 }
-function escQ(s) { return String(s||""); }
-function sl(s) {
-  return {Aangenomen:"Aangenomen",Verworpen:"Verworpen",Aangehouden:"Aangehouden",
-          Geamendeerd:"Geamendeerd",Onbekend:"Onbekend"}[s]||s;
+function sl(s){
+return {Aangenomen:“Aangenomen”,Verworpen:“Verworpen”,
+Aangehouden:“Aangehouden”,Geamendeerd:“Geamendeerd”,Onbekend:“Onbekend”}[s]||s;
 }
-function fd(iso) {
-  try { return new Date(iso).toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"}); }
-  catch(e){ return iso; }
-}
-
-var TOPIC_NL = {Housing:"Wonen",Mobility:"Mobiliteit",Climate:"Klimaat & Groen",
-  Safety:"Veiligheid",Social:"Zorg & Welzijn",Education:"Onderwijs & Integratie",
-  PublicSpace:"Openbare Ruimte",Finance:"Financien",Governance:"Bestuur",Other:"Overige"};
-
-function render() {
-  var f = filt();
-  document.getElementById("lbl").textContent = f.length + " " + (f.length===1?"motie":"moties");
-  var lst = document.getElementById("lst");
-  if (!M.length) {
-    lst.innerHTML = '<div class="notice"><strong>Nog geen gegevens geladen</strong>Upload moties.xlsx naar de repository om de tracker te vullen.</div>';
-    return;
-  }
-  if (!f.length) {
-    lst.innerHTML = '<div class="notice">Geen moties gevonden met de huidige filters.</div>';
-    return;
-  }
-  var html = "";
-  f.forEach(function(m) {
-    var open = xid === m.id;
-    var col  = partyColor(m.party);
-    var topicNL = TOPIC_NL[m.topic] || m.topic || "";
-    var ex = "";
-    if (open) {
-      ex = '<div class="exp">';
-      if (m.summary) ex += '<div class="exp-toelichting">' + esc(m.summary) + '</div>';
-      if (m.parties && m.parties.length) {
-        ex += '<div class="ptags">';
-        m.parties.forEach(function(p) {
-          var pc = partyColor(p);
-          ex += '<span class="ptag" style="background:'+pc+'18;color:'+pc+';border:1px solid '+pc+'44">'+esc(p)+'</span>';
-        });
-        ex += '</div>';
-      }
-      ex += '<a class="slink" href="'+esc(m.link)+'" target="_blank" rel="noopener">Bekijk op amsterdam.raadsinformatie.nl &rarr;</a>';
-      ex += '</div>';
-    }
-    html += '<div class="row" onclick="tog(\''+esc(m.id)+'\')">'
-      + '<div class="rtop"><div class="rtitle">'+esc(m.title)+'</div><span class="badge '+esc(m.status)+'">'+sl(m.status)+'</span></div>'
-      + '<div class="meta">'
-      + '<span>'+fd(m.date)+'</span>'
-      + (m.party ? '<span>&middot;</span><span class="pty-dot" style="background:'+col+'"></span><span class="mpty">'+esc(m.party)+'</span>' : "")
-      + (topicNL ? '<span>&middot;</span><span>'+esc(topicNL)+'</span>' : "")
-      + (m.type && m.type!=="Motie" ? '<span>&middot;</span><span class="mtype">'+esc(m.type)+'</span>' : "")
-      + '</div>'
-      + ex + '</div>';
-  });
-  lst.innerHTML = html;
+function fd(iso){
+try { return new Date(iso).toLocaleDateString(“nl-NL”,{day:“numeric”,month:“long”,year:“numeric”}); }
+catch(ex){ return iso; }
 }
 
-function tog(id) { xid = (xid===id) ? null : id; render(); }
+function render(){
+var f=filt();
+document.getElementById(“lbl”).textContent = f.length+” “+(f.length===1?“motie”:“moties”);
+var lst = document.getElementById(“lst”);
+if (!M.length){
+lst.innerHTML=’<div class="empty"><strong>Nog geen gegevens</strong>Upload moties.xlsx naar de repository.</div>’;
+return;
+}
+if (!f.length){
+lst.innerHTML=’<div class="empty">Geen moties gevonden met deze filters.</div>’;
+return;
+}
+var h=””;
+f.forEach(function(m){
+var open = xid===m.id;
+var col  = pc(m.party);
+var topNL = TOPIC[m.topic]||m.topic||””;
+var ex=””;
+if (open){
+ex=’<div class="exp">’;
+if (m.summary) ex+=’<div class="exp-vote">’+e(m.summary)+’</div>’;
+if (m.parties&&m.parties.length){
+ex+=’<div class="exp-tags">’;
+m.parties.forEach(function(p){
+var c=pc(p);
+ex+=’<span class="exp-tag" style="background:'+c+'1a;color:'+c+';border:1px solid '+c+'44">’+e(p)+’</span>’;
+});
+ex+=’</div>’;
+}
+ex+=’<a class="exp-link" href="'+e(m.link)+'" target="_blank" rel="noopener">Bekijk op amsterdam.raadsinformatie.nl →</a>’;
+ex+=’</div>’;
+}
+h+=’<div class="mrow" onclick="tog(''+e(m.id)+'')">’
++’<div class="rt"><div class="rtitle">’+e(m.title)+’</div><span class="badge '+e(m.status)+'">’+sl(m.status)+’</span></div>’
++’<div class="rmeta"><span>’+fd(m.date)+’</span>’
++(m.party?’<span>·</span><span class="rdot" style="background:'+col+'"></span><span class="rpty">’+e(m.party)+’</span>’:””)
++(topNL?’<span>·</span><span>’+e(topNL)+’</span>’:””)
++(m.type&&m.type!==“Motie”?’<span>·</span><span class="rtag">’+e(m.type)+’</span>’:””)
++’</div>’
++ex+’</div>’;
+});
+lst.innerHTML=h;
+}
+
+function tog(id){ xid=(xid===id)?null:id; render(); }
 boot();
-</script>
 
+</script>
 </body>
 </html>
