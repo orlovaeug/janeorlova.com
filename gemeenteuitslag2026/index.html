@@ -111,30 +111,30 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .dp{cursor:pointer;transition:opacity .15s,filter .15s;opacity:.78}
 .dp:hover{opacity:1;filter:brightness(1.1) drop-shadow(0 2px 6px rgba(0,0,0,.2))}
 
-/* DISTRICT OVERLAY (slide-in panel) */
-.d-overlay{display:none;position:absolute;top:0;right:0;bottom:0;width:min(240px,48%);background:#fff;border-left:2px solid #1c1917;z-index:20;box-shadow:-6px 0 24px rgba(0,0,0,.15);flex-direction:column;overflow:hidden}
-.d-overlay.open{display:flex}
-.d-ov-hd{background:#1c1917;color:#f7f3ee;padding:11px 13px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.d-ov-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:15px;font-weight:700}
-.d-ov-close{background:none;border:none;color:rgba(247,243,238,.7);font-size:20px;cursor:pointer;line-height:1;padding:0 2px}
-.d-ov-close:hover{color:#f7f3ee}
-.d-ov-body{flex:1;overflow-y:auto;padding:13px;background:#fff}
-.d-meta{font-size:9px;color:#7a746c;letter-spacing:.06em;margin-bottom:10px}
-.d-win-block{display:flex;align-items:center;justify-content:space-between;padding:9px 11px;margin-bottom:11px;border-left:4px solid}
-.d-win-lbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:2px}
-.d-win-nm{font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;font-weight:700}
-.d-win-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:900}
-.d-opk-block{padding:8px 10px;background:#f7f5f0;border-left:3px solid #888;margin-bottom:11px}
-.d-opk-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:2px}
-.d-opk-val{font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:700}
-.d-opk-cmp{font-size:9px;color:#7a746c;margin-top:2px}
-.d-bars-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #ddd8d0}
-.d-bar-row{display:flex;align-items:center;gap:5px;margin-bottom:5px}
-.d-bar-rank{font-size:9px;color:#7a746c;width:13px;flex-shrink:0}
-.d-bar-name{font-size:10px;font-weight:500;width:90px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.d-bar-track{flex:1;background:#eae6de;height:6px}
-.d-bar-fill{height:100%}
-.d-bar-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:11px;font-weight:700;width:32px;text-align:right;flex-shrink:0}
+/* SLIDE-OUT DISTRICT OVERLAY PANEL */
+.ov-backdrop{display:none;position:fixed;inset:0;z-index:199;background:rgba(0,0,0,.25)}
+.ov-backdrop.open{display:block}
+.d-overlay{position:fixed;top:0;right:-420px;width:min(400px,100vw);height:100vh;
+  background:#fff;border-left:2px solid #1c1917;z-index:200;
+  display:flex;flex-direction:column;transition:right .28s cubic-bezier(.16,1,.3,1);
+  box-shadow:-6px 0 32px rgba(0,0,0,.18)}
+.d-overlay.open{right:0}
+.d-ov-hd{background:#1c1917;color:#f7f3ee;padding:12px 15px;
+  display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.d-ov-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:17px;font-weight:700;color:#f7f3ee}
+.d-ov-close{background:none;border:none;color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;line-height:1;padding:0 4px}
+.d-ov-close:hover{color:#fff}
+.d-ov-body{flex:1;overflow-y:auto;padding:15px;background:#fff;-webkit-overflow-scrolling:touch}
+
+/* MAP TOOLTIP */
+.map-tooltip{position:absolute;top:8px;right:0;width:160px;background:#1c1917;color:#f7f3ee;padding:11px 13px;border-radius:2px;pointer-events:none;z-index:10;box-shadow:0 4px 16px rgba(0,0,0,.22);display:none}
+.map-tooltip.visible{display:block}
+.tt-district{font-size:9.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;color:rgba(247,243,238,.6)}
+.tt-party-row{display:flex;align-items:center;gap:6px;margin-bottom:4px}
+.tt-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.tt-party{font-size:11px;font-weight:500}
+.tt-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;font-weight:700;line-height:1}
+.tt-opk{font-size:10px;color:rgba(247,243,238,.45);margin-top:5px}
 
 /* MAP LEGEND */
 .map-legend{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
@@ -295,14 +295,13 @@ footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
         <div class="kaart-grid">
           <div>
             <div class="map-hint">Klik op een gebied voor details</div>
-            <div class="map-wrap" id="map-wrap">
-              <svg id="dsvg" class="district-svg" viewBox="0 0 760 680"></svg>
-              <div class="d-overlay" id="d-overlay">
-                <div class="d-ov-hd">
-                  <span class="d-ov-title" id="ov-title">—</span>
-                  <button class="d-ov-close" onclick="closeOverlay()">✕</button>
-                </div>
-                <div class="d-ov-body" id="ov-body"></div>
+            <div class="map-wrap" id="map-wrap" style="position:relative">
+              <svg id="dsvg" class="district-svg" viewBox="0 0 280 280"></svg>
+              <div class="map-tooltip" id="map-tooltip">
+                <div class="tt-district" id="tt-district">—</div>
+                <div class="tt-party-row"><div class="tt-dot" id="tt-dot"></div><span class="tt-party" id="tt-party">—</span></div>
+                <div class="tt-pct" id="tt-pct">—</div>
+                <div class="tt-opk" id="tt-opk">—</div>
               </div>
             </div>
             <div class="map-legend" id="map-legend"></div>
@@ -331,6 +330,16 @@ footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
     <div class="foot-right"><div>GR2026 · Gemeenteraadsverkiezingen</div><div>Nederland · 18 maart 2026</div><div>© 2026 evgeniyaorlova.com</div></div>
   </div>
 </footer>
+
+<!-- SLIDE-OUT OVERLAY PANEL -->
+<div class="ov-backdrop" id="ov-backdrop" onclick="closeOverlay()"></div>
+<div class="d-overlay" id="d-overlay">
+  <div class="d-ov-hd">
+    <span class="d-ov-title" id="ov-title">—</span>
+    <button class="d-ov-close" onclick="closeOverlay()">✕</button>
+  </div>
+  <div class="d-ov-body" id="ov-body"></div>
+</div>
 
 <script>
 /* ═══════════════════════════════════════════
@@ -503,151 +512,67 @@ const DEMO={
 };
 
 /* ═══════════════════════════════════════════
-   MAP POLYGONS
+   MAP HEX GRIDS
 ═══════════════════════════════════════════ */
 const MAPS={
-'den-haag':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Scheveningen',pts:'60,155 95,105 145,62 205,32 272,15 352,10 350,110 310,155 280,185 250,205 220,200 190,185 155,170 115,158 80,152'},
-{n:'Loosduinen',pts:'60,155 80,152 115,158 155,170 190,185 220,200 205,245 195,290 178,335 160,375 138,415 115,448 90,475 65,492 45,490 25,465 10,420 8,358 15,290 33,230'},
-{n:'Segbroek',pts:'220,200 250,205 280,185 310,155 350,110 380,122 395,148 388,175 370,200 348,218 325,228 300,232 278,228 258,218 238,208 220,200'},
-{n:'Centrum',pts:'352,10 435,14 445,65 440,100 428,125 415,140 400,150 380,122 350,110'},
-{n:'Laak',pts:'435,14 512,24 535,55 550,85 558,115 550,145 530,165 508,178 482,185 458,185 440,178 428,160 428,125 440,100 445,65'},
-{n:'Haagse Hout',pts:'512,24 582,45 638,78 678,118 708,165 722,218 726,275 720,338 702,398 673,452 660,448 638,432 615,415 592,395 568,372 548,348 528,320 512,295 500,268 495,240 488,215 478,195 458,185 482,185 508,178 530,165 550,145 558,115 550,85 535,55'},
-{n:'Statenkwartier',pts:'178,335 195,290 205,245 220,200 238,208 258,218 278,228 300,232 325,228 348,218 370,200 388,175 395,148 415,140 428,160 440,178 458,185 478,195 488,215 495,240 500,268 495,298 482,325 462,348 438,368 410,385 380,398 350,408 318,415 288,418 260,415 235,408 208,396 185,382 170,362'},
-{n:'Escamp',pts:'65,492 90,475 115,448 138,415 160,375 170,362 185,382 208,396 235,408 260,415 288,418 318,415 338,425 350,445 355,470 348,500 330,528 305,552 272,572 238,585 200,590 165,582 133,562 100,530 72,498'},
-{n:'Leidschenveen-Ypenburg',pts:'660,448 673,452 636,500 588,543 535,576 475,601 408,617 338,621 268,615 238,585 272,572 305,552 330,528 348,500 355,470 350,445 365,432 388,418 415,408 445,400 475,395 500,390 520,382 545,368 565,348 580,325 592,305 600,280 605,255 608,228 610,200 620,178 635,158 648,140 660,120 672,142 692,168 708,198 720,230 726,275 720,338 702,398'}
-],lbls:[{n:'Scheveningen',x:210,y:100},{n:'Loosduinen',x:108,y:335},{n:'Segbroek',x:296,y:200},{n:'Centrum',x:395,y:75},{n:'Laak',x:488,y:110},{n:'Haagse Hout',x:590,y:310},{n:'Statenkwartier',x:344,y:310},{n:'Escamp',x:206,y:490},{n:'Leidschenveen-Ypenburg',x:518,y:530}]},
-
-'rotterdam':{vb:'0 0 760 680',sea:false,
-river:{d:'M 82,230 L 145,225 L 205,228 L 260,235 L 330,250 L 400,265 L 460,270 L 528,265 L 580,255 L 630,240',lx:310,ly:222,lt:'Nieuwe Maas'},
-polys:[
-{n:'Overschie',pts:'85,90 150,55 195,52 220,68 230,95 215,125 190,145 160,155 128,148 98,132'},
-{n:'Delfshaven',pts:'150,55 225,32 265,38 285,62 290,95 278,130 258,158 235,175 205,185 182,178 160,155 190,145 215,125 230,95 220,68 195,52'},
-{n:'Centrum',pts:'265,38 310,18 355,20 385,32 400,55 405,80 398,108 378,132 350,148 320,155 295,148 278,130 285,62'},
-{n:'Noord',pts:'235,175 258,158 278,130 295,148 320,155 350,148 378,132 398,108 412,130 418,165 408,200 388,225 360,242 328,250 295,248 268,238 245,218'},
-{n:'Hillegersberg-Schiebroek',pts:'355,20 400,14 485,20 530,30 555,52 558,82 545,115 522,142 492,158 460,165 428,162 412,148 412,130 398,108 405,80 400,55 385,32'},
-{n:'Kralingen-Crooswijk',pts:'412,130 412,148 428,162 460,165 492,158 520,170 535,198 528,228 508,252 482,268 452,272 422,265 396,248 388,225 408,200 418,165'},
-{n:'Prins Alexander',pts:'530,30 560,36 625,62 680,100 720,148 742,202 748,260 738,305 715,338 682,360 645,368 610,362 578,342 550,312 535,278 528,248 528,228 535,198 520,170 492,158 522,142 545,115 558,82 555,52'},
-{n:'Feijenoord',pts:'205,185 235,175 245,218 268,238 295,248 328,250 360,242 388,225 396,248 422,265 452,272 482,268 508,252 528,248 535,278 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210'},
-{n:'Pernis-Hoogvliet-Rozenburg',pts:'52,364 90,415 140,458 200,492 270,516 340,530 410,534 480,528 545,514 600,492 650,460 690,420 720,372 740,318 715,338 682,360 645,368 610,362 578,342 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210 205,185 182,178 160,155 128,148 98,132 85,90 42,132 28,188 16,248 28,308'}
-],lbls:[{n:'Overschie',x:155,y:112},{n:'Delfshaven',x:200,y:122},{n:'Centrum',x:322,y:80},{n:'Noord',x:365,y:106},{n:'Hillegersberg-Schiebroek',x:480,y:100},{n:'Kralingen-Crooswijk',x:468,y:218},{n:'Prins Alexander',x:634,y:245},{n:'Feijenoord',x:390,y:378},{n:'Pernis-Hoogvliet-Rozenburg',x:395,y:490}]},
-
-'utrecht':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Binnenstad',pts:'312,252 350,238 392,242 420,262 424,290 412,318 386,332 354,334 328,320 310,300 308,276'},
-{n:'Oost',pts:'392,242 438,228 490,232 530,248 548,278 545,318 530,350 505,372 472,382 440,375 412,355 386,332 412,318 424,290 420,262'},
-{n:'Noordoost',pts:'350,238 392,242 420,262 438,228 490,232 530,248 548,212 560,168 565,120 540,80 495,55 440,42 385,38 335,42 305,58 292,90 295,135 305,175 312,220'},
-{n:'Overvecht',pts:'180,55 250,38 305,58 292,90 295,135 305,175 312,220 312,252 308,276 270,285 235,280 200,265 172,238 155,200 148,160 152,115 165,78'},
-{n:'Noordwest',pts:'42,168 72,118 108,74 155,42 180,55 165,78 152,115 148,160 155,200 172,238 200,265 185,298 162,322 135,338 105,335 78,315 52,280 30,235 28,200'},
-{n:'West',pts:'162,322 185,298 200,265 235,280 270,285 308,276 310,300 328,320 315,345 295,368 268,382 238,388 205,378 180,358'},
-{n:'Zuidwest',pts:'30,355 52,280 78,315 105,335 135,338 162,322 180,358 205,378 195,415 178,445 155,462 125,468 95,455 65,430 42,395'},
-{n:'Zuid',pts:'310,300 328,320 354,334 386,332 412,355 440,375 448,408 438,442 415,468 382,480 348,482 315,470 290,450 272,420 268,382 295,368 315,345'},
-{n:'Leidsche Rijn',pts:'22,288 30,355 42,395 65,430 95,455 125,468 155,462 178,445 195,415 205,378 238,388 250,420 245,465 228,505 200,535 165,555 130,558 90,545 58,520 32,488 16,450 12,400 18,348'},
-{n:'Vleuten-De Meern',pts:'195,415 205,378 238,388 268,382 272,420 290,450 315,470 348,482 382,480 415,468 438,442 460,468 462,510 448,548 420,578 385,598 345,612 305,614 260,606 218,590 182,565 155,548 155,462 178,445'}
-],lbls:[{n:'Binnenstad',x:375,y:258},{n:'Oost',x:480,y:304},{n:'Noordoost',x:440,y:145},{n:'Overvecht',x:240,y:175},{n:'Noordwest',x:110,y:222},{n:'West',x:240,y:332},{n:'Zuidwest',x:112,y:385},{n:'Zuid',x:362,y:418},{n:'Leidsche Rijn',x:145,y:492},{n:'Vleuten-De Meern',x:342,y:530}]},
-
-'groningen':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Hoogkerk',pts:'56,268 62,202 82,146 114,100 156,66 190,100 210,160 200,230 180,290 140,330 90,340 66,334'},
-{n:'Paddepoel',pts:'190,100 210,46 268,38 352,28 360,100 330,160 280,200 210,160'},
-{n:'Korrewegwijk',pts:'360,100 352,28 436,32 514,52 520,120 460,160 400,170 330,160'},
-{n:'Lewenborg',pts:'520,120 514,52 580,82 634,122 672,172 694,230 680,280 640,310 580,300 520,280 460,260 460,160'},
-{n:'Binnenstad',pts:'280,200 330,160 400,170 460,160 460,260 420,310 360,330 300,310 240,280'},
-{n:'Oosterparkwijk',pts:'460,260 520,280 580,300 640,310 640,360 600,410 540,430 480,410 420,370 420,310'},
-{n:'Ten Boer',pts:'580,300 640,310 680,280 694,230 700,292 692,356 668,414 640,410 600,410 640,360 640,310'},
-{n:'Meerstad',pts:'640,410 668,414 630,462 580,502 522,532 560,490 580,450 600,410'},
-{n:'De Wijert',pts:'240,280 300,310 360,330 420,310 420,370 480,410 440,460 380,490 300,480 240,440 200,380 200,320'},
-{n:'Haren',pts:'200,380 240,440 300,480 380,490 440,460 480,410 540,430 600,410 560,490 522,532 456,552 384,558 312,550 244,528 182,494 130,450 90,396 90,340 140,330 180,290'}
-],lbls:[{n:'Hoogkerk',x:128,y:230},{n:'Paddepoel',x:278,y:130},{n:'Korrewegwijk',x:432,y:122},{n:'Lewenborg',x:590,y:200},{n:'Binnenstad',x:375,y:260},{n:'Oosterparkwijk',x:550,y:358},{n:'Ten Boer',x:635,y:312},{n:'Meerstad',x:562,y:492},{n:'De Wijert',x:332,y:410},{n:'Haren',x:355,y:512}]},
-
-'eindhoven':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Woensel-Noord',pts:'88,200 130,120 195,72 280,42 370,30 460,36 545,65 618,108 668,172 692,248 688,328 575,215 452,172 300,165 185,210'},
-{n:'Woensel-Zuid',pts:'185,210 300,165 452,172 380,278 292,338 162,295'},
-{n:'Stratum',pts:'452,172 575,215 600,325 468,338 380,278'},
-{n:'Tongelre',pts:'575,215 688,328 668,402 630,462 572,510 530,412 600,325'},
-{n:'Centrum',pts:'380,278 468,338 380,408 292,338'},
-{n:'Tivoli',pts:'292,338 380,408 468,338 600,325 530,412 435,450 300,448 210,400'},
-{n:'Gestel',pts:'210,400 300,448 435,450 530,412 572,510 502,545 422,562 338,558 258,538 186,500'},
-{n:'Strijp',pts:'162,295 292,338 210,400 186,500 126,446 82,382 60,312 66,246'},
-{n:'Westerpark',pts:'88,200 185,210 162,295 66,246'}
-],lbls:[{n:'Centrum',x:382,y:358},{n:'Woensel-Noord',x:390,y:175},{n:'Woensel-Zuid',x:320,y:255},{n:'Stratum',x:510,y:265},{n:'Tongelre',x:618,y:372},{n:'Westerpark',x:118,y:258},{n:'Gestel',x:365,y:492},{n:'Strijp',x:188,y:382},{n:'Tivoli',x:400,y:422}]},
-
-'delft':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Delft Noord',pts:'280,42 370,30 460,42 540,72 606,116 560,130 480,148 388,152 300,148 220,130 152,128 198,86 246,58'},
-{n:'Wippolder',pts:'152,128 220,130 300,148 300,240 240,280 180,300 114,318 108,250 122,184'},
-{n:'Binnenstad',pts:'300,148 388,152 480,148 560,130 606,116 648,172 668,240 664,310 600,320 520,300 480,300 388,310 300,240'},
-{n:'Vrijenban',pts:'600,320 664,310 642,376 604,430 548,380 520,300'},
-{n:'Voorhof',pts:'180,300 240,280 300,240 388,310 388,420 300,450 220,430 186,432 140,380 114,318'},
-{n:'Hof van Delft',pts:'480,300 520,300 548,380 604,430 548,472 480,498 402,508 388,420 388,310'},
-{n:'Tanthof',pts:'220,430 300,450 388,420 402,508 322,498 248,472 186,432'}
-],lbls:[{n:'Delft Noord',x:368,y:95},{n:'Wippolder',x:195,y:237},{n:'Binnenstad',x:375,y:260},{n:'Vrijenban',x:598,y:360},{n:'Voorhof',x:252,y:382},{n:'Hof van Delft',x:492,y:437},{n:'Tanthof',x:300,y:472}]},
-
-'maastricht':{vb:'0 0 760 680',sea:false,
-river:{d:'M 480,120 L 490,160 L 492,200 L 485,240 L 478,280 L 470,320 L 460,360 L 450,400 L 438,440',lx:504,ly:238,lt:'Maas'},
-polys:[
-{n:'Noord',pts:'268,42 352,28 436,38 510,62 500,130 440,160 380,170 320,160 260,130 224,90 224,58'},
-{n:'Amby',pts:'510,62 570,100 614,148 642,206 650,268 630,310 590,290 550,250 530,200 500,130'},
-{n:'Wyck',pts:'530,200 550,250 590,290 630,310 638,330 610,384 570,360 530,330 510,280 500,200'},
-{n:'Centrum',pts:'260,130 320,160 380,170 440,160 500,130 500,200 510,280 480,320 420,340 360,320 300,300 260,260 250,190'},
-{n:'Heer',pts:'570,360 610,384 568,428 514,460 480,440 460,390 480,320 510,280 530,330'},
-{n:'Malberg',pts:'118,248 122,188 142,134 178,90 224,58 224,90 260,130 250,190 230,250 200,300 160,320 130,308'},
-{n:'Sint Pieter',pts:'130,308 160,320 200,300 230,250 260,260 300,300 280,360 250,410 220,440 196,412 156,364'},
-{n:'Wolder',pts:'250,410 280,360 300,300 360,320 420,340 480,320 460,390 480,440 514,460 450,480 380,486 310,476 248,450 220,440'}
-],lbls:[{n:'Noord',x:365,y:100},{n:'Amby',x:572,y:202},{n:'Wyck',x:568,y:292},{n:'Centrum',x:382,y:242},{n:'Heer',x:542,y:404},{n:'Malberg',x:185,y:242},{n:'Sint Pieter',x:215,y:377},{n:'Wolder',x:360,y:444}]},
-
-'almere':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Almere Haven',pts:'100,80 220,50 310,80 320,160 260,210 180,220 110,190 60,140'},
-{n:'Almere Stad',pts:'310,80 380,40 480,60 520,120 490,200 440,260 370,290 300,280 260,210 320,160'},
-{n:'Almere Buiten',pts:'480,60 540,50 680,90 730,200 720,280 660,320 580,310 520,250 520,120'},
-{n:'Almere Hout',pts:'560,370 580,310 660,320 720,280 740,340 720,470 670,560 580,570 500,540 450,480 440,440 500,400'},
-{n:'Almere Centrum',pts:'370,290 440,260 490,200 520,250 580,310 560,370 500,400 420,410 350,390 310,340 310,280'},
-{n:'Almere Poort',pts:'60,200 50,330 70,420 130,500 200,540 260,560 310,560 350,530 380,490 350,390 310,340 270,390 210,420 150,420 90,380 70,310 50,230'}
-],lbls:[{n:'Almere Haven',x:200,y:142},{n:'Almere Stad',x:385,y:177},{n:'Almere Buiten',x:615,y:197},{n:'Almere Hout',x:618,y:447},{n:'Almere Centrum',x:430,y:342},{n:'Almere Poort',x:185,y:332}]},
-
-'amstelveen':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Centrum',pts:'290,34 388,26 484,34 500,100 450,140 388,152 326,140 270,100'},
-{n:'Westwijk',pts:'158,100 198,58 290,34 270,100 240,170 190,210 140,240 118,280 110,212 126,150'},
-{n:'Randwijck',pts:'484,34 566,62 630,108 668,166 684,234 660,280 600,300 540,280 500,220 500,100'},
-{n:'Groenelaan',pts:'270,100 326,140 388,152 450,140 500,100 500,220 540,280 520,350 460,380 388,388 316,380 256,348 240,280 240,170'},
-{n:'Bankras',pts:'110,212 118,280 110,320 130,360 148,344 194,398 254,440 324,466 388,420 388,388 316,380 256,348 200,330 160,360 130,360'},
-{n:'Bovenkerk',pts:'520,350 540,280 600,300 660,280 678,304 652,368 608,420 550,456 480,474 402,478 388,420 388,388 460,380'}
-],lbls:[{n:'Centrum',x:382,y:92},{n:'Westwijk',x:192,y:192},{n:'Randwijck',x:590,y:192},{n:'Groenelaan',x:385,y:272},{n:'Bankras',x:242,y:402},{n:'Bovenkerk',x:542,y:422}]},
-
-'diemen':{vb:'0 0 760 680',sea:false,river:null,
-polys:[
-{n:'Diemen-Noord',pts:'152,82 268,52 390,46 498,62 540,130 500,180 420,200 340,194 260,180 196,150 152,110'},
-{n:'Diemen-Centrum',pts:'196,150 260,180 340,194 420,200 500,180 520,240 480,280 400,296 320,288 248,262 200,220'},
-{n:'Bergwijkpark',pts:'540,130 498,62 574,102 620,158 636,226 622,296 580,320 530,310 500,260 520,240 500,180'},
-{n:'Diemen-Zuid',pts:'200,220 248,262 320,288 400,296 480,280 530,310 580,320 586,354 532,398 462,424 382,432 302,420 230,392 170,350 126,296 108,232'}
-],lbls:[{n:'Diemen-Noord',x:330,y:132},{n:'Diemen-Centrum',x:348,y:234},{n:'Bergwijkpark',x:568,y:232},{n:'Diemen-Zuid',x:340,y:362}]},
-
-'fryslan':{vb:'0 0 760 680',sea:true,river:null,
-polys:[
-{n:'Vlieland',pts:'50,118 82,108 100,126 94,148 58,152 44,136'},
-{n:'Terschelling',pts:'84,108 172,88 205,100 200,120 132,130 80,122'},
-{n:'Ameland',pts:'295,75 370,63 392,76 385,95 304,98 286,86'},
-{n:'Schiermonnikoog',pts:'426,48 464,40 484,54 477,70 440,73 422,60'},
-{n:'Harlingen',pts:'70,168 108,156 122,178 108,210 82,215 62,200'},
-{n:'Waadhoeke',pts:'108,188 172,162 240,148 305,156 312,195 300,238 268,266 228,280 185,280 150,266 124,240 108,218'},
-{n:'Leeuwarden',pts:'305,156 372,140 430,145 462,168 468,208 450,248 418,272 380,280 346,278 312,262 300,238 312,195'},
-{n:'Tytsjerksteradiel',pts:'430,145 490,140 538,158 550,192 535,232 508,256 478,265 450,264 418,272 450,248 468,208 462,168'},
-{n:'Noardeast-Fryslân',pts:'490,140 548,132 598,148 628,178 632,215 618,250 590,272 558,282 535,272 535,232 550,192 538,158'},
-{n:'Dantumadiel',pts:'538,158 548,132 598,148 628,178 618,215 590,215 562,205 550,192'},
-{n:'Achtkarspelen',pts:'535,232 590,215 618,215 632,215 618,250 590,272 558,282 535,272'},
-{n:'Smallingerland',pts:'346,278 380,280 418,272 450,264 478,265 488,295 480,335 458,360 424,376 390,376 356,364 330,340 322,308 330,285'},
-{n:'De Fryske Marren',pts:'185,280 228,280 268,266 300,238 312,262 322,308 308,350 288,382 260,408 228,424 192,428 158,414 140,382 134,348 144,310 162,292'},
-{n:'Opsterland',pts:'330,285 356,364 390,376 402,410 390,448 362,468 328,472 295,462 268,438 250,410 255,370 270,342 288,316 312,308 322,308'},
-{n:'Heerenveen',pts:'424,376 458,360 480,335 488,295 525,302 558,322 568,358 555,398 528,426 495,440 462,443 440,430 420,404 416,384'},
-{n:'Ooststellingwerf',pts:'480,335 488,295 525,302 558,322 588,336 608,368 598,408 572,434 538,448 508,440 488,420 475,394 478,362'},
-{n:'Weststellingwerf',pts:'362,468 390,448 402,410 416,384 420,404 440,430 436,470 410,497 374,510 338,505 308,490 295,470 295,462 328,472'},
-{n:'Súdwest-Fryslân',pts:'62,200 82,215 108,210 124,240 108,265 94,302 84,344 88,386 105,424 124,454 150,472 180,486 228,490 268,470 250,410 260,408 228,424 192,428 158,414 140,382 134,348 144,310 162,292 140,258 122,232 108,210'}
-],lbls:[{n:'Vlieland',x:72,y:133},{n:'Terschelling',x:148,y:112},{n:'Ameland',x:338,y:89},{n:'Schiermonnikoog',x:452,y:59},{n:'Harlingen',x:92,y:188},{n:'Waadhoeke',x:205,y:225},{n:'Leeuwarden',x:368,y:222},{n:'Tytsjerksteradiel',x:466,y:213},{n:'Noardeast-Fryslân',x:572,y:203},{n:'Dantumadiel',x:558,y:178},{n:'Achtkarspelen',x:568,y:251},{n:'Smallingerland',x:406,y:323},{n:'De Fryske Marren',x:230,y:353},{n:'Opsterland',x:333,y:423},{n:'Heerenveen',x:492,y:403},{n:'Ooststellingwerf',x:533,y:393},{n:'Weststellingwerf',x:366,y:481},{n:'Súdwest-Fryslân',x:118,y:383}]}
+'den-haag':{viewBox:'0 0 250 190',sea:false,type:'hex',hexes:[
+  {n:'Scheveningen',cx:30,cy:30,r:28},{n:'Laak',cx:30,cy:92,r:28},{n:'Loosduinen',cx:30,cy:154,r:28},
+  {n:'Segbroek',cx:92,cy:61,r:28},{n:'Escamp',cx:92,cy:123,r:28},
+  {n:'Centrum',cx:154,cy:30,r:28},{n:'Statenkwartier',cx:154,cy:92,r:28},
+  {n:'Haagse Hout',cx:216,cy:61,r:28},{n:'Leidschenveen-Ypenburg',cx:216,cy:123,r:28}
+]},
+'rotterdam':{viewBox:'0 0 250 190',sea:false,type:'hex',hexes:[
+  {n:'Overschie',cx:30,cy:30,r:28},{n:'Delfshaven',cx:30,cy:92,r:28},
+  {n:'Noord',cx:92,cy:30,r:28},{n:'Centrum',cx:92,cy:92,r:28},{n:'Feijenoord',cx:92,cy:154,r:28},
+  {n:'Hillegersberg-Schiebroek',cx:154,cy:30,r:28},{n:'Kralingen-Crooswijk',cx:154,cy:92,r:28},
+  {n:'Prins Alexander',cx:216,cy:61,r:28},{n:'Pernis-Hoogvliet-Rozenburg',cx:216,cy:123,r:28}
+]},
+'utrecht':{viewBox:'0 0 250 255',sea:false,type:'hex',hexes:[
+  {n:'Noordwest',cx:30,cy:30,r:28},{n:'Overvecht',cx:92,cy:30,r:28},{n:'Noordoost',cx:154,cy:30,r:28},
+  {n:'West',cx:30,cy:92,r:28},{n:'Binnenstad',cx:92,cy:92,r:28},{n:'Oost',cx:154,cy:92,r:28},
+  {n:'Zuidwest',cx:30,cy:154,r:28},{n:'Zuid',cx:92,cy:154,r:28},{n:'Vleuten-De Meern',cx:154,cy:154,r:28},
+  {n:'Leidsche Rijn',cx:30,cy:216,r:28}
+]},
+'groningen':{viewBox:'0 0 250 255',sea:false,type:'hex',hexes:[
+  {n:'Hoogkerk',cx:30,cy:30,r:28},{n:'Paddepoel',cx:92,cy:30,r:28},{n:'Korrewegwijk',cx:154,cy:30,r:28},{n:'Lewenborg',cx:216,cy:30,r:28},
+  {n:'Binnenstad',cx:92,cy:92,r:28},{n:'Oosterparkwijk',cx:154,cy:92,r:28},
+  {n:'De Wijert',cx:30,cy:154,r:28},{n:'Haren',cx:92,cy:154,r:28},{n:'Meerstad',cx:154,cy:154,r:28},{n:'Ten Boer',cx:216,cy:154,r:28}
+]},
+'eindhoven':{viewBox:'0 0 250 190',sea:false,type:'hex',hexes:[
+  {n:'Westerpark',cx:30,cy:30,r:28},{n:'Woensel-Noord',cx:92,cy:30,r:28},{n:'Stratum',cx:154,cy:30,r:28},{n:'Tongelre',cx:216,cy:30,r:28},
+  {n:'Strijp',cx:30,cy:92,r:28},{n:'Centrum',cx:92,cy:92,r:28},{n:'Woensel-Zuid',cx:154,cy:92,r:28},
+  {n:'Gestel',cx:61,cy:154,r:28},{n:'Tivoli',cx:123,cy:154,r:28}
+]},
+'delft':{viewBox:'0 0 250 128',sea:false,type:'hex',hexes:[
+  {n:'Delft Noord',cx:30,cy:30,r:28},{n:'Wippolder',cx:92,cy:30,r:28},{n:'Binnenstad',cx:154,cy:30,r:28},{n:'Vrijenban',cx:216,cy:30,r:28},
+  {n:'Voorhof',cx:61,cy:92,r:28},{n:'Hof van Delft',cx:123,cy:92,r:28},{n:'Tanthof',cx:185,cy:92,r:28}
+]},
+'maastricht':{viewBox:'0 0 250 190',sea:false,type:'hex',hexes:[
+  {n:'Noord',cx:30,cy:30,r:28},{n:'Centrum',cx:92,cy:30,r:28},{n:'Wyck',cx:154,cy:30,r:28},{n:'Amby',cx:216,cy:30,r:28},
+  {n:'Malberg',cx:30,cy:92,r:28},{n:'Sint Pieter',cx:92,cy:92,r:28},{n:'Heer',cx:154,cy:92,r:28},
+  {n:'Wolder',cx:92,cy:154,r:28}
+]},
+'almere':{viewBox:'0 0 250 128',sea:true,type:'hex',hexes:[
+  {n:'Almere Haven',cx:30,cy:30,r:28},{n:'Almere Stad',cx:92,cy:30,r:28},{n:'Almere Buiten',cx:154,cy:30,r:28},{n:'Almere Hout',cx:216,cy:30,r:28},
+  {n:'Almere Poort',cx:61,cy:92,r:28},{n:'Almere Centrum',cx:123,cy:92,r:28}
+]},
+'amstelveen':{viewBox:'0 0 250 128',sea:false,type:'hex',hexes:[
+  {n:'Westwijk',cx:30,cy:30,r:28},{n:'Centrum',cx:92,cy:30,r:28},{n:'Randwijck',cx:154,cy:30,r:28},
+  {n:'Bankras',cx:61,cy:92,r:28},{n:'Groenelaan',cx:123,cy:92,r:28},{n:'Bovenkerk',cx:185,cy:92,r:28}
+]},
+'diemen':{viewBox:'0 0 250 128',sea:false,type:'hex',hexes:[
+  {n:'Diemen-Noord',cx:61,cy:30,r:28},{n:'Bergwijkpark',cx:154,cy:30,r:28},
+  {n:'Diemen-Centrum',cx:30,cy:92,r:28},{n:'Diemen-Zuid',cx:123,cy:92,r:28}
+]},
+'fryslan':{viewBox:'0 0 280 290',sea:true,type:'hex',hexes:[
+  {n:'Vlieland',cx:30,cy:30,r:28},{n:'Terschelling',cx:92,cy:30,r:28},{n:'Ameland',cx:154,cy:30,r:28},{n:'Schiermonnikoog',cx:216,cy:30,r:28},
+  {n:'Harlingen',cx:30,cy:92,r:28},{n:'Waadhoeke',cx:92,cy:92,r:28},{n:'Leeuwarden',cx:154,cy:92,r:28},{n:'Noardeast-Fryslân',cx:216,cy:92,r:28},
+  {n:'Súdwest-Fryslân',cx:30,cy:154,r:28},{n:'De Fryske Marren',cx:92,cy:154,r:28},{n:'Smallingerland',cx:154,cy:154,r:28},{n:'Tytsjerksteradiel',cx:216,cy:154,r:28},
+  {n:'Opsterland',cx:30,cy:216,r:28},{n:'Heerenveen',cx:92,cy:216,r:28},{n:'Weststellingwerf',cx:154,cy:216,r:28},{n:'Ooststellingwerf',cx:216,cy:216,r:28},
+  {n:'Dantumadiel',cx:216,cy:92,r:18},{n:'Achtkarspelen',cx:216,cy:154,r:18}
+]}
 };
+
 
 /* ═══════════════════════════════════════════
    STATE
@@ -763,77 +688,78 @@ function switchTab(tab){
 }
 
 /* ═══════════════════════════════════════════
-   SVG MAP
+   SVG MAP — HEXAGON
 ═══════════════════════════════════════════ */
 function buildMap(key){
   const cfg=MAPS[key];const city=CITIES[key];
   const svg=document.getElementById('dsvg');
-  svg.setAttribute('viewBox',cfg.vb);svg.innerHTML='';
+  svg.setAttribute('viewBox',cfg.viewBox);svg.innerHTML='';
   closeOverlay();
 
+  const [,,vbW,vbH]=cfg.viewBox.split(' ').map(Number);
   const bg=document.createElementNS(NS,'rect');
   bg.setAttribute('x','0');bg.setAttribute('y','0');
-  bg.setAttribute('width','760');bg.setAttribute('height','680');
+  bg.setAttribute('width',vbW);bg.setAttribute('height',vbH);
   bg.setAttribute('fill',cfg.sea?'#c8d8e8':'#ede8de');
   svg.appendChild(bg);
 
-  cfg.polys.forEach(poly=>{
-    const dist=city.districts.find(d=>d.n===poly.n);
-    const color=dist?pc(dist.w):'#ccc';
-    const el=document.createElementNS(NS,'polygon');
-    el.setAttribute('points',poly.pts);
-    el.setAttribute('fill',color);
-    el.setAttribute('stroke',cfg.sea?'#fff':'#f7f3ee');
-    el.setAttribute('stroke-width',cfg.sea?'1.5':'2');
-    el.setAttribute('class','dp');
-    if(dist){
-      el.addEventListener('click',e=>{e.stopPropagation();openOverlay(poly.n,dist,city);});
-    }
-    svg.appendChild(el);
-  });
+  // Hex grid
+  const mainHexes=cfg.hexes.filter(h=>h.r===28);
+  mainHexes.forEach(h=>{
+    const dist=city.districts.find(d=>d.n===h.n);
+    const color=dist?pc(dist.w):'#bbb';
+    const r=h.r,cx=h.cx,cy=h.cy;
+    const hr=r*0.866,rh=r*0.5;
+    const pts=`${cx},${cy-r} ${cx+hr},${cy-rh} ${cx+hr},${cy+rh} ${cx},${cy+r} ${cx-hr},${cy+rh} ${cx-hr},${cy-rh}`;
+    const poly=document.createElementNS(NS,'polygon');
+    poly.setAttribute('points',pts);
+    poly.setAttribute('fill',color);
+    poly.setAttribute('stroke','rgba(255,255,255,.5)');
+    poly.setAttribute('stroke-width','2');
+    poly.setAttribute('class','dp');
+    poly.addEventListener('mouseenter',()=>showTooltip(h.n,dist));
+    poly.addEventListener('mouseleave',hideTooltip);
+    if(dist){poly.addEventListener('click',e=>{e.stopPropagation();openOverlay(h.n,dist,city);});}
+    svg.appendChild(poly);
 
-  if(cfg.river){
-    const path=document.createElementNS(NS,'path');
-    path.setAttribute('d',cfg.river.d);path.setAttribute('fill','none');
-    path.setAttribute('stroke','rgba(100,160,220,.55)');path.setAttribute('stroke-width','4');
-    path.setAttribute('stroke-linecap','round');svg.appendChild(path);
-    const rt=document.createElementNS(NS,'text');
-    rt.setAttribute('x',cfg.river.lx);rt.setAttribute('y',cfg.river.ly);
-    rt.setAttribute('font-size','9');rt.setAttribute('font-family','sans-serif');
-    rt.setAttribute('fill','rgba(80,130,200,.8)');rt.setAttribute('font-style','italic');
-    rt.textContent=cfg.river.lt;svg.appendChild(rt);
-  }
-
-  // labels
-  const lblMap={};cfg.lbls.forEach(l=>lblMap[l.n]=l);
-  cfg.polys.forEach(poly=>{
-    const lbl=lblMap[poly.n];if(!lbl)return;
-    const dist=city.districts.find(d=>d.n===poly.n);
-    const short=poly.n.length>16?poly.n.split(/[-\s]/)[0]:poly.n;
+    const short=h.n.length>13?h.n.split(/[-\s]/)[0]:h.n;
     const t1=document.createElementNS(NS,'text');
-    t1.setAttribute('x',lbl.x);t1.setAttribute('y',lbl.y-5);
-    t1.setAttribute('text-anchor','middle');t1.setAttribute('font-size','8');
+    t1.setAttribute('x',cx);t1.setAttribute('y',cy-4);
+    t1.setAttribute('text-anchor','middle');t1.setAttribute('font-size','7');
     t1.setAttribute('font-family','DM Sans,sans-serif');t1.setAttribute('font-weight','500');
     t1.setAttribute('fill','rgba(255,255,255,.92)');t1.style.pointerEvents='none';
     t1.textContent=short;svg.appendChild(t1);
     if(dist){
       const t2=document.createElementNS(NS,'text');
-      t2.setAttribute('x',lbl.x);t2.setAttribute('y',lbl.y+9);
-      t2.setAttribute('text-anchor','middle');t2.setAttribute('font-size','9');
+      t2.setAttribute('x',cx);t2.setAttribute('y',cy+10);
+      t2.setAttribute('text-anchor','middle');t2.setAttribute('font-size','8');
       t2.setAttribute('font-family','Cormorant Garamond,Georgia,serif');t2.setAttribute('font-weight','700');
       t2.setAttribute('fill','rgba(255,255,255,.9)');t2.style.pointerEvents='none';
       t2.textContent=dist.pct+'%';svg.appendChild(t2);
     }
   });
 
-  svg.addEventListener('click',closeOverlay);
-
-  // legend
   const winners=[...new Set(city.districts.map(d=>d.w))];
   document.getElementById('map-legend').innerHTML=winners.map(w=>`<div class="mleg-item"><div class="mleg-sq" style="background:${pc(w)}"></div><span>${w}</span></div>`).join('');
 }
 
-/* ─── DISTRICT OVERLAY ─── */
+function showTooltip(name,dist){
+  if(!dist)return;
+  const tt=document.getElementById('map-tooltip');
+  document.getElementById('tt-district').textContent=name;
+  document.getElementById('tt-dot').style.background=pc(dist.w);
+  document.getElementById('tt-party').textContent=dist.w;
+  document.getElementById('tt-party').style.color='#f7f3ee';
+  document.getElementById('tt-pct').textContent=dist.pct+'%';
+  document.getElementById('tt-pct').style.color=pc(dist.w);
+  document.getElementById('tt-opk').textContent='Opkomst '+dist.opk+'%';
+  tt.classList.add('visible');
+}
+function hideTooltip(){document.getElementById('map-tooltip').classList.remove('visible');}
+
+/* ═══════════════════════════════════════════
+   DISTRICT OVERLAY
+═══════════════════════════════════════════ */
 function openOverlay(name,dist,city){
   document.getElementById('ov-title').textContent=name;
   const avgOpk=city.opkomst;
@@ -841,31 +767,37 @@ function openOverlay(name,dist,city){
   const cmp=dist.opk>=(avgOpk+8)?'Boven gemiddeld':dist.opk>=(avgOpk-8)?'Rond gemiddeld':'Onder gemiddeld';
   const max=city.results[0].pct;
 
-  let html=`<div class="d-meta">${city.name} · ${name}</div>`;
-  html+=`<div class="d-win-block" style="border-left-color:${pc(dist.w)};background:${pc(dist.w)}12">
-    <div><div class="d-win-lbl" style="color:${pc(dist.w)}">Winnaar</div><div class="d-win-nm" style="color:${pc(dist.w)}">${dist.w}</div></div>
-    <div class="d-win-pct" style="color:${pc(dist.w)}">${dist.pct}%</div>
+  let html=`<div style="font-size:9px;color:#7a746c;letter-spacing:.06em;margin-bottom:12px">${city.name} · ${name}</div>`;
+  html+=`<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding:10px 12px;margin-bottom:10px;border-left:4px solid ${pc(dist.w)};background:${pc(dist.w)}18">
+    <div><div style="font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:${pc(dist.w)};margin-bottom:3px">Winnaar</div>
+    <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;font-weight:700;color:${pc(dist.w)}">${dist.w}</div></div>
+    <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:900;color:${pc(dist.w)};flex-shrink:0;line-height:1">${dist.pct}%</div>
   </div>`;
-  html+=`<div class="d-opk-block">
-    <div class="d-opk-lbl">Opkomst</div>
-    <div class="d-opk-val" style="color:${clr}">${dist.opk}%</div>
-    <div class="d-opk-cmp">${cmp} (gem. ${avgOpk}%)</div>
+  html+=`<div style="padding:8px 10px;background:#f7f5f0;border-left:3px solid ${clr};margin-bottom:12px">
+    <div style="font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:2px">Opkomst</div>
+    <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:700;color:${clr};line-height:1.2">${dist.opk}%</div>
+    <div style="font-size:9px;color:#7a746c;margin-top:3px">${cmp} (gem. ${avgOpk}%)</div>
   </div>`;
-  html+=`<div class="d-bars-lbl">Partijen — uitslag gemeente</div>`;
+  html+=`<div style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #ddd8d0">Partijen — uitslag gemeente</div>`;
   city.results.forEach((r,i)=>{
     const bw=Math.round((r.pct/max)*100);
-    html+=`<div class="d-bar-row">
-      <span class="d-bar-rank">${i+1}</span>
-      <span class="d-bar-name" style="color:${pc(r.p)}">${r.p}</span>
-      <div class="d-bar-track"><div class="d-bar-fill" style="width:${bw}%;background:${pc(r.p)}"></div></div>
-      <span class="d-bar-pct" style="color:${pc(r.p)}">${r.pct}%</span>
+    html+=`<div style="display:flex;align-items:center;gap:5px;margin-bottom:5px">
+      <span style="font-size:9px;color:#7a746c;width:14px;flex-shrink:0">${i+1}</span>
+      <span style="font-size:10px;font-weight:500;width:92px;flex-shrink:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:${pc(r.p)}">${r.p}</span>
+      <div style="flex:1;background:#eae6de;height:5px"><div style="width:${bw}%;height:100%;background:${pc(r.p)}"></div></div>
+      <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:11px;font-weight:700;width:30px;text-align:right;flex-shrink:0;color:${pc(r.p)}">${r.pct}%</span>
     </div>`;
   });
-  html+=`<div style="font-size:9px;color:#7a746c;font-style:italic;margin-top:11px;padding-top:8px;border-top:1px solid #ddd8d0">Stemmen geaggregeerd per stadsdeel op basis van officiële uitslag.</div>`;
+  html+=`<div style="font-size:8.5px;color:#bbb;font-style:italic;margin-top:12px;padding-top:8px;border-top:1px solid #eee">Stemmen geaggregeerd per stadsdeel op basis van officiële uitslag.</div>`;
   document.getElementById('ov-body').innerHTML=html;
   document.getElementById('d-overlay').classList.add('open');
+  document.getElementById('ov-backdrop').classList.add('open');
 }
-function closeOverlay(){document.getElementById('d-overlay').classList.remove('open');}
+function closeOverlay(){
+  document.getElementById('d-overlay').classList.remove('open');
+  document.getElementById('ov-backdrop').classList.remove('open');
+}
+
 
 /* ═══════════════════════════════════════════
    PARTY BARS
