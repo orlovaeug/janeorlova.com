@@ -62,7 +62,7 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 
 /* SIDEBAR */
 .sidebar{}
-.nl-svg{width:100%;max-width:360px}
+.nl-svg{width:100%;max-width:100%;display:block}
 .nl-legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
 .leg-item{display:flex;align-items:center;gap:4px;font-size:9px;color:#7a746c}
 .leg-dot{width:7px;height:7px;border-radius:50%}
@@ -104,10 +104,10 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .tab-pane.active{display:block}
 
 /* KAART TAB */
-.kaart-grid{display:grid;grid-template-columns:1fr 190px;gap:36px;align-items:start}
-.map-wrap{position:relative;display:block;width:100%;line-height:0}
+.kaart-grid{display:grid;grid-template-columns:minmax(0,1fr) 185px;gap:28px;align-items:start}
+.map-wrap{position:relative;width:100%;line-height:0;overflow:hidden}
 .map-hint{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a746c;margin-bottom:10px}
-.district-svg{width:100%;display:block;aspect-ratio:760/680}
+.district-svg{width:100%;height:auto;display:block;min-height:300px}
 .dp{cursor:pointer;transition:opacity .15s,filter .15s;opacity:.78}
 .dp:hover{opacity:1;filter:brightness(1.1) drop-shadow(0 2px 6px rgba(0,0,0,.2))}
 
@@ -217,6 +217,9 @@ footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
 .foot-desc{font-size:11px;color:rgba(247,243,238,.5);line-height:1.65;max-width:300px}
 .foot-right{font-size:10px;color:rgba(247,243,238,.45);text-align:right;letter-spacing:.08em;line-height:2}
 
+@media(max-width:1100px){
+  .kaart-grid{grid-template-columns:1fr}
+}
 @media(max-width:800px){
   .map-layout{grid-template-columns:1fr}
   .sidebar{}
