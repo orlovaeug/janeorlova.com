@@ -2,1497 +2,1105 @@
 
 <html lang="nl">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9SV5Y8BZ24');
+  </script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GR2026 · Gemeenteuitslag — Evgeniya Orlova</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>GR2026 — Den Haag · Rotterdam · Utrecht · Eindhoven · Groningen · Delft · Maastricht · Almere · Amstelveen · Diemen · Fryslân</title>
 <style>
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:#f7f3ee;color:#1c1917;font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
-  a{color:inherit;text-decoration:none}
-  button{font-family:inherit;cursor:pointer;border:none;background:none}
-  ::selection{background:#8b2700;color:#fff}
-  ::-webkit-scrollbar{width:3px}
-  ::-webkit-scrollbar-thumb{background:#ddd8d0}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-  @keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  .ticker-inner{display:flex;gap:48px;white-space:nowrap;animation:ticker 28s linear infinite;width:max-content}
-  .map-path{transition:opacity 0.18s,filter 0.18s;cursor:pointer}
-  .map-path:hover{opacity:1!important;filter:brightness(1.12)}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{color-scheme:light!important;background:#fff!important;}
+body{background:#fff!important;color:#111!important;font-family:'JetBrains Mono',monospace;-webkit-text-size-adjust:100%;}
 
-.twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
-max-height:calc(100vh - 32px);display:flex;flex-direction:column;
-background:rgba(250,249,247,.78);color:#29261b;
--webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
-border:.5px solid rgba(255,255,255,.6);border-radius:14px;
-box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 12px 40px rgba(0,0,0,.18);
-font:11.5px/1.4 ui-sans-serif,system-ui,-apple-system,sans-serif;overflow:hidden}
-.twk-hd{display:flex;align-items:center;justify-content:space-between;
-padding:10px 8px 10px 14px;cursor:move;user-select:none}
-.twk-hd b{font-size:12px;font-weight:600;letter-spacing:.01em}
-.twk-x{appearance:none;border:0;background:transparent;color:rgba(41,38,27,.55);
-width:22px;height:22px;border-radius:6px;cursor:default;font-size:13px;line-height:1}
-.twk-x:hover{background:rgba(0,0,0,.06);color:#29261b}
-.twk-body{padding:2px 14px 14px;display:flex;flex-direction:column;gap:10px;
-overflow-y:auto;overflow-x:hidden;min-height:0;
-scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.15) transparent}
-.twk-body::-webkit-scrollbar{width:8px}
-.twk-body::-webkit-scrollbar-track{background:transparent;margin:2px}
-.twk-body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:4px;
-border:2px solid transparent;background-clip:content-box}
-.twk-body::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.25);
-border:2px solid transparent;background-clip:content-box}
-.twk-row{display:flex;flex-direction:column;gap:5px}
-.twk-row-h{flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
-.twk-lbl{display:flex;justify-content:space-between;align-items:baseline;
-color:rgba(41,38,27,.72)}
-.twk-lbl>span:first-child{font-weight:500}
-.twk-val{color:rgba(41,38,27,.5);font-variant-numeric:tabular-nums}
+.mast{background:#fff!important;border-bottom:3px solid #111;padding:10px 16px 7px;}
+.mast-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:7px;flex-wrap:wrap;}
+.mast-ttl{font-family:‘Playfair Display’,serif;font-size:clamp(15px,3.5vw,28px);font-weight:900;letter-spacing:-.02em;line-height:1.05;color:#111!important;}
+.mast-ttl em{font-style:italic;font-weight:400;color:#c0392b;}
+.mast-r{display:flex;align-items:flex-start;gap:8px;flex-shrink:0;}
 
-.twk-sect{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
-color:rgba(41,38,27,.45);padding:10px 0 0}
-.twk-sect:first-child{padding-top:0}
+.city-sw{display:flex;flex-wrap:wrap;gap:3px;max-width:480px;}
+.city-btn{font-family:‘JetBrains Mono’,monospace;font-size:9px;letter-spacing:.07em;text-transform:uppercase;padding:4px 8px;border:1.5px solid #ccc;background:#fff!important;color:#888!important;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .12s,color .12s,border-color .12s;white-space:nowrap;border-radius:2px;}
+.city-btn.active{background:#111!important;color:#fff!important;border-color:#111!important;}
+.city-btn:hover:not(.active){background:#f5f3ee!important;color:#111!important;border-color:#888!important;}
+.city-btn.fryslan-btn{border-color:#006633!important;color:#006633!important;}
+.city-btn.fryslan-btn.active{background:#006633!important;color:#fff!important;border-color:#006633!important;}
+.city-btn.fryslan-btn:hover:not(.active){background:#f0f7f2!important;color:#006633!important;}
 
-.twk-field{appearance:none;width:100%;height:26px;padding:0 8px;
-border:.5px solid rgba(0,0,0,.1);border-radius:7px;
-background:rgba(255,255,255,.6);color:inherit;font:inherit;outline:none}
-.twk-field:focus{border-color:rgba(0,0,0,.25);background:rgba(255,255,255,.85)}
-select.twk-field{padding-right:22px;
-background-image:url(“data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='rgba(0,0,0,.5)' d='M0 0h10L5 6z'/></svg>”);
-background-repeat:no-repeat;background-position:right 8px center}
+.mast-meta{font-size:9px;color:#888!important;text-align:right;letter-spacing:.06em;line-height:1.9;}
+.deck{display:flex;flex-wrap:wrap;border-top:1px solid #d0ccc2;padding-top:5px;}
+.di{display:flex;align-items:baseline;gap:4px;padding:2px 9px;border-right:1px solid #d0ccc2;white-space:nowrap;}
+.di:first-child{padding-left:0;}.di:last-child{border:none;}
+.dn{font-family:‘Playfair Display’,serif;font-size:15px;font-weight:700;color:#111!important;}
+.dl{font-size:8px;color:#888!important;letter-spacing:.1em;text-transform:uppercase;}
 
-.twk-slider{appearance:none;-webkit-appearance:none;width:100%;height:4px;margin:6px 0;
-border-radius:999px;background:rgba(0,0,0,.12);outline:none}
-.twk-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
-width:14px;height:14px;border-radius:50%;background:#fff;
-border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
-.twk-slider::-moz-range-thumb{width:14px;height:14px;border-radius:50%;
-background:#fff;border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+.tabs{background:#fff!important;display:flex;border-bottom:2px solid #111;padding:0 16px;}
+.tb{font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px;border:none;background:transparent!important;color:#888!important;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;font-family:‘JetBrains Mono’,monospace;-webkit-tap-highlight-color:transparent;}
+.tb.active{color:#111!important;font-weight:500;border-bottom-color:#c0392b;}
 
-.twk-seg{position:relative;display:flex;padding:2px;border-radius:8px;
-background:rgba(0,0,0,.06);user-select:none}
-.twk-seg-thumb{position:absolute;top:2px;bottom:2px;border-radius:6px;
-background:rgba(255,255,255,.9);box-shadow:0 1px 2px rgba(0,0,0,.12);
-transition:left .15s cubic-bezier(.3,.7,.4,1),width .15s}
-.twk-seg.dragging .twk-seg-thumb{transition:none}
-.twk-seg button{appearance:none;position:relative;z-index:1;flex:1;border:0;
-background:transparent;color:inherit;font:inherit;font-weight:500;height:22px;
-border-radius:6px;cursor:default;padding:0}
+#mapView{position:relative;width:100%;height:calc(100svh - 152px);min-height:360px;background:#ede8df!important;overflow:hidden;}
+#mapSvg{width:100%;height:100%;display:block;}
+.wp{stroke:#fff;stroke-width:2;cursor:pointer;opacity:0.84;transition:opacity .12s,stroke-width .12s;}
+.wp:hover,.wp:active{opacity:1;stroke-width:3;}
+.wp.sel{stroke:#111;stroke-width:3.5;opacity:1;}
+.ml{font-family:‘JetBrains Mono’,monospace;font-weight:500;fill:#fff;pointer-events:none;text-anchor:middle;dominant-baseline:middle;}
+.ml-n{font-size:10px;} .ml-s{font-size:8px;opacity:.88;}
+.mhint{position:absolute;top:10px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.94)!important;border:1px solid #bbb;padding:5px 14px;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#888!important;pointer-events:none;white-space:nowrap;}
+.ptyleg{position:absolute;bottom:10px;left:10px;background:rgba(255,255,255,.96)!important;border:1px solid #bbb;padding:9px 11px;max-width:calc(100vw - 20px);}
+.ptyleg-ttl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;color:#888!important;margin-bottom:5px;}
+.ptyleg-grid{display:flex;flex-wrap:wrap;gap:4px 10px;}
+.pty-item{display:flex;align-items:center;gap:4px;font-size:9px;color:#111!important;white-space:nowrap;}
+.pty-dot{width:9px;height:9px;flex-shrink:0;}
 
-.twk-toggle{position:relative;width:32px;height:18px;border:0;border-radius:999px;
-background:rgba(0,0,0,.15);transition:background .15s;cursor:default;padding:0}
-.twk-toggle[data-on=“1”]{background:#34c759}
-.twk-toggle i{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;
-background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .15s}
-.twk-toggle[data-on=“1”] i{transform:translateX(14px)}
+.overlay{display:none;position:absolute;top:0;right:0;bottom:0;width:min(360px,100%);background:#fff!important;border-left:2px solid #111;z-index:20;box-shadow:-6px 0 24px rgba(0,0,0,.18);flex-direction:column;}
+.overlay.open{display:flex;}
+.ov-hd{background:#111!important;color:#fff!important;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.ov-ttl{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;color:#fff!important;}
+.ov-cls{background:none;border:none;color:rgba(255,255,255,.7)!important;font-size:22px;cursor:pointer;line-height:1;padding:0 4px;-webkit-tap-highlight-color:transparent;}
+.ov-cls:hover{color:#fff!important;}
+.ov-bd{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:15px;background:#fff!important;}
+.ov-meta{font-size:9px;color:#888!important;letter-spacing:.06em;line-height:1.9;margin-bottom:11px;}
+.ov-win{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;margin-bottom:13px;border-left:4px solid;}
+.ovw-lbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:2px;}
+.ovw-nm{font-family:‘Playfair Display’,serif;font-size:15px;font-weight:700;}
+.ovw-pct{font-family:‘Playfair Display’,serif;font-size:28px;font-weight:900;}
+.ov-opkomst{padding:9px 11px;margin-bottom:13px;background:#f7f5f0!important;border-left:3px solid #888;}
+.opk-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:2px;}
+.opk-val{font-family:‘Playfair Display’,serif;font-size:22px;font-weight:700;}
+.opk-sub{font-size:9px;color:#888!important;margin-top:2px;}
+.sec-ttl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #d0ccc2;}
+.pr{display:flex;align-items:center;gap:5px;margin-bottom:5px;}
+.pr-k{font-size:9px;color:#888!important;width:14px;flex-shrink:0;}
+.pr-n{font-size:10px;font-weight:500;width:82px;flex-shrink:0;}
+.pr-b{flex:1;background:#eae6de;height:7px;}
+.pr-f{height:100%;}
+.pr-p{font-family:‘Playfair Display’,serif;font-size:12px;font-weight:700;width:34px;text-align:right;flex-shrink:0;}
+.ov-note{font-size:9px;color:#888!important;font-style:italic;margin-top:13px;padding-top:9px;border-top:1px solid #d0ccc2;line-height:1.7;}
 
-.twk-num{display:flex;align-items:center;height:26px;padding:0 0 0 8px;
-border:.5px solid rgba(0,0,0,.1);border-radius:7px;background:rgba(255,255,255,.6)}
-.twk-num-lbl{font-weight:500;color:rgba(41,38,27,.6);cursor:ew-resize;
-user-select:none;padding-right:8px}
-.twk-num input{flex:1;min-width:0;height:100%;border:0;background:transparent;
-font:inherit;font-variant-numeric:tabular-nums;text-align:right;padding:0 8px 0 0;
-outline:none;color:inherit;-moz-appearance:textfield}
-.twk-num input::-webkit-inner-spin-button,.twk-num input::-webkit-outer-spin-button{
--webkit-appearance:none;margin:0}
-.twk-num-unit{padding-right:8px;color:rgba(41,38,27,.45)}
+/* Fryslan sea background */
+.sea-bg{fill:#c8d8e8;}
+.sea-lines{stroke:#b0c4d8;stroke-width:.6;fill:none;opacity:.6;}
 
-.twk-btn{appearance:none;height:26px;padding:0 12px;border:0;border-radius:7px;
-background:rgba(0,0,0,.78);color:#fff;font:inherit;font-weight:500;cursor:default}
-.twk-btn:hover{background:rgba(0,0,0,.88)}
-.twk-btn.secondary{background:rgba(0,0,0,.06);color:inherit}
-.twk-btn.secondary:hover{background:rgba(0,0,0,.1)}
+/* ── CARTOGRAM (Fryslân) ── */
+#cartoView{display:none;background:#f5f2ec;overflow-y:auto;height:calc(100svh - 152px);}
+.carto-inner{padding:0;}
+.carto-hdr{padding:10px 16px 8px;border-bottom:1px solid #d0ccc2;display:flex;justify-content:space-between;align-items:center;}
+.carto-hdr-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888;}
+.carto-hdr-sub{font-size:9px;color:#888;letter-spacing:.06em;}
+.carto-rows{padding:12px 14px;display:flex;flex-direction:column;gap:3px;}
+.carto-row{display:flex;gap:3px;}
+.carto-cell{position:relative;cursor:pointer;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:5px 3px 6px;transition:filter .12s;overflow:hidden;}
+.carto-cell:hover{filter:brightness(1.1);}
+.carto-cell.sel{outline:2.5px solid #111;outline-offset:-2px;filter:brightness(1.12);}
+.carto-ann-badge{position:absolute;top:5px;left:50%;transform:translateX(-50%);width:16px;height:16px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:500;color:#111;}
+.carto-cn{font-size:9px;font-weight:500;color:#fff;text-align:center;line-height:1.2;text-shadow:0 1px 2px rgba(0,0,0,.4);}
+.carto-cs{font-size:7px;color:rgba(255,255,255,.78);text-align:center;margin-top:1px;text-shadow:0 1px 2px rgba(0,0,0,.35);}
+.carto-annbar{padding:7px 14px;border-top:1px solid #d0ccc2;display:flex;gap:14px;flex-wrap:wrap;}
+.carto-ann-item{display:flex;align-items:center;gap:5px;font-size:9px;color:#444;white-space:nowrap;}
+.carto-ann-num{width:15px;height:15px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:500;color:#fff;flex-shrink:0;}
+.carto-leg{padding:8px 14px 10px;display:flex;flex-wrap:wrap;gap:5px 14px;border-top:1px solid #d0ccc2;}
+.carto-leg-item{display:flex;align-items:center;gap:4px;font-size:9px;color:#444;}
+.carto-leg-sq{width:9px;height:9px;flex-shrink:0;}
+.carto-panel{display:none;background:#fff;border-top:2px solid #111;padding:14px 16px;}
+.carto-panel.open{display:block;}
+.carto-panel-close{float:right;background:none;border:none;font-size:18px;cursor:pointer;color:#888;line-height:1;}
+.carto-panel-close:hover{color:#111;}
+.carto-pname{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;color:#111;margin-bottom:2px;}
+.carto-pmeta{font-size:9px;color:#888;letter-spacing:.06em;margin-bottom:11px;}
+.carto-pwin{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;margin-bottom:11px;border-left:4px solid;}
+.carto-pwlbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:1px;}
+.carto-pwnm{font-family:‘Playfair Display’,serif;font-size:13px;font-weight:700;}
+.carto-pwpct{font-family:‘Playfair Display’,serif;font-size:26px;font-weight:900;}
+.carto-popk{padding:8px 10px;background:#f7f5f0;border-left:3px solid #888;margin-bottom:11px;font-size:9px;}
+.carto-ptitle{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #d0ccc2;}
+.carto-pr{display:flex;align-items:center;gap:5px;margin-bottom:4px;}
+.carto-prk{font-size:9px;color:#888;width:13px;flex-shrink:0;}
+.carto-prn{font-size:9px;font-weight:500;width:128px;flex-shrink:0;}
+.carto-prb{flex:1;background:#eae6de;height:6px;}
+.carto-prf{height:100%;}
+.carto-prp{font-family:‘Playfair Display’,serif;font-size:11px;font-weight:700;width:32px;text-align:right;flex-shrink:0;}
 
-.twk-swatch{appearance:none;-webkit-appearance:none;width:56px;height:22px;
-border:.5px solid rgba(0,0,0,.1);border-radius:6px;padding:0;cursor:default;
-background:transparent;flex-shrink:0}
-.twk-swatch::-webkit-color-swatch-wrapper{padding:0}
-.twk-swatch::-webkit-color-swatch{border:0;border-radius:5.5px}
-.twk-swatch::-moz-color-swatch{border:0;border-radius:5.5px}
+#listView{display:none;background:#fff!important;padding:18px;}
+.li-intro{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:13px;padding-bottom:7px;border-bottom:1px solid #d0ccc2;}
+table.wt{width:100%;border-collapse:collapse;min-width:480px;}
+.wt thead tr{border-bottom:2px solid #111;}
+.wt th{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#888!important;padding:6px 8px;text-align:left;font-weight:400;}
+.wt tbody tr.wr{border-bottom:1px solid #eae6de;cursor:pointer;}
+.wt tbody tr.wr.or,.wt tbody tr.wr:hover{background:#f9f8f5!important;}
+.wt td{padding:9px 8px;vertical-align:middle;}
+.wtn{font-family:‘Playfair Display’,serif;font-size:14px;font-weight:700;}
+.wtb{font-size:10px;font-weight:600;padding:2px 6px;border:1px solid;display:inline-block;white-space:nowrap;}
+.wtp{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;}
+.opk-badge{font-size:10px;font-weight:500;padding:2px 6px;background:#f0ece3;border:1px solid #ccc;}
+tr.popr{display:none;}tr.popr.open{display:table-row;}
+tr.popr td{padding:0;border-bottom:2px solid #111;}
+.popi{background:#f9f8f5!important;padding:16px 18px;}
+.poph{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3px;}
+.popt{font-family:‘Playfair Display’,serif;font-size:17px;font-weight:700;}
+.popc{font-size:9px;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:#888!important;}
+.popm{font-size:9px;color:#888!important;margin-bottom:13px;}
+.pop-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:600px){.pop-grid{grid-template-columns:1fr;}}
+.pop-sec-ttl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#888!important;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #d0ccc2;}
+.ppr{display:flex;align-items:center;gap:5px;margin-bottom:5px;}
+.ppr-k{font-size:9px;color:#888!important;width:12px;flex-shrink:0;}
+.ppr-n{font-size:10px;font-weight:600;width:80px;flex-shrink:0;}
+.ppr-b{flex:1;background:#eae6de;height:6px;}.ppr-f{height:100%;}
+.ppr-p{font-family:‘Playfair Display’,serif;font-size:12px;font-weight:700;width:30px;text-align:right;flex-shrink:0;}
 
+#demoView{display:none;background:#fff!important;padding:18px;}
+.demo-intro{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#888;margin-bottom:5px;padding-bottom:7px;border-bottom:1px solid #d0ccc2;}
+.demo-note{font-size:10px;color:#888;margin-bottom:13px;font-style:italic;line-height:1.7;}
+.demo-wrap{overflow-x:auto;}
+.demo-tbl{width:100%;border-collapse:collapse;min-width:900px;font-family:‘JetBrains Mono’,monospace;font-size:11px;}
+.demo-tbl thead tr{border-bottom:2px solid #111;}
+.demo-tbl th{padding:7px 8px;font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:#888;font-weight:400;text-align:left;}
+.demo-tbl th.r{text-align:right;}.demo-tbl th.c{text-align:center;}
+.demo-tbl tbody tr{border-bottom:1px solid #eae6de;}
+.demo-tbl tbody tr:nth-child(odd){background:#fafaf8!important;}
+.demo-tbl td{padding:9px 8px;vertical-align:middle;}
+.demo-foot{margin-top:13px;padding-top:9px;border-top:1px solid #d0ccc2;font-size:9px;color:#888;line-height:1.9;}
+
+footer{border-top:2px solid #111;padding:7px 16px;display:flex;justify-content:space-between;font-size:9px;color:#888!important;background:#fff!important;flex-wrap:wrap;gap:4px;letter-spacing:.05em;}
 </style>
+
 </head>
 <body>
-<div id="root"></div>
-<script>
 
-const C = { bg:’#f7f3ee’, ink:’#1c1917’, red:’#8b2700’, muted:’#7a746c’, border:’#ddd8d0’, card:’#ede9e2’, green:’#1a5c3a’ };
-
-/* ── PARTY COLORS ── */
-const PC = {
-‘Hart v/d Haag’:’#c0392b’,
-‘GL/PvdA’:’#2d8a2d’,
-‘D66’:’#007B5E’,
-‘VVD’:’#e17000’,
-‘DENK’:’#007888’,
-‘PvdD’:’#006830’,
-‘CDA’:’#1a7a42’,
-‘Leefbaar R.’:’#c0392b’,
-‘FvD’:’#781818’,
-‘SP’:’#aa0000’,
-‘PVV’:’#002878’,
-‘ChristenUnie’:’#4B92DB’,
-‘BBB’:’#8a7000’,
-‘BIJ1’:’#f05050’,
-‘STIP’:’#0060a0’,
-‘Hart voor Delft’:’#b03020’,
-‘Heerenveen Lokaal’:’#c05020’,
-‘Opsterlands Belang’:’#8b4513’,
-‘SAM Waadhoeke’:’#b05030’,
-‘FNP’:’#006633’,
-‘Leefbaar Terschelling’:’#7a3060’,
-‘AmelandEén’:’#4a6080’,
-‘Ons Belang’:’#888855’,
-‘Nieuw Lib. Vlieland’:’#4070a0’,
-‘Gem.bel. Dantumadiel’:’#607040’,
-‘Smallingerlands Belang’:’#708090’,
-‘Vrije Partij Oost.’:’#708040’,
-‘JA21’:’#1a3a6a’,
-‘Volt’:’#6820a0’,
-‘PvdA’:’#c00060’,
-‘GroenLinks’:’#2d8a2d’,
-‘Actief v. Amstelveen’:’#c0392b’,
-‘Onafh. Diemen’:’#555555’,
-‘Overig’:’#aaa9a0’
-};
-
-/* ══════════════════════════════════════════════════
-CITIES — correct data from official results
-══════════════════════════════════════════════════ */
-const CITIES = {
-
-‘den-haag’: {
-name: ‘Den Haag’, stemmen: 202203, opkomst: 46.5, zetels: 50,
-lon: 4.28, lat: 52.07,
-results: [
-{p:‘Hart v/d Haag’, pct:36.2, z:19},
-{p:‘GL/PvdA’,        pct:17.1, z:9},
-{p:‘D66’,            pct:17.1, z:9},
-{p:‘VVD’,            pct:7.6,  z:4},
-{p:‘DENK’,           pct:7.6,  z:4},
-{p:‘PvdD’,           pct:5.7,  z:3},
-{p:‘CDA’,            pct:3.8,  z:2},
-{p:‘Overig’,         pct:4.9,  z:0},
-],
-districts: [
-{n:‘Scheveningen’,             w:‘Hart v/d Haag’, pct:38.2, opk:37.0},
-{n:‘Loosduinen’,               w:‘Hart v/d Haag’, pct:52.6, opk:38.5},
-{n:‘Segbroek’,                 w:‘Hart v/d Haag’, pct:31.8, opk:42.0},
-{n:‘Centrum’,                  w:‘GL/PvdA’,       pct:26.4, opk:50.5},
-{n:‘Laak’,                     w:‘Hart v/d Haag’, pct:33.5, opk:36.2},
-{n:‘Haagse Hout’,              w:‘Hart v/d Haag’, pct:35.7, opk:44.5},
-{n:‘Statenkwartier’,           w:‘D66’,           pct:27.3, opk:48.5},
-{n:‘Escamp’,                   w:‘Hart v/d Haag’, pct:49.4, opk:42.8},
-{n:‘Leidschenveen-Ypenburg’,   w:‘Hart v/d Haag’, pct:45.9, opk:45.0},
-],
-map: ‘den-haag’
-},
-
-‘rotterdam’: {
-name: ‘Rotterdam’, stemmen: 211097, opkomst: 40.3, zetels: 45,
-lon: 4.48, lat: 51.92,
-results: [
-{p:‘GL/PvdA’,     pct:22.5, z:11},
-{p:‘Leefbaar R.’, pct:22.5, z:11},
-{p:‘D66’,         pct:10.0, z:5},
-{p:‘VVD’,         pct:10.0, z:5},
-{p:‘DENK’,        pct:8.0,  z:4},
-{p:‘FvD’,         pct:6.0,  z:3},
-{p:‘Overig’,      pct:21.0, z:6},
-],
-districts: [
-{n:‘Centrum’,                    w:‘GL/PvdA’,     pct:31.6, opk:48.8},
-{n:‘Delfshaven’,                 w:‘DENK’,        pct:18.6, opk:33.7},
-{n:‘Noord’,                      w:‘GL/PvdA’,     pct:31.1, opk:44.0},
-{n:‘Hillegersberg-Schiebroek’,   w:‘Leefbaar R.’, pct:20.8, opk:58.7},
-{n:‘Kralingen-Crooswijk’,        w:‘GL/PvdA’,     pct:19.7, opk:51.5},
-{n:‘Prins Alexander’,            w:‘Leefbaar R.’, pct:32.3, opk:40.6},
-{n:‘Feijenoord’,                 w:‘Leefbaar R.’, pct:21.2, opk:30.1},
-{n:‘Overschie’,                  w:‘Leefbaar R.’, pct:22.3, opk:45.9},
-{n:‘Pernis-Hoogvliet-Rozenburg’, w:‘Leefbaar R.’, pct:39.1, opk:37.7},
-],
-map: ‘rotterdam’
-},
-
-‘utrecht’: {
-name: ‘Utrecht’, stemmen: 178000, opkomst: 60.7, zetels: 45,
-lon: 5.12, lat: 52.09,
-results: [
-{p:‘GL/PvdA’,     pct:31.1, z:14},
-{p:‘D66’,         pct:20.0, z:9},
-{p:‘VVD’,         pct:11.1, z:5},
-{p:‘CDA’,         pct:6.7,  z:3},
-{p:‘PvdD’,        pct:4.4,  z:2},
-{p:‘Overig’,      pct:26.7, z:12},
-],
-districts: [
-{n:‘Binnenstad’,      w:‘GL/PvdA’, pct:32.0, opk:65.0},
-{n:‘Oost’,            w:‘GL/PvdA’, pct:31.0, opk:72.0},
-{n:‘Noordoost’,       w:‘GL/PvdA’, pct:34.0, opk:76.0},
-{n:‘Overvecht’,       w:‘GL/PvdA’, pct:20.0, opk:40.0},
-{n:‘Noordwest’,       w:‘GL/PvdA’, pct:27.0, opk:58.0},
-{n:‘West’,            w:‘GL/PvdA’, pct:30.0, opk:65.0},
-{n:‘Zuidwest’,        w:‘GL/PvdA’, pct:23.0, opk:52.0},
-{n:‘Zuid’,            w:‘GL/PvdA’, pct:28.0, opk:64.0},
-{n:‘Leidsche Rijn’,   w:‘D66’,     pct:25.0, opk:55.0},
-{n:‘Vleuten-De Meern’,w:‘VVD’,     pct:22.0, opk:63.0},
-],
-map: ‘utrecht’
-},
-
-‘groningen’: {
-name: ‘Groningen’, stemmen: 115344, opkomst: 58.0, zetels: 39,
-lon: 6.57, lat: 53.22,
-results: [
-{p:‘GL/PvdA’,  pct:38.5, z:15},
-{p:‘D66’,      pct:17.9, z:7},
-{p:‘VVD’,      pct:15.4, z:6},
-{p:‘PvdD’,     pct:12.8, z:5},
-{p:‘CDA’,      pct:12.8, z:5},
-{p:‘Overig’,   pct:2.6,  z:1},
-],
-districts: [
-{n:‘Binnenstad’,    w:‘GL/PvdA’, pct:28.0, opk:65.0},
-{n:‘Oosterparkwijk’,w:‘GL/PvdA’, pct:29.0, opk:64.0},
-{n:‘Korrewegwijk’,  w:‘GL/PvdA’, pct:25.0, opk:54.0},
-{n:‘Paddepoel’,     w:‘GL/PvdA’, pct:25.0, opk:55.0},
-{n:‘Lewenborg’,     w:‘GL/PvdA’, pct:21.0, opk:50.0},
-{n:‘Hoogkerk’,      w:‘GL/PvdA’, pct:21.0, opk:56.0},
-{n:‘De Wijert’,     w:‘GL/PvdA’, pct:26.0, opk:60.0},
-{n:‘Haren’,         w:‘GL/PvdA’, pct:20.0, opk:65.0},
-{n:‘Ten Boer’,      w:‘GL/PvdA’, pct:18.0, opk:58.0},
-{n:‘Meerstad’,      w:‘GL/PvdA’, pct:20.0, opk:52.0},
-],
-map: ‘groningen’
-},
-
-‘eindhoven’: {
-name: ‘Eindhoven’, stemmen: 95000, opkomst: 49.1, zetels: 39,
-lon: 5.47, lat: 51.44,
-results: [
-{p:‘GL/PvdA’, pct:25.6, z:10},
-{p:‘VVD’,     pct:17.9, z:7},
-{p:‘D66’,     pct:12.8, z:5},
-{p:‘PvdD’,    pct:10.3, z:4},
-{p:‘DENK’,    pct:7.7,  z:3},
-{p:‘Overig’,  pct:25.7, z:10},
-],
-districts: [
-{n:‘Centrum’,      w:‘GL/PvdA’, pct:30.0, opk:55.0},
-{n:‘Woensel-Noord’,w:‘GL/PvdA’, pct:24.0, opk:42.0},
-{n:‘Woensel-Zuid’, w:‘GL/PvdA’, pct:27.0, opk:48.0},
-{n:‘Stratum’,      w:‘GL/PvdA’, pct:22.0, opk:50.0},
-{n:‘Tongelre’,     w:‘GL/PvdA’, pct:20.0, opk:52.0},
-{n:‘Westerpark’,   w:‘GL/PvdA’, pct:26.0, opk:46.0},
-{n:‘Gestel’,       w:‘GL/PvdA’, pct:23.0, opk:50.0},
-{n:‘Strijp’,       w:‘GL/PvdA’, pct:26.0, opk:47.0},
-{n:‘Tivoli’,       w:‘VVD’,     pct:19.0, opk:53.0},
-],
-map: ‘eindhoven’
-},
-
-‘delft’: {
-name: ‘Delft’, stemmen: 47496, opkomst: 54.7, zetels: 39,
-lon: 4.36, lat: 52.01,
-results: [
-{p:‘GL/PvdA’,       pct:25.6, z:10},
-{p:‘D66’,           pct:23.1, z:9},
-{p:‘Hart voor Delft’,pct:17.9, z:7},
-{p:‘STIP’,          pct:17.9, z:7},
-{p:‘VVD’,           pct:10.3, z:4},
-{p:‘Overig’,        pct:5.2,  z:2},
-],
-districts: [
-{n:‘Binnenstad’,   w:‘D66’,           pct:21.0, opk:62.0},
-{n:‘Voorhof’,      w:‘Hart voor Delft’,pct:20.0, opk:48.0},
-{n:‘Tanthof’,      w:‘Hart voor Delft’,pct:18.0, opk:52.0},
-{n:‘Wippolder’,    w:‘D66’,           pct:20.0, opk:55.0},
-{n:‘Vrijenban’,    w:‘GL/PvdA’,       pct:18.0, opk:55.0},
-{n:‘Hof van Delft’,w:‘D66’,           pct:18.0, opk:57.0},
-{n:‘Delft Noord’,  w:‘GL/PvdA’,       pct:16.0, opk:52.0},
-],
-map: ‘delft’
-},
-
-‘maastricht’: {
-name: ‘Maastricht’, stemmen: 47926, opkomst: 46.5, zetels: 39,
-lon: 5.69, lat: 50.85,
-results: [
-{p:‘D66’,      pct:23.1, z:9},
-{p:‘CDA’,      pct:20.5, z:8},
-{p:‘GroenLinks’,pct:15.4, z:6},
-{p:‘PvdA’,     pct:12.8, z:5},
-{p:‘VVD’,      pct:12.8, z:5},
-{p:‘Overig’,   pct:15.4, z:6},
-],
-districts: [
-{n:‘Centrum’,    w:‘D66’,  pct:17.0, opk:55.0},
-{n:‘Wyck’,       w:‘D66’,  pct:18.0, opk:52.0},
-{n:‘Noord’,      w:‘D66’,  pct:12.0, opk:44.0},
-{n:‘Heer’,       w:‘CDA’,  pct:16.0, opk:46.0},
-{n:‘Malberg’,    w:‘CDA’,  pct:10.0, opk:38.0},
-{n:‘Sint Pieter’,w:‘CDA’,  pct:12.0, opk:44.0},
-{n:‘Amby’,       w:‘CDA’,  pct:15.0, opk:50.0},
-{n:‘Wolder’,     w:‘CDA’,  pct:13.0, opk:42.0},
-],
-map: ‘maastricht’
-},
-
-‘almere’: {
-name: ‘Almere’, stemmen: 69389, opkomst: 40.7, zetels: 39,
-lon: 5.22, lat: 52.37,
-results: [
-{p:‘GL/PvdA’, pct:25.6, z:10},
-{p:‘VVD’,     pct:17.9, z:7},
-{p:‘JA21’,    pct:17.9, z:7},
-{p:‘FvD’,     pct:15.4, z:6},
-{p:‘D66’,     pct:12.8, z:5},
-{p:‘Overig’,  pct:10.4, z:4},
-],
-districts: [
-{n:‘Almere Stad’,   w:‘GL/PvdA’, pct:15.0, opk:40.0},
-{n:‘Almere Haven’,  w:‘GL/PvdA’, pct:15.0, opk:38.0},
-{n:‘Almere Buiten’, w:‘GL/PvdA’, pct:15.0, opk:41.0},
-{n:‘Almere Poort’,  w:‘GL/PvdA’, pct:15.0, opk:40.0},
-{n:‘Almere Hout’,   w:‘VVD’,     pct:13.0, opk:44.0},
-{n:‘Almere Centrum’,w:‘GL/PvdA’, pct:15.0, opk:42.0},
-],
-map: ‘almere’
-},
-
-‘amstelveen’: {
-name: ‘Amstelveen’, stemmen: 36284, opkomst: 53.9, zetels: 33,
-lon: 4.87, lat: 52.31,
-results: [
-{p:‘GL/PvdA’,            pct:24.2, z:8},
-{p:‘VVD’,                pct:21.2, z:7},
-{p:‘D66’,                pct:18.2, z:6},
-{p:‘Actief v. Amstelveen’,pct:12.1, z:4},
-{p:‘FvD’,                pct:6.1,  z:2},
-{p:‘Overig’,             pct:18.2, z:6},
-],
-districts: [
-{n:‘Centrum’,   w:‘GL/PvdA’, pct:26.0, opk:56.0},
-{n:‘Westwijk’,  w:‘VVD’,     pct:23.0, opk:52.0},
-{n:‘Randwijck’, w:‘GL/PvdA’, pct:22.0, opk:58.0},
-{n:‘Groenelaan’,w:‘GL/PvdA’, pct:24.0, opk:54.0},
-{n:‘Bankras’,   w:‘VVD’,     pct:22.0, opk:50.0},
-{n:‘Bovenkerk’, w:‘GL/PvdA’, pct:20.0, opk:52.0},
-],
-map: ‘amstelveen’
-},
-
-‘diemen’: {
-name: ‘Diemen’, stemmen: 11547, opkomst: 47.0, zetels: 19,
-lon: 4.97, lat: 52.34,
-results: [
-{p:‘GL/PvdA’,      pct:36.8, z:12},  /* largest single party */
-{p:‘D66’,          pct:21.1, z:7},
-{p:‘VVD’,          pct:15.8, z:5},
-{p:‘Onafh. Diemen’,pct:15.8, z:5},
-{p:‘Overig’,       pct:10.5, z:4},
-],
-districts: [
-{n:‘Diemen-Noord’, w:‘GL/PvdA’,      pct:36.0, opk:48.0},
-{n:‘Diemen-Zuid’,  w:‘GL/PvdA’,      pct:35.0, opk:46.0},
-{n:‘Diemen-Centrum’,w:‘GL/PvdA’,     pct:27.0, opk:46.0},
-{n:‘Bergwijkpark’, w:‘GL/PvdA’,      pct:30.5, opk:46.0},
-],
-map: ‘diemen’
-},
-
-‘fryslan’: {
-name: ‘Fryslân’, stemmen: 270000, opkomst: 55.0, zetels: 43,
-lon: 5.80, lat: 53.00,
-results: [
-{p:‘GL/PvdA’, pct:20.9, z:9},
-{p:‘CDA’,     pct:20.9, z:9},
-{p:‘FNP’,     pct:16.3, z:7},
-{p:‘D66’,     pct:11.6, z:5},
-{p:‘VVD’,     pct:9.3,  z:4},
-{p:‘Overig’,  pct:21.0, z:9},
-],
-districts: [
-{n:‘Leeuwarden’,          w:‘GL/PvdA’,            pct:22.4, opk:57.0},
-{n:‘Súdwest-Fryslân’,     w:‘CDA’,                pct:22.6, opk:53.0},
-{n:‘Smallingerland’,      w:‘CDA’,                pct:15.1, opk:58.0},
-{n:‘Heerenveen’,          w:‘Heerenveen Lokaal’,  pct:18.3, opk:56.0},
-{n:‘De Fryske Marren’,    w:‘FNP’,                pct:20.2, opk:53.0},
-{n:‘Noardeast-Fryslân’,   w:‘CDA’,                pct:17.9, opk:54.0},
-{n:‘Waadhoeke’,           w:‘SAM Waadhoeke’,      pct:24.5, opk:56.0},
-{n:‘Opsterland’,          w:‘Opsterlands Belang’, pct:36.5, opk:55.0},
-{n:‘Tytsjerksteradiel’,   w:‘CDA’,                pct:20.7, opk:57.0},
-{n:‘Achtkarspelen’,       w:‘FNP’,                pct:21.9, opk:52.0},
-{n:‘Dantumadiel’,         w:‘Gem.bel. Dantumadiel’,pct:23.3, opk:52.0},
-{n:‘Weststellingwerf’,    w:‘Smallingerlands Belang’,pct:16.1, opk:52.0},
-{n:‘Ooststellingwerf’,    w:‘Vrije Partij Oost.’, pct:18.6, opk:53.0},
-{n:‘Harlingen’,           w:‘CDA’,                pct:26.2, opk:55.0},
-{n:‘Ameland’,             w:‘AmelandEén’,         pct:30.1, opk:62.0},
-{n:‘Terschelling’,        w:‘Leefbaar Terschelling’,pct:21.8, opk:60.0},
-{n:‘Schiermonnikoog’,     w:‘Ons Belang’,         pct:37.3, opk:65.0},
-{n:‘Vlieland’,            w:‘Nieuw Lib. Vlieland’,pct:36.6, opk:58.0},
-],
-map: ‘fryslan’
-},
-};
-
-/* ══════════════════════════════════════════════════
-DEMOGRAPHICS — correct CBS data from file 1
-══════════════════════════════════════════════════ */
-const DEMOGRAPHICS = {
-‘den-haag’: [
-{n:‘Scheveningen’,            inw:‘~76k’,  woz:‘€395k’, ned:50, nw:28, wm:22, koop:‘42%’, profiel:‘Kustplaats met haven. Mix van vissersbuurten, welvarend Statenkwartier en Kijkduin. Hart v/d Haag 38%.’},
-{n:‘Loosduinen’,              inw:‘~54k’,  woz:‘€340k’, ned:52, nw:30, wm:18, koop:‘38%’, profiel:‘Rustige duinwijk. Laag niet-westers aandeel. Hart v/d Haag dominant met 53% — sterkste score van de stad.’},
-{n:‘Segbroek’,                inw:‘~66k’,  woz:‘€430k’, ned:55, nw:24, wm:21, koop:‘45%’, profiel:‘Groene woonwijk. Gentrificering. Hart v/d Haag 32%, GL/PvdA 25% — relatief competitief stadsdeel.’},
-{n:‘Centrum’,                 inw:‘~90k’,  woz:‘€470k’, ned:40, nw:32, wm:28, koop:‘32%’, profiel:‘Binnenhof, Malieveld, Hofkwartier. Studenten, expats. Enige deel waar GL/PvdA (26%) Hart v/d Haag (21%) verslaat.’},
-{n:‘Laak’,                    inw:‘~52k’,  woz:‘€305k’, ned:35, nw:48, wm:17, koop:‘28%’, profiel:‘Schilderswijk, Transvaal. Hoogste niet-westers aandeel (48%). DENK bijna winnaar. Laagste WOZ.’},
-{n:‘Haagse Hout’,             inw:‘~42k’,  woz:‘€520k’, ned:60, nw:22, wm:18, koop:‘58%’, profiel:‘Haagse Bos, Clingendael. Meest autochtone stadsdeel. Hoogste WOZ van de stad.’},
-{n:‘Statenkwartier’,          inw:‘~82k’,  woz:‘€495k’, ned:55, nw:24, wm:21, koop:‘48%’, profiel:‘Bezuidenhout, Benoordenhout. Hoog opgeleid. D66 wint (27%) — enige deel buiten Centrum zonder Hart v/d Haag.’},
-{n:‘Escamp’,                  inw:‘~95k’,  woz:‘€310k’, ned:38, nw:42, wm:20, koop:‘30%’, profiel:‘Grootste stadsdeel. Bouwlust, Moerwijk. Sociale huur. Hart v/d Haag 49% — absoluut sterkste score.’},
-{n:‘Leidschenveen-Ypenburg’,  inw:‘~56k’,  woz:‘€420k’, ned:58, nw:24, wm:18, koop:‘52%’, profiel:‘Nieuwbouwgebied jaren 90–2010. Jonge gezinnen. Hart v/d Haag 46%.’},
-],
-‘rotterdam’: [
-{n:‘Centrum’,                   inw:‘~82k’, woz:‘€480k’, ned:45, nw:30, wm:25, koop:‘28%’, profiel:‘Binnenstad, Coolsingel, Erasmusbrug. Studenten, expats. Hoogste opkomst (49%). GL/PvdA 32%.’},
-{n:‘Delfshaven’,                inw:‘~73k’, woz:‘€310k’, ned:32, nw:50, wm:18, koop:‘25%’, profiel:‘Historische havenwijk. Spangen, Bospolder. Laagste opkomst (34%). DENK sterk (19%).’},
-{n:‘Noord’,                     inw:‘~81k’, woz:‘€370k’, ned:48, nw:32, wm:20, koop:‘32%’, profiel:‘Bergpolder, Blijdorp, Oude Noorden. GL/PvdA wint (31%).’},
-{n:‘Hillegersberg-Schiebroek’,  inw:‘~55k’, woz:‘€530k’, ned:65, nw:18, wm:17, koop:‘62%’, profiel:‘Meest welvarend. Hoogste opkomst (59%). Leefbaar 21%, GL/PvdA 19%, VVD 18%.’},
-{n:‘Kralingen-Crooswijk’,       inw:‘~62k’, woz:‘€420k’, ned:52, nw:28, wm:20, koop:‘42%’, profiel:‘Kralingse Plas. GL/PvdA, VVD en Leefbaar elk ~17-20%. Meest competitief.’},
-{n:‘Prins Alexander’,           inw:‘~89k’, woz:‘€345k’, ned:50, nw:32, wm:18, koop:‘38%’, profiel:‘Ommoord, Zevenkamp. Leefbaar domineert (32%). Lage opkomst (41%).’},
-{n:‘Feijenoord’,                inw:‘~75k’, woz:‘€285k’, ned:28, nw:55, wm:17, koop:‘22%’, profiel:‘Afrikaanderwijk. Meest divers. Laagste opkomst (30%). DENK 18%, Leefbaar 21%.’},
-{n:‘Overschie’,                 inw:‘~18k’, woz:‘€385k’, ned:52, nw:28, wm:20, koop:‘40%’, profiel:‘Kleinste gebied. Leefbaar 22%, GL/PvdA 19%.’},
-{n:‘Pernis-Hoogvliet-Rozenburg’,inw:‘~68k’, woz:‘€310k’, ned:58, nw:26, wm:16, koop:‘52%’, profiel:‘Haveneilanden. Sterk autochtoon. Leefbaar 39%, FvD 11% — sterkste FvD-score.’},
-],
-};
-
-/* ══════════════════════════════════════════════════
-POLYGON MAP DATA — one SVG per city
-══════════════════════════════════════════════════ */
-const MAP_CONFIGS = {
-
-‘den-haag’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Scheveningen’,           pts:‘60,155 95,105 145,62 205,32 272,15 352,10 350,110 310,155 280,185 250,205 220,200 190,185 155,170 115,158 80,152’},
-{n:‘Loosduinen’,             pts:‘60,155 80,152 115,158 155,170 190,185 220,200 205,245 195,290 178,335 160,375 138,415 115,448 90,475 65,492 45,490 25,465 10,420 8,358 15,290 33,230’},
-{n:‘Segbroek’,               pts:‘220,200 250,205 280,185 310,155 350,110 380,122 395,148 388,175 370,200 348,218 325,228 300,232 278,228 258,218 238,208 220,200’},
-{n:‘Centrum’,                pts:‘352,10 435,14 445,65 440,100 428,125 415,140 400,150 380,122 350,110’},
-{n:‘Laak’,                   pts:‘435,14 512,24 535,55 550,85 558,115 550,145 530,165 508,178 482,185 458,185 440,178 428,160 428,125 440,100 445,65’},
-{n:‘Haagse Hout’,            pts:‘512,24 582,45 638,78 678,118 708,165 722,218 726,275 720,338 702,398 673,452 660,448 638,432 615,415 592,395 568,372 548,348 528,320 512,295 500,268 495,240 488,215 478,195 458,185 482,185 508,178 530,165 550,145 558,115 550,85 535,55’},
-{n:‘Statenkwartier’,         pts:‘178,335 195,290 205,245 220,200 238,208 258,218 278,228 300,232 325,228 348,218 370,200 388,175 395,148 415,140 428,160 440,178 458,185 478,195 488,215 495,240 500,268 495,298 482,325 462,348 438,368 410,385 380,398 350,408 318,415 288,418 260,415 235,408 208,396 185,382 170,362’},
-{n:‘Escamp’,                 pts:‘65,492 90,475 115,448 138,415 160,375 170,362 185,382 208,396 235,408 260,415 288,418 318,415 338,425 350,445 355,470 348,500 330,528 305,552 272,572 238,585 200,590 165,582 133,562 100,530 72,498’},
-{n:‘Leidschenveen-Ypenburg’, pts:‘660,448 673,452 636,500 588,543 535,576 475,601 408,617 338,621 268,615 238,585 272,572 305,552 330,528 348,500 355,470 350,445 365,432 388,418 415,408 445,400 475,395 500,390 520,382 545,368 565,348 580,325 592,305 600,280 605,255 608,228 610,200 620,178 635,158 648,140 660,120 672,142 692,168 708,198 720,230 726,275 720,338 702,398’},
-],
-labels: [
-{n:‘Scheveningen’,          x:210, y:105},
-{n:‘Loosduinen’,            x:105, y:330},
-{n:‘Segbroek’,              x:295, y:200},
-{n:‘Centrum’,               x:392, y:75},
-{n:‘Laak’,                  x:492, y:105},
-{n:‘Haagse Hout’,           x:590, y:310},
-{n:‘Statenkwartier’,        x:340, y:310},
-{n:‘Escamp’,                x:205, y:490},
-{n:‘Leidschenveen-Ypenburg’,x:520, y:530},
-],
-river: null,
-riverLabel: null,
-},
-
-‘rotterdam’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Overschie’,                  pts:‘85,90 150,55 195,52 220,68 230,95 215,125 190,145 160,155 128,148 98,132’},
-{n:‘Delfshaven’,                 pts:‘150,55 225,32 265,38 285,62 290,95 278,130 258,158 235,175 205,185 182,178 160,155 190,145 215,125 230,95 220,68 195,52’},
-{n:‘Centrum’,                    pts:‘265,38 310,18 355,20 385,32 400,55 405,80 398,108 378,132 350,148 320,155 295,148 278,130 285,62’},
-{n:‘Noord’,                      pts:‘235,175 258,158 278,130 295,148 320,155 350,148 378,132 398,108 412,130 418,165 408,200 388,225 360,242 328,250 295,248 268,238 245,218’},
-{n:‘Hillegersberg-Schiebroek’,   pts:‘355,20 400,14 485,20 530,30 555,52 558,82 545,115 522,142 492,158 460,165 428,162 412,148 412,130 398,108 405,80 400,55 385,32’},
-{n:‘Kralingen-Crooswijk’,        pts:‘412,130 412,148 428,162 460,165 492,158 520,170 535,198 528,228 508,252 482,268 452,272 422,265 396,248 388,225 408,200 418,165’},
-{n:‘Prins Alexander’,            pts:‘530,30 560,36 625,62 680,100 720,148 742,202 748,260 738,305 715,338 682,360 645,368 610,362 578,342 550,312 535,278 528,248 528,228 535,198 520,170 492,158 522,142 545,115 558,82 555,52’},
-{n:‘Feijenoord’,                 pts:‘205,185 235,175 245,218 268,238 295,248 328,250 360,242 388,225 396,248 422,265 452,272 482,268 508,252 528,248 535,278 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210’},
-{n:‘Pernis-Hoogvliet-Rozenburg’, pts:‘52,364 90,415 140,458 200,492 270,516 340,530 410,534 480,528 545,514 600,492 650,460 690,420 720,372 740,318 715,338 682,360 645,368 610,362 578,342 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210 205,185 182,178 160,155 128,148 98,132 85,90 42,132 28,188 16,248 28,308’},
-],
-labels: [
-{n:‘Overschie’,                  x:155, y:112},
-{n:‘Delfshaven’,                 x:198, y:118},
-{n:‘Centrum’,                    x:322, y:80},
-{n:‘Noord’,                      x:365, y:100},
-{n:‘Hillegersberg-Schiebroek’,   x:482, y:100},
-{n:‘Kralingen-Crooswijk’,        x:470, y:220},
-{n:‘Prins Alexander’,            x:638, y:245},
-{n:‘Feijenoord’,                 x:390, y:380},
-{n:‘Pernis-Hoogvliet-Rozenburg’, x:395, y:490},
-],
-river: ‘M 82,230 L 145,225 L 205,228 L 260,235 L 330,250 L 400,265 L 460,270 L 528,265 L 580,255 L 630,240’,
-riverLabel: {x:310, y:222, txt:‘Nieuwe Maas’},
-},
-
-‘utrecht’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Binnenstad’,      pts:‘312,252 350,238 392,242 420,262 424,290 412,318 386,332 354,334 328,320 310,300 308,276’},
-{n:‘Oost’,            pts:‘392,242 438,228 490,232 530,248 548,278 545,318 530,350 505,372 472,382 440,375 412,355 386,332 412,318 424,290 420,262’},
-{n:‘Noordoost’,       pts:‘350,238 392,242 420,262 438,228 490,232 530,248 548,212 560,168 565,120 540,80 495,55 440,42 385,38 335,42 305,58 292,90 295,135 305,175 312,220’},
-{n:‘Overvecht’,       pts:‘180,55 250,38 305,58 292,90 295,135 305,175 312,220 312,252 308,276 270,285 235,280 200,265 172,238 155,200 148,160 152,115 165,78’},
-{n:‘Noordwest’,       pts:‘42,168 72,118 108,74 155,42 180,55 165,78 152,115 148,160 155,200 172,238 200,265 185,298 162,322 135,338 105,335 78,315 52,280 30,235 28,200’},
-{n:‘West’,            pts:‘162,322 185,298 200,265 235,280 270,285 308,276 310,300 328,320 315,345 295,368 268,382 238,388 205,378 180,358’},
-{n:‘Zuidwest’,        pts:‘30,355 52,280 78,315 105,335 135,338 162,322 180,358 205,378 195,415 178,445 155,462 125,468 95,455 65,430 42,395’},
-{n:‘Zuid’,            pts:‘310,300 328,320 354,334 386,332 412,355 440,375 448,408 438,442 415,468 382,480 348,482 315,470 290,450 272,420 268,382 295,368 315,345’},
-{n:‘Leidsche Rijn’,   pts:‘22,288 30,355 42,395 65,430 95,455 125,468 155,462 178,445 195,415 205,378 238,388 250,420 245,465 228,505 200,535 165,555 130,558 90,545 58,520 32,488 16,450 12,400 18,348’},
-{n:‘Vleuten-De Meern’,pts:‘195,415 205,378 238,388 268,382 272,420 290,450 315,470 348,482 382,480 415,468 438,442 460,468 462,510 448,548 420,578 385,598 345,612 305,614 260,606 218,590 182,565 155,548 155,462 178,445’},
-],
-labels: [
-{n:‘Binnenstad’,      x:375, y:260},
-{n:‘Oost’,            x:482, y:306},
-{n:‘Noordoost’,       x:440, y:145},
-{n:‘Overvecht’,       x:240, y:175},
-{n:‘Noordwest’,       x:108, y:222},
-{n:‘West’,            x:238, y:330},
-{n:‘Zuidwest’,        x:112, y:385},
-{n:‘Zuid’,            x:362, y:418},
-{n:‘Leidsche Rijn’,   x:145, y:490},
-{n:‘Vleuten-De Meern’,x:340, y:530},
-],
-river: null, riverLabel: null,
-},
-
-‘groningen’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Hoogkerk’,      pts:‘56,268 62,202 82,146 114,100 156,66 190,100 210,160 200,230 180,290 140,330 90,340 66,334’},
-{n:‘Paddepoel’,     pts:‘190,100 210,46 268,38 352,28 360,100 330,160 280,200 210,160’},
-{n:‘Korrewegwijk’,  pts:‘360,100 352,28 436,32 514,52 520,120 460,160 400,170 330,160’},
-{n:‘Lewenborg’,     pts:‘520,120 514,52 580,82 634,122 672,172 694,230 680,280 640,310 580,300 520,280 460,260 460,160’},
-{n:‘Binnenstad’,    pts:‘280,200 330,160 400,170 460,160 460,260 420,310 360,330 300,310 240,280’},
-{n:‘Oosterparkwijk’,pts:‘460,260 520,280 580,300 640,310 640,360 600,410 540,430 480,410 420,370 420,310’},
-{n:‘Ten Boer’,      pts:‘580,300 640,310 680,280 694,230 700,292 692,356 668,414 640,410 600,410 640,360 640,310’},
-{n:‘Meerstad’,      pts:‘640,410 668,414 630,462 580,502 522,532 560,490 580,450 600,410’},
-{n:‘De Wijert’,     pts:‘240,280 300,310 360,330 420,310 420,370 480,410 440,460 380,490 300,480 240,440 200,380 200,320’},
-{n:‘Haren’,         pts:‘200,380 240,440 300,480 380,490 440,460 480,410 540,430 600,410 560,490 522,532 456,552 384,558 312,550 244,528 182,494 130,450 90,396 90,340 140,330 180,290’},
-],
-labels: [
-{n:‘Hoogkerk’,      x:128, y:230},
-{n:‘Paddepoel’,     x:278, y:130},
-{n:‘Korrewegwijk’,  x:430, y:120},
-{n:‘Lewenborg’,     x:590, y:200},
-{n:‘Binnenstad’,    x:375, y:260},
-{n:‘Oosterparkwijk’,x:550, y:360},
-{n:‘Ten Boer’,      x:635, y:310},
-{n:‘Meerstad’,      x:565, y:490},
-{n:‘De Wijert’,     x:330, y:410},
-{n:‘Haren’,         x:355, y:510},
-],
-river: null, riverLabel: null,
-},
-
-‘eindhoven’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Woensel-Noord’, pts:‘88,200 130,120 195,72 280,42 370,30 460,36 545,65 618,108 668,172 692,248 688,328 575,215 452,172 300,165 185,210’},
-{n:‘Woensel-Zuid’,  pts:‘185,210 300,165 452,172 380,278 292,338 162,295’},
-{n:‘Stratum’,       pts:‘452,172 575,215 600,325 468,338 380,278’},
-{n:‘Tongelre’,      pts:‘575,215 688,328 668,402 630,462 572,510 530,412 600,325’},
-{n:‘Centrum’,       pts:‘380,278 468,338 380,408 292,338’},
-{n:‘Tivoli’,        pts:‘292,338 380,408 468,338 600,325 530,412 435,450 300,448 210,400’},
-{n:‘Gestel’,        pts:‘210,400 300,448 435,450 530,412 572,510 502,545 422,562 338,558 258,538 186,500’},
-{n:‘Strijp’,        pts:‘162,295 292,338 210,400 186,500 126,446 82,382 60,312 66,246’},
-{n:‘Westerpark’,    pts:‘88,200 185,210 162,295 66,246’},
-],
-labels: [
-{n:‘Centrum’,       x:382, y:355},
-{n:‘Woensel-Noord’, x:390, y:175},
-{n:‘Woensel-Zuid’,  x:320, y:255},
-{n:‘Stratum’,       x:510, y:265},
-{n:‘Tongelre’,      x:618, y:370},
-{n:‘Westerpark’,    x:118, y:258},
-{n:‘Gestel’,        x:365, y:490},
-{n:‘Strijp’,        x:188, y:380},
-{n:‘Tivoli’,        x:400, y:420},
-],
-river: null, riverLabel: null,
-},
-
-‘delft’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Delft Noord’,  pts:‘280,42 370,30 460,42 540,72 606,116 560,130 480,148 388,152 300,148 220,130 152,128 198,86 246,58’},
-{n:‘Wippolder’,    pts:‘152,128 220,130 300,148 300,240 240,280 180,300 114,318 108,250 122,184’},
-{n:‘Binnenstad’,   pts:‘300,148 388,152 480,148 560,130 606,116 648,172 668,240 664,310 600,320 520,300 480,300 388,310 300,240’},
-{n:‘Vrijenban’,    pts:‘600,320 664,310 642,376 604,430 548,380 520,300’},
-{n:‘Voorhof’,      pts:‘180,300 240,280 300,240 388,310 388,420 300,450 220,430 186,432 140,380 114,318’},
-{n:‘Hof van Delft’,pts:‘480,300 520,300 548,380 604,430 548,472 480,498 402,508 388,420 388,310’},
-{n:‘Tanthof’,      pts:‘220,430 300,450 388,420 402,508 322,498 248,472 186,432’},
-],
-labels: [
-{n:‘Delft Noord’,  x:368, y:95},
-{n:‘Wippolder’,    x:195, y:235},
-{n:‘Binnenstad’,   x:375, y:260},
-{n:‘Vrijenban’,    x:600, y:360},
-{n:‘Voorhof’,      x:250, y:380},
-{n:‘Hof van Delft’,x:490, y:435},
-{n:‘Tanthof’,      x:300, y:470},
-],
-river: null, riverLabel: null,
-},
-
-‘maastricht’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Noord’,      pts:‘268,42 352,28 436,38 510,62 500,130 440,160 380,170 320,160 260,130 224,90 224,58’},
-{n:‘Amby’,       pts:‘510,62 570,100 614,148 642,206 650,268 630,310 590,290 550,250 530,200 500,130’},
-{n:‘Wyck’,       pts:‘530,200 550,250 590,290 630,310 638,330 610,384 570,360 530,330 510,280 500,200’},
-{n:‘Centrum’,    pts:‘260,130 320,160 380,170 440,160 500,130 500,200 510,280 480,320 420,340 360,320 300,300 260,260 250,190’},
-{n:‘Heer’,       pts:‘570,360 610,384 568,428 514,460 480,440 460,390 480,320 510,280 530,330’},
-{n:‘Malberg’,    pts:‘118,248 122,188 142,134 178,90 224,58 224,90 260,130 250,190 230,250 200,300 160,320 130,308’},
-{n:‘Sint Pieter’,pts:‘130,308 160,320 200,300 230,250 260,260 300,300 280,360 250,410 220,440 196,412 156,364’},
-{n:‘Wolder’,     pts:‘250,410 280,360 300,300 360,320 420,340 480,320 460,390 480,440 514,460 450,480 380,486 310,476 248,450 220,440’},
-],
-labels: [
-{n:‘Noord’,      x:365, y:100},
-{n:‘Amby’,       x:575, y:200},
-{n:‘Wyck’,       x:570, y:290},
-{n:‘Centrum’,    x:382, y:240},
-{n:‘Heer’,       x:545, y:400},
-{n:‘Malberg’,    x:185, y:240},
-{n:‘Sint Pieter’,x:215, y:375},
-{n:‘Wolder’,     x:360, y:440},
-],
-river: ‘M 480,120 L 490,160 L 492,200 L 485,240 L 478,280 L 470,320 L 460,360 L 450,400 L 438,440’,
-riverLabel: {x:502, y:240, txt:‘Maas’},
-},
-
-‘almere’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Almere Haven’,  pts:‘100,80 220,50 310,80 320,160 260,210 180,220 110,190 60,140’},
-{n:‘Almere Stad’,   pts:‘310,80 380,40 480,60 520,120 490,200 440,260 370,290 300,280 260,210 320,160’},
-{n:‘Almere Buiten’, pts:‘480,60 540,50 680,90 730,200 720,280 660,320 580,310 520,250 520,120’},
-{n:‘Almere Hout’,   pts:‘560,370 580,310 660,320 720,280 740,340 720,470 670,560 580,570 500,540 450,480 440,440 500,400’},
-{n:‘Almere Centrum’,pts:‘370,290 440,260 490,200 520,250 580,310 560,370 500,400 420,410 350,390 310,340 310,280’},
-{n:‘Almere Poort’,  pts:‘60,200 50,330 70,420 130,500 200,540 260,560 310,560 350,530 380,490 350,390 310,340 270,390 210,420 150,420 90,380 70,310 50,230’},
-],
-labels: [
-{n:‘Almere Haven’,  x:200, y:140},
-{n:‘Almere Stad’,   x:385, y:175},
-{n:‘Almere Buiten’, x:615, y:195},
-{n:‘Almere Hout’,   x:620, y:445},
-{n:‘Almere Centrum’,x:430, y:340},
-{n:‘Almere Poort’,  x:185, y:330},
-],
-river: null, riverLabel: null,
-},
-
-‘amstelveen’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Centrum’,   pts:‘290,34 388,26 484,34 500,100 450,140 388,152 326,140 270,100’},
-{n:‘Westwijk’,  pts:‘158,100 198,58 290,34 270,100 240,170 190,210 140,240 118,280 110,212 126,150’},
-{n:‘Randwijck’, pts:‘484,34 566,62 630,108 668,166 684,234 660,280 600,300 540,280 500,220 500,100’},
-{n:‘Groenelaan’,pts:‘270,100 326,140 388,152 450,140 500,100 500,220 540,280 520,350 460,380 388,388 316,380 256,348 240,280 240,170’},
-{n:‘Bankras’,   pts:‘110,212 118,280 110,320 130,360 148,344 194,398 254,440 324,466 388,420 388,388 316,380 256,348 200,330 160,360 130,360’},
-{n:‘Bovenkerk’, pts:‘520,350 540,280 600,300 660,280 678,304 652,368 608,420 550,456 480,474 402,478 388,420 388,388 460,380’},
-],
-labels: [
-{n:‘Centrum’,   x:382, y:90},
-{n:‘Westwijk’,  x:192, y:190},
-{n:‘Randwijck’, x:590, y:190},
-{n:‘Groenelaan’,x:385, y:270},
-{n:‘Bankras’,   x:240, y:400},
-{n:‘Bovenkerk’, x:540, y:420},
-],
-river: null, riverLabel: null,
-},
-
-‘diemen’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Diemen-Noord’,  pts:‘152,82 268,52 390,46 498,62 540,130 500,180 420,200 340,194 260,180 196,150 152,110’},
-{n:‘Diemen-Centrum’,pts:‘196,150 260,180 340,194 420,200 500,180 520,240 480,280 400,296 320,288 248,262 200,220’},
-{n:‘Bergwijkpark’,  pts:‘540,130 498,62 574,102 620,158 636,226 622,296 580,320 530,310 500,260 520,240 500,180’},
-{n:‘Diemen-Zuid’,   pts:‘200,220 248,262 320,288 400,296 480,280 530,310 580,320 586,354 532,398 462,424 382,432 302,420 230,392 170,350 126,296 108,232’},
-],
-labels: [
-{n:‘Diemen-Noord’,  x:330, y:130},
-{n:‘Diemen-Centrum’,x:348, y:232},
-{n:‘Bergwijkpark’,  x:570, y:230},
-{n:‘Diemen-Zuid’,   x:340, y:360},
-],
-river: null, riverLabel: null,
-},
-
-‘fryslan’: {
-viewBox: ‘0 0 760 680’,
-polygons: [
-{n:‘Vlieland’,            pts:‘50,118 82,108 100,126 94,148 58,152 44,136’},
-{n:‘Terschelling’,        pts:‘84,108 172,88 205,100 200,120 132,130 80,122’},
-{n:‘Ameland’,             pts:‘295,75 370,63 392,76 385,95 304,98 286,86’},
-{n:‘Schiermonnikoog’,     pts:‘426,48 464,40 484,54 477,70 440,73 422,60’},
-{n:‘Harlingen’,           pts:‘70,168 108,156 122,178 108,210 82,215 62,200’},
-{n:‘Waadhoeke’,           pts:‘108,188 172,162 240,148 305,156 312,195 300,238 268,266 228,280 185,280 150,266 124,240 108,218’},
-{n:‘Leeuwarden’,          pts:‘305,156 372,140 430,145 462,168 468,208 450,248 418,272 380,280 346,278 312,262 300,238 312,195’},
-{n:‘Tytsjerksteradiel’,   pts:‘430,145 490,140 538,158 550,192 535,232 508,256 478,265 450,264 418,272 450,248 468,208 462,168’},
-{n:‘Noardeast-Fryslân’,   pts:‘490,140 548,132 598,148 628,178 632,215 618,250 590,272 558,282 535,272 535,232 550,192 538,158’},
-{n:‘Dantumadiel’,         pts:‘538,158 548,132 598,148 628,178 618,215 590,215 562,205 550,192’},
-{n:‘Achtkarspelen’,       pts:‘535,232 590,215 618,215 632,215 618,250 590,272 558,282 535,272’},
-{n:‘Smallingerland’,      pts:‘346,278 380,280 418,272 450,264 478,265 488,295 480,335 458,360 424,376 390,376 356,364 330,340 322,308 330,285’},
-{n:‘De Fryske Marren’,    pts:‘185,280 228,280 268,266 300,238 312,262 322,308 308,350 288,382 260,408 228,424 192,428 158,414 140,382 134,348 144,310 162,292’},
-{n:‘Opsterland’,          pts:‘330,285 356,364 390,376 402,410 390,448 362,468 328,472 295,462 268,438 250,410 255,370 270,342 288,316 312,308 322,308’},
-{n:‘Heerenveen’,          pts:‘424,376 458,360 480,335 488,295 525,302 558,322 568,358 555,398 528,426 495,440 462,443 440,430 420,404 416,384’},
-{n:‘Ooststellingwerf’,    pts:‘480,335 488,295 525,302 558,322 588,336 608,368 598,408 572,434 538,448 508,440 488,420 475,394 478,362’},
-{n:‘Weststellingwerf’,    pts:‘362,468 390,448 402,410 416,384 420,404 440,430 436,470 410,497 374,510 338,505 308,490 295,470 295,462 328,472’},
-{n:‘Súdwest-Fryslân’,     pts:‘62,200 82,215 108,210 124,240 108,265 94,302 84,344 88,386 105,424 124,454 150,472 180,486 228,490 268,470 250,410 260,408 228,424 192,428 158,414 140,382 134,348 144,310 162,292 140,258 122,232 108,210’},
-],
-labels: [
-{n:‘Vlieland’,          x:72,  y:133},
-{n:‘Terschelling’,      x:148, y:110},
-{n:‘Ameland’,           x:340, y:87},
-{n:‘Schiermonnikoog’,   x:454, y:57},
-{n:‘Harlingen’,         x:92,  y:185},
-{n:‘Waadhoeke’,         x:205, y:222},
-{n:‘Leeuwarden’,        x:368, y:220},
-{n:‘Tytsjerksteradiel’, x:468, y:210},
-{n:‘Noardeast-Fryslân’, x:575, y:200},
-{n:‘Dantumadiel’,       x:560, y:175},
-{n:‘Achtkarspelen’,     x:570, y:248},
-{n:‘Smallingerland’,    x:408, y:322},
-{n:‘De Fryske Marren’,  x:232, y:350},
-{n:‘Opsterland’,        x:335, y:420},
-{n:‘Heerenveen’,        x:495, y:400},
-{n:‘Ooststellingwerf’,  x:535, y:390},
-{n:‘Weststellingwerf’,  x:368, y:478},
-{n:‘Súdwest-Fryslân’,   x:118, y:380},
-],
-river: null, riverLabel: null,
-seaBg: true,
-},
-};
-
-</script>
-
-<script type="text/babel">
-
-// tweaks-panel.jsx
-// Reusable Tweaks shell + form-control helpers.
-//
-// Owns the host protocol (listens for __activate_edit_mode / __deactivate_edit_mode,
-// posts __edit_mode_available / __edit_mode_set_keys / __edit_mode_dismissed) so
-// individual prototypes don't re-roll it. Ships a consistent set of controls so you
-// don't hand-draw <input type="range">, segmented radios, steppers, etc.
-//
-// Usage (in an HTML file that loads React + Babel):
-//
-//   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-//     "primaryColor": "#D97757",
-//     "fontSize": 16,
-//     "density": "regular",
-//     "dark": false
-//   }/*EDITMODE-END*/;
-//
-//   function App() {
-//     const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-//     return (
-//       <div style={{ fontSize: t.fontSize, color: t.primaryColor }}>
-//         Hello
-//         <TweaksPanel>
-//           <TweakSection label="Typography" />
-//           <TweakSlider label="Font size" value={t.fontSize} min={10} max={32} unit="px"
-//                        onChange={(v) => setTweak('fontSize', v)} />
-//           <TweakRadio  label="Density" value={t.density}
-//                        options={['compact', 'regular', 'comfy']}
-//                        onChange={(v) => setTweak('density', v)} />
-//           <TweakSection label="Theme" />
-//           <TweakColor  label="Primary" value={t.primaryColor}
-//                        onChange={(v) => setTweak('primaryColor', v)} />
-//           <TweakToggle label="Dark mode" value={t.dark}
-//                        onChange={(v) => setTweak('dark', v)} />
-//         </TweaksPanel>
-//       </div>
-//     );
-//   }
-//
-// ─────────────────────────────────────────────────────────────────────────────
-
-
-// ── useTweaks ───────────────────────────────────────────────────────────────
-// Single source of truth for tweak values. setTweak persists via the host
-// (__edit_mode_set_keys → host rewrites the EDITMODE block on disk).
-function useTweaks(defaults) {
-  const [values, setValues] = React.useState(defaults);
-  const setTweak = React.useCallback((key, val) => {
-    setValues((prev) => ({ ...prev, [key]: val }));
-    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { [key]: val } }, '*');
-  }, []);
-  return [values, setTweak];
-}
-
-// ── TweaksPanel ─────────────────────────────────────────────────────────────
-// Floating shell. Registers the protocol listener BEFORE announcing
-// availability — if the announce ran first, the host's activate could land
-// before our handler exists and the toolbar toggle would silently no-op.
-// The close button posts __edit_mode_dismissed so the host's toolbar toggle
-// flips off in lockstep; the host echoes __deactivate_edit_mode back which
-// is what actually hides the panel.
-function TweaksPanel({ title = 'Tweaks', children }) {
-  const [open, setOpen] = React.useState(false);
-  const dragRef = React.useRef(null);
-  const offsetRef = React.useRef({ x: 16, y: 16 });
-  const PAD = 16;
-
-  const clampToViewport = React.useCallback(() => {
-    const panel = dragRef.current;
-    if (!panel) return;
-    const w = panel.offsetWidth, h = panel.offsetHeight;
-    const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
-    const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
-    offsetRef.current = {
-      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
-      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
-    };
-    panel.style.right = offsetRef.current.x + 'px';
-    panel.style.bottom = offsetRef.current.y + 'px';
-  }, []);
-
-  React.useEffect(() => {
-    if (!open) return;
-    clampToViewport();
-    if (typeof ResizeObserver === 'undefined') {
-      window.addEventListener('resize', clampToViewport);
-      return () => window.removeEventListener('resize', clampToViewport);
-    }
-    const ro = new ResizeObserver(clampToViewport);
-    ro.observe(document.documentElement);
-    return () => ro.disconnect();
-  }, [open, clampToViewport]);
-
-  React.useEffect(() => {
-    const onMsg = (e) => {
-      const t = e?.data?.type;
-      if (t === '__activate_edit_mode') setOpen(true);
-      else if (t === '__deactivate_edit_mode') setOpen(false);
-    };
-    window.addEventListener('message', onMsg);
-    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
-    return () => window.removeEventListener('message', onMsg);
-  }, []);
-
-  const dismiss = () => {
-    setOpen(false);
-    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
-  };
-
-  const onDragStart = (e) => {
-    const panel = dragRef.current;
-    if (!panel) return;
-    const r = panel.getBoundingClientRect();
-    const sx = e.clientX, sy = e.clientY;
-    const startRight = window.innerWidth - r.right;
-    const startBottom = window.innerHeight - r.bottom;
-    const move = (ev) => {
-      offsetRef.current = {
-        x: startRight - (ev.clientX - sx),
-        y: startBottom - (ev.clientY - sy),
-      };
-      clampToViewport();
-    };
-    const up = () => {
-      window.removeEventListener('mousemove', move);
-      window.removeEventListener('mouseup', up);
-    };
-    window.addEventListener('mousemove', move);
-    window.addEventListener('mouseup', up);
-  };
-
-  if (!open) return null;
-  return (
-    <>
-      <style>{__TWEAKS_STYLE}</style>
-
-```
-  <div ref={dragRef} className="twk-panel"
-       style={{ right: offsetRef.current.x, bottom: offsetRef.current.y }}>
-    <div className="twk-hd" onMouseDown={onDragStart}>
-      <b>{title}</b>
-      <button className="twk-x" aria-label="Close tweaks"
-              onMouseDown={(e) => e.stopPropagation()}
-              onClick={dismiss}>✕</button>
+<div class="mast">
+  <div class="mast-top">
+    <div class="mast-ttl">GR2026 —<br><em id="citySubtitle">per stadsdeel</em></div>
+    <div class="mast-r">
+      <div class="city-sw">
+        <button class="city-btn active" data-city="haag" onclick="switchCity('haag')">Den Haag</button>
+        <button class="city-btn" data-city="rotterdam" onclick="switchCity('rotterdam')">Rotterdam</button>
+        <button class="city-btn" data-city="utrecht" onclick="switchCity('utrecht')">Utrecht</button>
+        <button class="city-btn" data-city="eindhoven" onclick="switchCity('eindhoven')">Eindhoven</button>
+        <button class="city-btn" data-city="groningen" onclick="switchCity('groningen')">Groningen</button>
+        <button class="city-btn" data-city="delft" onclick="switchCity('delft')">Delft</button>
+        <button class="city-btn" data-city="maastricht" onclick="switchCity('maastricht')">Maastricht</button>
+        <button class="city-btn" data-city="almere" onclick="switchCity('almere')">Almere</button>
+        <button class="city-btn" data-city="amstelveen" onclick="switchCity('amstelveen')">Amstelveen</button>
+        <button class="city-btn" data-city="diemen" onclick="switchCity('diemen')">Diemen</button>
+        <button class="city-btn fryslan-btn" data-city="fryslan" onclick="switchCity('fryslan')">Fryslân</button>
+      </div>
+      <div class="mast-meta" id="mastMeta">202.203 stemmen<br>46,5% opkomst<br>18 maart 2026</div>
     </div>
-    <div className="twk-body">{children}</div>
   </div>
-</>
-```
-
-);
-}
-
-// ── Layout helpers ──────────────────────────────────────────────────────────
-
-function TweakSection({ label, children }) {
-return (
-<>
-<div className="twk-sect">{label}</div>
-{children}
-</>
-);
-}
-
-function TweakRow({ label, value, children, inline = false }) {
-return (
-<div className={inline ? ‘twk-row twk-row-h’ : ‘twk-row’}>
-<div className="twk-lbl">
-<span>{label}</span>
-{value != null && <span className="twk-val">{value}</span>}
+  <div class="deck" id="deckSeats"></div>
 </div>
-{children}
+
+<div class="tabs">
+  <button class="tb active" id="tabM" onclick="switchTab('map')">Kaart</button>
+  <button class="tb" id="tabL" onclick="switchTab('list')">Overzicht</button>
+  <button class="tb" id="tabD" onclick="switchTab('demo')">Demografie</button>
 </div>
-);
-}
 
-// ── Controls ────────────────────────────────────────────────────────────────
-
-function TweakSlider({ label, value, min = 0, max = 100, step = 1, unit = ‘’, onChange }) {
-return (
-<TweakRow label={label} value={`${value}${unit}`}>
-<input type=“range” className=“twk-slider” min={min} max={max} step={step}
-value={value} onChange={(e) => onChange(Number(e.target.value))} />
-</TweakRow>
-);
-}
-
-function TweakToggle({ label, value, onChange }) {
-return (
-<div className="twk-row twk-row-h">
-<div className="twk-lbl"><span>{label}</span></div>
-<button type=“button” className=“twk-toggle” data-on={value ? ‘1’ : ‘0’}
-role=“switch” aria-checked={!!value}
-onClick={() => onChange(!value)}><i /></button>
+<div id="mapView">
+  <svg id="mapSvg" viewBox="0 0 760 680" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
+  <div class="mhint" id="mhint">Klik op een gebied voor details</div>
+  <div class="ptyleg"><div class="ptyleg-ttl">Winnaar per wijk</div><div class="ptyleg-grid" id="ptyGrid"></div></div>
+  <div class="overlay" id="overlay">
+    <div class="ov-hd"><div class="ov-ttl" id="ovTtl">–</div><button class="ov-cls" onclick="closeOv()">✕</button></div>
+    <div class="ov-bd" id="ovBd"></div>
+  </div>
 </div>
-);
-}
 
-function TweakRadio({ label, value, options, onChange }) {
-const trackRef = React.useRef(null);
-const [dragging, setDragging] = React.useState(false);
-const opts = options.map((o) => (typeof o === ‘object’ ? o : { value: o, label: o }));
-const idx = Math.max(0, opts.findIndex((o) => o.value === value));
-const n = opts.length;
-
-// The active value is read by pointer-move handlers attached for the lifetime
-// of a drag — ref it so a stale closure doesn’t fire onChange for every move.
-const valueRef = React.useRef(value);
-valueRef.current = value;
-
-const segAt = (clientX) => {
-const r = trackRef.current.getBoundingClientRect();
-const inner = r.width - 4;
-const i = Math.floor(((clientX - r.left - 2) / inner) * n);
-return opts[Math.max(0, Math.min(n - 1, i))].value;
-};
-
-const onPointerDown = (e) => {
-setDragging(true);
-const v0 = segAt(e.clientX);
-if (v0 !== valueRef.current) onChange(v0);
-const move = (ev) => {
-if (!trackRef.current) return;
-const v = segAt(ev.clientX);
-if (v !== valueRef.current) onChange(v);
-};
-const up = () => {
-setDragging(false);
-window.removeEventListener(‘pointermove’, move);
-window.removeEventListener(‘pointerup’, up);
-};
-window.addEventListener(‘pointermove’, move);
-window.addEventListener(‘pointerup’, up);
-};
-
-return (
-<TweakRow label={label}>
-<div ref={trackRef} role=“radiogroup” onPointerDown={onPointerDown}
-className={dragging ? ‘twk-seg dragging’ : ‘twk-seg’}>
-<div className=“twk-seg-thumb”
-style={{ left: `calc(2px + ${idx} * (100% - 4px) / ${n})`,
-width: `calc((100% - 4px) / ${n})` }} />
-{opts.map((o) => (
-<button key={o.value} type=“button” role=“radio” aria-checked={o.value === value}>
-{o.label}
-</button>
-))}
-</div>
-</TweakRow>
-);
-}
-
-function TweakSelect({ label, value, options, onChange }) {
-return (
-<TweakRow label={label}>
-<select className=“twk-field” value={value} onChange={(e) => onChange(e.target.value)}>
-{options.map((o) => {
-const v = typeof o === ‘object’ ? o.value : o;
-const l = typeof o === ‘object’ ? o.label : o;
-return <option key={v} value={v}>{l}</option>;
-})}
-</select>
-</TweakRow>
-);
-}
-
-function TweakText({ label, value, placeholder, onChange }) {
-return (
-<TweakRow label={label}>
-<input className=“twk-field” type=“text” value={value} placeholder={placeholder}
-onChange={(e) => onChange(e.target.value)} />
-</TweakRow>
-);
-}
-
-function TweakNumber({ label, value, min, max, step = 1, unit = ‘’, onChange }) {
-const clamp = (n) => {
-if (min != null && n < min) return min;
-if (max != null && n > max) return max;
-return n;
-};
-const startRef = React.useRef({ x: 0, val: 0 });
-const onScrubStart = (e) => {
-e.preventDefault();
-startRef.current = { x: e.clientX, val: value };
-const decimals = (String(step).split(’.’)[1] || ‘’).length;
-const move = (ev) => {
-const dx = ev.clientX - startRef.current.x;
-const raw = startRef.current.val + dx * step;
-const snapped = Math.round(raw / step) * step;
-onChange(clamp(Number(snapped.toFixed(decimals))));
-};
-const up = () => {
-window.removeEventListener(‘pointermove’, move);
-window.removeEventListener(‘pointerup’, up);
-};
-window.addEventListener(‘pointermove’, move);
-window.addEventListener(‘pointerup’, up);
-};
-return (
-<div className="twk-num">
-<span className="twk-num-lbl" onPointerDown={onScrubStart}>{label}</span>
-<input type=“number” value={value} min={min} max={max} step={step}
-onChange={(e) => onChange(clamp(Number(e.target.value)))} />
-{unit && <span className="twk-num-unit">{unit}</span>}
-</div>
-);
-}
-
-function TweakColor({ label, value, onChange }) {
-return (
-<div className="twk-row twk-row-h">
-<div className="twk-lbl"><span>{label}</span></div>
-<input type=“color” className=“twk-swatch” value={value}
-onChange={(e) => onChange(e.target.value)} />
-</div>
-);
-}
-
-function TweakButton({ label, onClick, secondary = false }) {
-return (
-<button type=“button” className={secondary ? ‘twk-btn secondary’ : ‘twk-btn’}
-onClick={onClick}>{label}</button>
-);
-}
-
-</script>
-
-<script type="text/babel">
-
-const { useState, useEffect, useRef } = React;
-
-/* ══════════════════════════════════════════════════
-   NL MAP helper
-══════════════════════════════════════════════════ */
-const NL_PATH='M 78,198 L 60,214 L 34,228 L 10,248 L 8,262 L 28,267 L 56,265 L 90,258 L 112,248 L 148,238 L 175,245 L 220,254 L 244,268 L 246,292 L 260,300 L 274,295 L 294,280 L 316,266 L 350,250 L 360,224 L 352,196 L 347,172 L 364,146 L 374,120 L 381,92 L 377,68 L 363,44 L 338,36 L 308,26 L 280,24 L 250,31 L 215,48 L 195,62 L 176,74 L 158,84 L 146,100 L 144,126 L 136,150 L 126,170 L 104,184 L 78,198 Z';
-const NL_IJSSEL='M 146,100 L 158,84 L 176,74 L 195,62 L 218,50 L 222,80 L 216,116 L 202,150 L 186,164 L 164,156 L 148,130 Z';
-function llToXY(lon,lat){return{x:(lon-3.3)/4.0*400,y:(53.7-lat)/3.0*350};}
-
-/* ══════════════════════════════════════════════════
-   HOOKS
-══════════════════════════════════════════════════ */
-function useReveal(ref){
-  const [v,setV]=useState(false);
-  useEffect(()=>{const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setV(true);o.disconnect();}},{threshold:0.1});if(ref.current)o.observe(ref.current);return()=>o.disconnect();},[]);
-  return v;
-}
-function useCountUp(target,vis,dur=1000){
-  const [n,setN]=useState(0);
-  useEffect(()=>{if(!vis)return;let s=null;const f=(t)=>{if(!s)s=t;const p=Math.min((t-s)/dur,1);setN(Math.floor(p*target));if(p<1)requestAnimationFrame(f);};requestAnimationFrame(f);},[vis,target]);
-  return n;
-}
-
-/* ══════════════════════════════════════════════════
-   SHARED COMPONENTS
-══════════════════════════════════════════════════ */
-function RuleLabel({label}){return(<div style={{display:'flex',alignItems:'center',gap:14,marginBottom:24}}><div style={{height:2,width:24,background:C.red,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:10,fontWeight:500,letterSpacing:'0.18em',textTransform:'uppercase',color:C.muted,whiteSpace:'nowrap'}}>{label}</span><div style={{flex:1,height:1,background:C.border}}/></div>);}
-
-function Header(){
-  const [sc,setSc]=useState(false);
-  useEffect(()=>{const f=()=>setSc(window.scrollY>40);window.addEventListener('scroll',f);return()=>window.removeEventListener('scroll',f);},[]);
-  return(<header style={{position:'sticky',top:0,zIndex:100,background:C.bg,borderBottom:`1px solid ${C.border}`,boxShadow:sc?'0 2px 24px rgba(0,0,0,0.07)':'none',transition:'box-shadow 0.3s'}}>
-    <div style={{borderBottom:`1px solid ${C.border}`,padding:'5px 40px',display:'flex',justifyContent:'space-between'}}>
-      <span style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted,letterSpacing:'0.14em',textTransform:'uppercase'}}>GR2026 · Gemeenteraadsverkiezingen · 18 maart 2026</span>
-      <a href="#" style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted}}>evgeniyaorlova.com</a>
-    </div>
-    <div style={{maxWidth:1200,margin:'0 auto',padding:'0 40px',display:'flex',alignItems:'center',justifyContent:'space-between',height:64}}>
-      <div style={{display:'flex',alignItems:'baseline',gap:10}}>
-        <span style={{fontFamily:'Cormorant Garamond',fontWeight:700,fontSize:42,lineHeight:1,color:C.ink,letterSpacing:'-0.02em'}}>E.O.</span>
-        <span style={{fontFamily:'DM Sans',fontSize:10,letterSpacing:'0.2em',textTransform:'uppercase',color:C.muted,paddingBottom:4}}>Evgeniya Orlova</span>
-      </div>
-      <nav style={{display:'flex',gap:28}}>
-        {[['Home','/'],['Analyse','/archive'],['Uitslag','/gr2026'],['Over','/about']].map(([l,h])=>(
-          <a key={l} href={h} style={{fontFamily:'DM Sans',fontSize:11,fontWeight:h==='/gr2026'?500:400,letterSpacing:'0.12em',textTransform:'uppercase',color:h==='/gr2026'?C.red:C.muted,borderBottom:h==='/gr2026'?`1px solid ${C.red}`:'1px solid transparent',paddingBottom:2}}>{l}</a>
-        ))}
-      </nav>
-    </div>
-    <div style={{height:3,background:C.red}}/>
-  </header>);
-}
-
-function Ticker(){
-  const items=['GR2026 · 18 maart 2026','Definitieve uitslag','Den Haag · Rotterdam · Utrecht · Groningen','Eindhoven · Delft · Maastricht · Almere · Amstelveen · Diemen · Fryslân','Evgeniya Orlova · Politieke Analyse'];
-  const r=[...items,...items];
-  return(<div style={{overflow:'hidden',borderBottom:`1px solid ${C.border}`,padding:'7px 0'}}><div className="ticker-inner">{r.map((t,i)=>(<span key={i} style={{fontFamily:'DM Sans',fontSize:9.5,letterSpacing:'0.16em',textTransform:'uppercase',color:C.muted,display:'inline-flex',alignItems:'center',gap:18}}><span style={{display:'inline-block',width:4,height:4,borderRadius:'50%',background:C.red,flexShrink:0}}/>{t}</span>))}</div></div>);
-}
-
-function Hero({variant}){
-  const ref=useRef();const vis=useReveal(ref);
-  const isE=variant==='economist';
-  const serif=isE?'Playfair Display':'Cormorant Garamond';
-  const totStem=Object.values(CITIES).reduce((a,c)=>a+c.stemmen,0);
-  const cStem=useCountUp(totStem,vis,1400);
-  return(<section ref={ref} style={{maxWidth:1200,margin:'0 auto',padding:isE?'48px 40px 36px':'72px 40px 52px',borderBottom:`1px solid ${C.border}`}}>
-    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'end'}}>
+<div id="cartoView">
+  <div class="carto-inner">
+    <div class="carto-hdr">
       <div>
-        <span style={{fontFamily:'DM Sans',fontSize:10,fontWeight:500,letterSpacing:'0.2em',textTransform:'uppercase',color:C.red,display:'block',marginBottom:14}}>Gemeenteraadsverkiezingen · 18 maart 2026</span>
-        <h1 style={{fontFamily:serif,fontWeight:isE?900:600,fontSize:isE?'clamp(36px,4vw,60px)':'clamp(44px,5vw,78px)',lineHeight:1.02,color:C.ink,marginBottom:18}}>
-          {isE?'Uitslag GR2026':<>Uitslag<br/><em>GR2026</em></>}
-        </h1>
-        <p style={{fontFamily:'DM Sans',fontSize:14,color:C.muted,fontWeight:300,lineHeight:1.75,maxWidth:420}}>Definitieve resultaten van de gemeenteraadsverkiezingen in elf gemeenten en Fryslân. Per wijk, per partij — met demografische analyse.</p>
+        <div class="carto-hdr-lbl">Winnaar per gemeente — Fryslân GR2026</div>
+        <div class="carto-hdr-sub">Vlakgrootte ~ aantal geldige stemmen · klik voor details</div>
       </div>
-      <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:28,alignItems:'end'}}>
-        {[{v:vis?cStem.toLocaleString('nl-NL'):'—',l:'Uitgebrachte stemmen',s:`${Object.keys(CITIES).length} gemeenten`},{v:'18 mrt',l:'Verkiezingsdatum',s:'2026 · Definitieve uitslag'}].map((s,i)=>(
-          <div key={i} style={{opacity:vis?1:0,transform:vis?'none':'translateY(8px)',transition:`opacity 0.5s ${i*0.15}s,transform 0.5s ${i*0.15}s`}}>
-            <div style={{fontFamily:'Cormorant Garamond',fontSize:36,fontWeight:700,color:C.red,lineHeight:1}}>{s.v}</div>
-            <div style={{fontFamily:'DM Sans',fontSize:10.5,fontWeight:500,textTransform:'uppercase',letterSpacing:'0.08em',color:C.ink,marginTop:6}}>{s.l}</div>
-            <div style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,marginTop:2}}>{s.s}</div>
-          </div>
-        ))}
-      </div>
+      <div style="font-size:9px;color:#888;text-align:right;letter-spacing:.06em">GEMEENTE<br>FRYSLÂN<br>18 MRT 2026</div>
     </div>
-  </section>);
+    <div class="carto-rows" id="cartoRows"></div>
+    <div class="carto-annbar" id="cartoAnnbar"></div>
+    <div class="carto-leg" id="cartoLeg"></div>
+    <div class="carto-panel" id="cartoPanel">
+      <button class="carto-panel-close" onclick="closeCartoPanel()">✕</button>
+      <div id="cartoPanelContent"></div>
+    </div>
+  </div>
+</div>
+
+<div id="listView">
+  <div class="li-intro" id="listIntro">Uitslag GR2026 · klik op een rij voor details</div>
+  <div style="overflow-x:auto"><table class="wt"><thead><tr>
+    <th>Wijk / Gebied</th><th>Winnaar</th><th>%</th><th>Opkomst</th><th>Top 5 partijen</th>
+  </tr></thead><tbody id="listBody"></tbody></table></div>
+</div>
+
+<div id="demoView">
+  <div class="demo-intro" id="demoIntro">Demografisch profiel · CBS Kerncijfers Wijken 2025</div>
+  <div class="demo-note">Migratieachtergrond = min. één ouder in buitenland geboren (CBS). WOZ = gemiddelde woningwaarde 2024. ~ = schatting o.b.v. CBS buurtdata.</div>
+  <div class="demo-wrap"><table class="demo-tbl"><thead><tr>
+    <th style="min-width:175px">Wijk / Gebied</th>
+    <th class="r">Inwoners</th><th class="r">Gem. WOZ</th>
+    <th class="c">% Ned. achtergrond</th><th class="c">% Niet-westers migr.</th>
+    <th class="c">% Westers migr.</th><th class="c">Eigendom</th>
+    <th style="min-width:230px">Profiel</th>
+  </tr></thead><tbody id="demoBody"></tbody></table></div>
+  <div class="demo-foot" id="demoFoot"></div>
+</div>
+
+<footer>
+  <span id="footerLeft">Bron: Gemeente · GR2026 · Voorlopige uitslag · 18 maart 2026</span>
+  <span id="footerRight">Per stembureau beschikbaar via gemeente</span>
+</footer>
+
+<script>
+var CITIES = {};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// DEN HAAG
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.haag = {
+  name: 'Den Haag', subtitle: 'per stadsdeel',
+  meta: '202.203 stemmen\n46,5% opkomst\n18 maart 2026', avgOpk: 46.5,
+  seats: [{n:19,l:'Hart v/d Haag'},{n:9,l:'GL/PvdA'},{n:9,l:'D66'},{n:4,l:'VVD'},{n:4,l:'DENK'},{n:3,l:'PvdD'},{n:2,l:'CDA'}],
+  footer: ['Bron: Gemeente Den Haag · GR2026 · 261 stembureaus','Voorlopige uitslag · 18 maart 2026'],
+  parties: [
+    {id:'hvdh',name:'Hart v/d Haag',color:'#c0392b'},{id:'glpvda',name:'GL/PvdA',color:'#2a7a2a'},
+    {id:'d66',name:'D66',color:'#009040'},{id:'vvd',name:'VVD',color:'#d44000'},
+    {id:'pvdd',name:'PvdD',color:'#006830'},{id:'cda',name:'CDA',color:'#1a5c38'},
+    {id:'denk',name:'DENK',color:'#007888'},{id:'hsp',name:'Haagse SP',color:'#b87800'},
+    {id:'sp',name:'SP',color:'#c00000'},{id:'pvv',name:'PVV',color:'#002878'},
+    {id:'cusgp',name:'CU-SGP',color:'#005898'},{id:'fvd',name:'FvD',color:'#781818'},
+    {id:'volt',name:'Volt',color:'#6820a0'},{id:'nsc',name:'NSC',color:'#555555'},
+    {id:'inl',name:'INL',color:'#cc6600'},{id:'cet',name:'Çetinkaya',color:'#888888'},
+    {id:'drd',name:'Drerrie',color:'#e67e22'},{id:'pvdr',name:'PvdR',color:'#444444'},
+    {id:'fpl',name:'50PLUS',color:'#887000'},
+  ],
+  wijken: [
+    {id:'Scheveningen',lbl:[210,105],gel:22425,opk:37.0,pv:[8567,3472,4864,2320,1180,940,650,230,540,460,380,560,720,90,140,380,380,50,280]},
+    {id:'Loosduinen',lbl:[105,330],gel:18100,opk:38.5,pv:[9527,2477,2384,1420,630,710,380,120,310,290,320,380,200,50,80,200,250,30,240]},
+    {id:'Segbroek',lbl:[295,200],gel:23696,opk:42.0,pv:[7547,5855,4813,1920,1450,1020,1180,240,560,420,440,620,700,80,130,480,380,55,220]},
+    {id:'Centrum',lbl:[392,75],gel:29799,opk:50.5,pv:[6129,7880,6672,2680,2450,1560,1850,390,840,540,560,780,1280,90,180,580,540,80,250]},
+    {id:'Laak',lbl:[492,105],gel:11524,opk:36.2,pv:[3856,1647,1480,820,390,560,3504,100,280,240,200,380,220,50,80,550,180,25,100]},
+    {id:'Haagse Hout',lbl:[590,310],gel:6932,opk:44.5,pv:[2477,957,1240,760,320,340,2105,70,180,120,120,180,200,30,50,180,110,15,80]},
+    {id:'Statenkwartier',lbl:[340,310],gel:22474,opk:48.5,pv:[5381,4373,6132,2380,1620,1040,620,330,470,310,380,520,860,110,160,340,490,60,330]},
+    {id:'Escamp',lbl:[205,490],gel:25023,opk:42.8,pv:[12367,2920,2380,2050,980,900,3615,180,520,480,400,650,420,80,150,800,350,50,280]},
+    {id:'Leidschenveen-Ypenburg',lbl:[520,530],gel:15308,opk:45.0,pv:[7027,1730,2668,1620,570,720,650,90,300,350,380,520,440,70,100,300,220,30,180]},
+  ],
+  svgClip:'60,155 95,105 145,62 205,32 272,15 352,10 435,14 512,24 582,45 638,78 678,118 708,165 722,218 726,275 720,338 702,398 673,452 636,500 588,543 535,576 475,601 408,617 338,621 268,615 200,597 140,566 90,526 52,477 25,420 10,358 8,292 15,228 33,178',
+  svgPolygons:[
+    {id:'Scheveningen',pts:'60,155 95,105 145,62 205,32 272,15 352,10 350,110 310,155 280,185 250,205 220,200 190,185 155,170 115,158 80,152'},
+    {id:'Loosduinen',pts:'60,155 80,152 115,158 155,170 190,185 220,200 205,245 195,290 178,335 160,375 138,415 115,448 90,475 65,492 45,490 25,465 10,420 8,358 15,290 33,230'},
+    {id:'Segbroek',pts:'220,200 250,205 280,185 310,155 350,110 380,122 395,148 388,175 370,200 348,218 325,228 300,232 278,228 258,218 238,208 220,200'},
+    {id:'Centrum',pts:'352,10 435,14 445,65 440,100 428,125 415,140 400,150 380,122 350,110'},
+    {id:'Laak',pts:'435,14 512,24 535,55 550,85 558,115 550,145 530,165 508,178 482,185 458,185 440,178 428,160 428,125 440,100 445,65'},
+    {id:'Haagse Hout',pts:'512,24 582,45 638,78 678,118 708,165 722,218 726,275 720,338 702,398 673,452 660,448 638,432 615,415 592,395 568,372 548,348 528,320 512,295 500,268 495,240 488,215 478,195 458,185 482,185 508,178 530,165 550,145 558,115 550,85 535,55'},
+    {id:'Statenkwartier',pts:'178,335 195,290 205,245 220,200 238,208 258,218 278,228 300,232 325,228 348,218 370,200 388,175 395,148 415,140 428,160 440,178 458,185 478,195 488,215 495,240 500,268 495,298 482,325 462,348 438,368 410,385 380,398 350,408 318,415 288,418 260,415 235,408 208,396 185,382 170,362'},
+    {id:'Escamp',pts:'65,492 90,475 115,448 138,415 160,375 170,362 185,382 208,396 235,408 260,415 288,418 318,415 338,425 350,445 355,470 348,500 330,528 305,552 272,572 238,585 200,590 165,582 133,562 100,530 72,498'},
+    {id:'Leidschenveen-Ypenburg',pts:'660,448 673,452 636,500 588,543 535,576 475,601 408,617 338,621 268,615 238,585 272,572 305,552 330,528 348,500 355,470 350,445 365,432 388,418 415,408 445,400 475,395 500,390 520,382 545,368 565,348 580,325 592,305 600,280 605,255 608,228 610,200 620,178 635,158 648,140 660,120 672,142 692,168 708,198 720,230 726,275 720,338 702,398'},
+  ],
+  demo:[
+    {n:'Scheveningen',inw:'~76k',woz:'€395k',ned:50,nw:28,w:22,koop:'42% koop',profiel:'Kustplaats met haven. Mix van vissersbuurten (Duindorp), welvarend Statenkwartier en Kijkduin. Hart v/d Haag 38%.'},
+    {n:'Loosduinen',inw:'~54k',woz:'€340k',ned:52,nw:30,w:18,koop:'38% koop',profiel:'Rustige duinwijk. Relatief lage WOZ. Hart v/d Haag dominant met 53% — sterkste score van de stad.'},
+    {n:'Segbroek',inw:'~66k',woz:'€430k',ned:55,nw:24,w:21,koop:'45% koop',profiel:'Groene woonwijk. Gentrificering. Hart v/d Haag 32%, GL/PvdA 25% — relatief competitief stadsdeel.'},
+    {n:'Centrum',inw:'~90k',woz:'€470k',ned:40,nw:32,w:28,koop:'32% koop',profiel:'Binnenhof, Malieveld, Hofkwartier. Studenten, expats. Enige deel waar GL/PvdA (26%) Hart v/d Haag (21%) verslaat.'},
+    {n:'Laak',inw:'~52k',woz:'€305k',ned:35,nw:48,w:17,koop:'28% koop',profiel:'Schilderswijk, Transvaal. Hoogste aandeel niet-westers (48%). DENK 30% — bijna winnaar. Laagste WOZ.'},
+    {n:'Haagse Hout',inw:'~42k',woz:'€520k',ned:60,nw:22,w:18,koop:'58% koop',profiel:'Haagse Bos, Clingendael. Meest autochtone stadsdeel. DENK 30% opvallend hoog door Haagse Hout-Oost.'},
+    {n:'Statenkwartier',inw:'~82k',woz:'€495k',ned:55,nw:24,w:21,koop:'48% koop',profiel:'Bezuidenhout, Benoordenhout. Hoog opgeleid. D66 wint (27%) — enige deel buiten Centrum zonder Hart v/d Haag.'},
+    {n:'Escamp',inw:'~95k',woz:'€310k',ned:38,nw:42,w:20,koop:'30% koop',profiel:'Grootste stadsdeel. Bouwlust, Moerwijk. Veel sociale huur. Hart v/d Haag 49% — absoluut sterkste score.'},
+    {n:'Leidschenveen-Ypenburg',inw:'~56k',woz:'€420k',ned:58,nw:24,w:18,koop:'52% koop',profiel:'Nieuwbouwgebied jaren 90–2010. Jonge gezinnen. Hart v/d Haag 46%. Laag niet-westers aandeel voor Den Haag.'},
+  ],
+  demoFoot:'Bronnen: CBS Kerncijfers Wijken 2025 · AlleCijfers.nl · Gemeente Den Haag · WOZ peildatum 1 jan 2024 · ~ = schatting',
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ROTTERDAM
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.rotterdam = {
+  name:'Rotterdam', subtitle:'per gebiedscommissie',
+  meta:'211.097 stemmen\n40,3% opkomst\n18 maart 2026', avgOpk:40.3,
+  seats:[{n:11,l:'GL/PvdA'},{n:11,l:'Leefbaar R.'},{n:5,l:'D66'},{n:5,l:'VVD'},{n:4,l:'DENK'},{n:3,l:'FvD'},{n:'6×1',l:'Overig'}],
+  footer:['Bron: Gemeente Rotterdam · GR2026 · 358 stembureaus','Voorlopige uitslag · 18 maart 2026'],
+  parties:[
+    {id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'leefbaar',name:'Leefbaar R.',color:'#c0392b'},
+    {id:'vvd',name:'VVD',color:'#d44000'},{id:'d66',name:'D66',color:'#009040'},
+    {id:'denk',name:'DENK',color:'#007888'},{id:'fvd',name:'FvD',color:'#781818'},
+    {id:'volt',name:'Volt',color:'#6820a0'},{id:'pvdd',name:'PvdD',color:'#006830'},
+    {id:'bij1',name:'BIJ1',color:'#c80058'},{id:'fplus',name:'50PLUS',color:'#887000'},
+    {id:'cu',name:'ChristenUnie',color:'#005898'},{id:'sp',name:'SP',color:'#aa0000'},
+    {id:'cda',name:'CDA',color:'#1a5c38'},{id:'sport',name:'PARTIJvdSPORT',color:'#cc6600'},
+    {id:'vvrd',name:'Vrede v/d D.',color:'#448833'},{id:'pbar',name:'PBAR',color:'#555555'},
+    {id:'jou',name:'JOU',color:'#b87800'},{id:'next',name:'R.NEXT',color:'#3060a0'},
+    {id:'sgp',name:'SGP',color:'#003888'},{id:'wkr',name:'Wij Kleurrijk',color:'#d07000'},
+    {id:'wvdw',name:'Wij v/d Wijk',color:'#808060'},
+  ],
+  wijken:[
+    {id:'Centrum',lbl:[322,80],gel:29045,opk:48.8,pv:{glpvda:9167,leefbaar:3217,d66:4100,vvd:3030,denk:2027,fvd:715,volt:1218,pvdd:1422,bij1:770,fplus:601,cu:485,sp:430,cda:598,sport:66,vvrd:102,pbar:82,jou:228,next:312,sgp:95,wkr:64,wvdw:89}},
+    {id:'Delfshaven',lbl:[198,118],gel:12340,opk:33.7,pv:{glpvda:3776,leefbaar:1225,d66:1287,vvd:577,denk:2300,fvd:485,volt:455,pvdd:432,bij1:445,fplus:312,cu:288,sp:285,cda:328,sport:22,vvrd:38,pbar:68,jou:122,next:155,sgp:48,wkr:38,wvdw:55}},
+    {id:'Noord',lbl:[365,100],gel:26007,opk:44.0,pv:{glpvda:8092,leefbaar:2984,d66:3746,vvd:2113,denk:2151,fvd:1122,volt:1085,pvdd:1188,bij1:605,fplus:622,cu:518,sp:455,cda:688,sport:58,vvrd:95,pbar:88,jou:198,next:245,sgp:112,wkr:55,wvdw:72}},
+    {id:'Hillegersberg-Schiebroek',lbl:[482,100],gel:24740,opk:58.7,pv:{glpvda:4712,leefbaar:5152,d66:3957,vvd:4386,denk:548,fvd:985,volt:968,pvdd:1052,bij1:212,fplus:658,cu:725,sp:355,cda:1235,sport:42,vvrd:88,pbar:32,jou:245,next:322,sgp:235,wkr:22,wvdw:35}},
+    {id:'Kralingen-Crooswijk',lbl:[470,220],gel:19040,opk:51.5,pv:{glpvda:3760,leefbaar:3279,d66:2966,vvd:3658,denk:798,fvd:765,volt:768,pvdd:812,bij1:282,fplus:485,cu:395,sp:322,cda:548,sport:35,vvrd:72,pbar:28,jou:188,next:248,sgp:155,wkr:28,wvdw:42}},
+    {id:'Prins Alexander',lbl:[638,245],gel:23995,opk:40.6,pv:{glpvda:4255,leefbaar:7761,d66:1755,vvd:1591,denk:1548,fvd:1422,volt:688,pvdd:852,bij1:388,fplus:788,cu:612,sp:488,cda:888,sport:65,vvrd:88,pbar:68,jou:312,next:285,sgp:242,wkr:45,wvdw:78}},
+    {id:'Feijenoord',lbl:[390,380],gel:49551,opk:30.1,pv:{glpvda:9500,leefbaar:10503,d66:3118,vvd:2588,denk:8889,fvd:3035,volt:1488,pvdd:1788,bij1:1688,fplus:1388,cu:1088,sp:988,cda:1122,sport:88,vvrd:122,pbar:188,jou:625,next:688,sgp:245,wkr:125,wvdw:155}},
+    {id:'Overschie',lbl:[155,112],gel:7126,opk:45.9,pv:{glpvda:1388,leefbaar:1593,d66:905,vvd:803,denk:504,fvd:338,volt:242,pvdd:255,bij1:122,fplus:198,cu:168,sp:138,cda:255,sport:18,vvrd:28,pbar:15,jou:72,next:88,sgp:55,wkr:18,wvdw:22}},
+    {id:'Pernis-Hoogvliet-Rozenburg',lbl:[395,490],gel:19253,opk:37.7,pv:{glpvda:1892,leefbaar:7534,d66:1088,vvd:1632,denk:388,fvd:2202,volt:285,pvdd:588,bij1:125,fplus:622,cu:488,sp:522,cda:1066,sport:35,vvrd:55,pbar:28,jou:288,next:212,sgp:255,wkr:22,wvdw:45}},
+  ],
+  svgClip:'85,90 150,55 225,32 310,18 400,14 485,20 560,36 625,62 680,100 720,148 742,202 748,260 740,318 720,372 690,420 650,460 600,492 545,514 480,528 410,534 340,530 270,516 200,492 140,458 90,415 52,364 28,308 16,248 18,188 42,132',
+  svgPolygons:[
+    {id:'Overschie',pts:'85,90 150,55 195,52 220,68 230,95 215,125 190,145 160,155 128,148 98,132'},
+    {id:'Delfshaven',pts:'150,55 225,32 265,38 285,62 290,95 278,130 258,158 235,175 205,185 182,178 160,155 190,145 215,125 230,95 220,68 195,52'},
+    {id:'Centrum',pts:'265,38 310,18 355,20 385,32 400,55 405,80 398,108 378,132 350,148 320,155 295,148 278,130 285,62'},
+    {id:'Noord',pts:'235,175 258,158 278,130 295,148 320,155 350,148 378,132 398,108 412,130 418,165 408,200 388,225 360,242 328,250 295,248 268,238 245,218'},
+    {id:'Hillegersberg-Schiebroek',pts:'355,20 400,14 485,20 530,30 555,52 558,82 545,115 522,142 492,158 460,165 428,162 412,148 412,130 398,108 405,80 400,55 385,32'},
+    {id:'Kralingen-Crooswijk',pts:'412,130 412,148 428,162 460,165 492,158 520,170 535,198 528,228 508,252 482,268 452,272 422,265 396,248 388,225 408,200 418,165'},
+    {id:'Prins Alexander',pts:'530,30 560,36 625,62 680,100 720,148 742,202 748,260 738,305 715,338 682,360 645,368 610,362 578,342 550,312 535,278 528,248 528,228 535,198 520,170 492,158 522,142 545,115 558,82 555,52'},
+    {id:'Feijenoord',pts:'205,185 235,175 245,218 268,238 295,248 328,250 360,242 388,225 396,248 422,265 452,272 482,268 508,252 528,248 535,278 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210'},
+    {id:'Pernis-Hoogvliet-Rozenburg',pts:'52,364 90,415 140,458 200,492 270,516 340,530 410,534 480,528 545,514 600,492 650,460 690,420 720,372 740,318 715,338 682,360 645,368 610,362 578,342 550,312 548,348 528,378 498,402 460,418 418,428 375,432 330,428 285,414 248,392 218,362 198,325 190,284 195,245 205,210 205,185 182,178 160,155 128,148 98,132 85,90 42,132 28,188 16,248 28,308'},
+  ],
+  demo:[
+    {n:'Centrum',inw:'~82k',woz:'€480k',ned:45,nw:30,w:25,koop:'28% koop',profiel:'Binnenstad, Coolsingel, Erasmusbrug. Studenten, expats. Hoogste opkomst (49%). GL/PvdA 32%, D66 14%.'},
+    {n:'Delfshaven',inw:'~73k',woz:'€310k',ned:32,nw:50,w:18,koop:'25% koop',profiel:'Historische havenwijk. Spangen, Bospolder. Laagste opkomst boven Maas (34%). DENK sterk (19%).'},
+    {n:'Noord',inw:'~81k',woz:'€370k',ned:48,nw:32,w:20,koop:'32% koop',profiel:'Bergpolder, Blijdorp, Oude Noorden. Gemengd. GL/PvdA wint (31%). DENK 8%, FvD emerging.'},
+    {n:'Hillegersberg-Schiebroek',inw:'~55k',woz:'€530k',ned:65,nw:18,w:17,koop:'62% koop',profiel:'Meest welvarend gebied. Bergse Plassen, villawijken. Hoogste opkomst (59%). Leefbaar 21%, GL/PvdA 19%, VVD 18%.'},
+    {n:'Kralingen-Crooswijk',inw:'~62k',woz:'€420k',ned:52,nw:28,w:20,koop:'42% koop',profiel:'Kralingse Plas, Crooswijk. GL/PvdA, VVD en Leefbaar elk ~17-20%. Meest competitief gebied.'},
+    {n:'Prins Alexander',inw:'~89k',woz:'€345k',ned:50,nw:32,w:18,koop:'38% koop',profiel:'Ommoord, Zevenkamp, Nesselande. Leefbaar domineert (32%). Lage opkomst (41%). FvD 6%.'},
+    {n:'Feijenoord',inw:'~75k',woz:'€285k',ned:28,nw:55,w:17,koop:'22% koop',profiel:'Afrikaanderwijk, IJsselmonde-Noord. Meest divers. Laagste opkomst (30%). DENK 18%, Leefbaar 21%, GL/PvdA 19%.'},
+    {n:'Overschie',inw:'~18k',woz:'€385k',ned:52,nw:28,w:20,koop:'40% koop',profiel:'Kleinste gebied, aan de A13. Leefbaar 22%, GL/PvdA 19%. Opkomst 46%.'},
+    {n:'Pernis-Hoogvliet-Rozenburg',inw:'~68k',woz:'€310k',ned:58,nw:26,w:16,koop:'52% koop',profiel:'Haveneilanden en tuindorpen. Sterk autochtoon. Leefbaar 39%, FvD 11% — sterkste FvD-score van de stad.'},
+  ],
+  demoFoot:'Bronnen: CBS Kerncijfers Wijken 2025 · Gemeente Rotterdam · 358 stembureaus · WOZ peildatum 1 jan 2024',
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// UTRECHT (abbreviated for space)
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.utrecht = {
+  name:'Utrecht', subtitle:'per stadswijk',
+  meta:'~178.000 stemmen\n60,7% opkomst\n18 maart 2026', avgOpk:60.7,
+  seats:[{n:14,l:'GL/PvdA'},{n:9,l:'D66'},{n:5,l:'VVD'},{n:3,l:'CDA'},{n:2,l:'PvdD'},{n:'12×1',l:'Overig'}],
+  footer:['Bron: Gemeente Utrecht · onderzoek.utrecht.nl · GR2026','Per stembureau beschikbaar na 26 maart 2026'],
+  parties:[
+    {id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'d66',name:'D66',color:'#00883c'},
+    {id:'vvd',name:'VVD',color:'#d44000'},{id:'cda',name:'CDA',color:'#007040'},
+    {id:'pvdd',name:'PvdD',color:'#005828'},{id:'cu',name:'ChristenUnie',color:'#005898'},
+    {id:'denk',name:'DENK',color:'#007888'},{id:'volt',name:'Volt',color:'#6820a0'},
+    {id:'sns',name:'Student&Start',color:'#e06000'},{id:'ja21',name:'JA21',color:'#1a3a6a'},
+    {id:'fvd',name:'FvD',color:'#781818'},{id:'us',name:'Ut.Solidair',color:'#c00060'},
+    {id:'unu',name:'UtrechtNu!',color:'#d07000'},{id:'bij1',name:'BIJ1',color:'#c80058'},
+    {id:'eenu',name:'EenUtrecht',color:'#3060a0'},{id:'sbu',name:'Stadsbelang',color:'#808000'},
+    {id:'sp',name:'SP',color:'#aa0000'},{id:'pvv',name:'PVV',color:'#003070'},
+    {id:'link',name:'LINK',color:'#606060'},{id:'ovr',name:'Overig',color:'#888888'},
+  ],
+  wijken:[
+    {id:'Binnenstad',lbl:[375,260],gel:18200,opk:65,pv:{glpvda:5824,d66:4004,vvd:1638,cda:910,pvdd:1092,cu:546,denk:182,volt:910,sns:546,ja21:364,fvd:182,us:364,unu:182,bij1:182,eenu:182,sbu:182,sp:182,pvv:182,link:182,ovr:0}},
+    {id:'Oost',lbl:[482,306],gel:28800,opk:72,pv:{glpvda:8928,d66:6048,vvd:2592,cda:1440,pvdd:1728,cu:864,denk:288,volt:1440,sns:1440,ja21:576,fvd:288,us:576,unu:288,bij1:288,eenu:288,sbu:288,sp:576,pvv:288,link:0,ovr:288}},
+    {id:'Noordoost',lbl:[440,145],gel:32680,opk:76,pv:{glpvda:11111,d66:7843,vvd:3268,cda:1634,pvdd:1961,cu:981,denk:327,volt:1634,sns:654,ja21:654,fvd:327,us:327,unu:327,bij1:327,eenu:327,sbu:327,sp:327,pvv:327,link:0,ovr:0}},
+    {id:'Overvecht',lbl:[240,175],gel:14308,opk:40,pv:{glpvda:2862,d66:1431,vvd:859,cda:1145,pvdd:572,cu:715,denk:2575,volt:286,sns:143,ja21:572,fvd:715,us:429,unu:286,bij1:429,eenu:286,sbu:286,sp:429,pvv:1001,link:143,ovr:0}},
+    {id:'Noordwest',lbl:[108,222],gel:22040,opk:58,pv:{glpvda:5951,d66:3747,vvd:1984,cda:1543,pvdd:1322,cu:1102,denk:1102,volt:882,sns:441,ja21:661,fvd:661,us:441,unu:441,bij1:441,eenu:441,sbu:441,sp:441,pvv:882,link:220,ovr:0}},
+    {id:'West',lbl:[238,330],gel:27300,opk:65,pv:{glpvda:8190,d66:5460,vvd:2457,cda:1638,pvdd:1911,cu:819,denk:819,volt:1638,sns:546,ja21:546,fvd:546,us:546,unu:546,bij1:546,eenu:273,sbu:273,sp:546,pvv:546,link:0,ovr:0}},
+    {id:'Zuidwest',lbl:[112,385],gel:18200,opk:52,pv:{glpvda:4186,d66:2548,vvd:1638,cda:1638,pvdd:910,cu:1092,denk:1456,volt:546,sns:182,ja21:728,fvd:728,us:546,unu:364,bij1:546,eenu:364,sbu:364,sp:546,pvv:910,link:182,ovr:0}},
+    {id:'Zuid',lbl:[362,418],gel:28160,opk:64,pv:{glpvda:7885,d66:5350,vvd:2816,cda:1972,pvdd:1972,cu:1126,denk:845,volt:1408,sns:563,ja21:845,fvd:563,us:563,unu:282,bij1:282,eenu:282,sbu:282,sp:563,pvv:563,link:0,ovr:0}},
+    {id:'LeidscheRijn',lbl:[145,490],gel:28094,opk:55,pv:{glpvda:6181,d66:7024,vvd:3371,cda:2529,pvdd:1686,cu:1405,denk:843,volt:1405,sns:281,ja21:1124,fvd:843,us:281,unu:562,bij1:281,eenu:281,sbu:562,sp:281,pvv:843,link:0,ovr:0}},
+    {id:'Vleuten',lbl:[340,530],gel:24570,opk:63,pv:{glpvda:5160,d66:4423,vvd:5405,cda:3194,pvdd:1474,cu:1474,denk:491,volt:983,sns:246,ja21:1228,fvd:737,us:246,unu:491,bij1:246,eenu:246,sbu:246,sp:246,pvv:983,link:0,ovr:0}},
+  ],
+  svgClip:'155,42 250,30 340,28 430,32 510,38 575,55 630,90 660,135 668,185 660,235 648,285 638,340 625,395 610,445 590,490 560,530 520,565 475,590 425,608 370,618 310,614 255,600 200,575 155,548 110,510 75,465 48,415 30,355 22,288 28,225 42,168 72,118 108,74',
+  svgPolygons:[
+    {id:'Binnenstad',pts:'312,252 350,238 392,242 420,262 424,290 412,318 386,332 354,334 328,320 310,300 308,276'},
+    {id:'Oost',pts:'392,242 438,228 490,232 530,248 548,278 545,318 530,350 505,372 472,382 440,375 412,355 386,332 412,318 424,290 420,262'},
+    {id:'Noordoost',pts:'350,238 392,242 420,262 438,228 490,232 530,248 548,212 560,168 565,120 540,80 495,55 440,42 385,38 335,42 305,58 292,90 295,135 305,175 312,220'},
+    {id:'Overvecht',pts:'180,55 250,38 305,58 292,90 295,135 305,175 312,220 312,252 308,276 270,285 235,280 200,265 172,238 155,200 148,160 152,115 165,78'},
+    {id:'Noordwest',pts:'42,168 72,118 108,74 155,42 180,55 165,78 152,115 148,160 155,200 172,238 200,265 185,298 162,322 135,338 105,335 78,315 52,280 30,235 28,200'},
+    {id:'West',pts:'162,322 185,298 200,265 235,280 270,285 308,276 310,300 328,320 315,345 295,368 268,382 238,388 205,378 180,358'},
+    {id:'Zuidwest',pts:'30,355 52,280 78,315 105,335 135,338 162,322 180,358 205,378 195,415 178,445 155,462 125,468 95,455 65,430 42,395'},
+    {id:'Zuid',pts:'310,300 328,320 354,334 386,332 412,355 440,375 448,408 438,442 415,468 382,480 348,482 315,470 290,450 272,420 268,382 295,368 315,345'},
+    {id:'LeidscheRijn',pts:'22,288 30,355 42,395 65,430 95,455 125,468 155,462 178,445 195,415 205,378 238,388 250,420 245,465 228,505 200,535 165,555 130,558 90,545 58,520 32,488 16,450 12,400 18,348'},
+    {id:'Vleuten',pts:'195,415 205,378 238,388 268,382 272,420 290,450 315,470 348,482 382,480 415,468 438,442 460,468 462,510 448,548 420,578 385,598 345,612 305,614 260,606 218,590 182,565 155,548 155,462 178,445'},
+  ],
+  demo:[
+    {n:'Binnenstad',inw:'~27k',woz:'€520k',ned:48,nw:28,w:24,koop:'30% koop',profiel:'Historisch centrum. Studenten, expats, jonge professionals. Hoog opleidingsniveau.'},
+    {n:'Oost',inw:'~40k',woz:'€480k',ned:52,nw:25,w:23,koop:'38% koop',profiel:'Universiteitswijk (UU). GL/PvdA 31%, D66 21% bevestigd. Hoog opkomst 72%.'},
+    {n:'Noordoost',inw:'~43k',woz:'€460k',ned:56,nw:22,w:22,koop:'42% koop',profiel:'Hoog opgeleide gezinnen. Hoogste opkomst Utrecht (76%). GL/PvdA & D66 sterk.'},
+    {n:'Overvecht',inw:'35.770',woz:'€327k',ned:27,nw:64,w:9,koop:'21% koop',profiel:'Meeste niet-westerse achtergrond Utrecht (64%). 79% huur. Laagste opkomst (40%). DENK aanzienlijk.'},
+    {n:'Noordwest',inw:'~38k',woz:'€395k',ned:50,nw:30,w:20,koop:'38% koop',profiel:'Gemengde wijk. Iets lager inkomensniveau. Opkomst 58% (onder gemiddeld).'},
+    {n:'West',inw:'~42k',woz:'€430k',ned:53,nw:25,w:22,koop:'35% koop',profiel:'Gentrificerende wijk. Jonge gezinnen en studenten. Boven gemiddelde opkomst (~65%).'},
+    {n:'Zuidwest',inw:'~35k',woz:'€380k',ned:42,nw:38,w:20,koop:'30% koop',profiel:'Diverse wijk. Lagere inkomens, meer sociale huur. Opkomst 52%.'},
+    {n:'Zuid',inw:'~44k',woz:'€445k',ned:54,nw:24,w:22,koop:'46% koop',profiel:'Residentiële gezinswijk. Boven gem. opkomst (~64%). Mix koop en huur.'},
+    {n:'Leidsche Rijn',inw:'51.080',woz:'€568k',ned:60,nw:22,w:18,koop:'50% koop',profiel:'Snelst groeiend Utrecht (+84%). D66 wint. Jonge gezinnen, hogere inkomens. Hoogste WOZ.'},
+    {n:'Vleuten-De Meern',inw:'~39k',woz:'€580k',ned:65,nw:18,w:17,koop:'68% koop',profiel:'Suburbaan, VVD wint. Gezinnen met hogere inkomens. Sterk autochtoon. Boven gem. opkomst.'},
+  ],
+  demoFoot:'Bronnen: CBS Kerncijfers Wijken 2025 · AlleCijfers.nl · Gemeente Utrecht · WOZ peildatum 1 jan 2024',
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// EINDHOVEN, GRONINGEN, DELFT, MAASTRICHT, ALMERE, AMSTELVEEN, DIEMEN
+// (kept concise - same data as original)
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.eindhoven={name:'Eindhoven',subtitle:'per stadsdeel',meta:'~95.000 stemmen\n49,1% opkomst\n18 maart 2026',avgOpk:49.1,noDemo:true,seats:[{n:10,l:'GL/PvdA'},{n:7,l:'VVD'},{n:5,l:'D66'},{n:4,l:'PvdD'},{n:3,l:'DENK'},{n:'10×1-2',l:'Overig'}],footer:['Bron: Gemeente Eindhoven · GR2026','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'d66',name:'D66',color:'#009040'},{id:'pvdd',name:'PvdD',color:'#006830'},{id:'denk',name:'DENK',color:'#007888'},{id:'sp',name:'SP',color:'#aa0000'},{id:'cda',name:'CDA',color:'#1a5c38'},{id:'volt',name:'Volt',color:'#6820a0'},{id:'fvd',name:'FvD',color:'#781818'},{id:'pvv',name:'PVV',color:'#002878'},{id:'cu',name:'ChristenUnie',color:'#005898'},{id:'bij1',name:'BIJ1',color:'#c80058'},{id:'fplus',name:'50PLUS',color:'#887000'},{id:'nida',name:'Nida',color:'#006060'},{id:'pvr',name:'Lijst Pim',color:'#a06000'},{id:'ovr',name:'Overig',color:'#888888'}],wijken:[{id:'Centrum',lbl:[382,90],gel:15200,opk:55,pv:{glpvda:4560,vvd:2128,d66:2432,pvdd:912,denk:608,sp:456,cda:456,volt:608,fvd:456,pvv:304,cu:228,bij1:304,fplus:152,nida:152,pvr:152,ovr:312}},{id:'Woensel-Noord',lbl:[390,175],gel:12400,opk:42,pv:{glpvda:2976,vvd:1488,d66:1240,pvdd:620,denk:1364,sp:620,cda:496,volt:372,fvd:620,pvv:620,cu:248,bij1:620,fplus:248,nida:496,pvr:248,ovr:124}},{id:'Woensel-Zuid',lbl:[320,255],gel:14800,opk:48,pv:{glpvda:3996,vvd:2072,d66:1776,pvdd:888,denk:740,sp:592,cda:444,volt:592,fvd:592,pvv:444,cu:296,bij1:296,fplus:296,nida:296,pvr:148,ovr:332}},{id:'Stratum',lbl:[510,265],gel:13600,opk:50,pv:{glpvda:2992,vvd:2312,d66:1904,pvdd:816,denk:544,sp:408,cda:544,volt:680,fvd:544,pvv:408,cu:272,bij1:272,fplus:272,nida:136,pvr:272,ovr:224}},{id:'Tongelre',lbl:[618,370],gel:10200,opk:52,pv:{glpvda:2040,vvd:1938,d66:1326,pvdd:714,denk:408,sp:306,cda:612,volt:510,fvd:510,pvv:408,cu:306,bij1:204,fplus:204,nida:102,pvr:204,ovr:408}},{id:'Westerpark',lbl:[118,258],gel:9800,opk:46,pv:{glpvda:2548,vvd:1176,d66:980,pvdd:588,denk:588,sp:490,cda:392,volt:392,fvd:392,pvv:392,cu:294,bij1:490,fplus:196,nida:392,pvr:98,ovr:392}},{id:'Gestel',lbl:[365,490],gel:11200,opk:50,pv:{glpvda:2576,vvd:1904,d66:1232,pvdd:784,denk:336,sp:336,cda:448,volt:560,fvd:448,pvv:336,cu:336,bij1:224,fplus:224,nida:112,pvr:224,ovr:336}},{id:'Strijp',lbl:[188,380],gel:10400,opk:47,pv:{glpvda:2704,vvd:1248,d66:1040,pvdd:624,denk:520,sp:520,cda:312,volt:624,fvd:416,pvv:416,cu:208,bij1:416,fplus:208,nida:312,pvr:104,ovr:728}},{id:'Tivoli',lbl:[400,420],gel:8200,opk:53,pv:{glpvda:1640,vvd:1558,d66:902,pvdd:574,denk:246,sp:246,cda:574,volt:410,fvd:410,pvv:328,cu:328,bij1:164,fplus:164,nida:82,pvr:164,ovr:410}}],svgClip:'88,200 130,120 195,72 280,42 370,30 460,36 545,65 618,108 668,172 692,248 688,328 668,402 630,462 572,510 502,545 422,562 338,558 258,538 186,500 126,446 82,382 60,312 66,246',svgPolygons:[{id:'Woensel-Noord',pts:'88,200 130,120 195,72 280,42 370,30 460,36 545,65 618,108 668,172 692,248 688,328 575,215 452,172 300,165 185,210'},{id:'Woensel-Zuid',pts:'185,210 300,165 452,172 380,278 292,338 162,295'},{id:'Stratum',pts:'452,172 575,215 600,325 468,338 380,278'},{id:'Tongelre',pts:'575,215 688,328 668,402 630,462 572,510 530,412 600,325'},{id:'Centrum',pts:'380,278 468,338 380,408 292,338'},{id:'Tivoli',pts:'292,338 380,408 468,338 600,325 530,412 435,450 300,448 210,400'},{id:'Gestel',pts:'210,400 300,448 435,450 530,412 572,510 502,545 422,562 338,558 258,538 186,500'},{id:'Strijp',pts:'162,295 292,338 210,400 186,500 126,446 82,382 60,312 66,246'},{id:'Westerpark',pts:'88,200 185,210 162,295 66,246'}],demo:[],demoFoot:''};
+
+CITIES.groningen={name:'Groningen',subtitle:'per stadswijk',meta:'115.344 geldige stemmen\n58,0% opkomst\n18 maart 2026',avgOpk:58.0,noDemo:true,seats:[{n:15,l:'GL/PvdA'},{n:7,l:'D66'},{n:6,l:'VVD'},{n:5,l:'PvdD'},{n:5,l:'CDA'},{n:'7×1-5',l:'Overig'}],footer:['Bron: Gemeente Groningen · GR2026 · 153 stembureaus','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'d66',name:'D66',color:'#00883c'},{id:'pvdd',name:'PvdD',color:'#006830'},{id:'g100',name:'100% Groningen',color:'#c0392b'},{id:'sp',name:'SP',color:'#aa0000'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'sns',name:'Student en Stad',color:'#e06000'},{id:'cu',name:'ChristenUnie',color:'#005898'},{id:'cda',name:'CDA',color:'#007040'},{id:'pvn',name:'Partij v/h Noorden',color:'#008888'},{id:'pvv',name:'PVV',color:'#003070'},{id:'durf',name:'DURF',color:'#aaaaaa'},{id:'fvd',name:'FvD',color:'#781818'},{id:'bbb',name:'BBB',color:'#a08000'},{id:'volt',name:'Volt',color:'#6820a0'}],wijken:[{id:'Binnenstad',lbl:[375,260],gel:11800,opk:65,pv:{glpvda:3304,d66:2006,pvdd:1180,g100:472,sp:590,vvd:826,sns:1534,cu:236,cda:354,pvn:177,pvv:177,durf:47,fvd:236,bbb:59,volt:354}},{id:'Oosterparkwijk',lbl:[550,360],gel:9200,opk:64,pv:{glpvda:2668,d66:1472,pvdd:920,g100:368,sp:460,vvd:644,sns:736,cu:184,cda:276,pvn:138,pvv:184,durf:37,fvd:184,bbb:46,volt:276}},{id:'Korrewegwijk',lbl:[430,120],gel:8500,opk:54,pv:{glpvda:2125,d66:935,pvdd:680,g100:680,sp:680,vvd:510,sns:425,cu:255,cda:425,pvn:255,pvv:425,durf:43,fvd:340,bbb:85,volt:170}},{id:'Paddepoel',lbl:[278,130],gel:9800,opk:55,pv:{glpvda:2450,d66:980,pvdd:784,g100:784,sp:784,vvd:588,sns:490,cu:294,cda:490,pvn:294,pvv:490,durf:49,fvd:392,bbb:98,volt:294}},{id:'Lewenborg',lbl:[590,200],gel:7600,opk:50,pv:{glpvda:1596,d66:608,pvdd:456,g100:836,sp:608,vvd:608,sns:304,cu:304,cda:608,pvn:380,pvv:456,durf:38,fvd:380,bbb:114,volt:228}},{id:'Hoogkerk',lbl:[128,230],gel:5200,opk:56,pv:{glpvda:1092,d66:468,pvdd:312,g100:624,sp:416,vvd:520,sns:156,cu:312,cda:520,pvn:364,pvv:364,durf:26,fvd:312,bbb:104,volt:156}},{id:'De Wijert',lbl:[330,410],gel:8800,opk:60,pv:{glpvda:2288,d66:1056,pvdd:704,g100:704,sp:528,vvd:704,sns:440,cu:352,cda:616,pvn:264,pvv:352,durf:44,fvd:352,bbb:88,volt:264}},{id:'Haren',lbl:[355,510],gel:8400,opk:65,pv:{glpvda:1680,d66:1344,pvdd:756,g100:420,sp:336,vvd:1176,sns:252,cu:420,cda:840,pvn:252,pvv:252,durf:42,fvd:252,bbb:84,volt:336}},{id:'Ten Boer',lbl:[635,310],gel:5000,opk:58,pv:{glpvda:900,d66:500,pvdd:300,g100:550,sp:350,vvd:600,sns:100,cu:300,cda:550,pvn:350,pvv:300,durf:25,fvd:250,bbb:100,volt:100}},{id:'Meerstad',lbl:[565,490],gel:4600,opk:52,pv:{glpvda:920,d66:460,pvdd:322,g100:460,sp:276,vvd:552,sns:138,cu:184,cda:414,pvn:276,pvv:276,durf:23,fvd:230,bbb:92,volt:138}}],svgClip:'268,38 352,28 436,32 514,52 580,82 634,122 672,172 694,230 700,292 692,356 668,414 630,462 580,502 522,532 456,552 384,558 312,550 244,528 182,494 130,450 90,396 66,334 56,268 62,202 82,146 114,100 156,66 210,46',svgPolygons:[{id:'Hoogkerk',pts:'56,268 62,202 82,146 114,100 156,66 190,100 210,160 200,230 180,290 140,330 90,340 66,334'},{id:'Paddepoel',pts:'190,100 210,46 268,38 352,28 360,100 330,160 280,200 210,160'},{id:'Korrewegwijk',pts:'360,100 352,28 436,32 514,52 520,120 460,160 400,170 330,160'},{id:'Lewenborg',pts:'520,120 514,52 580,82 634,122 672,172 694,230 680,280 640,310 580,300 520,280 460,260 460,160'},{id:'Binnenstad',pts:'280,200 330,160 400,170 460,160 460,260 420,310 360,330 300,310 240,280'},{id:'Oosterparkwijk',pts:'460,260 520,280 580,300 640,310 640,360 600,410 540,430 480,410 420,370 420,310'},{id:'Ten Boer',pts:'580,300 640,310 680,280 694,230 700,292 692,356 668,414 640,410 600,410 640,360 640,310'},{id:'Meerstad',pts:'640,410 668,414 630,462 580,502 522,532 560,490 580,450 600,410'},{id:'De Wijert',pts:'240,280 300,310 360,330 420,310 420,370 480,410 440,460 380,490 300,480 240,440 200,380 200,320'},{id:'Haren',pts:'200,380 240,440 300,480 380,490 440,460 480,410 540,430 600,410 560,490 522,532 456,552 384,558 312,550 244,528 182,494 130,450 90,396 90,340 140,330 180,290'}],demo:[],demoFoot:''};
+
+CITIES.delft={name:'Delft',subtitle:'per stadswijk',meta:'47.496 geldige stemmen\n54,7% opkomst\n18 maart 2026',avgOpk:54.7,noDemo:true,seats:[{n:10,l:'GL/PvdA'},{n:9,l:'D66'},{n:7,l:'Hart v. Delft'},{n:7,l:'STIP'},{n:4,l:'VVD'},{n:'4×1-2',l:'Overig'}],footer:['Bron: Gemeente Delft · GR2026 · 52 stembureaus','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'stip',name:'STIP',color:'#0060a0'},{id:'d66',name:'D66',color:'#00883c'},{id:'hvd',name:'Hart voor Delft',color:'#c0392b'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'sp',name:'SP',color:'#aa0000'},{id:'cda',name:'CDA',color:'#007040'},{id:'ond',name:'Onafh. Delft',color:'#555555'},{id:'cu',name:'ChristenUnie',color:'#005898'},{id:'volt',name:'Volt',color:'#6820a0'},{id:'pvv',name:'PVV',color:'#003070'},{id:'fvd',name:'FvD',color:'#781818'},{id:'pvdd',name:'PvdD',color:'#006830'}],wijken:[{id:'Binnenstad',lbl:[375,260],gel:11200,opk:62,pv:{glpvda:2240,stip:2016,d66:2352,hvd:1008,vvd:784,sp:336,cda:448,ond:336,cu:336,volt:448,pvv:280,fvd:336,pvdd:448}},{id:'Voorhof',lbl:[250,380],gel:9200,opk:48,pv:{glpvda:1380,stip:920,d66:920,hvd:1840,vvd:644,sp:368,cda:460,ond:460,cu:276,volt:276,pvv:460,fvd:460,pvdd:368}},{id:'Tanthof',lbl:[300,470],gel:6500,opk:52,pv:{glpvda:910,stip:780,d66:910,hvd:1170,vvd:585,sp:260,cda:390,ond:390,cu:195,volt:195,pvv:390,fvd:390,pvdd:325}},{id:'Wippolder',lbl:[195,235],gel:6800,opk:55,pv:{glpvda:1360,stip:680,d66:1360,hvd:612,vvd:748,sp:204,cda:340,ond:272,cu:204,volt:340,pvv:272,fvd:340,pvdd:340}},{id:'Vrijenban',lbl:[600,360],gel:5800,opk:55,pv:{glpvda:1044,stip:638,d66:1044,hvd:696,vvd:580,sp:174,cda:348,ond:290,cu:174,volt:290,pvv:290,fvd:290,pvdd:232}},{id:'Hof van Delft',lbl:[490,435],gel:4400,opk:57,pv:{glpvda:704,stip:440,d66:792,hvd:528,vvd:528,sp:132,cda:308,ond:220,cu:176,volt:220,pvv:264,fvd:264,pvdd:176}},{id:'Delft Noord',lbl:[368,95],gel:3596,opk:52,pv:{glpvda:576,stip:360,d66:648,hvd:504,vvd:396,sp:108,cda:252,ond:180,cu:108,volt:180,pvv:216,fvd:216,pvdd:144}}],svgClip:'280,42 370,30 460,42 540,72 606,116 648,172 668,240 664,310 642,376 604,430 548,472 480,498 402,508 322,498 248,472 186,432 140,380 114,318 108,250 122,184 152,128 198,86 246,58',svgPolygons:[{id:'Delft Noord',pts:'280,42 370,30 460,42 540,72 606,116 560,130 480,148 388,152 300,148 220,130 152,128 198,86 246,58'},{id:'Wippolder',pts:'152,128 220,130 300,148 300,240 240,280 180,300 114,318 108,250 122,184'},{id:'Binnenstad',pts:'300,148 388,152 480,148 560,130 606,116 648,172 668,240 664,310 600,320 520,300 480,300 388,310 300,240'},{id:'Vrijenban',pts:'600,320 664,310 642,376 604,430 548,380 520,300'},{id:'Voorhof',pts:'180,300 240,280 300,240 388,310 388,420 300,450 220,430 186,432 140,380 114,318'},{id:'Hof van Delft',pts:'480,300 520,300 548,380 604,430 548,472 480,498 402,508 388,420 388,310'},{id:'Tanthof',pts:'220,430 300,450 388,420 402,508 322,498 248,472 186,432'}],demo:[],demoFoot:''};
+
+CITIES.maastricht={name:'Maastricht',subtitle:'per stadsdeel',meta:'47.926 geldige stemmen\n46,5% opkomst\n18 maart 2026',avgOpk:46.5,noDemo:true,seats:[{n:9,l:'D66'},{n:8,l:'CDA'},{n:6,l:'GL'},{n:5,l:'PvdA'},{n:5,l:'VVD'},{n:'12×1-4',l:'Overig'}],footer:['Bron: Gemeente Maastricht · GR2026 · 64 stembureaus','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'spm',name:'SPM',color:'#8B4513'},{id:'gl',name:'GroenLinks',color:'#2d8a2d'},{id:'d66',name:'D66',color:'#00883c'},{id:'cda',name:'CDA',color:'#007040'},{id:'pvda',name:'PvdA',color:'#c00060'},{id:'pvm',name:'Partij Veilig M.',color:'#555555'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'pvdd',name:'PvdD',color:'#006830'},{id:'volt',name:'Volt',color:'#6820a0'},{id:'sp',name:'SP',color:'#aa0000'},{id:'pvv',name:'PVV',color:'#003070'},{id:'fplus',name:'50PLUS',color:'#887000'},{id:'sab',name:'SAB',color:'#888888'},{id:'moed',name:'M:OED',color:'#005888'},{id:'lpm',name:'Lib. Partij Mstr.',color:'#cc6600'},{id:'fvd',name:'FvD',color:'#781818'},{id:'mvn',name:'MSTR van NU',color:'#b07000'}],wijken:[{id:'Centrum',lbl:[382,90],gel:9800,opk:55,pv:{spm:490,gl:1078,d66:1666,cda:980,pvda:588,pvm:196,vvd:784,pvdd:392,volt:588,sp:392,pvv:294,fplus:294,sab:196,moed:196,lpm:196,fvd:392,mvn:490}},{id:'Wyck',lbl:[570,290],gel:5600,opk:52,pv:{spm:280,gl:672,d66:1008,cda:560,pvda:336,pvm:112,vvd:504,pvdd:224,volt:336,sp:224,pvv:168,fplus:224,sab:112,moed:168,lpm:112,fvd:224,mvn:336}},{id:'Noord',lbl:[365,100],gel:8200,opk:44,pv:{spm:738,gl:738,d66:984,cda:1066,pvda:574,pvm:246,vvd:574,pvdd:246,volt:328,sp:328,pvv:328,fplus:328,sab:164,moed:246,lpm:164,fvd:328,mvn:328}},{id:'Heer',lbl:[545,400],gel:6400,opk:46,pv:{spm:576,gl:512,d66:832,cda:1024,pvda:448,pvm:192,vvd:576,pvdd:192,volt:256,sp:256,pvv:256,fplus:320,sab:128,moed:192,lpm:128,fvd:320,mvn:320}},{id:'Malberg',lbl:[185,240],gel:5800,opk:38,pv:{spm:580,gl:348,d66:464,cda:580,pvda:464,pvm:232,vvd:290,pvdd:174,volt:232,sp:464,pvv:348,fplus:348,sab:232,moed:348,lpm:116,fvd:348,mvn:232}},{id:'Sint Pieter',lbl:[215,375],gel:5400,opk:44,pv:{spm:756,gl:378,d66:594,cda:648,pvda:378,pvm:270,vvd:324,pvdd:162,volt:216,sp:270,pvv:270,fplus:324,sab:162,moed:162,lpm:108,fvd:270,mvn:270}},{id:'Amby',lbl:[575,200],gel:4200,opk:50,pv:{spm:420,gl:294,d66:504,cda:630,pvda:252,pvm:126,vvd:336,pvdd:126,volt:168,sp:168,pvv:210,fplus:294,sab:84,moed:126,lpm:84,fvd:252,mvn:168}},{id:'Wolder',lbl:[360,440],gel:2526,opk:42,pv:{spm:278,gl:176,d66:303,cda:328,pvda:176,pvm:76,vvd:202,pvdd:76,volt:101,sp:101,pvv:126,fplus:176,sab:51,moed:76,lpm:51,fvd:151,mvn:101}}],svgClip:'268,42 352,28 436,38 510,62 570,100 614,148 642,206 650,268 638,330 610,384 568,428 514,460 450,480 380,486 310,476 248,450 196,412 156,364 130,308 118,248 122,188 142,134 178,90 224,58',svgPolygons:[{id:'Noord',pts:'268,42 352,28 436,38 510,62 500,130 440,160 380,170 320,160 260,130 224,90 224,58'},{id:'Amby',pts:'510,62 570,100 614,148 642,206 650,268 630,310 590,290 550,250 530,200 500,130'},{id:'Wyck',pts:'530,200 550,250 590,290 630,310 638,330 610,384 570,360 530,330 510,280 500,200'},{id:'Centrum',pts:'260,130 320,160 380,170 440,160 500,130 500,200 510,280 480,320 420,340 360,320 300,300 260,260 250,190'},{id:'Heer',pts:'570,360 610,384 568,428 514,460 480,440 460,390 480,320 510,280 530,330'},{id:'Malberg',pts:'118,248 122,188 142,134 178,90 224,58 224,90 260,130 250,190 230,250 200,300 160,320 130,308'},{id:'Sint Pieter',pts:'130,308 160,320 200,300 230,250 260,260 300,300 280,360 250,410 220,440 196,412 156,364'},{id:'Wolder',pts:'250,410 280,360 300,300 360,320 420,340 480,320 460,390 480,440 514,460 450,480 380,486 310,476 248,450 220,440'}],demo:[],demoFoot:''};
+
+CITIES.almere={name:'Almere',subtitle:'per stadsdeel',meta:'69.389 geldige stemmen\n40,7% opkomst\n18 maart 2026',avgOpk:40.7,noDemo:true,seats:[{n:10,l:'GL/PvdA'},{n:7,l:'VVD'},{n:7,l:'JA21'},{n:6,l:'FvD'},{n:5,l:'D66'},{n:'10×1-4',l:'Overig'}],footer:['Bron: Gemeente Almere · GR2026','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'pvv',name:'PVV',color:'#003070'},{id:'d66',name:'D66',color:'#00883c'},{id:'sp',name:'SP',color:'#aa0000'},{id:'pvdd',name:'PvdD',color:'#006830'},{id:'la',name:'Leefbaar Almere',color:'#c0392b'},{id:'cu',name:'ChristenUnie',color:'#005898'},{id:'fplus',name:'50PLUS',color:'#887000'},{id:'fvd',name:'FvD',color:'#781818'},{id:'cda',name:'CDA',color:'#007040'},{id:'denk',name:'DENK',color:'#007888'},{id:'ap',name:'Almere Partij',color:'#008888'},{id:'sl',name:'Sterk Lokaal',color:'#555555'},{id:'dv',name:'De Verbinding',color:'#aaaaaa'},{id:'ja21',name:'JA21',color:'#1a3a6a'},{id:'sva',name:'Samen v. Almere',color:'#cc6600'}],wijken:[{id:'Almere Stad',lbl:[385,175],gel:28000,opk:40,pv:{glpvda:4200,vvd:3080,pvv:2240,d66:2800,sp:1120,pvdd:1120,la:1680,cu:840,fplus:1680,fvd:2240,cda:1960,denk:952,ap:840,sl:420,dv:280,ja21:2100,sva:448}},{id:'Almere Haven',lbl:[200,140],gel:9800,opk:38,pv:{glpvda:1470,vvd:980,pvv:882,d66:882,sp:392,pvdd:294,la:784,cu:294,fplus:588,fvd:784,cda:588,denk:392,ap:294,sl:196,dv:98,ja21:784,sva:147}},{id:'Almere Buiten',lbl:[615,195],gel:14000,opk:41,pv:{glpvda:2100,vvd:1680,pvv:1120,d66:1400,sp:560,pvdd:560,la:840,cu:420,fplus:840,fvd:1120,cda:980,denk:420,ap:420,sl:196,dv:140,ja21:1120,sva:224}},{id:'Almere Poort',lbl:[185,330],gel:8400,opk:40,pv:{glpvda:1260,vvd:924,pvv:672,d66:840,sp:336,pvdd:336,la:504,cu:252,fplus:504,fvd:672,cda:588,denk:336,ap:252,sl:126,dv:84,ja21:672,sva:168}},{id:'Almere Hout',lbl:[620,445],gel:5200,opk:44,pv:{glpvda:728,vvd:676,pvv:364,d66:572,sp:156,pvdd:208,la:312,cu:156,fplus:260,fvd:364,cda:416,denk:104,ap:156,sl:52,dv:52,ja21:364,sva:52}},{id:'Almere Centrum',lbl:[430,340],gel:3989,opk:42,pv:{glpvda:598,vvd:359,pvv:279,d66:399,sp:120,pvdd:120,la:240,cu:80,fplus:200,fvd:319,cda:279,denk:120,ap:80,sl:40,dv:40,ja21:279,sva:80}}],svgClip:'100,80 220,50 380,40 540,50 680,90 730,200 740,340 720,470 670,560 560,610 400,630 240,610 130,560 70,460 50,330 60,200',svgPolygons:[{id:'Almere Haven',pts:'100,80 220,50 310,80 320,160 260,210 180,220 110,190 60,140'},{id:'Almere Stad',pts:'310,80 380,40 480,60 520,120 490,200 440,260 370,290 300,280 260,210 320,160'},{id:'Almere Buiten',pts:'480,60 540,50 680,90 730,200 720,280 660,320 580,310 520,250 520,120'},{id:'Almere Hout',pts:'560,370 580,310 660,320 720,280 740,340 720,470 670,560 580,570 500,540 450,480 440,440 500,400'},{id:'Almere Centrum',pts:'370,290 440,260 490,200 520,250 580,310 560,370 500,400 420,410 350,390 310,340 310,280'},{id:'Almere Poort',pts:'60,200 50,330 70,420 130,500 200,540 260,560 310,560 350,530 380,490 350,390 310,340 270,390 210,420 150,420 90,380 70,310 50,230'}],demo:[],demoFoot:''};
+
+CITIES.amstelveen={name:'Amstelveen',subtitle:'per stadsdeel',meta:'36.284 geldige stemmen\n53,9% opkomst\n18 maart 2026',avgOpk:53.9,noDemo:true,seats:[{n:8,l:'GL/PvdA'},{n:7,l:'VVD'},{n:6,l:'D66'},{n:4,l:'Actief v. A.'},{n:2,l:'FvD'},{n:'6×1-2',l:'Overig'}],footer:['Bron: Gemeente Amstelveen · GR2026','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'d66',name:'D66',color:'#00883c'},{id:'bba',name:'Burgerbelangen',color:'#555555'},{id:'ava',name:'Actief v. Amstelveen',color:'#c0392b'},{id:'gva',name:'Goed v. Amstelveen',color:'#888800'},{id:'sp',name:'SP',color:'#aa0000'},{id:'cda',name:'CDA',color:'#007040'},{id:'fplus',name:'50PLUS',color:'#887000'},{id:'cu',name:'ChristenUnie',color:'#005898'},{id:'fvd',name:'FvD',color:'#781818'}],wijken:[{id:'Centrum',lbl:[382,90],gel:7200,opk:56,pv:{glpvda:1872,vvd:1296,d66:1296,bba:288,ava:648,gva:216,sp:216,cda:216,fplus:216,cu:72,fvd:432}},{id:'Westwijk',lbl:[192,190],gel:5800,opk:52,pv:{glpvda:1160,vvd:1334,d66:986,bba:290,ava:696,gva:174,sp:174,cda:232,fplus:290,cu:116,fvd:406}},{id:'Randwijck',lbl:[590,190],gel:6400,opk:58,pv:{glpvda:1408,vvd:1408,d66:1280,bba:320,ava:640,gva:192,sp:128,cda:256,fplus:320,cu:64,fvd:384}},{id:'Groenelaan',lbl:[385,270],gel:7400,opk:54,pv:{glpvda:1776,vvd:1480,d66:1258,bba:370,ava:740,gva:222,sp:148,cda:296,fplus:296,cu:148,fvd:444}},{id:'Bankras',lbl:[240,400],gel:5200,opk:50,pv:{glpvda:1040,vvd:1144,d66:780,bba:260,ava:676,gva:104,sp:156,cda:208,fplus:260,cu:104,fvd:364}},{id:'Bovenkerk',lbl:[540,420],gel:4284,opk:52,pv:{glpvda:864,vvd:771,d66:686,bba:171,ava:514,gva:86,sp:86,cda:171,fplus:214,cu:86,fvd:257}}],svgClip:'198,58 290,34 388,26 484,34 566,62 630,108 668,166 684,234 678,304 652,368 608,420 550,456 480,474 402,478 324,466 254,440 194,398 148,344 118,280 110,212 126,150 158,100',svgPolygons:[{id:'Centrum',pts:'290,34 388,26 484,34 500,100 450,140 388,152 326,140 270,100'},{id:'Westwijk',pts:'158,100 198,58 290,34 270,100 240,170 190,210 140,240 118,280 110,212 126,150'},{id:'Randwijck',pts:'484,34 566,62 630,108 668,166 684,234 660,280 600,300 540,280 500,220 500,100'},{id:'Groenelaan',pts:'270,100 326,140 388,152 450,140 500,100 500,220 540,280 520,350 460,380 388,388 316,380 256,348 240,280 240,170'},{id:'Bankras',pts:'110,212 118,280 110,320 130,360 148,344 194,398 254,440 324,466 388,420 388,388 316,380 256,348 200,330 160,360 130,360'},{id:'Bovenkerk',pts:'520,350 540,280 600,300 660,280 678,304 652,368 608,420 550,456 480,474 402,478 388,420 388,388 460,380'}],demo:[],demoFoot:''};
+
+CITIES.diemen={name:'Diemen',subtitle:'per wijk',meta:'11.547 geldige stemmen\n47,0% opkomst\n18 maart 2026',avgOpk:47.0,noDemo:true,seats:[{n:12,l:'GL/PvdA'},{n:7,l:'D66'},{n:5,l:'VVD'},{n:5,l:'Onafh. Diemen'},{n:4,l:'Ons Diemen'},{n:3,l:'Ouderenpartij'}],footer:['Bron: Gemeente Diemen · GR2026','Voorlopige uitslag · 18 maart 2026'],parties:[{id:'glpvda',name:'GL/PvdA',color:'#2d8a2d'},{id:'ond',name:'Ons Diemen',color:'#c0392b'},{id:'d66',name:'D66',color:'#00883c'},{id:'vvd',name:'VVD',color:'#d44000'},{id:'opd',name:'Ouderenpartij',color:'#887000'},{id:'odi',name:'Onafh. Diemen',color:'#555555'}],wijken:[{id:'Diemen-Noord',lbl:[330,130],gel:4600,opk:48,pv:{glpvda:1656,ond:460,d66:920,vvd:644,opd:322,odi:598}},{id:'Diemen-Zuid',lbl:[340,360],gel:3800,opk:46,pv:{glpvda:1330,ond:304,d66:836,vvd:608,opd:228,odi:494}},{id:'Diemen-Centrum',lbl:[348,232],gel:2200,opk:46,pv:{glpvda:594,ond:308,d66:352,vvd:198,opd:242,odi:374}},{id:'Bergwijkpark',lbl:[570,230],gel:947,opk:46,pv:{glpvda:289,ond:93,d66:170,vvd:142,opd:75,odi:132}}],svgClip:'152,82 268,52 390,46 498,62 574,102 620,158 636,226 622,296 586,354 532,398 462,424 382,432 302,420 230,392 170,350 126,296 108,232 116,166',svgPolygons:[{id:'Diemen-Noord',pts:'152,82 268,52 390,46 498,62 540,130 500,180 420,200 340,194 260,180 196,150 152,110'},{id:'Diemen-Centrum',pts:'196,150 260,180 340,194 420,200 500,180 520,240 480,280 400,296 320,288 248,262 200,220'},{id:'Bergwijkpark',pts:'540,130 498,62 574,102 620,158 636,226 622,296 580,320 530,310 500,260 520,240 500,180'},{id:'Diemen-Zuid',pts:'200,220 248,262 320,288 400,296 480,280 530,310 580,320 586,354 532,398 462,424 382,432 302,420 230,392 170,350 126,296 108,232'}],demo:[],demoFoot:''};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// FRYSLÂN — per gemeente  (data: cartogram GR2026, 18 maart 2026)
+// ─────────────────────────────────────────────────────────────────────────────
+CITIES.fryslan = {
+  name: 'Fryslân',
+  subtitle: 'per gemeente',
+  meta: '~270.000 stemmen\n~55% opkomst\n18 maart 2026',
+  avgOpk: 55.0,
+  noDemo: true,
+  seats: [
+    {n:9,l:'GROENLINKS/PvdA'},{n:9,l:'CDA'},{n:7,l:'FNP'},
+    {n:5,l:'D66'},{n:4,l:'VVD'},{n:'15×lokaal',l:'Overig'}
+  ],
+  footer: [
+    'Bron: Gemeenten Fryslân · GR2026 · Voorlopige uitslag · 18 maart 2026',
+    'Geaggregeerd per gemeente · 18 gemeenten incl. eilanden'
+  ],
+  parties: [
+    {id:'glpvda',name:'GROENLINKS/PvdA',            color:'#2d8a2d'},
+    {id:'cda',   name:'CDA',                         color:'#1a7a42'},
+    {id:'fnp',   name:'FNP',                         color:'#006633'},
+    {id:'vvd',   name:'VVD',                         color:'#d44000'},
+    {id:'d66',   name:'D66',                         color:'#009040'},
+    {id:'forum', name:'FvD',                         color:'#781818'},
+    {id:'cu',    name:'ChristenUnie',                color:'#005898'},
+    {id:'pvv',   name:'PVV',                         color:'#002878'},
+    {id:'bbb',   name:'BBB',                         color:'#8a7000'},
+    {id:'sgp',   name:'SGP',                         color:'#003888'},
+    {id:'sp',    name:'SP',                          color:'#aa0000'},
+    {id:'gb058', name:'GB058',                       color:'#604080'},
+    {id:'hvl',   name:'Heerenveen Lokaal',           color:'#c05020'},
+    {id:'opb',   name:'Opsterlands Belang',          color:'#8b4513'},
+    {id:'gbdan', name:'Gem.bel. Dantumadiel',        color:'#607040'},
+    {id:'sam',   name:'SAM Waadhoeke',               color:'#b05030'},
+    {id:'wsb',   name:'Weststellingwerfs Belang',    color:'#506070'},
+    {id:'vpo',   name:'Vrije Partij Oost.',          color:'#708040'},
+    {id:'ama',   name:'AmelandEén',                  color:'#4a6080'},
+    {id:'lt',    name:'Leefbaar Terschelling',       color:'#7a3060'},
+    {id:'nlv',   name:'Nieuw Lib. Vlieland',         color:'#4070a0'},
+    {id:'sl',    name:'Sociaal Links',               color:'#aa2255'},
+    {id:'bft',   name:'Better Foar Tytsjerk.',       color:'#557755'},
+    {id:'smb',   name:'Smallingerlands Belang',      color:'#708090'},
+    {id:'gbwdk', name:'Gemeentebelangen',            color:'#5a7050'},
+    {id:'ob',    name:'Ons Belang',                  color:'#888855'},
+    {id:'lnf',   name:'Lib. Noardeast-Fryslân',      color:'#3a6890'},
+    {id:'pvdagl',name:'PvdA-GroenLinks',             color:'#2a7a2a'},
+    {id:'hw',    name:'Hart v. Weststellingwerf',    color:'#607858'},
+    {id:'elp',   name:'Eérste Lokale Partij',        color:'#806040'},
+    {id:'osb',   name:'Oost.werfsBelang',            color:'#607848'},
+    {id:'snf',   name:'S!N Sociaal',                 color:'#904060'},
+    {id:'gbn',   name:'Gem.bel. Noardeast',          color:'#508060'},
+    {id:'hlb',   name:'Harlinger Belang',            color:'#806840'},
+  ],
+  wijken: [
+    {id:'Leeuwarden',         lbl:[368,240], gel:53761, opk:57.0,
+     pv:{glpvda:12042,d66:6344,vvd:5591,cda:5215,gb058:4946,fnp:4892,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Súdwest-Fryslân',    lbl:[188,432], gel:41701, opk:53.0,
+     pv:{cda:9424,glpvda:7006,fnp:4796,forum:3753,vvd:3753,d66:3211,bbb:0,gbwdk:0,pvv:0,cu:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0,sgp:0}},
+    {id:'Smallingerland',     lbl:[448,318], gel:23463, opk:58.0,
+     pv:{cda:3543,glpvda:3496,smb:3121,elp:2956,cu:2464,vvd:2323,fnp:0,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Heerenveen',         lbl:[468,432], gel:23720, opk:56.0,
+     pv:{hvl:4341,glpvda:4198,cda:2823,d66:2467,fnp:2467,forum:2230,vvd:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'De Fryske Marren',   lbl:[285,378], gel:25397, opk:53.0,
+     pv:{fnp:5130,cda:5130,glpvda:3378,forum:2971,vvd:2133,d66:1651,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Noardeast-Fryslân',  lbl:[548,180], gel:19634, opk:54.0,
+     pv:{cda:3514,fnp:3200,lnf:2847,snf:2788,cu:1747,gbn:1551,glpvda:0,vvd:0,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,hlb:0}},
+    {id:'Waadhoeke',          lbl:[205,222], gel:20169, opk:56.0,
+     pv:{sam:4941,gbwdk:3953,cda:3711,vvd:2884,bbb:2158,fnp:1815,glpvda:0,d66:0,forum:0,cu:0,pvv:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Opsterland',         lbl:[330,440], gel:14282, opk:55.0,
+     pv:{opb:5213,fnp:2314,glpvda:1871,cda:1400,cu:1214,vvd:1057,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Tytsjerksteradiel',  lbl:[468,250], gel:15614, opk:57.0,
+     pv:{cda:3232,bft:3092,fnp:2545,glpvda:2451,vvd:2186,cu:1218,d66:0,forum:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Achtkarspelen',      lbl:[523,228], gel:11232, opk:52.0,
+     pv:{fnp:2460,cda:2415,forum:1539,glpvda:1426,cu:1359,pvv:1157,vvd:0,d66:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Dantumadiel',        lbl:[544,228], gel:9158,  opk:52.0,
+     pv:{gbdan:2134,sl:1932,cda:1813,cu:980,bbb:861,sgp:723,fnp:0,glpvda:0,vvd:0,d66:0,forum:0,pvv:0,sp:0,hvl:0,opb:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Weststellingwerf',   lbl:[358,512], gel:12442, opk:52.0,
+     pv:{wsb:2003,vvd:1941,hw:1754,cda:1642,forum:1580,d66:1145,fnp:0,glpvda:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Ooststellingwerf',   lbl:[543,378], gel:11426, opk:53.0,
+     pv:{vpo:2125,glpvda:2080,osb:1977,vvd:1862,cda:1440,d66:743,fnp:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,snf:0,gbn:0,hlb:0}},
+    {id:'Harlingen',          lbl:[142,202], gel:6669,  opk:55.0,
+     pv:{cda:1747,pvdagl:1340,hlb:1027,vvd:900,d66:447,fnp:0,glpvda:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,hw:0,elp:0,osb:0,snf:0,gbn:0}},
+    {id:'Ameland',            lbl:[352,104], gel:2198,  opk:62.0,
+     pv:{ama:662,cda:591,vvd:149,fnp:0,glpvda:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Terschelling',       lbl:[148,104], gel:2805,  opk:60.0,
+     pv:{lt:611,vvd:485,pvdagl:393,cda:266,fnp:0,glpvda:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Schiermonnikoog',    lbl:[462,64],  gel:648,   opk:65.0,
+     pv:{ob:242,fnp:0,glpvda:0,cda:0,vvd:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,nlv:0,sl:0,bft:0,smb:0,gbwdk:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+    {id:'Vlieland',           lbl:[74,142],  gel:653,   opk:58.0,
+     pv:{nlv:239,fnp:0,glpvda:0,cda:0,vvd:0,d66:0,forum:0,cu:0,pvv:0,bbb:0,sgp:0,sp:0,hvl:0,opb:0,gbdan:0,sam:0,wsb:0,vpo:0,ama:0,lt:0,sl:0,bft:0,smb:0,gbwdk:0,ob:0,lnf:0,gb058:0,pvdagl:0,hw:0,elp:0,osb:0,snf:0,gbn:0,hlb:0}},
+  ],
+  svgClip: '70,130 120,100 180,80 250,65 320,55 395,48 470,50 540,58 600,75 648,100 678,132 695,168 698,208 690,252 672,295 648,338 618,378 582,412 540,440 492,462 438,478 378,486 315,480 255,462 200,438 152,408 112,370 82,330 60,288 50,244 54,196',
+  svgPolygons: [
+    {id:'Vlieland',           pts:'50,118 82,108 100,126 94,148 58,152 44,136'},
+    {id:'Terschelling',       pts:'84,108 172,88 205,100 200,120 132,130 80,122'},
+    {id:'Ameland',            pts:'295,75 370,63 392,76 385,95 304,98 286,86'},
+    {id:'Schiermonnikoog',    pts:'426,48 464,40 484,54 477,70 440,73 422,60'},
+    {id:'Harlingen',          pts:'70,168 108,156 122,178 108,210 82,215 62,200'},
+    {id:'Waadhoeke',          pts:'108,188 172,162 240,148 305,156 312,195 300,238 268,266 228,280 185,280 150,266 124,240 108,218'},
+    {id:'Leeuwarden',         pts:'305,156 372,140 430,145 462,168 468,208 450,248 418,272 380,280 346,278 312,262 300,238 312,195'},
+    {id:'Tytsjerksteradiel',  pts:'430,145 490,140 538,158 550,192 535,232 508,256 478,265 450,264 418,272 450,248 468,208 462,168'},
+    {id:'Noardeast-Fryslân',  pts:'490,140 548,132 598,148 628,178 632,215 618,250 590,272 558,282 535,272 535,232 550,192 538,158'},
+    {id:'Dantumadiel',        pts:'538,158 548,132 598,148 628,178 618,215 590,215 562,205 550,192'},
+    {id:'Achtkarspelen',      pts:'535,232 590,215 618,215 632,215 618,250 590,272 558,282 535,272'},
+    {id:'Smallingerland',     pts:'346,278 380,280 418,272 450,264 478,265 488,295 480,335 458,360 424,376 390,376 356,364 330,340 322,308 330,285'},
+    {id:'De Fryske Marren',   pts:'185,280 228,280 268,266 300,238 312,262 322,308 308,350 288,382 260,408 228,424 192,428 158,414 140,382 134,348 144,310 162,292'},
+    {id:'Opsterland',         pts:'330,285 356,364 390,376 402,410 390,448 362,468 328,472 295,462 268,438 250,410 255,370 270,342 288,316 312,308 322,308'},
+    {id:'Heerenveen',         pts:'424,376 458,360 480,335 488,295 525,302 558,322 568,358 555,398 528,426 495,440 462,443 440,430 420,404 416,384'},
+    {id:'Ooststellingwerf',   pts:'480,335 488,295 525,302 558,322 588,336 608,368 598,408 572,434 538,448 508,440 488,420 475,394 478,362 480,335'},
+    {id:'Weststellingwerf',   pts:'362,468 390,448 402,410 416,384 420,404 440,430 436,470 410,497 374,510 338,505 308,490 295,470 295,462 328,472'},
+    {id:'Súdwest-Fryslân',    pts:'62,200 82,215 108,210 124,240 108,265 94,302 84,344 88,386 105,424 124,454 150,472 180,486 228,490 268,470 250,410 260,408 228,424 192,428 158,414 140,382 134,348 144,310 162,292 140,258 122,232 108,210'},
+  ],
+  demo: [],
+  demoFoot: '',
+};
+
+// ══════════════════════════════════════════════════════════════════════════════
+// ENGINE
+// ══════════════════════════════════════════════════════════════════════════════
+var NS = 'http://www.w3.org/2000/svg';
+var currentCity = 'haag';
+var currentTab = 'map';
+var lDone = false;
+var oIdx = -1;
+
+function pColor(city, pid) {
+  var c = CITIES[city];
+  for(var i=0;i<c.parties.length;i++) if(c.parties[i].id===pid) return c.parties[i].color;
+  return '#888';
+}
+function pName(city, pid) {
+  var c = CITIES[city];
+  for(var i=0;i<c.parties.length;i++) if(c.parties[i].id===pid) return c.parties[i].name;
+  return pid;
 }
 
-/* ══════════════════════════════════════════════════
-   NL OVERVIEW MAP
-══════════════════════════════════════════════════ */
-function NLMap({activeCity,onSelect}){
-  const [hov,setHov]=useState(null);
-  return(<div style={{position:'relative'}}>
-    <svg viewBox="0 0 400 350" style={{width:'100%',maxWidth:360}}>
-      <path d={NL_PATH} fill="#ede9e2" stroke="#ddd8d0" strokeWidth="1.2"/>
-      <path d={NL_IJSSEL} fill="#d6dfe8" opacity="0.7"/>
-      <text x="181" y="115" textAnchor="middle" fontSize="7" fill="#8a9eb0" fontFamily="DM Sans" letterSpacing="0.06em" fontStyle="italic">IJsselmeer</text>
-      {Object.entries(CITIES).map(([key,city])=>{
-        const{x,y}=llToXY(city.lon,city.lat);const winner=city.results[0].p;const color=PC[winner]||C.muted;
-        const isAct=activeCity===key;const isH=hov===key;
-        return(<g key={key} style={{cursor:'pointer'}} onClick={()=>onSelect(key)} onMouseEnter={()=>setHov(key)} onMouseLeave={()=>setHov(null)}>
-          <circle cx={x} cy={y} r={isAct?10:isH?8:6} fill={color} stroke={isAct?C.ink:'#fff'} strokeWidth={isAct?2:1.5} style={{transition:'all 0.2s'}} opacity={0.92}/>
-          <text x={x} y={y-12} textAnchor="middle" fontSize={isAct?9.5:8.5} fontFamily="DM Sans" fontWeight={isAct?600:400} fill={C.ink} style={{pointerEvents:'none',transition:'font-size 0.2s'}}>{city.name}</text>
-        </g>);
-      })}
-    </svg>
-    <div style={{marginTop:14,display:'flex',flexWrap:'wrap',gap:8}}>
-      {Object.entries(PC).filter(([p])=>p!=='Overig'&&['Hart v/d Haag','GL/PvdA','D66','VVD','DENK','Leefbaar R.','FvD','CDA','FNP'].includes(p)).map(([p,c])=>(<div key={p} style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:7,height:7,borderRadius:'50%',background:c}}/><span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted}}>{p}</span></div>))}
-    </div>
-  </div>);
+function getWinnerHaag(w, city) {
+  var c = CITIES[city];
+  var best=-1, bestV=-1;
+  for(var i=0;i<c.parties.length;i++){var v=w.pv[i]||0;if(v>bestV){bestV=v;best=i;}}
+  return {id:c.parties[best].id,color:c.parties[best].color,name:c.parties[best].name,pct:w.gel>0?Math.round(1000*bestV/w.gel)/10:0,v:bestV};
+}
+function getWinnerObj(w, city) {
+  if(Array.isArray(w.pv)) return getWinnerHaag(w, city);
+  var best=null, bestV=-1;
+  Object.keys(w.pv).forEach(function(k){if(w.pv[k]>bestV){bestV=w.pv[k];best=k;}});
+  return {id:best,color:pColor(city,best),name:pName(city,best),pct:w.gel>0?Math.round(1000*bestV/w.gel)/10:0,v:bestV};
+}
+function topParties(w, city, n) {
+  var entries;
+  if(Array.isArray(w.pv)){
+    var c=CITIES[city];
+    entries=c.parties.map(function(p,i){return{id:p.id,v:w.pv[i]||0};});
+  } else {
+    entries=Object.keys(w.pv).map(function(k){return{id:k,v:w.pv[k]};});
+  }
+  entries.sort(function(a,b){return b.v-a.v;});
+  return entries.slice(0,n||21).filter(function(e){return e.v>0;}).map(function(e){
+    return{id:e.id,v:e.v,color:pColor(city,e.id),name:pName(city,e.id),pct:w.gel>0?Math.round(1000*e.v/w.gel)/10:0};
+  });
 }
 
-/* ══════════════════════════════════════════════════
-   PARTY BARS
-══════════════════════════════════════════════════ */
-function PartyBars({results,vis,isE}){
-  const max=Math.max(...results.map(r=>r.pct));
-  return(<div style={{display:'flex',flexDirection:'column',gap:isE?10:13}}>
-    {results.map((r,i)=>(<div key={r.p} style={{opacity:vis?1:0,transform:vis?'none':'translateX(-8px)',transition:`opacity 0.5s ${i*0.06}s,transform 0.5s ${i*0.06}s`}}>
-      <div style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',marginBottom:4}}>
-        <div style={{display:'flex',alignItems:'center',gap:7}}><div style={{width:8,height:8,borderRadius:'50%',background:PC[r.p]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:isE?11:12,fontWeight:500,color:C.ink}}>{r.p}</span></div>
-        <div style={{display:'flex',gap:10,alignItems:'baseline'}}><span style={{fontFamily:'Cormorant Garamond',fontSize:18,fontWeight:700,color:PC[r.p]||C.muted}}>{r.pct}%</span><span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted}}>{r.z}z</span></div>
-      </div>
-      <div style={{height:5,background:C.card,borderRadius:3,overflow:'hidden'}}><div style={{height:'100%',width:vis?`${(r.pct/max)*100}%`:'0%',background:PC[r.p]||C.muted,borderRadius:3,transition:`width 1.3s ${i*0.07}s cubic-bezier(0.16,1,0.3,1)`,opacity:0.88}}/></div>
-    </div>))}
-  </div>);
+function buildSVG(city) {
+  // For Fryslân we use the cartogram, not SVG
+  var cartoV = document.getElementById('cartoView');
+  var mapSvgEl = document.getElementById('mapSvg');
+  var mhint = document.getElementById('mhint');
+  var ptyleg = document.querySelector('.ptyleg');
+  var overlay = document.getElementById('overlay');
+  if(city === 'fryslan') {
+    document.getElementById('mapView').style.display = 'none';
+    cartoV.style.display = 'block';
+    if(overlay) overlay.classList.remove('open');
+    buildCarto();
+    return;
+  } else {
+    document.getElementById('mapView').style.display = 'block';
+    cartoV.style.display = 'none';
+    mapSvgEl.style.display = '';
+    if(mhint) mhint.style.display = '';
+    if(ptyleg) ptyleg.style.display = '';
+  }
+  var c = CITIES[city];
+  var svg = document.getElementById('mapSvg');
+  svg.innerHTML = '';
+  svg.setAttribute('viewBox','0 0 760 680');
+
+  var defs = document.createElementNS(NS,'defs');
+
+  // Special sea pattern for Fryslan
+  if(city === 'fryslan') {
+    defs.innerHTML =
+      '<pattern id="sea" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">'+
+        '<rect width="24" height="24" fill="#c4d8ec"/>'+
+        '<line x1="0" y1="12" x2="24" y2="12" stroke="#afc8dc" stroke-width=".7"/>'+
+        '<line x1="0" y1="6" x2="24" y2="6" stroke="#afc8dc" stroke-width=".3"/>'+
+        '<line x1="0" y1="18" x2="24" y2="18" stroke="#afc8dc" stroke-width=".3"/>'+
+      '</pattern>'+
+      '<clipPath id="cc"><polygon points="'+c.svgClip+'"/></clipPath>';
+  } else {
+    defs.innerHTML =
+      '<pattern id="blk" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">'+
+        '<rect width="24" height="24" fill="#e4dfd4"/>'+
+        '<rect x="1" y="1" width="22" height="22" fill="#ede8de"/>'+
+      '</pattern>'+
+      '<pattern id="art" x="0" y="0" width="96" height="96" patternUnits="userSpaceOnUse">'+
+        '<line x1="0" y1="48" x2="96" y2="48" stroke="#d0c9bc" stroke-width="1.5"/>'+
+        '<line x1="48" y1="0" x2="48" y2="96" stroke="#d0c9bc" stroke-width="1.5"/>'+
+      '</pattern>'+
+      '<clipPath id="cc"><polygon points="'+c.svgClip+'"/></clipPath>';
+  }
+  svg.appendChild(defs);
+
+  // Backdrop
+  var g = document.createElementNS(NS,'g');
+  g.setAttribute('clip-path','url(#cc)');
+  if(city === 'fryslan') {
+    // Sea background for whole province
+    var seaRect = document.createElementNS(NS,'rect');
+    seaRect.setAttribute('x','0');seaRect.setAttribute('y','0');
+    seaRect.setAttribute('width','760');seaRect.setAttribute('height','680');
+    seaRect.setAttribute('fill','url(#sea)');
+    g.appendChild(seaRect);
+  } else {
+    var r1=document.createElementNS(NS,'rect');r1.setAttribute('x','0');r1.setAttribute('y','0');r1.setAttribute('width','760');r1.setAttribute('height','680');r1.setAttribute('fill','url(#blk)');g.appendChild(r1);
+    var r2=document.createElementNS(NS,'rect');r2.setAttribute('x','0');r2.setAttribute('y','0');r2.setAttribute('width','760');r2.setAttribute('height','680');r2.setAttribute('fill','url(#art)');r2.setAttribute('opacity','0.5');g.appendChild(r2);
+  }
+  svg.appendChild(g);
+
+  // Border
+  var border=document.createElementNS(NS,'polygon');
+  border.setAttribute('fill','none');
+  border.setAttribute('stroke', city==='fryslan'?'#004488':'#cc2200');
+  border.setAttribute('stroke-width','2.5');border.setAttribute('opacity','0.85');
+  border.setAttribute('points',c.svgClip);svg.appendChild(border);
+
+  // Polygons + labels
+  c.svgPolygons.forEach(function(poly){
+    var wData=c.wijken.filter(function(w){return w.id===poly.id;})[0];
+    if(!wData) return;
+    var win=getWinnerObj(wData,city);
+    var el=document.createElementNS(NS,'polygon');
+    el.setAttribute('id','wp-'+poly.id.replace(/[^a-zA-Z0-9]/g,'_'));
+    el.setAttribute('class','wp');
+    el.setAttribute('points',poly.pts);
+    el.setAttribute('fill',win.color);
+    el.setAttribute('data-n',poly.id);
+    var tt=document.createElementNS(NS,'title');
+    tt.textContent=poly.id+' — '+win.name+' '+win.pct+'%';
+    el.appendChild(tt);
+    el.addEventListener('click',function(e){e.stopPropagation();openOv(poly.id);});
+    svg.appendChild(el);
+
+    // Label
+    var lbl=wData.lbl;
+    var nm=poly.id;
+    var lines=[];
+    if(nm.length>15&&nm.indexOf('-')>4){var parts=nm.split('-');if(parts.length>=2){lines=[parts[0],parts.slice(1).join('-')];}}
+    else if(nm.length>15&&nm.indexOf(' ')>4){var sp=nm.lastIndexOf(' ',14);lines=[nm.slice(0,sp),nm.slice(sp+1)];}
+    else{lines=[nm];}
+    var yOff=lines.length>1?-14:-7;
+    lines.forEach(function(line,li){
+      var t=document.createElementNS(NS,'text');
+      t.setAttribute('x',lbl[0]);t.setAttribute('y',lbl[1]+yOff+li*13);
+      t.setAttribute('class','ml ml-n');t.textContent=line;svg.appendChild(t);
+    });
+    var ts=document.createElementNS(NS,'text');
+    ts.setAttribute('x',lbl[0]);ts.setAttribute('y',lbl[1]+yOff+lines.length*13);
+    ts.setAttribute('class','ml ml-s');ts.textContent=win.name+' '+win.pct+'%';svg.appendChild(ts);
+  });
+
+  svg.addEventListener('click',function(){closeOv();});
 }
 
-/* ══════════════════════════════════════════════════
-   POLYGON MAP — used for ALL cities
-══════════════════════════════════════════════════ */
-function PolygonMap({cityKey, districts}){
-  const [hov,setHov]=useState(null);
-  const cfg=MAP_CONFIGS[cityKey];
-  if(!cfg) return null;
-
-  const hovDist=hov?districts.find(d=>d.n===hov):null;
-  const labelMap={};
-  if(cfg.labels) cfg.labels.forEach(l=>{ labelMap[l.n]=l; });
-
-  return(<div style={{position:'relative'}}>
-    <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:10}}>
-      Winnaar per {cityKey==='fryslan'?'gemeente':'stadsdeel'} · hover voor details
-    </div>
-    <div style={{position:'relative',display:'inline-block',width:'100%'}}>
-      <svg viewBox={cfg.viewBox} style={{width:'100%',display:'block',maxHeight:420}}>
-        {/* sea background for Fryslân */}
-        {cfg.seaBg&&<rect x="0" y="0" width="760" height="680" fill="#c8d8e8"/>}
-        {/* background for regular cities */}
-        {!cfg.seaBg&&<rect x="0" y="0" width="760" height="680" fill="#ede8de"/>}
-
-        {cfg.polygons.map((poly)=>{
-          const dist=districts.find(d=>d.n===poly.n);
-          const color=dist?PC[dist.w]||C.muted:'#ccc';
-          const isH=hov===poly.n;
-          return(<polygon key={poly.n}
-            points={poly.pts}
-            fill={color}
-            opacity={isH?1:0.78}
-            stroke={cfg.seaBg?"#fff":"#f7f3ee"}
-            strokeWidth={cfg.seaBg?"1.5":"2"}
-            className="map-path"
-            style={{filter:isH?'brightness(1.1) drop-shadow(0 2px 4px rgba(0,0,0,0.18))':'none'}}
-            onMouseEnter={()=>setHov(poly.n)}
-            onMouseLeave={()=>setHov(null)}
-          />);
-        })}
-
-        {/* river */}
-        {cfg.river&&<path d={cfg.river} fill="none" stroke="rgba(100,160,220,0.55)" strokeWidth="4" strokeLinecap="round"/>}
-        {cfg.riverLabel&&<text x={cfg.riverLabel.x} y={cfg.riverLabel.y} fontSize="9" fontFamily="DM Sans" fill="rgba(80,130,200,0.8)" fontStyle="italic">{cfg.riverLabel.txt}</text>}
-
-        {/* labels */}
-        {cfg.polygons.map((poly)=>{
-          const lbl=labelMap[poly.n];
-          if(!lbl) return null;
-          const dist=districts.find(d=>d.n===poly.n);
-          const color=dist?PC[dist.w]||C.muted:'#ccc';
-          const shortName=poly.n.length>16?poly.n.split(/[-\s]/)[0]:poly.n;
-          return(<g key={`lbl-${poly.n}`} style={{pointerEvents:'none'}}>
-            <text x={lbl.x} y={lbl.y-5} textAnchor="middle" fontSize="8" fontFamily="DM Sans" fontWeight="500" fill="rgba(255,255,255,0.92)" style={{textShadow:'0 1px 2px rgba(0,0,0,0.4)'}}>{shortName}</text>
-            {dist&&<text x={lbl.x} y={lbl.y+9} textAnchor="middle" fontSize="9" fontFamily="Cormorant Garamond" fontWeight="700" fill="rgba(255,255,255,0.9)">{dist.pct}%</text>}
-          </g>);
-        })}
-      </svg>
-
-      {/* hover tooltip */}
-      {hovDist&&(<div style={{position:'absolute',top:8,right:0,width:160,background:C.ink,color:'#f7f3ee',padding:'11px 13px',borderRadius:2,pointerEvents:'none',zIndex:10,boxShadow:'0 4px 16px rgba(0,0,0,0.22)'}}>
-        <div style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.1em',textTransform:'uppercase',marginBottom:6,color:'rgba(247,243,238,0.6)'}}>{hovDist.n}</div>
-        <div style={{display:'flex',alignItems:'center',gap:6,marginBottom:4}}><div style={{width:8,height:8,borderRadius:'50%',background:PC[hovDist.w]||'#aaa',flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:11,fontWeight:500}}>{hovDist.w}</span></div>
-        <div style={{fontFamily:'Cormorant Garamond',fontSize:28,fontWeight:700,color:PC[hovDist.w]||'#aaa',lineHeight:1}}>{hovDist.pct}%</div>
-        <div style={{fontFamily:'DM Sans',fontSize:10,color:'rgba(247,243,238,0.45)',marginTop:5}}>Opkomst {hovDist.opk}%</div>
-      </div>)}
-    </div>
-
-    {/* legend */}
-    <div style={{marginTop:10,display:'flex',flexWrap:'wrap',gap:6}}>
-      {[...new Set(districts.map(d=>d.w))].map(w=>(<div key={w} style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:8,height:8,background:PC[w]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted}}>{w}</span></div>))}
-    </div>
-  </div>);
+function buildLegend(city) {
+  if(city === 'fryslan') return; // legend rendered inside cartoView
+  var c=CITIES[city];var seen={};
+  c.wijken.forEach(function(w){var win=getWinnerObj(w,city);seen[win.id]={color:win.color,name:win.name};});
+  var grid=document.getElementById('ptyGrid');grid.innerHTML='';
+  c.parties.forEach(function(p){
+    if(!seen[p.id]) return;
+    var d=document.createElement('div');d.className='pty-item';
+    d.innerHTML='<div class="pty-dot" style="background:'+p.color+'"></div><span>'+p.name+'</span>';
+    grid.appendChild(d);
+  });
 }
 
-/* ══════════════════════════════════════════════════
-   DISTRICT OVERVIEW TABLE
-══════════════════════════════════════════════════ */
-function DistrictOverviewTable({districts,results}){
-  const [exp,setExp]=useState(null);
-  const top4=results.slice(0,4);const maxPct=Math.max(...results.map(r=>r.pct));
-  return(<div>
-    <div style={{display:'grid',gridTemplateColumns:'1fr 120px 70px 70px 180px',gap:12,padding:'7px 0',borderBottom:`2px solid ${C.ink}`,marginBottom:2}}>
-      {['Wijk / Gebied','Winnaar','%','Opkomst','Top partijen'].map(h=>(<span key={h} style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.12em',textTransform:'uppercase',color:C.muted}}>{h}</span>))}
-    </div>
-    {districts.map((d)=>{
-      const isEx=exp===d.n;
-      return(<div key={d.n} style={{borderBottom:`1px solid ${C.border}`}}>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 120px 70px 70px 180px',gap:12,padding:'13px 0',cursor:'pointer',alignItems:'center',background:isEx?C.card:'transparent',transition:'background 0.15s'}} onClick={()=>setExp(isEx?null:d.n)}>
-          <span style={{fontFamily:'DM Sans',fontSize:12,fontWeight:500,color:C.ink}}>{d.n}</span>
-          <div style={{display:'flex',alignItems:'center',gap:6}}><div style={{width:9,height:9,borderRadius:2,background:PC[d.w]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:11,color:PC[d.w]||C.muted,fontWeight:500}}>{d.w}</span></div>
-          <span style={{fontFamily:'Cormorant Garamond',fontSize:20,fontWeight:700,color:PC[d.w]||C.muted}}>{d.pct}%</span>
-          <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.opk}%</span>
-          <div style={{display:'flex',gap:2,alignItems:'flex-end'}}>
-            {top4.map(r=>(<div key={r.p} style={{display:'flex',flexDirection:'column',gap:2,alignItems:'center'}}>
-              <div style={{width:Math.max(6,r.pct*0.9),height:3,background:PC[r.p]||C.muted,borderRadius:1,opacity:0.75}}/>
-            </div>))}
-            <span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted,marginLeft:6}}>{top4.map(r=>r.p).join(' · ')}</span>
-          </div>
-        </div>
-        {isEx&&(<div style={{padding:'12px 0 16px 16px',borderLeft:`2px solid ${PC[d.w]||C.red}`,marginBottom:4}}>
-          <div style={{fontFamily:'DM Sans',fontSize:10,fontWeight:500,textTransform:'uppercase',letterSpacing:'0.1em',color:C.muted,marginBottom:10}}>Alle partijen</div>
-          <div style={{display:'flex',flexDirection:'column',gap:6}}>
-            {results.map(r=>(<div key={r.p} style={{display:'flex',alignItems:'center',gap:10}}>
-              <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,minWidth:120}}>{r.p}</span>
-              <div style={{height:4,background:C.card,borderRadius:2,flex:1,overflow:'hidden'}}><div style={{height:'100%',width:`${(r.pct/maxPct)*100}%`,background:PC[r.p]||C.muted,borderRadius:2}}/></div>
-              <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,minWidth:36,textAlign:'right'}}>{r.pct}%</span>
-            </div>))}
-          </div>
-        </div>)}
-      </div>);
-    })}
-  </div>);
+function buildDeck(city) {
+  var c=CITIES[city];var deck=document.getElementById('deckSeats');deck.innerHTML='';
+  c.seats.forEach(function(s){
+    var d=document.createElement('div');d.className='di';
+    d.innerHTML='<span class="dn">'+s.n+'</span><span class="dl">'+s.l+'</span>';
+    deck.appendChild(d);
+  });
 }
 
-/* ══════════════════════════════════════════════════
-   DEMOGRAPHICS TABLE
-══════════════════════════════════════════════════ */
-function DemographicsTable({cityKey}){
-  const demos=DEMOGRAPHICS[cityKey];
-  if(!demos)return(<div style={{fontFamily:'DM Sans',fontSize:13,color:C.muted,padding:'28px 0',textAlign:'center',fontStyle:'italic'}}>Demografiedata niet beschikbaar voor deze gemeente.</div>);
-  return(<div>
-    <div style={{fontFamily:'DM Sans',fontSize:9,color:C.muted,marginBottom:4,fontStyle:'italic'}}>Migratieachtergrond = min. één ouder in buitenland geboren (CBS). WOZ = gem. waarde 2024.</div>
-    <div style={{display:'grid',gridTemplateColumns:'150px 70px 72px 1fr 1fr 55px 1fr',gap:10,padding:'8px 0',borderBottom:`2px solid ${C.ink}`,marginBottom:2}}>
-      {['Wijk','Inwoners','WOZ','% Ned.','% Niet-w.','Koop','Profiel'].map(h=>(<span key={h} style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.12em',textTransform:'uppercase',color:C.muted}}>{h}</span>))}
-    </div>
-    {demos.map((d)=>(<div key={d.n} style={{display:'grid',gridTemplateColumns:'150px 70px 72px 1fr 1fr 55px 1fr',gap:10,padding:'12px 0',borderBottom:`1px solid ${C.border}`,alignItems:'center'}}>
-      <span style={{fontFamily:'DM Sans',fontSize:11,fontWeight:500,color:C.ink}}>{d.n}</span>
-      <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.inw}</span>
-      <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.woz}</span>
-      <div><div style={{height:4,background:C.card,borderRadius:2,marginBottom:3,overflow:'hidden'}}><div style={{height:'100%',width:`${d.ned}%`,background:C.green,borderRadius:2}}/></div><span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted}}>{d.ned}%</span></div>
-      <div><div style={{height:4,background:C.card,borderRadius:2,marginBottom:3,overflow:'hidden'}}><div style={{height:'100%',width:`${d.nw}%`,background:C.red,borderRadius:2}}/></div><span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted}}>{d.nw}%</span></div>
-      <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.koop}</span>
-      <span style={{fontFamily:'DM Sans',fontSize:10.5,color:C.muted,lineHeight:1.5}}>{d.profiel}</span>
-    </div>))}
-    <div style={{fontFamily:'DM Sans',fontSize:9,color:C.muted,marginTop:10}}>Bron: CBS Kerncijfers Wijken 2025 · WOZ peildatum 1 jan 2024</div>
-  </div>);
+function buildDemo(city) {
+  var c=CITIES[city];var body=document.getElementById('demoBody');body.innerHTML='';
+  c.demo.forEach(function(row){
+    var nedC=row.ned>=58?'#2a7a2a':row.ned>=45?'#887000':'#c00000';
+    var nwC=row.nw<=20?'#2a7a2a':row.nw<=35?'#887000':'#c00000';
+    var nedW=Math.round(row.ned*0.8);var nwW=Math.round(row.nw*0.8);
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td style="padding:9px 8px;font-family:\'Playfair Display\',serif;font-size:13px;font-weight:700">'+row.n+'</td>'+
+      '<td style="padding:9px 8px;text-align:right;color:#666">'+row.inw+'</td>'+
+      '<td style="padding:9px 8px;text-align:right;font-weight:600">'+row.woz+'</td>'+
+      '<td style="padding:9px 8px;text-align:center"><span style="color:'+nedC+';font-weight:600">'+row.ned+'%</span><div style="background:#e8e4dc;height:7px;width:80px;display:inline-block;vertical-align:middle;margin-left:4px"><div style="background:'+nedC+';height:100%;width:'+nedW+'px"></div></div></td>'+
+      '<td style="padding:9px 8px;text-align:center"><span style="color:'+nwC+';font-weight:600">'+row.nw+'%</span><div style="background:#e8e4dc;height:7px;width:80px;display:inline-block;vertical-align:middle;margin-left:4px"><div style="background:'+nwC+';height:100%;width:'+nwW+'px"></div></div></td>'+
+      '<td style="padding:9px 8px;text-align:center;color:#666">'+row.w+'%</td>'+
+      '<td style="padding:9px 8px;text-align:center;font-size:10px;white-space:nowrap">'+row.koop+'</td>'+
+      '<td style="padding:9px 8px;font-size:10px;color:#555;line-height:1.5;max-width:260px">'+row.profiel+'</td>';
+    body.appendChild(tr);
+  });
+  document.getElementById('demoFoot').textContent=c.demoFoot;
 }
 
-/* ══════════════════════════════════════════════════
-   CITY DETAIL
-══════════════════════════════════════════════════ */
-function CityDetail({cityKey,variant}){
-  const ref=useRef();const vis=useReveal(ref);
-  const city=CITIES[cityKey];
-  const [tab,setTab]=useState('kaart');
-  const isE=variant==='economist';
-  useEffect(()=>setTab('kaart'),[cityKey]);
-  if(!city)return null;
-  const winner=city.results[0];
-  const serif=isE?'Playfair Display':'Cormorant Garamond';
-  const hasDemographics=!!DEMOGRAPHICS[cityKey];
-
-  return(<div ref={ref} style={{animation:'fadeUp 0.35s ease'}}>
-    {/* Winner banner */}
-    <div style={{padding:isE?'24px 0 18px':'32px 0 24px',borderBottom:`1px solid ${C.border}`,display:'grid',gridTemplateColumns:'auto 1fr auto',gap:20,alignItems:'center'}}>
-      <div style={{width:40,height:40,borderRadius:'50%',background:PC[winner.p]||C.muted,flexShrink:0,opacity:0.9}}/>
-      <div>
-        <div style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.16em',textTransform:'uppercase',color:C.muted,marginBottom:3}}>Grootste partij</div>
-        <div style={{fontFamily:serif,fontSize:isE?26:32,fontWeight:isE?700:600,color:PC[winner.p]||C.ink,lineHeight:1}}>{winner.p}</div>
-      </div>
-      <div style={{textAlign:'right'}}>
-        <div style={{fontFamily:'Cormorant Garamond',fontSize:40,fontWeight:700,color:PC[winner.p]||C.ink,lineHeight:1}}>{winner.pct}%</div>
-        <div style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,marginTop:2}}>{winner.z} van {city.zetels} zetels</div>
-      </div>
-    </div>
-
-    {/* Stats strip */}
-    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',padding:'14px 0',borderBottom:`1px solid ${C.border}`}}>
-      {[{v:city.stemmen.toLocaleString('nl-NL'),l:'Stemmen'},{v:`${city.opkomst}%`,l:'Opkomst'},{v:`${city.zetels}`,l:'Zetels'}].map((s,i)=>(
-        <div key={i} style={{padding:`0 ${i<2?22:0}px 0 0`,borderRight:i<2?`1px solid ${C.border}`:'none',marginRight:i<2?22:0}}>
-          <div style={{fontFamily:'Cormorant Garamond',fontSize:24,fontWeight:700,color:C.ink,lineHeight:1}}>{s.v}</div>
-          <div style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted,marginTop:4,letterSpacing:'0.06em',textTransform:'uppercase'}}>{s.l}</div>
-        </div>
-      ))}
-    </div>
-
-    {/* Sub-tabs */}
-    <div style={{display:'flex',gap:0,borderBottom:`1px solid ${C.border}`,marginBottom:28,paddingTop:14}}>
-      {['kaart','overzicht',...(hasDemographics?['demografie']:[])].map(t=>(<button key={t} onClick={()=>setTab(t)} style={{fontFamily:'DM Sans',fontSize:11,fontWeight:tab===t?500:400,letterSpacing:'0.1em',textTransform:'uppercase',color:tab===t?C.red:C.muted,padding:'8px 20px 9px 0',background:'none',border:'none',cursor:'pointer',borderBottom:`2px solid ${tab===t?C.red:'transparent'}`,marginBottom:-1,transition:'color 0.15s'}}>{t}</button>))}
-    </div>
-
-    {/* Kaart tab */}
-    {tab==='kaart'&&(<div style={{display:'grid',gridTemplateColumns:'3fr 2fr',gap:isE?36:48}}>
-      <PolygonMap cityKey={cityKey} districts={city.districts}/>
-      <div>
-        <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:16}}>Uitslag naar partij</div>
-        <PartyBars results={city.results} vis={vis} isE={isE}/>
-      </div>
-    </div>)}
-
-    {/* Overzicht tab */}
-    {tab==='overzicht'&&<DistrictOverviewTable districts={city.districts} results={city.results}/>}
-
-    {/* Demografie tab */}
-    {tab==='demografie'&&<DemographicsTable cityKey={cityKey}/>}
-  </div>);
+function buildList(city) {
+  var c=CITIES[city];var tb=document.getElementById('listBody');tb.innerHTML='';oIdx=-1;
+  c.wijken.forEach(function(w,idx){
+    var win=getWinnerObj(w,city);var t5=topParties(w,city,5);var mx=t5[0].v;
+    var bars='';
+    t5.forEach(function(item){
+      var bw=mx>0?Math.round(item.v/mx*100):0;
+      bars+='<div style="display:flex;align-items:center;gap:5px;margin-bottom:3px">'+
+        '<div style="font-size:9px;width:80px;flex-shrink:0;color:'+item.color+'">'+item.name+'</div>'+
+        '<div style="flex:1;background:#eae6de;height:5px"><div style="width:'+bw+'%;height:100%;background:'+item.color+'"></div></div>'+
+        '<div style="font-size:9px;width:32px;text-align:right;font-weight:500;color:'+item.color+'">'+item.pct+'%</div>'+
+        '</div>';
+    });
+    var clr=w.opk>=55?'#2a7a2a':w.opk>=42?'#b87800':'#c00000';
+    var tr=document.createElement('tr');tr.className='wr';tr.id='wr'+idx;
+    tr.innerHTML='<td><div class="wtn">'+w.id+'</div></td>'+
+      '<td><span class="wtb" style="color:'+win.color+';border-color:'+win.color+'60;background:'+win.color+'08">'+win.name+'</span></td>'+
+      '<td><span class="wtp" style="color:'+win.color+'">'+win.pct+'%</span></td>'+
+      '<td><span class="opk-badge" style="color:'+clr+'">'+w.opk+'%</span></td>'+
+      '<td>'+bars+'</td>';
+    tr.addEventListener('click',function(){togList(idx,city);});
+    tb.appendChild(tr);
+    var pr=document.createElement('tr');pr.className='popr';pr.id='pp'+idx;
+    var td=document.createElement('td');td.colSpan=5;pr.appendChild(td);
+    tb.appendChild(pr);
+  });
 }
 
-/* ══════════════════════════════════════════════════
-   MAP SECTION
-══════════════════════════════════════════════════ */
-function MapSection({variant}){
-  const [active,setActive]=useState('den-haag');
-  const isE=variant==='economist';
-  return(<section style={{maxWidth:1200,margin:'0 auto',padding:isE?'40px 40px 64px':'60px 40px 80px'}}>
-    <RuleLabel label="Resultaten per gemeente"/>
-    <div style={{display:'grid',gridTemplateColumns:'300px 1fr',gap:isE?44:60,alignItems:'start'}}>
-      {/* Sidebar */}
-      <div style={{position:'sticky',top:96}}>
-        <NLMap activeCity={active} onSelect={setActive}/>
-        <div style={{marginTop:22}}>
-          <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:8}}>Kies gemeente</div>
-          <div style={{display:'flex',flexDirection:'column',gap:1}}>
-            {Object.entries(CITIES).map(([key,city])=>{const w=city.results[0];const isAct=active===key;return(<button key={key} onClick={()=>setActive(key)} style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'8px 10px',background:isAct?C.card:'transparent',borderLeft:isAct?`3px solid ${PC[w.p]||C.red}`:'3px solid transparent',borderRadius:2,textAlign:'left',transition:'all 0.15s'}}>
-              <span style={{fontFamily:'DM Sans',fontSize:12,fontWeight:isAct?500:400,color:isAct?C.ink:C.muted}}>{city.name}</span>
-              <div style={{display:'flex',alignItems:'center',gap:6}}><span style={{fontFamily:'DM Sans',fontSize:10,color:PC[w.p]||C.muted,fontWeight:500}}>{w.p}</span><div style={{width:6,height:6,borderRadius:'50%',background:PC[w.p]||C.muted}}/></div>
-            </button>);
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Detail */}
-      <div>
-        <div style={{borderBottom:`2px solid ${C.ink}`,paddingBottom:14,marginBottom:0,display:'flex',alignItems:'baseline',gap:14}}>
-          <span style={{fontFamily:'Cormorant Garamond',fontWeight:600,fontSize:36,color:C.ink}}>{CITIES[active]?.name}</span>
-          <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,letterSpacing:'0.12em',textTransform:'uppercase'}}>GR2026 · 18 maart 2026</span>
-        </div>
-        <CityDetail key={active} cityKey={active} variant={variant}/>
-      </div>
-    </div>
-  </section>);
+function togList(idx,city){if(oIdx===idx){clsList(idx);oIdx=-1;return;}if(oIdx>=0)clsList(oIdx);oIdx=idx;opnList(idx,city);}
+function clsList(idx){var r=document.getElementById('pp'+idx);if(r)r.className='popr';var w=document.getElementById('wr'+idx);if(w)w.classList.remove('or');}
+function opnList(idx,city){
+  var c=CITIES[city];var w=c.wijken[idx];var win=getWinnerObj(w,city);
+  var wr=document.getElementById('wr'+idx);if(wr)wr.classList.add('or');
+  var t=topParties(w,city,21);var mx=t[0].v;
+  var clr=w.opk>=55?'#2a7a2a':w.opk>=42?'#b87800':'#c00000';
+  var pH='<div class="pop-sec-ttl">Alle partijen</div>';
+  t.forEach(function(item,i){
+    var bw=mx>0?Math.round(item.v/mx*100):0;
+    pH+='<div class="ppr"><div class="ppr-k">'+(i+1)+'</div>'+
+      '<div class="ppr-n" style="color:'+item.color+'">'+item.name+'</div>'+
+      '<div class="ppr-b"><div class="ppr-f" style="width:'+bw+'%;background:'+item.color+'"></div></div>'+
+      '<div class="ppr-p" style="color:'+item.color+'">'+item.pct+'%</div></div>';
+  });
+  var rH='<div class="pop-sec-ttl">Info</div>'+
+    '<div style="font-size:11px;line-height:1.9;color:#444">'+
+    '<strong style="color:'+win.color+'">Winnaar:</strong> '+win.name+' ('+win.pct+'%)<br>'+
+    '<strong style="color:'+clr+'">Opkomst:</strong> '+w.opk+'%<br>'+
+    (t[1]?'<strong>2e:</strong> '+t[1].name+' ('+t[1].pct+'%)<br>':'')+
+    (t[2]?'<strong>3e:</strong> '+t[2].name+' ('+t[2].pct+'%)':'')+'</div>';
+  var pr=document.getElementById('pp'+idx);
+  pr.firstChild.innerHTML='<div class="popi"><div class="poph"><div class="popt">'+w.id+'</div>'+
+    '<span class="popc" onclick="togList('+idx+',\''+city+'\')">↑ Sluiten</span></div>'+
+    '<div class="popm">Winnaar: <strong style="color:'+win.color+'">'+win.name+'</strong> &nbsp;·&nbsp; Opkomst: <strong style="color:'+clr+'">'+w.opk+'%</strong></div>'+
+    '<div class="pop-grid"><div>'+pH+'</div><div>'+rH+'</div></div></div>';
+  pr.className='popr open';
+  setTimeout(function(){pr.scrollIntoView({behavior:'smooth',block:'nearest'});},60);
 }
 
-/* ══════════════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════════════ */
-function Footer(){return(<footer style={{background:C.ink,color:'#f7f3ee',padding:'44px 40px 36px'}}><div style={{maxWidth:1200,margin:'0 auto',display:'flex',justifyContent:'space-between',alignItems:'flex-start'}}><div><div style={{fontFamily:'Cormorant Garamond',fontWeight:700,fontSize:38,letterSpacing:'-0.02em',marginBottom:10}}>E.O.</div><p style={{fontFamily:'DM Sans',fontSize:11,color:'rgba(247,243,238,0.5)',lineHeight:1.65,maxWidth:300}}>Voorlopige uitslag per stembureau via de gemeenten. Data: GR2026 · 18 maart 2026. Bron: Officiële gemeentelijke uitslagen.</p></div><div style={{fontFamily:'DM Sans',fontSize:10,color:'rgba(247,243,238,0.45)',textAlign:'right',letterSpacing:'0.08em',lineHeight:2}}><div>GR2026 · Gemeenteraadsverkiezingen</div><div>Nederland · 18 maart 2026</div><div>© 2026 evgeniyaorlova.com</div></div></div></footer>);}
-
-/* ══════════════════════════════════════════════════
-   APP
-══════════════════════════════════════════════════ */
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{"variant":"economist"}/*EDITMODE-END*/;
-function App(){
-  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-  const v = t.variant;
-  return (
-    <div style={{minHeight:'100vh',display:'flex',flexDirection:'column'}}>
-      <TweaksPanel title="GR2026 Tweaks">
-        <TweakRadio
-          label="Design stijl"
-          value={v}
-          options={['vogue','economist']}
-          onChange={(val) => setTweak('variant', val)}
-        />
-      </TweaksPanel>
-      <Header/><Ticker/><Hero variant={v}/><MapSection variant={v}/><Footer/>
-    </div>
-  );
+function openOv(id) {
+  var c=CITIES[currentCity];var w=null;
+  for(var i=0;i<c.wijken.length;i++){if(c.wijken[i].id===id){w=c.wijken[i];break;}}
+  if(!w) return;
+  var win=getWinnerObj(w,currentCity);
+  document.querySelectorAll('.wp').forEach(function(e){e.classList.remove('sel');});
+  var safeId='wp-'+id.replace(/[^a-zA-Z0-9]/g,'_');
+  var el=document.getElementById(safeId);if(el)el.classList.add('sel');
+  document.getElementById('mhint').style.display='none';
+  document.getElementById('ovTtl').textContent=id;
+  document.getElementById('ovBd').innerHTML=buildOvBd(w,win);
+  document.getElementById('overlay').classList.add('open');
 }
-ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+function closeOv(){
+  document.getElementById('overlay').classList.remove('open');
+  document.querySelectorAll('.wp').forEach(function(e){e.classList.remove('sel');});
+  document.getElementById('mhint').style.display='';
+}
+function buildOvBd(w,win){
+  var t=topParties(w,currentCity,21);var mx=t[0].v;
+  var avgOpk=CITIES[currentCity].avgOpk;
+  var clr=w.opk>=(avgOpk+8)?'#2a7a2a':w.opk>=(avgOpk-8)?'#b87800':'#c00000';
+  var cmp=w.opk>=(avgOpk+8)?'Boven gemiddeld':w.opk>=(avgOpk-8)?'Rond gemiddeld':'Onder gemiddeld';
+  var h='<div class="ov-meta">'+CITIES[currentCity].name+' · '+w.gel.toLocaleString('nl')+' geldige stemmen</div>';
+  h+='<div class="ov-win" style="border-left-color:'+win.color+';background:'+win.color+'0e">'+
+    '<div><div class="ovw-lbl" style="color:'+win.color+'">Winnaar</div>'+
+    '<div class="ovw-nm" style="color:'+win.color+'">'+win.name+'</div></div>'+
+    '<div class="ovw-pct" style="color:'+win.color+'">'+win.pct+'%</div></div>';
+  h+='<div class="ov-opkomst"><div class="opk-lbl">Opkomst</div>'+
+    '<div class="opk-val" style="color:'+clr+'">'+w.opk+'%</div>'+
+    '<div class="opk-sub">'+cmp+' (gem. '+avgOpk+'%)</div></div>';
+  h+='<div class="sec-ttl">Alle partijen</div>';
+  t.forEach(function(item,i){
+    var bw=mx>0?Math.round(item.v/mx*100):0;
+    h+='<div class="pr"><div class="pr-k">'+(i+1)+'</div>'+
+      '<div class="pr-n" style="color:'+item.color+'">'+item.name+'</div>'+
+      '<div class="pr-b"><div class="pr-f" style="width:'+bw+'%;background:'+item.color+'"></div></div>'+
+      '<div class="pr-p" style="color:'+item.color+'">'+item.pct+'%</div></div>';
+  });
+  h+='<div class="ov-note">Stemmen geaggregeerd per gemeente op basis van officiële uitslag.</div>';
+  return h;
+}
 
+function switchCity(city){
+  if(city===currentCity) return;
+  currentCity=city;closeOv();
+  document.querySelectorAll('.city-btn').forEach(function(b){
+    b.classList.remove('active');
+    if(b.getAttribute('data-city')===city)b.classList.add('active');
+  });
+  var noDemo=!!CITIES[city].noDemo;
+  document.getElementById('tabD').style.display=noDemo?'none':'';
+  if(noDemo&&currentTab==='demo'){switchTab('map');return;}
+  var c=CITIES[city];
+  document.getElementById('citySubtitle').textContent=c.subtitle;
+  var metaLines=c.meta.split('\n');
+  document.getElementById('mastMeta').innerHTML=metaLines.join('<br>');
+  buildDeck(city);buildSVG(city);buildLegend(city);
+  document.getElementById('listBody').innerHTML='';
+  document.getElementById('listIntro').textContent='Uitslag GR2026 '+c.name+' · klik op een rij voor details';
+  oIdx=-1;
+  if(currentTab==='list')buildList(city);
+  if(currentTab==='demo')buildDemo(city);
+  document.getElementById('footerLeft').textContent=c.footer[0];
+  document.getElementById('footerRight').textContent=c.footer[1];
+}
 
+function switchTab(t){
+  currentTab=t;
+  document.getElementById('tabM').classList.toggle('active',t==='map');
+  document.getElementById('tabL').classList.toggle('active',t==='list');
+  document.getElementById('tabD').classList.toggle('active',t==='demo');
+  // For fryslan 'map' tab shows cartoView; for all others shows mapView
+  var isFryslan = currentCity==='fryslan';
+  document.getElementById('mapView').style.display=(t==='map'&&!isFryslan)?'block':'none';
+  document.getElementById('cartoView').style.display=(t==='map'&&isFryslan)?'block':'none';
+  document.getElementById('listView').style.display=t==='list'?'block':'none';
+  document.getElementById('demoView').style.display=t==='demo'?'block':'none';
+  if(t==='list'&&document.getElementById('listBody').children.length===0)buildList(currentCity);
+  if(t==='demo'&&document.getElementById('demoBody').children.length===0)buildDemo(currentCity);
+}
+
+function init(){
+  var c=CITIES[currentCity];
+  document.getElementById('mastMeta').innerHTML=c.meta.split('\n').join('<br>');
+  buildDeck(currentCity);buildSVG(currentCity);buildLegend(currentCity);
+  var tabD=document.getElementById('tabD');
+  if(c.noDemo){tabD.style.display='none';}else{tabD.style.display='';}
+  document.getElementById('footerLeft').textContent=c.footer[0];
+  document.getElementById('footerRight').textContent=c.footer[1];
+  document.getElementById('listIntro').textContent='Uitslag GR2026 '+c.name+' · klik op een rij voor details';
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// CARTOGRAM ENGINE — Fryslân only
+// ══════════════════════════════════════════════════════════════════════════════
+var CARTO_DATA = [
+  {id:'Leeuwarden',       gel:53761, opk:57.0, wn:'GROENLINKS/PvdA', wc:'#2d8a2d', wp:22.4,
+   top:[['GROENLINKS/PvdA','#2d8a2d',22.4],['D66','#009040',11.8],['VVD','#d44000',10.4],['CDA','#1a7a42',9.7],['GB058','#604080',9.2],['FNP','#006633',9.1]]},
+  {id:'Súdwest-Fryslân',  gel:41701, opk:53.0, wn:'CDA',            wc:'#1a7a42', wp:22.6,
+   top:[['CDA','#1a7a42',22.6],['GROENLINKS/PvdA','#2d8a2d',16.8],['FNP','#006633',11.5],['FvD','#781818',9.0],['VVD','#d44000',9.0],['D66','#009040',7.7]]},
+  {id:'Smallingerland',   gel:23463, opk:58.0, wn:'CDA',            wc:'#1a7a42', wp:15.1,
+   top:[['CDA','#1a7a42',15.1],['GROENLINKS/PvdA','#2d8a2d',14.9],['Smallingerlands Belang','#708090',13.3],['Eérste Lokale Partij','#806040',12.6],['ChristenUnie','#005898',10.5],['VVD','#d44000',9.9]]},
+  {id:'Heerenveen',       gel:23720, opk:56.0, wn:'Heerenveen Lokaal',wc:'#c05020',wp:18.3,
+   top:[['Heerenveen Lokaal','#c05020',18.3],['GROENLINKS/PvdA','#2d8a2d',17.7],['CDA','#1a7a42',11.9],['D66','#009040',10.4],['FNP','#006633',10.4],['FvD','#781818',9.4]]},
+  {id:'De Fryske Marren', gel:25397, opk:53.0, wn:'FNP',            wc:'#006633', wp:20.2,
+   top:[['FNP','#006633',20.2],['CDA','#1a7a42',20.2],['GROENLINKS/PvdA','#2d8a2d',13.3],['FvD','#781818',11.7],['VVD','#d44000',8.4],['D66','#009040',6.5]]},
+  {id:'Noardeast-Fryslân',gel:19634, opk:54.0, wn:'CDA',            wc:'#1a7a42', wp:17.9,
+   top:[['CDA','#1a7a42',17.9],['FNP','#006633',16.3],['Lib. Noardeast','#3a6890',14.5],['S!N Sociaal','#904060',14.2],['ChristenUnie','#005898',8.9],['Gem.belangen Noardeast','#508060',7.9]]},
+  {id:'Waadhoeke',        gel:20169, opk:56.0, wn:'SAM Waadhoeke',  wc:'#b05030', wp:24.5,
+   top:[['SAM Waadhoeke','#b05030',24.5],['Gemeentebelangen','#5a7050',19.6],['CDA','#1a7a42',18.4],['VVD','#d44000',14.3],['BBB','#8a7000',10.7],['FNP','#006633',9.0]]},
+  {id:'Opsterland',       gel:14282, opk:55.0, wn:'Opsterlands Belang',wc:'#8b4513',wp:36.5,
+   top:[['Opsterlands Belang','#8b4513',36.5],['FNP','#006633',16.2],['GROENLINKS/PvdA','#2d8a2d',13.1],['CDA','#1a7a42',9.8],['ChristenUnie','#005898',8.5],['VVD','#d44000',7.4]]},
+  {id:'Tytsjerksteradiel',gel:15614, opk:57.0, wn:'CDA',            wc:'#1a7a42', wp:20.7,
+   top:[['CDA','#1a7a42',20.7],['Better Foar Tytsjerk','#557755',19.8],['FNP','#006633',16.3],['GROENLINKS/PvdA','#2d8a2d',15.7],['VVD','#d44000',14.0],['ChristenUnie','#005898',7.8]]},
+  {id:'Achtkarspelen',    gel:11232, opk:52.0, wn:'FNP',            wc:'#006633', wp:21.9,
+   top:[['FNP','#006633',21.9],['CDA','#1a7a42',21.5],['FvD','#781818',13.7],['GROENLINKS/PvdA','#2d8a2d',12.7],['ChristenUnie','#005898',12.1],['PVV','#002878',10.3]]},
+  {id:'Dantumadiel',      gel:9158,  opk:52.0, wn:'Gem.bel. Dantumadiel',wc:'#607040',wp:23.3,
+   top:[['Gem.bel. Dantumadiel','#607040',23.3],['Sociaal Links','#aa2255',21.1],['CDA','#1a7a42',19.8],['ChristenUnie','#005898',10.7],['BBB','#8a7000',9.4],['SGP','#003888',7.9]]},
+  {id:'Weststellingwerf', gel:12442, opk:52.0, wn:'Weststellingwerfs Belang',wc:'#506070',wp:16.1,
+   top:[['Weststellingwerfs Belang','#506070',16.1],['VVD','#d44000',15.6],['Hart v. Weststellingwerf','#607858',14.1],['CDA','#1a7a42',13.2],['FvD','#781818',12.7],['D66','#009040',9.2]]},
+  {id:'Ooststellingwerf', gel:11426, opk:53.0, wn:'Vrije Partij Oost.',wc:'#708040',wp:18.6,
+   top:[['Vrije Partij Oost.','#708040',18.6],['GROENLINKS/PvdA','#2d8a2d',18.2],['Oost.werfsBelang','#607848',17.3],['VVD','#d44000',16.3],['CDA','#1a7a42',12.6],['D66','#009040',6.5]]},
+  {id:'Harlingen',        gel:6669,  opk:55.0, wn:'CDA',            wc:'#1a7a42', wp:26.2,
+   top:[['CDA','#1a7a42',26.2],['PvdA-GroenLinks','#2a7a2a',20.1],['Harlinger Belang','#806840',15.4],['VVD','#d44000',13.5],['D66','#009040',6.7]]},
+  {id:'Ameland',          gel:2198,  opk:62.0, wn:'AmelandEén',     wc:'#4a6080', wp:30.1,
+   top:[['AmelandEén','#4a6080',30.1],['CDA','#1a7a42',26.9],['VVD','#d44000',6.8]]},
+  {id:'Terschelling',     gel:2805,  opk:60.0, wn:'Leefbaar Terschelling',wc:'#7a3060',wp:21.8,
+   top:[['Leefbaar Terschelling','#7a3060',21.8],['VVD','#d44000',17.3],['PvdA-GroenLinks','#2a7a2a',14.0],['CDA','#1a7a42',9.5]]},
+  {id:'Schiermonnikoog',  gel:648,   opk:65.0, wn:'Ons Belang',     wc:'#888855', wp:37.3,
+   top:[['Ons Belang','#888855',37.3]]},
+  {id:'Vlieland',         gel:653,   opk:58.0, wn:'Nieuw Lib. Vlieland',wc:'#4070a0',wp:36.6,
+   top:[['Nieuw Lib. Vlieland','#4070a0',36.6]]},
+];
+
+var CARTO_LAYOUT = [
+  ['Vlieland','Terschelling','Ameland','Schiermonnikoog'],
+  ['Harlingen','Waadhoeke','Leeuwarden','Tytsjerksteradiel','Dantumadiel','Achtkarspelen','Noardeast-Fryslân'],
+  ['Súdwest-Fryslân','De Fryske Marren','Smallingerland','Heerenveen','Ooststellingwerf'],
+  ['Opsterland','Weststellingwerf'],
+];
+
+var CARTO_ANNOTATIONS = {
+  'Leeuwarden':  {n:1, txt:'Grootste stad: 22.4% GROENLINKS/PvdA'},
+  'Heerenveen':  {n:2, txt:'Lokale partij wint van CDA'},
+  'Opsterland':  {n:3, txt:'Sterkste lokale overwinning: 36.5%'},
+};
+
+var cartoBuilt = false;
+var cartoActive = null;
+
+function buildCarto() {
+  if(cartoBuilt) return;
+  cartoBuilt = true;
+
+  // rows
+  var rowsEl = document.getElementById('cartoRows');
+  rowsEl.innerHTML = '';
+  CARTO_LAYOUT.forEach(function(row, ri) {
+    var rowEl = document.createElement('div');
+    rowEl.className = 'carto-row';
+    var rowGel = row.reduce(function(s, id) {
+      var d = CARTO_DATA.find(function(x){return x.id===id;});
+      return s + (d ? d.gel : 0);
+    }, 0);
+    row.forEach(function(id) {
+      var d = CARTO_DATA.find(function(x){return x.id===id;});
+      if(!d) return;
+      var frac = rowGel > 0 ? d.gel / rowGel : 0;
+      var cell = document.createElement('div');
+      cell.className = 'carto-cell';
+      cell.id = 'cc-' + id.replace(/[^a-zA-Z0-9]/g,'_');
+      cell.style.flex = String(frac * 100);
+      var h = ri === 0 ? Math.max(44, Math.min(62, Math.round(frac*160+28))) : Math.max(48, Math.round(frac*210+32));
+      cell.style.minHeight = h + 'px';
+      cell.style.background = d.wc;
+
+      if(CARTO_ANNOTATIONS[id]) {
+        var badge = document.createElement('div');
+        badge.className = 'carto-ann-badge';
+        badge.textContent = CARTO_ANNOTATIONS[id].n;
+        cell.appendChild(badge);
+      }
+
+      var nm = document.createElement('div'); nm.className='carto-cn'; nm.textContent=id;
+      var sc = document.createElement('div'); sc.className='carto-cs'; sc.textContent=d.wp+'%';
+      cell.appendChild(nm); cell.appendChild(sc);
+      cell.addEventListener('click', function(){ openCartoPanel(id); });
+      rowEl.appendChild(cell);
+    });
+    rowsEl.appendChild(rowEl);
+  });
+
+  // annotation bar
+  var annbar = document.getElementById('cartoAnnbar');
+  annbar.innerHTML = '';
+  Object.keys(CARTO_ANNOTATIONS).forEach(function(id) {
+    var a = CARTO_ANNOTATIONS[id];
+    var d = CARTO_DATA.find(function(x){return x.id===id;});
+    var item = document.createElement('div'); item.className='carto-ann-item';
+    var num = document.createElement('div'); num.className='carto-ann-num';
+    num.style.background = d.wc; num.textContent = a.n;
+    item.appendChild(num);
+    var txt = document.createElement('span'); txt.textContent = a.txt;
+    item.appendChild(txt);
+    annbar.appendChild(item);
+  });
+
+  // legend
+  var leg = document.getElementById('cartoLeg');
+  leg.innerHTML = '';
+  var seen = {};
+  CARTO_DATA.forEach(function(d) { if(!seen[d.wn]) seen[d.wn] = d.wc; });
+  Object.keys(seen).forEach(function(nm) {
+    var item = document.createElement('div'); item.className='carto-leg-item';
+    var sq = document.createElement('div'); sq.className='carto-leg-sq'; sq.style.background=seen[nm];
+    item.appendChild(sq);
+    var t = document.createElement('span'); t.textContent=nm; item.appendChild(t);
+    leg.appendChild(item);
+  });
+}
+
+function openCartoPanel(id) {
+  var d = CARTO_DATA.find(function(x){return x.id===id;});
+  if(!d) return;
+  // highlight cell
+  document.querySelectorAll('.carto-cell').forEach(function(c){c.classList.remove('sel');});
+  var cel = document.getElementById('cc-' + id.replace(/[^a-zA-Z0-9]/g,'_'));
+  if(cel) cel.classList.add('sel');
+  cartoActive = id;
+
+  var mx = d.top[0][2];
+  var rows = '';
+  d.top.forEach(function(t, i) {
+    var bw = mx > 0 ? Math.round(t[2]/mx*100) : 0;
+    rows += '<div class="carto-pr">'+
+      '<div class="carto-prk">'+(i+1)+'</div>'+
+      '<div class="carto-prn" style="color:'+t[1]+'">'+t[0]+'</div>'+
+      '<div class="carto-prb"><div class="carto-prf" style="width:'+bw+'%;background:'+t[1]+'"></div></div>'+
+      '<div class="carto-prp" style="color:'+t[1]+'">'+t[2]+'%</div>'+
+    '</div>';
+  });
+
+  var opkClr = d.opk>=57?'#2a7a2a':d.opk>=50?'#b87800':'#c00000';
+  var opkCmp = d.opk>=57?'Boven gemiddeld (55%)':d.opk>=50?'Rond gemiddeld (55%)':'Onder gemiddeld (55%)';
+
+  document.getElementById('cartoPanelContent').innerHTML =
+    '<div class="carto-pname">'+id+'</div>'+
+    '<div class="carto-pmeta">'+d.gel.toLocaleString('nl')+' geldige stemmen &nbsp;·&nbsp; GR2026 Fryslân</div>'+
+    '<div class="carto-pwin" style="border-left-color:'+d.wc+';background:'+d.wc+'12">'+
+      '<div>'+
+        '<div class="carto-pwlbl" style="color:'+d.wc+'">Winnaar</div>'+
+        '<div class="carto-pwnm" style="color:'+d.wc+'">'+d.wn+'</div>'+
+      '</div>'+
+      '<div class="carto-pwpct" style="color:'+d.wc+'">'+d.wp+'%</div>'+
+    '</div>'+
+    '<div class="carto-popk">'+
+      '<span style="font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#888">Opkomst</span><br>'+
+      '<span style="font-family:\'Playfair Display\',serif;font-size:20px;font-weight:700;color:'+opkClr+'">'+d.opk+'%</span>'+
+      '<span style="font-size:9px;color:#888;margin-left:8px">'+opkCmp+'</span>'+
+    '</div>'+
+    '<div class="carto-ptitle">Alle partijen</div>'+rows;
+
+  var panel = document.getElementById('cartoPanel');
+  panel.classList.add('open');
+  setTimeout(function(){ panel.scrollIntoView({behavior:'smooth',block:'nearest'}); }, 60);
+}
+
+function closeCartoPanel() {
+  document.getElementById('cartoPanel').classList.remove('open');
+  document.querySelectorAll('.carto-cell').forEach(function(c){c.classList.remove('sel');});
+  cartoActive = null;
+}
+
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',init);}else{init();}
 </script>
 
 </body>
