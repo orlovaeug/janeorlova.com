@@ -24,12 +24,102 @@
   .ticker-inner{display:flex;gap:48px;white-space:nowrap;animation:ticker 28s linear infinite;width:max-content}
   .map-path{transition:opacity 0.18s,filter 0.18s;cursor:pointer}
   .map-path:hover{opacity:1!important;filter:brightness(1.12)}
+
+.twk-panel{position:fixed;right:16px;bottom:16px;z-index:2147483646;width:280px;
+max-height:calc(100vh - 32px);display:flex;flex-direction:column;
+background:rgba(250,249,247,.78);color:#29261b;
+-webkit-backdrop-filter:blur(24px) saturate(160%);backdrop-filter:blur(24px) saturate(160%);
+border:.5px solid rgba(255,255,255,.6);border-radius:14px;
+box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 12px 40px rgba(0,0,0,.18);
+font:11.5px/1.4 ui-sans-serif,system-ui,-apple-system,sans-serif;overflow:hidden}
+.twk-hd{display:flex;align-items:center;justify-content:space-between;
+padding:10px 8px 10px 14px;cursor:move;user-select:none}
+.twk-hd b{font-size:12px;font-weight:600;letter-spacing:.01em}
+.twk-x{appearance:none;border:0;background:transparent;color:rgba(41,38,27,.55);
+width:22px;height:22px;border-radius:6px;cursor:default;font-size:13px;line-height:1}
+.twk-x:hover{background:rgba(0,0,0,.06);color:#29261b}
+.twk-body{padding:2px 14px 14px;display:flex;flex-direction:column;gap:10px;
+overflow-y:auto;overflow-x:hidden;min-height:0;
+scrollbar-width:thin;scrollbar-color:rgba(0,0,0,.15) transparent}
+.twk-body::-webkit-scrollbar{width:8px}
+.twk-body::-webkit-scrollbar-track{background:transparent;margin:2px}
+.twk-body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.15);border-radius:4px;
+border:2px solid transparent;background-clip:content-box}
+.twk-body::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,.25);
+border:2px solid transparent;background-clip:content-box}
+.twk-row{display:flex;flex-direction:column;gap:5px}
+.twk-row-h{flex-direction:row;align-items:center;justify-content:space-between;gap:10px}
+.twk-lbl{display:flex;justify-content:space-between;align-items:baseline;
+color:rgba(41,38,27,.72)}
+.twk-lbl>span:first-child{font-weight:500}
+.twk-val{color:rgba(41,38,27,.5);font-variant-numeric:tabular-nums}
+
+.twk-sect{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+color:rgba(41,38,27,.45);padding:10px 0 0}
+.twk-sect:first-child{padding-top:0}
+
+.twk-field{appearance:none;width:100%;height:26px;padding:0 8px;
+border:.5px solid rgba(0,0,0,.1);border-radius:7px;
+background:rgba(255,255,255,.6);color:inherit;font:inherit;outline:none}
+.twk-field:focus{border-color:rgba(0,0,0,.25);background:rgba(255,255,255,.85)}
+select.twk-field{padding-right:22px;
+background-image:url(“data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path fill='rgba(0,0,0,.5)' d='M0 0h10L5 6z'/></svg>”);
+background-repeat:no-repeat;background-position:right 8px center}
+
+.twk-slider{appearance:none;-webkit-appearance:none;width:100%;height:4px;margin:6px 0;
+border-radius:999px;background:rgba(0,0,0,.12);outline:none}
+.twk-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;
+width:14px;height:14px;border-radius:50%;background:#fff;
+border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+.twk-slider::-moz-range-thumb{width:14px;height:14px;border-radius:50%;
+background:#fff;border:.5px solid rgba(0,0,0,.12);box-shadow:0 1px 3px rgba(0,0,0,.2);cursor:default}
+
+.twk-seg{position:relative;display:flex;padding:2px;border-radius:8px;
+background:rgba(0,0,0,.06);user-select:none}
+.twk-seg-thumb{position:absolute;top:2px;bottom:2px;border-radius:6px;
+background:rgba(255,255,255,.9);box-shadow:0 1px 2px rgba(0,0,0,.12);
+transition:left .15s cubic-bezier(.3,.7,.4,1),width .15s}
+.twk-seg.dragging .twk-seg-thumb{transition:none}
+.twk-seg button{appearance:none;position:relative;z-index:1;flex:1;border:0;
+background:transparent;color:inherit;font:inherit;font-weight:500;height:22px;
+border-radius:6px;cursor:default;padding:0}
+
+.twk-toggle{position:relative;width:32px;height:18px;border:0;border-radius:999px;
+background:rgba(0,0,0,.15);transition:background .15s;cursor:default;padding:0}
+.twk-toggle[data-on=“1”]{background:#34c759}
+.twk-toggle i{position:absolute;top:2px;left:2px;width:14px;height:14px;border-radius:50%;
+background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:transform .15s}
+.twk-toggle[data-on=“1”] i{transform:translateX(14px)}
+
+.twk-num{display:flex;align-items:center;height:26px;padding:0 0 0 8px;
+border:.5px solid rgba(0,0,0,.1);border-radius:7px;background:rgba(255,255,255,.6)}
+.twk-num-lbl{font-weight:500;color:rgba(41,38,27,.6);cursor:ew-resize;
+user-select:none;padding-right:8px}
+.twk-num input{flex:1;min-width:0;height:100%;border:0;background:transparent;
+font:inherit;font-variant-numeric:tabular-nums;text-align:right;padding:0 8px 0 0;
+outline:none;color:inherit;-moz-appearance:textfield}
+.twk-num input::-webkit-inner-spin-button,.twk-num input::-webkit-outer-spin-button{
+-webkit-appearance:none;margin:0}
+.twk-num-unit{padding-right:8px;color:rgba(41,38,27,.45)}
+
+.twk-btn{appearance:none;height:26px;padding:0 12px;border:0;border-radius:7px;
+background:rgba(0,0,0,.78);color:#fff;font:inherit;font-weight:500;cursor:default}
+.twk-btn:hover{background:rgba(0,0,0,.88)}
+.twk-btn.secondary{background:rgba(0,0,0,.06);color:inherit}
+.twk-btn.secondary:hover{background:rgba(0,0,0,.1)}
+
+.twk-swatch{appearance:none;-webkit-appearance:none;width:56px;height:22px;
+border:.5px solid rgba(0,0,0,.1);border-radius:6px;padding:0;cursor:default;
+background:transparent;flex-shrink:0}
+.twk-swatch::-webkit-color-swatch-wrapper{padding:0}
+.twk-swatch::-webkit-color-swatch{border:0;border-radius:5.5px}
+.twk-swatch::-moz-color-swatch{border:0;border-radius:5.5px}
+
 </style>
 </head>
 <body>
 <div id="root"></div>
-<script type="text/babel">
-const { useState, useEffect, useRef } = React;
+<script>
 
 const C = { bg:’#f7f3ee’, ink:’#1c1917’, red:’#8b2700’, muted:’#7a746c’, border:’#ddd8d0’, card:’#ede9e2’, green:’#1a5c3a’ };
 
@@ -680,408 +770,730 @@ seaBg: true,
 },
 };
 
+</script>
+
+<script type="text/babel">
+
+// tweaks-panel.jsx
+// Reusable Tweaks shell + form-control helpers.
+//
+// Owns the host protocol (listens for __activate_edit_mode / __deactivate_edit_mode,
+// posts __edit_mode_available / __edit_mode_set_keys / __edit_mode_dismissed) so
+// individual prototypes don't re-roll it. Ships a consistent set of controls so you
+// don't hand-draw <input type="range">, segmented radios, steppers, etc.
+//
+// Usage (in an HTML file that loads React + Babel):
+//
+//   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+//     "primaryColor": "#D97757",
+//     "fontSize": 16,
+//     "density": "regular",
+//     "dark": false
+//   }/*EDITMODE-END*/;
+//
+//   function App() {
+//     const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+//     return (
+//       <div style={{ fontSize: t.fontSize, color: t.primaryColor }}>
+//         Hello
+//         <TweaksPanel>
+//           <TweakSection label="Typography" />
+//           <TweakSlider label="Font size" value={t.fontSize} min={10} max={32} unit="px"
+//                        onChange={(v) => setTweak('fontSize', v)} />
+//           <TweakRadio  label="Density" value={t.density}
+//                        options={['compact', 'regular', 'comfy']}
+//                        onChange={(v) => setTweak('density', v)} />
+//           <TweakSection label="Theme" />
+//           <TweakColor  label="Primary" value={t.primaryColor}
+//                        onChange={(v) => setTweak('primaryColor', v)} />
+//           <TweakToggle label="Dark mode" value={t.dark}
+//                        onChange={(v) => setTweak('dark', v)} />
+//         </TweaksPanel>
+//       </div>
+//     );
+//   }
+//
+// ─────────────────────────────────────────────────────────────────────────────
+
+
+// ── useTweaks ───────────────────────────────────────────────────────────────
+// Single source of truth for tweak values. setTweak persists via the host
+// (__edit_mode_set_keys → host rewrites the EDITMODE block on disk).
+function useTweaks(defaults) {
+  const [values, setValues] = React.useState(defaults);
+  const setTweak = React.useCallback((key, val) => {
+    setValues((prev) => ({ ...prev, [key]: val }));
+    window.parent.postMessage({ type: '__edit_mode_set_keys', edits: { [key]: val } }, '*');
+  }, []);
+  return [values, setTweak];
+}
+
+// ── TweaksPanel ─────────────────────────────────────────────────────────────
+// Floating shell. Registers the protocol listener BEFORE announcing
+// availability — if the announce ran first, the host's activate could land
+// before our handler exists and the toolbar toggle would silently no-op.
+// The close button posts __edit_mode_dismissed so the host's toolbar toggle
+// flips off in lockstep; the host echoes __deactivate_edit_mode back which
+// is what actually hides the panel.
+function TweaksPanel({ title = 'Tweaks', children }) {
+  const [open, setOpen] = React.useState(false);
+  const dragRef = React.useRef(null);
+  const offsetRef = React.useRef({ x: 16, y: 16 });
+  const PAD = 16;
+
+  const clampToViewport = React.useCallback(() => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const w = panel.offsetWidth, h = panel.offsetHeight;
+    const maxRight = Math.max(PAD, window.innerWidth - w - PAD);
+    const maxBottom = Math.max(PAD, window.innerHeight - h - PAD);
+    offsetRef.current = {
+      x: Math.min(maxRight, Math.max(PAD, offsetRef.current.x)),
+      y: Math.min(maxBottom, Math.max(PAD, offsetRef.current.y)),
+    };
+    panel.style.right = offsetRef.current.x + 'px';
+    panel.style.bottom = offsetRef.current.y + 'px';
+  }, []);
+
+  React.useEffect(() => {
+    if (!open) return;
+    clampToViewport();
+    if (typeof ResizeObserver === 'undefined') {
+      window.addEventListener('resize', clampToViewport);
+      return () => window.removeEventListener('resize', clampToViewport);
+    }
+    const ro = new ResizeObserver(clampToViewport);
+    ro.observe(document.documentElement);
+    return () => ro.disconnect();
+  }, [open, clampToViewport]);
+
+  React.useEffect(() => {
+    const onMsg = (e) => {
+      const t = e?.data?.type;
+      if (t === '__activate_edit_mode') setOpen(true);
+      else if (t === '__deactivate_edit_mode') setOpen(false);
+    };
+    window.addEventListener('message', onMsg);
+    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
+    return () => window.removeEventListener('message', onMsg);
+  }, []);
+
+  const dismiss = () => {
+    setOpen(false);
+    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
+  };
+
+  const onDragStart = (e) => {
+    const panel = dragRef.current;
+    if (!panel) return;
+    const r = panel.getBoundingClientRect();
+    const sx = e.clientX, sy = e.clientY;
+    const startRight = window.innerWidth - r.right;
+    const startBottom = window.innerHeight - r.bottom;
+    const move = (ev) => {
+      offsetRef.current = {
+        x: startRight - (ev.clientX - sx),
+        y: startBottom - (ev.clientY - sy),
+      };
+      clampToViewport();
+    };
+    const up = () => {
+      window.removeEventListener('mousemove', move);
+      window.removeEventListener('mouseup', up);
+    };
+    window.addEventListener('mousemove', move);
+    window.addEventListener('mouseup', up);
+  };
+
+  if (!open) return null;
+  return (
+    <>
+      <style>{__TWEAKS_STYLE}</style>
+
+```
+  <div ref={dragRef} className="twk-panel"
+       style={{ right: offsetRef.current.x, bottom: offsetRef.current.y }}>
+    <div className="twk-hd" onMouseDown={onDragStart}>
+      <b>{title}</b>
+      <button className="twk-x" aria-label="Close tweaks"
+              onMouseDown={(e) => e.stopPropagation()}
+              onClick={dismiss}>✕</button>
+    </div>
+    <div className="twk-body">{children}</div>
+  </div>
+</>
+```
+
+);
+}
+
+// ── Layout helpers ──────────────────────────────────────────────────────────
+
+function TweakSection({ label, children }) {
+return (
+<>
+<div className="twk-sect">{label}</div>
+{children}
+</>
+);
+}
+
+function TweakRow({ label, value, children, inline = false }) {
+return (
+<div className={inline ? ‘twk-row twk-row-h’ : ‘twk-row’}>
+<div className="twk-lbl">
+<span>{label}</span>
+{value != null && <span className="twk-val">{value}</span>}
+</div>
+{children}
+</div>
+);
+}
+
+// ── Controls ────────────────────────────────────────────────────────────────
+
+function TweakSlider({ label, value, min = 0, max = 100, step = 1, unit = ‘’, onChange }) {
+return (
+<TweakRow label={label} value={`${value}${unit}`}>
+<input type=“range” className=“twk-slider” min={min} max={max} step={step}
+value={value} onChange={(e) => onChange(Number(e.target.value))} />
+</TweakRow>
+);
+}
+
+function TweakToggle({ label, value, onChange }) {
+return (
+<div className="twk-row twk-row-h">
+<div className="twk-lbl"><span>{label}</span></div>
+<button type=“button” className=“twk-toggle” data-on={value ? ‘1’ : ‘0’}
+role=“switch” aria-checked={!!value}
+onClick={() => onChange(!value)}><i /></button>
+</div>
+);
+}
+
+function TweakRadio({ label, value, options, onChange }) {
+const trackRef = React.useRef(null);
+const [dragging, setDragging] = React.useState(false);
+const opts = options.map((o) => (typeof o === ‘object’ ? o : { value: o, label: o }));
+const idx = Math.max(0, opts.findIndex((o) => o.value === value));
+const n = opts.length;
+
+// The active value is read by pointer-move handlers attached for the lifetime
+// of a drag — ref it so a stale closure doesn’t fire onChange for every move.
+const valueRef = React.useRef(value);
+valueRef.current = value;
+
+const segAt = (clientX) => {
+const r = trackRef.current.getBoundingClientRect();
+const inner = r.width - 4;
+const i = Math.floor(((clientX - r.left - 2) / inner) * n);
+return opts[Math.max(0, Math.min(n - 1, i))].value;
+};
+
+const onPointerDown = (e) => {
+setDragging(true);
+const v0 = segAt(e.clientX);
+if (v0 !== valueRef.current) onChange(v0);
+const move = (ev) => {
+if (!trackRef.current) return;
+const v = segAt(ev.clientX);
+if (v !== valueRef.current) onChange(v);
+};
+const up = () => {
+setDragging(false);
+window.removeEventListener(‘pointermove’, move);
+window.removeEventListener(‘pointerup’, up);
+};
+window.addEventListener(‘pointermove’, move);
+window.addEventListener(‘pointerup’, up);
+};
+
+return (
+<TweakRow label={label}>
+<div ref={trackRef} role=“radiogroup” onPointerDown={onPointerDown}
+className={dragging ? ‘twk-seg dragging’ : ‘twk-seg’}>
+<div className=“twk-seg-thumb”
+style={{ left: `calc(2px + ${idx} * (100% - 4px) / ${n})`,
+width: `calc((100% - 4px) / ${n})` }} />
+{opts.map((o) => (
+<button key={o.value} type=“button” role=“radio” aria-checked={o.value === value}>
+{o.label}
+</button>
+))}
+</div>
+</TweakRow>
+);
+}
+
+function TweakSelect({ label, value, options, onChange }) {
+return (
+<TweakRow label={label}>
+<select className=“twk-field” value={value} onChange={(e) => onChange(e.target.value)}>
+{options.map((o) => {
+const v = typeof o === ‘object’ ? o.value : o;
+const l = typeof o === ‘object’ ? o.label : o;
+return <option key={v} value={v}>{l}</option>;
+})}
+</select>
+</TweakRow>
+);
+}
+
+function TweakText({ label, value, placeholder, onChange }) {
+return (
+<TweakRow label={label}>
+<input className=“twk-field” type=“text” value={value} placeholder={placeholder}
+onChange={(e) => onChange(e.target.value)} />
+</TweakRow>
+);
+}
+
+function TweakNumber({ label, value, min, max, step = 1, unit = ‘’, onChange }) {
+const clamp = (n) => {
+if (min != null && n < min) return min;
+if (max != null && n > max) return max;
+return n;
+};
+const startRef = React.useRef({ x: 0, val: 0 });
+const onScrubStart = (e) => {
+e.preventDefault();
+startRef.current = { x: e.clientX, val: value };
+const decimals = (String(step).split(’.’)[1] || ‘’).length;
+const move = (ev) => {
+const dx = ev.clientX - startRef.current.x;
+const raw = startRef.current.val + dx * step;
+const snapped = Math.round(raw / step) * step;
+onChange(clamp(Number(snapped.toFixed(decimals))));
+};
+const up = () => {
+window.removeEventListener(‘pointermove’, move);
+window.removeEventListener(‘pointerup’, up);
+};
+window.addEventListener(‘pointermove’, move);
+window.addEventListener(‘pointerup’, up);
+};
+return (
+<div className="twk-num">
+<span className="twk-num-lbl" onPointerDown={onScrubStart}>{label}</span>
+<input type=“number” value={value} min={min} max={max} step={step}
+onChange={(e) => onChange(clamp(Number(e.target.value)))} />
+{unit && <span className="twk-num-unit">{unit}</span>}
+</div>
+);
+}
+
+function TweakColor({ label, value, onChange }) {
+return (
+<div className="twk-row twk-row-h">
+<div className="twk-lbl"><span>{label}</span></div>
+<input type=“color” className=“twk-swatch” value={value}
+onChange={(e) => onChange(e.target.value)} />
+</div>
+);
+}
+
+function TweakButton({ label, onClick, secondary = false }) {
+return (
+<button type=“button” className={secondary ? ‘twk-btn secondary’ : ‘twk-btn’}
+onClick={onClick}>{label}</button>
+);
+}
+
+</script>
+
+<script type="text/babel">
+
+const { useState, useEffect, useRef } = React;
+
 /* ══════════════════════════════════════════════════
-NL MAP helper
+   NL MAP helper
 ══════════════════════════════════════════════════ */
-const NL_PATH=‘M 78,198 L 60,214 L 34,228 L 10,248 L 8,262 L 28,267 L 56,265 L 90,258 L 112,248 L 148,238 L 175,245 L 220,254 L 244,268 L 246,292 L 260,300 L 274,295 L 294,280 L 316,266 L 350,250 L 360,224 L 352,196 L 347,172 L 364,146 L 374,120 L 381,92 L 377,68 L 363,44 L 338,36 L 308,26 L 280,24 L 250,31 L 215,48 L 195,62 L 176,74 L 158,84 L 146,100 L 144,126 L 136,150 L 126,170 L 104,184 L 78,198 Z’;
-const NL_IJSSEL=‘M 146,100 L 158,84 L 176,74 L 195,62 L 218,50 L 222,80 L 216,116 L 202,150 L 186,164 L 164,156 L 148,130 Z’;
+const NL_PATH='M 78,198 L 60,214 L 34,228 L 10,248 L 8,262 L 28,267 L 56,265 L 90,258 L 112,248 L 148,238 L 175,245 L 220,254 L 244,268 L 246,292 L 260,300 L 274,295 L 294,280 L 316,266 L 350,250 L 360,224 L 352,196 L 347,172 L 364,146 L 374,120 L 381,92 L 377,68 L 363,44 L 338,36 L 308,26 L 280,24 L 250,31 L 215,48 L 195,62 L 176,74 L 158,84 L 146,100 L 144,126 L 136,150 L 126,170 L 104,184 L 78,198 Z';
+const NL_IJSSEL='M 146,100 L 158,84 L 176,74 L 195,62 L 218,50 L 222,80 L 216,116 L 202,150 L 186,164 L 164,156 L 148,130 Z';
 function llToXY(lon,lat){return{x:(lon-3.3)/4.0*400,y:(53.7-lat)/3.0*350};}
 
 /* ══════════════════════════════════════════════════
-HOOKS
+   HOOKS
 ══════════════════════════════════════════════════ */
 function useReveal(ref){
-const [v,setV]=useState(false);
-useEffect(()=>{const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setV(true);o.disconnect();}},{threshold:0.1});if(ref.current)o.observe(ref.current);return()=>o.disconnect();},[]);
-return v;
+  const [v,setV]=useState(false);
+  useEffect(()=>{const o=new IntersectionObserver(([e])=>{if(e.isIntersecting){setV(true);o.disconnect();}},{threshold:0.1});if(ref.current)o.observe(ref.current);return()=>o.disconnect();},[]);
+  return v;
 }
 function useCountUp(target,vis,dur=1000){
-const [n,setN]=useState(0);
-useEffect(()=>{if(!vis)return;let s=null;const f=(t)=>{if(!s)s=t;const p=Math.min((t-s)/dur,1);setN(Math.floor(p*target));if(p<1)requestAnimationFrame(f);};requestAnimationFrame(f);},[vis,target]);
-return n;
+  const [n,setN]=useState(0);
+  useEffect(()=>{if(!vis)return;let s=null;const f=(t)=>{if(!s)s=t;const p=Math.min((t-s)/dur,1);setN(Math.floor(p*target));if(p<1)requestAnimationFrame(f);};requestAnimationFrame(f);},[vis,target]);
+  return n;
 }
-function useInlineTweaks(defaults){
-const [values,setValues]=useState(defaults);
-const [open,setOpen]=useState(false);
-useEffect(()=>{const onMsg=(e)=>{if(e?.data?.type===’__activate_edit_mode’)setOpen(true);if(e?.data?.type===’__deactivate_edit_mode’)setOpen(false);};window.addEventListener(‘message’,onMsg);window.parent.postMessage({type:’__edit_mode_available’},’*’);return()=>window.removeEventListener(‘message’,onMsg);},[]);
-const setTweak=(key,val)=>{setValues(v=>{const n={…v,[key]:val};window.parent.postMessage({type:’__edit_mode_set_keys’,edits:n},’*’);return n;});};
-const close=()=>{setOpen(false);window.parent.postMessage({type:’__edit_mode_dismissed’},’*’);};
-return[values,setTweak,open,close];
-}
-function InlineTweaksPanel({open,onClose,children}){if(!open)return null;return(<div style={{position:‘fixed’,right:16,bottom:16,zIndex:9999,background:‘rgba(250,249,247,0.94)’,border:‘0.5px solid rgba(0,0,0,0.08)’,borderRadius:14,width:248,boxShadow:‘0 12px 40px rgba(0,0,0,0.18)’,backdropFilter:‘blur(24px)’,fontFamily:‘system-ui,sans-serif’,fontSize:11.5,color:’#29261b’}}><div style={{display:‘flex’,alignItems:‘center’,justifyContent:‘space-between’,padding:‘10px 8px 10px 14px’}}><strong style={{fontSize:12,fontWeight:600}}>Tweaks</strong><button onClick={onClose} style={{background:‘none’,border:‘none’,cursor:‘pointer’,color:‘rgba(41,38,27,0.4)’,fontSize:16,lineHeight:1}}>×</button></div><div style={{padding:‘2px 14px 14px’,display:‘flex’,flexDirection:‘column’,gap:12}}>{children}</div></div>);}
-function TweakSegmented({label,value,options,onChange}){return(<div style={{display:‘flex’,flexDirection:‘column’,gap:5}}><span style={{fontWeight:500,color:‘rgba(41,38,27,0.68)’,fontSize:11}}>{label}</span><div style={{display:‘flex’,background:‘rgba(0,0,0,0.06)’,borderRadius:8,padding:2}}>{options.map(o=>(<button key={o} onClick={()=>onChange(o)} style={{flex:1,height:22,border:‘none’,borderRadius:6,cursor:‘pointer’,fontSize:11,fontWeight:500,fontFamily:‘inherit’,background:value===o?‘rgba(255,255,255,0.9)’:‘transparent’,boxShadow:value===o?‘0 1px 2px rgba(0,0,0,0.12)’:‘none’,color:‘inherit’,transition:‘all 0.12s’,textTransform:‘capitalize’}}>{o}</button>))}</div></div>);}
 
 /* ══════════════════════════════════════════════════
-SHARED COMPONENTS
+   SHARED COMPONENTS
 ══════════════════════════════════════════════════ */
-function RuleLabel({label}){return(<div style={{display:‘flex’,alignItems:‘center’,gap:14,marginBottom:24}}><div style={{height:2,width:24,background:C.red,flexShrink:0}}/><span style={{fontFamily:‘DM Sans’,fontSize:10,fontWeight:500,letterSpacing:‘0.18em’,textTransform:‘uppercase’,color:C.muted,whiteSpace:‘nowrap’}}>{label}</span><div style={{flex:1,height:1,background:C.border}}/></div>);}
+function RuleLabel({label}){return(<div style={{display:'flex',alignItems:'center',gap:14,marginBottom:24}}><div style={{height:2,width:24,background:C.red,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:10,fontWeight:500,letterSpacing:'0.18em',textTransform:'uppercase',color:C.muted,whiteSpace:'nowrap'}}>{label}</span><div style={{flex:1,height:1,background:C.border}}/></div>);}
 
 function Header(){
-const [sc,setSc]=useState(false);
-useEffect(()=>{const f=()=>setSc(window.scrollY>40);window.addEventListener(‘scroll’,f);return()=>window.removeEventListener(‘scroll’,f);},[]);
-return(<header style={{position:‘sticky’,top:0,zIndex:100,background:C.bg,borderBottom:`1px solid ${C.border}`,boxShadow:sc?‘0 2px 24px rgba(0,0,0,0.07)’:‘none’,transition:‘box-shadow 0.3s’}}>
-<div style={{borderBottom:`1px solid ${C.border}`,padding:‘5px 40px’,display:‘flex’,justifyContent:‘space-between’}}>
-<span style={{fontFamily:‘DM Sans’,fontSize:9.5,color:C.muted,letterSpacing:‘0.14em’,textTransform:‘uppercase’}}>GR2026 · Gemeenteraadsverkiezingen · 18 maart 2026</span>
-<a href=”#” style={{fontFamily:‘DM Sans’,fontSize:9.5,color:C.muted}}>evgeniyaorlova.com</a>
-</div>
-<div style={{maxWidth:1200,margin:‘0 auto’,padding:‘0 40px’,display:‘flex’,alignItems:‘center’,justifyContent:‘space-between’,height:64}}>
-<div style={{display:‘flex’,alignItems:‘baseline’,gap:10}}>
-<span style={{fontFamily:‘Cormorant Garamond’,fontWeight:700,fontSize:42,lineHeight:1,color:C.ink,letterSpacing:’-0.02em’}}>E.O.</span>
-<span style={{fontFamily:‘DM Sans’,fontSize:10,letterSpacing:‘0.2em’,textTransform:‘uppercase’,color:C.muted,paddingBottom:4}}>Evgeniya Orlova</span>
-</div>
-<nav style={{display:‘flex’,gap:28}}>
-{[[‘Home’,’/’],[‘Analyse’,’/archive’],[‘Uitslag’,’/gr2026’],[‘Over’,’/about’]].map(([l,h])=>(
-<a key={l} href={h} style={{fontFamily:‘DM Sans’,fontSize:11,fontWeight:h===’/gr2026’?500:400,letterSpacing:‘0.12em’,textTransform:‘uppercase’,color:h===’/gr2026’?C.red:C.muted,borderBottom:h===’/gr2026’?`1px solid ${C.red}`:‘1px solid transparent’,paddingBottom:2}}>{l}</a>
-))}
-</nav>
-</div>
-<div style={{height:3,background:C.red}}/>
-
+  const [sc,setSc]=useState(false);
+  useEffect(()=>{const f=()=>setSc(window.scrollY>40);window.addEventListener('scroll',f);return()=>window.removeEventListener('scroll',f);},[]);
+  return(<header style={{position:'sticky',top:0,zIndex:100,background:C.bg,borderBottom:`1px solid ${C.border}`,boxShadow:sc?'0 2px 24px rgba(0,0,0,0.07)':'none',transition:'box-shadow 0.3s'}}>
+    <div style={{borderBottom:`1px solid ${C.border}`,padding:'5px 40px',display:'flex',justifyContent:'space-between'}}>
+      <span style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted,letterSpacing:'0.14em',textTransform:'uppercase'}}>GR2026 · Gemeenteraadsverkiezingen · 18 maart 2026</span>
+      <a href="#" style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted}}>evgeniyaorlova.com</a>
+    </div>
+    <div style={{maxWidth:1200,margin:'0 auto',padding:'0 40px',display:'flex',alignItems:'center',justifyContent:'space-between',height:64}}>
+      <div style={{display:'flex',alignItems:'baseline',gap:10}}>
+        <span style={{fontFamily:'Cormorant Garamond',fontWeight:700,fontSize:42,lineHeight:1,color:C.ink,letterSpacing:'-0.02em'}}>E.O.</span>
+        <span style={{fontFamily:'DM Sans',fontSize:10,letterSpacing:'0.2em',textTransform:'uppercase',color:C.muted,paddingBottom:4}}>Evgeniya Orlova</span>
+      </div>
+      <nav style={{display:'flex',gap:28}}>
+        {[['Home','/'],['Analyse','/archive'],['Uitslag','/gr2026'],['Over','/about']].map(([l,h])=>(
+          <a key={l} href={h} style={{fontFamily:'DM Sans',fontSize:11,fontWeight:h==='/gr2026'?500:400,letterSpacing:'0.12em',textTransform:'uppercase',color:h==='/gr2026'?C.red:C.muted,borderBottom:h==='/gr2026'?`1px solid ${C.red}`:'1px solid transparent',paddingBottom:2}}>{l}</a>
+        ))}
+      </nav>
+    </div>
+    <div style={{height:3,background:C.red}}/>
   </header>);
 }
 
 function Ticker(){
-const items=[‘GR2026 · 18 maart 2026’,‘Definitieve uitslag’,‘Den Haag · Rotterdam · Utrecht · Groningen’,‘Eindhoven · Delft · Maastricht · Almere · Amstelveen · Diemen · Fryslân’,‘Evgeniya Orlova · Politieke Analyse’];
-const r=[…items,…items];
-return(<div style={{overflow:‘hidden’,borderBottom:`1px solid ${C.border}`,padding:‘7px 0’}}><div className="ticker-inner">{r.map((t,i)=>(<span key={i} style={{fontFamily:‘DM Sans’,fontSize:9.5,letterSpacing:‘0.16em’,textTransform:‘uppercase’,color:C.muted,display:‘inline-flex’,alignItems:‘center’,gap:18}}><span style={{display:‘inline-block’,width:4,height:4,borderRadius:‘50%’,background:C.red,flexShrink:0}}/>{t}</span>))}</div></div>);
+  const items=['GR2026 · 18 maart 2026','Definitieve uitslag','Den Haag · Rotterdam · Utrecht · Groningen','Eindhoven · Delft · Maastricht · Almere · Amstelveen · Diemen · Fryslân','Evgeniya Orlova · Politieke Analyse'];
+  const r=[...items,...items];
+  return(<div style={{overflow:'hidden',borderBottom:`1px solid ${C.border}`,padding:'7px 0'}}><div className="ticker-inner">{r.map((t,i)=>(<span key={i} style={{fontFamily:'DM Sans',fontSize:9.5,letterSpacing:'0.16em',textTransform:'uppercase',color:C.muted,display:'inline-flex',alignItems:'center',gap:18}}><span style={{display:'inline-block',width:4,height:4,borderRadius:'50%',background:C.red,flexShrink:0}}/>{t}</span>))}</div></div>);
 }
 
 function Hero({variant}){
-const ref=useRef();const vis=useReveal(ref);
-const isE=variant===‘economist’;
-const serif=isE?‘Playfair Display’:‘Cormorant Garamond’;
-const totStem=Object.values(CITIES).reduce((a,c)=>a+c.stemmen,0);
-const cStem=useCountUp(totStem,vis,1400);
-return(<section ref={ref} style={{maxWidth:1200,margin:‘0 auto’,padding:isE?‘48px 40px 36px’:‘72px 40px 52px’,borderBottom:`1px solid ${C.border}`}}>
-<div style={{display:‘grid’,gridTemplateColumns:‘1fr 1fr’,gap:64,alignItems:‘end’}}>
-<div>
-<span style={{fontFamily:‘DM Sans’,fontSize:10,fontWeight:500,letterSpacing:‘0.2em’,textTransform:‘uppercase’,color:C.red,display:‘block’,marginBottom:14}}>Gemeenteraadsverkiezingen · 18 maart 2026</span>
-<h1 style={{fontFamily:serif,fontWeight:isE?900:600,fontSize:isE?‘clamp(36px,4vw,60px)’:‘clamp(44px,5vw,78px)’,lineHeight:1.02,color:C.ink,marginBottom:18}}>
-{isE?‘Uitslag GR2026’:<>Uitslag<br/><em>GR2026</em></>}
-</h1>
-<p style={{fontFamily:‘DM Sans’,fontSize:14,color:C.muted,fontWeight:300,lineHeight:1.75,maxWidth:420}}>Definitieve resultaten van de gemeenteraadsverkiezingen in elf gemeenten en Fryslân. Per wijk, per partij — met demografische analyse.</p>
-</div>
-<div style={{display:‘grid’,gridTemplateColumns:‘1fr 1fr’,gap:28,alignItems:‘end’}}>
-{[{v:vis?cStem.toLocaleString(‘nl-NL’):’—’,l:‘Uitgebrachte stemmen’,s:`${Object.keys(CITIES).length} gemeenten`},{v:‘18 mrt’,l:‘Verkiezingsdatum’,s:‘2026 · Definitieve uitslag’}].map((s,i)=>(
-<div key={i} style={{opacity:vis?1:0,transform:vis?‘none’:‘translateY(8px)’,transition:`opacity 0.5s ${i*0.15}s,transform 0.5s ${i*0.15}s`}}>
-<div style={{fontFamily:‘Cormorant Garamond’,fontSize:36,fontWeight:700,color:C.red,lineHeight:1}}>{s.v}</div>
-<div style={{fontFamily:‘DM Sans’,fontSize:10.5,fontWeight:500,textTransform:‘uppercase’,letterSpacing:‘0.08em’,color:C.ink,marginTop:6}}>{s.l}</div>
-<div style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted,marginTop:2}}>{s.s}</div>
-</div>
-))}
-</div>
-</div>
-
+  const ref=useRef();const vis=useReveal(ref);
+  const isE=variant==='economist';
+  const serif=isE?'Playfair Display':'Cormorant Garamond';
+  const totStem=Object.values(CITIES).reduce((a,c)=>a+c.stemmen,0);
+  const cStem=useCountUp(totStem,vis,1400);
+  return(<section ref={ref} style={{maxWidth:1200,margin:'0 auto',padding:isE?'48px 40px 36px':'72px 40px 52px',borderBottom:`1px solid ${C.border}`}}>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:64,alignItems:'end'}}>
+      <div>
+        <span style={{fontFamily:'DM Sans',fontSize:10,fontWeight:500,letterSpacing:'0.2em',textTransform:'uppercase',color:C.red,display:'block',marginBottom:14}}>Gemeenteraadsverkiezingen · 18 maart 2026</span>
+        <h1 style={{fontFamily:serif,fontWeight:isE?900:600,fontSize:isE?'clamp(36px,4vw,60px)':'clamp(44px,5vw,78px)',lineHeight:1.02,color:C.ink,marginBottom:18}}>
+          {isE?'Uitslag GR2026':<>Uitslag<br/><em>GR2026</em></>}
+        </h1>
+        <p style={{fontFamily:'DM Sans',fontSize:14,color:C.muted,fontWeight:300,lineHeight:1.75,maxWidth:420}}>Definitieve resultaten van de gemeenteraadsverkiezingen in elf gemeenten en Fryslân. Per wijk, per partij — met demografische analyse.</p>
+      </div>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:28,alignItems:'end'}}>
+        {[{v:vis?cStem.toLocaleString('nl-NL'):'—',l:'Uitgebrachte stemmen',s:`${Object.keys(CITIES).length} gemeenten`},{v:'18 mrt',l:'Verkiezingsdatum',s:'2026 · Definitieve uitslag'}].map((s,i)=>(
+          <div key={i} style={{opacity:vis?1:0,transform:vis?'none':'translateY(8px)',transition:`opacity 0.5s ${i*0.15}s,transform 0.5s ${i*0.15}s`}}>
+            <div style={{fontFamily:'Cormorant Garamond',fontSize:36,fontWeight:700,color:C.red,lineHeight:1}}>{s.v}</div>
+            <div style={{fontFamily:'DM Sans',fontSize:10.5,fontWeight:500,textTransform:'uppercase',letterSpacing:'0.08em',color:C.ink,marginTop:6}}>{s.l}</div>
+            <div style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,marginTop:2}}>{s.s}</div>
+          </div>
+        ))}
+      </div>
+    </div>
   </section>);
 }
 
 /* ══════════════════════════════════════════════════
-NL OVERVIEW MAP
+   NL OVERVIEW MAP
 ══════════════════════════════════════════════════ */
 function NLMap({activeCity,onSelect}){
-const [hov,setHov]=useState(null);
-return(<div style={{position:‘relative’}}>
-<svg viewBox=“0 0 400 350” style={{width:‘100%’,maxWidth:360}}>
-<path d={NL_PATH} fill="#ede9e2" stroke="#ddd8d0" strokeWidth="1.2"/>
-<path d={NL_IJSSEL} fill="#d6dfe8" opacity="0.7"/>
-<text x="181" y="115" textAnchor="middle" fontSize="7" fill="#8a9eb0" fontFamily="DM Sans" letterSpacing="0.06em" fontStyle="italic">IJsselmeer</text>
-{Object.entries(CITIES).map(([key,city])=>{
-const{x,y}=llToXY(city.lon,city.lat);const winner=city.results[0].p;const color=PC[winner]||C.muted;
-const isAct=activeCity===key;const isH=hov===key;
-return(<g key={key} style={{cursor:‘pointer’}} onClick={()=>onSelect(key)} onMouseEnter={()=>setHov(key)} onMouseLeave={()=>setHov(null)}>
-<circle cx={x} cy={y} r={isAct?10:isH?8:6} fill={color} stroke={isAct?C.ink:’#fff’} strokeWidth={isAct?2:1.5} style={{transition:‘all 0.2s’}} opacity={0.92}/>
-<text x={x} y={y-12} textAnchor=“middle” fontSize={isAct?9.5:8.5} fontFamily=“DM Sans” fontWeight={isAct?600:400} fill={C.ink} style={{pointerEvents:‘none’,transition:‘font-size 0.2s’}}>{city.name}</text>
-</g>);
-})}
-</svg>
-<div style={{marginTop:14,display:‘flex’,flexWrap:‘wrap’,gap:8}}>
-{Object.entries(PC).filter(([p])=>p!==‘Overig’&&[‘Hart v/d Haag’,‘GL/PvdA’,‘D66’,‘VVD’,‘DENK’,‘Leefbaar R.’,‘FvD’,‘CDA’,‘FNP’].includes(p)).map(([p,c])=>(<div key={p} style={{display:‘flex’,alignItems:‘center’,gap:4}}><div style={{width:7,height:7,borderRadius:‘50%’,background:c}}/><span style={{fontFamily:‘DM Sans’,fontSize:9,color:C.muted}}>{p}</span></div>))}
-</div>
-
+  const [hov,setHov]=useState(null);
+  return(<div style={{position:'relative'}}>
+    <svg viewBox="0 0 400 350" style={{width:'100%',maxWidth:360}}>
+      <path d={NL_PATH} fill="#ede9e2" stroke="#ddd8d0" strokeWidth="1.2"/>
+      <path d={NL_IJSSEL} fill="#d6dfe8" opacity="0.7"/>
+      <text x="181" y="115" textAnchor="middle" fontSize="7" fill="#8a9eb0" fontFamily="DM Sans" letterSpacing="0.06em" fontStyle="italic">IJsselmeer</text>
+      {Object.entries(CITIES).map(([key,city])=>{
+        const{x,y}=llToXY(city.lon,city.lat);const winner=city.results[0].p;const color=PC[winner]||C.muted;
+        const isAct=activeCity===key;const isH=hov===key;
+        return(<g key={key} style={{cursor:'pointer'}} onClick={()=>onSelect(key)} onMouseEnter={()=>setHov(key)} onMouseLeave={()=>setHov(null)}>
+          <circle cx={x} cy={y} r={isAct?10:isH?8:6} fill={color} stroke={isAct?C.ink:'#fff'} strokeWidth={isAct?2:1.5} style={{transition:'all 0.2s'}} opacity={0.92}/>
+          <text x={x} y={y-12} textAnchor="middle" fontSize={isAct?9.5:8.5} fontFamily="DM Sans" fontWeight={isAct?600:400} fill={C.ink} style={{pointerEvents:'none',transition:'font-size 0.2s'}}>{city.name}</text>
+        </g>);
+      })}
+    </svg>
+    <div style={{marginTop:14,display:'flex',flexWrap:'wrap',gap:8}}>
+      {Object.entries(PC).filter(([p])=>p!=='Overig'&&['Hart v/d Haag','GL/PvdA','D66','VVD','DENK','Leefbaar R.','FvD','CDA','FNP'].includes(p)).map(([p,c])=>(<div key={p} style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:7,height:7,borderRadius:'50%',background:c}}/><span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted}}>{p}</span></div>))}
+    </div>
   </div>);
 }
 
 /* ══════════════════════════════════════════════════
-PARTY BARS
+   PARTY BARS
 ══════════════════════════════════════════════════ */
 function PartyBars({results,vis,isE}){
-const max=Math.max(…results.map(r=>r.pct));
-return(<div style={{display:‘flex’,flexDirection:‘column’,gap:isE?10:13}}>
-{results.map((r,i)=>(<div key={r.p} style={{opacity:vis?1:0,transform:vis?‘none’:‘translateX(-8px)’,transition:`opacity 0.5s ${i*0.06}s,transform 0.5s ${i*0.06}s`}}>
-<div style={{display:‘flex’,justifyContent:‘space-between’,alignItems:‘baseline’,marginBottom:4}}>
-<div style={{display:‘flex’,alignItems:‘center’,gap:7}}><div style={{width:8,height:8,borderRadius:‘50%’,background:PC[r.p]||C.muted,flexShrink:0}}/><span style={{fontFamily:‘DM Sans’,fontSize:isE?11:12,fontWeight:500,color:C.ink}}>{r.p}</span></div>
-<div style={{display:‘flex’,gap:10,alignItems:‘baseline’}}><span style={{fontFamily:‘Cormorant Garamond’,fontSize:18,fontWeight:700,color:PC[r.p]||C.muted}}>{r.pct}%</span><span style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted}}>{r.z}z</span></div>
-</div>
-<div style={{height:5,background:C.card,borderRadius:3,overflow:‘hidden’}}><div style={{height:‘100%’,width:vis?`${(r.pct/max)*100}%`:‘0%’,background:PC[r.p]||C.muted,borderRadius:3,transition:`width 1.3s ${i*0.07}s cubic-bezier(0.16,1,0.3,1)`,opacity:0.88}}/></div>
-</div>))}
-
+  const max=Math.max(...results.map(r=>r.pct));
+  return(<div style={{display:'flex',flexDirection:'column',gap:isE?10:13}}>
+    {results.map((r,i)=>(<div key={r.p} style={{opacity:vis?1:0,transform:vis?'none':'translateX(-8px)',transition:`opacity 0.5s ${i*0.06}s,transform 0.5s ${i*0.06}s`}}>
+      <div style={{display:'flex',justifyContent:'space-between',alignItems:'baseline',marginBottom:4}}>
+        <div style={{display:'flex',alignItems:'center',gap:7}}><div style={{width:8,height:8,borderRadius:'50%',background:PC[r.p]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:isE?11:12,fontWeight:500,color:C.ink}}>{r.p}</span></div>
+        <div style={{display:'flex',gap:10,alignItems:'baseline'}}><span style={{fontFamily:'Cormorant Garamond',fontSize:18,fontWeight:700,color:PC[r.p]||C.muted}}>{r.pct}%</span><span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted}}>{r.z}z</span></div>
+      </div>
+      <div style={{height:5,background:C.card,borderRadius:3,overflow:'hidden'}}><div style={{height:'100%',width:vis?`${(r.pct/max)*100}%`:'0%',background:PC[r.p]||C.muted,borderRadius:3,transition:`width 1.3s ${i*0.07}s cubic-bezier(0.16,1,0.3,1)`,opacity:0.88}}/></div>
+    </div>))}
   </div>);
 }
 
 /* ══════════════════════════════════════════════════
-POLYGON MAP — used for ALL cities
+   POLYGON MAP — used for ALL cities
 ══════════════════════════════════════════════════ */
 function PolygonMap({cityKey, districts}){
-const [hov,setHov]=useState(null);
-const cfg=MAP_CONFIGS[cityKey];
-if(!cfg) return null;
+  const [hov,setHov]=useState(null);
+  const cfg=MAP_CONFIGS[cityKey];
+  if(!cfg) return null;
 
-const hovDist=hov?districts.find(d=>d.n===hov):null;
-const labelMap={};
-if(cfg.labels) cfg.labels.forEach(l=>{ labelMap[l.n]=l; });
+  const hovDist=hov?districts.find(d=>d.n===hov):null;
+  const labelMap={};
+  if(cfg.labels) cfg.labels.forEach(l=>{ labelMap[l.n]=l; });
 
-return(<div style={{position:‘relative’}}>
-<div style={{fontFamily:‘DM Sans’,fontSize:9,fontWeight:500,letterSpacing:‘0.14em’,textTransform:‘uppercase’,color:C.muted,marginBottom:10}}>
-Winnaar per {cityKey===‘fryslan’?‘gemeente’:‘stadsdeel’} · hover voor details
-</div>
-<div style={{position:‘relative’,display:‘inline-block’,width:‘100%’}}>
-<svg viewBox={cfg.viewBox} style={{width:‘100%’,display:‘block’,maxHeight:420}}>
-{/* sea background for Fryslân */}
-{cfg.seaBg&&<rect x="0" y="0" width="760" height="680" fill="#c8d8e8"/>}
-{/* background for regular cities */}
-{!cfg.seaBg&&<rect x="0" y="0" width="760" height="680" fill="#ede8de"/>}
+  return(<div style={{position:'relative'}}>
+    <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:10}}>
+      Winnaar per {cityKey==='fryslan'?'gemeente':'stadsdeel'} · hover voor details
+    </div>
+    <div style={{position:'relative',display:'inline-block',width:'100%'}}>
+      <svg viewBox={cfg.viewBox} style={{width:'100%',display:'block',maxHeight:420}}>
+        {/* sea background for Fryslân */}
+        {cfg.seaBg&&<rect x="0" y="0" width="760" height="680" fill="#c8d8e8"/>}
+        {/* background for regular cities */}
+        {!cfg.seaBg&&<rect x="0" y="0" width="760" height="680" fill="#ede8de"/>}
 
-```
-    {cfg.polygons.map((poly)=>{
-      const dist=districts.find(d=>d.n===poly.n);
-      const color=dist?PC[dist.w]||C.muted:'#ccc';
-      const isH=hov===poly.n;
-      return(<polygon key={poly.n}
-        points={poly.pts}
-        fill={color}
-        opacity={isH?1:0.78}
-        stroke={cfg.seaBg?"#fff":"#f7f3ee"}
-        strokeWidth={cfg.seaBg?"1.5":"2"}
-        className="map-path"
-        style={{filter:isH?'brightness(1.1) drop-shadow(0 2px 4px rgba(0,0,0,0.18))':'none'}}
-        onMouseEnter={()=>setHov(poly.n)}
-        onMouseLeave={()=>setHov(null)}
-      />);
-    })}
+        {cfg.polygons.map((poly)=>{
+          const dist=districts.find(d=>d.n===poly.n);
+          const color=dist?PC[dist.w]||C.muted:'#ccc';
+          const isH=hov===poly.n;
+          return(<polygon key={poly.n}
+            points={poly.pts}
+            fill={color}
+            opacity={isH?1:0.78}
+            stroke={cfg.seaBg?"#fff":"#f7f3ee"}
+            strokeWidth={cfg.seaBg?"1.5":"2"}
+            className="map-path"
+            style={{filter:isH?'brightness(1.1) drop-shadow(0 2px 4px rgba(0,0,0,0.18))':'none'}}
+            onMouseEnter={()=>setHov(poly.n)}
+            onMouseLeave={()=>setHov(null)}
+          />);
+        })}
 
-    {/* river */}
-    {cfg.river&&<path d={cfg.river} fill="none" stroke="rgba(100,160,220,0.55)" strokeWidth="4" strokeLinecap="round"/>}
-    {cfg.riverLabel&&<text x={cfg.riverLabel.x} y={cfg.riverLabel.y} fontSize="9" fontFamily="DM Sans" fill="rgba(80,130,200,0.8)" fontStyle="italic">{cfg.riverLabel.txt}</text>}
+        {/* river */}
+        {cfg.river&&<path d={cfg.river} fill="none" stroke="rgba(100,160,220,0.55)" strokeWidth="4" strokeLinecap="round"/>}
+        {cfg.riverLabel&&<text x={cfg.riverLabel.x} y={cfg.riverLabel.y} fontSize="9" fontFamily="DM Sans" fill="rgba(80,130,200,0.8)" fontStyle="italic">{cfg.riverLabel.txt}</text>}
 
-    {/* labels */}
-    {cfg.polygons.map((poly)=>{
-      const lbl=labelMap[poly.n];
-      if(!lbl) return null;
-      const dist=districts.find(d=>d.n===poly.n);
-      const color=dist?PC[dist.w]||C.muted:'#ccc';
-      const shortName=poly.n.length>16?poly.n.split(/[-\s]/)[0]:poly.n;
-      return(<g key={`lbl-${poly.n}`} style={{pointerEvents:'none'}}>
-        <text x={lbl.x} y={lbl.y-5} textAnchor="middle" fontSize="8" fontFamily="DM Sans" fontWeight="500" fill="rgba(255,255,255,0.92)" style={{textShadow:'0 1px 2px rgba(0,0,0,0.4)'}}>{shortName}</text>
-        {dist&&<text x={lbl.x} y={lbl.y+9} textAnchor="middle" fontSize="9" fontFamily="Cormorant Garamond" fontWeight="700" fill="rgba(255,255,255,0.9)">{dist.pct}%</text>}
-      </g>);
-    })}
-  </svg>
+        {/* labels */}
+        {cfg.polygons.map((poly)=>{
+          const lbl=labelMap[poly.n];
+          if(!lbl) return null;
+          const dist=districts.find(d=>d.n===poly.n);
+          const color=dist?PC[dist.w]||C.muted:'#ccc';
+          const shortName=poly.n.length>16?poly.n.split(/[-\s]/)[0]:poly.n;
+          return(<g key={`lbl-${poly.n}`} style={{pointerEvents:'none'}}>
+            <text x={lbl.x} y={lbl.y-5} textAnchor="middle" fontSize="8" fontFamily="DM Sans" fontWeight="500" fill="rgba(255,255,255,0.92)" style={{textShadow:'0 1px 2px rgba(0,0,0,0.4)'}}>{shortName}</text>
+            {dist&&<text x={lbl.x} y={lbl.y+9} textAnchor="middle" fontSize="9" fontFamily="Cormorant Garamond" fontWeight="700" fill="rgba(255,255,255,0.9)">{dist.pct}%</text>}
+          </g>);
+        })}
+      </svg>
 
-  {/* hover tooltip */}
-  {hovDist&&(<div style={{position:'absolute',top:8,right:0,width:160,background:C.ink,color:'#f7f3ee',padding:'11px 13px',borderRadius:2,pointerEvents:'none',zIndex:10,boxShadow:'0 4px 16px rgba(0,0,0,0.22)'}}>
-    <div style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.1em',textTransform:'uppercase',marginBottom:6,color:'rgba(247,243,238,0.6)'}}>{hovDist.n}</div>
-    <div style={{display:'flex',alignItems:'center',gap:6,marginBottom:4}}><div style={{width:8,height:8,borderRadius:'50%',background:PC[hovDist.w]||'#aaa',flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:11,fontWeight:500}}>{hovDist.w}</span></div>
-    <div style={{fontFamily:'Cormorant Garamond',fontSize:28,fontWeight:700,color:PC[hovDist.w]||'#aaa',lineHeight:1}}>{hovDist.pct}%</div>
-    <div style={{fontFamily:'DM Sans',fontSize:10,color:'rgba(247,243,238,0.45)',marginTop:5}}>Opkomst {hovDist.opk}%</div>
-  </div>)}
-</div>
+      {/* hover tooltip */}
+      {hovDist&&(<div style={{position:'absolute',top:8,right:0,width:160,background:C.ink,color:'#f7f3ee',padding:'11px 13px',borderRadius:2,pointerEvents:'none',zIndex:10,boxShadow:'0 4px 16px rgba(0,0,0,0.22)'}}>
+        <div style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.1em',textTransform:'uppercase',marginBottom:6,color:'rgba(247,243,238,0.6)'}}>{hovDist.n}</div>
+        <div style={{display:'flex',alignItems:'center',gap:6,marginBottom:4}}><div style={{width:8,height:8,borderRadius:'50%',background:PC[hovDist.w]||'#aaa',flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:11,fontWeight:500}}>{hovDist.w}</span></div>
+        <div style={{fontFamily:'Cormorant Garamond',fontSize:28,fontWeight:700,color:PC[hovDist.w]||'#aaa',lineHeight:1}}>{hovDist.pct}%</div>
+        <div style={{fontFamily:'DM Sans',fontSize:10,color:'rgba(247,243,238,0.45)',marginTop:5}}>Opkomst {hovDist.opk}%</div>
+      </div>)}
+    </div>
 
-{/* legend */}
-<div style={{marginTop:10,display:'flex',flexWrap:'wrap',gap:6}}>
-  {[...new Set(districts.map(d=>d.w))].map(w=>(<div key={w} style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:8,height:8,background:PC[w]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted}}>{w}</span></div>))}
-</div>
-```
-
+    {/* legend */}
+    <div style={{marginTop:10,display:'flex',flexWrap:'wrap',gap:6}}>
+      {[...new Set(districts.map(d=>d.w))].map(w=>(<div key={w} style={{display:'flex',alignItems:'center',gap:4}}><div style={{width:8,height:8,background:PC[w]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted}}>{w}</span></div>))}
+    </div>
   </div>);
 }
 
 /* ══════════════════════════════════════════════════
-DISTRICT OVERVIEW TABLE
+   DISTRICT OVERVIEW TABLE
 ══════════════════════════════════════════════════ */
 function DistrictOverviewTable({districts,results}){
-const [exp,setExp]=useState(null);
-const top4=results.slice(0,4);const maxPct=Math.max(…results.map(r=>r.pct));
-return(<div>
-<div style={{display:‘grid’,gridTemplateColumns:‘1fr 120px 70px 70px 180px’,gap:12,padding:‘7px 0’,borderBottom:`2px solid ${C.ink}`,marginBottom:2}}>
-{[‘Wijk / Gebied’,‘Winnaar’,’%’,‘Opkomst’,‘Top partijen’].map(h=>(<span key={h} style={{fontFamily:‘DM Sans’,fontSize:9.5,fontWeight:500,letterSpacing:‘0.12em’,textTransform:‘uppercase’,color:C.muted}}>{h}</span>))}
-</div>
-{districts.map((d)=>{
-const isEx=exp===d.n;
-return(<div key={d.n} style={{borderBottom:`1px solid ${C.border}`}}>
-<div style={{display:‘grid’,gridTemplateColumns:‘1fr 120px 70px 70px 180px’,gap:12,padding:‘13px 0’,cursor:‘pointer’,alignItems:‘center’,background:isEx?C.card:‘transparent’,transition:‘background 0.15s’}} onClick={()=>setExp(isEx?null:d.n)}>
-<span style={{fontFamily:‘DM Sans’,fontSize:12,fontWeight:500,color:C.ink}}>{d.n}</span>
-<div style={{display:‘flex’,alignItems:‘center’,gap:6}}><div style={{width:9,height:9,borderRadius:2,background:PC[d.w]||C.muted,flexShrink:0}}/><span style={{fontFamily:‘DM Sans’,fontSize:11,color:PC[d.w]||C.muted,fontWeight:500}}>{d.w}</span></div>
-<span style={{fontFamily:‘Cormorant Garamond’,fontSize:20,fontWeight:700,color:PC[d.w]||C.muted}}>{d.pct}%</span>
-<span style={{fontFamily:‘DM Sans’,fontSize:11,color:C.muted}}>{d.opk}%</span>
-<div style={{display:‘flex’,gap:2,alignItems:‘flex-end’}}>
-{top4.map(r=>(<div key={r.p} style={{display:‘flex’,flexDirection:‘column’,gap:2,alignItems:‘center’}}>
-<div style={{width:Math.max(6,r.pct*0.9),height:3,background:PC[r.p]||C.muted,borderRadius:1,opacity:0.75}}/>
-</div>))}
-<span style={{fontFamily:‘DM Sans’,fontSize:9,color:C.muted,marginLeft:6}}>{top4.map(r=>r.p).join(’ · ’)}</span>
-</div>
-</div>
-{isEx&&(<div style={{padding:‘12px 0 16px 16px’,borderLeft:`2px solid ${PC[d.w]||C.red}`,marginBottom:4}}>
-<div style={{fontFamily:‘DM Sans’,fontSize:10,fontWeight:500,textTransform:‘uppercase’,letterSpacing:‘0.1em’,color:C.muted,marginBottom:10}}>Alle partijen</div>
-<div style={{display:‘flex’,flexDirection:‘column’,gap:6}}>
-{results.map(r=>(<div key={r.p} style={{display:‘flex’,alignItems:‘center’,gap:10}}>
-<span style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted,minWidth:120}}>{r.p}</span>
-<div style={{height:4,background:C.card,borderRadius:2,flex:1,overflow:‘hidden’}}><div style={{height:‘100%’,width:`${(r.pct/maxPct)*100}%`,background:PC[r.p]||C.muted,borderRadius:2}}/></div>
-<span style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted,minWidth:36,textAlign:‘right’}}>{r.pct}%</span>
-</div>))}
-</div>
-</div>)}
-</div>);
-})}
-
+  const [exp,setExp]=useState(null);
+  const top4=results.slice(0,4);const maxPct=Math.max(...results.map(r=>r.pct));
+  return(<div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 120px 70px 70px 180px',gap:12,padding:'7px 0',borderBottom:`2px solid ${C.ink}`,marginBottom:2}}>
+      {['Wijk / Gebied','Winnaar','%','Opkomst','Top partijen'].map(h=>(<span key={h} style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.12em',textTransform:'uppercase',color:C.muted}}>{h}</span>))}
+    </div>
+    {districts.map((d)=>{
+      const isEx=exp===d.n;
+      return(<div key={d.n} style={{borderBottom:`1px solid ${C.border}`}}>
+        <div style={{display:'grid',gridTemplateColumns:'1fr 120px 70px 70px 180px',gap:12,padding:'13px 0',cursor:'pointer',alignItems:'center',background:isEx?C.card:'transparent',transition:'background 0.15s'}} onClick={()=>setExp(isEx?null:d.n)}>
+          <span style={{fontFamily:'DM Sans',fontSize:12,fontWeight:500,color:C.ink}}>{d.n}</span>
+          <div style={{display:'flex',alignItems:'center',gap:6}}><div style={{width:9,height:9,borderRadius:2,background:PC[d.w]||C.muted,flexShrink:0}}/><span style={{fontFamily:'DM Sans',fontSize:11,color:PC[d.w]||C.muted,fontWeight:500}}>{d.w}</span></div>
+          <span style={{fontFamily:'Cormorant Garamond',fontSize:20,fontWeight:700,color:PC[d.w]||C.muted}}>{d.pct}%</span>
+          <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.opk}%</span>
+          <div style={{display:'flex',gap:2,alignItems:'flex-end'}}>
+            {top4.map(r=>(<div key={r.p} style={{display:'flex',flexDirection:'column',gap:2,alignItems:'center'}}>
+              <div style={{width:Math.max(6,r.pct*0.9),height:3,background:PC[r.p]||C.muted,borderRadius:1,opacity:0.75}}/>
+            </div>))}
+            <span style={{fontFamily:'DM Sans',fontSize:9,color:C.muted,marginLeft:6}}>{top4.map(r=>r.p).join(' · ')}</span>
+          </div>
+        </div>
+        {isEx&&(<div style={{padding:'12px 0 16px 16px',borderLeft:`2px solid ${PC[d.w]||C.red}`,marginBottom:4}}>
+          <div style={{fontFamily:'DM Sans',fontSize:10,fontWeight:500,textTransform:'uppercase',letterSpacing:'0.1em',color:C.muted,marginBottom:10}}>Alle partijen</div>
+          <div style={{display:'flex',flexDirection:'column',gap:6}}>
+            {results.map(r=>(<div key={r.p} style={{display:'flex',alignItems:'center',gap:10}}>
+              <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,minWidth:120}}>{r.p}</span>
+              <div style={{height:4,background:C.card,borderRadius:2,flex:1,overflow:'hidden'}}><div style={{height:'100%',width:`${(r.pct/maxPct)*100}%`,background:PC[r.p]||C.muted,borderRadius:2}}/></div>
+              <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,minWidth:36,textAlign:'right'}}>{r.pct}%</span>
+            </div>))}
+          </div>
+        </div>)}
+      </div>);
+    })}
   </div>);
 }
 
 /* ══════════════════════════════════════════════════
-DEMOGRAPHICS TABLE
+   DEMOGRAPHICS TABLE
 ══════════════════════════════════════════════════ */
 function DemographicsTable({cityKey}){
-const demos=DEMOGRAPHICS[cityKey];
-if(!demos)return(<div style={{fontFamily:‘DM Sans’,fontSize:13,color:C.muted,padding:‘28px 0’,textAlign:‘center’,fontStyle:‘italic’}}>Demografiedata niet beschikbaar voor deze gemeente.</div>);
-return(<div>
-<div style={{fontFamily:‘DM Sans’,fontSize:9,color:C.muted,marginBottom:4,fontStyle:‘italic’}}>Migratieachtergrond = min. één ouder in buitenland geboren (CBS). WOZ = gem. waarde 2024.</div>
-<div style={{display:‘grid’,gridTemplateColumns:‘150px 70px 72px 1fr 1fr 55px 1fr’,gap:10,padding:‘8px 0’,borderBottom:`2px solid ${C.ink}`,marginBottom:2}}>
-{[‘Wijk’,‘Inwoners’,‘WOZ’,’% Ned.’,’% Niet-w.’,‘Koop’,‘Profiel’].map(h=>(<span key={h} style={{fontFamily:‘DM Sans’,fontSize:9.5,fontWeight:500,letterSpacing:‘0.12em’,textTransform:‘uppercase’,color:C.muted}}>{h}</span>))}
-</div>
-{demos.map((d)=>(<div key={d.n} style={{display:‘grid’,gridTemplateColumns:‘150px 70px 72px 1fr 1fr 55px 1fr’,gap:10,padding:‘12px 0’,borderBottom:`1px solid ${C.border}`,alignItems:‘center’}}>
-<span style={{fontFamily:‘DM Sans’,fontSize:11,fontWeight:500,color:C.ink}}>{d.n}</span>
-<span style={{fontFamily:‘DM Sans’,fontSize:11,color:C.muted}}>{d.inw}</span>
-<span style={{fontFamily:‘DM Sans’,fontSize:11,color:C.muted}}>{d.woz}</span>
-<div><div style={{height:4,background:C.card,borderRadius:2,marginBottom:3,overflow:‘hidden’}}><div style={{height:‘100%’,width:`${d.ned}%`,background:C.green,borderRadius:2}}/></div><span style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted}}>{d.ned}%</span></div>
-<div><div style={{height:4,background:C.card,borderRadius:2,marginBottom:3,overflow:‘hidden’}}><div style={{height:‘100%’,width:`${d.nw}%`,background:C.red,borderRadius:2}}/></div><span style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted}}>{d.nw}%</span></div>
-<span style={{fontFamily:‘DM Sans’,fontSize:11,color:C.muted}}>{d.koop}</span>
-<span style={{fontFamily:‘DM Sans’,fontSize:10.5,color:C.muted,lineHeight:1.5}}>{d.profiel}</span>
-</div>))}
-<div style={{fontFamily:‘DM Sans’,fontSize:9,color:C.muted,marginTop:10}}>Bron: CBS Kerncijfers Wijken 2025 · WOZ peildatum 1 jan 2024</div>
-
+  const demos=DEMOGRAPHICS[cityKey];
+  if(!demos)return(<div style={{fontFamily:'DM Sans',fontSize:13,color:C.muted,padding:'28px 0',textAlign:'center',fontStyle:'italic'}}>Demografiedata niet beschikbaar voor deze gemeente.</div>);
+  return(<div>
+    <div style={{fontFamily:'DM Sans',fontSize:9,color:C.muted,marginBottom:4,fontStyle:'italic'}}>Migratieachtergrond = min. één ouder in buitenland geboren (CBS). WOZ = gem. waarde 2024.</div>
+    <div style={{display:'grid',gridTemplateColumns:'150px 70px 72px 1fr 1fr 55px 1fr',gap:10,padding:'8px 0',borderBottom:`2px solid ${C.ink}`,marginBottom:2}}>
+      {['Wijk','Inwoners','WOZ','% Ned.','% Niet-w.','Koop','Profiel'].map(h=>(<span key={h} style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.12em',textTransform:'uppercase',color:C.muted}}>{h}</span>))}
+    </div>
+    {demos.map((d)=>(<div key={d.n} style={{display:'grid',gridTemplateColumns:'150px 70px 72px 1fr 1fr 55px 1fr',gap:10,padding:'12px 0',borderBottom:`1px solid ${C.border}`,alignItems:'center'}}>
+      <span style={{fontFamily:'DM Sans',fontSize:11,fontWeight:500,color:C.ink}}>{d.n}</span>
+      <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.inw}</span>
+      <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.woz}</span>
+      <div><div style={{height:4,background:C.card,borderRadius:2,marginBottom:3,overflow:'hidden'}}><div style={{height:'100%',width:`${d.ned}%`,background:C.green,borderRadius:2}}/></div><span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted}}>{d.ned}%</span></div>
+      <div><div style={{height:4,background:C.card,borderRadius:2,marginBottom:3,overflow:'hidden'}}><div style={{height:'100%',width:`${d.nw}%`,background:C.red,borderRadius:2}}/></div><span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted}}>{d.nw}%</span></div>
+      <span style={{fontFamily:'DM Sans',fontSize:11,color:C.muted}}>{d.koop}</span>
+      <span style={{fontFamily:'DM Sans',fontSize:10.5,color:C.muted,lineHeight:1.5}}>{d.profiel}</span>
+    </div>))}
+    <div style={{fontFamily:'DM Sans',fontSize:9,color:C.muted,marginTop:10}}>Bron: CBS Kerncijfers Wijken 2025 · WOZ peildatum 1 jan 2024</div>
   </div>);
 }
 
 /* ══════════════════════════════════════════════════
-CITY DETAIL
+   CITY DETAIL
 ══════════════════════════════════════════════════ */
 function CityDetail({cityKey,variant}){
-const ref=useRef();const vis=useReveal(ref);
-const city=CITIES[cityKey];
-const [tab,setTab]=useState(‘kaart’);
-const isE=variant===‘economist’;
-useEffect(()=>setTab(‘kaart’),[cityKey]);
-if(!city)return null;
-const winner=city.results[0];
-const serif=isE?‘Playfair Display’:‘Cormorant Garamond’;
-const hasDemographics=!!DEMOGRAPHICS[cityKey];
+  const ref=useRef();const vis=useReveal(ref);
+  const city=CITIES[cityKey];
+  const [tab,setTab]=useState('kaart');
+  const isE=variant==='economist';
+  useEffect(()=>setTab('kaart'),[cityKey]);
+  if(!city)return null;
+  const winner=city.results[0];
+  const serif=isE?'Playfair Display':'Cormorant Garamond';
+  const hasDemographics=!!DEMOGRAPHICS[cityKey];
 
-return(<div ref={ref} style={{animation:‘fadeUp 0.35s ease’}}>
-{/* Winner banner */}
-<div style={{padding:isE?‘24px 0 18px’:‘32px 0 24px’,borderBottom:`1px solid ${C.border}`,display:‘grid’,gridTemplateColumns:‘auto 1fr auto’,gap:20,alignItems:‘center’}}>
-<div style={{width:40,height:40,borderRadius:‘50%’,background:PC[winner.p]||C.muted,flexShrink:0,opacity:0.9}}/>
-<div>
-<div style={{fontFamily:‘DM Sans’,fontSize:9.5,fontWeight:500,letterSpacing:‘0.16em’,textTransform:‘uppercase’,color:C.muted,marginBottom:3}}>Grootste partij</div>
-<div style={{fontFamily:serif,fontSize:isE?26:32,fontWeight:isE?700:600,color:PC[winner.p]||C.ink,lineHeight:1}}>{winner.p}</div>
-</div>
-<div style={{textAlign:‘right’}}>
-<div style={{fontFamily:‘Cormorant Garamond’,fontSize:40,fontWeight:700,color:PC[winner.p]||C.ink,lineHeight:1}}>{winner.pct}%</div>
-<div style={{fontFamily:‘DM Sans’,fontSize:10,color:C.muted,marginTop:2}}>{winner.z} van {city.zetels} zetels</div>
-</div>
-</div>
-
-```
-{/* Stats strip */}
-<div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',padding:'14px 0',borderBottom:`1px solid ${C.border}`}}>
-  {[{v:city.stemmen.toLocaleString('nl-NL'),l:'Stemmen'},{v:`${city.opkomst}%`,l:'Opkomst'},{v:`${city.zetels}`,l:'Zetels'}].map((s,i)=>(
-    <div key={i} style={{padding:`0 ${i<2?22:0}px 0 0`,borderRight:i<2?`1px solid ${C.border}`:'none',marginRight:i<2?22:0}}>
-      <div style={{fontFamily:'Cormorant Garamond',fontSize:24,fontWeight:700,color:C.ink,lineHeight:1}}>{s.v}</div>
-      <div style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted,marginTop:4,letterSpacing:'0.06em',textTransform:'uppercase'}}>{s.l}</div>
+  return(<div ref={ref} style={{animation:'fadeUp 0.35s ease'}}>
+    {/* Winner banner */}
+    <div style={{padding:isE?'24px 0 18px':'32px 0 24px',borderBottom:`1px solid ${C.border}`,display:'grid',gridTemplateColumns:'auto 1fr auto',gap:20,alignItems:'center'}}>
+      <div style={{width:40,height:40,borderRadius:'50%',background:PC[winner.p]||C.muted,flexShrink:0,opacity:0.9}}/>
+      <div>
+        <div style={{fontFamily:'DM Sans',fontSize:9.5,fontWeight:500,letterSpacing:'0.16em',textTransform:'uppercase',color:C.muted,marginBottom:3}}>Grootste partij</div>
+        <div style={{fontFamily:serif,fontSize:isE?26:32,fontWeight:isE?700:600,color:PC[winner.p]||C.ink,lineHeight:1}}>{winner.p}</div>
+      </div>
+      <div style={{textAlign:'right'}}>
+        <div style={{fontFamily:'Cormorant Garamond',fontSize:40,fontWeight:700,color:PC[winner.p]||C.ink,lineHeight:1}}>{winner.pct}%</div>
+        <div style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,marginTop:2}}>{winner.z} van {city.zetels} zetels</div>
+      </div>
     </div>
-  ))}
-</div>
 
-{/* Sub-tabs */}
-<div style={{display:'flex',gap:0,borderBottom:`1px solid ${C.border}`,marginBottom:28,paddingTop:14}}>
-  {['kaart','overzicht',...(hasDemographics?['demografie']:[])].map(t=>(<button key={t} onClick={()=>setTab(t)} style={{fontFamily:'DM Sans',fontSize:11,fontWeight:tab===t?500:400,letterSpacing:'0.1em',textTransform:'uppercase',color:tab===t?C.red:C.muted,padding:'8px 20px 9px 0',background:'none',border:'none',cursor:'pointer',borderBottom:`2px solid ${tab===t?C.red:'transparent'}`,marginBottom:-1,transition:'color 0.15s'}}>{t}</button>))}
-</div>
+    {/* Stats strip */}
+    <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',padding:'14px 0',borderBottom:`1px solid ${C.border}`}}>
+      {[{v:city.stemmen.toLocaleString('nl-NL'),l:'Stemmen'},{v:`${city.opkomst}%`,l:'Opkomst'},{v:`${city.zetels}`,l:'Zetels'}].map((s,i)=>(
+        <div key={i} style={{padding:`0 ${i<2?22:0}px 0 0`,borderRight:i<2?`1px solid ${C.border}`:'none',marginRight:i<2?22:0}}>
+          <div style={{fontFamily:'Cormorant Garamond',fontSize:24,fontWeight:700,color:C.ink,lineHeight:1}}>{s.v}</div>
+          <div style={{fontFamily:'DM Sans',fontSize:9.5,color:C.muted,marginTop:4,letterSpacing:'0.06em',textTransform:'uppercase'}}>{s.l}</div>
+        </div>
+      ))}
+    </div>
 
-{/* Kaart tab */}
-{tab==='kaart'&&(<div style={{display:'grid',gridTemplateColumns:'3fr 2fr',gap:isE?36:48}}>
-  <PolygonMap cityKey={cityKey} districts={city.districts}/>
-  <div>
-    <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:16}}>Uitslag naar partij</div>
-    <PartyBars results={city.results} vis={vis} isE={isE}/>
-  </div>
-</div>)}
+    {/* Sub-tabs */}
+    <div style={{display:'flex',gap:0,borderBottom:`1px solid ${C.border}`,marginBottom:28,paddingTop:14}}>
+      {['kaart','overzicht',...(hasDemographics?['demografie']:[])].map(t=>(<button key={t} onClick={()=>setTab(t)} style={{fontFamily:'DM Sans',fontSize:11,fontWeight:tab===t?500:400,letterSpacing:'0.1em',textTransform:'uppercase',color:tab===t?C.red:C.muted,padding:'8px 20px 9px 0',background:'none',border:'none',cursor:'pointer',borderBottom:`2px solid ${tab===t?C.red:'transparent'}`,marginBottom:-1,transition:'color 0.15s'}}>{t}</button>))}
+    </div>
 
-{/* Overzicht tab */}
-{tab==='overzicht'&&<DistrictOverviewTable districts={city.districts} results={city.results}/>}
+    {/* Kaart tab */}
+    {tab==='kaart'&&(<div style={{display:'grid',gridTemplateColumns:'3fr 2fr',gap:isE?36:48}}>
+      <PolygonMap cityKey={cityKey} districts={city.districts}/>
+      <div>
+        <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:16}}>Uitslag naar partij</div>
+        <PartyBars results={city.results} vis={vis} isE={isE}/>
+      </div>
+    </div>)}
 
-{/* Demografie tab */}
-{tab==='demografie'&&<DemographicsTable cityKey={cityKey}/>}
-```
+    {/* Overzicht tab */}
+    {tab==='overzicht'&&<DistrictOverviewTable districts={city.districts} results={city.results}/>}
 
+    {/* Demografie tab */}
+    {tab==='demografie'&&<DemographicsTable cityKey={cityKey}/>}
   </div>);
 }
 
 /* ══════════════════════════════════════════════════
-MAP SECTION
+   MAP SECTION
 ══════════════════════════════════════════════════ */
 function MapSection({variant}){
-const [active,setActive]=useState(‘den-haag’);
-const isE=variant===‘economist’;
-return(<section style={{maxWidth:1200,margin:‘0 auto’,padding:isE?‘40px 40px 64px’:‘60px 40px 80px’}}>
-<RuleLabel label="Resultaten per gemeente"/>
-<div style={{display:‘grid’,gridTemplateColumns:‘300px 1fr’,gap:isE?44:60,alignItems:‘start’}}>
-{/* Sidebar */}
-<div style={{position:‘sticky’,top:96}}>
-<NLMap activeCity={active} onSelect={setActive}/>
-<div style={{marginTop:22}}>
-<div style={{fontFamily:‘DM Sans’,fontSize:9,fontWeight:500,letterSpacing:‘0.14em’,textTransform:‘uppercase’,color:C.muted,marginBottom:8}}>Kies gemeente</div>
-<div style={{display:‘flex’,flexDirection:‘column’,gap:1}}>
-{Object.entries(CITIES).map(([key,city])=>{const w=city.results[0];const isAct=active===key;return(<button key={key} onClick={()=>setActive(key)} style={{display:‘flex’,justifyContent:‘space-between’,alignItems:‘center’,padding:‘8px 10px’,background:isAct?C.card:‘transparent’,borderLeft:isAct?`3px solid ${PC[w.p]||C.red}`:‘3px solid transparent’,borderRadius:2,textAlign:‘left’,transition:‘all 0.15s’}}>
-<span style={{fontFamily:‘DM Sans’,fontSize:12,fontWeight:isAct?500:400,color:isAct?C.ink:C.muted}}>{city.name}</span>
-<div style={{display:‘flex’,alignItems:‘center’,gap:6}}><span style={{fontFamily:‘DM Sans’,fontSize:10,color:PC[w.p]||C.muted,fontWeight:500}}>{w.p}</span><div style={{width:6,height:6,borderRadius:‘50%’,background:PC[w.p]||C.muted}}/></div>
-</button>);
-})}
-</div>
-</div>
-</div>
+  const [active,setActive]=useState('den-haag');
+  const isE=variant==='economist';
+  return(<section style={{maxWidth:1200,margin:'0 auto',padding:isE?'40px 40px 64px':'60px 40px 80px'}}>
+    <RuleLabel label="Resultaten per gemeente"/>
+    <div style={{display:'grid',gridTemplateColumns:'300px 1fr',gap:isE?44:60,alignItems:'start'}}>
+      {/* Sidebar */}
+      <div style={{position:'sticky',top:96}}>
+        <NLMap activeCity={active} onSelect={setActive}/>
+        <div style={{marginTop:22}}>
+          <div style={{fontFamily:'DM Sans',fontSize:9,fontWeight:500,letterSpacing:'0.14em',textTransform:'uppercase',color:C.muted,marginBottom:8}}>Kies gemeente</div>
+          <div style={{display:'flex',flexDirection:'column',gap:1}}>
+            {Object.entries(CITIES).map(([key,city])=>{const w=city.results[0];const isAct=active===key;return(<button key={key} onClick={()=>setActive(key)} style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'8px 10px',background:isAct?C.card:'transparent',borderLeft:isAct?`3px solid ${PC[w.p]||C.red}`:'3px solid transparent',borderRadius:2,textAlign:'left',transition:'all 0.15s'}}>
+              <span style={{fontFamily:'DM Sans',fontSize:12,fontWeight:isAct?500:400,color:isAct?C.ink:C.muted}}>{city.name}</span>
+              <div style={{display:'flex',alignItems:'center',gap:6}}><span style={{fontFamily:'DM Sans',fontSize:10,color:PC[w.p]||C.muted,fontWeight:500}}>{w.p}</span><div style={{width:6,height:6,borderRadius:'50%',background:PC[w.p]||C.muted}}/></div>
+            </button>);
+            })}
+          </div>
+        </div>
+      </div>
 
-```
-  {/* Detail */}
-  <div>
-    <div style={{borderBottom:`2px solid ${C.ink}`,paddingBottom:14,marginBottom:0,display:'flex',alignItems:'baseline',gap:14}}>
-      <span style={{fontFamily:'Cormorant Garamond',fontWeight:600,fontSize:36,color:C.ink}}>{CITIES[active]?.name}</span>
-      <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,letterSpacing:'0.12em',textTransform:'uppercase'}}>GR2026 · 18 maart 2026</span>
+      {/* Detail */}
+      <div>
+        <div style={{borderBottom:`2px solid ${C.ink}`,paddingBottom:14,marginBottom:0,display:'flex',alignItems:'baseline',gap:14}}>
+          <span style={{fontFamily:'Cormorant Garamond',fontWeight:600,fontSize:36,color:C.ink}}>{CITIES[active]?.name}</span>
+          <span style={{fontFamily:'DM Sans',fontSize:10,color:C.muted,letterSpacing:'0.12em',textTransform:'uppercase'}}>GR2026 · 18 maart 2026</span>
+        </div>
+        <CityDetail key={active} cityKey={active} variant={variant}/>
+      </div>
     </div>
-    <CityDetail key={active} cityKey={active} variant={variant}/>
-  </div>
-</div>
-```
-
   </section>);
 }
 
 /* ══════════════════════════════════════════════════
-FOOTER
+   FOOTER
 ══════════════════════════════════════════════════ */
-function Footer(){return(<footer style={{background:C.ink,color:’#f7f3ee’,padding:‘44px 40px 36px’}}><div style={{maxWidth:1200,margin:‘0 auto’,display:‘flex’,justifyContent:‘space-between’,alignItems:‘flex-start’}}><div><div style={{fontFamily:‘Cormorant Garamond’,fontWeight:700,fontSize:38,letterSpacing:’-0.02em’,marginBottom:10}}>E.O.</div><p style={{fontFamily:‘DM Sans’,fontSize:11,color:‘rgba(247,243,238,0.5)’,lineHeight:1.65,maxWidth:300}}>Voorlopige uitslag per stembureau via de gemeenten. Data: GR2026 · 18 maart 2026. Bron: Officiële gemeentelijke uitslagen.</p></div><div style={{fontFamily:‘DM Sans’,fontSize:10,color:‘rgba(247,243,238,0.45)’,textAlign:‘right’,letterSpacing:‘0.08em’,lineHeight:2}}><div>GR2026 · Gemeenteraadsverkiezingen</div><div>Nederland · 18 maart 2026</div><div>© 2026 evgeniyaorlova.com</div></div></div></footer>);}
+function Footer(){return(<footer style={{background:C.ink,color:'#f7f3ee',padding:'44px 40px 36px'}}><div style={{maxWidth:1200,margin:'0 auto',display:'flex',justifyContent:'space-between',alignItems:'flex-start'}}><div><div style={{fontFamily:'Cormorant Garamond',fontWeight:700,fontSize:38,letterSpacing:'-0.02em',marginBottom:10}}>E.O.</div><p style={{fontFamily:'DM Sans',fontSize:11,color:'rgba(247,243,238,0.5)',lineHeight:1.65,maxWidth:300}}>Voorlopige uitslag per stembureau via de gemeenten. Data: GR2026 · 18 maart 2026. Bron: Officiële gemeentelijke uitslagen.</p></div><div style={{fontFamily:'DM Sans',fontSize:10,color:'rgba(247,243,238,0.45)',textAlign:'right',letterSpacing:'0.08em',lineHeight:2}}><div>GR2026 · Gemeenteraadsverkiezingen</div><div>Nederland · 18 maart 2026</div><div>© 2026 evgeniyaorlova.com</div></div></div></footer>);}
 
 /* ══════════════════════════════════════════════════
-APP
+   APP
 ══════════════════════════════════════════════════ */
-const TWEAK_DEFAULTS = {“variant”:“economist”};
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{"variant":"economist"}/*EDITMODE-END*/;
 function App(){
-const [t,setT,panelOpen,closePanel]=useInlineTweaks(TWEAK_DEFAULTS);
-const v=t.variant;
-return(<div style={{minHeight:‘100vh’,display:‘flex’,flexDirection:‘column’}}>
-<InlineTweaksPanel open={panelOpen} onClose={closePanel}><TweakSegmented label=“Design stijl” value={v} options={[‘vogue’,‘economist’]} onChange={val=>setT(‘variant’,val)}/></InlineTweaksPanel>
-<Header/><Ticker/><Hero variant={v}/><MapSection variant={v}/><Footer/>
-
-  </div>);
+  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const v = t.variant;
+  return (
+    <div style={{minHeight:'100vh',display:'flex',flexDirection:'column'}}>
+      <TweaksPanel title="GR2026 Tweaks">
+        <TweakRadio
+          label="Design stijl"
+          value={v}
+          options={['vogue','economist']}
+          onChange={(val) => setTweak('variant', val)}
+        />
+      </TweaksPanel>
+      <Header/><Ticker/><Hero variant={v}/><MapSection variant={v}/><Footer/>
+    </div>
+  );
 }
 ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+
+
 </script>
+
 </body>
 </html>
