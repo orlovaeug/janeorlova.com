@@ -1,832 +1,901 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jane Orlova — Political Researcher & Writer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SV5Y8BZ24');
-  </script>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
-  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Orlova — Political Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-```
-:root {
-  --ink:       #0c0c0c;
-  --ink-soft:  #3b3b3b;
-  --ink-muted: #8a8a8a;
-  --paper:     #f7f5f0;
-  --paper-2:   #efece5;
-  --rule:      #d6d1c8;
-  --accent:    #b4a48a;
-  --red:       #8b1a1a;
-}
-
-html { scroll-behavior: smooth; }
-
-body {
-  background: var(--paper);
-  color: var(--ink);
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 18px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
-body::after {
-  content: '';
-  position: fixed; inset: 0;
-  pointer-events: none; z-index: 9999;
-  opacity: 0.25;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
-}
-
-/* ─── NAV ─── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  height: 60px;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 5rem;
-  background: var(--paper);
-  border-bottom: 1px solid var(--rule);
-}
-
-a { color: inherit; }
-.nav-brand { display: flex; align-items: center; gap: 1.1rem; text-decoration: none; color: var(--ink); }
-
-.nav-headshot {
-  width: 34px; height: 34px; border-radius: 50%;
-  background: var(--paper-2); border: 1px solid var(--rule);
-  overflow: hidden; flex-shrink: 0;
-  display: flex; align-items: center; justify-content: center;
-}
-.nav-headshot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-
-.nav-wordmark { font-family: 'Playfair Display', serif; font-size: 0.98rem; font-weight: 700; letter-spacing: 0.04em; color: var(--ink); }
-
-.nav-links { display: flex; gap: 2.5rem; list-style: none; }
-.nav-links a { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.13em; text-transform: uppercase; text-decoration: none; color: var(--ink-muted); transition: color 0.2s; }
-.nav-links a:hover { color: var(--ink); }
-
-.nav-right { display: flex; align-items: center; gap: 1.5rem; }
-.nav-dateline { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.1em; color: var(--ink-muted); }
-.nav-cta { display: inline-block; padding: 0.42rem 1.15rem; background: var(--ink); color: var(--paper); font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
-.nav-cta:hover { background: var(--red); }
-
-.hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 1px; background: var(--ink); }
-
-/* ─── TICKER ─── */
-.ticker { margin-top: 60px; height: 34px; background: var(--ink); overflow: hidden; display: flex; align-items: center; }
-.ticker-track { display: flex; white-space: nowrap; animation: tick 34s linear infinite; }
-@keyframes tick { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-.ti { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); padding: 0 2.5rem; }
-.td { color: rgba(180,164,138,0.28); padding: 0; }
-
-/* ─── HERO ─── */
-.hero {
-  min-height: calc(100vh - 94px);
-  display: grid; grid-template-columns: 1fr 440px;
-  border-bottom: 2px solid var(--ink);
-}
-
-.hero-main {
-  padding: 5.5rem 5rem;
-  border-right: 1px solid var(--rule);
-  display: flex; flex-direction: column; justify-content: space-between;
-}
-
-.hero-overline { font-family: 'DM Mono', monospace; font-size: 0.61rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-muted); display: flex; align-items: center; gap: 0.8rem; margin-bottom: 2.5rem; }
-.hero-overline-rule { display: block; width: 26px; height: 1px; background: var(--ink-muted); }
-
-h1.hero-name { font-family: 'Playfair Display', serif; font-size: clamp(4.5rem, 7.5vw, 8.5rem); font-weight: 900; line-height: 0.88; letter-spacing: -0.025em; margin-bottom: 2.5rem; }
-h1.hero-name em { font-style: italic; font-weight: 400; color: var(--ink-soft); }
-
-.hero-lead { font-size: 1.15rem; color: var(--ink-soft); max-width: 52ch; line-height: 1.65; margin-bottom: 3rem; }
-
-.hero-actions { display: flex; align-items: center; gap: 1.25rem; }
-
-.btn-ink { display: inline-block; padding: 0.8rem 2.2rem; background: var(--ink); color: var(--paper); font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
-.btn-ink:hover { background: var(--red); }
-.btn-ghost { display: inline-block; padding: 0.8rem 2.2rem; border: 1px solid var(--ink); color: var(--ink); font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, color 0.2s; }
-.btn-ghost:hover { background: var(--ink); color: var(--paper); }
-
-.hero-footer-strip { border-top: 1px solid var(--rule); padding-top: 2.5rem; display: flex; align-items: flex-start; gap: 3.5rem; }
-.hero-stat-item strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 700; line-height: 1; margin-bottom: 0.2rem; }
-.hero-stat-item span { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--ink-muted); }
-
-/* ─── HERO SIDEBAR ─── */
-.hero-sidebar { display: flex; flex-direction: column; }
-
-.photo-panel {
-  flex: 1; background: var(--paper-2);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  padding: 3.5rem 2rem;
-  border-bottom: 1px solid var(--rule);
-  position: relative; overflow: hidden;
-  min-height: 420px;
-}
-.photo-panel::before {
-  content: ''; position: absolute; inset: 0;
-  background: repeating-linear-gradient(0deg, transparent 0px, transparent 29px, var(--rule) 29px, var(--rule) 30px);
-  opacity: 0.2;
-}
-
-.headshot-ring {
-  position: relative; z-index: 1;
-  width: 300px; height: 300px; border-radius: 50%;
-  background: var(--rule);
-  border: 6px solid var(--paper);
-  box-shadow: 0 0 0 1px var(--rule), 0 20px 60px rgba(12,12,12,0.2);
-  overflow: hidden;
-  margin-bottom: 1.75rem;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.headshot-ring img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
-
-.headshot-name { position: relative; z-index: 1; font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; text-align: center; margin-bottom: 0.35rem; }
-.headshot-sub { position: relative; z-index: 1; font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); text-align: center; }
-
-.hero-stats-grid { display: grid; grid-template-columns: 1fr 1fr; }
-.hsg-item { padding: 1.6rem 1.75rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
-.hsg-item:nth-child(even) { border-right: none; }
-.hsg-item:nth-last-child(-n+2) { border-bottom: none; }
-.hsg-n { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; line-height: 1; margin-bottom: 0.25rem; }
-.hsg-l { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); }
-
-/* ─── SECTION HEADER ─── */
-.sec-hd { display: flex; align-items: baseline; gap: 1.25rem; margin-bottom: 3.5rem; }
-.sec-n { font-family: 'DM Mono', monospace; font-size: 0.61rem; letter-spacing: 0.13em; color: var(--ink-muted); }
-.sec-h { font-family: 'Playfair Display', serif; font-size: clamp(1.9rem, 3vw, 2.85rem); font-weight: 700; line-height: 1.1; }
-.sec-h em { font-style: italic; font-weight: 400; }
-.sec-rule { flex: 1; height: 1px; background: var(--rule); }
-
-/* ─── ABOUT ─── */
-#about { padding: 6rem 5rem; display: grid; grid-template-columns: 3fr 2fr; gap: 5rem; border-bottom: 1px solid var(--rule); }
-
-.about-body p { font-size: 1.17rem; color: var(--ink-soft); line-height: 1.78; max-width: 60ch; margin-bottom: 1.5rem; }
-.about-body p:first-of-type::first-letter { font-family: 'Playfair Display', serif; font-size: 4.8rem; font-weight: 900; line-height: 0.78; float: left; margin: 0.06em 0.09em 0 0; color: var(--ink); }
-.about-body p:last-child { margin-bottom: 0; }
-
-.exp-list { list-style: none; margin-bottom: 2.5rem; }
-.exp-list li { padding: 0.78rem 0; border-bottom: 1px solid var(--rule); font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); display: flex; align-items: center; gap: 0.7rem; }
-.exp-list li::before { content: ''; width: 4px; height: 4px; background: var(--accent); flex-shrink: 0; }
-
-.creds { background: var(--ink); color: var(--paper); padding: 2rem; }
-.creds h4 { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.5rem; }
-.cred { margin-bottom: 1.2rem; padding-bottom: 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
-.cred:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.cred-deg { font-family: 'Playfair Display', serif; font-size: 0.93rem; font-style: italic; margin-bottom: 0.2rem; }
-.cred-inst { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.08em; color: rgba(247,245,240,0.42); }
-
-/* ─── DATA WORK ─── */
-#datawork { border-bottom: 1px solid var(--rule); }
-
-.datawork-head { padding: 5rem 5rem 0; }
-
-.datawork-intro { font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; max-width: 65ch; margin-bottom: 4rem; }
-
-/* Featured viz — full-width dark panel */
-.viz-featured {
-  display: grid; grid-template-columns: 1fr 1fr;
-  background: var(--ink);
-  border-top: 1px solid var(--rule);
-  margin-bottom: 0;
-}
-
-.viz-featured-info {
-  padding: 4rem 5rem;
-  display: flex; flex-direction: column; justify-content: center;
-  border-right: 1px solid rgba(255,255,255,0.08);
-  background: #0c0c0c;
-  color: #f7f5f0;
-}
-
-.viz-tag { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.16em; text-transform: uppercase; color: #b4a48a; margin-bottom: 1.25rem; }
-.viz-title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 2.5vw, 2.2rem); font-weight: 700; line-height: 1.15; color: #f7f5f0; margin-bottom: 1rem; }
-.viz-desc { font-size: 1rem; color: rgba(247,245,240,0.6); line-height: 1.7; margin-bottom: 2rem; max-width: 44ch; }
-
-.viz-meta-row { display: flex; gap: 2rem; margin-bottom: 2.5rem; }
-.viz-meta-item strong { display: block; font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #f7f5f0; line-height: 1; margin-bottom: 0.2rem; }
-.viz-meta-item span { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(180,164,138,0.7); }
-
-.viz-link { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; color: #f7f5f0; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 0.2rem; transition: color 0.2s, border-color 0.2s; }
-.viz-link:hover { color: #b4a48a; border-color: #b4a48a; }
-.viz-link::after { content: '→'; transition: transform 0.2s; }
-.viz-link:hover::after { transform: translateX(4px); }
-
-/* Featured viz — right panel: static description */
-.viz-featured-detail {
-  padding: 3.5rem 4rem;
-  display: flex; flex-direction: column; justify-content: center;
-  background: #111;
-}
-
-.viz-detail-label { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(180,164,138,0.6); margin-bottom: 1.5rem; }
-
-.viz-detail-points { list-style: none; }
-.viz-detail-points li {
-  font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.07em;
-  color: rgba(247,245,240,0.55); padding: 0.75rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
-  display: flex; align-items: center; gap: 0.8rem;
-}
-.viz-detail-points li:last-child { border-bottom: none; }
-.viz-detail-points li::before { content: ''; width: 4px; height: 4px; background: var(--accent); flex-shrink: 0; }
-
-/* secondary viz cards */
-.viz-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid var(--rule);
-}
-
-.viz-card {
-  padding: 3rem;
-  border-right: 1px solid var(--rule);
-  text-decoration: none; color: inherit;
-  display: flex; flex-direction: column;
-  transition: background 0.25s;
-  position: relative; overflow: hidden;
-}
-.viz-card:nth-child(even) { border-right: none; }
-.viz-card:nth-last-child(-n+2) { border-bottom: none; }
-.viz-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform 0.3s ease; }
-.viz-card:hover { background: var(--paper-2); }
-.viz-card:hover::after { transform: scaleX(1); }
-
-.vc-type { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 1.5rem; }
-
-/* mini spark line */
-.vc-spark { margin-bottom: 1.5rem; }
-.vc-spark svg { width: 100%; height: 48px; display: block; }
-
-.vc-title { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; line-height: 1.25; margin-bottom: 0.75rem; }
-.vc-desc { font-size: 0.91rem; color: var(--ink-soft); line-height: 1.6; flex: 1; margin-bottom: 1.75rem; }
-.vc-link { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); display: flex; align-items: center; gap: 0.5rem; }
-.vc-link::after { content: '→'; transition: transform 0.2s; }
-.viz-card:hover .vc-link::after { transform: translateX(4px); }
-
-/* ─── WRITING ─── */
-#writing { padding: 6rem 5rem; border-bottom: 1px solid var(--rule); }
-.writing-top { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: end; margin-bottom: 4rem; }
-.writing-desc { font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; }
-.writing-r { text-align: right; }
-
-.articles { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--rule); min-height: 180px; }
-.art { padding: 2.5rem; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; display: block; transition: background 0.2s; }
-.art:hover { background: var(--paper-2); }
-.art:nth-child(even) { border-right: none; }
-.art:nth-last-child(-n+2) { border-bottom: none; }
-.art-meta { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.8rem; }
-.art-h { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.65rem; }
-.art-p { font-size: 0.91rem; color: var(--ink-soft); line-height: 1.6; }
-.art-more { background: var(--paper-2); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1.2rem; }
-.art-more-lbl { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rule); }
-
-
-
-/* ─── CONTACT ─── */
-#contact { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 2px solid var(--ink); }
-
-.contact-ink { padding: 6rem 5rem; background: #0c0c0c; color: #f7f5f0; border-right: 1px solid rgba(255,255,255,0.07); }
-.contact-ink .sec-n { color: #b4a48a; }
-.contact-ink .sec-h { color: #f7f5f0; }
-.contact-ink .sec-rule { background: rgba(255,255,255,0.1); }
-
-.contact-desc { font-size: 1.05rem; color: rgba(247,245,240,0.58); line-height: 1.7; max-width: 42ch; margin-bottom: 3rem; }
-.email-block { margin-bottom: 3rem; }
-.email-lbl { font-family: 'DM Mono', monospace; font-size: 0.57rem; letter-spacing: 0.15em; text-transform: uppercase; color: #b4a48a; display: block; margin-bottom: 0.7rem; }
-.email-addr { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-style: italic; color: #f7f5f0; text-decoration: none; border-bottom: 1px solid #b4a48a; padding-bottom: 0.25rem; transition: color 0.2s; }
-.email-addr:hover { color: #b4a48a; }
-.avail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem; }
-.av-tag { padding: 0.52rem 0.8rem; border: 1px solid rgba(255,255,255,0.11); font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.09em; text-transform: uppercase; color: rgba(247,245,240,0.4); text-align: center; }
-
-.contact-paper { padding: 6rem 5rem; }
-.pq-lbl { font-family: 'DM Mono', monospace; font-size: 0.59rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 1.75rem; }
-.pullquote { font-family: 'Playfair Display', serif; font-size: clamp(1.65rem, 2.5vw, 2.25rem); font-style: italic; font-weight: 400; line-height: 1.4; color: var(--ink); margin-bottom: 1.2rem; }
-.pq-attr { font-family: 'DM Mono', monospace; font-size: 0.61rem; letter-spacing: 0.1em; color: var(--ink-muted); margin-bottom: 3rem; }
-.topics { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
-.t-tag { padding: 0.52rem 0.8rem; border: 1px solid var(--rule); font-family: 'DM Mono', monospace; font-size: 0.56rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-soft); text-align: center; }
-
-/* ─── FOOTER ─── */
-footer { padding: 2rem 5rem; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--rule); }
-.footer-brand { font-family: 'Playfair Display', serif; font-size: 0.93rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; color: var(--ink); }
-.footer-links { display: flex; gap: 2rem; list-style: none; }
-.footer-links a { font-family: 'DM Mono', monospace; font-size: 0.59rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; }
-.footer-links a:hover { color: var(--ink); }
-.footer-copy { font-family: 'DM Mono', monospace; font-size: 0.57rem; color: var(--ink-muted); letter-spacing: 0.08em; }
-
-/* ─── COOKIE BANNER ─── */
-#cookie-banner {
-  display: none;
-  position: fixed; bottom: 0; left: 0; right: 0;
-  background: #1a1a1a; color: #f5f5f5;
-  padding: 16px 24px;
-  align-items: center; justify-content: space-between; gap: 16px;
-  font-family: sans-serif; font-size: 14px;
-  z-index: 999999; transition: opacity 0.4s ease; pointer-events: all;
-  box-shadow: 0 -4px 24px rgba(0,0,0,0.3);
-}
-#cookie-banner p { margin: 0; }
-#cookie-buttons { display: flex; gap: 10px; flex-shrink: 0; }
-#cookie-accept, #cookie-reject { border: none; padding: 8px 20px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 600; pointer-events: all; }
-#cookie-accept { background: #ffffff; color: #1a1a1a; }
-#cookie-accept:hover { background: #e0e0e0; }
-#cookie-reject { background: transparent; color: #ffffff; border: 1px solid #ffffff; }
-#cookie-reject:hover { background: rgba(255,255,255,0.1); }
-
-/* ─── MOBILE ─── */
-@media (max-width: 960px) {
-  nav { padding: 0 1.5rem; }
-  .nav-links, .nav-dateline { display: none; }
-  .hamburger { display: flex; }
-
-  .hero { grid-template-columns: 1fr; min-height: unset; display: flex; flex-direction: column-reverse; }
-  .hero-main { padding: 3rem 1.5rem; border-right: none; }
-  .hero-sidebar { display: flex; }
-  .hero-stats-grid { display: none; }
-  .photo-panel { min-height: unset; padding: 2.5rem 1.5rem; }
-  .headshot-ring { width: 200px; height: 200px; margin-bottom: 1.25rem; }
-
-  #about { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2.5rem; }
-
-  .datawork-head { padding: 3rem 1.5rem 0; }
-  .viz-featured { grid-template-columns: 1fr; background: #0c0c0c !important; }
-  .viz-featured-info { padding: 2.5rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); background: #0c0c0c !important; color: #f7f5f0 !important; }
-  .viz-featured-detail { padding: 2.5rem 1.5rem; background: #111111 !important; }
-  .viz-tag { color: #b4a48a !important; }
-  .viz-title { color: #f7f5f0 !important; }
-  .viz-desc { color: rgba(247,245,240,0.6) !important; }
-  .viz-meta-item strong { color: #f7f5f0 !important; }
-  .viz-link { color: #f7f5f0 !important; }
-  .viz-detail-label { color: rgba(180,164,138,0.6) !important; }
-  .viz-detail-points li { color: rgba(247,245,240,0.55) !important; }
-  .viz-grid { grid-template-columns: 1fr; }
-  .viz-card { border-right: none; border-bottom: 1px solid #d6d1c8; }
-  .viz-card:last-child { border-bottom: none; }
-
-  #writing { padding: 3rem 1.5rem; }
-  .writing-top { grid-template-columns: 1fr; gap: 1.5rem; }
-  .writing-r { text-align: left; }
-  .articles { grid-template-columns: 1fr; }
-  .art { border-right: none; }
-  .art:nth-last-child(-n+2) { border-bottom: 1px solid #d6d1c8; }
-  .art:last-child { border-bottom: none; }
-
-
-  #contact { grid-template-columns: 1fr; }
-  .contact-ink { padding: 3rem 1.5rem; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
-  .contact-paper { padding: 3rem 1.5rem; }
-
-  footer { flex-direction: column; gap: 1.2rem; text-align: center; padding: 2rem 1.5rem; }
-  .footer-links { flex-wrap: wrap; justify-content: center; }
-
-  @media (max-width: 480px) {
-    #cookie-banner { flex-direction: column; align-items: flex-start; }
-  }
-}
-```
-
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg, #f7f3ee); color: var(--ink, #1c1917); font-family: 'DM Sans', sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: var(--red, #8b2700); color: #fff; }
+    ::-webkit-scrollbar { width: 3px; }
+    ::-webkit-scrollbar-thumb { background: #ddd8d0; }
+    button { font-family: inherit; }
   </style>
 </head>
 <body>
+<div id="root"></div>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+const { useState, useEffect } = React;
 
-<div id="cookie-banner">
-  <p>This website uses cookies to improve your experience.</p>
-  <div id="cookie-buttons">
-    <button id="cookie-accept">Accept</button>
-    <button id="cookie-reject">Reject</button>
-  </div>
-</div>
+function useIsMobile() {
+  const [mob, setMob] = useState(window.innerWidth < 768);
+  useEffect(() => {
+    const fn = () => setMob(window.innerWidth < 768);
+    window.addEventListener('resize', fn);
+    return () => window.removeEventListener('resize', fn);
+  }, []);
+  return mob;
+}
 
-<script>
-  (function () {
-    function getConsent() {
-      try { return localStorage.getItem('cookieConsent'); } catch (e) { return null; }
-    }
-    function setConsent(val) {
-      try { localStorage.setItem('cookieConsent', val); } catch (e) {}
-    }
-    var banner = document.getElementById('cookie-banner');
-    if (!banner) return;
-    if (getConsent()) { banner.style.display = 'none'; return; }
-    banner.style.display = 'flex';
-    banner.style.alignItems = 'center';
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      setConsent('accepted');
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-    document.getElementById('cookie-reject').addEventListener('click', function () {
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-  })();
-</script>
+/* ─── DESIGN TOKENS ─── */
+const STYLES = {
+  fusion: { bg:'#f7f3ee', ink:'#1c1917', red:'#8b2700', muted:'#7a746c', border:'#ddd8d0', card:'#ede9e2', label:'Fusion' },
+  economist: { bg:'#ffffff', ink:'#0a0a0a', red:'#8b2700', muted:'#555', border:'#e0e0e0', card:'#f4f2ef', label:'Economist' },
+  vogue: { bg:'#fafaf8', ink:'#111', red:'#8b2700', muted:'#888', border:'#e8e4df', card:'#f3f0eb', label:'Vogue' },
+};
 
-<!-- NAV -->
+/* ─── ARTICLES ─── */
+const ARTICLES = [
+  { id:'face-of-leadership', title:'The Face of Leadership', titleEl:<>The Face of <em>Leadership</em></>, subtitle:'An empirical analysis of how physical appearance shapes perceptions of trustworthiness, competence, and leadership suitability in Dutch national politics — with quantitative findings across demographic subgroups.', category:'Political Communication', date:'March–April 2026', tag:'Survey Study', url:'https://janeorlova.com/politics-report', excerpt:'Perceived competence is the strongest single predictor of leadership suitability (r = .79). Physical appearance operates as an indirect cue — filtering initial impressions subsequently refined via trustworthiness and approachability.', stats:[{value:'72.1%',label:'selected Jetten as most trustworthy in forced-choice vote'},{value:'r = .79',label:'competence → leadership, strongest predictor across all three politicians'}] },
+  { id:'fear-migration', title:'Fear in the Migration Debate', titleEl:<>Fear in the <em>Migration Debate</em></>, subtitle:'A lexical emotion analysis of Dutch migration discourse under the Jetten I cabinet — mapping fear, anger, hope, and trust across seven real discourse segments.', category:'Domestic Policy', date:'February–April 2026', tag:'Emotion Map', url:'https://janeorlova.com/politics-report', excerpt:'The coalition governs through procedural trust; PVV through fear; progressive opposition through hope. A structural emotional polarisation defines the Dutch migration debate.', stats:[{value:'58%',label:'fear share in PVV discourse — highest in the study'}] },
+  { id:'d66-amsterdam', title:'What D66 Promises — and What Amsterdam Has', titleEl:<>What D66 Promises — and What <em>Amsterdam Has</em></>, subtitle:'D66 entered coalition with eight seats and ambitious goals on housing, mobility, and sustainability. This is the accountability framework: targets against current reality.', category:'Amsterdam Politics', date:'April 2026', tag:'Policy Analysis', url:'https://janeorlova.com/amsterdam-analysis', excerpt:'On all three domains, Amsterdam is behind its own targets from previous periods. The new coalition inherits a considerable mortgage.', stats:[{value:'12.4 yrs',label:'social housing wait time — up from 8.3 years in 2018'},{value:'40%',label:'shortfall in housing construction through 2030'}] },
+  { id:'climate-justice', title:'Who Bears the Climate Burden?', titleEl:<>Who Bears the <em>Climate Burden?</em></>, subtitle:'An index for 99 Amsterdam neighbourhoods — heat stress, flood risk, and low income cluster in the same districts that receive the fewest investments.', category:'Amsterdam Politics', date:'April 2026', tag:'Index', url:'https://janeorlova.com/amsterdam-analysis', excerpt:'Climate subsidies follow the market. The result: districts with highest climate risk receive the least investment. The subsidy distribution is structurally inverted.', stats:[{value:'2.3×',label:'more climate subsidy per home in Centrum vs Zuidoost'}] },
+  { id:'gemeenteuitslag', title:'Municipal Election Results 2026', titleEl:<>Municipal Election <em>Results 2026</em></>, subtitle:'Full results, seat distributions, and coalition analysis of the 2026 Dutch municipal elections across all major cities.', category:'Elections & Democracy', date:'March 2026', tag:'Data', url:'https://janeorlova.com/gemeenteuitslag2026', excerpt:'A comprehensive breakdown of voting patterns, seat distributions, and coalition possibilities across Dutch municipalities.', stats:[] },
+  { id:'jetten-sentiment', title:'Jetten Sentiment Tracker', titleEl:<>Jetten <em>Sentiment Tracker</em></>, subtitle:'Real-time sentiment analysis of public and media discourse around Rob Jetten — updated weekly with new data.', category:'Political Communication', date:'Ongoing · 2026', tag:'Live Data', url:'https://janeorlova.com/jetten-sentiment', excerpt:'Tracking how public sentiment toward the D66 leader shifts in response to political events, media coverage, and policy announcements.', stats:[] },
+  { id:'moties-tracker', title:'Moties Tracker', titleEl:<><em>Moties</em> Tracker</>, subtitle:'A systematic record of motions in the Dutch Tweede Kamer — who proposes them, who supports them, and what becomes policy.', category:'Elections & Democracy', date:'Ongoing · 2026', tag:'Live Data', url:'https://janeorlova.com/moties-tracker', excerpt:'Parliamentary motions as a lens into coalition dynamics and opposition strategy in the Jetten I cabinet.', stats:[] },
+  { id:'polls', title:'Dutch Poll Aggregator', titleEl:<>Dutch <em>Poll Aggregator</em></>, subtitle:'Aggregated polling data for Dutch national politics — combining multiple sources to reduce house effects and track long-term trends.', category:'Elections & Democracy', date:'Ongoing · 2026', tag:'Live Data', url:'https://janeorlova.com/polls', excerpt:'An independent aggregation of Dutch polling data, updated as new polls are published, with trend smoothing and house-effect correction.', stats:[] },
+  { id:'elections-statistics', title:'Dutch Elections Statistics', titleEl:<>Dutch Elections <em>Statistics</em></>, subtitle:'A comprehensive statistical breakdown of Dutch national elections — vote shares, seat distributions, and historical trends since 2010.', category:'Elections & Democracy', date:'March 2026', tag:'Statistics', url:'https://janeorlova.com/politics-report/elections-statistics/', excerpt:'From vote fragmentation to coalition arithmetic: a quantitative history of Dutch electoral politics, updated through the 2026 cycle.', stats:[] },
+  { id:'france-politics', title:'France: Political System', titleEl:<>France: <em>Political System</em></>, subtitle:'An analytical overview of the French Fifth Republic — executive dominance, cohabitation dynamics, party fragmentation, and the 2024–2027 political landscape.', category:'European Politics', date:'2026', tag:'Country Report', url:'https://janeorlova.com/europe/france', excerpt:'The Fifth Republic\'s majoritarian logic meets a fragmented assembly. How Macron\'s coalition governs, how the left unites, and how the RN consolidates opposition.', stats:[] },
+  { id:'germany-politics', title:'Germany: Political System', titleEl:<>Germany: <em>Political System</em></>, subtitle:'A structural analysis of the German federal system — coalition dynamics, the Bundestag electoral model, and the rise of the AfD as permanent opposition.', category:'European Politics', date:'2026', tag:'Country Report', url:'https://janeorlova.com/europe/germany', excerpt:'Germany\'s consensus-oriented political culture is under pressure. The CDU-led coalition governs with a shrinking centre while the AfD entrenches in the east.', stats:[] },
+];
+const CATS = ['All','Political Communication','Domestic Policy','Amsterdam Politics','Elections & Democracy','European Politics'];
 
-<nav>
-  <a href="#" class="nav-brand">
-    <div class="nav-headshot">
-      <img src="IMG_0513.jpeg" alt="Jane Orlova">
-    </div>
-    <span class="nav-wordmark">Jane Orlova</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#about">Profile</a></li>
-    <li><a href="#datawork">Data Work</a></li>
-    <li><a href="#writing">Writing</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <span class="nav-dateline">NL · 2026</span>
-    <a href="mailto:orlova_j@yahoo.com" class="nav-cta">Email me</a>
-  </div>
-  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
-</nav>
-
-<!-- TICKER -->
-
-<div class="ticker">
-  <div class="ticker-track">
-    <span class="ti">Dutch Political Researcher</span><span class="ti td">◆</span>
-    <span class="ti">Political Communication · MSc UvA</span><span class="ti td">◆</span>
-    <span class="ti">Framing &amp; Public Opinion</span><span class="ti td">◆</span>
-    <span class="ti">European Politics</span><span class="ti td">◆</span>
-    <span class="ti">Data Visualisation</span><span class="ti td">◆</span>
-    <span class="ti">Available for Collaboration</span><span class="ti td">◆</span>
-    <span class="ti">Dutch Political Researcher</span><span class="ti td">◆</span>
-    <span class="ti">Political Communication · MSc UvA</span><span class="ti td">◆</span>
-    <span class="ti">Framing &amp; Public Opinion</span><span class="ti td">◆</span>
-    <span class="ti">European Politics</span><span class="ti td">◆</span>
-    <span class="ti">Data Visualisation</span><span class="ti td">◆</span>
-    <span class="ti">Available for Collaboration</span><span class="ti td">◆</span>
-  </div>
-</div>
-
-<!-- HERO -->
-
-<section class="hero">
-  <div class="hero-main">
-    <div>
-      <p class="hero-overline"><span class="hero-overline-rule"></span>Political Researcher &amp; Writer · Amsterdam</p>
-      <h1 class="hero-name">Jane<br><em>Orlova</em></h1>
-      <p class="hero-lead">International Relations &amp; Political Communication researcher. Writing about Dutch and European politics — elections, policy, messaging, and the people shaping it.</p>
-      <div class="hero-actions">
-        <a href="mailto:orlova_j@yahoo.com" class="btn-ink">Email me directly</a>
-        <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Read Substack</a>
-      </div>
-    </div>
-    <div class="hero-footer-strip">
-      <div class="hero-stat-item"><strong>2018</strong><span>Based in NL since</span></div>
-      <div class="hero-stat-item"><strong>MSc</strong><span>Univ. of Amsterdam</span></div>
-      <div class="hero-stat-item"><strong>5</strong><span>Data projects</span></div>
-    </div>
-  </div>
-
-  <div class="hero-sidebar">
-    <div class="photo-panel">
-      <div class="headshot-ring">
-        <img src="IMG_0513.jpeg" alt="Jane Orlova">
-      </div>
-      <p class="headshot-name">Jane Orlova</p>
-      <p class="headshot-sub">Political Researcher · Amsterdam</p>
-    </div>
-    <div class="hero-stats-grid">
-      <div class="hsg-item"><div class="hsg-n">NL</div><div class="hsg-l">Based</div></div>
-      <div class="hsg-item"><div class="hsg-n">EU</div><div class="hsg-l">Focus</div></div>
-      <div class="hsg-item"><div class="hsg-n">MSc</div><div class="hsg-l">UvA</div></div>
-      <div class="hsg-item"><div class="hsg-n">5</div><div class="hsg-l">Projects</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-
-<section id="about">
-  <div class="about-body reveal">
-    <div class="sec-hd">
-      <span class="sec-n">01</span>
-      <h2 class="sec-h">Understanding <em>the choice</em></h2>
-      <div class="sec-rule"></div>
-    </div>
-    <p>I'm Jane Orlova — a political researcher and writer based in the Netherlands since 2018. My background spans International Relations (Moscow State University) and Political Communication (MSc, University of Amsterdam), with research conducted at the University of Bologna during my Erasmus exchange.</p>
-    <p>My thesis examined how news framing shapes public support for climate refugees — and how emotions and political knowledge modify that effect. That question still sits at the centre of everything I find compelling: why people believe what they believe, how messaging moves public opinion, and who controls the frame.</p>
-    <p>I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. I am particularly drawn to campaigns: how they are built, where they win people over, and where they lose them.</p>
-  </div>
-  <div class="reveal" style="transition-delay:0.15s">
-    <ul class="exp-list">
-      <li>Dutch Politics</li>
-      <li>Political Communication</li>
-      <li>News Framing &amp; Opinion</li>
-      <li>European Elections</li>
-      <li>Campaign Strategy</li>
-      <li>Political Marketing</li>
-    </ul>
-    <div class="creds">
-      <h4>Education</h4>
-      <div class="cred"><div class="cred-deg">Political Communication</div><div class="cred-inst">MSc · University of Amsterdam</div></div>
-      <div class="cred"><div class="cred-deg">International Relations</div><div class="cred-inst">Moscow State University</div></div>
-      <div class="cred"><div class="cred-deg">Erasmus Research</div><div class="cred-inst">University of Bologna</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- DATA WORK -->
-
-<section id="datawork">
-  <div class="datawork-head reveal">
-    <div class="sec-hd">
-      <span class="sec-n">02</span>
-      <h2 class="sec-h">Data Work &amp; <em>Visualisations</em></h2>
-      <div class="sec-rule"></div>
-    </div>
-    <p class="datawork-intro">Political data made legible — from election outcomes and parliamentary voting patterns to sentiment tracking. Each project combines original data collection with analysis and visual storytelling.</p>
-  </div>
-
-  <!-- FEATURED: Gemeenteuitslag -->
-
-  <div class="viz-featured reveal">
-    <div class="viz-featured-info">
-      <span class="viz-tag">Featured · Municipal Elections 2026</span>
-      <h3 class="viz-title">Gemeenteuitslag 2026</h3>
-      <p class="viz-desc">In-depth analysis of Dutch municipal election results — local outcomes mapped and contextualised across all municipalities, revealing patterns in party performance, urban-rural divides, and coalition dynamics.</p>
-      <div class="viz-meta-row">
-        <div class="viz-meta-item"><strong>380+</strong><span>Municipalities</span></div>
-        <div class="viz-meta-item"><strong>2026</strong><span>Election cycle</span></div>
-        <div class="viz-meta-item"><strong>Full</strong><span>Analysis</span></div>
-      </div>
-      <a href="https://janeorlova.com/gemeenteuitslag2026" class="viz-link">Explore results</a>
-    </div>
-    <div class="viz-featured-detail">
-      <div class="viz-detail-label">What this project covers</div>
-      <ul class="viz-detail-points">
-        <li>Interactive maps of results across all Dutch municipalities</li>
-        <li>Party vote share breakdowns and seat allocations</li>
-        <li>Urban vs. rural voting pattern analysis</li>
-        <li>Coalition formation scenarios and dynamics</li>
-        <li>Comparison with 2022 baseline election results</li>
-        <li>Contextual commentary on key local shifts</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Secondary viz cards -->
-
-  <div class="viz-grid">
-    <a href="https://janeorlova.com/jetten-sentiment" class="viz-card reveal">
-      <div class="vc-type">Sentiment Analysis</div>
-      <div class="vc-spark">
-        <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-          <polyline points="0,38 20,32 40,28 60,34 80,18 100,22 120,14 140,20 160,10 180,16 200,8" fill="none" stroke="#b4a48a" stroke-width="1.5"/>
-          <polyline points="0,38 20,32 40,28 60,34 80,18 100,22 120,14 140,20 160,10 180,16 200,8 200,48 0,48" fill="#b4a48a" opacity="0.08"/>
-        </svg>
-      </div>
-      <h3 class="vc-title">Jetten Sentiment Tracker</h3>
-      <p class="vc-desc">Longitudinal tracking of public and political sentiment around Rob Jetten — methodology combining media monitoring, social signals, and political discourse.</p>
-      <span class="vc-link">View tracker</span>
-    </a>
-
-```
-<a href="https://janeorlova.com/moties-tracker" class="viz-card reveal" style="transition-delay:0.1s">
-  <div class="vc-type">Parliamentary Data</div>
-  <div class="vc-spark">
-    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <rect x="0"  y="28" width="16" height="20" fill="#b4a48a" opacity="0.5"/>
-      <rect x="20" y="18" width="16" height="30" fill="#b4a48a" opacity="0.6"/>
-      <rect x="40" y="10" width="16" height="38" fill="#b4a48a" opacity="0.8"/>
-      <rect x="60" y="22" width="16" height="26" fill="#b4a48a" opacity="0.6"/>
-      <rect x="80" y="8"  width="16" height="40" fill="#b4a48a" opacity="0.9"/>
-      <rect x="100" y="16" width="16" height="32" fill="#b4a48a" opacity="0.7"/>
-      <rect x="120" y="24" width="16" height="24" fill="#b4a48a" opacity="0.5"/>
-      <rect x="140" y="12" width="16" height="36" fill="#b4a48a" opacity="0.8"/>
-      <rect x="160" y="20" width="16" height="28" fill="#b4a48a" opacity="0.6"/>
-      <rect x="180" y="6"  width="16" height="42" fill="#b4a48a" opacity="0.9"/>
+/* ─── MINI DATA VISUALISATIONS ─── */
+function ChartLeadership({ s }) {
+  const dims = ['Appearance','Trustworthiness','Competence','Approachability','Leadership'];
+  const data = { Jetten:[6.81,6.33,6.65,6.56,6.35], Baudet:[5.26,5.07,6.12,4.53,5.47], Schoof:[3.98,4.79,5.33,4.44,4.67] };
+  const W=260, H=160, lPad=88, rPad=12, tPad=18, bPad=20, maxV=10;
+  const chartW = W-lPad-rPad, chartH = H-tPad-bPad;
+  const colors = [s.red, s.muted, s.border.replace('#','') === 'ddd8d0' ? '#c5b8a8' : '#bbb'];
+  const barH = 7, gap = 3, groupGap = 8, groupH = 3*barH+2*gap;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">RATING 1–10 SCALE</text>
+      {dims.map((dim,di) => {
+        const y = tPad + di*(groupH+groupGap);
+        return (
+          <g key={dim}>
+            <text x={lPad-4} y={y+groupH/2+3} fontSize={8.5} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{dim}</text>
+            {['Jetten','Baudet','Schoof'].map((p,pi) => {
+              const bw = (data[p][di]/maxV)*chartW;
+              return (
+                <g key={p}>
+                  <rect x={lPad} y={y+pi*(barH+gap)} width={bw} height={barH} fill={pi===0?s.red:pi===1?s.muted:'#c5b8a8'} rx={1}/>
+                  <text x={lPad+bw+3} y={y+pi*(barH+gap)+barH-1} fontSize={7.5} fill={s.muted} fontFamily="DM Sans">{data[p][di]}</text>
+                </g>
+              );
+            })}
+          </g>
+        );
+      })}
+      {['Jetten','Baudet','Schoof'].map((p,i)=>(
+        <g key={p} transform={`translate(${lPad+i*70},${H-8})`}>
+          <rect width={8} height={5} fill={i===0?s.red:i===1?s.muted:'#c5b8a8'} rx={1}/>
+          <text x={11} y={5} fontSize={7.5} fill={s.muted} fontFamily="DM Sans">{p}</text>
+        </g>
+      ))}
     </svg>
-  </div>
-  <h3 class="vc-title">Moties Tracker</h3>
-  <p class="vc-desc">Tracking of parliamentary motions in the Tweede Kamer — who proposes, who votes, what passes. Patterns in party alliances and opposition strategies over time.</p>
-  <span class="vc-link">Open tracker</span>
-</a>
+  );
+}
 
-<a href="https://janeorlova.com/polls" class="viz-card reveal" style="transition-delay:0.2s">
-  <div class="vc-type">Polling Analysis</div>
-  <div class="vc-spark">
-    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <polyline points="0,32 25,28 50,24 75,26 100,20 125,18 150,22 175,16 200,14" fill="none" stroke="#b4a48a" stroke-width="1.5"/>
-      <polyline points="0,18 25,22 50,26 75,24 100,28 125,30 150,28 175,32 200,34" fill="none" stroke="#8a8a8a" stroke-width="1" opacity="0.5"/>
-      <polyline points="0,38 25,36 50,38 75,34 100,36 125,32 150,34 175,30 200,28" fill="none" stroke="#8a8a8a" stroke-width="1" opacity="0.3"/>
+function ChartMigration({ s }) {
+  const actors = ['Coalition','PVV','GL-PvdA','NGO','Media'];
+  const data = [
+    [5,8,44,38],  // Coalition: fear/anger/trust/hope
+    [58,42,12,18],
+    [6,4,13,77],
+    [12,8,26,54],
+    [29,25,15,31],
+  ];
+  const colors = [s.red, '#c5a090', s.muted, '#a8b8a0'];
+  const labels = ['Fear','Anger','Trust','Hope'];
+  const W=260, H=155, lPad=56, bPad=28, tPad=14;
+  const chartH = H-bPad-tPad, barH=14, gap=8;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={11} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">EMOTION SHARE PER ACTOR (%)</text>
+      {actors.map((actor,ai)=>{
+        const y = tPad+ai*(barH+gap);
+        let cx=lPad;
+        return (
+          <g key={actor}>
+            <text x={lPad-4} y={y+barH-2} fontSize={8.5} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{actor}</text>
+            {data[ai].map((val,vi)=>{
+              const bw=(val/100)*(W-lPad-8);
+              const x=cx; cx+=bw;
+              return <rect key={vi} x={x} y={y} width={bw} height={barH} fill={colors[vi]} rx={vi===0?2:0}/>;
+            })}
+          </g>
+        );
+      })}
+      {labels.map((l,i)=>(
+        <g key={l} transform={`translate(${lPad+i*52},${H-8})`}>
+          <rect width={8} height={5} fill={colors[i]} rx={1}/>
+          <text x={11} y={5} fontSize={7} fill={s.muted} fontFamily="DM Sans">{l}</text>
+        </g>
+      ))}
     </svg>
-  </div>
-  <h3 class="vc-title">The Dutch Political Pulse</h3>
-  <p class="vc-desc">Polling synthesis from Ipsos I&amp;O, Verian, and Peil.nl — seat projections, an interactive coalition builder, momentum tracking, and pollster comparison since the October 2025 election.</p>
-  <span class="vc-link">Explore polls</span>
-</a>
+  );
+}
 
-<a href="https://janeorlova.com/politics-report" class="viz-card reveal" style="transition-delay:0.3s">
-  <div class="vc-type">Survey Research · March–April 2026</div>
-  <div class="vc-spark">
-    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <rect x="0"  y="8"  width="12" height="40" fill="#b4a48a" opacity="0.9"/>
-      <rect x="14" y="18" width="12" height="30" fill="#b4a48a" opacity="0.55"/>
-      <rect x="28" y="26" width="12" height="22" fill="#b4a48a" opacity="0.3"/>
-      <rect x="50" y="10" width="12" height="38" fill="#b4a48a" opacity="0.9"/>
-      <rect x="64" y="20" width="12" height="28" fill="#b4a48a" opacity="0.55"/>
-      <rect x="78" y="24" width="12" height="24" fill="#b4a48a" opacity="0.3"/>
-      <rect x="100" y="6"  width="12" height="42" fill="#b4a48a" opacity="0.9"/>
-      <rect x="114" y="16" width="12" height="32" fill="#b4a48a" opacity="0.55"/>
-      <rect x="128" y="22" width="12" height="26" fill="#b4a48a" opacity="0.3"/>
-      <rect x="150" y="12" width="12" height="36" fill="#b4a48a" opacity="0.9"/>
-      <rect x="164" y="22" width="12" height="26" fill="#b4a48a" opacity="0.55"/>
-      <rect x="178" y="28" width="12" height="20" fill="#b4a48a" opacity="0.3"/>
+function ChartD66({ s }) {
+  const items = [
+    {label:'Housing/yr',goal:7500,real:4200,unit:''},
+    {label:'Wait (yrs)',goal:10,real:12.4,unit:''},
+    {label:'Auto share',goal:24,real:31,unit:'%'},
+    {label:'Gas-free',goal:20,real:6.2,unit:'%'},
+  ];
+  const W=260,H=155,lPad=68,rPad=12,tPad=18,bPad=22;
+  const chartW=W-lPad-rPad, chartH=H-tPad-bPad;
+  const maxVal=Math.max(...items.flatMap(d=>[d.goal,d.real]))*1.1;
+  const barH=12,gap=6,groupGap=10,groupH=2*barH+gap;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">D66 TARGET vs AMSTERDAM REALITY</text>
+      {items.map((item,i)=>{
+        const y=tPad+i*(groupH+groupGap);
+        const gw=(item.goal/maxVal)*chartW;
+        const rw=(item.real/maxVal)*chartW;
+        const behind = item.id==='housing' ? item.real<item.goal : item.label==='Wait (yrs)' ? item.real>item.goal : item.real>item.goal;
+        return (
+          <g key={item.label}>
+            <text x={lPad-4} y={y+groupH/2+3} fontSize={8.5} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{item.label}</text>
+            <rect x={lPad} y={y} width={gw} height={barH} fill={s.muted} rx={1} opacity={0.5}/>
+            <text x={lPad+gw+3} y={y+barH-1} fontSize={7} fill={s.muted} fontFamily="DM Sans">Target</text>
+            <rect x={lPad} y={y+barH+gap} width={rw} height={barH} fill={s.red} rx={1}/>
+            <text x={lPad+rw+3} y={y+barH+gap+barH-1} fontSize={7} fill={s.red} fontFamily="DM Sans">{item.real}{item.unit}</text>
+          </g>
+        );
+      })}
     </svg>
-  </div>
-  <h3 class="vc-title">The Face of Leadership</h3>
-  <p class="vc-desc">Survey-experimental study on how physical appearance shapes perceptions of trustworthiness, competence, and leadership suitability across three Dutch political figures — with full statistical analysis.</p>
-  <span class="vc-link">Read report</span>
-</a>
+  );
+}
 
-<div class="viz-card viz-split reveal">
-  <div class="vc-type">European Analysis · Countries</div>
-  <div class="vc-spark">
-    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <polyline points="0,34 25,30 50,26 75,28 100,22 125,20 150,24 175,18 200,16" fill="none" stroke="#b4a48a" stroke-width="1.5"/>
-      <polyline points="0,20 25,24 50,28 75,26 100,30 125,32 150,30 175,34 200,36" fill="none" stroke="#8a8a8a" stroke-width="1" opacity="0.6"/>
+function ChartClimate({ s }) {
+  const districts = ['Centrum','Zuid','West','Oost','Noord','Nieuw-W','Zuidoost'];
+  const subsidy = [4800,4200,3100,2600,2100,1900,2050];
+  const kri = [28,32,55,60,72,78,84];
+  const W=260,H=155,lPad=54,rPad=12,tPad=18,bPad=40;
+  const chartW=W-lPad-rPad, chartH=H-tPad-bPad;
+  const maxS=5500, maxK=100;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">SUBSIDY (€) vs CLIMATE RISK INDEX</text>
+      {districts.map((d,i)=>{
+        const x=lPad+i*(chartW/districts.length)+(chartW/districts.length)*0.15;
+        const bw=(chartW/districts.length)*0.35;
+        const sH=(subsidy[i]/maxS)*chartH;
+        const kH=(kri[i]/maxK)*chartH;
+        return (
+          <g key={d}>
+            <rect x={x} y={tPad+chartH-sH} width={bw} height={sH} fill={s.muted} rx={1} opacity={0.6}/>
+            <rect x={x+bw+2} y={tPad+chartH-kH} width={bw} height={kH} fill={s.red} rx={1} opacity={0.8}/>
+            <text x={x+bw} y={H-bPad+10} fontSize={6.5} fill={s.muted} fontFamily="DM Sans" textAnchor="middle">{d.length>7?d.slice(0,6)+'…':d}</text>
+          </g>
+        );
+      })}
+      <line x1={lPad} y1={tPad+chartH} x2={W-rPad} y2={tPad+chartH} stroke={s.border} strokeWidth={1}/>
+      <g transform={`translate(${lPad},${H-10})`}>
+        <rect width={8} height={5} fill={s.muted} rx={1} opacity={0.6}/><text x={11} y={5} fontSize={7} fill={s.muted} fontFamily="DM Sans">Subsidy (€)</text>
+      </g>
+      <g transform={`translate(${lPad+80},${H-10})`}>
+        <rect width={8} height={5} fill={s.red} rx={1} opacity={0.8}/><text x={11} y={5} fontSize={7} fill={s.muted} fontFamily="DM Sans">Climate Risk Index</text>
+      </g>
     </svg>
-  </div>
-  <h3 class="vc-title">Europe — Political Systems</h3>
-  <p class="vc-desc">Comparative analysis of electoral systems, coalition dynamics, and political fragmentation across European countries.</p>
-  <div style="display:flex; gap:1rem; margin-top:auto;">
-    <a href="/europe/france" style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:#0c0c0c;text-decoration:none;">France →</a>
-    <a href="/europe/germany" style="font-family:'DM Mono',monospace;font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:#0c0c0c;text-decoration:none;">Germany →</a>
-  </div>
-</div>
+  );
+}
 
-<a href="https://janeorlova.com/amsterdam-analysis" class="viz-card reveal" style="transition-delay:0.4s">
-  <div class="vc-type">City Analysis · Amsterdam</div>
-  <div class="vc-spark">
-    <svg viewBox="0 0 200 48" preserveAspectRatio="none">
-      <!-- Canal rings schematic -->
-      <circle cx="100" cy="24" r="22" fill="none" stroke="#b4a48a" stroke-width="1" opacity="0.25"/>
-      <circle cx="100" cy="24" r="16" fill="none" stroke="#b4a48a" stroke-width="1" opacity="0.40"/>
-      <circle cx="100" cy="24" r="10" fill="none" stroke="#b4a48a" stroke-width="1.5" opacity="0.60"/>
-      <circle cx="100" cy="24" r="4"  fill="none" stroke="#b4a48a" stroke-width="1.5" opacity="0.85"/>
-      <circle cx="100" cy="24" r="1.5" fill="#b4a48a" opacity="0.9"/>
-      <!-- Radial lines -->
-      <line x1="100" y1="2"  x2="100" y2="46" stroke="#b4a48a" stroke-width="0.5" opacity="0.15"/>
-      <line x1="78"  y1="24" x2="122" y2="24" stroke="#b4a48a" stroke-width="0.5" opacity="0.15"/>
-      <line x1="84"  y1="8"  x2="116" y2="40" stroke="#b4a48a" stroke-width="0.5" opacity="0.10"/>
-      <line x1="116" y1="8"  x2="84"  y2="40" stroke="#b4a48a" stroke-width="0.5" opacity="0.10"/>
+function ChartElection({ s }) {
+  const parties = [['D66',22],['GL-PvdA',19],['VVD',16],['PVV',11],['CDA',9],['SP',7],['Other',16]];
+  const W=260,H=150,lPad=52,rPad=12,tPad=18,bPad=16;
+  const chartW=W-lPad-rPad, chartH=H-tPad-bPad;
+  const max=25;
+  const barH=13,gap=5;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">SEAT SHARE % · MUNICIPAL 2026</text>
+      {parties.map(([party,pct],i)=>{
+        const bw=(pct/max)*chartW;
+        const y=tPad+i*(barH+gap);
+        return (
+          <g key={party}>
+            <text x={lPad-4} y={y+barH-2} fontSize={8.5} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{party}</text>
+            <rect x={lPad} y={y} width={bw} height={barH} fill={i===0?s.red:s.muted} rx={1} opacity={i===0?1:0.55+i*0.05}/>
+            <text x={lPad+bw+4} y={y+barH-2} fontSize={8} fill={s.muted} fontFamily="DM Sans">{pct}%</text>
+          </g>
+        );
+      })}
     </svg>
-  </div>
-  <h3 class="vc-title">Amsterdam Analysis</h3>
-  <p class="vc-desc">Living in Amsterdam since 2018 — writing about housing, mobility, tourism politics, local democracy, and the city as a site of policy experiment and urban negotiation.</p>
-  <span class="vc-link">Explore analysis</span>
-</a>
-```
+  );
+}
 
-  </div>
-</section>
+function ChartSentiment({ s }) {
+  const pts = [48,52,55,58,51,46,44,50,54,58,62,57,54,52,56,61,58,55,53,57,62,64,60,56];
+  const W=260,H=130,pad=20,bPad=24;
+  const chartW=W-2*pad, chartH=H-pad-bPad;
+  const max=70,min=35;
+  const toY=(v)=>pad+chartH-(((v-min)/(max-min))*chartH);
+  const toX=(i)=>pad+(i/(pts.length-1))*chartW;
+  const path=pts.map((p,i)=>`${i===0?'M':'L'}${toX(i)},${toY(p)}`).join(' ');
+  const area=`${path} L${toX(pts.length-1)},${H-bPad} L${toX(0)},${H-bPad} Z`;
+  const months=['Jan','Mar','Jun','Sep','Dec'];
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={pad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">JETTEN SENTIMENT INDEX · 2026</text>
+      <defs><linearGradient id="sg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stopColor={s.red} stopOpacity="0.2"/><stop offset="100%" stopColor={s.red} stopOpacity="0"/></linearGradient></defs>
+      {[40,50,60].map(v=>(
+        <g key={v}>
+          <line x1={pad} y1={toY(v)} x2={W-pad} y2={toY(v)} stroke={s.border} strokeWidth={0.5} strokeDasharray="2,3"/>
+          <text x={pad-3} y={toY(v)+3} fontSize={7} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{v}</text>
+        </g>
+      ))}
+      <path d={area} fill="url(#sg)"/>
+      <path d={path} fill="none" stroke={s.red} strokeWidth={1.5} strokeLinejoin="round" strokeLinecap="round"/>
+      {months.map((m,i)=><text key={m} x={pad+i*(chartW/4)} y={H-8} fontSize={7} fill={s.muted} fontFamily="DM Sans" textAnchor="middle">{m}</text>)}
+    </svg>
+  );
+}
 
-<!-- WRITING -->
+function ChartMoties({ s }) {
+  const parties = [['D66',{a:38,r:12}],['VVD',{a:31,r:19}],['CDA',{a:28,r:14}],['GL-PvdA',{a:22,r:8}],['PVV',{a:9,r:41}]];
+  const W=260,H=150,lPad=60,rPad=12,tPad=18,bPad=24;
+  const chartW=W-lPad-rPad, chartH=H-tPad-bPad;
+  const max=55; const barH=12,gap=6,groupGap=8,groupH=2*barH+gap;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">MOTIONS: ADOPTED vs REJECTED</text>
+      {parties.map(([party,d],i)=>{
+        const y=tPad+i*(groupH+groupGap);
+        const aw=(d.a/max)*chartW, rw=(d.r/max)*chartW;
+        return (
+          <g key={party}>
+            <text x={lPad-4} y={y+groupH/2+3} fontSize={8.5} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{party}</text>
+            <rect x={lPad} y={y} width={aw} height={barH} fill={s.muted} rx={1} opacity={0.5}/><text x={lPad+aw+3} y={y+barH-1} fontSize={7} fill={s.muted} fontFamily="DM Sans">{d.a}</text>
+            <rect x={lPad} y={y+barH+gap} width={rw} height={barH} fill={s.red} rx={1} opacity={0.7}/><text x={lPad+rw+3} y={y+barH+gap+barH-1} fontSize={7} fill={s.red} fontFamily="DM Sans">{d.r}</text>
+          </g>
+        );
+      })}
+      {[['Adopted',s.muted,0.5],['Rejected',s.red,0.7]].map(([l,c,o],i)=>(
+        <g key={l} transform={`translate(${lPad+i*80},${H-8})`}>
+          <rect width={8} height={5} fill={c} rx={1} opacity={o}/><text x={11} y={5} fontSize={7} fill={s.muted} fontFamily="DM Sans">{l}</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
 
-<section id="writing">
-  <div class="sec-hd reveal">
-    <span class="sec-n">03</span>
-    <h2 class="sec-h">Read my <em>writing</em></h2>
-    <div class="sec-rule"></div>
-  </div>
-  <div class="writing-top reveal">
-    <p class="writing-desc">Essays, analysis, and takes on Dutch and international politics. Published on Substack — covering elections, messaging, leadership, and what the numbers actually mean.</p>
-    <div class="writing-r"><a href="https://janeorlova.substack.com" target="_blank" class="btn-ink">Visit Substack →</a></div>
-  </div>
-  <div class="articles reveal">
-    <a href="https://janeorlova.substack.com" target="_blank" rel="noopener" class="art">
-      <p class="art-meta">Weekend Overview</p>
-      <h3 class="art-h">Mijn Weekend</h3>
-      <p class="art-p">March 30 – April 5</p>
-    </a>
-    <a href="https://janeorlova.substack.com/p/mijn-weekend-5" target="_blank" rel="noopener" class="art">
-      <p class="art-meta">Dutch &amp; European Politics</p>
-      <h3 class="art-h">Hungary votes. Europe watches. Moscow too.</h3>
-      <p class="art-p">On 12 April, Hungary holds parliamentary elections. For most European elections, the international attention is proportional to the country's size — modest, contextual, quickly forgotten. Hungary has 10 million people and 21 votes in the Council of the European Union.</p>
-    </a>
-    <a href="https://janeorlova.substack.com/p/the-messaging-trap-why-trumps-iran" target="_blank" rel="noopener" class="art">
-      <p class="art-meta">International Conflicts</p>
-      <h3 class="art-h">The Messaging Trap: Why Trump's Iran Speech Failed at Its Own Game</h3>
-      <p class="art-p">When the White House announced that Donald Trump would be making a speech to the nation about the war on Iran, it was expected that the president would make a major announcement — but his remarks only repeated the same statements he had been circulating for weeks.</p>
-    </a>
-    <div class="art art-more">
-      <p class="art-more-lbl">Read on Substack</p>
-      <a href="https://janeorlova.substack.com" target="_blank" class="btn-ghost">Visit →</a>
-    </div>
-  </div>
-</section>
+function ChartPolls({ s }) {
+  const parties = [
+    {name:'D66', color:s.red, pts:[22,23,24,22,24,25,23,24,26,25,24,26]},
+    {name:'VVD', color:s.muted, pts:[18,17,16,17,15,16,16,15,14,15,16,14]},
+    {name:'GL-PvdA', color:'#8a9e8a', pts:[19,20,19,21,20,19,21,22,21,20,19,21]},
+    {name:'PVV', color:'#b08060', pts:[14,13,14,13,14,15,14,13,12,13,14,12]},
+  ];
+  const W=260,H=145,lPad=24,rPad=40,tPad=18,bPad=24;
+  const chartW=W-lPad-rPad, chartH=H-tPad-bPad;
+  const max=30,min=8;
+  const toY=(v)=>tPad+chartH-(((v-min)/(max-min))*chartH);
+  const toX=(i,len)=>lPad+(i/(len-1))*chartW;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">POLLING AVERAGE · % SEATS 2026</text>
+      {[15,20,25].map(v=><line key={v} x1={lPad} y1={toY(v)} x2={W-rPad} y2={toY(v)} stroke={s.border} strokeWidth={0.5} strokeDasharray="2,3"/>)}
+      {parties.map(p=>{
+        const path=p.pts.map((v,i)=>`${i===0?'M':'L'}${toX(i,p.pts.length)},${toY(v)}`).join(' ');
+        const lastX=toX(p.pts.length-1,p.pts.length);
+        const lastY=toY(p.pts[p.pts.length-1]);
+        return (
+          <g key={p.name}>
+            <path d={path} fill="none" stroke={p.color} strokeWidth={1.5} strokeLinejoin="round" strokeLinecap="round"/>
+            <text x={lastX+4} y={lastY+3} fontSize={8} fill={p.color} fontFamily="DM Sans" fontWeight={500}>{p.name}</text>
+          </g>
+        );
+      })}
+      {['Jan','Mar','May','Jul','Sep','Nov'].map((m,i)=><text key={m} x={lPad+i*(chartW/5)} y={H-8} fontSize={7} fill={s.muted} fontFamily="DM Sans" textAnchor="middle">{m}</text>)}
+    </svg>
+  );
+}
 
-<!-- CONTACT -->
+function ChartElectionsStats({ s }) {
+  const parties = [['VVD',26],['D66',24],['PvdA',9],['SP',9],['PVV',17],['CDA',15],['FvD',8],['GL',8]];
+  const W=260,H=150,lPad=52,rPad=12,tPad=18,bPad=16;
+  const chartW=W-lPad-rPad,chartH=H-tPad-bPad,max=30,barH=12,gap=4;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">SECOND CHAMBER SEATS · 2021–2026</text>
+      {parties.map(([p,v],i)=>{
+        const bw=(v/max)*chartW, y=tPad+i*(barH+gap);
+        return <g key={p}><text x={lPad-4} y={y+barH-2} fontSize={8} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{p}</text><rect x={lPad} y={y} width={bw} height={barH} fill={i===1?s.red:s.muted} rx={1} opacity={i===1?1:0.5}/><text x={lPad+bw+3} y={y+barH-2} fontSize={7.5} fill={s.muted} fontFamily="DM Sans">{v}</text></g>;
+      })}
+    </svg>
+  );
+}
 
-<section id="contact">
-  <div class="contact-ink reveal">
-    <div class="sec-hd" style="margin-bottom:2rem">
-      <span class="sec-n">04</span>
-      <h2 class="sec-h">Get in <em>touch</em></h2>
-      <div class="sec-rule"></div>
-    </div>
-    <p class="contact-desc">Available for research collaboration, media commentary, writing commissions, and advisory roles within political agencies across the Netherlands and Europe.</p>
-    <div class="email-block">
-      <span class="email-lbl">Write to me directly</span>
-      <a href="mailto:orlova_j@yahoo.com" class="email-addr">orlova_j@yahoo.com</a>
-    </div>
-    <div class="avail-grid">
-      <div class="av-tag">Research</div>
-      <div class="av-tag">Commentary</div>
-      <div class="av-tag">Writing</div>
-      <div class="av-tag">Advisory</div>
-    </div>
-  </div>
-  <div class="contact-paper reveal" style="transition-delay:0.15s">
-    <p class="pq-lbl">For citation &amp; press</p>
-    <blockquote class="pullquote">"Behind every headline, a frame. Behind every frame, a choice."</blockquote>
-    <p class="pq-attr">— Jane Orlova, Political Researcher · Amsterdam</p>
-    <div class="topics">
-      <div class="t-tag">Dutch Politics</div>
-      <div class="t-tag">EU Elections</div>
-      <div class="t-tag">Framing Theory</div>
-      <div class="t-tag">Campaign Analysis</div>
-      <div class="t-tag">Public Opinion</div>
-      <div class="t-tag">Political Messaging</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-  <a href="#" class="footer-brand">Jane Orlova</a>
-  <ul class="footer-links">
-    <li><a href="#about">Profile</a></li>
-    <li><a href="#datawork">Data Work</a></li>
-    <li><a href="https://janeorlova.substack.com" target="_blank">Substack</a></li>
-    <li><a href="mailto:orlova_j@yahoo.com">Contact</a></li>
-  </ul>
-  <span class="footer-copy">© 2026 Jane Orlova · Amsterdam</span>
-</footer>
-
-<script>
-  /* ── SCROLL REVEAL — desktop only ── */
-  if (window.innerWidth >= 961) {
-    document.querySelectorAll('.reveal').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(18px)';
-      el.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
-    });
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'none';
-        }
-      });
-    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-  }
-
-  /* ── MOBILE NAV ── */
-  const ham = document.querySelector('.hamburger');
-  const navLinks = document.querySelector('.nav-links');
-  ham.addEventListener('click', () => {
-    const open = navLinks.style.display === 'flex';
-    if (open) { navLinks.style.display = ''; }
-    else {
-      Object.assign(navLinks.style, {
-        display: 'flex', flexDirection: 'column',
-        position: 'fixed', top: '60px', left: 0, right: 0,
-        background: '#f7f5f0', borderBottom: '1px solid #d6d1c8',
-        padding: '2rem', gap: '1.5rem', zIndex: 99
-      });
-    }
+function ChartFrance({ s }) {
+  const parties = [['RN',32],['NFP',28],['Macron',25],['LR',7],['Other',8]];
+  const colors = [s.red,'#8a9e8a',s.muted,'#b0a090','#c5b8a8'];
+  const W=260,H=150,cx=110,cy=75,r=55;
+  let angle=-Math.PI/2;
+  const total=parties.reduce((a,b)=>a+b[1],0);
+  const slices = parties.map(([name,val],i)=>{
+    const sweep=(val/total)*2*Math.PI;
+    const x1=cx+r*Math.cos(angle),y1=cy+r*Math.sin(angle);
+    angle+=sweep;
+    const x2=cx+r*Math.cos(angle),y2=cy+r*Math.sin(angle);
+    const large=sweep>Math.PI?1:0;
+    return {path:`M${cx},${cy} L${x1},${y1} A${r},${r} 0 ${large},1 ${x2},${y2} Z`,color:colors[i],name,val};
   });
-</script>
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={10} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">ASSEMBLÉE NATIONALE SEAT SHARE (%)</text>
+      {slices.map((sl,i)=><path key={i} d={sl.path} fill={sl.color} stroke="#fff" strokeWidth={1.5}/>)}
+      {parties.map(([name,val],i)=>(
+        <g key={name} transform={`translate(175,${20+i*24})`}>
+          <rect width={8} height={8} fill={colors[i]} rx={1}/>
+          <text x={12} y={8} fontSize={8.5} fill={s.muted} fontFamily="DM Sans">{name} {val}%</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
 
+function ChartGermany({ s }) {
+  const parties = [['CDU/CSU',29],['SPD',16],['AfD',21],['Grüne',12],['FDP',5],['BSW',9],['Other',8]];
+  const colors = [s.muted,'#c5a090',s.red,'#8a9e8a','#b8b090','#b0a0c0','#c5b8a8'];
+  const W=260,H=150,lPad=64,rPad=12,tPad=18,bPad=16;
+  const chartW=W-lPad-rPad,max=35,barH=13,gap=4;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{width:'100%',height:H}}>
+      <text x={lPad} y={12} fontSize={8} fill={s.muted} fontFamily="DM Sans" letterSpacing="0.08em">BUNDESTAG VOTE SHARE % · 2025</text>
+      {parties.map(([p,v],i)=>{
+        const bw=(v/max)*(chartW),y=tPad+i*(barH+gap);
+        return <g key={p}><text x={lPad-4} y={y+barH-2} fontSize={8} fill={s.muted} fontFamily="DM Sans" textAnchor="end">{p}</text><rect x={lPad} y={y} width={bw} height={barH} fill={colors[i]} rx={1} opacity={i===2?0.85:0.6}/><text x={lPad+bw+3} y={y+barH-2} fontSize={7.5} fill={s.muted} fontFamily="DM Sans">{v}%</text></g>;
+      })}
+    </svg>
+  );
+}
+
+const CHART_MAP = {
+  'face-of-leadership': ChartLeadership,
+  'fear-migration': ChartMigration,
+  'd66-amsterdam': ChartD66,
+  'climate-justice': ChartClimate,
+  'gemeenteuitslag': ChartElection,
+  'jetten-sentiment': ChartSentiment,
+  'moties-tracker': ChartMoties,
+  'polls': ChartPolls,
+  'elections-statistics': ChartElectionsStats,
+  'france-politics': ChartFrance,
+  'germany-politics': ChartGermany,
+};
+
+function ArticleViz({ a, s, height }) {
+  const Chart = CHART_MAP[a.id];
+  if (!Chart) return null;
+  return (
+    <div style={{ background: s.card, padding: '16px 16px 10px', height: height || 'auto', display: 'flex', alignItems: 'center', overflow: 'hidden' }}>
+      <Chart s={s}/>
+    </div>
+  );
+}
+
+/* ─── SHARED UI ─── */
+function Pill({ cat, s }) {
+  return <span style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:s.red, borderBottom:`1px solid ${s.red}`, paddingBottom:1, lineHeight:1 }}>{cat}</span>;
+}
+
+function Rule({ s, label }) {
+  return (
+    <div style={{ display:'flex', alignItems:'center', gap:16, marginBottom:32 }}>
+      <div style={{ height:2, width:28, background:s.red, flexShrink:0 }}/>
+      <span style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, letterSpacing:'0.18em', textTransform:'uppercase', color:s.muted, whiteSpace:'nowrap' }}>{label}</span>
+      <div style={{ flex:1, height:1, background:s.border }}/>
+    </div>
+  );
+}
+
+/* ─── ARTICLE CARD ─── */
+function ArticleCard({ a, s, size='md', onClick }) {
+  const [hov, setHov] = useState(false);
+  const isLg = size === 'lg';
+  const isSm = size === 'sm';
+  return (
+    <article onClick={onClick} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}
+      style={{ cursor:'pointer', display:'flex', flexDirection:'column', borderTop:`2px solid ${hov?s.red:s.border}`, paddingTop:16, transition:'border-color 0.2s', height:'100%' }}>
+      {!isSm && <ArticleViz a={a} s={s} height={isLg?220:168}/>}
+      <div style={{ paddingTop:14, flex:1, display:'flex', flexDirection:'column', gap:9 }}>
+        <Pill cat={a.category} s={s}/>
+        <h3 style={{ fontFamily:'Cormorant Garamond', fontWeight:600, fontSize:isLg?28:isSm?17:21, lineHeight:1.15, color:hov?s.red:s.ink, transition:'color 0.2s', fontStyle:'normal' }}>{a.titleEl}</h3>
+        {!isSm && <p style={{ fontFamily:'DM Sans', fontSize:13, color:s.muted, lineHeight:1.65, fontWeight:300 }}>{a.excerpt}</p>}
+        {a.stats.length>0 && !isSm && (
+          <div style={{ marginTop:'auto', paddingTop:12, borderTop:`1px solid ${s.border}` }}>
+            <div style={{ fontFamily:'Cormorant Garamond', fontSize:22, fontWeight:700, color:s.red }}>{a.stats[0].value}</div>
+            <div style={{ fontFamily:'DM Sans', fontSize:11, color:s.muted, lineHeight:1.4, maxWidth:220 }}>{a.stats[0].label}</div>
+          </div>
+        )}
+        <div style={{ marginTop:'auto', paddingTop:8, display:'flex', justifyContent:'space-between', alignItems:'center' }}>
+          <span style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted }}>{a.date}</span>
+          <span style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, color:s.muted, border:`1px solid ${s.border}`, padding:'2px 8px', borderRadius:2 }}>{a.tag}</span>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+/* ─── HEADER ─── */
+function Header({ s, page, setPage }) {
+  const mob = useIsMobile();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [sc, setSc] = useState(false);
+  useEffect(()=>{ const fn=()=>setSc(window.scrollY>60); window.addEventListener('scroll',fn); return()=>window.removeEventListener('scroll',fn); },[]);
+  const nav = [['home','Home'],['archive','Analysis'],['about','About'],['contact','Contact']];
+  return (
+    <header style={{ position:'sticky', top:0, zIndex:100, background:s.bg, borderBottom:`1px solid ${s.border}`, boxShadow:sc?'0 2px 24px rgba(0,0,0,0.06)':'none', transition:'box-shadow 0.3s' }}>
+      {!mob && (
+        <div style={{ borderBottom:`1px solid ${s.border}`, padding:'5px 40px', display:'flex', justifyContent:'space-between' }}>
+          <span style={{ fontFamily:'DM Sans', fontSize:9.5, color:s.muted, letterSpacing:'0.14em', textTransform:'uppercase' }}>Political Analysis · Netherlands · April 2026</span>
+          <span style={{ fontFamily:'DM Sans', fontSize:9.5, color:s.muted }}>janeorlova.com</span>
+        </div>
+      )}
+      <div style={{ maxWidth:1200, margin:'0 auto', padding:mob?'0 20px':'0 40px', display:'flex', alignItems:'center', justifyContent:'space-between', height:mob?56:64 }}>
+        <button onClick={()=>{ setPage('home'); setMenuOpen(false); }} style={{ background:'none', border:'none', cursor:'pointer', display:'flex', alignItems:'baseline', gap:10 }}>
+          <span style={{ fontFamily:'Cormorant Garamond', fontWeight:700, fontSize:mob?32:42, lineHeight:1, color:s.ink, letterSpacing:'-0.02em' }}>J.O.</span>
+          {!mob && <span style={{ fontFamily:'DM Sans', fontSize:10, letterSpacing:'0.2em', textTransform:'uppercase', color:s.muted, paddingBottom:4 }}>Jane Orlova</span>}
+        </button>
+        {mob ? (
+          <button onClick={()=>setMenuOpen(o=>!o)} style={{ background:'none', border:'none', cursor:'pointer', padding:8, color:s.ink }}>
+            <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
+              <line x1="0" y1="1" x2="22" y2="1" stroke="currentColor" strokeWidth="1.5"/>
+              <line x1="0" y1="8" x2="22" y2="8" stroke="currentColor" strokeWidth="1.5"/>
+              <line x1="0" y1="15" x2="22" y2="15" stroke="currentColor" strokeWidth="1.5"/>
+            </svg>
+          </button>
+        ) : (
+          <nav style={{ display:'flex', gap:32, alignItems:'center' }}>
+            {nav.map(([id,label])=>(
+              <button key={id} onClick={()=>setPage(id)} style={{ fontFamily:'DM Sans', fontSize:11, fontWeight:page===id?500:400, letterSpacing:'0.12em', textTransform:'uppercase', color:page===id?s.red:s.muted, background:'none', border:'none', cursor:'pointer', borderBottom:page===id?`1px solid ${s.red}`:'1px solid transparent', paddingBottom:2, transition:'color 0.2s' }}>{label}</button>
+            ))}
+          </nav>
+        )}
+      </div>
+      {mob && menuOpen && (
+        <div style={{ background:s.bg, borderTop:`1px solid ${s.border}`, padding:'8px 20px 16px', display:'flex', flexDirection:'column' }}>
+          {nav.map(([id,label])=>(
+            <button key={id} onClick={()=>{ setPage(id); setMenuOpen(false); }} style={{ fontFamily:'DM Sans', fontSize:13, fontWeight:page===id?500:400, letterSpacing:'0.1em', textTransform:'uppercase', color:page===id?s.red:s.muted, background:'none', border:'none', cursor:'pointer', textAlign:'left', padding:'12px 0', borderBottom:`1px solid ${s.border}` }}>{label}</button>
+          ))}
+        </div>
+      )}
+      <div style={{ height:3, background:s.red }}/>
+    </header>
+  );
+}
+
+/* ─── HERO ─── */
+function Hero({ s, onArticle }) {
+  const mob = useIsMobile();
+  const a = ARTICLES[0];
+  const [hov, setHov] = useState(false);
+  return (
+    <section style={{ maxWidth:1200, margin:'0 auto', padding: mob?'32px 20px 0':'56px 40px 0' }}>
+      <div onClick={()=>onArticle(a)} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}
+        style={{ cursor:'pointer', display:'grid', gridTemplateColumns: mob?'1fr':'1fr 1fr', gap:0, borderTop:`2px solid ${s.ink}` }}>
+        <div style={{ padding: mob?'24px 0':'40px 56px 40px 0', display:'flex', flexDirection:'column', gap:20, borderRight: mob?'none':`1px solid ${s.border}` }}>
+          <div style={{ display:'flex', alignItems:'center', gap:16 }}>
+            <Pill cat={a.category} s={s}/>
+            <span style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted }}>{a.date}</span>
+          </div>
+          <h1 style={{ fontFamily:'Cormorant Garamond', fontWeight:600, fontSize: mob?34:'clamp(38px,4.5vw,68px)', lineHeight:1.04, color:hov?s.red:s.ink, transition:'color 0.25s' }}>
+            The Face of <em>Leadership</em>
+          </h1>
+          <p style={{ fontFamily:'DM Sans', fontSize: mob?14:15, color:s.muted, lineHeight:1.75, fontWeight:300, maxWidth:480 }}>{a.subtitle}</p>
+          <div style={{ display:'flex', gap: mob?24:48, paddingTop:24, borderTop:`1px solid ${s.border}` }}>
+            {a.stats.map((st,i)=>(
+              <div key={i}>
+                <div style={{ fontFamily:'Cormorant Garamond', fontSize:28, fontWeight:700, color:s.red }}>{st.value}</div>
+                <div style={{ fontFamily:'DM Sans', fontSize:10.5, color:s.muted, maxWidth:180, lineHeight:1.5 }}>{st.label}</div>
+              </div>
+            ))}
+          </div>
+          <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+            <span style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, color:s.muted, border:`1px solid ${s.border}`, padding:'3px 10px', borderRadius:2 }}>{a.tag}</span>
+            <span style={{ fontFamily:'DM Sans', fontSize:11, color:s.red }}>Read analysis →</span>
+          </div>
+        </div>
+        <div style={{ paddingLeft: mob?0:48, paddingTop: mob?16:40, paddingBottom:40 }}>
+          <div style={{ background:s.card, padding:'16px 16px 10px', display:'flex', alignItems:'center' }}>
+            <ChartLeadership s={s}/>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const PHOTO_DEFAULT = 'uploads/IMG_1023.jpeg';
+
+/* ─── TICKER ─── */
+function Ticker({ s }) {
+  const items = ['Dutch Politics','Political Communication','News Framing & Opinion','European Elections','Campaign Strategy','Political Marketing','Netherlands since 2018','MSc University of Amsterdam','Erasmus · Bologna'];
+  const repeated = [...items,...items];
+  return (
+    <div style={{ overflow:'hidden', borderTop:`1px solid ${s.border}`, borderBottom:`1px solid ${s.border}`, padding:'8px 0', background:s.bg }}>
+      <style>{`
+        @keyframes ticker { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+        .ticker-inner { display:flex; gap:48px; white-space:nowrap; animation:ticker 28s linear infinite; width:max-content; }
+      `}</style>
+      <div className="ticker-inner">
+        {repeated.map((item,i)=>(
+          <span key={i} style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:400, letterSpacing:'0.18em', textTransform:'uppercase', color:s.muted, display:'inline-flex', alignItems:'center', gap:20 }}>
+            <span style={{ display:'inline-block', width:4, height:4, borderRadius:'50%', background:s.red, flexShrink:0 }}/>
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ─── AUTHOR HERO (top of homepage) ─── */
+function AuthorHero({ s, setPage, photoUrl }) {
+  const mob = useIsMobile();
+  const photo = photoUrl || PHOTO_DEFAULT;
+  return (
+    <section style={{ maxWidth:1200, margin:'0 auto', padding: mob ? '40px 20px 32px' : '64px 40px 56px', display:'grid', gridTemplateColumns: mob ? '1fr' : 'auto 1fr', gap: mob ? 32 : 72, alignItems:'center', justifyItems: mob ? 'center' : 'start', textAlign: mob ? 'center' : 'left' }}>
+      {/* Circular portrait */}
+      <div style={{ position:'relative', flexShrink:0 }}>
+        <div style={{ width: mob ? 180 : 240, height: mob ? 180 : 240, borderRadius:'50%', overflow:'hidden', border:`3px solid ${s.border}` }}>
+          <img src={photo} alt="Jane Orlova"
+            style={{ width:'100%', height:'100%', objectFit:'cover', objectPosition:'50% 18%', filter:'grayscale(10%)' }}/>
+        </div>
+      </div>
+      {/* Text */}
+      <div style={{ display:'flex', flexDirection:'column', gap:20, alignItems: mob ? 'center' : 'flex-start', width:'100%' }}>
+        <div>
+          <h1 style={{ fontFamily:'Cormorant Garamond', fontWeight:600, fontSize: mob ? 48 : 'clamp(44px,5vw,72px)', lineHeight:1.02, color:s.ink }}>
+            Jane <em>Orlova</em>
+          </h1>
+          <p style={{ fontFamily:'DM Sans', fontSize:11, fontWeight:400, letterSpacing:'0.2em', textTransform:'uppercase', color:s.muted, marginTop:8 }}>
+            Political Researcher & Writer · Netherlands
+          </p>
+        </div>
+        <p style={{ fontFamily:'DM Sans', fontSize: mob ? 14 : 15, color:s.muted, lineHeight:1.8, fontWeight:300, maxWidth:580 }}>
+          I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. My background spans International Relations and Political Communication, with a thesis on how news framing shapes support for climate refugees.
+        </p>
+        {!mob && (
+          <div style={{ display:'flex', gap:8, flexWrap:'wrap' }}>
+            {['Dutch Politics','Political Communication','News Framing & Opinion','European Elections','Campaign Strategy'].map(t=>(
+              <span key={t} style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted, border:`1px solid ${s.border}`, padding:'3px 10px', borderRadius:2 }}>{t}</span>
+            ))}
+          </div>
+        )}
+        <div style={{ display:'flex', gap: mob ? 12 : 20, alignItems:'center', flexWrap:'wrap', justifyContent: mob ? 'center' : 'flex-start', paddingTop:4 }}>
+          <a href="mailto:jane@janeorlova.com" style={{ fontFamily:'DM Sans', fontSize:11, fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', background:s.ink, color:'#fff', padding:'12px 24px', display:'inline-block' }}>Email Me</a>
+          <button onClick={()=>setPage('about')} style={{ fontFamily:'DM Sans', fontSize:11, color:s.red, letterSpacing:'0.06em', background:'none', border:'none', cursor:'pointer', padding:0 }}>Full profile →</button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── HOME PAGE ─── */
+function HomePage({ s, onArticle, setPage, photoUrl }) {
+  const mob = useIsMobile();
+  const others = ARTICLES.slice(1);
+  const pad = mob ? '32px 20px 0' : '56px 40px 0';
+  return (
+    <main>
+      <AuthorHero s={s} setPage={setPage} photoUrl={photoUrl}/>
+      <Ticker s={s}/>
+      <Hero s={s} onArticle={onArticle}/>
+      <section style={{ maxWidth:1200, margin:'0 auto', padding:pad }}>
+        <Rule s={s} label="Latest Analysis"/>
+        <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'repeat(3,1fr)', gap: mob?24:32 }}>
+          {others.slice(0,3).map(a=><ArticleCard key={a.id} a={a} s={s} size="md" onClick={()=>onArticle(a)}/>)}
+        </div>
+      </section>
+      <section style={{ maxWidth:1200, margin:'0 auto', padding: mob?'40px 20px 0':'64px 40px 0' }}>
+        <Rule s={s} label="Amsterdam Politics"/>
+        <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'2fr 1fr', gap: mob?24:40 }}>
+          <ArticleCard a={others[2]} s={s} size={mob?'md':'lg'} onClick={()=>onArticle(others[2])}/>
+          <div style={{ display:'flex', flexDirection:'column', gap:0 }}>
+            <ArticleCard a={others[3]} s={s} size="sm" onClick={()=>onArticle(others[3])}/>
+            {!mob && (
+              <div style={{ marginTop:32, paddingTop:24, borderTop:`1px solid ${s.border}` }}>
+                <div style={{ fontFamily:'Cormorant Garamond', fontSize:20, fontStyle:'italic', lineHeight:1.55, color:s.ink, marginBottom:12 }}>
+                  "The climate burden and the climate investment move in opposite directions. That is not coincidence."
+                </div>
+                <span style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted }}>Climate Justice Index · 2026</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+      <section style={{ maxWidth:1200, margin:'0 auto', padding: mob?'40px 20px 40px':'64px 40px 56px' }}>
+        <Rule s={s} label="Live Data & Trackers"/>
+        <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'repeat(3,1fr)', gap: mob?24:32 }}>
+          {others.slice(4,7).map(a=><ArticleCard key={a.id} a={a} s={s} size="md" onClick={()=>onArticle(a)}/>)}
+        </div>
+      </section>
+      <section style={{ maxWidth:1200, margin:'0 auto', padding: mob?'0 20px 40px':'0 40px 56px' }}>
+        <Rule s={s} label="European Politics"/>
+        <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'repeat(2,1fr)', gap: mob?24:32 }}>
+          {ARTICLES.filter(a=>a.category==='European Politics').map(a=><ArticleCard key={a.id} a={a} s={s} size="md" onClick={()=>onArticle(a)}/>)}
+        </div>
+      </section>
+    </main>
+  );
+}
+
+/* ─── ARCHIVE PAGE ─── */
+function ArchivePage({ s, onArticle }) {
+  const mob = useIsMobile();
+  const [active, setActive] = useState('All');
+  const filtered = active==='All' ? ARTICLES : ARTICLES.filter(a=>a.category===active);
+  return (
+    <main style={{ maxWidth:1200, margin:'0 auto', padding: mob?'32px 20px':'56px 40px' }}>
+      <div style={{ marginBottom:32, borderBottom:`1px solid ${s.border}`, paddingBottom:24 }}>
+        <h1 style={{ fontFamily:'Cormorant Garamond', fontSize: mob?38:52, fontWeight:600, color:s.ink, marginBottom:8 }}>Analysis & <em>Research</em></h1>
+        <p style={{ fontFamily:'DM Sans', fontSize:14, color:s.muted, fontWeight:300 }}>All published research, data projects, and political analysis by Jane Orlova.</p>
+      </div>
+      <div style={{ display:'flex', gap:8, marginBottom:32, flexWrap:'wrap' }}>
+        {CATS.map(c=>(
+          <button key={c} onClick={()=>setActive(c)} style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:active===c?500:400, letterSpacing:'0.1em', textTransform:'uppercase', padding:'6px 14px', borderRadius:2, background:active===c?s.red:'transparent', color:active===c?'#fff':s.muted, border:`1px solid ${active===c?s.red:s.border}`, cursor:'pointer', transition:'all 0.15s' }}>{c}</button>
+        ))}
+      </div>
+      <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'repeat(auto-fill,minmax(280px,1fr))', gap: mob?24:40 }}>
+        {filtered.map(a=><ArticleCard key={a.id} a={a} s={s} size="md" onClick={()=>onArticle(a)}/>)}
+      </div>
+    </main>
+  );
+}
+
+/* ─── ABOUT PAGE ─── */
+function AboutPage({ s, photoUrl }) {
+  const mob = useIsMobile();
+  const photo = photoUrl || PHOTO_DEFAULT;
+  return (
+    <main style={{ maxWidth:1200, margin:'0 auto', padding: mob?'32px 20px':'64px 40px' }}>
+      <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'1fr 2fr', gap: mob?32:80 }}>
+        <div>
+          {photo ? (
+            <img src={photo} alt="Jane Orlova" style={{ width:'100%', height: mob?280:440, objectFit:'cover', objectPosition:'center 18%', filter:'grayscale(10%)' }}/>
+          ) : (
+            <div style={{ background:s.card, height:440, display:'flex', alignItems:'center', justifyContent:'center', position:'relative', overflow:'hidden' }}>
+              <svg viewBox="0 0 300 440" width="100%" height="100%" style={{ position:'absolute', inset:0 }}>
+                <defs><pattern id="about-pat" patternUnits="userSpaceOnUse" width="20" height="20" patternTransform="rotate(135)"><line x1="0" y1="0" x2="0" y2="20" stroke={s.border} strokeWidth="1"/></pattern></defs>
+                <rect width="300" height="440" fill={`url(#about-pat)`}/>
+              </svg>
+              <span style={{ position:'relative', fontFamily:'monospace', fontSize:11, color:s.muted, letterSpacing:'0.05em', textTransform:'uppercase' }}>editorial portrait</span>
+            </div>
+          )}
+          <div style={{ marginTop:24, paddingTop:20, borderTop:`1px solid ${s.border}` }}>
+            <div style={{ fontFamily:'DM Sans', fontSize:11, color:s.muted, lineHeight:2.2, letterSpacing:'0.04em' }}>
+              <div>MSc Political Communication · University of Amsterdam</div>
+              <div>BA International Relations · Moscow State University</div>
+              <div>Erasmus · University of Bologna</div>
+              <div style={{ marginTop:8 }}><a href="https://janeorlova.com" style={{ color:s.red }}>janeorlova.com</a></div>
+            </div>
+          </div>
+        </div>
+        <div style={{ display:'flex', flexDirection:'column', gap:28 }}>
+          <div>
+            <Pill cat="Political Researcher & Writer" s={s}/>
+            <h1 style={{ fontFamily:'Cormorant Garamond', fontWeight:600, fontSize: mob?40:58, lineHeight:1.05, color:s.ink, marginTop:16 }}>Jane <em>Orlova</em></h1>
+          </div>
+          <p style={{ fontFamily:'DM Sans', fontSize:16, color:s.ink, lineHeight:1.85, fontWeight:300 }}>
+            I am Jane Orlova — a political researcher and writer based in the Netherlands since 2018. My background spans International Relations (Moscow State University) and Political Communication (MSc, University of Amsterdam), with research conducted at the University of Bologna during my Erasmus exchange.
+          </p>
+          <p style={{ fontFamily:'DM Sans', fontSize:15, color:s.muted, lineHeight:1.85, fontWeight:300 }}>
+            My thesis examined how news framing shapes public support for climate refugees — and how emotions and political knowledge modify that effect. That question still sits at the centre of everything I find compelling: why people believe what they believe, how messaging moves public opinion, and who controls the frame.
+          </p>
+          <p style={{ fontFamily:'DM Sans', fontSize:15, color:s.muted, lineHeight:1.85, fontWeight:300 }}>
+            I write about Dutch and European politics — elections, party strategy, political leadership, and the mechanics of how public opinion actually moves. I am particularly drawn to campaigns: how they are built, where they win people over, and where they lose them.
+          </p>
+          <div style={{ display:'grid', gridTemplateColumns: mob?'repeat(2,1fr)':'repeat(3,1fr)', gap:20, paddingTop:24, borderTop:`1px solid ${s.border}`, borderBottom:`1px solid ${s.border}`, paddingBottom:24 }}>
+            {[{v:'MSc',l:'Political Communication, UvA'},{v:'BA',l:'International Relations, MSU'},{v:'Erasmus',l:'University of Bologna'}].map((st,i)=>(
+              <div key={i}><div style={{ fontFamily:'Cormorant Garamond', fontSize:32, fontWeight:700, color:s.red }}>{st.v}</div><div style={{ fontFamily:'DM Sans', fontSize:11, color:s.muted, lineHeight:1.5 }}>{st.l}</div></div>
+            ))}
+          </div>
+          <div>
+            <span style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:s.muted }}>Research Interests</span>
+            <div style={{ display:'flex', gap:8, flexWrap:'wrap', marginTop:12 }}>
+              {['Dutch Politics','Political Communication','News Framing & Opinion','European Elections','Campaign Strategy','Political Marketing','Public Opinion'].map(t=>(
+                <span key={t} style={{ fontFamily:'DM Sans', fontSize:11, color:s.muted, border:`1px solid ${s.border}`, padding:'4px 12px', borderRadius:2 }}>{t}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+/* ─── CONTACT PAGE ─── */
+function ContactPage({ s }) {
+  const mob = useIsMobile();
+  const [sent, setSent] = useState(false);
+  const [form, setForm] = useState({name:'',email:'',subject:'',message:''});
+  const input = { fontFamily:'DM Sans', fontSize:15, color:'inherit', background:'transparent', border:'none', borderBottom:`1px solid ${s.border}`, padding:'10px 0', width:'100%', outline:'none', transition:'border-color 0.2s', fontWeight:300 };
+  return (
+    <main style={{ maxWidth:1200, margin:'0 auto', padding: mob?'32px 20px':'64px 40px' }}>
+      <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'1fr 1fr', gap: mob?40:96 }}>
+        <div>
+          <Pill cat="Contact" s={s}/>
+          <h1 style={{ fontFamily:'Cormorant Garamond', fontWeight:600, fontSize: mob?38:52, lineHeight:1.05, color:s.ink, marginTop:16, marginBottom:24 }}>Get in <em>Touch</em></h1>
+          <p style={{ fontFamily:'DM Sans', fontSize:14, color:s.muted, lineHeight:1.8, fontWeight:300, marginBottom:40 }}>
+            For research collaborations, media enquiries, speaking requests, academic citations, or questions about methodology and data.
+          </p>
+          {[{l:'Email',v:'jane@janeorlova.com',h:'mailto:jane@janeorlova.com'},{l:'Website',v:'janeorlova.com',h:'https://janeorlova.com'},{l:'Research data',v:'Open source on GitHub',h:'#'}].map(c=>(
+            <div key={c.l} style={{ borderTop:`1px solid ${s.border}`, paddingTop:16, marginBottom:20 }}>
+              <div style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted, letterSpacing:'0.12em', textTransform:'uppercase', marginBottom:4 }}>{c.l}</div>
+              <a href={c.h} style={{ fontFamily:'DM Sans', fontSize:14, color:s.ink }}>{c.v}</a>
+            </div>
+          ))}
+        </div>
+        <div>
+          {sent ? (
+            <div style={{ paddingTop:48, display:'flex', flexDirection:'column', gap:16 }}>
+              <div style={{ fontFamily:'Cormorant Garamond', fontSize:36, fontWeight:600, color:s.ink }}>Message sent.</div>
+              <p style={{ fontFamily:'DM Sans', fontSize:14, color:s.muted, fontWeight:300 }}>Thank you for reaching out. Jane will be in touch shortly.</p>
+              <button onClick={()=>setSent(false)} style={{ marginTop:16, fontFamily:'DM Sans', fontSize:10, letterSpacing:'0.14em', textTransform:'uppercase', color:s.red, background:'none', border:`1px solid ${s.red}`, padding:'12px 24px', cursor:'pointer', alignSelf:'flex-start' }}>Send another</button>
+            </div>
+          ) : (
+            <form onSubmit={e=>{e.preventDefault();setSent(true);}} style={{ display:'flex', flexDirection:'column', gap:28 }}>
+              <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'1fr 1fr', gap:24 }}>
+                {['name','email'].map(f=>(
+                  <div key={f}>
+                    <label style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted, letterSpacing:'0.12em', textTransform:'uppercase', display:'block', marginBottom:4 }}>{f}</label>
+                    <input value={form[f]} onChange={e=>setForm(p=>({...p,[f]:e.target.value}))} required style={input}/>
+                  </div>
+                ))}
+              </div>
+              <div>
+                <label style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted, letterSpacing:'0.12em', textTransform:'uppercase', display:'block', marginBottom:4 }}>Subject</label>
+                <input value={form.subject} onChange={e=>setForm(p=>({...p,subject:e.target.value}))} required style={input}/>
+              </div>
+              <div>
+                <label style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted, letterSpacing:'0.12em', textTransform:'uppercase', display:'block', marginBottom:4 }}>Message</label>
+                <textarea value={form.message} onChange={e=>setForm(p=>({...p,message:e.target.value}))} required rows={6} style={{...input,resize:'vertical',display:'block',paddingTop:12}}/>
+              </div>
+              <button type="submit" style={{ fontFamily:'DM Sans', fontSize:11, fontWeight:500, letterSpacing:'0.16em', textTransform:'uppercase', background:s.ink, color:'#fff', border:'none', padding:'16px 32px', cursor:'pointer', alignSelf:'flex-start' }}>Send Message</button>
+            </form>
+          )}
+        </div>
+      </div>
+    </main>
+  );
+}
+
+/* ─── ARTICLE MODAL ─── */
+function ArticleModal({ a, s, onClose }) {
+  useEffect(()=>{ const fn=e=>{if(e.key==='Escape')onClose();}; window.addEventListener('keydown',fn); return()=>window.removeEventListener('keydown',fn); },[]);
+  return (
+    <div onClick={e=>e.target===e.currentTarget&&onClose()} style={{ position:'fixed', inset:0, zIndex:200, background:'rgba(0,0,0,0.55)', display:'flex', alignItems:'flex-start', justifyContent:'center', overflowY:'auto', padding:'48px 16px' }}>
+      <div style={{ background:s.bg, maxWidth:780, width:'100%', padding:'56px 64px', position:'relative', boxShadow:'0 24px 80px rgba(0,0,0,0.18)' }}>
+        <button onClick={onClose} style={{ position:'absolute', top:24, right:28, background:'none', border:'none', fontSize:18, cursor:'pointer', color:s.muted }}>✕</button>
+        <Pill cat={a.category} s={s}/>
+        <h1 style={{ fontFamily:'Cormorant Garamond', fontSize:44, fontWeight:600, lineHeight:1.1, color:s.ink, marginTop:16, marginBottom:20 }}>{a.titleEl}</h1>
+        <p style={{ fontFamily:'DM Sans', fontSize:14, color:s.muted, lineHeight:1.75, fontWeight:300, marginBottom:28 }}>{a.subtitle}</p>
+        {a.stats.length>0 && (
+          <div style={{ display:'flex', gap:48, padding:'20px 0', borderTop:`1px solid ${s.border}`, borderBottom:`1px solid ${s.border}`, marginBottom:28 }}>
+            {a.stats.map((st,i)=>(
+              <div key={i}><div style={{ fontFamily:'Cormorant Garamond', fontSize:34, fontWeight:700, color:s.red }}>{st.value}</div><div style={{ fontFamily:'DM Sans', fontSize:11, color:s.muted, maxWidth:220, lineHeight:1.5 }}>{st.label}</div></div>
+            ))}
+          </div>
+        )}
+        <ArticleViz a={a} s={s}/>
+        <p style={{ fontFamily:'DM Sans', fontSize:15, color:s.ink, lineHeight:1.8, fontWeight:300, marginTop:24 }}>{a.excerpt}</p>
+        <div style={{ marginTop:36, display:'flex', gap:16, alignItems:'center' }}>
+          <a href={a.url} target="_blank" rel="noopener" style={{ fontFamily:'DM Sans', fontSize:11, fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', background:s.red, color:'#fff', padding:'14px 28px', display:'inline-block' }}>Read Full Analysis →</a>
+          <span style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted }}>{a.date} · {a.tag}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─── FOOTER ─── */
+function Footer({ s, setPage }) {
+  const mob = useIsMobile();
+  return (
+    <footer style={{ borderTop:`1px solid ${s.border}`, marginTop:64 }}>
+      <div style={{ maxWidth:1200, margin:'0 auto', padding: mob?'32px 20px':'48px 40px' }}>
+        <div style={{ display:'grid', gridTemplateColumns: mob?'1fr':'2fr 1fr 1fr', gap: mob?32:64, marginBottom:40 }}>
+          <div>
+            <div style={{ fontFamily:'Cormorant Garamond', fontSize:34, fontWeight:700, color:s.ink, marginBottom:14 }}>J.O.</div>
+            <p style={{ fontFamily:'DM Sans', fontSize:13, color:s.muted, lineHeight:1.75, fontWeight:300, maxWidth:340 }}>Political researcher and writer based in the Netherlands. Writing about Dutch and European politics — elections, party strategy, and the mechanics of public opinion.</p>
+          </div>
+          {!mob && <>
+            <div>
+              <div style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:s.muted, marginBottom:16 }}>Navigation</div>
+              {[['home','Home'],['archive','Analysis'],['about','About'],['contact','Contact']].map(([id,l])=>(
+                <div key={id} style={{ marginBottom:10 }}>
+                  <button onClick={()=>setPage(id)} style={{ fontFamily:'DM Sans', fontSize:13, color:s.muted, background:'none', border:'none', cursor:'pointer', padding:0 }}>{l}</button>
+                </div>
+              ))}
+            </div>
+            <div>
+              <div style={{ fontFamily:'DM Sans', fontSize:10, fontWeight:500, letterSpacing:'0.14em', textTransform:'uppercase', color:s.muted, marginBottom:16 }}>Live Projects</div>
+              {[['Poll Aggregator','https://janeorlova.com/polls'],['Moties Tracker','https://janeorlova.com/moties-tracker'],['Jetten Sentiment','https://janeorlova.com/jetten-sentiment'],['Elections 2026','https://janeorlova.com/gemeenteuitslag2026']].map(([l,h])=>(
+                <div key={l} style={{ marginBottom:10 }}>
+                  <a href={h} target="_blank" style={{ fontFamily:'DM Sans', fontSize:13, color:s.muted }}>{l}</a>
+                </div>
+              ))}
+            </div>
+          </>}
+        </div>
+        <div style={{ borderTop:`1px solid ${s.border}`, paddingTop:20, display:'flex', flexDirection: mob?'column':'row', justifyContent:'space-between', gap:8 }}>
+          <span style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted }}>© 2026 Jane Orlova · All research published as open source</span>
+          <span style={{ fontFamily:'DM Sans', fontSize:10, color:s.muted }}>BA International Relations · MSc Political Communication</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/* ─── APP ─── */
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "style": "economist",
+  "accentRed": "#8b2700",
+  "photoUrl": ""
+}/*EDITMODE-END*/;
+
+function App() {
+  const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+  const [page, setPage] = useState('home');
+  const [article, setArticle] = useState(null);
+
+  const base = STYLES[(tweaks&&tweaks.style)||'fusion'] || STYLES.fusion;
+  const s = { ...base, red:(tweaks&&tweaks.accentRed)||base.red };
+
+  useEffect(()=>{
+    document.body.style.background = s.bg;
+    document.body.style.color = s.ink;
+  },[s.bg,s.ink]);
+
+  const navigate = p => { setPage(p); window.scrollTo({top:0,behavior:'smooth'}); };
+
+  return (
+    <div style={{ minHeight:'100vh', background:s.bg, color:s.ink }}>
+      <Header s={s} page={page} setPage={navigate}/>
+      {page==='home' && <HomePage s={s} onArticle={setArticle} setPage={navigate} photoUrl={tweaks&&tweaks.photoUrl}/>}
+      {page==='archive' && <ArchivePage s={s} onArticle={setArticle}/>}
+      {page==='about' && <AboutPage s={s} photoUrl={tweaks&&tweaks.photoUrl}/>}
+      {page==='contact' && <ContactPage s={s}/>}
+      <Footer s={s} setPage={navigate}/>
+      {article && <ArticleModal a={article} s={s} onClose={()=>setArticle(null)}/>}
+      <TweaksPanel>
+        <TweakSection label="Style Direction"/>
+        <TweakRadio label="Direction" value={tweaks&&tweaks.style} options={['fusion','economist','vogue']} onChange={v=>setTweak('style',v)}/>
+        <TweakSection label="Accent"/>
+        <TweakColor label="Crimson red" value={tweaks&&tweaks.accentRed} onChange={v=>setTweak('accentRed',v)}/>
+        <TweakSection label="Photo"/>
+        <TweakText label="GitHub photo URL" value={tweaks&&tweaks.photoUrl} onChange={v=>setTweak('photoUrl',v)}/>
+      </TweaksPanel>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
 </body>
 </html>
