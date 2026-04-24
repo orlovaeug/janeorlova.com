@@ -359,10 +359,107 @@ select,input,textarea{font-family:inherit}
   #header-nav{display:none}
   .logo-name{display:none}
 }
+  #cookie-banner {
+  display: none;    
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: sans-serif;
+  font-size: 14px;
+  z-index: 999999;
+  transition: opacity 0.4s ease;
+  pointer-events: all;
+}
+
+#cookie-banner p { margin: 0; }
+
+#cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+#cookie-accept, #cookie-reject {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  pointer-events: all;
+}
+
+#cookie-accept {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+#cookie-accept:hover { background: #e0e0e0; }
+
+#cookie-reject {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+#cookie-reject:hover { background: rgba(255,255,255,0.1); }
+
+@media (max-width: 480px) {
+  #cookie-banner { flex-direction: column; align-items: flex-start; }
+}
 </style>
 </head>
 <body>
+<div id="cookie-banner">
+  <p>This website uses cookies to improve your experience.</p>
+  <div id="cookie-buttons">
+    <button id="cookie-accept">Accept</button>
+    <button id="cookie-reject">Reject</button>
+  </div>
+</div>
 
+    <script>
+  (function () {
+    function getConsent() {
+      try { return localStorage.getItem('cookieConsent'); } 
+      catch (e) { return null; }
+    }
+    function setConsent(val) {
+      try { localStorage.setItem('cookieConsent', val); } 
+      catch (e) {}
+    }
+
+    var banner = document.getElementById('cookie-banner');
+
+    if (!banner) return;
+
+    if (getConsent()) {
+      banner.style.display = 'none';
+      return;
+    }
+
+    banner.style.display = 'flex';
+
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+      setConsent('accepted');
+      banner.style.opacity = '0';
+      setTimeout(function () { banner.style.display = 'none'; }, 400);
+    });
+
+    document.getElementById('cookie-reject').addEventListener('click', function () {
+      banner.style.opacity = '0';
+      setTimeout(function () { banner.style.display = 'none'; }, 400);
+    });
+  })();
+</script>
 <!-- ── HEADER ── -->
 <header id="site-header">
   <div id="header-top">
