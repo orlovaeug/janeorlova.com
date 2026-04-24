@@ -1,23 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9SV5Y8BZ24');
-</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GR2026 · Gemeenteuitslag — Evgeniya Orlova</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<title>GR2026 · Gemeenteuitslag — Jane Orlova</title>
+
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:#f7f3ee;color:#1c1917;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{background:#f7f3ee;color:#1c1917;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none}
 ::selection{background:#8b2700;color:#fff}
@@ -37,7 +29,7 @@ header.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.07)}
 .hd-top{border-bottom:1px solid #ddd8d0;padding:5px 40px;display:flex;justify-content:space-between;font-size:9.5px;color:#7a746c;letter-spacing:.14em;text-transform:uppercase}
 .hd-main{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
 .hd-logo{display:flex;align-items:baseline;gap:10px}
-.logo-init{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:42px;line-height:1;color:#1c1917;letter-spacing:-.02em}
+.logo-init{font-family:'Georgia',serif;font-weight:700;font-size:42px;line-height:1;color:#1c1917;letter-spacing:-.02em}
 .logo-name{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#7a746c;padding-bottom:4px}
 nav{display:flex;gap:28px}
 nav a{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;border-bottom:1px solid transparent;padding-bottom:2px;transition:color .15s}
@@ -48,13 +40,13 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .hero{max-width:1200px;margin:0 auto;padding:72px 40px 52px;border-bottom:1px solid #ddd8d0}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end}
 .hero-eyebrow{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#8b2700;display:block;margin-bottom:14px}
-.hero-h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(44px,5vw,78px);line-height:1.02;color:#1c1917;margin-bottom:18px}
+.hero-h1{font-family:'Georgia',serif;font-weight:600;font-size:clamp(44px,5vw,78px);line-height:1.02;color:#1c1917;margin-bottom:18px}
 .hero-h1 em{font-style:italic;font-weight:400}
 .hero-p{font-size:14px;color:#7a746c;font-weight:300;line-height:1.75;max-width:420px}
 .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:end}
 .hero-stat{opacity:0;transform:translateY(8px);transition:opacity .5s,transform .5s}
 .hero-stat.vis{opacity:1;transform:none}
-.stat-big{font-family:'Cormorant Garamond',Georgia,serif;font-size:36px;font-weight:700;color:#8b2700;line-height:1}
+.stat-big{font-family:'Georgia',serif;font-size:36px;font-weight:700;color:#8b2700;line-height:1}
 .stat-lbl{font-size:10.5px;font-weight:500;text-transform:uppercase;letter-spacing:.08em;color:#1c1917;margin-top:6px}
 .stat-sub{font-size:10px;color:#7a746c;margin-top:2px}
 
@@ -86,22 +78,22 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .detail{animation:fadeUp .35s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 .detail-hdr{border-bottom:2px solid #1c1917;padding-bottom:14px;display:flex;align-items:baseline;gap:14px}
-.detail-city{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:36px;color:#1c1917}
+.detail-city{font-family:'Georgia',serif;font-weight:600;font-size:36px;color:#1c1917}
 .detail-date{font-size:10px;color:#7a746c;letter-spacing:.12em;text-transform:uppercase}
 
 /* WINNER BANNER */
 .winner-banner{padding:32px 0 24px;border-bottom:1px solid #ddd8d0;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center}
 .w-dot{width:40px;height:40px;border-radius:50%;flex-shrink:0;opacity:.9}
 .w-sub{font-size:9.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#7a746c;margin-bottom:3px}
-.w-name{font-family:'Cormorant Garamond',Georgia,serif;font-size:32px;font-weight:600;line-height:1}
-.w-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:40px;font-weight:700;line-height:1}
+.w-name{font-family:'Georgia',serif;font-size:32px;font-weight:600;line-height:1}
+.w-pct{font-family:'Georgia',serif;font-size:40px;font-weight:700;line-height:1}
 .w-seats{font-size:10px;color:#7a746c;margin-top:2px}
 
 /* STATS STRIP */
 .stats{display:grid;grid-template-columns:repeat(3,1fr);padding:14px 0;border-bottom:1px solid #ddd8d0}
 .s-block{padding-right:22px;margin-right:22px;border-right:1px solid #ddd8d0}
 .s-block:last-child{border:none;padding:0;margin:0}
-.s-val{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;font-weight:700;color:#1c1917;line-height:1}
+.s-val{font-family:'Georgia',serif;font-size:24px;font-weight:700;color:#1c1917;line-height:1}
 .s-lbl{font-size:9.5px;color:#7a746c;margin-top:4px;letter-spacing:.06em;text-transform:uppercase}
 
 /* SUBTABS */
@@ -112,37 +104,37 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .tab-pane.active{display:block}
 
 /* KAART TAB */
-.kaart-grid{display:grid;grid-template-columns:3fr 2fr;gap:48px}
-.map-wrap{position:relative;display:inline-block;width:100%}
+.kaart-grid{display:grid;grid-template-columns:1fr 190px;gap:36px;align-items:start}
+.map-wrap{position:relative;display:block;width:100%;line-height:0}
 .map-hint{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a746c;margin-bottom:10px}
-.district-svg{width:100%;display:block;max-height:420px}
+.district-svg{width:100%;display:block;aspect-ratio:760/680}
 .dp{cursor:pointer;transition:opacity .15s,filter .15s;opacity:.78}
 .dp:hover{opacity:1;filter:brightness(1.1) drop-shadow(0 2px 6px rgba(0,0,0,.2))}
 
 /* DISTRICT OVERLAY (slide-in panel) */
-.d-overlay{display:none;position:absolute;top:0;right:0;bottom:0;width:min(240px,48%);background:#fff;border-left:2px solid #1c1917;z-index:20;box-shadow:-6px 0 24px rgba(0,0,0,.15);flex-direction:column;overflow:hidden}
+.d-overlay{display:none;position:absolute;top:0;right:0;bottom:0;width:min(280px,45%);background:#fff;border-left:2px solid #1c1917;z-index:20;box-shadow:-6px 0 28px rgba(0,0,0,.18);flex-direction:column;overflow:hidden}
 .d-overlay.open{display:flex}
 .d-ov-hd{background:#1c1917;color:#f7f3ee;padding:11px 13px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.d-ov-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:15px;font-weight:700}
+.d-ov-title{font-family:'Georgia',serif;font-size:15px;font-weight:700}
 .d-ov-close{background:none;border:none;color:rgba(247,243,238,.7);font-size:20px;cursor:pointer;line-height:1;padding:0 2px}
 .d-ov-close:hover{color:#f7f3ee}
-.d-ov-body{flex:1;overflow-y:auto;padding:13px;background:#fff}
+.d-ov-body{flex:1;overflow-y:auto;padding:12px 13px;background:#fff;-webkit-overflow-scrolling:touch}
 .d-meta{font-size:9px;color:#7a746c;letter-spacing:.06em;margin-bottom:10px}
-.d-win-block{display:flex;align-items:center;justify-content:space-between;padding:9px 11px;margin-bottom:11px;border-left:4px solid}
+.d-win-block{display:flex;align-items:flex-start;justify-content:space-between;padding:10px 12px;margin-bottom:10px;border-left:4px solid;gap:8px}
 .d-win-lbl{font-size:8px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:2px}
-.d-win-nm{font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;font-weight:700}
-.d-win-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:26px;font-weight:900}
-.d-opk-block{padding:8px 10px;background:#f7f5f0;border-left:3px solid #888;margin-bottom:11px}
-.d-opk-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:2px}
-.d-opk-val{font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:700}
-.d-opk-cmp{font-size:9px;color:#7a746c;margin-top:2px}
+.d-win-nm{font-family:'Georgia',serif;font-size:13px;font-weight:700;line-height:1.3;word-break:break-word;min-height:16px}
+.d-win-pct{font-family:'Georgia',serif;font-size:26px;font-weight:900;flex-shrink:0;line-height:1;align-self:center}
+.d-opk-block{padding:8px 10px;background:#f7f5f0;border-left:3px solid #aaa;margin-bottom:11px;clear:both}
+.d-opk-lbl{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:3px;display:block}
+.d-opk-val{font-family:'Georgia',serif;font-size:20px;font-weight:700;display:block;line-height:1.2}
+.d-opk-cmp{font-size:9px;color:#7a746c;margin-top:3px;display:block}
 .d-bars-lbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#7a746c;margin-bottom:7px;padding-bottom:4px;border-bottom:1px solid #ddd8d0}
-.d-bar-row{display:flex;align-items:center;gap:5px;margin-bottom:5px}
+.d-bar-row{display:flex;align-items:center;gap:4px;margin-bottom:4px}
 .d-bar-rank{font-size:9px;color:#7a746c;width:13px;flex-shrink:0}
-.d-bar-name{font-size:10px;font-weight:500;width:90px;flex-shrink:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.d-bar-track{flex:1;background:#eae6de;height:6px}
+.d-bar-name{font-size:9.5px;font-weight:500;width:88px;flex-shrink:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.d-bar-track{width:60px;flex-shrink:0;background:#eae6de;height:5px}
 .d-bar-fill{height:100%}
-.d-bar-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:11px;font-weight:700;width:32px;text-align:right;flex-shrink:0}
+.d-bar-pct{font-family:'Georgia',serif;font-size:11px;font-weight:700;width:28px;text-align:right;flex-shrink:0}
 
 /* MAP LEGEND */
 .map-legend{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
@@ -150,17 +142,17 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .mleg-sq{width:8px;height:8px;flex-shrink:0}
 
 /* PARTY BARS (right panel) */
-.pb-lbl{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a746c;margin-bottom:16px}
-.pb-row{margin-bottom:13px}
-.pb-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
-.pb-left{display:flex;align-items:center;gap:7px}
-.pb-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.pb-lbl{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a746c;margin-bottom:16px}.pb-col{position:sticky;top:112px}
+.pb-row{margin-bottom:10px}
+.pb-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}
+.pb-left{display:flex;align-items:center;gap:0}
+.pb-dot{display:none}
 .pb-name{font-size:12px;font-weight:500;color:#1c1917}
 .pb-right{display:flex;gap:10px;align-items:baseline}
-.pb-pct{font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;font-weight:700}
+.pb-pct{font-family:'Georgia',serif;font-size:18px;font-weight:700}
 .pb-seats{font-size:10px;color:#7a746c}
-.pb-track{height:5px;background:#ede9e2;border-radius:3px;overflow:hidden}
-.pb-fill{height:100%;border-radius:3px;width:0%;transition:width 1.3s cubic-bezier(.16,1,.3,1);opacity:.88}
+.pb-track{height:2px;background:#e8e4dc;border-radius:0;overflow:hidden;margin-top:3px}
+.pb-fill{height:100%;border-radius:0;width:0%;transition:width 1.3s cubic-bezier(.16,1,.3,1);opacity:1}
 
 /* OVERVIEW TABLE */
 .ov-head{display:grid;grid-template-columns:1fr 130px 70px 70px 200px;gap:12px;padding:7px 0;border-bottom:2px solid #1c1917;margin-bottom:2px}
@@ -172,7 +164,7 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .ov-wc{display:flex;align-items:center;gap:6px}
 .ov-wsq{width:9px;height:9px;border-radius:2px;flex-shrink:0}
 .ov-wnm{font-size:11px;font-weight:500}
-.ov-rpct{font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;font-weight:700}
+.ov-rpct{font-family:'Georgia',serif;font-size:20px;font-weight:700}
 .ov-opk{font-size:11px;color:#7a746c}
 .ov-mini{display:flex;gap:2px;align-items:flex-end}
 .ov-expand{border-left:2px solid #8b2700;padding:12px 0 16px 16px;display:none}
@@ -185,25 +177,43 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .ov-exp-p{font-size:10px;color:#7a746c;min-width:36px;text-align:right}
 
 /* DEMOGRAPHICS TABLE */
-.demo-note{font-size:9px;color:#7a746c;margin-bottom:4px;font-style:italic;line-height:1.6}
-.demo-head{display:grid;grid-template-columns:155px 68px 72px 80px 90px 72px 65px 1fr;gap:8px;padding:8px 0;border-bottom:2px solid #1c1917;margin-bottom:2px}
-.demo-head span{font-size:8.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#7a746c}
-.demo-row{display:grid;grid-template-columns:155px 68px 72px 80px 90px 72px 65px 1fr;gap:8px;padding:11px 0;border-bottom:1px solid #ddd8d0;align-items:center}
-.demo-nm{font-size:11px;font-weight:500;color:#1c1917}
-.demo-num{font-size:11px;color:#7a746c}
+.demo-note{font-size:9px;color:#7a746c;margin-bottom:8px;font-style:italic;line-height:1.6}
+.demo-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;display:block}
+.demo-head{display:flex;min-width:860px;padding:7px 0;border-bottom:2px solid #1c1917;margin-bottom:0;gap:0}
+.demo-head span{font-size:8px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#7a746c;white-space:nowrap;flex-shrink:0;padding-right:8px}
+.demo-head span:nth-child(1){width:160px}
+.demo-head span:nth-child(2){width:70px}
+.demo-head span:nth-child(3){width:75px}
+.demo-head span:nth-child(4){width:85px}
+.demo-head span:nth-child(5){width:95px}
+.demo-head span:nth-child(6){width:78px}
+.demo-head span:nth-child(7){width:70px}
+.demo-head span:nth-child(8){flex:1}
+.demo-row{display:flex;min-width:860px;padding:10px 0;border-bottom:1px solid #ddd8d0;align-items:center;gap:0}
+.demo-row>*{flex-shrink:0;padding-right:8px}
+.demo-row>*:nth-child(1){width:160px}
+.demo-row>*:nth-child(2){width:70px}
+.demo-row>*:nth-child(3){width:75px}
+.demo-row>*:nth-child(4){width:85px}
+.demo-row>*:nth-child(5){width:95px}
+.demo-row>*:nth-child(6){width:78px}
+.demo-row>*:nth-child(7){width:70px}
+.demo-row>*:nth-child(8){flex:1;padding-right:0}
+.demo-nm{font-size:11px;font-weight:500;color:#1c1917;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.demo-num{font-size:11px;color:#7a746c;white-space:nowrap}
 .demo-bar-wrap{display:flex;flex-direction:column;gap:3px}
-.demo-bt{height:4px;background:#ede9e2;border-radius:2px;overflow:hidden}
+.demo-bt{height:4px;background:#ede9e2;border-radius:2px;overflow:hidden;width:100%}
 .demo-bf{height:100%;border-radius:2px}
-.demo-bv{font-size:10px;color:#7a746c}
-.demo-koop{font-size:10.5px;color:#7a746c}
-.demo-profiel{font-size:10px;color:#7a746c;line-height:1.55}
+.demo-bv{font-size:10px}
+.demo-koop{font-size:10px;color:#7a746c;white-space:nowrap}
+.demo-profiel{font-size:10px;color:#7a746c;line-height:1.5}
 .demo-src{font-size:9px;color:#7a746c;margin-top:10px}
 .demo-na{font-size:13px;color:#7a746c;padding:28px 0;text-align:center;font-style:italic}
 
 /* FOOTER */
 footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
 .foot-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start}
-.foot-logo{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:38px;letter-spacing:-.02em;margin-bottom:10px}
+.foot-logo{font-family:'Georgia',serif;font-weight:700;font-size:38px;letter-spacing:-.02em;margin-bottom:10px}
 .foot-desc{font-size:11px;color:rgba(247,243,238,.5);line-height:1.65;max-width:300px}
 .foot-right{font-size:10px;color:rgba(247,243,238,.45);text-align:right;letter-spacing:.08em;line-height:2}
 
@@ -216,119 +226,22 @@ footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
   .hero,.map-section{padding-left:16px;padding-right:16px}
   .ov-head,.ov-main{grid-template-columns:1fr 110px 60px}
   .ov-head span:nth-child(n+4),.ov-main>*:nth-child(n+4){display:none}
-  .demo-head,.demo-row{grid-template-columns:110px 1fr 1fr 1fr}
-  .demo-head span:nth-child(n+5),.demo-row>*:nth-child(n+5){display:none}
+  /* demo table scrolls horizontally on small screens - no column hiding needed */
 }
 </style>
+
 </head>
 <body>
-<div id="cookie-banner">
-  <p>This website uses cookies to improve your experience.</p>
-  <div id="cookie-buttons">
-    <button id="cookie-accept">Accept</button>
-    <button id="cookie-reject">Reject</button>
-  </div>
-</div>
 
-    <script>
-  (function () {
-    function getConsent() {
-      try { return localStorage.getItem('cookieConsent'); } 
-      catch (e) { return null; }
-    }
-    function setConsent(val) {
-      try { localStorage.setItem('cookieConsent', val); } 
-      catch (e) {}
-    }
-
-    var banner = document.getElementById('cookie-banner');
-
-    if (!banner) return;
-
-    if (getConsent()) {
-      banner.style.display = 'none';
-      return;
-    }
-
-    banner.style.display = 'flex';
-
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      setConsent('accepted');
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-
-    document.getElementById('cookie-reject').addEventListener('click', function () {
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-  })();
-      #cookie-banner {
-  display: none;    
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #1a1a1a;
-  color: #f5f5f5;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  font-family: sans-serif;
-  font-size: 14px;
-  z-index: 999999;
-  transition: opacity 0.4s ease;
-  pointer-events: all;
-}
-
-#cookie-banner p { margin: 0; }
-
-#cookie-buttons {
-  display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-#cookie-accept, #cookie-reject {
-  border: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  pointer-events: all;
-}
-
-#cookie-accept {
-  background: #ffffff;
-  color: #1a1a1a;
-}
-
-#cookie-accept:hover { background: #e0e0e0; }
-
-#cookie-reject {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-#cookie-reject:hover { background: rgba(255,255,255,0.1); }
-
-@media (max-width: 480px) {
-  #cookie-banner { flex-direction: column; align-items: flex-start; }
-}
-</script>
 <header id="hdr">
   <div class="hd-top">
     <span>GR2026 · Gemeenteraadsverkiezingen · 18 maart 2026</span>
-    <a href="#">evgeniyaorlova.com</a>
+    <a href="#">janeorlova.com</a>
   </div>
   <div class="hd-main">
     <div class="hd-logo">
-      <span class="logo-init">E.O.</span>
-      <span class="logo-name">Evgeniya Orlova</span>
+      <span class="logo-init">J.O.</span>
+      <span class="logo-name">Jane Orlova</span>
     </div>
     <nav>
       <a href="#">Home</a><a href="#">Analyse</a><a href="#" class="active">Uitslag</a><a href="#">Over</a>
@@ -376,64 +289,67 @@ footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
       <div id="city-list"></div>
     </div>
 
-    <div id="detail">
-      <div class="detail-hdr">
-        <span class="detail-city" id="d-name">—</span>
-        <span class="detail-date">GR2026 · 18 maart 2026</span>
-      </div>
-      <div class="winner-banner">
-        <div class="w-dot" id="w-dot"></div>
-        <div><div class="w-sub">Grootste partij</div><div class="w-name" id="w-name">—</div></div>
-        <div style="text-align:right"><div class="w-pct" id="w-pct">—</div><div class="w-seats" id="w-seats">—</div></div>
-      </div>
-      <div class="stats">
-        <div class="s-block"><div class="s-val" id="s-stem">—</div><div class="s-lbl">Stemmen</div></div>
-        <div class="s-block"><div class="s-val" id="s-opk">—</div><div class="s-lbl">Opkomst</div></div>
-        <div class="s-block"><div class="s-val" id="s-zet">—</div><div class="s-lbl">Zetels</div></div>
-      </div>
-      <div class="subtabs">
-        <button class="stab active" data-tab="kaart">Kaart</button>
-        <button class="stab" data-tab="overzicht">Overzicht</button>
-        <button class="stab" data-tab="demografie" id="tab-demo">Demografie</button>
-      </div>
-      <div class="tab-pane active" id="pane-kaart">
-        <div class="kaart-grid">
-          <div>
-            <div class="map-hint">Klik op een gebied voor details</div>
-            <div class="map-wrap" id="map-wrap">
-              <svg id="dsvg" class="district-svg" viewBox="0 0 760 680"></svg>
-              <div class="d-overlay" id="d-overlay">
-                <div class="d-ov-hd">
-                  <span class="d-ov-title" id="ov-title">—</span>
-                  <button class="d-ov-close" onclick="closeOverlay()">✕</button>
-                </div>
-                <div class="d-ov-body" id="ov-body"></div>
-              </div>
+```
+<div id="detail">
+  <div class="detail-hdr">
+    <span class="detail-city" id="d-name">—</span>
+    <span class="detail-date">GR2026 · 18 maart 2026</span>
+  </div>
+  <div class="winner-banner">
+    <div class="w-dot" id="w-dot"></div>
+    <div><div class="w-sub">Grootste partij</div><div class="w-name" id="w-name">—</div></div>
+    <div style="text-align:right"><div class="w-pct" id="w-pct">—</div><div class="w-seats" id="w-seats">—</div></div>
+  </div>
+  <div class="stats">
+    <div class="s-block"><div class="s-val" id="s-stem">—</div><div class="s-lbl">Stemmen</div></div>
+    <div class="s-block"><div class="s-val" id="s-opk">—</div><div class="s-lbl">Opkomst</div></div>
+    <div class="s-block"><div class="s-val" id="s-zet">—</div><div class="s-lbl">Zetels</div></div>
+  </div>
+  <div class="subtabs">
+    <button class="stab active" data-tab="kaart">Kaart</button>
+    <button class="stab" data-tab="overzicht">Overzicht</button>
+    <button class="stab" data-tab="demografie" id="tab-demo">Demografie</button>
+  </div>
+  <div class="tab-pane active" id="pane-kaart">
+    <div class="kaart-grid">
+      <div>
+        <div class="map-hint">Klik op een gebied voor details</div>
+        <div class="map-wrap" id="map-wrap">
+          <svg id="dsvg" class="district-svg" viewBox="0 0 760 680"></svg>
+          <div class="d-overlay" id="d-overlay">
+            <div class="d-ov-hd">
+              <span class="d-ov-title" id="ov-title">—</span>
+              <button class="d-ov-close" onclick="closeOverlay()">✕</button>
             </div>
-            <div class="map-legend" id="map-legend"></div>
-          </div>
-          <div>
-            <div class="pb-lbl">Uitslag naar partij</div>
-            <div id="party-bars"></div>
+            <div class="d-ov-body" id="ov-body"></div>
           </div>
         </div>
+        <div class="map-legend" id="map-legend"></div>
       </div>
-      <div class="tab-pane" id="pane-overzicht">
-        <div class="ov-head"><span>Wijk / Gebied</span><span>Winnaar</span><span>%</span><span>Opkomst</span><span>Top partijen</span></div>
-        <div id="ov-body-table"></div>
+      <div class="pb-col">
+        <div class="pb-lbl">Uitslag naar partij</div>
+        <div id="party-bars"></div>
       </div>
-      <div class="tab-pane" id="pane-demografie"><div id="demo-content"></div></div>
     </div>
+  </div>
+  <div class="tab-pane" id="pane-overzicht">
+    <div class="ov-head"><span>Wijk / Gebied</span><span>Winnaar</span><span>%</span><span>Opkomst</span><span>Top partijen</span></div>
+    <div id="ov-body-table"></div>
+  </div>
+  <div class="tab-pane" id="pane-demografie"><div id="demo-content"></div></div>
+</div>
+```
+
   </div>
 </section>
 
 <footer>
   <div class="foot-inner">
     <div>
-      <div class="foot-logo">E.O.</div>
+      <div class="foot-logo">J.O.</div>
       <p class="foot-desc">Voorlopige uitslag per stembureau via de gemeenten. Data: GR2026 · 18 maart 2026. Bron: Officiële gemeentelijke uitslagen.</p>
     </div>
-    <div class="foot-right"><div>GR2026 · Gemeenteraadsverkiezingen</div><div>Nederland · 18 maart 2026</div><div>© 2026 evgeniyaorlova.com</div></div>
+    <div class="foot-right"><div>GR2026 · Gemeenteraadsverkiezingen</div><div>Nederland · 18 maart 2026</div><div>© 2026 janeorlova.com</div></div>
   </div>
 </footer>
 
@@ -775,7 +691,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 });
 
 function buildTicker(){
-  const items=['GR2026 · 18 maart 2026','Definitieve uitslag','Den Haag · Rotterdam · Utrecht · Groningen','Eindhoven · Delft · Maastricht · Almere · Amstelveen · Diemen · Fryslân','Evgeniya Orlova · Politieke Analyse'];
+  const items=['GR2026 · 18 maart 2026','Definitieve uitslag','Den Haag · Rotterdam · Utrecht · Groningen','Eindhoven · Delft · Maastricht · Almere · Amstelveen · Diemen · Fryslân','Jane Orlova · Politieke Analyse'];
   const r=[...items,...items];
   document.getElementById('ticker').innerHTML=r.map(t=>`<span class="tick"><span class="tick-dot"></span>${t}</span>`).join('');
 }
@@ -812,7 +728,7 @@ function buildNLDots(){
     c.setAttribute('stroke-width',isAct?2:1.5);c.style.transition='all .2s';
     const t=document.createElementNS(NS,'text');
     t.setAttribute('x',x);t.setAttribute('y',y-12);t.setAttribute('text-anchor','middle');
-    t.setAttribute('font-size',isAct?9.5:8.5);t.setAttribute('font-family','DM Sans,sans-serif');
+    t.setAttribute('font-size',isAct?9.5:8.5);t.setAttribute('font-family','Segoe UI,system-ui,sans-serif');
     t.setAttribute('font-weight',isAct?600:400);t.setAttribute('fill','#1c1917');
     t.style.pointerEvents='none';t.textContent=city.name;
     g2.appendChild(c);g2.appendChild(t);g.appendChild(g2);
@@ -876,6 +792,9 @@ function buildMap(key){
   svg.setAttribute('viewBox',cfg.vb);svg.innerHTML='';
   closeOverlay();
 
+  // Fryslân: hex cartogram
+  if(key==='fryslan'){buildHexMap(city,svg);return;}
+
   const bg=document.createElementNS(NS,'rect');
   bg.setAttribute('x','0');bg.setAttribute('y','0');
   bg.setAttribute('width','760');bg.setAttribute('height','680');
@@ -918,14 +837,14 @@ function buildMap(key){
     const t1=document.createElementNS(NS,'text');
     t1.setAttribute('x',lbl.x);t1.setAttribute('y',lbl.y-5);
     t1.setAttribute('text-anchor','middle');t1.setAttribute('font-size','8');
-    t1.setAttribute('font-family','DM Sans,sans-serif');t1.setAttribute('font-weight','500');
+    t1.setAttribute('font-family','Segoe UI,system-ui,sans-serif');t1.setAttribute('font-weight','500');
     t1.setAttribute('fill','rgba(255,255,255,.92)');t1.style.pointerEvents='none';
     t1.textContent=short;svg.appendChild(t1);
     if(dist){
       const t2=document.createElementNS(NS,'text');
       t2.setAttribute('x',lbl.x);t2.setAttribute('y',lbl.y+9);
       t2.setAttribute('text-anchor','middle');t2.setAttribute('font-size','9');
-      t2.setAttribute('font-family','Cormorant Garamond,Georgia,serif');t2.setAttribute('font-weight','700');
+      t2.setAttribute('font-family','Georgia,serif');t2.setAttribute('font-weight','700');
       t2.setAttribute('fill','rgba(255,255,255,.9)');t2.style.pointerEvents='none';
       t2.textContent=dist.pct+'%';svg.appendChild(t2);
     }
@@ -966,10 +885,105 @@ function openOverlay(name,dist,city){
       <span class="d-bar-pct" style="color:${pc(r.p)}">${r.pct}%</span>
     </div>`;
   });
-  html+=`<div style="font-size:9px;color:#7a746c;font-style:italic;margin-top:11px;padding-top:8px;border-top:1px solid #ddd8d0">Stemmen geaggregeerd per stadsdeel op basis van officiële uitslag.</div>`;
+  html+=`<div style="font-size:8.5px;color:#aaa;font-style:italic;margin-top:12px;padding-top:8px;border-top:1px solid #eee;line-height:1.4">Uitslag geaggregeerd per stadsdeel.</div>`;
   document.getElementById('ov-body').innerHTML=html;
   document.getElementById('d-overlay').classList.add('open');
 }
+
+/* ═══════════════════════════════════════════
+   FRYSLÂN HEX CARTOGRAM — touching honeycomb
+═══════════════════════════════════════════ */
+// Flat-top hexagons in a tight honeycomb grid
+// Each municipality placed at (col, row) with odd-row offset
+
+const HEX_CELLS = [
+  {n:'Vlieland',          col:0,row:0,s:26},
+  {n:'Terschelling',      col:1,row:0,s:32},
+  {n:'Ameland',           col:3,row:0,s:30},
+  {n:'Schiermonnikoog',   col:5,row:0,s:24},
+  {n:'Harlingen',         col:0,row:1,s:34},
+  {n:'Waadhoeke',         col:1,row:1,s:42},
+  {n:'Leeuwarden',        col:2,row:1,s:52},
+  {n:'Tytsjerksteradiel', col:3,row:1,s:38},
+  {n:'Dantumadiel',       col:4,row:1,s:32},
+  {n:'Achtkarspelen',     col:5,row:1,s:32},
+  {n:'Noardeast-Fryslân', col:6,row:1,s:40},
+  {n:'Súdwest-Fryslân',   col:0,row:2,s:56},
+  {n:'De Fryske Marren',  col:2,row:2,s:46},
+  {n:'Smallingerland',    col:3,row:2,s:40},
+  {n:'Heerenveen',        col:4,row:2,s:40},
+  {n:'Ooststellingwerf',  col:5,row:2,s:36},
+  {n:'Opsterland',        col:2,row:3,s:38},
+  {n:'Weststellingwerf',  col:3,row:3,s:36},
+];
+
+function flatHexPts(cx,cy,r){
+  const pts=[];
+  for(let i=0;i<6;i++){const a=Math.PI/3*i;pts.push((cx+r*Math.cos(a)).toFixed(1)+','+(cy+r*Math.sin(a)).toFixed(1));}
+  return pts.join(' ');
+}
+
+function buildHexMap(city,svg){
+  svg.setAttribute('viewBox','0 0 760 380');
+  svg.innerHTML='';
+  const bg=document.createElementNS(NS,'rect');
+  bg.setAttribute('x','0');bg.setAttribute('y','0');
+  bg.setAttribute('width','760');bg.setAttribute('height','380');
+  bg.setAttribute('fill','#d4cbb8');
+  svg.appendChild(bg);
+
+  const R=42; // base unit for grid spacing
+  const CW=R*Math.sqrt(3); // col width ~72.7
+  const RH=R*1.5;           // row height 63
+  const OX=60,OY=55;        // origin
+
+  HEX_CELLS.forEach(h=>{
+    const dist=city.districts.find(d=>d.n===h.n);
+    if(!dist)return;
+    const r=h.s;
+    const cx=OX+h.col*CW+(h.row%2===1?CW/2:0);
+    const cy=OY+h.row*RH;
+    const color=pc(dist.w);
+
+    const poly=document.createElementNS(NS,'polygon');
+    poly.setAttribute('points',flatHexPts(cx,cy,r));
+    poly.setAttribute('fill',color);
+    poly.setAttribute('stroke','#d4cbb8');
+    poly.setAttribute('stroke-width','2.5');
+    poly.setAttribute('class','dp');
+    poly.style.opacity='0.86';
+    poly.addEventListener('click',e=>{e.stopPropagation();openOverlay(h.n,dist,city);});
+    poly.addEventListener('mouseenter',()=>{poly.style.opacity='1';poly.style.filter='brightness(1.1)';});
+    poly.addEventListener('mouseleave',()=>{poly.style.opacity='0.86';poly.style.filter='';});
+    svg.appendChild(poly);
+
+    const short=h.n.split(/[-\s]/)[0];
+    const fs=r>48?'8.5':r>34?'7.5':'6.5';
+    const t1=document.createElementNS(NS,'text');
+    t1.setAttribute('x',cx);t1.setAttribute('y',cy-(r>36?7:4));
+    t1.setAttribute('text-anchor','middle');t1.setAttribute('font-size',fs);
+    t1.setAttribute('font-family','Segoe UI,system-ui,sans-serif');t1.setAttribute('font-weight','500');
+    t1.setAttribute('fill','rgba(255,255,255,.96)');t1.style.pointerEvents='none';
+    t1.textContent=short;svg.appendChild(t1);
+
+    if(r>28){
+      const t2=document.createElementNS(NS,'text');
+      t2.setAttribute('x',cx);t2.setAttribute('y',cy+(r>44?9:7));
+      t2.setAttribute('text-anchor','middle');
+      t2.setAttribute('font-size',r>44?'10':'8.5');
+      t2.setAttribute('font-family','Georgia,serif');t2.setAttribute('font-weight','700');
+      t2.setAttribute('fill','rgba(255,255,255,.92)');t2.style.pointerEvents='none';
+      t2.textContent=dist.pct+'%';svg.appendChild(t2);
+    }
+  });
+
+  svg.addEventListener('click',closeOverlay);
+  const winners=[...new Set(city.districts.map(d=>d.w))];
+  document.getElementById('map-legend').innerHTML=winners.map(w=>
+    `<div class="mleg-item"><div class="mleg-sq" style="background:${pc(w)}"></div><span>${w}</span></div>`
+  ).join('');
+}
+
 function closeOverlay(){document.getElementById('d-overlay').classList.remove('open');}
 
 /* ═══════════════════════════════════════════
@@ -980,7 +994,7 @@ function buildPartyBars(key){
   document.getElementById('party-bars').innerHTML=city.results.map((r,i)=>`
     <div class="pb-row">
       <div class="pb-top">
-        <div class="pb-left"><div class="pb-dot" style="background:${pc(r.p)}"></div><span class="pb-name">${r.p}</span></div>
+        <span class="pb-name">${r.p}</span>
         <div class="pb-right"><span class="pb-pct" style="color:${pc(r.p)}">${r.pct}%</span><span class="pb-seats">${r.z}z</span></div>
       </div>
       <div class="pb-track"><div class="pb-fill" data-w="${(r.pct/max)*100}" style="background:${pc(r.p)}"></div></div>
@@ -1021,7 +1035,11 @@ function buildDemo(key){
   const rows=DEMO[key];
   if(!rows){document.getElementById('demo-content').innerHTML='<div class="demo-na">Demografiedata niet beschikbaar.</div>';return;}
   let html=`<div class="demo-note">Migratieachtergrond = min. één ouder in buitenland geboren (CBS). WOZ = gemiddelde woningwaarde 2024. ~ = schatting o.b.v. CBS buurtdata.</div>
-  <div class="demo-head"><span>Wijk / Gebied</span><span>Inwoners</span><span>Gem. WOZ</span><span>% Ned. achtergrond</span><span>% Niet-westers migr.</span><span>% Westers migr.</span><span>Eigendom</span><span>Profiel</span></div>`;
+  <div class="demo-head">
+    <span>Wijk / Gebied</span><span>Inwoners</span><span>Gem. WOZ</span>
+    <span>% Ned. achtergrond</span><span>% Niet-westers migr.</span>
+    <span>% Westers migr.</span><span>Eigendom</span><span>Profiel</span>
+  </div>`;
   rows.forEach(d=>{
     const nedC=d.ned>=58?'#1a7a42':d.ned>=45?'#887000':'#c00000';
     const nwC=d.nw<=20?'#1a7a42':d.nw<=35?'#887000':'#c00000';
@@ -1030,15 +1048,16 @@ function buildDemo(key){
       <span class="demo-num">${d.inw}</span>
       <span class="demo-num">${d.woz}</span>
       <div class="demo-bar-wrap"><div class="demo-bt"><div class="demo-bf" style="width:${d.ned}%;background:${nedC}"></div></div><span class="demo-bv" style="color:${nedC}">${d.ned}%</span></div>
-      <div class="demo-bar-wrap"><div class="demo-bt"><div class="demo-bf" style="width:${d.nw*.8}%;background:${nwC}"></div></div><span class="demo-bv" style="color:${nwC}">${d.nw}%</span></div>
-      <div class="demo-bar-wrap"><div class="demo-bt"><div class="demo-bf" style="width:${d.wm*1.5}%;background:#4B92DB"></div></div><span class="demo-bv">${d.wm}%</span></div>
+      <div class="demo-bar-wrap"><div class="demo-bt"><div class="demo-bf" style="width:${Math.min(d.nw*1.5,100)}%;background:${nwC}"></div></div><span class="demo-bv" style="color:${nwC}">${d.nw}%</span></div>
+      <div class="demo-bar-wrap"><div class="demo-bt"><div class="demo-bf" style="width:${Math.min(d.wm*2,100)}%;background:#4B92DB"></div></div><span class="demo-bv">${d.wm}%</span></div>
       <span class="demo-koop">${d.koop}</span>
       <span class="demo-profiel">${d.profiel}</span>
     </div>`;
   });
   html+=`<div class="demo-src">Bronnen: CBS Kerncijfers Wijken 2025 · AlleCijfers.nl · WOZ peildatum 1 jan 2024 · ~ = schatting</div>`;
-  document.getElementById('demo-content').innerHTML=html;
+  document.getElementById('demo-content').innerHTML='<div class="demo-wrap">'+html+'</div>';
 }
 </script>
+
 </body>
 </html>
