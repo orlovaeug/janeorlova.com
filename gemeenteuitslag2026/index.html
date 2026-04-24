@@ -26,8 +26,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 /* HEADER */
 header{position:sticky;top:0;z-index:100;background:#f7f3ee;border-bottom:1px solid #ddd8d0;transition:box-shadow .3s}
 header.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.07)}
-.hd-top{border-bottom:1px solid #ddd8d0;padding:5px 40px;display:flex;justify-content:space-between;font-size:9.5px;color:#7a746c;letter-spacing:.14em;text-transform:uppercase}
-.hd-main{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.hd-top{border-bottom:1px solid #ddd8d0;padding:5px 24px;display:flex;justify-content:space-between;font-size:9.5px;color:#7a746c;letter-spacing:.14em;text-transform:uppercase}
+.hd-main{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px}
 .hd-logo{display:flex;align-items:baseline;gap:10px}
 .logo-init{font-family:'Georgia',serif;font-weight:700;font-size:42px;line-height:1;color:#1c1917;letter-spacing:-.02em}
 .logo-name{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#7a746c;padding-bottom:4px}
@@ -37,7 +37,7 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .hd-bar{height:3px;background:#8b2700}
 
 /* HERO */
-.hero{max-width:1200px;margin:0 auto;padding:72px 40px 52px;border-bottom:1px solid #ddd8d0}
+.hero{max-width:1200px;margin:0 auto;padding:40px 24px 36px;border-bottom:1px solid #ddd8d0}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end}
 .hero-eyebrow{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#8b2700;display:block;margin-bottom:14px}
 .hero-h1{font-family:'Georgia',serif;font-weight:600;font-size:clamp(44px,5vw,78px);line-height:1.02;color:#1c1917;margin-bottom:18px}
@@ -57,11 +57,11 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .rule-l{flex:1;height:1px;background:#ddd8d0}
 
 /* MAIN LAYOUT */
-.map-section{max-width:1200px;margin:0 auto;padding:60px 40px 80px}
-.map-layout{display:grid;grid-template-columns:300px 1fr;gap:60px;align-items:start}
+.map-section{max-width:1200px;margin:0 auto;padding:40px 24px 60px}
+.map-layout{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
 
 /* SIDEBAR */
-.sidebar{position:sticky;top:96px}
+.sidebar{}
 .nl-svg{width:100%;max-width:360px}
 .nl-legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
 .leg-item{display:flex;align-items:center;gap:4px;font-size:9px;color:#7a746c}
@@ -142,7 +142,7 @@ nav a.active{color:#8b2700;font-weight:500;border-bottom-color:#8b2700}
 .mleg-sq{width:8px;height:8px;flex-shrink:0}
 
 /* PARTY BARS (right panel) */
-.pb-lbl{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a746c;margin-bottom:16px}.pb-col{position:sticky;top:112px}
+.pb-lbl{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:#7a746c;margin-bottom:16px}.pb-col{}
 .pb-row{margin-bottom:10px}
 .pb-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}
 .pb-left{display:flex;align-items:center;gap:0}
@@ -217,6 +217,16 @@ footer{background:#1c1917;color:#f7f3ee;padding:44px 40px 36px}
 .foot-desc{font-size:11px;color:rgba(247,243,238,.5);line-height:1.65;max-width:300px}
 .foot-right{font-size:10px;color:rgba(247,243,238,.45);text-align:right;letter-spacing:.08em;line-height:2}
 
+@media(max-width:800px){
+  .map-layout{grid-template-columns:1fr}
+  .sidebar{}
+  .kaart-grid{grid-template-columns:1fr}
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hd-top,.hd-main{padding-left:16px;padding-right:16px}
+  .hero,.map-section{padding-left:16px;padding-right:16px}
+  .ov-head,.ov-main{grid-template-columns:1fr 110px 60px}
+  .ov-head span:nth-child(n+4),.ov-main>*:nth-child(n+4){display:none}
+}
 @media(max-width:900px){
   .map-layout{grid-template-columns:1fr}
   .sidebar{position:static}
