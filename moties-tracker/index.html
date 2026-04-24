@@ -1,778 +1,858 @@
 <!DOCTYPE html>
-
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Motie Tracker — Kabinet-Jetten</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motie Tracker — Kabinet-Jetten · Jane Orlova</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-9SV5Y8BZ24');
-  </script>
-
-  <!-- Google Tag Manager -->
-
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PC93BV4D');</script>
-
-  <!-- End Google Tag Manager -->
-  <style>
-/* ── Design Tokens ── */
-:root{
-  --ink:#0D0D0F;--ink2:#2A2A30;--ink3:#5C5C6B;
-  --paper:#F7F5F0;--paper2:#EDEAE3;--paper3:#E3DFD6;
-  --accent:#C8412A;--accent2:#E8604A;--accentbg:#FBF0EE;--accentbd:#F0C4BC;
-  --green:#2A6B45;--greenbg:#EAF4EF;--greenbd:#B4DACC;
-  --amber:#8A5200;--amberbg:#FEF4E3;--amberbd:#F2D28A;
-  --mid:#8A8A96;--border:#D8D4CB;--border2:#C8C4BA;
-  --shadow:0 2px 12px rgba(13,13,15,.07);
-  --shadow-lg:0 8px 40px rgba(13,13,15,.12);
-  --rad:16px;--rads:10px;
-  --nav-h:54px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── RESET ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Syne",sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;-webkit-font-smoothing:antialiased}
-button,input,select,textarea{font-family:inherit}
-button{cursor:pointer}a{text-decoration:none;color:inherit}
+body{background:#f7f3ee;color:#1c1917;font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
 li{list-style:none}
+select,input,textarea{font-family:inherit}
+::selection{background:#8b2700;color:#fff}
+::-webkit-scrollbar{width:3px;height:3px}
+::-webkit-scrollbar-thumb{background:#ddd8d0;border-radius:2px}
 
-/* scrollbar */
-::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-track{background:var(–paper2)}
-::-webkit-scrollbar-thumb{background:var(–border2);border-radius:3px}
-
-/* nav */
-#nav{background:#0D0D0F;position:sticky;top:0;z-index:200;border-bottom:1px solid rgba(255,255,255,.06);}
-#nv{max-width:1280px;margin:0 auto;padding:0 16px;display:flex;align-items:center;gap:10px;height:var(–nav-h)}
-#nb{font-family:“Libre Baskerville”,serif;font-size:17px;font-weight:700;color:#fff;white-space:nowrap;flex-shrink:0}
-.n-sep{width:1px;height:20px;background:rgba(255,255,255,.12);flex-shrink:0}
-#nsub{font-size:10px;color:rgba(255,255,255,.32);letter-spacing:.08em;font-weight:600;flex-shrink:0;white-space:nowrap;font-family:“DM Mono”,monospace;text-transform:uppercase;
-/* hide on very small screens */
+/* ── TOKENS ── */
+:root{
+  --bg:#f7f3ee;
+  --ink:#1c1917;
+  --red:#8b2700;
+  --muted:#7a746c;
+  --border:#ddd8d0;
+  --card:#ede9e2;
+  --green:#1a5c3a;
+  --greenbg:rgba(26,92,58,0.09);
+  --greenbd:rgba(26,92,58,0.25);
+  --redbg:rgba(139,39,0,0.09);
+  --redbd:rgba(139,39,0,0.25);
+  --amberbg:rgba(120,96,0,0.09);
+  --amberbd:rgba(120,96,0,0.25);
+  --amber:#7a6000;
+  --rad:4px;
 }
-#nright{display:flex;gap:6px;flex-shrink:0;margin-left:auto}
-.nbs{padding:7px 12px;border-radius:100px;border:1px solid rgba(255,255,255,.18);background:transparent;color:rgba(255,255,255,.7);font-size:11px;font-weight:600;transition:all .2s}
-.nbs:hover{border-color:rgba(255,255,255,.45);color:#fff}
-.nbp{padding:7px 14px;border-radius:100px;border:none;background:#fff;color:var(–ink);font-size:11px;font-weight:700}
-.nbp:hover{background:var(–paper2)}
 
-/* tabs */
-#ntabs-row{background:rgba(0,0,0,.25);border-top:1px solid rgba(255,255,255,.06)}
-#ntabs{max-width:1280px;margin:0 auto;padding:0 16px;display:flex;gap:0;overflow-x:auto}
-#ntabs::-webkit-scrollbar{display:none}
-.nt{padding:9px 14px;border:none;border-bottom:2px solid transparent;background:transparent;color:rgba(255,255,255,.42);font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
-.nt.on{border-bottom-color:#fff;color:#fff}
-.nt:hover:not(.on){color:rgba(255,255,255,.72);background:rgba(255,255,255,.04)}
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ticker-inner{display:flex;gap:48px;white-space:nowrap;animation:ticker 30s linear infinite;width:max-content}
+.spin{width:28px;height:28px;border:2px solid var(--border);border-top-color:var(--ink);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
 
-/* main */
-#main{max-width:1280px;margin:0 auto;padding:16px 16px 72px}
+/* ── HEADER ── */
+#site-header{position:sticky;top:0;z-index:200;background:var(--bg);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+#site-header.scrolled{box-shadow:0 2px 24px rgba(0,0,0,.07)}
+#header-top{border-bottom:1px solid var(--border);padding:5px 40px;display:flex;justify-content:space-between;align-items:center}
+#header-main{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo-wrap{display:flex;align-items:baseline;gap:10px}
+.logo-serif{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:40px;line-height:1;color:var(--ink);letter-spacing:-.02em}
+.logo-name{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding-bottom:4px}
+#header-nav{display:flex;gap:24px;align-items:center}
+.nav-link{font-size:10.5px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid transparent;padding-bottom:2px;transition:color .15s}
+.nav-link.active{color:var(--red);border-bottom-color:var(--red)}
+.nav-link:hover:not(.active){color:var(--ink)}
+.header-actions{display:flex;gap:8px}
+.btn-ghost{padding:7px 14px;border-radius:2px;border:1px solid var(--border);background:transparent;color:var(--ink);font-size:11px;font-weight:500;transition:all .15s}
+.btn-ghost:hover{border-color:var(--ink);background:var(--ink);color:#fff}
+.btn-primary{padding:7px 16px;border-radius:2px;border:none;background:var(--ink);color:#f7f3ee;font-size:11px;font-weight:700;transition:opacity .15s}
+.btn-primary:hover{opacity:.85}
+#header-red-line{height:3px;background:var(--red)}
 
-/* hero — FIXED: always 2-col on mobile, no cut-off */
-#hero{background:#0D0D0F;border-radius:var(–rad);padding:20px 16px;margin-bottom:16px}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media(min-width:700px){.hero-grid{grid-template-columns:repeat(5,1fr);gap:0}}
-.hs{padding:0}
-@media(min-width:700px){
-.hs{padding:0 20px;border-right:1px solid rgba(255,255,255,.08)}
-.hs:first-child{padding-left:0}.hs:last-child{border-right:none}
+/* ── TICKER ── */
+#ticker-wrap{overflow:hidden;border-bottom:1px solid var(--border);padding:6px 0}
+.ticker-item{font-size:9px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:16px}
+.ticker-dot{display:inline-block;width:4px;height:4px;border-radius:50%;background:var(--red);flex-shrink:0}
+
+/* ── TABS ── */
+#tabs-row{background:var(--ink);border-bottom:1px solid rgba(255,255,255,.06)}
+#tabs-inner{max-width:1200px;margin:0 auto;padding:0 40px;display:flex;gap:0;overflow-x:auto}
+#tabs-inner::-webkit-scrollbar{display:none}
+.tab-btn{padding:10px 16px;border:none;border-bottom:2px solid transparent;background:transparent;color:rgba(255,255,255,.42);font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;transition:all .15s}
+.tab-btn.active{border-bottom-color:#fff;color:#fff}
+.tab-btn:hover:not(.active){color:rgba(255,255,255,.75);background:rgba(255,255,255,.04)}
+
+/* ── MAIN ── */
+#main-wrap{max-width:1200px;margin:0 auto;padding:0 40px 80px}
+
+/* ── RULE LABEL ── */
+.rule-label{display:flex;align-items:center;gap:14px;margin-bottom:28px;margin-top:48px}
+.rule-label .rl-bar{height:2px;width:24px;background:var(--red);flex-shrink:0}
+.rule-label .rl-text{font-size:9.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.rule-label .rl-line{flex:1;height:1px;background:var(--border)}
+.rule-label .rl-right{font-size:9.5px;color:var(--muted)}
+
+/* ── HERO STATS ── */
+#hero-stats{padding:40px 0 32px;display:grid;grid-template-columns:repeat(5,1fr);border-bottom:1px solid var(--border);gap:0}
+.hero-stat{padding:0 28px;border-right:1px solid var(--border)}
+.hero-stat:first-child{padding-left:0}
+.hero-stat:last-child{border-right:none}
+.hs-label{font-size:9px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-family:'DM Mono',monospace}
+.hs-value{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;line-height:.9;letter-spacing:-.03em;color:var(--ink)}
+.hs-value.green{color:var(--green)}
+.hs-value.red{color:var(--red)}
+.hs-sub{font-size:10px;color:var(--muted);margin-top:8px}
+@media(max-width:768px){
+  #hero-stats{grid-template-columns:1fr 1fr;gap:16px}
+  .hero-stat{border-right:none;padding:0}
 }
-.hsl{font-size:9px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:6px;font-family:“DM Mono”,monospace}
-.hsv{font-family:“Libre Baskerville”,serif;font-size:30px;font-weight:700;line-height:.95;letter-spacing:-.03em;color:#ffffff}
-@media(min-width:700px){.hsv{font-size:36px}}
-.hss{font-size:10px;color:rgba(255,255,255,.35);margin-top:6px}
-.hsa{font-size:10px;margin-top:6px;display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:100px;font-weight:700}
-.hsa-g{background:rgba(42,107,69,.4);color:#7DDBA8}
-.hsa-r{background:rgba(200,65,42,.4);color:#F5A090}
 
-/* search/filter */
-#srow{display:flex;gap:8px;margin-bottom:10px}
-#sw{position:relative;flex:1}
-#si{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(–mid);font-size:14px;pointer-events:none}
-#sinp{width:100%;padding:11px 14px 11px 40px;border:1.5px solid var(–border);border-radius:100px;font-size:13px;outline:none;background:#fff}
-#sinp:focus{border-color:var(–ink);box-shadow:0 0 0 3px rgba(13,13,15,.06)}
-.tbtn{padding:9px 16px;border-radius:100px;border:1.5px solid var(–border);background:#fff;color:var(–ink2);font-size:11px;font-weight:700;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-.tbtn:hover,.tbtn.on{border-color:var(–ink);background:var(–ink);color:#fff}
-#fp{background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
-@media(min-width:600px){#fp{grid-template-columns:1fr 1fr 1fr}}
-#fp select{padding:9px 30px 9px 13px;border:1.5px solid var(–border);border-radius:100px;font-size:12px;background:var(–paper);appearance:none}
-#fcount{font-size:11px;color:var(–mid);grid-column:1/-1;text-align:right}
+/* ── SEARCH / FILTER ── */
+#search-row{display:flex;gap:10px;margin-bottom:12px;align-items:center}
+#search-wrap{position:relative;flex:1}
+#search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:13px;pointer-events:none}
+#search-inp{width:100%;padding:9px 14px 9px 38px;border:1px solid var(--border);border-radius:2px;font-size:12px;outline:none;background:transparent;transition:border-color .15s}
+#search-inp:focus{border-color:var(--ink)}
+.filter-select{padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:11px;background:transparent;outline:none;appearance:none;color:var(--ink);cursor:pointer}
+.filter-select:focus{border-color:var(--ink)}
+#filter-count{font-size:10px;color:var(--muted)}
 
-/* motie cards */
-#ml{display:flex;flex-direction:column;gap:8px}
-.mc{background:#fff;border-radius:var(–rad);border:1.5px solid var(–border);transition:box-shadow .2s,transform .2s}
-.mc:hover{box-shadow:var(–shadow);transform:translateY(-1px)}
-.mc.open{box-shadow:var(–shadow-lg);border-color:var(–border2)}
-.mh{display:flex;align-items:stretch;cursor:pointer;min-height:66px}
-.ms{width:4px;flex-shrink:0;border-radius:var(–rad) 0 0 var(–rad)}
-.mb{flex:1;padding:14px 14px}
-.mm{display:flex;align-items:center;gap:6px;margin-bottom:5px;flex-wrap:wrap}
-.mdt{font-size:10px;color:var(–mid);font-family:“DM Mono”,monospace}
-.msep{color:var(–border2);font-size:11px}
-.mi{font-size:10px;font-weight:700;background:var(–ink);color:#fff;padding:2px 9px;border-radius:100px}
-.mth{font-size:10px;padding:2px 9px;background:var(–paper2);color:var(–ink2);border-radius:100px;border:1px solid var(–border)}
-.mt{font-family:“Libre Baskerville”,serif;font-size:14px;font-weight:400;line-height:1.4;margin-bottom:7px}
-.mbg{display:flex;gap:5px;flex-wrap:wrap}
-.mch{padding-right:14px;color:var(–mid);font-size:11px;display:flex;align-items:center;flex-shrink:0;transition:transform .2s}
-.mc.open .mch{transform:rotate(180deg)}
-.md{border-top:1.5px solid var(–paper2);padding:16px 18px 18px;background:var(–paper);border-radius:0 0 var(–rad) var(–rad)}
-.mtl{font-size:13px;color:var(–ink2);line-height:1.75;border-left:3px solid var(–ink);padding-left:12px;margin-bottom:14px;font-family:“Libre Baskerville”,serif;font-style:italic}
-.tkl{display:inline-flex;align-items:center;gap:6px;font-size:11px;padding:7px 14px;border:1.5px solid var(–border2);border-radius:100px;margin-bottom:14px;font-weight:700;background:#fff}
-.tkl:hover{background:var(–ink);color:#fff}
-.badge{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;font-size:10px;font-weight:700;border:1px solid;border-radius:100px}
-.vs{margin-top:14px;padding-top:12px;border-top:1.5px solid var(–border)}
-.vl{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
-.vg{display:flex;align-items:flex-start;gap:8px;margin-bottom:7px;flex-wrap:wrap}
-.vp{font-size:10px;font-weight:700;padding:2px 9px;border:1px solid;white-space:nowrap;border-radius:100px}
-.vc2{display:flex;flex-wrap:wrap;gap:3px}
-.vcp{font-size:10px;font-weight:600;padding:2px 7px;border:1px solid;border-radius:100px}
-.vem{font-size:12px;color:var(–mid);font-style:italic}
-#emsg{text-align:center;padding:72px 20px;color:var(–mid);background:#fff;border-radius:var(–rad);border:1.5px solid var(–border)}
-#emsg p{font-family:“Libre Baskerville”,serif;font-size:20px;color:var(–ink);margin-bottom:8px}
+/* ── MOTION TABLE (editorial rows) ── */
+#motie-list{display:flex;flex-direction:column}
+.motie-row{border-bottom:1px solid var(--border);background:transparent;transition:background .15s}
+.motie-row:hover{background:var(--card)}
+.motie-row-grid{display:grid;grid-template-columns:88px 1fr 72px 120px 140px 20px;gap:12px;padding:18px 0;align-items:start;cursor:pointer}
+.motie-date{font-size:10.5px;color:var(--muted);font-family:'DM Mono',monospace;padding-top:2px}
+.motie-title-wrap .motie-title{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:18px;color:var(--ink);line-height:1.25;transition:color .15s}
+.motie-row:hover .motie-title,.motie-row.open .motie-title{color:var(--red)}
+.motie-thema{font-size:9px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:3px;font-family:'DM Sans',sans-serif}
+.motie-indiener{font-size:11px;font-weight:500;color:var(--ink);padding-top:2px}
+.status-badge{font-size:10px;font-weight:500;padding:3px 10px;border-radius:2px;display:inline-flex;align-items:center;height:22px;width:fit-content;white-space:nowrap}
+.conform-label{font-size:10px;font-weight:500;padding-top:2px}
+.motie-chevron{font-size:13px;color:var(--muted);padding-top:2px;text-align:center;display:inline-block;transition:transform .2s;line-height:1}
+.motie-row.open .motie-chevron{transform:rotate(180deg)}
+.motie-detail{margin:0 0 16px 100px;padding-left:16px;padding-top:12px;padding-bottom:12px;border-left:2px solid var(--red);animation:fadeUp .2s ease}
+.motie-detail-text{font-size:13px;color:var(--muted);line-height:1.75;font-weight:300}
+.motie-detail-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--red);border-bottom:1px solid var(--redbd);padding-bottom:2px}
+.motie-detail-link:hover{opacity:.75}
+.vote-section{margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}
+.vote-label{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.vote-row{display:flex;align-items:flex-start;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+.vote-tag{font-size:10px;font-weight:600;padding:2px 9px;border-radius:2px;border:1px solid;white-space:nowrap}
+.vote-pill{font-size:9.5px;padding:2px 7px;border-radius:2px;border:1px solid}
 
-/* stats */
-.stat-section-label{font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(–mid);font-family:“DM Mono”,monospace;margin-bottom:12px;border-bottom:1px solid var(–border);padding-bottom:8px}
-.kpi-strip{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:4px}
-@media(min-width:600px){.kpi-strip{grid-template-columns:repeat(4,1fr)}}
-.kpi{background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:16px 18px}
-.kpi-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(–mid);margin-bottom:10px}
-.kpi-val{font-family:“Libre Baskerville”,serif;font-size:38px;font-weight:700;line-height:.9;letter-spacing:-.03em}
-.kpi-sub{font-size:11px;color:var(–mid);margin-top:8px}
-.kpi-green{color:var(–green)}.kpi-amber{color:var(–amber)}
-.stat-2col{display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:768px){.stat-2col{grid-template-columns:3fr 2fr}}
-.sc{background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:20px 22px}
-.sc-title{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(–mid);margin-bottom:16px}
+/* table header */
+.motie-header{display:grid;grid-template-columns:88px 1fr 72px 120px 140px 20px;gap:12px;padding:8px 0;border-bottom:2px solid var(--ink);margin-bottom:0}
+.motie-header span{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* empty state */
+.empty-state{text-align:center;padding:72px 20px;color:var(--muted)}
+.empty-state p{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--ink);margin-bottom:8px}
+
+/* ── ARCHIEF / IN PROCESS ── */
+.arch-month{margin-bottom:6px;border:1px solid var(--border);border-radius:2px;background:#fff}
+.arch-month-title{padding:12px 16px;display:flex;align-items:center;gap:8px;font-weight:600;font-size:12px;cursor:pointer;user-select:none}
+.arch-month-title:hover{background:var(--card)}
+.arch-cnt{margin-left:auto;background:var(--card);border-radius:100px;padding:2px 10px;font-size:10px}
+.arch-items{padding:8px}
+
+/* ── AKKOORD ── */
+.ak-hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:24px;border:1px solid var(--border);border-radius:2px;overflow:hidden}
+.ak-hstat{padding:20px 24px;border-right:1px solid var(--border);background:var(--ink);color:#f7f3ee}
+.ak-hstat:last-child{border-right:none}
+.ak-hbig{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;line-height:1;color:#f7f3ee}
+.ak-hbig.green{color:#7ddba8}
+.ak-hlabel{font-size:9px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,238,.45);margin-top:6px;font-family:'DM Mono',monospace}
+.ak-bar-wrap{padding:16px 24px;background:var(--ink);grid-column:1/-1;border-top:1px solid rgba(255,255,255,.08)}
+.ak-bar-label{font-size:9px;color:rgba(247,243,238,.45);margin-bottom:8px;font-family:'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
+.ak-bar-track{height:3px;background:rgba(255,255,255,.12);border-radius:2px}
+.ak-bar-fill{height:100%;background:#fff;border-radius:2px;transition:width 1s}
+.ak-bar-sub{font-size:9px;color:rgba(247,243,238,.3);margin-top:6px}
+.akklist{display:flex;flex-direction:column;gap:6px}
+.akcard{border:1px solid var(--border);border-radius:2px;background:#fff;overflow:hidden;border-left:3px solid var(--border)}
+.akhead{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
+.akhead:hover{background:var(--card)}
+.akicon{font-size:18px;width:32px;text-align:center;flex-shrink:0}
+.akinfo{flex:1;min-width:0}
+.akname{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600}
+.aksub{font-size:10px;color:var(--muted);margin-top:2px}
+.akbdgs{display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0}
+.akbdg{font-size:9.5px;font-weight:600;padding:2px 9px;border-radius:2px;border:1px solid;white-space:nowrap}
+.akbdg-g{color:var(--green);background:var(--greenbg);border-color:var(--greenbd)}
+.akbdg-r{color:var(--red);background:var(--redbg);border-color:var(--redbd)}
+.akbdg-n{color:var(--muted);background:var(--card);border-color:var(--border)}
+.akchev{color:var(--muted);font-size:11px;flex-shrink:0;transition:transform .2s;margin-left:4px}
+.akcard.open .akchev{transform:rotate(180deg)}
+.akbody{padding:0 16px 16px;border-top:1px solid var(--card)}
+.akptitle{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:14px 0 8px}
+.akplist li{font-size:12px;color:var(--ink);padding-left:16px;position:relative;line-height:1.6;margin-bottom:3px}
+.akplist li::before{content:"›";position:absolute;left:0;color:var(--muted)}
+.akmc2{background:var(--card);border-radius:2px;padding:11px 13px;margin-bottom:5px;border:1px solid var(--border)}
+.akmc2d{font-size:9.5px;color:var(--muted);margin-bottom:4px;font-family:'DM Mono',monospace}
+.akmc2t{font-size:13px;font-weight:500;margin-bottom:6px;line-height:1.4;font-family:'Cormorant Garamond',serif;font-size:15px}
+.akmc2b{display:flex;gap:4px;flex-wrap:wrap}
+
+/* ── STATS ── */
+.kpi-strip{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:16px}
+.kpi{background:#fff;border:1px solid var(--border);border-radius:2px;padding:20px 22px}
+.kpi-label{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-family:'DM Mono',monospace}
+.kpi-val{font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:700;line-height:.9;letter-spacing:-.03em}
+.kpi-val.green{color:var(--green)}.kpi-val.amber{color:var(--amber)}
+.kpi-sub{font-size:10px;color:var(--muted);margin-top:8px}
+.stat-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.sc{background:#fff;border:1px solid var(--border);border-radius:2px;padding:20px 22px}
+.sc-title{font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px;font-family:'DM Mono',monospace}
 .hbar-chart{display:flex;flex-direction:column;gap:9px}
 .hbc-row{display:flex;align-items:center;gap:10px}
-.hbc-label{font-size:11px;color:var(–ink2);width:120px;flex-shrink:0;text-align:right;font-weight:600}
-.hbc-track{flex:1;background:var(–paper2);border-radius:100px;height:7px}
-.hbc-fill{height:100%;border-radius:100px}
-.hbc-val{font-size:11px;font-weight:700;width:22px;text-align:right}
+.hbc-label{font-size:11px;color:var(--ink);width:130px;flex-shrink:0;text-align:right;font-weight:500}
+.hbc-track{flex:1;background:var(--card);border-radius:2px;height:6px}
+.hbc-fill{height:100%;border-radius:2px}
+.hbc-val{font-size:11px;font-weight:600;width:24px;text-align:right;font-family:'DM Mono',monospace}
 .donut-wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .donut-legend{display:flex;flex-direction:column;gap:9px}
 .donut-li{display:flex;align-items:center;gap:8px}
-.donut-dot{width:9px;height:9px;border-radius:50%}
-.donut-lbl{font-size:12px;color:var(–ink2);flex:1;font-weight:600}
-.donut-val{font-size:13px;font-weight:700;font-family:“DM Mono”,monospace}
+.donut-dot{width:8px;height:8px;border-radius:50%}
+.donut-lbl{font-size:11px;color:var(--ink);flex:1;font-weight:500}
+.donut-val{font-size:13px;font-weight:700;font-family:'Cormorant Garamond',serif}
 .col-chart{display:flex;align-items:flex-end;gap:3px;height:80px;margin-top:8px}
 .col-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px}
 .col-bar-wrap{flex:1;width:100%;display:flex;flex-direction:column;justify-content:flex-end}
-.col-bar{border-radius:4px 4px 0 0;width:100%;min-height:3px}
-.col-label{font-size:8px;color:var(–mid);text-align:center;font-family:“DM Mono”,monospace}
-.party-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:4px}
-.party-card{background:var(–paper);border-radius:8px;padding:11px 13px}
-.party-name{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;margin-bottom:5px}
-.party-pct{font-size:22px;font-weight:700;line-height:1;margin-bottom:7px}
-.party-bar{height:3px;background:var(–border);border-radius:100px}
-.party-bar-f{height:100%;border-radius:100px}
-.coal-opp{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.coal-block{background:var(–paper);border-radius:var(–rads);padding:14px 16px}
-.coal-label{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(–mid);margin-bottom:10px}
-.coal-big{font-family:“Libre Baskerville”,serif;font-size:32px;font-weight:700;line-height:1}
-.coal-sub{font-size:11px;color:var(–mid);margin-top:5px}
-.top-table{display:flex;flex-direction:column;gap:6px;margin-top:4px}
-.top-row{display:flex;align-items:center;gap:12px;padding:9px 12px;background:var(–paper);border-radius:8px}
-.top-rank{font-size:11px;font-weight:700;color:var(–mid);width:20px;text-align:center}
-.top-name{flex:1;font-size:13px;font-weight:700}
-.top-party{font-size:10px;color:var(–mid);font-weight:600}
-.top-count{font-size:13px;font-weight:700;font-family:“DM Mono”,monospace}
-.top-badge{font-size:9px;font-weight:700;padding:2px 8px;border-radius:100px}
-.feed{display:flex;flex-direction:column;gap:0}
-.feed-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(–border)}
-.feed-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px;border:2px solid}
-.feed-title{font-size:12px;font-weight:700;line-height:1.4;margin-bottom:3px}
-.feed-meta{font-size:10px;color:var(–mid)}
-
-/* akkoord — FIXED: all themes show, better mobile layout */
-.ak-hero{background:#0D0D0F;border-radius:var(–rad);padding:20px;margin-bottom:16px;color:#fff}
-.ak-hero-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
-@media(min-width:600px){.ak-hero-row{grid-template-columns:repeat(4,1fr)}}
-.ak-hstat{text-align:center;background:rgba(255,255,255,.06);border-radius:10px;padding:12px 8px}
-.ak-hbig{font-family:“Libre Baskerville”,serif;font-size:22px;font-weight:700;line-height:1;color:#fff}
-.ak-hlabel{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.38);margin-top:4px}
-.ak-hero-bar{margin-top:6px}
-.ak-hero-barlabel{font-size:9px;color:rgba(255,255,255,.4);margin-bottom:6px}
-.ak-hero-track{height:4px;background:rgba(255,255,255,.12);border-radius:2px}
-.ak-hero-fill{height:100%;background:#fff;border-radius:2px}
-.ak-hero-barsub{font-size:9px;color:rgba(255,255,255,.3);margin-top:5px}
-
-/* akkoord cards — FIXED: always show punten, match logic improved */
-.akklist{display:flex;flex-direction:column;gap:8px}
-.akcard{background:#fff;border-radius:var(–rads);border:1.5px solid var(–border);overflow:hidden}
-.akhead{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
-.akhead:hover{background:var(–paper)}
-.akicon{font-size:18px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:var(–paper2);border-radius:8px;flex-shrink:0}
-.akinfo{flex:1;min-width:0}
-.akname{font-family:“Libre Baskerville”,serif;font-size:14px}
-.aksub2{font-size:10px;color:var(–mid);margin-top:2px}
-.akbdgs{display:flex;gap:4px;flex-wrap:wrap;flex-shrink:0}
-.akbdg{font-size:10px;font-weight:700;padding:3px 10px;border-radius:100px;border:1px solid;white-space:nowrap}
-.akbdg-g{color:var(–green);background:var(–greenbg);border-color:var(–greenbd)}
-.akbdg-r{color:var(–accent);background:var(–accentbg);border-color:var(–accentbd)}
-.akbdg-n{color:var(–mid);background:var(–paper2);border-color:var(–border)}
-.akchev{color:var(–mid);font-size:10px;flex-shrink:0;transition:transform .2s;margin-left:4px}
-.akcard.akopen .akchev{transform:rotate(180deg)}
-.akbody{padding:0 16px 16px;border-top:1.5px solid var(–paper2)}
-.akptitle{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(–mid);margin:14px 0 8px}
-.akplist{display:flex;flex-direction:column;gap:4px;margin-bottom:4px}
-.akplist li{font-size:12px;color:var(–ink2);padding-left:18px;position:relative;line-height:1.55}
-.akplist li::before{content:”›”;position:absolute;left:0;color:var(–mid)}
-.akmc2{background:var(–paper);border-radius:8px;padding:12px 14px;margin-bottom:6px;border:1px solid var(–border)}
-.akmc2d{font-size:10px;color:var(–mid);margin-bottom:4px;font-family:“DM Mono”,monospace}
-.akmc2t{font-size:13px;font-weight:600;margin-bottom:6px;line-height:1.4}
-.akmc2b{display:flex;gap:4px;flex-wrap:wrap}
-
-/* ── FIX: theme heatmap ── */
+.col-bar{border-radius:2px 2px 0 0;width:100%;min-height:2px}
+.col-label{font-size:8px;color:var(--muted);text-align:center;font-family:'DM Mono',monospace}
+.party-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:8px;margin-top:4px}
+.party-card{background:var(--card);border-radius:2px;padding:10px 12px}
+.party-name{font-size:9px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px}
+.party-pct{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;line-height:1;margin-bottom:7px}
+.party-bar{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.party-bar-fill{height:100%;border-radius:2px}
+.coal-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.coal-block{background:var(--card);border-radius:2px;padding:14px 16px;border-left:2px solid}
+.coal-label{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;font-family:'DM Mono',monospace}
+.coal-big{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;line-height:1}
+.coal-sub{font-size:10px;color:var(--muted);margin-top:4px}
+.top-table{display:flex;flex-direction:column;gap:5px;margin-top:4px}
+.top-row{display:flex;align-items:center;gap:10px;padding:9px 12px;background:var(--card);border-radius:2px}
+.top-rank{font-size:11px;font-weight:600;color:var(--muted);width:20px;text-align:center}
+.top-name{flex:1;font-size:13px;font-weight:600}
+.top-party{font-size:9.5px;color:var(--muted)}
+.top-count{font-size:13px;font-weight:700;font-family:'Cormorant Garamond',serif}
+.top-badge{font-size:9px;font-weight:700;padding:2px 9px;border-radius:2px}
+.feed{display:flex;flex-direction:column}
+.feed-item{display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--border)}
+.feed-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:5px;border:2px solid}
+.feed-title{font-size:12px;font-weight:600;line-height:1.4;margin-bottom:3px}
+.feed-meta{font-size:10px;color:var(--muted)}
 .theme-heatmap{display:flex;flex-direction:column;gap:8px}
 .th-row{display:flex;align-items:center;gap:10px}
-.th-label{font-size:11px;color:var(–ink2);width:120px;flex-shrink:0;font-weight:600;text-align:right}
+.th-label{font-size:11px;color:var(--ink);width:130px;flex-shrink:0;font-weight:500;text-align:right}
 .th-pills{display:flex;gap:4px;flex-shrink:0}
-.th-pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:100px}
-.th-g{background:var(–greenbg);color:var(–green);border:1px solid var(–greenbd)}
-.th-r{background:var(–accentbg);color:var(–accent);border:1px solid var(–accentbd)}
-.th-bar-bg{flex:1;height:5px;background:var(–paper2);border-radius:100px;overflow:hidden}
-.th-bar-f{height:100%;background:var(–ink);border-radius:100px}
+.th-pill{font-size:9.5px;font-weight:600;padding:2px 8px;border-radius:2px}
+.th-g{background:var(--greenbg);color:var(--green);border:1px solid var(--greenbd)}
+.th-r{background:var(--redbg);color:var(--red);border:1px solid var(--redbd)}
+.th-bar-bg{flex:1;height:4px;background:var(--card);border-radius:2px;overflow:hidden}
+.th-bar-f{height:100%;background:var(--ink);border-radius:2px}
 
-/* archief */
-.arch-month{margin-bottom:.5rem;border:1.5px solid var(–border);border-radius:var(–rads);background:#fff}
-.arch-mtitle{padding:12px 16px;display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:12px;cursor:pointer}
-.arch-cnt{margin-left:auto;background:var(–paper3);border-radius:99px;padding:.1rem .55rem;font-size:10px}
-.arch-items{padding:.5rem}
+/* ── AGENDA ── */
+.ag-item{display:block;border:1px solid var(--border);border-radius:2px;padding:14px 16px;margin-bottom:6px;transition:all .15s;background:#fff}
+.ag-item:hover{border-color:var(--ink);background:var(--card)}
+.ag-time{font-size:9.5px;color:var(--muted);font-family:'DM Mono',monospace;margin-bottom:5px}
+.ag-title{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:600;line-height:1.3;color:var(--ink);margin-bottom:4px}
+.ag-loc{font-size:10px;color:var(--muted);margin-top:3px}
+.ag-soort{font-size:9px;font-weight:600;padding:3px 9px;border-radius:2px;background:var(--card);color:var(--muted);border:1px solid var(--border);white-space:nowrap;flex-shrink:0;height:fit-content;margin-top:2px}
+.ag-item-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.day-header{display:flex;align-items:center;gap:10px;margin-bottom:10px;margin-top:24px}
+.day-label{font-size:10px;font-weight:600;text-transform:uppercase;color:var(--muted);letter-spacing:.08em;white-space:nowrap}
+.day-hr{flex:1;height:1px;background:var(--border)}
+.today-badge{background:var(--ink);color:#fff;padding:3px 10px;border-radius:2px;font-size:9px;font-weight:700;margin-right:4px;letter-spacing:.05em;text-transform:uppercase}
 
-/* agenda — FIXED: better time display, remove “2026-” bug */
-#ag-wrap a{color:inherit}
-.ag-item{display:block;background:#fff;border:1.5px solid var(–border);border-radius:var(–rads);padding:14px 16px;margin-bottom:8px;transition:box-shadow .15s}
-.ag-item:hover{box-shadow:var(–shadow);border-color:var(–border2)}
-.ag-item-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.ag-item-left{flex:1;min-width:0}
-.ag-time{font-size:10px;font-weight:700;color:var(–mid);margin-bottom:4px;font-family:“DM Mono”,monospace}
-.ag-title{font-weight:700;font-size:14px;line-height:1.35}
-.ag-loc{font-size:11px;color:var(–mid);margin-top:4px}
-.ag-soort{font-size:10px;padding:4px 10px;border-radius:100px;background:var(–paper2);white-space:nowrap;flex-shrink:0;font-weight:600;border:1px solid var(–border)}
+/* ── LEADERBOARD ── */
+.lb-row{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);padding:16px 0;transition:background .15s}
+.lb-row:hover{background:var(--card);padding-left:8px;padding-right:8px}
+.lb-rank{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:700;color:var(--muted);width:40px;text-align:center;flex-shrink:0}
+.lb-rank.medal{font-size:24px}
+.lb-info{flex:1;min-width:0}
+.lb-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;line-height:1.2}
+.lb-party{font-size:10px;color:var(--muted);margin-top:2px}
+.lb-nums{display:flex;align-items:center;gap:10px}
+.lb-num{text-align:center}
+.lb-num-val{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;line-height:1}
+.lb-num-lbl{font-size:8.5px;color:var(--muted);font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em}
+.lb-score-box{border-radius:2px;padding:8px 12px;text-align:center;min-width:56px;border:1px solid}
+.lb-score-pct{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;line-height:1}
+.lb-score-lbl{font-size:8px;font-weight:600;text-transform:uppercase;letter-spacing:.08em}
 
-/* leaderboard */
-#lb-wrap .top-row{border:1px solid var(–border);margin-bottom:6px}
+/* ── MODAL ── */
+.overlay{position:fixed;inset:0;background:rgba(28,25,23,.55);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(4px)}
+.modal{background:#fff;border-radius:2px;width:100%;max-width:600px;max-height:90vh;overflow-y:auto;border-top:3px solid var(--red)}
+.modal-hd{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--border)}
+.modal-hd h2{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600}
+.modal-close{background:none;border:none;font-size:22px;color:var(--muted);line-height:1;padding:2px 6px}
+.modal-close:hover{color:var(--ink)}
+.modal-body{padding:20px 24px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;font-family:'DM Mono',monospace}
+.field input,.field select,.field textarea{width:100%;padding:9px 12px;border:1px solid var(--border);border-radius:2px;font-size:13px;outline:none;background:transparent;transition:border-color .15s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--ink)}
+.field textarea{resize:vertical;min-height:80px}
+.mg2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.slbl{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px;font-family:'DM Mono',monospace}
+.sgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:4px}
+.modal-ft{display:flex;gap:8px;justify-content:flex-end;padding:16px 24px;border-top:1px solid var(--border)}
+.btn-del{padding:8px 16px;background:var(--red);color:#fff;border:none;border-radius:2px;font-size:11px;font-weight:700;margin-right:auto}
+.btn-cancel{padding:8px 16px;border:1px solid var(--border);background:transparent;border-radius:2px;font-size:11px;font-weight:600}
+.btn-save{padding:8px 18px;border:none;background:var(--ink);color:#fff;border-radius:2px;font-size:11px;font-weight:700}
 
-/* modals */
-.ov{position:fixed;inset:0;background:rgba(13,13,15,.55);z-index:300;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);padding:16px}
-.modal{background:#fff;width:100%;max-width:560px;max-height:90vh;overflow:auto;border-radius:22px}
-.mhd{padding:22px 24px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(–paper2)}
-.mhd h2{font-family:“Libre Baskerville”,serif;font-size:18px}
-.xb{background:var(–paper2);border:none;width:32px;height:32px;border-radius:50%;font-size:17px;flex-shrink:0}
-.xb:hover{background:var(–ink);color:#fff}
-.mbd{padding:18px 24px 8px;display:flex;flex-direction:column;gap:12px}
-.mg2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.fld label{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;letter-spacing:.12em;display:block;margin-bottom:5px}
-.fld input,.fld select,.fld textarea{width:100%;padding:10px 13px;border:1.5px solid var(–border2);border-radius:var(–rads);font-size:13px;outline:none;background:var(–paper)}
-.fld input:focus{border-color:var(–ink);background:#fff}
-.mft{padding:12px 24px 22px;display:flex;gap:10px}
-.bcan{flex:1;padding:12px;border:1.5px solid var(–border2);background:#fff;font-size:12px;font-weight:700;border-radius:100px}
-.bcan:hover{border-color:var(–ink);color:var(–ink)}
-.bsav{flex:2;padding:12px;border:none;background:#0D0D0F;color:#fff;font-size:12px;font-weight:700;border-radius:100px}
-.slbl{font-size:9px;font-weight:700;color:var(–mid);text-transform:uppercase;letter-spacing:.12em;margin-bottom:9px;display:block}
-.sgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
-.sgrid select{width:100%;padding:5px 7px;border:1.5px solid var(–border);border-radius:8px;font-size:11px}
-.delm{background:#fff;width:100%;max-width:360px;padding:36px 28px;text-align:center;border-radius:22px}
-.delm h3{font-family:“Libre Baskerville”,serif;font-size:22px;margin:10px 0 8px}
-.dbtns{display:flex;gap:9px;margin-top:16px}
-.bdc,.bdo{flex:1;padding:12px;border-radius:100px;font-size:12px;font-weight:700}
-.bdc{border:1.5px solid var(–border2);background:#fff}
-.bdo{border:none;background:var(–accent);color:#fff}
+/* delete modal */
+.del-modal{background:#fff;border-radius:2px;width:100%;max-width:360px;padding:32px;text-align:center;border-top:3px solid var(--red)}
+.del-modal h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;margin:12px 0 8px}
+.del-modal p{font-size:12px;color:var(--muted);margin-bottom:20px}
+.del-btns{display:flex;gap:8px;justify-content:center}
 
-/* FIXED: fetch modal — better mobile layout */
-.fetchm{background:#fff;max-width:540px;width:100%;max-height:88vh;overflow:auto;border-radius:22px}
-.fhd{padding:22px 24px 14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px solid var(–paper2)}
-.fhd h2{font-family:“Libre Baskerville”,serif;font-size:18px;margin-bottom:4px}
-.fhd p{font-size:12px;color:var(–mid)}
-.fbd{padding:16px 20px}
-.fri{border:1.5px solid var(–border);cursor:pointer;background:#fff;border-radius:var(–rads);margin-bottom:7px}
-.fri.on{border-color:var(–ink);background:var(–paper)}
-.frii{display:flex;align-items:stretch}
-.fris{width:4px;flex-shrink:0;border-radius:var(–rads) 0 0 var(–rads)}
-.frib{flex:1;padding:11px 14px}
-.frit{font-family:“Libre Baskerville”,serif;font-size:13px;margin-bottom:5px}
-.frichk{display:flex;align-items:center;padding:0 14px}
-.chk{width:20px;height:20px;border:2px solid var(–border2);border-radius:6px;display:flex;align-items:center;justify-content:center;background:#fff}
-.chk.on{background:var(–ink);border-color:var(–ink);color:#fff}
-#toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(80px);opacity:0;background:#0D0D0F;color:#fff;padding:11px 20px;font-size:12px;font-weight:700;border-radius:100px;transition:all .3s;pointer-events:none;z-index:999}
-#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
-.spin{width:30px;height:30px;border:3px solid var(–border);border-top-color:var(–ink);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto}
-@keyframes spin{to{transform:rotate(360deg)}}
+/* toast */
+#toast{position:fixed;bottom:24px;right:24px;z-index:9999;background:var(--ink);color:#fff;padding:10px 18px;border-radius:2px;font-size:12px;font-weight:600;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none}
+#toast.show{opacity:1;transform:translateY(0)}
 
-/* mobile hide subtitle */
-@media(max-width:500px){#nsub{display:none}.n-sep{display:none}}
-@media(max-width:768px){.mg2{grid-template-columns:1fr}}
-#cookie-banner {
-  display: none;    
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #1a1a1a;
-  color: #f5f5f5;
-  padding: 16px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  font-family: sans-serif;
-  font-size: 14px;
-  z-index: 999999;
-  transition: opacity 0.4s ease;
-  pointer-events: all;
+/* ── FOOTER ── */
+#site-footer{background:var(--ink);color:#f7f3ee;padding:44px 40px 36px;margin-top:0}
+.footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:40px;letter-spacing:-.02em;margin-bottom:10px}
+.footer-desc{font-size:11px;color:rgba(247,243,238,.45);line-height:1.65;max-width:300px}
+.footer-links{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+.footer-link{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border:1px solid rgba(255,255,255,.15);border-radius:2px;color:#f7f3ee;font-size:11px}
+.footer-link:hover{border-color:rgba(255,255,255,.35)}
+.footer-right{font-size:10px;color:rgba(247,243,238,.35);text-align:right;line-height:2;letter-spacing:.06em}
+.footer-divider{border:none;border-top:1px solid rgba(255,255,255,.07);margin:24px 0 16px;max-width:1200px;margin-left:auto;margin-right:auto}
+
+/* ── SUPPORT STRIP ── */
+#support-strip{background:#fff;border-top:1px solid var(--border);padding:40px}
+.support-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.support-text h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600}
+.support-text p{font-size:12px;color:var(--muted);margin-top:6px;max-width:360px;line-height:1.6}
+.support-card{background:var(--ink);border-radius:2px;padding:20px 24px;text-align:center}
+.support-card-lbl{font-size:9.5px;color:rgba(247,243,238,.4);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.support-card-sub{font-size:11px;color:rgba(247,243,238,.5);margin-bottom:14px;line-height:1.5}
+.btn-donate{display:inline-block;background:#fff;color:var(--ink);padding:10px 20px;border-radius:2px;font-weight:700;font-size:12px}
+.btn-donate:hover{opacity:.88}
+
+/* ── PANES ── */
+.pane{display:none}
+.pane.active{display:block}
+
+/* ── FETCH MODAL ── */
+.fetch-modal{background:#fff;border-radius:2px;width:100%;max-width:560px;border-top:3px solid var(--ink)}
+.fetch-hd{display:flex;align-items:flex-start;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--border)}
+.fetch-hd h2{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600}
+.fetch-hd p{font-size:11px;color:var(--muted);margin-top:4px}
+.fetch-body{padding:20px 24px}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  #header-top,#header-main,#tabs-inner,#main-wrap,#support-strip,#site-footer{padding-left:20px;padding-right:20px}
+  .motie-header,.motie-row-grid{grid-template-columns:72px 1fr 64px 24px;gap:8px}
+  .motie-header span:nth-child(3),.motie-header span:nth-child(4),.motie-header span:nth-child(5),
+  .motie-row-grid .motie-indiener,.motie-row-grid .status-badge,.motie-row-grid .conform-label{display:none}
+  .motie-detail{margin-left:0}
+  .kpi-strip{grid-template-columns:1fr 1fr}
+  .stat-grid-2{grid-template-columns:1fr}
+  .coal-grid{grid-template-columns:1fr}
+  .ak-hero-grid{grid-template-columns:1fr 1fr}
 }
-
-#cookie-banner p { margin: 0; }
-
-#cookie-buttons {
-  display: flex;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-#cookie-accept, #cookie-reject {
-  border: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  pointer-events: all;
-}
-
-#cookie-accept {
-  background: #ffffff;
-  color: #1a1a1a;
-}
-
-#cookie-accept:hover { background: #e0e0e0; }
-
-#cookie-reject {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-#cookie-reject:hover { background: rgba(255,255,255,0.1); }
-
-@media (max-width: 480px) {
-  #cookie-banner { flex-direction: column; align-items: flex-start; }
-}
+@media(max-width:600px){
+  #hero-stats{grid-template-columns:1fr 1fr;padding:24px 0}
+  .hero-stat:nth-child(n+3){display:block}
+  .hs-value{font-size:36px}
+  #header-nav{display:none}
+  .logo-name{display:none}
 }
 </style>
-
 </head>
 <body>
-  <div id="cookie-banner">
-  <p>This website uses cookies to improve your experience.</p>
-  <div id="cookie-buttons">
-    <button id="cookie-accept">Accept</button>
-    <button id="cookie-reject">Reject</button>
+
+<!-- ── HEADER ── -->
+<header id="site-header">
+  <div id="header-top">
+    <span style="font-size:9.5px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase">Motie Tracker · Kabinet-Jetten · D66–VVD–CDA</span>
+    <a href="https://janeorlova.com" style="font-size:9.5px;color:var(--muted)">janeorlova.com</a>
+  </div>
+  <div id="header-main">
+    <div class="logo-wrap">
+      <span class="logo-serif">J.O.</span>
+      <span class="logo-name">Jane Orlova</span>
+    </div>
+    <nav id="header-nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/archive" class="nav-link">Analyse</a>
+      <a href="/moties-tracker" class="nav-link active">Moties</a>
+      <a href="/about" class="nav-link">Over</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-ghost" id="btn-fetch">↻ Importeren</button>
+      <button class="btn-primary" id="btn-add">+ Toevoegen</button>
+    </div>
+  </div>
+  <div id="header-red-line"></div>
+</header>
+
+<!-- ── TICKER ── -->
+<div id="ticker-wrap">
+  <div class="ticker-inner" id="ticker"></div>
+</div>
+
+<!-- ── TABS ── -->
+<div id="tabs-row">
+  <div id="tabs-inner">
+    <button class="tab-btn active" data-tab="moties">📋 Moties</button>
+    <button class="tab-btn" data-tab="process">⏳ In Process</button>
+    <button class="tab-btn" data-tab="akkoord">📄 Akkoord</button>
+    <button class="tab-btn" data-tab="stats">📊 Statistieken</button>
+    <button class="tab-btn" data-tab="agenda">📅 Agenda</button>
+    <button class="tab-btn" data-tab="leaderboard">🏆 Leaderboard</button>
   </div>
 </div>
 
-    <script>
-  (function () {
-    function getConsent() {
-      try { return localStorage.getItem('cookieConsent'); } 
-      catch (e) { return null; }
-    }
-    function setConsent(val) {
-      try { localStorage.setItem('cookieConsent', val); } 
-      catch (e) {}
-    }
+<!-- ── MAIN ── -->
+<div id="main-wrap">
 
-    var banner = document.getElementById('cookie-banner');
-
-    if (!banner) return;
-
-    if (getConsent()) {
-      banner.style.display = 'none';
-      return;
-    }
-
-    banner.style.display = 'flex';
-
-    document.getElementById('cookie-accept').addEventListener('click', function () {
-      setConsent('accepted');
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-
-    document.getElementById('cookie-reject').addEventListener('click', function () {
-      banner.style.opacity = '0';
-      setTimeout(function () { banner.style.display = 'none'; }, 400);
-    });
-  })();
-</script>
-
-<nav id="nav">
-  <div id="nv">
-    <span id="nb">Motie Tracker</span>
-    <div class="n-sep"></div>
-    <span id="nsub">Kabinet-Jetten · D66–VVD–CDA</span>
-    <div id="nright">
-      <button class="nbs" id="btn-fetch">↻ Importeren</button>
-      <button class="nbp" id="btn-add">+ Toevoegen</button>
+  <!-- MOTIES PANE -->
+  <div id="pane-moties" class="pane active">
+    <div id="hero-stats"></div>
+    <div class="rule-label" style="margin-top:32px">
+      <div class="rl-bar"></div>
+      <span class="rl-text">Alle moties</span>
+      <div class="rl-line"></div>
+      <span class="rl-right" id="filter-count"></span>
     </div>
-  </div>
-  <div id="ntabs-row">
-    <div id="ntabs">
-      <button class="nt on" id="tab-m">📋 Moties</button>
-      <button class="nt" id="tab-ar">⏳ In Process</button>
-      <button class="nt" id="tab-a">📄 Akkoord</button>
-      <button class="nt" id="tab-s">📊 Statistieken</button>
-      <button class="nt" id="tab-ag">📅 Agenda</button>
-      <button class="nt" id="tab-lb">🏆 Leaderboard</button>
-    </div>
-  </div>
-</nav>
-
-<div id="main">
-  <div id="pnm">
-    <div id="hero"><div class="hero-grid" id="hbar"></div></div>
-    <div id="refresh-row" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:12px 16px;flex-wrap:wrap;gap:8px">
-      <div style="display:flex;align-items:center;gap:10px"><span style="font-size:18px">📋</span><div><div style="font-size:12px;font-weight:700">Moties beheren</div><div id="last-checked" style="font-size:10px;color:var(--mid)">Dagelijks bijgewerkt via tweedekamer.nl</div></div></div>
-      <div style="display:flex;gap:8px"><button class="tbtn" id="btn-fetch2">↻ Importeren</button><button class="nbp" id="btn-add2">+ Toevoegen</button></div>
-    </div>
-    <div id="srow"><div id="sw"><span id="si">🔍</span><input id="sinp" placeholder="Zoek op titel, indiener of thema…"/></div><button class="tbtn" id="fbtn">⚙ Filter</button></div>
-    <div id="fp" style="display:none">
-      <select id="fst"><option value="">Alle statussen</option><option value="aangenomen">Aangenomen</option><option value="verworpen">Verworpen</option><option value="in_behandeling">In behandeling</option><option value="aangehouden">Aangehouden</option></select>
-      <select id="fal"><option value="">Alle conformiteit</option><option value="conform">Conform akkoord</option><option value="strijdig">Strijdig</option><option value="neutraal">Neutraal</option><option value="onduidelijk">Onduidelijk</option></select>
-      <select id="fth"><option value="">Alle thema's</option></select>
-      <div id="fcount"></div>
-    </div>
-    <div id="ml"></div>
-  </div>
-  <div id="pnar" style="display:none"><div id="arch-list"></div></div>
-  <div id="pna" style="display:none"><div id="akwrap"></div></div>
-  <div id="pns" style="display:none"></div>
-  <div id="pnag" style="display:none"><div id="ag-wrap"></div></div>
-  <div id="pnlb" style="display:none"><div id="lb-wrap"></div></div>
-</div>
-
-<div id="supsec" style="background:#fff;border-top:1.5px solid var(--border);padding:48px 20px">
-  <div id="supin" style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
-    <div class="suptxt">
-      <h3 style="font-family:'Libre Baskerville',serif;font-size:22px">♡ Steun dit project</h3>
-      <p style="font-size:13px;color:var(--mid);margin-top:8px">Motie Tracker is een onafhankelijk vrijwilligersproject. Geen advertenties, geen subsidie — alleen passie voor transparante democratie.</p>
-    </div>
-    <div class="supcard" style="background:#0D0D0F;border-radius:20px;padding:24px 28px;text-align:center">
-      <div style="font-size:10px;color:rgba(255,255,255,.4)">✨ Vrijwillige bijdrage</div>
-      <div style="font-size:12px;color:rgba(255,255,255,.55);margin:12px 0">Help de tracker draaiende te houden — elk bedrag telt.</div>
-      <a href="https://buy.stripe.com/6oU7sM2sj68i6Ry8aD63K00" target="_blank" style="display:inline-block;background:#fff;color:#0D0D0F;padding:12px 22px;border-radius:100px;font-weight:700">💙 Doneer nu</a>
-    </div>
-  </div>
-</div>
-
-<footer id="footer" style="background:#0D0D0F;padding:40px 20px 28px">
-  <div style="max-width:1280px;margin:0 auto">
-    <div style="display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:24px">
-      <div>
-        <h3 style="font-family:'Libre Baskerville',serif;font-size:18px;color:#fff;margin-bottom:8px">Motie Tracker</h3>
-        <p style="font-size:12px;color:rgba(255,255,255,.38);line-height:1.6">Een vrijwilligersproject dat parlementaire moties vergelijkt met het coalitieakkoord van Kabinet-Jetten. Controleer altijd via <a href="https://www.tweedekamer.nl" target="_blank" style="color:rgba(255,255,255,.5)">tweedekamer.nl</a>.</p>
+    <div id="search-row">
+      <div id="search-wrap">
+        <span id="search-icon">🔍</span>
+        <input id="search-inp" placeholder="Zoek op titel, indiener of thema…"/>
       </div>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <a href="https://t.me/tonandtijd" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:#fff;font-size:12px">✈ Telegram — Ton &amp; Tijd</a>
-        <a href="https://janeorlova.substack.com" target="_blank" style="display:inline-flex;align-items:center;gap:7px;padding:8px 16px;border:1px solid rgba(255,255,255,.15);border-radius:100px;color:#fff;font-size:12px">📨 Substack — Jane Orlova</a>
+      <select class="filter-select" id="fst">
+        <option value="">Alle statussen</option>
+        <option value="aangenomen">Aangenomen</option>
+        <option value="verworpen">Verworpen</option>
+        <option value="in_behandeling">In behandeling</option>
+        <option value="aangehouden">Aangehouden</option>
+      </select>
+      <select class="filter-select" id="fal">
+        <option value="">Alle conformiteit</option>
+        <option value="conform">Conform akkoord</option>
+        <option value="strijdig">Strijdig</option>
+        <option value="neutraal">Neutraal</option>
+        <option value="onduidelijk">Onduidelijk</option>
+      </select>
+      <select class="filter-select" id="fth"><option value="">Alle thema's</option></select>
+    </div>
+    <div class="motie-header">
+      <span>Datum</span><span>Motie</span><span>Indiener</span><span>Status</span><span>Conform akkoord</span><span></span>
+    </div>
+    <div id="motie-list"></div>
+  </div>
+
+  <!-- IN PROCESS PANE -->
+  <div id="pane-process" class="pane">
+    <div class="rule-label"><div class="rl-bar"></div><span class="rl-text">In behandeling</span><div class="rl-line"></div></div>
+    <div id="arch-list"></div>
+  </div>
+
+  <!-- AKKOORD PANE -->
+  <div id="pane-akkoord" class="pane">
+    <div class="rule-label"><div class="rl-bar"></div><span class="rl-text">Coalitieakkoord</span><div class="rl-line"></div></div>
+    <div id="akwrap"></div>
+  </div>
+
+  <!-- STATS PANE -->
+  <div id="pane-stats" class="pane">
+    <div class="rule-label"><div class="rl-bar"></div><span class="rl-text">Statistieken</span><div class="rl-line"></div></div>
+    <div id="stats-wrap"></div>
+  </div>
+
+  <!-- AGENDA PANE -->
+  <div id="pane-agenda" class="pane">
+    <div class="rule-label"><div class="rl-bar"></div><span class="rl-text">Agenda</span><div class="rl-line"></div></div>
+    <div id="ag-wrap"></div>
+  </div>
+
+  <!-- LEADERBOARD PANE -->
+  <div id="pane-leaderboard" class="pane">
+    <div class="rule-label"><div class="rl-bar"></div><span class="rl-text">Indiener leaderboard</span><div class="rl-line"></div></div>
+    <div id="lb-wrap"></div>
+  </div>
+
+</div><!-- /main-wrap -->
+
+<!-- ── SUPPORT ── -->
+<div id="support-strip">
+  <div class="support-inner">
+    <div class="support-text">
+      <h3>♡ Steun dit project</h3>
+      <p>Motie Tracker is een onafhankelijk vrijwilligersproject. Geen advertenties, geen subsidie — alleen passie voor transparante democratie.</p>
+    </div>
+    <div class="support-card">
+      <div class="support-card-lbl">✨ Vrijwillige bijdrage</div>
+      <div class="support-card-sub">Help de tracker draaiende te houden — elk bedrag telt.</div>
+      <a href="https://buy.stripe.com/6oU7sM2sj68i6Ry8aD63K00" target="_blank" class="btn-donate">💙 Doneer nu</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">J.O.</div>
+      <p class="footer-desc">Motie Tracker is een vrijwilligersproject. Data afkomstig van tweedekamer.nl. Controleer altijd de originele bron.</p>
+      <div class="footer-links">
+        <a href="https://t.me/tonandtijd" target="_blank" class="footer-link">✈ Telegram — Ton &amp; Tijd</a>
+        <a href="https://janeorlova.substack.com" target="_blank" class="footer-link">📨 Substack — Jane Orlova</a>
       </div>
     </div>
-    <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:16px;display:flex;justify-content:space-between;font-size:10px;color:rgba(255,255,255,.2)">
-      <p>Motie Tracker © 2026 · Vrijwilligersproject</p>
-      <a href="https://www.tweedekamer.nl" target="_blank" style="color:rgba(255,255,255,.2)">Tweede Kamer →</a>
+    <div class="footer-right">
+      <div>Kabinet-Jetten · D66 – VVD – CDA</div>
+      <div>Tweede Kamer der Staten-Generaal</div>
+      <div>© 2026 janeorlova.com</div>
     </div>
+  </div>
+  <hr class="footer-divider">
+  <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;font-size:10px;color:rgba(247,243,238,.25)">
+    <span>Motie Tracker © 2026 · Vrijwilligersproject</span>
+    <a href="https://www.tweedekamer.nl" target="_blank" style="color:rgba(247,243,238,.25)">Tweede Kamer →</a>
   </div>
 </footer>
 
+<!-- ── MODALS ── -->
+<div id="ovm" class="overlay" style="display:none">
+  <div class="modal">
+    <div class="modal-hd"><h2 id="modal-title">Motie toevoegen</h2><button class="modal-close" id="mx">×</button></div>
+    <div class="modal-body">
+      <div class="mg2">
+        <div class="field"><label>Datum</label><input id="fdat" type="date"/></div>
+        <div class="field"><label>Indiener</label><select id="find"></select></div>
+      </div>
+      <div class="field"><label>Titel</label><input id="ftit" placeholder="Titel van de motie…"/></div>
+      <div class="mg2">
+        <div class="field"><label>Thema</label><select id="fthm"></select></div>
+        <div class="field"><label>Vergadering</label><input id="fverg" placeholder="bijv. 2026-04-08"/></div>
+      </div>
+      <div class="mg2">
+        <div class="field"><label>Status</label><select id="fsta"></select></div>
+        <div class="field"><label>Relatie akkoord</label><select id="fali"></select></div>
+      </div>
+      <div class="field"><label>Toelichting</label><textarea id="ftoe" rows="3" placeholder="Korte toelichting op de motie…"></textarea></div>
+      <div class="field"><label>Link tweedekamer.nl</label><input id="furl" placeholder="https://…"/></div>
+      <div>
+        <span class="slbl">Stemming per fractie</span>
+        <div class="sgrid" id="sgrid"></div>
+      </div>
+    </div>
+    <div class="modal-ft">
+      <button class="btn-del" id="mdel" style="display:none">🗑 Verwijderen</button>
+      <button class="btn-cancel" id="mcan">Annuleren</button>
+      <button class="btn-save" id="msav">Opslaan</button>
+    </div>
+  </div>
+</div>
+
+<div id="ovd" class="overlay" style="display:none">
+  <div class="del-modal">
+    <div style="font-size:36px">🗑</div>
+    <h3>Motie verwijderen?</h3>
+    <p>Deze actie kan niet ongedaan worden gemaakt.</p>
+    <div class="del-btns">
+      <button class="btn-cancel" id="dcan">Annuleren</button>
+      <button class="btn-save" id="dok" style="background:var(--red)">Verwijderen</button>
+    </div>
+  </div>
+</div>
+
+<div id="ovf" class="overlay" style="display:none">
+  <div class="fetch-modal">
+    <div class="fetch-hd">
+      <div><h2>Moties importeren</h2><p>Recente moties ophalen van tweedekamer.nl</p></div>
+      <button class="modal-close" id="fx">×</button>
+    </div>
+    <div class="fetch-body" id="fetch-body"></div>
+    <div class="modal-ft" id="fetch-ft" style="display:none">
+      <button class="btn-cancel" id="fcan">Annuleren</button>
+      <button class="btn-save" id="fimp">Importeren</button>
+    </div>
+  </div>
+</div>
+
 <div id="toast"></div>
-
-<!-- Modals -->
-
-<div id="ovm" class="ov" style="display:none"><div class="modal"><div class="mhd"><h2 id="mttl">Motie toevoegen</h2><button class="xb" id="mx">×</button></div><div class="mbd"><div class="mg2"><div class="fld"><label>Datum</label><input id="fdat" type="date"/></div><div class="fld"><label>Indiener</label><select id="find"></select></div></div><div class="fld"><label>Titel</label><input id="ftit"/></div><div class="mg2"><div class="fld"><label>Thema</label><select id="fthm"></select></div><div class="fld"><label>Vergadering</label><input id="fverg"/></div></div><div class="mg2"><div class="fld"><label>Status</label><select id="fsta"></select></div><div class="fld"><label>Relatie akkoord</label><select id="fali"></select></div></div><div class="fld"><label>Toelichting</label><textarea id="ftoe" rows="3"></textarea></div><div class="fld"><label>Link tweedekamer.nl</label><input id="furl"/></div><div><span class="slbl">Stemming per fractie</span><div class="sgrid" id="sgrid"></div></div></div><div class="mft"><button class="bdel" id="mdel" style="display:none;background:var(--accent);color:#fff;border:none;padding:8px 16px;border-radius:100px;font-size:12px;font-weight:700">🗑 Verwijderen</button><button class="bcan" id="mcan">Annuleren</button><button class="bsav" id="msav">Opslaan</button></div></div></div>
-<div id="ovd" class="ov" style="display:none"><div class="delm"><div style="font-size:40px">🗑</div><h3>Motie verwijderen?</h3><p style="font-size:13px;color:var(--mid)">Deze actie kan niet ongedaan worden gemaakt.</p><div class="dbtns"><button class="bdc" id="dcan">Annuleren</button><button class="bdo" id="dok">Verwijderen</button></div></div></div>
-<div id="ovf" class="ov" style="display:none"><div class="fetchm"><div class="fhd"><div><h2>Nieuwe moties importeren</h2><p>Recente moties die raken aan het coalitieakkoord</p></div><button class="xb" id="fx">×</button></div><div class="fbd"><div id="fcon"></div></div><div id="fftr" class="mft" style="display:none"><button class="bcan" id="fcan">Annuleren</button><button class="bsav" id="fimp">Importeren</button></div></div></div>
 
 <script>
 (function(){
-// ---------- CONSTANTS & DATA ----------
-const SK="motie-v20260404";
-const THEMAS = [
-  "Wonen & Bouwen",
-  "Defensie",
-  "Klimaat & Groene Groei",
-  "Landbouw, Natuur & Stikstof",
-  "Asiel, Migratie & Integratie",
-  "Zorg & Preventie",
-  "Onderwijs & Wetenschap",
-  "Werk & Bestaanszekerheid",
-  "Economie & Ondernemen",
-  "Europa & Buitenlandse Zaken",
-  "Democratie & Rechtsstaat",
-  "Veiligheid & Justitie",
-  "Slagvaardige Overheid",
-  "Nationale Veiligheid",
-  "Digitalisering & AI",
-  "Bereikbaarheid & Mobiliteit",
-  "Overheidsfinancien",
-  "Sociale Cohesie & Cultuur"
+'use strict';
+// ── CONSTANTS ──
+const SK = "motie-v20260404";
+const THEMAS = ["Wonen & Bouwen","Defensie","Klimaat & Groene Groei","Landbouw, Natuur & Stikstof","Asiel, Migratie & Integratie","Zorg & Preventie","Onderwijs & Wetenschap","Werk & Bestaanszekerheid","Economie & Ondernemen","Europa & Buitenlandse Zaken","Democratie & Rechtsstaat","Veiligheid & Justitie","Slagvaardige Overheid","Nationale Veiligheid","Digitalisering & AI","Bereikbaarheid & Mobiliteit","Overheidsfinancien","Sociale Cohesie & Cultuur"];
+const PARTIES = ["VVD","D66","CDA","NSC","BBB","PVV","GL-PvdA","SP","PvdD","Volt","CU","SGP","DENK","50PLUS","JA21","FvD","Gr.Markuszower"];
+const MAANDEN = ['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
+const DAG_NL = ["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"];
+const MONTH_NL = ['','jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+
+const SC = {
+  aangenomen:{l:"Aangenomen",i:"✓",c:getVar('--green'),b:getVar('--greenbg'),bd:getVar('--greenbd')},
+  verworpen:{l:"Verworpen",i:"✗",c:getVar('--red'),b:getVar('--redbg'),bd:getVar('--redbd')},
+  in_behandeling:{l:"In behandeling",i:"⏳",c:getVar('--amber'),b:getVar('--amberbg'),bd:getVar('--amberbd')},
+  aangehouden:{l:"Aangehouden",i:"⏸",c:getVar('--muted'),b:getVar('--card'),bd:getVar('--border')}
+};
+const AC = {
+  conform:{l:"Conform akkoord",i:"✔",c:getVar('--green'),b:getVar('--greenbg'),bd:getVar('--greenbd')},
+  strijdig:{l:"Strijdig",i:"✖",c:getVar('--red'),b:getVar('--redbg'),bd:getVar('--redbd')},
+  neutraal:{l:"Neutraal",i:"○",c:getVar('--muted'),b:getVar('--card'),bd:getVar('--border')},
+  onduidelijk:{l:"Onduidelijk",i:"?",c:getVar('--amber'),b:getVar('--amberbg'),bd:getVar('--amberbd')}
+};
+
+const AKKOORD = [
+  {thema:"Wonen & Bouwen",emoji:"🏠",punten:["100.000 woningen per jaar bouwen","30 grootschalige nieuwbouwlocaties","Vereenvoudigingswet Woningmarkt","Hypotheekrenteaftrek blijft","1/3 betaalbare koop (<€250k)","1/3 sociaal huur, 1/3 middenhuur","Doorstroomhypotheek senioren","VvE-verduurzamingsfonds","Woningsplitsing vergemakkelijken","Flex-wonen vergemakkelijken"]},
+  {thema:"Defensie",emoji:"🛡",punten:["Defensiebudget 3,5% bbp in 2035","Vrijheidsbijdrage","Europese defensiesamenwerking","Minimaal 50% NL/EU aankopen","NAVO-verplichtingen nakomen","Luchtverdediging uitbreiden","Marinecapaciteit Caribisch","Reservistenprogramma uitbreiden","Cyberveiligheid vijfde domein"]},
+  {thema:"Klimaat & Groene Groei",emoji:"🌱",punten:["Minimaal vier nieuwe kerncentrales","Stikstoffonds 20 mrd hersteld","Netcongestie aanpakken","SDE++ continueren","Klimaatnormen 2030 naleven","Warmtepompen stimuleren","Duurzame brandstoffen (SAF)","Circulaire economie 2030","Waterstofinfrastructuur"]},
+  {thema:"Landbouw, Natuur & Stikstof",emoji:"🌾",punten:["Vrijwillige uitkoop piekbelasters","Innovatieve stikstofmaatregelen","Landbouwtransitie: 4 mrd fonds","Voedselprijzen betaalbaar","Boerenraad instellen","Wet Stikstofreductie aanpassen","Kringlooplandbouw stimuleren","Exportpositie beschermen"]},
+  {thema:"Asiel, Migratie & Integratie",emoji:"🌍",punten:["Tweestatusstelsel","IND-achterstanden wegwerken","Opvangcapaciteit beperken","Terugkeerbeleid versterken","Gezinshereniging strenger","Naturalisatietermijn 10 jaar","Asielaanvragen buiten EU","GEAS implementeren"]},
+  {thema:"Zorg & Preventie",emoji:"🏥",punten:["Eigen risico afschaffen","Preventieakkoord II","GGZ wachtlijsten 500 mln","Ouderenzorg personeel","Geneesmiddelenprijsonderhandeling","Huisartsenzorg versterken","WLZ vereenvoudigen","Mentale gezondheid jongeren"]},
+  {thema:"Onderwijs & Wetenschap",emoji:"📚",punten:["Basisvaardigheden extra geld","Lerarentekort salarissen VO","Schoolbesturen transparantie","Mbo-diplomawaardering","Internationalisering beperken","Fundamenteel onderzoek beschermen","Passend onderwijs hervormen"]},
+  {thema:"Werk & Bestaanszekerheid",emoji:"💼",punten:["AOW-leeftijd alternatief zware beroepen","350 mln kwetsbare groepen","WW-duur 2 naar 1 jaar","Bijstand indexeren","Schuldhulpverlening verbeteren","Armoedegrens halveren","Toeslagenstelsel hervormen"]},
+  {thema:"Economie & Ondernemen",emoji:"📈",punten:["Box 3 werkelijk rendement 2027","Carry-back verliesverrekening","Btw-nultarief groente/fruit","EMU-norm 3% tekort","Digitale economie belasten (Pillar 2)","Fraudebestrijding Belastingdienst","MKB-fonds","Regeldruk -25%"]},
+  {thema:"Europa & Buitenlandse Zaken",emoji:"🇪🇺",punten:["3 mrd steun Oekraïne","NAVO-verplichtingen","Europese strategische autonomie","Sancties Rusland handhaven","Ontwikkelingssamenwerking migratie","EU-bijdrage controleren","WTO-hervormingen"]},
+  {thema:"Democratie & Rechtsstaat",emoji:"⚖",punten:["Constitutionele toetsing","Informatiehuishouding (WOO)","Gemeentelijke herindeling vrijwillig","Kiesstelsel herzien","Mediapluriformiteit borgen","Rechterlijke onafhankelijkheid"]},
+  {thema:"Veiligheid & Justitie",emoji:"🚔",punten:["Politiesterkte +2.000 fte","Minimumstraffen geweldsdelicten","Ondermijningsfonds verlengen","Cybercriminaliteit nationaal centrum","TBS-capaciteit uitbreiden","Snellere rechtszaken digitalisering"]},
+  {thema:"Digitalisering & AI",emoji:"💻",punten:["Algoritmeregister overheid","AI-wet implementatie versnellen","Digitale overheid e-ID","Europese cloudinfrastructuur","Digitale geletterdheid curriculum"]},
+  {thema:"Bereikbaarheid & Mobiliteit",emoji:"🚆",punten:["Intercityverbindingen uitbreiden","Onderhoud rijwegen inhaalslag","OV-chipkaart account-based","Fietsinfrastructuur 1 mrd extra"]},
+  {thema:"Nationale Veiligheid",emoji:"🔐",punten:["Nieuwe Wet ivd","MIVD/AIVD capaciteit +40%","Offensieve/defensieve cyber","Terroristische content 1 uur offline"]},
+  {thema:"Slagvaardige Overheid",emoji:"🏛",punten:["Meer IT-talent vaste dienst","Uitvoerbaarheid centraal","Toeslagenaffaire afronden 2027","Gemeenschapsfonds"]},
+  {thema:"Overheidsfinancien",emoji:"💰",punten:["Begrotingsdiscipline EMU 3%","Investeringsfonds economische structuur","Auditdienst Rijk versterken","Rijksuitgaven doelmatigheidstoets"]},
+  {thema:"Sociale Cohesie & Cultuur",emoji:"🎭",punten:["Nationaal Sportakkoord II","Cultuurbudget geen bezuinigingen","Vrijwilligersverzekering verbeteren","Omroepbestel hervormen"]}
 ];
 
-const THEMA_ALIASES = {
-  "Zorg": "Zorg & Preventie",
-  "Bereikbaarheid": "Bereikbaarheid & Mobiliteit",
-  "Financien": "Overheidsfinancien",
-  "Asiel Migratie": "Asiel, Migratie & Integratie",
-  "Klimaat Energie": "Klimaat & Groene Groei",
-  "Landbouw Natuur": "Landbouw, Natuur & Stikstof",
-  "Buitenlandse Zaken": "Europa & Buitenlandse Zaken",
-  "Onderwijs": "Onderwijs & Wetenschap",
-  "Bestaanszekerheid": "Werk & Bestaanszekerheid",
-  "Economie": "Economie & Ondernemen"
-};
-  function normThema(s){
-  return String(s || "").toLowerCase()
-    .replace(/[àáâãäå]/g,"a").replace(/[èéêë]/g,"e")
-    .replace(/[ìíîï]/g,"i").replace(/[òóôõö]/g,"o")
-    .replace(/[ùúûü]/g,"u").replace(/ç/g,"c")
-    .replace(/[^a-z0-9]/g," ")
-    .replace(/\s+/g," ")
-    .trim();
-}
-
-function themasMatch(a, b){
-  let na = normThema(a);
-  let nb = normThema(b);
-
-  if (na === nb) return true;
-
-  // alias resolution
-  return (
-    THEMA_ALIASES[na] === nb ||
-    THEMA_ALIASES[nb] === na
-  );
-}
-
-//
-const SC={
-  aangenomen:{l:"Aangenomen",i:"✓",c:"var(--green)",b:"var(--greenbg)",bd:"var(--greenbd)"},
-  verworpen:{l:"Verworpen",i:"✗",c:"var(--accent)",b:"var(--accentbg)",bd:"var(--accentbd)"},
-  in_behandeling:{l:"In behandeling",i:"⏳",c:"var(--amber)",b:"var(--amberbg)",bd:"var(--amberbd)"},
-  aangehouden:{l:"Aangehouden",i:"⏸",c:"var(--mid)",b:"var(--paper2)",bd:"var(--border)"}
-};
-const AC={
-  conform:{l:"Conform akkoord",i:"✔",c:"var(--green)",b:"var(--greenbg)",bd:"var(--greenbd)"},
-  strijdig:{l:"Strijdig",i:"✖",c:"var(--accent)",b:"var(--accentbg)",bd:"var(--accentbd)"},
-  neutraal:{l:"Neutraal",i:"○",c:"var(--mid)",b:"var(--paper2)",bd:"var(--border)"},
-  onduidelijk:{l:"Onduidelijk",i:"?",c:"var(--amber)",b:"var(--amberbg)",bd:"var(--amberbd)"}
-};
-const AKKOORD=[
-  {thema:"Wonen & Bouwen",emoji:"🏠",punten:["100.000 woningen per jaar bouwen","30 grootschalige nieuwbouwlocaties","Vereenvoudigingswet Woningmarkt","Hypotheekrenteaftrek blijft","1/3 betaalbare koop (<€250k)","1/3 sociaal huur, 1/3 middenhuur","Doorstroomhypotheek senioren","VvE-verduurzamingsfonds","Woningsplitsing vergemakkelijken","Flex-wonen vergemakkelijken","Startersvrijstelling behouden","Vermogenstoets nieuwe huurders"]},
-  {thema:"Defensie",emoji:"🛡",punten:["Defensiebudget 3,5% bbp in 2035","Vrijheidsbijdrage","Europese defensiesamenwerking","Minimaal 50% NL/EU aankopen","NAVO-verplichtingen nakomen","Luchtverdediging uitbreiden","Marinecapaciteit Caribisch","Reservistenprogramma uitbreiden","Cyberveiligheid vijfde domein","Veteranenbeleid verbeteren"]},
-  {thema:"Klimaat & Groene Groei",emoji:"🌱",punten:["Minimaal vier nieuwe kerncentrales","Stikstoffonds 20 mrd hersteld","Netcongestie aanpakken","SDE++ continueren","Klimaatnormen 2030 naleven","Warmtepompen stimuleren","Duurzame brandstoffen (SAF)","Circulaire economie 2030","Waterstofinfrastructuur","CO2-opslag Noordzee","Energiearmoedefonds"]},
-  {thema:"Landbouw, Natuur & Stikstof",emoji:"🌾",punten:["Vrijwillige uitkoop piekbelasters","Innovatieve stikstofmaatregelen","Landbouwtransitie: 4 mrd fonds","Voedselprijzen betaalbaar","Boerenraad instellen","Wet Stikstofreductie aanpassen","Kringlooplandbouw stimuleren","Exportpositie beschermen","Jonge boeren fonds","Waterbeheer"]},
-  {thema:"Asiel, Migratie & Integratie",emoji:"🌍",punten:["Tweestatusstelsel","IND-achterstanden wegwerken","Opvangcapaciteit beperken","Terugkeerbeleid versterken","Gezinshereniging strenger","Naturalisatietermijn 10 jaar","Asielaanvragen buiten EU","GEAS implementeren","Statushouders naar werk","Inburgeringseis B1","Parallelle samenlevingen tegengaan"]},
-  {thema:"Zorg & Preventie",emoji:"🏥",punten:["Eigen risico afschaffen (eigen bijdragen)","Preventieakkoord II","GGZ wachtlijsten 500 mln","Ouderenzorg personeel","Geneesmiddelenprijsonderhandeling","Huisartsenzorg versterken","WLZ vereenvoudigen","Mentale gezondheid jongeren","Digitale zorg uitbreiden","Medisch specialisten loondienst","Alcoholpreventie"]},
-  {thema:"Onderwijs & Wetenschap",emoji:"📚",punten:["Basisvaardigheden extra geld","Lerarentekort salarissen VO","Schoolbesturen transparantie","Mbo-diplomawaardering","Internationalisering beperken","Fundamenteel onderzoek beschermen","Passend onderwijs hervormen","Vroegschoolse educatie","Digitale vaardigheden","Privéscholen heroverwegen","Basisbeurs consolideren"]},
-  {thema:"Werk & Bestaanszekerheid",emoji:"💼",punten:["AOW-leeftijd alternatief zware beroepen","350 mln kwetsbare groepen","WW-duur 2 naar 1 jaar","Bijstand indexeren","Schuldhulpverlening verbeteren","Armoedegrens halveren","Toeslagenstelsel hervormen","Zzp-wet schijnzelfstandigheid","Kinderopvang bijna gratis","Flexibilisering begrenzen"]},
-  {thema:"Economie & Ondernemen",emoji:"📈",punten:["Box 3 werkelijk rendement 2027","Vrijheidsbijdrage","Carry-back verliesverrekening","Btw-nultarief groente/fruit","EMU-norm 3% tekort","Digitale economie belasten (Pillar 2)","Fraudebestrijding Belastingdienst","MKB-fonds","Regeldruk -25%","Nederland AI-hub"]},
-  {thema:"Europa & Buitenlandse Zaken",emoji:"🇪🇺",punten:["3 mrd steun Oekraïne","NAVO-verplichtingen","Europese strategische autonomie","Sancties Rusland handhaven","Ontwikkelingssamenwerking migratie","EU-bijdrage controleren","WTO-hervormingen","Mensenrechtenbeleid","Diasporabeleid","Koninkrijksrelaties"]},
-  {thema:"Democratie & Rechtsstaat",emoji:"⚖",punten:["Constitutionele toetsing","Informatiehuishouding (WOO)","Gemeentelijke herindeling vrijwillig","Kiesstelsel herzien","Mediapluriformiteit borgen","Rechterlijke onafhankelijkheid","Grondwet modernisering","Ombudsman uitbreiden","Staatscommissie parlementair"]},
-  {thema:"Veiligheid & Justitie",emoji:"🚔",punten:["Politiesterkte +2.000 fte","Minimumstraffen geweldsdelicten","Ondermijningsfonds verlengen","Cybercriminaliteit nationaal centrum","TBS-capaciteit uitbreiden","Snellere rechtszaken digitalisering","Crimineel vermogen afromen","Slachtofferrechten versterken","Reclassering meer begeleiding"]},
-  {thema:"Slagvaardige Overheid",emoji:"🏛",punten:["Meer IT-talent vaste dienst (Roemernorm)","Uitvoerbaarheid centraal","Toeslagenaffaire afronden 2027","Gemeenschapsfonds","Bezwaarprocedures stoppen","Overheidsdata open tenzij","Rijksdienst externe inhuur inkrimpen","Interbestuurlijk toezicht vereenvoudigen","Decentrale overheden financiële zekerheid"]},
-  {thema:"Nationale Veiligheid",emoji:"🔐",punten:["Nieuwe Wet ivd","MIVD/AIVD capaciteit +40%","Offensieve/defensieve cyber","Terroristische content 1 uur offline","Kritieke infrastructuur beschermen","Buitenlandse inmenging wetgeving","Spionage strafrechtelijk kader","NCSC versterken","Energievoorzieningszekerheid"]},
-  {thema:"Digitalisering & AI",emoji:"💻",punten:["Algoritmeregister overheid","AI-wet implementatie versnellen","Digitale overheid e-ID","Europese cloudinfrastructuur","Digitale geletterdheid curriculum","Open source software overheid","Cyberhygiëne normen bedrijven","Publieke AI-infrastructuur"]},
-  {thema:"Bereikbaarheid & Mobiliteit",emoji:"🚆",punten:["Intercityverbindingen uitbreiden","Onderhoud rijwegen inhaalslag","OV-chipkaart account-based","Fietsinfrastructuur 1 mrd extra","Lelystad Airport militaire basis","Zeehavens duurzame corridors","Spoor intercity direct uitbreiden","Schiphol capaciteitsplafond"]},
-  {thema:"Overheidsfinancien",emoji:"💰",punten:["Begrotingsdiscipline EMU 3%","Investeringsfonds economische structuur","Auditdienst Rijk versterken","Ombudsman capaciteit","Rijksuitgaven doelmatigheidstoets","Belastingparadijs aanpak substance","Staatsdeelnemingen dividend","Fonds tekortfinanciering afbouwen"]},
-  {thema:"Sociale Cohesie & Cultuur",emoji:"🎭",punten:["Nationaal Sportakkoord II","Cultuurbudget geen bezuinigingen","Vrijwilligersverzekering verbeteren","Omroepbestel hervormen","Discriminatiebestrijding versterken","Inclusiviteit toegankelijkheid","Religieuze diversiteit","Buurtgemeenschappen wijkaanpak"]}
+let AGENDA = [
+  {datum:"2026-04-07",tijd:"",titel:"Stemmingen",locatie:"Plenaire zaal",soort:"Stemmingen",url:"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02872"},
+  {datum:"2026-04-08",tijd:"",titel:"Regeling van werkzaamheden",locatie:"Plenaire zaal",soort:"Regeling van werkzaamheden",url:"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02874"}
 ];
-let moties=[];
-let openId=null, editId=null, delId=null, _archiefOpen={}, fetchSel={}, _akOpen={};
-let AGENDA=[
-  {"datum":"2026-04-07","tijd":"","titel":"Stemmingen","locatie":"Plenaire zaal","soort":"Stemmingen","url":"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02872"},
-  {"datum":"2026-04-08","tijd":"","titel":"Regeling van werkzaamheden","locatie":"Plenaire zaal","soort":"Regeling van werkzaamheden","url":"https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02874"}
-];
-const MONTH_NL=['','jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
-const MAANDEN=['januari','februari','maart','april','mei','juni','juli','augustus','september','oktober','november','december'];
-const DAG_NL=["zondag","maandag","dinsdag","woensdag","donderdag","vrijdag","zaterdag"];
 
-// ---------- HELPERS ----------
-function g(id){return document.getElementById(id);}
-function esc(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-function toast(msg){let t=g("toast");t.textContent=msg;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),3000);}
-function showLoading(){let ml=g("ml");if(ml) ml.innerHTML='<div style="text-align:center;padding:48px 20px"><div class="spin"></div><div style="margin-top:16px;font-size:13px;color:var(--mid)">Moties laden…</div></div>';}
-function saveDB(){try{localStorage.setItem(SK,JSON.stringify(moties));}catch(e){}}
-function bdg(k,cfg){let c=cfg[k];if(!c) return ""; return `<span class="badge" style="color:${c.c};background:${c.b};border-color:${c.bd}">${c.i?c.i+" ":""}${esc(c.l)}</span>`;}
+let moties = [];
+let openId = null, editId = null, delId = null, _akOpen = {}, _archOpen = {};
 
-// ── FIX: robust thema normalizer for matching ──
-// Strips accents + lowercases + collapses whitespace for fuzzy matching
-function normThema(s){
-  return String(s||"").toLowerCase()
-    .replace(/[àáâãäå]/g,"a").replace(/[èéêë]/g,"e").replace(/[ìíîï]/g,"i")
-    .replace(/[òóôõö]/g,"o").replace(/[ùúûü]/g,"u").replace(/ç/g,"c")
-    .replace(/[^a-z0-9&]/g," ").replace(/\s+/g," ").trim();
+// ── HELPERS ──
+function g(id){return document.getElementById(id)}
+function esc(s){return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function getVar(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()}
+function toast(msg){let t=g('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000)}
+function saveDB(){try{localStorage.setItem(SK,JSON.stringify(moties))}catch(e){}}
+function normThema(s){return String(s||'').toLowerCase().replace(/[àáâãäå]/g,'a').replace(/[èéêë]/g,'e').replace(/[ìíîï]/g,'i').replace(/[òóôõö]/g,'o').replace(/[ùúûü]/g,'u').replace(/ç/g,'c').replace(/[^a-z0-9&]/g,' ').replace(/\s+/g,' ').trim()}
+function themasMatch(a,b){return normThema(a)===normThema(b)}
+
+function badge(key, cfg){
+  let c = cfg[key]; if(!c) return '';
+  return `<span class="status-badge" style="color:${c.c};background:${c.b};border:1px solid ${c.bd}">${c.i ? c.i+' ' : ''}${esc(c.l)}</span>`;
 }
-function themasMatch(a,b){ return normThema(a)===normThema(b); }
+function conformColor(al){
+  if(al==='conform') return getVar('--green');
+  if(al==='strijdig') return getVar('--red');
+  if(al==='onduidelijk') return getVar('--amber');
+  return getVar('--muted');
+}
 
-// ---------- RENDER HERO ----------
+// ── TICKER ──
+(function(){
+  const items = ['Moties Tweede Kamer','Kabinet-Jetten','D66 · VVD · CDA','Coalitieakkoord 2026','Parlementaire Democratie','Live bijgewerkt via tweedekamer.nl'];
+  const all = [...items,...items];
+  g('ticker').innerHTML = all.map(t=>`<span class="ticker-item"><span class="ticker-dot"></span>${t}</span>`).join('');
+})();
+
+// ── HEADER SCROLL ──
+window.addEventListener('scroll', ()=>{g('site-header').classList.toggle('scrolled', window.scrollY > 48)});
+
+// ── TABS ──
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    let tab = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    g('pane-'+tab).classList.add('active');
+    if(tab==='akkoord') renderAkkoord();
+    if(tab==='stats') renderStats();
+    if(tab==='process') renderArchief();
+    if(tab==='agenda') renderAgenda();
+    if(tab==='leaderboard') renderLeaderboard();
+    window.scrollTo(0,0);
+  });
+});
+
+// ── HERO STATS ──
 function renderHero(){
   let tot=moties.length, aang=0, verw=0, conf=0, str=0;
   for(let m of moties){
-    if(m.status==="aangenomen") aang++;
-    if(m.status==="verworpen") verw++;
-    if(m.alignment==="conform") conf++;
-    if(m.alignment==="strijdig") str++;
+    if(m.status==='aangenomen') aang++;
+    if(m.status==='verworpen') verw++;
+    if(m.alignment==='conform') conf++;
+    if(m.alignment==='strijdig') str++;
   }
-  let succes=tot?Math.round(aang/tot*100):0;
-  let conformPct=tot?Math.round(conf/tot*100):0;
-  let hb=g("hbar"); if(!hb) return;
-  hb.innerHTML=`
-    <div class="hs"><div class="hsl">Moties totaal</div><div class="hsv">${tot}</div><div class="hss">Kabinet-Jetten</div></div>
-    <div class="hs"><div class="hsl">Aangenomen</div><div class="hsv" style="color:#7DDBA8">${aang}</div><div class="hsa hsa-g">${succes}% ratio</div></div>
-    <div class="hs"><div class="hsl">Verworpen</div><div class="hsv" style="color:#F5A090">${verw}</div><div class="hss">${tot?Math.round(verw/tot*100):0}% van totaal</div></div>
-    <div class="hs"><div class="hsl">Conform akkoord</div><div class="hsv" style="color:#7DDBA8">${conf}</div><div class="hss">${conformPct}% van moties</div></div>
-    <div class="hs"><div class="hsl">Strijdig akkoord</div><div class="hsv" style="color:#F5A090">${str}</div><div class="hsa hsa-r">${tot?Math.round(str/tot*100):0}% strijdig</div></div>`;
+  let succes = tot ? Math.round(aang/tot*100) : 0;
+  let conformPct = tot ? Math.round(conf/tot*100) : 0;
+  g('hero-stats').innerHTML = `
+    <div class="hero-stat"><div class="hs-label">Moties totaal</div><div class="hs-value">${tot}</div><div class="hs-sub">Kabinet-Jetten</div></div>
+    <div class="hero-stat"><div class="hs-label">Aangenomen</div><div class="hs-value green">${aang}</div><div class="hs-sub">${succes}% slagingsratio</div></div>
+    <div class="hero-stat"><div class="hs-label">Verworpen</div><div class="hs-value red">${verw}</div><div class="hs-sub">${tot?Math.round(verw/tot*100):0}% van totaal</div></div>
+    <div class="hero-stat"><div class="hs-label">Conform akkoord</div><div class="hs-value green">${conf}</div><div class="hs-sub">${conformPct}% van moties</div></div>
+    <div class="hero-stat"><div class="hs-label">Strijdig akkoord</div><div class="hs-value red">${str}</div><div class="hs-sub">${tot?Math.round(str/tot*100):0}% strijdig</div></div>`;
 }
 
-function renderVotes(st,score){
-  if(!st||Object.keys(st).length===0) return score?`<p class="vem">Stemuitslag: ${esc(score)}</p>`:'';
-  let grp={voor:[],tegen:[],onthouden:[],afwezig:[]};
+// ── VOTES ──
+function renderVotes(st, score){
+  if(!st || Object.keys(st).length===0) return score ? `<p style="font-size:12px;color:var(--muted);font-style:italic">Stemuitslag: ${esc(score)}</p>` : '';
+  let grp = {voor:[],tegen:[],onthouden:[],afwezig:[]};
   for(let p in st) if(grp[st[p]]) grp[st[p]].push(p);
-  let lbls={voor:'Voor',tegen:'Tegen',onthouden:'Onthouden',afwezig:'Afwezig'};
-  let cols={voor:{c:'var(--green)',b:'var(--greenbg)',bd:'var(--greenbd)'},tegen:{c:'var(--accent)',b:'var(--accentbg)',bd:'var(--accentbd)'},onthouden:{c:'var(--amber)',b:'var(--amberbg)',bd:'var(--amberbd)'},afwezig:{c:'var(--mid)',b:'var(--paper2)',bd:'var(--border)'}};
-  let html='<div class="vl">Stemming per fractie</div>';
+  let lbls = {voor:'Voor',tegen:'Tegen',onthouden:'Onthouden',afwezig:'Afwezig'};
+  let cols = {
+    voor:{c:getVar('--green'),b:getVar('--greenbg'),bd:getVar('--greenbd')},
+    tegen:{c:getVar('--red'),b:getVar('--redbg'),bd:getVar('--redbd')},
+    onthouden:{c:getVar('--amber'),b:getVar('--amberbg'),bd:getVar('--amberbd')},
+    afwezig:{c:getVar('--muted'),b:getVar('--card'),bd:getVar('--border')}
+  };
+  let html = `<div class="vote-label">Stemming per fractie</div>`;
   for(let k of ['voor','tegen','onthouden','afwezig']){
     if(!grp[k].length) continue;
-    let col=cols[k];
-    html+=`<div class="vg"><span class="vp" style="color:${col.c};background:${col.b};border-color:${col.bd}">${lbls[k]} (${grp[k].length})</span><div class="vc2">${grp[k].map(p=>`<span class="vcp" style="color:${col.c};border-color:${col.bd}">${esc(p)}</span>`).join('')}</div></div>`;
+    let col = cols[k];
+    html += `<div class="vote-row"><span class="vote-tag" style="color:${col.c};background:${col.b};border-color:${col.bd}">${lbls[k]} (${grp[k].length})</span><div style="display:flex;gap:3px;flex-wrap:wrap">${grp[k].map(p=>`<span class="vote-pill" style="color:${col.c};border-color:${col.bd}">${esc(p)}</span>`).join('')}</div></div>`;
   }
-  return html;
+  return `<div class="vote-section">${html}</div>`;
 }
 
+// ── RENDER ONE MOTIE ROW ──
 function renderMotie(m){
-  let sc=SC[m.status]||SC.in_behandeling;
-  let ac=AC[m.alignment]||AC.neutraal;
-  let open=(openId==m.id);
-  let stripe=m.alignment==='conform'?'var(--green)':m.alignment==='strijdig'?'var(--accent)':'var(--border)';
-  let detail='';
+  let sc = SC[m.status] || SC.in_behandeling;
+  let ac = AC[m.alignment] || AC.neutraal;
+  let open = (openId == m.id);
+  let dateStr = (m.datum||'').slice(8)+'/'+((m.datum||'').slice(5,7));
+  let detail = '';
   if(open){
-    detail=`<div class="md">${m.toelichting?`<div class="mtl">${esc(m.toelichting)}</div>`:''}${m.tk_url?`<a href="${esc(m.tk_url)}" target="_blank" class="tkl">🔗 Kamerstuk op tweedekamer.nl →</a>`:''}<div class="vs">${renderVotes(m.stemmen,m.score)}</div></div>`;
+    let links = m.tk_url ? `<a href="${esc(m.tk_url)}" target="_blank" class="motie-detail-link">🔗 Kamerstuk bekijken →</a>` : '';
+    detail = `<div class="motie-detail">
+      <p class="motie-detail-text">${esc(m.toelichting||'')}</p>
+      ${links}
+      ${renderVotes(m.stemmen, m.score)}
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px">${badge(m.status,SC)} ${badge(m.alignment,AC)}</div>
+      <button onclick="openModal('${m.id}')" style="margin-top:10px;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:none;border:none;padding:0;cursor:pointer">✎ Bewerken</button>
+    </div>`;
   }
-  return `<div class="mc${open?' open':''}" data-id="${m.id}"><div class="mh" data-toggle="${m.id}"><div class="ms" style="background:${stripe}"></div><div class="mb"><div class="mm"><span class="mdt">${esc(m.datum||'')}</span><span class="msep">·</span><span class="mi">${esc(m.indiener||'')}</span><span class="mth">${esc(m.thema||'')}</span></div><div class="mt">${esc(m.titel)}</div><div class="mbg">${bdg(m.status,SC)} ${bdg(m.alignment,AC)}</div></div><div class="mch">${open?'▲':'▼'}</div></div>${detail}</div>`;
+  return `<div class="motie-row${open?' open':''}" data-id="${m.id}">
+    <div class="motie-row-grid" data-toggle="${m.id}">
+      <span class="motie-date">${esc(dateStr)}</span>
+      <div class="motie-title-wrap">
+        <div class="motie-title">${esc(m.titel)}</div>
+        <div class="motie-thema">${esc(m.thema||'')}</div>
+      </div>
+      <span class="motie-indiener">${esc(m.indiener||'')}</span>
+      <span><span class="status-badge" style="color:${sc.c};background:${sc.b};border:1px solid ${sc.bd}">${sc.i} ${esc(sc.l)}</span></span>
+      <span class="conform-label" style="color:${conformColor(m.alignment)};font-weight:500;font-size:10px">${esc(ac.l)}</span>
+      <span class="motie-chevron">▾</span>
+    </div>
+    ${detail}
+  </div>`;
 }
 
+// ── FILTER & RENDER MOTIES ──
 function getFiltered(includeArchief){
-  let q=(g("sinp")?.value||"").toLowerCase();
-  let fa=(g("fal")?.value||"");
-  let ft=(g("fth")?.value||"");
-  let fs=(g("fst")?.value||"");
+  let q = (g('search-inp')?.value||'').toLowerCase();
+  let fa = (g('fal')?.value||'');
+  let ft = (g('fth')?.value||'');
+  let fs = (g('fst')?.value||'');
   return moties.filter(m=>{
-    if(!includeArchief&&m.archief) return false;
-    let qok=!q||(m.titel||"").toLowerCase().includes(q)||(m.indiener||"").toLowerCase().includes(q)||(m.thema||"").toLowerCase().includes(q);
-    return qok&&(!fa||m.alignment===fa)&&(!ft||themasMatch(m.thema,ft))&&(!fs||m.status===fs);
+    if(!includeArchief && m.archief) return false;
+    let qok = !q || (m.titel||'').toLowerCase().includes(q) || (m.indiener||'').toLowerCase().includes(q) || (m.thema||'').toLowerCase().includes(q);
+    return qok && (!fa||m.alignment===fa) && (!ft||themasMatch(m.thema,ft)) && (!fs||m.status===fs);
   }).sort((a,b)=>(b.datum||'').localeCompare(a.datum||''));
 }
 
 function renderMoties(){
   renderHero();
-  let list=g("ml"); if(!list) return;
-  let filtered=getFiltered(false);
-  let fc=g("fcount"); if(fc) fc.textContent=`${filtered.length} motie${filtered.length!==1?'s':''} weergegeven`;
+  let list = g('motie-list'); if(!list) return;
+  let filtered = getFiltered(false);
+  let fc = g('filter-count'); if(fc) fc.textContent = `${filtered.length} motie${filtered.length!==1?'s':''}`;
   if(!filtered.length){
-    let archived=moties.filter(m=>m.archief);
-    if(archived.length) list.innerHTML=`<div id="emsg"><p>Alle moties zijn in behandeling</p><span>Er zijn ${archived.length} moties die wachten op stemuitslag.</span><br><br><button onclick="showPane('tab-ar')" style="padding:10px 20px;background:var(--ink);color:#fff;border:none;border-radius:100px;cursor:pointer">⏳ Bekijk In Process →</button></div>`;
-    else list.innerHTML='<div id="emsg"><p>Geen moties gevonden</p><span>Pas de zoekterm of filters aan.</span></div>';
+    list.innerHTML = `<div class="empty-state"><p>Geen moties gevonden</p><span>Pas de zoekterm of filters aan.</span></div>`;
     return;
   }
-  list.innerHTML=filtered.map(renderMotie).join("");
-  document.querySelectorAll(".mh[data-toggle]").forEach(el=>el.addEventListener("click",function(){let id=this.getAttribute("data-toggle"); openId=(openId===id)?null:id; renderMoties();}));
+  list.innerHTML = filtered.map(renderMotie).join('');
+  list.querySelectorAll('[data-toggle]').forEach(el=>el.addEventListener('click',function(){
+    let id = this.getAttribute('data-toggle');
+    openId = (openId===id) ? null : id;
+    renderMoties();
+  }));
 }
 
+// ── ARCHIEF (IN PROCESS) ──
 function renderArchief(){
-  let wrap=g("arch-list"); if(!wrap) return;
-  let archived=moties.filter(m=>m.archief);
-  if(!archived.length){wrap.innerHTML='<div id="emsg"><p>Geen moties in behandeling</p><span>Moties met stemuitslag staan op de hoofdpagina.</span></div>'; return;}
-  let byMonth={};
-  archived.forEach(m=>{let ym=(m.datum||'').slice(0,7); if(ym) byMonth[ym]=byMonth[ym]||[]; byMonth[ym].push(m);});
-  let months=Object.keys(byMonth).sort().reverse();
-  let html=`<div style="margin-bottom:20px"><div style="font-size:22px;font-weight:700">⏳ Moties in behandeling</div><p style="font-size:12px;color:var(--mid);margin-top:4px">${archived.length} moties wachten op stemuitslag</p></div>`;
+  let wrap = g('arch-list'); if(!wrap) return;
+  let archived = moties.filter(m=>m.archief);
+  if(!archived.length){
+    wrap.innerHTML = '<div class="empty-state"><p>Geen moties in behandeling</p></div>'; return;
+  }
+  let byMonth = {};
+  archived.forEach(m=>{let ym=(m.datum||'').slice(0,7); if(ym){byMonth[ym]=byMonth[ym]||[]; byMonth[ym].push(m);}});
+  let months = Object.keys(byMonth).sort().reverse();
+  let html = `<p style="font-size:12px;color:var(--muted);margin-bottom:16px">${archived.length} moties wachten op stemuitslag</p>`;
   months.forEach(ym=>{
-    let items=byMonth[ym];
-    let open=!!_archiefOpen[ym];
-    html+=`<div class="arch-month"><div class="arch-mtitle" data-month="${ym}">${open?'▲':'▼'} ${ym.slice(5,7)}/${ym.slice(0,4)} <span class="arch-cnt">${items.length}</span></div>${open?`<div class="arch-items">${items.map(renderMotie).join('')}</div>`:''}</div>`;
+    let items = byMonth[ym];
+    let open = !!_archOpen[ym];
+    html += `<div class="arch-month"><div class="arch-month-title" data-month="${ym}">${open?'▲':'▼'} ${ym.slice(5,7)}/${ym.slice(0,4)}<span class="arch-cnt">${items.length}</span></div>${open?`<div class="arch-items">${items.map(renderMotie).join('')}</div>`:''}</div>`;
   });
-  wrap.innerHTML=html;
-  wrap.querySelectorAll(".arch-mtitle[data-month]").forEach(el=>el.addEventListener("click",function(){let ym=this.getAttribute("data-month"); _archiefOpen[ym]=!_archiefOpen[ym]; renderArchief();}));
-  wrap.querySelectorAll(".mh[data-toggle]").forEach(el=>el.addEventListener("click",function(){let id=this.getAttribute("data-toggle"); openId=(openId===id)?null:id; renderArchief();}));
+  wrap.innerHTML = html;
+  wrap.querySelectorAll('.arch-month-title').forEach(el=>el.addEventListener('click',function(){
+    let ym=this.getAttribute('data-month'); _archOpen[ym]=!_archOpen[ym]; renderArchief();
+  }));
+  wrap.querySelectorAll('[data-toggle]').forEach(el=>el.addEventListener('click',function(){
+    let id=this.getAttribute('data-toggle'); openId=(openId===id)?null:id; renderArchief();
+  }));
 }
 
-// ── FIX: renderAkkoord — use themasMatch(), show ALL themes ──
+// ── AKKOORD ──
 function renderAkkoord(){
-  let wrap=g("akwrap"); if(!wrap) return;
-  let totalPunten=AKKOORD.reduce((a,ak)=>a+ak.punten.length,0);
+  let wrap = g('akwrap'); if(!wrap) return;
+  let totalPunten = AKKOORD.reduce((a,ak)=>a+ak.punten.length,0);
+  let themasMetMotie = AKKOORD.filter(ak=>moties.some(m=>themasMatch(m.thema,ak.thema))).length;
+  let totalConform = moties.filter(m=>m.alignment==='conform').length;
+  let totalStrijdig = moties.filter(m=>m.alignment==='strijdig').length;
+  let dekkingPct = Math.round(themasMetMotie/AKKOORD.length*100);
+  let conformPct = moties.length ? Math.round(totalConform/moties.length*100) : 0;
 
-  // Use fuzzy match so "Bereikbaarheid & Mobiliteit" matches regardless of exact spacing/accents
-  let themasMetMotie=AKKOORD.filter(ak=>moties.some(m=>themasMatch(m.thema,ak.thema))).length;
-  let totalConform=moties.filter(m=>m.alignment==="conform").length;
-  let totalStrijdig=moties.filter(m=>m.alignment==="strijdig").length;
-  let dekkingPct=Math.round(themasMetMotie/AKKOORD.length*100);
-  let conformPct=moties.length?Math.round(totalConform/moties.length*100):0;
-
-  let summaryHtml=`<div class="ak-hero">
-    <div class="ak-hero-row">
-      <div class="ak-hstat"><div class="ak-hbig">${themasMetMotie}/${AKKOORD.length}</div><div class="ak-hlabel">Thema's gedekt</div></div>
-      <div class="ak-hstat"><div class="ak-hbig" style="color:#7DDBA8">${conformPct}%</div><div class="ak-hlabel">Conform akkoord</div></div>
-      <div class="ak-hstat"><div class="ak-hbig">${totalPunten}</div><div class="ak-hlabel">Standpunten</div></div>
-      <div class="ak-hstat"><div class="ak-hbig">${AKKOORD.length}</div><div class="ak-hlabel">Hoofdstukken</div></div>
-    </div>
-    <div class="ak-hero-bar">
-      <div class="ak-hero-barlabel">Thema-dekking</div>
-      <div class="ak-hero-track"><div class="ak-hero-fill" style="width:${dekkingPct}%"></div></div>
-      <div class="ak-hero-barsub">${dekkingPct}% van ${AKKOORD.length} thema's heeft minimaal 1 motie</div>
+  let hero = `<div class="ak-hero-grid">
+    <div class="ak-hstat"><div class="ak-hbig">${themasMetMotie}/${AKKOORD.length}</div><div class="ak-hlabel">Thema's gedekt</div></div>
+    <div class="ak-hstat"><div class="ak-hbig green">${conformPct}%</div><div class="ak-hlabel">Conform akkoord</div></div>
+    <div class="ak-hstat"><div class="ak-hbig">${totalPunten}</div><div class="ak-hlabel">Standpunten</div></div>
+    <div class="ak-hstat"><div class="ak-hbig">${AKKOORD.length}</div><div class="ak-hlabel">Hoofdstukken</div></div>
+    <div class="ak-bar-wrap" style="grid-column:1/-1">
+      <div class="ak-bar-label">Thema-dekking</div>
+      <div class="ak-bar-track"><div class="ak-bar-fill" style="width:${dekkingPct}%"></div></div>
+      <div class="ak-bar-sub">${dekkingPct}% van ${AKKOORD.length} thema's heeft minimaal 1 motie</div>
     </div>
   </div>`;
 
-  let html='';
+  let cards = '';
   AKKOORD.forEach(ak=>{
-    // ── FIX: use themasMatch for motie lookup ──
-    let mots=moties.filter(m=>themasMatch(m.thema,ak.thema));
-    let conf=mots.filter(m=>m.alignment==="conform").length;
-    let str=mots.filter(m=>m.alignment==="strijdig").length;
-    let open=!!_akOpen[ak.thema];
-
-    let badges='';
-    if(conf>0) badges+=`<span class="akbdg akbdg-g">✓ ${conf}</span>`;
-    if(str>0) badges+=`<span class="akbdg akbdg-r">✗ ${str}</span>`;
-    if(!conf&&!str) badges=`<span class="akbdg akbdg-n">– geen moties</span>`;
-
-    let accent=str>0?'var(--accent)':conf>0?'var(--green)':'var(--border)';
-
-    let motieCards=mots.length?`
+    let mots = moties.filter(m=>themasMatch(m.thema,ak.thema));
+    let conf = mots.filter(m=>m.alignment==='conform').length;
+    let str = mots.filter(m=>m.alignment==='strijdig').length;
+    let open = !!_akOpen[ak.thema];
+    let accent = str>0 ? getVar('--red') : conf>0 ? getVar('--green') : getVar('--border');
+    let badges = '';
+    if(conf) badges += `<span class="akbdg akbdg-g">✓ ${conf}</span>`;
+    if(str) badges += `<span class="akbdg akbdg-r">✗ ${str}</span>`;
+    if(!conf&&!str) badges = `<span class="akbdg akbdg-n">– geen moties</span>`;
+    let motieCards = mots.length ? `
       <div class="akptitle">Gerelateerde moties (${mots.length})</div>
       <div>${mots.map(m=>`<div class="akmc2">
         <div class="akmc2d">${esc(m.datum||'')} · ${esc(m.indiener||'')}</div>
         <div class="akmc2t">${esc(m.titel)}</div>
-        <div class="akmc2b">${bdg(m.status,SC)} ${bdg(m.alignment,AC)}</div>
-      </div>`).join('')}</div>`:'';
-
-    html+=`<div class="akcard${open?' akopen':''}" style="border-left:4px solid ${accent}">
-      <div class="akhead" data-akthema="${esc(ak.thema)}">
+        <div class="akmc2b">${badge(m.status,SC)} ${badge(m.alignment,AC)}</div>
+      </div>`).join('')}</div>` : '';
+    cards += `<div class="akcard${open?' open':''}" style="border-left-color:${accent}">
+      <div class="akhead" data-ak="${esc(ak.thema)}">
         <div class="akicon">${ak.emoji}</div>
         <div class="akinfo">
           <div class="akname">${esc(ak.thema)}</div>
-          <div class="aksub2">${ak.punten.length} akkoordpunten${mots.length?' · '+mots.length+' motie'+(mots.length!==1?'s':''):''}</div>
+          <div class="aksub">${ak.punten.length} akkoordpunten${mots.length?' · '+mots.length+' motie'+(mots.length!==1?'s':''):''}</div>
         </div>
         <div class="akbdgs">${badges}</div>
-        <div class="akchev">${open?'▲':'▼'}</div>
+        <div class="akchev">▾</div>
       </div>
       ${open?`<div class="akbody">
         <div class="akptitle">Akkoordpunten</div>
@@ -781,306 +861,280 @@ function renderAkkoord(){
       </div>`:''}
     </div>`;
   });
-
-  wrap.innerHTML=summaryHtml+'<div class="akklist">'+html+'</div>';
+  wrap.innerHTML = hero + `<div class="akklist">${cards}</div>`;
   wrap.querySelectorAll('.akhead').forEach(el=>el.addEventListener('click',function(){
-    let thema=this.getAttribute('data-akthema');
-    _akOpen[thema]=!_akOpen[thema];
-    renderAkkoord();
+    let th = this.getAttribute('data-ak'); _akOpen[th]=!_akOpen[th]; renderAkkoord();
   }));
 }
 
+// ── STATS ──
 function renderStats(){
-  let pns=g("pns"); if(!pns) return;
-  if(!moties.length){pns.innerHTML='<div style="text-align:center;padding:80px 20px"><p style="font-size:20px">Nog geen data</p>Voeg moties toe om statistieken te zien.</div>'; return;}
+  let wrap = g('stats-wrap'); if(!wrap) return;
+  if(!moties.length){wrap.innerHTML='<div class="empty-state"><p>Nog geen data</p>Voeg moties toe om statistieken te zien.</div>'; return;}
+
   let tot=moties.length, aang=0, verw=0, aang_h=0, conform=0, strijdig=0, neutraal=0, ond=0;
-  let byThema={}, byParty={}, byWeek={}, byMonth2={}, coalConform=0, coalStrijdig=0, oppConform=0, oppStrijdig=0;
-  let COAL={"VVD":1,"D66":1,"CDA":1};
-  let OPP={"PVV":1,"GL-PvdA":1,"NSC":1,"BBB":1,"SP":1,"PvdD":1,"CU":1,"SGP":1,"Volt":1,"DENK":1,"FvD":1,"JA21":1,"50PLUS":1,"Gr.Markuszower":1,"Groep-Keijzer":1};
-  let partyVotes={};
+  let byThema={}, byParty={}, byMonth2={}, coalConform=0, coalStrijdig=0, oppConform=0, oppStrijdig=0, partyVotes={};
+  const COAL = {"VVD":1,"D66":1,"CDA":1};
+
   moties.forEach(m=>{
-    if(m.status==="aangenomen") aang++;
-    if(m.status==="verworpen") verw++;
-    if(m.status==="aangehouden") aang_h++;
-    if(m.alignment==="conform") conform++;
-    else if(m.alignment==="strijdig") strijdig++;
-    else if(m.alignment==="neutraal") neutraal++;
+    if(m.status==='aangenomen') aang++;
+    if(m.status==='verworpen') verw++;
+    if(m.status==='aangehouden') aang_h++;
+    if(m.alignment==='conform') conform++;
+    else if(m.alignment==='strijdig') strijdig++;
+    else if(m.alignment==='neutraal') neutraal++;
     else ond++;
-    let th=m.thema||"Overig";
+    let th = m.thema||'Overig';
     if(!byThema[th]) byThema[th]={tot:0,a:0,c:0,s:0};
-    byThema[th].tot++; if(m.status==="aangenomen") byThema[th].a++; if(m.alignment==="conform") byThema[th].c++; if(m.alignment==="strijdig") byThema[th].s++;
-    let ind=m.indiener||"Onbekend";
+    byThema[th].tot++; if(m.status==='aangenomen') byThema[th].a++; if(m.alignment==='conform') byThema[th].c++; if(m.alignment==='strijdig') byThema[th].s++;
+    let ind = m.indiener||'Onbekend';
     if(!byParty[ind]) byParty[ind]={tot:0,a:0,v:0,c:0,s:0};
-    byParty[ind].tot++; if(m.status==="aangenomen") byParty[ind].a++; if(m.status==="verworpen") byParty[ind].v++; if(m.alignment==="conform") byParty[ind].c++; if(m.alignment==="strijdig") byParty[ind].s++;
-    if(COAL[ind]){ if(m.alignment==="conform") coalConform++; if(m.alignment==="strijdig") coalStrijdig++; }
-    else if(OPP[ind]){ if(m.alignment==="conform") oppConform++; if(m.alignment==="strijdig") oppStrijdig++; }
+    byParty[ind].tot++; if(m.status==='aangenomen') byParty[ind].a++; if(m.status==='verworpen') byParty[ind].v++;
+    if(COAL[ind]){if(m.alignment==='conform') coalConform++; if(m.alignment==='strijdig') coalStrijdig++;}
+    else{if(m.alignment==='conform') oppConform++; if(m.alignment==='strijdig') oppStrijdig++;}
     if(m.datum){
-      let d=new Date(m.datum);
-      let yr=d.getFullYear(), mo=d.getMonth()+1;
-      let ym=`${yr}-${mo<10?'0'+mo:mo}`;
+      let d=new Date(m.datum); let mo=(d.getMonth()+1); let ym=`${d.getFullYear()}-${mo<10?'0'+mo:mo}`;
       if(!byMonth2[ym]) byMonth2[ym]={tot:0,a:0,v:0};
-      byMonth2[ym].tot++; if(m.status==="aangenomen") byMonth2[ym].a++; if(m.status==="verworpen") byMonth2[ym].v++;
-      let dayNum=d.getUTCDay()||7; d.setUTCDate(d.getUTCDate()+4-dayNum); let yearStart=new Date(Date.UTC(d.getUTCFullYear(),0,1)); let weekNo=Math.ceil(((d-yearStart)/86400000+1)/7);
-      let wk=d.getUTCFullYear()+'-W'+String(weekNo).padStart(2,'0');
-      byWeek[wk]=(byWeek[wk]||0)+1;
+      byMonth2[ym].tot++; if(m.status==='aangenomen') byMonth2[ym].a++; if(m.status==='verworpen') byMonth2[ym].v++;
     }
     if(m.stemmen){
       for(let p in m.stemmen){
-        if(!partyVotes[p]) partyVotes[p]={v:0,t:0,o:0,tot:0};
-        let vt=m.stemmen[p];
-        if(vt==="voor"){partyVotes[p].v++; partyVotes[p].tot++;}
-        else if(vt==="tegen"){partyVotes[p].t++; partyVotes[p].tot++;}
-        else partyVotes[p].o++;
+        if(!partyVotes[p]) partyVotes[p]={v:0,t:0,tot:0};
+        if(m.stemmen[p]==='voor'){partyVotes[p].v++;partyVotes[p].tot++;}
+        else if(m.stemmen[p]==='tegen'){partyVotes[p].t++;partyVotes[p].tot++;}
       }
     }
   });
-  let inb=tot-aang-verw-aang_h;
-  let slagingsPct=Math.round(aang/Math.max(tot,1)*100);
-  let conformPct=Math.round(conform/Math.max(tot,1)*100);
-  let topParties=Object.keys(byParty).sort((a,b)=>byParty[b].tot-byParty[a].tot).slice(0,10);
-  let themaArr=Object.keys(byThema).sort((a,b)=>byThema[b].tot-byThema[a].tot).slice(0,9);
-  let maxTh=themaArr.length?byThema[themaArr[0]].tot:1;
-  let weekKeys=Object.keys(byWeek).sort();
-  let maxWk=Math.max(...weekKeys.map(k=>byWeek[k]),1);
-  let monthKeys=Object.keys(byMonth2).sort();
-  let maxMo=Math.max(...monthKeys.map(k=>byMonth2[k].tot),1);
-  let partyVoteArr=Object.keys(partyVotes).filter(p=>partyVotes[p].tot>=5).map(p=>({name:p,pct:Math.round(partyVotes[p].v/partyVotes[p].tot*100),v:partyVotes[p].v,t:partyVotes[p].t,tot:partyVotes[p].tot})).sort((a,b)=>b.pct-a.pct);
-  let recent=moties.slice().sort((a,b)=>(b.datum||"").localeCompare(a.datum||"")).slice(0,6);
-  function donutSVG(segs,label,sub){
+  let inb = tot-aang-verw-aang_h;
+  let slagingsPct = Math.round(aang/Math.max(tot,1)*100);
+  let conformPct = Math.round(conform/Math.max(tot,1)*100);
+  let themaArr = Object.keys(byThema).sort((a,b)=>byThema[b].tot-byThema[a].tot).slice(0,9);
+  let maxTh = themaArr.length ? byThema[themaArr[0]].tot : 1;
+  let monthKeys = Object.keys(byMonth2).sort();
+  let maxMo = Math.max(...monthKeys.map(k=>byMonth2[k].tot),1);
+  let topParties = Object.keys(byParty).sort((a,b)=>byParty[b].tot-byParty[a].tot).slice(0,10);
+  let partyVoteArr = Object.keys(partyVotes).filter(p=>partyVotes[p].tot>=5).map(p=>({name:p,pct:Math.round(partyVotes[p].v/partyVotes[p].tot*100),v:partyVotes[p].v,t:partyVotes[p].t,tot:partyVotes[p].tot})).sort((a,b)=>b.pct-a.pct);
+  let recent = moties.slice().sort((a,b)=>(b.datum||'').localeCompare(a.datum||'')).slice(0,6);
+
+  function donutSVG(segs, label, sub){
     let r=44,cx=50,cy=50,circ=2*Math.PI*r,total=segs.reduce((a,s)=>a+s.v,0)||1,off=0;
-    let paths=segs.map(s=>{let frac=s.v/total,dash=frac*circ,gap=circ-dash; let p=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.c}" stroke-width="11" stroke-dasharray="${dash.toFixed(1)} ${gap.toFixed(1)}" stroke-dashoffset="${(-(off*circ)).toFixed(1)}" transform="rotate(-90 ${cx} ${cy})" stroke-linecap="butt"/>`; off+=frac; return p;}).join('');
+    let paths=segs.map(s=>{let frac=s.v/total,dash=frac*circ,gap=circ-dash; let p=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.c}" stroke-width="10" stroke-dasharray="${dash.toFixed(1)} ${gap.toFixed(1)}" stroke-dashoffset="${(-(off*circ)).toFixed(1)}" transform="rotate(-90 ${cx} ${cy})" stroke-linecap="butt"/>`; off+=frac; return p;}).join('');
     let leg=`<div class="donut-legend">${segs.map(s=>`<div class="donut-li"><div class="donut-dot" style="background:${s.c}"></div><div class="donut-lbl">${esc(s.l)}</div><div class="donut-val">${s.v}</div></div>`).join('')}</div>`;
-    return `<div class="donut-wrap"><svg viewBox="0 0 100 100" style="width:90px;height:90px">${paths}<text x="50" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="var(--ink)">${esc(label)}</text>${sub?`<text x="50" y="58" text-anchor="middle" font-size="8" fill="var(--mid)">${esc(sub)}</text>`:''}</svg>${leg}</div>`;
+    return `<div class="donut-wrap"><svg viewBox="0 0 100 100" style="width:88px;height:88px">${paths}<text x="50" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="${getVar('--ink')}" font-family="Cormorant Garamond,serif">${esc(label)}</text>${sub?`<text x="50" y="58" text-anchor="middle" font-size="8" fill="${getVar('--muted')}" font-family="DM Sans,sans-serif">${esc(sub)}</text>`:''}</svg>${leg}</div>`;
   }
-  function timelineHTML(keys,getVal,maxVal,color){
-    if(!keys.length) return '';
-    return `<div style="display:flex;gap:2px;height:64px">${keys.map(k=>{let v=getVal(k); let h=Math.max(2,Math.round(v/maxVal*60)); return `<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end"><div style="height:${h}px;background:${color};border-radius:2px 2px 0 0"></div></div>`;}).join('')}</div>`;
-  }
-  let moBarHTML=`<div class="col-chart">${monthKeys.map(k=>{let d=byMonth2[k]; let hTot=Math.max(3,Math.round(d.tot/maxMo*70)); let hA=d.tot?Math.round(d.a/d.tot*hTot):0; let hV=d.tot?Math.round(d.v/d.tot*hTot):0; let mo=k.split('-')[1]; let moLabel=MONTH_NL[parseInt(mo)]||mo; return `<div class="col-item"><div class="col-bar-wrap"><div class="col-bar" style="height:${hA}px;background:var(--green)"></div><div class="col-bar" style="height:${hV}px;background:var(--accent);margin-top:1px"></div></div><div class="col-label">${moLabel}</div></div>`;}).join('')}</div>`;
-  let html=`<div class="stat-section-label">Overzicht</div><div class="kpi-strip"><div class="kpi"><div class="kpi-label">Totaal moties</div><div class="kpi-val">${tot}</div><div class="kpi-sub">Kabinet-Jetten · 2026</div></div><div class="kpi"><div class="kpi-label">Slagingsratio</div><div class="kpi-val kpi-green">${slagingsPct}%</div><div class="kpi-sub">${aang} van ${tot} aangenomen</div></div><div class="kpi"><div class="kpi-label">Conform akkoord</div><div class="kpi-val">${conformPct}%</div><div class="kpi-sub">${conform} conform · ${strijdig} strijdig</div></div><div class="kpi"><div class="kpi-label">In behandeling</div><div class="kpi-val kpi-amber">${inb}</div><div class="kpi-sub">${aang_h} aangehouden</div></div></div>`;
-  html+=`<div class="stat-section-label" style="margin-top:8px">Uitslag & Positie</div><div class="stat-2col"><div class="sc"><div class="sc-title">Stemuitslag</div>${donutSVG([{v:aang,c:'var(--green)',l:'Aangenomen'},{v:verw,c:'var(--accent)',l:'Verworpen'},{v:aang_h,c:'var(--mid)',l:'Aangehouden'},{v:inb,c:'var(--paper3)',l:'In behandeling'}],String(tot),'moties')}</div><div class="sc"><div class="sc-title">Relatie coalitieakkoord</div>${donutSVG([{v:conform,c:'var(--green)',l:'Conform akkoord'},{v:strijdig,c:'var(--accent)',l:'Strijdig'},{v:neutraal,c:'var(--mid)',l:'Neutraal'},{v:ond,c:'var(--amber)',l:'Onduidelijk'}],conformPct+'%','conform')}</div></div>`;
-  html+=`<div class="stat-section-label" style="margin-top:8px">Activiteit per maand</div><div class="sc"><div class="sc-title">Moties per maand — <span style="color:var(--green)">■ aangenomen</span> <span style="color:var(--accent)">■ verworpen</span></div>${moBarHTML}</div>`;
-  html+=`<div class="stat-section-label" style="margin-top:8px">Thema's & Herkomst</div><div class="stat-2col"><div class="sc"><div class="sc-title">Moties per thema</div><div class="hbar-chart">${themaArr.map(th=>{let d=byThema[th]; let w=Math.round(d.tot/maxTh*100); let col=d.s>d.c?'var(--accent)':d.c>d.s?'var(--green)':'var(--mid)'; return `<div class="hbc-row"><div class="hbc-label">${esc(th)}</div><div class="hbc-track"><div class="hbc-fill" style="width:${w}%;background:${col}"></div></div><div class="hbc-val">${d.tot}</div></div>`;}).join('')}</div></div><div class="sc"><div class="sc-title">Coalitie vs Oppositie</div><div class="coal-opp"><div class="coal-block" style="border-left:3px solid var(--green)"><div class="coal-label">Coalitie (VVD · D66 · CDA)</div><div class="coal-big">${coalConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:6px"><div class="coal-big" style="font-size:20px;color:var(--accent)">${coalStrijdig}</div><div class="coal-sub">strijdig</div></div></div><div class="coal-block" style="border-left:3px solid var(--accent)"><div class="coal-label">Oppositie</div><div class="coal-big">${oppConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:6px"><div class="coal-big" style="font-size:20px;color:var(--accent)">${oppStrijdig}</div><div class="coal-sub">strijdig</div></div></div></div><div style="margin-top:16px"><div class="sc-title">Weekritme</div>${timelineHTML(weekKeys,k=>byWeek[k],maxWk,'var(--ink)')}<div style="font-size:9px;color:var(--mid);margin-top:4px">${weekKeys.length} weken</div></div></div></div>`;
-  html+=`<div class="stat-section-label" style="margin-top:8px">Top indieners</div><div class="sc"><div class="sc-title">Meest actieve indieners (top 10)</div><div class="top-table">`;
-  let medals=['🥇','🥈','🥉'];
-  topParties.forEach((p,i)=>{let d=byParty[p]; let pct=Math.round(d.a/Math.max(d.tot,1)*100); let col=pct>=60?'var(--green)':pct>=40?'var(--mid)':'var(--accent)'; html+=`<div class="top-row"><div class="top-rank">${i<3?medals[i]:i+1}</div><div style="flex:1"><div class="top-name">${esc(p)}</div><div class="top-party">${d.tot} moties · ${d.a} aangenomen · ${d.v} verworpen</div></div><span class="top-badge" style="background:${col};color:#fff;padding:4px 10px">${pct}%</span></div>`;});
-  html+=`</div></div>`;
+
+  let moBarHTML = `<div class="col-chart">${monthKeys.map(k=>{let d=byMonth2[k]; let hTot=Math.max(3,Math.round(d.tot/maxMo*70)); let hA=d.tot?Math.round(d.a/d.tot*hTot):0; let hV=d.tot?Math.round(d.v/d.tot*hTot):0; let mo=k.split('-')[1]; let moLabel=MONTH_NL[parseInt(mo)]||mo; return `<div class="col-item"><div class="col-bar-wrap"><div class="col-bar" style="height:${hA}px;background:var(--green)"></div><div class="col-bar" style="height:${hV}px;background:var(--red);margin-top:1px"></div></div><div class="col-label">${moLabel}</div></div>`;}).join('')}</div>`;
+  let medals = ['🥇','🥈','🥉'];
+
+  let html = `
+    <div class="kpi-strip">
+      <div class="kpi"><div class="kpi-label">Totaal moties</div><div class="kpi-val">${tot}</div><div class="kpi-sub">Kabinet-Jetten · 2026</div></div>
+      <div class="kpi"><div class="kpi-label">Slagingsratio</div><div class="kpi-val green">${slagingsPct}%</div><div class="kpi-sub">${aang} van ${tot} aangenomen</div></div>
+      <div class="kpi"><div class="kpi-label">Conform akkoord</div><div class="kpi-val">${conformPct}%</div><div class="kpi-sub">${conform} conform · ${strijdig} strijdig</div></div>
+      <div class="kpi"><div class="kpi-label">In behandeling</div><div class="kpi-val amber">${inb}</div><div class="kpi-sub">${aang_h} aangehouden</div></div>
+    </div>
+    <div class="stat-grid-2">
+      <div class="sc"><div class="sc-title">Stemuitslag</div>${donutSVG([{v:aang,c:getVar('--green'),l:'Aangenomen'},{v:verw,c:getVar('--red'),l:'Verworpen'},{v:aang_h,c:getVar('--muted'),l:'Aangehouden'},{v:inb,c:getVar('--card'),l:'In behandeling'}],String(tot),'moties')}</div>
+      <div class="sc"><div class="sc-title">Relatie coalitieakkoord</div>${donutSVG([{v:conform,c:getVar('--green'),l:'Conform akkoord'},{v:strijdig,c:getVar('--red'),l:'Strijdig'},{v:neutraal,c:getVar('--muted'),l:'Neutraal'},{v:ond,c:getVar('--amber'),l:'Onduidelijk'}],conformPct+'%','conform')}</div>
+    </div>
+    <div class="sc" style="margin-bottom:16px"><div class="sc-title">Moties per maand — <span style="color:var(--green)">■ aangenomen</span> <span style="color:var(--red)">■ verworpen</span></div>${moBarHTML}</div>
+    <div class="stat-grid-2">
+      <div class="sc"><div class="sc-title">Moties per thema</div><div class="hbar-chart">${themaArr.map(th=>{let d=byThema[th]; let w=Math.round(d.tot/maxTh*100); let col=d.s>d.c?getVar('--red'):d.c>d.s?getVar('--green'):getVar('--muted'); return `<div class="hbc-row"><div class="hbc-label">${esc(th)}</div><div class="hbc-track"><div class="hbc-fill" style="width:${w}%;background:${col}"></div></div><div class="hbc-val">${d.tot}</div></div>`;}).join('')}</div></div>
+      <div class="sc"><div class="sc-title">Coalitie vs oppositie</div><div class="coal-grid">
+        <div class="coal-block" style="border-left-color:var(--green)"><div class="coal-label">Coalitie (VVD · D66 · CDA)</div><div class="coal-big green">${coalConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:10px"><div class="coal-big red" style="color:var(--red)">${coalStrijdig}</div><div class="coal-sub">strijdig</div></div></div>
+        <div class="coal-block" style="border-left-color:var(--red)"><div class="coal-label">Oppositie</div><div class="coal-big green">${oppConform}</div><div class="coal-sub">conform akkoord</div><div style="margin-top:10px"><div class="coal-big" style="color:var(--red)">${oppStrijdig}</div><div class="coal-sub">strijdig</div></div></div>
+      </div></div>
+    </div>
+    <div class="sc" style="margin-bottom:16px"><div class="sc-title">Meest actieve indieners</div><div class="top-table">
+    ${topParties.map((p,i)=>{let d=byParty[p]; let pct=Math.round(d.a/Math.max(d.tot,1)*100); let col=pct>=60?getVar('--green'):pct>=40?getVar('--amber'):getVar('--red'); return `<div class="top-row"><div class="top-rank">${i<3?medals[i]:i+1}</div><div><div class="top-name">${esc(p)}</div><div class="top-party">${d.tot} moties · ${d.a} aangenomen · ${d.v} verworpen</div></div><span class="top-badge" style="background:${col};color:#fff">${pct}%</span></div>`;}).join('')}
+    </div></div>`;
+
   if(partyVoteArr.length){
-    html+=`<div class="stat-section-label" style="margin-top:8px">Stemmingsgedrag fracties</div><div class="sc"><div class="sc-title">% Vóór-stemmingen per fractie (min. 5 stemmingen)</div><div class="party-grid">`;
-    partyVoteArr.forEach(ps=>{let col=ps.pct>=60?'var(--green)':ps.pct>=40?'var(--amber)':'var(--accent)'; html+=`<div class="party-card"><div class="party-name">${esc(ps.name)}</div><div class="party-pct" style="color:${col}">${ps.pct}%</div><div class="party-bar"><div class="party-bar-f" style="width:${ps.pct}%;background:${col}"></div></div><div style="font-size:9px;color:var(--mid);margin-top:5px">${ps.v} voor / ${ps.t} tegen</div></div>`;});
-    html+=`</div></div>`;
+    html += `<div class="sc" style="margin-bottom:16px"><div class="sc-title">Stemmingsgedrag fracties · % vóór (min. 5 stemmingen)</div><div class="party-grid">${partyVoteArr.map(ps=>{let col=ps.pct>=60?getVar('--green'):ps.pct>=40?getVar('--amber'):getVar('--red'); return `<div class="party-card"><div class="party-name">${esc(ps.name)}</div><div class="party-pct" style="color:${col}">${ps.pct}%</div><div class="party-bar"><div class="party-bar-fill" style="width:${ps.pct}%;background:${col}"></div></div><div style="font-size:9px;color:var(--muted);margin-top:5px">${ps.v} voor / ${ps.t} tegen</div></div>`;}).join('')}</div></div>`;
   }
-  html+=`<div class="stat-section-label" style="margin-top:8px">Thema × Akkoord</div><div class="sc"><div class="sc-title">Conform vs Strijdig per thema</div><div class="theme-heatmap">`;
-  themaArr.forEach(th=>{let d=byThema[th]; let barW=Math.round(d.tot/maxTh*100); html+=`<div class="th-row"><div class="th-label">${esc(th)}</div><div class="th-pills">${d.c?`<span class="th-pill th-g">✓ ${d.c}</span>`:''}${d.s?`<span class="th-pill th-r">✗ ${d.s}</span>`:''}</div><div class="th-bar-bg"><div class="th-bar-f" style="width:${barW}%"></div></div></div>`;});
-  html+=`</div></div>`;
-  html+=`<div class="stat-section-label" style="margin-top:8px">Recente activiteit</div><div class="sc"><div class="sc-title">Laatste 6 moties</div><div class="feed">${recent.map(m=>`<div class="feed-item"><div class="feed-dot" style="background:${SC[m.status]?.b||'var(--paper2)'};border-color:${SC[m.status]?.bd||'var(--border)'}"></div><div style="flex:1"><div class="feed-title">${esc(m.titel.length>70?m.titel.slice(0,70)+'…':m.titel)}</div><div class="feed-meta">${esc(m.indiener||'')}${m.datum?` · ${m.datum}`:''}</div></div><div>${bdg(m.status,SC)}</div></div>`).join('')}</div></div>`;
-  pns.innerHTML=html;
+
+  html += `<div class="sc" style="margin-bottom:16px"><div class="sc-title">Conform vs strijdig per thema</div><div class="theme-heatmap">${themaArr.map(th=>{let d=byThema[th]; let bw=Math.round(d.tot/maxTh*100); return `<div class="th-row"><div class="th-label">${esc(th)}</div><div class="th-pills">${d.c?`<span class="th-pill th-g">✓ ${d.c}</span>`:''}${d.s?`<span class="th-pill th-r">✗ ${d.s}</span>`:''}</div><div class="th-bar-bg"><div class="th-bar-f" style="width:${bw}%"></div></div></div>`;}).join('')}</div></div>`;
+
+  html += `<div class="sc"><div class="sc-title">Laatste 6 moties</div><div class="feed">${recent.map(m=>{let sc2=SC[m.status]||SC.in_behandeling; return `<div class="feed-item"><div class="feed-dot" style="background:${sc2.b};border-color:${sc2.bd}"></div><div style="flex:1"><div class="feed-title">${esc(m.titel.length>70?m.titel.slice(0,70)+'…':m.titel)}</div><div class="feed-meta">${esc(m.indiener||'')}${m.datum?' · '+m.datum:''}</div></div>${badge(m.status,SC)}</div>`;}).join('')}</div></div>`;
+
+  wrap.innerHTML = html;
 }
 
-// ── FIX: renderAgenda — proper time display, no "2026-" shown as time ──
+// ── AGENDA ──
 function renderAgenda(){
-  let wrap=g("ag-wrap"); if(!wrap) return;
-  let html=`<div style="margin-bottom:24px"><div style="font-size:26px;font-weight:700">📅 Tweede Kamer Agenda</div><p style="font-size:11px;color:var(--mid);margin-top:4px">Komende plenaire vergaderingen · dagelijks bijgewerkt</p></div>`;
+  let wrap = g('ag-wrap'); if(!wrap) return;
   if(!AGENDA.length){
-    html+=`<div style="padding:40px;text-align:center"><p>Geen agenda beschikbaar. <a href="https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen" target="_blank">Bekijk tweedekamer.nl ↗</a></p></div>`;
-    wrap.innerHTML=html; return;
+    wrap.innerHTML = `<div class="empty-state"><p>Geen agenda beschikbaar</p><a href="https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen" target="_blank" style="color:var(--red)">Bekijk tweedekamer.nl ↗</a></div>`; return;
   }
-  let byDate={};
+  let byDate = {};
   AGENDA.forEach(it=>{let k=it.datum||''; if(!byDate[k]) byDate[k]=[]; byDate[k].push(it);});
-  let today=new Date().toISOString().split('T')[0];
+  let today = new Date().toISOString().split('T')[0];
+  let html = '';
   Object.keys(byDate).sort().forEach(dt=>{
-    let its=byDate[dt];
-    let dayIdx=new Date(dt).getDay();
-    let dag=dt.length===10?DAG_NL[dayIdx]:'';
-    let d=new Date(dt);
-    let label=`${d.getDate()} ${MAANDEN[d.getMonth()]} ${d.getFullYear()}`;
-    let isToday=dt===today;
-    let todayBadge=isToday?'<span style="background:var(--ink);color:#fff;padding:3px 10px;border-radius:100px;font-size:9px;font-weight:700;margin-right:8px;letter-spacing:.05em;text-transform:uppercase">Vandaag</span>':'';
-    html+=`<div style="margin-bottom:24px">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-        <div style="font-size:10px;font-weight:700;text-transform:uppercase;color:var(--mid);letter-spacing:.06em">${todayBadge}${dag}${dag?' · ':''}${label}</div>
-        <div style="flex:1;height:1px;background:var(--border)"></div>
-      </div>`;
+    let its = byDate[dt];
+    let dayIdx = new Date(dt).getDay();
+    let dag = DAG_NL[dayIdx]||'';
+    let d = new Date(dt);
+    let label = `${d.getDate()} ${MAANDEN[d.getMonth()]} ${d.getFullYear()}`;
+    let isToday = dt===today;
+    html += `<div class="day-header">${isToday?'<span class="today-badge">Vandaag</span>':''}<div class="day-label">${dag} · ${label}</div><div class="day-hr"></div></div>`;
     its.forEach(it=>{
-      // ── FIX: show time only if it's a real HH:MM time, not a year ──
-      let tidDisplay='Tijd onbekend';
-      if(it.tijd && /^\d{1,2}:\d{2}/.test(it.tijd)) tidDisplay=it.tijd;
-      html+=`<a class="ag-item" href="${esc(it.url||'#')}" target="_blank">
+      let tidDisplay = 'Tijd onbekend';
+      if(it.tijd && /^\d{1,2}:\d{2}/.test(it.tijd)) tidDisplay = it.tijd;
+      html += `<a class="ag-item" href="${esc(it.url||'#')}" target="_blank">
         <div class="ag-item-top">
-          <div class="ag-item-left">
-            <div class="ag-time">🕐 ${esc(tidDisplay)}</div>
-            <div class="ag-title">${esc(it.titel)}</div>
-            ${it.locatie&&it.locatie!=="Plenaire zaal"?`<div class="ag-loc">🏛 ${esc(it.locatie)}</div>`:''}
-          </div>
+          <div><div class="ag-time">🕐 ${esc(tidDisplay)}</div><div class="ag-title">${esc(it.titel)}</div>${it.locatie&&it.locatie!=='Plenaire zaal'?`<div class="ag-loc">🏛 ${esc(it.locatie)}</div>`:''}</div>
           <span class="ag-soort">${esc(it.soort)}</span>
         </div>
       </a>`;
     });
-    html+=`</div>`;
   });
-  html+=`<p style="font-size:10px;color:var(--mid);text-align:center;margin-top:8px">Bron: <a href="https://www.tweedekamer.nl" target="_blank" style="color:var(--mid)">tweedekamer.nl</a> Open Data</p>`;
-  wrap.innerHTML=html;
+  html += `<p style="font-size:10px;color:var(--muted);text-align:center;margin-top:16px">Bron: <a href="https://www.tweedekamer.nl" target="_blank" style="color:var(--muted)">tweedekamer.nl</a> Open Data</p>`;
+  wrap.innerHTML = html;
 }
 
+// ── LEADERBOARD ──
 function renderLeaderboard(){
-  let wrap=g("lb-wrap"); if(!wrap) return;
-  let tally={};
-  function extractPersoon(titel){ let m=(titel||'').match(/[Mm]otie\s+van\s+(?:het\s+lid|de\s+leden)\s+([A-Z][A-Za-z\u00C0-\u017E\-]+(?:\s+[A-Z][a-z\u00C0-\u017E\-]+)?)/); return m?m[1].replace(/\s+c\.s\./,'').trim():null; }
-  moties.forEach(m=>{let persoon=extractPersoon(m.titel)||m.indiener||"Onbekend"; if(!tally[persoon]) tally[persoon]={naam:persoon,partij:m.indiener||"",tot:0,a:0,v:0,c:0,s:0}; tally[persoon].tot++; if(m.status==="aangenomen") tally[persoon].a++; if(m.status==="verworpen") tally[persoon].v++; if(m.alignment==="conform") tally[persoon].c++; if(m.alignment==="strijdig") tally[persoon].s++; });
-  let rows=Object.values(tally).sort((a,b)=>b.tot-a.tot);
-  let medals=['🥇','🥈','🥉'];
-  let html=`<div style="margin-bottom:24px"><div style="font-size:26px;font-weight:700">🏆 Indiener Leaderboard</div><p style="font-size:11px;color:var(--mid);margin-top:4px">${moties.length} moties — gerangschikt op aantal ingediend</p></div><div style="display:flex;flex-direction:column;gap:8px">`;
-  rows.forEach((r,i)=>{let pct=r.tot?Math.round(r.a/r.tot*100):0; let col=pct>=60?'var(--green)':pct>=40?'var(--amber)':'var(--accent)'; let bgcol=pct>=60?'var(--greenbg)':pct>=40?'var(--amberbg)':'var(--accentbg)'; let bdcol=pct>=60?'var(--greenbd)':pct>=40?'var(--amberbd)':'var(--accentbd)'; html+=`<div style="background:#fff;border:1.5px solid var(--border);border-radius:var(--rads);padding:14px 16px;display:flex;align-items:center;gap:12px"><div style="font-size:${i<3?'20':'12'}px;font-weight:700;color:var(--mid);width:28px;text-align:center">${i<3?medals[i]:i+1}</div><div style="flex:1;min-width:0"><div style="font-weight:700;font-size:14px">${esc(r.naam)}</div>${r.partij&&r.partij!==r.naam?`<div style="font-size:10px;color:var(--mid)">${esc(r.partij)}</div>`:''}</div><div style="display:flex;align-items:center;gap:10px"><div style="text-align:center"><div style="font-size:20px;font-weight:700">${r.tot}</div><div style="font-size:9px;color:var(--mid)">moties</div></div><div style="width:1px;height:36px;background:var(--border)"></div><div style="text-align:center"><div style="font-size:12px;font-weight:700;color:var(--green)">${r.a} ✓</div><div style="font-size:12px;font-weight:700;color:var(--accent)">${r.v} ✗</div></div><div style="background:${bgcol};border:1.5px solid ${bdcol};border-radius:10px;padding:6px 10px;text-align:center;min-width:52px"><div style="font-size:17px;font-weight:700;color:${col}">${pct}%</div><div style="font-size:9px;color:${col}">score</div></div></div></div>`; });
-  html+=`</div>`;
-  wrap.innerHTML=html;
+  let wrap = g('lb-wrap'); if(!wrap) return;
+  let tally = {};
+  moties.forEach(m=>{
+    let nm = m.indiener||'Onbekend';
+    if(!tally[nm]) tally[nm]={naam:nm,tot:0,a:0,v:0};
+    tally[nm].tot++; if(m.status==='aangenomen') tally[nm].a++; if(m.status==='verworpen') tally[nm].v++;
+  });
+  let rows = Object.values(tally).sort((a,b)=>b.tot-a.tot);
+  let medals = ['🥇','🥈','🥉'];
+
+  // header
+  let html = `<div style="display:grid;grid-template-columns:40px 1fr 60px 60px 60px 80px;gap:12px;padding:8px 0;border-bottom:2px solid var(--ink);margin-bottom:4px">
+    ${['#','Indiener','Moties','Aang.','Verw.','Score'].map(h=>`<span style="font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-family:'DM Mono',monospace">${h}</span>`).join('')}
+  </div>`;
+  rows.forEach((r,i)=>{
+    let pct = r.tot ? Math.round(r.a/r.tot*100) : 0;
+    let col = pct>=60?getVar('--green'):pct>=40?getVar('--amber'):getVar('--red');
+    html += `<div class="lb-row" style="display:grid;grid-template-columns:40px 1fr 60px 60px 60px 80px;gap:12px;align-items:center">
+      <span style="font-family:'Cormorant Garamond',serif;font-size:${i<3?24:16}px;font-weight:700;color:${i===0?'#c8950a':i===1?getVar('--muted'):i===2?'#a06830':getVar('--muted')};text-align:center">${i<3?medals[i]:i+1}</span>
+      <div><div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600">${esc(r.naam)}</div></div>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700">${r.tot}</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--green)">${r.a}</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--red)">${r.v}</span>
+      <div style="display:flex;align-items:center;gap:7px">
+        <div style="flex:1;height:3px;background:var(--border);border-radius:2px;overflow:hidden"><div style="height:100%;width:${pct}%;background:${col};border-radius:2px"></div></div>
+        <span style="font-size:11px;font-weight:600;color:${col};min-width:32px">${pct}%</span>
+      </div>
+    </div>`;
+  });
+  if(!rows.length) html = `<div class="empty-state"><p>Nog geen moties</p>Voeg moties toe om het leaderboard te vullen.</div>`;
+  html += `<div style="font-size:10px;color:var(--muted);margin-top:12px;font-style:italic">Score = aangenomen / totaal moties</div>`;
+  wrap.innerHTML = html;
 }
 
-// ---------- DATA LOADING ----------
-function applyUserEdits(serverData){
-  try{
-    let saved=JSON.parse(localStorage.getItem(SK)||'[]');
-    let serverIdx={}; serverData.forEach(m=>serverIdx[m.id]=true);
-    let userAdded=saved.filter(m=>!serverIdx[m.id]);
-    return serverData.concat(userAdded);
-  }catch(e){ return serverData; }
+// ── MODAL ──
+function openModal(id){
+  editId = id||null;
+  let m = id ? moties.find(x=>x.id==id) : null;
+  g('modal-title').textContent = id ? 'Motie bewerken' : 'Motie toevoegen';
+  g('ftit').value = m?m.titel:'';
+  g('fdat').value = m?m.datum:new Date().toISOString().slice(0,10);
+  let fi=g('find'); if(fi) fi.value = m?m.indiener:(fi.options[0]?.value||'');
+  let fthm=g('fthm'); if(fthm) fthm.value = m?m.thema:(fthm.options[0]?.value||'');
+  g('fverg').value = m?m.vergadering:'';
+  let fsta=g('fsta'); if(fsta) fsta.value = m?m.status:'in_behandeling';
+  let fali=g('fali'); if(fali) fali.value = m?m.alignment:'neutraal';
+  g('ftoe').value = m?m.toelichting:'';
+  g('furl').value = m?m.tk_url:'';
+  let sg=g('sgrid');
+  if(sg){
+    let stemmen = m?m.stemmen:{};
+    let opts='<option value="">—</option><option value="voor">voor</option><option value="tegen">tegen</option><option value="onthouden">onthouden</option>';
+    sg.innerHTML = PARTIES.map(p=>`<label style="display:flex;align-items:center;gap:5px;font-size:11px"><select data-party="${p}" style="font-size:11px;padding:2px 4px;border:1px solid var(--border);border-radius:2px">${opts}</select><span>${p}</span></label>`).join('');
+    sg.querySelectorAll('select').forEach(sel=>{let party=sel.getAttribute('data-party'); if(stemmen&&stemmen[party]) sel.value=stemmen[party];});
+  }
+  g('mdel').style.display = id?'inline-block':'none';
+  g('ovm').style.display = 'flex';
+}
+function closeModal(){g('ovm').style.display='none'}
+function saveMotie(){
+  let titel = g('ftit').value.trim(); if(!titel){alert('Titel is verplicht'); return;}
+  let stemmen = {};
+  let sg=g('sgrid'); if(sg) sg.querySelectorAll('select').forEach(sel=>{if(sel.value) stemmen[sel.getAttribute('data-party')]=sel.value;});
+  let m = {id:editId||Date.now(), titel, datum:g('fdat').value, indiener:g('find').value, thema:g('fthm').value, vergadering:g('fverg').value, status:g('fsta').value, alignment:g('fali').value, toelichting:g('ftoe').value.trim(), tk_url:g('furl').value.trim(), stemmen, archief:false};
+  if(editId){let idx=moties.findIndex(x=>x.id==editId); if(idx>=0) moties[idx]=m;}
+  else moties.push(m);
+  saveDB(); closeModal(); renderMoties(); toast(editId?'Opgeslagen':`✓ ${titel} toegevoegd!`);
 }
 
+// delete
+function openDel(id){delId=id; g('ovd').style.display='flex'}
+function closeDel(){g('ovd').style.display='none'; delId=null}
+function doDel(){if(delId){moties=moties.filter(m=>m.id!=delId); saveDB(); closeDel(); closeModal(); renderMoties(); toast('Verwijderd');}}
+
+// fetch
+function openFetch(){
+  g('ovf').style.display='flex';
+  let fb=g('fetch-body');
+  fb.innerHTML=`<div style="text-align:center;padding:32px 20px"><div class="spin"></div><div style="margin-top:14px;font-size:12px;color:var(--muted)">Nieuwe moties ophalen…</div></div>`;
+  setTimeout(()=>{
+    fb.innerHTML=`<div style="background:var(--card);border:1px solid var(--border);border-radius:2px;padding:18px">
+      <div style="font-weight:700;font-size:14px;margin-bottom:8px;font-family:'Cormorant Garamond',serif">Geen nieuwe moties gevonden</div>
+      <p style="font-size:12px;color:var(--muted);line-height:1.6">Voeg moties handmatig toe of importeer ze via de Tweede Kamer website.</p>
+      <div style="margin-top:14px;display:flex;gap:8px">
+        <button onclick="closeFetch();openModal(null);" class="btn-primary">+ Handmatig toevoegen</button>
+        <a href="https://www.tweedekamer.nl/kamerstukken/moties" target="_blank" class="btn-ghost" style="display:inline-flex;align-items:center">Tweedekamer.nl →</a>
+      </div>
+    </div>`;
+  }, 600);
+}
+function closeFetch(){g('ovf').style.display='none'}
+
+// ── DATA LOADING ──
 function loadAndRender(){
-  showLoading();
   fetch('moties.json?v='+Date.now())
-    .then(res=>{ if(!res.ok) throw new Error('HTTP '+res.status); return res.json(); })
+    .then(res=>{if(!res.ok) throw new Error('HTTP '+res.status); return res.json();})
     .then(data=>{
-      if(!Array.isArray(data)||data.length===0) throw new Error('Lege JSON');
-      moties = applyUserEdits(data);
-      moties.forEach(m=>{ if(m.status==="in_behandeling"&&!m.stemmen) m.stemmen={}; });
+      if(!Array.isArray(data)||!data.length) throw new Error('Lege JSON');
+      moties = data;
       renderMoties();
-      fetch('agenda.json?v='+Date.now()).then(r=>r.ok?r.json():[]).then(d=>{AGENDA=Array.isArray(d)?d:AGENDA; renderAgenda();}).catch(()=>{});
+      fetch('agenda.json?v='+Date.now()).then(r=>r.ok?r.json():[]).then(d=>{if(Array.isArray(d)&&d.length) AGENDA=d;}).catch(()=>{});
     })
-    .catch(err=>{
-      console.warn('Fetch failed, using localStorage fallback:',err);
+    .catch(()=>{
       let saved=[];
-      try{ saved=JSON.parse(localStorage.getItem(SK)||'[]'); }catch(e){}
-      moties=saved.length?saved:[];
-      moties.forEach(m=>{ if(m.status==="in_behandeling"&&!m.stemmen) m.stemmen={}; });
+      try{saved=JSON.parse(localStorage.getItem(SK)||'[]')}catch(e){}
+      moties = saved.length ? saved : [];
       renderMoties();
     });
 }
 
-// ---------- MODAL ----------
-function openModal(id){
-  editId=id||null;
-  let m=id?moties.find(x=>x.id===id):null;
-  g("mttl").textContent=id?"Motie bewerken":"Motie toevoegen";
-  g("ftit").value=m?m.titel:"";
-  g("fdat").value=m?m.datum:new Date().toISOString().slice(0,10);
-  let fi=g("find"); if(fi) fi.value=m?m.indiener:(fi.options[0]?.value||"");
-  let fthm=g("fthm"); if(fthm) fthm.value=m?m.thema:(fthm.options[0]?.value||"");
-  g("fverg").value=m?m.vergadering:"";
-  let fsta=g("fsta"); if(fsta) fsta.value=m?m.status:"in_behandeling";
-  let fali=g("fali"); if(fali) fali.value=m?m.alignment:"neutraal";
-  g("ftoe").value=m?m.toelichting:"";
-  g("furl").value=m?m.tk_url:"";
-  let sg=g("sgrid");
-  if(sg){
-    let stemmen=m?m.stemmen:{};
-    let parties=["VVD","D66","CDA","NSC","BBB","PVV","GL-PvdA","SP","PvdD","Volt","CU","SGP","DENK","50PLUS","JA21","FvD","Gr.Markuszower"];
-    let opts='<option value="">—</option><option value="voor">voor</option><option value="tegen">tegen</option><option value="onthouden">onthouden</option>';
-    sg.innerHTML=parties.map(p=>`<label style="display:flex;align-items:center;gap:6px;font-size:11px"><select data-party="${p}" style="font-size:11px;padding:2px 4px">${opts}</select><span>${p}</span></label>`).join('');
-    sg.querySelectorAll("select").forEach(sel=>{let party=sel.getAttribute("data-party"); if(stemmen&&stemmen[party]) sel.value=stemmen[party];});
-  }
-  g("mdel").style.display=id?"inline-block":"none";
-  g("ovm").style.display="flex";
-}
-function closeModal(){ g("ovm").style.display="none"; }
-function saveMotie(){
-  let titel=g("ftit").value.trim(); if(!titel){alert("Titel is verplicht"); return;}
-  let stemmen={};
-  let sg=g("sgrid"); if(sg){ sg.querySelectorAll("select").forEach(sel=>{ if(sel.value) stemmen[sel.getAttribute("data-party")]=sel.value; }); }
-  let m={id:editId||Date.now(), titel:titel, datum:g("fdat").value, indiener:g("find").value.trim(), thema:g("fthm").value, vergadering:g("fverg").value.trim(), status:g("fsta").value, alignment:g("fali").value, toelichting:g("ftoe").value.trim(), tk_url:g("furl").value.trim(), stemmen:stemmen, archief:false};
-  if(editId){ let idx=moties.findIndex(x=>x.id===editId); if(idx>=0) moties[idx]=m; }
-  else moties.push(m);
-  saveDB(); closeModal(); renderMoties(); toast(editId?"Opgeslagen":`✓ ${titel} toegevoegd!`);
-}
-function openDel(id){ delId=id; g("ovd").style.display="flex"; }
-function closeDel(){ g("ovd").style.display="none"; delId=null; }
-function doDel(){ if(delId){ moties=moties.filter(m=>m.id!==delId); saveDB(); closeDel(); closeModal(); renderMoties(); toast("Verwijderd"); } }
-function openFetch(){ buildFetch(); g("ovf").style.display="flex"; }
-function closeFetch(){ g("ovf").style.display="none"; }
-function buildFetch(){
-  let fcon=g("fcon"), fftr=g("fftr");
-  fetchSel={};
-  fcon.innerHTML=`<div style="text-align:center;padding:32px 20px"><div class="spin"></div><div style="margin-top:14px;font-size:13px;color:var(--mid)">Nieuwe moties ophalen…</div></div>`;
-  setTimeout(()=>{
-    fcon.innerHTML=`<div style="background:var(--paper);border:1.5px solid var(--border);border-radius:var(--rads);padding:18px">
-      <div style="font-weight:700;font-size:14px;margin-bottom:8px">🔍 Geen nieuwe moties gevonden</div>
-      <p style="font-size:12px;color:var(--mid);line-height:1.6">Voeg moties handmatig toe of importeer ze via de Tweede Kamer website.</p>
-      <div style="margin-top:14px;display:flex;gap:8px">
-        <button onclick="closeFetch();openModal(null);" style="padding:9px 16px;background:var(--ink);color:#fff;border:none;border-radius:100px;font-size:12px;font-weight:700;cursor:pointer">+ Handmatig toevoegen</button>
-        <a href="https://www.tweedekamer.nl/kamerstukken/moties" target="_blank" style="padding:9px 16px;border:1.5px solid var(--border);border-radius:100px;font-size:12px;font-weight:700;display:inline-flex;align-items:center">Tweedekamer.nl →</a>
-      </div>
-    </div>`;
-    if(fftr) fftr.style.display="none";
-  }, 600);
-}
-function doImport(){}
+// ── INIT ──
+// Populate selects
+let fi=g('find'); PARTIES.forEach(p=>{let o=document.createElement('option'); o.value=p; o.textContent=p; fi.appendChild(o);});
+let fthm=g('fthm'); THEMAS.forEach(t=>{let o=document.createElement('option'); o.value=t; o.textContent=t; fthm.appendChild(o);});
+let fth=g('fth'); THEMAS.forEach(t=>{let o=document.createElement('option'); o.value=t; o.textContent=t; fth.appendChild(o);});
+let fsta=g('fsta'); [['aangenomen','Aangenomen'],['verworpen','Verworpen'],['in_behandeling','In behandeling'],['aangehouden','Aangehouden']].forEach(s=>{let o=document.createElement('option'); o.value=s[0]; o.textContent=s[1]; fsta.appendChild(o);});
+let fali=g('fali'); [['conform','Conform akkoord'],['strijdig','Strijdig'],['neutraal','Neutraal'],['onduidelijk','Onduidelijk']].forEach(s=>{let o=document.createElement('option'); o.value=s[0]; o.textContent=s[1]; fali.appendChild(o);});
 
-// ---------- PANE SWITCHING ----------
-function showPane(id){
-  let panes=["pnm","pnar","pna","pns","pnag","pnlb"];
-  let tabs=["tab-m","tab-ar","tab-a","tab-s","tab-ag","tab-lb"];
-  let tp={"tab-m":"pnm","tab-ar":"pnar","tab-a":"pna","tab-s":"pns","tab-ag":"pnag","tab-lb":"pnlb"};
-  panes.forEach(p=>{let el=g(p); if(el) el.style.display="none";});
-  tabs.forEach(t=>{let el=g(t); if(el) el.classList.remove("on");});
-  let paneId=tp[id]||id;
-  let pane=g(paneId); if(pane) pane.style.display="block";
-  let tab=g(id); if(tab) tab.classList.add("on");
-  if(paneId==="pns") renderStats();
-  if(paneId==="pna") renderAkkoord();
-  if(paneId==="pnar") renderArchief();
-  if(paneId==="pnag") renderAgenda();
-  if(paneId==="pnlb") renderLeaderboard();
-  window.scrollTo(0,0);
-}
+// Event listeners
+g('btn-fetch').addEventListener('click', openFetch);
+g('btn-add').addEventListener('click', ()=>openModal(null));
+g('mx').addEventListener('click', closeModal);
+g('mcan').addEventListener('click', closeModal);
+g('msav').addEventListener('click', saveMotie);
+g('mdel').addEventListener('click', ()=>openDel(editId));
+g('dcan').addEventListener('click', closeDel);
+g('dok').addEventListener('click', doDel);
+g('fx').addEventListener('click', closeFetch);
+g('fcan').addEventListener('click', closeFetch);
+g('search-inp').addEventListener('input', renderMoties);
+['fal','fth','fst'].forEach(id=>{let el=g(id); if(el) el.addEventListener('change', renderMoties);});
 
-// ---------- INIT ----------
-let fth=g("fth"); if(fth) THEMAS.forEach(t=>{let o=document.createElement("option"); o.value=t; o.textContent=t; fth.appendChild(o);});
-let PARTIES=["VVD","D66","CDA","NSC","BBB","PVV","GL-PvdA","SP","PvdD","Volt","CU","SGP","DENK","50PLUS","JA21","FvD","Gr.Markuszower"];
-let fi=g("find"); if(fi&&!fi.options.length) PARTIES.forEach(p=>{let o=document.createElement("option"); o.value=p; o.textContent=p; fi.appendChild(o);});
-let fthm=g("fthm"); if(fthm&&!fthm.options.length) THEMAS.forEach(t=>{let o=document.createElement("option"); o.value=t; o.textContent=t; fthm.appendChild(o);});
-let fsta=g("fsta"); if(fsta&&!fsta.options.length) [["aangenomen","Aangenomen"],["verworpen","Verworpen"],["in_behandeling","In behandeling"],["aangehouden","Aangehouden"]].forEach(s=>{let o=document.createElement("option"); o.value=s[0]; o.textContent=s[1]; fsta.appendChild(o);});
-let fali2=g("fali"); if(fali2&&!fali2.options.length) [["conform","Conform akkoord"],["strijdig","Strijdig"],["neutraal","Neutraal"],["onduidelijk","Onduidelijk"]].forEach(s=>{let o=document.createElement("option"); o.value=s[0]; o.textContent=s[1]; fali2.appendChild(o);});
+// expose for inline onclick
+window.openModal = openModal;
+window.closeFetch = closeFetch;
+window.openFetch = openFetch;
 
 loadAndRender();
 
-["btn-fetch","btn-fetch2"].forEach(id=>{let b=g(id); if(b) b.addEventListener("click",openFetch);});
-["btn-add","btn-add2"].forEach(id=>{let b=g(id); if(b) b.addEventListener("click",()=>openModal(null));});
-["tab-m","tab-ar","tab-a","tab-s","tab-ag","tab-lb"].forEach(id=>{let b=g(id); if(b) b.addEventListener("click",()=>showPane(id));});
-g("mx")?.addEventListener("click",closeModal);
-g("mcan")?.addEventListener("click",closeModal);
-g("msav")?.addEventListener("click",saveMotie);
-g("mdel")?.addEventListener("click",()=>openDel(editId));
-g("dcan")?.addEventListener("click",closeDel);
-g("dok")?.addEventListener("click",doDel);
-g("fx")?.addEventListener("click",closeFetch);
-g("fcan")?.addEventListener("click",closeFetch);
-g("sinp")?.addEventListener("input",renderMoties);
-["fal","fth","fst"].forEach(id=>{let el=g(id); if(el) el.addEventListener("change",renderMoties);});
-g("fbtn")?.addEventListener("click",()=>{let fp=g("fp"); if(fp){ let open=fp.style.display!=="none"; fp.style.display=open?"none":"grid"; g("fbtn").classList.toggle("on",!open); }});
-
-window.showPane=showPane;
-window.openModal=openModal;
-window.closeFetch=closeFetch;
-window.openFetch=openFetch;
-window.doImport=doImport;
 })();
-
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-9SV5Y8BZ24');
 </script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9SV5Y8BZ24"></script>
-
 </body>
 </html>
