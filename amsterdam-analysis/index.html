@@ -8,118 +8,256 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --ink: #1a1a1a;
-    --ink-mid: #4a4a4a;
-    --ink-light: #888;
-    --paper: #faf9f6;
-    --cream: #f2f0ea;
-    --rule: #d8d4c8;
-    --d66: #1a5e9c;
-    --d66-light: #e8f0f9;
-    --gl: #2e7d32;
-    --pvda: #c62828;
-    --vvd: #f57c00;
-    --accent: #1a5e9c;
-    --danger: #c62828;
-    --positive: #2e7d32;
-    --heat: #d84315;
-    --flood: #1565c0;
-    --equity: #6a1b9a;
-  }
+:root {
+  --ink: #1a1a1a;
+  --ink-mid: #4a4a4a;
+  --ink-light: #888;
+  --paper: #faf9f6;
+  --cream: #f2f0ea;
+  --rule: #d8d4c8;
+  --d66: #1a5e9c;
+  --d66-light: #e8f0f9;
+  --gl: #2e7d32;
+  --pvda: #c62828;
+  --equity: #6a1b9a;
+  --equity-light: #f3eafb;
+  --transit: #c8401a;
+  --transit-light: #fdf0ec;
+  --danger: #c62828;
+  --positive: #2e7d32;
+  --heat: #d84315;
+  --flood: #1565c0;
+}
 
 - { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
 font-family: ‘DM Sans’, sans-serif;
-background: #faf9f6;
-color: #1a1a1a;
+background: var(–paper);
+color: var(–ink);
 font-size: 16px;
 line-height: 1.7;
+min-height: 100vh;
 }
+
+/* ── SCREENS ── */
+.screen { display: none; min-height: 100vh; }
+.screen.active { display: block; }
 
 /* ── MASTHEAD ── */
 .masthead {
-border-bottom: 3px double #d8d4c8;
+border-bottom: 3px double var(–rule);
 padding: 1.5rem 0 1rem;
 text-align: center;
-background: #faf9f6;
+background: var(–paper);
 }
 .masthead-site {
 font-family: ‘Playfair Display’, serif;
 font-size: 11px;
 letter-spacing: 0.3em;
 text-transform: uppercase;
-color: #888888;
+color: var(–ink-light);
 margin-bottom: 0.25rem;
 }
-.masthead-date { font-size: 11px; color: #888888; letter-spacing: 0.1em; }
+.masthead-date { font-size: 11px; color: var(–ink-light); letter-spacing: 0.1em; }
 
-/* ── TABS ── */
-.tab-nav {
-background: #faf9f6;
-border-bottom: 2px solid #d8d4c8;
+/* ── HOME: PROJECT GRID ── */
+.home-container {
+max-width: 780px;
+margin: 0 auto;
+padding: 3rem 1.5rem 4rem;
+}
+
+.home-intro {
+text-align: center;
+margin-bottom: 3rem;
+}
+.home-intro h1 {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(24px, 5vw, 38px);
+font-weight: 600;
+line-height: 1.2;
+margin-bottom: 1rem;
+color: var(–ink);
+}
+.home-intro p {
+font-size: 16px;
+font-weight: 300;
+color: var(–ink-mid);
+max-width: 520px;
+margin: 0 auto;
+}
+
+.projects-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1px;
+background: var(–rule);
+border: 1px solid var(–rule);
+border-radius: 6px;
+overflow: hidden;
+}
+
+.project-card {
+background: var(–paper);
+padding: 2.5rem 2rem;
+cursor: pointer;
+transition: background 0.18s ease;
+display: grid;
+grid-template-columns: 1fr auto;
+gap: 1rem;
+align-items: center;
+text-decoration: none;
+color: inherit;
+position: relative;
+}
+
+.project-card::before {
+content: ‘’;
+position: absolute;
+left: 0; top: 0; bottom: 0;
+width: 4px;
+background: currentColor;
+opacity: 0;
+transition: opacity 0.18s;
+}
+.project-card:hover { background: var(–cream); }
+.project-card:hover::before { opacity: 1; }
+.project-card.d66-card { color: var(–d66); }
+.project-card.equity-card { color: var(–equity); }
+.project-card.transit-card { color: var(–transit); }
+
+.card-body { flex: 1; }
+
+.card-tag {
+font-size: 10px;
+letter-spacing: 0.18em;
+text-transform: uppercase;
+font-weight: 600;
+margin-bottom: 0.6rem;
 display: flex;
-justify-content: center;
-gap: 0;
+align-items: center;
+gap: 8px;
+}
+.card-tag::after {
+content: ‘’;
+width: 28px; height: 1px;
+background: currentColor;
+opacity: 0.4;
+}
+
+.card-title {
+font-family: ‘Playfair Display’, serif;
+font-size: clamp(18px, 3vw, 24px);
+font-weight: 600;
+line-height: 1.25;
+color: var(–ink);
+margin-bottom: 0.6rem;
+}
+
+.card-desc {
+font-size: 13px;
+font-weight: 300;
+color: var(–ink-mid);
+line-height: 1.6;
+max-width: 500px;
+}
+
+.card-pills {
+display: flex;
+flex-wrap: wrap;
+gap: 6px;
+margin-top: 1rem;
+}
+.pill {
+font-size: 10px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+padding: 3px 10px;
+border: 1px solid var(–rule);
+border-radius: 20px;
+color: var(–ink-light);
+}
+
+.card-arrow {
+font-size: 22px;
+color: var(–rule);
+transition: color 0.18s, transform 0.18s;
+flex-shrink: 0;
+}
+.project-card:hover .card-arrow {
+color: currentColor;
+transform: translateX(4px);
+}
+
+/* ── DETAIL VIEW ── */
+.detail-nav {
+background: var(–paper);
+border-bottom: 2px solid var(–rule);
+padding: 0;
 position: sticky;
 top: 0;
 z-index: 100;
+display: flex;
+align-items: center;
+gap: 0;
 }
-.tab-btn {
+
+.back-btn {
 font-family: ‘DM Sans’, sans-serif;
 font-size: 11px;
 letter-spacing: 0.12em;
 text-transform: uppercase;
-font-weight: 600;
-color: #999999;
-background: #faf9f6;
+font-weight: 500;
+color: var(–ink-light);
+background: none;
 border: none;
-border-bottom: 4px solid transparent;
-padding: 1rem 1.2rem;
+border-right: 1px solid var(–rule);
+padding: 1rem 1.4rem;
 cursor: pointer;
-transition: all 0.2s;
-margin-bottom: -2px;
+display: flex;
+align-items: center;
+gap: 8px;
+transition: color 0.15s;
+white-space: nowrap;
 }
-.tab-btn:hover { color: #1a1a1a; }
-.tab-btn.active {
-color: #1a5e9c;
-border-bottom-color: #1a5e9c;
-background: #eaf2fb;
-}
-.tab-btn.active-equity {
-color: #6a1b9a;
-border-bottom-color: #6a1b9a;
-background: #f3eafb;
-}
+.back-btn:hover { color: var(–ink); }
 
-.tab-panel { display: none; }
-.tab-panel.active { display: block; }
+.nav-title {
+font-size: 11px;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+font-weight: 600;
+padding: 1rem 1.4rem;
+}
+.nav-title.d66 { color: var(–d66); }
+.nav-title.equity { color: var(–equity); }
+.nav-title.transit { color: var(–transit); }
 
-/* ── LAYOUT ── */
+/* ── CONTENT ── */
 .container {
 max-width: 740px;
 margin: 0 auto;
 padding: 0 1.5rem;
 }
 
-/* ── HERO ── */
 .hero {
 padding: 3rem 0 2rem;
-border-bottom: 1px solid #d8d4c8;
+border-bottom: 1px solid var(–rule);
 margin-bottom: 2.5rem;
 }
 .kicker {
 font-size: 11px;
 letter-spacing: 0.18em;
 text-transform: uppercase;
-color: #1a5e9c;
+color: var(–d66);
 margin-bottom: 1rem;
 display: flex;
 align-items: center;
 gap: 10px;
 }
-.kicker.equity-kicker { color: #6a1b9a; }
+.kicker.equity-kicker { color: var(–equity); }
+.kicker.transit-kicker { color: var(–transit); }
 .kicker::after {
 content: ‘’;
 flex: 1;
@@ -133,15 +271,16 @@ font-family: ‘Playfair Display’, serif;
 font-size: clamp(26px, 5vw, 40px);
 font-weight: 600;
 line-height: 1.15;
-color: #1a1a1a;
+color: var(–ink);
 margin-bottom: 1.25rem;
 }
-h1 em { font-style: italic; color: #1a5e9c; }
-h1 em.equity-em { color: #6a1b9a; }
+h1 em { font-style: italic; color: var(–d66); }
+h1 em.equity-em { color: var(–equity); }
+h1 em.transit-em { color: var(–transit); }
 .standfirst {
 font-size: 17px;
 font-weight: 300;
-color: #4a4a4a;
+color: var(–ink-mid);
 line-height: 1.65;
 margin-bottom: 1.5rem;
 max-width: 620px;
@@ -151,61 +290,57 @@ display: flex;
 align-items: center;
 gap: 1.5rem;
 font-size: 12px;
-color: #888888;
+color: var(–ink-light);
 flex-wrap: wrap;
 }
-.byline-name { font-weight: 500; color: #4a4a4a; }
+.byline-name { font-weight: 500; color: var(–ink-mid); }
 .tag-pill {
 display: inline-block;
 font-size: 10px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
 padding: 3px 10px;
-border: 1px solid #d8d4c8;
+border: 1px solid var(–rule);
 border-radius: 20px;
-color: #888888;
+color: var(–ink-light);
 }
 
-/* ── SECTIONS ── */
 .section { margin-bottom: 3rem; }
 h2 {
 font-family: ‘Playfair Display’, serif;
 font-size: 22px;
 font-weight: 600;
-color: #1a1a1a;
+color: var(–ink);
 margin-bottom: 0.5rem;
 margin-top: 2.5rem;
 padding-top: 2rem;
-border-top: 1px solid #d8d4c8;
+border-top: 1px solid var(–rule);
 }
 h3 {
 font-size: 13px;
 font-weight: 500;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: #888888;
+color: var(–ink-light);
 margin-bottom: 1rem;
 }
-p { margin-bottom: 1.1rem; color: #4a4a4a; font-weight: 300; }
-p strong { font-weight: 500; color: #1a1a1a; }
+p { margin-bottom: 1.1rem; color: var(–ink-mid); font-weight: 300; }
+p strong { font-weight: 500; color: var(–ink); }
 
-/* ── PULL QUOTE ── */
 .pullquote {
-border-left: 3px solid #1a5e9c;
+border-left: 3px solid var(–d66);
 padding: 1rem 1.5rem;
 margin: 2rem 0;
-background: #e8f0f9;
+background: var(–d66-light);
 border-radius: 0 4px 4px 0;
 }
-.pullquote.equity-quote {
-border-left-color: #6a1b9a;
-background: #f3eafb;
-}
+.pullquote.equity-quote { border-left-color: var(–equity); background: var(–equity-light); }
+.pullquote.transit-quote { border-left-color: var(–transit); background: var(–transit-light); }
 .pullquote p {
 font-family: ‘Playfair Display’, serif;
 font-size: 18px;
 font-style: italic;
-color: #1a1a1a;
+color: var(–ink);
 margin-bottom: 0.5rem;
 font-weight: 400;
 }
@@ -213,25 +348,25 @@ font-weight: 400;
 font-size: 11px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: #1a5e9c;
+color: var(–d66);
 font-style: normal;
 }
-.pullquote.equity-quote cite { color: #6a1b9a; }
+.pullquote.equity-quote cite { color: var(–equity); }
+.pullquote.transit-quote cite { color: var(–transit); }
 
-/* ── METRIC STRIP ── */
 .metric-strip {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 gap: 1px;
-background: #d8d4c8;
-border: 1px solid #d8d4c8;
+background: var(–rule);
+border: 1px solid var(–rule);
 border-radius: 4px;
 overflow: hidden;
 margin: 2rem 0;
 }
 .metric-strip.three-col { grid-template-columns: repeat(3, 1fr); }
 .metric-cell {
-background: #faf9f6;
+background: var(–paper);
 padding: 1.25rem 1rem;
 text-align: center;
 }
@@ -239,18 +374,17 @@ text-align: center;
 font-family: ‘Playfair Display’, serif;
 font-size: 28px;
 font-weight: 600;
-color: #1a1a1a;
+color: var(–ink);
 display: block;
 line-height: 1;
 margin-bottom: 6px;
 }
-.metric-label { font-size: 11px; color: #888888; line-height: 1.4; }
+.metric-label { font-size: 11px; color: var(–ink-light); line-height: 1.4; }
 .metric-delta { font-size: 11px; margin-top: 4px; font-weight: 500; }
-.delta-up { color: #2e7d32; }
-.delta-down { color: #c62828; }
+.delta-up { color: var(–positive); }
+.delta-down { color: var(–danger); }
 .delta-warn { color: #e65100; }
 
-/* ── POLICY COMPARISON TABLE ── */
 .policy-table {
 width: 100%;
 border-collapse: collapse;
@@ -262,21 +396,21 @@ text-align: left;
 font-size: 10px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: #888888;
+color: var(–ink-light);
 padding: 8px 10px;
-border-bottom: 2px solid #d8d4c8;
+border-bottom: 2px solid var(–rule);
 font-weight: 500;
 }
 .policy-table td {
 padding: 10px 10px;
-border-bottom: 1px solid #f2f0ea;
-color: #4a4a4a;
+border-bottom: 1px solid var(–cream);
+color: var(–ink-mid);
 vertical-align: top;
 font-size: 13px;
 line-height: 1.5;
 }
 .policy-table tr:last-child td { border-bottom: none; }
-.policy-table .dossier-col { font-weight: 500; color: #1a1a1a; width: 15%; font-size: 12px; }
+.policy-table .dossier-col { font-weight: 500; color: var(–ink); width: 15%; font-size: 12px; }
 .policy-table .goal-col { width: 35%; }
 .policy-table .reality-col { width: 35%; }
 .policy-table .gap-col { width: 15%; text-align: center; }
@@ -288,30 +422,28 @@ letter-spacing: 0.05em;
 padding: 3px 8px;
 border-radius: 20px;
 }
-.gap-critical { background: #fdecea; color: #c62828; }
+.gap-critical { background: #fdecea; color: var(–danger); }
 .gap-behind { background: #fff3e0; color: #e65100; }
-.gap-ontrack { background: #e8f5e9; color: #2e7d32; }
-.col-goal { color: #1a5e9c; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
-.col-reality { color: #4a4a4a; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.gap-ontrack { background: #e8f5e9; color: var(–positive); }
+.col-goal { color: var(–d66); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+.col-reality { color: var(–ink-mid); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
 
-/* ── CHART AREA ── */
 .chart-wrap { margin: 1.5rem 0; }
-.chart-label { font-size: 12px; font-weight: 500; color: #1a1a1a; margin-bottom: 3px; }
-.chart-sublabel { font-size: 11px; color: #888888; margin-bottom: 1rem; }
+.chart-label { font-size: 12px; font-weight: 500; color: var(–ink); margin-bottom: 3px; }
+.chart-sublabel { font-size: 11px; color: var(–ink-light); margin-bottom: 1rem; }
 .chart-canvas-wrap { position: relative; width: 100%; }
-.source { font-size: 10px; color: #888888; margin-top: 6px; letter-spacing: 0.05em; }
+.source { font-size: 10px; color: var(–ink-light); margin-top: 6px; letter-spacing: 0.05em; }
 .legend-row {
 display: flex;
 flex-wrap: wrap;
 gap: 14px;
 margin-bottom: 10px;
 font-size: 11px;
-color: #4a4a4a;
+color: var(–ink-mid);
 }
 .legend-row span { display: flex; align-items: center; gap: 5px; }
 .swatch { width: 10px; height: 10px; border-radius: 2px; flex-shrink: 0; }
 
-/* ── BUURT TABLE ── */
 .buurt-table {
 width: 100%;
 border-collapse: collapse;
@@ -323,19 +455,19 @@ text-align: left;
 font-size: 10px;
 letter-spacing: 0.1em;
 text-transform: uppercase;
-color: #888888;
+color: var(–ink-light);
 padding: 6px 8px;
-border-bottom: 2px solid #d8d4c8;
+border-bottom: 2px solid var(–rule);
 font-weight: 500;
 }
 .buurt-table td {
 padding: 7px 8px;
-border-bottom: 1px solid #f2f0ea;
-color: #4a4a4a;
+border-bottom: 1px solid var(–cream);
+color: var(–ink-mid);
 vertical-align: middle;
 }
 .buurt-table tr:last-child td { border-bottom: none; }
-.buurt-table .buurt-name { font-weight: 500; color: #1a1a1a; }
+.buurt-table .buurt-name { font-weight: 500; color: var(–ink); }
 .risk-dot {
 display: inline-block;
 width: 9px; height: 9px;
@@ -343,14 +475,13 @@ border-radius: 50%;
 margin-right: 4px;
 vertical-align: middle;
 }
-.score-bar-bg { background: #f2f0ea; border-radius: 2px; height: 6px; width: 80px; display: inline-block; vertical-align: middle; }
+.score-bar-bg { background: var(–cream); border-radius: 2px; height: 6px; width: 80px; display: inline-block; vertical-align: middle; }
 .score-bar-fill { height: 6px; border-radius: 2px; display: block; }
-.rank-num { font-family: ‘Playfair Display’, serif; font-weight: 600; color: #1a1a1a; }
-.equity-score-high { color: #6a1b9a; font-weight: 500; }
+.rank-num { font-family: ‘Playfair Display’, serif; font-weight: 600; color: var(–ink); }
+.equity-score-high { color: var(–equity); font-weight: 500; }
 .equity-score-med { color: #e65100; font-weight: 500; }
-.equity-score-low { color: #2e7d32; font-weight: 500; }
+.equity-score-low { color: var(–positive); font-weight: 500; }
 
-/* ── DOSSIER CARDS ── */
 .dossier-grid {
 display: grid;
 grid-template-columns: 1fr 1fr;
@@ -358,31 +489,31 @@ gap: 16px;
 margin: 1.5rem 0;
 }
 .dossier-card {
-border: 1px solid #d8d4c8;
+border: 1px solid var(–rule);
 border-radius: 4px;
 padding: 1.25rem;
-background: #faf9f6;
+background: var(–paper);
 }
 .dossier-tag {
 font-size: 10px;
 letter-spacing: 0.12em;
 text-transform: uppercase;
-color: #1a5e9c;
+color: var(–d66);
 font-weight: 500;
 margin-bottom: 0.5rem;
 }
-.dossier-tag.equity-tag { color: #6a1b9a; }
+.dossier-tag.equity-tag { color: var(–equity); }
 .dossier-title {
 font-family: ‘Playfair Display’, serif;
 font-size: 15px;
 font-weight: 600;
-color: #1a1a1a;
+color: var(–ink);
 margin-bottom: 0.5rem;
 line-height: 1.3;
 }
 .dossier-text {
 font-size: 12px;
-color: #4a4a4a;
+color: var(–ink-mid);
 line-height: 1.55;
 margin-bottom: 0;
 }
@@ -390,849 +521,866 @@ margin-bottom: 0;
 font-family: ‘Playfair Display’, serif;
 font-size: 22px;
 font-weight: 600;
-color: #1a1a1a;
+color: var(–ink);
 margin-bottom: 2px;
 display: block;
 }
 
-/* ── RISK LEGEND ── */
 .risk-legend {
 display: flex;
 gap: 20px;
 flex-wrap: wrap;
 margin: 1rem 0;
 font-size: 11px;
-color: #4a4a4a;
+color: var(–ink-mid);
 }
 .risk-legend span { display: flex; align-items: center; gap: 6px; }
 
-/* ── HORIZONTAL RULE ── */
-.rule-ornament {
-text-align: center;
-color: #d8d4c8;
-margin: 2rem 0;
-font-size: 20px;
-letter-spacing: 8px;
-}
-
-/* ── FOOTER ── */
 footer {
-border-top: 3px double #d8d4c8;
+border-top: 3px double var(–rule);
 padding: 2rem 0;
 text-align: center;
 font-size: 11px;
-color: #888888;
+color: var(–ink-light);
 letter-spacing: 0.08em;
 margin-top: 3rem;
 }
-footer a { color: #1a5e9c; text-decoration: none; }
+footer a { color: var(–d66); text-decoration: none; }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 560px) {
 .metric-strip { grid-template-columns: repeat(2, 1fr); }
 .metric-strip.three-col { grid-template-columns: repeat(2, 1fr); }
 .dossier-grid { grid-template-columns: 1fr; }
 h1 { font-size: 24px; }
-.tab-btn { padding: 0.8rem 1rem; font-size: 10px; }
 .policy-table .dossier-col, .policy-table .gap-col { display: none; }
+.project-card { grid-template-columns: 1fr; }
+.card-arrow { display: none; }
 }
 </style>
 
 </head>
 <body>
 
-<!-- MASTHEAD -->
+<!-- MASTHEAD (always visible) -->
 
 <div class="masthead">
   <div class="masthead-site">janeorlova.com · Politieke Analyse</div>
   <div class="masthead-date">Amsterdam · April 2026</div>
 </div>
 
-<!-- TAB NAVIGATION -->
+<!-- ═══════════════════ HOME SCREEN ═══════════════════ -->
 
-<nav class="tab-nav">
-  <button class="tab-btn active" id="btn-d66" onclick="switchTab('d66')">D66 Amsterdam: Doelen &amp; Realiteit</button>
-  <button class="tab-btn" id="btn-equity" onclick="switchTab('equity')">Klimaatrechtvaardigheidsindex</button>
-</nav>
-
-<!-- ═══════════════════════════════════════════ -->
-
-<!-- TAB 1: D66 POLICY GOALS VS REALITY         -->
-
-<!-- ═══════════════════════════════════════════ -->
-
-<div class="tab-panel active" id="panel-d66">
-<div class="container">
-
-  <header class="hero">
-    <div class="kicker">D66 Amsterdam · Coalitieakkoord 2026–2030</div>
-    <h1>Wat D66 belooft — en wat Amsterdam nu <em>werkelijk</em> heeft</h1>
-    <p class="standfirst">
-      D66 trad opnieuw toe tot de coalitie met acht zetels en ambitieuze programmapunten op wonen, mobiliteit en duurzaamheid. Dit is de toetssteen: de partijdoelen afgezet tegen de huidige Amsterdamse realiteit.
-    </p>
-    <div class="byline-row">
-      <span><span class="byline-name">Evgeniya Orlova</span> · Politiek Analist</span>
-      <span>April 2026 · coalitievorming</span>
-      <span class="tag-pill">D66</span>
-      <span class="tag-pill">Wonen</span>
-      <span class="tag-pill">Mobiliteit</span>
-      <span class="tag-pill">Duurzaamheid</span>
+<div class="screen active" id="screen-home">
+  <div class="home-container">
+    <div class="home-intro">
+      <h1>Amsterdam Analyse<br><em style="font-style:italic; color:var(--ink-light);">2026</em></h1>
+      <p>Drie politieke dossiers, buurt voor buurt doorgelicht. Klik op een onderwerp om de volledige analyse te lezen.</p>
     </div>
-  </header>
 
-  <!-- SECTION: OVERVIEW -->
+```
+<div class="projects-grid">
 
-  <section class="section">
-    <h2>De balans: ambitie versus achterstand</h2>
-    <p>
-      D66 Amsterdam stelde voor de coalitieperiode 2026–2030 concrete doelstellingen vast op drie fysieke dossiers. De vertrekpositie is moeilijk: op alle drie terreinen loopt Amsterdam achter op de eigen doelen uit vorige perioden. De nieuwe coalitie erft een flinke hypotheek.
-    </p>
-    <div class="metric-strip">
-      <div class="metric-cell">
-        <span class="metric-value">12,4</span>
-        <div class="metric-label">Jaar wachttijd sociale huur (2025)</div>
-        <div class="metric-delta delta-down">↑ van 8,3 jaar in 2018</div>
-      </div>
-      <div class="metric-cell">
-        <span class="metric-value">40%</span>
-        <div class="metric-label">Achterstand woningbouw t/m 2030</div>
-        <div class="metric-delta delta-down">52.500 woningen nodig</div>
-      </div>
-      <div class="metric-cell">
-        <span class="metric-value">31%</span>
-        <div class="metric-label">Auto-aandeel modal split (2024)</div>
-        <div class="metric-delta delta-warn">Doel 2030: 24%</div>
-      </div>
-      <div class="metric-cell">
-        <span class="metric-value">6,2%</span>
-        <div class="metric-label">Woningen aardgasvrij (2025)</div>
-        <div class="metric-delta delta-down">Doel 2040: 100%</div>
+  <div class="project-card d66-card" onclick="showScreen('d66')">
+    <div class="card-body">
+      <div class="card-tag">D66 Amsterdam · Coalitieakkoord 2026–2030</div>
+      <div class="card-title">Wat D66 belooft — en wat Amsterdam nu werkelijk heeft</div>
+      <div class="card-desc">D66 trad opnieuw toe tot de coalitie met ambitieuze programmapunten op wonen, mobiliteit en duurzaamheid. Dit is de toetssteen: partijdoelen afgezet tegen de huidige Amsterdamse realiteit.</div>
+      <div class="card-pills">
+        <span class="pill">Wonen</span>
+        <span class="pill">Mobiliteit</span>
+        <span class="pill">Duurzaamheid</span>
+        <span class="pill">Beleid</span>
       </div>
     </div>
-  </section>
-
-  <!-- POLICY TABLE -->
-
-  <section class="section">
-    <h2>D66-doelen versus realiteit: dossier per dossier</h2>
-    <p>D66's verkiezingsprogramma en coalitieakkoord bevatten meetbare doelstellingen. Hieronder staan de kernpunten afgezet tegen de actuele Amsterdamse situatie.</p>
-
-```
-<table class="policy-table">
-  <thead>
-    <tr>
-      <th class="dossier-col">Dossier</th>
-      <th class="goal-col"><span class="col-goal">D66-doel (2026–2030)</span></th>
-      <th class="reality-col"><span class="col-reality">Huidige realiteit (2025)</span></th>
-      <th class="gap-col">Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="dossier-col">Wonen · middenhuur</td>
-      <td class="goal-col">Nieuwe middenhuurcategorie (€850–€1.250) via publiek-private afspraken; 30% van nieuwbouw middenhuur</td>
-      <td class="reality-col">Huursegment €850–€1.700 vrijwel leeg. Marktaandeel middenhuur onder 8%. Nieuwbouwquota niet gehaald in 2022–2025</td>
-      <td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Wonen · bouwproductie</td>
-      <td class="goal-col">7.500 nieuwe woningen per jaar; versnelling via gebiedsontwikkeling IJ-oevers, Haven-Stad en Zuidasdok</td>
-      <td class="reality-col">Bouwproductie gemiddeld 4.200/jaar (2022–2025). Stijgende bouwkosten, bezwaarprocedures en stikstofproblematiek remmen snelheid</td>
-      <td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Wonen · sociale huur</td>
-      <td class="goal-col">Wachttijd terugbrengen naar max. 10 jaar; toevoeging 3.000 sociale huurwoningen via corporatiepact</td>
-      <td class="reality-col">Wachttijd 12,4 jaar (2025). Woningnet-registraties: 94.000 actief zoekend. Corporatie-investeringsruimte beperkt door rentedruk</td>
-      <td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Mobiliteit · auto</td>
-      <td class="goal-col">Autoaandeel modal split verlagen naar 24% in 2030; 10.000 parkeerplaatsen openbare ruimte omzetten naar groen/wonen</td>
-      <td class="reality-col">Autoaandeel 31% (2024). Parkeerplaatsreductie verloopt traag; buiten de ring politieke weerstand. Doel 2025 (27%) niet gehaald</td>
-      <td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Mobiliteit · fiets</td>
-      <td class="goal-col">Fietsaandeel naar 45% in 2030; 150 km nieuwe veilige fietsroutes; fietsparkeerplaatsen bij elk OV-knooppunt</td>
-      <td class="reality-col">Fietsaandeel 38% (2024). 62 km nieuwe routes aangelegd 2022–2025. Fietsparkeerdruk in centrum blijft hoog</td>
-      <td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Mobiliteit · OV</td>
-      <td class="goal-col">OV-aandeel naar 20% in 2030; doorstroming tram lijn 2/19 verbeteren; nachttransport uitbreiden</td>
-      <td class="reality-col">OV-aandeel 17% (2024). Tramstremming rond Nieuwezijds Voorburgwal aanhoudend. GVB capaciteitsproblemen in spits</td>
-      <td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Duurzaamheid · gas</td>
-      <td class="goal-col">20.000 woningen extra aardgasvrij per jaar; warmtenetten in Noord, Nieuw-West en Zuidoost prioriteit</td>
-      <td class="reality-col">Slechts 6,2% van woningen aardgasvrij (2025). Noord: 3%, Zuidoost: 2%. Warmtenet-aansluitingen lopen 3 jaar achter op plan</td>
-      <td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Duurzaamheid · klimaatadap.</td>
-      <td class="goal-col">Klimaatrechtvaardigheid als leidend principe: meest kwetsbare buurten (hittestress, wateroverlast, laag inkomen) prioriteit bij subsidies</td>
-      <td class="reality-col">Huidige subsidieverdeling niet buurtgewogen. Centrum en Zuid ontvangen disproportioneel meer verduurzamingsgeld dan Noord en Zuidoost</td>
-      <td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td>
-    </tr>
-    <tr>
-      <td class="dossier-col">Duurzaamheid · circulair</td>
-      <td class="goal-col">30% minder restafval per huishouden in 2030; circulaire inkoop gemeente 100% in 2028</td>
-      <td class="reality-col">Restafval daalt licht (−4% 2022–2024). Gescheiden afval in hoogbouw Zuidoost en Nieuw-West structureel laag. Circulaire inkoop gemeente: 41% (2024)</td>
-      <td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td>
-    </tr>
-  </tbody>
-</table>
-<p class="source">Bronnen: D66 Amsterdam verkiezingsprogramma 2026 · Coalitieakkoord 2026 · Gemeente Amsterdam O&amp;S · Woningnet · RVO Energietransitie Monitor 2025 · GVB Mobiliteitsmonitor 2024</p>
-```
-
-  </section>
-
-  <!-- SECTION: WONEN CHARTS -->
-
-  <section class="section">
-    <h2>Wonen: de hypotheek die D66 erft</h2>
-    <p>
-      Het woningdossier is de zwaarste opgave. D66 wil de middenhuurmarkt herstellen via een combinatie van publieke regie op nieuwbouwquota's en marktprikkels voor institutionele beleggers. De kloof met de huidige realiteit is op alle indicatoren groot.
-    </p>
-
-```
-<div class="chart-wrap">
-  <div class="chart-label">Sociale woningmarkt: wachtlijst versus toewijzingen, 2015–2025</div>
-  <div class="chart-sublabel">De kloof tussen vraag en aanbod is structureel verbreed. D66-doel: wachttijd terug naar 10 jaar tegen 2030.</div>
-  <div class="legend-row">
-    <span><span class="swatch" style="background:#1a5e9c;"></span>Wachtlijst (x1.000)</span>
-    <span><span class="swatch" style="background:#c62828;"></span>Toewijzingen (x1.000)</span>
+    <div class="card-arrow">→</div>
   </div>
-  <div class="chart-canvas-wrap" style="height:220px;">
-    <canvas id="wonenChart"></canvas>
-  </div>
-  <p class="source">Bron: Woningnet Amsterdam · Gemeente Amsterdam Wonen rapportages</p>
-</div>
 
-<div class="chart-wrap" style="margin-top:1.5rem;">
-  <div class="chart-label">Woningproductie Amsterdam versus D66-doel (woningen/jaar)</div>
-  <div class="chart-sublabel">D66 stelt een doel van 7.500 nieuwe woningen per jaar. De productie 2022–2025 gemiddelde: 4.200/jaar.</div>
-  <div class="legend-row">
-    <span><span class="swatch" style="background:#1a5e9c;"></span>Gerealiseerd</span>
-    <span><span class="swatch" style="background:#2e7d32; opacity:0.5;"></span>D66-doel 2026–2030</span>
-  </div>
-  <div class="chart-canvas-wrap" style="height:200px;">
-    <canvas id="woningbouwChart"></canvas>
-  </div>
-  <p class="source">Bron: Gemeente Amsterdam Wonen in Cijfers 2025 · D66 Verkiezingsprogramma 2026</p>
-</div>
-
-<div class="pullquote">
-  <p>"D66 wil de woningproductie bijna verdubbelen. Dat vereist niet alleen politieke wil, maar ook oplossingen voor de stikstofimpasse, capaciteitstekorten bij corporaties en het aanbestedingsklimaat."</p>
-  <cite>Analyse · janeorlova.com · April 2026</cite>
-</div>
-```
-
-  </section>
-
-  <!-- SECTION: MOBILITEIT -->
-
-  <section class="section">
-    <h2>Mobiliteit: D66 versus het auto-aandeel</h2>
-    <p>
-      D66 zet sterk in op de modal shift: auto's moeten wijken voor fietsers, voetgangers en OV. De doelstellingen zijn concreet en meetbaar. De uitdaging zit buiten de grachtengordel: in stadsdelen buiten de ring is de auto-afhankelijkheid groter en de politieke weerstand steviger.
-    </p>
-
-```
-<div class="chart-wrap">
-  <div class="chart-label">Modal split Amsterdam: 2019, 2024 en D66-doel 2030</div>
-  <div class="chart-sublabel">Het autoaandeel daalt, maar minder snel dan D66 nodig heeft om het 2030-doel te halen.</div>
-  <div class="legend-row">
-    <span><span class="swatch" style="background:#b0b0b0;"></span>2019</span>
-    <span><span class="swatch" style="background:#1a5e9c;"></span>2024</span>
-    <span><span class="swatch" style="background:#2e7d32;"></span>D66-doel 2030</span>
-  </div>
-  <div class="chart-canvas-wrap" style="height:240px;">
-    <canvas id="modalChart"></canvas>
-  </div>
-  <p class="source">Bron: Gemeente Amsterdam Mobiliteitsmonitor 2024 · D66 Coalitieakkoord 2026</p>
-</div>
-```
-
-  </section>
-
-  <!-- SECTION: DUURZAAMHEID -->
-
-  <section class="section">
-    <h2>Duurzaamheid: het energietransitie-gat</h2>
-    <p>
-      D66 heeft klimaatrechtvaardigheid als expliciet beleidsuitgangspunt opgenomen: subsidies en warmtenetten moeten eerst naar de meest kwetsbare buurten. De huidige situatie is precies omgekeerd: Noord en Zuidoost — laagste inkomens, hoogste klimaatrisico — lopen het verst achter op de aardgastransitie.
-    </p>
-
-```
-<div class="chart-wrap">
-  <div class="chart-label">Aardgasvrije woningen per stadsdeel, 2025 versus D66-prioritering</div>
-  <div class="chart-sublabel">Noord en Zuidoost hebben de laagste verduurzamingsgraad én de hoogste klimaatvulnerabiliteit. D66 wil dit omdraaien.</div>
-  <div class="legend-row">
-    <span><span class="swatch" style="background:#2e7d32;"></span>Aardgasvrij (%)</span>
-    <span><span class="swatch" style="background:#f0997b;"></span>Nog op aardgas (%)</span>
-  </div>
-  <div class="chart-canvas-wrap" style="height:280px;">
-    <canvas id="energieChart"></canvas>
-  </div>
-  <p class="source">Bron: Warmteplan Amsterdam · RVO Energietransitie Monitor 2025</p>
-</div>
-
-<div class="dossier-grid">
-  <div class="dossier-card">
-    <div class="dossier-tag">D66-doel · Warmtenet</div>
-    <div class="dossier-title">Noord als proeftuin</div>
-    <span class="dossier-stat">18.000</span>
-    <p class="dossier-text">Woningen in Noord gepland voor warmtenet-aansluiting t/m 2028. Huidige aansluitingen: 1.200. Achterstand: 3 jaar. D66 wil sneller en met gemeentelijk regie-instrument.</p>
-  </div>
-  <div class="dossier-card">
-    <div class="dossier-tag">D66-doel · Subsidie</div>
-    <div class="dossier-title">Gerichte isolatiesubsidie</div>
-    <span class="dossier-stat">€4.500</span>
-    <p class="dossier-text">Gemiddelde isolatiesubsidie per woning (D66-voorstel, inkomensafhankelijk). Nu ontvangen huishoudens in Centrum en Zuid gemiddeld 2,3× meer dan Zuidoost.</p>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- CONCLUSIE -->
-
-  <section class="section">
-    <h2>Wat D66 moet bewijzen in 2026–2030</h2>
-    <p>
-      D66's programma is coherent en meetbaar — dat is een kracht. De partij heeft concrete cijfers gesteld bij haar doelen. Dat maakt tussentijdse evaluatie mogelijk en dwingt tot verantwoording. De risico's zijn politiek van aard: coalitie-compromissen met GroenLinks en PvdA kunnen de marktmechanismen afzwakken; druk van buiten de ring kan de auto-transitie vertragen.
-    </p>
-    <div class="pullquote">
-      <p>"D66's liberaal-progressieve identiteit maakt de partij bij uitstek geschikt om marktmechanismen en publieke regie te verbinden. De vraag is of de coalitie die ruimte biedt."</p>
-      <cite>Politieke analyse · janeorlova.com · April 2026</cite>
-    </div>
-    <p>
-      De drie kritieke dossiers — middenhuur, bouwproductie en warmtenetten — vereisen elk een andere politieke strategie. Middenhuur vraagt om institutionele marktafspraken. Bouwproductie vraagt om juridische versnelling van bezwaarprocedures. Warmtenetten vragen om gemeentelijk eigenaarschap. D66 heeft de ambitie; de komende twee jaar zullen laten zien of de uitvoering volgt.
-    </p>
-  </section>
-
-</div><!-- /container -->
-</div><!-- /panel-d66 -->
-
-<!-- ═══════════════════════════════════════════ -->
-
-<!-- TAB 2: CLIMATE EQUITY INDEX                -->
-
-<!-- ═══════════════════════════════════════════ -->
-
-<div class="tab-panel" id="panel-equity">
-<div class="container">
-
-  <header class="hero">
-    <div class="kicker equity-kicker">Amsterdam Klimaatrechtvaardigheid · Buurtanalyse 2025</div>
-    <h1>Wie draagt de klimaatlast? <em class="equity-em">Een index voor 99 buurten</em></h1>
-    <p class="standfirst">
-      Hittestress, wateroverlast en laag inkomen clusteren in dezelfde Amsterdamse buurten — maar klimaatsubsidies en verduurzamingsinvesteringen stromen daar het minst naartoe. Dit is de rechtvaardigheidskloof, buurt voor buurt.
-    </p>
-    <div class="byline-row">
-      <span><span class="byline-name">Evgeniya Orlova</span> · Politiek Analist</span>
-      <span>April 2026 · buurtanalyse</span>
-      <span class="tag-pill">Klimaat</span>
-      <span class="tag-pill">Rechtvaardigheid</span>
-      <span class="tag-pill">Buurten</span>
-    </div>
-  </header>
-
-  <!-- INTRO -->
-
-  <section class="section">
-    <h2>De methodologie: drie assen, één index</h2>
-    <p>
-      De Klimaatrechtvaardigheidsindex (KRI) combineert drie databronnen per buurt: de <strong>hittestress-score</strong> (gemiddelde gevoelstemperatuur in hittegolven, KNMI/AMS-data), het <strong>wateroverlastrisico</strong> (kans op wateroverlast bij extreme buien, Gemeente Amsterdam Riolering), en het <strong>sociaal-economisch kwetsbaarheidsprofiel</strong> (mediaan inkomen, aandeel huurders sociale sector, werkloosheidsgraad — CBS Kerncijfers wijken en buurten 2024).
-    </p>
-    <p>
-      Een hoge KRI-score betekent: <strong>hoge klimaatbelasting, laag inkomen, weinig buffercapaciteit.</strong> Dit zijn de buurten waar klimaatverandering het hardst aankomt én waar bewoners het minste vermogen hebben om zichzelf te beschermen.
-    </p>
-
-```
-<div class="metric-strip three-col">
-  <div class="metric-cell">
-    <span class="metric-value" style="color:#d84315;">+3,8°C</span>
-    <div class="metric-label">Extra gevoelstemperatuur Zuidoost vs. Vondelpark tijdens hittegolf</div>
-    <div class="metric-delta delta-down">↑ door verharding &amp; gebrek aan groen</div>
-  </div>
-  <div class="metric-cell">
-    <span class="metric-value" style="color:#1565c0;">34%</span>
-    <div class="metric-label">Buurten met hoog wateroverlastrisico én benedenmodaal inkomen</div>
-    <div class="metric-delta delta-down">Geen zelfbescherming mogelijk</div>
-  </div>
-  <div class="metric-cell">
-    <span class="metric-value" style="color:#6a1b9a;">2,3×</span>
-    <div class="metric-label">Meer klimaatsubsidie per woning in Centrum vs. Zuidoost</div>
-    <div class="metric-delta delta-down">Omgekeerde verdeling</div>
-  </div>
-</div>
-
-<div class="pullquote equity-quote">
-  <p>"De klimaatlast en de klimaatinvestering bewegen in tegengestelde richting. Dat is geen toeval — het is de logica van een marktgestuurd subsidiestelsel zonder buurtweging."</p>
-  <cite>KRI-analyse · janeorlova.com · 2026</cite>
-</div>
-```
-
-  </section>
-
-  <!-- RISK MAP PROXY: BUBBLE CHART -->
-
-  <section class="section">
-    <h2>Hittestress versus inkomen: de kwetsbaarheidskloof</h2>
-    <p>
-      De spreidingsplot toont alle zeven Amsterdamse stadsdelen op twee assen: gemiddelde hittestress (x) versus mediaan inkomen (y). Belbubbels zijn proportioneel aan het wateroverlastrisico. De rechterbenedenhoek — hoge hitte, laag inkomen, groot waterrisico — is de urgentiezone.
-    </p>
-    <div class="chart-canvas-wrap" style="height:320px; margin: 1.5rem 0;">
-      <canvas id="bubbleChart"></canvas>
-    </div>
-    <div class="risk-legend">
-      <span><span class="risk-dot" style="background:#d84315;"></span> Hogere hittestress</span>
-      <span><span class="risk-dot" style="background:#1565c0;"></span> Hoger waterrisico (belgrootte)</span>
-      <span><span class="risk-dot" style="background:#6a1b9a;"></span> Lager inkomen → hoger rechtvaardigheidsrisico</span>
-    </div>
-    <p class="source">Bron: KNMI Klimaatatlas 2024 · CBS Kerncijfers Wijken 2024 · Gemeente Amsterdam Riolering Basisrioleringsplan 2024</p>
-  </section>
-
-  <!-- TOP 20 BUURTEN TABLE -->
-
-  <section class="section">
-    <h2>Top 20: hoogste klimaatrechtvaardigheidsrisico</h2>
-    <p>
-      De twintig buurten met de hoogste KRI-score: combinatie van hoge klimaatbelasting én lage sociaal-economische weerbaarheid. Dit zijn de buurten waar D66's beleidslijn — klimaatrechtvaardigheid als prioriteit — het hardst nodig is.
-    </p>
-
-```
-<table class="buurt-table">
-  <thead>
-    <tr>
-      <th style="width:5%;">#</th>
-      <th style="width:28%;">Buurt</th>
-      <th style="width:12%;">Stadsdeel</th>
-      <th style="width:13%;">Hitte</th>
-      <th style="width:13%;">Water</th>
-      <th style="width:16%;">Inkomen</th>
-      <th style="width:13%;">KRI Score</th>
-    </tr>
-  </thead>
-  <tbody id="buurtTableBody">
-    <!-- Filled by JS -->
-  </tbody>
-</table>
-<p class="source">Bron: KNMI · CBS · Gemeente Amsterdam Riolering · Woningnet · berekening janeorlova.com</p>
-```
-
-  </section>
-
-  <!-- SUBSIDIE CHART -->
-
-  <section class="section">
-    <h2>De omgekeerde subsidielogica</h2>
-    <p>
-      Klimaatsubsidies en verduurzamingsinvesteringen volgen nu de markt: koopwoningeigenaren in hogere inkomenswijken hebben meer aanvraagcapaciteit, meer eigen vermogen om te co-financieren en meer netwerk om regelingen te vinden. Het resultaat is een structureel omgekeerde verdeling.
-    </p>
-
-```
-<div class="chart-wrap">
-  <div class="chart-label">Klimaatsubsidie per woning per stadsdeel (€, gemiddelde 2022–2025)</div>
-  <div class="chart-sublabel">Centrum en Zuid ontvangen het meest, Noord en Zuidoost het minst — ondanks hogere klimaatrisico's in de laatste twee.</div>
-  <div class="legend-row">
-    <span><span class="swatch" style="background:#6a1b9a;"></span>Subsidie per woning (€)</span>
-    <span><span class="swatch" style="background:#d84315; opacity:0.6;"></span>KRI-score (rechtsas)</span>
-  </div>
-  <div class="chart-canvas-wrap" style="height:260px;">
-    <canvas id="subsidieChart"></canvas>
-  </div>
-  <p class="source">Bron: Gemeente Amsterdam Subsidieregister · RVO Energietransitie Monitor 2025 · berekening KRI janeorlova.com</p>
-</div>
-
-<div class="dossier-grid">
-  <div class="dossier-card">
-    <div class="dossier-tag equity-tag">KRI · Aanbeveling</div>
-    <div class="dossier-title">Buurtgewogen subsidietoewijzing</div>
-    <p class="dossier-text">Koppel klimaatsubsidies aan de KRI-score: buurten met een score boven 70 krijgen automatisch voorrang en een hoger cofinancieringspercentage (tot 90%) zonder eigen vermogensvereiste.</p>
-  </div>
-  <div class="dossier-card">
-    <div class="dossier-tag equity-tag">KRI · Aanbeveling</div>
-    <div class="dossier-title">Hitte-actieplan per buurt</div>
-    <p class="dossier-text">De 20 hoogst scorende buurten krijgen een verplicht hitteactieplan met concrete maatregelen: gevelgroen, waterplein, schaduwstructuren. Financiering vanuit stedelijk klimaatfonds.</p>
-  </div>
-  <div class="dossier-card">
-    <div class="dossier-tag equity-tag">KRI · Monitoring</div>
-    <div class="dossier-title">Jaarlijkse KRI-update</div>
-    <p class="dossier-text">De index wordt jaarlijks bijgewerkt met actuele klimaat- en inkomensdata. Zo kan de gemeenteraad bijsturen als de subsidieverdeling niet convergeert naar rechtvaardigheid.</p>
-  </div>
-  <div class="dossier-card">
-    <div class="dossier-tag equity-tag">KRI · Politiek</div>
-    <div class="dossier-title">D66's eigen toetssteen</div>
-    <p class="dossier-text">D66 heeft klimaatrechtvaardigheid als principe opgenomen. De KRI maakt dit principe operationeel en meetbaar — en dwingt de partij tot verantwoording als de verdeling niet verbetert.</p>
-  </div>
-</div>
-```
-
-  </section>
-
-  <!-- STADSDEEL BREAKDOWN -->
-
-  <section class="section">
-    <h2>Stadsdelen vergeleken: klimaatrisico versus investering</h2>
-    <div class="chart-wrap">
-      <div class="chart-label">Gemiddelde KRI-score versus aardgasvrije woningen per stadsdeel (2025)</div>
-      <div class="chart-sublabel">Er is een negatief verband: hoe hoger het klimaatrechtvaardigheidsrisico, hoe lager de verduurzaming. Noord en Zuidoost zijn de uitschieters.</div>
-      <div class="legend-row">
-        <span><span class="swatch" style="background:#6a1b9a;"></span>Gem. KRI-score (hogere balk = meer ongelijkheid)</span>
-        <span><span class="swatch" style="background:#2e7d32; opacity:0.7;"></span>% aardgasvrij (hogere balk = meer verduurzaamd)</span>
+  <div class="project-card equity-card" onclick="showScreen('equity')">
+    <div class="card-body">
+      <div class="card-tag">Klimaatrechtvaardigheidsindex · Buurtanalyse 2025</div>
+      <div class="card-title">Wie draagt de klimaatlast? Een index voor 99 buurten</div>
+      <div class="card-desc">Hittestress, wateroverlast en laag inkomen clusteren in dezelfde Amsterdamse buurten — maar klimaatsubsidies stromen daar het minst naartoe. De rechtvaardigheidskloof, buurt voor buurt.</div>
+      <div class="card-pills">
+        <span class="pill">Klimaat</span>
+        <span class="pill">Rechtvaardigheid</span>
+        <span class="pill">Buurten</span>
+        <span class="pill">Index</span>
       </div>
-      <div class="chart-canvas-wrap" style="height:260px;">
-        <canvas id="stadsdeelChart"></canvas>
-      </div>
-      <p class="source">Bron: RVO · KNMI · CBS · berekening janeorlova.com</p>
     </div>
-  </section>
+    <div class="card-arrow">→</div>
+  </div>
 
-</div><!-- /container -->
-</div><!-- /panel-equity -->
+  <div class="project-card transit-card" onclick="showScreen('transit')">
+    <div class="card-body">
+      <div class="card-tag">Amsterdam Mobiliteit · Mei 2026</div>
+      <div class="card-title">Amsterdam in transit: het OV onder druk</div>
+      <div class="card-desc">Het GVB-netwerk herstelt van corona — maar nog niet volledig. De Noord/Zuidlijn presteert onder prognose. En een €49-maandticket kan dat allemaal veranderen.</div>
+      <div class="card-pills">
+        <span class="pill">Openbaar vervoer</span>
+        <span class="pill">GVB</span>
+        <span class="pill">Mobiliteit</span>
+        <span class="pill">D66</span>
+      </div>
+    </div>
+    <div class="card-arrow">→</div>
+  </div>
 
-<footer>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- ═══════════════════ D66 SCREEN ═══════════════════ -->
+
+<div class="screen" id="screen-d66">
+  <nav class="detail-nav">
+    <button class="back-btn" onclick="showScreen('home')">← Alle projecten</button>
+    <span class="nav-title d66">D66 Amsterdam: Doelen &amp; Realiteit</span>
+  </nav>
+
   <div class="container">
+    <header class="hero">
+      <div class="kicker">D66 Amsterdam · Coalitieakkoord 2026–2030</div>
+      <h1>Wat D66 belooft — en wat Amsterdam nu <em>werkelijk</em> heeft</h1>
+      <p class="standfirst">D66 trad opnieuw toe tot de coalitie met acht zetels en ambitieuze programmapunten op wonen, mobiliteit en duurzaamheid. Dit is de toetssteen: de partijdoelen afgezet tegen de huidige Amsterdamse realiteit.</p>
+      <div class="byline-row">
+        <span><span class="byline-name">Evgeniya Orlova</span> · Politiek Analist</span>
+        <span>April 2026 · coalitievorming</span>
+        <span class="tag-pill">D66</span>
+        <span class="tag-pill">Wonen</span>
+        <span class="tag-pill">Mobiliteit</span>
+        <span class="tag-pill">Duurzaamheid</span>
+      </div>
+    </header>
+
+```
+<section class="section">
+  <h2>De balans: ambitie versus achterstand</h2>
+  <p>D66 Amsterdam stelde voor de coalitieperiode 2026–2030 concrete doelstellingen vast op drie fysieke dossiers. De vertrekpositie is moeilijk: op alle drie terreinen loopt Amsterdam achter op de eigen doelen uit vorige perioden. De nieuwe coalitie erft een flinke hypotheek.</p>
+  <div class="metric-strip">
+    <div class="metric-cell">
+      <span class="metric-value">12,4</span>
+      <div class="metric-label">Jaar wachttijd sociale huur (2025)</div>
+      <div class="metric-delta delta-down">↑ van 8,3 jaar in 2018</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">40%</span>
+      <div class="metric-label">Achterstand woningbouw t/m 2030</div>
+      <div class="metric-delta delta-down">52.500 woningen nodig</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">31%</span>
+      <div class="metric-label">Auto-aandeel modal split (2024)</div>
+      <div class="metric-delta delta-warn">Doel 2030: 24%</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">6,2%</span>
+      <div class="metric-label">Woningen aardgasvrij (2025)</div>
+      <div class="metric-delta delta-down">Doel 2040: 100%</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>D66-doelen versus realiteit: dossier per dossier</h2>
+  <p>D66's verkiezingsprogramma en coalitieakkoord bevatten meetbare doelstellingen. Hieronder staan de kernpunten afgezet tegen de actuele Amsterdamse situatie.</p>
+  <table class="policy-table">
+    <thead>
+      <tr>
+        <th class="dossier-col">Dossier</th>
+        <th class="goal-col"><span class="col-goal">D66-doel (2026–2030)</span></th>
+        <th class="reality-col"><span class="col-reality">Huidige realiteit (2025)</span></th>
+        <th class="gap-col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dossier-col">Wonen · middenhuur</td><td class="goal-col">Nieuwe middenhuurcategorie (€850–€1.250) via publiek-private afspraken; 30% van nieuwbouw middenhuur</td><td class="reality-col">Huursegment €850–€1.700 vrijwel leeg. Marktaandeel middenhuur onder 8%. Nieuwbouwquota niet gehaald in 2022–2025</td><td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td></tr>
+      <tr><td class="dossier-col">Wonen · bouwproductie</td><td class="goal-col">7.500 nieuwe woningen per jaar; versnelling via gebiedsontwikkeling IJ-oevers, Haven-Stad en Zuidasdok</td><td class="reality-col">Bouwproductie gemiddeld 4.200/jaar (2022–2025). Stijgende bouwkosten, bezwaarprocedures en stikstofproblematiek remmen snelheid</td><td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td></tr>
+      <tr><td class="dossier-col">Wonen · sociale huur</td><td class="goal-col">Wachttijd terugbrengen naar max. 10 jaar; toevoeging 3.000 sociale huurwoningen via corporatiepact</td><td class="reality-col">Wachttijd 12,4 jaar (2025). Woningnet-registraties: 94.000 actief zoekend. Corporatie-investeringsruimte beperkt door rentedruk</td><td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td></tr>
+      <tr><td class="dossier-col">Mobiliteit · auto</td><td class="goal-col">Autoaandeel modal split verlagen naar 24% in 2030; 10.000 parkeerplaatsen openbare ruimte omzetten naar groen/wonen</td><td class="reality-col">Autoaandeel 31% (2024). Parkeerplaatsreductie verloopt traag; buiten de ring politieke weerstand. Doel 2025 (27%) niet gehaald</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+      <tr><td class="dossier-col">Mobiliteit · fiets</td><td class="goal-col">Fietsaandeel naar 45% in 2030; 150 km nieuwe veilige fietsroutes; fietsparkeerplaatsen bij elk OV-knooppunt</td><td class="reality-col">Fietsaandeel 38% (2024). 62 km nieuwe routes aangelegd 2022–2025. Fietsparkeerdruk in centrum blijft hoog</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+      <tr><td class="dossier-col">Mobiliteit · OV</td><td class="goal-col">OV-aandeel naar 20% in 2030; doorstroming tram lijn 2/19 verbeteren; nachttransport uitbreiden</td><td class="reality-col">OV-aandeel 17% (2024). Tramstremming rond Nieuwezijds Voorburgwal aanhoudend. GVB capaciteitsproblemen in spits</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+      <tr><td class="dossier-col">Duurzaamheid · gas</td><td class="goal-col">20.000 woningen extra aardgasvrij per jaar; warmtenetten in Noord, Nieuw-West en Zuidoost prioriteit</td><td class="reality-col">Slechts 6,2% van woningen aardgasvrij (2025). Noord: 3%, Zuidoost: 2%. Warmtenet-aansluitingen lopen 3 jaar achter op plan</td><td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td></tr>
+      <tr><td class="dossier-col">Duurzaamheid · klimaatadap.</td><td class="goal-col">Klimaatrechtvaardigheid als leidend principe: meest kwetsbare buurten prioriteit bij subsidies</td><td class="reality-col">Huidige subsidieverdeling niet buurtgewogen. Centrum en Zuid ontvangen disproportioneel meer verduurzamingsgeld</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+      <tr><td class="dossier-col">Duurzaamheid · circulair</td><td class="goal-col">30% minder restafval per huishouden in 2030; circulaire inkoop gemeente 100% in 2028</td><td class="reality-col">Restafval daalt licht (−4% 2022–2024). Circulaire inkoop gemeente: 41% (2024)</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+    </tbody>
+  </table>
+  <p class="source">Bronnen: D66 Amsterdam verkiezingsprogramma 2026 · Coalitieakkoord 2026 · Gemeente Amsterdam O&amp;S · Woningnet · RVO Energietransitie Monitor 2025 · GVB Mobiliteitsmonitor 2024</p>
+</section>
+
+<section class="section">
+  <h2>Wonen: de hypotheek die D66 erft</h2>
+  <p>Het woningdossier is de zwaarste opgave. D66 wil de middenhuurmarkt herstellen via een combinatie van publieke regie op nieuwbouwquota's en marktprikkels voor institutionele beleggers.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">Sociale woningmarkt: wachtlijst versus toewijzingen, 2015–2025</div>
+    <div class="chart-sublabel">De kloof tussen vraag en aanbod is structureel verbreed.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#1a5e9c;"></span>Wachtlijst (x1.000)</span>
+      <span><span class="swatch" style="background:#c62828;"></span>Toewijzingen (x1.000)</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:220px;"><canvas id="wonenChart"></canvas></div>
+    <p class="source">Bron: Woningnet Amsterdam · Gemeente Amsterdam Wonen rapportages</p>
+  </div>
+  <div class="chart-wrap" style="margin-top:1.5rem;">
+    <div class="chart-label">Woningproductie Amsterdam versus D66-doel (woningen/jaar)</div>
+    <div class="chart-sublabel">D66 stelt een doel van 7.500 nieuwe woningen per jaar. Productie 2022–2025 gemiddelde: 4.200/jaar.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#1a5e9c;"></span>Gerealiseerd</span>
+      <span><span class="swatch" style="background:#2e7d32; opacity:0.5;"></span>D66-doel 2026–2030</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:200px;"><canvas id="woningbouwChart"></canvas></div>
+    <p class="source">Bron: Gemeente Amsterdam Wonen in Cijfers 2025 · D66 Verkiezingsprogramma 2026</p>
+  </div>
+  <div class="pullquote">
+    <p>"D66 wil de woningproductie bijna verdubbelen. Dat vereist niet alleen politieke wil, maar ook oplossingen voor de stikstofimpasse, capaciteitstekorten bij corporaties en het aanbestedingsklimaat."</p>
+    <cite>Analyse · janeorlova.com · April 2026</cite>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Mobiliteit: D66 versus het auto-aandeel</h2>
+  <p>D66 zet sterk in op de modal shift: auto's moeten wijken voor fietsers, voetgangers en OV. De uitdaging zit buiten de grachtengordel.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">Modal split Amsterdam: 2019, 2024 en D66-doel 2030</div>
+    <div class="chart-sublabel">Het autoaandeel daalt, maar minder snel dan D66 nodig heeft.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#b0b0b0;"></span>2019</span>
+      <span><span class="swatch" style="background:#1a5e9c;"></span>2024</span>
+      <span><span class="swatch" style="background:#2e7d32;"></span>D66-doel 2030</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:240px;"><canvas id="modalChart"></canvas></div>
+    <p class="source">Bron: Gemeente Amsterdam Mobiliteitsmonitor 2024 · D66 Coalitieakkoord 2026</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Duurzaamheid: het energietransitie-gat</h2>
+  <p>Noord en Zuidoost — laagste inkomens, hoogste klimaatrisico — lopen het verst achter op de aardgastransitie.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">Aardgasvrije woningen per stadsdeel, 2025 versus D66-prioritering</div>
+    <div class="chart-sublabel">Noord en Zuidoost hebben de laagste verduurzamingsgraad én de hoogste klimaatvulnerabiliteit.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#2e7d32;"></span>Aardgasvrij (%)</span>
+      <span><span class="swatch" style="background:#f0997b;"></span>Nog op aardgas (%)</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:280px;"><canvas id="energieChart"></canvas></div>
+    <p class="source">Bron: Warmteplan Amsterdam · RVO Energietransitie Monitor 2025</p>
+  </div>
+  <div class="dossier-grid">
+    <div class="dossier-card">
+      <div class="dossier-tag">D66-doel · Warmtenet</div>
+      <div class="dossier-title">Noord als proeftuin</div>
+      <span class="dossier-stat">18.000</span>
+      <p class="dossier-text">Woningen in Noord gepland voor warmtenet-aansluiting t/m 2028. Huidige aansluitingen: 1.200. Achterstand: 3 jaar.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag">D66-doel · Subsidie</div>
+      <div class="dossier-title">Gerichte isolatiesubsidie</div>
+      <span class="dossier-stat">€4.500</span>
+      <p class="dossier-text">Gemiddelde isolatiesubsidie per woning (D66-voorstel). Nu ontvangen huishoudens in Centrum en Zuid gemiddeld 2,3× meer dan Zuidoost.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Wat D66 moet bewijzen in 2026–2030</h2>
+  <p>D66's programma is coherent en meetbaar. De drie kritieke dossiers — middenhuur, bouwproductie en warmtenetten — vereisen elk een andere politieke strategie.</p>
+  <div class="pullquote">
+    <p>"D66's liberaal-progressieve identiteit maakt de partij bij uitstek geschikt om marktmechanismen en publieke regie te verbinden. De vraag is of de coalitie die ruimte biedt."</p>
+    <cite>Politieke analyse · janeorlova.com · April 2026</cite>
+  </div>
+  <p>Middenhuur vraagt om institutionele marktafspraken. Bouwproductie vraagt om juridische versnelling van bezwaarprocedures. Warmtenetten vragen om gemeentelijk eigenaarschap. D66 heeft de ambitie; de komende twee jaar zullen laten zien of de uitvoering volgt.</p>
+</section>
+```
+
+  </div>
+
+  <footer><div class="container">
     <p>janeorlova.com · Politieke Analyse · Amsterdam · 2026</p>
     <p style="margin-top:6px;">Evgeniya Orlova · BA Internationale Betrekkingen · MSc Politieke Communicatie</p>
-    <p style="margin-top:6px;font-size:10px;">Alle data: Gemeente Amsterdam O&amp;S, Kiesraad, Woningnet, RVO, KNMI, CBS · Gepubliceerd als open source op GitHub</p>
+  </div></footer>
+</div>
+
+<!-- ═══════════════════ EQUITY SCREEN ═══════════════════ -->
+
+<div class="screen" id="screen-equity">
+  <nav class="detail-nav">
+    <button class="back-btn" onclick="showScreen('home')">← Alle projecten</button>
+    <span class="nav-title equity">Klimaatrechtvaardigheidsindex</span>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <div class="kicker equity-kicker">Amsterdam Klimaatrechtvaardigheid · Buurtanalyse 2025</div>
+      <h1>Wie draagt de klimaatlast? <em class="equity-em">Een index voor 99 buurten</em></h1>
+      <p class="standfirst">Hittestress, wateroverlast en laag inkomen clusteren in dezelfde Amsterdamse buurten — maar klimaatsubsidies en verduurzamingsinvesteringen stromen daar het minst naartoe. Dit is de rechtvaardigheidskloof, buurt voor buurt.</p>
+      <div class="byline-row">
+        <span><span class="byline-name">Evgeniya Orlova</span> · Politiek Analist</span>
+        <span>April 2026 · buurtanalyse</span>
+        <span class="tag-pill">Klimaat</span>
+        <span class="tag-pill">Rechtvaardigheid</span>
+        <span class="tag-pill">Buurten</span>
+      </div>
+    </header>
+
+```
+<section class="section">
+  <h2>De methodologie: drie assen, één index</h2>
+  <p>De Klimaatrechtvaardigheidsindex (KRI) combineert drie databronnen per buurt: de <strong>hittestress-score</strong> (gemiddelde gevoelstemperatuur in hittegolven), het <strong>wateroverlastrisico</strong> (kans op wateroverlast bij extreme buien), en het <strong>sociaal-economisch kwetsbaarheidsprofiel</strong> (mediaan inkomen, aandeel huurders sociale sector, werkloosheidsgraad).</p>
+  <p>Een hoge KRI-score betekent: <strong>hoge klimaatbelasting, laag inkomen, weinig buffercapaciteit.</strong></p>
+  <div class="metric-strip three-col">
+    <div class="metric-cell">
+      <span class="metric-value" style="color:#d84315;">+3,8°C</span>
+      <div class="metric-label">Extra gevoelstemperatuur Zuidoost vs. Vondelpark tijdens hittegolf</div>
+      <div class="metric-delta delta-down">↑ door verharding &amp; gebrek aan groen</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value" style="color:#1565c0;">34%</span>
+      <div class="metric-label">Buurten met hoog wateroverlastrisico én benedenmodaal inkomen</div>
+      <div class="metric-delta delta-down">Geen zelfbescherming mogelijk</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value" style="color:#6a1b9a;">2,3×</span>
+      <div class="metric-label">Meer klimaatsubsidie per woning in Centrum vs. Zuidoost</div>
+      <div class="metric-delta delta-down">Omgekeerde verdeling</div>
+    </div>
   </div>
-</footer>
+  <div class="pullquote equity-quote">
+    <p>"De klimaatlast en de klimaatinvestering bewegen in tegengestelde richting. Dat is geen toeval — het is de logica van een marktgestuurd subsidiestelsel zonder buurtweging."</p>
+    <cite>KRI-analyse · janeorlova.com · 2026</cite>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Hittestress versus inkomen: de kwetsbaarheidskloof</h2>
+  <p>De spreidingsplot toont alle zeven Amsterdamse stadsdelen op twee assen: gemiddelde hittestress (x) versus mediaan inkomen (y). Belbubbels zijn proportioneel aan het wateroverlastrisico.</p>
+  <div class="chart-canvas-wrap" style="height:320px; margin: 1.5rem 0;"><canvas id="bubbleChart"></canvas></div>
+  <div class="risk-legend">
+    <span><span class="risk-dot" style="background:#d84315;"></span> Hogere hittestress</span>
+    <span><span class="risk-dot" style="background:#1565c0;"></span> Hoger waterrisico (belgrootte)</span>
+    <span><span class="risk-dot" style="background:#6a1b9a;"></span> Lager inkomen → hoger rechtvaardigheidsrisico</span>
+  </div>
+  <p class="source">Bron: KNMI Klimaatatlas 2024 · CBS Kerncijfers Wijken 2024 · Gemeente Amsterdam Riolering Basisrioleringsplan 2024</p>
+</section>
+
+<section class="section">
+  <h2>Top 20: hoogste klimaatrechtvaardigheidsrisico</h2>
+  <p>De twintig buurten met de hoogste KRI-score: combinatie van hoge klimaatbelasting én lage sociaal-economische weerbaarheid.</p>
+  <table class="buurt-table">
+    <thead>
+      <tr>
+        <th style="width:5%;">#</th>
+        <th style="width:28%;">Buurt</th>
+        <th style="width:12%;">Stadsdeel</th>
+        <th style="width:13%;">Hitte</th>
+        <th style="width:13%;">Water</th>
+        <th style="width:16%;">Inkomen</th>
+        <th style="width:13%;">KRI Score</th>
+      </tr>
+    </thead>
+    <tbody id="buurtTableBody"></tbody>
+  </table>
+  <p class="source">Bron: KNMI · CBS · Gemeente Amsterdam Riolering · Woningnet · berekening janeorlova.com</p>
+</section>
+
+<section class="section">
+  <h2>De omgekeerde subsidielogica</h2>
+  <p>Klimaatsubsidies volgen nu de markt: koopwoningeigenaren in hogere inkomenswijken hebben meer aanvraagcapaciteit en eigen vermogen. Het resultaat is een structureel omgekeerde verdeling.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">Klimaatsubsidie per woning per stadsdeel (€, gemiddelde 2022–2025)</div>
+    <div class="chart-sublabel">Centrum en Zuid ontvangen het meest, Noord en Zuidoost het minst — ondanks hogere klimaatrisico's.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#6a1b9a;"></span>Subsidie per woning (€)</span>
+      <span><span class="swatch" style="background:#d84315; opacity:0.6;"></span>KRI-score (rechtsas)</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:260px;"><canvas id="subsidieChart"></canvas></div>
+    <p class="source">Bron: Gemeente Amsterdam Subsidieregister · RVO Energietransitie Monitor 2025</p>
+  </div>
+  <div class="dossier-grid">
+    <div class="dossier-card">
+      <div class="dossier-tag equity-tag">KRI · Aanbeveling</div>
+      <div class="dossier-title">Buurtgewogen subsidietoewijzing</div>
+      <p class="dossier-text">Koppel klimaatsubsidies aan de KRI-score: buurten met een score boven 70 krijgen automatisch voorrang en een hoger cofinancieringspercentage (tot 90%) zonder eigen vermogensvereiste.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag equity-tag">KRI · Aanbeveling</div>
+      <div class="dossier-title">Hitte-actieplan per buurt</div>
+      <p class="dossier-text">De 20 hoogst scorende buurten krijgen een verplicht hitteactieplan met concrete maatregelen: gevelgroen, waterplein, schaduwstructuren.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag equity-tag">KRI · Monitoring</div>
+      <div class="dossier-title">Jaarlijkse KRI-update</div>
+      <p class="dossier-text">De index wordt jaarlijks bijgewerkt met actuele klimaat- en inkomensdata, zodat de gemeenteraad kan bijsturen als de subsidieverdeling niet convergeert naar rechtvaardigheid.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag equity-tag">KRI · Politiek</div>
+      <div class="dossier-title">D66's eigen toetssteen</div>
+      <p class="dossier-text">D66 heeft klimaatrechtvaardigheid als principe opgenomen. De KRI maakt dit principe operationeel en meetbaar — en dwingt de partij tot verantwoording.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Stadsdelen vergeleken: klimaatrisico versus investering</h2>
+  <div class="chart-wrap">
+    <div class="chart-label">Gemiddelde KRI-score versus aardgasvrije woningen per stadsdeel (2025)</div>
+    <div class="chart-sublabel">Hoe hoger het klimaatrechtvaardigheidsrisico, hoe lager de verduurzaming. Noord en Zuidoost zijn de uitschieters.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#6a1b9a;"></span>Gem. KRI-score</span>
+      <span><span class="swatch" style="background:#2e7d32; opacity:0.7;"></span>% aardgasvrij</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:260px;"><canvas id="stadsdeelChart"></canvas></div>
+    <p class="source">Bron: RVO · KNMI · CBS · berekening janeorlova.com</p>
+  </div>
+</section>
+```
+
+  </div>
+
+  <footer><div class="container">
+    <p>janeorlova.com · Politieke Analyse · Amsterdam · 2026</p>
+    <p style="margin-top:6px;">Evgeniya Orlova · BA Internationale Betrekkingen · MSc Politieke Communicatie</p>
+  </div></footer>
+</div>
+
+<!-- ═══════════════════ TRANSIT SCREEN ═══════════════════ -->
+
+<div class="screen" id="screen-transit">
+  <nav class="detail-nav">
+    <button class="back-btn" onclick="showScreen('home')">← Alle projecten</button>
+    <span class="nav-title transit">Amsterdam in Transit</span>
+  </nav>
+
+  <div class="container">
+    <header class="hero">
+      <div class="kicker transit-kicker">Amsterdam Mobiliteit · Mei 2026</div>
+      <h1>Amsterdam in transit: <em class="transit-em">het OV onder druk</em></h1>
+      <p class="standfirst">Het GVB-netwerk herstelt van corona — maar nog niet volledig. De Noord/Zuidlijn presteert onder prognose. De buitenwijken worden achtergelaten door een modal shift die de grachtengordel bevoordeelt. En een €49-maandticket kan dat allemaal veranderen.</p>
+      <div class="byline-row">
+        <span><span class="byline-name">Evgeniya Orlova</span> · Politiek Analist</span>
+        <span>Mei 2026 · mobiliteitsanalyse</span>
+        <span class="tag-pill">Openbaar vervoer</span>
+        <span class="tag-pill">Mobiliteit</span>
+        <span class="tag-pill">D66</span>
+      </div>
+    </header>
+
+```
+<section class="section">
+  <h2>De vertrekpositie: vier kerngetallen</h2>
+  <p>Amsterdam wil bewegen zónder auto. De politieke ambitie is helder — maar de data vertelt een ingewikkelder verhaal.</p>
+  <div class="metric-strip">
+    <div class="metric-cell">
+      <span class="metric-value">218M</span>
+      <div class="metric-label">GVB-ritten per jaar (2024)</div>
+      <div class="metric-delta delta-down">↓ 11% t.o.v. 2019</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">52%</span>
+      <div class="metric-label">Verplaatsingen per fiets of te voet</div>
+      <div class="metric-delta delta-up">↑ 4pp sinds 2019</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">€1,8 mrd</span>
+      <div class="metric-label">Achterstallig onderhoud OV-infra</div>
+      <div class="metric-delta delta-down">Onopgelost since 2022</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">30%</span>
+      <div class="metric-label">GVB-bussen elektrisch einde 2025</div>
+      <div class="metric-delta delta-warn">Doel: 100% in 2030</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>GVB-reizigers: herstel zonder voltooiing</h2>
+  <p>In 2024 realiseerde GVB circa 218 miljoen ritten — nog altijd bijna 11% minder dan de piek van 244 miljoen in 2019. Tram en bus blijven het verst achter; metro herstelt het sterkst.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">GVB-ritten per vervoerwijze, 2018–2025</div>
+    <div class="chart-sublabel">Miljoenen ritten per jaar. 2025 is voorlopig cijfer.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#1a5e9c;"></span>Metro</span>
+      <span><span class="swatch" style="background:#c8401a;"></span>Tram</span>
+      <span><span class="swatch" style="background:#2e7d32;"></span>Bus</span>
+      <span><span class="swatch" style="background:#888;"></span>Veer</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:240px;"><canvas id="transitRidershipChart"></canvas></div>
+    <p class="source">Bron: GVB Jaarverslag 2024 · OV-chipkaartdata · schatting auteur voor 2025</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>De Noord/Zuidlijn: €3,1 miljard en toch onder prognose</h2>
+  <p>De Noord/Zuidlijn opende in juli 2018 na zestien jaar bouw en bijna €3,1 miljard aan kosten. Zes jaar later vervoert de lijn gemiddeld 65.000–75.000 instappers per dag — structureel lager dan de geprognosticeerde 100.000.</p>
+  <div class="pullquote transit-quote">
+    <p>"De Noord/Zuidlijn loste een noord-zuidprobleem op. Zij schiep een nieuwe vraag: hoe verbinden we het netwerk met de groeigebieden van de stad?"</p>
+    <cite>OV-analyse · janeorlova.com · Mei 2026</cite>
+  </div>
+  <div class="chart-wrap">
+    <div class="chart-label">Noord/Zuidlijn: dagelijks instappers versus prognose, 2019–2025</div>
+    <div class="chart-sublabel">Duizenden instappers per gemiddelde werkdag. Prognose: 100.000/dag.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#1a5e9c;"></span>Werkelijk</span>
+      <span><span class="swatch" style="background:#d8d4c8; border:1px solid #888;"></span>Prognose (100k)</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:220px;"><canvas id="transitNzlChart"></canvas></div>
+    <p class="source">Bron: GVB · Gemeente Amsterdam · Rekenkamer Amsterdam 2022 · 2025 voorlopig</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Modale verdeling: winst gaat naar de fiets, niet het OV</h2>
+  <p>In 2024 werd 52% van alle verplaatsingen te voet of per fiets gemaakt. Autoaandeel daalde van 22% naar 18%. Maar die winst vloeit nauwelijks naar het OV: de fiets absorbeert het leeuwendeel.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">Modale verdeling Amsterdam: 2019, 2024 en D66-doel 2030</div>
+    <div class="chart-sublabel">Percentage van alle verplaatsingen binnen gemeentegrenzen.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#b0b0b0;"></span>2019</span>
+      <span><span class="swatch" style="background:#1a5e9c;"></span>2024</span>
+      <span><span class="swatch" style="background:#2e7d32;"></span>D66-doel 2030</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:260px;"><canvas id="transitModalChart"></canvas></div>
+    <p class="source">Bron: Gemeente Amsterdam OIS Mobiliteitsonderzoek 2024 · D66 Coalitieakkoord 2026 · CBS</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Het €49-ticket: een noodmaatregel die een kans is</h2>
+  <p>Duitsland voerde in 2022 het €9-ticket in als energienoodmaatregel. Het huidige €49-Deutschlandticket vervoert maandelijks ruim 13 miljoen reizigers. Amsterdam kan hiervan leren.</p>
+  <div class="metric-strip three-col">
+    <div class="metric-cell">
+      <span class="metric-value" style="color:#c8401a;">–34%</span>
+      <div class="metric-label">Daling autogebruik in Duitsland in €9-ticketmaanden (ADAC 2022)</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value">13M+</span>
+      <div class="metric-label">Maandelijkse gebruikers Deutschlandticket (€49), april 2025</div>
+    </div>
+    <div class="metric-cell">
+      <span class="metric-value" style="color:#c8401a;">10%</span>
+      <div class="metric-label">Amsterdamse huishoudens met moeite OV-kosten te dragen</div>
+      <div class="metric-delta delta-down">Mobiliteitsarmoede</div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:2rem;">Zes argumenten voor het €49-maandticket</h3>
+  <div class="dossier-grid">
+    <div class="dossier-card">
+      <div class="dossier-tag" style="color:#c8401a;">Argument 01</div>
+      <div class="dossier-title">Mobiliteitsarmoede verminderen</div>
+      <p class="dossier-text">Bijna 10% van de Amsterdamse huishoudens heeft moeite met reguliere OV-kosten. Een betaalbaar flatrate-ticket verwijdert de drempel voor werk, zorg en onderwijs.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag" style="color:#c8401a;">Argument 02</div>
+      <div class="dossier-title">Modal shift versnellen</div>
+      <p class="dossier-text">Gedragsonderzoek toont dat prijsdrempels een grotere gedragsbarrière vormen dan reistijd. Een eenvoudig, goedkoop abonnement vergroot de OV-loyaliteit structureel.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag" style="color:#c8401a;">Argument 03</div>
+      <div class="dossier-title">GVB-capaciteit beter benutten</div>
+      <p class="dossier-text">In de daluren rijdt GVB met lage bezettingsgraden. Meer vaste reizigers verbetert de kosten-per-reiziger en maakt frequentieverhoging politiek haalbaar.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag" style="color:#c8401a;">Argument 04</div>
+      <div class="dossier-title">Buitenwijken activeren</div>
+      <p class="dossier-text">Juist Noord, Zuidoost en Nieuw-West — met de hoogste autoafhankelijkheid — profiteren het meest van een prijsprikkel.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag" style="color:#c8401a;">Argument 05</div>
+      <div class="dossier-title">Klimaatdoelstellingen halen</div>
+      <p class="dossier-text">Amsterdam heeft een 67% CO₂-reductiedoel in 2030. OV stimuleren via prijs is de snelste, meest controleerbare hefboom die de gemeente in handen heeft.</p>
+    </div>
+    <div class="dossier-card">
+      <div class="dossier-tag" style="color:#c8401a;">Argument 06</div>
+      <div class="dossier-title">D66-narratief naar de stad</div>
+      <p class="dossier-text">Het €49-ticket verbindt D66's economische progressiviteit, liberaal individualisme en klimaatprogressivisme. Een simpel, sterk verhaal.</p>
+    </div>
+  </div>
+
+  <div class="chart-wrap" style="margin-top:2rem;">
+    <div class="chart-label">Geraamde reizigergroei bij €49-maandticket GVB: scenario-analyse</div>
+    <div class="chart-sublabel">Gebaseerd op Duits €9-ticket elasticiteitsdata, aangepast voor Amsterdamse OV-markt.</div>
+    <div class="legend-row">
+      <span><span class="swatch" style="background:#d8d4c8; border:1px solid #888;"></span>Huidig (2024)</span>
+      <span><span class="swatch" style="background:#1a5e9c;"></span>Laag +8%</span>
+      <span><span class="swatch" style="background:#c8401a;"></span>Midden +16%</span>
+      <span><span class="swatch" style="background:#2e7d32;"></span>Hoog +26%</span>
+    </div>
+    <div class="chart-canvas-wrap" style="height:200px;"><canvas id="transitTicketChart"></canvas></div>
+    <p class="source">Bron: Bundesministerium für Digitales und Verkehr 2022 · KiM elasticiteitsrapport OV 2023 · GVB basisdata 2024</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Elektrificatie: op koers, maar financiering loopt achter</h2>
+  <p>GVB heeft zich gecommitteerd aan een volledig elektrische busvloot in 2030. Circa 30% van de bussen is elektrisch. De uitdaging is financiering: elektrificatie is kapitaalintensief.</p>
+  <div class="chart-wrap">
+    <div class="chart-label">GVB busvloot elektrificatie, 2021–2030</div>
+    <div class="chart-sublabel">% bussen op elektrische tractie. Gestippeld: doelstellingen na 2025.</div>
+    <div class="chart-canvas-wrap" style="height:200px;"><canvas id="transitEvChart"></canvas></div>
+    <p class="source">Bron: GVB Duurzaamheidsrapportage 2024 · Coalitieakkoord Amsterdam 2022–2026</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>D66 Amsterdam: kernposities in het OV-dossier</h2>
+  <table class="policy-table">
+    <thead>
+      <tr>
+        <th class="dossier-col">Thema</th>
+        <th class="goal-col"><span class="col-goal">D66-positie</span></th>
+        <th class="reality-col"><span class="col-reality">Uitdaging</span></th>
+        <th class="gap-col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dossier-col">OV-frequentie buitenwijken</td><td class="goal-col">Hogere frequentie in Noord, Zuidoost en Nieuw-West; betere koppeling met metro</td><td class="reality-col">GVB-capaciteitstekorten in spits; geen extra rijmaterieel op korte termijn</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+      <tr><td class="dossier-col">€49-maandticket</td><td class="goal-col">Initiatiefvoorstel of motie voor betaalbaar GVB-maandabonnement</td><td class="reality-col">Financiering onduidelijk; rijksoverheid betaalt Deutschlandticket mee — Amsterdam heeft dat niet</td><td class="gap-col"><span class="gap-badge gap-behind">Initiatief</span></td></tr>
+      <tr><td class="dossier-col">Parkeerreductie</td><td class="goal-col">10.000 parkeerplaatsen in openbare ruimte omzetten vóór 2026</td><td class="reality-col">Buiten de ring politieke weerstand; tempo lager dan gepland</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+      <tr><td class="dossier-col">Transit-orientated planning</td><td class="goal-col">Nieuwe woningbouw Haven-Stad en IJburg II binnen 400m van hoogfrequente OV-halte</td><td class="reality-col">OV-uitbreiding loopt achter op bouwplannen; risico dat woningen OV-arm worden opgeleverd</td><td class="gap-col"><span class="gap-badge gap-critical">Kritiek</span></td></tr>
+      <tr><td class="dossier-col">GVB-elektrificatie</td><td class="goal-col">Volledige vlootelektrificatie 2030; aparte rijksfinanciering aanvragen</td><td class="reality-col">Rijkssubsidie onzeker; onderhoudsachterstand €1,8 mrd drukt investeringsruimte</td><td class="gap-col"><span class="gap-badge gap-behind">Achter</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="section">
+  <h2>Conclusie: de keuze die Amsterdam nog niet durft te maken</h2>
+  <p>Amsterdam boekt geloofwaardige vooruitgang in de mobiliteitstransitie. Maar de data onthult een structurele spanning: de politieke ambitie om autoafhankelijkheid te verminderen gaat sneller dan de OV-infrastructuur kan absorberen.</p>
+  <div class="pullquote transit-quote">
+    <p>"Het €49-ticket is geen technische maatregel. Het is een politiek signaal: dat mobiliteit een publiek goed is, geen luxe."</p>
+    <cite>OV-analyse · janeorlova.com · Mei 2026</cite>
+  </div>
+</section>
+```
+
+  </div>
+
+  <footer><div class="container">
+    <p>janeorlova.com · Politieke Analyse · Amsterdam · 2026</p>
+    <p style="margin-top:6px;">Evgeniya Orlova · BA Internationale Betrekkingen · MSc Politieke Communicatie</p>
+  </div></footer>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 
 <script>
-/* ── TAB LOGIC ── */
-function switchTab(tab) {
-  document.getElementById('panel-d66').classList.remove('active');
-  document.getElementById('panel-equity').classList.remove('active');
-  document.getElementById('btn-d66').classList.remove('active','active-equity');
-  document.getElementById('btn-equity').classList.remove('active','active-equity');
+/* ── NAVIGATION ── */
+const chartInstances = {};
 
-  if (tab === 'd66') {
-    document.getElementById('panel-d66').classList.add('active');
-    document.getElementById('btn-d66').classList.add('active');
-  } else {
-    document.getElementById('panel-equity').classList.add('active');
-    document.getElementById('btn-equity').classList.add('active-equity');
-  }
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  window.scrollTo(0, 0);
+  // Init charts lazily
+  if (name === 'd66' && !chartInstances.d66) { initD66Charts(); chartInstances.d66 = true; }
+  if (name === 'equity' && !chartInstances.equity) { initEquityCharts(); chartInstances.equity = true; }
+  if (name === 'transit' && !chartInstances.transit) { initTransitCharts(); chartInstances.transit = true; }
 }
 
 /* ── CHART DEFAULTS ── */
 const gridC = 'rgba(0,0,0,0.06)';
 const tickC = '#888';
 
-/* ══════════════════════════════════
-   TAB 1: D66 CHARTS
-══════════════════════════════════ */
+/* ══ D66 CHARTS ══ */
+function initD66Charts() {
+  new Chart(document.getElementById('wonenChart'), {
+    type: 'line',
+    data: {
+      labels: ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'],
+      datasets: [
+        { label:'Wachtlijst (x1.000)', data:[50,55,61,66,70,75,79,84,90,94,97], borderColor:'#1a5e9c', backgroundColor:'rgba(26,94,156,0.07)', fill:true, tension:0.4, pointRadius:3 },
+        { label:'Toewijzingen (x1.000)', data:[8.2,7.8,7.4,7.0,6.8,5.9,5.4,5.7,5.5,5.5,5.3], borderColor:'#c62828', borderDash:[4,3], fill:false, tension:0.4, pointRadius:3 }
+      ]
+    },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{grid:{color:gridC},ticks:{color:tickC,font:{size:11}}}, y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11}}} } }
+  });
 
-// WONEN WACHTLIJST
-new Chart(document.getElementById('wonenChart'), {
-  type: 'line',
-  data: {
-    labels: ['2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'],
-    datasets: [
-      {
-        label: 'Wachtlijst (x1.000)',
-        data: [50,55,61,66,70,75,79,84,90,94,97],
-        borderColor: '#1a5e9c', backgroundColor: 'rgba(26,94,156,0.07)',
-        fill: true, tension: 0.4, pointRadius: 3
-      },
-      {
-        label: 'Toewijzingen (x1.000)',
-        data: [8.2,7.8,7.4,7.0,6.8,5.9,5.4,5.7,5.5,5.5,5.3],
-        borderColor: '#c62828', borderDash: [4,3],
-        fill: false, tension: 0.4, pointRadius: 3
-      }
-    ]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 } } },
-      y: { grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 } } }
-    }
-  }
-});
+  new Chart(document.getElementById('woningbouwChart'), {
+    type: 'bar',
+    data: {
+      labels: ['2020','2021','2022','2023','2024','2025','2026 (doel)','2027 (doel)','2028 (doel)','2029 (doel)','2030 (doel)'],
+      datasets: [
+        { label:'Gerealiseerd', data:[4800,4100,3900,4200,4500,4100,null,null,null,null,null], backgroundColor:'#1a5e9c', borderRadius:2 },
+        { label:'D66-doel', data:[null,null,null,null,null,null,7500,7500,7500,7500,7500], backgroundColor:'rgba(46,125,50,0.45)', borderRadius:2, borderColor:'#2e7d32', borderWidth:1 }
+      ]
+    },
+    options: { responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{grid:{display:false},ticks:{color:tickC,font:{size:10}}}, y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11}},max:9000} } }
+  });
 
-// WONINGBOUW PRODUCTIE
-new Chart(document.getElementById('woningbouwChart'), {
-  type: 'bar',
-  data: {
-    labels: ['2020','2021','2022','2023','2024','2025','2026 (doel)','2027 (doel)','2028 (doel)','2029 (doel)','2030 (doel)'],
-    datasets: [
-      {
-        label: 'Gerealiseerd',
-        data: [4800, 4100, 3900, 4200, 4500, 4100, null, null, null, null, null],
-        backgroundColor: '#1a5e9c', borderRadius: 2
-      },
-      {
-        label: 'D66-doel',
-        data: [null, null, null, null, null, null, 7500, 7500, 7500, 7500, 7500],
-        backgroundColor: 'rgba(46,125,50,0.45)', borderRadius: 2,
-        borderColor: '#2e7d32', borderWidth: 1, borderDash: [4,3]
-      }
-    ]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: tickC, font: { size: 10 } } },
-      y: {
-        grid: { color: gridC },
-        ticks: { color: tickC, font: { size: 11 } },
-        max: 9000
-      }
-    }
-  }
-});
+  new Chart(document.getElementById('modalChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Auto','Fiets','Openbaar vervoer','Lopen'],
+      datasets: [
+        { label:'2019', data:[38,34,18,10], backgroundColor:'#b0b0b0', borderRadius:2 },
+        { label:'2024', data:[31,38,17,14], backgroundColor:'#1a5e9c', borderRadius:2 },
+        { label:'D66-doel 2030', data:[24,45,20,11], backgroundColor:'#2e7d32', borderRadius:2 }
+      ]
+    },
+    options: { indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'%'}}, y:{grid:{display:false},ticks:{color:tickC,font:{size:11}}} } }
+  });
 
-// MODAL SPLIT
-new Chart(document.getElementById('modalChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Auto','Fiets','Openbaar vervoer','Lopen'],
-    datasets: [
-      { label: '2019', data: [38,34,18,10], backgroundColor: '#b0b0b0', borderRadius: 2 },
-      { label: '2024', data: [31,38,17,14], backgroundColor: '#1a5e9c', borderRadius: 2 },
-      { label: 'D66-doel 2030', data: [24,45,20,11], backgroundColor: '#2e7d32', borderRadius: 2 }
-    ]
-  },
-  options: {
-    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 }, callback: v => v + '%' } },
-      y: { grid: { display: false }, ticks: { color: tickC, font: { size: 11 } } }
-    }
-  }
-});
+  new Chart(document.getElementById('energieChart'), {
+    type: 'bar',
+    data: {
+      labels: ['Centrum','West','Zuid','Oost','Nieuw-West','Noord','Zuidoost'],
+      datasets: [
+        { label:'Aardgasvrij', data:[11,8,9,7,4,3,2], backgroundColor:'#2e7d32', borderRadius:2 },
+        { label:'Nog op gas', data:[89,92,91,93,96,97,98], backgroundColor:'#f0997b', borderRadius:2 }
+      ]
+    },
+    options: { indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}, scales:{ x:{stacked:true,grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'%'},max:100}, y:{stacked:true,grid:{display:false},ticks:{color:tickC,font:{size:11}}} } }
+  });
+}
 
-// ENERGIE
-new Chart(document.getElementById('energieChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Centrum','West','Zuid','Oost','Nieuw-West','Noord','Zuidoost'],
-    datasets: [
-      { label: 'Aardgasvrij', data: [11,8,9,7,4,3,2], backgroundColor: '#2e7d32', borderRadius: 2 },
-      { label: 'Nog op gas', data: [89,92,91,93,96,97,98], backgroundColor: '#f0997b', borderRadius: 2 }
-    ]
-  },
-  options: {
-    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { stacked: true, grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 }, callback: v => v + '%' }, max: 100 },
-      y: { stacked: true, grid: { display: false }, ticks: { color: tickC, font: { size: 11 } } }
-    }
-  }
-});
-
-/* ══════════════════════════════════
-   TAB 2: EQUITY INDEX DATA + CHARTS
-══════════════════════════════════ */
-
-// Buurt data: top 20 highest KRI
-const buurtData = [
-  { rank:1,  name:'Venserpolder',       sd:'Zuidoost', hitte:4.1, water:'Hoog', inkomen:'€26.400', kri:91, kriClass:'high' },
-  { rank:2,  name:'Holendrecht-Oost',   sd:'Zuidoost', hitte:3.9, water:'Hoog', inkomen:'€27.100', kri:89, kriClass:'high' },
-  { rank:3,  name:'Bijlmer-Centrum',    sd:'Zuidoost', hitte:3.7, water:'Hoog', inkomen:'€25.800', kri:87, kriClass:'high' },
-  { rank:4,  name:'Florijn',            sd:'Zuidoost', hitte:3.8, water:'Midden', inkomen:'€26.900', kri:85, kriClass:'high' },
-  { rank:5,  name:'Kolenkit',           sd:'West',     hitte:3.2, water:'Hoog', inkomen:'€24.600', kri:84, kriClass:'high' },
-  { rank:6,  name:'Buikslotermeer',     sd:'Noord',    hitte:3.0, water:'Hoog', inkomen:'€27.300', kri:82, kriClass:'high' },
-  { rank:7,  name:'Nieuwendam-Noord',   sd:'Noord',    hitte:2.9, water:'Hoog', inkomen:'€28.100', kri:80, kriClass:'high' },
-  { rank:8,  name:'Slotermeer-Noord',   sd:'Nieuw-West',hitte:3.3, water:'Midden', inkomen:'€26.500', kri:79, kriClass:'high' },
-  { rank:9,  name:'Geuzenveld',         sd:'Nieuw-West',hitte:3.1, water:'Hoog', inkomen:'€25.200', kri:78, kriClass:'high' },
-  { rank:10, name:'Westlandgracht',     sd:'Nieuw-West',hitte:2.8, water:'Hoog', inkomen:'€27.800', kri:76, kriClass:'high' },
-  { rank:11, name:'Bijlmer-Oost',       sd:'Zuidoost', hitte:3.5, water:'Midden', inkomen:'€28.400', kri:75, kriClass:'high' },
-  { rank:12, name:'Osdorp-Oost',        sd:'Nieuw-West',hitte:2.7, water:'Hoog', inkomen:'€28.900', kri:74, kriClass:'high' },
-  { rank:13, name:'Overtoomse Veld',    sd:'Nieuw-West',hitte:3.0, water:'Midden', inkomen:'€27.100', kri:72, kriClass:'high' },
-  { rank:14, name:'Volewijck',          sd:'Noord',    hitte:2.6, water:'Hoog', inkomen:'€29.200', kri:71, kriClass:'high' },
-  { rank:15, name:'Slotervaart',        sd:'Nieuw-West',hitte:2.5, water:'Midden', inkomen:'€30.100', kri:69, kriClass:'med' },
-  { rank:16, name:'Banne Buiksloot',    sd:'Noord',    hitte:2.4, water:'Hoog', inkomen:'€29.800', kri:68, kriClass:'med' },
-  { rank:17, name:'Dapperbuurt',        sd:'Oost',     hitte:3.2, water:'Laag', inkomen:'€30.500', kri:67, kriClass:'med' },
-  { rank:18, name:'Spaarndammerbuurt',  sd:'West',     hitte:2.9, water:'Midden', inkomen:'€31.200', kri:65, kriClass:'med' },
-  { rank:19, name:'IJburg-West',        sd:'Oost',     hitte:1.8, water:'Hoog', inkomen:'€38.000', kri:63, kriClass:'med' },
-  { rank:20, name:'Landlust',           sd:'West',     hitte:2.7, water:'Midden', inkomen:'€32.100', kri:61, kriClass:'med' },
-];
-
-// Fill buurt table
-const tbody = document.getElementById('buurtTableBody');
-buurtData.forEach(b => {
-  const barW = Math.round(b.kri * 0.8);
-  const waterColor = b.water === 'Hoog' ? '#1565c0' : b.water === 'Midden' ? '#5c93c2' : '#a8c4de';
-  const kriCls = b.kriClass === 'high' ? 'equity-score-high' : b.kriClass === 'med' ? 'equity-score-med' : 'equity-score-low';
-  tbody.innerHTML += `
-    <tr>
+/* ══ EQUITY CHARTS ══ */
+function initEquityCharts() {
+  // Fill buurt table
+  const buurtData = [
+    {rank:1,name:'Venserpolder',sd:'Zuidoost',hitte:4.1,water:'Hoog',inkomen:'€26.400',kri:91,kriClass:'high'},
+    {rank:2,name:'Holendrecht-Oost',sd:'Zuidoost',hitte:3.9,water:'Hoog',inkomen:'€27.100',kri:89,kriClass:'high'},
+    {rank:3,name:'Bijlmer-Centrum',sd:'Zuidoost',hitte:3.7,water:'Hoog',inkomen:'€25.800',kri:87,kriClass:'high'},
+    {rank:4,name:'Florijn',sd:'Zuidoost',hitte:3.8,water:'Midden',inkomen:'€26.900',kri:85,kriClass:'high'},
+    {rank:5,name:'Kolenkit',sd:'West',hitte:3.2,water:'Hoog',inkomen:'€24.600',kri:84,kriClass:'high'},
+    {rank:6,name:'Buikslotermeer',sd:'Noord',hitte:3.0,water:'Hoog',inkomen:'€27.300',kri:82,kriClass:'high'},
+    {rank:7,name:'Nieuwendam-Noord',sd:'Noord',hitte:2.9,water:'Hoog',inkomen:'€28.100',kri:80,kriClass:'high'},
+    {rank:8,name:'Slotermeer-Noord',sd:'Nieuw-West',hitte:3.3,water:'Midden',inkomen:'€26.500',kri:79,kriClass:'high'},
+    {rank:9,name:'Geuzenveld',sd:'Nieuw-West',hitte:3.1,water:'Hoog',inkomen:'€25.200',kri:78,kriClass:'high'},
+    {rank:10,name:'Westlandgracht',sd:'Nieuw-West',hitte:2.8,water:'Hoog',inkomen:'€27.800',kri:76,kriClass:'high'},
+    {rank:11,name:'Bijlmer-Oost',sd:'Zuidoost',hitte:3.5,water:'Midden',inkomen:'€28.400',kri:75,kriClass:'high'},
+    {rank:12,name:'Osdorp-Oost',sd:'Nieuw-West',hitte:2.7,water:'Hoog',inkomen:'€28.900',kri:74,kriClass:'high'},
+    {rank:13,name:'Overtoomse Veld',sd:'Nieuw-West',hitte:3.0,water:'Midden',inkomen:'€27.100',kri:72,kriClass:'high'},
+    {rank:14,name:'Volewijck',sd:'Noord',hitte:2.6,water:'Hoog',inkomen:'€29.200',kri:71,kriClass:'high'},
+    {rank:15,name:'Slotervaart',sd:'Nieuw-West',hitte:2.5,water:'Midden',inkomen:'€30.100',kri:69,kriClass:'med'},
+    {rank:16,name:'Banne Buiksloot',sd:'Noord',hitte:2.4,water:'Hoog',inkomen:'€29.800',kri:68,kriClass:'med'},
+    {rank:17,name:'Dapperbuurt',sd:'Oost',hitte:3.2,water:'Laag',inkomen:'€30.500',kri:67,kriClass:'med'},
+    {rank:18,name:'Spaarndammerbuurt',sd:'West',hitte:2.9,water:'Midden',inkomen:'€31.200',kri:65,kriClass:'med'},
+    {rank:19,name:'IJburg-West',sd:'Oost',hitte:1.8,water:'Hoog',inkomen:'€38.000',kri:63,kriClass:'med'},
+    {rank:20,name:'Landlust',sd:'West',hitte:2.7,water:'Midden',inkomen:'€32.100',kri:61,kriClass:'med'},
+  ];
+  const tbody = document.getElementById('buurtTableBody');
+  buurtData.forEach(b => {
+    const barW = Math.round(b.kri * 0.8);
+    const waterColor = b.water === 'Hoog' ? '#1565c0' : b.water === 'Midden' ? '#5c93c2' : '#a8c4de';
+    const kriCls = b.kriClass === 'high' ? 'equity-score-high' : b.kriClass === 'med' ? 'equity-score-med' : 'equity-score-low';
+    tbody.innerHTML += `<tr>
       <td><span class="rank-num">${b.rank}</span></td>
       <td class="buurt-name">${b.name}</td>
-      <td style="font-size:11px;color:#888888;">${b.sd}</td>
+      <td style="font-size:11px;color:#888;">${b.sd}</td>
       <td style="color:#d84315;font-weight:500;">+${b.hitte}°C</td>
       <td><span class="risk-dot" style="background:${waterColor};"></span>${b.water}</td>
       <td style="font-size:11px;">${b.inkomen}</td>
-      <td>
-        <span class="${kriCls}">${b.kri}</span>
-        <div style="margin-top:3px;"><div class="score-bar-bg"><div class="score-bar-fill" style="width:${barW}%;background:#6a1b9a;opacity:0.7;"></div></div></div>
-      </td>
+      <td><span class="${kriCls}">${b.kri}</span><div style="margin-top:3px;"><div class="score-bar-bg"><div class="score-bar-fill" style="width:${barW}%;background:#6a1b9a;opacity:0.7;"></div></div></div></td>
     </tr>`;
-});
+  });
 
-// BUBBLE CHART: hitte vs inkomen, bubble size = waterrisico
-new Chart(document.getElementById('bubbleChart'), {
-  type: 'bubble',
-  data: {
-    datasets: [
-      {
-        label: 'Zuidoost',
-        data: [{ x: 3.8, y: 26.8, r: 22 }],
-        backgroundColor: 'rgba(216,67,21,0.7)', borderColor: '#d84315', borderWidth: 1
-      },
-      {
-        label: 'Noord',
-        data: [{ x: 2.8, y: 28.5, r: 18 }],
-        backgroundColor: 'rgba(21,101,192,0.6)', borderColor: '#1565c0', borderWidth: 1
-      },
-      {
-        label: 'Nieuw-West',
-        data: [{ x: 3.0, y: 27.4, r: 16 }],
-        backgroundColor: 'rgba(106,27,154,0.6)', borderColor: '#6a1b9a', borderWidth: 1
-      },
-      {
-        label: 'West',
-        data: [{ x: 2.6, y: 33.2, r: 12 }],
-        backgroundColor: 'rgba(26,94,156,0.55)', borderColor: '#1a5e9c', borderWidth: 1
-      },
-      {
-        label: 'Oost',
-        data: [{ x: 2.2, y: 36.4, r: 10 }],
-        backgroundColor: 'rgba(46,125,50,0.55)', borderColor: '#2e7d32', borderWidth: 1
-      },
-      {
-        label: 'Zuid',
-        data: [{ x: 1.8, y: 44.8, r: 8 }],
-        backgroundColor: 'rgba(245,124,0,0.55)', borderColor: '#f57c00', borderWidth: 1
-      },
-      {
-        label: 'Centrum',
-        data: [{ x: 2.4, y: 48.2, r: 7 }],
-        backgroundColor: 'rgba(136,136,136,0.5)', borderColor: '#888', borderWidth: 1
+  new Chart(document.getElementById('bubbleChart'), {
+    type: 'bubble',
+    data: { datasets: [
+      {label:'Zuidoost',data:[{x:3.8,y:26.8,r:22}],backgroundColor:'rgba(216,67,21,0.7)',borderColor:'#d84315',borderWidth:1},
+      {label:'Noord',data:[{x:2.8,y:28.5,r:18}],backgroundColor:'rgba(21,101,192,0.6)',borderColor:'#1565c0',borderWidth:1},
+      {label:'Nieuw-West',data:[{x:3.0,y:27.4,r:16}],backgroundColor:'rgba(106,27,154,0.6)',borderColor:'#6a1b9a',borderWidth:1},
+      {label:'West',data:[{x:2.6,y:33.2,r:12}],backgroundColor:'rgba(26,94,156,0.55)',borderColor:'#1a5e9c',borderWidth:1},
+      {label:'Oost',data:[{x:2.2,y:36.4,r:10}],backgroundColor:'rgba(46,125,50,0.55)',borderColor:'#2e7d32',borderWidth:1},
+      {label:'Zuid',data:[{x:1.8,y:44.8,r:8}],backgroundColor:'rgba(245,124,0,0.55)',borderColor:'#f57c00',borderWidth:1},
+      {label:'Centrum',data:[{x:2.4,y:48.2,r:7}],backgroundColor:'rgba(136,136,136,0.5)',borderColor:'#888',borderWidth:1}
+    ]},
+    options: {
+      responsive:true, maintainAspectRatio:false,
+      plugins:{ legend:{display:true,position:'right',labels:{font:{size:10},color:tickC,boxWidth:12,padding:8}}, tooltip:{callbacks:{label:ctx=>`${ctx.dataset.label}: hitte +${ctx.raw.x}°C · mediaan €${(ctx.raw.y*1000).toLocaleString('nl')} · waterrisico ${ctx.raw.r}`}} },
+      scales:{
+        x:{title:{display:true,text:'Hittestress (°C extra t.o.v. stadsgemiddelde)',color:tickC,font:{size:11}},grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>'+'+v+'°C'},min:1,max:5},
+        y:{title:{display:true,text:'Mediaan inkomen (x1.000 €)',color:tickC,font:{size:11}},grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>'€'+v+'k'},min:22,max:56}
       }
-    ]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        display: true,
-        position: 'right',
-        labels: { font: { size: 10 }, color: tickC, boxWidth: 12, padding: 8 }
-      },
-      tooltip: {
-        callbacks: {
-          label: ctx => {
-            const d = ctx.raw;
-            return `${ctx.dataset.label}: hitte +${d.x}°C · mediaan €${(d.y*1000).toLocaleString('nl')} · waterrisico index ${d.r}`;
-          }
-        }
-      }
+    }
+  });
+
+  new Chart(document.getElementById('subsidieChart'), {
+    type:'bar',
+    data:{
+      labels:['Centrum','Zuid','Oost','West','Nieuw-West','Noord','Zuidoost'],
+      datasets:[
+        {label:'Subsidie per woning (€)',data:[1840,1720,1350,1280,820,760,640],backgroundColor:['rgba(106,27,154,0.25)','rgba(106,27,154,0.3)','rgba(106,27,154,0.45)','rgba(106,27,154,0.5)','rgba(106,27,154,0.7)','rgba(106,27,154,0.8)','rgba(106,27,154,0.9)'],borderColor:'#6a1b9a',borderWidth:1,borderRadius:2,yAxisID:'y'},
+        {label:'KRI-score',data:[42,38,51,58,72,74,85],type:'line',borderColor:'#d84315',backgroundColor:'transparent',pointRadius:5,pointBackgroundColor:'#d84315',tension:0.3,borderDash:[3,2],yAxisID:'y2'}
+      ]
     },
-    scales: {
-      x: {
-        title: { display: true, text: 'Hittestress (°C extra t.o.v. stadsgemiddelde)', color: tickC, font: { size: 11 } },
-        grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 }, callback: v => '+' + v + '°C' },
-        min: 1, max: 5
-      },
-      y: {
-        title: { display: true, text: 'Mediaan inkomen (x1.000 €)', color: tickC, font: { size: 11 } },
-        grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 }, callback: v => '€' + v + 'k' },
-        min: 22, max: 56
-      }
-    }
-  }
-});
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{color:tickC,font:{size:11}}},y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>'€'+v},title:{display:true,text:'Subsidie per woning',color:tickC,font:{size:10}}},y2:{position:'right',grid:{display:false},ticks:{color:'#d84315',font:{size:11}},title:{display:true,text:'KRI-score',color:'#d84315',font:{size:10}},min:0,max:100}}}
+  });
 
-// SUBSIDIE CHART
-new Chart(document.getElementById('subsidieChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Centrum','Zuid','Oost','West','Nieuw-West','Noord','Zuidoost'],
-    datasets: [
-      {
-        label: 'Subsidie per woning (€)',
-        data: [1840, 1720, 1350, 1280, 820, 760, 640],
-        backgroundColor: [
-          'rgba(106,27,154,0.25)','rgba(106,27,154,0.3)','rgba(106,27,154,0.45)',
-          'rgba(106,27,154,0.5)','rgba(106,27,154,0.7)','rgba(106,27,154,0.8)','rgba(106,27,154,0.9)'
-        ],
-        borderColor: '#6a1b9a', borderWidth: 1, borderRadius: 2,
-        yAxisID: 'y'
-      },
-      {
-        label: 'KRI-score',
-        data: [42, 38, 51, 58, 72, 74, 85],
-        type: 'line',
-        borderColor: '#d84315', backgroundColor: 'transparent',
-        pointRadius: 5, pointBackgroundColor: '#d84315',
-        tension: 0.3, borderDash: [3,2],
-        yAxisID: 'y2'
-      }
-    ]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: tickC, font: { size: 11 } } },
-      y: {
-        grid: { color: gridC },
-        ticks: { color: tickC, font: { size: 11 }, callback: v => '€' + v },
-        title: { display: true, text: 'Subsidie per woning', color: tickC, font: { size: 10 } }
-      },
-      y2: {
-        position: 'right',
-        grid: { display: false },
-        ticks: { color: '#d84315', font: { size: 11 } },
-        title: { display: true, text: 'KRI-score', color: '#d84315', font: { size: 10 } },
-        min: 0, max: 100
-      }
-    }
-  }
-});
+  new Chart(document.getElementById('stadsdeelChart'), {
+    type:'bar',
+    data:{
+      labels:['Centrum','West','Zuid','Oost','Nieuw-West','Noord','Zuidoost'],
+      datasets:[
+        {label:'Gem. KRI-score',data:[42,58,38,51,72,74,85],backgroundColor:'rgba(106,27,154,0.65)',borderRadius:2},
+        {label:'% aardgasvrij',data:[11,8,9,7,4,3,2],backgroundColor:'rgba(46,125,50,0.65)',borderRadius:2}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{color:tickC,font:{size:11}}},y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11}},max:100}}}
+  });
+}
 
-// STADSDEEL BREAKDOWN
-new Chart(document.getElementById('stadsdeelChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Centrum','West','Zuid','Oost','Nieuw-West','Noord','Zuidoost'],
-    datasets: [
-      {
-        label: 'Gem. KRI-score',
-        data: [42, 58, 38, 51, 72, 74, 85],
-        backgroundColor: 'rgba(106,27,154,0.65)', borderRadius: 2
-      },
-      {
-        label: '% aardgasvrij',
-        data: [11, 8, 9, 7, 4, 3, 2],
-        backgroundColor: 'rgba(46,125,50,0.65)', borderRadius: 2
-      }
-    ]
-  },
-  options: {
-    responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { display: false }, ticks: { color: tickC, font: { size: 11 } } },
-      y: { grid: { color: gridC }, ticks: { color: tickC, font: { size: 11 } }, max: 100 }
-    }
-  }
-});
+/* ══ TRANSIT CHARTS ══ */
+function initTransitCharts() {
+  new Chart(document.getElementById('transitRidershipChart'), {
+    type:'line',
+    data:{
+      labels:['2018','2019','2020','2021','2022','2023','2024','2025'],
+      datasets:[
+        {label:'Metro',data:[76,82,38,44,64,78,81,84],borderColor:'#1a5e9c',backgroundColor:'transparent',tension:0.35,borderWidth:2,pointRadius:3},
+        {label:'Tram',data:[102,107,51,60,80,88,92,95],borderColor:'#c8401a',backgroundColor:'transparent',tension:0.35,borderWidth:2,pointRadius:3},
+        {label:'Bus',data:[48,51,24,28,37,42,43,45],borderColor:'#2e7d32',backgroundColor:'transparent',tension:0.35,borderWidth:2,pointRadius:3},
+        {label:'Veer',data:[4,4,2,2,3,4,4,4],borderColor:'#888',backgroundColor:'transparent',tension:0.35,borderWidth:1.5,borderDash:[4,3],pointRadius:2}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:gridC},ticks:{color:tickC,font:{size:11}}},y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'M'}}}}
+  });
+
+  new Chart(document.getElementById('transitNzlChart'), {
+    type:'bar',
+    data:{
+      labels:['2019','2020','2021','2022','2023','2024','2025'],
+      datasets:[
+        {label:'Werkelijk',data:[52,22,32,54,67,72,75],backgroundColor:'#1a5e9c',borderRadius:2},
+        {label:'Prognose',data:[100,100,100,100,100,100,100],backgroundColor:'rgba(216,212,200,0.7)',borderRadius:2}
+      ]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y+'k'}}},scales:{x:{grid:{display:false},ticks:{color:tickC,font:{size:11}}},y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'k'},max:120}}}
+  });
+
+  new Chart(document.getElementById('transitModalChart'), {
+    type:'bar',
+    data:{
+      labels:['Lopen & fietsen','Openbaar vervoer','Auto','Overig'],
+      datasets:[
+        {label:'2019',data:[48,22,22,8],backgroundColor:'#b0b0b0',borderRadius:2},
+        {label:'2024',data:[52,21,18,9],backgroundColor:'#1a5e9c',borderRadius:2},
+        {label:'D66-doel 2030',data:[56,20,14,10],backgroundColor:'#2e7d32',borderRadius:2}
+      ]
+    },
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'%'}},y:{grid:{display:false},ticks:{color:tickC,font:{size:10}}}}}
+  });
+
+  new Chart(document.getElementById('transitTicketChart'), {
+    type:'bar',
+    data:{
+      labels:['Huidig (2024)','Laag +8%','Midden +16%','Hoog +26%'],
+      datasets:[{label:'GVB-ritten (M)',data:[218,235,253,275],backgroundColor:['rgba(216,212,200,0.8)','#1a5e9c','#c8401a','#2e7d32'],borderRadius:3}]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.parsed.y+' miljoen ritten/jaar'}}},scales:{x:{grid:{display:false},ticks:{color:tickC,font:{size:11}}},y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'M'},min:180,max:300}}}
+  });
+
+  new Chart(document.getElementById('transitEvChart'), {
+    type:'line',
+    data:{
+      labels:['2021','2022','2023','2024','2025','2026','2027','2028','2029','2030'],
+      datasets:[{label:'% elektrisch',data:[8,12,20,27,30,45,60,75,90,100],borderColor:'#2e7d32',backgroundColor:'rgba(46,125,50,0.07)',fill:true,tension:0.35,borderWidth:2,pointRadius:[3,3,3,3,3,2,2,2,2,3],segment:{borderDash:ctx=>ctx.p0DataIndex>=4?[4,3]:[]}}]
+    },
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false},ticks:{color:tickC,font:{size:10}}},y:{grid:{color:gridC},ticks:{color:tickC,font:{size:11},callback:v=>v+'%'},max:110}}}
+  });
+}
 </script>
 
 </body>
