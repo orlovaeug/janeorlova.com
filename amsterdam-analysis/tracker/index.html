@@ -222,7 +222,7 @@ return “#888”;
 var TOPIC = {
 Housing:“Wonen”, Mobility:“Mobiliteit”, Climate:“Klimaat & Groen”,
 Safety:“Veiligheid”, Social:“Zorg & Welzijn”, Education:“Onderwijs”,
-PublicSpace:“Openbare Ruimte”, Finance:“Financi\u00ebn”, Governance:“Bestuur”, Other:“Overige”
+PublicSpace:“Openbare Ruimte”, Finance:“Financien”, Governance:“Bestuur”, Other:“Overige”
 };
 
 // Build council strip
@@ -316,7 +316,7 @@ var maxC = counts[sorted[0]]||1;
 
 document.getElementById(“partyBars”).innerHTML = sorted.map(function(p){
 var c=counts[p], col=pc(p), w=Math.round(c/maxC*100);
-return ‘<div class=“pb” onclick=“filterP(’’+p.replace(/’/g,””)+’’)”>’
+return ‘<div class=“pb” onclick=“filterP('’+p.replace(/’/g,”'”)+’'’+’)”>’
 +’<span class="pbn">’+e(p)+’</span>’
 +’<div class="pbt"><div class="pbf" style="width:'+w+'%;background:'+col+'"></div></div>’
 +’<span class="pbv">’+c+’</span>’
@@ -327,7 +327,7 @@ var elig = sorted.filter(function(p){return counts[p]>=2;});
 document.getElementById(“successBars”).innerHTML = elig.map(function(p){
 var rate = pass[p] ? Math.round(pass[p]/counts[p]*100) : 0;
 var col=pc(p);
-return ‘<div class=“pb” onclick=“filterP(’’+p.replace(/’/g,””)+’’)”>’
+return ‘<div class=“pb” onclick=“filterP('’+p.replace(/’/g,”'”)+’'’+’)”>’
 +’<span class="pbn">’+e(p)+’</span>’
 +’<div class="pbt"><div class="pbf" style="width:'+rate+'%;background:'+col+'"></div></div>’
 +’<span class="pbv">’+rate+’%<br><small>’+(pass[p]||0)+’/’+counts[p]+’</small></span>’
@@ -400,7 +400,7 @@ ex+=’</div>’;
 ex+=’<a class="exp-link" href="'+e(m.link)+'" target="_blank" rel="noopener">Bekijk op amsterdam.raadsinformatie.nl →</a>’;
 ex+=’</div>’;
 }
-h+=’<div class="mrow" onclick="tog(''+e(m.id)+'')">’
+h+=’<div class="mrow" onclick="tog('+JSON.stringify(m.id)+')">’
 +’<div class="rt"><div class="rtitle">’+e(m.title)+’</div><span class="badge '+e(m.status)+'">’+sl(m.status)+’</span></div>’
 +’<div class="rmeta"><span>’+fd(m.date)+’</span>’
 +(m.party?’<span>·</span><span class="rdot" style="background:'+col+'"></span><span class="rpty">’+e(m.party)+’</span>’:””)
