@@ -16573,7 +16573,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06156&did=2026D13947",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk98d5788d7e",
@@ -16587,7 +16587,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06155&did=2026D13946",
     "toelichting": "",
     "stemmen": {},
-    "archief": false,
+    "archief": true,
     "score": "(75-75)"
   },
   {
@@ -16968,7 +16968,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z06147&did=2026D13938",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkf57366443d",
