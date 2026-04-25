@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motietracker Gemeenteraad Amsterdam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ffd:'Playfair Display',Georgia,serif;
+  --ffb:'IBM Plex Sans',system-ui,sans-serif;
+  --bg:#f7f6f2;--card:#ffffff;--surf:#efede7;
+  --ink:#17170f;--muted:#5e5e58;--faint:#9e9e98;
+  --bdr:#dddcd6;--bdr2:#c8c7c0;
+  --pass:#256b05;--passbg:#e4f2d8;
+  --rej:#8f2020;--rejbg:#f8e8e8;
+  --pend:#7a4a08;--pendbg:#faecd8;
+  --amnd:#1255a0;--amndbg:#e2eff9;
+  --tab-active:#17170f;
+}
+body{font-family:var(--ffb);background:var(--bg);color:var(--ink);min-height:100vh;padding-bottom:5rem}
+.wrap{max-width:880px;margin:0 auto;padding:0 1.25rem}
+
+/* HERO */
+.hero{padding:2.25rem 0 1.25rem;border-bottom:1.5px solid var(--bdr2);margin-bottom:1.75rem}
+.ey{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.5rem}
+.hero h1{font-family:var(--ffd);font-size:clamp(26px,5vw,38px);font-weight:400;line-height:1.1;margin-bottom:.4rem}
+.hero-sub{font-size:13px;color:var(--muted);line-height:1.65;max-width:580px;margin-bottom:1.1rem;font-weight:300}
+.council{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:.85rem;align-items:center}
+.cl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);font-weight:500;margin-right:4px}
+.cp{font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px;white-space:nowrap;letter-spacing:.02em}
+.upd{font-size:11px;color:var(--faint)}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:1.75rem}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:.9rem 1rem;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;bottom:0;left:0;right:0;height:3px}
+.stat.s-all::after{background:var(--faint)}
+.stat.s-pass::after{background:var(--pass)}
+.stat.s-rej::after{background:var(--rej)}
+.stat.s-pend::after{background:var(--pend)}
+.slbl{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.3rem}
+.sval{font-size:28px;font-family:var(--ffd);font-weight:400;color:var(--ink);line-height:1}
+.sval.p{color:var(--pass)}.sval.r{color:var(--rej)}.sval.o{color:var(--pend)}
+.spct{font-size:11px;color:var(--faint);margin-top:.25rem}
+
+/* PANELS */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.75rem}
+@media(max-width:600px){.panels{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--bdr);border-radius:8px;padding:1.1rem 1.25rem}
+.panel-title{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:.9rem}
+.pb{display:grid;grid-template-columns:76px 1fr 48px;gap:6px;align-items:center;margin-bottom:7px}
+.pbn{font-size:12px;font-weight:500;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink)}
+.pbn:hover{text-decoration:underline}
+.pbt{height:8px;background:var(--surf);border-radius:4px;overflow:hidden}
+.pbf{height:100%;border-radius:4px;transition:width .5s ease}
+.pbv{font-size:10px;color:var(--faint);text-align:right;line-height:1.4}
+
+/* TABS */
+.tabs{display:flex;border-bottom:2px solid var(--bdr);margin-bottom:1.1rem;overflow-x:auto;scrollbar-width:none;gap:0}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+font-size:12px;font-weight:500;letter-spacing:.04em;
+padding:.6rem 1.1rem;cursor:pointer;
+color:var(--faint);
+border-bottom:3px solid transparent;
+margin-bottom:-2px;
+white-space:nowrap;
+transition:color .15s,border-color .15s;
+user-select:none;
+background:none;
+}
+.tab:hover{color:var(--muted)}
+.tab.active{
+color:var(--ink) !important;
+border-bottom-color:var(--ink) !important;
+font-weight:600;
+}
+
+/* CONTROLS */
+.ctrls{display:flex;gap:8px;margin-bottom:1.1rem;flex-wrap:wrap}
+.ctrls input,.ctrls select{
+font-family:var(--ffb);font-size:13px;
+padding:.5rem .85rem;
+border:1.5px solid var(--bdr2);border-radius:6px;
+background:var(--card);color:var(--ink);outline:none;
+transition:border-color .15s,box-shadow .15s;
+}
+.ctrls input:focus,.ctrls select:focus{
+border-color:var(--ink);
+box-shadow:0 0 0 3px rgba(23,23,15,.07);
+}
+.ctrls input{flex:1;min-width:180px}
+.seclbl{
+font-size:9px;letter-spacing:.14em;text-transform:uppercase;
+color:var(--muted);font-weight:500;
+border-bottom:1px solid var(--bdr);
+padding-bottom:.4rem;margin-bottom:.6rem;
+}
+
+/* ROWS */
+.mrow{
+border-bottom:1px solid var(--bdr);
+padding:.9rem .4rem;
+cursor:pointer;border-radius:5px;
+transition:background .1s;
+}
+.mrow:hover{background:var(--surf)}
+.mrow:last-child{border-bottom:none}
+.rt{display:flex;align-items:flex-start;gap:10px;margin-bottom:.4rem}
+.rtitle{font-size:14px;font-weight:500;line-height:1.45;flex:1;color:var(--ink)}
+.badge{font-size:10px;font-weight:600;letter-spacing:.05em;padding:3px 9px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.badge.Aangenomen{background:var(--passbg);color:var(--pass)}
+.badge.Verworpen{background:var(--rejbg);color:var(--rej)}
+.badge.Aangehouden{background:var(--pendbg);color:var(--pend)}
+.badge.Geamendeerd{background:var(--amndbg);color:var(--amnd)}
+.badge.Onbekend{background:#eee;color:#666}
+.rmeta{display:flex;flex-wrap:wrap;gap:8px;font-size:12px;color:var(--muted);align-items:center}
+.rdot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.rpty{font-weight:600;color:var(--ink)}
+.rtag{font-size:10px;background:var(--surf);padding:1px 6px;border-radius:2px;border:.5px solid var(--bdr2);color:var(--muted)}
+.rmid{color:var(--faint);font-size:11px}
+
+/* EXPANDED */
+.exp{
+background:var(--surf);border-radius:6px;
+padding:.9rem 1.1rem;margin-top:.65rem;
+border:1px solid var(--bdr);
+}
+.exp-vote{
+font-size:12px;color:var(--muted);line-height:1.6;
+padding:.6rem .8rem;background:var(--card);
+border-radius:4px;border-left:3px solid var(--bdr2);
+margin-bottom:.65rem;
+}
+.exp-tags{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:.6rem}
+.exp-tag{font-size:11px;font-weight:600;padding:3px 9px;border-radius:12px}
+.exp-link{font-size:11px;color:#1255a0;text-decoration:none;display:inline-block}
+.exp-link:hover{text-decoration:underline}
+
+.empty{text-align:center;padding:3rem 1rem;color:var(--muted);font-size:13px;line-height:1.6}
+.empty strong{display:block;font-size:16px;font-family:var(--ffd);font-weight:400;color:var(--ink);margin-bottom:.4rem}
+
+.foot{font-size:11px;color:var(--faint);margin-top:3rem;padding-top:1rem;border-top:1px solid var(--bdr);line-height:1.8}
+.foot a{color:inherit}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero">
+  <div class="ey">Gemeenteraad Amsterdam &mdash; Live Motietracker</div>
+  <h1>Moties &amp; amendementen</h1>
+  <p class="hero-sub">Alle moties en amendementen ingediend in de Amsterdamse gemeenteraad since januari 2026 &mdash; doorzoekbaar op fractie, onderwerp en uitslag.</p>
+  <div class="council" id="council"><span class="cl">Raad 2026&ndash;30</span></div>
+  <div class="upd" id="upd"></div>
+</div>
+<div class="stats">
+  <div class="stat s-all"><div class="slbl">Totaal ingediend</div><div class="sval" id="sT">0</div><div class="spct" id="sRate">&nbsp;</div></div>
+  <div class="stat s-pass"><div class="slbl">Aangenomen</div><div class="sval p" id="sP">0</div><div class="spct" id="sPct">&nbsp;</div></div>
+  <div class="stat s-rej"><div class="slbl">Verworpen</div><div class="sval r" id="sR">0</div><div class="spct" id="sRPct">&nbsp;</div></div>
+  <div class="stat s-pend"><div class="slbl">Aangehouden / geam.</div><div class="sval o" id="sO">0</div><div class="spct" id="sOPct">&nbsp;</div></div>
+</div>
+<div class="panels" id="panels" style="display:none">
+  <div class="panel"><div class="panel-title">Moties per fractie</div><div id="partyBars"></div></div>
+  <div class="panel"><div class="panel-title">Slagingspercentage per fractie</div><div id="successBars"></div></div>
+</div>
+<div class="tabs" id="tabs">
+  <div class="tab active" data-tab="all">Alle moties</div>
+  <div class="tab" data-tab="Aangenomen">Aangenomen</div>
+  <div class="tab" data-tab="Verworpen">Verworpen</div>
+  <div class="tab" data-tab="Aangehouden">Aangehouden</div>
+  <div class="tab" data-tab="Geamendeerd">Geamendeerd</div>
+</div>
+<div class="ctrls">
+  <input type="text" id="sq" placeholder="Zoek op titel, fractie, trefwoord..." oninput="render()">
+  <select id="ts" onchange="render()"><option value="">Alle onderwerpen</option></select>
+  <select id="ps" onchange="render()"><option value="">Alle fracties</option></select>
+</div>
+<div class="seclbl" id="lbl"></div>
+<div id="lst"></div>
+<div class="foot">
+  <strong>Databron:</strong> <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a> (Excel-export). Bijgewerkt door <code>moties.xlsx</code> in de repository te uploaden &mdash; GitHub Actions converteert automatisch. &mdash; <a href="https://janeorlova.com">janeorlova.com</a>
+</div>
+</div>
+<script>
+
+var M = [], tab = "all", xid = null;
+
+var COUNCIL = [
+{n:"PRO Amsterdam",s:17,c:"#5aab00"},
+{n:"D66",          s:8, c:"#00a651"},
+{n:"VVD",          s:6, c:"#ff7d00"},
+{n:"PvdD",         s:3, c:"#006b2d"},
+{n:"Volt",         s:2, c:"#502379"},
+{n:"JA21",         s:2, c:"#003082"},
+{n:"DENK",         s:2, c:"#00a89c"},
+{n:"BIJ1",         s:2, c:"#f7b500"},
+{n:"CDA",          s:1, c:"#007b5e"},
+{n:"FvD",          s:1, c:"#901c1c"},
+{n:"SP",           s:1, c:"#c02020"}
+];
+
+var PC = {};
+COUNCIL.forEach(function(x){ PC[x.n] = x.c; });
+PC["GroenLinks"] = "#5aab00";
+PC["PvdA"] = "#e8000b";
+PC["GroenLinks-PvdA"] = "#5aab00";
+
+function pc(p) {
+if (!p) return "#bbb";
+if (PC[p]) return PC[p];
+var lo = p.toLowerCase();
+for (var k in PC) { if (lo.includes(k.toLowerCase())) return PC[k]; }
+return "#888";
+}
+
+var TOPIC = {
+Housing:"Wonen", Mobility:"Mobiliteit", Climate:"Klimaat & Groen",
+Safety:"Veiligheid", Social:"Zorg & Welzijn", Education:"Onderwijs",
+PublicSpace:"Openbare Ruimte", Finance:"Financien", Governance:"Bestuur", Other:"Overige"
+};
+
+// Build council strip
+(function(){
+var strip = document.getElementById("council");
+COUNCIL.forEach(function(x){
+var el = document.createElement("span");
+el.className = "cp";
+el.style.cssText = "background:"+x.c+"1a;color:"+x.c+";border:1.5px solid "+x.c+"55";
+el.textContent = x.n + " " + x.s;
+strip.appendChild(el);
+});
+})();
+
+// Tab click
+document.getElementById("tabs").addEventListener("click", function(e){
+var t = e.target.closest(".tab");
+if (!t) return;
+document.querySelectorAll(".tab").forEach(function(x){ x.classList.remove("active"); });
+t.classList.add("active");
+tab = t.dataset.tab;
+render();
+});
+
+function loadData(d) {
+M = d.motions || [];
+if (d.meta && d.meta.last_updated) {
+var dt = new Date(d.meta.last_updated);
+document.getElementById("upd").textContent =
+"Bijgewerkt op "+dt.toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"});
+}
+buildFilters();
+renderStats();
+renderPanels();
+render();
+}
+
+async function boot(){
+try {
+var r = await fetch("motions.json?_="+Date.now());
+if (!r.ok) throw new Error("HTTP "+r.status);
+var d = await r.json();
+loadData(d);
+} catch(e) {
+// motions.json not found — show drag-and-drop fallback
+document.getElementById("lbl").textContent = "";
+document.getElementById("lst").innerHTML = `
+<div style="border:2px dashed var(--bdr2);border-radius:10px;padding:2.5rem 1.5rem;text-align:center;color:var(--muted);cursor:pointer;transition:background .15s;" id="dropzone"
+  ondragover="event.preventDefault();this.style.background='var(--surf)'"
+  ondragleave="this.style.background=''"
+  ondrop="handleDrop(event)">
+  <div style="font-size:28px;margin-bottom:.75rem;opacity:.4;">📄</div>
+  <strong style="display:block;font-family:var(--ffd);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:.4rem;">motions.json niet gevonden</strong>
+  <p style="font-size:13px;font-weight:300;line-height:1.6;max-width:400px;margin:0 auto .9rem;">
+    Sleep je <code>motions.json</code> hierheen om de data lokaal te laden,<br>
+    of zorg dat het bestand naast deze HTML staat op GitHub Pages.
+  </p>
+  <label style="display:inline-block;font-size:12px;font-weight:500;padding:.5rem 1.1rem;border:1.5px solid var(--bdr2);border-radius:6px;cursor:pointer;background:var(--card);">
+    Kies bestand
+    <input type="file" accept=".json" style="display:none" onchange="handleFile(this.files[0])">
+  </label>
+</div>`;
+}
+}
+
+function handleDrop(ev) {
+ev.preventDefault();
+var file = ev.dataTransfer.files[0];
+if (file) handleFile(file);
+}
+
+function handleFile(file) {
+var reader = new FileReader();
+reader.onload = function(e) {
+try {
+var d = JSON.parse(e.target.result);
+document.getElementById("lst").innerHTML = "";
+loadData(d);
+} catch(err) {
+document.getElementById("lst").innerHTML = '<div class="empty"><strong>Ongeldig JSON-bestand</strong>'+err.message+'</div>';
+}
+};
+reader.readAsText(file);
+}
+
+function filt(){
+var q  = document.getElementById("sq").value.toLowerCase().trim();
+var tp = document.getElementById("ts").value;
+var ps = document.getElementById("ps").value;
+return M.filter(function(m){
+if (tab !== "all" && m.status !== tab) return false;
+if (tp && m.topic !== tp) return false;
+if (ps && m.party !== ps && (m.parties||[]).indexOf(ps) < 0) return false;
+if (q) {
+var h = (m.title+" "+(m.parties||[]).join(" ")+" "+(m.topic||"")+" "+(m.summary||"")).toLowerCase();
+if (h.indexOf(q) < 0) return false;
+}
+return true;
+});
+}
+
+function renderStats(){
+var n=M.length, p=0, r=0, o=0;
+M.forEach(function(m){
+if (m.status==="Aangenomen") p++;
+else if (m.status==="Verworpen") r++;
+else if (m.status==="Aangehouden"||m.status==="Geamendeerd") o++;
+});
+document.getElementById("sT").textContent = n;
+document.getElementById("sP").textContent = p;
+document.getElementById("sR").textContent = r;
+document.getElementById("sO").textContent = o;
+if (n) {
+document.getElementById("sPct").textContent  = Math.round(p/n*100)+"% van totaal";
+document.getElementById("sRPct").textContent = Math.round(r/n*100)+"% van totaal";
+document.getElementById("sOPct").textContent = Math.round(o/n*100)+"% van totaal";
+}
+}
+
+function renderPanels(){
+if (!M.length) return;
+var counts={}, pass={};
+M.forEach(function(m){
+var p = m.party||"Onbekend";
+counts[p]=(counts[p]||0)+1;
+if (m.status==="Aangenomen") pass[p]=(pass[p]||0)+1;
+});
+var sorted = Object.keys(counts).sort(function(a,b){return counts[b]-counts[a];}).slice(0,8);
+var maxC = counts[sorted[0]]||1;
+
+document.getElementById("partyBars").innerHTML = sorted.map(function(p){
+var c=counts[p], col=pc(p), w=Math.round(c/maxC*100);
+return '<div class="pb" onclick="filterP(\''+p.replace(/'/g,"&apos;")+'\''+')">'
++'<span class="pbn">'+e(p)+'</span>'
++'<div class="pbt"><div class="pbf" style="width:'+w+'%;background:'+col+'"></div></div>'
++'<span class="pbv">'+c+'</span>'
++'</div>';
+}).join("");
+
+var elig = sorted.filter(function(p){return counts[p]>=2;});
+document.getElementById("successBars").innerHTML = elig.map(function(p){
+var rate = pass[p] ? Math.round(pass[p]/counts[p]*100) : 0;
+var col=pc(p);
+return '<div class="pb" onclick="filterP(\''+p.replace(/'/g,"&apos;")+'\''+')">'
++'<span class="pbn">'+e(p)+'</span>'
++'<div class="pbt"><div class="pbf" style="width:'+rate+'%;background:'+col+'"></div></div>'
++'<span class="pbv">'+rate+'%<br><small>'+(pass[p]||0)+'/'+counts[p]+'</small></span>'
++'</div>';
+}).join("");
+
+document.getElementById("panels").style.display = "";
+}
+
+function filterP(p){
+document.getElementById("ps").value = p;
+render();
+document.getElementById("lst").scrollIntoView({behavior:"smooth"});
+}
+
+function buildFilters(){
+var topics={}, parties={};
+M.forEach(function(m){ if(m.topic) topics[m.topic]=1; if(m.party) parties[m.party]=1; });
+var ts = document.getElementById("ts");
+Object.keys(topics).sort().forEach(function(t){
+var o=document.createElement("option"); o.value=t; o.textContent=TOPIC[t]||t; ts.appendChild(o);
+});
+var ps = document.getElementById("ps");
+Object.keys(parties).sort().forEach(function(p){
+var o=document.createElement("option"); o.value=p; o.textContent=p; ps.appendChild(o);
+});
+}
+
+function e(s){
+return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function sl(s){
+return {Aangenomen:"Aangenomen",Verworpen:"Verworpen",
+Aangehouden:"Aangehouden",Geamendeerd:"Geamendeerd",Onbekend:"Onbekend"}[s]||s;
+}
+function fd(iso){
+try { return new Date(iso).toLocaleDateString("nl-NL",{day:"numeric",month:"long",year:"numeric"}); }
+catch(ex){ return iso; }
+}
+
+function render(){
+var f=filt();
+document.getElementById("lbl").textContent = f.length+" "+(f.length===1?"motie":"moties");
+var lst = document.getElementById("lst");
+if (!M.length){
+lst.innerHTML='<div class="empty"><strong>Nog geen gegevens</strong>Upload moties.xlsx naar de repository.</div>';
+return;
+}
+if (!f.length){
+lst.innerHTML='<div class="empty">Geen moties gevonden met deze filters.</div>';
+return;
+}
+var h="";
+f.forEach(function(m){
+var open = xid===m.id;
+var col  = pc(m.party);
+var topNL = TOPIC[m.topic]||m.topic||"";
+var ex="";
+if (open){
+ex='<div class="exp">';
+if (m.summary) ex+='<div class="exp-vote">'+e(m.summary)+'</div>';
+if (m.parties&&m.parties.length){
+ex+='<div class="exp-tags">';
+m.parties.forEach(function(p){
+var c=pc(p);
+ex+='<span class="exp-tag" style="background:'+c+'1a;color:'+c+';border:1px solid '+c+'44">'+e(p)+'</span>';
+});
+ex+='</div>';
+}
+ex+='<a class="exp-link" href="'+e(m.link)+'" target="_blank" rel="noopener">Bekijk op amsterdam.raadsinformatie.nl &rarr;</a>';
+ex+='</div>';
+}
+h+='<div class="mrow" onclick="tog('+JSON.stringify(m.id)+')">'
++'<div class="rt"><div class="rtitle">'+e(m.title)+'</div><span class="badge '+e(m.status)+'">'+sl(m.status)+'</span></div>'
++'<div class="rmeta"><span>'+fd(m.date)+'</span>'
++(m.party?'<span>&middot;</span><span class="rdot" style="background:'+col+'"></span><span class="rpty">'+e(m.party)+'</span>':"")
++(topNL?'<span>&middot;</span><span>'+e(topNL)+'</span>':"")
++(m.type&&m.type!=="Motie"?'<span>&middot;</span><span class="rtag">'+e(m.type)+'</span>':"")
++'</div>'
++ex+'</div>';
+});
+lst.innerHTML=h;
+}
+
+function tog(id){ xid=(xid===id)?null:id; render(); }
+boot();
+
+</script>
+</body>
+</html>
+
