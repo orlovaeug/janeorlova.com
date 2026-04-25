@@ -181,7 +181,7 @@ margin-bottom:.65rem;
   <select id="ts" onchange="render()"><option value="">Alle onderwerpen</option></select>
   <select id="ps" onchange="render()"><option value="">Alle fracties</option></select>
 </div>
-<div class="seclbl" id="lbl">laden...</div>
+<div class="seclbl" id="lbl"></div>
 <div id="lst"></div>
 <div class="foot">
   <strong>Databron:</strong> <a href="https://amsterdam.raadsinformatie.nl" target="_blank">amsterdam.raadsinformatie.nl</a> (Excel-export). Bijgewerkt door <code>moties.xlsx</code> in de repository te uploaden &mdash; GitHub Actions converteert automatisch. &mdash; <a href="https://janeorlova.com">janeorlova.com</a>
@@ -247,11 +247,7 @@ tab = t.dataset.tab;
 render();
 });
 
-async function boot(){
-try {
-var r = await fetch(“motions.json?_=”+Date.now());
-if (!r.ok) throw new Error(“HTTP “+r.status);
-var d = await r.json();
+function loadData(d) {
 M = d.motions || [];
 if (d.meta && d.meta.last_updated) {
 var dt = new Date(d.meta.last_updated);
@@ -262,11 +258,55 @@ buildFilters();
 renderStats();
 renderPanels();
 render();
-} catch(e) {
-document.getElementById(“lst”).innerHTML =
-‘<div class="empty"><strong>Gegevens konden niet worden geladen</strong>’+e.message+’</div>’;
-document.getElementById(“lbl”).textContent = “”;
 }
+
+async function boot(){
+try {
+var r = await fetch(“motions.json?_=”+Date.now());
+if (!r.ok) throw new Error(“HTTP “+r.status);
+var d = await r.json();
+loadData(d);
+} catch(e) {
+// motions.json not found — show drag-and-drop fallback
+document.getElementById(“lbl”).textContent = “”;
+document.getElementById(“lst”).innerHTML = `
+
+<div style="border:2px dashed var(--bdr2);border-radius:10px;padding:2.5rem 1.5rem;text-align:center;color:var(--muted);cursor:pointer;transition:background .15s;" id="dropzone"
+  ondragover="event.preventDefault();this.style.background='var(--surf)'"
+  ondragleave="this.style.background=''"
+  ondrop="handleDrop(event)">
+  <div style="font-size:28px;margin-bottom:.75rem;opacity:.4;">📄</div>
+  <strong style="display:block;font-family:var(--ffd);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:.4rem;">motions.json niet gevonden</strong>
+  <p style="font-size:13px;font-weight:300;line-height:1.6;max-width:400px;margin:0 auto .9rem;">
+    Sleep je <code>motions.json</code> hierheen om de data lokaal te laden,<br>
+    of zorg dat het bestand naast deze HTML staat op GitHub Pages.
+  </p>
+  <label style="display:inline-block;font-size:12px;font-weight:500;padding:.5rem 1.1rem;border:1.5px solid var(--bdr2);border-radius:6px;cursor:pointer;background:var(--card);">
+    Kies bestand
+    <input type="file" accept=".json" style="display:none" onchange="handleFile(this.files[0])">
+  </label>
+</div>`;
+}
+}
+
+function handleDrop(ev) {
+ev.preventDefault();
+var file = ev.dataTransfer.files[0];
+if (file) handleFile(file);
+}
+
+function handleFile(file) {
+var reader = new FileReader();
+reader.onload = function(e) {
+try {
+var d = JSON.parse(e.target.result);
+document.getElementById(“lst”).innerHTML = “”;
+loadData(d);
+} catch(err) {
+document.getElementById(“lst”).innerHTML = ‘<div class="empty"><strong>Ongeldig JSON-bestand</strong>’+err.message+’</div>’;
+}
+};
+reader.readAsText(file);
 }
 
 function filt(){
