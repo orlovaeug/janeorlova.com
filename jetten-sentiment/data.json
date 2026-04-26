@@ -1,5 +1,15 @@
 [
   {
+    "id": "g2bd8439f2fe1",
+    "type": "nl",
+    "src": "story.nl",
+    "title": "Is de kritiek op Nicolás Keenan, verloofde van Rob Jetten, terecht? - story.nl",
+    "date": "2026-04-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT25OQzlLMU5YQWxxd2lxNlY0aW10Tkdual82TV82R2tpcjFjVUt2WVFTZTVkai04ZWRoN3FRLTFoZDFNejZHZnVOQkxQelR3X01KUHY0LU5ZZThHVnFqT2pLUTVwcjRQUVo4RHAxZmZHdUd4RS1UWkJScVVBMDhTYVdjcmtQZGF5aVE?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g1c4572df4b5c",
     "type": "nl",
     "src": "NU.nl",
@@ -315,6 +325,27 @@
     "flag": "🌍"
   },
   {
+    "id": "gfd91d216e768",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten blij met steunpakket Oekraïne en nieuwe sancties Rusland - Noordhollands Dagblad",
+    "date": "2026-04-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNOWYtZHFzT2Rra2Vscl96UnBaQndVeEFvekJ2VS1RNFhTM3ZCUGZXaS0tU1c3WVVJN3A4dFZaa3dXdzgwVjlNMlRMYXdEWXVrQk1QczQxbENaRHRTdzR6S2NjZjRHWGdndW5RZXZHNFRrSENtc0sydWlzaFc1WHd5cVZjQmYyc2d4anQwRFVTOWVDZDBGNWRDc2E2NEZ4dFdncDZFQmQzZzdhVGVBeWRIdXJ1TEZtZ3l2ZG5NenRWZGk5QQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge6ef6677527a",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Hoeveel leger mag de portemonnee worden voor een veilig en duurzaam land? - Trouw",
+    "date": "2026-04-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQclFWc2pzbXc3N05saDhUTjV4S1hHcXYxN2M0OUk4eWMyNmdabTlhZ0VELWdReFkzZ0FtUE1aRS1vRDhaalB6S0t3cGx1NTZwVEpnSHVTNlFpb3JYRXo4c1pEWWhjM281OWZEaEtVdjJLdUdIV0l4WExvTkVZM1hqTWQwLWtOam41OEw3VUdiNU55dlFldnFEdm5LMzg1Sk5LWmhFcDZFNnB0aDNwSUxhYmZn?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
     "id": "g528871ebca91",
     "type": "nl",
     "src": "EWmagazine.nl",
@@ -557,6 +588,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRk0yeDhubEM2NkxCMndoVHdZbnY1anhPNjEyc09xLTI4amFfd3dZQXVrTzB2MmQyb3AxdnBUazIwem90dHlDd3BkRGFoWGw4Z3pkNVFYQTRXRXdrenV5Ri1zWDNkYncwYlJpN0dlOU42TEkydE1hQkpfX0pDLVFTQ1NwN0M5RE40b2lkVUJhbGtyUW8?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gffae78dd532d",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Steun in Kamer voor energieplan met goedkopere trein en lagere vrachtwagenheffing - NOS",
+    "date": "2026-04-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSXRNeXdYYjJBcHh3bXlZU2tvSDJkMTY1RVNHS2ZnSGhXRjB6UEV5cUlGNGdKaHh6U1p1RGRHY1FvNHNUR3I0RV9meEFPV01NbEpIeE5oTWV6ajJrYXd5WXJ6Z2szUWo1a0dZbFBTZEwzM0h2Unh0ZXVuVjA5bi1MVHg0UzIwaHlPNnd5cWJRR2ViWm5tanM0bWNqa3E5SjFDSHRvVk5oLVBjUGIxT05nZS1n?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g4a4e8836d2d7",
@@ -2920,6 +2961,16 @@
     "date": "2026-04-14",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPd0FBbkktdk9KbkNYdW9JdGpTVjkxT2d2RXkwaEtvQlN5V2MwMlg1OXp1aXJqcFhPVE80RlVEcTB3aC1OYkZfbG5TSUIycWJKbktqTUxBWElOQmg5ak5KUGh4Y29DMWJSV3dmakV3SnpUTE9ZNXN2UTlkMkl6SEh2V2FqMEkxODJWYUotbHFxbGR3M24zOE5MN0NTVQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g561ab7fe71d2",
+    "type": "intl",
+    "src": "DVIDS",
+    "title": "Prime Minister of the Kingdom of the Netherlands Rob Jetten Visits ANC [Image 29 of 40] - DVIDS",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTUgwX3pwbGoweGxxRGh4YjFXd0JWS1FPMkJDSXAxQ2xrcUpiMEI1bFc2MkNFQ1VaMV8yaUYzZ3g2UnZUaXBhdEM2eEN2ZXhHTGlxTWlHVmZCME1tcUFRaWpQZHdTUXR6UEJmb0pUR2dvLTdFdk1ZeVFnMXYzNDZWeDB1Xy1EaEhsckw0WU04WkYybG85ZmRaOVYxZw?oc=5",
     "flag": "🌍"
   },
   {
@@ -13541,6 +13592,26 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRlB6dUxnSnlaZGVEYk5SUFphVHNFS1JjNTI4eVVJUXJENTAtNGxDWGpBdC04VngwelBZUDlDX3k4VFpJLVdhNWdEMEtoa21DNnpESkM3OXYxUmtQSGdxaFFoUWNBWXFRWjdVNkIxcEZnU1JUUGdoSFhGcUJXVndhd3JvYjFiNnJLRDEzZU4zOFNGODQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g11c309bd8814",
+    "type": "intl",
+    "src": "tgcom24.mediaset.it",
+    "title": "Olanda, Rob Jetten è il nuovo premier: a 38 anni è il più giovane nella storia del Paese e il primo dichiaratamente gay - tgcom24.mediaset.it",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX0h4ck9SdUpneXNsaWlKdldiY1FrTndsTjN6cE5FUjVOUkttTWVNeG5HYVc0NGNURzA3TXdpSlFSQzVCbEpGdmlUYzY4YkMwOHhvWTZqSmw2ZGRVeHJoRFNyeHNYM3FFTUE3RGtGZFlSeUpyWmR4UXEzQU81RnkxTi1iQTAtZTZmMVB4Q1lCSEg5bFFnMUNBSQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g01c11abbf9ef",
+    "type": "intl",
+    "src": "tgcom24.mediaset.it",
+    "title": "Olanda, Rob Jetten nuovo premier: è il più giovane nella storia del Paese - tgcom24.mediaset.it",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOQ0RCamYwTDNGNVdUbTZUaElqZ0ZpbkxqM2JCZjcxa1Rqck1YVmw1aFBpYmRKUEljaHc1VFBKQ3lrMjI3RVU4U3lPRlNLLUx6SkJDTHRvTzVDWkVHWVZkT2MtVzlhb2ZVQVI2cGpTNFc4OEhVbHFsTGxJVGs4S0EwT19OQ2tENmhXTUo4?oc=5",
     "flag": "🌍"
   }
 ]
