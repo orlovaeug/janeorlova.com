@@ -1,5 +1,36 @@
 [
   {
+    "id": "gaabe31e6663e",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Binnenskamers | Jetten krijgt in één week harde les: 'Meerderheid wil dat je faalt'",
+    "date": "2026-04-28",
+    "sent": "u",
+    "link": "https://www.nu.nl/politiek/6393930/jetten-krijgt-in-een-week-harde-les-meerderheid-wil-dat-je-faalt.html"
+  },
+  {
+    "id": "g1d823ed78dc2",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten krijgt in één week harde les: 'Meerderheid wil dat je faalt' - NU",
+    "date": "2026-04-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOX1hqdmJEVnJ6VTZMakw5REhSUElVZlhnNUZWYkxlMHN0MGlDZHJST1Qxd1QxZlU5RkNTa1FaWXhGQTZQUGVwSjdEUlhaUGtWdXpuYU56eEVwS2l5VzRyWWIyUm9wUlVhbmN2SmQwbmxvd3I2c1NzSkpvcXhUSlJYWmdwRDVFdmVEWG8yejkzZU1YQWNRaXg5WnVnZHlKZHRLck1WRUYzSQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5573380e42fa",
+    "type": "blog",
+    "src": "De Groene Amsterdammer",
+    "title": "Voor het eerst sinds 1989 staat een coalitie constructief tegenover kernwapens als afschrikkking - De Groene Amsterdammer",
+    "date": "2026-04-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80NWVUZ0JKUmlmZlNGck94X1BqZXhINDhwM29tSHhnNzR5THcxLWFyek1CbkFkaHdGaXp1V2tYYW9UbWFvT3pVMUdVTlJhSVRKUm5WbV9PbzZpalBheUFJWTB2VF9hcFZsSzVEVk9MNmE?oc=5",
+    "icon": "✍️",
+    "lr": "left"
+  },
+  {
     "id": "gfa813a6d26e8",
     "type": "nl",
     "src": "Sportnieuws.nl",
@@ -80,6 +111,16 @@
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU09vWWNGV25tc1JRZGVuUHphN28zeDVONEJFVHZPTV9GT0U0Q0k3U3Z1SmdRd2dzMTdzQ0t6ZXhzcm1WQ3Y3eDA2dnBYYWR1VlI5clBBNF9WZ2tvbC1vWHB3c05Dc0dfN0tNNXA3UmNINTVMLXlZQjhfYmxPaWlWbDFpWkpzRkE3WEh4M1Q5azRfSVR3XzRFVGpWMU5mRDBnTzEtdmpjbXJwQXFsVWkxMw?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "gba8b29b9242b",
+    "type": "intl",
+    "src": "The Spectator",
+    "title": "Immigration has turned the Netherlands into a tinderbox - The Spectator",
+    "date": "2026-04-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQUVhMkNJVk83RjZlejRCY2ZuZWFKN3dxMmlMbjJxaGxDS3F0MmZYakZNeUZaazEzTGtPc0dqOGNXUFE2Y2d4a0dvYVZJeGZ1T1JIRXZjQnFiTE82VjlBaEtYN0cwYWc4Wm5abWEzNUV1cERGcEEyLWtqcUtxRG5JMGJ4eDZ1S0xWdXBPd0JFcw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g1c4572df4b5c",
@@ -2282,6 +2323,16 @@
     "icon": "📰"
   },
   {
+    "id": "g762673322484",
+    "type": "intl",
+    "src": "112.ua",
+    "title": "Премьер Нидерландов Роб Йеттен встретился с Зеленским в Киеве, чтобы почтить память павших - 112.ua",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNY0h2RU5jNkZPZFRIWDNkUmJMRVhUM3lqX1hMOUlreWgzdU1jRE9nMmh6QnBRTkpFVmktcU93UzlHT2RFMmUtSUdaMF94RzRxbmhpU0NMR1VQR2tETFRqajE2aEJhUjZ3Nk5GemhHT0FsUU5rX3hRUG9PTmtpMUtoYzJpY3VjRmxyQ3gwc0trRFAya05jN3dJaVFZbGNpS1JoQnFnMUJxQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g3af8a8ce8893",
     "type": "nl",
     "src": "Trouw",
@@ -3074,6 +3125,16 @@
     "date": "2026-04-14",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTUgwX3pwbGoweGxxRGh4YjFXd0JWS1FPMkJDSXAxQ2xrcUpiMEI1bFc2MkNFQ1VaMV8yaUYzZ3g2UnZUaXBhdEM2eEN2ZXhHTGlxTWlHVmZCME1tcUFRaWpQZHdTUXR6UEJmb0pUR2dvLTdFdk1ZeVFnMXYzNDZWeDB1Xy1EaEhsckw0WU04WkYybG85ZmRaOVYxZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5de036319774",
+    "type": "intl",
+    "src": "DVIDS",
+    "title": "Prime Minister of the Kingdom of the Netherlands Rob Jetten Visits ANC [Image 37 of 40] - DVIDS",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbENaNmxCVjRuUkgzUGRFRnVjODhWU3h6WWJRdnh0LU9tQ1lNY2k2WnNSTGFQb2NDaVVKR3lWZ2pZWHJrZUZERDdWUWJnUHNxaFhfcDd6dUJoejZFU1VrQktMWUdvMXJtZnNWbVNpNEhiRlhWYkJpYl9Oa2xfS0dmUFdQY2VtZ082Vm9SM0M0TkdJV2MtUjYyQ3Zuaw?oc=5",
     "flag": "🌍"
   },
   {
@@ -6148,6 +6209,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMnRhZHhmdUtQaTI0OUFWNVhXZjNoTlZWZDVLMGIxcTQtRG9kVk1YdE1SMGMzbnlSTWN6MEdCM003U1YtS1VvRU5welN6czJiZG1iS3FheW9BNUdlcTltSXlYMWgybEdpVkEtaWxUSWNCVjY1aWxodjQyT1BDdkxGOVJYdGFXSF94d2lIX2l2b2I4akU4UlBkY19wTk1jU1daT2p3enZ5Ri1pVXludnc5SjJSSkN5c3BTTU5nWUc4SE5LN1hpSEE1SmxBcC1ZbFN5ZEo3WUlhSGhNaDg?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g4ec5c3f96d9e",
+    "type": "intl",
+    "src": "Цензор.НЕТ",
+    "title": "Европа не может допустить, чтобы новые конфликты отвлекли внимание от Украины, — премьер Нидерландов Йеттен - Цензор.НЕТ",
+    "date": "2026-03-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVV8tdzlDUWFocWtFOGdYX3V4U3A5TlAyOG95aWh2T3ZLUk16RC01ZUg2blo1Vnd6cHBsdWJmT0dSamRJcXBWTHk4QnNzT0JqS3NNbTJoMEcyaUhNTFNvX1ViTUVfbFdjdkdXd001YWFBd1g5M3l5WWJGekJ3amgzYWJMVFhmV0ptWUdNWkp1OA?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gad3a049b6b43",
