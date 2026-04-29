@@ -1,5 +1,35 @@
 [
   {
+    "id": "ge4681bb6b8a8",
+    "type": "nl",
+    "src": "Taxlive",
+    "title": "Achterhaalde Voorjaarsnota - Taxlive",
+    "date": "2026-04-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT1BTeFdBMC1ENHVBQmtHdEZEZ1VES0Zma2xVMjEzRnRPc0JhTWJMSktZLUsxNFRQRmo0R2hGS3NvUmVmZjBQZE5sdUhiVXNPaXNURVJkM181TFJhRnVNOUQ3VEFGNGR1V05aVmxaLWRCTVdSM20tb3MwY1hZZmFubXo0UUlGTmNodG1mZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9b263891229a",
+    "type": "intl",
+    "src": "Bloomberg.com",
+    "title": "Netherlands’ Plan for Tax on Wealth Sparks Fierce Opposition - Bloomberg.com",
+    "date": "2026-04-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMDVrTzJzY0FwRnJiQ191ck9SYkotYlNQckpjY3F4Ul84UTRDdDFtTFRvWUZwcVRsUVlrR1c1RU11RGxLZ3d3YktON2thM3c1SW5MbnZjSFFiQkxMYW5uMjlfcVR1YUpETy1BUGd0aEtRdVJqUG9GRzI4WWVEdEdEWFBYX05JeVhMdEdUemtJdWpHeFlqRnIwUDYtdUpJMGduWXVqMlNvQVc2MmtZMll3?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g2667fd631755",
+    "type": "intl",
+    "src": "Caliber.Az",
+    "title": "Dutch PM may visit Azerbaijan this year - Caliber.Az",
+    "date": "2026-04-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBiMjliVjk5Z0pEUDc2OXU5VXdBbE80dmphVnp4X1g4alBkcnFMaHlJTl9mTzZfXy0xX25XeFFKQTdxZG1fbmphaFNqbEkydVRRV04zVnJ4eTAtM3c4dGZrdlVRM0pZTm1hLTFjeTMyYjBsUEJj?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gaabe31e6663e",
     "type": "nl",
     "src": "NU.nl",
@@ -28,6 +58,70 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80NWVUZ0JKUmlmZlNGck94X1BqZXhINDhwM29tSHhnNzR5THcxLWFyek1CbkFkaHdGaXp1V2tYYW9UbWFvT3pVMUdVTlJhSVRKUm5WbV9PbzZpalBheUFJWTB2VF9hcFZsSzVEVk9MNmE?oc=5",
     "icon": "✍️",
+    "lr": "left"
+  },
+  {
+    "id": "g7ac419ba7991",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Rob Jetten leidt nu een crisiskabinet, maar slaagt er niet in de noodzakelijke regie te voeren",
+    "date": "2026-04-28",
+    "sent": "n",
+    "link": "https://www.trouw.nl/politiek/rob-jetten-leidt-nu-een-crisiskabinet-maar-slaagt-er-niet-in-de-noodzakelijke-regie-te-voeren~b042fb93/",
+    "lr": "left"
+  },
+  {
+    "id": "g01ffbef1baf3",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Verbazing bij Hélène Hendriks over openhartig interview van hockeyende verloofde Rob Jetten: 'Dat viel mij op' - Sportnieuws.nl",
+    "date": "2026-04-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQYzh1RF9rNkI4ZmZtWWJQTElkSzduU1RaNm1DNUtZWURwU1FkMC1GYUgyRV9jYkUtNmN5b0tRcjZieU5kUVNWUjN3T1Zhb0Zhcm1ubFdITzZ3SUtVTHVMSmJDMDJsdFhFNTloM0xEVndObHJ4c2NOa2lhNjc2NzItQVRTS1NDSDc4MEFUZWs5RnZpSGNMYXpFR0JJcjJlSXZJUWNKWEhsc01tYVdQRnhRdzJaeFAzNkNnSEM5U04yS2EwREJNRU1NeUxYbkZmQ25YX0RQekFhQkxZazRCNWFVLThEWFIzRmNreC1taGJiYVl4Z3VfZkhEaUk5LUo?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfc84d27759f7",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Rob Jetten leidt nu een crisiskabinet, maar slaagt er niet in de noodzakelijke regie te voeren - Trouw",
+    "date": "2026-04-28",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdTZ3Wlh3V3ZWUmRpSWVrUkItVVFCUlB1NTc3QzZrTC1Rdmg4S1o4cmpyMlR3bXEyWkpXa2xYMFBQdUlDWmhpZU9ubFJZc0JWTmRLSzFOcUdndnlPWC0yZW5CM0ZsTnVDTS01cXUwdEtWZjM4S0lvRTU5RkpodmVLNnl4d0g4a0hFNHFCYTQtc2hhQ3lfODhFNmotelRaV1pZUGdUajV3S2hGaWdwRTVuTzJYdkY1Qm52aXBNNEtGV3QtS0lFcG5fazRfdC0wQQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gd2700baa2a4e",
+    "type": "nl",
+    "src": "Friesch Dagblad",
+    "title": "Lang leve het crisisplan van het kabinet-Jetten - Friesch Dagblad",
+    "date": "2026-04-28",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb25nYks3N09XRFlEUlhTYWJKU2lVeW55RTZqNVBZWm5aZjRXZXlKSWRPZlNub0FSM2NjSzMteWdUZWR5djVzM1M5Nm0wOHJTSnoxYkFkbUNmeUlsUTJ0OTFMamhSSzFHcEUySmhWOXNxbWh1VHdBb0xoTlNSNlh5eVlySTdkYkdQa1ptQy03bV90SXJkcFVueA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfd1df3577705",
+    "type": "blog",
+    "src": "De Groene Amsterdammer",
+    "title": "Voor het eerst sinds 1989 staat een coalitie constructief tegenover kernwapens als afschrikking - De Groene Amsterdammer",
+    "date": "2026-04-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE80NWVUZ0JKUmlmZlNGck94X1BqZXhINDhwM29tSHhnNzR5THcxLWFyek1CbkFkaHdGaXp1V2tYYW9UbWFvT3pVMUdVTlJhSVRKUm5WbV9PbzZpalBheUFJWTB2VF9hcFZsSzVEVk9MNmE?oc=5",
+    "icon": "✍️",
+    "lr": "left"
+  },
+  {
+    "id": "ge3768bbbcb37",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Miljardenwinst voor oliemaatschappij BP door oorlog tegen Iran, kabinet Jetten wil niet ingrijpen - bnnvara",
+    "date": "2026-04-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQQUdzdm1IZzh6Nm9La0ZTaDFKS2JtaEg0aEtqX3FPbnZRUmh0WVJjZEg2MmxDN1RWUVZyRFUzRE9WOWc5ZGRMV2RHaGhZbFdyRFBzcnNTY2tpUk5URXpPQi1IMmNTQ2tybWQ3RVhWNkt1Qy1GRUVDWmRNeWhFanJaTFJEVWZBZFI0Z1dWeXdfZGMydVVTcDhwTlF1YlF0VHZ4Ri01SDBVNEUzdTV5eTB6aE9VakRMUm5VTFhobFZvRU1nQ25SV3ltblYtT0VDVGs?oc=5",
+    "icon": "📰",
     "lr": "left"
   },
   {
@@ -1587,6 +1681,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gf8eb9675be58",
+    "type": "intl",
+    "src": "UKR.NET",
+    "title": "Нідерланди інвестують в оборонну співпрацю з Україною 482 млн євро – прем’єр - UKR.NET",
+    "date": "2026-04-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9mR2RBeDRORGJJM3JQd0RpM0FRS0Q2eGdhQkdWM091MHBWRFY4dXN4c084VTZSbkJ6LUtwcnA4aTdIZjZGQmltdWJXYlRBS3MyS2FxeGhJTUxHbnBjUGFQWnUtSUdFZU1t?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7fb30cd7d657",
     "type": "nl",
     "src": "Noordhollands Dagblad",
@@ -3135,6 +3239,16 @@
     "date": "2026-04-14",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNbENaNmxCVjRuUkgzUGRFRnVjODhWU3h6WWJRdnh0LU9tQ1lNY2k2WnNSTGFQb2NDaVVKR3lWZ2pZWHJrZUZERDdWUWJnUHNxaFhfcDd6dUJoejZFU1VrQktMWUdvMXJtZnNWbVNpNEhiRlhWYkJpYl9Oa2xfS0dmUFdQY2VtZ082Vm9SM0M0TkdJV2MtUjYyQ3Zuaw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g62192ae8b21e",
+    "type": "intl",
+    "src": "Цензор.НЕТ",
+    "title": "Премьер Нидерландов встретился с Трампом: говорили об Украине - Цензор.НЕТ",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOVFQ5TUpWdEdsTmpITF9jNEVwREFTRkxhNURNVmZqOVBDSU4yMElXU1VjQTE2VmY0cDkzWUE4N29XUENmTF96NWgyRVlmVU9pVlEtR1ZRZ21kZ2JfZ0JyTFMxT0JBcFVwZUlDUkJZU0RyY0ZhUEtKMWh6NXc5X3pLQWlyVVMwd1RZWnZz?oc=5",
     "flag": "🌍"
   },
   {
@@ -13797,5 +13911,15 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNjk0UUhWX2JScG92RnJTZ1Z6MHExYU0wZ21odGJEMXZwd19NTmZEVEhMS0QzSVRuTE8tcEtTTjZUdERYVXcwaEEwRFhMRzFUSmo4VU5HY1Vmc2RraVRVTW55N3NjUFVra1hYXzRLOGhpZjhFZUdCM0pTM3phYUhQZlJoek8tVlVoWFNfM1NJa0FHQ0ljTE1xb25NLUhMXzIybHJvTEhCd2ZMOW1Kd3c?oc=5",
     "flag": "🇪🇺"
+  },
+  {
+    "id": "g1ea8625756d5",
+    "type": "nl",
+    "src": "Rijksoverheid.nl",
+    "title": "Kabinet-Jetten beëdigd - Rijksoverheid.nl",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQWpUSWQwYkZRSF8ycmxLblZPbUpONGUtR0Nsejg3VXFNWXhzZ0cyQk4zWkU0M1hfRXZfb0V1WkR2aS1WQ0VHbEJESEZZX2VnbjZ5MEhXb205LWNNb1V6T3FOTjJUVEI3X3JZSFhNQlNyeDdzcEZLNUtnNGxneVc1TmtfVQ?oc=5",
+    "icon": "📰"
   }
 ]
