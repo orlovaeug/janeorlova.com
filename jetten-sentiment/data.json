@@ -1,5 +1,15 @@
 [
   {
+    "id": "gdc16012bdb24",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Geldmaat start proef: je kunt straks 100-eurobiljetten pinnen",
+    "date": "2026-04-30",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/editienl/video/97db6611-7e42-4882-81bd-ac1c9b4445ff/geldmaat-start-proef-je-kunt-straks-100"
+  },
+  {
     "id": "ge4681bb6b8a8",
     "type": "nl",
     "src": "Taxlive",
@@ -28,6 +38,36 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBiMjliVjk5Z0pEUDc2OXU5VXdBbE80dmphVnp4X1g4alBkcnFMaHlJTl9mTzZfXy0xX25XeFFKQTdxZG1fbmphaFNqbEkydVRRV04zVnJ4eTAtM3c4dGZrdlVRM0pZTm1hLTFjeTMyYjBsUEJj?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g11cb2d6a7c2a",
+    "type": "nl",
+    "src": "Dossier Koninkrijksrelaties",
+    "title": "Premier Jetten komt speeddaten: 6 eilanden in 6 dagen - Dossier Koninkrijksrelaties",
+    "date": "2026-04-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd0pad04zMzlDZVV2MjgyWWZvVWR0eEdzZXdncEdyNnlEQVFvRnpTbzcybTJjYXNzdXhIb1ZSNk53Wl9qT29Mb3hjcHNTaDlIWS0zM3NKNlVUcE12cVZVTXR1U2ZGazhfWHhYcE1OWUktVUVmdFBMeWV3ejFOSG5oVWZWOTFmclpIVFVXWjhFQUxnbFZEVHBRLUZfTW43UzR6TV80aw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfbf7b1f3cc6d",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "D66 gekelderd in peiling: vertrouwen in kabinet-Jetten brokkelt razendsnel af - Welingelichte Kringen",
+    "date": "2026-04-29",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTUdmTFFwLUNEU2VUQVhDb2NpbXE0cVBjVkJuYUt0RHNPYWJsNUt6VXUxWTZ6WFFFdVMtOFczMVNtX0Z5aC1PaEFqWG1aVXpubF9rUWVwbFZISzBLUHQtalNYVThPeVJMbDZrRWZhSEJmTzBJT1JLaG8tV0E5dnV5ZHk2eVBqcm9mTUctYnEwN3NQWmJyMlVGV2d3Z2dKM3dPWTRweVl1VG5MREJPaFhRNkk4bG1iSFFxam5Gbnln?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8a56422a0255",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "D66 in 5 maanden gehalveerd in zetelpeiling, vertrouwen van coalitiekiezers in kabinet holt achteruit - EenVandaag",
+    "date": "2026-04-29",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxObFFaXzk3VFhYNzhBeDFkZ3A2ZGNocnZWRm4wY19HdTQxNm1JMllEMlYzTmNJZl9McENQS0V1U1g0el9TUU5zbGYtZjZYX3pxVDVxOG9wNWVhZlNRcUowZktQYWVURzhUN0tjWkNUcDA3QlZfNmFHVzJJR19SMzNxc3JwMGFFN2lSckUzV2tKTWVwN1FxNXVvZzlLVHY2R3VHZGlnbGxORTNoNmRtcVRSQXFhMUVFbDhfVG9lREQ4cTJnTU55Q1JHTnhVVEhaUUUwcmk3a1pJeVFuX3BiUEt1Sk1TWl93WTM3QVI0VnpFN0t3UQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gaabe31e6663e",
@@ -13917,6 +13957,16 @@
     "type": "nl",
     "src": "Rijksoverheid.nl",
     "title": "Kabinet-Jetten beëdigd - Rijksoverheid.nl",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQWpUSWQwYkZRSF8ycmxLblZPbUpONGUtR0Nsejg3VXFNWXhzZ0cyQk4zWkU0M1hfRXZfb0V1WkR2aS1WQ0VHbEJESEZZX2VnbjZ5MEhXb205LWNNb1V6T3FOTjJUVEI3X3JZSFhNQlNyeDdzcEZLNUtnNGxneVc1TmtfVQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g36b1db60b6b1",
+    "type": "nl",
+    "src": "Rijksoverheid",
+    "title": "Kabinet-Jetten beëdigd - Rijksoverheid",
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPQWpUSWQwYkZRSF8ycmxLblZPbUpONGUtR0Nsejg3VXFNWXhzZ0cyQk4zWkU0M1hfRXZfb0V1WkR2aS1WQ0VHbEJESEZZX2VnbjZ5MEhXb205LWNNb1V6T3FOTjJUVEI3X3JZSFhNQlNyeDdzcEZLNUtnNGxneVc1TmtfVQ?oc=5",
