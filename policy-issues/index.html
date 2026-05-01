@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Jane Orlova — How One Policy Issue Shifted an Election</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1a18;
+  --paper:#f5f2ec;
+  --accent:#c0392b;
+  --muted:#7a7570;
+  --rule:#d4cfc8;
+  --light:#eee9e0;
+  --dark-bg:#141412;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(–paper);color:var(–ink);font-family:‘Source Serif 4’,Georgia,serif;font-weight:300;line-height:1.75}
+
+/* ── HEADER ── */
+header{border-bottom:2px solid var(–ink);padding:1.8rem 3rem 1.2rem;display:flex;align-items:baseline;gap:2rem;flex-wrap:wrap}
+.site-name{font-family:‘Playfair Display’,serif;font-size:1.1rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase}
+.breadcrumb{font-family:‘IBM Plex Mono’,monospace;font-size:.62rem;color:var(–muted);letter-spacing:.12em;text-transform:uppercase}
+.breadcrumb span{color:var(–accent)}
+
+/* ── HERO ── */
+.hero{padding:4rem 3rem 3rem;border-bottom:1px solid var(–rule)}
+.hero-label{font-family:‘IBM Plex Mono’,monospace;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(–accent);margin-bottom:.7rem}
+.hero h1{font-family:‘Playfair Display’,serif;font-size:clamp(2rem,5vw,3.6rem);font-weight:700;line-height:1.12;max-width:820px;margin-bottom:1.2rem}
+.hero-intro{font-size:1.05rem;color:var(–muted);font-style:italic;max-width:620px;line-height:1.7;margin-bottom:2rem}
+.hero-nav{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero-nav a{font-family:‘IBM Plex Mono’,monospace;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;padding:.4rem 1rem;border:1px solid var(–ink);color:var(–ink);text-decoration:none;border-radius:2px;transition:all .15s}
+.hero-nav a:hover{background:var(–ink);color:var(–paper)}
+
+/* ── COUNTRY TABS ── */
+.country-tabs{display:flex;border-bottom:2px solid var(–ink)}
+.ctab{flex:1;padding:1.2rem 1.5rem;border:none;background:var(–paper);cursor:pointer;text-align:left;border-right:1px solid var(–rule);transition:background .15s}
+.ctab:last-child{border-right:none}
+.ctab:hover{background:var(–light)}
+.ctab.active{background:var(–ink);color:var(–paper)}
+.ctab-flag{font-size:1.3rem;display:block;margin-bottom:.3rem}
+.ctab-name{font-family:‘Playfair Display’,serif;font-size:1rem;font-weight:600;display:block}
+.ctab.active .ctab-name{color:var(–paper)}
+.ctab-sub{font-family:‘IBM Plex Mono’,monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);display:block;margin-top:.15rem}
+.ctab.active .ctab-sub{color:rgba(245,242,236,.45)}
+
+/* ── PANELS ── */
+.panel{display:none}
+.panel.active{display:block}
+
+/* ── ARTICLE ── */
+.article{max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem}
+
+.article-kicker{font-family:‘IBM Plex Mono’,monospace;font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:var(–accent);margin-bottom:.6rem}
+.article-title{font-family:‘Playfair Display’,serif;font-size:clamp(1.6rem,4vw,2.5rem);font-weight:700;line-height:1.18;margin-bottom:.8rem}
+.article-deck{font-size:1.05rem;font-style:italic;color:var(–muted);line-height:1.65;padding-bottom:1.5rem;border-bottom:1px solid var(–rule);margin-bottom:2rem}
+
+/* META */
+.meta-bar{display:flex;flex-wrap:wrap;gap:.4rem .8rem;margin-bottom:2.5rem}
+.meta-chip{font-family:‘IBM Plex Mono’,monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .55rem;border:1px solid var(–rule);color:var(–muted);border-radius:2px}
+.meta-chip.r{border-color:var(–accent);color:var(–accent)}
+.meta-chip.b{border-color:#2980b9;color:#2980b9}
+.meta-chip.g{border-color:#27ae60;color:#27ae60}
+
+/* BODY PROSE */
+.body-prose h2{font-family:‘Playfair Display’,serif;font-size:1.35rem;font-weight:600;margin:2.8rem 0 .8rem;padding-top:2rem;border-top:1px solid var(–rule)}
+.body-prose h3{font-family:‘IBM Plex Mono’,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(–accent);margin:2rem 0 .7rem}
+.body-prose p{font-size:.96rem;line-height:1.8;margin-bottom:1.1rem;color:#262624}
+.body-prose p:last-child{margin-bottom:0}
+.body-prose strong{font-weight:400;color:var(–ink)}
+
+/* PULL QUOTE */
+.pull{border-left:3px solid var(–accent);padding:.9rem 1.4rem;margin:2rem 0;background:var(–light)}
+.pull p{font-family:‘Playfair Display’,serif;font-size:1.05rem;font-style:italic;color:var(–ink);line-height:1.65;margin:0}
+.pull cite{font-family:‘IBM Plex Mono’,monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);display:block;margin-top:.6rem;font-style:normal}
+
+/* DATA FIGURES */
+.fig-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(–rule);margin:2rem 0;border:1px solid var(–rule)}
+.fig{background:var(–paper);padding:1.2rem 1.5rem}
+.fig-num{font-family:‘Playfair Display’,serif;font-size:2.2rem;font-weight:700;color:var(–accent);line-height:1;display:block;margin-bottom:.3rem}
+.fig-label{font-family:‘IBM Plex Mono’,monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(–muted);line-height:1.4}
+
+/* FINDING BOX */
+.finding{background:var(–dark-bg);color:var(–paper);padding:2rem 2.2rem;margin:2.5rem 0;border-radius:3px}
+.finding-head{font-family:‘IBM Plex Mono’,monospace;font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:#e87c6f;margin-bottom:.8rem}
+.finding p{font-size:.93rem;line-height:1.75;color:rgba(245,242,236,.85);margin-bottom:.8rem}
+.finding p:last-child{margin-bottom:0}
+.finding strong{color:var(–paper);font-weight:400}
+
+/* SOURCES */
+.sources{border-top:2px solid var(–rule);margin-top:4rem;padding-top:1.5rem}
+.sources-head{font-family:‘IBM Plex Mono’,monospace;font-size:.63rem;letter-spacing:.18em;text-transform:uppercase;color:var(–muted);margin-bottom:1rem}
+.sources ol{padding-left:1.2rem}
+.sources li{font-family:‘IBM Plex Mono’,monospace;font-size:.63rem;color:var(–muted);letter-spacing:.04em;line-height:1.6;margin-bottom:.4rem}
+
+/* RESPONSIVE */
+@media(max-width:680px){
+header{padding:1.5rem 1.2rem 1rem}
+.hero{padding:2.5rem 1.2rem 2rem}
+.hero-nav{gap:.5rem}
+.country-tabs{flex-direction:column}
+.ctab{border-right:none;border-bottom:1px solid var(–rule)}
+.article{padding:2.5rem 1.2rem 4rem}
+.finding{padding:1.4rem 1.2rem}
+.fig-row{grid-template-columns:1fr 1fr}
+}
+
+/* FADE IN */
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.panel.active .article{animation:fadeUp .35s ease both}
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="site-name">Jane Orlova</div>
+  <div class="breadcrumb">Political Analysis <span>→</span> How One Policy Issue Shifted an Election</div>
+</header>
+
+<div class="hero">
+  <div class="hero-label">Research Series — 2025</div>
+  <h1>How One Policy Issue<br>Shifted an Election</h1>
+  <p class="hero-intro">Three countries. Three crises. What the data actually shows about whether economic pain, procedural grievance, or housing distress drove voters — and who captured the anger.</p>
+  <nav class="hero-nav">
+    <a href="#" onclick="switchPanel(0,document.querySelectorAll('.ctab')[0]);return false">🇮🇹 Italy — Energy 2022</a>
+    <a href="#" onclick="switchPanel(1,document.querySelectorAll('.ctab')[1]);return false">🇫🇷 France — Snap Election 2024</a>
+    <a href="#" onclick="switchPanel(2,document.querySelectorAll('.ctab')[2]);return false">🇳🇱 Netherlands — Housing 2023</a>
+  </nav>
+</div>
+
+<div class="country-tabs">
+  <button class="ctab active" onclick="switchPanel(0,this)">
+    <span class="ctab-flag">🇮🇹</span>
+    <span class="ctab-name">Italy</span>
+    <span class="ctab-sub">The energy crisis ballot · 2022</span>
+  </button>
+  <button class="ctab" onclick="switchPanel(1,this)">
+    <span class="ctab-flag">🇫🇷</span>
+    <span class="ctab-name">France</span>
+    <span class="ctab-sub">Snap election & NFP · 2024</span>
+  </button>
+  <button class="ctab" onclick="switchPanel(2,this)">
+    <span class="ctab-flag">🇳🇱</span>
+    <span class="ctab-name">Netherlands</span>
+    <span class="ctab-sub">Housing crisis ballot · 2023</span>
+  </button>
+</div>
+
+<!-- ═══════════ ITALY ═══════════ -->
+
+<div class="panel active" id="p0">
+<div class="article">
+  <div class="article-kicker">🇮🇹 Italy — September 25, 2022</div>
+  <h1 class="article-title">The energy crisis ballot: how gas price spikes in 2022 reshaped Italian voters' priorities — and why the wrong party won on the issue</h1>
+  <p class="article-deck">Household energy costs rose 131% in a single year. Voters ranked the crisis as their top concern. Yet the election went to a party that had nothing to do with resolving it. This is the story of how economic pain became an anti-establishment signal — and what that means for policy.</p>
+
+  <div class="meta-bar">
+    <span class="meta-chip r">Election: Sept 25, 2022</span>
+    <span class="meta-chip b">Sources: ARERA · ITANES · CISE/ICCP · IEA</span>
+    <span class="meta-chip g">Issue: Energy · Purchasing Power</span>
+  </div>
+
+  <div class="body-prose">
+
+```
+<h3>The crisis in numbers</h3>
+<p>To understand what Italian voters faced in September 2022, start with the bills. According to ARERA, the Italian energy regulator, household electricity costs rose <strong>94%</strong> in Q1 2022 compared to the same quarter in 2021. Gas jumped <strong>131%</strong> in the same period. These were not marginal increases absorbed by household savings — they hit at the worst possible moment: after two years of pandemic-related income disruption, with inflation climbing to 9%, its highest in decades.</p>
+<p>The IEA's quarterly price index shows that Italian gas import prices peaked in Q3 2022 at six times their 2018 baseline — a price level without precedent in the post-war energy market. Consumer group Codacons estimated that the average Italian household would spend €4,724 on energy alone in 2023, roughly €2,500 more than in 2021.</p>
+
+<div class="fig-row">
+  <div class="fig"><span class="fig-num">+131%</span><span class="fig-label">Gas price rise<br>Q1 2022 vs Q1 2021<br>(ARERA)</span></div>
+  <div class="fig"><span class="fig-num">+94%</span><span class="fig-label">Electricity price rise<br>Q1 2022 vs Q1 2021<br>(ARERA)</span></div>
+  <div class="fig"><span class="fig-num">6×</span><span class="fig-label">Gas import price peak<br>vs 2018 baseline<br>(IEA, Q3 2022)</span></div>
+  <div class="fig"><span class="fig-num">12M</span><span class="fig-label">Italians at risk of<br>falling below poverty line<br>(Eurostat, 2022)</span></div>
+</div>
+
+<p>A Bank of Italy study (Curci et al., 2022) found that government mitigation measures — including VAT reductions on gas, suspended system charges, and a one-off €200 social bonus for lower-income workers — had only "limited effect" on purchasing power disparities. Low-income households were disproportionately exposed because they lived in less energy-efficient housing and used older, more energy-intensive appliances. The poor paid more — and the state's response was insufficient to close the gap.</p>
+
+<h3>The political trigger: how the crisis brought down the government</h3>
+<p>The energy crisis did not just shape voter concern — it directly caused the election to happen. The Draghi government fell in July 2022 precisely because of a dispute over a cost-of-living package. On July 14, the Five Star Movement (M5S) — led by former Prime Minister Giuseppe Conte — boycotted a Senate confidence vote on the <em>decreto aiuti</em> (Economic Aid Decree), a wide-ranging bill aimed at helping households and businesses cope with surging energy costs. The decree also contained a controversial waste incinerator for Rome, which M5S opposed. But the broader conflict was Conte's sustained criticism of Draghi's approach to the M5S's flagship welfare programmes — the Reddito di Cittadinanza (basic income) and the Superbonus 110% (building energy efficiency tax credit).</p>
+
+<div class="pull">
+  <p>"The period we are going through doesn't allow for any pause in determining interventions to contrast the economic and social crisis, and in particular the increase in inflation."</p>
+  <cite>President Sergio Mattarella, July 21, 2022, accepting Draghi's resignation and calling the snap election</cite>
+</div>
+
+<p>The collapse was, paradoxically, triggered by a bill meant to help people cope with the energy crisis. M5S — the party most associated with welfare protection — pulled down the government as it tried to pass emergency energy relief. This created the snap election in which energy would be the dominant issue. The contradiction set the terms for everything that followed.</p>
+
+<h3>What voters actually said: the ITANES data</h3>
+<p>The 2022 Italian National Election Study (ITANES) — a rolling cross-section pre-electoral survey of 6,250 respondents followed by a post-electoral panel of 4,696 — provides the clearest picture of what voters prioritised going into September 25. The answer is unambiguous: economic issues dominated. Unemployment and the energy crisis ranked as the most important concerns. Immigration, which had led issue salience rankings in 2018, dropped significantly. The war in Ukraine arrived in February 2022 and its economic consequences — particularly on energy costs — became, in the words of one academic analysis using ITANES data, "the top priority in the minds of the voters."</p>
+<p>The CISE/ICCP 2022 pre-electoral survey (35 issues, ~2,600 respondents) adds texture. Italian voters in 2022 held broadly progressive economic stances: they favoured a minimum wage, opposed the flat tax, supported a wealth tax on assets above €5 million, and broadly endorsed the basic income concept (while being dissatisfied with its implementation). On energy specifically, the electorate was not divided on whether the crisis needed addressing — it was a valence issue, where all parties agreed action was needed and the debate was over which action.</p>
+
+<h3>The paradox: progressive electorate, right-wing outcome</h3>
+<p>Here is the core analytical puzzle. ITANES and CISE/ICCP data both show an electorate with progressive economic preferences and an energy crisis as its dominant concern. The election result was the worst performance of the Italian left in its history and a landslide for the centre-right coalition — specifically for Fratelli d'Italia (FdI), which surged from 4% in 2018 to 26% in 2022.</p>
+<p>How? The answer comes in two parts.</p>
+<p><strong>First, the opposition was structurally incapable of capturing the energy issue.</strong> Every major party had been inside the Draghi "national unity" government — PD, M5S, Lega, Forza Italia — and therefore shared responsibility for its energy crisis response. The only major party that had maintained consistent opposition was FdI. This gave Meloni a unique position: she could criticise the government's energy response without being implicated in it. She could promise continuity on fiscal discipline (reassuring markets) while campaigning against incumbents (mobilising voters).</p>
+<p><strong>Second, and more structurally significant: FdI's success was driven not by policy alignment but by leader evaluation.</strong> The ITANES-based study by Puleo, Carteny and Piccolino (2025) is decisive here. Using logistic regression on ITANES 2022 individual-level data, they find that the primary predictor of switching to FdI was a positive evaluation of Giorgia Meloni as a leader. This held across different voter origin groups. Among voters switching from Lega to FdI, Meloni approval was the <em>sole</em> significant predictor. Among M5S switchers, issue preferences added some explanatory power — but Meloni's personal approval dominated.</p>
+
+<div class="finding">
+  <div class="finding-head">Central Finding — Italy</div>
+  <p>The energy crisis was the dominant issue in 2022 by salience. But it did not produce issue-aligned voting. Because energy was a <strong>valence issue</strong> (everyone agreed it was bad; all parties promised to fix it), it offered no positional advantage to any party. Instead, it amplified a general anti-incumbent signal. That signal was captured by the one major party outside government — FdI — and personalised through Meloni's leadership approval rating. Economic pain drove voters away from the parties most associated with managing the crisis, and toward the only opposition leader who had maintained a credible outsider position throughout.</p>
+  <p>The left did not lose on energy policy. It lost because it owned the government that failed on energy — and the right owned the only credible opposition figure.</p>
+</div>
+
+<h3>The vote-flow evidence</h3>
+<p>The CISE/ICCP city-level vote-flow analysis (Turin, Florence, Naples) shows the texture of this shift. FdI drew from across the party spectrum: approximately 38% of its 2022 voters had voted Lega in 2018; 20% came from Forza Italia; 16.7% from M5S; and notably 11.2% from PD — the centre-left. This cross-cutting draw is the signature of a valence-issue election, where no single ideological bloc moved cleanly. The energy crisis created a generalised "throw them out" sentiment that FdI — as the only major party outside government — was positioned to absorb.</p>
+<p>Turnout also tells part of the story. At 63.9%, it was the lowest in republican Italian history — 9 percentage points below 2018. The energy crisis generated anger, but the collapse of the Draghi coalition also generated disillusionment. Among those who abstained, many were likely former M5S voters who felt their party had both betrayed its welfare promises and destroyed the one government capable of managing the crisis. This abstention disproportionately weakened the centre-left.</p>
+
+<h3>What this means for policy interpretation</h3>
+<p>For a beleidsmedewerker reading this result, the key lesson is about issue ownership in valence contexts. When an issue like energy costs becomes a universal concern — where no party can credibly claim a distinctive solution — it stops being a policy issue and becomes a performance signal. Voters stop asking "which party has the better energy plan?" and start asking "which party has been least responsible for the mess?" In 2022, that question had only one answer: the party that had never been in government.</p>
+<p>This has implications for how governments communicate in crises. The Draghi government did, by most technical accounts, manage the energy crisis competently — it secured alternative gas supplies, suspended system charges, introduced social bonuses. But the political cost of governing through the crisis, being inside a coalition with parties that then sabotaged it, and failing to claim narrative ownership of the response, was total.</p>
+
+<div class="sources">
+  <div class="sources-head">Sources</div>
+  <ol>
+    <li>ARERA (2022). Quarterly household energy price reports. arera.it</li>
+    <li>IEA (2023). Italy Energy Policy Review. iea.org</li>
+    <li>ITANES (2023). Svolta a destra? Il Mulino, Bologna. itanes.org</li>
+    <li>Puleo, L., Carteny, G. &amp; Piccolino, G. (2025). "Giorgia on their minds." Party Politics. SAGE Journals.</li>
+    <li>Improta, M. et al. (2023). "Radical-Right Surge in a Deinstitutionalised Party System." South European Society and Politics.</li>
+    <li>Mannoni, E. et al. (2022). "Voters, issues, and party loyalty." Italian Journal of Electoral Studies.</li>
+    <li>Curci, N. et al. (2022). Bank of Italy working paper on energy poverty mitigation measures.</li>
+    <li>Russo, F. (2023). "Italy: Political Developments and Data in 2022." European Journal of Political Research Political Data Yearbook.</li>
+    <li>Eurostat (2022). HICP data, at-risk-of-poverty statistics for Italy.</li>
+  </ol>
+</div>
+```
+
+  </div>
+</div>
+</div>
+
+<!-- ═══════════ FRANCE ═══════════ -->
+
+<div class="panel" id="p1">
+<div class="article">
+  <div class="article-kicker">🇫🇷 France — June 30 / July 7, 2024</div>
+  <h1 class="article-title">Snap elections, issue salience and the NFP: what the 2024 dissolution actually measured — and why voters punished Macron on procedure, not policy</h1>
+  <p class="article-deck">Purchasing power was the top voter concern. Immigration was second. But the 2024 snap election campaign was not fought on either. Researchers found no policy issue was salient during the campaign itself — it was about fear, democratic procedure, and the legitimacy of the dissolution. The data tells a more complicated story.</p>
+
+  <div class="meta-bar">
+    <span class="meta-chip r">Election: June 30 / July 7, 2024</span>
+    <span class="meta-chip b">Sources: Ipsos-CEVIPOF · Talan/Ipsos · West European Politics</span>
+    <span class="meta-chip g">Issue: Dissolution · Purchasing Power · 49.3</span>
+  </div>
+
+  <div class="body-prose">
+
+```
+<h3>The trigger: one hour after the results came in</h3>
+<p>On the evening of June 9, 2024, one hour after European Parliament election results were announced, President Emmanuel Macron made a surprise televised address and dissolved the National Assembly. The trigger was the scale of the RN's European victory: 31.4% of the French vote, against Ensemble's 14.6%. It was, as researchers would later document, a "crisis dissolution" — in the classification of French constitutional scholars, the rarest and most dangerous kind.</p>
+<p>The timing was described by almost every political analyst in France as a shock. Even those who had anticipated a possible autumn dissolution were unprepared for the immediacy. In less than 48 hours: the left formed the Nouveau Front Populaire (NFP — LFI, PS, Greens, PCF); LR president Éric Ciotti allied his party with RN; and candidates had to register within six days of the dissolution under French electoral law.</p>
+
+<h3>What voters said they cared about: the Ipsos data</h3>
+<p>The question of what drove the 2024 vote must start with what voters said mattered to them — and then confront the uncomfortable gap between that and what the campaign was actually about.</p>
+<p>The Ipsos-CEVIPOF-Le Monde-FJJ-Institut Montaigne panel study, which tracked over 10,000 participants across four waves in the 12 months before the June 2024 European elections, provides the baseline. For the EU elections — the event that triggered the dissolution — purchasing power ranked first among decisive issues at <strong>47%</strong> of voters. Immigration followed at <strong>38%</strong>, healthcare at <strong>29%</strong>. France's role in Europe came fifth at just 20%.</p>
+<p>For the snap legislative election itself, a Talan/Ipsos survey conducted in late June 2024 asked voters which issues would most determine their vote. Purchasing power retained its lead: <strong>59%</strong> of respondents named it as one of their three most decisive issues. Immigration was cited by over a third. Unemployment, strikingly, was mentioned by only 5%.</p>
+
+<div class="fig-row">
+  <div class="fig"><span class="fig-num">59%</span><span class="fig-label">Named purchasing power<br>as decisive for their vote<br>(Talan/Ipsos, June 2024)</span></div>
+  <div class="fig"><span class="fig-num">38%</span><span class="fig-label">Named immigration<br>as decisive (EU election)<br>(Ipsos-CEVIPOF, 2024)</span></div>
+  <div class="fig"><span class="fig-num">82%</span><span class="fig-label">Disapproved of Macron's<br>use of Article 49.3<br>(Elabe, March 2023)</span></div>
+  <div class="fig"><span class="fig-num">28%</span><span class="fig-label">Macron approval rating<br>post-pension reform<br>(Journal du Dimanche, March 2023)</span></div>
+</div>
+
+<h3>The gap: what the campaign was actually fought on</h3>
+<p>Here is the analytical crux. Academic researchers studying the 2024 French legislative elections (Gougou &amp; Persico, West European Politics, 2024) found something striking: <em>"No public policy issue was salient in the campaign, with the debate focusing on the government's record and the RN's ability to secure an absolute majority in the National Assembly in order to govern."</em></p>
+<p>This is a significant finding. Voters told pollsters they cared most about purchasing power. But the campaign — shaped by the three-week sprint from dissolution to first round — was not about purchasing power policy. It was about fear: fear of an RN government, fear of institutional breakdown, and the question of whether Macron's dissolution was a legitimate democratic act or an autocratic gamble.</p>
+<p>Why the gap? Three reasons. First, the compressed timeline (three weeks from dissolution to first round) made it structurally impossible for parties to build issue-based campaigns. Second, the NFP campaign made no clear prime ministerial candidate — it was explicitly a blocking coalition, not a governing programme. Third, the Ensemble campaign was led by PM Attal and focused on attacking "the extremes." The issue agenda was crowded out by constitutional drama.</p>
+
+<h3>The pension reform antecedent: procedure as the real grievance</h3>
+<p>To understand why procedural legitimacy dominated the 2024 campaign, you have to go back to March 2023. Macron's government used Article 49.3 — the constitutional mechanism allowing a bill to pass without a parliamentary vote unless a no-confidence motion passes — to push through the pension reform raising the retirement age from 62 to 64. The move was technically legal; 49.3 had been used approximately 100 times since 1958. But this use was qualitatively different: it forced through a deeply unpopular structural reform over explicit parliamentary and public opposition.</p>
+<p>The polling damage was severe. An Elabe poll in March 2023 found that <strong>68%</strong> of respondents wanted the no-confidence motion to pass. <strong>69%</strong> believed the use of 49.3 was "a denial of democracy." Macron's approval rating fell to 28% — as low as during the gilets jaunes protests of 2018-2019. A Journal du Dimanche poll put him at his lowest point in four years.</p>
+
+<div class="pull">
+  <p>"82% of the French public disapproves of Macron's use of Article 49.3 — including a majority of those voters who supported him in the first round of the 2022 presidential election."</p>
+  <cite>Foreign Policy analysis, May 2023, citing Elabe polling data</cite>
+</div>
+
+<p>The pension reform created a durable grievance that was not about pension ages per se — it was about the <em>method</em> of governance. Voters who supported raising the retirement age in principle still disapproved of bypassing parliament to do so. This procedural anger was the background radiation of French politics in 2024. When Macron dissolved parliament on European election night — itself a dramatic unilateral executive act — it reactivated the same procedural grievance in voters who had learned not to trust his instincts about democratic legitimacy.</p>
+
+<h3>What the result measured</h3>
+<p>The June 30 / July 7 results produced a hung parliament. NFP won a plurality of 182 seats (Le Monde analysis). Ensemble followed with 168. RN, despite leading in first-round vote share at 29.3%, finished third at 143 seats — blocked by the "republican front" dynamic documented by Ipsos exit data, which showed 72% of NFP first-round voters backing Ensemble candidates over RN in second-round duels.</p>
+<p>What did this measure? Not purchasing power preferences — the top-ranked voter concern never became a policy battleground. Not immigration — both RN and NFP pledged to reverse the pension reform and made broad spending commitments, but the campaign did not turn on specific policy platforms. What it measured, primarily, was two things: the strength of anti-RN tactical voting (the republican front) and the depth of anti-Macron punishment among voters who blamed him for procedural overreach.</p>
+
+<div class="finding">
+  <div class="finding-head">Central Finding — France</div>
+  <p>The 2024 snap election was not won or lost on purchasing power, even though purchasing power was voters' top stated concern. It was fought and decided on <strong>procedural legitimacy</strong> — the accumulated anger at Macron's governing style, activated by the dissolution decision itself. The pension reform's 49.3 bypass was the original trauma; the dissolution was its repetition. Voters punished Macron not for a specific policy failure but for repeated demonstrations that he would use institutional power to circumvent opposition.</p>
+  <p>For policy advisors, the lesson is that <strong>process is policy</strong>. A government can make defensible policy decisions and still face electoral punishment if the method of implementation signals contempt for democratic deliberation. The Barnier government's fall in December 2024 — again via 49.3 on the budget — confirmed that the lesson had not been learned.</p>
+</div>
+
+<h3>The NFP paradox: a blocking coalition that accidentally won</h3>
+<p>The NFP did not run as a governing coalition. It ran as a firewall against RN. Its formation — within 48 hours of the dissolution — was a tactical emergency, not an ideological convergence. LFI and PS had fundamental disagreements (on Ukraine, on Israel-Palestine, on economic policy) that had already broken the previous NUPES alliance. The coalition had no prime ministerial candidate and no shared programme beyond reversing the pension reform and opposing RN.</p>
+<p>Yet it won the most seats. The republican front — the tactical withdrawal of candidates to maximise the anti-RN vote in second rounds — worked. Ipsos data showed Ensemble first-round voters backing NFP candidates over RN by 54%-15% in triangular contests. The result was not a mandate for the NFP programme (there was no coherent programme) but a vote against the alternative.</p>
+<p>Macron's subsequent refusal to appoint NFP candidate Lucie Castets as prime minister — choosing instead LR's Michel Barnier — completed the circle of procedural grievance. The election had been called to force a democratic choice. When the choice produced an inconvenient result, it was overridden. The Barnier government fell after 90 days, toppled by the same NFP-RN combination, on a 49.3 usage. France entered 2025 with its fifth prime minister in three years.</p>
+
+<div class="sources">
+  <div class="sources-head">Sources</div>
+  <ol>
+    <li>Ipsos-CEVIPOF-Le Monde-FJJ-Institut Montaigne (2024). Enquête Électorale Européenne, 4 waves. ipsos.com/fr-fr</li>
+    <li>Talan &amp; Ipsos (2024). Most decisive issues for French legislative elections, June 2024. Statista #1416814.</li>
+    <li>Ipsos Sopra Steria (2024). Sociologie des électorats et profils des abstentionnistes. N=10,286. June 27–28.</li>
+    <li>Gougou, F. &amp; Persico, S. (2024). "The 2024 French legislative elections: maintaining elections, political crisis." West European Politics.</li>
+    <li>House of Commons Library (2024). CBP-10112: France recent political developments and 2024 elections.</li>
+    <li>Elabe (2023). Post-49.3 approval polling, March 2023.</li>
+    <li>Robin, J. (2024). "Snap elections in France: a political scientist lays out what's at stake." The Conversation France.</li>
+    <li>Wikipedia (2024). 2024 French legislative election. [For seat count and formation details.]</li>
+    <li>Wikipedia (2024). 2024–2025 French political crisis.</li>
+  </ol>
+</div>
+```
+
+  </div>
+</div>
+</div>
+
+<!-- ═══════════ NETHERLANDS ═══════════ -->
+
+<div class="panel" id="p2">
+<div class="article">
+  <div class="article-kicker">🇳🇱 Netherlands — November 22, 2023</div>
+  <h1 class="article-title">Housing crisis as electoral issue: why affordability dominated the 2023 campaign — and why the party that won had the thinnest housing plan</h1>
+  <p class="article-deck">87% of Dutch voters said there was a housing crisis. Housing was the top priority for a new cabinet. But the Dutch Parliamentary Election Study confirmed migration was the largest concern among voters on election day. And the party with two pages on housing in a 40-page manifesto won 37 seats. This is a story about issue displacement, bandwagon effects, and the failure of the left to convert economic anger into votes.</p>
+
+  <div class="meta-bar">
+    <span class="meta-chip r">Election: November 22, 2023</span>
+    <span class="meta-chip b">Sources: CBS · DPES · Aedes/Ipsos I&O · ABN AMRO · ABF Research</span>
+    <span class="meta-chip g">Issue: Housing · Issue Ownership · PVV surge</span>
+  </div>
+
+  <div class="body-prose">
+
+```
+<h3>The crisis in numbers</h3>
+<p>The Dutch housing crisis going into the 2023 election was structural, multi-decade, and worsening. ABF Research's annual model-based estimate, calculated for the Ministry of the Interior, showed the housing shortage rising from 315,000 in 2022 to 390,000 by mid-2023 — on a trajectory that ABF projected would reach 450,000 by 2027 without major intervention. By 2024, CBS (Statistics Netherlands) confirmed the shortage at approximately 400,000 homes, representing 5% of the total housing stock.</p>
+<p>The numbers behind the shortage illuminate who was affected. CBS data shows that <strong>20.8%</strong> of Dutch people aged 25–29 were still living with their parents on January 1, 2024 — and the trend was upward. In 2023, young households (under 24) numbered one million, a 21% increase since 2014; 65% of people aged 18–24 were living at home. Transaction volume for student and youth housing fell 58% between 2022 and 2023. Rent levels were 23% higher in 2024 than in 2015. Home purchase costs rose 25% between 2020 and 2023, and 60% since 2015.</p>
+
+<div class="fig-row">
+  <div class="fig"><span class="fig-num">390K</span><span class="fig-label">Housing shortage<br>mid-2023<br>(ABF Research)</span></div>
+  <div class="fig"><span class="fig-num">+25%</span><span class="fig-label">Home purchase cost rise<br>2020–2023<br>(CBS)</span></div>
+  <div class="fig"><span class="fig-num">87%</span><span class="fig-label">Dutch residents who felt<br>there is a housing crisis<br>(Aedes/Ipsos I&O)</span></div>
+  <div class="fig"><span class="fig-num">20.8%</span><span class="fig-label">of 25–29 year-olds<br>still living with parents<br>(CBS, Jan 2024)</span></div>
+</div>
+
+<p>Private sector renters faced the sharpest pressure. CBS data shows that renters — especially in the private (unregulated) sector — had the highest ratio of housing costs to disposable income, well above owner-occupiers. The Netherlands ranked among the worst in the EU-27 on this indicator: only Germany, Denmark, Sweden, and Greece had higher ratios. This was not a marginal affordability problem — it was a structural distributional failure, concentrated among young people, single-person households, and lower-income renters.</p>
+
+<h3>Housing as an electoral issue: persistent but never owned</h3>
+<p>ABN AMRO's election housing monitor makes an important historical observation: housing has been "a key election topic since 1981" in the Netherlands. It has appeared in every party manifesto in every election for over four decades. For two thirds of voters, it is reportedly the issue on which they most determine their vote. Yet it has never produced issue ownership — no single party has successfully claimed to be the credible solver of the housing crisis.</p>
+<p>The 2023 pre-election Aedes/Ipsos I&O survey (N=2,000+) confirmed housing as the dominant concern: it was named by the highest share of respondents as the priority for the new cabinet, above any other topic. 87% felt there was a housing market crisis. Yet the manifestos of the major parties offered largely undifferentiated responses — varied mainly by market vs. regulation philosophy, not by commitment or credibility:</p>
+<p><strong>D66</strong> pledged to build 10 new cities. <strong>CDA</strong> promised 100,000 homes per year. <strong>PVV</strong> offered a 10% cut in social rents, simplified planning rules, and scrapped environmental sustainability requirements — its housing chapter ran two pages in a 40-page manifesto. <strong>GL-PvdA</strong> proposed stricter rent regulation and more social housing. No party's plan was considered detailed or financially credible by analysts.</p>
+
+<div class="pull">
+  <p>"The main problem this year is the same as so often: there are not enough affordable homes. For two-thirds of voters, this is the topic on which they largely determine their vote."</p>
+  <cite>ABN AMRO Housing Market Monitor, Dutch Elections Edition, 2023</cite>
+</div>
+
+<h3>What actually happened during the campaign: migration displaced housing</h3>
+<p>The 2023 election was triggered in July by the collapse of the Rutte IV coalition — specifically over disagreements on asylum and migration policy between the VVD and D66. The campaign was therefore framed from its opening around immigration. Geert Wilders — who had toned down his most extreme positions and was newly rendered "coalition-eligible" by VVD leader Dilan Yeşilgöz's statement that she would no longer exclude PVV from coalition talks — ran a campaign almost entirely focused on immigration restriction.</p>
+<p>The Dutch Parliamentary Election Study (DPES 2023, involving 38 political scientists and sociologists) confirmed what polls showed in the final weeks: migration had become the largest voter concern by election day. Housing, which dominated surveys in October, was displaced. The DPES found that a third of the electorate changed their favoured party during the campaign — including across different ideological blocs — indicating extraordinary volatility in the final weeks.</p>
+<p>The DPES pre-election wave data reveals the bandwagon mechanism: 10% of respondents shifted from another party to the PVV between their pre-election stated intention and their actual vote. An additional 5% voted PVV having been undecided before the election. These late-moving groups were larger than the 8% who had named PVV in both pre- and post-election surveys — meaning the PVV's final result was substantially driven by last-minute switchers, not a stable base.</p>
+
+<h3>Why the left lost on housing</h3>
+<p>The most analytically significant result of 2023 was not the PVV victory. It was the failure of the Dutch left to convert housing anger into votes. GL-PvdA, running under former European Commission vice president Frans Timmermans, had the most detailed housing and cost-of-living platform among major parties. It finished second with 25 seats — a solid result, but far from converting the 87% who said there was a housing crisis into an electoral majority.</p>
+<p>The Institute for New Economic Thinking's post-election analysis (Haffner &amp; Boumeester) identifies the structural cause: "The Dutch Left failed to win on what used to be its ideological home turf. A considerable number of voters who had supported the Socialist Party and the Labour Party in 2021 now voted for the PVV or NSC." Housing distress, cost-of-living anger, and economic precarity — traditionally left terrain — were captured by the populist right.</p>
+
+<div class="finding">
+  <div class="finding-head">Central Finding — Netherlands</div>
+  <p>Housing was the dominant voter concern before the campaign. But the campaign displaced it with migration — the issue that triggered the election — and Wilders was the issue owner on migration. The left's failure was not programmatic: GL-PvdA had better housing policy. It was a failure of <strong>issue framing</strong>. The left could not prevent migration from dominating when the election had been triggered by a migration crisis in the coalition, and when Wilders had successfully connected housing shortage to immigration as a single narrative ("immigrants take your homes").</p>
+  <p>CBS data and Dutch refugee council figures contradict this framing: in 2022, approximately 7% of newly available social housing was allocated to refugee households (roughly 11,000 units) compared to 150,000 allocated to non-refugee households. The housing crisis was not caused by immigration. But the narrative — effective enough to shift 15% of the electorate in the campaign's final weeks — did not need to be true to be decisive.</p>
+</div>
+
+<h3>The Wilders connection: housing + immigration as a single issue</h3>
+<p>Wilders' political insight was to merge two separate crises into one causal story. The housing shortage was real. Immigration was visible. Connecting them — regardless of the statistical relationship — gave voters who were frustrated with housing costs a single culprit and a single solution. His manifesto's housing chapter promised a 10% social rent cut and simplified planning (popular among those waiting for social housing) while simultaneously promising to halt asylum seekers (popular among those who blamed immigration for the wait).</p>
+<p>Atlantic Council analysis notes that 78% of eligible Dutch voters believed the presence of refugees made it harder to find housing — a remarkable figure for a claim not supported by the data. The narrative penetration was near-total. The left's response — factual rebuttals about the actual allocation of social housing — proved no match for a story that felt intuitively true to people sleeping in their cars or on years-long social housing waiting lists.</p>
+
+<h3>What housing did and didn't change</h3>
+<p>The PVV-led coalition (PVV, VVD, NSC, BBB) that formed after the 2023 election did not significantly advance Dutch housing policy before collapsing in June 2024. The Affordable Rent Act — introduced in July 2024, under the Schoof government — was a regulatory intervention that actually reduced the private rental market segment, potentially exacerbating future shortages, according to OECD analysis. The housing crisis continued to worsen: the shortage rose from 390,000 in 2023 to 400,000+ by 2024.</p>
+<p>For the 2025 election campaign — triggered by PVV's withdrawal from the coalition over asylum policy — housing again ranked as a leading voter concern. The cycle repeated: housing salience, migration framing, housing unresolved.</p>
+
+<div class="sources">
+  <div class="sources-head">Sources</div>
+  <ol>
+    <li>ABF Research (2023/2024). Annual housing shortage model estimates. abfresearch.nl</li>
+    <li>CBS (2024). Well-being 'here and now': housing. SDG 11.1 indicators. cbs.nl</li>
+    <li>Aedes / Ipsos I&O (2023). Pre-election housing priority survey, N=2,000+. aedes.nl</li>
+    <li>ABN AMRO (2023). Housing Market Monitor — Dutch Elections Edition. abnamro.com/research</li>
+    <li>Capital Value (2024). Dutch housing shortage projection report. capitalvalue.nl</li>
+    <li>Voogd, R. &amp; Van der Meer, T. (2024). DPES 2023 preliminary reports [in Dutch]. dataverse.nl</li>
+    <li>Van Holsteyn, J.J.M. (2024). "The Dutch parliamentary elections of November 2023." West European Politics.</li>
+    <li>Haffner, M. &amp; Boumeester, H. (2023). "The Dutch Earthquake." Institute for New Economic Thinking.</li>
+    <li>OECD (2025). Economic Surveys: Netherlands 2025, Chapter on Housing. oecd.org</li>
+    <li>De Nederlandsche Bank (2025). Housing market monitor. dnb.nl</li>
+    <li>Atlantic Council (2025). "Your primer on the Dutch general elections." atlanticcouncil.org</li>
+  </ol>
+</div>
+```
+
+  </div>
+</div>
+</div>
+
+<script>
+function switchPanel(idx, btn){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.ctab').forEach(b=>b.classList.remove('active'));
+  document.getElementById('p'+idx).classList.add('active');
+  btn.classList.add('active');
+  document.querySelector('.country-tabs').scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
+
+</body>
+</html>
