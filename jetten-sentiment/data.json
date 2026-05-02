@@ -1,5 +1,59 @@
 [
   {
+    "id": "g154185dc7300",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Oplopende inflatie slaat koopkracht weg: probleem voor Jetten",
+    "date": "2026-05-02",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/opinie/oplopende-inflatie-slaat-koopkracht-weg-probleem-voor-jetten/150634069.html",
+    "lr": "right"
+  },
+  {
+    "id": "g02706f449aae",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Oplopende inflatie slaat koopkracht weg: probleem voor Jetten - De Telegraaf",
+    "date": "2026-05-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQckdYMElRRDRCZ0EwSnpBWk1QZ3o4N0pCV3ZfaDR3ZURMQ1JHN1lSU0dqUjYyQ3lmeHBaNy1LRG8tX3FSeWVmem9MVnRGcmlLVUtVQXdMWkE5U3NpUUlabzFRNFN3dG1xa2NscDZnbUJtS1NXbTBHbkx2V1ZtblZGUjB0RTE2QWprZUpsYzZENUkxRzhNUzRnd2pyQmlqcncwTEFsTFhPZ3E1Tmc?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g6c17558b7bc1",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Die 2.000 miljard euro is een bijzaak in de Europese begrotingsdiscussie - NRC",
+    "date": "2026-05-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNeVZPaXRsTHJINDNxZktHblA4THVSdExTUFZyaTgzRUR6ZFFPX2pzR3pmVVEzQnpOTkgxQ1E5bWQ0NU85cG9ZcEl6QWZEMlR1aDVkQjk3Y3ZwVTBFR2E3ZWNzYUpvYVdfMHRrRUtyNmJ3UW1pSEdvSXdtZURlb21VMmNra3ZGeFMxVGFzaVJMejAxcXprMEtaT2UwcFZzUFdqZEJSVlJJZW96UF80djQ4N0ZHMDI3NkpYNEE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gfaa5933ecb67",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Verkoop gebruikte elektrische auto stijgt, maar wegenbelasting remt opmars: doet kabinet-Jetten te weinig? - EWmagazine.nl",
+    "date": "2026-05-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNa1BDYXR0QXViV0xLZlhacWFRdFlRY29oeTNSdTNOZHJ3c0ZqZFIyelNJd01VcFJtemV0WUpoOHZQS3A3Ync2WllTOHk4UWRyOFNvQWlNQmFKbHUzeTRabzVHcHRKNUFnS0hGSW1jdk5Na3lVLURSV1E5OFRmU1d3R3JwQk01R2ZuaWt4ekNsRGF3SVhQQXdudUNyVldUczZyM1NaNXl3RzlfTXFZNmd6bGpmcDJlem5NeTZCaENuTDNYTUhGb05COEpzNjFWc29ySFdR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2893dda81007",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Van asieldrama tot onderlinge ergernis: eerste scheurtjes in coalitie al snel zichtbaar - De Telegraaf",
+    "date": "2026-05-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNdVdBbExyMkQzVmxzaEhCM1N1QWFaRU4xZFBXZ1ZWZWlQUTJoX09LNzdmZ3VwcjhhLXNzYWxmUmREQmdFYTg1NVB3eWhCLUljdVNKbkpCZmhheHcxQlEwRzE1MmtRdnRZMlBObDZDRDZ6RTYxc3VhWnMwU0tEQzVlcUJwdlhXcnRMblVnY3h3MG1pUnJHLXpUVEhXNEZCUEtBdkRjQzJfbzB5NlA2cUpjdHRSV3Q2VGdKRXV2dlZ2aXFuVFB3VWNXUEVWODZVcG1HRW13?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "gdc16012bdb24",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -243,6 +297,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYUIwd09oQzZQNVAyMEV0Q2R3aFQwVlR1dVhlMldLSnpWYkJWbHlnVGdfVnNLYlVIaDJKM0hSbndEV0hpc1VhQXNTek93ZkpWUmRua2RnMjlXZHRzdDJ3U1BUQXRlQ002LUNxOXAzZ2lMSVhnaDR0R1Utdkt6ZnBtMFgtQWp0SjNoWjZ3UDd0b0FYM200VGR2ZmRZeXYyVXpqeGxPSmVocENGUTIzWnFCempHa1dOTW8tMC1BYUgyWUJidw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gcdb0e204ea35",
+    "type": "intl",
+    "src": "Armenpress",
+    "title": "Le Premier ministre a adressé un message de félicitations au Premier ministre du Royaume des Pays-Bas - Armenpress",
+    "date": "2026-04-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA3VmVNWGxpdmRGejhCRFlTcVV6WVdmRk9PTXRCYXcyTFE4cVQxTS0zQ0FZaGpkY3V4TC1za1F2d1pibzF5RzlfV3JfeWFXNW5NNnfSAVdBVV95cUxPZmVCZU9vbTR0aVpEVEhrTFJ2c1NraGtOcE4zS2VQRGNNamg1ZTZVcTBVelYzSVNxR1ZrXzdETE5LaThtRUdURklGNGw1QzhOV213d1dUdEU?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "g2bd8439f2fe1",
@@ -2252,6 +2316,16 @@
     "date": "2026-04-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOejNENVBmaXNzY0Q0azhCQkFla3NJZ3RJQVlWQVJWUDJNQjVmN3liN1Bna1ZHUzNYRWZ6Y2NjT2dwVU82ZUFqMFdJTXFJeUVkMUQ4VkdhNUk2cmlBQUU2TkxwS2dqb3Rjcy14Wllham5lWTN4eEtQQkdybG1IOGEtc1EyVFM5Q1dUazdJTUppcmd4cENFSEFPVHZKQ0NzZllxbkxCNURCa9IBrAFBVV95cUxPQnZnYURpVV9qWWl1elBRaU1qSS1CZWctUmtTZ3FEcVV0bzF2NmxFY1l2LV9WSzNNWHc2cG53amlJeDdUX3hURGRlNUZDbDllTEtLMkt2aDJEcmhKMjUtcjdBY1lhTjEybC1IYTF2WGFyREV3T0ZZWmhvMVlhVWNmOFVyeFJKMDhvRjYyc2Z4ME1Dc1d0Tlo2bU1ZMmlvQU1wV0ZRTFZ3eHZuZURY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc437ca0aaa6f",
+    "type": "intl",
+    "src": "Orange Actualités",
+    "title": "Le Premier ministre néerlandais Jetten rencontre le Premier ministre britannique Starmer - Orange Actualités",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV0JHcWVIaFVNM3IxU1F4MHRxU0dRN1VWZmRtcWc2T2V6WllSWHNJWXdOMXV0VmpOSjc2TW9HbUt3eExxYlhiczBDeWdpUDRXbUgxdU1SUURlVXpvdVdheV8zWmhNRVBxN0NUR214UGxBeXFJUUwzc1dJREVaM2Exc0xLaHItTkhTUEF4emlqUXdkc1JSTVY3dGVyRDZqOGlESXg5S1FGTGJCU3djX09yQWlOR3hsTF8tWTF5RFkzcnlOaFc3ZUoxNDJELVc5eGVmZ1YzeG5NOW1GazdD?oc=5",
     "flag": "🌍"
   },
   {
@@ -10693,6 +10767,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYk54aHFKUmh4Y1lGeVZ4QjlIbWhseVBZY2k2T21qTC1CNnlFb2ZqVDIzM3p4UUk3TS1RM2Q4VTBKZlpkZ2xDUG11Z3FuSjgzcXNtWUh4dkV1czg5cTBvTUtCcnhwWnI5LXI0ZmFwam1zMFd0TDhObWdGNFAwZENHdlB2cndxanQ1dnBNcmlhcXdRVGxTTlVGb3dzRDVOazVHNXYtRjhXai1Ra3FuVGZMWm8yMzNkS0FNcXVXdWk5bE5KV2oycEcyYXd6UjRYSlk?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g614ea43acc94",
+    "type": "intl",
+    "src": "EFE - Agencia de noticias",
+    "title": "El nuevo primer ministro de Países Bajos habla de la homofobia que sufre y dice recibir “amenazas diarias” - EFE - Agencia de noticias",
+    "date": "2026-02-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM2NESm1VcjRubWMydWU1elBRc0lVbWhNdTdfR3B4b0xOWE5qT21KZUplSEZDaXZoYW12TC1BV09wdmRuS0loc0l2RWU1d0V4cTY1RkNXRHdSYlJyU2wtS3kwXy1TUkdWeXJ4TWlYWGNYNU5uWW5ZV0xlVGZjNDdGdDdETjk?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "nl017",
