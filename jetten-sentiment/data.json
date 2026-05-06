@@ -1,5 +1,26 @@
 [
   {
+    "id": "gf84185314a9f",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Annabel Nanninga: ‘Rob Jetten maakt dezelfde fout als Marjolein Faber’",
+    "date": "2026-05-06",
+    "sent": "n",
+    "link": "https://www.telegraaf.nl/video/annabel-nanninga-rob-jetten-maakt-dezelfde-fout-als-marjolein-faber/151128391.html",
+    "lr": "right"
+  },
+  {
+    "id": "g0f9a0b10ce46",
+    "type": "intl",
+    "src": "Jonet.nl",
+    "title": "Bevrijdingsdag Utrecht gekaapt door anti-Israël-actie - Jonet.nl",
+    "date": "2026-05-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1Jbmc1UVhPWmNFU2tNUW53VWpqZ2VsNG1HRUdXdFFNR3VkcDBEOFQ2MnFrVEhKQWJSZ21Vb1JYZVNrUE1RTUoyZFNfQjExTzF0cEpTOHRJbU51RWdCQjhpRU5zbnFEcVd6NHQwYkxXUEE0andxZjBmVnNIUQ?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
     "id": "g782cb4b561e1",
     "type": "nl",
     "src": "Het Parool",
@@ -38,6 +59,119 @@
     "date": "2026-05-05",
     "sent": "a",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYzRIWjFnV0ViLWNQNldVNXpJRW9idzgxNUEzNWUxVlZPR091SjduNFEweEdLNGNTel94bHctOGl2QUZIYUpJZHlMSzVPclotM2tqM0NRQVVCX252UGFaN2N0NmI0SXpuZnRhejYyX3pMY19lZTk4OGZFbDlCVzFOd0dldk9QTjZMZnRsRVNlaVhQS1FxSHUyVTluTF9HcTl6UlhGeGszdnN4TmFRSzQwbU93aEpXUUpNOENrOEViLWQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g5f9434625c84",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Bevrijdingsvuur ontstoken door premier Jetten en Splinter Chabot, festivals officieel begonnen",
+    "date": "2026-05-05",
+    "sent": "n",
+    "link": "https://www.nrc.nl/nieuws/2026/05/05/bevrijdingsvuur-ontstoken-door-jetten-en-chabot-a4927057",
+    "lr": "right"
+  },
+  {
+    "id": "gda9f36b54801",
+    "type": "nl",
+    "src": "RTV Utrecht",
+    "title": "Dansende premier Jetten op Bevrijdingsfestival Utrecht, Chef'Special zegt af - RTV Utrecht",
+    "date": "2026-05-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQak5uVEJJNHZrcXFQLVFkbEdodURTcXN3V193NDJRc3pnNDF6Y1Z2ZEV1QXNwZEU2bEdLNWE3R1JnY3Z6dnRKVEZCc0otSlg0dFpaRy1ZU1lFQnp6WDFGMDJ4Wkc3aFFoeXhQMll4NnZKem5DQ1NpeWthdnBSQ05qeDJTVjduRUU5QXlkWUlLUVBvWHNMWXdpWjV6NnJqdkdzNldHeFA2eTJpQ1F1SUpZUUlsaXpDUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g111536c4ba76",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "LIVE Bevrijdingsdag | Dansende Rob Jetten ontsteekt bevrijdingsvuur, premier wil vrije dag voor heel Nederland - AD.nl",
+    "date": "2026-05-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPN0tFd1BScGtseUIxbXV2ZnZkd2NMUHpsa3ZoZWxyczAtQmdmaWd6OFhMZVZnSlE1Sjk4OHBUaEI3dXlBVXJPcm1ydTJlcDYwSGs5NjZZRmw3cUJkdWpVbUs4QjZTT1BfeFRuOTNjY3BvNUdRVHZsVzRHaTJ1bjVsQUZBczhvRUVRejBrUEY5dzVHanhWMlE2LThvWE1pUGhlMzV0aGp6X1VYdlMwcFh0bUk3RzRiSlFobzRlandnX1E4V0VxQmM3eXU1UWMxckJIQW5yeG9kcmFGYVhsZ3ZV?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g26bbfe8eb2f0",
+    "type": "nl",
+    "src": "De Utrechtse Internet Courant",
+    "title": "Premier Jetten in gesprek met pro-Palestina-demonstranten op Domplein in Utrecht - De Utrechtse Internet Courant",
+    "date": "2026-05-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOb29OM2djQV8tWnJ5SW1zczVDQkZqRjE3QmJYOVJYTWNjb2c0aVZRT05LcVJaS1R2REs3U3F0TnFRQUtIQW5nOGJwNXlhQVVELUFMN0FhMUpfOG9saTBERl9SUERGVEJ3dEltdC1reVBPbUMzRDJPRThLbFNYbXVOQXJYOW01QmlCc0xIbVlXd3V6QmY5TzJoVTVnYU5FdW5PYVlMelIyVENqdVBYMk5wYl9CSGdmaUhBZUtHOU1YYV94UQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6d96d950c02d",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Rob Jetten en hockeyende verloofde verrast met bijzonder cadeau: 'Een hele grote poster' - Sportnieuws.nl",
+    "date": "2026-05-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcWNxblpQcjJXNHJ2QnY3aDlPa3NwRWxZUVEzOFRWMjhTb0ZtYU5fSUhiV0JaMDNXMy1qVkIxRC15REdCRW9PUExGeFhrUVdQaWVsajJ5MjVMVFBoVVlxcjhQcTg0WHB6RnZxMjhYUVAxdG1mOUNLd0xWZTh0NEQ5bmNMNnpZeHBCbnJRbndyVU1EUV9JY01XLXBIOUMxbkJhNGxJTzhiampXWWVtdGlDTm04YUIyS1NUY1NkWmFjUG1ZZnJJdXJ0emNKMTBDM0hTZXozQUJlQUs1clRqNV9z?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7941f8a63f6d",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Bevrijdingsvuur ontstoken door premier Jetten en Splinter Chabot, festivals officieel begonnen - NRC",
+    "date": "2026-05-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdjN6LXZaRXA3MEIySUhWMkxzRjBMT0tyNElwaDV4NjVfNDU2MWYxVXRlWVVKZ3I4MDBqMEJmZUJTT1ZxTDQxLUE2Z19lQXJfbmRjM2lFVkpiVkpGanUxMTRYMG1vRWRuTVBHazFRTnladkNXV3RTOWotdFp0V1hsc1F0NnZXdHVZampVa2lpNXdWcV9YQlFyMg?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gff1e9acd6e8c",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "LIVE Bevrijdingsdag | Dansende Rob Jetten ontsteekt bevrijdingsvuur, premier wil vrije dag voor heel Nederland - De Gelderlander",
+    "date": "2026-05-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOR1pxaUQtSUZfR2puQmxKZGxGNVJPM0hiaEMtcC0zSG83SThMcnk0blJ3cnZ2b1pydXVGMEM5WEZWMFpTRkUxSUFEUU9oSHBxS2VSOW01M0dnS0hGTkoycU1ieWlQQ284U3lOX0lXZUhtYjQ2cm0wc3dCbXRXR1pVSUh0NnJGLXhuWkNSYnJPVnFSdXd1MXl4Z2I3WUFjVFNkMU1yenA0Q1FwUjU1T1Q0akJZSnJ2NUJjT2RBMkdpVUxqczJJcFdFRUs5MTFpSXJ5NlJ0ZjVZMkJqcTVMSmUtRWxpaDhzTHpUamgzcHJ1bG1oR1ptbjFtV1pn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g24b7324cbf13",
+    "type": "nl",
+    "src": "De Utrechtse Internet Courant",
+    "title": "Bevrijdingsfestival in Utrecht van start; Rob Jetten ontsteekt Bevrijdingsvuur - De Utrechtse Internet Courant",
+    "date": "2026-05-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdFE2VWlqQ0xRMURxTkhEX2lnQUZZTjdYWFExajdRbFZ3TmkwWlctZG1URC1vV2pSZkJYb1k2aFU3RzNtSERiQVVpUHh3bmw3RTZyWkR3NnVnaTczeldKb1J3eEszNVlpdDZPNENTeGhNUlBzbmZzN0NOa0RnTEpaSHpMcGs4Vk5ibHZySGxVZFk5ZVdXU2xqSHdEYTlvT0xxbjZBaTdMdHYyWXlrLTlqV0s3YXVmSVk2UWNrZTBB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb7092d7b7747",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Meer ambtenaren, minder resultaat – toch wordt dat beloond door kabinet-Jetten - EWmagazine.nl",
+    "date": "2026-05-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYTNuVmo4LUV6NVRsUlAtaFVlS2cyRmk4REdrZmtpMDg1RzZRN1Q5VzE1eGNqM1QyS05YYXhxSktITXNMUGZTOFNpbjgzYW92TngzLVhTZzU2NWFGb3lGU2UxS2xFZ3pIdFFFWDBOb1R6Q2dDZ3ROSzlWSHRjY3pBMG1hT3lGeFFYLW9oYXkwMXVKVHo3UTBJRXN6WXg1NVBsNHRFeTNJcnM5R1BqZklGM0k3NFBOVDB3eEd4RUhib0djaDczMmdfMQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2133d14b7c38",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Johan Derksen heeft genoeg gezien van Kabinet-Jetten: ‘Een verloren zaak!’ - Vandaag Inside",
+    "date": "2026-05-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPN3hWNTBLQmNJdkU3T1MwdHBmV2xaOTNNTlZiSVR4c0VheHd5b3c0dHFlTzRaRnFqYm5iLTFGc3NQSGktX082UUltZ042Z3RKd3VNUjJUWXBCNW1DTlRnaUpFMFlLSFU1TVc4T0JQMmxyRFhjY0JSMHdRZVdvX2ZQY0NRZ1NKZzBqNXg3c1JXN0U4TGhnTGcyZ2d2Q3dGdURPeHEwdDNCTlh4OHFIQ2RsSUZhLS1RTURFMmFnSVkzaUVsUklMSEphdVFHSkQyOVZUQW56MHNn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfe986d54a03e",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Column | Dick Schoof is voer voor satirici geworden, maar zijn invloed is blijvend - NRC",
+    "date": "2026-05-05",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObW5xamlIcXpHUVRjT25yeE5MaktDWjRXVlQxSl96aTlzQ09zaXltLTg0R0FpcTUzMFFORlBuWWRlZ045anNtcWprYnJRTXRqcWotU2lGVHhoLXdYcERabDNNcVdwd0RJSE9pUkdHck5tQkFwTjVrVFJhWC1xNUQ4VXNYMW9NYk81OEFyXzYtYTFtSTlycHMtYzJZRHh0NXBGb1NXMUZIZFpEaFB2RUVIWHYwVXlQMWFKS2c?oc=5",
     "icon": "📰",
     "lr": "right"
   },
@@ -2535,6 +2669,16 @@
     "date": "2026-04-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV0JHcWVIaFVNM3IxU1F4MHRxU0dRN1VWZmRtcWc2T2V6WllSWHNJWXdOMXV0VmpOSjc2TW9HbUt3eExxYlhiczBDeWdpUDRXbUgxdU1SUURlVXpvdVdheV8zWmhNRVBxN0NUR214UGxBeXFJUUwzc1dJREVaM2Exc0xLaHItTkhTUEF4emlqUXdkc1JSTVY3dGVyRDZqOGlESXg5S1FGTGJCU3djX09yQWlOR3hsTF8tWTF5RFkzcnlOaFc3ZUoxNDJELVc5eGVmZ1YzeG5NOW1GazdD?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g938db954a39e",
+    "type": "intl",
+    "src": "EADaily",
+    "title": "Премьер Нидерландов заявил, что ему плевать на предупреждения России насчет Киева - EADaily",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOS25NUGVaeXY1bjd4WVpPQU5vc3lHZXFXV2FOdFFxX0pfWG1sT3daYnlNVVFDSnFOZ0VzbXYxR0VTUTJZYWFRRDNyajdfQXZYODFydkx3ZDBiYmllczNYLXZtN00wVXgwRTNoaTlSZmRQQUpnX005WWI0czRpZjBCbTNqem5zYnAzbmJILTA3dzVQV2dpaUw2VFpvQWhHM21NeUY0d3N6ZUR6Y1ByQUV2YmU1eVk1eTZPVFVUazR0c0lVd1I20gHIAUFVX3lxTE10eHFST3NQZzU4cFZKVzlCdW1NdTAzbU5NdGtEckRTa1pCY21fbjNLVkZHMHhqd2JrMWNGR3RLMXJISnRwOXVpQWo0WXp3U1N5TzJZQTg0eFlhcjNhTE1ZSWFkc2cyOFczT0xuc05sR3piTzZRZXBLX0U0ZGZOU0JkUVBNUnlGclJ0UDlITDQybEpzZ0kyd2tQc2ZQQkE4ckowMC1CZnVTWmhMaVlLczdQR1ZNekp3V05vVEJWVHp1ZG9fN0JjeThs?oc=5",
     "flag": "🌍"
   },
   {
