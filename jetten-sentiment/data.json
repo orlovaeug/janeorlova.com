@@ -1,5 +1,127 @@
 [
   {
+    "id": "g07350f10483a",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten na aanslag op D66-kantoor: 'We laten ons niet intimideren'",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://nos.nl/l/2613542"
+  },
+  {
+    "id": "g67d17559724e",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten ziet gerichte actie in explosie op D66-partijkantoor: 'Heel veel schade'",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://www.nu.nl/binnenland/6395107/jetten-ziet-gerichte-actie-in-explosie-op-d66-partijkantoor-heel-veel-schade.html"
+  },
+  {
+    "id": "g8b161b28b0bb",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Jetten noemt explosie bij D66-kantoor kansloze actie: 'Dit pikken we niet'",
+    "date": "2026-05-08",
+    "sent": "p",
+    "link": "https://www.rtl.nl/nieuws/politiek/video/6afb19e6-7e80-498a-b5b4-cab2f721bda0/jetten-noemt-explosie-bij-d66-kantoor"
+  },
+  {
+    "id": "g58339b58d95e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Premier Jetten ziet zorgelijke rode draad in aanval op partijkantoor D66: ’Bijna elke week geweld en intimidatie’",
+    "date": "2026-05-08",
+    "sent": "n",
+    "link": "https://www.telegraaf.nl/politiek/premier-jetten-ziet-zorgelijke-rode-draad-in-aanval-op-partijkantoor-d66-bijna-elke-week-geweld-en-intimidatie/151236821.html",
+    "lr": "right"
+  },
+  {
+    "id": "g7d1501208673",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Jetten ziet zorgelijke rode draad in aanval op partijkantoor D66: ’Bijna elke week geweld en intimidatie’ - De Telegraaf",
+    "date": "2026-05-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNNFgzX3lVUG4zRjlwY1hDUUVXNHVQRjJUbm9NRFdLU2dKTWU3eXFLV3VxTFJ2YjQyMTJNOGEwcUZLS2l1VnF4VndPa3BUOGp5UnpuTW5QNXFDX1A2NlRQeFlySTFKeWVjTndzMjN6SmExd0pudmNoWWQ0M2swOGI0RzRiX1BwX0lOTExuc1pZMW1Xel9XS1I5NzVEQ2t1RVZ0aHA1VnVjTk1JTVhnRV9XLTYwazlySnNZQ1B0dnRFNzgxZmlRMVQybFJ4XzBVSUxBMjJqRVNMUW5XQy1JLUVMVEVmNEJIME1fZV9PcXNuZEs?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g33a161895f84",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten ziet hele gerichte actie tegen partijkantoor D66 - Noordhollands Dagblad",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZTM4Q21oYXdFMEk0SHd5SWFsVnBHbVhmZDRWdUV5ZlRIcVRzT2IzRk54Y3RNSFF0OUhYWkFHNzhZMzdpMWJ1ZlZqUkdFa1JvVno4YWFlSjNSRU5nTG9FVWhyNjlaYlY0d0M0UkJBZ1JfdjRLNERWUnphSEJqRGFCRGJ0dnJscnJCTmd2OXIyYkNnX2hTNEZIQUlwdWE3YXNyUUlsNjNEb1Bxa3RyS1FhRDVXTF9SWklv?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g26354a852b16",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten ziet in explosie op D66-partijkantoor gerichte actie: 'Heel veel schade' - NU",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVjNmdEpsY0Z5N28zdEhGU3ZWSWM4QWpCa0Z5T09FdWhsVExXZUVmWjNlVHBwX1BrWEFoLW91cU5GTHFCdFZNLWdnSnRHN09RZFpsYkozOFRJMmVjYU5QLVJ2N2V3ZEpnR1N3TEpPcGozblVyWVllT1VPWUpNbEh5akFXQy1DMUsyUXBsXzAtZjJXdzFYRjFxU2MwSDVjNVVTRGpjRy1mcEgtTGRRaTBBVFV1NWdqSG5UZEE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g17772be83383",
+    "type": "nl",
+    "src": "Nieuws.nl",
+    "title": "Jetten: Gerichte aanval op partijkantoor D66 Premier Jetten - Nieuws.nl",
+    "date": "2026-05-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNd09tZXFiRnlsZ0R0RVVBRXNwbUFGXzA4V001bHhLMTByY3p4QlhyMVcyWGdWN1ZsM0lTNkFDdzBSb2pyTlBUV0lLWUxBalo5U3pTZ0tCcGFZbG5wTVk5by1kcXhqSENaX3dMX0NoSW04c3JzeVdtbGVkQ0QwQWtqOG9OQnR3Wi16ZWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3dc324d50d63",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Rob Jetten ziet hele gerichte in explosie op D66-partijkantoor: 'Er is heel veel schade' - Vandaag Inside",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNQTFCRjdFM1NnTTZtaWVWQTh3VVpSNE52aDBQajV0YzRVbUtwdTZ2aTlfdlMtMTRrXzRoaWNvWWFCM3BHSm8xTHc0TVJacTc4UjBVRHdJSTdxTjAycjRrSDlRR25hMTZ4YkloYUNWMktfMTA5dWZrWkRXUkZSSnJQTXNXTllIYmc3Y2ZoOVU5ZGpHbjBhcTJkM2NHYXI5dkdaX2RKTW9ULXRwMG15LTJpa0h6ZlB5OEVRaFBiQktjWU54aWdOZGktUy04dHdJSnlZVHVUNUtIYm5lUmZF?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd3178f67775b",
+    "type": "intl",
+    "src": "Українські Національні Новини (УНН)",
+    "title": "Explosion occurs at the office of the Dutch Prime Minister's party – suspect detained - Українські Національні Новини (УНН)",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcWF3QU9OdXlJcnBSUnUwNHNCX0puT2R5UnVNYnNuQWVTZVF0bmdEb0ZLYl82V3dnR2xCQW85MHVNMzVjN2kxX3h0RkExOVNJMXN1RnB5ckRUSnRmUnVOaHhhbmJkLWdRUXFXVU42ZWVkZVE0YTFlWDJkWHpRVjZDUk12TjhPQ0ZxN0g1R3RNTWpXT2k5TF84U2RWTWk4WDdfNGc1NzF0RF_SAacBQVVfeXFMTzhJb0x2dURteVRLbzFkam85Y1JFb1lDcWw2b3gtWXBOSW9DM2ZmRDZ5aHEyY1ZnUHd2LXBGNjVkaUJVWERwMmY0LThabUI3bHczUXltWHl3czFwMzhzeFJ0WFRtcXA3Wi1zaW5JeHBkM3UxM1NUcnJnejhOZnlOWUc0ZkNua2hNOHRQcHk0REY0SUYxb2ZNMk1qY3hkWk45QWtvZzNTWkk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g38c92eb429e7",
+    "type": "intl",
+    "src": "Lethbridge News Now",
+    "title": "Dutch Princess Margriet visiting birthplace, attending tulip festival while in Ottawa - Lethbridge News Now",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWkRzazNGd0YzaXh1VDV4RUs0NWJ5a3k5aEdIMHJ5ZmFxd0xRLXg5Y1puZzQ4LXVwSm5tUURuT2d5V2JFQnBhMUN5TWZRbm9MclB0ZnZSNm45V0ZDbm0taWNYMTBCNHpUZi11a01oOXExNFFwX2Zock53NXF3dWQzQ1d6M2pXbnlYd1dVQmtVakJwTFRVY0Q5SkNSSy1yYWFZNzBMYldieUxQdWFIVmhHU00zaXhvR0N1N09SNF9FRm4ta29P?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g74ea6a02edd1",
+    "type": "intl",
+    "src": "Le Monde.fr",
+    "title": "Pays-Bas : le premier ministre, Rob Jetten, dénonce une « lâche » attaque à la bombe contre les locaux de son parti - Le Monde.fr",
+    "date": "2026-05-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxORk9kQU1UQnp2U3VTNHU1S1Q2aU9KM191bjFQamFBRUdRX1RlaU5fSUYwczRRd3c5Y1FrVWtCeGNSLXlpWS1TcGk0Y3k3aTlDamUzOTRySlUwWFZDblJkUjhHVk96TUs5WWc0ZEFIZlpxYU9zLWVJQk1BV2hJRjAwZHBibXE1c3pvVTlGUVR5NlFSYnpkTVZicktKUTVEaXpfYWJTM1kwSEl3NDlnTG1QU3JaYUVISnR3UUVHc0NTM3NlZHZDUWVHbHhpV0FVdDlpa0RKZXB4TnJzdWxLaV9sWVQ2TUVxYmd5TzNTNFdCTnJWVzdvWW9JM0szUHRUN1k?oc=5",
+    "flag": "🇫🇷"
+  },
+  {
     "id": "gad2017849b87",
     "type": "nl",
     "src": "MSN",
@@ -19,6 +141,147 @@
     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNejNVeU54eUJyV1VPYm5zdDJTMlFxMU1zODltSTZHMlQ0dUI2Mnd5U2RjWGtCc2J6cnBmbTdycmRBNkpPNVlhOEdEdGg4bWRmUnNPNkFrRXpBRmNEMTMxQmxHMmNuRFd0TV9Cbnp2UXV2MUN3Zk1hRGI2c2IybkdmSjgtMGhzQVNoZ3lvd09BTjUwcEtqMDEtanllTjVFZnBraGNWX0o0SkJYcnBreGxISXJ6VG9NR0hZSUdOYWhONA?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g0d15b6f231ef",
+    "type": "nl",
+    "src": "Omroep West",
+    "title": "Premier Jetten na aanval op D66-kantoor: laten ons niet zwijgen opleggen - Omroep West",
+    "date": "2026-05-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOU01oUUpLdUlLNnYxX0w3OXRoNFJPTDJ6LXNjSWFXSGQyNzBMd3NDVjg2aWlfYU5TY0Zudm10cTJrWURKRGRrci1qaHcxZTBUQ2UxeVlxQUpydHJSV2pmUEtoYmRKZnJnMkNGR2xUYlo2Z3BBb056enFFbnJNWXRHVG9rTUdEcklPSDY4bGVjdFJ2Vkx5VXRweEYwLTZCYl9nSjU5SEF1MFhWSzJ6ZkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gce6d52211760",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "BAM-topman wil dat Jetten wooncrisis ‘persoonlijk oppakt’ - bnr.nl",
+    "date": "2026-05-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPajY0bEhlZnZ4eUJ0bHVlMVRnR1V6YjhvZ2RNeWJNV2RzZWtxYy1hNEtpWVJYcE1rRFRyc1Q0eXhVQnlNNEJwd1d5aGhoVnVmTTh2RHVhNE55bTZuMmk4TExPVld2UzlwUGM3Q3pUMklNaGRCR1hiUElld2RsaFZVSmJ3a2hqSHV2cE40S3VLTnBaNVJFOG1pNGMyOEhHNTlE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gb53ace56fdc6",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet-Jetten zoekt doorbraken: kan het wél op asiel, stikstof en zorg? - EWmagazine.nl",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTmxZNDVFbGlrbDczX3FmaXoyZUxmSThkR2hyeDdtVTFzbk1RTkhWX2JMbnpCTHJHS2VEeGtEb0o1ZGs3MGl5ZkI2WEFMNkNsR3JtSk1LVHAtMVpsaS03eE1hQXRwYnNhRjRjQ1hOci1GVUNoWFM0S2dRSnpRN3RNY1ZwaTM3ZUlHb2h2RFFJYXpfbHJfTExCOTYyS01xblN1ZzUxN0FKcjBWdUZtXzU5Mw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1d7c0296e3d6",
+    "type": "nl",
+    "src": "AVROTROS Eva",
+    "title": "Onrust rondom asiel: \"Jetten is voor zijn eerste test als premier niet geslaagd\" - AVROTROS Eva",
+    "date": "2026-05-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNdHpwcDdqMTF0V19TWENDYVVPY3pZOUNTelRhSC1wbUd5bzZkbUhxM2ZWR183R0hoOHZjaGlwR0dBUlBraGdBMzg0Qk1DOVd4dEZNQXRUN2pDbVhpUnN2MllDMTFKWHctUlZDSGFxU0cxSzN1SUFIenpIaDFpdHRTNl9ac1pudmY5YTd6cnVkVTgtenVQam9JdUFZRVJfQ2FieE83d1dWYzJxZ0ZJd2YyZGJXUVA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf3cc51615247",
+    "type": "nl",
+    "src": "Dossier Koninkrijksrelaties",
+    "title": "Jetten: “Bewustwording koloniale en slavernijverleden prioriteit kabinet” - Dossier Koninkrijksrelaties",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSjNVcVg2OFhVbm5LeFF4VWtVS203eUwzOTI2RVdqU2dkcUdJRlJnYVliX21uUlR3d1d6aEN0RUIxOE53MjJyVWxHTWNmUU1sRERXQmprak1LQW5oU1JSMkxwX0UzdXQyYjFSSXFRZ1h5YV93dEh2RG9qTE12cmpGUExWWmlBLTlCelQyQ0lTVXZHb0Vmc1NYQlBhYWtDd1NWTEs2blFFOHo3RVl0Q3U5S1pnTThucFlDOUozVw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga6f218a663c3",
+    "type": "intl",
+    "src": "The Jerusalem Post",
+    "title": "Explosion hits Dutch D66 party, police say - The Jerusalem Post",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yeUFWcU1tWDQ3MkZLUHl3UVFnZUswdlZTZmVTd1ZPMTB6TzZPbkMzUFVLNjRFRjYycEZuMHE4MS1JMEZKbi1JaG43UG1GbXBlMVdGTE84WVd3WWV6Mk4w?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g83971a6e37cb",
+    "type": "intl",
+    "src": "Korea JoongAng Daily",
+    "title": "Lee holds phone talks with Dutch prime minister on closer tech cooperation - Korea JoongAng Daily",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOSHVocmw5ZmswR0o3SmxFb21ydURLNWNsYjdSQlZQTXUxSXZIeE5FZEhUaXJOblAxck5qRUlNTm13dGxzZFd0Wl94RFZ6X0Z5cl81ZXBLdC1uNUJ4SUN0Y2l6WG8ydFhDM0RDMFgtNlNoY3JILWFqVkJRSmgzaXluNGl0UU9EVGNidTVMUi13bC1jOGtjUlhvbnlMVVZJRjhNVFdUdDg2SlVuNVRQanJhNDJuWWdmQ2dLUW1DYjFkYjVpUGd5RlVlLXZxWEVha1hMd1JmU3hxaTd4ZlZqUkhFNDNDM3dxRXJvdHc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd6d1a52efac3",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Video: One arrested in firebombing of Dutch PM's D66 political party headquarters - NL Times",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOFI1ZzdXT251WnhOdFJ0QWYyZFo3aURsMkhxb1lGNWQ1Zlo3UEJUVGNTQ0xWNFNqRWdxODdzakE4ekkxTkhQQ2hBakROc0tiY0diRUNYV1B3ZkU4b3gxR1Bpa2Q3T0Z3UlBlRFhpMGRaSVMyYklPQUt1bDFiTkNEOW5IZUhwaXc0ejdzY3FKNlB5M2FFeFlZR3JfTm83b2hRaWxMVnVn?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g2717d6258adb",
+    "type": "intl",
+    "src": "Yonhap News Agency",
+    "title": "Lee calls for closer cooperation with Netherlands in call with Dutch PM - Yonhap News Agency",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8temJab2dKTFVsV1NCVzlzUkEwN24ycHpnTGtPN293WjZSZlh3SWtkUjlJTnRlYmpvOHpTSjM1dkszRFRfUHhzd2hGYWVSTW5JcGNENDdZRE5WQQ?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "ge97a258993e0",
+    "type": "intl",
+    "src": "The Straits Times",
+    "title": "Explosion hits Netherlands' largest political party's headquarters, police say - The Straits Times",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQUlZIM0dPUVhlVFpWckVXcmUzcmZGSEh2U25VbzhkMzlLZVR0OGNfTVFSZ29jZlJBRXc4emdmUjdqVm56dFdLY2xERGVQSHBVNWdyLVNIc0lKNHJBU1Q4VDMxRjFDOTVkRkJyZEJCdzVWVG1PLWxJaW03blZ2bjl5dlNTNkk0LVU1OGZNMUJKUGZZaUttSzJCaEdaMmpLQWlrV2J6U0Rja0hBejNXYmFNNVlsMldtRFYy?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gbc9dd95bcf97",
+    "type": "intl",
+    "src": "아시아경제",
+    "title": "President Lee Holds Phone Talks with New Dutch Prime Minister: \"Expanding Cooperation in Semiconductors and AI\" - 아시아경제",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UZjFiUGpPcUZfWnN3RzAxNDhEUkQzaUxBM2xod1E0T1BEajFxOTRpQUJCZ2JabW5ZaENCOHZaUjNhaHduNERHTTZlQVA0bkJkTHFmWGJoVnJzSTRQLWdZTWo4dmpzX3NsTF8wR1JSNm0wQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9e8e6561199c",
+    "type": "intl",
+    "src": "Seoul Economic Daily",
+    "title": "Lee Holds First Call With Dutch PM, Pledges Closer Chip Cooperation - Seoul Economic Daily",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQaFZWWmNQbVU5Wkt6TVhINVBvZDdJT0N1dk5HRXV4SnRLU25jR3EzMDBvSG9Rd3Z6VUVmVEVqaEZhc3dJRlhoUEZSRHctMTZwbUVuVUQxY3FZMDItQjBEQW52N3NIMGJQbDJLRndySTktdXdkTGFqYllQNGplOHhNTWRiTXpTem0tS1VhUUFNc2dpV2dQSTZxT3Y0Ti1tUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1478751a579d",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch cabinet pushes new law to criminalize undocumented stay - NL Times",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPbGlZSWN3MEFlWFlrT09hMmFHLWVxT01FLVRWbnRjVFhwc3dvU3BZeWV1Q2lLOUpOVFBjRG9OU2ZfSWt5ZzVJb1JHZW1CN1l1dnJBM2xyMDdLTzRSeUJxX2wwLTRtTlVCdm1MQmNteE9qVU1SbDhweGs3MU5iZE4wenN0amRfVmlHT3VWeUg5NFQzdw?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g373b03f46046",
+    "type": "intl",
+    "src": "The Korea Times",
+    "title": "Lee calls for closer cooperation with Netherlands in call with Dutch PM - The Korea Times",
+    "date": "2026-05-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOc2gzcDVkcnJ6eUVOVVdVZ09WV0drbllyUGJIWl9MTWFNMC12azlCbGplT3FOYjNNdlJ0eVJCTDNwZDVkT2JZT3JuX0l6Y0Z4SmFmVlZ4NW81YXcyTjF4YUliTmRKNkhqQkJzTmNDc0xQNzVkVDdKd0Z1T3k1SzJFbTFRVDh0bzdfUGF4OXpkbE5NZmJvTUJkY2RjakRyUWd3bE8tN3U1QUEwWVNzbVhTT1QxcUtaYXIxZkZfVkUtb1ZFSmlLZFpKXzRiZmLSAcwBQVVfeXFMTnNoM3A1ZHJyenlFTlVXVWdPVldHa25ZclBiSFpfTE1hTTAtdms5QmxqZU9xTmIzTXZSdHlSQkwzcGQ1ZE9iWU9ybl9JemNGeEphZlZWeDVvNWF3Mk4xeGFJYk5kSjZIakJCc05jQ3NMUDc1ZFQ3SndGdU95NUsyRW0xUVQ4dG83X1BheDl6ZGxOTWZib01CZGNkY2pEclFnd2xPLTd1NUFBMFlTc21YU09UMXFLWmFyMWZGX1ZFLW9WRUppS2RaSl80YmZi?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "gf84185314a9f",
@@ -91,6 +354,26 @@
     "date": "2026-05-06",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBLUm1mWFhzZjNiOG4tNVJWYlZyVTBzTU9kUFhOcFIzUEhELVR5NTVtSkFlOVpkT3VKM0cwcUZaeVExbE5BVG1oSGhSRUhfaFlVQnc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gca801fe40800",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Kabinet komt vrijdag met nieuwe asielmaatregel, persoon eerder ongewenst verklaard - RTL.nl",
+    "date": "2026-05-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNUM1ZlBRb2hfbS01V09BNGs4emlkaldpQmY2UmFCOWd6ZWZnZnRfUExhQ2xJUjgyT3pjRTlKVC1UMGZ2a1ZWajFla040ZkZtLXV3aTMzSENDdjVSUTYtejU1aDVoOUV5aHN0SkZvWk1nTVNFb2U3end5RUx3ZzhXVGV5Q0stMnZaclNpZ0xmWXZWb2tNN3c5b2hMeDdhRVVkQWlad2hTcmJBYm5zLS1J?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc1b8d665ef70",
+    "type": "intl",
+    "src": "አዲስ ሚዲያ ኔትወርክ",
+    "title": "PM Abiy holds phone conversation with his counterpart of the Netherlands, Rob Jetten – Addis Media Network -English - አዲስ ሚዲያ ኔትወርክ",
+    "date": "2026-05-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPODVMZGxScE9kZmY0OE5rMDNhYy1JbHZ3alQyb0R5bXBRWnF3OXlxUzBDZUtkbDI0Yl9MenBqYlZld1VSbmR5eDNwREpoU0RiR1ZEamZGcGtzNkRzUGEtdjlkdV8zSThpVmJSWFZzODZxT1pPS1VkLW5HdmhNQThJdnc0SDZUWW9pMW1sdkV2SmM0Y1BOcHpGLTkzMnQ5ZFNvTm1IdVhOV3dCenNkMlA0?oc=5",
     "flag": "🌍"
   },
   {
