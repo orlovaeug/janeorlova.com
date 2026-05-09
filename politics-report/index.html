@@ -1270,18 +1270,6 @@ header{padding:1.5rem 1.2rem 1rem}
           <span class="ix-card-arrow">↗</span>
         </div>
       </div>
-
-      <div class="ix-card ix-card-soon" data-tags="netherlands language">
-        <span class="ix-coming-badge">Coming soon</span>
-        <div class="ix-card-num">06</div>
-        <div class="ix-card-tag">Emotion &amp; Framing · NL</div>
-        <div class="ix-card-title">Migration Emotion <em>Map</em></div>
-        <div class="ix-card-desc">Lexicon-based emotion analysis of Dutch migration discourse across parties, NGOs, government sources, and media — NRC Dutch seed lexicon, real source text.</div>
-        <div class="ix-card-chips">
-          <span class="ix-chip">Emotion lexicon</span>
-          <span class="ix-chip">Migration discourse</span>
-          <span class="ix-chip">NLP</span>
-        </div>
         <div class="ix-card-meta">
           <span class="ix-card-scope">7 actor segments · Apr 2026</span>
           <span class="ix-card-arrow">↗</span>
@@ -3864,26 +3852,30 @@ el.innerHTML =
     '<span class="ix-card-arrow">↗</span>' +
   '</div>';
 
-el.addEventListener('click', function() {
-  var view = document.createElement('div');
-  view.className = 'view active';
-  view.innerHTML =
-    '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'IBM Plex Mono\',monospace">' +
-    '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
-    '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem">' + (f.title || '') + '</h1>' +
-    '<div style="font-size:.9rem;line-height:1.8;color:#333">' + (f.body ? cfRichTextToHtml(f.body) : '<p>Content coming soon.</p>') + '</div>' +
-    '</div>';
-
-  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
-  document.body.appendChild(view);
-  document.getElementById('back-btn').style.display = 'flex';
-  document.getElementById('shell-title').textContent = f.title || '';
-  document.getElementById('back-btn').onclick = function() {
-    view.remove();
-    showIndex();
-  };
-  window.scrollTo(0, 0);
-});
+if (f.status === 'coming-soon') {
+  el.classList.add('ix-card-soon');
+  el.innerHTML = '<span class="ix-coming-badge">Coming soon</span>' + el.innerHTML;
+} else {
+  el.addEventListener('click', function() {
+    var view = document.createElement('div');
+    view.className = 'view active';
+    view.innerHTML =
+      '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'IBM Plex Mono\',monospace">' +
+      '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
+      '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem">' + (f.title || '') + '</h1>' +
+      '<div style="font-size:.9rem;line-height:1.8;color:#333">' + (f.body ? cfRichTextToHtml(f.body) : '<p>Content coming soon.</p>') + '</div>' +
+      '</div>';
+    document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+    document.body.appendChild(view);
+    document.getElementById('back-btn').style.display = 'flex';
+    document.getElementById('shell-title').textContent = f.title || '';
+    document.getElementById('back-btn').onclick = function() {
+      view.remove();
+      showIndex();
+    };
+    window.scrollTo(0, 0);
+  });
+}
 
 targetEl.appendChild(el);
       });
