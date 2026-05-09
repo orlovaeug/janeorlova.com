@@ -1293,15 +1293,7 @@ header{padding:1.5rem 1.2rem 1rem}
 
   
   <!-- Contentful posts feed — shows latest politics posts from CMS -->
-  <div class="cf-section" id="cf-posts-section">
-    <div class="cf-section-hdr">
-      <span class="cf-section-label">Latest from Contentful</span>
-      <div class="cf-section-line"></div>
-      <span class="cf-section-badge">Live CMS</span>
-    </div>
-    <div id="cf-index-feed"></div>
-  </div>
-
+ 
 <div class="ix-about">
     <div>
       <div class="ix-about-lbl">Researcher</div>
@@ -3858,28 +3850,23 @@ function fetchCFPosts(category, targetEl) {
       }
       targetEl.innerHTML = '';
       data.items.forEach(function(post) {
-        var f = post.fields;
-        var bodyHtml = '';
-        if (f.body && f.body.nodeType) {
-          bodyHtml = cfRichTextToHtml(f.body);
-        }
-        // rawHtml field: paste chart HTML / table HTML directly in Contentful
-        var rawHtml = f.rawHtml ? cfRichTextToHtml(f.rawHtml) : '';
-
-        var d = f.publishDate ? new Date(f.publishDate).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
-
-        var el = document.createElement('article');
-        el.className = 'cf-post';
-        el.innerHTML =
-          '<div class="cf-post-meta">' +
-            (f.kicker ? '<span class="cf-kicker">' + f.kicker + '</span>' : '') +
-            (d ? '<span class="cf-date">' + d + '</span>' : '') +
-          '</div>' +
-          '<h2 class="cf-post-title">' + (f.title || 'Untitled') + '</h2>' +
-          (f.description ? '<p class="cf-post-summary">' + cfRichTextToHtml(f.description) + '</p>' : '')
-          '<div class="cf-post-body">' + bodyHtml + '</div>' +
-          (rawHtml ? '<div class="cf-post-raw">' + rawHtml + '</div>' : '');
-        targetEl.appendChild(el);
+  var f = post.fields;
+  var el = document.createElement('div');
+  el.className = 'ix-card';
+  el.setAttribute('data-tags', f.tags || 'netherlands');
+  el.innerHTML =
+    '<div class="ix-card-num">0' + (f.number || '?') + '</div>' +
+    '<div class="ix-card-tag">' + (f.kicker || 'Research') + '</div>' +
+    '<div class="ix-card-title">' + (f.title || 'Untitled') + '</div>' +
+    '<div class="ix-card-desc">' + (f.description ? cfRichTextToHtml(f.description) : '') + '</div>' +
+    '<div class="ix-card-chips">' +
+      (f.chips ? f.chips.split(',').map(function(c){ return '<span class="ix-chip">' + c.trim() + '</span>'; }).join('') : '') +
+    '</div>' +
+    '<div class="ix-card-meta">' +
+      '<span class="ix-card-scope">' + (f.scope || '') + '</span>' +
+      '<span class="ix-card-arrow">↗</span>' +
+    '</div>';
+  targetEl.appendChild(el);
       });
     })
     .catch(function(e) {
@@ -3899,8 +3886,7 @@ function loadCFForReport(reportId) {
 
 // Load the index posts feed
 document.addEventListener('DOMContentLoaded', function() {
-  var indexFeed = document.getElementById('cf-index-feed');
-  if (indexFeed) fetchCFPosts('politics', indexFeed);
+  fetchCFPosts('politics', document.getElementById('ix-grid'));
 });
 </script>
 
