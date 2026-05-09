@@ -3851,20 +3851,20 @@ function fetchCFPosts(category, targetEl) {
           el.classList.add('ix-card-soon');
           el.innerHTML = '<span class="ix-coming-badge">Coming soon</span>' + el.innerHTML;
         } else {
-          if (f.slug === 'migration-emotion-map') {
-  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
-  document.getElementById('view-main').classList.add('active');
-  document.querySelector('.project-tabs-wrap').style.display = 'none';
-  switchTab('p02');
-  document.getElementById('back-btn').style.display = 'flex';
-  document.getElementById('shell-title').textContent = 'Migration Emotion Map';
-  document.getElementById('back-btn').onclick = function() {
-    document.querySelector('.project-tabs-wrap').style.display = '';
-    showIndex();
-  };
-  window.scrollTo(0, 0);
-}
-          else {
+          el.addEventListener('click', function() {
+            if (f.slug === 'migration-emotion-map') {
+              document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+              document.getElementById('view-main').classList.add('active');
+              document.querySelector('.project-tabs-wrap').style.display = 'none';
+              switchTab('p02');
+              document.getElementById('back-btn').style.display = 'flex';
+              document.getElementById('shell-title').textContent = 'Migration Emotion Map';
+              document.getElementById('back-btn').onclick = function() {
+                document.querySelector('.project-tabs-wrap').style.display = '';
+                showIndex();
+              };
+              window.scrollTo(0, 0);
+            } else {
               var view = document.createElement('div');
               view.className = 'view active';
               view.innerHTML =
