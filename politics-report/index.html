@@ -3844,15 +3844,12 @@ function cfRichTextToHtml(node) {
 
 // Fetch all reports from Contentful, filtered by category
 function fetchCFPosts(category, targetEl) {
-  if (CF_SPACE === 'bw0zslfrrx3n') return; // not configured yet
-
-  var url = CF_BASE + '?content_type=report&order=-fields.date';
+  var url = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries?content_type=report&access_token=' + CF_TOKEN;
   if (category) url += '&fields.category=' + encodeURIComponent(category);
 
   targetEl.innerHTML = '<p style="font-family:IBM Plex Mono;font-size:.6rem;color:#888;padding:1rem 0">Loading…</p>';
 
-  url += '&access_token=' + CF_TOKEN;
-fetch(url)
+  fetch(url)
     .then(function(r) { return r.json(); })
     .then(function(data) {
       if (!data.items || data.items.length === 0) {
@@ -3867,9 +3864,9 @@ fetch(url)
           bodyHtml = cfRichTextToHtml(f.body);
         }
         // rawHtml field: paste chart HTML / table HTML directly in Contentful
-        var rawHtml = f.rawHtml || '';
+        var rawHtml = f.rawHtml ? cfRichTextToHtml(f.rawHtml) : '';
 
-        var d = f.date ? new Date(f.publishDate).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
+        var d = f.publishDate ? new Date(f.publishDate).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
 
         var el = document.createElement('article');
         el.className = 'cf-post';
@@ -3879,7 +3876,7 @@ fetch(url)
             (d ? '<span class="cf-date">' + d + '</span>' : '') +
           '</div>' +
           '<h2 class="cf-post-title">' + (f.title || 'Untitled') + '</h2>' +
-          (f.summary ? '<p class="cf-post-summary">' + f.desciprtion + '</p>' : '') +
+          (f.description ? '<p class="cf-post-summary">' + cfRichTextToHtml(f.description) + '</p>' : '')
           '<div class="cf-post-body">' + bodyHtml + '</div>' +
           (rawHtml ? '<div class="cf-post-raw">' + rawHtml + '</div>' : '');
         targetEl.appendChild(el);
