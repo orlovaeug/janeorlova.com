@@ -3846,7 +3846,7 @@ function cfRichTextToHtml(node) {
 function fetchCFPosts(category, targetEl) {
   if (CF_SPACE === 'bw0zslfrrx3n') return; // not configured yet
 
-  var url = CF_BASE + '?content_type=post&order=-fields.date';
+  var url = CF_BASE + '?content_type=report&order=-fields.date';
   if (category) url += '&fields.category=' + encodeURIComponent(category);
 
   targetEl.innerHTML = '<p style="font-family:IBM Plex Mono;font-size:.6rem;color:#888;padding:1rem 0">Loading…</p>';
@@ -3868,7 +3868,7 @@ function fetchCFPosts(category, targetEl) {
         // rawHtml field: paste chart HTML / table HTML directly in Contentful
         var rawHtml = f.rawHtml || '';
 
-        var d = f.date ? new Date(f.date).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
+        var d = f.date ? new Date(f.publishDate).toLocaleDateString('en-GB', {day:'numeric',month:'long',year:'numeric'}) : '';
 
         var el = document.createElement('article');
         el.className = 'cf-post';
@@ -3878,7 +3878,7 @@ function fetchCFPosts(category, targetEl) {
             (d ? '<span class="cf-date">' + d + '</span>' : '') +
           '</div>' +
           '<h2 class="cf-post-title">' + (f.title || 'Untitled') + '</h2>' +
-          (f.summary ? '<p class="cf-post-summary">' + f.summary + '</p>' : '') +
+          (f.summary ? '<p class="cf-post-summary">' + f.desciprtion + '</p>' : '') +
           '<div class="cf-post-body">' + bodyHtml + '</div>' +
           (rawHtml ? '<div class="cf-post-raw">' + rawHtml + '</div>' : '');
         targetEl.appendChild(el);
