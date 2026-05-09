@@ -24704,7 +24704,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z07275&did=2026D16368",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkdc521a295c",
@@ -34777,6 +34777,20 @@
       "50PLUS": "voor",
       "VVD": "voor"
     },
+    "archief": false
+  },
+  {
+    "id": "tk9469c7d8da",
+    "titel": "Gewijzigde motie van het lid Bamenga c.s. over vertegenwoordigende Joodse organisaties betrekken bij de verdeling van de middelen (t.v.v. 30950-535) - Racisme en Discriminatie",
+    "indiener": "D66",
+    "datum": "2026-05-08",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09422&did=2026D21192",
+    "toelichting": "",
+    "stemmen": {},
     "archief": false
   }
 ]
