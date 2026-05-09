@@ -3804,8 +3804,8 @@ function buildLanguageCharts() {
 <script>
 // ─── CONFIGURE THESE TWO VALUES ───────────────────────────────────
 // After creating your Contentful space and API key, paste them here:
-var CF_SPACE = 'YOUR_SPACE_ID';        // Settings → API Keys → Space ID
-var CF_TOKEN = 'YOUR_DELIVERY_TOKEN';  // Settings → API Keys → Content Delivery API - access token
+var CF_SPACE = 'bw0zslfrrx3n';        // Settings → API Keys → Space ID
+var CF_TOKEN = 'LsA7hNJlk9irXEbq5LvuD5eiNH0clOeajGNCxdJvaSY';  // Settings → API Keys → Content Delivery API - access token
 // ──────────────────────────────────────────────────────────────────
 
 var CF_BASE = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries';
@@ -3844,7 +3844,7 @@ function cfRichTextToHtml(node) {
 
 // Fetch all reports from Contentful, filtered by category
 function fetchCFPosts(category, targetEl) {
-  if (CF_SPACE === 'YOUR_SPACE_ID') return; // not configured yet
+  if (CF_SPACE === 'bw0zslfrrx3n') return; // not configured yet
 
   var url = CF_BASE + '?content_type=post&order=-fields.date';
   if (category) url += '&fields.category=' + encodeURIComponent(category);
