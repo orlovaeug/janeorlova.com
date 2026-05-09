@@ -3860,7 +3860,7 @@ if (f.status === 'coming-soon') {
       '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
       '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem">' + (f.title || '') + '</h1>' +
       '<div style="font-size:.9rem;line-height:1.8;color:#333">' + (f.body ? cfRichTextToHtml(f.body) : '<p>Content coming soon.</p>') + '</div>' +
-(f.rawHTML ? '<div>' + f.rawHTML + '</div>' : '') +
+(f.rawHTML ? '<div>' + f.rawHtml + '</div>' : '') +
       '</div>';
     document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
     document.body.appendChild(view);
