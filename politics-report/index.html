@@ -3830,55 +3830,54 @@ function fetchCFPosts(category, targetEl) {
         return;
       }
       data.items.forEach(function(post) {
-  var f = post.fields;
-  var el = document.createElement('div');
-  el.className = 'ix-card';
-el.style.cursor = 'pointer';
-el.setAttribute('data-tags', f.tags || 'netherlands');
-el.innerHTML =
-  '<div class="ix-card-num">0' + (f.number || '?') + '</div>' +
-  '<div class="ix-card-tag">' + (f.kicker || 'Research') + '</div>' +
-  '<div class="ix-card-title">' + (f.title || 'Untitled') + '</div>' +
-  '<div class="ix-card-desc">' + (f.description ? cfRichTextToHtml(f.description) : '') + '</div>' +
-  '<div class="ix-card-chips">' +
-    (f.chips ? f.chips.split(',').map(function(c){ return '<span class="ix-chip">' + c.trim() + '</span>'; }).join('') : '') +
-  '</div>' +
-  '<div class="ix-card-meta">' +
-    '<span class="ix-card-scope">' + (f.scope || '') + '</span>' +
-    '<span class="ix-card-arrow">↗</span>' +
-  '</div>';
-
-if (f.status === 'coming-soon') {
-  el.classList.add('ix-card-soon');
-  el.innerHTML = '<span class="ix-coming-badge">Coming soon</span>' + el.innerHTML;
-} else {
-  el.addEventListener('click', function() {
-  if (f.slug === 'migration-emotion-map') {
-    openReport('main');
-    setTimeout(function() { switchTab('p02'); }, 100);
-  } else {
-    var view = document.createElement('div');
-    view.className = 'view active';
-    view.innerHTML =
-      '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'IBM Plex Mono\',monospace">' +
-      '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
-      '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem">' + (f.title || '') + '</h1>' +
-      '<div style="font-size:.9rem;line-height:1.8;color:#333">' + (f.body ? cfRichTextToHtml(f.body) : '<p>Content coming soon.</p>') + '</div>' +
-      (f.rawHtml ? '<div>' + f.rawHtml + '</div>' : '') +
-      '</div>';
-    document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
-    document.body.appendChild(view);
-    document.getElementById('back-btn').style.display = 'flex';
-    document.getElementById('shell-title').textContent = f.title || '';
-    document.getElementById('back-btn').onclick = function() {
-      view.remove();
-      showIndex();
-    };
-    window.scrollTo(0, 0);
-  }
-});
-
-targetEl.appendChild(el);
+        var f = post.fields;
+        var el = document.createElement('div');
+        el.className = 'ix-card';
+        el.style.cursor = 'pointer';
+        el.setAttribute('data-tags', f.tags || 'netherlands');
+        el.innerHTML =
+          '<div class="ix-card-num">' + (f.number ? (f.number < 10 ? '0' + f.number : f.number) : '?') + '</div>' +
+          '<div class="ix-card-tag">' + (f.kicker || 'Research') + '</div>' +
+          '<div class="ix-card-title">' + (f.title || 'Untitled') + '</div>' +
+          '<div class="ix-card-desc">' + (f.description ? cfRichTextToHtml(f.description) : '') + '</div>' +
+          '<div class="ix-card-chips">' +
+            (f.chips ? f.chips.split(',').map(function(c){ return '<span class="ix-chip">' + c.trim() + '</span>'; }).join('') : '') +
+          '</div>' +
+          '<div class="ix-card-meta">' +
+            '<span class="ix-card-scope">' + (f.scope || '') + '</span>' +
+            '<span class="ix-card-arrow">↗</span>' +
+          '</div>';
+        if (f.status === 'coming-soon') {
+          el.classList.add('ix-card-soon');
+          el.innerHTML = '<span class="ix-coming-badge">Coming soon</span>' + el.innerHTML;
+        } else {
+          el.addEventListener('click', function() {
+            if (f.slug === 'migration-emotion-map') {
+              openReport('main');
+              setTimeout(function() { switchTab('p02'); }, 100);
+            } else {
+              var view = document.createElement('div');
+              view.className = 'view active';
+              view.innerHTML =
+                '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'IBM Plex Mono\',monospace">' +
+                '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
+                '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem">' + (f.title || '') + '</h1>' +
+                '<div style="font-size:.9rem;line-height:1.8;color:#333">' + (f.body ? cfRichTextToHtml(f.body) : '<p>Content coming soon.</p>') + '</div>' +
+                (f.rawHtml ? '<div>' + f.rawHtml + '</div>' : '') +
+                '</div>';
+              document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+              document.body.appendChild(view);
+              document.getElementById('back-btn').style.display = 'flex';
+              document.getElementById('shell-title').textContent = f.title || '';
+              document.getElementById('back-btn').onclick = function() {
+                view.remove();
+                showIndex();
+              };
+              window.scrollTo(0, 0);
+            }
+          });
+        }
+        targetEl.appendChild(el);
       });
     })
     .catch(function(e) {
