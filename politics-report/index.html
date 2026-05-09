@@ -3851,7 +3851,8 @@ function fetchCFPosts(category, targetEl) {
 
   targetEl.innerHTML = '<p style="font-family:IBM Plex Mono;font-size:.6rem;color:#888;padding:1rem 0">Loading…</p>';
 
-  fetch(url, { headers: { 'Authorization': 'Bearer ' + CF_TOKEN } })
+  url += '&access_token=' + CF_TOKEN;
+fetch(url)
     .then(function(r) { return r.json(); })
     .then(function(data) {
       if (!data.items || data.items.length === 0) {
