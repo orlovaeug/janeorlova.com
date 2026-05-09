@@ -3838,9 +3838,6 @@ function cfRichTextToHtml(node) {
 function fetchCFPosts(category, targetEl) {
   var url = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries?content_type=report&access_token=' + CF_TOKEN;
   if (category) url += '&fields.category=' + encodeURIComponent(category);
-
-  targetEl.innerHTML = '<p style="font-family:IBM Plex Mono;font-size:.6rem;color:#888;padding:1rem 0">Loading…</p>';
-
   fetch(url)
     .then(function(r) { return r.json(); })
     .then(function(data) {
@@ -3848,11 +3845,12 @@ function fetchCFPosts(category, targetEl) {
         targetEl.innerHTML = '<p style="font-family:IBM Plex Mono;font-size:.6rem;color:#888;padding:1rem 0">No posts yet.</p>';
         return;
       }
-      targetEl.innerHTML = '';
       data.items.forEach(function(post) {
   var f = post.fields;
   var el = document.createElement('div');
   el.className = 'ix-card';
+el.style.cursor = 'pointer';
+el.setAttribute('onclick', "window.open('https://janeorlova.com/politics-report/" + (f.slug || '') + "', '_blank')");
   el.setAttribute('data-tags', f.tags || 'netherlands');
   el.innerHTML =
     '<div class="ix-card-num">0' + (f.number || '?') + '</div>' +
