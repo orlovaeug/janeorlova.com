@@ -1,5 +1,46 @@
 [
   {
+    "id": "g6ec30406c05b",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Blokkeert het kabinet de Amerikaanse overname van DigiD? Rob Jetten (die van de Nederlandse vlag-verkiezingscampagne) moet kleur bekennen - Wynia's Week",
+    "date": "2026-05-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQY3ZXS0t1VnJvU1VNeFBjOWJBYmhjN3JuZ0NSaDVSVFIyZUpiNzB1RGl1aE9NbTlEZFZXcnFJeXB2TWo1V2xtM21Xd3phOEdacEE5bE9XeVp3ZllBcVhpNERZOW9IeW16SkNxS3hmcWROOC1CQ004X1BfRXV2ZDdKQmdaNTBzaWtvbWQ5M3BFNGRyR0wwMUJyR29Ydlc0M0JSTXVkcjdydld5UWtDc3BBa2UxWjdhVmNOeUFzbldNbTEyemZqbVRNWkFjRk1mZTVXMGRHR0duRE9qUXljeHlySWotM1dXSTI5XzVPQUJPN3pZb1k?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g6b7d0f34d379",
+    "type": "nl",
+    "src": "IslamOmroep",
+    "title": "Kabinet Jetten (D66) laat Gazanen met geldig visum niet toe - IslamOmroep",
+    "date": "2026-05-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObE5VelpjbHBGVExhS3UzQVQxQ0xZV1had2RvenJXekd5YXJKVnhCQjRGbFM0VVlNaXcxS3dzVHA4bVgyb054T0FMaWg2b25EOVRieHNJcENsNm9NOEZ5Nl8tMnlrYXlfVTdFU2NlaWZwUEYxekdZM2xzVkV2M1ZfV2pTRWJjRWVDRmZDWURDdkwxejluM3pv?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g597803cd93c7",
+    "type": "intl",
+    "src": "lokmattimes.com",
+    "title": "PM Modi to be received by Netherlands' monarch, PM Jetten as part of his official two-day visit - lokmattimes.com",
+    "date": "2026-05-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPS3Z4YjdhLXRkQ3pqYjJyWjRwdHNQTlFURFNmQWVUZjRtN3NDUTF2YWdBSVBseEQ0N2tGMTNlY0ppZkdHa18yVTEyb0ptYjkxY2pZZFhuYmpXTUhHcEdzRE1oT3dtVWNMNEhKUXNPZGFMd29DR3pSX05vQzhHdXR5TW1ZMzFnUnVxdWQzZ1ZRVzEwNkNzTUxKbUJLS2dFSktOV2gzQVB1MWdVZ0h2NzV4aXBPeFRiN3Q4WlBTSkNEYXJMSjNPNDF1anphMW04VVFVYlHSAdcBQVVfeXFMTU0tclFzWm95Y0xXcE9XVXlQdTNpWnBNRXlheHl1WlhIQ2MwanJKbHFsby1pOWtrS2ZMVVJpcGktQW9qcFFQc2JMbGJkYWpJUlZ1Q01DZTViTzBXRk5qczAxU0c2ZHp4eU1KTGlvbVVfNll6Y2ktQm9FVmRDc3VXdmN4QlJ2emtoeElOcDlJT1NKSFdtU0JiMzRIWVl4eVYzUzFlTS1DVWt6R2hrZzhiX0RSM2tlZjJvT1FwUl9JLXNocnI2M0dXRm5Ba3hLM21adEpLTVpmX2s?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g1e29ea530260",
+    "type": "intl",
+    "src": "DD News",
+    "title": "PM Modi to visit UAE, Netherlands, Sweden, Norway and Italy from May 15-20 - DD News",
+    "date": "2026-05-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU09YdC1WWmRoSW12TWcxTF9fUzV0VFF1bG0zSnlKWlNYWlVYd1o2bUNUY1FaTUtRTGxpMnJrNVhCOU0wcXRscWdyN0ZiZmxOZVhQbGpyaUFBbHhMQ19WNzByaEdmUlJIeGx3RmJPcFQzbnloMk00azRxR0YzbnVlY2xvWnp3YWZxa3RYbFFfQURzLUxNRVYtVnBuQUFNZw?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gd93473f2c30e",
     "type": "nl",
     "src": "NOS",
@@ -27,6 +68,88 @@
     "date": "2026-05-11",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQTXFpQXhCOUJRc3BjN1E3SWNiVzlpbkVrNGwyOXVvdFUwWTdwOUszMDJGMU5CaHAwY0NZTE82VW9CYm90THBnQXB5UjZpWEtiMDlUeUd4OFh2VEM5OWNENEdrcTdwNXRxVk1QZlZmQ3NPb2YtdDVDMWlQWk9LcVkzU3g2SzU4RFhOeDNPbG9LR2ZmdWoyeEtuRjI1dzhQcFZfajNjYU9ybFU3X2FsSjdLak9hbVlRQzVEcmpFYjMya1pkVGRidGpTWkJsc0NYS2U2VGRwZTBGRGhPekp2YldPWDAtRjMtYjFwc1N6Ujk5R1o4YTBrcmQ0UWV5WlJjQlh0UjM4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g25a05064b98c",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "’Premier Jetten kaart ontvoering Insiya aan bij India tijdens bezoek van premier Modi’ - De Telegraaf",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPUzJ2elpjMllfUUdNdzRWYmdZRjJTZERGNG9iR19pdU5ZTl9adlJCY25UcUEtUGo2RmpEMVg2ck44TXAyWHAwRU1nT3hfWTZXQmJObHpSbm13MGdHX0p2N1lpTTV6TGR5alRYWlhqd2U1Q2NhTGFGMVhZVEpWdmY5NW1RSVBIU2xxbXFNOWJORnlJNFFCQ09RT01zTTBudWFnSkpBVEtkQVJ3cnNxWktGLW4tZXU3Ym10SGlJMkxzU055SERVYmFGLVBkSGJYUndi?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g7b59f4ca8431",
+    "type": "nl",
+    "src": "nu.CW",
+    "title": "Wederopbouw en veiligheid centraal tijdens bezoek Jetten aan Sint Maarten - nu.CW",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNckhSX1RFUDNSTEJyNHlYQm5iRjRwQm5mVFpJM19tNjAzbmRTdlBQeDQ1dVJZLUZpc1UtbEZORFpJMngyT09NV3hBYk9jRmRGYzNQWG8zZnZrdlVhbVRveC1nbHJvZFhSN21WTXlVdEk2aUVmRlFsSXVLMjZnbEJkOHY1X193eEExOTlSczJWeXU2M2RJR2NIWV9YbzA0Tm1M?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g068f3ef14e02",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Met ultimatum zetten vakbonden kabinet-Jetten maximaal onder druk - EWmagazine.nl",
+    "date": "2026-05-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWGw5VU1qVG01MlZzcWgxd0lfY1ZaOU9QdWdoUzhaVnllMWhjUkJKWmczSGtNTml2QlFIV0xNSXFYemVsVk5Od09LNTk1cnlYMFVKNE1ibjRodkpQV3BRanM1MXV6WVNLb2hyMlM3Vi1FemxORUg3c01qTl81R0I0WkFEbTZUUW1M?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g26ea1deef842",
+    "type": "nl",
+    "src": "KIJK",
+    "title": "Vandaag Inside: FNV-voorzitter Hans Spekman voorspelt: hoe lang zit kabinet-Jetten er nog? - KIJK",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE00WjdGeXRkeDZkTC1obWZzUFpzXzZ2NkdMOEZYRWE0RnIxV25PenlZX3doUEtrNDgxUTBkYlNhS0l1QjNLejZmT3RTM0pLbTliZGxNOFFUbUd6RzB6MmcwSTdBMEREMzBLakJsWg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g64677f593385",
+    "type": "nl",
+    "src": "Radar (AVROTROS)",
+    "title": "Vakbonden eisen streep door WW-plannen: Ultimatum voor kabinet-Jetten - Radar (AVROTROS)",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTkFaT05GUUQ3MjN5ZXREU3RlVjQwTVVPMUF1YVY4OVpQd2llcndBbTFvem9IZVNpM1FHejFWdDJDR0dUTk4zUWpSMFhuWmYxU0dCc1dDSlI0VTZVbDJjbUZSWkQzZjJrdmh4M0RzX0tlZXVLbEFkRFJ3aTFUWXBMVjFvQV9EaktpZmhqb1RNdmhiWjg5aS1yQ3MxUlVVTjNMYVhXdlFYMzBoTTFV?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7b1cd94ff78f",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Anti-asielrellen of politiek terrorisme? Hoe kabinet-Jetten balanceert tussen begrip en veroordeling - EWmagazine.nl",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcHJ3al9MSzNpWUItdmJKNGVEaTVUa1RxRVZ1YWg1d3I2cDd2X2kydTY5SzkycElvRTZ4clZxWVZjQ2p0LUFIejJIWVFBdGlxVnpoZE5VNXVEM081UGdfczVjNi1MWWRuSWpnZ1lIN3FpRWJqbTVTTnktOUtZbXFUUDY1UHBLd1VqbTVtQ01XRk9ZV3hjSW8yTjV5a0R0Q2hkdDRzSm5SY3JnUmh5RGxOc2hmdEZYSjA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7f85ed5f2654",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Vakbonden stellen ultimatum aan kabinet: bezuinigingen sociale zekerheid van tafel, anders stakingen - de Volkskrant",
+    "date": "2026-05-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeUZmZ3lkaEpzZllwbEsxZ0JFU01tSU1aZE9nY05fczdMb3N0VUhoMUdoRVR2V3Y3VnZEbG1xX0U3N1pONDJHSTlQN1N5MHpoUDhJcmF3bGw5c20zVUJ4WlUzQVFKZkVLNDI4M1IwMnRiRDB0WWcwR1AzSElONDdaVGFpQklCeWh6ZzZzSnJDbnc5Y0E4dUNLQUJYSmQwLVVXR2hYcUlLckFFdkx0WDJqQTVPSXJJMkxQWlpjaDBvNTVHRnVULWhqNGtTaHQ1bVkySURnT2lWSk1VVVE?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g162a0e98ceb8",
+    "type": "intl",
+    "src": "CityNews Halifax",
+    "title": "Prosecutors cite terrorist intent in bomb attack on headquarters of Dutch ruling party - CityNews Halifax",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPSGRVTGVfdXRyRFBDbmxuaDlkR29IWnJselYzR1FrWnoxa1IzZVVwRGd6OEZ1N1VCbFowWUZ4TUNiZUptV0NXS19mUVowWUs2OVplTjdXNWF0MXJxT2VvRVhuS3VNa1ZpSFQxNHFMLWJZQnJLZHRFbkJadldsY05FbUZUU190amd3ZndMbC1QeW5kVHhyRGpQWFJ0M0tOZHBadDlIRHlSek1fTUFCSjRBcXJhaU00OEVxeGxPeVJwT0lnaDh4?oc=5",
     "flag": "🌍"
   },
   {
@@ -97,6 +220,16 @@
     "date": "2026-05-10",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPT3F0NXowWVlYMkh5WmZ5MkRFdmExTmVvTms1U3R4M01TNHJSV1ZRRkdPWjloWVVtYWZUNUtDSkJqcUxVVWJKblpabG9WanJ4clN6N09tZ1RhOGs1aVJmWDhqYnlsX2VHWEhPaGpWM3RReWtBR1FnbTMxUGxkc254UW5Ia2ZsMm94TXRNU3FRbDVMQlRXdVVTSlhRcTRYTTR3SmZKSWhLbGVqb3BGSjJ0QzVxSDE2aWxnaTZWZkFRaEZyVWFiSzhDNS1qWE1QU1lmaW10Umx3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1d029047502d",
+    "type": "intl",
+    "src": "El Periodista",
+    "title": "Países Bajos agradece a España operativo sanitario por brote de hantavirus en crucero MV Hondius - El Periodista",
+    "date": "2026-05-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQUEt4QUxtQlN6d2xjT2I0WmZlZ3NEcTFaV1dzNzJtTm1CZkhqeHl3NWNNNTlDU0pWaV9tZVdPY2IzVDY4MndSVmRMQlczMmZ1QkhreVRTb05DYlRNUEZrZjBtSXBfMG1jckh3RkQ3UmlyV2IxcEV4dWJPNVQ3WEhBNEpLVzFqZVRCS196NW9jaC1ySzlqYS1BUTRtWEpQRWhhb2NiVEpGdUE2dHRBSGctQ2hrNEJsNXNpNjlqRHlWM2Yzbl9zRThtNFdVSE9Ddw?oc=5",
     "flag": "🌍"
   },
   {
