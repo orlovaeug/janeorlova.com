@@ -1,5 +1,75 @@
 [
   {
+    "id": "g9164a032b022",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten kondigt jaarlijkse 'koninkrijksconferentie' aan met Aruba, Curaçao en Sint-Maarten",
+    "date": "2026-05-15",
+    "sent": "u",
+    "link": "https://nos.nl/l/2614387"
+  },
+  {
+    "id": "gc9f2474fdd11",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten wil samenwerking binnen koninkrijk bevorderen met jaarlijkse conferentie",
+    "date": "2026-05-15",
+    "sent": "p",
+    "link": "https://www.nu.nl/politiek/6395874/jetten-wil-samenwerking-binnen-koninkrijk-bevorderen-met-jaarlijkse-conferentie.html"
+  },
+  {
+    "id": "g4729c76b5873",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten bereid om samenwerking landen in koninkrijk aan te passen - Noordhollands Dagblad",
+    "date": "2026-05-15",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbGRHN1dYd2tVWXo3THNydU5QR0pMT2FlWkZVVHlEdVAzZDE3YjhHenJ2VHh6dDA3Uk5jNkhjZzcwSDk2bGVJT2QwRDBlNGszRkxVUFZsbkZfbm5MSTcwYV9SdlBmV3pISHpmUDE1U2ZIMHAyN2xwLUc1bmVJN2VUY3RhN0F4OTk1VVdRa25XN2tLRnVEel93ejJ0MFJRR1VIM25DTjhzZUE1eXFyRjBiNVozUy1uZFZIbTM2TW9FMXF1LXdK?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g40220cbb7900",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten wil samenwerking binnen koninkrijk bevorderen met jaarlijkse conferentie - NU",
+    "date": "2026-05-15",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTk1hWXhFUXJaN0hJYV9vNnlMN1ZuY2Y2NHdpRzhlZUFMMGJnWnd4emx6U05uT0VSTTFBdGZlUnJnVVM5dHBlZi1qV0o5R045UXdIVjNIMHZzbmgyZWRxMXRtSGYyR2FPN2hDVndaaVVKck9tQ0VNZ3U3VGZqNmVJYW9jWU9LTTZkcWFhYTJaYXZiU29PbHlCdEZGckExT1VObWItTERNMlp3Zld0bS02MVJaVndXRkVINEdn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g13de1c4f6426",
+    "type": "nl",
+    "src": "Accountancy Vanmorgen ·",
+    "title": "IMF hekelt fiscale koers kabinet-Jetten: ‘Lastenverzwaring op arbeid remt economie’ - Accountancy Vanmorgen ·",
+    "date": "2026-05-15",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMF9DZmE0a0lxZjFCelVZX3p2RXpHTGRHLUVCV0F2em11dnJNMGtLeTVzeVRLMEdPaEFWNnIyMTVoM3BqZGY2Q0lrZ1JlMk1mMnhocGwxYXctXzd1UUlFSmhDQ3NPZ1ZXd2Q1NnptYVlKeUNIbzFKYmVuc3FDOWNVYWRoRU5kY0VYb1B0dl9TeEtQTTJwVzdIUzBjR0o4Q3p0R1M2dkZPN2N6TGdlUUhmMkU1T3FLWmNqTG1GVndkYjh1b3dlc3lJ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "geaf13c73ae1b",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Strafbaarstelling illegaliteit terug op tafel: kabinet-Jetten wil af van de geur van Marjolein Faber – gaat dat lukken? - EWmagazine.nl",
+    "date": "2026-05-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOc3hkLXdoaUoteWFQWElFenZ5dG9faHhMUk5pcFNGaDJMdDRhZ1hwUG9LdmFpdmxEcGZRd29rUnpBekpWUlpJdVdkMERRM2U3VlE4MjdLSHBoZkwyMXBtcHlwcVZlMmYxeE1QZTgwN0lsWHVMV2MydldjWG91SDRvUkt5enM4VFlpUy0zVDl3aGhTUkhVSDBkbVRIUXkwaFRiSktITU1mOFR3UjMzdXc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0412759ed258",
+    "type": "intl",
+    "src": "WION",
+    "title": "Indian PM Modi lands in UAE for first leg of five-nation tour. Check in details about his visits - WION",
+    "date": "2026-05-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPVXpyNG1vWXVGYmYtOXhnU3BqcnZRZ1Y4eHFwd21QWTh1WWFuZGNHaVRiMDh6NXVjaXVreVE3VE12ZEh6Y0xjZTE4Mk1lQWxKclN5Qk40T3V3ZGlvRU44TlJxZDViNGRudTdnYVlRZmNZcFNYMU5Nd09yRU1POWQ4VTkzM1RkdS1iMHYxY3I2c2Z1T0NGcDlvRlluaGtrS2RqWWtrdGtvbF91M2ppdUNIWEx5Z0tFcWk3S3hmQnFjUHlWMFlvaktMZmNrSlVJQjI2aWlFRWJ1cnp5MnIyMVNjdEd30gHiAUFVX3lxTE9VenI0bW9ZdUZiZi05eGdTcGpydlFnVjh4cXB3bVBZOHVZYW5kY0dpVGIwOHo1dWNpdWt5UTdUTXZkSHpjTGNlMTgyTWVBbEpyU3lCTjRPdXdkaW9FTjhOUnFkNWI0ZG51N2dhWVFmY1lwU1gxTk13T3JFTU85ZDhVOTMzVGR1LWIwdjFjcjZzZnVPQ0ZwOW9GWW5oa2tLZGpZa2t0a29sX3Uzaml1Q0hYTHlnS0VxaTdLeGZCcWNQeVYwWW9qS0xmY2tKVUlCMjZpaUVFYnVyenkycjIxU2N0R3c?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gd82b2d37238c",
     "type": "nl",
     "src": "Trouw",
@@ -20,6 +90,46 @@
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZEdMRlpJUkQ3Z29objF3d2xBa2U0a040WktDdG13Mjh4RHRIYUUySDBqNURONENDZWlkemozQ0xMZm9aXzZFYU9VdElsTUQxbkR2ZFN2MnlqVk5ZR2oxbkxKZE1CTkFqcHpiZV9Ub3ZaU09YM0hiaUM4TnBYT2xrOEFMUklWdmQ4LW1ZQTBCbkxpMUUwSkRLQkRDWklXS25IZ2FpSTdTQQ?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "gc60c3f580488",
+    "type": "intl",
+    "src": "curacaochronicle.com",
+    "title": "Dutch Prime Minister Rob Jetten Discusses Geopolitics and Kingdom Cooperation During Curaçao Visit - curacaochronicle.com",
+    "date": "2026-05-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObUlla1hZekgzQy1nNUJGX3VleHJMa0JfTmRDSnk0eVp5c0ZwU21EaHNJeWNETEtWUGxIYkFnOTRmd2tKR2lpYzg3c29mVllZbG9mMDVHc0toWmlWUEtPTnc2ckliN2FRbGlIUFY3RHRCLXByZHdUdEM2cmtWZ3lTLWs0LVhIMzF4THhqT2x3dTZDenZmWmw1N29COUMyRXJLVzRBSmhGLS1CYk1RNDFINndJMEhnWmFpM1JNMDk2T1ppOVZfem1rcTh4UWl1UExZRnYxcWpFbXR1NHZo?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g47435940f6a1",
+    "type": "intl",
+    "src": "curacaochronicle.com",
+    "title": "Dutch Prime Minister Rob Jetten Arrives in Curaçao to Conclude Caribbean Kingdom Tour - curacaochronicle.com",
+    "date": "2026-05-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOcUluR2wzLWFjUWdjd0dCcGlvMkFWUmZHM05GT3F4amFDWWRpZWFVVU5mWjU2RUhraUkzQWpDSEhvbjZuQUJkWXQ2cS14SG1wWXowbkdra01JbF96LTBJZFVlVmV2bGtFdWN2T1NKUGRJMFBtZ2JlNzJHTVc3X2d4ajU1Z216MS1nVC1CV0ZsOG94aWxnSmpOdThtbW1pMnFnVUVranV5MWtwWlNJRzltaUxrdFJadlFxRmpNODluZ1RxUVpSQnNZMVJmNA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc5d2f22c152f",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "PM Jetten compliments Bonaire hospital after treatment for allergic reaction - NL Times",
+    "date": "2026-05-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRUt0bnI5QW94NmhCTjhPdjJXczFySzd0ZkNiZkZVQ0dOWjk3bzJWQjFaWmswOXRTUVdaOFNheHdRNWdNUEZaUERReGxhdVFYa0FMQlNpa05YOXJ3T2R6VXIzeDRuNFgxVG5yN1hKc2VrY2hFd09najd6OTkyTUtPSmxCc204WDdCZXBONFZuYWo2b3dCWnF4Y1hlT04?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g6ce0e840cfa7",
+    "type": "intl",
+    "src": "curacaochronicle.com",
+    "title": "Prime Minister Jetten visits Defence on Curaçao - curacaochronicle.com",
+    "date": "2026-05-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObGwxQXQwQk1vMmtxdTZtd3lKZnRxSUwxQlBOMGF2akRJeXlWUGFibE1PMzgzYWE5TE03bEtPdkdERGt6Vm5FMGdYNVpVLWF0T2tQNFhNX0RRSTkzS2Y0Z01OZHJfTm1MZ1B0anBTUjJRYzhROHNKdGN1R1htRkpTbFpKNG5rV1lUZTRZb1RBMmdEdDgzcGc?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g93a6f4530df7",
@@ -235,6 +345,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWVBnUXRCcUdsRGx0N3U1Zmw1NGJfTkJKWkFaN1BSaVNZcF9fU1RSM243NHZkWi1PZlBmNjhmR1c2Vl92bTE4UFBiVDhYTVZOZEZUNHI5bDdxakdITDJ0SVp3ajBxVmtZaEtycm40NUFCRlEzSVVQaGZQQ3pKTHFoRUhZY1ZqWVU2Sl9LYVJYa1BiNzdnR1ZXLW5PbHI1R2JWd29v?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g0e45be142bb8",
+    "type": "nl",
+    "src": "Haarlems Dagblad",
+    "title": "Jetten kaart ontvoering Insiya aan bij Indiase premier Modi - Haarlems Dagblad",
+    "date": "2026-05-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeHpwZ0NqbnpuOVZ2ajl1US1QaG5DbTZ6cHpBVWs2Z0JTdXJPUTRIdlp4aW1rRndOeVFEeWU0RVcyTXFYcUVSNzk3V1RtVGtlSWlISUE2VjlBMDhETHVwRm1vQ3hnMHBEQzRaV0hZNWdJUFJUVVFZcjFTNDdsSWctUzUtNHltUktDYWJsMEtkWUpKRi0wMVJDa3hPcklFcFRMLXVyUy1MMEpIel9SWVlCdFZFLWdZbTg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g37c14450f2b4",
+    "type": "intl",
+    "src": "Spiegel",
+    "title": "Niederlande: Randalierer greifen Asylunterkunft mit Feuerwerk an - Spiegel",
+    "date": "2026-05-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNZ2s5WTNkNzVyeXJuMjRqeVg5ZlhBWWtoQV9fblNrVnR2ekEwbTlWeEd2a3dUbTJjTGI5VF9xQlIxR2dWRlE5MW9KSk9Qd2R0aXd1UGhnYUIxU2xkT1ZERngzampXS3FKQUhkVDk2XzhmMWdOYkVrT2dIaTNvNkw0UWtiNDZEaVFGQnVTTWhTYXZ0ZndndXJzRllmQ2ExMmd4cmZ6Y2JOZkJaS1QzdWxieXh0bkM2MFJxQ1VTNkNIZlNOMWxTUU1IMW56Y2FjZw?oc=5",
+    "flag": "🇩🇪"
   },
   {
     "id": "g6ec30406c05b",
@@ -517,6 +647,16 @@
     "date": "2026-05-12",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTzc2VXVNb3NxaEw2WnJrcE8xeGY1MXZ6amZIS2R2WUhmR2VOY2cyT1R5WDFVZlRfYXRKRjBYek1YYkcyRlRSejlIY080NzhHamgzQ0lyS21lUVFTTndIUVdoUE9CTk9ZRzZkc1ZlUTEtUk9IQlo2ZXUzVW5PNXJGZk1nMkU3ZVhEWDFfU2V3bUMyTGhhQXFhQ2x4WkF5bndTNGJGVXhZZ1NLb2VfcWpqRFRsRDhjc3VyblRJVkQ0djNoZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g60baa42e23ef",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "Premier Jetten kort in ziekenhuis nadat hij ergens door was geprikt tijdens zwemmen - Tubantia",
+    "date": "2026-05-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOR1o1UlNfUHdoSGN0ajE4LVpsNmEyVVdoTkxjUWpOREh5N3h5X0dudGw1VmZMUWVXY1dGcDZ0X2I1d2lrODlFSVh4ODMzZkdkelV2WGdFRG11UXItUDdYWFRkcXJtSnJwc1VQVi1penVjc1ZoN1RReWJtOW9MczVxaHRDeV9laFh3SlZkc0Fsc1JjMjlLMGRJdU5mZ2NPVWRwUEpwZDZRMmpfRzNTRnFqNk5CanZmaW41dXYxbVVYaGJWTjRD?oc=5",
     "icon": "📰"
   },
   {
