@@ -36137,7 +36137,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09699&did=2026D21852",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tke999ddf2d7",
@@ -36975,7 +36975,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09831&did=2026D22118",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk1229520420",
@@ -37035,7 +37035,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09916&did=2026D22307",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tka4fda3260e",
@@ -37049,7 +37049,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09917&did=2026D22308",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk35c9862b1c",
@@ -37063,7 +37063,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09915&did=2026D22306",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkb0ebe5da2f",
@@ -37571,7 +37571,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09814&did=2026D22064",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkaef669073c",
@@ -37585,7 +37585,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09813&did=2026D22063",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk3b6e18f335",
@@ -37599,7 +37599,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09810&did=2026D22058",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk90d4a8ed4a",
@@ -37613,7 +37613,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09812&did=2026D22062",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk3dd3bbcd85",
@@ -37627,7 +37627,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09807&did=2026D22055",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk35036d0f41",
@@ -37641,7 +37641,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09808&did=2026D22056",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk3f63fb1c13",
@@ -37655,7 +37655,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09800&did=2026D22039",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9c47567892",
@@ -37669,7 +37669,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09802&did=2026D22041",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk24ff56abdf",
@@ -37683,7 +37683,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09797&did=2026D22033",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk0c29d4d5f2",
@@ -37697,7 +37697,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09762&did=2026D21971",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk399a856ae2",
@@ -37719,7 +37719,7 @@
     "indiener": "50PLUS",
     "datum": "2026-05-18",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10104&did=2026D22726",
@@ -37751,6 +37751,188 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10102&did=2026D22724",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkf9e50a84c9",
+    "titel": "Nader gewijzigde motie van het lid Vermeer over werken aan een passende financiële positie van spoedeisendehulpposten in regionale ziekenhuizen binnen het geldende VWS-begrotingskader en het normenkader (t.v.v. 36915-27) - Voorjaarsnota 2026",
+    "indiener": "BBB",
+    "datum": "2026-05-19",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10183&did=2026D22922",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkba206f09e6",
+    "titel": "Motie van het lid Wiersma over de noodzakelijke veiligheidsmaatregelen van de kazematten bij de Afsluitdijk zo spoedig mogelijk realiseren - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "BBB",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10176&did=2026D22875",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk765985c384",
+    "titel": "Motie van het lid Prickaertz over per direct de accijns op benzine en diesel tijdelijk verlagen - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "PVV",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10173&did=2026D22872",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk37ccad62fc",
+    "titel": "Motie van de leden Wiersma en De Hoop over inzicht geven in hoeverre het tekort op instandhouding van infrastructuur in te lopen of op te lossen valt - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "BBB",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10174&did=2026D22873",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk98a199ff54",
+    "titel": "Motie van het lid Wiersma over overleg met betrokken partijen over de inhoud en de gevolgen van de conceptbeheerplannen voor het Waddengebied - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "BBB",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10175&did=2026D22874",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk3c0661b0e7",
+    "titel": "Motie van het lid Prickaertz over een harde aanpak van snelwegblokkades - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "PVV",
+    "datum": "2026-05-18",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10171&did=2026D22870",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk704a2a18f5",
+    "titel": "Motie van het lid Prickaertz over afzien van de verplichting om opbrengsten uit de vrachtwagenheffing terug te sluizen naar verduurzamingsmaatregelen - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "PVV",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10172&did=2026D22871",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk00333b0d0b",
+    "titel": "Motie van het lid Prickaertz over de klimaatuitgaven binnen de begroting IenW aanwenden voor onderhoud en renovatie van infrastructuur - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "PVV",
+    "datum": "2026-05-18",
+    "thema": "Klimaat & Energie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10168&did=2026D22867",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkedc17299b2",
+    "titel": "Motie van het lid Prickaertz c.s. over het kwarttarief in de motorrijtuigenbelasting handhaven voor kermisexploitanten - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "PVV",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10169&did=2026D22868",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk2b64735757",
+    "titel": "Motie van de leden Prickaertz en Van Duijvenvoorde over de effectieve verdubbeling van de motorrijtuigenbelasting voor kampeerauto's terugdraaien - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "PVV",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10170&did=2026D22869",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk80cad8406a",
+    "titel": "Motie van het lid De Hoop over het budget voor de Lelylijn niet aanwenden voor andere doeleinden - Wijziging van de begrotingsstaten van het Ministerie van Infrastructuur en Waterstaat (XII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-05-18",
+    "thema": "Asiel & Migratie",
+    "status": "aangehouden",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10167&did=2026D22866",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk6e09240945",
+    "titel": "Gewijzigde motie van het lid Vermeer over werken aan de versterking van de financiële positie van spoedeisendehulpposten in regionale ziekenhuizen binnen het daarvoor geldende VWS-begrotingskader (t.v.v. 36915-27) - Voorjaarsnota 2026",
+    "indiener": "BBB",
+    "datum": "2026-05-18",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10141&did=2026D22795",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk97a560f508",
+    "titel": "Gewijzigde motie van de leden Kisteman en Rooderkerk over bezien hoe onaangekondigd bezoek uitgebreid kan worden naar b3-scholen (t.v.v. 36745-14) - Wijziging van diverse wetten op het terrein van het funderend onderwijs in verband met aanpassing van het toezicht rondom oprichting van bepaalde niet bekostigde scholen en het wegnemen van hardvochtigheden in het voortgezet speciaal onderwijs en het praktijkonderwijs (Wet startprocedure b3-scholen en hardvochtigheden vso en pro)",
+    "indiener": "VVD",
+    "datum": "2026-05-18",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10133&did=2026D22773",
     "toelichting": "",
     "stemmen": {},
     "archief": false
