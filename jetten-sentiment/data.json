@@ -1,5 +1,36 @@
 [
   {
+    "id": "g2d5948695c94",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jettens vliegende brigade lost asielchaos natuurlijk niet op - De Telegraaf",
+    "date": "2026-05-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMjB4MUJqVkhEVktnTUkwZDJZd2ZuejU3NjJ3OTVINzJ2czFseFhVMHFwSmVCcVZndFEwMV85LXZLSnFra0hBWjZjaURWTWxEVEpHWTRES3lqU2pnTThTLXdqNk9YZndBMHBkLXFQOWZlb0dxQ0hDY2xmWlN3eDVUNXVreU9tU2x0ZFFZVjhxX3BMWk9zYXJTZ1VER2xUWE52MWp1WDZJTVdZemc?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g190837c4c927",
+    "type": "nl",
+    "src": "Friesch Dagblad",
+    "title": "Premier Rob Jetten zou Lelylijn ‘fantastisch’ vinden, maar doet geen beloftes - Friesch Dagblad",
+    "date": "2026-05-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbzU2Zkg1V3FIN0RKY0VTdjBGcTZzMmQ3WDI4VU1aTHlueFZEU3o1S29FVVZQeTNWRjd3QmRjMHJBenZ0a1Y2a2YtSXFhRVZkbG9Nc3I0Q01XSk1KVlMwc3l1Wm5OWUNLYmd5cTNYWmE1UmVkWkhhN2Nxb3Jybzg0ZEhTWmE4bDJYR0N2eDQwcmtYTDVTVDMxNnl0bkFmUmZzMEJycURac29KY1U3RDRBbDJQZE9idUE4RVMweQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g81d5361349bc",
+    "type": "nl",
+    "src": "Omroep Brabant",
+    "title": "Brabantse gemeenten blij met hulp kabinet bij asielopvang - Omroep Brabant",
+    "date": "2026-05-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHI0RDVoRFFfX3llak5Kb0YzVkRkNjdMZDM1YV9xd3BreVpCNFNXM3RmZEE1MVhTaWhVRHQzOGU2Qkp1YXRkRjBXSU9Ib2tJVHhBSFl3ekxnaVZieXpmY2pPd2RWSHFTN0VYSTNBM05lcjhhZ091ZkxHQmpMQUI5NnJtNDBtQWFwZlptSlRZbUt4Tmc4czRVXzZnRWsyWmE5SGc?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4e8e31942fc6",
     "type": "nl",
     "src": "Noordhollands Dagblad",
@@ -39,6 +70,100 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPblNaVktodVJtdDNuSHJOWWpRZzc3TFpyX2V1QW44Y1gycGU0N19YeUtzZnlqYWFLVEFFdGR6SkVJZ0V4dkx4XzE3RXpWc0xDYXBQUzdGblNHLTJFR1hSZkpSODFKb2U3Nk1nWEdhYTNrTlBvTWx6c3JlSGFGVE44c25ad1B5aDVlX2s3YUQ2TDBSem9jeUI2SVE5RTZON3g5RFZ1Z3RfSDVXNndxNi1OVlJIcDJpU2to?oc=5",
     "flag": "🇪🇺"
+  },
+  {
+    "id": "g6ce932fea107",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "De chronisch zieke Simone wordt geraakt door minstens vijf geplande bezuinigingen van het kabinet-Jetten. ‘Ik zou niet weten hoe ik straks moet rondkomen’",
+    "date": "2026-05-19",
+    "sent": "n",
+    "link": "https://www.nrc.nl/nieuws/2026/05/19/de-chronisch-zieke-simone-wordt-geraakt-door-minstens-vijf-geplande-bezuinigingen-van-het-kabinet-jetten-ik-zou-niet-weten-hoe-ik-straks-moet-rondkomen-a4927559",
+    "lr": "right"
+  },
+  {
+    "id": "g2bd1bcbbfcc4",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Grote meerderheid noemt leiderschap premier Rob Jetten in azc-onrust onvoldoende: 'Had zich moeten laten zien in Loosdrecht' - EenVandaag",
+    "date": "2026-05-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQWFhKUkYxWHZlTTd4OVNETXBRSkxxQW1ESVBLRXVTWUg1dndXM0FxRjM2VTBPNEVSNFRtbkI0b1RRN19fU1FSNUZTM2lING5DVGp1U3duZE1uZHhIMGkwN2gxalJEUVZsai0weVZacjViemlIbTFxRW90UFRLWDJjbHFoZW1kT0RMdkkxWVo2eWlTYkZZYTVRTHo3VXBPRGFFNlhUaUU5bXNodEZrQUlCM3dyMWZ1RW96Y0hOT1hRaGN0ck15a3dka3dja3FKN2NUSlhEUlFhR2FOblNBaEV6d2VSYVlnaTlYdEJSbHA4STNSR0Z0N3d5alNPMXVaWnNBRlVKaVlXVHJGMEFrcWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0da4aff1a8e2",
+    "type": "nl",
+    "src": "nieuwrechts.nl",
+    "title": "Na azc-protesten blijft spreidingswet volgens Jetten: 'Geen twijfel over' - nieuwrechts.nl",
+    "date": "2026-05-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNRzI4TndNTGZBMUxqRnVtWUZHYUdScktCc0FvOVpPZ2c4SFJiampSSTMxZjRDM05LWXpWZjZqbmlMeGlLNzN2MDBIa29BNVRiYnRZcGs1dGpmY0dOeFJacDl0U09McHBWcmRuQXNPZm0zcWdtNHg1VUNVU25NMHpBdE1NbUt2TUE1LU5yclc4VWk2VXZ1TVBQaGlIU2ZNX3JrdUE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8e55135d210c",
+    "type": "intl",
+    "src": "Leeuwarder Courant",
+    "title": "Premier Rob Jetten zou Lelylijn ‘fantastisch’ vinden, maar doet geen beloftes - Leeuwarder Courant",
+    "date": "2026-05-19",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNXRCVjZ6UFdROEJ1ak5jRENmWDhObUR4cFhVRkR2UUpsYVBWcmpJT0kyZVVpNzNTczlDWE9ocVdRVGxuTmc0Z1hQVW42bkZVaVVDYlNKNm0zTXFSS3hlbTNNa29hSUJLcmJVUzBvNEUtLU9hVkcybUxqT0JLUWViTG1XWVYzV2xTeEVfUTBrM05iOUxMRHU1dmRoNEpreGhwVTBQMWlLcTVfdDh0WEtEMlh3?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "gf168a5f4c4d0",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rob Jetten reageert op buitenland-kritiek: 'Niet voor de voeten lopen' - De Telegraaf",
+    "date": "2026-05-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNGFtaFQ5ODNXWUhoYnduVnNwTFBUdHBJNUhuQ1BjRFZIYVdJNUMzOXp1eTVKYlF1UXJlSUpXR0pPeEZDMGVBN2dFNUVGQmM4T21MX05jZnNSWTVJaF9Vc0laamU4SGhZRUxrUWxJM21lNUdTTW5QV3BGbmlVcVluMWFtQWpJTXg5WVRfY3YzUWpjSTFRbTA4dmdtcWNFa3daSkwxdzJzMU9saTZJZjVleUpzVQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ge73da9119c16",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Haperende start kabinet-Jetten past in Europees patroon van politieke verlamming - de Volkskrant",
+    "date": "2026-05-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQWJJS204UV9hWHlIdWlrREJQNlZWUmtmbnZzdWh0US00czdfLWtheFpBRHh5NHBCanhOYVpMR1BlSFV2dzBTVUdqeFMtampCdW9MbXdEdXZyZ1ZNNVlGblhQS3ZhMzFBWnU5RG1KSjVJcG5tczhjeDVSczFvc3JvV0kyN0JkaUNEMzRpVlBaVWNMNUhCVzR1WXo0dUpsNTJTdGVNd1lRb2hoNkFSNjkzM2ZQUHVscFRsZ0JrWC11VjYwUkU?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gef90483dfdec",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Asieldemonstraties: gaat het kabinet gemeenten dwingen tot asielopvang? - RTL.nl",
+    "date": "2026-05-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUVNfODF6azY3N3BpR3ZQREpmcVFMQnQ2Y1k1dFl4d1p1ZzhQZG9EWTgwOFlXV2FqY0F0UktaYmFtM0xzZ05LT25hODRiejRFQ3F4dnNOMEhEazBCVVp6NlJVdG5kRWYwSFVsbDI3eHFqX091em9wWmd5SkR1c3JzNFdwa1hEalRJMWVUZHVXeVFteHE1V1FoQTQ1b0I4NEt6Y09uNnh2XzJzWHgyZnF3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "geb3fb3da092b",
+    "type": "nl",
+    "src": "NRC",
+    "title": "De chronisch zieke Simone wordt geraakt door minstens vijf geplande bezuinigingen van het kabinet-Jetten. ‘Ik zou niet weten hoe ik straks moet rondkomen’ - NRC",
+    "date": "2026-05-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNWTFTeDNVTHlPVWNBZ00xakcxZ0JSSVJZN3Fqa29MRmlDR2dsQzVHUk12U0RrVWhGcFhod3JCTEZLQlRVZl9yWFlSY1dtUDhlNEhsc05Kc3ZfLUhTTUNqZGxYaGxUOUJYVnE3SHdKc0FKc1JvWl9Rb2k2bldTYm9RSkM0cnN2Y2ozMXJ4T09nZjZhd3d0czRXYXVGYkJyYWNseWdkb3dxZTRjMDgtclg3RC0xRkx6d3hfNGtSYzB0VFJFeGIyaGhXRnlBU2tKVnhfWU1yUWJ6UFNwMV95S2UyXzIzdTNKMW9tUi1ST2tjUWI4QUFHNGlmZmFKWFhjaVlDdzV5UmJla3BDcjlTMk5MMFdJLXRWQ2g4YjRqZTVvRzAtdVk?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g815e326796a2",
+    "type": "intl",
+    "src": "MSN",
+    "title": "India rebuffs Dutch PM's reported concerns on press, minorities - MSN",
+    "date": "2026-05-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPODRRd1dUM3hmQUZfZkpKZloteVNabWlTOXpnT0JZMjh3Q2Noak5wVGRTOFVHRUVFWmdWRFVLTjFpTE1kOUdQWGRJdU1MV3d5ejk1V0lSM1p4TmV2NU1QaVNsMkUzUlRhQXBGYmJXalg1QWVsU2lwRzVTdjhHLUxBYUZDWlN2X2JDWTlEZ29TNFpGaV9tMGZEZWdJT2VtQTJ4aG10N2hpRU11blBEQzdHTjBjOU1YTi1KVDU0NndZczNCbXJvQVR3dlBGOUx5eHJRaV9YYVZYQXBtS2lGdVM2YlludXZzOTE5OV9QSkYtQmVSSWZLQUNZ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g31688d900140",
@@ -426,6 +551,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gc35e3a745b6d",
+    "type": "nl",
+    "src": "NU",
+    "title": "Kabinet overlegt maandagavond met gemeenten na geweld bij asielzoekerscentra - NU",
+    "date": "2026-05-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVnJtaUsyN3dLWmpzMUdsM2xsZXdwTkh5N1gtVEJJZDk3aE5SSDg5b1Fxc0VhNmdfTkNCMUFKbXRKNk5RQmZmZzNfN2hTc2lNQS0zVHRnZTlldS1HdHdLVjN3dHlqclhMTGpydXRNWlFNbjcxS0gteXN2VThsRDIwNmVLNl9tVWhNdzFaSmRTUERQMjc1N0VIYWFSQjEwT1FPbjl5UzU3a1dLUWtBdVRGcy1mYnV3SzdZbWVr?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4c38053dfdba",
     "type": "intl",
     "src": "Al Jazeera",
@@ -742,6 +877,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g782d65119bca",
+    "type": "intl",
+    "src": "DD News",
+    "title": "PM Modi Visits Iconic Afsluitdijk With Dutch PM Rob Jetten - DD News",
+    "date": "2026-05-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVVctWkoyNzRYSWlfM3hydjNKbTVHNktHNGpOS3dGZ09UT29GbmFPU09QWjlvcjdBdHRQTGdGU1NOeGtLNEJHUm4yUWVyRVRnVU1RR0hxOURCZWw1eGQ0WHplX21kRjNLZzl2Rm5EOHpnYlRpSDhYRWhBWGdfbm8xNXpQQ1FRM1hjTHVLVA?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb3c495d05d11",
     "type": "nl",
     "src": "NOS",
@@ -1052,6 +1197,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSnNDZmdlMFVKektTaHJPa1l3NF9YR2NMbS1LX2phd0pwLVJwakxHWWpBSU5Fd2I0ZTdiaTd3SEJVYzQ2bVNYV3JERnpiYkI3UEFGZFRpaGw4VFpQZXBqSVc1ZEMxODhPSS04ZF90bFFHMHJrQ0V6QzFyUVNNQzRybjdMRHMwTlF3UDlZSTJwV3J5cHlCWUpsY0ZSRW9QelBrMC1abXBQZlhwZTNEdEtuTi1ZOGxWUFpMLTVfY2s0MHJvTi1WZTgzQWxrLU9yQU5namlZLXY0QTV0bXJUdXRMNHA2RkNrcUdKeS10aDN3?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g3d41a3677a30",
+    "type": "intl",
+    "src": "Reuters Connect",
+    "title": "India’s Prime Minister Narendra Modi meets with Netherland's Prime Minister Rob Jetten at the Catshuis in The Hague - Reuters Connect",
+    "date": "2026-05-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOejdiSEFVOE1tY21mWlVpSmpyQkZyc2s2OTIzSjlhOXFmbWU4djkwMlp3WmVob2xwQ0t3RU1tOEhBT1JqWDdDOGxzaUpsNjdRRzZ5VloxTFNDVl9NYlV2R3c2TkUwV2NVZHItRXpyQzhvZU1ZTjlnV2tteHVnTXhBS2REVHNTMUp3d0VzdWJSZk91RHZRTWNtX2hlZHJuZWQyTnRUV1p0cDZnNHByZG5nanpGX0ZJZTdTSVRiMnk5dmZJc0d0Uzd0SV8wdEVzNWZRLWY3eVZCc1JiX1o1c3FudTlPbVFNS0JFRkd5eHE3S2Z3LXI0bGgxQkYzSk5hOWlGSVlzbnZrTW1feURlTFREUzBhbXJlWkgySnBFQUpPZlFQVE5fZzNOSEpPVVg?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "g9164a032b022",
