@@ -1,37 +1,5 @@
 [
   {
-    "datum": "2026-05-19",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03854"
-  },
-  {
-    "datum": "2026-05-19",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03855"
-  },
-  {
-    "datum": "2026-05-19",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat BOA-stelsel (CD 12/3)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02266"
-  },
-  {
-    "datum": "2026-05-19",
-    "tijd": "2026-",
-    "titel": "Wijziging van het Wetboek van Strafrecht en het Wetboek van Strafvordering in verband met het verbeteren van de bestrijding van heling, witwassen en de daaraan ten grondslag liggende vermogensdelicten (36036)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2023A00052"
-  },
-  {
     "datum": "2026-05-20",
     "tijd": "",
     "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
@@ -50,18 +18,18 @@
   {
     "datum": "2026-05-20",
     "tijd": "2026-",
-    "titel": "Goedkeuring van het op 23 mei 2024 te Abidjan tot stand gekomen Verdrag inzake luchtdiensten tussen het Koninkrijk der Nederlanden en de Republiek Ivoorkust, met Bijlage (Trb. 2024, 68) (36700) + Goedkeuring van de op 17 oktober 2022 te Bali tot stand gekomen Uitgebreide Luchtvervoersovereenkomst tussen de lidstaten van de Associatie van Zuidoost-Aziatische Staten, enerzijds, en de Europese Unie en haar lidstaten, anderzijds (Trb. 2022, 132) (36634)",
+    "titel": "Herindeling van de gemeenten Hilversum en Wijdemeren (36865) antwoord 1e termijn + rest",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02120"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03862"
   },
   {
     "datum": "2026-05-20",
     "tijd": "2026-",
-    "titel": "Wijziging van de Luchtvaartwet BES ter invoering grondslag openbare dienstverplichting (36862)",
+    "titel": "Tweeminutendebat Raad Algemene Zaken 26 mei 2026 (CD 19/5)",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03082"
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03941"
   },
   {
     "datum": "2026-05-20",
@@ -86,5 +54,45 @@
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03859"
+  },
+  {
+    "datum": "2026-05-21",
+    "tijd": "",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Raad Algemene Zaken, en eventueel over moties ingediend bij het onder voorgehoud geagendeerde Tweemintendebat Landbouw- en Visserijraad en het onder voorbehoud geagendeerde Tweeminutendebat Raad Buitenlandse Zaken Handel)",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03944"
+  },
+  {
+    "datum": "2026-05-21",
+    "tijd": "2026-",
+    "titel": "(onder voorbehoud) Tweeminutendebat Landbouw- en Visserijraad van 26 mei 2026 (21501-32-1792)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03942"
+  },
+  {
+    "datum": "2026-05-21",
+    "tijd": "2026-",
+    "titel": "(onder voorbehoud) Tweeminutendebat Raad Buitenlandse Zaken Handel van 22 mei 2026 (21501-02-3393)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03943"
+  },
+  {
+    "datum": "2026-05-21",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat De tweede cyclus van de Spreidingswet (CD 23/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03773"
+  },
+  {
+    "datum": "2026-05-21",
+    "tijd": "2026-",
+    "titel": "Wijziging van de Wet terugkeer en vreemdelingenbewaring met het oog op het handhaven van de mogelijkheden om maatregelen te nemen ten aanzien van overlastgevende vreemdelingen (35501)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2022A00786"
   }
 ]
