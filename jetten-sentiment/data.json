@@ -1,5 +1,76 @@
 [
   {
+    "id": "g39d679ba013c",
+    "type": "nl",
+    "src": "NH Nieuws",
+    "title": "Premier Jetten bezoekt Haarlemmers die vluchtelingen op weg helpen: \"Zo kan het dus ook\" - NH Nieuws",
+    "date": "2026-05-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYUx1QmZhY05YbVFBVTZRV0RKQkp4MVI3b3A0TURZc2sxR1h2OV9Ta2dia2h3Szc3MUkxbHpJeks4RXNvcC1mcENUc00xUGJYcER4dkpCYnNQNExoT0ZLbkFaVHlXVGtacXNEbVB3SENDWTBxT1Jad2JUcjhzV0lCUnFlQnlYdnJaNWtrZlo0emhtNm9sRU1sOEVCMjVsT0JLVUZOUjdJSTQ4YU1YUVlZR1VjYUlGSXMyU3QxUGhVbUs?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1bb40a4431cc",
+    "type": "nl",
+    "src": "rodi.nl",
+    "title": "Van asielopvang tot daklozencentrum: premier Jetten op bezoek in Haarlem - rodi.nl",
+    "date": "2026-05-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOck1BSUxmYkNLaElUcWQ0RVdxUzR6bXlya21GN2FyVUxMblQ2T2tLRXVmWmZyOWZIUHZqQmFHNXlyT09uTmprM1lJNTRkRGp6WGQzMnN3R3BDcUh2RTFUWERKTUdEU0x1MGstdnJiVkJkaGZucXNzSVBjTTFqYUU2QW9pVURGNm0zOG85UEs1VERYZFdtb3dqbUxmNl9hQkIyNmt4Tndud1JCbFd2U04wUGpOTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd7b36f453ef8",
+    "type": "nl",
+    "src": "Omroep Flevoland",
+    "title": "'Ik ga de premier omleggen' levert Moreno uit Almere twee dagen zitten op - Omroep Flevoland",
+    "date": "2026-05-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcnQ3MGVpVnNPaTdibFJvVE5xTVdSaVhtVzVtUHhOV0ZpMzNIRnhmUmZLenBienN3OHpoVkRaRUJqNDJ2aVREZERHWVFPUnRtV25NNnU3a05UeXFTUV9vemN5dG9KLTBaQVZPU1FRSXhCNkNfaHBNOFhmSkotSFVnMVZGMGVhWkp1V3VFcW1raWdJRXE2WXhSeTVsT3RUQW8zY2x1SmpiWlJMY2dlcWdpcVBBMHVyUW5QQ2hHVWU5OA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6750b1542687",
+    "type": "nl",
+    "src": "Amnesty International",
+    "title": "NGO’s horen geen enkele nieuwe maatregel richting Israël van kabinet-Jetten - Amnesty International",
+    "date": "2026-05-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMmpFZGc1V0FSMFVEN3RUNTUwS2tYZU1DTjBpYmQ4aU9DUlZET0RFOVAzNURXRWp2TmVLX1BJZ0FGNTlzT2xhVGNjTHNXRHkzYW9iMGRObnM5Q0VPQXNTa1BPalMwRWpaNXIxc1lxQWZFNmFJRUE1QmRlYkNjSVJaWThSdlZMZVlnd2FOWXNDc3Y?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0bc0b7a3de86",
+    "type": "nl",
+    "src": "paxvoorvrede.nl",
+    "title": "Israël-Palestina: kabinet-Jetten, (nog) niet anders dan kabinet-Schoof - paxvoorvrede.nl",
+    "date": "2026-05-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTmU0X25pelZjUkMyQVJwd3RxUXRJbzdjSHVwWEJMNmZScmw3NTNTaDVSQUhMWmt0MDdUUV9XSnRfRDRVZ0I4Y3lTTDhnVFp4Q0Z4TUktaHRpXzkyc3FwQUY3S25pR2NfQVlaRjQ0aS1TRVJqSzF0TUp0Y2RIRWZJdkpZcGZwTkxKYkdUZnFaNXZZd2FYT21manVhS3c2TUE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4bdd4f885031",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Nergens steun: het wordt nog een hete zomer voor het kabinet-Jetten - Wynia's Week",
+    "date": "2026-05-21",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN2RxOUQ5RjdsaXhvV21PSFZRanBnTnJNNkR5QjBPN1BrVmItNWpmeWNzdHVCQjlSNHdBM2NpUkJYZFlwZTFlUnkteHQxZmxkOGtzNjNvanBSYTJ6WTNfcnlvVElfLUZyaWh0dHhSTjlkVVBZN0hPRTJKXy1oMF9QRXZ3eFROSWdMcnQyWFRWRlJZVlNXVGFPcQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gacbd4380197e",
+    "type": "intl",
+    "src": "Dawn",
+    "title": "Modi govt’s tightly controlled script comes under Dutch journalistic scrutiny - Dawn",
+    "date": "2026-05-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdnFtSVBuU01pWTNFUDhpb2pVcTBjU2ZMZXFZWFdNLWJ2Qnl2eHJ4Q3NLbmQ4cERRclczVjNXMmRJYVdiZkM4amgtZnNfeXR3cDBhZHpxWmRDaERENnBrVlM1VWFnWEVaaHVCSTl1MnlRUTNERFZTdDhocUp1WDJPVGFzXzlGQWZBZFZYcXNCVlV3OG8tdGVDenB5NVlmMTBfek9WV0J4U2ctRFVGODM00gFOQVVfeXFMT2J6REZpc3Z1Smp2UGt2ODhMN0R6cWtGcU9jUTQ3QTVPMTBiQUlIMHN3WHFGcEFUUTU5MHV1bHl1akxCTEV5ekNwT3FkNjNn?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g2d5948695c94",
     "type": "nl",
     "src": "De Telegraaf",
@@ -29,6 +100,118 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHI0RDVoRFFfX3llak5Kb0YzVkRkNjdMZDM1YV9xd3BreVpCNFNXM3RmZEE1MVhTaWhVRHQzOGU2Qkp1YXRkRjBXSU9Ib2tJVHhBSFl3ekxnaVZieXpmY2pPd2RWSHFTN0VYSTNBM05lcjhhZ091ZkxHQmpMQUI5NnJtNDBtQWFwZlptSlRZbUt4Tmc4czRVXzZnRWsyWmE5SGc?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "ge17a86040e65",
+    "type": "nl",
+    "src": "Haarlems Dagblad",
+    "title": "Premier Jetten blijft voorlopig ver weg bij Loosdrecht: ’Ze zeggen me: laat ons alsjeblieft met rust’ - Haarlems Dagblad",
+    "date": "2026-05-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNTFdLWnJ6QlFWOW9WcTNIQ0dxYzE3MUNGdkNheUsta3RtWExtWWdyNjZyVFUyNnMyUGNHMGljOC1Bc0F6elZFbXJxajhiWDd4c0dhbkVUZm9CZldpcV9FR0ZlZDJSUkY5X3NOUlBTd1VPc1VJWC1RdDYxRlJmZVNWejItN0tfd2I5YmVKU0xDMkJ6bDdkTjRKdmJ0enllaVZyMTgtRGlER3NjclJTdUQzZDBYQVJFdXVSNkE1aXJvcDVsT3M5NW9ZUl9jS3NNNEdlQ2JtZXJSTDE3YjRIWHZnc3BPLXVuYUZOczRmNkt3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gce451dacdaaf",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Premier Rob Jetten en Kamerleden kunnen fluiten naar snellere terugkeer naar het Binnenhof - de Volkskrant",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNYXNJT0lrNUdxOTlweVpiRVYzNjFOa2FobHFTUDhpc2NqNmNvNVZlX1JfYmtEUElhMFNLSTJBSzV0ZGtSZ21JTkdIMnhLTVpGTmV1ZHhFWWNxdmJKM1dXR1ZBVEVkOTB4MWZXOG0tc0U1cFFvWnBXMzRTZjVSVXlsMVl1Vm5RR3dpRVd2Y3F5RjFmT2lmbV9Xb2lTNHMzdi0wUmFONmx2NExFV0RWS25BellKc0JkRFlhWTJKWkY0eW5yeGthYzBCMWtLUU9MaEN3?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g9eee21edb416",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Celstraf voor man (28) die Jetten bedreigde en discrimineerde op Facebook - AD.nl",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQUXNhQWNTdmtrVVprNGU2eV84YVhwU2g4TGRGbGUwRWVKY1JGdWNhaU9OamxrRDNkZmtMTUNqZi12eVk0Y0NXTUsyU3FuMVhta05NT0VJRjlVSlVFbldqUlRtWVl4VGJSbTMxXzE2MENSWHhINldra2dERFhhdjNzUlZKa3JwMmJPZnp6VzFPWWp6NXo2TWFrMFQ1SUJ3TTZsRWl4RkxTc21obDJB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga6801763592b",
+    "type": "nl",
+    "src": "Openbaar Ministerie",
+    "title": "Celstraf voor bedreigen Rob Jetten na verkiezingsuitslag - Openbaar Ministerie",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMGVaOTd4Xzl4ZkJHSEhIWGhNa2RwN3ZHZmlUUGpWbk9Fd25ISTNzcXNTR1drY0xwc2JqTUxqdDE3aHlHQUFaX3Nlby1qM193V0ZTMVZ0UlViYUZNcjdZSWFlUXEzQWoydUFCbE9RU2VlRTQxWEFwblBlajVWb0VIR3JESk1FdXBhZC1pWXJtZEZXNnJUbjVvalJhVmRBR1h1NVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g54b7807d748b",
+    "type": "nl",
+    "src": "Nederlands Dagblad",
+    "title": "Premier Rob Jetten en Kamerleden kunnen fluiten naar snellere terugkeer naar het Binnenhof - Nederlands Dagblad",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNalRBU28xelVBWHhGNmlaNU95SmtZMWMzb0JoT3ZMdDFVaVg4M2dyR2s4ZGEzZWxMUEFNTVBma0w4QlFkQWg1M2kzNEIwQkVKOXBVelI2QUFWcGp5WVpXRzczaUlFTm4xZjFxTTJ3b203c0xLYjdHbm5DOTZyYkZsNHQ3dG1RZFozV1gxalRnS0dzV21ubmgzbTNkNVY3bGp0M1EydUpB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g33bae620d335",
+    "type": "nl",
+    "src": "NH Nieuws",
+    "title": "Van dakloos tot geholpen: premier Jetten bezoekt bijzondere opvangplek in Haarlem - NH Nieuws",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWkw0YnMwaWFxOHFCUHE0aGZxcFMzY19iQkRBOExRUlczRjVpNERZek40S2JFN3NZbWhsUmtGcWY3VEJqcjNZUkdxRWR6RTFCWUF6eFVydzlEbUtDbXM5WHRZUDZHTlVEWVZNdFJ6SE9WemdTUmN0dVNuem5iRFdrZFFjNGdCWFZGTjR4bHNCNWVOaTIzRkJFbVVXeGFUaUVWbHVtVmJib25JTzktTUtuRkkyZjdjaVhqckE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g184037290d4d",
+    "type": "nl",
+    "src": "mobiliteit.nl",
+    "title": "Landelijke ov-staking aangekondigd: ‘Gericht tegen plannen kabinet Jetten’ - mobiliteit.nl",
+    "date": "2026-05-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNemR5aXlpOExYcUh0dFk2bDIyT0pYTHlzbW5RMmVvTm1pWmVtZTB3aVFMd1h6c1k5WDdxNk8xaVhIaHMtV3FQaE1MWEtveDR2LTcyLW5RV0tDR2N5TUprcmJHdU1sWXhtTk54YktaU04xWFBiSWd1ejFoZ1hVT0szTmJHaFJEYW1kWDlMSFVTNkUyOGdvRlgybUFKN2RSTFZuelFSX2o3QnZ6SThnbXo5MDJn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g65cc87284963",
+    "type": "nl",
+    "src": "Vastgoedmarkt",
+    "title": "Onderzoek: vastgoedsector heeft weinig vertrouwen in kabinet-Jetten - Vastgoedmarkt",
+    "date": "2026-05-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOc1lDU0VrQm9oVFIzQXdBSFM4M1JScEZJenh2VHpCV1hwemYzanZLTlZucE9fMDRVaEpTZVdkRWJCVmhxR0E1U3JDb195Szd5LU5VWHFhYTU1UXI2ckxWRnFPeTZNOXlobUZOVTBsV3hkQWd0andJSF9tYjNLVzJUVnhxb3JWdDVMS0d4UWN4OXhMOEYwUDJCTlB6VG9UYlp6SGFXTA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb43b1cd44d09",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten spreekt Israëlische president aan om 'mensonterende' behandeling opvarenden flotilla, kabinet ontbiedt ambassadeur - De Telegraaf",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaHExOFE3MW1iMHZGNTJibGIzRTJ6Y1VOdEQxUVB3RXc5ZTFSTXBhczZ2RXZjUmgxci1ObXZhTzJ6RmJBMlBXcW8xdHNBWGhyd2N3SGZzbWl6cTNfWW9RTl9RYVFxMVo1cGdrTDF5X09RTG9PQ0VMajRxRE0wSHhvNlRLeUt0bFE1T2d1dDZCa3hnaE5ZdEEwblpiWnBTRzBKR1RkbzFQdVdqdW91V05FaVcyYlhQZHc4U29sdzBqRV9NeVQ1U2paY0hIOWJwS0RzeXRBazlRenNXY0VmT0pVQlRNbEg3OVVfb29pSVZaQjJWZUlQSU1xY19GRQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g9f97e7f2a315",
+    "type": "intl",
+    "src": "驻荷兰大使馆",
+    "title": "Ambassador Shen Bo Meets with H.E. Prime Minister of the Netherlands - 驻荷兰大使馆",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1xZ3FxaWZIZzRYTENQcmpoajMwcEpqNWNNRThzRWR5dE5vbEV6dGlFODNhaXJmZldRZVZQMjBNT1NBbk5jZTYxNnpRSXNMRzQ5Y2t3SkF2XzNuTFc2ckFaY2FuTEc1VHpGb2V6WXdtWmgydW1pcU5YaTNB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcff264719428",
+    "type": "intl",
+    "src": "31mag",
+    "title": "Umiliazioni e sevizie agli attivisti della Flotilla: Olanda e Belgio convocano l'ambasciatore di Israele - 31mag",
+    "date": "2026-05-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaFdZeGotQnpMR0JOZUdNWnYwUDAzRmg1elEyM2dkRzVrVlg5Y0lueE5WdEpZbjc4cDBqUkR5akxMM0pJQTUxbjExQ0ZEWnNfMUNad2VHbV9IT1BLUUZ1YmJ4eHJvRUVEZnpLczR6WE5EWlFPYUFNTjB4M0x4WkV3a0w0LXg2bGpSY1hCdlZfd2dLOTc4aEt0UjlCczB0bXc0YXJYM1VEY2RHbUM3dlhlNjhCLTN5ZG94d182X1dOR2o0UQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g4e8e31942fc6",
@@ -559,6 +742,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQVnJtaUsyN3dLWmpzMUdsM2xsZXdwTkh5N1gtVEJJZDk3aE5SSDg5b1Fxc0VhNmdfTkNCMUFKbXRKNk5RQmZmZzNfN2hTc2lNQS0zVHRnZTlldS1HdHdLVjN3dHlqclhMTGpydXRNWlFNbjcxS0gteXN2VThsRDIwNmVLNl9tVWhNdzFaSmRTUERQMjc1N0VIYWFSQjEwT1FPbjl5UzU3a1dLUWtBdVRGcy1mYnV3SzdZbWVr?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g17d48ee5780b",
+    "type": "intl",
+    "src": "The Independent",
+    "title": "India reacts sharply after Netherlands expresses concern over minority rights - The Independent",
+    "date": "2026-05-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSDUycVJWMTlPUlVUdVhwUXlMaUFEdjB5WDl3T01vMGhSS00zR2tXUWFfeGVaSmxMT2ltX2RRQkp5U1N1Y1JGM2ljQ0Nfa3RmRVlGMXRIclZGUUw1RkNEeXJKdGluc2RSNkh3Z255blkwZFR3QWx6YlQxX1Z3X25lZDUyem9fSjhFUXl2QmZhN1VIT0R4dVNPNW10OEtzb0VCdUZfWWNORWdsRTBqOTR3?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g4c38053dfdba",
@@ -12349,6 +12542,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUjc3VUNGcnpBbUJZZXNabUh0QUplbjhvNm91N0Qwd3ZkSk9BSlp0ZjZZOUJ5Y1hkT0tIMF9DeFI5ZGE0MW5fOGFON1pSbGh5TDZSd05LYkxMUUxsYnVOSGltVXlleVFIRlVBX2E1MWltaE1XbTFmVzNxSmpNUVBzbGxCbXVHODJnS1E?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g9ee3d54e0819",
+    "type": "intl",
+    "src": "ARD Mediathek",
+    "title": "phoenix der tag: Antrittsbesuch Jetten: Niederlande und Deutschland zeigen Zusammenhalt - hier anschauen - ARD Mediathek",
+    "date": "2026-03-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNZXdQZHBNbl9QUFFRWHFYR2xfOEs4YW1yWFg2bzlwalBMTWhLdWgtN3VVdFM2dGRTTVRQX1JCQVdlNE5tXzlLZVF6ZXJqVFloUlBYcEtadzRWSGdtQTZ3djc1LW9ZOVdmTnRUbThmeEpYemJWVjNjNW5yazlxSDgtSFVOWU1GN3RXX2dMVzIzcVFTdjFlaks5NllBZjNBcUtMcGhUN3VvSmNpZkowSHZUSUZsT0UyVlRMUlZpY1lFTEFXTVZYRENSVVF6eHJ0X3J6Sm80OGNMZE1zTTJOd3g5ZDNNYkRwakxraXlaX0ZVcjBTcDZk?oc=5",
+    "flag": "🇩🇪"
   },
   {
     "id": "g8a35a9165efd",
