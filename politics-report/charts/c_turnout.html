@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{--ink:#18160f;--ink3:#7a776e;--ink4:#b0ada4;--rule:#d8d3c8;--paper:#f9f7f2;
+--red:#b83218;--blue:#1f4f96;--green:#1e6b42;--amber:#9a6b10;--purple:#5c3d8f;--muted:#c8c4bc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{background:var(--paper);font-family:'DM Mono',monospace;font-size:11px;}
+.wrap{padding:16px 20px 20px;}
+.lbl{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);
+  margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--rule);}
+.leg{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:10px;}
+.leg-i{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--ink3);}
+.leg-sq{width:10px;height:10px;border-radius:1px;flex-shrink:0;}
+.note{font-size:11px;color:var(--ink4);margin-top:8px;font-style:italic;font-family:'DM Mono',monospace;}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const INK='#18160f',INK3='#7a776e',INK4='#b0ada4',RULE='#d8d3c8';
+const RED='#b83218',BLUE='#1f4f96',GREEN='#1e6b42',AMBER='#9a6b10',PURPLE='#5c3d8f',MUTED='#c8c4bc',DARK='#3d3a30';
+Chart.defaults.font.family="'DM Mono',monospace";
+Chart.defaults.font.size=11;
+</script>
+
+</head>
+<body>
+<div class="wrap">
+  <div class="lbl">Voter turnout by years of citizenship — naturalized, October 2025 (%)</div>
+  <div class="leg"><div class="leg-i"><div class="leg-sq" style="background:#18160f"></div>Voted</div><div class="leg-i"><div class="leg-sq" style="background:#b83218"></div>Chose not to vote</div><div class="leg-i"><div class="leg-sq" style="background:#c8c4bc"></div>Not yet citizen in 2025</div></div>
+  <div style="position:relative;width:100%;height:240px;">
+    <canvas id="c"></canvas>
+  </div>
+  <p class="note">Turnout rises substantially with citizenship duration but the abstention gap does not close entirely.</p>
+</div>
+<script>
+new Chart(document.getElementById('c'),{type:'bar',data:{
+  labels:['Under 2 years','2–5 years','6–10 years'],
+  datasets:[
+    {label:'Voted',data:[48.5,68.8,75.0],backgroundColor:INK,borderRadius:2},
+    {label:'Chose not to vote',data:[21.2,31.2,25.0],backgroundColor:RED,borderRadius:2},
+    {label:'Not yet citizen in 2025',data:[30.3,0.0,0.0],backgroundColor:MUTED,borderRadius:2}
+  ]},options:{responsive:true,maintainAspectRatio:false,
+  scales:{x:{ticks:{color:INK3},grid:{color:RULE},stacked:true},y:{ticks:{color:INK3,callback:v=>v+'%'},grid:{color:RULE},stacked:true,max:100}},
+  plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>ctx.dataset.label+': '+ctx.parsed.y.toFixed(1)+'%'}}}}});
+</script>
+</body>
+</html>
