@@ -3946,8 +3946,12 @@ function loadCFForReport(reportId) {
 // Load the index posts feed
 document.addEventListener('DOMContentLoaded', function() {
   fetchCFPosts('politics', document.getElementById('ix-grid'));
-  var redirectPath = new URLSearchParams(window.location.search).get('p');
-  if (redirectPath) history.replaceState(null, '', redirectPath);
+  var r = sessionStorage.redirect;
+  delete sessionStorage.redirect;
+  if (r && r !== location.href) {
+    var u = new URL(r);
+    history.replaceState(null, '', u.pathname + u.search + u.hash);
+  }
   routeFromPath();
   window.addEventListener('popstate', routeFromPath);
 });
