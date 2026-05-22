@@ -3814,7 +3814,21 @@ function cfRichTextToHtml(node) {
   if (nt === 'blockquote')         return '<blockquote>' + inner + '</blockquote>';
   if (nt === 'hr')                 return '<hr>';
   if (nt === 'hyperlink')          return '<a href="' + (node.data && node.data.uri || '') + '">' + inner + '</a>';
-  if (nt === 'embedded-asset-block') return ''; // images: extend here if needed
+if (nt === 'embedded-entry-block') {
+  var target = node.data && node.data.target;
+  var ct = target && target.sys && target.sys.contentType && target.sys.contentType.sys.id;
+  var fields = (target && target.fields) || {};
+  if (ct === 'chartEmbed') {
+    var url = fields.url || '';
+    var caption = fields.caption || '';
+    if (!url) return '';
+    return '<div style="margin:2rem 0">'
+      + '<iframe src="' + url + '" width="100%" height="340" frameborder="0" scrolling="no" style="border:none;"></iframe>'
+      + (caption ? '<div style="font-family:IBM Plex Mono;font-size:.52rem;color:#888178;margin-top:.5rem">' + caption + '</div>' : '')
+      + '</div>';
+  }
+  return '';
+}
   return inner;
 }
 
