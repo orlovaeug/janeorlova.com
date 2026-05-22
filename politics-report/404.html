@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jane Orlova · Political Research</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f7f3ee;
+      color: #0c0b09;
+      font-family: 'IBM Plex Mono', monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem;
+    }
+    .num {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(6rem, 18vw, 12rem);
+      font-weight: 300;
+      line-height: 1;
+      color: #d6d0c6;
+      letter-spacing: -.02em;
+    }
+    .label {
+      font-size: .52rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: #c0392b;
+      margin: 1.5rem 0 .75rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .label::before { content: ''; width: 1.5rem; height: 1px; background: #c0392b; }
+    .msg {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      font-weight: 300;
+      font-style: italic;
+      color: #0c0b09;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .back {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: .52rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: #0c0b09;
+      text-decoration: none;
+      border-bottom: 1px solid #0c0b09;
+      padding-bottom: .1rem;
+      transition: color .15s, border-color .15s;
+    }
+    .back:hover { color: #c0392b; border-color: #c0392b; }
+  </style>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      if (!path.match(/\.(html|css|js|png|jpg|svg|ico|json|txt)$/)) {
+        window.location.replace(
+          '/politics-report/?p=' + encodeURIComponent(path + window.location.search + window.location.hash)
+        );
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="num">404</div>
+  <div class="label">Page not found</div>
+  <p class="msg">This report doesn't exist — or has moved.</p>
+  <a class="back" href="/politics-report/">← Back to research index</a>
+</body>
+</html>

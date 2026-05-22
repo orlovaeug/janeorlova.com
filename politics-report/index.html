@@ -384,6 +384,11 @@ nav{
 /* BODY TEXT */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin:2.5rem 0}
 .prose p{
+  font-family:'Lora',Georgia,serif;
+  font-size:.92rem;
+  line-height:1.9;margin-bottom:1.2rem;color:#2c2a27;
+  text-align:justify;hyphens:auto;
+}
   font-family:var(--mono);font-size:.68rem;
   line-height:2;margin-bottom:1.2rem;color:#2c2a27;
   letter-spacing:.02em;
@@ -608,7 +613,7 @@ body{background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;font
 .section-label{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(–muted);white-space:nowrap;}
 h2{font-family:‘Cormorant Garamond’,serif;font-size:32px;font-weight:600;line-height:1.18;margin-bottom:20px;}
 h3.sub{font-size:10.5px;font-weight:500;letter-spacing:.17em;text-transform:uppercase;color:var(–muted);margin:32px 0 14px;}
-.body-copy{font-family:‘Libre Baskerville’,serif;font-size:14.5px;line-height:1.88;color:var(–ink2);max-width:640px;margin-bottom:22px;}
+.body-copy{font-family:'Lora',Georgia,serif;font-size:15px;line-height:1.9;color:var(--ink2,#2a2827);max-width:640px;margin-bottom:22px;text-align:justify;hyphens:auto;}
 .pull-quote{font-family:‘Cormorant Garamond’,serif;font-size:24px;font-style:italic;font-weight:300;line-height:1.38;border-top:2px solid var(–ink);border-bottom:1px solid var(–rule);padding:24px 0;margin:40px 0;max-width:600px;}
 
 /* ── STAT GRID ── */
@@ -869,7 +874,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--ink);display:flex;align-i
 .st{font-family:var(--serif);font-size:1.75rem;font-weight:400;line-height:1.2}
 .st em{font-style:italic}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin:2rem 0}
-.prose p{font-size:.9rem;line-height:1.85;margin-bottom:1rem;color:#2a2827}
+.prose p{font-family:'Lora',Georgia,serif;font-size:.92rem;line-height:1.9;margin-bottom:1rem;color:#2a2827;text-align:justify;hyphens:auto;}
 .prose p:last-child{margin-bottom:0}
 .prose strong{color:var(--ink)}
 /* PULL */
@@ -1099,7 +1104,7 @@ header{border-bottom:2px solid var(–ink);padding:1.8rem 3rem 1.2rem;display:fl
 /* BODY PROSE */
 .body-prose h2{font-family:‘Playfair Display’,serif;font-size:1.35rem;font-weight:600;margin:2.8rem 0 .8rem;padding-top:2rem;border-top:1px solid var(–rule)}
 .body-prose h3{font-family:‘IBM Plex Mono’,monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(–accent);margin:2rem 0 .7rem}
-.body-prose p{font-size:.96rem;line-height:1.8;margin-bottom:1.1rem;color:#262624}
+.body-prose p{font-family:'Lora',Georgia,serif;font-size:.96rem;line-height:1.88;margin-bottom:1.1rem;color:#262624;text-align:justify;hyphens:auto;}
 .body-prose p:last-child{margin-bottom:0}
 .body-prose strong{font-weight:400;color:var(–ink)}
 
@@ -3697,16 +3702,62 @@ var reportTitles = {
   policy: 'How One Policy Issue Shifted an Election'
 };
 
-function openReport(id) {
+// ── URL ROUTING ──────────────────────────────────────────────────────────────
+// Change BASE_PATH if your repo/folder name differs.
+var BASE_PATH = '/politics-report';
+
+// Render a Contentful post fields object into a full-screen view
+function _renderPost(f) {
+  // Remove any previously opened dynamic post views
+  document.querySelectorAll('.view[data-post]').forEach(function(v){ v.remove(); });
+  var view = document.createElement('div');
+  view.className = 'view active';
+  view.setAttribute('data-post', f.slug || '');
+  view.innerHTML =
+    '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'Lora\',Georgia,serif">' +
+    '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
+    '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem;line-height:1.1">' + (f.title || '') + '</h1>' +
+    '<div style="font-family:\'Lora\',Georgia,serif;font-size:.92rem;line-height:1.9;color:#2a2827;text-align:justify;hyphens:auto">' +
+      (f.body ? cfRichTextToHtml(f.body) : '<p style=\"color:#888\">Content coming soon.</p>') +
+    '</div>' +
+    (f.rawHtml ? '<div>' + f.rawHtml + '</div>' : '') +
+    '</div>';
   document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
-  document.getElementById('view-' + id).classList.add('active');
+  document.body.appendChild(view);
+  document.getElementById('back-btn').style.display = 'flex';
+  document.getElementById('shell-title').textContent = f.title || '';
+  document.getElementById('back-btn').onclick = function() {
+    view.remove();
+    showIndex();
+  };
+  window.scrollTo(0, 0);
+}
+
+// Load a post by slug from Contentful (used when navigating directly to a URL)
+function loadPostBySlug(slug) {
+  var url = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries' +
+    '?content_type=report&fields.slug=' + encodeURIComponent(slug) +
+    '&include=2&access_token=' + CF_TOKEN;
+  fetch(url)
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (!data.items || !data.items.length) { _activateIndex(); return; }
+      _renderPost(data.items[0].fields);
+    })
+    .catch(function() { _activateIndex(); });
+}
+
+function _activateReport(id) {
+  document.querySelectorAll('.view[data-post]').forEach(function(v){ v.remove(); });
+  document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
+  var el = document.getElementById('view-' + id);
+  if (!el) return;
+  el.classList.add('active');
   document.getElementById('back-btn').style.display = 'flex';
   document.getElementById('shell-title').textContent = reportTitles[id] || 'Jane Orlova';
   currentReport = id;
   window.scrollTo(0, 0);
   loadCFForReport(id);
-
-  // Init charts lazily
   if (id === 'language' && !window._langChartsBuilt) {
     setTimeout(buildLanguageCharts, 100);
     window._langChartsBuilt = true;
@@ -3721,13 +3772,36 @@ function openReport(id) {
   }
 }
 
-function showIndex() {
+function _activateIndex() {
+  document.querySelectorAll('.view[data-post]').forEach(function(v){ v.remove(); });
   document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
   document.getElementById('view-index').classList.add('active');
   document.getElementById('back-btn').style.display = 'none';
   document.getElementById('shell-title').textContent = 'Jane Orlova';
   currentReport = null;
   window.scrollTo(0, 0);
+}
+
+// Called on popstate — updates DOM only, URL is already correct
+function routeFromPath() {
+  var path = window.location.pathname.replace(BASE_PATH, '').replace(/^\/+|\/+$/g, '');
+  if (!path) {
+    _activateIndex();
+  } else if (reportTitles[path]) {
+    _activateReport(path);
+  } else {
+    loadPostBySlug(path);
+  }
+}
+
+function openReport(id) {
+  _activateReport(id);
+  history.pushState({ report: id }, '', BASE_PATH + '/' + id);
+}
+
+function showIndex() {
+  _activateIndex();
+  history.pushState({ report: null }, '', BASE_PATH + '/');
 }
 
 function filterCards(tag, btn) {
@@ -3863,26 +3937,12 @@ function fetchCFPosts(category, targetEl) {
                 document.querySelector('.project-tabs-wrap').style.display = '';
                 showIndex();
               };
+              history.pushState({ report: 'migration-emotion-map' }, '', BASE_PATH + '/migration-emotion-map');
               window.scrollTo(0, 0);
             } else {
-              var view = document.createElement('div');
-              view.className = 'view active';
-              view.innerHTML =
-                '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'IBM Plex Mono\',monospace">' +
-                '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
-                '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem">' + (f.title || '') + '</h1>' +
-                '<div style="font-size:.9rem;line-height:1.8;color:#333">' + (f.body ? cfRichTextToHtml(f.body) : '<p>Content coming soon.</p>') + '</div>' +
-                (f.rawHtml ? '<div>' + f.rawHtml + '</div>' : '') +
-                '</div>';
-              document.querySelectorAll('.view').forEach(function(v){ v.classList.remove('active'); });
-              document.body.appendChild(view);
-              document.getElementById('back-btn').style.display = 'flex';
-              document.getElementById('shell-title').textContent = f.title || '';
-              document.getElementById('back-btn').onclick = function() {
-                view.remove();
-                showIndex();
-              };
-              window.scrollTo(0, 0);
+              var slug = f.slug || f.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+              _renderPost(f);
+              history.pushState({ post: slug }, '', BASE_PATH + '/' + slug);
             }
           });
         }
@@ -3905,8 +3965,14 @@ function loadCFForReport(reportId) {
 }
 
 // Load the index posts feed
+// Load the index posts feed
 document.addEventListener('DOMContentLoaded', function() {
   fetchCFPosts('politics', document.getElementById('ix-grid'));
+  // GitHub Pages SPA: 404.html encodes path as ?p= for client-side routing
+  var redirectPath = new URLSearchParams(window.location.search).get('p');
+  if (redirectPath) history.replaceState(null, '', redirectPath);
+  routeFromPath();
+  window.addEventListener('popstate', routeFromPath);
 });
 </script>
 
@@ -3958,13 +4024,13 @@ document.addEventListener('DOMContentLoaded', function() {
   line-height: 1.9; color: var(--sh-muted);
   letter-spacing: .02em; margin-bottom: 1rem;
 }
-.cf-post-body p { font-family: var(--sh-mono); font-size: .65rem; line-height: 2; color: #333; margin-bottom: .85rem; letter-spacing: .02em; }
+.cf-post-body p { font-family: 'Lora', Georgia, serif; font-size: .92rem; line-height: 1.9; color: #2a2827; margin-bottom: 1rem; text-align: justify; hyphens: auto; }
 .cf-post-body h2 { font-family: var(--sh-display); font-size: 1.15rem; font-weight: 300; margin: 1.5rem 0 .5rem; }
 .cf-post-body h3 { font-family: var(--sh-mono); font-size: .58rem; letter-spacing: .2em; text-transform: uppercase; color: var(--sh-red); margin: 1.25rem 0 .4rem; }
 .cf-post-body strong { font-weight: 600; color: var(--sh-ink); }
 .cf-post-body em { font-style: italic; }
 .cf-post-body ul, .cf-post-body ol { padding-left: 1.5rem; margin-bottom: .85rem; }
-.cf-post-body li { font-family: var(--sh-mono); font-size: .65rem; line-height: 2; color: #333; letter-spacing: .02em; }
+.cf-post-body li { font-family: 'Lora', Georgia, serif; font-size: .92rem; line-height: 1.9; color: #2a2827; }
 .cf-post-body blockquote { border-left: 2px solid var(--sh-red); padding: .5rem 1rem; margin: 1rem 0; }
 .cf-post-body a { color: var(--sh-red); }
 .cf-post-body code { font-family: var(--sh-mono); font-size: .58rem; background: var(--sh-warm); padding: .1rem .3rem; }
