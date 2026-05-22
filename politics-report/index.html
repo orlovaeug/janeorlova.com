@@ -3837,7 +3837,7 @@ if (nt === 'embedded-entry-block') {
 
 // Fetch all reports from Contentful, filtered by category
 function fetchCFPosts(category, targetEl) {
-  var url = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries?content_type=report&access_token=' + CF_TOKEN;
+  var url = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries?content_type=report&include=2&access_token=' + CF_TOKEN;
   if (category) url += '&fields.category=' + encodeURIComponent(category);
   fetch(url)
     .then(function(r) { return r.json(); })
