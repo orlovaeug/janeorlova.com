@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f7f3ee; font-family: 'IBM Plex Mono', monospace; }
+    #error {
+      display: none; padding: 1.25rem;
+      font-size: .58rem; letter-spacing: .06em; color: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart-container"></div>
+  <div id="error"></div>
+  <script>
+    var id = new URLSearchParams(window.location.search).get('id');
+    if (!id) {
+      document.getElementById('error').style.display = 'block';
+      document.getElementById('error').textContent = 'No chart id specified.';
+    } else {
+      fetch('charts/' + id + '.html')
+        .then(function(res) {
+          if (!res.ok) throw new Error('Chart "' + id + '" not found.');
+          return res.text();
+        })
+        .then(function(html) {
+          var container = document.getElementById('chart-container');
+          // Strip external Chart.js tags — already loaded above
+          container.innerHTML = html.replace(/<script[^>]+cdnjs\.cloudflare\.com[^>]*><\/script>/gi, '');
+          // Re-execute inline scripts
+          container.querySelectorAll('script').forEach(function(old) {
+            if (!old.src) {
+              var s = document.createElement('script');
+              s.textContent = old.textContent;
+              document.body.appendChild(s);
+            }
+          });
+        })
+        .catch(function(err) {
+          document.getElementById('error').style.display = 'block';
+          document.getElementById('error').textContent = err.message;
+        });
+    }
+  </script>
+</body>
+</html>
