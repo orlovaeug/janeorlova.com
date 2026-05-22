@@ -3818,9 +3818,10 @@ if (nt === 'embedded-entry-block') {
   var target = node.data && node.data.target;
   var ct = target && target.sys && target.sys.contentType && target.sys.contentType.sys.id;
   var fields = (target && target.fields) || {};
-  if (ct === 'chartEmbed') {
-    var url = fields.url || '';
-    var caption = fields.caption || '';
+  if (ct === 'iframeEmbed' || ct === 'iframe' || ct === 'embed' ||
+      ct === 'interactiveEmbed' || ct === 'chartEmbed' || ct === 'chart' || ct === 'dataViz') {
+    var url = fields.url || fields.src || fields.embedUrl || '';
+    var caption = fields.caption || fields.label || fields.title || '';
     if (!url) return '';
     return '<div style="margin:2rem 0">'
       + '<iframe src="' + url + '" width="100%" height="340" frameborder="0" scrolling="no" style="border:none;"></iframe>'
