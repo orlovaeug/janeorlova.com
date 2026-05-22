@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jane Orlova · Political Research</title>
 <!-- Fonts: all reports combined -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,500&family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;1,400&family=DM+Mono:wght@300;400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,500&family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=DM+Mono:wght@300;400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300;1,8..60,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 
 <style>
@@ -3703,12 +3703,9 @@ var reportTitles = {
 };
 
 // ── URL ROUTING ──────────────────────────────────────────────────────────────
-// Change BASE_PATH if your repo/folder name differs.
 var BASE_PATH = '/politics-report';
 
-// Render a Contentful post fields object into a full-screen view
 function _renderPost(f) {
-  // Remove any previously opened dynamic post views
   document.querySelectorAll('.view[data-post]').forEach(function(v){ v.remove(); });
   var view = document.createElement('div');
   view.className = 'view active';
@@ -3726,14 +3723,10 @@ function _renderPost(f) {
   document.body.appendChild(view);
   document.getElementById('back-btn').style.display = 'flex';
   document.getElementById('shell-title').textContent = f.title || '';
-  document.getElementById('back-btn').onclick = function() {
-    view.remove();
-    showIndex();
-  };
+  document.getElementById('back-btn').onclick = function() { view.remove(); showIndex(); };
   window.scrollTo(0, 0);
 }
 
-// Load a post by slug from Contentful (used when navigating directly to a URL)
 function loadPostBySlug(slug) {
   var url = 'https://cdn.contentful.com/spaces/' + CF_SPACE + '/entries' +
     '?content_type=report&fields.slug=' + encodeURIComponent(slug) +
@@ -3758,18 +3751,9 @@ function _activateReport(id) {
   currentReport = id;
   window.scrollTo(0, 0);
   loadCFForReport(id);
-  if (id === 'language' && !window._langChartsBuilt) {
-    setTimeout(buildLanguageCharts, 100);
-    window._langChartsBuilt = true;
-  }
-  if (id === 'gender' && !window._genderChartsBuilt) {
-    setTimeout(buildGenderCharts, 100);
-    window._genderChartsBuilt = true;
-  }
-  if (id === 'main' && !window._mainBuilt) {
-    if (typeof buildEmotionMap === 'function') buildEmotionMap();
-    window._mainBuilt = true;
-  }
+  if (id === 'language' && !window._langChartsBuilt) { setTimeout(buildLanguageCharts, 100); window._langChartsBuilt = true; }
+  if (id === 'gender'   && !window._genderChartsBuilt) { setTimeout(buildGenderCharts, 100);   window._genderChartsBuilt = true; }
+  if (id === 'main'     && !window._mainBuilt) { if (typeof buildEmotionMap === 'function') buildEmotionMap(); window._mainBuilt = true; }
 }
 
 function _activateIndex() {
@@ -3782,16 +3766,11 @@ function _activateIndex() {
   window.scrollTo(0, 0);
 }
 
-// Called on popstate — updates DOM only, URL is already correct
 function routeFromPath() {
   var path = window.location.pathname.replace(BASE_PATH, '').replace(/^\/+|\/+$/g, '');
-  if (!path) {
-    _activateIndex();
-  } else if (reportTitles[path]) {
-    _activateReport(path);
-  } else {
-    loadPostBySlug(path);
-  }
+  if (!path) { _activateIndex(); }
+  else if (reportTitles[path]) { _activateReport(path); }
+  else { loadPostBySlug(path); }
 }
 
 function openReport(id) {
@@ -3965,10 +3944,8 @@ function loadCFForReport(reportId) {
 }
 
 // Load the index posts feed
-// Load the index posts feed
 document.addEventListener('DOMContentLoaded', function() {
   fetchCFPosts('politics', document.getElementById('ix-grid'));
-  // GitHub Pages SPA: 404.html encodes path as ?p= for client-side routing
   var redirectPath = new URLSearchParams(window.location.search).get('p');
   if (redirectPath) history.replaceState(null, '', redirectPath);
   routeFromPath();
@@ -4031,7 +4008,8 @@ document.addEventListener('DOMContentLoaded', function() {
 .cf-post-body em { font-style: italic; }
 .cf-post-body ul, .cf-post-body ol { padding-left: 1.5rem; margin-bottom: .85rem; }
 .cf-post-body li { font-family: 'Lora', Georgia, serif; font-size: .92rem; line-height: 1.9; color: #2a2827; }
-.cf-post-body blockquote { border-left: 2px solid var(--sh-red); padding: .5rem 1rem; margin: 1rem 0; }
+.cf-post-body blockquote { border-left: 2px solid var(--sh-red); padding: .5rem 1.25rem; margin: 1.25rem 0; }
+.cf-post-body blockquote p { font-style: italic; color: #444; font-size: .95rem; }
 .cf-post-body a { color: var(--sh-red); }
 .cf-post-body code { font-family: var(--sh-mono); font-size: .58rem; background: var(--sh-warm); padding: .1rem .3rem; }
 
