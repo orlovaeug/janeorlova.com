@@ -3714,7 +3714,7 @@ function _renderPost(f) {
     '<div style="max-width:780px;margin:0 auto;padding:3.5rem 3rem 6rem;font-family:\'Lora\',Georgia,serif">' +
     '<div style="font-size:.63rem;letter-spacing:.2em;text-transform:uppercase;color:#c0392b;margin-bottom:.6rem">' + (f.kicker || '') + '</div>' +
     '<h1 style="font-family:\'Fraunces\',Georgia,serif;font-size:2.5rem;font-weight:300;margin-bottom:1.5rem;line-height:1.1">' + (f.title || '') + '</h1>' +
-    '<div style="font-family:\'Lora\',Georgia,serif;font-size:.92rem;line-height:1.9;color:#2a2827;text-align:justify;hyphens:auto">' +
+    '<div class="cf-post-body">' +
       (f.body ? cfRichTextToHtml(f.body) : '<p style=\"color:#888\">Content coming soon.</p>') +
     '</div>' +
     (f.rawHtml ? '<div>' + f.rawHtml + '</div>' : '') +
