@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400&display=swap');
+:root{--ink:#18160f;--ink2:#3d3a30;--ink3:#7a776e;--ink4:#b0ada4;--paper:#f9f7f2;--paper2:#f1ede4;--rule:#d8d3c8;--red:#b83218;--blue:#1f4f96;--green:#1e6b42;--amber:#9a6b10;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{background:var(--paper);font-family:'Source Serif 4',Georgia,serif;}
+.wrap{padding:20px 24px 28px;}
+.lbl{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);margin-bottom:12px;padding-bottom:9px;border-bottom:1px solid var(--rule);}
+table{width:100%;border-collapse:collapse;font-size:13.5px;}
+thead tr{border-bottom:1.5px solid var(--ink);}
+thead th{text-align:left;padding:8px 12px 8px 0;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink3);font-weight:400;}
+tbody tr{border-bottom:1px solid var(--rule);}
+tbody tr:last-child{border-bottom:2px solid var(--ink);}
+tbody td{padding:11px 12px 11px 0;font-weight:300;color:var(--ink2);line-height:1.35;font-size:13.5px;}
+td.s{font-weight:400;color:var(--ink);}
+td.hr{color:var(--red);font-weight:400;}
+td.hb{color:var(--blue);font-weight:400;}
+td.hg{color:var(--green);font-weight:400;}
+td.ha{color:var(--amber);font-weight:400;}
+td.dim{color:var(--ink3);}
+tfoot td{font-family:'DM Mono',monospace;font-size:10px;color:var(--ink4);padding-top:10px;border-top:none;font-style:italic;line-height:1.6;}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <div class="lbl">Table 4 — Representation sentiment and ethnic identity salience · Naturalized cohort</div>
+  <table>
+    <thead><tr><th>Years of citizenship</th><th>Negative representation</th><th>Positive representation</th><th>Ethnic bg. importance (mean)</th><th>Interpretive pattern</th></tr></thead>
+    <tbody><tr><td class="s">Under 2 years</td><td class="hr">38.9%</td><td>16.7%</td><td>2.94</td><td class="dim">New, navigating</td></tr><tr><td class="s">2–5 years</td><td>26.3%</td><td>10.5%</td><td>3.05</td><td class="dim">Settling, integrating</td></tr><tr><td class="s">6–10 years</td><td>25.0%</td><td class="dim">—</td><td class="hr">4.50</td><td class="dim">Politicised identity</td></tr></tbody>
+    <tfoot><tr><td colspan="5">Ethnic background importance rated on a 5-point scale (1 = not important, 5 = very important). Cohort with more than 10 years omitted.</td></tr></tfoot>
+  </table>
+</div>
+</body>
+</html>
