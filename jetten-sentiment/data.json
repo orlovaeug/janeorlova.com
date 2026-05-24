@@ -1,5 +1,16 @@
 [
   {
+    "id": "ga2f562de86ba",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Kabinet-Jetten vast in greep van onmacht",
+    "date": "2026-05-24",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/kabinet-jetten-vast-in-greep-van-onmacht~b31067ae/",
+    "lr": "left"
+  },
+  {
     "id": "g8777553b1482",
     "type": "nl",
     "src": "RTL.nl",
@@ -49,6 +60,26 @@
     "date": "2026-05-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Dejlra1V3aEw2MXBxOG5CWGtNSk1WTGNaNXNNYzVBd0ljSk5VOUZZNklVd1lGUXBacEk0SXo5bXc2SllwZTdwMmRjNTFNcl8xS0I4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9f6203e4cc4a",
+    "type": "nl",
+    "src": "Hoogeveensche Courant",
+    "title": "Premier Rob Jetten zou Lelylijn ‘fantastisch’ vinden, maar doet geen beloftes - Hoogeveensche Courant",
+    "date": "2026-05-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPR0hOaVpwUHZPa3dtU0t3SUpQWjhjOC1JU2RtZm9IY0JfOHpZVTdjbElhVXNKTTVwT2lTMU11VmZtcXptRmp2eE50X1BPeDJpa21oVjVxeTdmbG9raVJma0dZWGpwLTJDelE2cTRON2VsLWd0TVRRbGsxaEFLU2w1VFVUa0tELWJOXzBnM3dhNTdYOURYVmF5U1VKVWtuSmZsTzBiQjNrMTllZG5RSnJ4YzNFbjN6ZVVoWll6V0Z1RWJ2VXRD?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1fe9074b6b49",
+    "type": "intl",
+    "src": "سانا",
+    "title": "Países Bajos prohíbe importación de bienes producidos en asentamientos israelíes - سانا",
+    "date": "2026-05-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1vUUJ4cUhBdEg1NllYQmZYa3VJR2NYMUxwNW9RbWVJeTZLaldiSms5djJqd0dwSU9pTWdUa0NuSHVQVnVDVWhDTQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -286,6 +317,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAtclZMZnFMbldadnF0bFVZWmxNek5TUGdnT1RGYmx0UXJ0bHAzeV85bURTM3ZqOExla2MwVGx5a1h0WHlRdVHSAUJBVV95cUxOUWVxS1lzdFR3blJoenRKc1J5LWFya01Oa2dLYTJOV1ZNOEVuZFpLV1lfR0VaZ3hqUjkwbk0xT2F5Qmc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gf743fca7a151",
+    "type": "nl",
+    "src": "NU",
+    "title": "Kabinet wil importverbod op goederen uit illegale Israëlische nederzettingen - NU",
+    "date": "2026-05-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM1JqWHo5eFEwOGtsT2Fwa1hESWg2dDFRSFhDbGlpQWJwYkFpOG5UcWhzaEZOSEYweTFLV2hEdXZBUDY2c0lMbGNXOGNaNXg0aEthdnNhMDhkdVUwUG9vUXA0Q3dDc0hhc2U1Qm9HYjNGRFZaNG84VTAzMXJXak1oVTlNc19UUDludmpKTWEyRF9OUmQ5aFdRODdseU4waXdhWUZ5SnNoNkYwZE5kSXF6Q0FDZ1ZUWVU?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g39d679ba013c",
