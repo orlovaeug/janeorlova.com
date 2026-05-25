@@ -1,5 +1,37 @@
 [
   {
+    "id": "g7ba5c4a32dc9",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "'Die uitspraak van Rob Jetten straalt weinig daadkracht uit'",
+    "date": "2026-05-25",
+    "sent": "p",
+    "link": "https://www.telegraaf.nl/video/die-uitspraak-van-rob-jetten-straalt-weinig-daadkracht-uit/152892039.html",
+    "lr": "right"
+  },
+  {
+    "id": "g59ed9b8ac27f",
+    "type": "nl",
+    "src": "NRC",
+    "title": "‘Ik ga de premier omleggen’, schreef hij twee dagen na de verkiezingen op Facebook - NRC",
+    "date": "2026-05-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVmJXcWE2T0hYTmMzTDVYSk9HeUwwdXVQekpaeXBXaWlHbmtNMW1pR3ZYZHZuRWFvUWVpazdBQ3RfZkxNekNCQW03cjJvOEUzTElqYzYyYk5WOEhvT1RvVHRkVGhBWUZEUXdfekIzdjJpOWtvaWF0OENuQklSTHZNcXJVbHVzWWFVaWYxWHJaYklJWHdrQVljTmd2b3RKeE8xR2loZFhlNklIYzVKbmdndnVHTkR1UkxiTlo1emJYVDdLYU0?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gafc5627f95e6",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Kabinet-Jetten wil AOW-leeftijd verder verhogen - Nieuw Rechts",
+    "date": "2026-05-25",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeHB2d1NpYnI5LWFfZS1xWnI4ck9EQmdJdjFYMVhwejRGTjZKc0RVZjJtblpEdEN4X1RUMWRpNzhKaFBnNm5TcWNPd2hYNGRWSHZRemZRVEg4OUYtM05JTnl2VlcxT0JLcVZXb2RJbjVwREVmbHlOOHFsQ0lsN3dfbERfbw?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "ga2f562de86ba",
     "type": "nl",
     "src": "Trouw",
@@ -81,6 +113,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1vUUJ4cUhBdEg1NllYQmZYa3VJR2NYMUxwNW9RbWVJeTZLaldiSms5djJqd0dwSU9pTWdUa0NuSHVQVnVDVWhDTQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g2b24729a0605",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten heeft na vertrek Van Berkel alsnog zijn kabinetsploeg compleet - AD.nl",
+    "date": "2026-05-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZUJLZkNOY2RCd0pTNTNiUzVSVDh4S1dUU3g2YkRiZGdTeVRSUWZhVF8wZ1lvQWlKeHhLR2xBX296MGJXbWRqNmc1cHBJdXREeGp1eEFCZmdiUk8yWV9iX2hiRGtyQm5FTkZTRF82MWZZai1HNF9UMzdGNnk4YUpESnVZRnU2eWQyWTFaR1dGd3Y0YlQzRm5YcGM3cmNlYzd4X0IyR0p4OW4wQQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gb9f9da171f3a",
@@ -326,6 +368,26 @@
     "date": "2026-05-22",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM1JqWHo5eFEwOGtsT2Fwa1hESWg2dDFRSFhDbGlpQWJwYkFpOG5UcWhzaEZOSEYweTFLV2hEdXZBUDY2c0lMbGNXOGNaNXg0aEthdnNhMDhkdVUwUG9vUXA0Q3dDc0hhc2U1Qm9HYjNGRFZaNG84VTAzMXJXak1oVTlNc19UUDludmpKTWEyRF9OUmQ5aFdRODdseU4waXdhWUZ5SnNoNkYwZE5kSXF6Q0FDZ1ZUWVU?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g01e62ac73587",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten niet bang om woord 'asielcrisis' te gebruiken: 'Het is een bende' - NOS",
+    "date": "2026-05-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSm5UWXZzZTE5YmhPM0R3TFFWSzFLSmlRTHBqTkhxbjZ3Ym81Q1lXYTEwUDQ5UGNlTE05VUd2MlRWS2hPUWhMc3ZMalZ5UHNtR296M2dYNDAxRHpzWXZoVUdBTGczZVJzR3lRLU1Lcy1RRm1KLTZ2QW5wa3JuUkpfOVNudEZ1ZmtGdXAyUENyWXgtNGVKTDZxZHdpbndubE0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g66a66f32bc0b",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kabinet wil handelsverbod voor producten uit illegale Israëlische nederzettingen - NOS",
+    "date": "2026-05-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNd0ZIaUx2aDNWck9EbTZjTG5HSjNSdXJtMWUxUVBsbnNyNllkY09rblhYQ0hJaVhvSVdBQjNwQVNoVUdtc2pGZGtDb0kzV0s3Q3JlaXY2Z3BDekViYlNBeVQ3alo3ZjFuRWlWVkd0anFpQXpielozbURPNWdQN1RuaExlcTI1d2xaMEZ1QWpISGdkcHVUMDNiWGpYZ2tSUlpsWF9wY1o4LUwwMTBKbU9ycA?oc=5",
     "icon": "📰"
   },
   {
@@ -16114,6 +16176,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g71fd07208a1b",
+    "type": "intl",
+    "src": "junge Welt",
+    "title": "Niederlande: Linksliberaler Premier mit rechtem Programm - junge Welt",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYmctb19lRGJ2Z01FTTRTQmlIM05nUjI2VWYtTUM2NXl0cFl2RVRXM29QbmhBTVZxQkRRU3dqakpDRGZIekRBZmh3SVRmalFDMC1wdG1KS2x0alpFU3hlMDZtbmJmOVd0c3Mtbm53ZlNNbkFYdElGVGIyYTRYUU5nSHNiMjFrVVg4UnM0ZVktZldKN3hPQXFqV25SSy1WLWNFenc?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "nl001",
     "type": "nl",
     "src": "NOS",
@@ -18611,6 +18683,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOEFWODM2UkFUcG8tVkszdWNYUjU0YU1CZjlNVkxjMldsd0djc2M2d3lXTDF4bG9nU3lBU2JJZzRpOGptdXZsX3o5S0dUaGRseE4tMXJpSzN6UVFzV0NPWDY3SE0wdm5BQ29Rd1hkTlBOeTZYSVFDUktNa3B5S2VYNGNqc29icUVpM1hRa1ZjaVk1b1RnVFk3aTJ5OGtCdEk3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfa50640db08f",
+    "type": "intl",
+    "src": "Informat.ro",
+    "title": "Роб Йеттен, лидер D66, становится самым молодым премьер-министром Нидерландов и первым главой правительства, открыто заявившим о своей гомосексуальности, формируя меньшинство правительство центристов-правых. - Informat.ro",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOYXB3QzAwaFhic1ZGbk12UUplZ3hXQWlMazZMWkJybU93SWJkREh6T1d1S1RlV0pDMUs2aWFZQ2VmU01sb0RZUEk0UXZIRzdLLXVXSVBTSU5oNG1HN1JXU29ObmhuV1RyQWVSWW5YdmUyMUVFY1RhaVVlYmJnWWZLLTNrUmpTVTY0bkgtaDJiZ29IRS0tYUZSd3VrdVpaUGx1Q0F0N1RMX1pfeGtEY1J2VUxtVUNkcHVfOG9TYWtYUkZ1Wlo1ZEU0N3ozNkRidkg1WjVLVDJXdk9lZmViWUlJ?oc=5",
     "flag": "🌍"
   }
 ]
