@@ -1,5 +1,16 @@
 [
   {
+    "id": "g5f7f1fbdc65e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Topoverleg sociale partners buiten kabinet om: koorddansen na mislukt Catshuis-overleg - De Telegraaf",
+    "date": "2026-05-31",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcGhKUkw1VmxvUXg1b010UWxucElqTGJBXzZxWEdMZGpyYWtjaW4tVzAwWXdqcTdzUTI5RDl0YWZsRzNVZ0lIel9NNWFUdHYzZjZUSlgzY2RpRklJRnI1OWxCc0pBeGJpTTVkdXVQMEJCZ3dzTXAtV2hwV3hmYmhqSkJwdTYtZXNpMnp5Nk84bDBHT01SaWw5NjFGckhXaFlOdG1XZkUyYnZvLWxGZE9MSGJXdndyM3lZcXY1b3JldXpPY182OUY0OWVkU3FrNmdZMmc?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "g04e669cc1310",
     "type": "nl",
     "src": "NRC",
@@ -8,6 +19,27 @@
     "date": "2026-05-30",
     "sent": "u",
     "link": "https://www.nrc.nl/nieuws/2026/05/30/zetten-de-vakbonden-het-kabinet-jetten-schaakmat-a4929000",
+    "lr": "right"
+  },
+  {
+    "id": "g31ed76e75941",
+    "type": "nl",
+    "src": "kemalrijken.nl",
+    "title": "Deens 'forlig' voor kabinet-Jetten -Trouw, opinie - kemalrijken.nl",
+    "date": "2026-05-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPV01lUWZoZ1FtVE85VEpPVGZDZndiaE9XdWJrM25NWHE5ZlVodWxaYkJaV0VwVUt3cm92LVJnbnhPd05VRkR0NVJBUGtpZW53M211UDEtZktiOVh6djN2TS1BUUhSVVJfQk4wYWFsYUFONkw1bTdsT0d2NWdOVlJXRWxVQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1a5643fa4a27",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Haagse politiek worstelt met roep om strenger asielbeleid: ’Als dit de strategie is van het kabinet, dan is dat niet lang vol te houden’ - De Telegraaf",
+    "date": "2026-05-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPbGNZQjNfcXVNcnNjUXRkQVNxWEFnclgzZ0dwRGtGczI3NkRWaktEaFFxcDl1NzBNeGRLWVRoYkZPcUtPY3lvNWhtN1NoeVNOQm1GZGl3Nmg1c1dOajlDN2ZTdmZubDhRTWd3X05jUzVESzltdFpCNzJmY1kzcnBiSzNQN3ZPNzhDTVpBSWVmXzVfV2VjX2laN2ppNmxNSUt3dXVBd0FKb2JSWldQWFlCSTdCVEZJcEUtR1JRU0pYMUtXcXRiSUJoemJtWk5DRE1JM2xaU2tGSkVwbXBPNW14Y2JKVkEzeDNsX3FsdklvdndRZVJqWldxclRjUzh2WWRkRWRwV1ZKcVFGbHlTTEE?oc=5",
+    "icon": "📰",
     "lr": "right"
   },
   {
@@ -548,6 +580,27 @@
     "flag": "🌍"
   },
   {
+    "id": "g9820f08d5e1b",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Slechts één Nederlands bedrijf gaat iets voelen van de boycot van producten uit door Israël bezette gebieden - Trouw",
+    "date": "2026-05-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdGxpSW5oUnNRTDNBam9uNS1oSDB5S2ZsUG12aWJfdHJVdmpyOERtTjNXc1NXSXBlR2gtQTJvWm0yNGlydW1zX0F5VXdFczhOMmxkYUxMQUtQUUJndUJyYjhUa01HYjBMLUNKb1ZkR1pXQmdtSDRfbzlaLVh3Ry05MWUtQ3JLakJYaVIzRFp2N3h3d05jNXNrVFU5ejJnY2xmeDlYSVpGUXV1OHY0eGpIMWhJcEo2em1FN2hRMFJoQUNOZlh2VEpSQzRQWVFkdVpvV1d6N1RPaUwtU3h2ZVotaHNRVEY?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g1c934f0dd9e3",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "US ambassador criticises Dutch block on DigiD owner sale - DutchNews.nl",
+    "date": "2026-05-27",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPYXdlak5PZkcwclF6d3NsMzk4Q2N0MGVyWWljcWQ0NVpnd2s0ZlhZRlRWYy05WDNtYTc4QldOd21EUVZxbjJDUHI4OFhpOE9xdV9YTVh6aUFqbkFZTDVsOTk2Tk9VOS00VzdXblFTQ0ZfTWhfRDhyQ1VDOHNHNjBwR3ZJeGdGRGdVbTRpZEZoN0UzRUx3?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g6f43e5a1ce29",
     "type": "nl",
     "src": "AD",
@@ -818,6 +871,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeHB2d1NpYnI5LWFfZS1xWnI4ck9EQmdJdjFYMVhwejRGTjZKc0RVZjJtblpEdEN4X1RUMWRpNzhKaFBnNm5TcWNPd2hYNGRWSHZRemZRVEg4OUYtM05JTnl2VlcxT0JLcVZXb2RJbjVwREVmbHlOOHFsQ0lsN3dfbERfbw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g20691daa43cc",
+    "type": "intl",
+    "src": "politico.eu",
+    "title": "Dutch government gives green light to establish migrant ‘return hubs’ outside EU - politico.eu",
+    "date": "2026-05-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0FhSWJGRXBxTTZsQXBTS1p2V0hPNW4tSDNuX1dWOTN5SjN1TlM2T3JWNWRRXzAtSG9rZkxMdXZtQlBqMmk3ZkRoX3lhODdOUTlBM1psSzQ3VDJKNHhWakRDVXk0NFlFeUFEYVdXT3RIUVBLUDY1SVpGX0NPM205NjFLQzR4T1MtblZmSXp2emd6LW5hYkxLMEZEWl93NTlPckE?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "ga2f562de86ba",
@@ -1187,6 +1250,17 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNc3NGOWdoMEZnNm9oYXFvZlpOcmZOSTBUQ2RpZ2NobncwVmR3VTBfMU5iOTZvTHY2MktUMThkbW5oMng1ZWZLYXBqeGl5Q0IyeGx6SFlfajJoTHJmbk1YQ1ZBSG95RVhNdU45ZDFWUHUtVWhtNllnTWs3MkZQT2xQVWhKdmNhQUc2bDFRMHN6QWdLcGM0eHJNSzB3?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gd30bafb34198",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Doorwerken tot na je 71e: zo zit het nu met de AOW-leeftijd en alleen déze groep blijft buiten schot in de nieuwe plannen - De Telegraaf",
+    "date": "2026-05-22",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQLUpma291dUxwVUZIdFZUZ3FVVUZqMUZmRVpsa1EzTTQwa1p3cm1MRjlwdXJPU0JEWHRDUC1uOWRnbmFEX21qZGFCOEMzMTlHQnJ3UEFPTlc4UDd2Y3ExQjdSRHpsY05nMlNlcW1QQXNUOWpFZE1Rby1oWXBvelFacTduYTZIVjhZNmU2SmFBcHUtS3VJa1lWamlwR1k5WEQ5bUZSS05uNFlPVkZnV0VELTlJTF84MEoxMWNlSXZaN2ZLYndpMUtUVnEzNUZuMEJHU29tWkt2ZDJuUFIxLUFVVDl6OF85UG5QaEVhWWdwOEQ3VUFQeENTa2JSSk1palJJ?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "g39d679ba013c",
