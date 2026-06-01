@@ -1,5 +1,25 @@
 [
   {
+    "id": "g6b1346cc3a17",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Adviseur kabinet-Jetten: 'Er valt nog veel te verbeteren'",
+    "date": "2026-06-01",
+    "sent": "n",
+    "link": "https://nos.nl/l/2616638"
+  },
+  {
+    "id": "g4e114ae7b6f1",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Adviseur kabinet-Jetten: 'Er valt nog veel te verbeteren' - NOS",
+    "date": "2026-06-01",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZTBnUWRJdk9FOGpMSVo0WHE3SGdXS0FfdzJwVWF5OUFnMlEyMUo0TFFGeElBYTFadWF2bW1iNlVZRktSRnpzNXNTYTVwN1lzdEItdFRvOTRFem9NMDJXVVN5QXVMem5EUlYzMFBLdkZ5dzJHb3d1R0VFQlZFWUZ0c25rYy16UDBVR2haaVNQX05UYzRFNjJuaFpUcw?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g5f7f1fbdc65e",
     "type": "nl",
     "src": "De Telegraaf",
@@ -9,6 +29,46 @@
     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcGhKUkw1VmxvUXg1b010UWxucElqTGJBXzZxWEdMZGpyYWtjaW4tVzAwWXdqcTdzUTI5RDl0YWZsRzNVZ0lIel9NNWFUdHYzZjZUSlgzY2RpRklJRnI1OWxCc0pBeGJpTTVkdXVQMEJCZ3dzTXAtV2hwV3hmYmhqSkJwdTYtZXNpMnp5Nk84bDBHT01SaWw5NjFGckhXaFlOdG1XZkUyYnZvLWxGZE9MSGJXdndyM3lZcXY1b3JldXpPY182OUY0OWVkU3FrNmdZMmc?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g37f344bf8eba",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Bijna 100 dagen: hoe doet kabinet-Jetten het? - NOS",
+    "date": "2026-05-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNX0lCRFFoWFBia3NPcWdPTkVMN01COW5FRVlseGNkY1hudXVuNFlSMnYybVZwRFhBYWswQ3ljbWVsYTByai0xMmY4ZkliSXVmd0QwVGoycTl6bllGVzg4LVpBQzVWNVRXMTBEUmhhMHVmRW5TdjdTay04Rl8xMFF2Vndhbk5JOU9BTlE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g845780a5fc6b",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Nieuwsuur over 100 dagen kabinet-Jetten - NOS",
+    "date": "2026-05-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNLUhUS3c5NDNScENQQVYzckhSakQzU1RlT0xBY2RzcWRDNmtmSk9hT2NqemJmcVRWQjQ0cExEdEtsVE94eEh3NFFuRHF2cU5TQnVnNTFYVGJDUW9kZkh2Q0pGMnpQMGE4ZnE3eFZOZG1aSENIdzl1QTlUdHJ6bFlMaGJOQXRPaDZDdVU0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4083f0e71658",
+    "type": "nl",
+    "src": "NOS",
+    "title": "31/5 in Nieuwsuur: Honderd dagen kabinet-Jetten • Evacuatiezone Libanon schuift steeds verder op - NOS",
+    "date": "2026-05-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQNFFwb3hxcXlOa2FpbmRjdUp5VGdpSTNRRXFQYTc0bDhEazZyN1J3OUxBazJnZXAxREFfb0VPTmU3d2pUYzN4QVgwU3lXdmpiRHhOcUF1VzMxLVVpMXV5X2lKSE1Od2c1ZFRVM3VTZXQ3anBfLWppNHJHSXpZQ29ULWF4T3p1ZmwwbEN3SVNhdHd5Uk9TN1ZKSlVTaXlQUGNvWnN6VnVyRHQ5SEc2STE1Zkp1OUZZa2lKRm54MXFISG1HQ2hkMWM0X2k5SDFOWWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdaf0a0d8952c",
+    "type": "intl",
+    "src": "Newsonair",
+    "title": "Dutch King Willem-Alexander officially swore in new Dutch government today - Newsonair",
+    "date": "2026-05-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaVR1aUdSeHdOWDVxclNaTC0yQmRNQnpxX2h4UGJaTm0zN2ZUUk9aWUhhTXd2QUlsejJhbkdUTzVoYklXeWdzVUFiM2U5aEVlMjlVenlXSjFvejlQNG5JOVRhV0NIb3ZNZU1kbUs2MHI0R3Zka19WY1oyS1VWT3ZSUDBLNVlSVnJjUExIRVhNT1NVTEhudGNfTkpwWHNSRFpIX3c?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g04e669cc1310",
@@ -2116,6 +2176,17 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVWVWQjNuU0EyNDh6RmhldE5xMlBwR2NYdFczcHQyNmxzOW1uQ3lEUE82UXlRMkZkM1lwaVNmU1pNLWRVT19kcXNCYTRRQ0xGb1JKalhJenNka1JieE5tZUVIUlpUZWhFMy1TSk9vNDJCTXUtcGxLN3Y2SEdkeWZMTkpDRW1pNlo2TTZ5U3NTZHNrTzBGdDNpUG5Wck5wYm03UnUzTHFvX3diUFFyLTdrRnUtUkJfalgxVUpIb3JBVWVuUWFFcEZlZklwY20yak0zSTZQV1dnVHlOWFRpYk5zS1FR0gHqAUFVX3lxTE4yU0FzVEttUy1OeThEMV9nSHNkR2RMLVVlOUw0WlptRmQtV2VwbjVUTXRMR05GdGJ2MmFGbE11d3hyVVVIUHJRTzdadUh2RHl2ZGw4MWxrdjB2bFFQcjZqQXBBc3IzZ0lqWTlPanVtbUtwcXdiWWpCNlZQS3dMWmFwTzY4WmFMTG1KRzc5ZkUwX2s1SV9fMF9Kc3ZmS0g2ZTg0NHZJb2I5RVBpamZuaFFqenFPTDZUd3hJWl9yZUdCRGNsanRZMkRBSHFFN0tub3R0SVlfRHA2Q0VjWXpabU0wUGpNR0xtSlVJdw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g6d4d41173426",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Rob Jetten onder vuur: waar is de premier tijdens de asielcrisis? - NRC",
+    "date": "2026-05-18",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxOVEpmRlNYVkQ1ZGpLSk9oQ3J1QXI2eDBuYjQzSFpvbW1LOFJaeWcxa3AxOTRBWUFRM29mSzlBLUJ2ZjFWVnlhVC1ZZUN0Mmd6ZVpDbW9jdUZqNlVkd1RnbzJhVEFGTWRST0JDcEt6TGJnLUNpN2d1LW5ickkzZUQ5UkE4aENkVXN0elpKTldJSTNUZERsWi1ZSzh0M2EtR1dYLWdMTEg1UkY1enpYN0swOExmV25VYVAtcVJPODBrZWQzVXhXUUNUZE5DTjlkeERSenNNR2dBQTBsSVYwVzVIM3VySXd0Mm80QVZVU0lUMjAwNlB5X19BVEhTTG8yQzFMV2RaYUtNU1N1VnhRekV3cERPbDZvUkNkT1NDTnlyYw?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "g4c38053dfdba",
@@ -16090,6 +16161,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gf7f2c17142b7",
+    "type": "intl",
+    "src": "elperiodico.com",
+    "title": "El primer ministro de Países Bajos expone diez años de homofobia: \"amenazas y denuncias diarias\" - elperiodico.com",
+    "date": "2026-02-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLTlDVUUzMzlmdGVtUlBhQzJrMms0Tm03VUJYdExEVDlwQ25heVdSemlkYndoTWlfZmw4WFJCWFNYVFNxaWo4WU9KZk5nNEtCbGhpNExsS2hJZ0V4cmJQNm9XMldlQ0J0OW9iWlBRbTI3ejNSZml6VThPTU1yLVlkVkdNT3d2ZzY0RjJfSGpsWEtTc3E4eWozMnNFLXFLMnVfUXg00gGjAUFVX3lxTE9GS2RhOVUyN19LcElVcnp6UC1hdUVLaTgzSE9KR21iRDFJYkJyQnJiQjF3bHRRaFk3N05takFDc0Z0VWNXeWtsWGV3WFNmd09fdzI2VlVUeTlVWWtzVEZycmlTc2dBNzQzQzk5cDZHak50dE80NTNpakdpSVE3aFdUV2ZtRXNLTUJiOExkUXpDc0I0TW9WVUJuWlV5QktWZWo3Wk0?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "nl017",
     "type": "nl",
     "src": "NOS",
@@ -19615,6 +19696,26 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOGxjM0poOTlxTmVVc2hYRlRiV3JSd0U1czNfRy1fZ2hkemU0T2dUU0NxLUZhSXg3UzJRNE5ZMFZlYmpSZHFsTFY4dGdiNnlaVnM1ZmJ6SUVsanczZ3R5OGRtSWU2TmVnUUQwTzJOdHktZGxqNmxjbGdtdWY0Y1Y2a2ZRb2J1R0Z5UFRGV1VYVFR0MHF4UGpOVjVzZV9xTWVBbTdKX2dmQU9VcmdqZ3E2UWFrWEpDNThwNFg1UA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g53732f8c98e5",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "New Dutch minority government sworn in under centrist PM Jetten - Euronews.com",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbGR3VUpSYV8wdmZPd1c2QmZhSzllQ21KR2RJbFJmeFRVR2RkTGdUR2pGN0NlV0FDWktVaUg3NVVpblc2TXNvNDIwc1V0djJzOFQyblhFeFI1bU5IdTVMRkh3cDZEZDBpSU9JbzB3ckVGOVRVX3NjVE10cUo3N0R3LXBFSUdXdEJhYnh6dFE3ampEU3RiMmJzTUZsckJ0N3d6UnJmRFVEb05xWEpNMm9HTUsxTkd1VVhBakVWM3BDcFhub1Ba?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9a2c1385a610",
+    "type": "intl",
+    "src": "elperiodico.com",
+    "title": "Países Bajos abre una etapa inédita con el antitrumpista Jetten al frente de un gobierno de minoría - elperiodico.com",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSGlDSUxjNVk4SFBaZkI3YVc0Y1lfc3dqWDlWeVhYN0hRbW8xWjh0Ry10emVWMUFvTXRZUWRTRkFXaWFIQVUteE42TmZXV2w1dlEzTHVualY0c3hScEUxRlpLLTB0eE9aMWxQTWxtM09nSjVGbjN1ZGhTTFg0OFB5c2w5akFwekx6R1VjSjlUMk5UZnJFRUZqSExGRU1tcU1mYVdpaU1HQXZTV2k4eG5qUWFuUU9QVVo1aFNrRmNR0gG-AUFVX3lxTE5IYWEzY284bDB4Q01lNVVfVVN3NENzWEhsNzZWUFRlX2RJZlJYT1JjdEdreG1KWFFOLTQ1VkdCUE1lYlhGeVAxUml1b1VkQ2lQZUFzdHdhREdTRmdDa1JPYlBKUWliUHJyNGYwZVFwUWkzcXVOamRicmswekk3TmlfNEZjWS1fRWtCVXZ0UGhlWnZ4QXowWXQ4YUhtN3J1TmpFX2taVDNDTkNXRDlTZUZPbDBzWUlHTTlTcWRJd3c?oc=5",
     "flag": "🌍"
   }
 ]
