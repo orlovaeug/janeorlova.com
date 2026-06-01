@@ -42859,7 +42859,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10980&did=2026D24903",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk0c6e4ea593",
@@ -42873,7 +42873,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10979&did=2026D24902",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk617b1a0901",
@@ -42887,7 +42887,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10978&did=2026D24901",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk8364525e72",
@@ -42901,7 +42901,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10975&did=2026D24898",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk0cadc92fbf",
@@ -42915,7 +42915,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10973&did=2026D24896",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkc363188419",
@@ -42943,7 +42943,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10972&did=2026D24895",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9f0856d085",
@@ -42957,7 +42957,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10976&did=2026D24899",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tka24dba79ab",
@@ -42971,7 +42971,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10969&did=2026D24892",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk5d931703ff",
@@ -42985,7 +42985,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10971&did=2026D24894",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk89b2fa0131",
@@ -42999,7 +42999,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10970&did=2026D24893",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkcc48a45ff6",
@@ -43949,6 +43949,34 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11257&did=2026D25602",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkdc6a09b1cc",
+    "titel": "Gewijzigde motie van het lid Vermeer over een systeem van vroeg aanvragen van netcapaciteit voor woningbouwprojecten en landelijke normen voor netbewuste nieuwbouw (t.v.v. 29023-658) - Voorzienings- en leveringszekerheid energie",
+    "indiener": "BBB",
+    "datum": "2026-06-01",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11516&did=2026D26241",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk37e79d0fae",
+    "titel": "Gewijzigde motie van het lid Beckerman over een onderzoek naar de omvang van dakloosheid onder jongeren met aflopende flexibele huurcontracten (t.v.v. 32847-1456) - Integrale visie op de woningmarkt",
+    "indiener": "SP",
+    "datum": "2026-06-01",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11515&did=2026D26238",
     "toelichting": "",
     "stemmen": {},
     "archief": false
