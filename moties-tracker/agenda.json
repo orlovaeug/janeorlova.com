@@ -1,31 +1,23 @@
 [
   {
-    "datum": "2026-06-02",
+    "datum": "2026-06-03",
     "tijd": "2026-",
-    "titel": "Stemmingen",
+    "titel": "Verantwoordingsdebat voor het jaar 2025",
     "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04362"
-  },
-  {
-    "datum": "2026-06-02",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04363"
-  },
-  {
-    "datum": "2026-06-02",
-    "tijd": "2026-",
-    "titel": "Wijziging van de Wet op het primair onderwijs, de Wet primair onderwijs BES, de Wet op de expertisecentra, de Wet voortgezet onderwijs 2020, de Wet medezeggenschap op scholen, de Wet educatie en beroepsonderwijs, de Wet educatie en beroepsonderwijs BES, de Wet op het hoger onderwijs en wetenschappelijk onderzoek en de Wet op het onderwijstoezicht in verband met de versterking van het veiligheidsbeleid op scholen (Wet vrij en veilig onderwijs) (36777)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A07444"
+    "soort": "Plenair debat (overig)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04004"
   },
   {
     "datum": "2026-06-03",
-    "tijd": "",
+    "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat JBZ-Raad (asiel en migratie))",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04519"
+  },
+  {
+    "datum": "2026-06-03",
+    "tijd": "2026-",
     "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
@@ -34,10 +26,18 @@
   {
     "datum": "2026-06-03",
     "tijd": "2026-",
-    "titel": "Verantwoordingsdebat voor het jaar 2025",
+    "titel": "Tweeminutendebat ontwerpbesluit houdende vaststelling van het tijdstip van inwerkingtreding van de Wet veilige jaarwisseling (35386-41)",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (overig)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04004"
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04520"
+  },
+  {
+    "datum": "2026-06-03",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Telecomraad (Formeel) d.d. 9 juni 2026 ",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04521"
   },
   {
     "datum": "2026-06-03",
@@ -98,17 +98,41 @@
   {
     "datum": "2026-06-04",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over de novelle Wet terugkeer en vreemdelingenbewaring (35 501))",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04417"
-  },
-  {
-    "datum": "2026-06-04",
-    "tijd": "",
     "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04365"
+  },
+  {
+    "datum": "2026-06-04",
+    "tijd": "",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over de novelle Wet terugkeer en vreemdelingenbewaring (35 501, over moties ingediend bij het Tweeminutendebat ontwerpbesluit houdende vaststelling van het tijdstip van inwerkingtreding van de Wet veilige jaarwisseling en over moties ingediend bij het Tweeminutendebat Telecomraad (Formeel))",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04522"
+  },
+  {
+    "datum": "2026-06-04",
+    "tijd": "2026-",
+    "titel": "Wijziging van de Landbouwkwaliteitswet en de Wet dieren in verband met de implementatie van Verordening (EU) 2024/1143 over kwaliteitsaanduidingen (36900)",
+    "locatie": "Plenaire zaal",
+    "soort": "Hamerstukken",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03546"
+  },
+  {
+    "datum": "2026-06-04",
+    "tijd": "2026-",
+    "titel": "Debat over het ultimatum van de vakbeweging inzake de bezuinigingen op de sociale zekerheid",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (debat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03798"
+  },
+  {
+    "datum": "2026-06-04",
+    "tijd": "2026-",
+    "titel": "Wijziging van de Wet langdurige zorg in verband met de aanvraag van een Wlz-indicatie door familie (36882)",
+    "locatie": "Plenaire zaal",
+    "soort": "Hamerstukken",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03547"
   }
 ]
