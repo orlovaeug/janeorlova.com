@@ -1,5 +1,36 @@
 [
   {
+    "id": "g774c042f7790",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Waarom ook het kabinet-Jetten weinig voor elkaar krijgt",
+    "date": "2026-06-04",
+    "sent": "n",
+    "link": "https://www.nrc.nl/nieuws/2026/06/04/waarom-ook-het-kabinet-jetten-weinig-voor-elkaar-krijgt-a4929316",
+    "lr": "right"
+  },
+  {
+    "id": "g0cb658657cfe",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Voor het eerst sinds 1970 geen historische figuren op Britse biljetten: ‘Domme actie’",
+    "date": "2026-06-04",
+    "sent": "p",
+    "link": "https://www.ad.nl/buitenland/voor-het-eerst-sinds-1970-geen-historische-figuren-op-britse-biljetten-domme-actie~a63077a4/"
+  },
+  {
+    "id": "g27ad9c4a28f7",
+    "type": "nl",
+    "src": "MAX Vandaag",
+    "title": "Politiek commentator over 100 dagen kabinet-Jetten: \"Dat is echt het probleem van deze club, het aan de slag gaan\" - MAX Vandaag",
+    "date": "2026-06-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOOC1RQUFLSXBZN1JMME14cUU5ZVgxdzJtVFRsRnVJV3JuNlJwVXMwWEN5VkpQc2Fzdm01Y1Q5SGU3WHVSQzMxUjhrS1JBdHZiNk9TOVZGMXU0MXJCMmxRRUNvQTJEMDJENmdxVHpaOXI4dlVfbi1mVl9hdnJCYmViSzI2Yk8tY1Nuc3BMS1FQZkZFS1NoNlh2blVwRG9MXzE4SlVkVDBYRE5GWFk0NDV5bTRfSGo2eEFWdE91V1JzakFkblBiX0ozd3RndjcxMGxHcFA2THpOQ3RNN3pYNmpoaGhMSVVxSmZfUVdJ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g2a7b3b9d3f76",
     "type": "nl",
     "src": "De Telegraaf",
@@ -111,6 +142,90 @@
     "date": "2026-06-03",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ycm9FbHNlR2RZTTM3WllIelR2T0lIM1d4c2xCQzdGRzQ1NWsyUjEwOTZnWDZ3OHE0cXB4c2Fwei1DQmxtYWdNZ05jTS16VFdMRVpwejhyaU0wUlpyWE9WdEVlQktGbVlxc1I1aHdaU0ZseWQ0Y1FVNTgtOVl1UlE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8ed0e3c15ac9",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Jetten houdt vast aan de hoge ambities van zijn kabinet, ondanks kritiek",
+    "date": "2026-06-03",
+    "sent": "n",
+    "link": "https://www.trouw.nl/politiek/jetten-houdt-vast-aan-de-hoge-ambities-van-zijn-kabinet-ondanks-kritiek~bb75e3e6/",
+    "lr": "left"
+  },
+  {
+    "id": "g535870349dcd",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Wordt het nog wat, dat duo Jetten-Spekman?",
+    "date": "2026-06-03",
+    "sent": "u",
+    "link": "https://www.trouw.nl/politiek/wordt-het-nog-wat-dat-duo-jetten-spekman~b9802fb6/",
+    "lr": "left"
+  },
+  {
+    "id": "g463574f409ec",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Jetten houdt vast aan de hoge ambities van zijn kabinet, ondanks kritiek - Trouw",
+    "date": "2026-06-03",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMF9od1hreGtCS0R2U2ViUHFTTDlZUEIzWGNSMVo1b2xtNmIyUkI3RDlRSzF1SjRXRWZxNWJ6cDhQYk9BUDgwQkpLbklZeURWYWJ1d2hibkNNZzUtMUNONUUyQjU1dWpWQktTVjU4TXI0MmRuSUNva3FlYjFCOVlheXY4SFdNejJoUEE1Z0pGN1BNeGx4aTExNG1ZT3NaMk9FUm5BWkt2MG15dkRGVGFNbA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ge2fae150111d",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Klaver heeft premier Jetten sinds eind maart niet meer gesproken: 'Zo komen we niet verder' - Vandaag Inside",
+    "date": "2026-06-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOeWM1eWtLLUdHV1d2eGtmT1o1TEJhYlM1ZUVLcTJYQndvamgwVXFfMU4yOHkyZVdFMFhIR2hoWi1SMzNCUjI5SEM1VlFRTkdHSkd1cHNCSE9hckI3anNRSDc1NzVsZnlrQ1VYUkJSbE5fNGJVeGkyN1c2Zk9FRi01MVYyb3RWRG5aZUE1ZjZKWWgzYjBXZDZfY2pCa1JxaXpZNWQ3cGQtcERPWk5HSENSanFZUGIzbFV6eElHZnRuUmJwdmZZaUV4MXJZdzBlVk1XcmsyTGVHZ2RtODNO?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge573944f8c33",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet-Jetten geeft toe aan rechtse wens om demonstratierecht in te perken - bnnvara",
+    "date": "2026-06-03",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFVJeWJqMElVbDhFV3d4cUZmdEZRQzlzUnNUOGZ4NnpPekstOUVuR3FWNWRBcG9RNVBfNzVRTmVrejR0Qm84UlRIRWJISG1yYkRReTRTbWJBcjNqV1JxdWtqd2RiSGpZTHk4a19vYnMwLTBOOGtIaG1GTHNqWWJiQ3BRcnpyNVpsTERObVN4ZHgtcGFOUUxQWlVVRnNWX041bmdaNFg2Z2NXYXdmQlhVWG5Obw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gf4d21cf385ef",
+    "type": "nl",
+    "src": "Nieuwspaal",
+    "title": "Premier Jetten positief verrast: Maar liefst 22 procent van de Nederlanders heeft vertrouwen in het kabinet - Nieuwspaal",
+    "date": "2026-06-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRUZ2VHZRUERGY1ZOVkVKekVtb3VFd0pZcUtmdlhkaHpnZWxpTnhkNm96S0dpYlExT2xVVEt4SmtOb1hrZGIydEJhR3ZvNVVxZjU2OGVjWjlRQXQzZlhYc2RHT1Iyam82eWRiZGNHeHZvUG5ieGRzb2g5SVRBY20wclpxdWdXTmVhM1BYNGQ2eHRQcmNsSzhQR3BpTURnc3RnZDZ2a3owaHhQU0FnbENmeVJTYl9OSUlLNEE2TDRiS0hWMXdLM3NzMw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g97039af3bf87",
+    "type": "nl",
+    "src": "Tweede Kamer",
+    "title": "Debat over de bezuinigingen op de sociale zekerheid - Tweede Kamer",
+    "date": "2026-06-03",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdEFpbTh1R0xqOWN4QnY2MTJTTEZyb1BLZDFwMXlPT0VRU2J2bkVNaHI3RVpXd0hUWnVFcEEtazdPdHhVdTRXaThNRkg1bDA3NUplQnZ0WmZTZUx2SVIxV0FDNjJ6VGJDR0JtV2NUOS03Q2NXdXVHZXlkRW9UMW5GSExYdFZVTGRiM2lmNG9EZ2M4bVRiZ0RvTDNwclZQZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6009a11e751a",
+    "type": "intl",
+    "src": "Yeni Safak English",
+    "title": "Erdogan, Dutch PM Jetten discuss ties, regional issues - Yeni Safak English",
+    "date": "2026-06-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWC11YWxla01iNVRaMDNGdEJVakNkWmtNY3VDSWtEZjczbkF1ZjlZeW9GZ3RYQkk1N05GM0N3OXdDa0lWSVdnaVQxeDR0YmxXMFhVaXg3bWs3WEVQOVBYQ0JDVFpRb0s5dkNUN25ELTFUV3FFRXluYzFjTk1tRWc5T0Q0NExiZjdPcXlKeg?oc=5",
     "flag": "🌍"
   },
   {
@@ -334,6 +449,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOF9GSjlHSFB5bkpWZlhTUDJ5TklHQm1GUHhLMG90UmFsaEhSTmljanJQWmtwdmxiNUUtSEU4ZzVsaUplRGd0WEdkcWlBM3hvMG10QnhTYXBiUnVTVnVlQkJfWTBub0VnUkNMM1o2WV9tblJXVkFldVFSOTVGdEI3SUR2ejNFbW1XSVJRQk1BdUF6VGpJbkdLQkQ0QkVsckx0UkZwUEp1bkVnakEyRkNVbS05ZXJpS0E?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "g093a2e9d5c36",
+    "type": "nl",
+    "src": "Radio 538",
+    "title": "Gijs Rademaker over historisch laag vertrouwen in kabinet Jetten - Radio 538",
+    "date": "2026-06-02",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNE5DSWV2QmJOWEVrdWZ6TVRKd1ZzaFNvVUd3dDkwYzJHQjNXZ1ZhaUJsSkFEcWdpTjlRekR1RkdpQTJDdXZXSEFsV05uX1NDaGhyRUdheEswX1REeVpWZU5OdHBSeGFrZE9BMVlaZk5nUUpLaGxzOWpxd3czZGtJZnU3OXBiR0tEa2NYUm9pZXMxdHYzcmRDYnYySUtBWWFYXzVibWRn?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g6b1346cc3a17",
@@ -20205,6 +20330,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX2R1dHJYQTk1N2hfNjlSdmRJMlF6d2tFbjZVT0x4T1pOcHNIaTNRU2c2U0xRNkZOZXFnWlpSU2ZKMHp6LS1OZm45TXFJdUEzSXFGdkUyQm9ySF9UQmhNRFZvUkVVUWhDSzBPbmx6N3djM2ljeEMzQ1BPRzJfaGVVeGU0R2xsM01wWVZDRnM0Q1Y2OFdo0gGUAUFVX3lxTE5BVzZDTVp0Y0czdE9TN09od0JldU15eDhJeXBNZlJsc0N4Tm1oOE9oRE9LNGh6NkFhWVRpb3VPYnFvTUd0dnVYWExqVVFkV0ZLbkt1Ui1hTXQtRTBTR2E5dUxKS2hkc19SUENIR1VGQmVWcG0zb285VDRzckV2dFJJN0RaRFNoaGNfWmVpNVBFXzNRSmE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8c0866f8410a",
+    "type": "intl",
+    "src": "IamExpat",
+    "title": "Jetten I cabinet incoming: What expats in the Netherlands need to know - IamExpat",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZmlENFBCVGhwVnc4ek5fOHRJN3N6RTdYUFV2YWdhcklsYW1vX0NhNUpXRGx4MzJIX2oxTndUZkpRTzVZcU1aUU1wTU9kWEk5UG1KcldRZFZnNjdLZVUyVDc3SGl2dUZqTjh2SV9BYlZDYXhNNnFWZkhIdWh2ZWN3VWhMLS1ud0dyVGVDT2d6YkYyQ2JmT2hDUi1JTGpwWnFHUDRKOW5QMHU?oc=5",
     "flag": "🌍"
   }
 ]
