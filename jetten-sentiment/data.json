@@ -31,6 +31,66 @@
     "icon": "📰"
   },
   {
+    "id": "g0f44ebcb83fc",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten: bereid om bezuinigingen sociale zekerheid 'eventueel' te verlagen",
+    "date": "2026-06-04",
+    "sent": "n",
+    "link": "https://nos.nl/l/2617131"
+  },
+  {
+    "id": "ge4d83f671a11",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Premier Jetten: mogelijk toch minder bezuinigingen op sociale zekerheid - Het Financieele Dagblad",
+    "date": "2026-06-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWFNnSllmMlJrY3B5Nk0xVzU3eWNuOGJ5aW1NN0hsRDlXRTRSY2pnZU82bmp4TnoxUll6RFJHSEVjZVo2dWhYU1BrVGFRTjZ0Y21HZnJZM1FwNU9iTTZSZTNtc3hPLU8wME0yeEt3YXJIcDNhTTdnX2xJUm9abHR1eEc5dHBYYVItV2stb2RydUNxSG0tRU12VjlCMTVjV19mbXF3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g69ade92101cc",
+    "type": "nl",
+    "src": "NU",
+    "title": "Live debat | Jetten: 'Kabinet komt komende weken met concrete nieuwe voorstellen' - NU",
+    "date": "2026-06-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPS0JKUm13Zll5TmhsRmtYMk1DXzlYa3N2WTgyTWVOVjl1Rk9NVzlUdE9RelhzY2dBNl84c0F0T052cmFzZ2JJQ18xV3RpN3pnbGVZNzh1MGRqdTRiSjZfdS11d2tYNDBtRWEwUHFScEZpaXRhUFFOQzJfak1ueFpHVk1vcnE1ajJUd2FNMnY5ell3VnFHV1ptTG5qa21tdGVRbzI5X08ydnk2XzJRQVJwS2I4bXNEOEk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1d3b66768bd5",
+    "type": "nl",
+    "src": "NU",
+    "title": "Live debat | Jetten: 'Deur van het kabinet staat wagenwijd open' - NU",
+    "date": "2026-06-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPUDY5aWJ3RWlfMmRHZnRHRm9iWVNSMzVQZUhMMDNxNEs0Vm5sTGRBMXZSSU15RWhlV2g1MVBTT1JrY0pJQUtpdDZNcG5xTnpPZi1fb3d0aDg3eVNuX2JxVW9fVzRObDVOS0c3WVFoOWtybk5wQ0czcEM2ODlCaXVrTU9FMUdsang3TWdRVThIalZKT292aHFlVURXdnU4aXJS?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3fbeec84910e",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten: bereid om bezuinigingen sociale zekerheid 'eventueel' te verlagen - NOS",
+    "date": "2026-06-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWWstQWNJeENZOXMxUFB6U0RWa21TUUFlVmZvWnotUjBxTnJlYkN1Q19HZ0VDU2ZkWFE4R1BHZHA1elR3dWJsLVhWOTcwMlB0cU5SZ2tUaVJlZmFYYkNHa2I3MjA5TC1oTVdrU0xqUVN5VHZqMzltaFRBdUJzR1VHazdQem1kX0Q2cU5RTzNNbUdGV0doUTZlZXVzNkljclJ3LUpz?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5373ee72197b",
+    "type": "nl",
+    "src": "TPO.NL",
+    "title": "Kabinet-Jetten opent eerste polderoverleg: AOW, WW en WIA op tafel - TPO.NL",
+    "date": "2026-06-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdlluUWJCbF9PYXVKZlJRTURKMGFmM1RaNnlBTnIyQlVNQlhyZldSM2RnWElyR240SEtlOVdFNU9NQ2FlSE5iWG8wTHk3cWFyVEFKV3JBelFSS0tTWWtuQ0tuMGJ4OVVMVS1zZXRVMWlsQzNUSDRreEdxSXQ4ODRvM2MtM21GazdfWlM1bkxTTTNpQUNQWnc?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g2a7b3b9d3f76",
     "type": "nl",
     "src": "De Telegraaf",
@@ -20340,6 +20400,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZmlENFBCVGhwVnc4ek5fOHRJN3N6RTdYUFV2YWdhcklsYW1vX0NhNUpXRGx4MzJIX2oxTndUZkpRTzVZcU1aUU1wTU9kWEk5UG1KcldRZFZnNjdLZVUyVDc3SGl2dUZqTjh2SV9BYlZDYXhNNnFWZkhIdWh2ZWN3VWhMLS1ud0dyVGVDT2d6YkYyQ2JmT2hDUi1JTGpwWnFHUDRKOW5QMHU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g70a43904461d",
+    "type": "intl",
+    "src": "DW",
+    "title": "Niederlande: Neue Regierung legt Amtseid ab - DW",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWTEtbFQ3WUNQZlRLMTVJT092MHpYMnY1UlNrczFyc19KaHZpSEQ0UnVhVGVlN1ZCZlRmdFVISEdsVWVRbmd1bF9OeEptaWt3c1l1ZUZqNUlYYkxnRDF5R2JWS05kNlZiVnU1OFdoSy1Mc0NmOW1XcXN5WEFLa3NpQkVDd2dRQWYtdzZTRENoTmJrTlpSRllWQjFYY2hJa2g5dzZiWFc2bmRicEtzMkw5a3Y5b0cyZUw1RmI3a1BKaVA1X3d5YVdNODVibk1iQdIBzgFBVV95cUxNMzFDeEVYcEI0SmZTc2VzM0RuZklVdjdONjdCbWppNFhlTnRHQkZRQ1p5alZOakhNYkVrRjZVMDNLWENaa1dlNEEtcWo1MTd3eG5YWGpIRXc5dldKdTFkZnFESDY0VU03NmIyOGs0NERRcks2V3J2ajM4cW1oWUh3TEV2NGNtZ29QNVJJZngxVWlZN0QxMzFOcmVzSHZqd0NQZnJFRy1DbHN2cEc0SmdxUXBEVVZoSU9fdVpIMWRKOFhJNi03VmJ4ekc2aGJJUQ?oc=5",
     "flag": "🌍"
   }
 ]
