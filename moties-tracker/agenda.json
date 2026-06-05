@@ -1,114 +1,58 @@
 [
   {
-    "datum": "2026-06-04",
+    "datum": "2026-06-09",
+    "tijd": "2026-",
+    "titel": "Stemmingen",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04631"
+  },
+  {
+    "datum": "2026-06-09",
+    "tijd": "2026-",
+    "titel": "Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04632"
+  },
+  {
+    "datum": "2026-06-09",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Tijdelijke wet onderzoeken AIVD en MIVD naar landen met een offensief cyberprogramma, bulkdatasets en overige specifieke voorzieningen (Tijdelijke wet) (36263-47)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04117"
+  },
+  {
+    "datum": "2026-06-09",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Discriminatie, racisme en mensenrechten (CD 21/5)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04244"
+  },
+  {
+    "datum": "2026-06-09",
+    "tijd": "2026-",
+    "titel": "Wijziging van de Kernenergiewet ten behoeve van bedrijfsduurverlenging van kerncentrale Borssele (36847) antwoord 1e termijn + rest",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04318"
+  },
+  {
+    "datum": "2026-06-10",
     "tijd": "",
     "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04365"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04633"
   },
   {
-    "datum": "2026-06-04",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over de novelle Wet terugkeer en vreemdelingenbewaring (35 501, over moties ingediend bij het Tweeminutendebat ontwerpbesluit houdende vaststelling van het tijdstip van inwerkingtreding van de Wet veilige jaarwisseling en over moties ingediend bij het Tweeminutendebat Telecomraad (Formeel))",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04522"
-  },
-  {
-    "datum": "2026-06-04",
+    "datum": "2026-06-10",
     "tijd": "2026-",
-    "titel": "Wijziging van de Landbouwkwaliteitswet en de Wet dieren in verband met de implementatie van Verordening (EU) 2024/1143 over kwaliteitsaanduidingen (36900)",
-    "locatie": "Plenaire zaal",
-    "soort": "Hamerstukken",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03546"
-  },
-  {
-    "datum": "2026-06-04",
-    "tijd": "2026-",
-    "titel": "Debat over het ultimatum van de vakbeweging inzake de bezuinigingen op de sociale zekerheid",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (debat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03798"
-  },
-  {
-    "datum": "2026-06-04",
-    "tijd": "2026-",
-    "titel": "Wijziging van de Wet langdurige zorg in verband met de aanvraag van een Wlz-indicatie door familie (36882)",
-    "locatie": "Plenaire zaal",
-    "soort": "Hamerstukken",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03547"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Vreemdelingen- en asielbeleid (CD 13/5)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03937"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Spoorveiligheid en ERTMS (CD 27/5)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04382"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Verkeersveiligheid (CD 21/5)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04243"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Leefstijlpreventie (CD 23/4)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03770"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Wijziging van de Omgevingswet, Algemene wet bestuursrecht en de Wet windenergie op zee ter implementatie van onderdelen van de met Richtlijn 2023/2413 gewijzigde richtlijn hernieuwbare energie (REDIII, vergunnen) 36872 ",
+    "titel": "Wijziging van de Kieswet in verband met het stellen van nadere regels voor bijstand in het stemhokje (36863)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04101"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Wijziging van de Omgevingswet en de Algemene wet bestuursrecht in verband met de implementatie van de herziening van de richtlijn luchtkwaliteit 36879 ",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04100"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Internationale klimaatstrategie (CD 12/3)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02265"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Mensenhandel en prostitutie (CD 20/5)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04116"
-  },
-  {
-    "datum": "2026-06-08",
-    "tijd": "",
-    "titel": "Tweeminutendebat Schiphol (CD 19/5 en 26/5)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04324"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02879"
   }
 ]
