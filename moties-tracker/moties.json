@@ -45591,7 +45591,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11638&did=2026D26553",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk694e705959",
@@ -46109,7 +46109,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11739&did=2026D26771",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tke0fc77133e",
@@ -47955,6 +47955,48 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12178&did=2026D27618",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkedea1660bb",
+    "titel": "Gewijzigde motie van de leden Van den Berg en Boomsma over bij de strategischgasbeleidbrief een uitvoeringstabel voegen (t.v.v. 21501-33-1207) - Raad voor Vervoer, Telecommunicatie en Energie",
+    "indiener": "JA21",
+    "datum": "2026-06-08",
+    "thema": "Klimaat & Energie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12273&did=2026D27859",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk345862b504",
+    "titel": "Gewijzigde motie van het lid Coenradie over meer regie van de minister op spreiding van ziekenhuizen (t.v.v. 36915-XVI-26) - Wijziging van de begrotingsstaten van het Ministerie van Volksgezondheid, Welzijn en Sport (XVI) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "JA21",
+    "datum": "2026-06-08",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12218&did=2026D27726",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk535ad868a5",
+    "titel": "Gewijzigde motie van het lid Flach bezien wat de knelpunten zijn bij inzet van ijzerpoeder als duurzame brandstof (t.v.v. 29023-674) - Voorzienings- en leveringszekerheid energie",
+    "indiener": "SGP",
+    "datum": "2026-06-08",
+    "thema": "Klimaat & Energie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12216&did=2026D27723",
     "toelichting": "",
     "stemmen": {},
     "archief": false
