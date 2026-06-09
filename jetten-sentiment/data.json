@@ -1,5 +1,57 @@
 [
   {
+    "id": "g82938b0133dd",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Premier Jetten geniet in Uddel van de koeien van Erik en Corine van Essen - Reformatorisch Dagblad",
+    "date": "2026-06-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVThTZGk5dGwxYzk4ekoxRTVDTWxNcHltM0VHMWlaeTBseGZYYjBRdjM0YWp6V3NjcDhuVG1tSE9qSTFyNnF6VlkydmI2TDdUTVA2eHNjdmtYLWdDei1KWjZoOTVjWkhtTG42VVZJUmRubnF2MzJLNXB0SnZKZjJkY05CX2NxN1hMOXh1T1V0RnRmQnhkdFNoQXlqOTI2a3NJWlVrd1lablJrd0U?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g43ad41fc7022",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Waarom België met de asielopvang slimmer is dan Nederland - Wynia's Week",
+    "date": "2026-06-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxONVF4THJoaWxTOHRaRU1mWV9zd1RJY1Nzc2VPRW1iVWhSUm5PcmtpY2RkVE83dm9tX2dHanNvSnI5djJ5dTVSOTVCVFduVDBjTHlGMkc1Vk9nMl9hTk1waEZ3bGlkc1QtYU1oMVlpWWVvTk1vai1uTjA3dTh6VkJJOTlKWmJ4Wmw2dHJ5cA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g224a7cd91f6f",
+    "type": "nl",
+    "src": "Staatsbosbeheer",
+    "title": "Minister-president-Jetten en minister Van Essen op werkbezoek op de Veluwe - Staatsbosbeheer",
+    "date": "2026-06-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPUEtFOUdQTnQzSjVldUFXa1h2UlBhMkNvN2VzUmxFcG5FX3RzQmhYY1VQSUdJWHhLdUdqQS1qVHdidW1Ic2UxUHM5WVFZVGZRUzJJb3FrNlVVRlhlLVFvQk1lbFgySmxCN015dkItQUIzOFJUVnBCa0VmQTQyXzU2MGRpb0RsR3pCTmhtMm90ZDJQSE96ZVZIbkxsU1BKenpFZkFxamxrX291UnM4WjBTTlMyWkQta0xWMHhiTU0ycGdKNTJ3ZVBSd0U0Y0o?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g80766bb698d7",
+    "type": "nl",
+    "src": "Brabants Dagblad",
+    "title": "Na honderd dagen groeit kritiek op kabinet-Jetten I: voorstel om VVD te vervangen door PRO - Brabants Dagblad",
+    "date": "2026-06-09",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOX0Y4VTZMdUJxY0hMTHowa3pZUHBYUWIxc0RaZUE2aDNBdGlQVGpkTDlhTEpNd3hPSW1NbkN3NnRGYmd3SHhnVnppd2c5VTBLb1gyeHRkNGlCOWNUZDJDUmhKRlR0a24yWGw5WUlIR2l3SmxieUVRV2s3OWFWUG4xZnBCMEZmR1FqYXU1NWtwcXBoeDdkRVA5UkdIQ2czTUN1UUliQlo5T1dZN3ljbGVWc0p0Q2J4U2JnSVQwZ0EtUGpYZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g42574cacbc4c",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jimmy Dijk haalt uit naar plannen kabinet: ‘Dat vind ik echt mensonterend’ - De Telegraaf",
+    "date": "2026-06-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbjdrTmhmMEVXUU9jN0tPaVBQUm8yRk1KUWJwaHczclFxbmhVRjRoSXMwcGEtejd2LTY2anhBRk15SUlVM043YmJZNTNyU2xSclRYcy05aDQ1a3p4UVc2aE0zUGwzajZCM3ZaYy1xcklDclNVZm84anhVYkJjNWtKOEQwUkd2d2JLekdmZkNXZE81aFBnY3BoVFhObmRPWjUyQ1JMU0I1WUI0cEJDa0lDcFpYMG1vblBm?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "ga40575066913",
     "type": "blog",
     "src": "cnv.nl",
@@ -29,6 +81,108 @@
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb3BVSEFGaHJnWUdmbldsbGFoRVRQMFY5bWkwaDlMVklzWDJZbDZ2VE43QXlSN1dNQVJsR0kxVURZYkZMaUpINVE2elEwNXlid2ZHSFV5eXdGN2lyLVNwMEkxc0xGYzdkMTFHcGVxTnJPYUp4bXd3R2JXeThLcEhuRy12ZlZTSHBpZk05TVE0YVZyaDlUOU8wUWttWHZ5U2ttQ2lvQ1l2VDdBS1JYUUhZME1oZw?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "ga6b3d3dda647",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten belooft boeren ’toekomstperspectief’ en ’duidelijkheid’, maar pijnlijke ingrepen op erf komen eraan: ’Waar houdt het een keer op?’ - De Telegraaf",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPWndyV1NOYVoxcEI4SlhMTmpMQmgtQmlMNEhqdEJmX21wU1M2NGVFajlTQ2xORldkclZ5T1NKRVpITUVkbURLM0tJZTlQRi14MkdvYUIzN2diQ0RPZ0luSzI2UWl0TFphTWFWMUZtbVFuNVRmdWxlc1RrTW9NdkZzVnltdk1wLWsxLUdEWEV1WThBYi1Na2NCYTd2SVJrNHNNU0RVNUhGVUhydWcwQXZ6WUNubTV6VEtpdG0zeWdCaW5nTUdQYkt0cVdUYlljTWJlXzFIbEJRdEMxNE1qTF93dEwyaFExNzZjdi1yNW1WRVZTUV94eHV3MkNhRnl6RkhuZk81LVdsYmY?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g69c66e21f087",
+    "type": "nl",
+    "src": "Omroep Gelderland",
+    "title": "Premier Rob Jetten: 'Ik ben enthousiast over Gelderland' - Omroep Gelderland",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOYlJVRWpfUGRQY3BlODVuQ0pIVGQ1aEM1dGg5RGljSVFVOU5UaE1JRGhvYVhscW5kZ2RjRjNsNk1seUFRdjdxRHJ6ZU1fRENYWFY4c25fTmFOdkNlVVQtcGRHeGdDaUN4X0IyemdoaGpwXzNJNWU5aElxaEZoTlpaQWVOMEM2MVBPTE5YeW1uU18?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga5746baffb97",
+    "type": "nl",
+    "src": "Nederlands Dagblad",
+    "title": "Premier Jetten en Stoffer op bezoek bij de boer. ‘Pas op, er zit stroom op die draden, Rob’ - Nederlands Dagblad",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYjhSc2UtOXJQQm9LQlVfemV4WGNqUlJoUDcxMlY3WG1PaTVFQkFwbW5uTjZya2tLekgyU210ZmI1SVJqM2EyV1Y3enlROWtlQVRFYi14V3lzcXc3MVlYUEN0NzdPQ1d2LW83WmVlX1l2QVB1Zm9DZGlDR2U5OUhmaS1ZdE5qdjU3bFhQV1BaS1BuRnhfWmk4c3hmWUxJdzVrSC1qcmZn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5b55fc419e7c",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten wil stikstofaanpak met steun van links én rechts - bnr.nl",
+    "date": "2026-06-08",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOOUFsbWZ6YV83bmxnTGJLWDdUQkdiZ2pPLVNuZzJfY2tWRExxczVXaEFIZTIyRlRnejl2SmtFTUtuRHI3X3Rab0tqOElqdGVfSUJGT3l1NVF4ek5RemVhUVlMZ3NWdklCNjktNmRqaGliemxpY215SEtqeXNER1oxbWI0NkZMLW5CeDF1QlBMcnpfNlh0N1VtUnBiSDduU0N4dkFXbFNGT083dw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g474bf6a0f2d6",
+    "type": "nl",
+    "src": "Nieuws.nl",
+    "title": "Kabinet zoekt brede steun voor stikstofbeleid | Jetten - Nieuws.nl",
+    "date": "2026-06-08",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcVRPeVZiLVhyenhXbHVUdU1hSUhVNmtPcE1IcWs2TThGNEkyY082dGdxWk9xOGFDZVhKMnpoclFvNHhXbUR5MjFpYzd2bzJfN2l0a0U2QWR1Z0ZReEdaSjdJVXZhaU1NZ0EyNjhhOHNuZDdyNnp5RUZFUUhLMnd6eHh4U0x2Q01iWnc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g536f4448b23b",
+    "type": "nl",
+    "src": "ewmagazine.nl",
+    "title": "Renault adviseert kabinet-Jetten over wegenbelasting: ‘Elektrische auto’s mogen nooit duurder worden dan benzineauto’s’ | Deel 4 - ewmagazine.nl",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNSzJrcmt4MkZKZmZBUFFVbnJsdG1BYVJDVWhoRFgzclpFMFdwa1FmMEFkZ0loWDk0WHd6UWdVeFJtZlh2SE5fME1XYUg5OU5XMWNHYWgzc2tjbktwbmNmMkw0T3ZmUi1feW0tcnYwUEVSdHFvbk10Nngyeklfd19ZSkdIUlhUQlQ1UmZFSUFwd014TnJxQi1XZWpiN2k2UG5WdndyVHdsbzhGOWtUbTJJekVsbF94NnJNekIyY25Wcy01MXlFZTFWVEdqdnR2cUoxekFQMmJIT0JvUHJkNHE5NU1KOWt4VndKNHh2QjduMHZXelpwdUc0eUxBd0hHaXBsQUpaYlB1M21uUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5eca0c9ba817",
+    "type": "intl",
+    "src": "The Jerusalem Post",
+    "title": "Volodymyr Zelensky has 'positive' conversation with US officials regarding Ukraine war - The Jerusalem Post",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSThnY3QyalFabXQ5dmFialgxQXZEMS1hNVlMUFl5RTdHT29oMW8yR2xSS05QRUNmbVYtUnVfN1RBWmhlYXpVM3dyenc1NVFzRm1KQVV0UkZsUnB2NGJGS09Yem1HZ3JCY0ZXdjQ1cERsV3hBY0paYUIzQmp3U1lYc3dwX2lCOS1RSHc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g66971170b7e6",
+    "type": "intl",
+    "src": "Public Radio of Armenia",
+    "title": "Dutch PM Jetten congratulates Pashinyan, backs Armenia’s European course - Public Radio of Armenia",
+    "date": "2026-06-08",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPZFI2cDlMYnBlZkR3Snh6ZTJLZlhNS080aWxrbmVDWmhNd0VQdG8tUlVQRDlKMTBYTk1iQkoxZnJySUV6cTJkLVpHQmtwbTBlVk1SQktuMjh0NHFIbm13dlhWRm5EU01YcmZzSHppUWtoRHdOZFdrZTBaSjZxNnJRTTlPVFA3WTNkS01VRnloa0FWSmEza0Z5MW9GMXFYUDBGRzBQSXQyUEc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf9dee04d1913",
+    "type": "intl",
+    "src": "Armenpress",
+    "title": "Dutch prime minister congratulates Armenian premier on Civil Contract’s victory in parliamentary elections - Armenpress",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9pQ3Y5OC0xOVBaeHRpMFNSQ3pxTDJOd0Fid1cwTUtWU25XNEtOcDZ5QXNUa3F0a1ZXVTE5Y19STXp4Q180YXpKa3RyVFJ1VlFPRmfSAVdBVV95cUxPaS1mSnRQV3ZqMm9qLWJOaUtJaXBWSFRxUE5oSXdabmw4WWowdXdwdGN6c2tWQWZQWDAwTXowdF9HdTIxeEpjRmtpLUNON2tPcWdacHJOS00?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g365667bd23f5",
+    "type": "intl",
+    "src": "Armenpress",
+    "title": "Le Premier ministre du Royaume des Pays-Bas a félicité le Premier ministre à l’occasion de la victoire du parti Contrat civil aux élections législatives - Armenpress",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9weklyaEplSTcxTkxmdDduZktXTTE4cTl4d29DbVRva3dGRDFzeXVjd21IM2FPWGo0dXRZNFFweHZNaGpiRlM5cmxCUXpDeUJPdXfSAVdBVV95cUxOYWpEUjA5bFYxNnp3dUV6Y3FxREprY3ZJUTUwXzRNVWJDekVzT2tENFBSS29aWHlFLTU4cmFiTW1KcUxyMXJCbVhHVzRTSHRxZlNtOFRNZ00?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "gb4b47e84c7f2",
@@ -69,6 +223,36 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcVBpSC1IUDBsWGhXZHZCbXFULW8yVHN1cVNmMlBtSXMydDVDWHctcEp0cEtLWEpHSkVGRE9GNnpTTEdKSHJuWWpSTmtvT282THhVeTBhMW51SWpOQ3VnQnVTRWsza1lLaVV0N1NZdjZtZHlsbzFxU3VPOTY5WkRFQ0NvQTZSQQ?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g90e2aec8b18b",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Rutte leed eronder, Jetten nu ook: de waar-is-de-premier-vraag wordt gesteld | Foto - De Gelderlander",
+    "date": "2026-06-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVTRKUV9EQmlWRVhVVFJPWGZwTWdXZzhoU1VnUTNGZFhWNHROOEFmX25meXMta19SRVFwSThjVVJDbWRvTkV6eHh5ejRfb3BPYXlzVnBtNHcxTzRXR3hXY1pTT1BmMDIzRWRLV2o2MkpnMjk0NVRYaV80OW93U0xfbHJNY0hkNC1HUS1sYjMzb2luUTVCVW1IRExiYk84a1llaFAyNFVTZzk3d1VsVkdwSVpfalhNLWd3QnE2bXQ2aHl5YlQwV2JxMEk0MA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4e9d3561dcba",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Rutte leed eronder, Jetten nu ook: de waar-is-de-premier-vraag wordt gesteld - Eindhovens Dagblad",
+    "date": "2026-06-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQa0pDYjh2eTgzRk04ZDhMcDMyYldIdWJDZkVIRGVCeXV6VmpHVnZPUDM0V0h2M2phNVBGZ250TmdrWmR3VDdXLUZEUWlXUEpFZ0M3cEhTU1RmYm8wN3JwTE9RQWZMMGlKV2tYQ0t5amFkTktJRzBfOFNFbFQxRzVjUUVFa1hXT1NGNC1PTk10bHRmLXhfdzJBX3ZHYlVsOVo0UlloMUdxc3JRUWZXREwyUw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gefa88ae0696d",
+    "type": "intl",
+    "src": "Digital Journal",
+    "title": "‘Populists can be beaten’: Dutch centrist Jetten claims election win - Digital Journal",
+    "date": "2026-06-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOFozYUdwRFVzUjFKV3JMaDFfdl82bmYyb1lDdGotM3U2QWZwYWJ1WUZNWjk2bzZxRW9LZko3N2xsY3pXUXpYMHhvZWdTMUVFd09JTXA4eHlQLTBhdndpalgwcjQ0RDdUWXl3Q2E1cHdPcmlpWkNrdVNsckpzSnpHdF9wRF9hVDNOWmEwMU0xajh1b1BVb0FyYzVGQmJoaDFKQi1pOHZTWTc?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ge4e69f6ba44e",
@@ -16455,6 +16639,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g55e029383cff",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Jetten wil veto van EU-lidstaten inperken: dit is wat u moet weten - Nieuw Rechts",
+    "date": "2026-03-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZGlzUmlPWFBuVXdWRmtFS2N1bnJIV084NjZpTU9WUDdFUG0yQVpWeF92MUtrYWN3R0RITE9IVzlBVXdpZFdUUFB3cVFqMThiRWFkZlJsalZPUkVRbDVnMC1NYzlhX1dtLU1xUEdZZmV6SkhOTzlTYmU5a0luODVFaTFmcnFJRll3V05lX2pPWU1kSl9EdUhJVUwzRQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g3074f3fb8785",
     "type": "nl",
     "src": "NOS",
@@ -20664,5 +20858,15 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWEVVN2Nqc2dMSFBjM3hrVWRSR3c1Nmw2S3Jlc0htUnpWNThHel9QRDFjb2xIYllSM0tIVGcwWDdJRDN4QTljSWs3WG5fUXlmSVd3YUZKU0ZFWXVEOVI3R05FcmlnYmVMa0QxOWt2Qmk0eTJ5WlpWMTNBZTdrNUw2WU1oTHA2T2RldzRkZnhYV0ZuS0NoRlVvYS1qRU8tY3NQdkVhYmxrNTU5NnlzUWJtOHdnaFZZM2FVdnc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gcf7e7fe39856",
+    "type": "nl",
+    "src": "Rijksoverheid.nl",
+    "title": "Kabinet-Jetten (sinds 2026) - Rijksoverheid.nl",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTElqOXNSSGpiT1hTS0QzUk0xQlJ3R203aDRvel9zN2NUeUNfZVEyZXFna3N3SXVJMVI5Z3V2SzZSVmxyVENYRHpQWE9BZURVWFhMaWlzb0xVQlhsTGJPOTVGbXc2bm1lMDJVMFJlTWN2ZmthSmVuRXhXYTF0Ym1BemhXdEswTllidFZtZHUyYUh5WVNpX3c?oc=5",
+    "icon": "📰"
   }
 ]
