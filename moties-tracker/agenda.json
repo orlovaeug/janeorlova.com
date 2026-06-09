@@ -26,14 +26,6 @@
   {
     "datum": "2026-06-09",
     "tijd": "2026-",
-    "titel": "Tweeminutendebat Discriminatie, racisme en mensenrechten (CD 21/5)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04244"
-  },
-  {
-    "datum": "2026-06-09",
-    "tijd": "2026-",
     "titel": "Wijziging van de Kernenergiewet ten behoeve van bedrijfsduurverlenging van kerncentrale Borssele (36847) antwoord 1e termijn + rest",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
@@ -50,6 +42,14 @@
   {
     "datum": "2026-06-10",
     "tijd": "2026-",
+    "titel": "Tweeminutendebat Discriminatie, racisme en mensenrechten (CD 21/5)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A04244"
+  },
+  {
+    "datum": "2026-06-10",
+    "tijd": "2026-",
     "titel": "Wijziging van de Kieswet in verband met het stellen van nadere regels voor bijstand in het stemhokje (36863)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
@@ -62,5 +62,13 @@
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03361"
+  },
+  {
+    "datum": "2026-06-10",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Digitalisering, leermiddelen en ondersteuningsstructuur in het funderend onderwijs (CD 9/4)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A03252"
   }
 ]
