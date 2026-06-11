@@ -1,5 +1,15 @@
 [
   {
+    "id": "ge537bed18b74",
+    "type": "intl",
+    "src": "GALA.de",
+    "title": "Zur Galerie Royaler Glanz, volles Programm: Steinmeiers Staatsbesuch in den Niederlanden - GALA.de",
+    "date": "2026-06-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdTQ4SlFiUEdJUFZRYlVLazR1WTlKTXptblIzUy0xQ2VhaHYwYXl6dFA0VzQwdkhmRDF4VFpzN0JOOEpLYU11QXh5dnU4aWpxMkdxdHRMUjY4dExZb1JpaFp5Qi1PSHFUZFhoV1JTZDNaWDh6RkxCNURfQkh1eUxZV1dqUGxWRzUwanBlOURGQmVIcGVmdzNNVFpJdDdmTEY0X3gwUzlRYnhsUlVrOUFseWl5OE5kOTJOWnd3emxVRVFucXBmWnJsdHZUQXlNcXBBZ2c?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g77489d034f96",
     "type": "nl",
     "src": "Nieuw Rechts",
@@ -18,6 +28,27 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdXdSVUZxZnVIOHJsMmxPcTFNVHVOSk9YTEFPQ2pUd25NRzBrZHZLZG1selJscG1JZENsalJpVEpIcjFfUjdQM0RLck4zZGo2UURUUXM5aUNjRVpSUVBJRlhvTUFYM3VvLW1TREJ2VzVkMVBNeG9WTXl3NzN4THBHWVVlcGp6aW5keHJNUkszVjlRbFNqV1E?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g3554416e97c9",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Stikstofdeal onder hoogspanning: strenge koeiennorm voor boeren dreigt - De Telegraaf",
+    "date": "2026-06-10",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeU1wNXo0ZEJxeUdiM05BbnZFbllNRnIyWGItOUh0VkNnNVpfZlEyY3lHblpZaDAxQVVLbnRpVEpxcXhxTVdrdElVVWppWi12bzZYSDBJUHFhaFVGZWdSckVnczJ6NUpkajZIX2JsMUhWeGpUbzFPZnhDM0FxQjVhSUFtVnIweVJienIzaVkzdDFSR1A5SFNIUENlYzcxY0NYbTl2Q1pPblY1Y3dQaVk5RlRZbW80WW9rbVE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc5469c9df6d0",
+    "type": "intl",
+    "src": "RP Online",
+    "title": "Bundespräsident auf Reisen: In Den Haag erfährt Steinmeier mehr über ein politisches Experiment - RP Online",
+    "date": "2026-06-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR2lVYm5YaGJsSEJjVk1hYnZGbTBmNk5BTGFELWYzbFV6X21yVnczVmd4SXNQQTNUX1ExbjFJcFhDSlhHaWhNRDJTOHJDS1ZjM3lJVzVYeXdsR3JlUGdiWkJ6empNNkpDVFZ1MGRTOVg1SDB6ZlhIQ3F2ZzZLeWdSSFJTcW5tMjUyRlU1Y1QtcUYtbUVnOXNpWnpRX0hfZ21ZeVhwN1ctTUd0Q0FiTVlWSg?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g82938b0133dd",
@@ -109,6 +140,16 @@
     "date": "2026-06-09",
     "sent": "a",
     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZDJLQ1gyaGR3eUZkT0hZck1OZEN4XzFGeGF3aXZSb3RXMWMxWXNVamVGbWY3eDQ5bGRveVRxendubVlsTDNLbno4bzJZLWVtemxuRFBmNzZHQ2d2SXpmVXg2UGowWjBWaEZqWTJmS3ljOXNhME9jelpCZ2o0MG41WjR4eDFJd2JrU1FlMXdJRXFpdVU1TGFfYTVWYi1fcm1EamFBQkotLU1pRVBuYngwZC1aVHJMbjl1NGhlLUx4dGRaRi01R29ySWlHYndBaTNT?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g39a051b6b2e1",
+    "type": "nl",
+    "src": "Brabants Dagblad",
+    "title": "Na honderd dagen groeit kritiek op kabinet-Jetten I: voorstel om VVD te vervangen door PRO | Foto - Brabants Dagblad",
+    "date": "2026-06-09",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQV3p1QmRIdC1xbXBITDhoMnFIU3JYd18tN0NJYmtzOEhGMXpESmdqNXJTZ1cwYnBHcEl6bG43bFB3QzJKc3NrQkhMaEtfOEQwREl1N01qRHNGaE5DX3I2UmxPQml4TzBsQ0tUcHRjM0h6MktqV3ZDZzhWY1poWmlfUXl4aXFWYUFtU2hoYW8xUVp0WmFCbkRxNjJfSGpvWDgzRXNhRFlDb2ZvTU5LSUdFaWFISW9Yc0Z1TnFRM2FGQkdqZ2xiak9zY1lNeVFfMnM?oc=5",
     "icon": "📰"
   },
   {
@@ -255,6 +296,16 @@
     "flag": "🌍"
   },
   {
+    "id": "ge83c0d1eca46",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Renault adviseert kabinet-Jetten over wegenbelasting: ‘Elektrische auto’s mogen nooit duurder worden dan benzineauto’s’ | Deel 4 - EW - EWmagazine.nl",
+    "date": "2026-06-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNSzJrcmt4MkZKZmZBUFFVbnJsdG1BYVJDVWhoRFgzclpFMFdwa1FmMEFkZ0loWDk0WHd6UWdVeFJtZlh2SE5fME1XYUg5OU5XMWNHYWgzc2tjbktwbmNmMkw0T3ZmUi1feW0tcnYwUEVSdHFvbk10Nngyeklfd19ZSkdIUlhUQlQ1UmZFSUFwd014TnJxQi1XZWpiN2k2UG5WdndyVHdsbzhGOWtUbTJJekVsbF94NnJNekIyY25Wcy01MXlFZTFWVEdqdnR2cUoxekFQMmJIT0JvUHJkNHE5NU1KOWt4VndKNHh2QjduMHZXelpwdUc0eUxBd0hHaXBsQUpaYlB1M21uUQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gb4b47e84c7f2",
     "type": "nl",
     "src": "AD",
@@ -323,6 +374,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNOFozYUdwRFVzUjFKV3JMaDFfdl82bmYyb1lDdGotM3U2QWZwYWJ1WUZNWjk2bzZxRW9LZko3N2xsY3pXUXpYMHhvZWdTMUVFd09JTXA4eHlQLTBhdndpalgwcjQ0RDdUWXl3Q2E1cHdPcmlpWkNrdVNsckpzSnpHdF9wRF9hVDNOWmEwMU0xajh1b1BVb0FyYzVGQmJoaDFKQi1pOHZTWTc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "ge563e14290b8",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Rutte leed eronder, Jetten nu ook: de waar-is-de-premier-vraag wordt gesteld - De Gelderlander",
+    "date": "2026-06-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVTRKUV9EQmlWRVhVVFJPWGZwTWdXZzhoU1VnUTNGZFhWNHROOEFmX25meXMta19SRVFwSThjVVJDbWRvTkV6eHh5ejRfb3BPYXlzVnBtNHcxTzRXR3hXY1pTT1BmMDIzRWRLV2o2MkpnMjk0NVRYaV80OW93U0xfbHJNY0hkNC1HUS1sYjMzb2luUTVCVW1IRExiYk84a1llaFAyNFVTZzk3d1VsVkdwSVpfalhNLWd3QnE2bXQ2aHl5YlQwV2JxMEk0MA?oc=5",
+    "icon": "📰"
   },
   {
     "id": "ge4e69f6ba44e",
