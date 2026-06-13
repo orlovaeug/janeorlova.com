@@ -37762,7 +37762,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09848&did=2026D22147",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkb91f2ee18e",
@@ -37886,7 +37886,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09918&did=2026D22309",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk1074836949",
@@ -37900,7 +37900,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09916&did=2026D22307",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tka4fda3260e",
@@ -38202,7 +38202,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z09852&did=2026D22153",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk92fd12b079",
@@ -53437,6 +53437,48 @@
       "D66": "voor",
       "CDA": "voor"
     },
+    "archief": false
+  },
+  {
+    "id": "tk9872321b13",
+    "titel": "Gewijzigde motie van het lid Van Asten c.s. over bij het aanwijzen van grootschalige woningbouwlocaties ook nieuwe locaties meenemen (t.v.v. 32847-1462) - Integrale visie op de woningmarkt",
+    "indiener": "D66",
+    "datum": "2026-06-12",
+    "thema": "Wonen & Bouwen",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13027&did=2026D29405",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk32e8496428",
+    "titel": "Gewijzigde motie van de leden Ceulemans en Stoffer over afzien van het voornemen om de financiering van UNRWA te verhogen (t.v.v. 36915-XVII-14) - Wijziging van de begrotingsstaat voor Buitenlandse Handel en Ontwikkelingshulp (XVII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "JA21",
+    "datum": "2026-06-12",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13020&did=2026D29377",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tke9653125d0",
+    "titel": "Nader gewijzigde motie van het lid Ceulemans over verminderingen die ontstaan door kasschuiven niet opvullen (t.v.v. 36915-XVII-13) - Wijziging van de begrotingsstaat voor Buitenlandse Handel en Ontwikkelingshulp (XVII) voor het jaar 2026 (wijziging samenhangende met de Voorjaarsnota)",
+    "indiener": "JA21",
+    "datum": "2026-06-12",
+    "thema": "Asiel & Migratie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13018&did=2026D29375",
+    "toelichting": "",
+    "stemmen": {},
     "archief": false
   }
 ]
