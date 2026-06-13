@@ -1,5 +1,26 @@
 [
   {
+    "id": "g6615312286b0",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Minister Karremans over ambities: ‘Ik droom er niet van de nieuwe Mark Rutte te worden’ - De Telegraaf",
+    "date": "2026-06-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMFNTcldjOG9xS2RNQkd4QW1fUEsxR0tjYkZybGNEeElBcWZTYXBta3VaVzFiVFdZQUVPbTZwS3RFOWZTYWV1TFZtRE5UM2NnT2VtN1k3NElHNThZTmNPVVF2Ui1ZbVZmeG90RDVfc25LZTl0ZS1jQlMtT0NzR2EwYm8zZHBSZFFubDJ3VENnWVF5eWNVZUZiTVBCaU5DNlpvWTQxNzRiMHBLaVhXeHIzMGRvYVFIUDFRU0pIOUNuTjNwRU1DYl9LYUdBVnk?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gaf322cdc1b37",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Vertrouwen van VVD-kiezers in partijleider Dilan Yeşilgöz daalt (weer) hard, Ruben Brekelmans populairder als lijsttrekker - EenVandaag",
+    "date": "2026-06-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPTEpReVR6WUpta0c3aDJZcEhmdF96czlEQ3lJS0lKTVIxWWcxZjRpOG00ampQX1BGdkpWQUJWR0FTcEh1bEV1a2FfbFU2RXZuOTlVVEZha0RTX0RoeHloSTd0ZEhOMmVsWDllQ0lfRE56WElfWW5WcjZQYlgzblZVVV94T2xtMEY3VXNzeXZFSkVxTjhTNklvbTNqaVhKQW5rTmxqMEl4ZzJOTnpsUE1vX1dILUZ6bGRfSUdQOWNESzFFWmNTTFNJTG9lUWU4Vnk3S2wtOUs1V0V5NHkwdmpiNVJnTHFTckxKVDAyVm8wb1c0R3VkTDJ4R2VGQjlhUlVORC1ITmxXMGhkb2c?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g1aa083277ee8",
     "type": "nl",
     "src": "NH Nieuws",
@@ -17,6 +38,16 @@
     "date": "2026-06-12",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUkdrelo0X1ZGZ1QyMnYzVlJaUldZdmhjSWdSZXRqUVhxd2pLZUFLUnQ0ZDFRakVUOGx0a3VuYzY3REp5YVBmd3Zuelg5eGl2ZVZvOWhDSnd3ajQ4UFZXOVMwbW5xRFp5Q0FPMnhqVFVqNjVjWHRXc3VDMmhrcUVwaEo4RzRkeHRfZnRJajNoMFl4Nlo1TDR5VFRZX19KVmhtTlBYM2xDa1hEanc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ged1cdf71522c",
+    "type": "intl",
+    "src": "ANTARA News",
+    "title": "Prabowo called Dutch PM discuss economic partnership, Hormuz Strait - ANTARA News",
+    "date": "2026-06-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeTcydk1HaV80bzhCQWY0bUZEZEQwRXBwQ25rZndvdS1QcTlXWWhRNkhxeUVjS25BXzdOZGdIOTFucGhqRXl5OG94WUdHVlpmdnRyTGxiTWpCOWxMS1dXMDlhSllHaXY5OVMtNkNpNzJEVHpXNmtEMDU1RkI1dDVjMnZIdVRqZEdhT0kwXzBSTUI2Z2tlUEdHVXM3NF9mY245cFNvMUZUUdIBrAFBVV95cUxObzR2UUxraTBVaERfdFlCWFlfOVJCa3ZWZ0REREY0eS1VVHZwTWZ6aWtfc2w0RlNuRzVOaUZ1SExiWE8wTXM3SG9fLVdweDAxTXpCanp3eC1WcnZLX19tS0x1TmNVdEI0RFpRNEh2QzFiN0Q0VmxXMFZyR1ZMZ0VRT3MxcVgxa254QkFpb3hLYWwtaXpFUHRROExPUHRYVlU4Q3hpMDBRbW4zRXdi?oc=5",
     "flag": "🌍"
   },
   {
@@ -60,6 +91,16 @@
     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPOFFMQnNJd0xNSGtVQkFISU9uX2w4SW03WDFncEVlSmlEUXdmdE5WT21IaHlxdnl4MDMzS2x0MjBIUS1fWDhnM19sQ0hUbmhsc3VkN194aDJDdVlPRDFqR3ZOM3VxSVJ6bWZ5N3A1NlhhTVpqTlhKM3o1M0xUekNzZjRDUWVIazRHa0hhaEJDREFZWnhfYnBRUWJPcm1fNDBkOWNuTEtrZHozdXBQUENZZG40bXdKcjZhZUZr?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g9cf03d7b350d",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Minister-president Jetten reageert verslagen op ongeluk Zeeland: ‘Overschaduwt vandaag alles’ - AD.nl",
+    "date": "2026-06-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOVUlUX3Nxbkh3WTNNRVF2YkVyOFpqZ1hrUTRVeFh0bDdQWWxfdUpTRmctZGFVWnVxbmpCQWdQS0FxaDBSaEhMbGY5bXJhT2pwV1ZZZWRGOXhVWGRQLVZ2czFJY0p2cnFmQi1QUktpMXNGSW9wbWtCVHMwM0J2V3JMUjVEMHFZdmg2S1VvVUpickhKTUJ0aTh5RHJfTXQ2YzlMUUhfZHFtaFZaYWtHUmZoc3E5ZndBWmZqdXRQY1JOd01mRUVQZTU3ZA?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g77489d034f96",
