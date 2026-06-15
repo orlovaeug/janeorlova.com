@@ -50839,7 +50839,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12498&did=2026D28399",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tka8ed0040db",
@@ -50853,7 +50853,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12528&did=2026D28459",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkde956cfe17",
@@ -50867,7 +50867,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12527&did=2026D28458",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd24e66f982",
@@ -50881,7 +50881,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12525&did=2026D28456",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9ac82e7ea2",
@@ -50895,7 +50895,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12526&did=2026D28457",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk5833988f7d",
@@ -50923,7 +50923,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12524&did=2026D28455",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkbe3fa74a32",
@@ -50937,7 +50937,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12523&did=2026D28454",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd9a10254a7",
@@ -50951,7 +50951,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12517&did=2026D28446",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkb5af31857f",
@@ -50965,7 +50965,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12522&did=2026D28453",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkc738b771a4",
@@ -50979,7 +50979,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12521&did=2026D28452",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk8fd1988658",
@@ -50993,7 +50993,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12519&did=2026D28448",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk4c049ef8ee",
@@ -51007,7 +51007,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12518&did=2026D28447",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd7bffc3aa2",
@@ -51021,7 +51021,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z12496&did=2026D28398",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk6063394333",
@@ -53477,6 +53477,48 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13018&did=2026D29375",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk56c329f27f",
+    "titel": "Gewijzigde motie van het lid Moorman c.s. over de Wet gratis schoolboeken omvormen tot een wet gratis leermiddelen waarin devices zijn opgenomen (t.v.v. 32034-74) - Digitale leermiddelen",
+    "indiener": "GL-PvdA",
+    "datum": "2026-06-15",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13091&did=2026D29570",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc9e573d82a",
+    "titel": "Gewijzigde motie van het lid Moinat c.s. over een toekomstplan voor jongeren die uitstromen uit jeugdhulp (t.v.v. 31839-1153) - Jeugdzorg",
+    "indiener": "Gr.Markuszower",
+    "datum": "2026-06-15",
+    "thema": "Zorg",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13089&did=2026D29567",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1fd5bbb4a7",
+    "titel": "Gewijzigde motie van het lid Moinat c.s. over bij ernstige signalen van acute onveiligheid van kinderen één eindverantwoordelijke professional aanwijzen (t.v.v. 31839-1154) - Jeugdzorg",
+    "indiener": "Gr.Markuszower",
+    "datum": "2026-06-15",
+    "thema": "Zorg",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13090&did=2026D29569",
     "toelichting": "",
     "stemmen": {},
     "archief": false
