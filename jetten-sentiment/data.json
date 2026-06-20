@@ -1,5 +1,68 @@
 [
   {
+    "id": "gf17f98059a96",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "'Slechts 3 procent heeft vertrouwen in kabinet-Jetten op asieldossier'",
+    "date": "2026-06-20",
+    "sent": "p",
+    "link": "https://www.telegraaf.nl/podcast/slechts-3-procent-heeft-vertrouwen-in-kabinet-jetten-op-asieldossier/157490123.html",
+    "lr": "right"
+  },
+  {
+    "id": "gf7f2d9fc0a6a",
+    "type": "nl",
+    "src": "L1 Nieuws",
+    "title": "Molukse gemeenschap in Limburg gematigd enthousiast over excuses premier Jetten: 'Ze komen te laat' - L1 Nieuws",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZU8yWDZ5UEdFUUtkazlBVmc5Q0g4QnA1S0ZJR0ZBbEFKdm9nWFVoZDE1TUp2aWVMTUc0MHpnb2JEWFdCUEhRSXEyVERuaFhFaGE1czZDWkhkVno4bl9KLV9iTmtON05jeWtyUHlMNXdBZ1JsNnowUDFEeVZQaGVtNV9xUTBGTHNvUno3NHV3SVFIQnN5RUEwdWlMaVpCMERkcWNoX3N0MzMyNlVhd05qazVPcnJXZnlSSzMtV1NkMHFBTktxVlpKT2t4RHN1ZkRK?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gbc318b7d3a00",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Enquête over asielbeleid: geen steun voor kabinet-Jetten - De Telegraaf",
+    "date": "2026-06-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQdDBrZ25yeE52WVUweVVZOThZVlRtbEFZQVZOY05EeGtsSkVURnBsR1dCRkdNWjJSXzRVdjNhN3ZsVlBmeG03OThwMExWbDFnbmR4Z3ZtVjltS2ZYcE9kMjBpOFc4czN5TGNPUWx4TVdZeFVmYWU4dGRmTG92QzJxeENxODAwZmRkYU1EaEgwZUlTcUZCT0tYdDh2Z1ZMRDFEQk5YN3BjNDV1NGlMY0syR1c3R2o0S2lBODhfU05udjJyNmtpdUp1cmViRGhxSjVNdFlfWWxqb2xUMnRBY0gzbjY5bWRzME5Bblk5ZkgzQWlNTm93MGU3ZE1jSXVXYzUt?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g0592034e0585",
+    "type": "nl",
+    "src": "Nieuwslens",
+    "title": "Nederlanders hebben weinig vertrouwen in asielbeleid kabinet-Jetten - Nieuwslens",
+    "date": "2026-06-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNTXR4WXJMeVZZWV9uS3lPSHh3My1PRTVORmtIYTRnc0p6U0ZSSlJ2c2RNSnlYV2hnMnp5N1RURXRtc004OVp5SXM2R0FncjN3Sm9NVXZNTXdFaFNheHFkMTB4NENxcFphWkFYT2RIQkVkd3RDVTJQdTczTVczcFJKN28zSXFxdkhveFVoM1JjeThKY1N6U3FWTm0yMU52Mk1paUhmLXdURWgxWHc1NU1YOV8xNHc5bUR0NlhEaXVTZ1hTdnFNa25NY0tn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7a624c9d0c4b",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Dalend vertrouwen in overheid is tekenend voor asielcrisis - De Telegraaf",
+    "date": "2026-06-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaDR4eUU1NlU4aFRFYWU5Qk1IaEVpYU9jVm1uX0E1bzZvZTRER043YjVhT3hySi1oeW9RS1kxSlZ2UmlFTnhXNEF5Rmc5anJOMlVBMkN0djg5cGlyYVVFOHl5c1BfUzhEUnRQWjFUWThXRVZ6WW1TXzgwdVVXdy00TVhpSW5kWndRTlY3dEJrRGc0ci0zOThDbmo4THNCcWItQnd6N1V0cHA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gdad24434a6dd",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Het Regeerakkoord is rijp voor de papierversnipperaar - EWmagazine.nl",
+    "date": "2026-06-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbl90VFM2WmRTN1ZOb0k3V19WRDA3eVRMdE0tVWJ4emZHQmpXVUlUSXRnUHo2eFY3RWUycFlyUzEwYVhXVGdNUUhWd252dU1pWFp1Tm4xbW1ObGdlbEd3c0JRb3JpY1NNcG5DTjhocDFzRzRxNWh3aGNEVWpnZzdOUC02TEpYd3RPZnR3Y3dwOFppTTc0TDduY01XVWFXNWtRMXdOMzZ1TGhqN2hYb3lacDFyVTR0UEVXaXhXWEJUTlJUUQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g5fe3cf080c58",
     "type": "nl",
     "src": "De Telegraaf",
@@ -100,6 +163,89 @@
     "date": "2026-06-19",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV1lHNDRsQk5peHFRWFc2bWsyb01ONTg0VUtROENoSGdyV0JhWjVuUFBTbHlrcUk1UFFhVTYzR3ZFX1pkczRYOU51Q2lVVmhoN1JTYVhVQmxZS3VNYm9RM3NzazB1aDdoT05EOTVBUHNucEhWZThiX3BRYjRvYm9JUEtnQXFKNlBZeEJYOGFIbnMxVkpkaVJNWUdpbzdqRG1CeUdMU05ZOG5OaEd3eHlDQW14Mi1PbmVwcWVEUjNZYjDSAcYBQVVfeXFMUF8yemFSQ0JKSWx1bzhrNmYzOEtyX0tHNG4yb243WmhyaS1OanI0ZXBsVEoyQWdDUlIxSzdUNlpNZXdLaEJEdUN6aVRWaGFBUHMwVl80aGxJbGlMY2ZEdVFaZ3Z2Q2pRVXZIQ0FOMXZBN284dFJfTGNqY0pQeUg0c01ESlc0UDhNWjFHMWRZYWhnaGM4eFVKME5TckphOE03OUV3QzU2UXkwTExFMVlTZlFldDNQN1N3RFJ5X1E1VDB5eTR4dDZ3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0394207a7818",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Excuses volstaan niet, Jetten zal de Molukkers erkenning en rechtsherstel moeten bieden",
+    "date": "2026-06-19",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/06/19/excuses-voldoen-niet-jetten-zal-de-molukkers-erkenning-en-rechtsherstel-moeten-bieden-a4930480",
+    "lr": "right"
+  },
+  {
+    "id": "g3f3834fc1777",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Waarom Rob Jetten wat kleur moet verliezen - AD.nl",
+    "date": "2026-06-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOazJmNHNHRXRDaUhsRTNrT1Z2bVdLdEp1T28xQ2Nwa1lLc2hpSExXRHdWUEkxUzhnMzRSQk91RWZ3WkRfeF9KMUYwZTlZUHNGcm1GUVdfQTVCR282cEt4VWlmV3AtM1pnLWNPUHBNY1dHSmtlemhwSnJTQjFPS3M2M3MxTXR1UQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g899c1fa0bfc8",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Excuses volstaan niet, Jetten zal de Molukkers erkenning en rechtsherstel moeten bieden - NRC",
+    "date": "2026-06-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2JtZ1NTTTRRQ1l5c1RTTXRqcTVZTk9Dak9YSHNjblllWEZGVFNzbVJkRy0xUm82MGtzUmtOejhxWXB2QVZZZHZFMXBoSy10WUlHckNSVGdkSTJqOHBvMlc0UDJjYzE0TDlMYTRBM0pKN19PMzBpU2xxUndaTE1mNUhqX3lMS2ZwLWhoeDB3RWFDb0hfWm1makZtaGc4NlZoejIxRGxuNHlNWi1lVHdVZGVfLW9PbG9aa2NuLVpHZGU0TVdUSmtuc3hTMA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g0fe3552cb71a",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Waarom Rob Jetten wat kleur moet verliezen | Foto - AD.nl",
+    "date": "2026-06-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPR3o0bUFNd2FWeVdxZE1INjlhSWwzb2l4ZVh2ZGRYTWMtemJBSGtSNVRJcFFlNzlQUEEtQW01Y2otZ0RwdXR4NzJMbXRPMk9CZjR0QUFTdG55eGc4b2JyYlR4N3pTWUdSOXY3NFZ1UC1GMnN6UzZGRmkxWDVqUm9lWl9KaWo3UmhKTV9tSll1UTcwOGs?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g77b4cd0f759d",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten hoopt met EU-druk op Sierra Leone op uitlevering Bolle Jos - AD.nl",
+    "date": "2026-06-19",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOS2xwS1cxdkFuY2lkMlJFMjl5c0VXMlpBT3BqeUdCb0t5aXZfYllSZlNOTnZ5eXNxRU5OY2ozXzltWHhGYnZQMGtiWF9Kc1BQTmw0RDAzV05LcnRzbVozUEtJaGJNYUJpUFRQWmxmYldDSnV1ODNHb25MOHB4bUs2VVBGVFJITDBBb3FkVUNMY2N2bVl2NVRrUzBzOTJOcVY5bUN5VnN4MA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga311296e8318",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Lezers: ’Boerengezin in de steek gelaten’ - De Telegraaf",
+    "date": "2026-06-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUy1oX05kbVBVa1dmQmZlUTNRdkdJUHVBOE1vZVNaV0xVVjlSTFFxcFlHUzZMcDJfV3BfMl80MTFHLXpVZjFDNkQ2NWp2RXZ2b3RQQUxWc2MwbkF1Y3hrTVZQNXFTcGpoUWxadzlkNXlKTFY0RXBLV2x5ai1KLXI2Y2lSS0xwcGI0STg1QkhHXzhSMkU?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gfd40b1ff3b6e",
+    "type": "intl",
+    "src": "Gulf Stream Blues",
+    "title": "Northern leaders want to cut an EU budget already on a shoestring - Gulf Stream Blues",
+    "date": "2026-06-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5mY2haODBqeHBkNFI1OFVSRHkybDQ0Y1Qzend4U3E0YkNLbHFzcTZQZnBfNEZob1ZqZ0xmbnFGMDh0b3VUOWtVVjl6MVF4QlJLQm52SG44bGtsRFYzOXJneWhFanlWZXNfdVhCWmFyNGYzMW4xSGJUZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g21388dbf32d9",
+    "type": "intl",
+    "src": "Augsburger Allgemeine",
+    "title": "Europas Kampf ums Geld - Augsburger Allgemeine",
+    "date": "2026-06-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPanNnZGhWRm1MVEFpemdJejhvM0ItMDQwZDR4QnJzanVXYmZxQW16dGlRMWpoVmZGS1ladC1JdzNTSTNIc0dvQjFaZW80UXI2aDRMSXhJblJfTGxISjU5Z1hDZUk5SGRjRnpldDFhakRaWlF5NzZQXzZ1ZXpWRGJxbEFBSDRGbVpXQ1dCV01MenZDZTd0TUpreFNaT3lUaUpFaXRySFRBc2M1dnVqbmdzSHZiMDRjTHljN0lYTHhHdjN0dw?oc=5",
     "flag": "🌍"
   },
   {
@@ -254,6 +400,26 @@
     "date": "2026-06-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWGdkVWU5c0VGeW12MTVjN0F5d19fX3pqYmtuYzN1M0lNUy1SWVNKd2tWbzUxazN2ZmZETVJRV2NzemZKM1RHYkZtTGkxbU9MMGNIVlpMQ01Jc2lRdXlkbnhFNjNveTdxdmxTZlpEanZ3UU5rRWFldzUtczNkZjU0SlFjcVFVcFhuNmVZVW9CVVA2ZEt0YW9qWHpjY0doUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9133cd9bab92",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Brussel wil Nederlandse miljardenkorting schrappen, kabinet is boos: ‘Onbetaalbaar’ - AD.nl",
+    "date": "2026-06-18",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSWJMT0U1ZmdfRzhETGtnX0FHWldsYTdQZlI1Y09yRHIzSTJ6SU5jblh3ZHd1d1RubDJjWjRBUkF0dXNsYS01TWVsczdGb3B0a2hPQnFIY1lONjg2MVdVdkhvQy1MSHZIWnhNcTJTd1RPeUdkQThLcmFhdm9LUTNJT24xLTJsLXllN2puMC1QNVIyUjJtTXh5QVFxQWVVanhMdkI0REFmYkIzLVdIMEJKeTM4cDZobENCZ2c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g410234265637",
+    "type": "intl",
+    "src": "MSN",
+    "title": "De los atriles a Instagram: cómo el marido del presidente de Holanda revoluciona la comunicación política - MSN",
+    "date": "2026-06-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQcWZQaU9BRkxOU3dnUGVtSWU1R2RYLTd0WmRvZUNaLWx4QUVrUnJzMW10NFlORXEtYXBRenIxTmVTU2xSb0kycGFXeXlFUmRiZkhDd3U0cXctTHB4Yi1kcmw1eFU4R1JZS3JhY2wwdl8yVmRGcmItZGF1dGF3alFmcUNVSkpiYWRIazEzR3ZORUxmdFJtUDE1aUVwNGZTRlhVOXM3UGc3S1J1N293TWxIbUVKT1h2V2VCSTJXMlJKZkdVM2UxYTQ5Q1lWWXBjcnFUU1BtaDVoTFJrTDF4SWRCYVFMVVpZTGo1MFdNa2R3V21TUWQ2dEwyRUJXNERoR3VtWmMwNA?oc=5",
     "flag": "🌍"
   },
   {
@@ -591,6 +757,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOTGxwMGhRcXVocnA3bnZ5TGVuZ1JtMDJTTDFpZjVWRDZBMEZ6OU5zQ2t1ZzVKcWhYOTlkdnRhcWthdWdOaGxJcFI0UDdrcUoyVUdQU0pKLWd2cG9YRVlzOWVxTC1iOHhBUGM2OXoxeGRNWmZwODRZSGhEcU5NN3BTMFBJQ0EyMUZra0NiS1NmUnhtUHV4T2JrR2YzcW91UWVLUjdaQlpVdUJYSTRGVmNJQnM1Wmt0Mzk3dUdRc012WnYtZ2tv?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g2cad4d13ca19",
+    "type": "intl",
+    "src": "Azərtac",
+    "title": "President Ilham Aliyev held phone conversation with Prime Minister of the Netherlands - Azərtac",
+    "date": "2026-06-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWWdCVjExbGxMZllfVGxGd2dsRmtrVm9IT0w1R0V3MUFfaU1WUE5ha3lyRjlBVnZJb2dqUmsyYWowSWhzVnotMzBzUmZRTkVfUi1IRkhMeFlrT0E3NlVIdTM1a3VwYzNnQW81TEJoZlVUZWZwR3FqSVJUbE1GUjFFQU5UYjVqMkRYMGV3aW1zS1dSdXVNZHpzNXQ3ZjQzWmFQdHA5NmVTVk1jSnVRR25tYmstRnlwUnRxSlhQYzhR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga74399ecf474",
+    "type": "intl",
+    "src": "Armenpress",
+    "title": "Entretien téléphonique entre les Premiers ministres de l’Arménie et des Pays-Bas - Armenpress",
+    "date": "2026-06-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhaWQ2VzZtbGRwWGVMOTJsV2NPTW9uY3pYN0JhcS03cjV2V3FGeHdReXlsMEV2LVJuQzJHUldwbW83eHNlT2dZVDVTNkdaczVaNXfSAVdBVV95cUxPUXlIaGtlX3p6N1dCVGhBMGFKSTZSQ054WmdYdFhwSGg4TGZNZlpzY1pPSGJfRFhqT3luOUtUSXVVRE55ZGMza1R2NF9YajBLZ2tBY3Q2SDA?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "g9c8c6b0ff8c4",
@@ -21979,5 +22165,15 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaHhFNld1N0pTWldxMHJldm5JVXE0dEwtaWVwNzZHUTVRblY1WHhQT0wwSmpxMnRhZUd6UG9xdXlPRVFtQlNRZXJkNWJQTV9ObWUzcjNtcWcwNDlXRkZMaXBZcm9fcG9IVjJjNE5DbDdXVDFvRS1LNWRSM2lWZlNkcjNZUURsei1lNHcwNExrdEtURVJHelM5QjA3WTQtZm1ibjhRa01wcmRlXzZETGZfazdsejZ3Ym1aTzZoWkRaWTIyY3R0aWc?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "g2d1f7369dc2d",
+    "type": "intl",
+    "src": "Ultima Voce",
+    "title": "Rob Jetten al timone del nuovo governo olandese - Ultima Voce",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9vdUUyMDBVQ0VBajI2ZjNXa0FYbmk2ZzdrcTZuLWFveTMxWWJINmxRZkZ3RV9VMW5SOEpRa0xTNEsydzVPNFFoTkRmdHJUNFR5LXdKb2JSSWdDNGwyYW1rMEJVY0NuVy1jdFBjNktqOVhLbGxoODhydjZn0gF_QVVfeXFMTWY2Z3lNaG5pRUYyYVBUUjJlM3prNWZ2WXFvS21GN1NMWjM0ekVTOXhqLV9QcDdKS2p4RWZxYnU3RG1fNG1ac2JONmxrQWlpdWFPWE1fNXJqcjZlN0M1WHFNUjRpajRScEhTTElIX18tZ2ZrcWtSeFJ0UERqQ1lCSQ?oc=5",
+    "flag": "🌍"
   }
 ]
