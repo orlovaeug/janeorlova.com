@@ -40885,7 +40885,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10436&did=2026D23647",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk799414524b",
@@ -41155,7 +41155,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z10454&did=2026D23674",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk378d7e4493",
@@ -61205,6 +61205,20 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13452&did=2026D30422",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka40fba4db3",
+    "titel": "Gewijzigde motie van het lid Vellinga-Beemsterboer over financiële prikkels in kaart brengen die uitstoot en maatschappelijke kosten van schadelijke stoffen kunnen terugdringen (t.v.v. 28089-361) - Gezondheid en milieu",
+    "indiener": "D66",
+    "datum": "2026-06-19",
+    "thema": "Landbouw & Natuur",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z13911&did=2026D31189",
     "toelichting": "",
     "stemmen": {},
     "archief": false
