@@ -1,5 +1,55 @@
 [
   {
+    "id": "ge63aae2bf039",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Wekdienst 21/6: Toespraak Jetten bij monument Molukkers • FBK Games in Hengelo",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://nos.nl/l/2619596"
+  },
+  {
+    "id": "gfdd1aa044656",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Spanning rond inhuldiging Moluks monument: gaat Jetten excuses aanbieden?",
+    "date": "2026-06-21",
+    "sent": "n",
+    "link": "https://nos.nl/l/2619584"
+  },
+  {
+    "id": "g286463987518",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "AD-journalist schrijft open brief aan Jetten: ‘Mijn opa overleed zonder ooit excuses te hebben gekregen’",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://www.ad.nl/nieuws/ad-journalist-schrijft-open-brief-aan-jetten-mijn-opa-overleed-zonder-ooit-excuses-te-hebben-gekregen~a2467de5/"
+  },
+  {
+    "id": "g875cd35f149d",
+    "type": "nl",
+    "src": "Nieuwslens",
+    "title": "Premier Jetten aanwezig bij inhuldiging Moluks Monument in Rotterdam - Nieuwslens",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOWoyX3dWcE90dWZ3SFZDZkNNS1RNVlpRMDlWdjY5VGJvdE9DYzhQMWtyekNNUGxNdnV3alVXUEpKSGpNZHVUQVEtSkEwNW04ZGR2aWt5TWp4Y29GNHY2UzQxd3VaM3ZQSGN5OWZ2NEhLcTh6X0pxYll0dlllY3ZXWjF5eDdjQ3pOelZmT2J1MFNnQWFQdHQ3X0FFUllZblQzRTBQQ1dFT1duNFlpeEE1SGVPOGx5TzYycFVmLVBFUEx5SDFBR2tPaA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6f6f8265e5d9",
+    "type": "nl",
+    "src": "Brusselse Nieuwe",
+    "title": "Nieuwsbrief Brussels Peil | Vooruitschuiven - Brusselse Nieuwe",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5PczVNbllEdUVLOTZzWklHLTczRU5oV0hwZXNHVWZTYzVuNkg2V1MtbFc5dE1wbzVtS2d0anB3NmhROUExdVlaNGhDSl90SW9rZkY5Q0c0cGhBdVFQdFRSTFJ4TFlOSGI5b0JjTEdmN0NLZ09kNFFvWg?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gf17f98059a96",
     "type": "nl",
     "src": "De Telegraaf",
@@ -61,6 +111,77 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbl90VFM2WmRTN1ZOb0k3V19WRDA3eVRMdE0tVWJ4emZHQmpXVUlUSXRnUHo2eFY3RWUycFlyUzEwYVhXVGdNUUhWd252dU1pWFp1Tm4xbW1ObGdlbEd3c0JRb3JpY1NNcG5DTjhocDFzRzRxNWh3aGNEVWpnZzdOUC02TEpYd3RPZnR3Y3dwOFppTTc0TDduY01XVWFXNWtRMXdOMzZ1TGhqN2hYb3lacDFyVTR0UEVXaXhXWEJUTlJUUQ?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g93cdf5a7e0cf",
+    "type": "nl",
+    "src": "Brabants Dagblad",
+    "title": "Simon en Dini hopen op excuses van premier Jetten: ‘Al is het eigenlijk te laat’ - Brabants Dagblad",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNTzFuZ2lYLTdYUVVqYVQwdGxTWnFiZjJHajJLbjBYa09xaGxnSzlXQi1hRy1JVldvUWxtU19NMnVyeFN1OWp4YXFRWU13Yks4U0JPRHhiRkhxdFpLUTR4WjZpWHhDVk12bjJ4ODR6RFI3Sy1saEhHWTNUelFINENEblluX3ZHSVlSODB1WlNKNEdBcDY5VkJoc1Vqck9JeWcxYVdlc1cwQXIwRmtfREdVWQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1d45c16078c7",
+    "type": "nl",
+    "src": "NU",
+    "title": "Waarom excuses voor Molukkers in Nederland zo belangrijk zijn - NU",
+    "date": "2026-06-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUVg5UmJRd0NWaTAzYktWbUtzMDc5Z2hmTDdpa3BzN0R6ZHp1bTNZcUdpRnRDN1BYdHBWMjgtRHZoeTJHZEp4Z2k3ZE5vVTRuMmYwcThVVmpxMEEtRHl0blJya08yZTFsOFRyeTAwNXFxR3lRMkVvWG5FeUNZdEdBV0htX0NISzliUkFyV3hlZ0w0cWpOWVNoMThKM0dmdjBnWW1DQm1n?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdf818350c538",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "AD-journalist schrijft open brief aan Jetten: ‘Mijn opa overleed zonder ooit excuses te hebben gekregen’ - AD.nl",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWmJkR2J6NWxGbUFEdVZqQS1rSXoxMGRQc2I3akR5d21JOEEyZzhQVUJtUEYxTkZDM1I0T1E1STZYbzkwVlBGZFBlQ24zcWNON1hnMndGU0dQcnhwcjdaLVFzZlJ4U055M3A3cXJOeWxxWGJfTEEtT25nT0FaYzlmanBXSnJkQ2xpQXlOaHpVNktPRGc4aEYzYTlVMkxzQlRoV1RMMFVaTU5Idi05cTZMbW41eUduZXFEdjRyWkF2ejZ2bHMyTUV0LTFScnExRGFHRkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfb8892000c70",
+    "type": "intl",
+    "src": "Leeuwarder Courant",
+    "title": "Dit vindt deze Molukse familie uit Drachten over de mogelijke excuses van Jetten: ‘Gooi maar op de grote bult - Leeuwarder Courant",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNTmU0N3lYczdsY3hsOHh1M3h4WEdLcVJZWUZNcW5qdTVQYXI5VFlka3BrTWx4WkVrZDB2aHd4ckoxeG5JQzFDYVVVbjJlcW9RTlhwT2RZZkhqNzBFSHAwenhLd2JxTHAtUjFXeXA1cEdkRThpNkNsMndhbEd2WDI5ZG9nN1Q0UmtJWGNwMDNoQ0s0N3lDallreXRlQTdrbHIxb3FvM2JQRjlQYjFuNHd3cG9sTVpsUjhUcjAwQ0dxbzdwZExuVVZGMFV0MWpYMWw3MnQ4VXJrazRDMjR5ZDN5ZTVQY0pocEJudFRJTERMUUlnZw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "ge36561a0f9cd",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Hans van Hooft jr. verliest vader, wiens leven altijd in dienst stond van politiek: ‘Op zijn ziekbed sputterde hij nog over kabinet-Jetten’ - De Gelderlander",
+    "date": "2026-06-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQTWN5am9ZVGRaQ2JNa1NKZmc0X25haklkbkRkTUxrTzhjamlaWGRJNzJlWmtHNmdIT2RxdHVfbTF6YzNQVUtTeG90MjZzMkpabW5zSDdzX1JqdTRqN2hlWldoa2hnVkFESldRdlVZeHZUcDFLWTVTVTNyTTBndWEySmxUOVU0R3otWFN4ZGJySUhqQmtab1RyQjJ6WkVHa1RZQ2dTMnVDUThBUmdycWtIc0JpREpHM1ZBM05WSDVNNDFPRnFPZmU5OUpKTnlJWUFjMVEzUGdFRXlRRGw0aUpadmRKV0N5Sjk0czFwdTlkRFFVNUVleXNMaGdTWlpBTUdVWHJuUkZYVl91U0Z0Vmc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g32a8e4e4ba1b",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "De zomer van Jetten: krijgt de premier zijn Miljoenennota rond? - Reformatorisch Dagblad",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYk1iaVdRWjNfVVJ2S3Vaby1UZTRaWlRhQUZVXzNfaTJJMUhMVG1ZYUVWTlFGY1k0alBnUmZaVWh5N2ZsTE1yLTQ2cjlHOWc5Y3NXMVltLWN0emZIeG1xNkZFQjUxRkJ6RnZZWGhDTUh4T05yWkVDXzZfNzJobGtyQkxUWXFHNHdhMXN0UmxicnVhdHJBTzhMZ3N0SQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb5865673ac40",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Nieuwe PvdD-leider Christine Teunissen: Jetten heeft zich overgeleverd aan de fossiele VVD - bnnvara",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbUxoMThpQUZCS2ZsOUxVY2lvdXRONXhocFVVNG9PYVd0M21MTDVYOHU3RFQ1VXpSNEJzUHZOLVZPSksyak56Y1h3bkwwWG9UWjhySmNGQ0RwM0Z3eEJXdXBFMFFJc1E4SXJ5bjRBc004QVRiMl9nYUhHX2dMSG5XdUowb2dOWDBCQWFmUzc4U25jZzBFMnRoME4tdGp4UHh1bk11S3NReV9EZlVxenpwWUs1N1pzUnIycTZIbnBId0NFTVlvMEE?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "g5fe3cf080c58",
@@ -249,6 +370,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g11f2ff1df09a",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Waarom Rob Jetten wat kleur moet verliezen - De Gelderlander",
+    "date": "2026-06-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZl82YWVWOU5FNkREMnhnY3hteUZKT0k1VU5zaTBvZXdMSDlnY1AxbW50YWJfZmFsTnIybmhvaTNnT1Bia1JmLWFWSjRzYmJpT2dDS3NqSG53dUJPdk5UajVldHFmY2liX3A5MVVIOTZ6UmthYlctZVRUeTU0Z3hQZWE0bzJyN3RuYjVuZ2lTTWFObmNxXzdKV3NCaXFlSGhX?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g7378814a4aaa",
     "type": "nl",
     "src": "NRC",
@@ -420,6 +551,16 @@
     "date": "2026-06-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQcWZQaU9BRkxOU3dnUGVtSWU1R2RYLTd0WmRvZUNaLWx4QUVrUnJzMW10NFlORXEtYXBRenIxTmVTU2xSb0kycGFXeXlFUmRiZkhDd3U0cXctTHB4Yi1kcmw1eFU4R1JZS3JhY2wwdl8yVmRGcmItZGF1dGF3alFmcUNVSkpiYWRIazEzR3ZORUxmdFJtUDE1aUVwNGZTRlhVOXM3UGc3S1J1N293TWxIbUVKT1h2V2VCSTJXMlJKZkdVM2UxYTQ5Q1lWWXBjcnFUU1BtaDVoTFJrTDF4SWRCYVFMVVpZTGo1MFdNa2R3V21TUWQ2dEwyRUJXNERoR3VtWmMwNA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc8f3e41a364f",
+    "type": "intl",
+    "src": "Общественная служба новостей",
+    "title": "Йеттен: нет смысла рассуждать о сроках вступления Украины в ЕС - Общественная служба новостей",
+    "date": "2026-06-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVXJ6UUFrT3A3Nk5CUWhPc01XWV9mdlFESm9HSlRuNU13OGJKdnVHaW9yaWhuVDQ3dU03QklOZHZ1LWRSMTBDbl85a09Wd0RVVjY2V1l1VkV6My05Rmgya0syWjFHT096em1lTGRoemk4b19zTjNOakpCZTRhN3pHUFRDRlItOFc5dEtoYVQ2cjNWMnJCcDB4bQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -22174,6 +22315,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9vdUUyMDBVQ0VBajI2ZjNXa0FYbmk2ZzdrcTZuLWFveTMxWWJINmxRZkZ3RV9VMW5SOEpRa0xTNEsydzVPNFFoTkRmdHJUNFR5LXdKb2JSSWdDNGwyYW1rMEJVY0NuVy1jdFBjNktqOVhLbGxoODhydjZn0gF_QVVfeXFMTWY2Z3lNaG5pRUYyYVBUUjJlM3prNWZ2WXFvS21GN1NMWjM0ekVTOXhqLV9QcDdKS2p4RWZxYnU3RG1fNG1ac2JONmxrQWlpdWFPWE1fNXJqcjZlN0M1WHFNUjRpajRScEhTTElIX18tZ2ZrcWtSeFJ0UERqQ1lCSQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcb6ae735b109",
+    "type": "intl",
+    "src": "Vanitatis",
+    "title": "Nicolás Keenan, marido del nuevo Primer Ministro de Países Bajos, Rob Jetten: un 'primer caballero' de Holanda que juega al hockey y vivió en Cataluña - Vanitatis",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbUp6MjBhazZLSGlRcEJJeVJsODBNQlVzdVJXQloyS2txZW9EQnI2UzN0X3QtVTBTQ2dCblJQYXNISTNWbUpQaDZqUzRJOFlXOWdxNEtYVlBfVzRVQmIyN0Rla2puSG1YOFF6MFlpTHAzSVZXRXJhSWJ1TG53SXM1M2V2VWZPbkg5UjBFZ2k3NHlVa3JVQW5hRWpGblVwMHprMEVzMXNuN1dDTlNuNUFOZHdDNnc4YWwtMXduMVprRQ?oc=5",
     "flag": "🌍"
   }
 ]
