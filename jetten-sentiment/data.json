@@ -1,5 +1,107 @@
 [
   {
+    "id": "g10c11c17488c",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Premier Jetten biedt Molukse Nederlanders excuses aan. En nu?",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/06/22/premier-jetten-biedt-molukse-nederlanders-excuses-aan-en-nu-a4930681",
+    "lr": "right"
+  },
+  {
+    "id": "gfb61795d78cc",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Bewindslieden uit kabinet-Jetten kregen voor bijna 65.000 euro aan trainingen - RTL.nl",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSGNuVFBHS2NpWTNtWHQyS2pOcy13Mm1lZGZqNm9WUTR1dnlvRlRYdXkzRWpmcDhpa0VWTjN3bnRGRFFrVDZTR2FNQTQ4UjdQSklkdktlSlc3aGJ6OTJ6eU9ER1ZsVDBnS2xSX2h5YUNBN1U1eTBTbzA0NldNU0xRLXp1ak5hSlBqS1hWVGFRT2lxQ3B0aFFyV19sQmc0YVRuazdHbExOY0xBYkJiUzk1VWlpMmhPYTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga4513b53ffc1",
+    "type": "nl",
+    "src": "Nationale Onderwijsgids",
+    "title": "Kabinet-Jetten gaf bijna tienduizenden euro’s uit aan cursussen voor nieuwe ministers - Nationale Onderwijsgids",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPckNwNHhXb0JEMi1mUmFCSUEzS2p6Qm5RNDhnUVo3elRVZDU0RlVYZmw0MFVKVjFtZ0FSVTBzLXBsTFUwTXBKUzZxT29PeDlDWm9qVjBBVDBzdTFKb1hTTkNiaEZZQU90LTNDRUFRTEY5MGtSYlZPZlduOVB0d2c3cHhXT3VweUEySk9maFN0N3pfNTNNbG9nQ2c4U2lWX1U0Rlh2RG9UUGF5MUJnQlNEYm9Bb3UtNVFObVI1T0hSTDRrdEJEX2NhQksyVWE0Zw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gea7307f3378e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Brede coalitie slaat alarm om ingreep in infrastructuur: ’Minister Karremans zet Nederland klem’ - De Telegraaf",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTGhHWkNwMFFOZXd4OFdzTWo0S2NuM1dWTVNXdXQ1M2x4cjdRZjU0T1R0RExmYk9qOWxTckhNVlpmYkVNSmtaVzAyRjc3YlhadWR2YzdmcEYyTGxSX044aElMRlRsb25nUkhDcTQ3UVFidUFzS0U5QWIzbTRnNWV6YjU5eUV5Y29CSC1LWjJ1a0hpSTZhaVM1dXhIQVFXLWJPR1lQYk10WDV4VTRGV0l0RWFod1F3MnZmQVBUMVllLTVaZFNPTnR5aEozdHNyUjJrQ3ZNZE1VRk9LQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g71254941fe84",
+    "type": "nl",
+    "src": "PowNed",
+    "title": "Kabinet-Jetten massaal op cursus: 'Ministers spendeerden tienduizenden euro's aan trainingen' - PowNed",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS3JVUWtXYzVYUXRMMHV1R1kyM3FKYUFldm1HS3pFUWxFUHRSYTdjWmtVNlMtS2loRzA2bHpoMHJfd3pmVXhDdG5UeGstYTkxeGpUWnJfODAyX215MUZJeFR2d0s2VDBrWGc0SjlMLUx4blp2ZDJwa290ajdjS2JQeWE0WTVySnc5MnZkZnJLdi1Wd1lIZVM4dnVzRncyekZrT0lZUW5YMWstQ0dQZzdjbldpTFJSWHhsekFiZEh0cTA4bkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd6416e62f0b8",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Kabinet gaf tienduizenden euro's uit aan mediatrainingen voor bewindslieden - Nieuw Rechts",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd3dSRkw0bmszdnNFcnZVcHZENWVoa2xoRmFyUElDVGJaMFJwQjYtX1RWMXlnSkZtX25maGRTVzIteFBxdFN1RE1RUi1ydnlzdnNlUklIdDN6aURJaER2ZmxaQzVDZk1aVmFDemREalAzaXVPWHFDTUlJeTBQYWd0cDFMYVlVbHpZdE9Vak1oWGhJd1RtRTNZRzY1SFZudzJwcGxGSXFYTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g53baa6815ea1",
+    "type": "nl",
+    "src": "Nieuwslens",
+    "title": "Bewindslieden kabinet-Jetten volgden trainingen voor 65.000 euro - Nieuwslens",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQQ0Z0ODFXYzJPZjRjUW4tSXBYRDFDNTlmZ0tyWGdfelhUdzJqVTFiNlNWSEVMRUN0ZlhWS0RHdy1ibEZ2M1lwUU1XeXNaT2dPVnFtaVJHeEdEaEExR3hzTU03SDFERkluckxlR0ZJc3piSEsxU2VhdmJ1c2FrUzJydVJPamFXY0ZYYnFqUHpLX1U0TDJSV3hsZHBOMjNCZlhUVlBYclctUW51RmtmckxMc1gwOVI4aktyTXpkZ2VJSGdGeWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g82d048a73345",
+    "type": "nl",
+    "src": "mobiliteit.nl",
+    "title": "Karremans: “Uitstellen wegonderhoud Noord-Nederland kan leiden tot hogere kosten op langere termijn” - mobiliteit.nl",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQX1pGRE5HNDRxVWtscEE0aEJlbFZHUnVLWWtZSXRXWFJHR0k2MU9IMUhKaF9zeGVGRzNzUXFpUUVKbU1OWDJQbkpwQ202VUUzLTJYRS0yYzBXR08yVlBmdHNQSWMwcFc4UmRqY0JqQWhGN3ZhUjVmdzdydGxtbmdaRnNxYlV6TU4zSTFibFBTRVZDMHRNclh3UW5qVkNjYVA4eHVIdTQxcXJEa2F3a0d0RE5acjQ1Y3FBeVV3d21HRElPaGNSWUgyT0pnVS1faGNUSFJRWVgyak1CZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g741a2b108bde",
+    "type": "nl",
+    "src": "NU",
+    "title": "Ingrijpend stikstofpakket in de maak: zet het kabinet dit keer wél door? - NU",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOM251M0phWDdGQ1B3ZXJkeTFacGtlNGgwenpGMk8tb2JUYnZEM2YzRldzcDZDdnhlb2hkWnJiSVotSWRjUjRQdGVEUm0tNnlWMDNvUkZhQlNUODVQeENZUDJRN2NzSjFGUWNyMVlTcnlMSlVPV2JFbHZLVzBSeHVCZWNaYlRPaWN2M0dqRVNCdzhZVmhkRkZWam9zTGdxNGt1SXJCZ05FWkNiWTN6QjEw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g44cf8c26ba10",
+    "type": "intl",
+    "src": "Fathom Journal",
+    "title": "Rob Jetten Se Convierte En El Primer Ministro Más Joven De Países Bajos Tras 117 Días De Negociación Hans Zimmer (Adn7pzrD5Q) - Fathom Journal",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9HRkRjSWtScGxMZWtQR3lWTnEyUnJmbXhhN2pGSnJtYW13LURURzFReng4N1F6NG9ldEo4WWJFc0FMSURZY01rNkRLMDdoWG1aaXVyeFAwVTBGaVRXY01ZcV9OVHQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge63aae2bf039",
     "type": "nl",
     "src": "NOS",
@@ -48,6 +150,128 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5PczVNbllEdUVLOTZzWklHLTczRU5oV0hwZXNHVWZTYzVuNkg2V1MtbFc5dE1wbzVtS2d0anB3NmhROUExdVlaNGhDSl90SW9rZkY5Q0c0cGhBdVFQdFRSTFJ4TFlOSGI5b0JjTEdmN0NLZ09kNFFvWg?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gdafa57228a02",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Dat Jetten excuses zou aanbieden voor de behandeling van de eerste generatie Molukkers stond niet in het draaiboek: ‘Bijna te laat, maar fijn dat het er is’",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/06/21/dat-jetten-excuses-zou-aanbieden-voor-de-behandeling-van-de-eerste-generatie-molukkers-stond-niet-in-het-draaiboek-bijna-te-laat-maar-fijn-dat-het-er-is-a4930559",
+    "lr": "right"
+  },
+  {
+    "id": "g0a22f9f25e83",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Jetten biedt Molukse gemeenschap officiële excuses aan: ’U wordt gezien’ - De Telegraaf",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMUkweWtIbFFBck5iQ3B0ajFXSlVWSThBVGxpRlFDVUtPc0hneUdzbi1OanI3VW5XTnc4a1VwSWxCb0RKaFlXUU5YRnMyVWxsRlNVZG4wd1YwSFpyR1BMQjVheFNOYTZEU2lSaUJkVnlUME5EYjk4czBTWGVlTkhreVdZZ0ktRGhvUUhOWlFrbUppZE1uaE42Y3F6c3ByQXFub3ZQeDhwd2ZZY3ZxQ2dRbmY0UHgtY3ZTbHBiUmNhYW1YVTlv?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g01077a701b4f",
+    "type": "nl",
+    "src": "Omroep Zeeland",
+    "title": "ZLTO reageert op strenge stikstofplannen van kabinet: 'Maak uitzondering voor Zeeland' - Omroep Zeeland",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWjZZRjIxVjMzaDhFR08tMkkxaktHNjRLa2Rtek5QMVBiSHNCamJid0JYdUlNa2lDVHNyeUNPNXl1UEtrZld3MUo4ckptQ1otX0RFaExKOTV5bVNwOHl3YWZDakhHYTJBenFWSVpOWjBDS3RvOThlMTZhZElUOElVcDhtRl9qTXBOVUR2TFVYQlJEOHZ2MHQ4QS12ZFltaTFsMjcwSnlVdWwzQzZfcmMxMTZYMUtvWmh3YTdwTGlaMEpjWENZeUtR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6826b6a0975d",
+    "type": "intl",
+    "src": "The Guardian",
+    "title": "Dutch PM apologises for Moluccan soldiers’ mistreatment after Indonesian independence - The Guardian",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbHkyQ1NqYVl5Tks3bGZTS185MkFEQ2IwMnJxTHcySWU0c0lZQ00xdWhmUUF2MWZaaW1MLTZIclEyTEhZR0xtbDFTb25yR1hudzhERl9QVEVzcm9LM3R3TDhwRmVOOWxzcWE3RDB1YmlzaXF6TkotR0dKOGh5YzRUd0E2TDlOYUZybmpQZ3ROZk1CVnAwejBPQncxaVlqTEQ5M3NvT3Yzc3ZkUQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g27c519b9327e",
+    "type": "intl",
+    "src": "Anadolu Ajansı",
+    "title": "Dutch prime minister formally apologizes for treatment of 1st-generation Moluccans - Anadolu Ajansı",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOWdvVWVrc3NhbGRxY1RMZ3AzcVZ4d3B1anBQQXhENFozei1NQWVXUnZuYjAwSXpUZzNPNy0yeTR5Qk8wTEhqQVZQR2x4RFI2aFhDRVhoZGtCS09vUmlvdHNlVW1KUXZ1VzdLNktub3NZZUlORFBETEIwRFUzMUJXOVU1Q2pSUFRJdDlpdHJvYm1EcXpDZXFROW9mTWZHaW40VGU2aE54RGo2c3QteUZrNk9tY3NGRkZiTk1fQ2ZWYw?oc=5",
+    "flag": "🇹🇷"
+  },
+  {
+    "id": "g8308b84c32d2",
+    "type": "intl",
+    "src": "The Jakarta Post",
+    "title": "Dutch Prime Minister makes formal apology to Moluccans - The Jakarta Post",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMmRLcGtPVUZ4QnpnYWxlanR6VXVVbzN5UTV0Y2lNbUgwVFFMemF0ZndkVTlvazlCajl3cHN0QWtGR0N5UTdaZU1wMFpsVFhKNUhfNzh3c0ljblZQUmtuU294Z2tEN1k0Z04zZEFuVnR4cUF1TXEwOUhRd2k3c29FZnhUUDJ4RHk1cUJqaGlTQVlrVzc2aUNDT0Q5M2ZKcWNsOEVLSA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb28be1868828",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Prime Minister apologizes to Moluccan community for mistreatment after 1950 arrival - NL Times",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONllYN2RpVWlDbW5fUUtUNmxna0g5WkNJRUE0YnlSMS02cGxGLVoyejVyVG5CVEZVd3dFbWtpNXdHZmR5TGdwek4tbWpubEo1amtPNTRmeXJIT0hCaW9nc2t4bnBCQ2NLQ1Z1bkpIYV9KNlN4YkFzRVpZa2pEN2lpblloRTlXMlNFc0RudUFlb25CdHRBdzFfeThJMUxiN2ltZ1E?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g35e843c97187",
+    "type": "intl",
+    "src": "TRT World",
+    "title": "Dutch PM apologises to Moluccan community over Indonesia-era colonial abuses - TRT World",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVWRBQmRhN2dmRkRzSmdlcndIOG5nWjQ4MmlraFIzUVg3V0NsMlREaFpxcjhDZDZNcTNYNlBweDhQRDZ3OG5ZQ3RCczRTdWhJbFhvWlJ3RTNDaXBobEVvRVE3N21MRDJWUkZoZXNwb1RYMmFjVGFrTDZPRlNUMHdFejVrRHhwR2s1ckoyemhhakgxOURGaF9SZVBTaUlkMlRlM2J4WUprc3c1andhcnhKYUdLX1JqVEJtYVZ0Q05CTXU1RU82Y3NtVE9KLUhTNzFqODdmaEMyS3FuNzBYTkJJZlpGM2xaN095UXdr?oc=5",
+    "flag": "🇹🇷"
+  },
+  {
+    "id": "g4603b0dc3063",
+    "type": "intl",
+    "src": "France 24",
+    "title": "'Historical justice': Dutch PM makes formal apology to Moluccans - France 24",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZ0wzb1hJbWVJMlJJcEYwUnBTVVdjQVVXUEc1MG54cktibTItNUZBd0xkZF8yQ011b2Z6aW9aZWI5V2YzekNxN252ckdNMXAyN3JhOXBBTFQ1V29oOGFOeEI1cWROQXZZcXNxOHVGUjgtQWFEamdwWVdyY3RMSTBUeHpyOV8yemhZOGZxbVR0Y014MkdNR096b0dOWW5QdWlhc1JFUnNXVHY1LXZy?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb342b2f1c4f3",
+    "type": "intl",
+    "src": "DACHIST",
+    "title": "Jetten entschuldigt sich bei Molukkern - DACHIST",
+    "date": "2026-06-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWm9XM3BIYk5LaGdRMi1ubTZZV1g1cE9Wd19TbnFyeE11Zm54M1hzYkVKNFo5bS1IdnFSZWcwdXBDcmZCVUxIY2FQcUl1bERyakV0WXlSZDhkRnA4dFQtUWEtdEVKTVBmSVJydEpJR0tPNnRvcnRyUWZSb1NoQkNIMnQ2Zll1UzVnc18wWkp1LWdqSG5OUkpEMTZR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd44e3ccc871b",
+    "type": "intl",
+    "src": "Rhône FM",
+    "title": "Les Pays-Bas présentent des excuses aux Moluquois transférés - Rhône FM",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRmNMVHhkOW1JTlJtMktCRUdxREdpSzVJcXV4THA5T3VOTFRuaXZsTEltcThnekFMYktxbXZ0Mm4zOXN5Qkphb05zRHNIR3ZKTmRpMmZuVnZvVUlnMmVwZGFLOUpXeUJvR3RuXzJKejh6YjVlQjhHUjY5WEh3MDBKVXNrSGEtdmg4bWNjOG5jS3p5aVFoMUIyd2NJN0Zpdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g46f73596cdeb",
+    "type": "intl",
+    "src": "RFI",
+    "title": "Países Bajos presenta disculpas oficiales a la comunidad moluqueña por décadas de abandono - RFI",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOcjFwMzFGSHRHUjAxd01PX0tLYkxTZWc4OUdIUVBROWlNTjZfNmpZcmZCZkw5TVVQd2F6aFZvNXVpeW84N3otOHJFeVBvZE03QVhNZm1rMzNucV93UzhkcFlWSXc4RVc1Vk1oWU55YjV2czB6d2MwblZsSUlXelFMWlJKZ2tZRWFOMVFhMjIybjBXNnRuUGhUckJYVzJoZmdxNnpjNjZ3VjB1NjlXcFQ1N0lxVE9Lb1M2OW1sWUJhc2dpcGw2MXdHdk1OUTBPVW9TMDQzcmM5dVdNUW5mY3U1SVBTYjRKUGdiaUE?oc=5",
+    "flag": "🇫🇷"
   },
   {
     "id": "gf17f98059a96",
@@ -182,6 +406,16 @@
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNbUxoMThpQUZCS2ZsOUxVY2lvdXRONXhocFVVNG9PYVd0M21MTDVYOHU3RFQ1VXpSNEJzUHZOLVZPSksyak56Y1h3bkwwWG9UWjhySmNGQ0RwM0Z3eEJXdXBFMFFJc1E4SXJ5bjRBc004QVRiMl9nYUhHX2dMSG5XdUowb2dOWDBCQWFmUzc4U25jZzBFMnRoME4tdGp4UHh1bk11S3NReV9EZlVxenpwWUs1N1pzUnIycTZIbnBId0NFTVlvMEE?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g732df1ecaf92",
+    "type": "nl",
+    "src": "RD.nl",
+    "title": "De zomer van Jetten: krijgt de premier zijn Miljoenennota rond? - RD.nl",
+    "date": "2026-06-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYk1iaVdRWjNfVVJ2S3Vaby1UZTRaWlRhQUZVXzNfaTJJMUhMVG1ZYUVWTlFGY1k0alBnUmZaVWh5N2ZsTE1yLTQ2cjlHOWc5Y3NXMVltLWN0emZIeG1xNkZFQjUxRkJ6RnZZWGhDTUh4T05yWkVDXzZfNzJobGtyQkxUWXFHNHdhMXN0UmxicnVhdHJBTzhMZ3N0SQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g5fe3cf080c58",
@@ -917,6 +1151,16 @@
     "date": "2026-06-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBhaWQ2VzZtbGRwWGVMOTJsV2NPTW9uY3pYN0JhcS03cjV2V3FGeHdReXlsMEV2LVJuQzJHUldwbW83eHNlT2dZVDVTNkdaczVaNXfSAVdBVV95cUxPUXlIaGtlX3p6N1dCVGhBMGFKSTZSQ054WmdYdFhwSGg4TGZNZlpzY1pPSGJfRFhqT3luOUtUSXVVRE55ZGMza1R2NF9YajBLZ2tBY3Q2SDA?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "gc061ffb759d7",
+    "type": "intl",
+    "src": "Armenpress",
+    "title": "Pashinyan holds phone call with Dutch counterpart - Armenpress",
+    "date": "2026-06-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE92cnlJVTV4TVpzSjRJLThfVjZWZW9CdTlEaUhDXzVCamJWcnNyMVB4ZkdmVFdqVHFMb1UxRUJBTS13Tml3WHZtZmdCQjdBRmZueXfSAVdBVV95cUxNTDd0OXdRaEd6VGdjQjgtZC11T3AxWXdLanZqeHdvQ0JadWl4UkdDQllaUG5WdmpEdjU2bk1SYmlqTjNBV3dpUEozcFBMeUNvZEN4UWdWSVE?oc=5",
     "flag": "🇺🇸"
   },
   {
