@@ -1,5 +1,36 @@
 [
   {
+    "id": "g868fe4aaf40f",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Gaat het dit kabinet wél lukken om de stikstofcrisis op te lossen? - Trouw",
+    "date": "2026-06-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMzlmMHdIaUEwTW9jS1dMV3U4TG5nSjViVkUwV1ZDbHhTWHpFOEdKX2RnLWR6ZGxfUnB5V2dqMERSRFIxd3oySDd6MzNtMkhXdGQ2RFhmYmRONVdqVS1oR2kwenUtNUp1dFpWck4tLWRRLVVDVFp1WDBuUlM2OGU0dkZQRUEzZXhpbkI5RzZmSWpqckRMTFZaNHkzYVRmMk9XcTMyX1dSMXA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g34ce338ba745",
+    "type": "nl",
+    "src": "De Limburger",
+    "title": "De excuses van premier Jetten aan de Molukkers maken me boos - De Limburger",
+    "date": "2026-06-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWmRJWERUUC1wMWR6VWV4d3BicHNRc183NkpHSXVidFpJYnVZMW1jYUd0eHVnLUJ6MW42cEdCeVBzZWFuWjdQT2ZGcGozQ01QT2lYTjIteC1xdzM1NUVxVEgxb2lGeE5wXzRQQmUtWG4xMnFNMlQxZ0tZaFVGeDd5VlMxbU1QdzdPSktOcmxWd000bFR3aW5mbmdQblJIdjI0ODZNcmdyT3JCb3c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf7b9c9604b62",
+    "type": "nl",
+    "src": "ZuidWest TV",
+    "title": "Erkenning van Jetten aan Molukkers is fijn, maar kennis is belangrijker: ‘Maakt deel uit van de Nederlandse geschiedenis’ - ZuidWest TV",
+    "date": "2026-06-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPQVJETDZHRUZUU2NYQ2xLZnV6cWhSZ0swaEJvMWxWcDN3cDlfTXA1VmNjbUpZM0MwWV9yWkNXRktySklkUHZrN0NKU2JYMExrQkVPczk5eUg4bGNJa1UtZmRrN2hMZmhQUnhmUUwzcVFWVUQyUk9zTERpencwSUlST3BZcnBHRmp6MkFibzZlejJkZzd3dXY4OGNZS3JnWlRGX0cwT29fVFlSWXB2ZVhJeEdSSkdHY2lWb2lzcGF5X2Nuc1dlMEdRYVVUR2NqSnVSTjVvXzFkQ21UTXlCaGp5S1M1NkIzN25RZ1E?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g1315f64f9e50",
     "type": "nl",
     "src": "Kidsweek",
@@ -29,6 +60,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNZVg5ZXh4dnJUOHBNOTRZNDczLVRnREZmVnBObG95aUVfS0UzeXdxOGZncW9CRlFpMFdfaUFQblNINnV6eVNnSkstZFBNX3N1VWJtd2RJNm9xbWptUjJCYl9ubERnWGdtSmd4VDBJSUJVRmFla0lGNzJBd1hia0I4alBVVVpvSWo2aFZ3OGthTzFQWVdhZlkxVnU0MDVMSk15VG9OczE1SVJNWGZENDZMRzl6QXlVNmZmZXFsM0ZnSXpha19MNk1FRkdtTjgwSkFW?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g6f095da67d75",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Het wordt een hete zomer voor kabinet-Jetten - Reformatorisch Dagblad",
+    "date": "2026-06-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdG9UY2YxU1o1YThyc3FpRVhWdlBGVFRJMDhPd3BPOXVmbWt5RHRST0N5TzM1dzBIWHF5RjUtcnVmTC1HZmxjNVEwb0tQSEFjRTB3N09HQTVhOEN3WXhmQVRJNmV5UlJveWVNd1BMNzFLZ25OTC1EQ2QtS2R1cGszdHpiVk8?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g10c11c17488c",
@@ -235,6 +276,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQcFBFcWVRSEs4dk9SaWRKRlVpUWhLQUkwUUhnNTBhR2xrZ1NtdzIyVWxYbllkMWhKT2t1RmRVUnFoUldsQjFvc1dYeFRaT3dxMTdQWU10R1lUWnNkdWt2M3NDdFNXMm9tT0ZxdkNrV09QbmFyS3R2QksxLXV0OHlsdW4zQVBUTlpVT0p0MHlpYU1XZG56M25PUFB0cEJtVExQajNQdllBSHIxSVB0anpvVGNn?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g7563201cbca0",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten biedt excuses aan voor behandeling Molukse migranten - Noordhollands Dagblad",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZG16OU9tOHRlekM0MzFCbTdNN1oyS2dGVTVDTkFPUi12WktQTXJVSGpsVm9taWI4VWwwZTdmdUtXbTJUdDhCQXZJSDZmdnZCYV96WmhvQ1U4RjROblJBbC0zN2prQUROV0RkWXpxU3FvNTVuc0dlTFJRMUdmNTlha0g5SHVmM0FjV3VPbkZzRVc2eG1kdmJCOU1BT2xnS0tqZ3lKVG95azBYakw3SlFpWU5SY1VFVTg2OWFOd0Jn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8d40da705e9a",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet-Jetten zet eerste stap naar enorme verandering wegenbelasting voor (elektrische) auto's – durft het ook écht te kiezen? - EWmagazine.nl",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNRHFzdzR1OXF0dFp1TmxZNVlwakVNMHJ0N1AwaFZDWWZIVTlVZEViVHh0VThONHNKQ0hnWS1fejdMdDI5N01JQU13RDJOMzZZNklQaExmRHZGNDhRYUZ3MUN0djY5WmlPWjR5S3ZtZjdVVXFzMkdXOXkyT1MxLXZCdzRCaHE2QkVWa3g0ZmVFekRYeHc2b0FQMkxkRmR0RkdINUdIWU1CcWZ3T0FYYk9fOFhTZV9YTlBrcUZBcHJJYzZyQTJQU2lhTzZSeHVNRjFrbTZnUlFMbU9tVnZuZ2lPOXVxcU9rdVdYcnNqZndIbWk4R2g0MnNtNXFwY0g?oc=5",
+    "icon": "📰"
   },
   {
     "id": "ge63aae2bf039",
@@ -497,6 +558,48 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQU1oOVhtUE1mQ2d5SFA5eWtrdFQyOWg3LWQ3UlcwSFQ5ZW5RWFRPaVFDZTNfV2Vodk9pNUdnOUp4ak5iXzVYdXdwX0psYXBHQ2JaR0pfd0ZTS3g0Yjd0NzlsaGtqNGQ3WkFqRGFqams1RUwzX080WjIwd182ZkhLRFFIYnNOY0lwd0s0aVg1RzQtazFmRWhvRU9PRDdiN3E0VFFPMFJjWWg?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g35a734e0543b",
+    "type": "nl",
+    "src": "NU",
+    "title": "Video | Premier Jetten biedt Molukse gemeenschap excuses aan - NU",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMTFKd2VNaGFMNlRnTFpUSE9QTFRfNXVVaklQZ1JIdTlpeF90bDl2WjA2OUdEOVRFdkUzUWdqalFBU29SN1o0ZjA2ZVJWa3pDUW52Nk13eDlCNFBqUzFCdldpMUcxanNzNVBQQUxmbXBUcEFFdlFEOS1nZnZma0hNM0tDWXdFTEpYNEZoakh2Unc4QQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4a8bdcf7d970",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Excuses Jetten aan Molukse gemeenschap zijn geen afsluiting, maar een eerste stapje: ‘Het raakte me wel’ - de Volkskrant",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOMzR0SS1JdFRFUlNLUHZNRVpLTGEyMnBBdDBSRmp2ckVaWnNENUdRWEplOWZTWTREamxYTXRST1A4VnhqLVRSclQ0X21TbUQxeC1LUWZZczdFTkpLX0ZRalhMaUJKM1cxVWtiUHZQMlB4NXZPbVk5eTN0aC11UTlrMmIwMnR4UnlLVnE1Tkd2WDJ4U0tkNjc0WExzU1E3amlQZXJycnFSalJibnFtbFRtekN3UjhpR1I3bndhc1U5MmhyeS1sTDBZUEMxMEJQMUJQWmNyLTV0X0lNRkRjcTRzWA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g6ad8bd697010",
+    "type": "nl",
+    "src": "L1 Nieuws",
+    "title": "Premier Jetten gaat in gesprek met Molukse gemeenschap in Sittard: 'Vervolgstappen verken je samen' - L1 Nieuws",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMEt0TUdHVUs5ak1weDZfTENPT2Y4NTVTYnVOdXhXUGVBODVoYTVrN2FEc1p3SmdXc1JvZGNOR0FDZ2tkUFZ1WmRpODU5eUtrNnhNa1VWTzUzUlNVNlVGUW1kLWZpQUNjTVU2V3hFZEFxWGJYUHZxMGk4ci1xR0t6QTk3Z3NXU1lmbVVMTFp1LUczblRDWU9FRE1KczRhUXVfN2ZyZDdHN3FRQ1NRYVJVMUhBRHAwVlcwZTVON2t4bGtOSnZxVzVZdnM5cWliLUNh?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5b8eec3f0f27",
+    "type": "nl",
+    "src": "NRC",
+    "title": "Premier Jetten biedt excuses aan voor de behandeling van de eerste generatie Molukkers - NRC",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVHVyMkhHQXg0UEJXa1V2TGdPTTJMa19rZnBQZDhieEZabmhIX3F2MXJLUGhBLXRRRkVlNTF6T24tdUgwakdoT25FVC03UHc1REY3RDMwaDJCbTVzNXBVQ0p5N3VVVUZ0b3kxMWhfV3dsMTlhbE55MGlkTWpZMmpRNEVMdmU4MWZERHNyRHd5QXh1b2ZJeVZLRHNRZmFmd0ZsUVpRUlpxMGMyeEllZU40Zi05UDdkR042SVo3WHEzeVRJSG9SZkRGaTRPeTY?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "gf17f98059a96",
