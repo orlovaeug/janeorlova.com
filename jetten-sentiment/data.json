@@ -1,5 +1,15 @@
 [
   {
+    "id": "gae0b75c97f11",
+    "type": "intl",
+    "src": "South China Morning Post",
+    "title": "‘Too late’: why some Malukans say a Dutch apology isn’t enough - South China Morning Post",
+    "date": "2026-06-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMEs0SFZIVnV3cW96OHNVVDlzNTVPNnhSNi1HUmJ2ZFVkVEJGRFJlMG5yUE90dzFqZFlLSHBrM3NKa292MzJOSUlXbV9ZclNzbDRLeHJ5QmtqT2xiMThkZEQ5Zkp6Zk52RjJaZjZ4MmVhRkJILUhqRkN3ZzkwOXY1d3g4SlBjaGVwbE5YN0hGRExOVEZ2QVRZNUtoUUpXZkVBM3ZtZmZKeHlLeFRuZjFF0gGvAUFVX3lxTE02N20wazNmTFlodG9iMlJTcnlRa2N0Mi10Vkp6bjZTUXRWQWZCMlc0YzRWUEJadVFIdWE3SkpKS0QxTS1aR0NQUEdadnFoYjNNdGdkNi14UGFmNGFRanJfRGhILUNfeEFsRG0xLVZUR3RONUUzUFU0WW1JbTVBYzNHMHQyOWxJNExmcFVKOGdISVF0OHhJVndEbHl4NG9OUXdNTUNqbHhWSmNrazBNZ2c?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7f62e2c8b375",
     "type": "nl",
     "src": "de Volkskrant",
@@ -40,6 +50,68 @@
     "date": "2026-06-27",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMUF1NzRsbkFSZjZDZmppeER6UXNsVjVkZXB0b2FSWTc1ZHFEejEwUmE0SGxmTmxELUpENHYxWjZXaUpZQmk1WFVnV3V5eW9Ja3ZPYTlrakNFRWdtRFRpU25fVmxPVkl4dFN3bUNtQTcxU050NmFSZDk4R2lCdTlDSlpKVUhReWhmTTJqbTRjWHhoUEtzNGhHdDdMbnY3bE0wYWw0bmxn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g262c61c36970",
+    "type": "nl",
+    "src": "Mee Met Oranje",
+    "title": "Verontwaardiging om uitspraken van Rob Jetten over Oranje: 'Hij hoeft niet te komen' - Mee Met Oranje",
+    "date": "2026-06-27",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPLUgzZDVTaEdRaDBKT3plMEdMQTRQTDFUbGF5bnFtQS14S0k1bi1XQXpxR0FCVVZ0ckZHMG9FWU56d2pnRm00T2ljSEVyZDZuRm1wbnJadkozeHVLaTczTWl5MUtUU253Y1VBWWpkdWQ4YlROa1ZKUXBrQnI2MnhfTzNwckhkSFRKdG04dmp5RlRJdkpJNFFVSzNEYXM0UHExd1F5LXd1S1ZJTHJ3eTJSdmx5ZWtaSEhESzBRT29MV0Y?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3eb31c7881e2",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Valentijn Driessen: ‘Laat slapende Rob Jetten dan maar in Nederland blijven!’ - De Telegraaf",
+    "date": "2026-06-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSGticHB1Q1g0UUc1dUFwRWZZMU9jMnRadmFEdzgzN2YyTUhxY3ZKWnV3T0ljbDBPOHJ4VHQzRnhJY2RLNlpMYWw3UWpFN1kxSVlsaXI4ZjZHV3pUMEV4ckdBbnh4RmlJLXdDMDNDTFdNejh1TE9oR3ExakVlZWxYaDFlRE1UODlIdWJGb2lOdkFPWHZYNU03MlgzSnFEZVlXaWVZUmtnaDVrWks3cU9JSjgyNURKeThBcERv?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gd749577451e2",
+    "type": "nl",
+    "src": "De Limburger",
+    "title": "Sorry van Jetten verdeelt Molukkers in Limburg: ‘Berusting? Mijn opa’s zouden zich in hun graf omdraaien’ - De Limburger",
+    "date": "2026-06-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaWt0LWY0bkhqdmQ0d1JEX0V3UjVVdmpZZ2k5OG0yYm42VlEzczBZS2dqS0pWRnI4MEl2My1lNHlPTzJFZTFEQkVIZERqZlNxd1l3MG9SeW1XVFhuNjcwZmV2Wm1nZWtlVjdFY2Z5RHJMdzV3WHYtVGd5dUF1SE1QRWJMRDZVenpkd1pLM1o2d1NHYTBsS1NGQmVDSHlfc01ZSjdnOVhsU3dFUHN3S1RIV3EtaC1VMV9BTmdnQW96Nm1uMzVoQkZwRGE2c2FtY2pwLUhrNWFLWHhBUzZtci1iZ24yX3A2eHFPMUE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2c72312a88a8",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Eerdmans (JA21) zet kabinet-Jetten onder druk om rechts te kiezen - EWmagazine.nl",
+    "date": "2026-06-27",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQTI1VFJLM25pUXhMT3dXMndpR2lWbnNvUV9oSHFMVHAxQzlIOVNsU3R2WHdaZ09ET3NyblVjS3B6WC1YVEY1VDFGejczOFNIaTd0VW4yTzVySnFCX0U4V3JNbHlvNnlHb1NhVV9tQjQ1WkQ3YWhkX1BFX19RejhRWWVvYmktRWVzbVBkZzl3V3UyV1pXMXNEZHlmNzNYQ0x1MnRxQXp3eFZPT0d2NGtjek5CZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gbaa514ec6e6a",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet-Jetten zoekt steun - bnnvara",
+    "date": "2026-06-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1mQzF4UEh5cUQtVV9xVldGN3EwMnpydDR0LTZGQ1hGMzFUdjBVMVdDZk5YODE3QlVnUDNaa0FTTkxROTVRczV4WGxzcVNpWF9nT2x1VENMQmF1U1R1SW10RlZfakFyZW1Ya3dlSVFIV1l4dw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g03b569db478a",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Koert Westerman haalt uit naar kabinet-Jetten: 'Ik word er misselijk van' - Vandaag Inside",
+    "date": "2026-06-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNRkRwblZ5ZXYwT05IN3BNeDhhcm5ManNkXzA5dnRRczIyQ2ZSSjJxTk1MaUNHdElaeWZ2aUdteXFFWmJxV3lBX0o2dV8tWG1RWjlKMTMycnNvLWVKbW9pZUdYbHZkUTdxQWNBYVl6dTgxSEpzTm1LNEtkNDFtMXE0NHFGemxzNjhQUUlrSjdYakxBRi1yOXNFaHVhdl9Qbk1BT3lERFRMSThVTG1KR181dXdQekJ0eHFXLVl1eE1UdjE3N2JWOEJjRU4tR0c5bzNtMlE4WEVn?oc=5",
     "icon": "📰"
   },
   {
@@ -408,6 +480,16 @@
     "date": "2026-06-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSEQzTGV1cGtLTGpFNzlOUDkxX3ZqTTR0MlZscG9zZjk5bF9CQUJMLTBrRXZET2pYSmRWeUI3ZTNRRlBBZmYzMi12VnFKcTNhWC1EN0NWNzhVeDg5NE5kQ1BPYkhpa3B3NE1hUHZtblN5UkFGZlNlbk52VlBuNzVlUnQ1UXRKZEZsSVFRZTNGMVY?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g892c8dd65b00",
+    "type": "nl",
+    "src": "RTV Drenthe",
+    "title": "Rob Jetten overspoeld met reacties na excuses aan Molukkers: 'Extra bijzonder om nu deze rondleiding te krijgen' - RTV Drenthe",
+    "date": "2026-06-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPM3Z6djdNa3BERld0X2N2YVgxb1Y2LVFscmFHVWNsNlY3Z1kwdVp1UzZmbFNOZ2c2SnY4SVVaR3kyX09XcFlxeTNOQ2dZNHd2cFh0dTZZSWVIZTRGY0FDdlF5b0dfazFobllLUjljWVJxY2I3OHdCMTB0U3dpZkZUMU9RbmV0WUJpTXlSMzQ2YnAyMUtRUklsM0FXX0VhRVNnTmQ3ZW5QdUxZUTN4OENJTnZxR0hDaTQ4b3JDbXlrR1Zma1VRbWJmYVA0QUpkWEdmWHRHazA4blV6blpHNzllQ3hlT1EtQQ?oc=5",
     "icon": "📰"
   },
   {
@@ -1370,6 +1452,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZl82YWVWOU5FNkREMnhnY3hteUZKT0k1VU5zaTBvZXdMSDlnY1AxbW50YWJfZmFsTnIybmhvaTNnT1Bia1JmLWFWSjRzYmJpT2dDS3NqSG53dUJPdk5UajVldHFmY2liX3A5MVVIOTZ6UmthYlctZVRUeTU0Z3hQZWE0bzJyN3RuYjVuZ2lTTWFObmNxXzdKV3NCaXFlSGhX?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g0ba82ebbed4a",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "73% of Dutch entrepreneurs dissatisfied with Jetten Cabinet's first three months - NL Times",
+    "date": "2026-06-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPM0VoZ0ZuV2hJR1dHS1pnZFJNT1ZmUUV0LWFhSFNPSDUtaU0zdGFUb0RjanhtcGVJT003SHhOS2ZGcUhfdzZpLU9zc01iN3dMZlQyMS1aRmpRVlpmbzFBbVBfd2xyRUhQVTVXWS16WEphM0k1Ri1fZ25kZzlONFpBeEhZZEF3OGZfdzh0WGpSVkF5bzE0MW0xVHFrWURDLU1HbUE?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g7378814a4aaa",
