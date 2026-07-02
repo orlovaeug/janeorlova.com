@@ -1,5 +1,36 @@
 [
   {
+    "id": "ga355db4e6a2b",
+    "type": "blog",
+    "src": "De Groene Amsterdammer",
+    "title": "Uiteindelijk leiden ook de stikstofmaatregelen van kabinet-Jetten tot minder beesten en minder boeren - De Groene Amsterdammer",
+    "date": "2026-07-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LdmIzczMzYVdydnpady1QaVVCb1FjVGxIR014d00zTXlIQk85NUQwU1BRSk1uSWlxQV9hX3J6UW5LMXpVYUdBNmx1VW1nRnNucjZyeklkOFBRaXc?oc=5",
+    "icon": "✍️",
+    "lr": "left"
+  },
+  {
+    "id": "g76142496b8fa",
+    "type": "nl",
+    "src": "FunX",
+    "title": "Mitchel Esajas van 'Zwart Manifest' sprak met Rob Jetten over positie zwarte gemeenschap: \"Uiteindelijk gaat het om daden\" - FunX",
+    "date": "2026-07-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOVC1XbThhVnUta1d4Z1dfREsxeHFnZm8yZEVLMXpaMEk3TTlZTnpFUHJRMXl3YVRHa29GTWNCWjBLcFZVdnJJd3Nlanhzem9UdmRoclJWdkhWVWFJMHh0eUl3X0Njb2tHaFpfWUF2S0VMTWlZZGtNYkIteUlibFo1TUF1SWROMEhxRHFTQ0pvUW5kNnZJUFZOZHgwY2wzNzRibE1Od1Rn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfae075cde8a2",
+    "type": "nl",
+    "src": "TPO.NL",
+    "title": "Kamer verdeeld over stikstofpakket, kabinet zoekt naar meerderheid - TPO.NL",
+    "date": "2026-07-02",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNERkZVdPWklHU1dDMFh6eTNER3dicVpxMXFleEFUbTd3YXNBWlZEdEtUUGlaTEdoazU1aHNyYmhlLWNsRDhtOGloV0I4MlJjZ0pJUzFmb3ZzS193YzV2ZmlBY3YwZXJna1pvS0NCSVJFc0xqRnhRczI5QXBpLVVRUUxTbVM2T0pqMlR6VjU2cG1QeG9TZUVj?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gb2a17b4da396",
     "type": "nl",
     "src": "De Telegraaf",
@@ -20,6 +51,66 @@
     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQam1jS0JLYVljbnBqYkYwTWtYVHBEbGtycnhFVXFCLS1QVmh4MXp1eUlOdTZySjlLeTBQWS1vWTdOcHRNaXFIUnBZZmJiR1pyZG1WTFY2Q2l6OGdvdTBva1RzWjM3c0ozblNybEpuSm1kY2VJaEhla3BIOUFkcUFYQjVCbzBWMXpRQUk1RE5jZ1duMXJYbTNESjczYXc1ZlpKel9vZWFkOHRwRW9xLWQxTmcwSXZJZ19pSUxNSEgweUVyV192QXAtS2pTZDdheVViZTFhSl9mRElKNHJDTXpvMzhXYzNTYXQzcElyTg?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g3e2d186d3dd8",
+    "type": "nl",
+    "src": "NU",
+    "title": "Video | Premier Jetten bij Ketikoti: 'Verwachtingen niet waargemaakt' - NU",
+    "date": "2026-07-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUlpXUVJoQmwxalhOdFhqZExkbDZPZ3RVMUpQeUd0bXJLWEoxYXloMGJNc25YVnNJczk3V3QyblV3czZlaXNKbk9WZUI3eU5sR3haTUtZNjlhY004WVA2UUdXNXZCbHd3ZVY5T0RBLTJjMzdsSG1iY1E1ZGl2UWpKaVZtbllUX2lNVF9HcExYYndlOTdfSE10TjZ3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd848f575c49a",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Premier Jetten spreekt op Keti Koti over herstel: ‘Het moet beter, het moet sneller’ - Het Parool",
+    "date": "2026-07-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaWVOdjEzMDBTUHYzUkp4RWtmZmUxbU9oNzMtSUhDQ2FicFNIcnA1RnRBMVFGN0w3Ym9wX2VXTkswY2hNLW5HNVh3Mk9FMVBwMWFkX1VHUEl5NXg4SC1UZnpDZ0x3YVhaYnhtNmFGUmoydWd3MkJleW52cDVzamc5b3NSQXg4amlRUzNRSVNYMjRFMmhSbHF4N2dPMklhTk5pTl9QM3hjeE1JdkpuVWdRb2NrVGJMa0ZqZVVwSVJpZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g019241f9fd1c",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten wil dat overheidsinstanties elk jaar vlaggen hijsen ter ere van Ketikoti - NU",
+    "date": "2026-07-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPa2VTUy1MY3ZMRXlXbGRoUjYtVl9SazRDVHZjdGtYRkxET1NJZUFVb1JPMEQydi1fRjk4VGJraWJ1cHZ2S3gzYTdMR3F6ckRzS1ZzZzZ4dnFJMFNqRDEteEVTTTMwTUZlRE5fTTh0VlNxYTRfZ3I0ZTd1OGZsM1FqeUdZTk5CNWQyN0tvNGVKdUFVTXVReTQ3OFR0NFNmRUdzZ1RDS3dsYVcxOVQ4U2hxN0kzV0lPQ1NubDVHemxR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3a3c0094c60a",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Jetten en Heinen op bezoek bij Klaver voor steun begroting: 'Kabinet kiest risicovolle route' - RTL.nl",
+    "date": "2026-07-01",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbmU0OWJlYnh2NUZ5MTY4YTUtNkRDbnBraW1Vek9ZOWo5WlJCdHpxalBHT0RIbEJIUDdpWVlIN3lnSzJaTVNmRUdvblFjN2ZIeVVuWVVyQi1PRzJkX0VDOGxBZE1Sck9hTDZVSVh4Q1VUcy0tRTA3d2RBQ1NSR0dHWUlSakp4MVNDQXJmNXV6eF9SMU5FX3RfTnp6X3JxRXp2QWRWY2VMUy1QMFFObzAwSEVPSW44UQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc3d0e17051a9",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Stichting Autobelangen waarschuwt: ‘Kabinet-Jetten moet wegenbelasting elektrische auto’s verlagen’ - er zit nu een harde rem op de ontwikkeling | Deel 5 - EWmagazine.nl",
+    "date": "2026-07-01",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNRHdlMWV5RGNVcVJVcnRiaW4xNUVuNEdfUFNlNmVWQWdOQ1RPUUEydXdUSnloVmI1TTZKTlNWMml3ZGJ2eVZHV0lwZXNqQ01HN3RDejFXczNwYURjUmViQnpwVmJnRW43OWFzbUd5WDR3SEpuUHlXXzJqZkd5b1FUNEVKTEM5Rm40ejJrMjJnamhfMmtUWmlIYjh0Mml2cEluWEx3T2FsbnBSY3pSakRqTUhyT1JuTVRyT3NXZWFKQ3dkbDRoZ1praGtoTlZfRS1CZDhUZ1JpV044RWlRZ2MwZkhJVTdOaC04Rm9hajJNdw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g28af23b0e99a",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Deal tussen kabinet en oppositie over Prinsjesdagplannen nog ver weg - NOS",
+    "date": "2026-07-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUHBiRERDZlZmU0dneHdnMDNFeFc5SE43X3c2aERjeWNpYWVrNjFjVTVJeS14T09lRTdGV1Nrc0pWMkJ2UF85dFpIRi13dEttYVhyZE5PbllhNXBVR1lOSVhRYnVpQlVLOGU5UlBvX2U3cC1kUVhlNVBJbjh2eWZDbUk4OVNub1g4Wm9CZ3BKWjl2NVlPUmpiN1dvNzNCU1I0?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g4d5e4a79a9a9",
@@ -748,6 +839,17 @@
     "icon": "📰"
   },
   {
+    "id": "g73180698669b",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Na zijn excuses aan de Molukse gemeenschappen bezocht premier Jetten Westerbork. ‘Ik heb zelf op de middelbare school helemaal niets over deze geschiedenis gehoord’ - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-06-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQX3c3b3J0aXBPel9EbGdORFZSY2ZjaFE2dmlqWXE2WnRLOEhXUWpDTmRDc1lXcDBicUtoMHZsWHRfVnhIa1RvblB3WXJoZW1aNWVEV3ZLeE5CYjFkQ0xJeHlCTVUyVWxfWTFEU1lLQnIyWmVQNEpRT0hfSmdzdmlLZ0hsU1lxaUVBSFNZMzdvcVhDUWJJU1ZLTmZDZGtOQl9XY2IxNmpIOFBUWjhNR21Lem5ncHVVbXZJSTRrYUFoVGJiVkQ4ZGJmSFJBaXlxblpQM09TdGwzTEtNNnBKQ0pMN3NRZnEyNkFScVhOV3pNNVM?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "g1315f64f9e50",
     "type": "nl",
     "src": "Kidsweek",
@@ -1367,6 +1469,17 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPd3drLU1Jam5zQUNMS0wtVUlESWhMejZLV2lQNFZheGlEc19yZ01ieHVTZmJKVVhvQ1BLSzRULVZaU0tHOUxheFFOdHUtaWlwalo0c2x1X21rMUJMcXZmN09sSTU2VllodHBtRnFhNFRHQlRXbzlLcU1aSGhHNnBkZWF0UkpqbVBrQl96aVFDRVBXc3liLUE2OUx3LWdfaHlWczlnWDlYUGpJd9IBrgFBVV95cUxOZmQ1V01WSjZscHJMcHREZnc3akxOM3pRVU9VaEhqbHpLOXNOWnA3bHdET29TbGk0UVBya3prSHVETWJLT1JCbkNTbFZxQVYxMkJBM3RmRnRTWUdLU0tiay1MM0h1M1pzODFUNGp1SHZDWlVYZzZ4ZG5XZ3h6QUFHMTZhbm9vc3Z2dGNUWTRfeE9adlZoaXpUZ3h0Tk0wSXN5R3pfRjJkbXZSS3RMaXc?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g266efcba2529",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Premier Jetten biedt excuses aan voor de behandeling van de eerste generatie Molukkers - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVHVyMkhHQXg0UEJXa1V2TGdPTTJMa19rZnBQZDhieEZabmhIX3F2MXJLUGhBLXRRRkVlNTF6T24tdUgwakdoT25FVC03UHc1REY3RDMwaDJCbTVzNXBVQ0p5N3VVVUZ0b3kxMWhfV3dsMTlhbE55MGlkTWpZMmpRNEVMdmU4MWZERHNyRHd5QXh1b2ZJeVZLRHNRZmFmd0ZsUVpRUlpxMGMyeEllZU40Zi05UDdkR042SVo3WHEzeVRJSG9SZkRGaTRPeTY?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "gf17f98059a96",
@@ -11371,6 +11484,16 @@
     "flag": "🇺🇦"
   },
   {
+    "id": "g9a46b5658de4",
+    "type": "intl",
+    "src": "Ukrinform.ua",
+    "title": "Прем’єр Нідерландів про російські погрози: Ми не дозволимо себе шантажувати - Ukrinform.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSjRoNDdKZEszUzBDUjVUMFdVNWpQeUhwOHlvRVZseUVsZ0ZwbU9IamRmWDBNQXlKbmVDR2lqSUF1OTBGa3VZY2VIc2V1dEZqUnRzV21mOVJFd0Zad05QeloyQWZRblprU21iTnVkOWFFTUdoUVl3RHhadjg0V0VFMWVpT0VQRkg3cXFqcjBLcEtDOFFHMEVRbk5QbUg3Z2tqUHNhUVVYSF9pYjdsV05qVExpRmpobG5vV3hkTzA5R25ESUVl?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
     "id": "g18d3822c9c96",
     "type": "nl",
     "src": "AD",
@@ -13487,6 +13610,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNHpEcDJkSXMzVmNHc3pOTzd3blhBQkRTNURrMmNaUktSdWtLYkcwWW5nT3gwUi16RGRNejVzbmNxbXRtUkpPdG1vTTN3MlktNzE4a3BKaWNyY0RiTTdaNXVKMzhjaEM4djlpRVY5WkdiZDNhcVNlTU9SWHFzRmJfWVUxdmV5Z05tcW9jdkVqa19acjFQYkNrLWFaVWIxcjVfYWc2TEVGQ2VjQXlDVldRTTJCN192UQ?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g1953b06c6b3d",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "New Cabinet's plans will cost working Dutch nearly €500 per year, trade union says - NL Times",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS2FObWk4MWVxRktvdUx0enhjc01fQ0ctNV9qRHUxTTFESmlkQUpfUE56NVE0Mjh3QUo2V3RhRllncVZTdllVdXhuQ0k4blF4OVI1czR2TUVTN002ZXE0ejdtdXo2QlRRV0xGUnFKRXZQQkRjWkpISGgwTktrX0hMM205YUV5VUdTSUxqUXgyMDJsRERNdlBCVzhHblIxcHB3MWQtSGhHbUVMcjlSdEFYOQ?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g60e7617690c6",
@@ -19458,6 +19591,16 @@
     "flag": "🇵🇱"
   },
   {
+    "id": "g8bbf6b5f829b",
+    "type": "intl",
+    "src": "North Atlantic Treaty Organization | NATO",
+    "title": "NATO Secretary General meets the Prime Minister of the Netherlands - North Atlantic Treaty Organization | NATO",
+    "date": "2026-03-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQU0tNVUpZTW80OHNQSERfWGhJaVcwVU9iWi0ycWRQQ0RvSzlYRmVDeVV3bVQ4ajhIMFVEU2Npd05paDR0amtWTk83NE54eGNxajNtaS0wWmFSYVhJcHpUV0lxSVU4MWtleEtCV245WXJJM1VfU3Fjc1BRQXR0MkdiSnZNN3FHTVFqX0lHQ3V5cDNsR0hweGV2bXpKR250V2p0UExFQjJ6NGxja0podzNrN0kweVN5Q3BHVkk0MWVqdy04R3lnMjFLTmdB?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g3074f3fb8785",
     "type": "nl",
     "src": "NOS",
@@ -23786,6 +23929,26 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNQnM1OTEtS05MVERDMXQ0MnVQVkE1TURrSnBqTGZFcHlhbnFhTTFLRmtyZ3h4Sl9tbFhDbE1vU2V4UTRXY29VMWstTVJld3plbE12QW5qalBFUEM5Y0hmVHFocmk2TWtuV1IxZXlvVXdNMC1UQ2ZFWWlHNTUzWjVXR2p1V2tJYUk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1615a8f743c7",
+    "type": "intl",
+    "src": "کوردستان 24",
+    "title": "Netherlands Forms Centrist-Right Coalition Under Rob Jetten Following Snap Election - کوردستان 24",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOclJPNDg5RzQ4blNPTUwzblNDQ3VReEYxVjZNZTlkZnV2RW5qN3N1c0FyTkJ2NGNTTmtzY0hsX0FRcmRhR1JYQ0VrNUpReWtOdFZURlc5YUxzc2thWTJaQlJwZENVRlRTcjVHRFhvaDBUeW1ONzc0Z3pxZ21UOHFZQWZhRm9iVHZFUGZrWFhRTTNEd0dBMjM4NmxRd3RmRUM4U1podXdSWmVGU1FrZW5oWFZfM0p6TGlhaEJHUW92RExJTFprNmc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7c0d56f3bf00",
+    "type": "intl",
+    "src": "Internazionale",
+    "title": "Paesi Bassi, s’insedia il nuovo governo guidato dal centrista Rob Jetten - Internazionale",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdUNyd1dZSG5FQUM5bnplQlo3WjhtV2NmNHU3UFl3dnpyVUxzaE50dUZwWmdIcENxckVVRVFyZjNqem95bDhpTHRwM0lDUzZUcUxuRUlWUjV0clZLOTktUUI3WWZxNXd4MzFMYm5jZWZLRThudnJtLXpHQ0J5M1g3Qjl1d3ZyaXg0SmF4RUtfSTk5bEc4U29xT2RTdw?oc=5",
     "flag": "🌍"
   }
 ]
