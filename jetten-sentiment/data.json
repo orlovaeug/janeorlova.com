@@ -1,5 +1,220 @@
 [
   {
+    "id": "g61dca4288704",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Podcast De Dag: kabinet-Jetten rolt rustig en saai het reces in",
+    "date": "2026-07-04",
+    "sent": "u",
+    "link": "https://nos.nl/l/2621573"
+  },
+  {
+    "id": "ga917b55a98bc",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Naar links of naar rechts, de minderheidsconstructie blijft voor premier Jetten het probleem",
+    "date": "2026-07-04",
+    "sent": "p",
+    "link": "https://www.trouw.nl/politiek/naar-links-of-naar-rechts-de-minderheidsconstructie-blijft-voor-premier-jetten-het-probleem~b4bbcb56/",
+    "lr": "left"
+  },
+  {
+    "id": "g6f960eec7af6",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Naar links of naar rechts, de minderheidsconstructie blijft voor premier Jetten het probleem - Trouw",
+    "date": "2026-07-04",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPcnM2QTBIcXBhcm9HMUlsWXowV2o3U081ODQtdkZYcDM5V2RuSVhPSVVndG1xRHFMRXRXaEFGZzlTODNpTm02MjE2ZUZMa1NseDNsZ1FMRUZCdmNHR2hsWk9VY3VqVElKLVIzVk1KWS1xNE1vZjk4VlZFSXZ6bjgwQWg1eGxJMVcyMTRZbnpqTHJKeGZ5TTQzMW9qNXZucXFGOGJFMHpSRG9RMXVmTXh4Vm1XQm5YbVhZTUhNTEo5UXhXN2tYSDRPNThCbw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gc9f1868f43a0",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Haast ongemerkt begint het kabinet-Jetten dan toch op stoom te komen - de Volkskrant",
+    "date": "2026-07-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOThYV0JOYUlxN1VKcUhJMVhaMmp3T0psZWpMZFpUb3Q5cGZ2eWtUbDlfR0lyVlRKUVB5T0hiU3VJRDZ0TEJYQUl2NzJKNEZPWGdQZ29TMTdPQTR4d1VKNE9Ma25TNURCNWZZcWp6ZFVHSUdQUnlleUJuQmJBSlF6akFQcHZ6aExfZnJlYTh0Y3kwVnBBbjdEb2NsTWNKeDVSU0FtS2YxZ1l2RjBVRHdiRng2RQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g6a72ad28de70",
+    "type": "nl",
+    "src": "Nieuwslens",
+    "title": "Kabinet-Jetten rolt rustig het reces in met stikstofplan - Nieuwslens",
+    "date": "2026-07-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZjYzNVByUGV5eTdicnlJT0FRTGNkMmR1MVJBY2lfV2VXNzU3cnp2WXJqNjFUMU1ITlU2Z05fV3JLMDFWY2UyUzZrTEp0RThOY0N6N19tcUVEdDV0VlRGOEVBWlV6Yjg3MXBWTWtJS3BIalVzajZMek41S3VJZU5aVzVtMnIwbUdIWEQ5Q2NIT0V2NXNWdHZXMmp4bC10Rms5dHJnNmV2UEJ0MjVjWERZSGVZeXhLZjl2?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3cc158189630",
+    "type": "intl",
+    "src": "Українська правда",
+    "title": "Zelenskyy: Netherlands agrees to host Special Tribunal on Russia's aggression - Українська правда",
+    "date": "2026-07-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA1OVRfZ3VpcFNmYXdrZWk0akotWENIYnhBV016M281VDQzSzlEVzdUVjQzVzVPOVMyeTlFd2pOQ0htZjMyNktzcWM5YWp2RGdaTm16Qm1CdVlaX1NlUWNHUG5fMW_SAXBBVV95cUxNUW1pS0tyVDNFTDg1SjhvU1A1a2NBbVdHbzl2SlJwR2tpYzFpOXNSNC1WWUVVYm9hT3V0X0NFUDNjdXoxcFBTdE1LMWtxTGV6bXQ0RnV1cWZBMlFsN3JIWmNXdDR4ancxUmU2VTNQM1BL?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gaaf151154032",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "Griselda Molemans mist iets wezenlijks na historische woorden Rob Jetten: ‘Excuses waren een aai over de bol’ - Tubantia",
+    "date": "2026-07-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0VaUkFDWXNYTnBJTTdSODhRa1JEM1c4a09zeG16WVVUWEJkQ1hMbFgyZE5KWFdVRmoxcUtMZnNjMV9SNTlnS0RYVnFyQ3NBUVFMdWVSR3FYZE02RFRTazQ2STVEcmh5Rl9Mbm5PcmcydTRuXzNpZFZudVN5bkNIbGZ3eEIycUFWb3BDbkRScDVEdFlHcEpTRzFPOUU0NEFPazJreTUxd2t0UWZVbGhaNTRjSDBTYXFIUDlveWl6RFowOWlBVlBtZHNCblhtNk9KS05RT0tzeENackxnWjNTYzBVbw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9349703c0ab4",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Kabinet-Jetten productiever dan twee vorige regeringen, veel wetsvoorstellen van VVD - de Volkskrant",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRkFCY3hOOXhMUDNQR1JmRC11M3hPWXF5UXlnamtfU0ZDSEQ5clE5cGM5d2U4RWx4ZnZLMjhnSVppTWFsVmlpUEV4WFpIelBjbmNLTndoRnpSdzFHcVpRVVJ3R1l0MFFBazVfTjZsTUxPLUVYYkNRcHVtTkdYWmNjWF9OZEFuU1htNWxfWnNTMlFfVGwwTnZfdjF5OWpadTJvc25reHB1NWxvSXY1SDVXXzNwVWVPc0RhUTNMOVJVVjBlVzdybWtj?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gb183f7017ee5",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Alles voor de beeldvorming, dachten ze bij Pro toen Jetten en Heinen op audiëntie bij Klaver kwamen - De Telegraaf",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxON09qZWlISG5MMXI4VVByNHN0OXpNbjB2eTNrRXpJSjEyQkxud2xBUm1yOEVXUEFveGtrTm1IQ2ZUb3locjdoRE42MXctR2dKOUFyYmFIbHloWjZkQ0w5bWoteGI2c2FuYVo0a1p5SW5nWWFTSlNPNWI5SEVPTkdySkFxcW9PblJyX2ZiamRnc0NTMUdrNUo3TEx3MmFvOEctVXdDVHgzV1ZZSUFTbXFUNHlLR0FSNzh2RkRmRHJPZkI5cWhRRDJJbDdWQnV4NXF5SkpDcDRSQUlNay1JUUE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g80bd8223c99f",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Nu kleine succesjes, na de zomer wacht kabinet-Jetten grote beproeving - EWmagazine.nl",
+    "date": "2026-07-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOUk5Lb1hhMV84bnNPMjczdHIzSlk3TV8ydFZkMlM1eHUxNW9aRy1ab0tERkhpWXEyeTNaUUJ3SUxyUmJXY0Z2XzZIbThzZ1dvamR4UEZzNTk2MkNybjhtcENZS2hGeVh3UUhmV01PdE5sdm5xaGtWVjV0bHlnQ0F0aDNxODVsSGV3ZGtZbXBGUHpRSl9IcFZoTHpHbWtNSzFfQnhCY2RjbEY2Tm9SdW8wc19ZZmQxMEN3RThRcVplUXZyTUtUOHBfM0dfMi0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd5942bb96175",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Rob Jetten tegen Merel Ek over wat zijn kabinet heeft bereikt: 'We hebben het gezellig' - Vandaag Inside",
+    "date": "2026-07-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPVnZ2NkdJTncycy1nMFRNdGRWNV9wRXRNQUxLYW5jc05FZndxbk5kRDRWb3dxWXNuc2FHdVo0VzRiSFFHZWUtdlpGNzZOM2dickNJSzBUbkhTMHZjWktpX1RQSnhpR01ibTA4NXNpMENYM3JJR1l6OTQ1RG44OFVpQVhNTWpUR0Jfb3kza0RuQkFUMklaUEFoWUp2cjNxXy14Yi00YU1OSWFpT3V5ZWNub2RXMEY5bktGWWRhOEFYRXk2czI5bmNaWEp5Qmh2WDhsTkNBSnU0aE52RXBk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g215adc0ff55f",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Vier maanden na start kabinet staat D66 op verlies in peilingen, Pro profiteert - NOS",
+    "date": "2026-07-03",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTFItSVJFaDN1QUR4dGdSdlpOaDBtWVE3bXlZNGI3ZXlQOHVvNGNWR01DbHg1TjcyVVNMc181bmJ3Uk5FQTRGcjlZNFp0WlEyX0ZBazctZmlDX3NEajhlckg5U2hRZVFmNWVNdTFOSFFjQmVGR0UtcEdQVG5MWGZ3N01DejJXb2hhVEl3aVNwWWQyOTVnYVRQTTFTM0FrY2J2QTBCRHB6bEY4c0tGeXc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g45b22511a816",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Voor kabinet gloort bij begroting ook een route over rechts - Het Financieele Dagblad",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcHhYMVBDbGwxNk1HdURkcV9YNHRhcS1rZnZxODFzVklWOHJpQVdLRHhQcDRRdUR4dk1zOWVBTUJUU0w3QnAwVTh5dEZBR0dnU2d0OWZSN21pZEZhUzNaWUNvQVVhTzJHTnFQbVJiUDJqTzlTSHBlOGVnY21WbWRjWFVrbVUyeFFHaVdjdE9kV0YtckVQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1ea7c869e9d8",
+    "type": "intl",
+    "src": "Kyiv Post",
+    "title": "‘Historic Decision’: Netherlands to Host Tribunal on Russian Aggression - Kyiv Post",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFAzSGllYW1xUGhRSDZEdlJNQ0NRblBBM0tLazQ0dEZkR1ZBbk5mVXlJY0Mtek45cXJ4S3J5blZ5T0tQZlk1aE9NRFJrOA?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "gf05341616b89",
+    "type": "intl",
+    "src": "Ukrinform - Ukrainian National News Agency",
+    "title": "Zelensky thanks Dutch PM for decision to host Special Tribunal on Russian aggression - Ukrinform - Ukrainian National News Agency",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOU3dNb0I2aS1HQlhZTG9aUk4yNmpqQ2ttSVpCYWhHN2Q1N1d5TlZTRjBEV1NQMXBlajdWMThVRk9VTzQ0Qll6N3QyaVpMR3lLMTMxaUhhWkx4dXhHczJnbHhLU2JNZF8yMzlGRG0wMm95N1R1WGhEckxfNmRjR3huTXp4a2FEVHZzZ1hiUGFKUnFDOXItajBWeDJ0UXhZMzl5ZUJCaGdJZXdVSmFpeVFONVZaTjBaWmxiXzJCa05MaGZtR3pYLWNndXA1ejdfbkROLUJXb0tR?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "gf55194a27293",
+    "type": "intl",
+    "src": "UNITED24 Media",
+    "title": "Netherlands to Host Special Tribunal for Russia's Crime of Aggression Against Ukraine - UNITED24 Media",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVXRkeGJZYTM3XzAzT3RLRkpfa0xtajZtaXRvRnBQa3ljTmlLRm9aYWoza1dtTHRrNGpxUHN3TmE3UnVhOVZmT0RGbzNPaDE0RElCTWdHT2VoTW5QbmtLSmM5c1pJaGtrRGxSV0hwWlRnZE9VVTZZT3pJVnZZVnRVNkYydnQzQmN4M0lDZFVrTmIxWnJDOVlLMlpzZzN1SzVCRlhTRllUTmZ1TjZFLWdoX1A5YklTX0FnOW1fdlRsYUpfaEFmTVE4bWIwbw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf60da322d4f3",
+    "type": "intl",
+    "src": "Українські Національні Новини (УНН)",
+    "title": "The Netherlands agreed to host the Special Tribunal for the Crime of Aggression against Ukraine - Zelenskyy - Українські Національні Новини (УНН)",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYkZDMG9LcnBtRXpMMTRvTFM5Si1KWTBRb0FocFVUQlhCNTNnaGNiTFpiRW03OUUwTXVoLXFoSi0wVGN1MktNNHBlckNkN0ttS2tqTG5iRE1hZkJ5MjJld0pidk9kVVdSVlNoR3lBTkJhclpZQUhMN2ZHUnNuYzNnVUV1ZXJfLUNud044bllkNlp6RlU5SGptczFlVHBZMjJJZFRNbC01RW5mUUZqN0FLVVBzTXNEamoyMkFwVGV2MHpSaTcxcUHSAcQBQVVfeXFMTXBQbzVQN0JJbTdMd3NqWWJPUmlvXzFlNkQ1TWh2YUY0cU92Qnc2UHpjR19JSEZyTGZYRngyeWhlNzB2TmFqbzNJdUd2Zi1peGZha0F1ekNhOENYZXZndHRORVF2RW12bjExUVpFLWd3ckptWjhFMTVRaFV6STgxTmh2bXRGcThCVVF5aHpvZkh5cU5TOTFIN1QwRjNycGNiRFBieW0tdzJMdjAycVBPdk1iWGNDQlF1THEyMWo5b0dkbGRHLQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9b0b9e18bbc5",
+    "type": "intl",
+    "src": "news.liga.net",
+    "title": "The Netherlands will host the Special Tribunal for the crime of Russia's aggression against Ukraine - news.liga.net",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQMzk0QTlMWWZqdXQzUXhHYkhsTk5rdHpOVWtILThkal8tUzN0eUMtajlJQkJHUzJYMk1HVFc1ZDRCeVRfLXhVWUFMLUctdkd4dXNRckhwTlBkQlJjYkxvMU5QS3Rqa2ZpdkVodU1VMDhVQTQxTW9ySFlEa3BrODl6LW9JSWtjbUl0dEJYYkstd1RBOC1xUzA3VUoxZzI0eDMwdjBVbnBpRUFaRWdScHFLdXN4MnBaNVJkTnRXS1dBdmZWT1dfMFdDWENhbDg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc08a60d45638",
+    "type": "intl",
+    "src": "nv.ua",
+    "title": "«Історичне рішення». Нідерланди погодились прийняти повноцінний Спецтрибунал щодо злочину агресії РФ — Зеленський - nv.ua",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdXRzUS13M29ETExBTUFhanE3a1ZkRFFjR09hanBfbUotbC1ER29mekdoUkkwVDNPaXlPdFpUb19BbjFSdjljR2FoY1d3RVlESi1EOG1nR3hDbFRNUXBCZnVfY2k5VHd6b1gzNXhmc0stNzFFekZ6dmNQblpWd0M1TktXZ1FZTEVhMEVYZkhGbHBQWTdidUl1NGNXUEVqUG1OU0hMYzNMRW9mdlFpMnduMTZnS1h0UXozREREOFltMzFfTTFnVjB3RNIBtgFBVV95cUxQWDVTTnAzSGMwNUZOZC1LbGY0RU1zNDFLVXdtdnhfSjFlS0gzaTNkUE41YVpWV2pPQ0pKZFkzSHAzNFZ3ems1eloxeG9iMDJQcG9uc1dQQ0ZudUhlaGRjSTBfR2xKLTIxT09lQ0dINU9ld3pJajN0N1ZUNGlwNkV4QTZFTmMzaWE4ckFUblJMTG15N0RiQ0UtUnRwZFVaQ0loUDBtRVFnX3BJbktLVS0xX2FUZXVpUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9ed92edb4f28",
+    "type": "intl",
+    "src": "Korrespondent.net",
+    "title": "Нідерланди приймуть Спецтрибунал щодо злочинів РФ - Зеленський - Korrespondent.net",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORld3RHdaX1RPTDFKMjhhX3ZGVG5RcTI3YllmREQ2eTBQdmtYRlRHOG9ZYWlVd1FUYkJxaEhSLUU0M0lCQWRDZWs4Rk4xVlhwWWoxWGV2UXNSdGtqd0ptM1dnZHV4eEJoc3BBTDR5cm5pUGthdXJlVlFNSlpTbTExbHo2OFlLa2hCdGVMNnF3MDlxb1lOZ0NyYzZUaTVoMkg2SW50eW0tcjlWZHBoSTFUa2ZXcjRFUdIBpgFBVV95cUxQQTJDQTd0Y1JmX1RGLXFyZXJYX2JEbFdsemEwZ2VhallxQzZGN1dhWmhjRV9VTkRmMzFtNHBRelRfWjRZTndyNnNWQmlMN0tTWXNRaEsxZlFrSm52Z0haZzRNc0NXbGpIdnI2cE1Rc1FoWHhpVS1tOWw0R01rbVpSZnQ3U0M5TXdPaUhFaUFPY2Q3NUFuQlBNM1FQZ1RtRnBwYS12RGd3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb478d0b3805c",
+    "type": "intl",
+    "src": "news.liga.net",
+    "title": "Нідерланди прийматимуть Спецтрибунал щодо злочину агресії Росії проти України - news.liga.net",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZW0wU3hvZlZrd1NlQ1JScmx4TFJKR0dCemF6VVhaU1lCWGZSbmktT0ZMMG5UZVBUenNONEk5YUtLQmQ5d0NWXzRmUnltQy1RN0VfaEp4a2F3R0JieHZiQjZxeXpBTkdxcS1obTBsNTlhSUltSGNrOEJfYmlZTk9jX1M0NHVlYkFVd2xnSlZTeXFjOTczUVNDX2ZIdjhCNnpuc0tuTEUwTHZGTVROYVVGWTBpYWtMSXFEd1lZY1Bn?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ga355db4e6a2b",
     "type": "blog",
     "src": "De Groene Amsterdammer",
@@ -185,6 +400,16 @@
     "flag": "🇬🇧"
   },
   {
+    "id": "g4483f7868282",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Jetten maakt hoge verwachtingen op Keti Koti niet waar, toch was er een sfeer van hoop - Het Parool",
+    "date": "2026-07-01",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTjVHcTctQ2RhYW16QU5xSlplQU8wOUdIaFk3Y25JME0wV01WOFZ4a1ViQkYteFVTQmRaZ1U3S0dvU2VIS0tRd0daVmtiZy1GRXYzbU9HSURodlBCVWVGelh4OVpjQmlWRVV5cXhxb2x3clczS3FTZ3ZfVHFwLU5ZY1Q3U3JaT2tXLUpOdDA4NnNDeHZkZndjdmZ1UzlLcFhYVlRWTVBDQTlNOGJFSkFYVkpJd1ZIVnF2UFl1MkRJR291dVpfcVE?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4d5e4a79a9a9",
     "type": "nl",
     "src": "Forum voor Democratie",
@@ -275,6 +500,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVFJ5UGM3WFd4ZlF4MUczNkYtQkxTR0V3MDFncDdYRjZzUmZBcUg3MnVrdjRrTzR1QktIc0pVWTIyc2hNWXZ3WFQxajlzc0VEMG1MT3lMMHk2clkwMVp2bzVWd0hCbnFXTWlCOVBuWjk0MnNEdUwteHRiVGotRHFlSW1EVmU0bmpyZnJBSlJyTnhXWjRsUmYxRGhDLVNENl82aHVGWVlYczdjc1RaQzNaRU53WQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gcf6396d8573d",
+    "type": "nl",
+    "src": "speld.nl",
+    "title": "​Jetten biedt excuses aan voor kabinet Schoof - speld.nl",
+    "date": "2026-06-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFUkFfb3ZmRXNlc0ZJY1JHczYxb3RQTXJWN3BSNUxxb1d4NGphTnBMUUM4cktveEMtTnl1QTRaTmdVM0ZfMHRQcjdGUmRmbUN1d2xZQ0FBbXAtYU5SOTQ4eDE1ZWF0SllWVENyN1JRc003VVZJaEpKRmZ6a0hJZw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g7fefa5e25445",
@@ -1217,6 +1452,16 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQ2FlQmtKRGw5Z0s0cC1VQlhQaDI2Y0gzTjRpQkptdHJGdURvM2p0ZWcwX2tWNGlpVHc3Z2lvaGpWRHJZYjJtZ28wMHpzRTJMMkU4SG5rekxhdUtFaWpIam52Y2NCTTJBZXd4QkhrVk1aUmdzOU8tdmV2RFB1MnlEa1hyQWtYeThickpUSDRxTXVWUU5Hc2lfVDVpRHY0ZTU5RVdESkpFOVk1eGhIT19fR25NeFJ3MWlwRFJpbVRvWkJOay10OEJPc1plcVkwSFBFTGc?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g5baa1f7529a0",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "Moluccans welcome government apology but say it came too late - DutchNews.nl",
+    "date": "2026-06-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMTNqWWNXTHIwTWlMREVGaUota1podnlTa2lfUkZnNHFIVVBib01UTWxPalJSSHFxMThaTkNVdTVtZnR3M3hjYUhsQlBGR0pYbGM0OGRfZ3EwcTROV2VfWHNrYXZNSVJhTzVJSGJOVFoyQjVNaE9reXYyVFZ0aHZTd0tlQ1BqUVE3WEtwUlBZSTR5dHNHRlRRcVFWRQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ge63aae2bf039",
@@ -11566,6 +11811,26 @@
     "flag": "🇺🇦"
   },
   {
+    "id": "gab8196ad0c4a",
+    "type": "intl",
+    "src": "Укрінформ - актуальні новини України та світу",
+    "title": "Прем’єр Нідерландів про російські погрози: Ми не дозволимо себе шантажувати - Укрінформ - актуальні новини України та світу",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSjRoNDdKZEszUzBDUjVUMFdVNWpQeUhwOHlvRVZseUVsZ0ZwbU9IamRmWDBNQXlKbmVDR2lqSUF1OTBGa3VZY2VIc2V1dEZqUnRzV21mOVJFd0Zad05QeloyQWZRblprU21iTnVkOWFFTUdoUVl3RHhadjg0V0VFMWVpT0VQRkg3cXFqcjBLcEtDOFFHMEVRbk5QbUg3Z2tqUHNhUVVYSF9pYjdsV05qVExpRmpobG5vV3hkTzA5R25ESUVl?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga0e14b73cd29",
+    "type": "intl",
+    "src": "Укрінформ - актуальні новини України та світу",
+    "title": "Нідерланди підписали з Україною угоду про партнерство й інвестують €248 мільйонів у дрони - Укрінформ - актуальні новини України та світу",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONkdpc1QwQkJldGNZby1yaVpJN2xHOTUzdHIxQzd5LVNjaWl1NEt1bUJZTXUyNTl0cng0Q3ZRZnVhQUlpWF8wTlZvd1lwOFR4SWJMVzJSRXh2MTRfWEw0TXA4ZGNNdWxJa0xETW5DYl9Mc1RDU3ZmZGEwdWNSMU5Qd2hNUVJ2alpibDZudnR6d3NDdjl6LXgtYVQtak5Ld3l3QlhXVjhoVzdrRFFwdnBkcEpKUEROdU1iYlZTODJqVGF2MWRGVmxZSVhpd0tmN3E0OV9zd21R?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g18d3822c9c96",
     "type": "nl",
     "src": "AD",
@@ -17009,6 +17274,16 @@
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSHkxZU1aYUpGRzI0bkp1cXBwZEtDcTloT3hCYWZjMUw5MG9Rdm9EaHVZcWxrcmpVY0ZBVU9QV0FCVTE3N2dTVkEzb1ZlVUM1QkJtQ2x0TWdrWjBMNThpb09NcEVqSkdyZ1J6MEFWSWpGVXRrZl9nY2RuZ0pWRy1iM0xTTTM5V3d5cnE0M190SW50VGlRLV9TQ0pxbWFmbTFIRzlwVDM0QU5KUHlua0o2RDAwNEFocGJ6YWVUb0xQZVJXNEJjbHF3?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g4eabb3d3f46d",
+    "type": "intl",
+    "src": "zielona.interia.pl",
+    "title": "Premier Holandii: gdyby nie ETS, importowalibyśmy teraz paliwa kopalne - zielona.interia.pl",
+    "date": "2026-03-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNTS1yUVo4VkZORDRIOTQ5V0phVjNDU0ZvbmZhbFF5eHVmSEdXQ1BvajJ5X2FGa3hjWHlUSkQ5YnlOUTRlQURIOVF0SnZRT3lkaDF2N1NUOUFBWkgzRjZVUFFIcDBkTFBlX3RoQVdsWV9RNV9qWlYyR2FzRURoWW1iWUNSMF9uU1lwakpQSmlRVXdBZXNUTXNpZE5YeWhLRUJUVWdqbUhjNDBHRFhLc09sQTg3aUtaakQ1MjJhVG0yMA?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "geaa2f8800f36",
