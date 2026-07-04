@@ -47049,7 +47049,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11949&did=2026D27180",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk44c16d1af7",
@@ -47333,7 +47333,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11863&did=2026D27080",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk20f9bbfb4c",
@@ -47841,7 +47841,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11945&did=2026D27176",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk0cb33bb16b",
@@ -47869,7 +47869,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11909&did=2026D27140",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk20339e05b2",
@@ -48121,7 +48121,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11904&did=2026D27135",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk2af98f5a5d",
@@ -48199,7 +48199,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11933&did=2026D27164",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk8942952369",
@@ -48245,7 +48245,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11931&did=2026D27162",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk552cbd609c",
@@ -48323,7 +48323,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11976&did=2026D27207",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk71cda33111",
@@ -48351,7 +48351,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11974&did=2026D27205",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk1fd14a415f",
@@ -48603,7 +48603,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11943&did=2026D27174",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk87897e189a",
@@ -48649,7 +48649,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11941&did=2026D27172",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd4d3b85493",
@@ -48741,7 +48741,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11938&did=2026D27169",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk6bb130e214",
@@ -49277,7 +49277,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z11964&did=2026D27195",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk6b65693110",
@@ -78110,7 +78110,8 @@
       "SGP": "voor",
       "50PLUS": "tegen"
     },
-    "archief": false
+    "archief": false,
+    "score": "(65-83)"
   },
   {
     "id": "tk937095873f",
