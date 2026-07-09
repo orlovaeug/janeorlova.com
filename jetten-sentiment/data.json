@@ -1,5 +1,108 @@
 [
   {
+    "id": "gb6786e32152e",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Rutte weigert vuurwapen Erdogan, Jetten laat zijn exemplaar in Ankara",
+    "date": "2026-07-09",
+    "sent": "n",
+    "link": "https://nos.nl/l/2622296"
+  },
+  {
+    "id": "g7ccf9af56dd7",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Cadeautje van Erdogan: Jetten kreeg revolver na afloop van Navo-top",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://www.ad.nl/binnenland/cadeautje-van-erdogan-jetten-kreeg-revolver-na-afloop-van-navo-top~a0c88ba0/"
+  },
+  {
+    "id": "gd28b42900ca0",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Ik wantrouw die glimlach van Rob Jetten",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/ik-wantrouw-die-glimlach-van-rob-jetten~b8d2cedb/",
+    "lr": "left"
+  },
+  {
+    "id": "g1f8970d9e02c",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten laat door Erdogan geschonken revolver achter in Turkije na NAVO-top",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://www.nu.nl/binnenland/6402472/jetten-laat-door-erdogan-geschonken-revolver-achter-in-turkije-na-navo-top.html"
+  },
+  {
+    "id": "g43e6c7178e6e",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten laat door Erdogan geschonken revolver achter in Turkije na NAVO-top - NU",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPb2tlZ3hVaGx5RmY1UW5YMTg4MWpzUzZlc0NkSWM2X1BBQmxmUUNWREdpNndXUkNMalpvUnZKczZGdVRCN3dOVXppem1fUmRoN05IOUwyRDlodWNRaFlTUzlPYWtQWlhsVGJqZWlsNG1FSFlfWWlqdERja3RTQnVvZEF4SFh4SS1lanQ5Q0RiaXVOMXVoQ29uRXBmaUoyRWZIVnpyR0F2ZkRjRXc5RG9WSll1TU1MN00?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g11543cf25fbd",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Ik wantrouw die glimlach van Rob Jetten - Trouw",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQV3cyaldZb0JmQllwMDlJRUl0a2tIanBQV05GU2ZSVHRzbk00ZDN1YzItQkR4Y19xSjBQYlpDMUdua0gxSTdJZ0dLS1RHMVJJdGNmMGZRNkU0c2dvdENTdjhJMFlqb09DLWxoQTJxc0pFd3pkSlkwRnhhZXBjWERsYUNZRQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g2d6f8a6766d6",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Erdogan geeft Navo-leiders gepersonaliseerd pistool cadeau, mét munitie - bnr.nl",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVmRMRFJXTjlpQkdXWk5hTTItenhBQVQyZUhpSWc0aVlGX0ZvejhSNXRQcmlfYzFaTE1lZzJmWE5tLUhadDRZbkd0NFB4bUs3T1d2NHpLLVctN0dPZ0JFN2xJZVdDMVBReUtjZ0NodXdQQjd2Z2xOMWxMRTBzZy1FZ3JPZnluSTkxeGxCWllhQkFCVWdzV1piS2NmRXY4U1RQSjJSWUZOd2pWTjBzdkxZNy1McGdlb1FZMGUtMg?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ga81e974c1dd2",
+    "type": "nl",
+    "src": "Nieuwslens",
+    "title": "Erdogan deelt revolvers uit aan Navo-leiders, waaronder premier Jetten - Nieuwslens",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONHZ2bkJKZV9LWnkxZ1U3TkJad0lBZ203Nlo2NDRqWFM5VmduS04yTGVHUWJNYTB1SUZoVVFFd0NyZjl5OHVZMTVGeVJtbU5KZHdYdTlsWXRqTE9rT012dm9mQ3FuYlVpX211eENtTzZNQ0Q1d1liU3RwOHp1R1FfQjZqRGN4UlY1OERiMlp0MkxoODRrVXFMT3dIUGJ0aWZmczQ2OEUxaXBSSnNTV0tfZXlZN2NydXpzdzAybV9HeF9IdjJ1NFhSV3M2b2w?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g673629d29ada",
+    "type": "intl",
+    "src": "De Morgen",
+    "title": "Een verrassend geschenk: De Wever kreeg gegraveerde revolver en zes kogels cadeau van Erdogan na NAVO-top - De Morgen",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNYU85c05ZcHMtVnBEVmdmdFRhVHEyTGRQQXFack9IeEpmemRCTWJfbV96bktfakw3Y21BTDhPdXFubXhFZzM1S0x0R0tSUGp4ZTVPWWNmR3Z0WXg5UDhibWdYUHlSQUtaTllFOXZlNUN2dDVSZlBGUEJGcDJuYmUtdmd0bzBQZ3lrVGhrWFZCSUJIZjdFNFRtR2k5UDh0andjOHQyQWF6TzJObFhsRzVwdTRzN0NQTWNiMzU3bVpSYWItUkpKNHBrMDhLdDE4SUYzaVhYUWxfSXc2TThUUVE?oc=5",
+    "flag": "🇧🇪"
+  },
+  {
+    "id": "g931d6eb4c2ba",
+    "type": "intl",
+    "src": "조선일보",
+    "title": "Dutch PM Jetten Omits Same-Sex Fiancé From NATO Dinner - 조선일보",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY2hab09fRWhKWS1NNjU0Yjh6WHVxMmNRSVN1MlNrcWVvS09qd2U2cjZBWndOOGhEUkVGNW0tNVp2eDU1QkdCbkFRQzQ2eTNiRGpKRGJReTlsemp1ZkhCcnNvSkZxeUdtSlU0bkdRWGgtdlVpQzlwb1FVTlY2N1ZRRTY3MEQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g18b0c0abb800",
     "type": "nl",
     "src": "WNL.TV",
@@ -69,6 +172,97 @@
     "date": "2026-07-08",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPS0c4QVZ2MXpLXzlIU3JPY1JlWjE0M3pJWlFPS2dlOHc3QjFwREUtbmp3ejlEWFJVb1ZOcjZtbnlGaEpXbmtzVkxWalF1SE5JMXVSWmZiUExubVhrNHVsM21MWTRNSXQxWFo1LTlRaGVyeE9vUzllUEdYUzdmTmF3RnBjc3kwbFc2UVdxSDFiZ0dNaVhQdExjM0VpMU9iV3dnaGxvRlNDT1RSSnBxM2RtdXRKeHE3SnB5N2gyckRnblVTSEpraDJxYi14clprT3fSAc4BQVVfeXFMTU1TMHY2SHZ2dExQb3JiVUowS3BCWncyOFFDVFdsNEtFSTlQR3lMUVRtd2ZFVS1rLW9DcmhMWVBTcUluc2dRN0pqTDUzdXlyY2FQb0V5VDNQa3hiVE43cFM0a21GRHM3R0pwMlBzWUFmeEZPWDdMXzRFOGo4aWozQmxOd3JDQml3RUpMSlNLcDhXTFFPRHhQU2pXMGFsZEJKaEhsWjlBY3MxelB3dDVCQlM0c2dnOG8wRUliaVJKc1Ffb3A5TURMQUlfR2RFTWc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb26370e5bab5",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten neemt revolver van Erdogan aan op NAVO-top: wapen wordt onklaar gemaakt in ambassade - De Telegraaf",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMzc4YnZORXVfXzlXdU5vU3NZT2Z3VWlicG5IZkhUQXB5Nzd3SFhjSjlrUXR0WUJJZ2JkZmpsM2M0d2dRcW1RSUplay1XRWItSTNOTUxEVzVzWHFSUWg0VUdyTmIwaDNGcFFYYkcwM2lfX3ZHdU1jM19SaE9XUEljR0tjOWZiYzRZMy1rbXIyRWRvRWNKSnJsdU9NQzJ5N3hrRU13YklFek9BeHVjaGRjZ2Z4bTRvNWRmMmx4OUNfTV8wVjRVODNxUlBRQ19DNTlTWUNkUWdn?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g85c276957e65",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Cadeautje van Erdogan: Jetten kreeg revolver na afloop van Navo-top - AD.nl",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVHBueU90eFNCc0MwT3NMYXIwa3lyQmFXZ2Fta3dEZVpPaHZ4Tno0aGRfcGVGeEhRMm9WXzg4dlExYnZ2NW9VaFBkUG85SjZESXRLOUpKVHU0ejZCUzBIU0RoVVJFN3p2Z2psU0p3RXFxcHZUY2t5NV9uYkpfZ0pVcThyZ1U0OE9IUEZ5UVlWN2ZMTEJUZmVRR3MyR21FX2VPMmoyTlMtcTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g947caefce7a9",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Erdogan geeft regeringsleiders een revolver, die van Jetten blijft in Ankara - RTL.nl",
+    "date": "2026-07-08",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU2FBSXI1ZDV0Tk1LRmsycUdPYi1uR0t4T3VsaUlZVHlQTXNkblM5ZFNkaHNNSThnZXQ4TmsyRWIyT3E4Y0V4QTFJdVh4MzFleHNTcV9yTXQySEZkS0s3MHdRSE5UWmUweGk5Vi1BR18zd3QzdHJ0TFBLWVJ2TmZaX3FxV0VrRE4wYXduaGhnZjlqRWhoT2tlTkJuUEQwRHlCTkZHX2w3bkZKSFBBS0lkaklHZERDZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g04e3d8d515a9",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Salderingsregeling zonnepanelen stopt in 2027: laadpaalsubsidie is rond, maar kabinet-Jetten kiest voor oude techniek - nu moet PRO de slimme oplossing redden - EWmagazine.nl",
+    "date": "2026-07-08",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNdEQ2ZmlPeDNDUklvWjB1Qm80VVkwUk80MDNNdC02b0pIaHdpN3hSOS1ZeHpMQTlNLThOWk5BRzhQU0hVOTFCY3AteXdZV2JlNGduTDl0VGdoekpSd1psdjF3R2NwenJaVkIxVmFEdzE1cXZ2cVJCR05CRE5mZ3A3VWhxM2dsbEhUNUNoYmFMMkNmYUk1YlJIM1I2LVBfUUV5RUc3a2VwMVVPZUxvbmF0b3pqWk1XYnZyZkJrSFFKZ3JzVGs3WlQyMmxnZkVuT3RYQ1h2X0lQeGdoWmpEY2hoVS1VRWxCbEJKc012dHJTT3E0ZC05STVTVWZGVEFlSnp6SWpN?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g783a8d62a722",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Technieksector slaat alarm om mbo-plannen kabinet: ’Opleidingen dreigen te verdwijnen’ - Noordhollands Dagblad",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxObFkyZEhRaXRZUDI1b2VBVmJzUE5ZLXQ4Ukx0VFlQWXVvTTlhUTFKNnBLSWZkMUFhZ1ZPa19fSDRMSnhKVFJmYVB5V3VkMjFqZ3hxUDZOMkJjQVVnN05YUDZnaWtUODhfNUtEWm5YS1U5RFNPVGYyTnNGWThNUlRGX1dFYUZqYzFGRlNvT3oxSm5qUWFWOHFZcnBLZlBZd0FDQ1hXOHZobXhZa3FsNlpBcC1kM2hIS2VDMzV3RVpuX21naW5jQVhhZ2hyUU1BM1V6RFFGMXFXLU81b0RmV2c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g98965724fdba",
+    "type": "intl",
+    "src": "Washington Blade",
+    "title": "Dutch prime minister scheduled to open World Pride human rights conference - Washington Blade",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOTItOGdOOGVSM0Y1TkxmT25qTWY5emk1M1c3VkdtTG9MQUFmcUw5ZlRnSzdYT1NDY0JWc0lHdVVsNVhIMDNaTl9JbWRnbGtkRHZXX05PZ0VwbEhhNWtsQVdoM3BHaG90cWk0d0pScXpWWDN6RDNTTGlrcnZkeUhQSC1kU3Zpb1pTLUtHU2ZfcW95YlAwOGVJckpFM1FlNjAwT1U2eU1lbXcxSWVObzctX1RUX3RybGJmWHc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g673caf3e6faa",
+    "type": "intl",
+    "src": "The Kyiv Independent",
+    "title": "Dutch PM: Defense minister's remarks were a call for allies to step up support for Ukraine - The Kyiv Independent",
+    "date": "2026-07-08",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcnZmVjNtQkI2dXRXMjU0cGZ5SktIVmxFUzRSWlM5c0thVWFlUHJwM0k1NjQwRnZwMG5Xd1pFYXFBUkZEVFRvdUtEOWVDXzhvdXZfQzI3dVl1bWMtTmhoel9YLUlZTWZKR2xPRUpSNXdzY0d4Y1ZyMEZCWmJZWFZpOGVHdTZieXJESkk3YWN6RGxDRlZTRXNZWVNLQ3EyUXE4cW1UMWJ5cXJDYzN2Tl9TYzZnWTctR3FyQTNJbG9VTQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g9e574396837e",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Europe can defend itself: Jetten on U.S. threat to withdraw troops from EU over Greenland - NL Times",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQamE1TVhHbnN4N3pRNkplb08tRkNVWkpHUWhWOTN3MXl1M1RWZjlyY3VkejRMMzVic21tQXZKQU9XT1Q1eTVmVy1oLUYtZ2FxT0lzQUhVREx1M2xXdmdwSmNwOE5oSmdyc0xaWm56dDR6RkI3ekYwYlBpVVRnTGt3SklMOWNkT2pqNDk5alhWTzVkcndrVFdBcg?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gbb7a159fa945",
+    "type": "intl",
+    "src": "Marine News Magazine",
+    "title": "UK And Netherlands Forge $3.2B Maritime Partnership - Marine News Magazine",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBnaVFmRXh5NUU2UlgxWC0zc2tQZXVBRUFOdHlGTUljZnlHR29wZWU3dGh3Rno5TmlrdkQ2b0hJYVZNclBxLVlVektvQzBMa21DMmJLR3dBVEp4OWNsaldsT01jTTQ5ZzdMelFtRnlxWnQtLVZpU1BydUZn?oc=5",
     "flag": "🌍"
   },
   {
@@ -324,6 +518,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g2d3ed05deef1",
+    "type": "intl",
+    "src": "Yahoo Finance",
+    "title": "Readout - Prime Minister Carney meets with Prime Minister of the Netherlands Rob Jetten - Yahoo Finance",
+    "date": "2026-07-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPV3liUnJ5THhLTGVyZWFOYVBBQ1pzMFd5azJNOERRSUZJYUF4QUNXdVBMZlk0TXJBeDBkU2JNcHR4SnFQT3ppM1cxald3cEdyck1RMU1ZeVV2eHlVaWJObFNxdGkzU3N6MHlpTjc0SUpTaVlPY2NOY0thUkxiTVVOd29FLU5yMlhMNW81OWk3YlFMN1JBVXNwTjRIaldrdFFvWVE?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7c7cfb8759c2",
     "type": "intl",
     "src": "UKR.NET",
@@ -414,6 +618,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUEtQU1BRNjNGWU54SUl5TVczaHE4bUNySHU4TnBoUWRBZzZmclZubmRSalBGYkplLUlPR01qTVhSaWdIOC1PNGRaQk5pY2dTTnFpTVhLc2E5cV8tMC13T0ZYUkRYX0luc1BTdnV2SktzOFV4eF9JdTR6X3Vqc0k5RW9LdWN1bnhmX1pjZkxIZG8xZXpXM1l6UFJndlEtVDNwX2tjR3VLVFVMVlI3RzlqTTJTNUUtUGs5R1poTVhreWZzWGlN?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g029b387d17f4",
+    "type": "intl",
+    "src": "24 Канал",
+    "title": "Прем'єр Нідерландів сказав, як примусити Путіна до миру - 24 Канал",
+    "date": "2026-07-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQalM0eEhCWEFicExIU25sUEdhWlBudU9NVy0zTkhHTWxxR1YycmdZZUR2ZHd5R2ZDcHhVUWNEYXRGOHdVOVRnaHc2cEx0ZDZRODdKYkNkYjVlbnktUkNBTFFGMEZVTVpMczhiT0trdWhDeG5SR1liS3ZJbWRlRlViWkpuVlNkbzVHQTktODdPeVJ5b0FyYmlxXzJYVndyZ9IBowFBVV95cUxNaExRRmVNNUVCMGpWNFBrUlhrR1ZDaUpNQTF1dGdyNXkxMG9mQ3VDQUNwTkczN09jbWtYOFYwdm1SQ3Jpd2pWbnlsQTBHVzVNZm9sV1ZJZFBPRkZxODlycjdRWDJoc0o4ODVVUm9FOGJSdDJ2dUdxa0FWVmZvbFJQaUI3RmtaUjZXbG5nM2NBRkNuN19Hb1RsRnRCU0dHeFg3MTIw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g61dca4288704",
@@ -567,6 +781,16 @@
     "date": "2026-07-04",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWW1HcTRvQ2Fud2FLbVFBeTdUWG5QRjcxXzFIYUcyaUYtUkYyTjFKbW1FdThMWDVYbmtoNTJGTHQ5eHJkY1BEYzVPWjVTREFDTk13VXZtdzN1eVRqZGsyNzJOaTRwWW1LTTBFeVFpdEZvUTA3Q1VXSUZyTkhhaWl6aW91N0ZTR2VXbk9JSDVzZkYyMFJRR2xSU3RpX0dDdUtsQlVZYjd3WWoxbWExUEIw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc9de7516edb2",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Griselda Molemans over de excuses van Rob Jetten: ‘Dit is diep beschamend’ | Foto - Eindhovens Dagblad",
+    "date": "2026-07-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPN1dxb3VwYnp2a1ZQcWR2ak9CdTRzTkJnVkNMWDZ1QUVhX1BSZDNWVlVCVWczd0lLbmRDSkl2QTRaTUxZM0ZGZDZCVXl4WFpMbjljT0NIdmNZaElONWFkcC02NzN3ZHZ0LXY0SWFOdF9fVEthREwxdGtqYmpKSGhQdWM0MmE0dHVOMWd3MlluM2ptVlpienVXdHpIak5KSkZRTXI5T2g4NVk4LU9GLUdCaHdabXhWaTJ4WXNkVA?oc=5",
     "icon": "📰"
   },
   {
@@ -4552,6 +4776,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOF9GSjlHSFB5bkpWZlhTUDJ5TklHQm1GUHhLMG90UmFsaEhSTmljanJQWmtwdmxiNUUtSEU4ZzVsaUplRGd0WEdkcWlBM3hvMG10QnhTYXBiUnVTVnVlQkJfWTBub0VnUkNMM1o2WV9tblJXVkFldVFSOTVGdEI3SUR2ejNFbW1XSVJRQk1BdUF6VGpJbkdLQkQ0QkVsckx0UkZwUEp1bkVnakEyRkNVbS05ZXJpS0E?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "g9bdad70f9c9d",
+    "type": "intl",
+    "src": "DutchReview",
+    "title": "Dutch aid in the Strait of Hormuz? Only after a ceasefire, says PM Jetten - DutchReview",
+    "date": "2026-06-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS3Q2QVVTdGtHVlg2b0EzdVpQSGJTWWxYU055eTFxUklHYkRvMUhCT1otQWN2VURrMkZOVVNBSDFta25fY2puNmtkMjE0ZXQyYm9pLUhDdkJZRktEeWVtbGh5UjRDSWhtckFaY3NHVFJZV1ZwNjBkcHJRRGlhM1F1ak5FWUxSdGpNSWc?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g6b1346cc3a17",
