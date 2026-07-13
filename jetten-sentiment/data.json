@@ -50,6 +50,16 @@
     "icon": "📰"
   },
   {
+    "id": "g70ede3d8f927",
+    "type": "intl",
+    "src": "Omni – Alla nyheter. Alla perspektiv.",
+    "title": "Nederländernas ledare: Ukraina hör hemma i Nato - Omni – Alla nyheter. Alla perspektiv.",
+    "date": "2026-07-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ydDlxRDBTMHJLR3JqZHlUV0JVWDhFelZ0ZXBiZGpaSEE2U2tieVFmbjdxQ1RDdWtLb2U5R1lBNmY5VUtfYWoyd3p6VG9PbGc2WDFzN1ZKZlFodk9pblJjYXJKdlRQT2w3UG5KMV9jc204aDUxV1NxaTBvbw?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g86fa6340be87",
     "type": "intl",
     "src": "Leeuwarder Courant",
@@ -255,6 +265,16 @@
     "lr": "right"
   },
   {
+    "id": "g1547a754af29",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "LIVE | Box 3-belasting omhoog? Jetten sluit hogere vermogensbelasting niet uit - EWmagazine.nl",
+    "date": "2026-07-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSEQzTGV1cGtLTGpFNzlOUDkxX3ZqTTR0MlZscG9zZjk5bF9CQUJMLTBrRXZET2pYSmRWeUI3ZTNRRlBBZmYzMi12VnFKcTNhWC1EN0NWNzhVeDg5NE5kQ1BPYkhpa3B3NE1hUHZtblN5UkFGZlNlbk52VlBuNzVlUnQ1UXRKZEZsSVFRZTNGMVY?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gb6786e32152e",
     "type": "nl",
     "src": "NOS",
@@ -447,6 +467,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONDJLbGVTb19DUUhRd1Q0YkF1VTJNZE5udGZHcGFHeTBOZjl0clRCX2xXd2t2ejRUTmJSNFJDa0ZwWG1Tb3dtTldRYVJ6ZlphenpwaXQ1cWRTSHRmZ2tvQ2V6V0pGdUdBQndjUS1NT2M0YXRkMjdTSEFleWJmS2kxRVVWMEJxSTMxU1RERUhaak5yWXpnVWRhckR6aGFnR21iWml5VFJrS0RrS0NoNGc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g91c48acb16d4",
+    "type": "nl",
+    "src": "NU",
+    "title": "Video | Rob Jetten krijgt revolver kado van Erdogan - NU",
+    "date": "2026-07-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeUhaeHA5QWpaaWE0Ti1haXNUSWNTSnZrVkNLdnVIYkVFdlF1S0FwRHVSV3ZfSzNOUFM4REM4cU8yNGNDMnpGaXNDcGI0azRuYzdFOWV5cEFxbVRqVlh4MnhzZVpuS2F1dXpJZWl2OFdVWjhUcFJwbDliSGthOXBQMVhnTFhLdw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g18b0c0abb800",
@@ -874,6 +904,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g260038d694c8",
+    "type": "intl",
+    "src": "Ukrinform",
+    "title": "Dutch PM: Drone Deal will strengthen Ukraine, the Netherlands, and NATO - Ukrinform",
+    "date": "2026-07-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNHdVV2xuQlYxMGtkc0ZVUU5vLWV5cHlleVhQejdXRGgteTJUdVRpSFRhdkQ0Y1AyTlhTQzdLT2RqaG11b3JOOTVRWWsyX3VHTWdCaVlUQy1iczBRMnUzRkdhTGJNTHZQM1FFZ3RkalN6bHFubEUxNjhTaWdWT181b2c0NWNvdHoxczdEcnJFS2xwcHBmRFJtMzVkZHhMSTdIRnk4T19xWlJ3WGw0SjF3V09kX2ExOGpCNXdfdC1ENEQ?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
     "id": "g7c7cfb8759c2",
     "type": "intl",
     "src": "UKR.NET",
@@ -973,6 +1013,16 @@
     "date": "2026-07-05",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQalM0eEhCWEFicExIU25sUEdhWlBudU9NVy0zTkhHTWxxR1YycmdZZUR2ZHd5R2ZDcHhVUWNEYXRGOHdVOVRnaHc2cEx0ZDZRODdKYkNkYjVlbnktUkNBTFFGMEZVTVpMczhiT0trdWhDeG5SR1liS3ZJbWRlRlViWkpuVlNkbzVHQTktODdPeVJ5b0FyYmlxXzJYVndyZ9IBowFBVV95cUxNaExRRmVNNUVCMGpWNFBrUlhrR1ZDaUpNQTF1dGdyNXkxMG9mQ3VDQUNwTkczN09jbWtYOFYwdm1SQ3Jpd2pWbnlsQTBHVzVNZm9sV1ZJZFBPRkZxODlycjdRWDJoc0o4ODVVUm9FOGJSdDJ2dUdxa0FWVmZvbFJQaUI3RmtaUjZXbG5nM2NBRkNuN19Hb1RsRnRCU0dHeFg3MTIw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb7c91149cb83",
+    "type": "intl",
+    "src": "LIGA.net",
+    "title": "Європа має надіслати Путіну \"рішучий сигнал\" із Гааги – прем'єр Нідерландів - LIGA.net",
+    "date": "2026-07-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVHFZa2ROQ0tPQWdWMUxWbjNCTmFvR25VZHNXemdFOUk3SDdHX2xUcUliOHYzUWlJNmRKWmhvWG5QT3FvbmxHOWJSaW95VG9qMUFkRy1pTkJOTVpqOGdkRlBoMUxCUm1UNUY4X1JHUjlfV3Bub2ZIc3Znckg5Rm5pUDZQVERQUFMzRnc0YkNxVUhVT1owcnotRlN6aFM2YUhSU25aTWJ4dmRMa3gwNGE0UUZDUXN6NGtsNEw1ejhjY0wzR1o3V1Jza1B5ZWJqQQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -1302,6 +1352,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g5856b790bc25",
+    "type": "intl",
+    "src": "Ukrinform",
+    "title": "Zelensky thanks Dutch PM for decision to host Special Tribunal on Russian aggression - Ukrinform",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOU3dNb0I2aS1HQlhZTG9aUk4yNmpqQ2ttSVpCYWhHN2Q1N1d5TlZTRjBEV1NQMXBlajdWMThVRk9VTzQ0Qll6N3QyaVpMR3lLMTMxaUhhWkx4dXhHczJnbHhLU2JNZF8yMzlGRG0wMm95N1R1WGhEckxfNmRjR3huTXp4a2FEVHZzZ1hiUGFKUnFDOXItajBWeDJ0UXhZMzl5ZUJCaGdJZXdVSmFpeVFONVZaTjBaWmxiXzJCa05MaGZtR3pYLWNndXA1ejdfbkROLUJXb0tR?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
     "id": "ga355db4e6a2b",
     "type": "blog",
     "src": "De Groene Amsterdammer",
@@ -1495,6 +1555,16 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTjVHcTctQ2RhYW16QU5xSlplQU8wOUdIaFk3Y25JME0wV01WOFZ4a1ViQkYteFVTQmRaZ1U3S0dvU2VIS0tRd0daVmtiZy1GRXYzbU9HSURodlBCVWVGelh4OVpjQmlWRVV5cXhxb2x3clczS3FTZ3ZfVHFwLU5ZY1Q3U3JaT2tXLUpOdDA4NnNDeHZkZndjdmZ1UzlLcFhYVlRWTVBDQTlNOGJFSkFYVkpJd1ZIVnF2UFl1MkRJR291dVpfcVE?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g3013c1e8869d",
+    "type": "intl",
+    "src": "Goal.com",
+    "title": "«Un mensaje con múltiples significados». El primer ministro de los Países Bajos rinde homenaje a Marruecos pese a la despedida de los molinos de viento - Goal.com",
+    "date": "2026-07-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOMVpKczJhNlZ3T1JfNmgxcjZZQnQ3SXhmRUZIcUp0V1dKbHZYV1hkbmRDVUdJa0U3cEZIRGV3U0ZPd0xwa1pHekNidEYtTGJzYi0zUENzZnlEcG9qTm4xOXJfVE94dkV2ZlhaVDNoLWxzVVdkMXY3UEotakZJbS1BSEpxalk0eWRmYVBkZC1GLTZucnVOZ2tzdkpOS2JzaHY1OFdJWFVZVTFxWUtCWVNCWm9sQk5nNzZxT3NYYVJoV2hfbGUzODd5ZGVNSzM3R2pKX3prUld6QkdOUF9LSnd1OFUxVXJ0aVk2bVV6bWtBNXZ0STZYR2ZibGNfTlFvOG1WSXhKZDZVcFJiYzRHRWQ2LTJIdTRYYzdzSzZqdmtlNU9Cc016VlRHUQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g4d5e4a79a9a9",
@@ -2285,6 +2355,16 @@
     "icon": "📰"
   },
   {
+    "id": "gc12fa310e737",
+    "type": "nl",
+    "src": "DVHN",
+    "title": "Premier Rob Jetten sorteert in Ter Apel voor op snelle ‘duizenden’ extra plekken in asielopvang - DVHN",
+    "date": "2026-06-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1YX1ZYUDNoakljc0VPXzlBdUpWMTM0blpzSXM0T2ZWZnFvTEdWVDlJd05GR2NralVteWNDMU1ZUWZxVmdjVkliLUpZMVNzQ0hlbjdScVdlTUJiVUd1ajBEVWxzcnZRY3BrSFlTU2pOa1JpWjdQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g1315f64f9e50",
     "type": "nl",
     "src": "Kidsweek",
@@ -2925,6 +3005,16 @@
     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVHVyMkhHQXg0UEJXa1V2TGdPTTJMa19rZnBQZDhieEZabmhIX3F2MXJLUGhBLXRRRkVlNTF6T24tdUgwakdoT25FVC03UHc1REY3RDMwaDJCbTVzNXBVQ0p5N3VVVUZ0b3kxMWhfV3dsMTlhbE55MGlkTWpZMmpRNEVMdmU4MWZERHNyRHd5QXh1b2ZJeVZLRHNRZmFmd0ZsUVpRUlpxMGMyeEllZU40Zi05UDdkR042SVo3WHEzeVRJSG9SZkRGaTRPeTY?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g11ee5a8d6079",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "Países Bajos presenta disculpas oficiales a la comunidad moluqueña por décadas de abandono - Yahoo",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNV3NiendOZGhWYVpyMFVqSjgzUzBHckJ1Zng0YlVWdzlVeEllcVZVVENDWDVfeUYwTm9IMl9CSnBlZm1qYjk3MnNINEQwRmlaZ0dzR3N6bmVsU012Rm82cnYyUWdpZ1VuSjBmcUVHTUVwdGVsclN6NU55ZG1NVndxQk1lMVNYdjNJMXZ1V25GOW5MejFsN3ZhR1Nn?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gf17f98059a96",
@@ -8421,6 +8511,16 @@
     "flag": "🇪🇺"
   },
   {
+    "id": "g4af36d286224",
+    "type": "intl",
+    "src": "euractiv.com",
+    "title": "Le premier ministre néerlandais prend ses fonctions alors qu'une bataille fait rage autour de la « contribution à la liberté » de 5 milliards d'euros - euractiv.com",
+    "date": "2026-05-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNZ1FhNUZHc1Q2ZFRvTm03WTNvSHIzcHlBOWVBbVJjQUxhM3pqY2lfQ0d1N0l2dlR4bzBiZzR0aGtidnpjU3phcmU4QnRaRlZYUWJ5eXZjVnJSelZqNWJJTHpWMS1uMG1sYmVxSTJUZXFRU2tsZzRSZGZwTDlpZjZMUi1KWGlhaF8zZnczNjh5UVcyYkFKVHJfZkR1LU55eFR4RktvRUNRVTFaam1ZalBPS1pDQTdSbGV3RVYyOUxsUElnR3JWajY3MUl4STNFTXBVQzd3OEVhc0s0a3JmcEJveTF2X2V5UzQwWEU5dkNIemkxNmdIbmRoVW1hNTVuUHd6VURJ?oc=5",
+    "flag": "🇪🇺"
+  },
+  {
     "id": "gd82b2d37238c",
     "type": "nl",
     "src": "Trouw",
@@ -12976,6 +13076,26 @@
     "date": "2026-04-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxONkdpc1QwQkJldGNZby1yaVpJN2xHOTUzdHIxQzd5LVNjaWl1NEt1bUJZTXUyNTl0cng0Q3ZRZnVhQUlpWF8wTlZvd1lwOFR4SWJMVzJSRXh2MTRfWEw0TXA4ZGNNdWxJa0xETW5DYl9Mc1RDU3ZmZGEwdWNSMU5Qd2hNUVJ2alpibDZudnR6d3NDdjl6LXgtYVQtak5Ld3l3QlhXVjhoVzdrRFFwdnBkcEpKUEROdU1iYlZTODJqVGF2MWRGVmxZSVhpd0tmN3E0OV9zd21R?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4ccc12aa329e",
+    "type": "intl",
+    "src": "LIGA.net",
+    "title": "Украина и Нидерланды подписали документ об оборонном сотрудничестве - LIGA.net",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOejNENVBmaXNzY0Q0azhCQkFla3NJZ3RJQVlWQVJWUDJNQjVmN3liN1Bna1ZHUzNYRWZ6Y2NjT2dwVU82ZUFqMFdJTXFJeUVkMUQ4VkdhNUk2cmlBQUU2TkxwS2dqb3Rjcy14Wllham5lWTN4eEtQQkdybG1IOGEtc1EyVFM5Q1dUazdJTUppcmd4cENFSEFPVHZKQ0NzZllxbkxCNURCaw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5ec94b347ad9",
+    "type": "intl",
+    "src": "LIGA.net",
+    "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - LIGA.net",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbWN5c0ZlVjNwTEpfTnU0cnRWOFhLUk9yaWZTZm9YZjNLTDhLbnY4dFBtU3lkZzFLeVNGY2g3LXd0QnlTaWdaMktabWg1U3ktTExfc1NJamQwLWNJc25pT2k4Q0RSVGg1dXZKX0wyaTFZbTZ0VFFKQVptazRQc194NVQ3QUlaOEltdVNnZFJHWW0yWkdQaWUyNjFyVHB3ZW01ZEhacHRUNA?oc=5",
     "flag": "🌍"
   },
   {
