@@ -1,5 +1,76 @@
 [
   {
+    "id": "gbad2c111ac5e",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Netherlands to start military exercises with Ukraine, help design new air defense system - NL Times",
+    "date": "2026-07-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNEJFQ3djUldvSWxxYVRNTVJieWcwMWFmRXRzWmo2b1FJY2xpSzJUR1lhbEZwMVZrWWQ0YXpwZlZzdjBjcjJHQ2FpTWtNaDFzOFhfcVl6VzBuUU9iVnk5VlNxN05rb2RYd0RBSW5QX0RzRC1HTGZmbGJreEc3MV9ObUJpVVN1THVRYjdDdnBQRXdJTkNtU19tTWZ2bXNodTlqOVZuV0pCY0NPOGFqeGc?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g8b38def107c7",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten: Nederland doet mee met door Macron aangekondigde militaire oefeningen in buurlanden Oekraïne - De Telegraaf",
+    "date": "2026-07-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQMU1ublFZUVVPbHFRSUpEdVdiZmJqcm1aSFJPdldnb0JTQTd4VU1rQ1JtcFVYQVYwMWFJbmVIa09JVWo2Ylg3eHNCMWhjc0NLVFJDZXY2d1VsTlA3TVF2TkZDdGJIbElzSW9WVmFmYW9UTUduVmZtQmR1X2Ywb1dtWWxvTEN0c0hKaUhQaW9qeE8zV0hOalNWMnNOZHNPZHVqRjdTdUU3WjhmQTIyMjFnTUp3Vm1LalZhOFZnZldTY2wydEhwN2EycWhrVmt6WEluNXNXV2U3dFp0enZ4RUk4R254Zw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gace7d9d63a80",
+    "type": "nl",
+    "src": "NU",
+    "title": "Nederland doet mee aan militaire oefeningen met Oekraïne op EU-grondgebied - NU",
+    "date": "2026-07-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVVgyWnU3aVhtcDltejFrOU0wc1ROX0dYZndTZ0hSVGptQlg4N2YzdFhsY190MGhBSEg5X3E5SDBNOTd2Sk5udFdMMlZTZnRPNDl4aHB5VnE5YVJlZ0YzNGlFZ01SOUJpSzVWaVFYbWhjYW81RXFPUDU3dktlc0xOMS1SY2wxZFZEblR0dDJaWGtrZjcyQzZVSktmYVNMYVNJZlViMjdJSkNxQ1QtaGd0SW10Yk1oSEE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb18e49a4f4fd",
+    "type": "nl",
+    "src": "Nieuws.nl",
+    "title": "Jetten verwacht snel resultaat van nieuwe raketcoalitie - Nieuws.nl",
+    "date": "2026-07-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNFRVV202VnU0NWxiUVo4cXBqRG5CNHlnaGt6b1JRTjVDQUNZX2ZSaFo1N1NYTHZScVA1ZUQtdldYeEp0d3lGM3dWTzZpYVdPMmdTaUg2SUNMdkpocmJMQWpBZmo5Y2RvLXpQX0NULWNMRktrSGNrU2tRZFdJd293TDFWZzhXVHpwQ1RuSzhWQzhTMmM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7516ee63d51b",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Nederland gaat met ‘coalitie van bereidwilligen’ meedoen aan militaire oefeningen met Oekraïne - Het Parool",
+    "date": "2026-07-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVVBaWFNUUktpYjNkSk5qNTBxS2dxMXFBelp0ckpPSDhwcEVRMFY3VmdEWTdlUl81WldValM3NTY5dWlNZ1hhbGI1S0FTZE9TMzhCOGF2ZkZUSVhKLUcxMExZdk9Tel93NkZiNWVVY09jc1o4R2VfTzBUM0ZJZ2RfVEx1clVYUjY3cGw5ZERabmRYd1JvdmF4VllMeE9nRW4wb2NTT1VyUkpCN3RHc3BKbjBNY0lWQ1psRzdZV0RJN2ZSR2tYVENwLVhJYzQwOHFq?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9baf9fb7e93b",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet omarmt rapport-Wennink, maar wat doet het concreet? - EWmagazine.nl",
+    "date": "2026-07-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWpkZDN1d29UVzFhUUVLOFZMZk1PMzJzRUdxdGFMREtDb296dngzR2JjUHg5cks5ZVVyX29yLUVPV0pUMG9BQ0lWYmVHN3Z6QlpPYjU3Q0laSWdOZ21oQzhMTENoNFNwRWpwZ2wxdFBvSkM0eDh4aXlYX1p5dC1MTVVYajVTZ2d6aS04SXFlSG9EWmlnRFQ2a3lwVGh6djM1TnZKZUdQMVgwblR1YS15YQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf682518c6a7b",
+    "type": "intl",
+    "src": "Межа. Новини України.",
+    "title": "Dutch prime minister pledges deeper support for Ukraine and tougher sanctions - Межа. Новини України.",
+    "date": "2026-07-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5ydWhqSGRMX2JsUmJiN3VEVEE3eGFObWZmYkRabW1wQ2xoVU5EUTJfVnVVMmV2cUZKSDZzVDEtdC1oLWp6WmRtVGZwblhLVkdFVVVSbUhCUVZ3V0t0MHA0VTNyTkxqbFU2M1E?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gfc1a99d5dff3",
     "type": "nl",
     "src": "Vrij Nederland",
@@ -58,6 +129,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ydDlxRDBTMHJLR3JqZHlUV0JVWDhFelZ0ZXBiZGpaSEE2U2tieVFmbjdxQ1RDdWtLb2U5R1lBNmY5VUtfYWoyd3p6VG9PbGc2WDFzN1ZKZlFodk9pblJjYXJKdlRQT2w3UG5KMV9jc204aDUxV1NxaTBvbw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gf5ec9f04c441",
+    "type": "nl",
+    "src": "Brabants Dagblad",
+    "title": "Van MH17 tot een dakloos ministerie: de vakantie van een premier is allesbehalve rustig - Brabants Dagblad",
+    "date": "2026-07-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNkVudFp3S1VoU0V6UERXVmFldUROWVhIYk9KRW54Z3FJX2lDYUNHWTJ0Wm5HTmpmR0xhanZiU1BKWWJtbkpKV05CS1NHYV85NnlzNEdINzRqZHRSVk9MSkpKOURkTDVZUmdBdXM1eGU5blpGR2Z3eWZndzU1SFlGQk9qQlFiWjk3VFN4cGJyQUNSSHQ5ckRsYUQ0dG9QZ3dqR3dsTV9TWk9FNllRVUd4Y0VJXzBLa3NUVElDWW5rWHE?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g86fa6340be87",
