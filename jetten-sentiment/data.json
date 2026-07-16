@@ -1,5 +1,35 @@
 [
   {
+    "id": "g77ed296a30ef",
+    "type": "intl",
+    "src": "South China Morning Post",
+    "title": "Exclusive | Dutch Prime Minister Rob Jetten set to visit China next spring: sources - South China Morning Post",
+    "date": "2026-07-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOeGxfZVNOSXFiMFF6YWVXWnBuMVZCZ1BOLXZUTWdpaFhnWUp4c28xNTBWNTVsMTVzU0dzbEtYTlB4dXdUb0cxekxFYlFPR2J5eTU2UjB2ZlFzTlAxbFJvY3V4TmRQZmR3X1RteEZvSE9wYm1sV3U0NllkRFNScmU0RnowWDRLYkY0MzhmcVpKeFZZZjZjUkx4c2FVZGZLdUNHd1V1enc2SVN1YU5FWWhZOGNhR3MzcWdYb2hyX0FDU2FDNFZX0gHEAUFVX3lxTE54bF9lU05JcWIwUXphZVdacG4xVkJnUE4tdlRNZ2loWGdZSnhzbzE1MFY1NWwxNXNTR3NsS1hOUHh1d1RvRzF6TEViUU9HYnl5NTZSMHZmUXNOUDFsUm9jdXhOZFBmZHdfVG14Rm9IT3BibWxXdTQ2WWREU1JyZTRGejBYNEtiRjQzOGZxWkp4VllmNmNSTHhzYVVkZkt1Q0d3VXV6dzZJU3VhTkVZaFk4Y2FHczNxZ1hvaHJfQUNTYUM0Vlc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gaeb046536445",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "Defensiebedrijf uit Hengelo trekt de kar bij ontwikkeling Europees raketschild | Foto - Tubantia",
+    "date": "2026-07-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSm00YnJTbWQ3RkkySm1pSVBOeC1PUVpKMUZ0cHV6Q3RqaVBEMDFVcVJGaDQ3a0hGMnd1UktMaTJEWW16TF9DYzFmMzNucGRYTGRmV1F3RTI2bWZuaElObmlISE5xVFZtVEFabENYY0VORnluMnNXbmc4eHdXUC1BOHh3Y21XOWpoNkcxRHllUE1Na25xUUdCUmdRNjR3Uy1CNWxNZ1dvMDlXWUcxQVNKdmQ1TWx4UVBvT0ZqdENDbWUxaEluelNRMW5B?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2b40dd901c13",
+    "type": "nl",
+    "src": "Ipsos I&O Publiek",
+    "title": "Ipsos I&O-zetelpeiling: lichtpuntjes voor kabinet Jetten; plusje voor D66 - Ipsos I&O Publiek",
+    "date": "2026-07-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQU1lpM1psWnh0aDVQb0xpS3B1emtYVXRkcGxGcFUzbXhIcE9RcmNSN2Y4T1NIT3d6NTdESTlsV0s3UWRSWWZuVnpDbXl0YkVJdTdPdXBwM19UWjItdUZYZXRUXzJUdHNReThteTRLejI2VG5iemhueldIR2h6SHVreC1INnZ0SnhHWXV5cDJKb1JJVEVfV0QtOWs0ZVR5cVBSVkp5ZGRJQVVBQnBu?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gbad2c111ac5e",
     "type": "intl",
     "src": "NL Times",
@@ -1014,6 +1044,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPNHdVV2xuQlYxMGtkc0ZVUU5vLWV5cHlleVhQejdXRGgteTJUdVRpSFRhdkQ0Y1AyTlhTQzdLT2RqaG11b3JOOTVRWWsyX3VHTWdCaVlUQy1iczBRMnUzRkdhTGJNTHZQM1FFZ3RkalN6bHFubEUxNjhTaWdWT181b2c0NWNvdHoxczdEcnJFS2xwcHBmRFJtMzVkZHhMSTdIRnk4T19xWlJ3WGw0SjF3V09kX2ExOGpCNXdfdC1ENEQ?oc=5",
     "flag": "🇺🇦"
+  },
+  {
+    "id": "g8dd35d6549c3",
+    "type": "intl",
+    "src": "Факти ICTV",
+    "title": "Нідерланди та Данія приєдналися до Drone Deal: Зеленський підписав угоди - Факти ICTV",
+    "date": "2026-07-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWVdiQmYxTWhuWjUyQVhKSVdPdFZmakRWc1owU2czbWpkYWJ4cDBXQ0k1akc3WEhoT1YtSDVqbXdYQzBZZmNJOGhOZ2JwMTNhczhvampQckpUU3NraGJOdzlBdnJzQUZfSm5DdldXSTF4a1VOQ1lfU2dTaGN4ZUc0U1kzbDkxTFJhckNhZzFQTTVRamNjdXAzVWtDU3A3ckotUjhuWUtSWFdOTXk2R2U1dlJpUG04d9IBuwFBVV95cUxPdWRLcU9rTFJhTUlWeXVlVF8tT18taFJSaWdRU01jMWxPSUtfZndSd0J1SFBqRkp2MlNGdUxBWlFGcjNkUUpPRXpzdkVlaTc3ZUYtYTVHWXpVRndmUVdDOVAzcVlsOHFvVDJmSko3Sk1Jc0pObmNUYXpydDZUQTJZOHpzYTdBbE8yVHlJUGlCVVZ6bWxMUGtpQmxsQUM0MWdaMmlwcHR2NTJoY0lvMjlsWmt0ZEZrUS1hZnZ3?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g7c7cfb8759c2",
