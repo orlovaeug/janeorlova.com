@@ -1,5 +1,80 @@
 [
   {
+    "id": "g5be3c4b294dd",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Marie Curie of een ijsvogel: je kunt meebepalen hoe nieuwe eurobiljetten eruitzien",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://www.nu.nl/economie/6404239/marie-curie-of-een-ijsvogel-je-kunt-meebepalen-hoe-nieuwe-eurobiljetten-eruitzien.html"
+  },
+  {
+    "id": "g1378c5d0587f",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Europeanen mogen nieuwe eurobiljetten kiezen: hier kun je stemmen",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/financieel/europeanen-mogen-nieuwe-eurobiljetten-kiezen-hier-kun-je-stemmen/159115213.html",
+    "lr": "right"
+  },
+  {
+    "id": "g8800a6ff4a4b",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Stelling: Laat kabinet Jetten Nederland in de kou staan?",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/wat-u-zegt/stelling-laat-kabinet-jetten-nederland-in-de-kou-staan/159019315.html",
+    "lr": "right"
+  },
+  {
+    "id": "g5ad7a39c9546",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Wrange conclusie: kabinet-Jetten laat Nederland nu al in de kou staan",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/opinie/wrange-conclusie-kabinet-jetten-laat-nederland-nu-al-in-de-kou-staan/159086009.html",
+    "lr": "right"
+  },
+  {
+    "id": "g15816390b74b",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Wrange conclusie: kabinet-Jetten laat Nederland nu al in de kou staan - De Telegraaf",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZlhvM1VVZmotRTVIWVh4azdhdFVXX2R3dVp0eTFwZFZoNXZ2Z3BMZ3JJaU92RG5VcUU5NnluZEZjWjdMNnVMMGJBc2hCZHBmRDN5V25nYjFPdDJDanprZGUyVEZIUHd4YVFtQ2Vfa2JKdENCS01PVmQ1anpZdGpfQ1VmWGNleWVaZkRwRk1YNEFVODk1dVZDb0p4WGVGNXVLMzZzWG1mZjNwOHAwcjBxcVIxZU50UQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g5ffea63e37bc",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Stelling: Laat kabinet Jetten Nederland in de kou staan? - De Telegraaf",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWldsV083dVlkN0pKLVVrd2E2U2F2aHcwbUhyY0Y0WnFDQTVPakZIbk1TZ1FPa09YYllHclFwVExrOVFGb0VTOEtHZnB4Y1RaV1hNUC1xcUdIQnlMLS1WN0JFVWs3RzYwMklfYUlWNHRkTUppblhjZkxIWnY5cHdSblVTdVpfZnk3RVE1LWJDOVFjLXRYdmFueHZFRFU2TURPY2xiQ3JjM3U?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gbedf4874b4ba",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "IJsvogel of Da Vinci? Jij bepaalt mee hoe de nieuwe eurobiljetten eruit zien",
+    "date": "2026-07-23",
+    "sent": "u",
+    "link": "https://nos.nl/l/2624197"
+  },
+  {
     "id": "g2be96e229409",
     "type": "nl",
     "src": "De Telegraaf",
@@ -251,6 +326,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNTGIwM0FnN2wwSFluakxJcDZsQmhGR2VlNndPek9uYlVVclFNWHV2LXJhNW5qOE40YVJuZUtEaEE3bEVGS0w0bUw5ay15clM5Yl90dWxMSnVnT1dyelR6OURzbW9NbF9zd20xTVRQRnR3WXowYTN4Z0hiQmFVaWZyblB4SGZEZ0dfZURTVFc5N3o3UVM0MGQyQUxKaXRKQ2VFYV84RkZISQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gfe91b01ab84b",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Wegenbelasting elektrische auto's dreig te onstporen - fiscalist adviseert kabinet-Jetten: waarom kilometerheffing de juiste oplossing is - EWmagazine.nl",
+    "date": "2026-07-16",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNUQyT3BKU2NvY3l3YmpCck5oTUYwRHQ1M0I2MGduangyZXE4TEdvNklLdjJiNmFhOXhLWENnX1VxcXd6MmVmbGtYUjBKeTd5Nm5MWlBSaVdsTWVzZmpKNmhockFnQnV0UzBLWExoSlk2TjdUa1hlOVMxTWxDNGRMT3hHVnU5TjBhdm04MnJhTUlZZ3ZnX2d1eUN2SEZkcUdoYmllUDc1Z0dsSG5rdXEtUVZpdGo5a2xJbjhzYU5TaklJNTg4bkFmN0ZHbHNtb3hSTVFQcWJYWVhDMzhyRUUyRGxNckV2aFFiN1lJXzlYM0FuZE04NUZTaVNjQQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gaeb046536445",
