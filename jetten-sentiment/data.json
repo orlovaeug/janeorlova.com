@@ -1,5 +1,15 @@
 [
   {
+    "id": "gce836ce84d55",
+    "type": "intl",
+    "src": "Leeuwarder Courant",
+    "title": "Onschuldig, naïef, stom? Zoveel is er te vinden over militaire locaties, explosieven en radars in Friesland - Leeuwarder Courant",
+    "date": "2026-07-25",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMjduaF9hVzhZUm52SVlHdExSLVdCMUt4R0FVTU5fVXdGNXVlcWpNeG9lOTBNSVUwclhoNHBMcUE3eHNDN250WnZTS3VZVVZ1cnZSMDNWZnlaT0ZSY2o3UmItYTVGQmczTllTZHl6NDQza3JPVjlrR3VaZTNoT1lGX29CVF8xOExuSUVvbTMxSDRyQkl0VHN3?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "g5be3c4b294dd",
     "type": "nl",
     "src": "NU.nl",
@@ -63,6 +73,47 @@
     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWldsV083dVlkN0pKLVVrd2E2U2F2aHcwbUhyY0Y0WnFDQTVPakZIbk1TZ1FPa09YYllHclFwVExrOVFGb0VTOEtHZnB4Y1RaV1hNUC1xcUdIQnlMLS1WN0JFVWs3RzYwMklfYUlWNHRkTUppblhjZkxIWnY5cHdSblVTdVpfZnk3RVE1LWJDOVFjLXRYdmFueHZFRFU2TURPY2xiQ3JjM3U?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g4a2ee136d666",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Lezers: kabinet-Jetten laat Nederland met beleid in de kou staan - De Telegraaf",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMW1mRUxJOXdzSlVfaXppZFN5OXpOclhEVGFqTVgzT1JFOFdoZmZISzliOFZkNWI5WlpOV21LUDJ4X1ROWk5QcEJ4MlE1UXNRZy1CTzliUEZmbERYY1BWUVc2UHg1T1VqSFc4d2hMcXNnaWJYVzBoaGpJOG1VTklrQXVyVU92Q0lDQ1lqYlo2bUVIdnRSYUkyZkwydGk3bTQyNW1yS3ZyaTEyVWJzM2p2R3RLcWU?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g02033a67bb92",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Automotive-expert waarschuwt kabinet-Jetten over wegenbelasting elektrische auto’s: ‘Ik zou het gewicht van de auto als grondslag nog niet zomaar overboord gooien’ | Deel 7 - EWmagazine.nl",
+    "date": "2026-07-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOR201N05xUXNTb1dGUmxNejhMYnFNRVAzT0VBeXlabzY0dTlfZU94SWxySnFmRnp6ZERaeF9FNzUtNV9pVWc0T0VGZkJxYmFseDdRNGktQUVqdkVDQmlLb05lbERBRHBFMzhMMm5Ia3BSZU1BOURxVDNUTHY2X0treEVVVDJHUVJTQnZlcTMzOFppUzZBMG9rM2RtLWs2TVZFSjNQeFQ0cGtyVllZanFZcDd2cW0waS14WFBhMmFIZ3UtNlMxVGc2TEJfbTBqRlM4VWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g389187583828",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Kabinet kiest in Israël-beleid voor symboliek boven effectiviteit - EWmagazine.nl",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOaDV2c1FSYUk4LW5XZzdlYzljZUxHREhiSlhITmNtOWRuakpLQmV1aHNmQWtzVUxaTlA2Z0ZrUGdFZDdyMjAtaVNjbHprbEVFM3NiRHByUWV5NnhyMDZyYklTVFdhb0FuclFvTVg5Y1laTjdSOHh4WHc3RmtQQkVQVVJTcGlrNmlYUUNyMlhvckROell6M0I4NkdJZXdPeHBaN0FxaVBSU2h4M1FzWmZIZGlNMVJkdVhXU3JMeGVfQWRPSngxQ3VycFhXNTlobnVUSHc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9b09d2d21029",
+    "type": "nl",
+    "src": "socialisme.nu",
+    "title": "Belastingpolitiek kabinet-Jetten is er voor de rijken - socialisme.nu",
+    "date": "2026-07-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNLTN4eDdQVktnWjNzZjVLSlRzMHhSTDV6d1F2bDdkelBJdkk2MlVRb1RnWFJhQ1EtOUpPU0dOZEFtd2lCdGZWa3pOdGtoWU9jdTNkLWw3Z0hxRHd0UURfWndRM1oyVFZPU1pLUnEzQ1JmYUV1ZWZTYWFKVEctR1h1cjl3?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gbedf4874b4ba",
