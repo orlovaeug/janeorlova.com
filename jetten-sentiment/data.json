@@ -1,5 +1,47 @@
 [
   {
+    "id": "ge0b5aed67c79",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Jetten noemt aanslag Berlijn ‘afschuwelijke daad’, Pride Amsterdam neemt waar nodig extra maatregelen",
+    "date": "2026-07-26",
+    "sent": "u",
+    "link": "https://www.ad.nl/binnenland/jetten-noemt-aanslag-berlijn-afschuwelijke-daad-pride-amsterdam-neemt-waar-nodig-extra-maatregelen~a7ea4ef2/"
+  },
+  {
+    "id": "g0438f5edb60e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Rob Jetten: aanslag op vrije en tolerante samenleving bij Pride in Berlijn",
+    "date": "2026-07-26",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/binnenland/rob-jetten-aanslag-op-vrije-en-tolerante-samenleving-bij-pride-in-berlijn/159205861.html",
+    "lr": "right"
+  },
+  {
+    "id": "geb70ce5f2d8e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rob Jetten: aanslag op vrije en tolerante samenleving bij Pride in Berlijn - De Telegraaf",
+    "date": "2026-07-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYjFpYm5Ha3QzNVZhVE41U2tnTWR3VFRHUG02ekdvSXVkMWppNjlad2phNDN5S2NHVlBiZ24yeEFkSUxSR2JwZ0VVdGUxUG9vRldkekNQTlBCa0NVbk9YZERBeHE5S2lvcDBiTzFZNkstRFZEOGtXbEhqX1U5a1lSLVh0bmhqSW13VklWREJZN191MHVMWEJYQ2QzRkhZY0ozdlpXNHhsV1NBRU9WX0l1eFpVbTJwSkRfbTdQVi1KT0duZw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g54e52860502f",
+    "type": "intl",
+    "src": "ZeelandNet, startpagina van Zeeland",
+    "title": "Jetten: aanslag op vrije en tolerante samenleving bij Pride - ZeelandNet, startpagina van Zeeland",
+    "date": "2026-07-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQNjl1QXcyTGh2SV8wcXl1Z2NXU0ZFUU53Sml4ZnROX3FvNnpkU25CZ3l0a0RjVEtUSEl4WW80QjFxNXhsTUZ0STh1c25EYVYtUmJtTVVKWVJVbjZ3RHVjd0NLOTlrcnhkMEhWVGxwRm5PMF9HbktWa1ZFZjROQWNNNUdpVl9Md1A0dnBfVktkbnVHeV9ZTFE?oc=5",
+    "flag": "🇵🇹"
+  },
+  {
     "id": "gce836ce84d55",
     "type": "intl",
     "src": "Leeuwarder Courant",
@@ -8,6 +50,27 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMjduaF9hVzhZUm52SVlHdExSLVdCMUt4R0FVTU5fVXdGNXVlcWpNeG9lOTBNSVUwclhoNHBMcUE3eHNDN250WnZTS3VZVVZ1cnZSMDNWZnlaT0ZSY2o3UmItYTVGQmczTllTZHl6NDQza3JPVjlrR3VaZTNoT1lGX29CVF8xOExuSUVvbTMxSDRyQkl0VHN3?oc=5",
     "flag": "🇩🇪"
+  },
+  {
+    "id": "ga443017c6ad0",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Jetten noemt aanslag Berlijn ‘afschuwelijke daad’, Pride Amsterdam neemt waar nodig extra maatregelen - Eindhovens Dagblad",
+    "date": "2026-07-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOcVNFdFlaalUtWlRBaXI2ZHpFaERsRWFiUVJlNVJvWkF1cGM0T2U5dTMxcHV3U3UxcHNwRjZITXBzaFUwT0FlNGRrcDhJQzBLc2NJekdUdHRlVXBhQkVxQzc4STFnVmZwamNvZjZYZ0RyUncyNVJCXzFxZklBbS03N0gwQkpSeHFfVVFKOXVKbnlGSXVGZmpPMTEtQTFjYnNCYl8yRVUteUpLQUNfaWlTNVc1RUhfaElzR2hQdVpWNGVBRzVLWGdUSDJGcmhlcWZOYTdj?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf302156f6de5",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Krijgt Rob Jetten zijn kindje? - Wynia's Week",
+    "date": "2026-07-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE44S3h4WnBVQV8tV3R0U3RxZ1RETG52RGZwWEY0bTJOQkF2cWxUalNrdVlRR1pTZUswakJSSkpOaU9FLU1LRk1jZXo2MkhwNFNLdzJWSDZqbFVNa3MtWGJWaUxlWEkzbGs?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "g5be3c4b294dd",
@@ -165,6 +228,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSFR5cTY4TXdfNEFLY08yU0RtWDVzeVlsYW10bUdpck1xV1hlalMyRm1nNTJYMWtBYU96VzRURlNoeU1SdlplWDMwWFh6LV9jVjlVeHd0clRCYm0xbXVGSVB4RTFxSTBua2ZnUGRfcXo2d0hPN1gyZXhLSTJBT2JFaVp1Q1NFQjNTekZScVNJa2ZhV25iWXBiRVVXNEt3NXFZOElsYVIxRzV3QV9XSmhDZkh5a2lFcjNtT19FbV9JMlhWUWI1Vmt30gHMAUFVX3lxTFB4MXpQZGstdTdpQ1NGWDV3UTFmOGFXeWxkcGVrZllSNG1FRTRCdFNFNnRWOHFDUEVuWDB3NEpfWE85QWtxVFZmZmRVWWU0c3IzenIwd0FHaUxHekRoNTJhU0Vwek14bE0wNWFqREJZT3R4RF9FTW1nWUYzZ1lzU1RMNXhoM01aenF1aWlNQlRTNXl2S2JRMUlSdU1ZaU5PcERsNm04UlpSdHFiREludVlYQV9ET3JLSlBWalJpQUM0WGtZdE9jS2dxemxjbA?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g090dc0d20d3d",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Benzine nog duurder | hoogste prijs ooit in zicht - waarom verlaagt kabinet-Jetten de accijns niet? Hier tankt u het voordeligst - EWmagazine.nl",
+    "date": "2026-07-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNkNpbDRQbjVYWTVCZ1BqUkJIZ29kU3lCVzFjUG5Sbk5WM2R2bUlYSC1lUFZ5dWJ3bV9DbVl4VGc3S21JVFg3TU9sY2Z6NlJTNTVoSWVBQXBONWJLcGZ3QU4tdUt1eEY4U3pxRE03TDlfWnJUYm44NHo0MHJhNzhuazVJdG9GaWc3QXlZZ1BaRDI0RlRXQU13OFNhaHcybUJWTFdXaGJqX1g1ZlVyRjdvSlVnWXF4VHV2cmM1TGg3ZzB1VEZG?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gb6c69bf2dab3",
@@ -1200,6 +1273,16 @@
     "date": "2026-07-08",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZ29falFReHNrSXZzM1BNa1NGM2JlUTlHNG0tQ0pCMjdSR0tQWlFEazhPaXVXQlF1ckREaVBVOGlkUDN0WlRPS1ZIZW5VcktXNFhKeTR1YkFNMUpleGJNRUh3cjRDQ0RocW1LOExrMzEzSWtWZWkwZ3VneUxnSG9yeWl3NGFFRXh1RzBKQVNGUmE3ajlQVEtpbWdn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3a3fcdf42f46",
+    "type": "intl",
+    "src": "Los Angeles Blade",
+    "title": "Dutch prime minister scheduled to open World Pride human rights conference - Los Angeles Blade",
+    "date": "2026-07-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQmpyenNnWVN6S2tLb0pzd3pJTU1ETWJWb09CbzFnU0JXUnBtUEREa0Y3Q0dDNUQtWnhQYzN5YzlLaTFHWkE1US1aZGRFcjJrVTdQOFd3S2ZoUXY0MjM0ZFBnTGRIbFRYS0tYVUp1X1JGR01aXzBUNmtBX1ExZEhLdUYwam5CU3FLXy11TzVlZExWN2o4QUVheTVwdmhGMV94MUI1SHhDUklmbVo0MWN3UkdpS1lsNy1HRHc?oc=5",
     "flag": "🌍"
   },
   {
