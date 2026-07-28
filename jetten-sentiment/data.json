@@ -1,5 +1,15 @@
 [
   {
+    "id": "g3b5c891156a6",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Dreigt een vierde autobelasting? Auto-expert slaat alarm: ‘Dit moeten we nooit toestaan’ - EWmagazine.nl",
+    "date": "2026-07-28",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOR201N05xUXNTb1dGUmxNejhMYnFNRVAzT0VBeXlabzY0dTlfZU94SWxySnFmRnp6ZERaeF9FNzUtNV9pVWc0T0VGZkJxYmFseDdRNGktQUVqdkVDQmlLb05lbERBRHBFMzhMMm5Ia3BSZU1BOURxVDNUTHY2X0treEVVVDJHUVJTQnZlcTMzOFppUzZBMG9rM2RtLWs2TVZFSjNQeFQ0cGtyVllZanFZcDd2cW0waS14WFBhMmFIZ3UtNlMxVGc2TEJfbTBqRlM4VWc?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gfdb02892adbc",
     "type": "nl",
     "src": "Nieuw Rechts",
@@ -18,6 +28,58 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPN3NnNXUyM3VNOW1jOWxqRF9XTXplVjhIazVvM0QyRFJVYVVERjBFTmdOM3NmelBsa241bk04RzljaHRyajc4MkhJQzY2aFkweHFtNU1QU3NxTnd4Um1qbzdpUWkzcS1IVUQ1VjZKN0tFMlptTjJYdW0xdVJKQi10WWtNSldmQVdNMi1zdG9fNnNUdjBMRDAwY2dB?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g10a17071db3a",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "De Januskop van Rob Jetten: waar staat onze premier?",
+    "date": "2026-07-27",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/de-januskop-van-rob-jetten-waar-staat-onze-premier~b600772d/",
+    "lr": "left"
+  },
+  {
+    "id": "gabfb48574d5b",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "De Januskop van Rob Jetten: waar staat onze premier? - Trouw",
+    "date": "2026-07-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQQTNheVNOaGVJVUhjUHVpQWlsZi05LTNiWDRlbnhHek9rc19aclhCN0FqbFFSZXZodk8yN043eG9XaVVfRWpqeUZudjRTT2ZOZFZudHJmQ2gwaVpjTWlPZU1tV3JvTGhkUHBjcXBZMGw4Z3I4clZ0OXJiaVFOaWR6TER3SGJjVEFVVVM3WTJGTFZWZw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gf59d4dab7b66",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Boeren en plattelandsbewoners starten landelijke actiegolf tegen stikstofbeleid kabinet-Jetten - Nieuw Rechts",
+    "date": "2026-07-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbnhTU29KeDhXbjI5ZGVndk81N2c2NDFraVE0X1hIQm9lYnR4RmdfbzMzUU1pdW9aaFRLNjRrYzFGRjdrODduNmV1MWR6cGFoMnV2YkNCSEMxUkVKRDUza2lKQmlST1FneEExazRYU3JOVTNTQ3FZNHhoZHZjUFVwekFuYUM3MG9MZ1pzS1lzSndvRmlvSW5LRlpBXzNEOC1ZajVqQkpfMlVueEtYc0RIaGdET2VRX25nWjhXNDBQRnZ2Zw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga77517de97dd",
+    "type": "intl",
+    "src": "New York Post",
+    "title": "Ex-European Union boss branded ‘antisemitic’ after claiming right-wing Israelis think ‘exactly’ like Nazis - New York Post",
+    "date": "2026-07-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNb1p5ME9oaXU5SFNVRDJ1MVZsblNDRkZTVjJzWDRZZlRINUdrazhHc3RhazlfVGtPNjVfWWZlMmlPdi1wTVBZa3FxQ0xPRzJuWlU1TG1jQjYxRnJTV3J3T3B6UUtzQzU3RkhnaFlseHJoQ0NMbFpoU2JvWmg3Z3RTTmZadzgtRmduMmpyZ080TTFQaVVrb2wwdWpjQTFiZVlPd2RqUUtYQzJLcUE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g74f178285158",
+    "type": "intl",
+    "src": "Los Angeles Blade",
+    "title": "Dutch queen opens World Pride in Amsterdam - Los Angeles Blade",
+    "date": "2026-07-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVGJDZjZVbFQ3NFBxOFZ2SVVXbWFSR0dXNnozaXVVRHNfWXZWT2hRTVFGRm5JZ2RYandLeHhma3lHOFVSRWsyVE1VM2FsOVh1ZElZSkFMTTZRamJFanQyb09IcWx6VWVDS29aaHFEWHhmZjFacTNQZFdYQmFjczBDTFR6eFVrSVUxTkFvRnAzZw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ge0b5aed67c79",
