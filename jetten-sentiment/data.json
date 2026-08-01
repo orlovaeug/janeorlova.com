@@ -1,5 +1,118 @@
 [
   {
+    "id": "g51b08d498e68",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Premier Jetten aanwezig bij Canal Parade in Amsterdam",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://www.ad.nl/binnenland/premier-jetten-aanwezig-bij-canal-parade-in-amsterdam~a966b882/"
+  },
+  {
+    "id": "gf7988cf20e77",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Zwemmen tussen de bankbiljetten: 665.000 euro in zee gegooid bij Siciliaans strand",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/buitenland/artikel/5634198/zwemmen-tussen-de-bankbiljetten-665000-euro-zee-gegooid-bij"
+  },
+  {
+    "id": "gbdaeedc43bbe",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Premier Jetten bij opstapplek Canal Parade in Amsterdam",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/binnenland/premier-jetten-bij-opstapplek-canal-parade-in-amsterdam/159486722.html",
+    "lr": "right"
+  },
+  {
+    "id": "g7bef1701e9e0",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Premier Jetten bij Canal Parade in Amsterdam - AD.nl",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQNjFROGlVaElYQ0w1QTZGZW13WS1xTlpfWEp0eE1pcEV1cFg5ZG53OXpfMFBGcWRvWnJxbEVQZWk4VUhRU0VZdFBUWVd4bUdWOUVWUTNISDdYUGhmNG5QaHREa0o1ZFRpcDNxb28tV3Jta0g2elVDWmFPVUMzQWdPSHpYUzFXSlR4QW1r?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga6261bae36bf",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Jetten bij opstapplek Canal Parade in Amsterdam - De Telegraaf",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQVzZEMUdhSndqVTJTVy1EQ2EtcENQcDlsRDV5ZVkzb1NnZnBNVEtGSzlnOVFtQ0R1dndyNHNBVHQ1UTk0SlZaYk14WFJWR1BVUDFsbjJlVm5YYzB5M05QRllublNUV19nUVZWWlI4UV9ZSjJhOEtVRlJlTlhWb2VzbVhoU0RJcmJtbHBodmRjS0NBTmxmcWFpT3ZoNTVXVjlfY292eW5nZVJlQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g46749e097e56",
+    "type": "nl",
+    "src": "Vrij Nederland",
+    "title": "Ook onder Jetten is de rechtsstaat niet veilig - Vrij Nederland",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5CZlJaUi1iMjhBT0xRelpsQVlkcEpDODl3Y2lFWXFzeXllN0ItTkhLOWV6ZzRVMF81WmF3Uk1kM25VcGVtX1V2d0ViLTFORU1JTm5rRWg1endVLUhna3luZVpGOWl1aUNuZmN5Mk9OSFZoSEU?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0d4771f2a936",
+    "type": "intl",
+    "src": "ZeelandNet, startpagina van Zeeland",
+    "title": "Premier Jetten bij opstapplek Canal Parade in Amsterdam - ZeelandNet, startpagina van Zeeland",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLS1hVnFwVC13X2VDdDBpd2NqYnk3UzVBTzJLVngzb1NEaGJMVjN3eXRZbjBLeEJuZGo1ZGFFdEtsY2liOEpyaHRBWlFBQXI0TG4xRl9QaWVNQjNSd3ZMcEZTX3A1dXZFMzNOcmo3TlpqQS1FUzdMTk9hdHI4VVg3Y3ZPa0tOeXp6bEdvSUtXd2NpQQ?oc=5",
+    "flag": "🇵🇹"
+  },
+  {
+    "id": "g92f61545d488",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Opinie COC: ‘WorldPride is dé kans voor kabinet-Jetten om Nederland weer voorop te laten lopen qua lhbti+-rechten’ - Het Parool",
+    "date": "2026-08-01",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNRkQwQnpsUWdrTndsd0c5N19sekw2Nm1vbzVCZVoycGdpSVdsSkZMaDNPTWNuZ2ItOTFqSHdNVTVEUDc0ekFBQmFtRmtsN09sNEIyU2YySnFXVkRSdVh0SEJZZjRSVUh1c0VqNi1hX0JJUEhTSTNMbFBqUk5TYXpLS2d0ZUNYT0pISU1jR3BWN2dxQ19qakhFUV9pZjdZRHA3Yi1DenFtd25nZkE0cERUQlJnSUdzZzlzRlVTV29aU28zVGNzZjF6QmR6ZDR6aHc0dlNXemdEdl94b1NObXVZZGVyTWJwRk4yNVlZX1dn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gab2121ee1bcb",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Het wordt tijd dat Jetten het azc-geweld zonder mitsen en maren veroordeelt",
+    "date": "2026-07-31",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/het-wordt-tijd-dat-jetten-het-azc-geweld-zonder-mitsen-en-maren-veroordeelt~b0501cbc/",
+    "lr": "left"
+  },
+  {
+    "id": "g6df04183d107",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Victor Vlam uiterst kritisch op Rob Jetten: 'Als premier van Nederland hoor je er te staan!' - Vandaag Inside",
+    "date": "2026-07-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOSG13b1JYcDZtbEpiamtZRGlnT1lXZUIteGpaa0tYM3NUZ3FTbGRvNkRYM3FBbmE3RGJvUmlFX0ZkejZkdXA1UGw0NmdoTHptYTZyRE02dHFzeGotVUtfNkVPZ2RQYzB0NEM4c0VmZTlmUnBaSFNlVTVjMFpiWWZ3Q1JreWZwUl9CYnVnMHVVc1RSOW9pVkRPdUlZS0RHOTZCUlNrd3ZNc1ZTdk9RbXN4eXNqeHhOOVdyYUNpYnBESkYzUndYMlNrMDFUdXdKS3FNMHQ0RkF4QXFzRzBZ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g15a03fd7d8f2",
+    "type": "intl",
+    "src": "Brussels Signal",
+    "title": "Netherlands tells Spain to protect EU external border after Ceuta crossings - Brussels Signal",
+    "date": "2026-07-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSFByc0VRYWw3SGFQYmoxb2RfY25xUXNhQnRhVHNZUjNMSnZ3QlQ1bmdSekFpMWt3aGRGOHg1UDBJQ2hhT3NqNUxUYk41ekd5ZWFoNGFHTmM2ZEpOTlFSczVldm5VYUlqb29UTmFRT2c3Y000MEc2ak5KMXBXSDNiSmw1amJqTEZEZ0djSTRaeXlQOTk5N1dUeFRGQTZCa1R4US1aQWJ0VThpTGkyUE1N?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gbdf3d42dc3de",
     "type": "nl",
     "src": "AD.nl",
@@ -97,6 +210,16 @@
     "date": "2026-07-29",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOQ2xFVnJDME42OG5hckdKUXVzTy03NHpsU0RnTFp3NllqUHpHeGgtS01XQ0RsdXh2ekpzX0FWbzc2VmxZNFNUNDlnNGluUmhvM08zZml0ZXZVOUpBOEpZM2RhWGtjbWhoVXpiRnktS2J4YUowR0paal8zb29tVW45S0J5ZnlDXzZ5Y2lIUVg0T0pjZzJhRGtSbno3OF9ta09nUjV6ckRKOUNVQ3M3UmhxaFc3eTNWaHk2UnM5cGFFWDlLTWQzX3ozOU1Hd3NRMUdTVS1VTnBsVQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf6eb0a42b654",
+    "type": "nl",
+    "src": "noordbrabant.headliner.nl",
+    "title": "Premier Rob Jetten over bekladdingen Engelen: 'Lelijk vandalisme' - noordbrabant.headliner.nl",
+    "date": "2026-07-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbTRXSEd3MmdzUU9EcWFJeHhlM2R2UUZVdHJzYng2V29ra3VjQ1czUU55bld0WWc1cFJKMldubFlqOWpzc2FMMzVTcGlpMGhkSUY2aEZlc0ZaY1pUOHVkQkZOLWMya2xHRUpDN2ljRmVvZHlSS01xMzRQLUxJc29HbnBBbnljYXhRaEJHbGVwbUE0NzdLUjRIWXlFZk9UTkNwSW1ucUVDTVpfSkM1eVRlVUw1ZXpyZkJBb0VoYUVKWl80cnM?oc=5",
     "icon": "📰"
   },
   {
@@ -23435,6 +23558,16 @@
     "flag": "🌍"
   },
   {
+    "id": "ga0f8bd69e43d",
+    "type": "intl",
+    "src": "lavanguardia.com",
+    "title": "El próximo paso de Rob Jetten y otros políticos que visibilizaron el arcoíris - lavanguardia.com",
+    "date": "2026-02-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUWh0dXBweWRkWHdxbkM3X21jS3pGZDUyLXNjRGNJUzU3YVZmUXlzZ016WmJOeUI4aEgyZHhEWS1fVkQyTHNjeGVHcUQ1c3BkeE13NTMyajRZdDUwSmJrSERKZW9pWmdIMXdJZVBnMVp6LTBKM0trUnlkczh6QmdoMFduMU5SWVkwbWltNy1iT1hPbjhYSVhyblhvRmpYT1dtc0FGa1ZsenF2aHdmM21vN09Ob0xGSFUwZmlfS9IBwgFBVV95cUxNTzZvS1c2ZEZHb296Y0JuQTI3bGsyM0hBN1A3TG91UzVSNlBBS0d2ejZGaEJHUV9FaVkwTGRGUDlvTE5VdXo5NjR4WFo2ZHRuejlvSmYxS2lfLWJESUJub3Z4ZUVxQzdXSUtxZ0NianpnYnB4T0pYOGxzQUZyMGszRTVxTVBiZjZmNFZJWkpPX1dJU1pZYUlILW5FRlRoeVhvQUZEY09ubVVWR0tXYTJxcVZjc2VlSEt2V21YemhYVmxJZw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "i004",
     "type": "intl",
     "flag": "EU",
@@ -26825,5 +26958,35 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1VVHBaeGM1REI2UEZLcDlmTlNDUHQ2aHRlcVBYa0I2bVI3ZWR5dndNNmNxQlAtcE04UVFFLWlhZ2FZTDBlSmdHTzJPZnVlb05iTE5FZi15bUUxY3NRMGfSAWNBVV95cUxOV0RaR3lBVm9ZUVA4ZVg1TVhWaUlSQ0dlTFJ0QmVhaXpqa1JrVGw1MVhQSENqMWc5T1JYanpOd24yNXdJYS11ZXprSnNTT1lMcDQzeVVrLWhqa2ctNEVWNmMxaTQ?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gcebea9c9c294",
+    "type": "intl",
+    "src": "elmundo.es",
+    "title": "El liberal progresista Rob Jetten: de \"Robot\" al primer ministro más joven de Países Bajos - elmundo.es",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOUHVFS1RlazVqblBfcTdWeGJDb1dzUzQwdVEyZlRJLXpIVnc3bzBjQm9tVWdHLUJMZVRaM0FtQkNHVG9HVUs3LU1WaV9jbV9NZ083Z1lxOWRhR3p1ZDF4X0VhZko2Wl9mSDBENWJxLXBSbXNwaXh1WGxiN3ItdE9hZ0VSONIBgwFBVV95cUxPLVIwV2MxbUdkNEFfbHNyeE0wVGw1NkhsSWxyRkF3TDdCUVY5YTZ1VzJkMkpZRDI0R3didGttZWs5OGQ1XzNPaUlMdkoxMzRTWmdGdlhkZW9GRmhqTnBwTHIzTHA4T1lHeWw3Z2RVWDJlcW9DcnlvV3VwbjFncWZCSVJiNA?oc=5",
+    "flag": "🇪🇸"
+  },
+  {
+    "id": "gca285f201333",
+    "type": "intl",
+    "src": "es.euronews.com",
+    "title": "Rob Jetten se convierte en el primer ministro más joven de Países Bajos tras 117 días de negociación - es.euronews.com",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR0RxUlhlVFczaVdXQUJaZGNMZGUzOUdpVWd3bER4enR4UGFtVW9EcG0wd1FLZGxhbGgzbktWQlZpdWpuaWFHWFVmRVJXU3NHSE14alhIdEEyODg2d2RiNlRxcnZqR1dncVZ3YndBaUNKZE42dktpQ0NXeHZ5SGpXTUFTXzVWMGlKbmVZ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g414c3fd2460c",
+    "type": "intl",
+    "src": "eunews.it",
+    "title": "Il liberale Rob Jetten ha giurato come primo ministro dei Paesi Bassi - eunews.it",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbk9TZXdLd1ZORzA4b3owVndhMl9Ka1BNaFV6Z1Q2OURBdTRiYXozOExwZTdvbmNnOGZvbmhia0RCbFFlTzlYOHk3czdkWnQ4cFNVVVM1TkxvWUNlMGk5VHJ2S3Q5dkVLajRYNnB6ZE9wR0IxVHZRVmhVREJJMEJYMHdSYWNISzRVckZjVFdid2g0TS1RSmdEb0ZYLXpTQ2dTejAwcW9B?oc=5",
+    "flag": "🌍"
   }
 ]
