@@ -31,6 +31,57 @@
     "icon": "📰"
   },
   {
+    "id": "g12af7c90aa0d",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Opinie: ‘Rob Jetten, waar zijn de maatregelen tegen de natuurbranden?’ - Het Parool",
+    "date": "2026-08-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaTJ0UFFOQkxScjg1d1IwSWpPS1hwZVBkZjNMZWk1QTZESFZndnNuMFpXNWJJSFNXQXZQTHFQYm1FY2tXbzM1eVA4REZQZDhJSkdiY2VtWmFJV2o5Q3dxVG1faWdvQS1SY09mbVU1Ukl3Vjlac1RDY0RuUEEzTUpITGxoWFNQQTZKQ0tBamJSNDgzOGlUclhhUXlRdFZzek9HV1E4S05jOU5ldHM2Yy1Nck9R?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g34c89f4d0465",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet-Jetten richting Prinsjesdag onder druk: miljarden tekort en stakingen dreigen - AD.nl",
+    "date": "2026-08-10",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQUEVRaWZUS3lVYm9vVXU5UGNNYmdkdDdkckRmdE5kV0R5cUFTNWZnYTNmTW1aNW9OeVhPVkpIOXZFSmJyNnBJNFFDZGFxN085OERxb3IyalFjdlZUai1ZYzVWbHJMZ01ELUxWMlJnOXRZczl6MmJDaDZvdWlpMHZDbmw3aUdoYlhhM3hjTmcxWk9iNlR2N21hMjBaUWdOZFpKcEVJYlpIb0tMQVJCMlMzWGgwTlcxVUxOeENkMWhn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g146a708f77df",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Emeritus hoogleraar: 'Einde kabinet-Jetten zit er dik in' - WNL",
+    "date": "2026-08-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONG5pS0hqdzRna18xT29LMmlOelBJcFRxTmpzdkJrcjl6cHVUS1NfQ1J0UkZxSUctQTNGdGM4SjZOMjFXWWxzMTZfVVRGZTJ0MkdYR2t3V2hNbG55N2wyZjdMSURITlQtWVV4b1RvTlV2XzBLZm1CRERwX0t1clhGUmVjRkl3N1U?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3243eef32c01",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet-Jetten moet de middenklasse niet langer als pinautomaat zien - bnnvara",
+    "date": "2026-08-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONlBRZmZmRldSakpJc0puNFRCNkRoeURFZHJHd3JPX2NYejgwVWdzT0RKVmVzczlURXJvYy1MMjB5ckFhM29xOFVYdE5LUk5sLVlCWmVVd3prMDM0V3VYWUtyRkVZVElXTE5tQ3o2dEtRbXBpcXBwWkhKM1hBakVSYUo3eGpmdEI2eXhtY2lpM2taLVltblYzU3ZCeDFyMXZET3ozcVdYV3pYdw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gc1485212f921",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Kabinet-Jetten richting Prinsjesdag onder druk: miljarden tekort en stakingen dreigen - De Gelderlander",
+    "date": "2026-08-10",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZmx0N1RfOHRkbXR6QVlOZEtSQ3NldkJUWFJDVFRLS25DanpneTN1NkpQOXg2Um1RT1R4c2R6MHl0S21ZNlBJOHBfNHF3MWZHaDd6bUlfcVpabUpfcXdGX3FvUHNkWmZpZ2U5ZGpobnEyU0Z3cHA0QUFBWHdPWGJ6aVJNdmlScHRxbUI3ZmxuSnJDbEZER1NIUlQwQlIxWFd4YUNlakNveVQwVE9sUW14dGdaQ1c4V1YtT19TOWZoXzFGZGhseGtOSE9XTQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4ae24f5ccbde",
     "type": "nl",
     "src": "De Telegraaf",
@@ -1417,6 +1468,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNekszdjdnTVlQdjVUN04tTDNNaGhzck9rMzJNRTVqZ3NvU25jZGNMdnlMbVlBSVNJd3RSYUR4cEtqWml4V216UkJkZWVaUEZpZ2g1UEtldDhBbUVJMm5tczhQbGRCdU9xWUNYc3UtOWZ0bm1WV2ZmclNwVEQtTmdRbC03SnIzQ2NIVUlUU0ttYVd0d0pxWUYzWnRhWUZVN3Q2YU9VSmlLUU13T05FdzdtX2YxY1ZyTEc0LU52elA0MGhKdUM5Um1wTG80Qm5yMjd3Nm1MVTNPOTRySVBw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g0817105df3c0",
+    "type": "intl",
+    "src": "Nau",
+    "title": "Schwuler Regierungschef ruft zu Coming-out auf - Nau",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQX25oOFFwS085NjQ4NE5ydDdGSGtjcm1BMEhOanl1eVJzRlVLZnNzY1d4bE1LZndjTG9CbV9MYjVwMnUzNG9xcVNVQXl5VXNXazZtSGFmcXJkaURPZTlHZzVyM2ZmQTNuZEloQnVPWWJDVjVrZkNVSVJPSVlzTUo3MU80WjZoWEkwLXpBTXg4dw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gab2121ee1bcb",
@@ -17303,6 +17364,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g0a0ada3a4ef7",
+    "type": "intl",
+    "src": "eurointegration.com.ua",
+    "title": "Прем’єр Нідерландів розповів про свою зустріч з Трампом: говорили і про Україну - eurointegration.com.ua",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBaUDNBZGhyY0pFaWQ1SE5WcnBWdE1vMkZmVjFfQ0tSbnFLT1B1Sm5nRXF0VURhX0xBVjB4YXZ2SUtlS2xJQmlGY2ZoV0VzN0p0MmY5V2FjUnJhUWxmenVvX0dFVnZ3dlpVSldv?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g691be09de075",
     "type": "nl",
     "src": "bnr.nl",
@@ -28975,5 +29046,25 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeEFYMkRuc01uVGJCX05xcDlSd25Cdmwzd3VieUtsYzMyYTUtVWxHck9zZE9wU2tsU3BWanZBWWtKWFZQb3o5R3c3ME0ybENTWXBTQ2xSUXB1VV9JUUY2eDkwTm1xQTl4eVpDWUgteGZ0LTBZc0hMWHdGb1lMcmZVUXJRbjROTVhBb1l5U3YwY213bTM0Q1Q1Mlpycm43OWlNZXVF0gGkAUFVX3lxTE9VMTRZLTRUNXpGbEVfLVRmX3VBYndvcGU2VFRSWVdVZFh4Qms4a0RhYXRDWkZKNlpXbGZQT1QyYzY1b1l4YmFURUpsUnVFRnlmUE5ic2RZUng4bVpBOUNQeVZibnlRSFY2aUY5SW9oRm1pTUY1dk5qOEpvSlF1X1ZUN2JQdHgwRDJkSlVSR1VGc0podkhRdEQ2SXcyR1VzUTV0TnJN?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gbaf50d52fe9c",
+    "type": "intl",
+    "src": "gala.fr",
+    "title": "Rob Jetten, le Premier ministre néerlandais en couple avec un athlète olympique : il affiche son bonheur sur les réseaux sociaux ! - gala.fr",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNR1AwTXY2S2k2cXRkUjB0WUZtUTNnSUNSaTRIT1BmbUxCazBpZlMwQUVLQlhOUzBZS3VuMzdXUmVMT29SdTl3NFV3UFA5NDZFWWJzdU9Mb0VDeWF4UldnOUxTNEZxbDlVUER0REVORWpaN0tIYVpKTWdEamF0VEQwTWpLRHVWV05INTRQblJWNnFHeTVMcmtkRFNsU21rbjBzVzRJVGlBTUhTMEF4MjVoX0NuTVZ3REVhc252T1NTX3QwUTE4aXl3MnduM2hSMEtueFdzUFJ1dVgyQWJpTHNZYzhCTzFNYWhYcTlPZ1BpbTI3MkQ1N1hCNi1vOEUtbjlQdUViQVpR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2c17483eac4b",
+    "type": "intl",
+    "src": "La Stampa",
+    "title": "Olanda, nasce il nuovo governo, Jetten il premier più giovane di sempre - La Stampa",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT0FHWG5KSHhpZFRDZ3h6MFB0R0NoNWZHT01QN1E4bDhrSEg1X1VDMktJVHltcEV3aDB0ZjhiOC1uNy1MOWxWTThsWnAyMWVRbVJjWk9QbjlGTlBnMTExQ2pEZXdUbkgxZDh1Z0llNXNnc0FKWlpTby1KVFFZS2JjRDhNb3hCWkNVQXh4WTd1ZkZqcl9pd0wtZi1OU2dRaHpFLWc?oc=5",
+    "flag": "🇮🇹"
   }
 ]
