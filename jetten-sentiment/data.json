@@ -1,5 +1,506 @@
 [
   {
+    "id": "g65be95e6d2fe",
+    "type": "nl",
+    "src": "sargasso.nl",
+    "title": "Na de zomer het einde van kabinet Jetten - sargasso.nl",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8xY3d5NHZOYjRJdTdyS0ZwaEdHN2o4RlFwRnc2a2RWLXIyeU1SRV9TX25jVzgtbFFBZzREMDExdV9uQU1OdmkxMVlSWHVzR2lTa1dPR2JPQUlWNkxqOTlKaWZ3SkhmYUxvQWp1WE9R?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6b01a29fb694",
+    "type": "intl",
+    "src": "VOV World",
+    "title": "Vietnam, Netherlands seek new directions to deepen bilateral ties - VOV World",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZWF4REdCdDk0Qkx4Q1FHSHp3YURtOTYxdGVSeE5lTWJHdjBaMUFYekdsemRPTGN1WE9VZzR5ek1xZUlZUkJ2YW1MZXhYZWctOU9NZlU3Z013MFJ5V0Z5TzFDSXJHdy1oQ0J2YnFXaU1meVIyS1FMTmc5UHpaTnNwMmc5M0dQWDU2QWJhaUEzT19GR190NG90d2J5Z2wtWnZvaGZXNw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfe9922dfdb49",
+    "type": "intl",
+    "src": "en.sggp.org.vn",
+    "title": "Vietnam, Netherlands to deepen cooperation, elevate Comprehensive Partnership - en.sggp.org.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVU05UHJ5bWpTcE1RVEM3RzJIakxvWVFtMWMxV2lEYzUzNE5IM0ZFS0NJaklILVhySEtfQjJjSkNEUmZuekk0a3NDQzRWM2t6RFRxMjhGSmhoU2FZRHZxRzVFQUUxanloVmM1elF4SUlhVkNWbVVVdl9vZUloaTJiY3pUYnpIRDRhdDZmNnlLd3dvZGtZMVdVOWw3VDdsa3BZVFZRNjlyZFg3M1otSW1zVlEtcmY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gdb269ea075b4",
+    "type": "intl",
+    "src": "SGGP English Edition",
+    "title": "Vietnam, Netherlands to deepen cooperation, elevate Comprehensive Partnership - SGGP English Edition",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPVU05UHJ5bWpTcE1RVEM3RzJIakxvWVFtMWMxV2lEYzUzNE5IM0ZFS0NJaklILVhySEtfQjJjSkNEUmZuekk0a3NDQzRWM2t6RFRxMjhGSmhoU2FZRHZxRzVFQUUxanloVmM1elF4SUlhVkNWbVVVdl9vZUloaTJiY3pUYnpIRDRhdDZmNnlLd3dvZGtZMVdVOWw3VDdsa3BZVFZRNjlyZFg3M1otSW1zVlEtcmY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g91732b89661b",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Vietnam - Pays-Bas : Renforcement de la confiance politique, visant à hisser les relations à un niveau supérieur. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQbTVNSVQySE9lYU9NTVpBZmo4X0ItN1oyMEJoMXFXMDkybFRzYUYyY2ZNNldiNFVPVGxSOGEzc1FOZ2NxMTJlaVpfNHRSempPTHVFR1lKNHNZSWRxTnBFN1JIVGpmWWVhbWlXR0xheE96QzBpMTVfWmluTXBBX05XWmFKek1iQXBQbl9oTG9sY0VWTzhGU09VSTVTRWNqMC1MYXVSUXRWYnhyTFdrRTZn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g83ccc988100e",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Le Vietnam et les Pays-Bas renforcent leur coopération dans de nombreux domaines. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRmtDNGNkVGhKMW5pS1VId1NfWFhkVGJiVjNLQmYxQ1lOMVlOVF9jbmphMjRmUVZCY3MxTHpoanRvczFrcl9oZHpDTkZXZTB6em5JdTlRQ2Z0VWxnaXRZMFhKVUE2SzE3dG9KRno3ZkhkYnhobDFOWUdsWGZoekFvMG5yVlN1LXM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7ae338476141",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Vers une amélioration des relations Vietnam-Pays-Bas. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZZVQ0Q0p4dHgxSTU3RkZpTmdCOGtoVnU5VVBZOGZfVzlkQ3hESGo3S2g2Vm14cHo2dUFPZFFOc014NWhER19kdTNLNG1zVjdfUEFuSmZLTU52MHVVNnozLXFTRVpQTHZhS0RYZFZXdGNkTGVNYzY4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g67d0c6da0963",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Le Vietnam a toujours souhaité approfondir sa coopération multiforme avec les Pays-Bas. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTGt3ek8wQk1aeVFLS2t6bG1tUXFyb3liMEdMa29xT2tEbzEtVXNFZHdlZmVEUGFrN3JUdUxTWXVUQWk5N3Ryc1RiamxOMV9nVFl6X2tOeHdnUEpLa1hDaGdvYzZCbEpJSGIyTzhuRUkyQnY3Vmd4VHNVMVgtRVliNEVTVEV5eWZZdDlsUDJ6TVlxNk4tREwyMHNmWjFoQU0yQjI3Z21Tc0xXQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd505d8f80387",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Vietnam y los Países Bajos refuerzan su cooperación en numerosos ámbitos. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOFdsRFBOY0R5alA2UDlwXzlXNDh2N01haTdIZW5FR3Z4VjQ4X2ZEUEtuQ2doaDJOaEk3cXk2NEJqbnRhQ2s4N01ZV012a0JTRzB2SnJqTjJMWlZSUDRRS1E1N1M1ZW1aRjFUWFZvdjF6dFZIYTdjUVNnbGpsbGh3dERrLS1hMDA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4b8b740ee398",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "В'єтнам та Нідерланди зміцнюють співпрацю в багатьох галузях. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxORlZVbmNlYnZ1amV6d05wZnJFMmd2S0puYlZNUWtFZzY2WnBFaW05SXg5TTBrNS1HeklrS1RJcnlqSVBEVnA1Q2E4MHNnQmtVZHR4Rld6dDNGTlJaVjhZZldoNzlNcjVWOGZseXh5cDRCYmtxaVFoeFNrUzg0Yk42UGw4MjBOOVE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc51049081870",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Vietnam och Nederländerna stärker samarbetet på många områden. - Vietnam.vn",
+    "date": "2026-08-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUW0xQ0tYb3lMWjh5ZUY1OVF6M25yUlRCdERKSmlMM1o2OUJhRkVHYW5GdHVsMmFWQXFJOG53OTZYNzh2S1BRR1F2UW5kQ3RMckMtVkxsVl95dENOa1Y1R2lEM0EwS2FpbDR3U0h6LTVvaF81RDNiUHBmZ1VsZzVkUVVPaEVkY0U?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8c0221ea0f7d",
+    "type": "nl",
+    "src": "Vietnam.vn",
+    "title": "De premier heeft telefonisch contact gehad met de Nederlandse premier Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaWdTYm1TVkVITkNucGFUTkFrczl5YUlFTmpQT2ptc3ltbWNGRGRodDlpeFBGSXlVX2pVMmphTmlybFFFMzNxbjNyUnhEbTVXUExaZG82N0ptdHRPRi1PWmtZaWswR08zMFE3RGphM0l6UnlLcEU1YUJrbWt0MlJQcVdR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g712ec2a42eb5",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Top kabinet met oppositie om tafel voor spannend begrotingsoverleg: verdeelde geluiden over kans op succes - De Telegraaf",
+    "date": "2026-08-11",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOXJ5a3UzazJzaXdkSjVEWGFWN1BGR3FrdThUSGtidGJiSDJCaFVmbE9vcjRKY0R2MGUyU1FJODRtUUd6S2h4MFAyTGRGMHpnLXlvWkRjclIwUFlZeS1WWXhwQUFJelY4RXg0QU5MX05YTmV2YzJlQi0zemZhRnNVaUROMG16Tkh4eUF4V3N5WDNDRExoajNEVHVpS0ZmLU13dnZ3V01rR2oyYVlkb1FYTkZQeEpsLTIyQTZWdFRGQlFwZ2hkMDNmZ2tKQlA4YkJORXdOQl95dkdoVXBsT1AxQkpUX2QzczZYMVE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g61ee4b0130b1",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kabinet voert volgende week begrotingsgesprekken met oppositie - NOS",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSnFJenlFelBYS2dCdDBBajFzTHdGMkp6SE9ybjh0Rnp6ZGpzRERETXlvdmxSbTk2LTVoMnpaOWRCanh1dnBIeFp3UTdXcC0xanpPVm90ekQxY05sNlpxa2Y5Nld3WE93TlppM2NNdXpDQzdYeld2VFFtMlp2aURzb2RuT1h0Qlc1ZVN0anJvc2RNTXFMcDczag?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4eb065492fe0",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Emeritus hoogleraar ziet einde kabinet-Jetten in zicht: 'Zit er dik in' - Nieuw Rechts",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUC1jZlhLMDVsUHJiNGtUWkQyaEVMa2hPUUZNU2o5RDFnNFdGX3Y4TkUtdF90VGNnbkxFdmVHUExVU2RyOHdaREpPNkJSZ1lld0tiemtacHdqMl9nUUR4UE44YUVkd3hEVUYtUFg4cWZZLVdEcXRQSDkyVDZCaHpRa1pPbWhZZmFiTmhRMXJPQjdOelJxUW1YNkx4TFg4MVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd45f2615733e",
+    "type": "intl",
+    "src": "en.baochinhphu.vn",
+    "title": "Prime Minister Le Minh Hung holds phone conversation with Dutch counterpart Rob Jetten - en.baochinhphu.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM3c3T1ZDMmhZQnMzNE9VNnFOQWVIb2NEZWQ3QkZueUZvaHpoaU9QREFZc1RCeW1lODVZLUphenM5OFdWcGhic0djSkFnTWpRdUVwbUFIbF9QeFdCZng1S3R0Zk94anNmMTlNQlBQVDVfYVlvOXo5Qnh0Nk0tUjJKYllTeGd3UllFNGRxb0ppM3ZFM3dEbmlrTmVneEFZa1ZVbFJkby0xV1BYQ2VQc3FsUDk4N0RrYXlicXVzazhHeE5TQ0c5MVduTVBFM29nZmc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g788e43027980",
+    "type": "intl",
+    "src": "vietnamnews.vn",
+    "title": "Việt Nam, Netherlands eye stronger cooperation in trade, technology and innovation - vietnamnews.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeS14OXpRcnhQRUJWYVJXd3VNVHBwaUEyVWFsaUkteDBrdXRsNXhibXRMUThtT3lBbjVUdDF5TEcwVHdxZWdpVGUwYVBrQktBdGRqX251T3RtR0xhZkV2Zm5KUHZpUllvdkkzc3YwVDl1NWRZZ1JmR19JWGtEVW1NX0pNM1FBUmRuT2dxbVBJTV9RSnBJdnhTWU9RLUZPZlFOZDlHdlFJazhFLXN6Ml9nUGlXd2JVU1h4Rk1QenJKNWZfUElYZE9SMGRR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gdcadce9e8139",
+    "type": "intl",
+    "src": "VOV.VN",
+    "title": "Vietnam, Netherlands set sights on stronger comprehensive partnership - VOV.VN",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONWNKMFR0LTVXTU5ZSHp5aTY1ZDl4RFF2WW9wRTJuekFUQXktdHBlSUlVT0VkMG9YMFNVTjdwUzdnR050OTYtLUU4aU9FQk9UWjFUcGhYYlR5bUtMc3ZXQzVLWWR5UmQ5T3ZxUjFWYVdPNzhfNWd1VGltQ1E1LS1JT01xUXU0MXduQUNVeXBLcjRwMUxDOENJMlZaTUk3NXpOdGN4ZUROenlGdXZuME54VGpLR1QwbVRsRlVBbU8tRGtsNXFQelZhZQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4d3164443d90",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Ministerpräsident Le Minh Hung führte ein Telefongespräch mit dem Ministerpräsidenten Rob Jetten des Königreichs der Niederlande. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxONE1NTGdRcEQ5RU9leFNtanhZeG9WT2pkZ1JUY1hyQTlnVU1MM05QUEkxZ0M0dF9LQm5FbnIwNHhQNUZybkZZNDRFeEowZUdKMnVlWVhLejJGOU5JaHVtd2p3RFM4SGJFWmthNF9mTnlmOEVsT3ItcktqYkt5WmNlUEktbDBDbmI2S1V0c0JCenlrLUVsYnpqWWU4N1RuZ2R1cGY1YXh5ejYtU2xZaE84?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g60b2ccc70293",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Ministerpräsident Le Minh Hung telefonierte mit dem niederländischen Ministerpräsidenten Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRmhFWHdBdnJTZzVBb2hHZkVjbV9tMkxINDhPU1NqaXMxeGF4dG9Vb1NNalNhQTJPSGluaHd1SzFZUncwemFHZVU4c3JhbUpvbUpnVXJVRkpCaFFUV195NW5MWERQcDZTQW9CelBWdm11T1RicGtNOEFPYzRaa05RUWZWX0F3OEJ1STJSVzB4SUhWeTA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6b9de02b908b",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Es wird vorgeschlagen, die Zusammenarbeit zwischen Vietnam und den Niederlanden in vielen Bereichen auszubauen. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOWh2SFA1UWdYTzI1dGIwbnlqN0ZzU2FBZHJWU0pZdF95ZnlubFVPUmt1U2ZYWmN3ejN1Ni01eUVYUGI0NHREYVFwd04tSzNkYjRjdWU0cDdERm9sRFZ6SXpQRXlhM2VQdFRBTDhHLUVLME9pdjQ5VUhmV3BkYW0zVEtXVTBlbHdCaVBhdGFR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0f7eaf41a681",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Premierminister: Die umfassende Partnerschaft zwischen Vietnam und den Niederlanden auf eine neue Ebene heben. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQTRZRmZtZzRnUndIbE5aZHVsclcxbWMyS1FSM1BEcEoyYUlLOGktUGtCTXJ1dkIwZHlMcU1Ya29LdXl2MVpYSzFXbEFJM3poRmptZFB2eGc0WFM3OEg5c2ZIanUyeUxqbExiQWxjelpjUHV5RjcycWN4eENialhuRlVBTThBVEhaVHp3ZXQzYk1pcmJmc1NxcnhhY0ZWdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf962c0716727",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Der Premierminister telefonierte mit dem niederländischen Premierminister Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNb3RzWGZmSFh1dDU4dWZ3bEg5TXdGdXNLM0U4QlR3YXU0RS1iTkJ2QUlPcGdiMEF3ai14R2RxV2ltWmdWbC0xdUJBT0VtTl8xUXdxSXA4bHJ6dkE3RjdDSi1KbFBic0JkbGRaOTVPb1pqVkNKbnlZSEdSUEppWUJJTHdR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g76c4f299453c",
+    "type": "intl",
+    "src": "lecourrier.vn",
+    "title": "Le PM Lê Minh Hung s’entretient au téléphone à son homologue néerlandais, Rob Jetten - lecourrier.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaEx3U1IxME0zQmhJTlVfRmpmbGw4RFpiNWg1SWhKOExSSEpVN292cWxkbUp6UjZ1bjR3bnNhSTR1T0NJVkpKWHFmaEpIaGdpeVRUNTVMZ2hqSXFwQkNRS0pONk9NYWtydmU0UjE0YTFuc0JfQXRiekVhVUZqa1pFbVlWZ2lSUEtfdEIwbUNUNzM1WHJGeEkzTkllUTJvNHpJTFJOcHlpUnNLdGZxWm1vcmJ3cW9DZGxX?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g85caa0ca1483",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Le Premier ministre Le Minh Hung s'est entretenu par téléphone avec le Premier ministre néerlandais Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTVlNeDlzeC0wUGh6MEY5MGJIaG9YdTlxR1pJTFlnUG45Q1ZRc3Zzclp0bzQxRm1wVkJBUkswMFRUTGdaT0w1SGpvRWNzVXlBV1BHRGZtTHNnZ3QwQUx2SHdiWEgtOWlNcUxvVklNX0NBY3Y2TGZfVkVyNWloRjZzWTJjOXhKdmQwMm5PUUZLZ0NITmc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g478b4540cef5",
+    "type": "intl",
+    "src": "Laodong.vn",
+    "title": "Le Premier ministre néerlandais qualifie l'objectif de PIB du Vietnam d'opportunité énorme d'élargir la coopération - Laodong.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMEVxQnFRQ2xhVUtQaEp4M1EwUFpNbW93dTZuOWI1REU1eDd3bUhuMzhJNXlOeWozREtuWjBWdVJITXRiUGM1UjBDU1BJZ09wTFhOcTFFUmtFTmVBX2hrdFZfS1lGN0FnV1lQQ3U3WnMzMGlUemZoM2ZYVGYtajdaMjQ5Vmd5blJXenRzM1pRdjNjSm04b3hXdVZEb1lMMncwY0Y2RWxwWG54YTBoaXFUVm1Rb2djUWVYUlM5MW1rZG1wclpj?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g540fbc32bd7a",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Le Premier ministre s'est entretenu par téléphone avec le Premier ministre néerlandais Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTXJTcV83SVBnVGVvTkI4NXk2amZsWDVHdmVGaDc3MmJMaXhnUTh2THpmSE1qbkZNUkJKRWkzcXhlcjAyZndhTWcwRWlfQlNvSkxuc0hWLUZPQm5McUp0NklobFdwQUNUaEEtTjNqRUNHdWJGUnhEc2RQNzBMeGZ1ZElR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd4eb7e8ef54c",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Premier ministre : Faire passer le partenariat global Vietnam-Pays-Bas à un niveau supérieur. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQX1ZXeTkzVldoU1otR2FzTVp3a3FwUGZEOEtfMnFPZjgxZ25CUTRya3FLdnMyYlZQMFFUTmwySkJFckY2WHEwWmFwUmdSOVJfdE9BcTdYakpvSENTOHJJb0VHSVhPXzhIN3Q1QjVhVGdBQ2FrQUpmQlh2VnZRTGJLUy1VSWMtQ3JaVXFrOE1uWTM0MjJ2ODVHSFhCTWpuQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb8b652bb7448",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Il est proposé que le Vietnam et les Pays-Bas développent leur coopération dans de nombreux domaines. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdlNnSVlyY2tzTVlOQzdBdzRheXVObFpReTdHbk9IclJ4d0VBOE1iSEl6dGgwankwSGVXZHAzbDRzLXN1TFBidkJjT1VTN0VGV0JOZHZVLW9BdWppdnI2eDJEaWF0dWt3ZS15ZHl0bVplel93UTJaNE0wMTFseXEyY1RiY0ZZbnhaRks2MHhB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6094cf332a4e",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Le Premier ministre Le Minh Hung a proposé que les Pays-Bas connectent le Vietnam à la chaîne d'approvisionnement des semi-conducteurs. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQUmtvTVR3cFoyNDFaa1JVSFpPTExlWTcxUDNOUjBXeEVubWxkVVBQdXZ3REdUb3B3VlRGM3MtcGpfdC0yaFpHMWZpRHJSU1RDSHVYXzJtUUsyNms4UTFBaUdMWDVHYlpJNDJ4VjdTTnZzOXdSY2Q1c2V0MkN1OVM4eVdqek1xbHlTS2cxbXRmRXA2T0pMMDRxUGczcjBwMV90NnYtcHBULVhrWjg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0fbb81d38b98",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Le Premier ministre néerlandais Rob Jetten - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QVl94bm1SMU5PbEFhUFlHWWFxdjhLT3NyMFBRNEg2cmNKcFFkY2QyMmdHdEhDR2FFVExqNUJ3WGFjaVpkTUZKbWUyQVJKeGRmM0JYT01Fa0g1eGJEWGVxcERmWldNRFNy?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g59bc03f4d147",
+    "type": "intl",
+    "src": "Vietnam+ (VietnamPlus)",
+    "title": "Primer ministro de Vietnam mantiene conversación telefónica con su homólogo de Países Bajos - Vietnam+ (VietnamPlus)",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQaFhkTExFbHdWSTVrWkFDRlVsakt1T1QyOXNsQmUyQmF3aDZZRnJlZnZqSlRoUUxuSlcyZDMzRVlkd1drS1Y0X1RmUzhidk9fYXYtYndlNHpVT3F5MDNuVXpUZ1c1MGdBWC1KZ3hYWXJ6UzdCU1lRSm5jeGpuWTctNnA3UHZVSHB5T2lIRUNWWEpna3dCeWNtbGpOOU9xSERfS2tRY0hBZlJhMVRacWU4cWJRdzJRV21DVFJIck1pRlRXamJUZFlCa3JhQno?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g955c5e36b7d1",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "El primer ministro Le Minh Hung mantuvo una conversación telefónica con el primer ministro Rob Jetten del Reino de los Países Bajos. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcUY5c2FQcHJqWTJPTGw1RVB0aWNubkxUTEF0bDRIUnduLUdSbjlaXzFYS1Y0VDNQMjhXZnVobnhaQ1U2VmI0WWg1UWplVkRwN3Fxa1VXR2d3ZTNvVmtLeFNTaGhQWUVCeUhpRURZbWdFRExQOFlLalFGTndWUmpEV0RFUUtsVU9PcDJwMWVrZVVjWHMyZUtWM1M1d29Pb0xBZzFnZjQzaXpDOXFNTUFn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "geeea9036224e",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "El primer ministro Le Minh Hung mantuvo una conversación telefónica con el primer ministro holandés, Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNMTVralRiUTJUd2RQVlk3VTdqcXJjTTAtSEZaZHJMaHlMZzlMcExQcFFfMlJhZG8tN2xaWDNZbGQ0TWFYSnNRR1lKMS11M1hxTFFOZzNtQ216b0p3X2EwRkZtUTJpb0M0TVZ4WktJYUJJOHZlOC02RUZ1OHNfYnJ6V0plUVNPZlZFeFdmZE5vQ1dCWHc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g31d8b0e7a72b",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "El Primer Ministro mantuvo una conversación telefónica con el Primer Ministro holandés, Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNaHMta0ZFWUtjMjNVbWtfUXI5eXpQM21UQmdLWmMtQkNfV2N1YlJUdGt2UE4yeHZaMDRHLW40enV1WktsMUFzTC1CMjdsTEJ3ZXJZVkR0QXNuRXVDaG5wVlJjcFd2ZE83djZ6TVJWdXdGalR1d0Y3ZVlSR2RzVThubUZR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbd3635ffac2c",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Se propone que Vietnam y los Países Bajos amplíen su cooperación en muchos ámbitos. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNRE56YmcyRkVES2l0VVBWVHFvYW4tOHJDaXFqUEtGQ1dhVmlMQ1ljSmUtWG4yUUt1YzBLVFhyQUZvUkQ3ZXo3OVE4T2xrWkdmSUloTW5XeWRtLV9Kdkd0Ukl0RVV6dVU0aXhhRFdiZlBRcHpva0pPMkVyS2d2Uzd5Snk0TDhIaVlsTW5lQXNn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf700e1109262",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Primer Ministro: Llevar la asociación integral entre Vietnam y los Países Bajos a un nuevo nivel. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMUF5amRMR25ybHEzbndackVTWmVYODBibzZwQU9ZUHZmZlRxUFpWTVpuVm8wbkdFZS0tZXh3TWpVWjhlQkt2WG83SWNPbk05ZFdZQU9oanBkQ3VQUjZjM1J3dFMwUzhmcFk1U3l6RnV5WlpYa09mSmplbEdqdXZHLTlNY3JlaXJFRHpCaURjdXN5ajRQUndJMkNCQ0VXZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g53098574d9a1",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Il Primo Ministro Le Minh Hung ha avuto una conversazione telefonica con il Primo Ministro olandese Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNmNlQWNOdG1GQ1I0bDJPTkpvLXdqdmE3OEJYMGEzS3plMXotRDZBMlB0eV9MMXBSbEZxR2diTDRhOUdEd2twUWRjdkJyZW1KcHZqY2x6NkJKMnV1dmdKcU9YOHRNb0JUQVM5RUQ4cWJLUVB5SngwWTlwSGo2SzhaYXdtRXZuNDZoNXdXR1JHUWRFa2c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcb4ac3d731ac",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Il Primo Ministro ha avuto una conversazione telefonica con il Primo Ministro olandese Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQaDNtZmxETWZsUlgta1FVQlZ6UnlhbHdJTzVFMThsVkwtRGF1WkNmQ182bUlzNXVvSjRlVkZ1ZzRzR0o3SkJzQVE5VTNEbjR6RzRIUF9yLXhNa2xncDZHZDN5M2JkenU0U2Z2TTdicEc1bHhfS3RHeXd6VjNDdUQzWEhB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3fc602423f59",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Премьер-министр Ле Мин Хунг провел телефонный разговор с премьер-министром Королевства Нидерландов Робом Йеттеном. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNLUNfMmFJaGZIRlhnLWMyZ0tVS2lMQmJhTWJpTnVsTWVMdjdUd2dxVFNBakZzdkhQT2VVYW5nXzJjS054ZUlsa0x4bU5rU3FtOXVEVHQtZldGR1NUa0NRWElZLXFSZmJKLUYxZXU2T1dfWlQ0SDl3SnRIX1d2azdVYWN0Q3JiVEIxd0RiejROd2JMTjdnWG1GNkw3YmgxbWpfQ3AwaGY0NnE0NGtwSkM4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g76da6e34c8f9",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Прем'єр-міністр Ле Мінь Хунг провів телефонну розмову з прем'єр-міністром Нідерландів Робом Єттеном. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMG9qNUZ2enhZaS10SmFKeUxSdk5Bd2syMUliMUxCY1Y5dm5Ga3FSZTJKTFpGbGEwNU8zWEpvZnBUdEd1ZEJYWUNWSm5RcTE1eFAtVDcwWHV2ejM4Tl8zeHhTdDB4Wmc2dmxqdTZ6cll1QWlwUmVSWmJCZFVrQ1lodWxlUXJVYVV6cnV3el91ZTltRUU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf0390da1b20d",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Прем'єр-міністр Ле Мінь Хунг провів телефонну розмову з прем'єр-міністром Королівства Нідерландів Робом Єттеном. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbm9wMTBCM2pncFd3SWljWDU5WTh6U1hSU0J3TVNiemZCdUxNMHZvYlhaSUlVblMxbDZPb1dlLWhORUg1M01VcXNmWlhZbXFibHdudERQWm1vQWlBTnU2blhyWWREUjg1Nzl6QmM5MlVzdHBpVXd4ck95aFA4dThlWkFKV3JWQjdQRkwxYUdvQ2FfemNlUHUzcmhQYk1WYkpXeVFfY3VpZnZnb1V5ckcw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g585a2fede39b",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Premier odbył rozmowę telefoniczną z premierem Holandii Robem Jettenem. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVmNFSHRSbk4yaXRDcE9vZzN0TkJMYnQ2WVN4WU9TSDlwZ0MxU2owYm9wcERaUHFndC1WeUhqT3dhTjl3YTdiRHZXS2xkQUJTdFJia3VsblFYVFp3dXVxVEJjMEpONmJDMmZCWjZzU01MckZsT2lNN2RhVFJoWmgyeXBB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd520693199bd",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Statsminister Le Minh Hung hadde en telefonsamtale med den nederlandske statsministeren Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQamRzQ001cGpQOFlDSmk1eVJodEd6SC0yRHpTSGI4TnRTRmRsSDhZRGh6bjc4eGxic255dk1EMTVINkoyTzZZQlFGcUY5UHBNcE9Gb3d5LWRIajZieWYzREhOTnIwMk84RE9ZNW40c0dSaXBwRVVzOU5RUEducUIwejd3Ujl3UmNtLV96eEltdUxlZjg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf51d7a314ed7",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Vietnam og Nederland foreslås å utvide samarbeidet på mange områder. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQUl0OUlBeUloVXJJQXA2SUlzUVFsTEREMG43M3R1MlhWLWtRaVBjNlVKUG03NXlrbVp1aVFjTkZwTEFyMGIyWU1KYmVxd2s3cC1zSnlfcF9Ja0VVb3U4YXpxTWpGMHIwU3FrMXh4ekNNbHFadGlCQUxfMGx5RzNMX1dnX2Zyb3AxUWJjejRR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfed77f5ddde9",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Thủ tướng Chính phủ Lê Minh Hưng điện đàm với Thủ tướng Vương quốc Hà Lan Rob Jetten - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUjhuTGdtaDV1SktMY3JUSWpFQkthQnhULVZIVGQyNHkyUUJLaUJhTlVHTm1kcmNGSFRCOG9GSTJjWU1sYzZ3YlFVSm1XT0Q5Z0NLNTBWQ2R2c0R0UTZtZWM4Wk12a0FUT1RBYlRUQUlidkJFWnBNVjFBQVZHM1k4NktRdkU4dHg4UlkwX2VmSXByVjh0Z0x5ZjdTcmdSY0pVRG1JTmVvcXdJX254UFRn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9f775ed84958",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Premiärminister Le Minh Hung höll ett telefonsamtal med Nederländernas premiärminister Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRGtmRzEwVHFPWlA0SlREYkM1cUdiNlBLdDI5V0RGb0dzYmxpOEE4T0tfRXNtbHRHTDJHV29VX1lJaERsNFdCMWU0eHBua09oWXRKTk5md3djMlBjWXBmbF9aMmFGTmRnSTBWV19UMGV3R2hxM29uMjFpMmJoaHBHMnNvX2QtYjd0ZGp1d196TVV6QXR6OUxuYXFHLWs5UVVCNVJDREFLNlpwWElib284?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gdf0907b4d1b4",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Vietnam och Nederländerna föreslås utöka samarbetet på många områden. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOVkd0NE5ab1hBSHIyS1g3OWV0UGVERV9oT3hHODZPdFdabjcxb0REWGpac2UtTDl2UjF2SVI3c3B6U1V2SUtGaVFhNzU0ZTF1aHo4ZVI1X0ZPZTkzRmNDWXpQRGo0ZlVXR2xpQTNfc19qNEM1M25pR1pGallyNXBFVmhPdjk4alF0Y1dHSWVn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb49a426e1829",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Premiärminister Le Minh Hung höll ett telefonsamtal med den nederländska premiärministern Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOc3JERlplTkl2Yi1MaU5IbHlncm1jUGJ2UDZRQl9wLTlyTWc4QTRvc3FSck41OV9sd21FSFhRU2M3cGdNZ1hXVVNiUUJsc3laMzgwSkV0U1JMOEhzcmkwcm9WeG5sR254cUY0aDVHVE4zeDcxRm5IQnkzbl8tX05sNjBfM280U0pVNFh5bkt0TkR6c3M?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gef4e4f70ecfd",
+    "type": "intl",
+    "src": "Vietnam.vn",
+    "title": "Statsministern hade ett telefonsamtal med den nederländska premiärministern Rob Jetten. - Vietnam.vn",
+    "date": "2026-08-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeGFKTkhsYS1GV2pNbWVkSjQ3TTdjUF94YzBzcmVZVFJwZHFwcFhWNTNIb1NhbFFhc3JzQVh6Z0ZGajZkVHVMYXVEYUN4MzBLcUdBRGNtNzVLSlBEV1FsbWFFZ0RsZFNxUndtZzJVNldVM2c0TmFkSnRhSE9IUmpkRmlB?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g9f03ea243e33",
     "type": "nl",
     "src": "De Telegraaf",
@@ -82,6 +583,27 @@
     "icon": "📰"
   },
   {
+    "id": "gdbf54bff147c",
+    "type": "blog",
+    "src": "De Correspondent",
+    "title": "Premier Jetten, noem politiek geweld geen ‘vandalisme’ - De Correspondent",
+    "date": "2026-08-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVVpNSWtfZnlpMFlzMENhb2VSdkRpSW4ydWtMajJoNllJRVFoMnRlM0MzdnY0SmtOZGh5dkpOeV9jTmVUeW14bkdNSWlaMVhMVGZIbU1KdURJbEJDV1h6WnAza252RHZ1NjF6djcwb2E3Tk1LbUQwcmx2MVlwOE96U3pCdVphdW9jb3p3NkY4dGQ0N3hRaDFNQmFJYWs3YzltN1Nfb0djeGtfMXFINnNwUHdPcFlxU3BvbTRXNDJB?oc=5",
+    "icon": "✍️",
+    "lr": "left"
+  },
+  {
+    "id": "g1899cc1211e9",
+    "type": "nl",
+    "src": "Nieuws van de Dag",
+    "title": "Claudia van Zanten: 'Jetten is onzichtbaar als het er écht toe doet' - Nieuws van de Dag",
+    "date": "2026-08-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMHNZQmt4cHI0b3c0SFBVemhnWFJCekxRdUduTTYwOU5QOEZlRFI5R3M5VnYwVUljWHp5NWUxUTJNeGFLbHUxZkRUbGJQTDlhZXpnTENHbTU5dWlzSXlfb3JyelNmZ3ZxNnpYc3VBakhPdldJOHNSWnNJczdXMkQwUjVvQXJmdHJTVEp4aGxORy1XUXM3WHRfQmsxUHpOZEpWTmdPaXNUXzdWUmxLdGtiSFNxMUNCaWFCQjJj?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4ae24f5ccbde",
     "type": "nl",
     "src": "De Telegraaf",
@@ -97,6 +619,16 @@
     "type": "intl",
     "src": "Los Angeles Blade",
     "title": "Tens of thousands take part in World Pride March - Los Angeles Blade",
+    "date": "2026-08-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQXVadkpVYVctSDRnNEl3OUtSX0JTS04tRlNvMEYxRUhDSW51ZUtqVENvcXdENFVkcHJ2RENCQUxwUU1BZWRxdFJDbjFsSmZrQURTbDNiRlphYlloek5lU2tSTXJJMEp5RUU3ckpMSlk4VWVmY1E3Ql9XSVBVUnhTX0RBdUgwVWM2VnlNQmczUWt3akJybWRz?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge8fe2da607c3",
+    "type": "intl",
+    "src": "losangelesblade.com",
+    "title": "Tens of thousands take part in World Pride March - losangelesblade.com",
     "date": "2026-08-09",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQXVadkpVYVctSDRnNEl3OUtSX0JTS04tRlNvMEYxRUhDSW51ZUtqVENvcXdENFVkcHJ2RENCQUxwUU1BZWRxdFJDbjFsSmZrQURTbDNiRlphYlloek5lU2tSTXJJMEp5RUU3ckpMSlk4VWVmY1E3Ql9XSVBVUnhTX0RBdUgwVWM2VnlNQmczUWt3akJybWRz?oc=5",
@@ -162,6 +694,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSEQzTGV1cGtLTGpFNzlOUDkxX3ZqTTR0MlZscG9zZjk5bF9CQUJMLTBrRXZET2pYSmRWeUI3ZTNRRlBBZmYzMi12VnFKcTNhWC1EN0NWNzhVeDg5NE5kQ1BPYkhpa3B3NE1hUHZtblN5UkFGZlNlbk52VlBuNzVlUnQ1UXRKZEZsSVFRZTNGMVY?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g47c19e9b5cc4",
+    "type": "intl",
+    "src": "three.fm",
+    "title": "Netherlands Prime Minister full of praise for Joe Locke - three.fm",
+    "date": "2026-08-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPWFVTU2t6dmhsNEJBaDhEbjhRcTFBM25UbXNHazZpRy1Ob2p3eVRybDdyaHNVODBsOHYzMFRuYUdTbGdfdE1hdTB3a0w2Ym1XTGg1c3ZPcTQtUGc4TExsZktJNHFNT0RnT1F4MWNtTExiYW9MWS0yOXlyMENyQVlIRXhZYW9RSjZORWxHdUphU1U0ZVBmOVBmVHJ2SlE3RVlJ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g1318ae36f14b",
@@ -924,6 +1466,16 @@
     "date": "2026-08-02",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zeHBMemFqNjZFYlBTWEpYUDVEdXRKMGxoUVFnb1JOVnU3MWhmbDhac1ozWF93Sm9JTlZqS3BSeFp5TGVOWTNlcndXbGtONzloMGozQjJYRk12OGtZb0E?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga2994e942e2d",
+    "type": "intl",
+    "src": "apnews.com",
+    "title": "Hundreds of thousands line Amsterdam canals for the annual Pride boat parade - apnews.com",
+    "date": "2026-08-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVnQ4TDNhMkhhUXVZRHM2TkI3ZXFiblVFeld5VHVsTm91aTVYWFZkQ3FOQWFOcFBleHlFM1ZIWHRtZWpJNmRBOFlPdUxHVDh6TGxNNGNEMTl4d2ZSZllDUEJzRTRwMk95QjlMRVFQRzljYVRpZ0l5QVJhR0pIRXZBdEctZzRZUXNxSnlMUVFsYVJPQVVoNlIwRENVa3FBOEFTMzdmWXFXYnU?oc=5",
     "flag": "🌍"
   },
   {
@@ -3575,6 +4127,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g346c9fbac413",
+    "type": "intl",
+    "src": "Новости Беларуси | БелТА",
+    "title": "Нидерланды и Украина подписали соглашение о совместном производстве беспилотников - Новости Беларуси | БелТА",
+    "date": "2026-07-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNUUtYbkFQUE9HNUE3aDgweWp1UjJKV1QtTGNRbzVFTUJYRG0ySmZZcWZPMm94aU5yWWZESFJhUUwxTWw1SEdMT19qVWc2aTdBc3JQYXZMS1RFTnI0TzRqUnZkSFRzTWxjV1hRb2ExbkhMeXQ3N1prb0VRN01GODJVbmVpOTN2LTVRLVk1b0N0NkczbHJyTlgtdDlFYVdsZVlWdjFUOU1tRGJiNlVFb080ek5DV2x5SkoyYlVIZFowaDg?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7c7cfb8759c2",
     "type": "intl",
     "src": "UKR.NET",
@@ -3592,6 +4154,16 @@
     "date": "2026-07-06",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQalM0eEhCWEFicExIU25sUEdhWlBudU9NVy0zTkhHTWxxR1YycmdZZUR2ZHd5R2ZDcHhVUWNEYXRGOHdVOVRnaHc2cEx0ZDZRODdKYkNkYjVlbnktUkNBTFFGMEZVTVpMczhiT0trdWhDeG5SR1liS3ZJbWRlRlViWkpuVlNkbzVHQTktODdPeVJ5b0FyYmlxXzJYVndyZ9IBowFBVV95cUxNaExRRmVNNUVCMGpWNFBrUlhrR1ZDaUpNQTF1dGdyNXkxMG9mQ3VDQUNwTkczN09jbWtYOFYwdm1SQ3Jpd2pWbnlsQTBHVzVNZm9sV1ZJZFBPRkZxODlycjdRWDJoc0o4ODVVUm9FOGJSdDJ2dUdxa0FWVmZvbFJQaUI3RmtaUjZXbG5nM2NBRkNuN19Hb1RsRnRCU0dHeFg3MTIw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5f8db93b5202",
+    "type": "intl",
+    "src": "24 Канал",
+    "title": "Премьер Нидерландов рассказал, как заставить Путина пойти на мир - 24 Канал",
+    "date": "2026-07-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxObkVVeFBENlF2b1ROUElHdDkxd0hHNGM0S002ZW0zbHIya3hweE94ZWhhRGV2ZWlFYmVORG1tT1ZKc2dncjJXZDdHTlFrazlCdzR4dnBMZ1NHd1ZYTDRwX2hjTms5a2ZZemFITjN1ekZwaWN0a0NEQ3dRd2pJSmp3WjlNNFJ3QndFR2hQNjdQZlhBMVZPYVdFbDA0UGN4MHVUYXd6SFRUaHBsZ9IBrwFBVV95cUxNSHdRbVh1VVFLTWd0RGhnS0NnXzlRUDhzYkpnaWRWVHl2V1hmdU02QU1FME5CajItSVFDOEhMckxwMkZEeW1xQWFfb2sxb0VEWkU3cTZiQTB2ZVR4WUVZaGRqeVR4aUN3dGY2dnJwZmVfcUZubi1ZNVI5Nkw1TFAxNTlMNkc5WVRDc19UMTBDR29qbmpwRnFQdmpwRTN3NDRHcFFZS2QzUzUxSlE0UFFB?oc=5",
     "flag": "🌍"
   },
   {
@@ -26138,6 +26710,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g5b54188c6e90",
+    "type": "intl",
+    "src": "jungewelt.de",
+    "title": "Niederlande: Linksliberaler Premier mit rechtem Programm - jungewelt.de",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOYmctb19lRGJ2Z01FTTRTQmlIM05nUjI2VWYtTUM2NXl0cFl2RVRXM29QbmhBTVZxQkRRU3dqakpDRGZIekRBZmh3SVRmalFDMC1wdG1KS2x0alpFU3hlMDZtbmJmOVd0c3Mtbm53ZlNNbkFYdElGVGIyYTRYUU5nSHNiMjFrVVg4UnM0ZVktZldKN3hPQXFqV25SSy1WLWNFenc?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "nl001",
     "type": "nl",
     "src": "NOS",
@@ -29066,5 +29648,25 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQT0FHWG5KSHhpZFRDZ3h6MFB0R0NoNWZHT01QN1E4bDhrSEg1X1VDMktJVHltcEV3aDB0ZjhiOC1uNy1MOWxWTThsWnAyMWVRbVJjWk9QbjlGTlBnMTExQ2pEZXdUbkgxZDh1Z0llNXNnc0FKWlpTby1KVFFZS2JjRDhNb3hCWkNVQXh4WTd1ZkZqcl9pd0wtZi1OU2dRaHpFLWc?oc=5",
     "flag": "🇮🇹"
+  },
+  {
+    "id": "g126113262715",
+    "type": "intl",
+    "src": "apnews.com",
+    "title": "New era of Dutch politics opens as Jetten is sworn in to lead minority coalition - apnews.com",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNaGxBeVpMTFlNbUt4bURzTEJCRHo3YzBRQU5rSXlIRDhMX19Ba2VpRVJJRlJFZ2ktWkMzWGRjRDlNTU90cFpjSDZ0UEYwUWxnbFVmcGhKb0Q4LXBHaVl3QVRVZC1jRm5WTXFZVFAyZ1hZVkdFdVBKYmxrelJfSTVLb3dvVlFnWDN5YmsxdEdwd2VBd1VyVkhJOFlldmlsZVdlbGd5VGNR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g36f45ad28ee0",
+    "type": "intl",
+    "src": "n-tv.de",
+    "title": "Der Tag: Neuer niederländischer Premier sorgt für Premieren - n-tv.de",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSUhSSUNGSGl2Y2tOenlTVGt2RjhFQWtIcnNLcXVvREVHUmZlR05xNkxMTHFhaWpncVVwUzVOQWo2YXZ6d1RCVk82OGlDb1pUS0xfcEhCdERvUHdpdWVXV1hBZENWV2FaWFpGVTI1bnFLR0s0WlpDenhvUFFYaXU5OVg2UDBnWDctclBLb3lzWkcwenhQSGg3R3ZkNlo?oc=5",
+    "flag": "🌍"
   }
 ]
