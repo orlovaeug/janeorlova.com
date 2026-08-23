@@ -21,6 +21,57 @@
     "flag": "🌍"
   },
   {
+    "id": "ga36ade409dd9",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Catherine Keyl ergert zich aan Rob Jetten: 'Wat heeft hij nou gedaan, ga je werk doen!' - De Telegraaf",
+    "date": "2026-08-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNeDQyYy1tS3dPU25ZUzg1Uml6OW1zOXVMTkRlVkg3WUJXbllBVEhiLTVJZXFpMkZ6OUx0TjhyaGpKWGJKZWpiNVNISlBzbnBudHNjTWYwNTlqczNMcGU5eHNNWV8tVVkwYVF0ZTc0RjA4SWRuLTJ0bl9IOEJHa0dkQ3lhMm5iNWpWSGlBNDVYV1ZPdFBlT0l5TjN2VEt3NzVEZUl1WnZkbE5yT01CQnlPRDYwX0RWNjRrMXFnQkQ1blRpRXBYRjhN?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g544ab1e23612",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "JA21, SGP en PRO gaan met top kabinet om tafel over begroting: 'Druk neemt toe' - RTL.nl",
+    "date": "2026-08-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQb3lpUG5MMGdLbkxlamFYamdrQlk3ZWhaTmxkTENvYmNucDVLNGF5dkNEOVFMZkVDMjh1T3RqLTFBbHRWR01LbEFibnhlU0UzUjMxeEsxNHFOdWhtUHI0UzZZekg3X3kwRFZMc2p0enJVcndvcGgzZkxZLTRyREJSRTg5emQ2WGlLTjIwekJlRWJ3Z3Q0d2plWmNqd3FObUltWVRJV2tyZmoyYWFXRnYyQ0haSm1SeVU?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga37b618985b5",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM Jetten seeks budget agreement as opposition demands billions in changes - NL Times",
+    "date": "2026-08-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxON01lQzJkcm1tWXZZWjJmZGd0V1duQk5uSnRXNVVMSUw1ZjZOXzU0S1ZDWk85eHo5dVdaXzdUb1V4SXo5aGJHVnhtdF9sOEZaNlVrMHlOemFrQmF0X1BISUhaSmIwSDJPUVNVeTYzQlQxWTlWRFF6eFZrUVY4RlNmWldOS3BtT3dTVmtTNVdXc2s1VkxHN0tJS0RNVjQ0azVwdFZycW9JQQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gfb83fb1c0e63",
+    "type": "intl",
+    "src": "The Hockey Paper",
+    "title": "Jetten backs partner Hockey World Cup puts Dutch-Argentine divide in focus - The Hockey Paper",
+    "date": "2026-08-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTUwwUU5EU0Q3X3llQTRZTWgyQVlpY05oQUcwdTZPUkV3NG1fRk1EVnNpdHJ0Qmh5a3BVZVBkNWVKc3RYQ1JXSy15Y2RUTlhvWWNmME02U0xoVjd4eUNuaDNnSzJ6RmF6TGVOOE5oMjBnbm03SzhJYWdXVEgwU1Z1ald2NHlmMzk1Sl9kNVptaTZ4bmRDZVlyaEstWG1JTHNQLU10aFhHRmNCNkhGazdFeU9KT2xnYzEyMy1PcXZ3Z0dRSlRNaGc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gee5929855ea7",
+    "type": "intl",
+    "src": "Wyborcza.pl",
+    "title": "Holandia na progu nowego kryzysu? Młody premier igra z ogniem - Wyborcza.pl",
+    "date": "2026-08-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd0RhTF9EM0NQYS13T2Z2Z3dPT0wyQktSbUJLVmNTdXQzVnhTNzU3MW1DdnlmeWxQRjNsZVg1aG5iem1oR2xqYjlMV2NmX2lHS3IwWERWWl92X29Kb0UyLUhvQXg5dFlZNDhsd3JMcFI0VTk4LVRSam5VZ0x3aW1rT3JCd3ZPU2ttZmFOOFhGNmNOTDN4RWY5T2Z3?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
     "id": "gc108101f4dd8",
     "type": "nl",
     "src": "De Telegraaf",
@@ -153,6 +204,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSk0xbVJkQVhJWktJMk5GM0dIdWZ2UGRWcG5HTEVsZGc5SG1tTGU3VWgyMnFlMDhnR2xvYUwtS1BPX1k2REp6dWVPZXVpaktuaHNxTF9KVm1LWTBZSFlWSVU0ajhVZ0VBRjIzZUM2QzJLTmg2eGNyN0x2UHZ2N2lDMnJvWTR1d3NsWHJ5ZXNOVTZETUp3QVFTdUhwVEpQOWpPTGtR?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g48f61b943180",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "Jetten zoekt alsnog steun bij BBB: zonder die 11 senaatszetels geen begrotingsdeal - Welingelichte Kringen",
+    "date": "2026-08-21",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOWpnNjNCWWttaUprcnk5cktLWEpqS0R0c2JuTEFQTllSTE5POHBYczhfXzJETWNaalVyZGxSWkREMEF1ZTR6WEU5eFQyNjg4ZUxiSHdVUXFkbWRTTGswcmx2ZXVGSFZSd08zb01OU2NhdF9SWHFlbmhldzVQUlNPbFFWc2ZwalEzeERfM05BNFE3YVU5NFhFV2I5Y0tTRmNwa2FJelBicUVaQUVLUjFPalZlaFVhYTRnOE1TMDh4V0UtV2plb1E?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g117487d19505",
@@ -507,6 +568,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdGhPUk9qOGdpOHB2bzI1MVdnMDloQ3hGZVBOekpUN3dEWVRpYWZLamhTU1dmWFJMSkhvWU13SThybzBRNlFzcnVsbG0zS1EyZW1ta0dQdFhTd2FGSGZzSkpDV2h3bkZnTVN3cC1ScDlVcFJlVm56SDBkNW1TQnZJNVgtMHowdXpoQkprV0haSlU2bEp3cy1vVWp2MDlQMFJ1cGhmYzB4ZTRRM0NlTnBwd2JUSUtBOWxKU1NhTnBGbw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g68909620dcea",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Steun voor premier Rob Jetten na ophef over aanwezigheid bij WK hockey: 'Waar doen we allemaal zo moeilijk over?' - Sportnieuws.nl",
+    "date": "2026-08-19",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPQnJ0MVNSc21wZ0w2MUM3d3V2MHpDdWUwd1lUOTdXZ243SGJmaFc3bXd1bEl6QnprSXFyWmE4RzVhdmd3WkJYVjBZXzdHNU5OckVHNGFYRl9nOHRCQzhtT3J6U2lETmo5Y3RaVkttdTI3UkFCeklYVmNCY3NtSTZ3cmtpd3BsRkRYbVlHcnJMbXhPTVFXdWhtZ0FLREktV0hycHNNMUR2cmtKRVZCWk1PT2xFRlpoTnhjTVlHODZoeEtlVk1tUjZWRmZneEhnZmRpM2JkeUdCa1IyT0RlNkM1RFFuUjhhcC1aVjU2ZE9lMlJnUmwySGxYNEFpbw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gadbbda1afde6",
@@ -993,6 +1064,16 @@
     "date": "2026-08-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxQb0R0cGZLakUtaVAyaElEeVczY2ZBV2daYmpKVVJzTHVQSERFMXRPZVFuNno5RVIzLWZnRUVZOHRYWkktbWR1MUN4T2RKT3g4YVdfZHFYVy1iZjJ0cHBUUmpWaFNjeTFPcEV3ZGdvWERzS0l6RGo3X3VkcHozdVE0US1CSlFISlpnQUtPcnNhbEg1RjM3X2pqeDM5Y28wWjhaWUlQVVVzNjhvV3lhLWFkY3Z2d3RoLW5pa1o4bnZkY09GMXQ2M1JzNUpEaHJxb3lTd1VZRzFyUWFQWFQ1WThCb3FTUjJhblJPOUVtWGYyUmR4QXQzeV9OemQ5Z0lWSFg3aWhmRGpQSWZUbTVnb0NTZS0zM3hLNWtzWEdlcUxwUEw5bkJhcnZXU2lEWVAxcHRESHRTWjBMOUNhSUxRMTdBeW9IQzlYZlNzM3lDTg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g260a291a50b8",
+    "type": "intl",
+    "src": "Queer.de",
+    "title": "Hockey-WM: Rob Jetten gibt seinem Verlobten Nicolás Keenan einen Schmatzer - Queer.de",
+    "date": "2026-08-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9JZGtPQ3FLT3ZrVW9GeWk1aWhEbm1WNlBTcWVhQnBoeGFETmhONTV2aHJwSTQ4ekVyUExLcC15elBINGxNb0ZzT3BWSUhheUctSkNoT3d6a0FpZTZG?oc=5",
     "flag": "🌍"
   },
   {
@@ -2598,6 +2679,16 @@
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONlBRZmZmRldSakpJc0puNFRCNkRoeURFZHJHd3JPX2NYejgwVWdzT0RKVmVzczlURXJvYy1MMjB5ckFhM29xOFVYdE5LUk5sLVlCWmVVd3prMDM0V3VYWUtyRkVZVElXTE5tQ3o2dEtRbXBpcXBwWkhKM1hBakVSYUo3eGpmdEI2eXhtY2lpM2taLVltblYzU3ZCeDFyMXZET3ozcVdYV3pYdw?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "gd78ed30e50e6",
+    "type": "nl",
+    "src": "NPO Radio 1",
+    "title": "Emeritus hoogleraar: 'Einde kabinet-Jetten zit er dik in' - NPO Radio 1",
+    "date": "2026-08-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNMXRCRlBOTnI3YmFrNVJROTNva0FZMWVaYjFnVjdfMUNZR0cybmNHWDdnREdiSjVtMHV2T0pSWVFGV1hWRHhSX2RRbDBudHk4bkVDSWdjbW5CSnR6MjdadjNqMERneHRTMlluTlRIbUZteEEyMW5uQXZjTzFwZ3FrUWk0MXlVZUlnSDhZeTVaLVk2YWluejUzZlpYYlRiMWJjd3NwZ1NoYVdLeExkZkxYV3VteHpVam9jVWhvdWRKc2pKYlpFa1JVN21LTGU?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g4ae24f5ccbde",
@@ -6885,6 +6976,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbl85M25ndEprVTZtd1hoREFSZEFvdDB6cDFYcElOMUxXdXdLZV9IaHduV3BNd2ZZU1VmOWtHMlhKanY3WEtGZVQxS1lDbW12cDlVeGFUUDBkTk5VX0RGcE1ZQ0JhbG9ORm5SMGg5MF9OdEZHand0R21FeG5FVWlabl9qbHo0MkVlQnNqMjhCOE51MU5iVE9WQkdRY2syOXRsVW1GblROSDUzUktoNzl1ZU5QeUFrRDFuRkROX2hwZUZtTHhQUUlSV183YXR2TVRBM1ZzRg?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g2978f15a349b",
+    "type": "intl",
+    "src": "La Voz de Galicia",
+    "title": "Países Bajos cambia su estrategia contra el nitrógeno: menos cierres de granjas, límite de vacas y más dinero para innovación - La Voz de Galicia",
+    "date": "2026-07-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPNGMtYXNDTVlGd1hYcXBUMm41R1hVSE4xMXNkWks1MjdvanZIWl9fN1ZSVFhQaWZFUll3bzBOcDBjdHBKU2pTYndLQmNwc2pQN19iSFA1cVlDZUU0TnJVbHdzbGh2Tk9XYWY3UkZVb1h6dDQxcHFWSlNvXzdaVHVpWVhiaUE5WWhKeTNfSXFYM1NydGhkd2NKRXFDQmpiUU9ob1VNbi1TNEQ4MkhfR0xLS0RISVlQeHl6bnZkOC1PSkpPc0VCMlpBdS1zYVJzbmlwcllHLUFsSFh0ZDkzcmM2SE1xME56STNnRzdMX3hYR19GNHRsRnZ6eXZ4dF9uTnY3NWRCM3RVeVc3Wk5HbUd3d1ZzSy1ZMVFHUWtR0gG3AkFVX3lxTE1Ka3ZLUFB5WWwzUWJscll4bjNVTmg3N3ctNzV1cnE5elcxdlFqOVZhNE04SkZBQ0w0WDdOZ3YzWlhKVDBfVkpLbEVpbVZsQzJvNk5xb1luWXUzejFkcnIycVZHd2JWbVlrMjdhZ01TdHVwYnF2UEFNbHhsQ3lMLW9KeFZlQzdEWG5aRXViMWFMUWF5dzUwYzAyZ0dJenAtOXRxODBxYWZnOUYwNHF3U3hQV1ZMRVlzbnU4bFlZMTJLeUpRVlZsWFRQSHBnMDdQV2lyUDR2dVFGMmZBMXVTT1hhLWFBZms2X05PbUtrYnlLOHBhSldnMC1QZ1B6eVRxZGo4VkpxVER0ODBUMElybGZ2RXpfTTBLc3JqbGVLNXdsTE1ZR3pjYWxOWldzVDQyR3JsZHRfYjdJ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gb2a17b4da396",
