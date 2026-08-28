@@ -1,5 +1,263 @@
 [
   {
+    "id": "g9e21f596a8d8",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "De oppositie wordt steeds chagrijniger van het kabinet-Jetten. D66, VVD en CDA zijn te verdeeld om meerderheden te vinden",
+    "date": "2026-08-28",
+    "sent": "n",
+    "link": "https://www.nrc.nl/nieuws/2026/08/28/richting-prinsjesdag-blijkt-kabinet-jetten-is-te-verdeeld-om-meerderheden-te-zoeken-a4935361",
+    "lr": "right"
+  },
+  {
+    "id": "ge7078a46a8e2",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Jetten worstelt met het probleem dat altijd sluimerde: er zijn drie bloedgroepen in zijn kabinet",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/jetten-worstelt-met-het-probleem-dat-altijd-sluimerde-er-zijn-drie-bloedgroepen-in-zijn-kabinet~a87b6a83/"
+  },
+  {
+    "id": "gc92bfb6fa6ef",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Hoe Jetten met spuug en plakband zijn begroting in elkaar zet",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/hoe-jetten-met-spuug-en-plakband-zijn-begroting-in-elkaar-zet~a9b008ccf/"
+  },
+  {
+    "id": "g04e8feb62786",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Het ‘knettert’ nog met Prinsjesdag in zicht, maar van een kabinetscrisis wil premier Jetten niets weten",
+    "date": "2026-08-28",
+    "sent": "n",
+    "link": "https://www.trouw.nl/politiek/het-knettert-nog-met-prinsjesdag-in-zicht-maar-van-een-kabinetscrisis-wil-premier-jetten-niets-weten~b71f8766/",
+    "lr": "left"
+  },
+  {
+    "id": "g142d8ccd3db7",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Jetten over begrotingsperikelen: geknetter in coalitie, maar kabinet valt niet - De Telegraaf",
+    "date": "2026-08-28",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMExtal9yMEJacGVnVWFSNzlTY2JITzVUZnpPejRCdzNyT2lhZGkyd1FOV1ZhOXNvWGtIa1pkbjBSY0ZDeWdDd3ZDaTl3ZWR3SG40ZXdDLVh3Z2RRdGNvRU9yeHpjeXZ6RDdIbXIyeUtsdldfQ3RUWEtpaTZ4WmNPY0dWY3RDQ21NTzloLTRRRkxUQU91S3Y5S1d3bkZfdnMtM1A5ZzduYS13eEo1NWhxN2ZZZGlZYnpOOWU1eXFYVUFyNURiU2RWaHg0WWVVQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g023e77a96e50",
+    "type": "nl",
+    "src": "Haarlems Dagblad",
+    "title": "Jetten condoleert Noorse premier met overlijden koning Harald - Haarlems Dagblad",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVTlaUkdCNW5iSWRmSVFrblc2c0pHQ0p2NDMteFhWYlY0US16UGE3RjFPVnVQZVREUVJNZ1FEaFJpM3pwMG44Y1h6cC1KQVNENVdKSlhXckFTU0ptbGdoZU9DU1B0bUM0bENUWHYzWVZGM1pzQXl0c3lWZjlyNlNEY2FsYXZKT29OZ0c2bkVzOFNOcDhwNW1BSlRYLTI4djIzU2RIQnFpYUE3eW1UMHpTZ2V4VEtySldLWkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd94ff77a0030",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Jetten condoleert Noorse premier met overlijden koning Harald - RTL.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQbldCbEVGMXRMMndlRElJdzQ0djMwZWc3bTV1V2hfOV9jbmNQcktIakpPUWI1Ny1MSDJCVmVaZW1PTGdrVHZ1QV95N3FaSVA1NGRKRVp6MXppeW02Y2RyakNzaC12TTF5UWg1QjBsUkpyempEV0JTMzFtN1JDX1pYUHBBOURqZ1YyV284YkRkUDFWMng3a3NaS04yR09xUGVpYnBhZUdhV2tmamVGNk9CTURsUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7fb1e596311c",
+    "type": "nl",
+    "src": "Hart van Nederland",
+    "title": "Premier Jetten: oppositie praat niet meer mee over begroting - Hart van Nederland",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUnFFQTI5TTJfVk9icm03MWZrc21hSGJ1azNya2F3MWtkV09KOEVkOXVaRlFzalNCOVo5WG1QY2hkM213ejlTS0pXejVDOXNJOGZfMjg1QW52SUZBMUFCX2haSy1PeGN6cmJ6V2NjdFlIWmZOYzIyUk1GUmRlVmxRMnJBcVZXS3BiUXBEQ3pDT2NYVXlpYlBhbktTYnNHSVpPcTE4czZSUENKNlBBWFRJVWQwOVBRNS03VUl2UmhweFdtUTRJ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3091b8bba189",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Het ‘knettert’ nog met Prinsjesdag in zicht, maar van een kabinetscrisis wil premier Jetten niets weten - Trouw",
+    "date": "2026-08-28",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPT01FQXg3eXNkbkZ2SWt6bFpoMDZwN1BWSFVwdEVNUGpxOW5NWTlTcXJMX1VuRlRWa3pzdXRfWmptWGljOW8ySDd4UGZPcGc0YnNpUTZfMG9iWEtyUVRzalhZQ2hnOW9TbE1XTUFSaV9lNGVya3RpS2E5cUlKcGw3Wm5HZjBXRG9DSkJ6OEFIN1gtcmlSbFVtQ09Gc29lV0R1S3Vwb19MYmp6OWZrVmFxTTBCV29IQ2lDWUxFVmxwRG9hR1pBcFc3R2VJQlhsSGhLR1B2akFuOA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g7895075bef80",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten worstelt met het probleem dat altijd sluimerde: er zijn drie bloedgroepen in zijn kabinet - AD.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMS0xSGJoRUxLd2pJaGFMdkZTWVU1SzVSUnNnbFVCdXRXd2RabU5EemQ3eEdPTmJGNjd6SDJQTG5wNzREWm5PcktFb2JiaTJ1N0x3NnBLMXhrOUd6UjMteVdWdE9jMldBeGRFTzhsUGZlSnB6cmRvbjFNbzRUM3phTlBaZGlOSl9ROFRweDVTUGM4YmFGQVZGU25YVGFmOEdpeTM5V2lKMUt1aHhuTlVtSWtkSUdfOFQxRUNiejZpVlBXajV0ZXdDLUo5TE8?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4633f6b5175b",
+    "type": "nl",
+    "src": "Metronieuws.nl",
+    "title": "Jetten condoleert Noorse premier met overlijden koning Harald - Metronieuws.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcFlvY04wcWxfQ0RmU1hmVktjUk5sMXZleXVicjBvRGFadnl6ekhhYWxNenhEb05Xb1JoaWxfdkFmTGZwcEdudUFibzd3bmxyUmlrSHVYQXpacDdCM0pXRzJLaTZlLTI0UUNCeUctcTI0SUF2UnY5c3A0X1FZTF9QR3gyTUcyM3BkNXZDWmFLSTlUa1pNYkp5Z0pST2t3TFFkYVpXVGtwVkU3TmhtcTUzckFwQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g499694b54db6",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Jetten: geen onderhandeling met oppositie voor deadline begroting - Reformatorisch Dagblad",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcHRJZ1F0SWt2c1VsYzVEY1FsOXJkTWlwTENNZ3pzLUNDbVBBYlBqTlNibms1VjU1WHB4ZVVqeFF0VGZ6U2dZX2thd1hqOHY4RDBtUlM4aGFfZHphU2hjUEhBaV9OQkgtTHA5S2FvcFM1U0h3SVFrNkpUSnkxcnJnTTJiQV9MM1pCaFB4aVdtN0EyeFFBcXFV?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7863c28dc08c",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Oppositie niet langer aan tafel tot aan begrotingsdeadline - bnr.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOV0JWZU9IZUozS2hsMkd5bGpFRTR5bTN3UVNYdlZGTFVOVkIyQ3lHWFJiOElBYUVHYjlRdkE4VXBaZjR4blQ3OTBIbDhYbGhQVzZaZUF6V2Q2RkVxNzI0Q2ZEeGFvLUo3SF9EeXVrdy13dXZ6UFFfTUdlUXlDLVNGUkg4NWpHRW9MeEI1b1BVTWZ2akdpRTNvdno3S3JVemlQN2ZIdkRNRHVsTkVwTVE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gaab527d989a4",
+    "type": "nl",
+    "src": "De Speld",
+    "title": "​Yeşilgöz wil van Jetten weten waarom VVD kabinet zou moeten steunen - De Speld",
+    "date": "2026-08-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ1JMbjFYWWpWczF6eG1ZZFVDMGZ5eWJtZTRlRk5ucmhGcVNDS29uYjJUbEdFOXlMeW8tUmVjRXpCTnA1dEUtdXVCNElxRUJmZnNTQS1uRVZ5eEJheVIxaUVQNnFkay00SkczbHhTdGt3ZEVkVEJjM1cyQklFNkRyM3NTdzhsOXRON3dSWTNZZF90Y3ZiR0pCN1hsVTI?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gee5df6534849",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Belasting op vermogen gijzelt begrotingsoverleg: VVD staat lijnrecht tegenover D66 en CDA - de Volkskrant",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNc3pvNUU5cGQ3VG8za2djbmRhR3pJWDhUcFQzT1pDQ0x5LXZfU0pxdGdHWVJ2MVRpQm1nTWE0WmFoYzhKYmJxRXZKLTlFVk5ITXA2SUpGbkVPbFd0VVp5MEIwRS1ydnhCM0ZBU0luVmJtX0NaMzhEb1AzX1hOcFQ3SEl3Q1VjWFNPc3JpRy1rQ0pNVFBLcVpLZmFDZEZvVFdZNjVpb3JMZmg0bWRYOEJKYTRYZUlSejhpcUJwRWhuRVhudVBtaU5ySWtYV1BhUQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g7913000c1af1",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Hoe Jetten met spuug en plakband zijn begroting in elkaar zet - AD.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQTFQUWJJX2JaRDZrbGpjaHRlRkh0WnJtcnF6NWFmMm1ROHpIM0pWNF93MnoxWjhlT3lWRWZETjJCVVpyM3NobUdDSC1HTTlKQUFaQ2ZHTEQwQmMyV09zRmpIdHJWSW54akVFZG40OTV5NG5xRlUxdUJ3a0lrd1c4bHBnS3RERTJNbmlCLXlSS0g4Yy1ac09ZMDVOcVQ2eU9Z?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdda2653311bd",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "De oppositie wordt steeds chagrijniger van het kabinet-Jetten. D66, VVD en CDA zijn te verdeeld om meerderheden te vinden - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-08-28",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaHVZd0tNNzAxVXFnZG9lYWV5MVBFZFhMVnI5NGlIM2FEa01lcFVhRWxJeVVxcmJEX3lpZ3RjSE5XVUZQdjFpR2lKYXp6U2E5TWJUdTZISHlDSURGd2p1bTA4SXZNYUU5MVdxQmVveDFxZFktclVocVZlMlYtdkxoajRIbDFEa2dlOVVKWlVTVHZ3cGQ1aWdvQkE1NGk3Q3ViZEVHblEwbGM2TXhEanhvbmNiVERoV1pvdzFQQzBxVWszS0djZGMtYg?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gfaa2950301a1",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Nieuwe windturbines mogen van kabinet-Jetten dicht bij huizen komen - De Telegraaf",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZlp6OE11TTJNWWl3SjNQSmptM1FoZm9ROG9Xd1k2dzRzUjMzeFF0V2FoY2lTLWNMTmk1akJZM0l1YjBpNU9qbVZneFF5V1A5X2ROSFk0azVyVkRkN05FNExWNWZPM1h6NjZVeE5ORFUxUFh0VE9IbkpjeWVzT25sbVBUbHgxUlE4RzBlUm05OVJicVFwRFZBYWJUN29Zc2RVUHVVRU81TFVNZmZ3eVdxUkN5R0cxYXM?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g32fdeaa2ded9",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "D66, VVD en CDA komen niet uit hun begroting: Prinsjesdag wordt een ongekend experiment - Het Parool",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdkxJRE1oWThneUpFcFRYOWRsNjB0TjVQU1RKTnB4MjNQQ3pWMFQzUmMxM1AzV3JOcGJtZDA1bi1kNW9zRGozeDIzTWNmRUtRSk5CM1BQemhYcXRhNnVOc2VoZm1NeVdSS3JLblFkUFJhR0YyVmpJZWFxSjJ4XzdfWUwydDJOd3VXM2VrR3VRM0xCREE2Y1J1RjFfR0VGeGN4WTBoVVVicVlqQVV2Wms1WTB2d2dEekNXU1RsZUZ1bHl0VE5SU1E?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga4d8c466e5cb",
+    "type": "nl",
+    "src": "dub.uu.nl",
+    "title": "Jetten onderstreept extra geld voor onderwijs bij opening studiejaar - dub.uu.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVkpPWm9TWkpVaGMwak1obWd1bUl0RmVaQkJ6WFAyMDlqemFQWlBXNm40YjBjNGpjSkFWYWR1ZEZyWEpPUTR5UExJNzNhdExpR1lMS0xxbFJTaHJtY0IxbFdkTUxsUDEtaXRfSGpNam53VjNBd3RKVkpteXVWWjV0b2trdzBBS1hLWFJob2dySnJqTWcwa2FTOGpXUmo?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g49d67575ba21",
+    "type": "intl",
+    "src": "attitude.co.uk",
+    "title": "Netherlands' Prime Minister Rob Jetten's Attitude cover shoot in seven powerful images (EXCLUSIVE) - attitude.co.uk",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaDExQWp4aDE2NksxcTVUbjBTUlhMN3hnLWh2d0FUYW1yTEw0dDFBWHE4Qkk1WGJrM01YTGJpQWhTLVZaNUNkXzFYTGRsQW91YldJVG5jcjNOS3FpZ3ppSTBzUUhlTUZhOXY1dmpFX0pjU2tsTmZHQzA4WWtOcnY0S0dWc1A?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf45f1c85b3e4",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "PM Rob Jetten says budget talks with the opposition will not take place before deadline - NL Times",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQWEFrNU4wUkxkOS14TjBRb084SWEwb2c3NVZ2M2duY21WUFgtYTRKb3IzbWxRN2NMeFc2Y2Q5Y3RFZE5HNGI3ZWp3bnBVRHhyVFZuUUxuVUF3eFFVUG51ZG5OVnFJZlB6M21HRGtBamdBWGhWZE5lcjFMNDcyMFk4Q1Y5V0xMVmlRTDRockFzUm5kRUpaektsQlRqT1lrUQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gd91aac9a47f9",
+    "type": "intl",
+    "src": "Yahoo Actualités",
+    "title": "Macron ira à Londres pour inaugurer l'exposition de la tapisserie de Bayeux et rencontrer Burnham - Yahoo Actualités",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYzJtQi1WWGNhazVLYTVCU1E4VEFuYmppNUxPQTN4SHowQW9uUXdMR3NGS25ZaTFUZkdidjkwdTFWdmIzZG1hOUhDNm5mVmhaeGlLWjgxdldDX2hxSjlRYTZjUDVxUVNvbHR0ODJXOXhTVnRNS0Vab0lRUHNJY2dQc2xn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3d36967850ef",
+    "type": "intl",
+    "src": "mygayprides.com",
+    "title": "Les moments les plus viraux du Premier ministre gay Rob Jetten et de sa fiancée, star du hockey - mygayprides.com",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNV2JMbmRScjM3bHkxbXhMXzViMkxHd25PSFo0bDFFYzdFbEpKSFdSWnFkcS1GRlQ3TWp6c3QzQmVyS1ZZRExpZHp3Zi1VUFY0N2VTbm85Z185bHZiczg1RDQzQzM2Z3kzSzZPaXNPYTRlS09JLUNLNkJVOVk2STJUbEZYNzdFVWxxRUpjck5aRWZOaFFtY0s5VEFGbFc0czNMS1NOZzJEa2tmZDdVeFkzZEFJRm9NVVpTSVh3UVVlZjA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g47c435f2594a",
+    "type": "intl",
+    "src": "31mag",
+    "title": "Finanziaria in Olanda: colloqui in stallo. Il governo e l’opposizione non trovano accordi - 31mag",
+    "date": "2026-08-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbVVpRDktX2NTbUFFWjFMTWJMczlPVWxHcHlqOEVCa0FjZFlITk8tbklWaUZnYzVVN3VwcTBfV0RDaFg4V2ZSR0JxamtYeUc0MnkzcjJpcFA4Y19Tc3FtcTloU3g1ODZ2V3dSZG9SWkZzLS1mWDUyQi0wZkdRV3dUcDlMWlZnS1Y0b2I0eXpPYnhaZWhvQnFXTEVUMUYwWUREODhTQ1V0Vk9McWh2?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g05ec042f2389",
     "type": "blog",
     "src": "De Correspondent",
@@ -69,6 +327,27 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUFZUZzlYbjZNanY4UGFFM1pZOWRkNlVnQ08xdXZObUVhNFo3X3k2eUY4cHBiRUxvYmltb1lNTUs5d2tUMHpfbC1XQk4yRmdJclBURzVpblA0NUVNa2lFWncxaUhLN29ud3ZaNWgtdVlnYXRraDlxcEpJOXJjUFV2SGYzOHRyWDZCdXd1bS1rbw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g9d49dee2e4b2",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet-Jetten blijft steken op het punt waar het maanden geleden ook al tegenaan liep - AD.nl",
+    "date": "2026-08-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRHZmaVk1Sk03elRsdlBmeWNtcWcxeTNCVlVWakx2QkphV0NuQkgzTkM5UVFCUnN4S3hpaURKY2tMMklRYVkxTHhCV1RCXzlNX0dBZlJ1cy1meGJVamlTRkpMOUY1ZzlXTlNVeENRSkZBNndIdENlUUJMYXp2eTBremswak9mY1dReHpHWDI2M2FoMUZZRmVwM2FCZ2EyYXBTa29HbjVtdWh5UC1PVEVENVdtUXcySHBiZGRrLWtMTmg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g79fadd9e87e8",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "De onderhandelingen over de begroting beginnen steeds meer op een ‘miniformatie’ te lijken - Trouw",
+    "date": "2026-08-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWGxBSGk0eUx4V0dPYjVNYkQyRUVGOEd3VkJKNnVCLURNSk5XMUN6SnBFelhXaFRRdWg4TmVLTmczc3FnQkJKbDlrdW5uQXNqX0pxZ056THpWQ05MV3RmdndNSWdFRkMyd09WVUpsTHVSaDhLOGx6NjVEN2I1THpWQnNYZkxMLXktYThwMjRueXNKX0pIMGlwUUNPX3JDVmlaZzI1djhrYTc2Nl9XbVFMeEw1OUlrSldPN2Q4VlkxUWlBdGt0RzFv?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "gfda41d5499fd",
@@ -1720,6 +1999,16 @@
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcGhBZmNDUHhhVjFhMFpPVGtHX0t5bTJObXdfb2dtUkdzNXBfLTd2QkhLeXE4bE14ZGUwUFdfeHRtTnM1NXVPeWQ5aTc4amktYzh2X2szR25wZk9idENKYXhIakhwUGFmNDlCOWlWZHIya0otcS1qTGdfclQ4Y09ONkhLV2tDeEZkOFB5TDA0QWl2dndnbG5aYTJfM0dQLThlS1JBS2hGNkpWWWhFNVRia3lIX1VlRlpObFYyT0pzUUViS1pVbzYzdklhY2FvdGFjaXhzYw?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "gc425acd33586",
+    "type": "intl",
+    "src": "Ukrinform News",
+    "title": "Korezkyj und niederländischer Ministerpräsident erörtern Maßnahmen zur Stärkung der Luftverteidigung - Ukrinform News",
+    "date": "2026-08-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNNzRBMy1jb2hRdzYtYjZLem11azF6dkdRSEtNZ0NzZ2NRaXhjUG9LbWQ2Rkx6UDNqeG1QWWFGLXRSbnFTNlBQZVp0MzBwT01ncE5LZ1NCOUJ5VktSNGg1enNoemxmdDNBWG5MNmQ4VnNsRGRlZ3ZJSkxzelZnQ19UcTFvQ3JyLVBvOGNpd2h0MVRmcVRhbEs1QVVNV0g2X002d1ZqbXZoYk5oaHVMcTBSN1U1bzh2VVBKamlFbEhlZmFmMGlEQ0tTLTVRSEt4cGRqZjlhRFMwckJmTF9tYnFLQUNuRFJXY2FV0gHuAUFVX3lxTE9wc3c4THFfNm82M0lVUkt4YTJyUk9FQ245RDlSbkhIcTRITVRpRXIwR1ZMb1c1WHdVWmxrNktic0ViVG11N2FHYVJEWkdOZjl3NW1iM3ZrX3h2OXRaVDNObXVNWlpoLThacmRDcG1adlp5cEJ0YWtNdDV2R2V2ODVzZHU3aUpwdEJVeExMaE9FTlVxalRoVUVjdXJvbVp4ZHJFLUgtdHYwT2FVTGN0bVVJdnBHcnhiY1FQUGh0UUhUN2Q0cDZub0ZobTNHQVlpQVZoY2hlU25TZFJUQlFEZ05ESHhYOElyNDVESWZTZHc?oc=5",
+    "flag": "🇺🇦"
   },
   {
     "id": "gaffb32582cb6",
@@ -9336,6 +9625,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g803106787dbe",
+    "type": "intl",
+    "src": "RFJ",
+    "title": "Les Pays-Bas présentent des excuses aux Moluquois transférés - RFJ",
+    "date": "2026-06-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPeXd6NWh4TE55aHVLN2w1aW1TVm1yb0kzbTBPdXlESXRLQlpBNWlOaFFLYnFzNGNPanI4dWdoQ1lHSWVUcmpMTUowd0dDQnFTZEFDNHVwVWN2YmQ3aGZ4M0pHUENGbEJrTTRTYkNlUXNhRzBqa2ZkdmhUZDNHTmpadnI1aDVpZzNHVUozbmdHWjRyU3BsUk1FQ19iZ1E1NDBibW1OVWJDNA?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gf17f98059a96",
     "type": "nl",
     "src": "De Telegraaf",
@@ -15988,6 +16287,17 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcHVXYjRqLS1Bb3YyQ3dUWlZ3LUhDWWJxSl9LaVJ6a3h0U1NqLUtyeERCVmVDQng1eENRU1pVaDZPTGltbEU2aEhmS3lFNGdPQUtITDRLUEE4Nkh1bFZ3cXdsMXBENC1SeGdYSC1LRGZMZVZEVjNBSlFtbG92Nmk4RXA2LW54OGY1ZXNpRE1BMlV4MG03ZklDcEZobkM0Zw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gef00fe2fa112",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Hans Spekman dreigt met landelijke stakingen als kabinet-Yesilgöz AOW-plannen niet intrekt - bnnvara",
+    "date": "2026-05-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOGV5MWhKSTNRRGdEa2Y5N2c1X1EwQ00zM21vSFRaWlV2SFo2UExkczlrMmljLUdhWnlYSno0ODE5UkRscnB1b09qX29pT3RUMWZTRVJVZWl2RnluMk9aZ0RKekRzNkFTYU9lSHBLSDBFMVlqNHRjTm9XUlpSVlpWSjhOVlh3NVlaWGl0M29NMzIwZ2pScW1iYjQwZ3NwWkZSdlM4ZU9mR2NzV1k0OWtkaEppMm5BUG56anJLeU1EbjlBbnNMdUpR?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "g147f00c44472",
