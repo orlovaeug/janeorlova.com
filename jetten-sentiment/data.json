@@ -1,5 +1,26 @@
 [
   {
+    "id": "gc8a5e6926ce5",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Verloofde premier Rob Jetten om vervelende reden afwezig ... - Sportnieuws.nl",
+    "date": "2026-08-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPeWQ5OWtzbHd2QU1FRDRKbVIxcEpOQUsyNkx0MGlJamhVWmxMOW5nRktYdUxzelZJV01IeU1QejE5d2dONXZsLWc3RkQtMXpPRzkwNHpIR3lvTktxY1JBY2dpTTFENjlTQ2pXUS1zWEdsZFJqR3ExLWIwYnlKOFlfVnY5R3VqS0oxYWFJZ2VscUZ1T1Axc2dURnZ0RHZONTZVeERNRmJ1VG93emRlUTRwS3Azelo2ZDJXbHBoLS1PZzBWS2NPNWRxYUtOTWo1aUZ1NmNjMFl3V21mdE5MSkY3NHN5dWRMQV9wY0RHLXFwSVZuTFRxTjhoeGwxTkU4TV9jX1pXNWotNA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdbd187de1a57",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Top coalitie bijeen voor begrotingsberaad, tijd begint te dringen - De Telegraaf",
+    "date": "2026-08-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeWRWTTh0M3EwV2VOWklPVl8yVW1NWGVhQnl6dUdSMTBQcTdSNFRkQ2l6eTdCaVdBUWZGQm5tMGJHT0s5VUNOelVGMmhMYlhPZFgyNWE2NVBGTmVRMzNnSnBfTXp5X2I4VXdNNDhoYm1uMjFMTXYxSXg5cEVvTTZ1V3pHOVp5OFJhWU5TVFBJaFhYWFNsSGRuUFlRMjA3ZjlGNk1HYUxGc0VSczNEY2IzenFqOA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "g23ca107e7c41",
     "type": "nl",
     "src": "de Volkskrant",
@@ -348,6 +369,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRTF1bndPeThRZF9fV1g1S1VLVnY4SEZ0SzIwd1hRZGF0QlJmdndya25OTGh1T09GbU1NNmZIUEpLOFRvbV9uM0ZhQU5JLUszT0U3bkFFQXBXUzQyLUFSbVh2cGN4a1BtdFJnaW1mblNDbUc2N3pOR3BGZ052N3RoR2hhbjhfellLSDZXOWNfYVJURC1BRURVdU1kQ3hWTlBPaWc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g41f5f56a0d69",
+    "type": "nl",
+    "src": "Metronieuws.nl",
+    "title": "Jetten: geen onderhandeling met oppositie voor deadline begroting - Metronieuws.nl",
+    "date": "2026-08-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQWhZM0RLQkp5Nk1EbzhadnhsdXZPclhlczkzajdXQUpLcEhramR0Vko2NVZqQnlmT3FTQkZ0N0U0SE16bnNxTG5VYzhwVmhtc1ptTGp5NDdjSlpnMXgwX09KVWNwS0loc1h0YjJrMDlTTEJDZ3UtR214THJLZjhWY2tJcFVLTndEQTJiR21tTUc1bDZTekFjTV9NWGdrWnhoMFg5WHVCSXRNdlR0RnRCU1JTVQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0c1a8c7f118f",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "Kabinet-Jetten blijft steken op het punt waar het maanden geleden ook al tegenaan liep - Tubantia",
+    "date": "2026-08-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOd2RZbkg3MmhlaWtmWGhxcFQxRWt0YkFrNEIzaUhLOE1xSUppSUVKWnB1d3k1Z2lyX1pYU0w3Z3JPS29LczBaamgydXdIX29MNk9rYnRuazhkWEQ5M3BGWm5obVhLZi0wZDdGLTFhczhuR3VoN3g4ZFNqUUpPakdSUWM0eUZJdWd6d294ZjdUOUwtSGZ0MTlxbnliZ25CUlhwdWx1bzZUNEJQUzd3ZjZCckZNN1otclJhTHRESXR5TUNtYWNiMDZIbg?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g05ec042f2389",
@@ -743,6 +784,16 @@
     "date": "2026-08-25",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPbW9DdVNaUGI2OGhSYXpkTTFENkVKRzRzVUNFUVVRMmRUU3BlMGdxOTlfS3pWQ2NVQkN2SUJ0cGR1NC1INkp2NEV2ZjB1UmNaWlRtbmRtSlU3M0dOUmVUSWwwQlJ4Y2FwbWMzWlhWZjU1N0k4cWdQTVhKUDd2S2JxeDlJWVpnUU9FalRDMmJvcFdHT1o2TmpyMW9xY2pvenNxS3F0Z1lTSkpudWRFeENIbkxoZXZTMUJwTTI5cWRZekVNeUZ2TTRaQ1JCLVlRVGx0UmRoNUNSZ05yQ0V6NDVER2M2RTU1Z0lFMy1oa2ZMRzc5UmVQNkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4b0e7a5b0081",
+    "type": "nl",
+    "src": "Universiteit Leiden",
+    "title": "Minderheidskabinet Jetten-I staat voor lastige onderhandelingen - Universiteit Leiden",
+    "date": "2026-08-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNSGxybmhYaHktU1RjX1p6NHVxUFYzWW5GNzh5cWFUZjlWWk94TE1uMDRLVDFCSExSOWFZeFdxWHBwcVI4bElQRDhSN3lDQ2p1NWRialRVQi12eVM0TV9ubjBGd0gtVFdydWw2WnRjaDc5VTFvblBYcXgtQXNXVUN1QjNiam5mSlFTNUlUcEtyZDhodHpJaXJQUjBsOFA1VXZnYWdkNENuZ3NlOHlqaXBDaGJidW84a3ll?oc=5",
     "icon": "📰"
   },
   {
@@ -1583,6 +1634,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOV0RrcjEwa0tWWFBLaFhMWmk3dFV0a2VRSWxTRDV3ZVlacmRiUGtCeUlqOEJjZWNJWFhiZFRLTzdfOWd4elBHdTBBSExwZWI3OEdJZW5Qb2txVi13WVV3QU04c0Y5ZU5FMnlyUldYYVh1MTBwZUpYZlVodk8xQWc2TnhHQ0xsWU1LQkRpRTc1V29EMzV1bzhuWElvQ2EtUkYtbkhJRTl4UEpLZHJLakNiWFd6NTFVY1V4S1FYdlBUY2hhNGhqa1RLanQyeGx6dEstNERn?oc=5",
     "flag": "🇩🇪"
+  },
+  {
+    "id": "g3af6c3a42bb5",
+    "type": "intl",
+    "src": "RTL.de",
+    "title": "Ein Turnier, zwei Lieben! Ministerpräsident ist mit Gegner verlobt - RTL.de",
+    "date": "2026-08-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUkVuZUFEV2RId1RYMWlWMUdFNXMzdlNScDBxSHlpODRlQ2hGRHphOUVTRjVJaFFjQmZrZ0xGTzJZUkVxTkZuVWJVWnBPeVJ5ajhDQk1LbWtjSUFkTDdDZkd6UWEzbFpfWEVGUXdIV3Q0dGVEWjE2NmtTZUU4b3d0bVlTYzFZVWJUN2VXelRPQkVuak15ZmxLLXBsWFhtb0NMRVFhUDBHc2FrQ0ZzZHdF?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gadbbda1afde6",
@@ -33399,6 +33460,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUWF4MW9VblpEcmx3b0d0UU9qVk11Y2NxSC04Mmk0Y3VPVXpOZDNwX2RCekdWdDVmMEN1cERaNXlPVThqNXVIbkVxaDBmSEg2VWx0bElGTjNnbFNqSVZEV0JMaDQ0S0RPcFZFRzhuSkd0QTZnaWIzLWFTSmxYWENZZ3RUMjIzd0c2bUdjWE93bDFfMF9wSEJUa1gyeHhibGtPQzlELXlSWUotSHZWMlVvVkJB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf0c43c7b3c3f",
+    "type": "intl",
+    "src": "adressa.no",
+    "title": "Nederlands yngste statsminister innsatt i dag - adressa.no",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOGRfcThvMURRZVpNZzFVMDhPN3F6TFhjQzU5aHcweWpiN1pFNVJma3kwTHVrZG5HcFRSSUlOeTQ0OHQzcnJPS0p4eWxYRFM2N3gycEpSazJIbUx6cEdSOU1ubk9QTVF0dTRhZ2R1eWdTQUw4dWVkUHE0NVplY2ZjME5DalVDai1aRVE5YldnVHZpbHZqS0VWOTJB?oc=5",
     "flag": "🌍"
   }
 ]
