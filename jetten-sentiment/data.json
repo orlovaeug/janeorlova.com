@@ -1,5 +1,46 @@
 [
   {
+    "id": "gfe39408c5581",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Kandidaat in De Staatsloterij Show weet niet wie Rob Jetten is",
+    "date": "2026-09-05",
+    "sent": "u",
+    "link": "https://www.rtl.nl/boulevard/video/0376063f-0d06-4635-bbb3-baa03b9405bc/kandidaat-de-staatsloterij-show-weet-niet-wie"
+  },
+  {
+    "id": "g68f331a54e5a",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Telefoontje naar de verkeerde, teruggefloten minister en te weinig koffie: zo mislukte de prinsjesdagdeal - Het Parool",
+    "date": "2026-09-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQS1pLU3JHc1F1dG5HRDJsb2xUdEZ6WTlBVnpZUFAtcE5qUUtzNHYwdGM1c3o2Ul80YzFJWUoxVkN2UW0tc2VvQjQ4Tks4M2ItZml3a0lFdDlibWRRTEhpNjRwRm1fYWpuaFVLMnlzeGR2a3oxOWFMZk1kc1dtUjF2WnFDcElhNGVVRUMwaUVVWFhQWlNoVHVLZXl3blpic1JSdGpiWWFHUVVDM3RiOENETVZXdnN4VTBMbUhVMUFJNWtNU3dqc01XRzhnTmFENHJlbmlHOWh1NXpHMUhLQVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g288999ebb36c",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Woede over uitgebreid eerbetoon in Servië voor overleden oorlogsmisdadiger Ratko Mladić: ’Bedankt generaal’ - De Telegraaf",
+    "date": "2026-09-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQR2JIWlVpLWVrU2M2U25fZ19Ybm52aWtsRHVKaC1EcEpXUDMyTGR4cU1CeXFzMUhrVjRrR0IxUENjblZVUjJGOHdOVXZnZUtTaW9fdTFXTkE3bFM3VkFaZmctV3VQZnVqcVBKSkNHV0dMZjJ6bi03eC1DaEJDSGR5QnZaVENGN3A1NkgtZy15aTF6MmsyZTllRmlzSFRSeUFxdFB6ZTdRV0htX29vQmF1RXYySlYxQzlTMWZwVDg5Y2FjTHpNdjRJUVowQXNFLUVaSm5ucm9vYjJSMFh0Y0ZfSjREOHlqeVJENkRR?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g615192db3876",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Record 7 in 10 Dutch dissatisfied with Jetten I Cabinet ahead of budget day - NL Times",
+    "date": "2026-09-05",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUi1uQXFBbUNqTjIyTjd2ekwtenRhZXQ4MUZ0LTlLcTdHVlgzaVNZTWZVbmFQUEVTSk9Oc21JdFM5WUFlbTJXSk9tMmJXczB4TWZydWxOZWhrMXhOaFl0U3FkZUxTMldBbUJjQjhwbkdQR2NnbFFkSUx1QU1NYTRoRFlPRVBCdUphakxxdEJQaGJfb295Q2Fj?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
     "id": "g636af75749ef",
     "type": "nl",
     "src": "AD",
@@ -111,6 +152,108 @@
     "flag": "🌍"
   },
   {
+    "id": "g86097b5025c1",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Veel kiezers ontevreden over kabinet, dieptepunt sinds aantreden Jetten",
+    "date": "2026-09-04",
+    "sent": "p",
+    "link": "https://www.ad.nl/politiek/veel-kiezers-ontevreden-over-kabinet-dieptepunt-sinds-aantreden-jetten~a3e31896/"
+  },
+  {
+    "id": "gb0c0662677da",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Reconstructie: ineens mocht Bontenbal aan tafel komen van de premier, daarna ging het snel mis - De Telegraaf",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQenhyZHdiT1Rac2c4VUhqQWpwR3c0V2lTUWpWZ1VXQUdMeF9IVktRQ2l5X0RWUWcwcGhmUFMyWWp3QkZJb1d1bXJ1U3ZmeHNMNXVBdFZKYnlJSl9GUGtUejRRZFJ1dUN1Vkp2TjE1TkdnZlhoMW0zQUxXcmotVFFqQkFGMXBrS0R0Um9QaDJRZ29TUDhsT1hMdXp1cEtpSHJtUExScmZsbHhWTFhmQ0l5QVZVcmdWZWwxaGxvemVVUzVHeEFBM29qVnU3YmFyX0lrZ2syZ0I0V0s?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g8fd078d19261",
+    "type": "nl",
+    "src": "NU",
+    "title": "Overasselt drukt kabinet met neus op feiten: 'Maar Nederland is geen narcostaat' - NU",
+    "date": "2026-09-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQS0RsWG9QUE9DdlFUVHhYRjZicFBPSVZZaWhDcUlCYVp2UGJMRl8wb1JJbjRsUGRPSnVUbTJUUXFzbXluNzExWWNVUGVTU1phU3BHTUY4Qmd4QXE5UlRGaTRuZVFYODZqenFNLXFTeGdXTUxUQUFiUU5OcE1aemdCclR5NmZWQmdxUTloMm5ORDVJazRuVldkNDdPTnRZWDN2eGhYQVhWdWtlM0hiQUNPdWg5S2JCNUpo?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8baf5bc0cfe2",
+    "type": "nl",
+    "src": "nieuweoogst.nl",
+    "title": "Jetten ook na PBL-rapport optimistisch over toekomst van boeren - nieuweoogst.nl",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcGx1X0ltNFJOYkxqbzZTNGNSRjBqRTgtR1cycUgwYjdfMkR3LXM5U2JLU3VkVXVoejVORlhpd2lzLXJTbEs4UllDUHRuUkFaVVlRSDJkTEVSWFZYSXJHN1A4c2JRNjI2VnVtenlsQ1Y2ejlrdWVTcXI2UUF2S0NySmQtOGR5Qm0zeEhCeUJCVU82MGU5UXRkUlBtZ2tpOGs5NlNONUpxcmZNd0Ja?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g67c1b9d37d30",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Is homohaat aan adres minister-president strafbaar? ’In Nederland kun je nu eenmaal een hoop zeggen’ - Noordhollands Dagblad",
+    "date": "2026-09-04",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOY2QxZDJpNG00cnNoRG9sUmN3eDV4ZGd4a292elZVUDZCZmhhTkRhMUxmUDZ4Y25XS1B0TmVxVmV0NUlQUkFHalZCM01ENXc4SHdBVy1DelJNc0NEamVPMlBqTDg2S180d0NPenhwX1BwV19aY0xkNTE4RUJjT2N6eU53eTNKRy1JUlZyUHlHdnRMNFd1Znc3U3A5NjRCMlliVkNyNERacXFXVHc3Sk01TEdwMWx5dndIcjhfMUxYTXlfRUdIQlRocF9uZnpMQnozLVMtbWtYVnpqdjU1OUw2SWNnYnhTWW1OQm5vbWJvYVM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4ee97dcf85e7",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Rob Jetten doet zonder illusies aangifte van lekken begrotingsstukken - Vandaag Inside",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxONWZ0WnpER05oM1U1elVwUVJ5elRGeGRIaTlnRUZSMzctYTBNekVlUVcyZ1pWS3RfTUxZWm1FU2h0UTFsUHBHeFpPdmpDdzVwbzRTcXNnUV95S2xaajJMckxGMnhlcnRZblJ4LW1rbE1QUzRXUHZ4cE9aV1BERUxPdzFnRXVoWlN4dGRXRkpVVllLZmZ0aHFZVGEzOUYxay1MT2NZVTd2Sy1peUtOUC03Z3JtbTNfZ3FBaXdFOEJXQVNXRFNTV3JFZjlPeWJGQXcwaDRycA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5a8b18343501",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Veel kiezers ontevreden over kabinet, dieptepunt sinds aantreden Jetten - AD.nl",
+    "date": "2026-09-04",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd20wWW9XOUN2NHlzOUszWXlfZUtoU3hhX18xZWpWYjNFZWpWUDFObTR6RUFqck5WU2djRHNNMEdTTG1ieGhIbWQ5VEtyNm0wMmtJR2gxQ0FHZjBpSXhINTVTVnVpYTlWeEdyZGpXYU1yd3VXaG5Jc2k4azRUblBSZVg1ZndzMV9ZeWxFcGZNVUxSOXBlVUNTWDVBVkFCQUVMdTF3SU5TQ3o2LUk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g81a3c3b52090",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Opinieonderzoeker Peter Kanne ziet weinig vertrouwen in kabinet-Jetten: 'Niks anders dan stilstand' - WNL",
+    "date": "2026-09-04",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeVlCMjJsaHdnRVNoeUl3UDFoTjJ5LW1jWkRlekJRRHFGRFhIQWk5T084eVRBMWdaVFo0X0JFSkdFUHIyTG96cWFhUFJUd1VDbUQwT1pqaXphMVlWMVBlQWotNkVYb0lrcnJrRE0yU0JRTldUeEpvejJFMmJQa3ROQ3M5S2d2SXV1U1ZTUVBkLS0wR1FlRU9Yb2Y3TmxnS3VJMEx3SUxya3BNVmkxVnhTd2ZZdFVJX1pMX2Frb1FB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6e90978fe635",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten doet aangifte van lekken begroting, ‘dader ligt op het kerkhof’ - bnr.nl",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTEM5VS1HckhYZzJrMHFfb2lveGFMWEhyaURRN2ZBWkxDamYwdGRPQlk5NUI3dmN3ZVBYcTVNaWpPR1RFZ2lTQkNvUWMtbWpTSTRhUnc1YWxaOXJzSlBHcGNPbnV6Rm1YNmV5eVJZUDhGek9Mdk1BZ3hoeWFkOHdfb1huc2hYYWtSODNaT0QxeG1hYXZuZVdIWTVlSXlSUWFyYVF5YjJFY0hVeldlY1I1SmNrQ0FJbWQwT1E?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf4973a186de1",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Oud-fractievoorzitter Zijlstra (VVD) heeft weinig vertrouwen in kabinet-Jetten: 'Ben blij als we de kerst halen' - WNL",
+    "date": "2026-09-04",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX0d5Wjg0ejhmOHhZaG91d09zNmlEd2ROOXdkbVhUbmdNMHQ4T25sQ2p6YkpVa21xSmRKenNSdGdSQUFIc3RjOEtRSGdBWWtXaWxpTnVvNURPU1p2WkV6MVdnZkxqTlNOaVVMSmR5Q1ljN1Y2Sllyc3NEeUhQVHdQZ2xSaFN6T0NtNUVWMkJ5QnljXzMtc21fdS1sQnJLc2RwMGUwQlZYLTdLUjVOSzJFZ0d5Z1RpNXZHWWRvY055WWs1RWVYRjVQVk1MU3Bfdw?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g517c94f82340",
     "type": "nl",
     "src": "AD.nl",
@@ -196,6 +339,26 @@
     "type": "intl",
     "src": "lesechos.fr",
     "title": "« Il faut consolider l'écosystème » : pour Emmanuel Macron, la souveraineté numérique européenne passe par plus de collaborations entre grands groupes et start-up - lesechos.fr",
+    "date": "2026-09-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQUHRVd2JRTFZTcE1mRU5pelFjUDdYdUlYZDhxTGZrSzdQbnM0WUVFMjRJcWQyX25oTVVLWWg1WWJZSGtPLTNnVFFEZ3pLOTdybl9WcE4zdkxEbm5lbk5uMlJXaFYwSFdCT3BBbW5SZ2tMd2JFa2NlOE5aaklWNHlyUlFfaTd6SXh1Y2pSaEpMOGEyTGRYTG1qcmJnMW1wLXhHaWZGX0xsU1BqM2xIVU9sdjRnXzNia0lGRU5oWTlKOHV1cmhVdWxHWGstM19DS2dvM2lDV3hRUjhmUVZveXQyN0xIUm9Mc2dyTXNuM0JQUjNNMldkT0VOV1paZS1KcC12bi1TR2xWQVJVdmExNnVrdTRNYVdTTElfOWlBMEotaDB6b2w3RldIdVJETmM2bUZnWVBPWkJhUWNvMjRnRktxOEE0dFNtX28?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6b4aed6959ac",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Zes maanden premier en bij elk bericht op X wordt Rob Jetten uitgescholden om zijn homoseksualiteit - De Gelderlander",
+    "date": "2026-09-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQX1dmeUphYmdTS0FiLWtvd3ZfZmNuNDNhNlVZaFJ0eXMtMWV1VHVUSGxsVlN5LTVWLXVGOEhLaEItQmQxUVhmQ041TFNXNkFMQnhIUEJBOWFiVE0taVBySlhUQkhHdnRvd3JwdExIZnJ4eHU2dlduS3dqajJOb2FMOF9nZHVObG4zazRKc3QxVFNNb2NFWGUzZ2ZTd3VIZ1NqQkQ5cFUyQUxXM2h1NHpaalNkY3B4QTJLRnVya21JdTlZYm11dXFILUFnWXFMM0tHNGNRSjlQY3FLWGs1WVA3RWR0MA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g008126ef33d3",
+    "type": "intl",
+    "src": "Les Echos",
+    "title": "« Il faut consolider l'écosystème » : pour Emmanuel Macron, la souveraineté numérique européenne passe par plus de collaborations entre grands groupes et start-up - Les Echos",
     "date": "2026-09-03",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQUHRVd2JRTFZTcE1mRU5pelFjUDdYdUlYZDhxTGZrSzdQbnM0WUVFMjRJcWQyX25oTVVLWWg1WWJZSGtPLTNnVFFEZ3pLOTdybl9WcE4zdkxEbm5lbk5uMlJXaFYwSFdCT3BBbW5SZ2tMd2JFa2NlOE5aaklWNHlyUlFfaTd6SXh1Y2pSaEpMOGEyTGRYTG1qcmJnMW1wLXhHaWZGX0xsU1BqM2xIVU9sdjRnXzNia0lGRU5oWTlKOHV1cmhVdWxHWGstM19DS2dvM2lDV3hRUjhmUVZveXQyN0xIUm9Mc2dyTXNuM0JQUjNNMldkT0VOV1paZS1KcC12bi1TR2xWQVJVdmExNnVrdTRNYVdTTElfOWlBMEotaDB6b2w3RldIdVJETmM2bUZnWVBPWkJhUWNvMjRnRktxOEE0dFNtX28?oc=5",
@@ -331,6 +494,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcEhDQVIzU21nZ0JFWVp1OGhvZXZ0RFJkRUhkZHVDYW9Qc2o5cmE3cDZndEZ5RU9aSTJjM0ZQQVdLbmZvVUsySWZtT09BcEx4bmxVUkhMbGFhUUZxS1d0bjB4ZEJHUURFRmhTeS03MUx4dnFEYkg3WXZSb3hDSHRBbnBVYTJwbmQwRlBhOFJXNWVYMklqZHc?oc=5",
     "flag": "🇳🇴"
+  },
+  {
+    "id": "g401d170a5cd6",
+    "type": "intl",
+    "src": "altaposten.no",
+    "title": "Støre til Nederland mandag - altaposten.no",
+    "date": "2026-09-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZ2kxOHhhVTdZUEM3ckZaNlNab0ZZV1ZvQ2RwaVlzQ2xOcE95eEZZelloU1RhQVVLb29Ec1djQXFYaHBORzBIN0pCRzRTZGQtdWFGa0xmRThfcGh6aVRwcklOVmNUR2tKQVlaaVVHb29LUE1ISDdldUJvR1MxNE5DX1J3?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g22acd7f25948",
@@ -2397,6 +2570,36 @@
     "flag": "🌍"
   },
   {
+    "id": "ge00c37e64ff4",
+    "type": "intl",
+    "src": "RMC Sport",
+    "title": "Supporter son pays ou son compagnon argentin? Le dilemme du Premier ministre néerlandais au Mondial de hockey sur gazon - RMC Sport",
+    "date": "2026-08-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNa1U4V1c2ODJzTlFwc3dhOXlLeTc1eEVsTWU4dE5rTGgyQjJISTd4S3U5SVFGWFBna1lVNDhMRlJjOVBtcWtKbk05TzlLV0U5ckcwMEt5aGJ5Q3ZmckRBOE5xOUdlZlpYZld3X0JOcVpoVmpJR1hCSktRVFNnZ2xENi1TX2RGOTFHLVF4bTFwUEtEUVoyQlp3UHJZOTRfRFRNMUJBWmptUUZvUXpQaGR6TVc1aTZhX1p1MVhEcHo5R0o3c3Q0U2RqY0lVMEJnSDMtVHJxSVFFV0xmMGswSVpXVEs2M0V1Q0dzQmw1SlFVQmc1VUJaSEF5VHlGcTFncjN2V0xUaQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g906c2668ddd8",
+    "type": "intl",
+    "src": "infobae.com",
+    "title": "La broma de Nico Keenan a su pareja Rob Jetten, primer ministro de Países Bajos, tras la goleada de Los Leones en el Mundial de hockey - infobae.com",
+    "date": "2026-08-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPVE85Q2syZlJvTXlrUkQ0QjBqcXlZcGswWkZpYkltSWhqR0tBd0lQRk4ySmFycFpaM1JoYWlidUpIQ0FhOU8xUmhySmVWcEYtSjFFaVg3VTdlZGMzSkV0blIzQUlubVBjLUppaTRuM0hpMXM5OWJhQjNvbUNBV2NZNE1FYU9xYVZHY19IU0VaSW9MLUtzZEdaX3VrcTNzOGl1LUUtakRheUFaZWJGdjNtalBxNG5rZVFMal9yM2M3Njc0YXV6NFd2MktjcmtDOFdqMWJ5aVVDYlJnX2Nrc2RUa0xXRGJ0Tzg4dExBelhlWlZ2U0RaM0RhOE90aEJXR19qaVdaN3ZZcDbSAaMCQVVfeXFMTk5RM2cxNTZPeEZqamhmVk9LSGVEUHlQYmd6OHNvWXVrWlYwRksxMHg4YW1DWHctNlpJSG5QWU45alhoS3I1VmZYdkZNbVNnX01uZGVtMjhXYndFM3k3RnYzUHpWY3Y3MTRyXzRaSDZURDVZSWhuU2UwRkF2elJ5b2dpTHQ0NkVJSkRnMHlYZFpMSnp0X1BKRjBXMUJlNlR3N0NiOXpSaDAxQVRZR3JfdzRmM2xVeFExcjFrX1dlNzdRMEtZWDM0YjBuRDZHajZQa1NVUDFxLUVfLU9GbVFVWURvUDdtSUtUQ2JwamdiczFvaGJlUkhYUU1jYkpXQXRBeUh1Ym5WdTNXcHplOHhNS1JDTXhUcUVVcEpIVV9CaEpIeDIw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5aff4e660eac",
+    "type": "intl",
+    "src": "infobae.com",
+    "title": "Nicolás Keenan, el Primer Caballero fashion: claves de su look tras la viral broma a Rob Jetten - infobae.com",
+    "date": "2026-08-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdjhwSkI4aDl1a3BsQ0pXOXdNdGpZajlJOF9vczdaYTdvdVVzbnUyNU9jUnJ5XzVOd1QtLWhnNEtBNXZ3eFg4OFlBUTNiRVBXUW9ObEpFd012eGFOZ0F0R05IR0traG9mVVlzam9VNC1xVzVFMEI1eERSYXZZRkd1RktJMmtwVEZ3UGxSWDhZQ2JQamN4Z2ZYQ0Y5ZHF4XzJDMGx1aVBxLWNCS3dxVWNibjFuYlNfOGdXSVJWODFJT3lMZGtEelFyZWJjOF8zOGFhb1FONzM1MNIB8gFBVV95cUxOT19UTGpDRl91Q3BKTEVJOWY2Qmk2UEt0Nk5CSTZ1b1NiVW5ZXzF1M052RFBtU0g4TmhUV0tjZllxZXZQV01pcWJQVlRDZTcyQkdNZjdGVE1PR3g5RGVqQko2NUhEYml1a0F3Y2Q1SVZJSGtXZld3bXhHTDk3Vm1FVWZHZXRreXNvZ09ZY181OWhSSExGVnRGVWZOZGhabU1sZkZfeFFnVGgwUUZRbktURW1zbGdfdmdZYlpTalBLazBUR3Job0lraEVTXzJBMGV6aTJ2WnVqTHhydlppYWpuM2VsdW40RTluem9reDNTNndzUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gde05b371db4c",
     "type": "intl",
     "src": "n-tv.de",
@@ -2666,6 +2869,16 @@
     "date": "2026-08-19",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdGhPUk9qOGdpOHB2bzI1MVdnMDloQ3hGZVBOekpUN3dEWVRpYWZLamhTU1dmWFJMSkhvWU13SThybzBRNlFzcnVsbG0zS1EyZW1ta0dQdFhTd2FGSGZzSkpDV2h3bkZnTVN3cC1ScDlVcFJlVm56SDBkNW1TQnZJNVgtMHowdXpoQkprV0haSlU2bEp3cy1vVWp2MDlQMFJ1cGhmYzB4ZTRRM0NlTnBwd2JUSUtBOWxKU1NhTnBGbw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g72cdd267fa9b",
+    "type": "intl",
+    "src": "20min.ch",
+    "title": "Niederländischer Premier Jetten küsst argentinischen Spieler bei WM - 20min.ch",
+    "date": "2026-08-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWnowejlaTUd4TTBOMTh6VTZjN0lVTjJHUFNPMDZsMEt1UEptcXFFajVMOGdHYVlvQmVnUmN5SlR1dmVPS3VDbXoyRWo5NjdwRzlMaThDNEF5aWd6anVvZzQ3RVdKX21JMUZnU2oyemdkYnZSdDRyVk5zNjhzWE95WVFEc1NGdzZCQXZmUHBjV1hJQ241dTNsQ3lmZ3FpNnlGQU53Y3JVa3NoYklPd1Ew?oc=5",
     "flag": "🌍"
   },
   {
@@ -5646,6 +5859,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g26e858345682",
+    "type": "intl",
+    "src": "eurointegration.com.ua",
+    "title": "Зеленский и премьер-министр Нидерландов обсудили подготовку Украины к зиме - eurointegration.com.ua",
+    "date": "2026-08-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XRTN2RUVMTXU5eWd2bWR5bmVWczI1cFNqRGQ0dGdHelhhRGdReVctcl9jM0ZYVHJsSmczbHhXY2ZJNUItNExJR0hWQ0IzcDMyODh6UXZkb1hpbG5NY1VHdDB2eUVQQUdRQzJ3VFRZOA?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g1b0062a5dfe9",
     "type": "nl",
     "src": "Nieuw Rechts",
@@ -8573,6 +8796,16 @@
     "date": "2026-07-07",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DSzBjWDJ3QXlobGRMRWlfaUJhOGkwVFRxQi1rbUc3OFlPZGpOLWRkSHJfci1feUNrcWNLaVhLUEFfRGdYX3JKTjFMVm93WTVCVzhzS0hTR3VBRDB4aHfSAWNBVV95cUxQMXR4dTNSY1poWnNLcG1wN0JlS1drMFJ6NE4yaXZ3bjMxeWtINjlwbjliX21kVXFXczhRWm1PbFdROHdMZTAxcUZTamNUNkcySm52NkdFanlWRWpaUUVOeDRrRlE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf2eacba8f957",
+    "type": "intl",
+    "src": "fakty.com.ua",
+    "title": "Нідерланди та Данія приєдналися до Drone Deal: Зеленський підписав угоди - fakty.com.ua",
+    "date": "2026-07-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWVdiQmYxTWhuWjUyQVhKSVdPdFZmakRWc1owU2czbWpkYWJ4cDBXQ0k1akc3WEhoT1YtSDVqbXdYQzBZZmNJOGhOZ2JwMTNhczhvampQckpUU3NraGJOdzlBdnJzQUZfSm5DdldXSTF4a1VOQ1lfU2dTaGN4ZUc0U1kzbDkxTFJhckNhZzFQTTVRamNjdXAzVWtDU3A3ckotUjhuWUtSWFdOTXk2R2U1dlJpUG04d9IBuwFBVV95cUxPdWRLcU9rTFJhTUlWeXVlVF8tT18taFJSaWdRU01jMWxPSUtfZndSd0J1SFBqRkp2MlNGdUxBWlFGcjNkUUpPRXpzdkVlaTc3ZUYtYTVHWXpVRndmUVdDOVAzcVlsOHFvVDJmSko3Sk1Jc0pObmNUYXpydDZUQTJZOHpzYTdBbE8yVHlJUGlCVVZ6bWxMUGtpQmxsQUM0MWdaMmlwcHR2NTJoY0lvMjlsWmt0ZEZrUS1hZnZ3?oc=5",
     "flag": "🌍"
   },
   {
@@ -14479,6 +14712,16 @@
     "lr": "left"
   },
   {
+    "id": "g65fae97013ae",
+    "type": "intl",
+    "src": "Finansavisen",
+    "title": "Diplomatisk krise: Israels minister nektes innreise til Frankrike etter «dehumaniserende» oppførsel - Finansavisen",
+    "date": "2026-05-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYjJqaXJWX0d1VU5FdjdiMlZmVml5VmwwTnUyM2RFTHlmZWVyMjE2UUZnV0lKNmZoaG14QTVRVzJud18zMEYwYjhkT1NEYjlsaEcydTY4VU1HRDNwelNpUnNmYnowZE9TMlBNMlhjX21lLVp2U2Y5SEFGR0M3TzViSzVGdXVXbFliMEYzSE1fUjA4Tng1cm56MjZtRGY2MlBTbG50NkczSVVrNVdFN1pqcnltRG9Bc2xSdUJER1RrdTVWSFNvUlhjd2NnX2tQQU94UUJmZ01FVG1KeXBWVU5rQUFHMkNNNnc?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g8777553b1482",
     "type": "nl",
     "src": "RTL.nl",
@@ -17696,6 +17939,16 @@
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOGV5MWhKSTNRRGdEa2Y5N2c1X1EwQ00zM21vSFRaWlV2SFo2UExkczlrMmljLUdhWnlYSno0ODE5UkRscnB1b09qX29pT3RUMWZTRVJVZWl2RnluMk9aZ0RKekRzNkFTYU9lSHBLSDBFMVlqNHRjTm9XUlpSVlpWSjhOVlh3NVlaWGl0M29NMzIwZ2pScW1iYjQwZ3NwWkZSdlM4ZU9mR2NzV1k0OWtkaEppMm5BUG56anJLeU1EbjlBbnNMdUpR?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g50edec524347",
+    "type": "nl",
+    "src": "AVROTROS Radar",
+    "title": "Vakbonden Eisen Streep Door Ww Plannen Ultimatum Voor Kabinet Jetten 62660 - AVROTROS Radar",
+    "date": "2026-05-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTkFaT05GUUQ3MjN5ZXREU3RlVjQwTVVPMUF1YVY4OVpQd2llcndBbTFvem9IZVNpM1FHejFWdDJDR0dUTk4zUWpSMFhuWmYxU0dCc1dDSlI0VTZVbDJjbUZSWkQzZjJrdmh4M0RzX0tlZXVLbEFkRFJ3aTFUWXBMVjFvQV9EaktpZmhqb1RNdmhiWjg5aS1yQ3MxUlVVTjNMYVhXdlFYMzBoTTFV?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g147f00c44472",
@@ -22025,6 +22278,16 @@
     "date": "2026-04-15",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOT01DdXBNOWJTS21rV2NxeG5XVUVfSjNqeXlxSlUzcWJIMWZNdUwweHZOb09ncm5OZlo2NVYxMDZVampHb2V1NmFrR2dGNjB3XzFkbXhkTklmNzRTdG9hb0Z3MTB0aFFWRUtidC1QN2luRUdJdHEyeEJwUmRyYTJZdi11elktYjFrdmpDUC0xcy1DdFpMdGVlLU84UXJ2cWFmaDR0ZEFELVlnbGFWaUFMaU5lSUt5UEQ2N2RrSUF4S2tyUV9iTVBiUmtqelJGeFZNTnpGQWFGWWh6Nk5JdEZKa1RVVTNhM2pOemVqbUVWdWgwRlljSDFN?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge550430d9f66",
+    "type": "intl",
+    "src": "seher.no",
+    "title": "«Det rareste noensinne» - seher.no",
+    "date": "2026-04-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95eE9fcmRtc083QlBlSG1JWkpET2ZwOFBqdmR4bExISkI3dFZWT21hMGY5UUw1S0dwQkVTek9vRjMzNmVWaWJVRk84Y2tkTDBZUnVfWHoyQkpzZnJ4N3R4RktpZzFrWmxlcndudg?oc=5",
     "flag": "🌍"
   },
   {
