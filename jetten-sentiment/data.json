@@ -41,6 +41,16 @@
     "flag": "🇬🇧"
   },
   {
+    "id": "gaf2e7179e066",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet herhaalt een oude gok en dat kan dus helemaal misgaan - AD.nl",
+    "date": "2026-09-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSk1HbUdNaGdkWXpTZWZlblRpNlhOR0U5SGsyTHhRS1Q2WThJRnhXSVNoNkdnclhOcmM0ZUlsa1dIOHkwMEl4YWIycjdJMzFEUjUxMUlFdzdTMUF6bWpuLU5xdWx2bjQ0Rkx0QUpodDh0eXZ3cmJvR2JuZTNwNlpBUFVQVTliS2FDcUZXVExzakZseC1CS0F4LVdranFHY28?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g636af75749ef",
     "type": "nl",
     "src": "AD",
@@ -252,6 +262,47 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPX0d5Wjg0ejhmOHhZaG91d09zNmlEd2ROOXdkbVhUbmdNMHQ4T25sQ2p6YkpVa21xSmRKenNSdGdSQUFIc3RjOEtRSGdBWWtXaWxpTnVvNURPU1p2WkV6MVdnZkxqTlNOaVVMSmR5Q1ljN1Y2Sllyc3NEeUhQVHdQZ2xSaFN6T0NtNUVWMkJ5QnljXzMtc21fdS1sQnJLc2RwMGUwQlZYLTdLUjVOSzJFZ0d5Z1RpNXZHWWRvY055WWs1RWVYRjVQVk1MU3Bfdw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gc171f1d72d1b",
+    "type": "nl",
+    "src": "NU",
+    "title": "Geweld zoals in Overasselt volgens Jetten 'werkelijkheid van vandaag de dag' - NU",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON3JCeUVLaEFnTURhbnlXYnBtWlB2eFNLa05XdU80anZaMUEzMW5VMU5oczBjTHFwXzJXNG1FX1JzTVV1RW9rM2NJdEpMdDJES0tuelJxazAzaURudGpOVHFHRUZIa1NDNnl2U05FNG5YVE05TWMyNHlUMXQzbnFGMTR0WWhoNklTaDBOTmNOMzlFWWZrNllBenVOUXAwRk9TTEwxZ0R4Ti1lR3NqQjhCUnI2aXQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g105ff82e9e81",
+    "type": "nl",
+    "src": "Nieuwe Oogst",
+    "title": "Jetten ook na PBL-rapport optimistisch over toekomst van boeren - Nieuwe Oogst",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcGx1X0ltNFJOYkxqbzZTNGNSRjBqRTgtR1cycUgwYjdfMkR3LXM5U2JLU3VkVXVoejVORlhpd2lzLXJTbEs4UllDUHRuUkFaVVlRSDJkTEVSWFZYSXJHN1A4c2JRNjI2VnVtenlsQ1Y2ejlrdWVTcXI2UUF2S0NySmQtOGR5Qm0zeEhCeUJCVU82MGU5UXRkUlBtZ2tpOGs5NlNONUpxcmZNd0Ja?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7b3634be4191",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Jetten geeft wéér signaal aan oppositie: er is ruimte om Prinsjesdagbegroting aan te passen - Eindhovens Dagblad",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSE1STXpFbjV5LVJRU0ZWSy1hZzdqMThjU1RIa09XZUZTX0x0aG5KXzU2dkhVRUljOHFyUmtJUk5PSXRGbFJvS0x0eWJUcm5TUnBkdzJxRTVaR2JQTUplR3VCakhDVXMyYTBKU3YtVXE5VGhVRWVpU1B1enlnZ1FxbUZaOGc3SkJ3MndlZDBrVGVoelA2OVRnR3ZNM0luZFJEVUJJMEVqb2l2QVoxanZya3Y0eXpiVjE3eXpGRlpNdThjYmpuOUE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9999090f0daf",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "De crisis in het kabinet toont aan dat de burger weer vergeten wordt in Den Haag - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZzVYdUhmcUs3dzZEZmhDemZpb0hIa1ZGcXVaY1VBR09YTC1HYVFhYmZWODhfUm5yZW9seHM4WE1mcDFVR2lDdzRfc0xBZTVNY2YwQS1TalVJTVRab2dkM0Rid1JtT090bFNFU0NpTEJrVW52TFZTU19MclNBc1FXQl9UcGVBN1ZzYXR1OVAwYjc0Um1GOTlWWGtSUi0tN09rczNUQXVuR1h3NTdKdU8zUGhnTmxaeXpKWnl0NnJMZ3NJblZi?oc=5",
+    "icon": "📰",
+    "lr": "right"
   },
   {
     "id": "g517c94f82340",
@@ -733,6 +784,16 @@
     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNU0FpSVIwN0lwV0JVSFVKUWZMSE1CMXRPU2JlN1ZPaUoyNThCU1JzZDRjQTZvbmdaMFVSVmxJZGRQbmtoRkhzSWpRLXJjc0E3a2ItZUQ2QlNxeE81Um9Tc04wUHRXZGY5Und0WV9uLVpHeDFIaGxkbDloN0FzZHNTVHhvaXlqSjY3REFOVWRVQy12eHlvU3psd3NCRTVwb0ltRjY0NFVqQmFVRnlHT041dHU0QUNtNkJzTmQyQUUwYS1QVVFlZXIwcWgyZzVPdnd0Ri1jQVpUSDdBeVNQYkFXYzZKV1lGVnNpZFgtaE5hWQ?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g42b0d49cad08",
+    "type": "intl",
+    "src": "quepasajujuy.com.ar",
+    "title": "Uno de Los Leones celebró junto a su novio con un apasionado beso: su pareja es ministro - quepasajujuy.com.ar",
+    "date": "2026-09-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTWVsMkdxb2FrM05ERDRyeWhaQ2RvSHRMWnlUdHIzSTFsX29VM09UU0o4UTVqdndhOUpXejd6TTdWMUotN21kYkx1aHNhT1prQUNkSEpwWXdyN2ZDRmZQQjY5eVc2UE4zQjJnSnpvV0J6MUxoZURJZXZqRllGaTFEaFlQcFdGTkxqSnhoNHMzZ2RSN0dRYVJIYUVmYUpmM1NGdDIwMUZXNWY2YkkwbGFyX3E3RUdKRUZ4WHp2a0t2dlVwOWExOUFxc0szWll0RjDSAc8BQVVfeXFMUE1lbDJHcW9hazNOREQ0cnloWkNkb0h0TFp5VHRyM0kxbF9vVTNPVFNKOFE1anZ3YTlKV3o3ek03VjFKLTdtZGJMdWhzYU9aa0FDZEhKcFl3cjdmQ0ZmUEI2OXlXNlBOM0IyZ0p6b1dCejFMaGVESWV2akZZRmkxRGhZUHBXRk5Makp4aDRzM2dkUjdHUWFSSGFFZmFKZjNTRnQyMDFGVzVmNmJJMGxhcl9xN0VHSkVGeFh6dmtLdnZVcDlhMTlBcXNLM1pZdEYw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g5bd930da68d2",
@@ -1923,6 +1984,16 @@
     "icon": "📰"
   },
   {
+    "id": "g6ac746d5cb8c",
+    "type": "intl",
+    "src": "corporate.ryanair.com",
+    "title": "6 MONTHS OF JETTEN GOVT, 0 PROGRESS ON DUTCH AVIATION TAX - corporate.ryanair.com",
+    "date": "2026-08-25",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQazl6SFR1T3F1RV85U3FQaUV1YkZjTEo5ZUtwQ3p1ZGlWT3NEUDAzd0VMR3ZfNng4Q2xHcUV4d0djRE5aUjZ1a1dJcFJyM0V3WDcxbUU2aHR3VjhvbWoxR3BqYl9uaVRpZWlnRmFQRTlqX0VGSXhoTkx6akV4cWdwdmk0ZlZvVWFxRTRtRVdEcklaOWtoNS00?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g2fba66525956",
     "type": "nl",
     "src": "NRC",
@@ -2597,6 +2668,16 @@
     "date": "2026-08-20",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdjhwSkI4aDl1a3BsQ0pXOXdNdGpZajlJOF9vczdaYTdvdVVzbnUyNU9jUnJ5XzVOd1QtLWhnNEtBNXZ3eFg4OFlBUTNiRVBXUW9ObEpFd012eGFOZ0F0R05IR0traG9mVVlzam9VNC1xVzVFMEI1eERSYXZZRkd1RktJMmtwVEZ3UGxSWDhZQ2JQamN4Z2ZYQ0Y5ZHF4XzJDMGx1aVBxLWNCS3dxVWNibjFuYlNfOGdXSVJWODFJT3lMZGtEelFyZWJjOF8zOGFhb1FONzM1MNIB8gFBVV95cUxOT19UTGpDRl91Q3BKTEVJOWY2Qmk2UEt0Nk5CSTZ1b1NiVW5ZXzF1M052RFBtU0g4TmhUV0tjZllxZXZQV01pcWJQVlRDZTcyQkdNZjdGVE1PR3g5RGVqQko2NUhEYml1a0F3Y2Q1SVZJSGtXZld3bXhHTDk3Vm1FVWZHZXRreXNvZ09ZY181OWhSSExGVnRGVWZOZGhabU1sZkZfeFFnVGgwUUZRbktURW1zbGdfdmdZYlpTalBLazBUR3Job0lraEVTXzJBMGV6aTJ2WnVqTHhydlppYWpuM2VsdW40RTluem9reDNTNndzUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc15534359bf2",
+    "type": "intl",
+    "src": "huffingtonpost.es",
+    "title": "Quién es Rob Jetten, el primer ministro de Países Bajos que conquista las redes como icono de la lucha LGTBIQ+ - huffingtonpost.es",
+    "date": "2026-08-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMU51WHNyNW1oMGxLV05EZV85UmNXc25mR0N5b3pvRzEtS1RxY1ZZRGZ0YjNtdGluVGZmbHdBSWo1UkkzaGtpU0k1YWM4eHRRVmctX2Z1WWI0cHVPSXA1WjdYM2xGeExUWGFub08wdEthN3JJNWtvM2xHV1NpWGhrLW8yZE5CdEZZU1pxRnlNMmFQZ2VpcnRweW5QMjY4ZFlqU2Q1SFllMFVfTHBEYW9KSHJfTkxmSC1TaUVicGFqWnlvTGNiaDVkWdIB3AFBVV95cUxPRGNNOXFadWwyVHkwYm9zcXl4NEYtTjFEQWNUb2lMTktXZ0lrX1FtaDNzMk9yM2E1QnBYQUlEQlBra2tYWFVSTEU3NHRBZ2FOYU5DcmY2czRJbkE5THRocEdrQzkzakVuWEs5Ujc5bEVpY2JRZGR2dUVWdFhmdFlTNFB5OVd4NWpkaTVzTFYxSFExUTNxOVZkek9ueVVGMVk3NzU1RnczSXRvNzhoejRkMkFiZk96UkVuSUtFVld4N28yLTdHanJ6Tm5FVW13UXJDUFlrMTA0Yjh0RkVE?oc=5",
     "flag": "🌍"
   },
   {
@@ -6602,6 +6683,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gb74e886a30fd",
+    "type": "intl",
+    "src": "OKO.press",
+    "title": "Tysiące osób na hucznym World Pride w Amsterdamie - OKO.press",
+    "date": "2026-08-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT0gyLS13S2tpbENIYlF0RkFOU1drTE5RNjJWN1dPbVoxcnFNU0lFSHdscmViZnNkSE9VWEF6dFdtamFvUFFmYkFjTk9DLTg4a1BOLThjOHB0NnN4RGJlQVJVZ1lwM0dFeWxqSF9nXy1JQWNJRkhRLU91bEJ1MmRJaTFyLUl3cUMxWXRGU3U4ZkQxRldVS3c?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gab2121ee1bcb",
     "type": "nl",
     "src": "Trouw",
@@ -7491,6 +7582,16 @@
     "sent": "a",
     "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQNUQyT3BKU2NvY3l3YmpCck5oTUYwRHQ1M0I2MGduangyZXE4TEdvNklLdjJiNmFhOXhLWENnX1VxcXd6MmVmbGtYUjBKeTd5Nm5MWlBSaVdsTWVzZmpKNmhockFnQnV0UzBLWExoSlk2TjdUa1hlOVMxTWxDNGRMT3hHVnU5TjBhdm04MnJhTUlZZ3ZnX2d1eUN2SEZkcUdoYmllUDc1Z0dsSG5rdXEtUVZpdGo5a2xJbjhzYU5TaklJNTg4bkFmN0ZHbHNtb3hSTVFQcWJYWVhDMzhyRUUyRGxNckV2aFFiN1lJXzlYM0FuZE04NUZTaVNjQQ?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gfe1c74512549",
+    "type": "intl",
+    "src": "table.media",
+    "title": "Dutch prime minister: First China trip since Nexperia affair planned - table.media",
+    "date": "2026-07-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVHhfeWZfZTdlWnRRbUhFNHZiV0daVTVDR1NkMEx3eGRZS3YzcnJjZ0xaVXExejhpZjlZeXZ0aDd2a1RVLUwxN2RVeklWOHZVZHBON1ozS1E3RUptdXgxQWIxWXlUYUt2N2w1cWJyeU92YnkzQUxrZHoyM0NGSG5PYkpaQ295WmhPSURaaGZBRlUwSG5EWVdEZzFya3FvTzlmN0VV?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gaeb046536445",
@@ -35241,6 +35342,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZlVIUG4tdHAyUjhpSUxGVE83cVRnM2FEM3ZqaGhTS1BTQmJoRy1OY2tZV29nWDQ0YWNxeG9Nci01OVhxcEV6dnNiNVRubUlSSXlIbVdiX0lTc24zOTdqZjVudU04WHl6OTZKb0VWc2hvaktwQ1kzQnNHajFRN2U5c0xPVFBDLUZscmg4T1VUN3pEeTktWVFGWFdoQzZ1Y01Ja3VSQW5ZWHhBYWZlX2htZlZtTjJXNXdCNXhtdVJGRmFxSG5fdFFnZkRpQ29LUkVfcXdfR2VkdDNERkXSAdoBQVVfeXFMTWlaa09LTkNwYkNHV0RsM0ZmTm1yZVBQNTJIenlDY2F6TVpLV01rTHIyUFhxSWZmME56S1REUmZyVU16MkJzVi1INWdicFlQVXdmMFJFaFZQbEJPRHZybGNRT093VDU3V1E0RHhFZlhfblQxVlZoOHUxTHUtZ1RlU1h4WUJzZk1RR1M4cUUyZWE4dmNZQjNZZlNtQ21ZdnpKa0w2Z1B4Y0ZRLWU0VVVib3RDYlB1aERPWVBhZXJtSEkxbGc1TkNsQU1IYWlmazJGN2x5VndIUnZFX2c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g23dac387342d",
+    "type": "intl",
+    "src": "Courrier international",
+    "title": "Pays-Bas: investiture du nouveau gouvernement dirigé par le centriste Rob Jetten - Courrier international",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbjJra0pYWDZ0QmlucEN0eWhOaWZISmZXY09nVDV4QVNicWhKcG0xdWtyV1RmcXk1QUFHVG8xaXN0RkplN2dlaWQ4M0huY1RIUndaZWNROG1mN05kZ1lrVTlaTm1mVXh6UnhHZnZ6REtNN3huYXM3LXgzWjAxOXlDQS1IMzdVWXZnakJmdVpLV29KVWdzeHpZN1JaYWZuRFZTY3EzekxLRk9mY3M5WjF1cmdHQ0FLNHpZamRWNEl3aHZRNExUbUNselZTQ0YtZXctN0cwejNGZTA4R0pHSkZ4WEhwV21BQmx4Qlota2Y3dw?oc=5",
     "flag": "🌍"
   }
 ]
