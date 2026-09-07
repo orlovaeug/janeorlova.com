@@ -1,5 +1,97 @@
 [
   {
+    "id": "gb371bd743dc4",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Jetten: 'Winst AfD wake up call voor Duitsland'",
+    "date": "2026-09-07",
+    "sent": "p",
+    "link": "https://www.rtl.nl/nieuws/politiek/video/9b540a09-094e-4cd7-9f92-2b8df9141c1b/jetten-winst-afd-wake-call-voor"
+  },
+  {
+    "id": "gd037a1adb958",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Afshin Ellian: Jetten en zijn coalitie zijn gezakt voor hun eerste test",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/opinie/afshin-ellian-jetten-en-zijn-coalitie-zijn-gezakt-voor-hun-eerste-test/161069459.html",
+    "lr": "right"
+  },
+  {
+    "id": "g0eb780e882cc",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Box 3 en meer: kabinetsdoelen in gevaar door gebrek aan regie van Jetten - EWmagazine.nl",
+    "date": "2026-09-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdFpvN0RjWTBjU3ZWcTQ4VlcybGxyRlM5aXcwbGUyUUdSMUw5RjYwNFlDV0NxQ2dBZ2hualBQd3NlVDdycFBLaUQ5S0pfWTJaaUJSMUNTZ20xNzZ0MXFLR0FVYmZ0algyaTdaY3pnZVlHTWxRVndQN3ZHMC1NYzF5LXowOHhIU1hJaDhsSlhFUW9GamhtNnp0MmpCUnlpQXN1bzZwblhlSEIzM3dTMnJhdVpsM3pEVGpqeE5UdDJfM211ZWZIWm9DVmNNaWNDckE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g97db66398a22",
+    "type": "nl",
+    "src": "pzc.nl",
+    "title": "Stil eerbetoon in Zeeland raakt Noorse premier: ‘Zij stierven voor de vrijheid’ - pzc.nl",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOM21WOHpOTTZkai1YaE1qWFBXcjRZSjA1R3dJWUNwS09qOGROYkd3UVlVcl82VjZ4bzk1c2k4bFBpdElmSDk3c2E2dkNZWkdPdHlhZWk2UnlDNGU3MUFRdkZkUWpEYkdFTE1yQjNFMmE1aUlTT3lZZUxkNy1HbE8tSmowSGNESW93YTRpLXpWOXdGQ3l4N3JYRDkxMElvdk56M1lVTTVSR2pMcWpOMTRlRg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge6d0fed964a9",
+    "type": "nl",
+    "src": "Hart van Nederland",
+    "title": "Jetten: winst Duitse radicaal-rechtse partij AfD zorgwekkend - Hart van Nederland",
+    "date": "2026-09-07",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOREpXdVQ0NGNaTmlJMmlRRWtrWUc2T3BmTXloUjVhY2NhaFg1VDY1XzBTMldjRXpkTXF3TVMtcC1MUmw3OE1rZnMwTU9PQmJBOFVra3pUOTVwVm9KRktBaEVkbnZIdVRtdUU3SHhtU0NpUFFwcGxUVHA3ODJGdG15WEZ3YnRKWTRVT3lmNGxTV3F3Y1k2aldvdHJNUXpialNOV2pFXy1YR050M0tTMEtGN1J3TktoVUJtRlVVbFQwektaNko3emc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb50f1d9f9bd0",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten vindt overwinning AfD een ’wake-upcall’ en ’zorgwekkend’ - Noordhollands Dagblad",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPeHBJektSNEtucjBxVWhNOUh4d2FuTTVweVY2MTVyM0JhTTg0VGRtRk16bmtDYk5xOWNGTFEwRFZ6NE9jdHU4bDUyb004WWhIRVRheE9TSnU4V2dkeC1Yb3JmZmgtaTM1ZkxqX0l5QjBzOXVYeVFFcEUyWEJrdENNNnRpTzV0d2VJemRJT2JoOWMtQ05HV0lTZzcwZDJKRUFlREhkVmN6ZzFsY19nLWZFbW9EdW9zMk9HZ0haLWJn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g98b342bb6de7",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Afshin Ellian: Jetten en zijn coalitie zijn gezakt voor hun eerste test - De Telegraaf",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRUp4bGZvZHJBT0x0R3ZkcE1pdjlyT3ZJNUxFdFMzaXZhQVVXRjkyeDJLNXlSaThybGVWdlFuMmdvZU1JNi1qeVZRcjZzV1oxSVFLWFR6RG5Ga01MUm5IemxsYUpIS09hdmREUkc2eTVpZ2MwSG1Vc29SUXBKTEY3cHJwTmYyclVJVXJSb0ZKaG83R2VUVlZxSC1GMjlrdmE0TWdPS0RJazV2dUh0dFFFdXhEeWJfcHBy?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g8f3763cdf97d",
+    "type": "intl",
+    "src": "regjeringen.no",
+    "title": "Signerte ny erklæring om sikkerhet, energi og grønn omstilling - regjeringen.no",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZnYwSkJ5M203cWJzRk5TRVVDemR2NFdPUmZSME1vYl9rQWU1ZWpjdFgtN1JkaU5BcDZSN08zMXdlcWxLYUE2TmNfSnZLMW1Ibmphc044MzZMYzg1Q3VZalJqTUdIY3Z5OVlyN1JrZXFqcTR3cUxCQk12c2xFZkVDblRDNVp6bzlvWjJla1h4R0ljVWRoRnA5bmlybHQ2cWw5Snl4U0xMWnYtam00RXV3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1b8fc3c74a05",
+    "type": "intl",
+    "src": "FriFagbevegelse",
+    "title": "CO₂ fra Nederland skal lagres under havbunnen i Norge - FriFagbevegelse",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNN0g1dzQwUFpjY2ZDdl81Q0NtQkViM3BnNUNJZlRIT0VKY3NWLWVSNTFuWjZSb1JyT0kxWnNKVGU1OXFobnNGbEMxY1k1cWFlbDNaWUlFS3JBaGswQmtxaEhwOVgyckJDbWRNYXdEd3RtdzNyNWh4UmYtYWFOUEJ5T3VoeWtfQ3RRQ3FrV2Exb0E1MDRCT3Z6c1BuRm5vYmVPNXdGU3JaOHBsM1RZ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gfe39408c5581",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -49,6 +141,36 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSk1HbUdNaGdkWXpTZWZlblRpNlhOR0U5SGsyTHhRS1Q2WThJRnhXSVNoNkdnclhOcmM0ZUlsa1dIOHkwMEl4YWIycjdJMzFEUjUxMUlFdzdTMUF6bWpuLU5xdWx2bjQ0Rkx0QUpodDh0eXZ3cmJvR2JuZTNwNlpBUFVQVTliS2FDcUZXVExzakZseC1CS0F4LVdranFHY28?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gf733a26908fc",
+    "type": "nl",
+    "src": "parool.nl",
+    "title": "Telefoontje naar de verkeerde, teruggefloten minister en te weinig koffie: zo mislukte de prinsjesdagdeal - parool.nl",
+    "date": "2026-09-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQS1pLU3JHc1F1dG5HRDJsb2xUdEZ6WTlBVnpZUFAtcE5qUUtzNHYwdGM1c3o2Ul80YzFJWUoxVkN2UW0tc2VvQjQ4Tks4M2ItZml3a0lFdDlibWRRTEhpNjRwRm1fYWpuaFVLMnlzeGR2a3oxOWFMZk1kc1dtUjF2WnFDcElhNGVVRUMwaUVVWFhQWlNoVHVLZXl3blpic1JSdGpiWWFHUVVDM3RiOENETVZXdnN4VTBMbUhVMUFJNWtNU3dqc01XRzhnTmFENHJlbmlHOWh1NXpHMUhLQVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g539f343ca0f6",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten dreigt dezelfde fout te maken als Rutte: oppositie is op oorlogspad - AD.nl",
+    "date": "2026-09-05",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUmRXeHVqdEdpcXpXSGQ1MGs5YXc0Rk9Nc2tKUkdZbTBIMTVGZjB3S0tibUd1YTgwdUxqeEV1Mjlxd0ZDVjFDOXk3X19mNS1sUVBIazdvVTY2bnA0VHVoc2NiX1JYQ0pvZjN3MGt0cjQ0bGtzTU9fWlVDSU5rZVFuWlBFMFFBbHlNVkVMeEs0Mk9wcTVCYVJpTTRsV3hEMC1OUG1WNndBY3VBcUdpd2E0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0334cf7274be",
+    "type": "intl",
+    "src": "nltimes.nl",
+    "title": "Record 7 in 10 Dutch dissatisfied with Jetten I Cabinet ahead of budget day - nltimes.nl",
+    "date": "2026-09-05",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUi1uQXFBbUNqTjIyTjd2ekwtenRhZXQ4MUZ0LTlLcTdHVlgzaVNZTWZVbmFQUEVTSk9Oc21JdFM5WUFlbTJXSk9tMmJXczB4TWZydWxOZWhrMXhOaFl0U3FkZUxTMldBbUJjQjhwbkdQR2NnbFFkSUx1QU1NYTRoRFlPRVBCdUphakxxdEJQaGJfb295Q2Fj?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g636af75749ef",
@@ -305,6 +427,27 @@
     "lr": "right"
   },
   {
+    "id": "gfa709794c22b",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten over ‘jankerd’-appjes politici: ‘Soms moeten frustraties eruit’ - De Telegraaf",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNS05Zc1VfUkZWNjBXTVFPQlVadXdEQ1J0aXljcnpJOHp0UTU2M2VJMTRzR2VMMGIyaDFld21zR1ZKLUI0Y1d3a0x6UmtmeGs3Mk9GUTY4ekt5SkxQcVRMVDlpNUFHLUdiY01rNzVlNW4yeXFxQ2MwejZ5UC1ySlpEbGE5QUFVQWxjOEczRU5yanlTQXQ4a0NKUlYtVW03SzUwdWhsUXZYM3hPWmljSXdlY1VR?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g0ef819591556",
+    "type": "intl",
+    "src": "nltimes.nl",
+    "title": "PM Rob Jetten has received 2,293 homophobic responses to his X posts in 6 months - nltimes.nl",
+    "date": "2026-09-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQT3AtaFFENVdsMlJmRmtxY3hWc3hmakhtM21ValJHb1hhZ29odkZQOTYzNGkyZlZKTHVOSGZscWlGWHJvRUp1S21UdVFYdGRtdlM1dURyN0V5YkxKdlRndlVGb2hqdnBWc3BTc2YtamN3cmdkZE1JbGhKSHBLdjlOUnk5SG9ZSlJmRGstamc2UGI0SFJodk9fRXRhUQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
     "id": "g517c94f82340",
     "type": "nl",
     "src": "AD.nl",
@@ -413,6 +556,26 @@
     "date": "2026-09-03",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixwJBVV95cUxQUHRVd2JRTFZTcE1mRU5pelFjUDdYdUlYZDhxTGZrSzdQbnM0WUVFMjRJcWQyX25oTVVLWWg1WWJZSGtPLTNnVFFEZ3pLOTdybl9WcE4zdkxEbm5lbk5uMlJXaFYwSFdCT3BBbW5SZ2tMd2JFa2NlOE5aaklWNHlyUlFfaTd6SXh1Y2pSaEpMOGEyTGRYTG1qcmJnMW1wLXhHaWZGX0xsU1BqM2xIVU9sdjRnXzNia0lGRU5oWTlKOHV1cmhVdWxHWGstM19DS2dvM2lDV3hRUjhmUVZveXQyN0xIUm9Mc2dyTXNuM0JQUjNNMldkT0VOV1paZS1KcC12bi1TR2xWQVJVdmExNnVrdTRNYVdTTElfOWlBMEotaDB6b2w3RldIdVJETmM2bUZnWVBPWkJhUWNvMjRnRktxOEE0dFNtX28?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6568305f7bc6",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Ze zijn ambtenaar of politieman, maar ze schelden op X openlijk Rob Jetten uit voor homo - De Gelderlander",
+    "date": "2026-09-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxORjh5Tmk4aV9PV1lBQUdrMDdIeUNWOWwzTHlCSncwYURTakZiMnZudUJLSnFoemhGbDBEbXUzQkdPbHZveVk2UVJWeV80VU5JMGdsNE1WdjFTY01qeXNtVm03RkJVbVFFTEFtWDI1X2RSaS1UY3dnM0JjSklRUGs3UWsxZm8wMmZudGFYSkFERmhqcFBOak9UUWwycndvOUJ4WFlhRUlBSW42Y2V4TlpSRDBrY2ZNS0NUdnh3bDZ5dmVjMEI3RVNkSHVLZmRMM1FiRXhv?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gab2213d7fc40",
+    "type": "intl",
+    "src": "elysee.fr",
+    "title": "Déplacement au Royaume des Pays-Bas. - elysee.fr",
+    "date": "2026-09-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPckZpMkU4ZGt2NmxQUVpxWUl3NHRMbWN2aldVZlppa2VvTHZoNEdZSGxiMzgtc2psMUtoQVhmeFZVSXNzLTZ2QTUyaFBIbG1teGhEUGxwWG5FVm92Wkw3M3JFbjJ4NVlmdU5FNFhzTUxfWlEzY2prUTdra2Z0ZFhNYjlSMWVxejBpZzE5WA?oc=5",
     "flag": "🌍"
   },
   {
@@ -796,6 +959,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gefd33a99e8ed",
+    "type": "nl",
+    "src": "parool.nl",
+    "title": "Uitgelekte begroting moest oppositie verleiden, maar Jetten loopt een blauwtje - parool.nl",
+    "date": "2026-09-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYld2UHlGakRQNWZabEJvWG5YeWlRNkVDTVVyOU1KTkplWXFaMVh5MzNVQkdpVnZ3S3lXSkdQbUdtUmI3amhNeklSb2kxMUM0aFJta1BpTzMyZ3FBM2M5R1Z5ZElOdTBHQVRUbmN5X0JzNnE0RmRjTXVuZmcybTRyc3NqNkZrUUxnY0xWdHl5d0hEUXhFdjMzMnFmUTlnSEtQY2luRTljSnVOT0p0dTJnUTUyMEVwVW5LaS1N?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g5bd930da68d2",
     "type": "nl",
     "src": "AD",
@@ -1155,6 +1328,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNVB6TXpNZ2RCRTd1cDFvYjloQVFrWUI2Yllha0g1WGc0NjJqcXBtT2Y2QTBGUkRDb3RYUi1MSmczaXNGU1hzZVRmSUZnbjR0RzJpZ3h0TTdiTlJ1MzM4YVJFbjhyYXp6T3U1VmktTjhBbzdWSjhINHIySUpodHFoZ09Ka3pwYlNCYW5tUmktVFFoT1Jqdjg3ZHpTNjBFMXFKYXhRcDBKVUFxa1JSX3ZqRw?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "ge250039701b9",
+    "type": "intl",
+    "src": "nltimes.nl",
+    "title": "Dutch governing parties agree to 2027 budget; May need to cut a deal with Parliament - nltimes.nl",
+    "date": "2026-08-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTDFfLWVjWkt0M1NvTTAyTXVRZURReDVGbWJwMG1yTjRYdV9rS1RmX3QyTllZMDVDWWVCNnZMZ0JmRzhBUF9HZHM4WUxKeDVmWWNwX2RBR1pkSEp6RE1GMEZTN0hxaDJVTDdzSXl4U3JJVWdsUkFXNG9xYVJITFJQOEVPclNBTGotMkJSc2ZGcEhObXVYdmtxZ25SS0RGc2pnZUE?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "gc8a5e6926ce5",
@@ -1667,6 +1850,16 @@
     "date": "2026-08-27",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSUoxVVkxb0Y3ZE5SNjJVSVlxQnR0ZW5CNDNNUUY3RFZtQTRGSXJMX3Z0eWNCX01meC1ndVB1aXNPVHhqQzJPMGw5eE1IRWcwMkpYOExWcjhPYmo1c2F0ck1jbzdZWU9nbWozRi1rNVdqTS1fWml1dWlpS2lyUlJIRTBEeG4xeFpWRDIwTDFtNE85SW1wNDZCag?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4ea4906b5e6e",
+    "type": "intl",
+    "src": "out.com",
+    "title": "Dutch prime minister's most viral gay moments with his hunky hockey star fiancé - out.com",
+    "date": "2026-08-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02a29hYWFlSDVoNjVZdFl2Nm5uMXhmTVF6TFlLU1lYZlBZaUpFSGtNQkl4NHU2Y1BZaFg0NXdoNW52N1NuZkpwdlJaLWRQaHAyS0Y2bmwwVmhEbnFvcTdSdQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -2272,6 +2465,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQd0RhTF9EM0NQYS13T2Z2Z3dPT0wyQktSbUJLVmNTdXQzVnhTNzU3MW1DdnlmeWxQRjNsZVg1aG5iem1oR2xqYjlMV2NmX2lHS3IwWERWWl92X29Kb0UyLUhvQXg5dFlZNDhsd3JMcFI0VTk4LVRSam5VZ0x3aW1rT3JCd3ZPU2ttZmFOOFhGNmNOTDN4RWY5T2Z3?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "ged90db2d6082",
+    "type": "intl",
+    "src": "nltimes.nl",
+    "title": "Dutch PM Jetten seeks budget agreement as opposition demands billions in changes - nltimes.nl",
+    "date": "2026-08-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxON01lQzJkcm1tWXZZWjJmZGd0V1duQk5uSnRXNVVMSUw1ZjZOXzU0S1ZDWk85eHo5dVdaXzdUb1V4SXo5aGJHVnhtdF9sOEZaNlVrMHlOemFrQmF0X1BISUhaSmIwSDJPUVNVeTYzQlQxWTlWRFF6eFZrUVY4RlNmWldOS3BtT3dTVmtTNVdXc2s1VkxHN0tJS0RNVjQ0azVwdFZycW9JQQ?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "gc108101f4dd8",
@@ -7594,6 +7797,16 @@
     "flag": "🌍"
   },
   {
+    "id": "ga7ac087b1970",
+    "type": "intl",
+    "src": "SCMP",
+    "title": "Exclusive | Dutch Prime Minister Rob Jetten set to visit China next spring: sources - SCMP",
+    "date": "2026-07-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZWNrNThSY2dwOTZyR09XdVhoOTVYdm5kNjZVQXZlSnpQTlQ5dzJJdXJQOHhxeWlZeWppajlrN201bDBhX3Myd0pxTC1IN1o1NE9ieVYwZ1hpUGpWaWtJWGRIZE5IVExRXzNELTNPMVgxZVIxV0hocGMtNDJIZjUxdkM4X0dWSGRiaUVlNFVZZzBwT0lrLWdFbXdjMHhzOFlzTDVnXzRRai1hYzhDOHpNSlR2cllzZUNoUjYtOXpQYmtwd2Fl0gHEAUFVX3lxTE54bF9lU05JcWIwUXphZVdacG4xVkJnUE4tdlRNZ2loWGdZSnhzbzE1MFY1NWwxNXNTR3NsS1hOUHh1d1RvRzF6TEViUU9HYnl5NTZSMHZmUXNOUDFsUm9jdXhOZFBmZHdfVG14Rm9IT3BibWxXdTQ2WWREU1JyZTRGejBYNEtiRjQzOGZxWkp4VllmNmNSTHhzYVVkZkt1Q0d3VXV6dzZJU3VhTkVZaFk4Y2FHczNxZ1hvaHJfQUNTYUM0Vlc?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gaeb046536445",
     "type": "nl",
     "src": "Tubantia",
@@ -9327,6 +9540,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g31725eae87a0",
+    "type": "intl",
+    "src": "ukrinform.ua",
+    "title": "Прем’єр Нідерландів: Створення спецтрибуналу щодо агресії РФ стане однією з ключових тем саміту НАТО - ukrinform.ua",
+    "date": "2026-07-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNV3RVdloyX0lQSVhhTHBTY0VkVWx3UTNNdC05NVM5MV81Mi1DbUd2aURSNGRhWFowMlphSlVGNUR3ckVBMU5BVldqdXVUN3ZvRkY1Sm1fXzJsMlJEOFBmc21WTjdBWFZZRjBZbVNueXIxVVo4bXA4ZGlRNEtaTl9NTTA0U1VvaWFmMDFnSU1neWRVTXFya0FLWXRubG90Y0JiQ004ZzVSOXpYWm5nVEdNS1RaaE9SM2lid29oR3E1dDZxU2FON1NIckxSX0FDVks0VzBDbTZKRy1LUmR5X1dtcERKZ9IB6AFBVV95cUxOZzJoNDBOWW1SUklsTjVqU0xIOG5FVFFzdWZ5SEdHQXIwMmRHNFlwVUo0aE92MjZHQW1fYWhVZ1ZhS2djcHNTRVQyRmplOFJzVzdrZkZNdU1xa1hXbGF3U3NDSjBmRW9oRGM3NW9YWUdDLUpKa1FTR21Ib252ck13MTFVUVFoVU1SVHBFQ3VNZ1F3VjJ1aVFtY1RKdjBDVXJEM3RCYjROMTJrYnFKcDNfM3BxNGNlclBsZXpZSUtSekZ4VW9mT1dCM3g0UVpDc25rNzczVnZMRnNUSTRHeE0xYmxEeFFwTXBv?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
     "id": "gaaf151154032",
     "type": "nl",
     "src": "Tubantia",
@@ -9973,6 +10196,16 @@
     "type": "intl",
     "src": "scmp.com",
     "title": "‘Too late’: why some Malukans say a Dutch apology isn’t enough - scmp.com",
+    "date": "2026-06-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMEs0SFZIVnV3cW96OHNVVDlzNTVPNnhSNi1HUmJ2ZFVkVEJGRFJlMG5yUE90dzFqZFlLSHBrM3NKa292MzJOSUlXbV9ZclNzbDRLeHJ5QmtqT2xiMThkZEQ5Zkp6Zk52RjJaZjZ4MmVhRkJILUhqRkN3ZzkwOXY1d3g4SlBjaGVwbE5YN0hGRExOVEZ2QVRZNUtoUUpXZkVBM3ZtZmZKeHlLeFRuZjFF0gGvAUFVX3lxTE02N20wazNmTFlodG9iMlJTcnlRa2N0Mi10Vkp6bjZTUXRWQWZCMlc0YzRWUEJadVFIdWE3SkpKS0QxTS1aR0NQUEdadnFoYjNNdGdkNi14UGFmNGFRanJfRGhILUNfeEFsRG0xLVZUR3RONUUzUFU0WW1JbTVBYzNHMHQyOWxJNExmcFVKOGdISVF0OHhJVndEbHl4NG9OUXdNTUNqbHhWSmNrazBNZ2c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7c16589a7320",
+    "type": "intl",
+    "src": "SCMP",
+    "title": "‘Too late’: why some Malukans say a Dutch apology isn’t enough - SCMP",
     "date": "2026-06-28",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMEs0SFZIVnV3cW96OHNVVDlzNTVPNnhSNi1HUmJ2ZFVkVEJGRFJlMG5yUE90dzFqZFlLSHBrM3NKa292MzJOSUlXbV9ZclNzbDRLeHJ5QmtqT2xiMThkZEQ5Zkp6Zk52RjJaZjZ4MmVhRkJILUhqRkN3ZzkwOXY1d3g4SlBjaGVwbE5YN0hGRExOVEZ2QVRZNUtoUUpXZkVBM3ZtZmZKeHlLeFRuZjFF0gGvAUFVX3lxTE02N20wazNmTFlodG9iMlJTcnlRa2N0Mi10Vkp6bjZTUXRWQWZCMlc0YzRWUEJadVFIdWE3SkpKS0QxTS1aR0NQUEdadnFoYjNNdGdkNi14UGFmNGFRanJfRGhILUNfeEFsRG0xLVZUR3RONUUzUFU0WW1JbTVBYzNHMHQyOWxJNExmcFVKOGdISVF0OHhJVndEbHl4NG9OUXdNTUNqbHhWSmNrazBNZ2c?oc=5",
@@ -22070,6 +22303,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g37369114162d",
+    "type": "intl",
+    "src": "glavcom.ua",
+    "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - glavcom.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOalJIM2xITUI5WUx5cGsxMXlaQVU2X2FIU0xxU2JGbm41V2RRQ0xQSjU2YW9kRHBzSGF2azJ0QlY1cWgxQ3Zudk5LV3dDa3I0a1NrNUw1SEZfM29JSlp5a0RfRklCQ1NFVE9hcXN4cVVUY3lmbE9YRzh3TUJHdXI0a25NcXktbWdOREppdEJDZnhiNlpKcXlQRElhMlZGc0Y5LUJGdEttZjFBYjhqTUZ4V0tIS3Nud9IBuwFBVV95cUxPdjczRVQzS0I5dEdYRTJmQTBUWFFvM2Z2REUwcDBNem5PWlZiaGFOUkd0Y08zMnJ6NVIyMmVranhWZXQyRkN2WWU2djRjTl9aTUxmZDkydGN2UGdtWmRLZy1uWHdYT3dKaW9JVmpLdjJZQ1F0S1lEakk1NzhaNFJPdzNpZHdMVXliSU9aWU5IVUxFMV9qZDd4NW5zYmNQRE5WSnFUamFjaVM1WHoxb3paMWwzaTY3Q3dHOV9N?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g18d3822c9c96",
     "type": "nl",
     "src": "AD",
@@ -23285,6 +23528,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTF9wUldSMU5zRW1tR3NDcEM1cEp2SW5tRkpRZ0JuWHR6T2RiOVNMOUdiaFZmVF9OX0lMR1U0eTVfNGtEQmNTamtRa0RrdEk5RWliLXpfT28xYmVFZERZZzdtS1VQRGFQZWU4Q0tqOGwzRzFYSER1WWZHYzdZSUZFQVF0ZHF5TjRUa0lkZnZ4N05sWVE0RmxPVVlMbl9ER1BJSDFENkdfMWtXcGVxRFh0Sms4SQ?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gd04af146a113",
+    "type": "intl",
+    "src": "elpais.com",
+    "title": "Los Trump invitan a cenar a Guillermo y Máxima de los Países Bajos a la Casa Blanca, en imágenes - elpais.com",
+    "date": "2026-04-14",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUG5hM2tWNFE1OVJqZ2VGWkZkMHFoekIzeGk4QnB1YmRsYlBPSzZmNGpubGx0cW1XeEs3MENNLU1wc3RQYmxVeXBValZZSFNTZHZWQS1vaVJuZnhTejE2YTVNMkN0OGxBMlB3X0xlaXJLZHE1VGUwSkg5MU1wWUZ1bjlGQlV2OFNaeVlCUTBGcDY3RkVUWHMzWklKbkJFMm5XZkx3ektDTTJzSmltUXVLMXRqempQeE14NHM2Wl9STFd6N1g2NWZCTU9RT3hwRGozYWc?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g691be09de075",
@@ -35352,6 +35605,26 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbjJra0pYWDZ0QmlucEN0eWhOaWZISmZXY09nVDV4QVNicWhKcG0xdWtyV1RmcXk1QUFHVG8xaXN0RkplN2dlaWQ4M0huY1RIUndaZWNROG1mN05kZ1lrVTlaTm1mVXh6UnhHZnZ6REtNN3huYXM3LXgzWjAxOXlDQS1IMzdVWXZnakJmdVpLV29KVWdzeHpZN1JaYWZuRFZTY3EzekxLRk9mY3M5WjF1cmdHQ0FLNHpZamRWNEl3aHZRNExUbUNselZTQ0YtZXctN0cwejNGZTA4R0pHSkZ4WEhwV21BQmx4Qlota2Y3dw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3e3fbc64507d",
+    "type": "intl",
+    "src": "Greenwich Time",
+    "title": "New era of Dutch politics opens as Jetten is sworn in to lead minority coalition - Greenwich Time",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbXFqVUFaREdBUFlRZmJ4ZWIwYzBqOWxXcm0yUzVlTkE4dVA0SkhVWEFVZUtWblBCOTcxbk1uOXhGcER2N3JRWmFZOUhYdUx2RHVydWMxU2pYN050WFNHWDhwVU1yOVppN1piYjhBRmhqaFB2cVhTUGs3VXcxZHNsdlhpT1VtTHUycjhuVWQ0dDRkMFU4T2xyNE52RFdYcXRidVRScFlhNTh2Umc5SzQ4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd09d9a933aa3",
+    "type": "intl",
+    "src": "ansa.it",
+    "title": "Nasce il nuovo governo in Olanda, Jetten premier più giovane di sempre - ansa.it",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOclhhU3lEU0ZZWXFiRjZLa2VYYU1kZzVncElmRmpzWF84S3ExQ3hnSWJYWGtpM3ZVRzV4VlJkVHd4S2UyR3NQWk43MVFRLU5YalQycldBWWt5VFE3Mm85TWg3SHJaam1lRDItTk5hTUEzMXRxV2QzcGtuai1TdnJjWS1IVWxPN1A1X0MwTnRVRW52VzJkUURuZWg1cWZsVkk2SXh6eFdGS3QtTC1UdjA0ZEgyMjEzcW5weVQ4UnJpcEZiSElqSGt5RVJjTGV3N1VqQUZyTGxlT1FDMGk3aDlKMExUZUZ1MFo1SG54SFUtZG0xNkx5aWc?oc=5",
     "flag": "🌍"
   }
 ]
