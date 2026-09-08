@@ -1,5 +1,98 @@
 [
   {
+    "id": "g266d48b200b2",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Jetten over democratische overwinning AfD: 'Zorgwekkend' - Nieuw Rechts",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQlNOb3E1TWJzV044QklvLUZvZ29DMVdPVUNqVlFZNEs1Mjc3UXFjSnBxazRPNFdTX1lXQ3owUGZVMzBmRE95ejl0NU96NnVNZUY5cFpOd2dPQ0RmdWRjdTlsMi11VGZMYU1WTVBBWmU4UEllNUNwTExhUDNuVXVfWUNfWjVOMl9ab0Fj?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g176f38caaa15",
+    "type": "blog",
+    "src": "De Groene Amsterdammer",
+    "title": "Ook het kabinet-Jetten kiest voor de rijken. Geheel in de geest van de VVD - De Groene Amsterdammer",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBPakt5SmhFSzBPckl6YVdaa0VXaFo4Qk05WWJzNldXOXlDVnhHbTJGRE1vZTdDTmFMT1R4YXV2MTZqUGJnY0NoV2J5U0xEbjE3NHJYU09TTlpHbkZwdThNMzJ6bHYwYjd6TFZ0M2xn?oc=5",
+    "icon": "✍️",
+    "lr": "left"
+  },
+  {
+    "id": "g85c39562f51c",
+    "type": "nl",
+    "src": "Omroep Brabant",
+    "title": "ASML begint met bouwen: hier moeten straks 20.000 mensen werken - Omroep Brabant",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQzlfMmVZZU1uTzBmSEJ2aGdiRGtJMWVfWGhqYnIxaXZidWlOZDR2TmxGemZQSExLOHhEQTJQa1FFb3p5YVd6bHdPdDNiRHJYOHFCM0V2UVFZN0ljVFZZVjJFTmxJVEFpbzA0S2xkUmt2RC1zSGhlMEFSU1QtX2U3WnVyLTBtSmFuS05EUFpBSE5BUUNTal9XTExkMzE1bGNfS012NUpZVTU?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gda6bc4899ef2",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "ONL schrijft brandbrief aan kabinet-Jetten, ‘code rood voor ondernemers door stapeling regels en lasten’ - bnr.nl",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWjFkNkp2OXB0X2wzSHZNMmE3TVF6ZUJqbHhrWEhGWjAxTHBDQnhibk9hY3loYkg4Y1AxbXd3VFNaUGp5QkVOUUQ2OVFyZlJZcXVnWU5PNmlzRDNTb3dqNjQyNFFaX0FCUXlwOWVRdlU0QXZ3UHJST3djZFJtNTNDNnlEamg1dGdGNWYwYTU4S0dtbzYzTTVpd0RKZV9KckZLMW5NRjV0Xy1GWjhwYUxTdzhtdkRMNkFNb2VZVDZQaEJxQVRWaDFiN21ackJseFFhVk9Ob1dOMjgyd3N3c0E?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g58fbf406f834",
+    "type": "nl",
+    "src": "niw.nl",
+    "title": "Kabinet-Jetten kiest voor harde sancties tegen Israël - niw.nl",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1CakNQMm5ueDBudTRuTnlpOXNsZ1RWWkJoSnFwQjBjVFFZOHUybjYzNll0RVRwR0tWRHZMYlhsbEpFajNEUlBSeTQyNzlXWDM4aFk1ZjBfcjdMaGh2M3M5Zk90RUxxbzVCMzU0SEVFMFVRNjkyRzhvZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4ae06d42cfae",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Belasting heffen is makkelijker dan bezuinigen – ook het kabinet-Jetten gaat voor de bijl - Wynia's Week",
+    "date": "2026-09-08",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMTh1SEl5Q2hWZjFDZXlucVZZTHBvdy1PTnV2TUZjM2g1M0Z3TFdqQklmQXhIbk10eDhDek9hNmFMaklMTUx5cDlIaVhUc3VjRGJaaE1ZSHJFUUJGY2ZIQk90eVJkM0hpVGlnR1dxT2FBaEZkZGRjMzViSW5qUlVBd0xybS11Zm9KZUpURTY3dkwxeWhoOTZDcEVHNENaVjlZcjlWLXAwbVRXME5CcHRtYmJDYTE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gb023e644c477",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Ondernemers slaan alarm bij kabinet-Jetten: ‘Code rood voor ondernemers’ - Nieuw Rechts",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQRHNITjZUMU1Nbk9YODJyTW1ocDZhZEg0cU15bjZRbmx1aThBd2RiNGR0aHJzT216eDJIeXo3NV9OcGE4T3lYUlcya2EteE90NkV2Nm9Xb2x0dEdGNnYzdXl3RjlWeHVNeFZfelRrcnJ6QmtrSVVTM3Z1dlJfaWN2UElla0hxcUNVblVCU0hKSUFpUERLRkt2M3ZsQVYyWVA1?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g00981a86bd87",
+    "type": "nl",
+    "src": "wnl.tv",
+    "title": "Ondernemers sturen brandbrief aan kabinet: code rood - wnl.tv",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMkQybXA1ZVVlZVVyWE0wQW1tT19tMzc5ZkVCMmFCRWlqRGhXakJOdWN0dFRyQmhLY1RUMWVoWkdPTFB5NEdSZDB0dTBGRl9haHk3Y05ubWFZNVpKV3pqdjdxdTNlVGY0dmRIRFRCVnVTcWlFLTM3U1ZHSWVDRFo1ZWhMWQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc6005072982e",
+    "type": "intl",
+    "src": "Indian Chemical News",
+    "title": "Europe’s largest carbon capture facility opens in Netherlands - Indian Chemical News",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYnBVcnJJSUYyOFkxcFJVMGthRXdJNjBKWFQzODdINk9UeVZhN2djdTZDV29UWnVxQ2J5dm5aX2Zna0M2MnFCRVc2MFJNZ3VZSEY1Y1hGNFFUYUNNQjM5Qlo2cTR5OTNjbWwwSWdlLUNqUXpMcDhBUUdKc09QTVlNcWdjU0dQMFRDeko1QTYzM0hoaTV1MG4zREtCdzJlbXhtM0dqZkEzYlRaQdIBsAFBVV95cUxNd0hnSnhObjJoZTJNQy1ZMEd5cHdISUVuZ1I4LWRiVjdIMmdPdG5oSkQzQVlGV2RfamttV3lTbk5DT192WVlmUE8ySnlZY0Jkc1V4ZmNYSW9XeTZUZFlXdDN3cFB6c3FLNWZuNzZleUM1c043ejZORDZUdnNlRG5id1BSckNjQmlkTUQ0S3VqMEZCYllabUlHYVc4eVVPMmphSElLcmp2RFlGLVFiSHBEaA?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb371bd743dc4",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -92,6 +185,159 @@
     "flag": "🌍"
   },
   {
+    "id": "g1247c864d52d",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rob Hoogland: eindelijk toont Jetten zich een ware leider en premier - De Telegraaf",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQlJTamRxeW92YWt1TDRmRFhYN2FTSmxtQzlDUkRCVEZhYldJNHlaUjNwWllEbjJ2V1dhenNrcDlBcnFnOTNvalFLLWdndzRGUU5YY1dKQk9XVE5pVktybXJBM0pWbVBncVJualpweDlCMEY3Z2xUTTc2V0tGWHVRdG5mX3BrclQ0UVhMU1hnSHNURWUzUHZyTlhfV0NtdHJyTU1ONUxGNFc1eGNoTWxibDRxS1M?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gddc924f43657",
+    "type": "nl",
+    "src": "pzc.nl",
+    "title": "Jetten en Noorse premier ondertekenen verklaring in Middelburg: ‘Geweldige vriendschap’ - pzc.nl",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYy11NzVOb2ZmaWNzNm8wZ0VsNDI5dTdPLVRoM2FUU19YZUtXdjNwMkdvaUttSHoxeGxyeW9JbHQ0d1pzZTlrNk9hd3IyOUNXUG90a0s2VFpoNWRfak42LUtKM1VkTjdQVTlBa2ZLcWk3LWtTeFlfUlBxYnVaZEQzdHpuMzVEWHZqTUQwN1RDWkVobWRySjVNdUNpSEhEcVlDRWZJOWR1RUstdw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga728421c671c",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Rob Jetten weer naar Eindhoven, deze keer voor start bouw ASML-campus - Eindhovens Dagblad",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdk9uQ0h6U3VIS3NsWHhrTGJ2c09GdlozT0F5ekZwTnA5bE91MGxkVDZJUkRYWHNQbUIxOWxMWkNfMzNfZGI3amI1aWdsbXFwWEl6SVJoZ3RDNm01ZnZLLUgyYVlTUnBGMUFuSGdBM3VHZUlZdXhaajZjUUZGdzFORlJQRW8zSERVb2wtSDJMVDRsOXlKTmRUR3h3LTBQaVBud2FlNERXMElmUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6d1970ee16fe",
+    "type": "nl",
+    "src": "Bnnvara",
+    "title": "Rob Jetten druk bezig met imago, premier delegeert andere werkzaamheden aan coalitiegenoten - Bnnvara",
+    "date": "2026-09-07",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUjBFdXViWmwwbHRXQmM5V2JWYVJKamRNdWUxYzFTdjJzdW1DdjJWbkViRGdwU2d3VjdQOVJXQkFiLTEyWHdvNG1fc0JQRV9kNVU1RFVzak5NX0lHbTFaOHdOalRWUWkwY3NMMkVkQ3NIQnBNa2NoTjUyV1E1RnhQeUdDWllVcWR3a0xOTUFhUk9RT0ZpblMzd2JzM0dxT2w0N3JncmJXZmg5eTJhMUV2ejMxX0lZMVZSaE9makR6WGZiNjZla1ZR?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g0fa2857318ad",
+    "type": "nl",
+    "src": "Omroep Zeeland",
+    "title": "Goedemorgen! Noorse premier naar Zeeland, laatste hoogspanningsmasten verwijderd en inloopavond over stationsgebied Goes - Omroep Zeeland",
+    "date": "2026-09-07",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOYVFXMnVVczE0eUk4NlI4enFMR091V2x1S0RaUkNNVGpuMzExNzNENkxYdWxYUmpkQmh6YnRBdWtFamRoN0t4TUJPUDItdFp0Z21WRGNvZkI4a0h3WUUtbjRQallSREg1dWlJQU1XdlBqcU9MZ2l6YU5Gd1QyRWhOVUlnM2U0azdmdGdMQUp0QXVGTTdUbnh3OWhhUERCbUN3QTlnRURqUGkzN3p2LWE4bDNLWWthelpqZ3M1RkFYdXJhakxsMGRZNkp5MWV6UDk1VTgyVVFrV3VQTkVydGpfaDFDamhBVlhuUEVEbTFfQlR6Nm91OGc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1d1743cabe7e",
+    "type": "nl",
+    "src": "Omroep ZVL",
+    "title": "Hoog bezoek in Sluiskil; premiers openen CCS Yara - Omroep ZVL",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV3B6Rkh0bFVKQjhUdHlraEMyRWlQOUNmeks0NlZjTTRrYVdEdTJMdHRjcE5wa1NBN3p0Qzh0QmplWFVOQ2VKbEZlWUpmckZwZ0JSQzRxSWhmR1l0Zm5Vcl9vd0l5ZjVSUHRYWXptX2czYVkxb1lQU19VZHJqMWpoYVlGNkVBR28?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g05e27c08992e",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Noorse premier op bezoek in Zeeland: CO2-opslag is geen sciencefiction meer - Trouw",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQdzFvdkdUU2J1RV83SEh6czFYN3FYVy0tVnNxaUNqbEh3QVBtVjl5VHQ4aF9KS1l5WTFrSTl4ZzlYSzBXYmJtUXBTY0Z5aXpOdDgxdHIzRzlMX0h4X0c5aXFoR20wV0cycjN1YzJ4bURDRl9Ha3g1dHprVUluajFzRnBwRFJRVzBkQXNVZk5OeGRsWmxWa1FiRGhyU2VyaEFaTVo3dmVaNTBZUHhid2Y2ekRQWkNnQ3E1eS1DS0w5cW5DUTdITGc?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g2ff859f94f7b",
+    "type": "nl",
+    "src": "pzc.nl",
+    "title": "Feest der herkenning bij opening CO2-project in Sluiskil - pzc.nl",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQM1lmNF9MRFpGNk9RX2NsVHphTUFFR283cVFBVXNGckVPSTg2LV8wbDdVVWJfU3RiOHl4eU90QWZiOWZEUlI2Uy1wOUJ0eFJUVmVPbENqcVh6ai1QVklkaFRFXzVpTTJaX2Utdi11THZwaTRvRGRrUVB4WXBoNmliOTFQNzhUelRRTU9jRHZBdFRDZm1SaU1R?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga7335cfe7db0",
+    "type": "nl",
+    "src": "Duurzaam Ondernemen",
+    "title": "Klimaatmars roept luider dan ooit: Jetten, stop met fossiel! - Duurzaam Ondernemen",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWXI3UGN4dThfSlFpaURRU0FWM2ZEcGJVTmE1Ry1FNWNEd0pzQmZDczFIWXlqSFBxenBha3RwREpRUENhSE8yYUVxSHVkbWkwbWR4TnJNclpLNDJiUXctTS10elV3R1NkTVdJX0oyWmJ3alEzc253cEM3VTFvUU05V2NweHRPY3otRnMxZTlVT1dtTlVRVTl3cg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g89e1912cfd79",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Onvrede over kabinet-Jetten groeit snel: zeven op de tien kiezers zijn ontevreden - Nieuw Rechts",
+    "date": "2026-09-07",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNX0dUQnU3cUlCR09ZczNuaDZxTzhSX29yNnVKZVNmajhOcXFBS2lIYU1vc05OelFSTUtFLVY5WXFqdml4VDdrN1JjbVluakt3TTRhTVF2Y0xsYWdrdmc5N3dkck5qYmVXRHFudlF1RGY5RmhvbGVkazExYUpfclVmbTFfRUFMUFZHWVdDNUtnZ1ZXZmRHVmQ0c0FCbGp5T3dHcGQ4ckRwejdEU29RdzBn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g56fda158fb27",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM Jetten calls electoral win of far-right AfD in German state a \"wake up call\" - NL Times",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejRXUmtJekpVbDFkSVRBMTZZclk4bkZVZ041M0VVSTZnOWctZ0hmZDJXdWZnQVNCNDcwVDNTV0Y4cVhzLUZHNEU4WGszWVJ1TTllS0RObnltNHl6c2hWM2NibEtGb3VETzQtdExfcHJWcHRuQ0dxUTh6TDdGY2NvYmtkUFJzTGZveU9JRTQwLTdBTEVXYVItZjJ0X0tXeER2OEtYVA?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g1957b22c2c74",
+    "type": "intl",
+    "src": "energy.ec.europa.eu",
+    "title": "Commission inaugurates Europe's largest industrial carbon capture and storage facility in the Netherlands - energy.ec.europa.eu",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMXRfVTM5dUs3LVpnZU5CME5FeHB6LUxDREdpU0hDU1NBOHdRZy1NN1lrQWFPRXoxV2FjVlZ0NHE3djZFT283RDBtMVdBQXFvT3ZfdUNaVUpKSXdBeXYtb2ZYNExPeWdFZXFxLUNiUkhua3BmRlFXZzZWaDdkQ1kyekpRV0RDaWtIbl9NdFdTRTRuMFNvWW41a2RmREZwN0NjTi1Tc05WYTJvVDNaTTJSTHhHU2lzWG43S0Y0XzFUV1NvaU1jVU45Q2VsVmVHZEVNeWpOZEdHNkkzUjZJ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5ed84725263a",
+    "type": "intl",
+    "src": "Infobae",
+    "title": "Primer ministro de Países Bajos ve un \"toque de atención\" en la victoria de la AfD alemana - Infobae",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZWlJdG5xUUxJYVVtYjY1OFJ5Qjc3SXQzbDAtQlFkc29LcmVUTGI5c1N4cW1TSWlFSW83UlVIUzdaSUg3cS1HUm9tZWxMOGd5SVgyZGxxTzFsRFpHU2E1MkwtLW5Jbk1qcUp4Tk1KZ0JHX2RwZHpyWlJ1ZmE5cmh2YlRiallqVlVtMWRtaTRNQUVvQXJHSlR1eEdrOFlFVFA1OXpmSzVfeks0VjdhWGVzMzJqTTNoWUpJNnpQdU5STFZzUGRwamJzZ09GQmpOR0REMGU4S3FGQ1HSAfMBQVVfeXFMUHdqWWJ0WVBzeGVoMkhXQnZBWUZ5aVNwY3pEcGJCcFpVbkFVTldvQ2VWSUYzN0lmLTd5M1JYMi0wQ0JNWDVJQ216MmRBbDMtSWUzbnFIQ2ZLQTdGX041TEI5QzNOMm9BWW55YkIyOVFVLTZXZm5LUDdDcEpuTjR3ekY0eC1uUk9yUE1KNmdkcU1nQzRJT3B4dW1hY0wwck5lM1pIVXVNQVZXVlVvT2Vwa000eHpWd1ltZnJpNko0WGU1NkJ2Y0doLV9vQ25zejE3UXhDNVZwbk5HLU9xb3d4UDJ6dHEtVG9tNWhGRWhRUlZmdnc4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2c4fbeec1ab4",
+    "type": "intl",
+    "src": "Regjeringen.no",
+    "title": "Statsministeren deltok på åpningen av verdens første grensekryssende karbonfangstprosjekt - Regjeringen.no",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTzYwSHBuanBrNEtjQjV6WHB2V201ZUNrQm11UXB0djZnZ19XZ1RYNVRKVHg0SnpHbERoc3hab3V1SGJqRVhaMWdyMC1RQllocXFieElBMUNlMVJ1Q2hnY2VNOTdJbHN5U25uMTZwbDdWTVlKci1DV0FkeHJwVFJpNkZyRXk4RDN3MngzYUdjTmNsdFk3aDlFdGVIcG1KN3g0cFpoUFBvQ3c5LU9qX3JmSm03QzlZYXJMZ1hZQThDRlB0aE9BQTQ0SlIxS0hGc0U4NmwxdA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g07d42b910af2",
+    "type": "intl",
+    "src": "Energiwatch.no",
+    "title": "Yara åpner Europas største karbonfangstanlegg - Energiwatch.no",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBtaE1CdHFPa3Mxa2dXcEN0WWVMWG1EWUZvTXlKdHRuVEVqakdSY1luT1FaU21VeGJhay1oVXZIMzhnUG1jN3VkZ3RLWW9UT2Z5R1prUVE3aEljYVM4a2RqcVF0clRod1RrS1N3?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gfe39408c5581",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -171,6 +417,16 @@
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUi1uQXFBbUNqTjIyTjd2ekwtenRhZXQ4MUZ0LTlLcTdHVlgzaVNZTWZVbmFQUEVTSk9Oc21JdFM5WUFlbTJXSk9tMmJXczB4TWZydWxOZWhrMXhOaFl0U3FkZUxTMldBbUJjQjhwbkdQR2NnbFFkSUx1QU1NYTRoRFlPRVBCdUphakxxdEJQaGJfb295Q2Fj?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gcf36defe529b",
+    "type": "nl",
+    "src": "wnl.tv",
+    "title": "Oud-fractievoorzitter Zijlstra (VVD) heeft weinig vertrouwen in kabinet-Jetten: 'Ben blij als we de kerst halen' - wnl.tv",
+    "date": "2026-09-05",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMjVXeWYzMV9XSFlvM1BDQUhTZmdDSWVFeXI4V2FxMFpxY2ZzMnJ3RE54cGdWWFJBeE44UmxCSEZveUlQYmFiS2pMUW8yMUhDYVpnNk1HUTJjcWZtMk1ZQ1h0d21ZUjkzdTA2alhyZXFiVzhLUjNtQXE2bUY1bUlvLURNQU5YUTB3cTN6WHY3V2pWcGo3cElUakRrcXE4SWFwYzNleE9mMU1ZMWlNSkxBMnBadWxRZi01Z2xTVGtRd3N2ZEpfS2trNElJWXplQQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g636af75749ef",
@@ -2881,6 +3137,16 @@
     "date": "2026-08-20",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMU51WHNyNW1oMGxLV05EZV85UmNXc25mR0N5b3pvRzEtS1RxY1ZZRGZ0YjNtdGluVGZmbHdBSWo1UkkzaGtpU0k1YWM4eHRRVmctX2Z1WWI0cHVPSXA1WjdYM2xGeExUWGFub08wdEthN3JJNWtvM2xHV1NpWGhrLW8yZE5CdEZZU1pxRnlNMmFQZ2VpcnRweW5QMjY4ZFlqU2Q1SFllMFVfTHBEYW9KSHJfTkxmSC1TaUVicGFqWnlvTGNiaDVkWdIB3AFBVV95cUxPRGNNOXFadWwyVHkwYm9zcXl4NEYtTjFEQWNUb2lMTktXZ0lrX1FtaDNzMk9yM2E1QnBYQUlEQlBra2tYWFVSTEU3NHRBZ2FOYU5DcmY2czRJbkE5THRocEdrQzkzakVuWEs5Ujc5bEVpY2JRZGR2dUVWdFhmdFlTNFB5OVd4NWpkaTVzTFYxSFExUTNxOVZkek9ueVVGMVk3NzU1RnczSXRvNzhoejRkMkFiZk96UkVuSUtFVld4N28yLTdHanJ6Tm5FVW13UXJDUFlrMTA0Yjh0RkVE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9a66bfe7de5e",
+    "type": "intl",
+    "src": "t-online.de",
+    "title": "Niederländischer Ministerpräsident küsst nach dem Spiel den Gegner - t-online.de",
+    "date": "2026-08-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORld5Q0lvMGhidUFaaHBILVVUX19UUWpaVWkzSUZsTVo4d0kzSUVaXzBITGl2enRmdEh6N1hEMUhfN2RycGdaNS1Eem9PQTFjX3l0QVFBZFJFOHhxa1BrLXotbDQ4ZkYwTlhObkNGLUJMeWUzUl9XV1VlOTNUVEhVekdmZmxqazdvWmIwd2s4SkhjVFRDSWFfVDB0RUN4MGkyMzdUUFA3cUh2OENTZmxkczdkVWFySUlRRUM0?oc=5",
     "flag": "🌍"
   },
   {
@@ -16750,6 +17016,16 @@
     "flag": "🌍"
   },
   {
+    "id": "ga408126f16ec",
+    "type": "intl",
+    "src": "Finansavisen",
+    "title": "Europeisk tech-gigant inn i India-prosjekt til 100 milliarder - Finansavisen",
+    "date": "2026-05-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTWxoa2ZEVzI0am5ZMzE0TnZWVXR6SFllSXo0cTlSOHpkdTNJdTRJVmc1SGtUQVVoZ2Vmb19FQk5RUWszQ2lrRFo5REo4bTZsRFNoM09MUHFtRzd6Slpna3BKMVdaMnVrQWhiSHY0TTJPZ0hoeUY2XzBTVlc3Z21wNjZBdzNlMTFYN3FubGoyMk9jR3VlUGNVcWtjTHpCTS1nYnYxajliZW9Ma1BjdXkzV3R3bTVJbEx3?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb3c495d05d11",
     "type": "nl",
     "src": "NOS",
@@ -22307,6 +22583,16 @@
     "type": "intl",
     "src": "glavcom.ua",
     "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - glavcom.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOalJIM2xITUI5WUx5cGsxMXlaQVU2X2FIU0xxU2JGbm41V2RRQ0xQSjU2YW9kRHBzSGF2azJ0QlY1cWgxQ3Zudk5LV3dDa3I0a1NrNUw1SEZfM29JSlp5a0RfRklCQ1NFVE9hcXN4cVVUY3lmbE9YRzh3TUJHdXI0a25NcXktbWdOREppdEJDZnhiNlpKcXlQRElhMlZGc0Y5LUJGdEttZjFBYjhqTUZ4V0tIS3Nud9IBuwFBVV95cUxPdjczRVQzS0I5dEdYRTJmQTBUWFFvM2Z2REUwcDBNem5PWlZiaGFOUkd0Y08zMnJ6NVIyMmVranhWZXQyRkN2WWU2djRjTl9aTUxmZDkydGN2UGdtWmRLZy1uWHdYT3dKaW9JVmpLdjJZQ1F0S1lEakk1NzhaNFJPdzNpZHdMVXliSU9aWU5IVUxFMV9qZDd4NW5zYmNQRE5WSnFUamFjaVM1WHoxb3paMWwzaTY3Q3dHOV9N?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g190acfb2f987",
+    "type": "intl",
+    "src": "Главком",
+    "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - Главком",
     "date": "2026-04-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOalJIM2xITUI5WUx5cGsxMXlaQVU2X2FIU0xxU2JGbm41V2RRQ0xQSjU2YW9kRHBzSGF2azJ0QlY1cWgxQ3Zudk5LV3dDa3I0a1NrNUw1SEZfM29JSlp5a0RfRklCQ1NFVE9hcXN4cVVUY3lmbE9YRzh3TUJHdXI0a25NcXktbWdOREppdEJDZnhiNlpKcXlQRElhMlZGc0Y5LUJGdEttZjFBYjhqTUZ4V0tIS3Nud9IBuwFBVV95cUxPdjczRVQzS0I5dEdYRTJmQTBUWFFvM2Z2REUwcDBNem5PWlZiaGFOUkd0Y08zMnJ6NVIyMmVranhWZXQyRkN2WWU2djRjTl9aTUxmZDkydGN2UGdtWmRLZy1uWHdYT3dKaW9JVmpLdjJZQ1F0S1lEakk1NzhaNFJPdzNpZHdMVXliSU9aWU5IVUxFMV9qZDd4NW5zYmNQRE5WSnFUamFjaVM1WHoxb3paMWwzaTY3Q3dHOV9N?oc=5",
@@ -35625,6 +35911,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOclhhU3lEU0ZZWXFiRjZLa2VYYU1kZzVncElmRmpzWF84S3ExQ3hnSWJYWGtpM3ZVRzV4VlJkVHd4S2UyR3NQWk43MVFRLU5YalQycldBWWt5VFE3Mm85TWg3SHJaam1lRDItTk5hTUEzMXRxV2QzcGtuai1TdnJjWS1IVWxPN1A1X0MwTnRVRW52VzJkUURuZWg1cWZsVkk2SXh6eFdGS3QtTC1UdjA0ZEgyMjEzcW5weVQ4UnJpcEZiSElqSGt5RVJjTGV3N1VqQUZyTGxlT1FDMGk3aDlKMExUZUZ1MFo1SG54SFUtZG0xNkx5aWc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd948d77e1360",
+    "type": "intl",
+    "src": "greenwichtime.com",
+    "title": "New era of Dutch politics opens as Jetten is sworn in to lead minority coalition - greenwichtime.com",
+    "date": "2026-02-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbXFqVUFaREdBUFlRZmJ4ZWIwYzBqOWxXcm0yUzVlTkE4dVA0SkhVWEFVZUtWblBCOTcxbk1uOXhGcER2N3JRWmFZOUhYdUx2RHVydWMxU2pYN050WFNHWDhwVU1yOVppN1piYjhBRmhqaFB2cVhTUGs3VXcxZHNsdlhpT1VtTHUycjhuVWQ0dDRkMFU4T2xyNE52RFdYcXRidVRScFlhNTh2Umc5SzQ4?oc=5",
     "flag": "🌍"
   }
 ]
