@@ -1,5 +1,209 @@
 [
   {
+    "id": "g5a951ce1767d",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "‘30 procent van de berichten van Rob Jetten op sociale media is geschreven door AI’",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/30-procent-van-de-berichten-van-rob-jetten-op-sociale-media-is-geschreven-door-ai~a1806ce1/"
+  },
+  {
+    "id": "g6713b315ab84",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Premier Jetten vreest niet voor zijn geloofwaardigheid door inzetten AI: 'Het is altijd ook mensenwerk'",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/politiek/video/71d5aec1-d821-4cc3-b79a-3dc37e2fa1f0/premier-jetten-vreest-niet-voor-zijn"
+  },
+  {
+    "id": "g3ef839ec9b16",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Jetten gelooft niet dat gebruik AI zijn geloofwaardigheid schaadt",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/binnenland/jetten-gelooft-niet-dat-gebruik-ai-zijn-geloofwaardigheid-schaadt/161256588.html",
+    "lr": "right"
+  },
+  {
+    "id": "g5dddde02f09f",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Rob Jetten liet socialemediaberichten door AI schrijven: ‘Op deze manier verwatert de authenticiteit van de premier’ - de Volkskrant",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxObkh1VnJjRXdTU3ZmbG8tU1plM1NKSDRLUVl1NG5YdUt3dUJQSzdzQjRaS0FON2EyeENVeEpZdXhveldGRmJjZjNBT3dvcmROaTYwQkxyRmVCTnJqRXZqUVpCQThRdDhVUXdFN1NrakJXZl8wb2hLQWxocHd2U3lvRXNuYkt2c2J0SnZucE1yNHlFYzkxU2lMVU53?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g5fea004b3a9a",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten gelooft niet dat gebruik AI zijn geloofwaardigheid schaadt - De Telegraaf",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNV05famw1NlVrQzZPanFIUUZabDNRVFRjMDF4bUVCdmlLMlYzMjRhdmU1YzRSd1hKNkQzSmUtZmVRQmRONW4xejB6Q0FwcTZhaVVmbUNzRDNPRjF3MW9odkstOVR3bkliWk1VN3hTMUY3WWNBZklnZDdLS1JVNGdZRkgtNnkyOXZreHFRNEJyT2hISEFvandZUktqSFNSVzhOcVZYMFc1NUZTaHQybzY5c3lUeF9paE0?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc03065386d18",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "‘30 procent van de berichten van Rob Jetten op sociale media is geschreven door AI’ - AD.nl",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUlVPc09US0tLckdBV19rc0RnQU9FM3FvdnR4U1J2R0lreV9QVS04YTl1UVBXVFA1YnQyb1UzOGI1VHE1LVlXSUZmZHpIekhsSFZ3N3FwR0VpcG5fNnpUZHRWN1VlVkw5X1lVYnI0RG5feVVvSFRDc0pwOTJJZDlJNHFwLXVEVEQzRFhxREJ2SXBSYzBPLWFrS0hJSHc4aXlJaXlCWEtodDRrazZoRHNmeXdxcWNDRG1oU3c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g595abb13457f",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Jongeren zijn liever lui dan moe tegenwoordig, en daarvan is Rob Jetten het ultieme voorbeeld - De Gelderlander",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQb200MmJlSUNEM0g4RW1yX2pkMzdiMC1HSEhjU3JTdEFSNzN5bHdNY2hBRWtPakpPU1NVX29DcEFWaU4yRDRIWTlyTnd4dUprUTRBU2tsRmt2dFNBNnI1XzVjR0VuOGkzbHpfTWE0dS1TNzJ3SEpyT3poZ3NXQTJYZC1KOEMtWEptLTJPcC1JSW5xZ3d0MFBpQW5zY0pKRl83NVlGUHlwVmlHdXIwY3VOUmU5M0pQXzdCdmV4VXRvM2gyOXlWQzBxNjBBQ2NpcVd4TldCMHhteUc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g230698bfa9cd",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Premier Jetten fietst twee uur door Escamp met wijkagenten: ‘Dit zie je niet direct, maar het is er wel’ - AD.nl",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQMWtrNVF4ZTM4YmlxSXFnLWRDam1nenZEODV2eFZHVVc5ZVI1S3JXOFlFT0Y5c0ZxbzU2ZnBpODFNVkNCSDZDbWxvWmtoaWV3UmZmN2JJM2Qxc0loTExpd1N0ZWlNM2hHN0lCUnZRYTd2Q2xEYzdwQXoycVFPT0k5ZjgyNlRTVFNTU2FSMEI5MHZkM0gyNndkelFObmZPSGFMRFlJM1hyaThzMzM5ZnJXYk5PZUdDdG1xWWdkUjlObTZHaDB6NHJ1ajVvcTZUTkc4UXdF?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4b2040eb0264",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "‘30 procent van sociale mediaberichten Rob Jetten is door AI geschreven’ - AD.nl",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPUTkzNW80dVBzOW81OHJkQk5BZEFrLVFieHI3Um9BUnFiazJYX1N0bEhhRUhjZUNEY2hVOHVZRm9mcEd0dEhrYXZqT1p4bjNKb2p6bDRKcVdOVVRrUG9uNngxendfMjdxVk5EOV9uUDcwVjBJYnY1TXJBNXphVjU5b09TN1ZfUXd5M2YyMWtBZHpkZVRLR3RPWkZKQ0FkVW9LXzBUS2NIVlRzMTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g72613ad4015f",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Robo Jetten bestaat echt, teksten van premier blijken geschreven te worden door AI - bnnvara",
+    "date": "2026-09-10",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYlZVMVpVWGZwWG5oSHdVd1FYYVFPdmg2THBvV1lRSFhJdkNORDZjc0x5Z1l4OHlUR0Rxc3NYUTJHV2ZFZzhlWHlGUU50Y29rYVlrUExwa1U4OWdnUlhRS0dtZ0d2VDh6MF94M00xRHdRRTlaczdvWVdrY1ROb3hQc3oxLTJmUlFtRVhtRGVVcURVdGthdzNfd3BJOTRIaHN0cXpacjRmYzFfSl9BbFFUUktNTkRLUUZDaWhV?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g3d250b23f838",
+    "type": "nl",
+    "src": "PowNed",
+    "title": "Rob Jetten blijkt net écht een robot: 'Premier en zijn partij D66 zetten AI in voor eigen sociale media' - PowNed",
+    "date": "2026-09-10",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxObGl6cHNoVERJZGFfMjRTRVR5Zl9HdGFJOG0wT3RiaXRjbGhVRWtzQmhidVg5a3A2SGE0NEFNVG5VQWRpem1XU3NlSGlWazFlSjViazg3U2k2QUhhZ2xlRmlZVmVUNmlCQzVkdUZoaUtaLVRLLUcxcFNSOXdMMVVMR1NsQVJja1A2eFFQZTlNZUJHdGNzck50UGhLVFV5SVAwV3B4dndpQmItZnlzaVM5MFo1eWZzUHV0OGRPQXl2T1BMQi1qbGRsWWttR2RRbU9yRFFDMg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g876e84a99885",
+    "type": "nl",
+    "src": "IO+",
+    "title": "Is Rob Jetten echt of AI? - IO+",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4xc0RPVlczR0ZMT2d5WTZOZG03OTgyLU8xV0Zfa0JkQkRJWmR0Tk1mT0FEa0VFMG9KSzlyc2hFTHRkM2U2UDBaMmdRcFRjMW5INnQtc0JETEktRHdYbU5xUw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2a8ff766cbe7",
+    "type": "nl",
+    "src": "Tweakers",
+    "title": "Volkskrant: AI schreef socialemediaberichten voor premier Jetten - Tweakers",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQT3FPV3FER0NQcTQ2NGQtWHkySVZvYmZXQ3NtUnh1N3JtLXdvZnAxRkliSDByTGhWV2RsMXZjMTNKOWVLbXJSU3Q4YXpNSTZkX21nOUhtdWlzS1ZEaUw5NnZXZk9JUURNd1AxdV9MYlo5MDNXNE8tX3lyR05vVm1hMjVPMHNPdkN5QnJMUHhrWndDLWZsX0VXRUF3WExJczdLX1ZrQ1Fn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4ef5f659a229",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "‘30 procent van sociale mediaberichten Rob Jetten is door AI geschreven’ - Tubantia",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNkRMWkV3cDZZZFAzTHNGNUJoSkZxQ0tzdV8tZE5pZmpJdWRrTlFNYUxMSjVUT09BaWFIb3lnb29tVjA1SnVSMVpjT0xRZktPSl8yRHRLbFZvZkZlWE96dUlqanVjOENVbzNyWnp5V1Fub0dOY19RbmZJemZPd1dZT3FxMFY5b2xsal9nV0FhWVRxUGVBZ2dtRl9kRHlqVGZNOG0wd2NtZWpJeU00R0RDVWpRTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfa3ff81475c4",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jongeren zijn liever lui dan moe tegenwoordig, en daarvan is Rob Jetten het ultieme voorbeeld - AD.nl",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYTFvRW94T0h5UUk3Y1ZuRjNUTlZPR2RJX2ZhWmp3TENObmRMVjJxdmdXV1FhbVNYU1hINUZlUm1Pa1IzLTYwM0JETEpEdlNldno2dUFlcnZGSG1uU1NJaEVra0kyVEQ3N2hjc29IaXpBUlZITlp4WllvUXJ4bmc0Vk1vd1VxYzJHdnJYRl9DcWpxMVA3WUpiNlVDYkphV2dlSTVOTk1tNHprQVdLaW9VWWR4bGc1cHR2U2NwUzFmMFBsNGFEMkpPYWM2UQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5231eca1032f",
+    "type": "nl",
+    "src": "De Speld",
+    "title": "Vertrouwen in Jetten stijgt nu blijkt dat zijn posts door AI zijn geschreven - De Speld",
+    "date": "2026-09-10",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQX05sQTUyZlR1TnlWMVVLYVRrckc0eFVGLVBkb1otYWFKV3o1bmpDdmlPNHVpYzhxcGVNN1Z1ay16N1dyc0pyVEQ2ZEFvZHNTOVdlbTRleUNVQno5bE01T3lySWQyaEM2TkVSa0ZORktkeFRGdHdUSUZmRTZQbWxZUE9LeFUtRFA0TlNQa1JGQmxVeU03dnZBMkdZWDA1X2VlbWpfVXRaWnc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g131bb1a0b0e1",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM Rob Jetten uses AI to write social media posts - NL Times",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQajdVZU41ZkZjQkxseHkwQWJSeVFpN01BdFRseHoxUGNYcnIyanlQZElOb0MwQUVhZ09PQjN5cTdON2FobUg5eUpXZHZ1emdZdU56OHhmMFpCQVVPeTAyb3Rxb1FkTkdBZURia0NmSG50QjdRa0w5NjhrcEZxbEg1VXphbjdmZ1pGbmc?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gdca45814d668",
+    "type": "intl",
+    "src": "Courrier international",
+    "title": "Le Premier ministre néerlandais délègue sa communication à une IA - Courrier international",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNa0sxY21VTmxRbVZtU0tOYndDT2pKSkpkemNfMVUzSTFJRTRjeFRJZkszM290UnBPbW4ySkdlblZBb2pkTmFZc19adUMwcXd6YmJtaFZGLVJha0VWeG1jc1lmMkw2U0p3WkN1T0xZS1QwY0VKS0tUOHp1dVBmMVBvU2s4alpJYk5heGhkYi12bXMyZVZqdHY4WldQNWhrMFdCeGFHZzZUb3M2VWx0QmZvYVNma2ZxZkQ4ZUNrZ1kwX2NyR1FC?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga434f29cca94",
+    "type": "intl",
+    "src": "Yahoo Actualités",
+    "title": "Le Premier ministre néerlandais délègue sa communication à une IA - Yahoo Actualités",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0RpWFN5NklISXRNTmlsWWhXTXVTbGE5aDdENEZLWDJtRGFTeFVzXzZsVE1QYTN3VWZJRDJYNk5FdjVhdklaYlBXdEVhWkNiTTRJVmwzelNocGpoaHpMYUFlck45TUdLTzNlem96ZXFVWDlMa2Z2TnlWMjZDS2V6TUstMFpuOWdhdHRxQ1lULW1MVklqTDZSTGNzNHF3NTAxeEQxVkJPR0F4Zw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g770abb1b446c",
+    "type": "intl",
+    "src": "elespanol.com",
+    "title": "Países Bajos da una lección con sus pensiones: pagas de 1.580 euros al mes, jubilación a los 67 años y fondos privados - elespanol.com",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQOGJKNGh2ODViWUp4QVphVnVUOVdic0c4MHNxVEwtUkx4aTg5b1NLTzAzVm5aQXRTYUFhTmY2eHNfb3kzM3ZwVzF3SmE0Vm8zcDk2anpUc1RaT09zU0lUNjUweEpvSEFGZndBTzFoRHBMUU9VMjJOSjRDd3FVREhaVWZhMXNBQUFwanZXTEJQTHVHVkJacVpTMVZscHRVUGR0ODJwX29UVW1MLXJBeVlmQThYdThjc19mcjZUY3VISm9qM0xqdFdUM2ozQm1vd19WZjBCdkUzVkIxNkZTTmEw0gHkAUFVX3lxTE9fNnhfY2lIZnpuN09YaW5hemZ0amZQc0hWcEtjbC1MUUh1OVlPNDM3THVZRG4wRnJxLTVUQkpJeE9TVzFyWDltNkNwdENjN0NlRTN2cWxXUFVfWVBCby1HT3pSQUZkR2ZUZTI1SWl5aTJ5UkFhUERsajgwVnZNM1BiV2UyQ0d5T3NGZV9FcjJaLVVuQ1dJTWR6VzdlR2xueVRVdUhCdkxCcHBtdlNGY3BqUUxFZXI2WU5YLWFpVHV4RnJNbjZxaXFjR2lJTm1kcENyc05felFaVHRvQ1lTNm9WRkVMRw?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7b1b1ae24833",
     "type": "nl",
     "src": "bnr.nl",
@@ -29,6 +233,57 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPM1hzcFl5UjM4WlhkWUdKSFR1MzVwVWJJT1FzMkt1VlkyLWpsdjhLRW9HcDRhZmlZbk8zWk9pVmM5NTQ2elBHaFFVcGNPRkNmNTZxWW9tcnVJT2otVXdiVVpEVTVOTGFqY3BBZ0c2WHdIaG1jSVh6VTNBVzlsN01CSTFfeHplSVZXVnpDWVdwQW5tdnJrcHNoZ1F1LUx6MVI3VzZjSA?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gc7e85c268e23",
+    "type": "nl",
+    "src": "OOG Groningen",
+    "title": "Tweede Kamer en premier Jetten herdenken Jacques Wallage: ‘Een man die grote idealen klein genoeg maakte voor iedereen’ - OOG Groningen",
+    "date": "2026-09-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxObmNJdWRQQUtjRENieURBX1hESjRwV2N6eDR0RE1mS05LYWZiV19JVnFrZ2x1a3NKMFBFUUcxaXlxY2Q0S0RmNW9lSEh2ZjNwY2Itelg3eEpNUV9LWlU0VXZrbEIyMGQyUHpNQ1RXQ1JUY3ZobUlyWUpZU3N4S1I5SGNUYmZtVjhTbjI4QUQ4MDIwR2FENm1yWXJ0emdPbDFldjFBUEZJajNjeE9KT09ZcHRCMjVHMmhBQm9MdFQzc2FZbE00N2Y1Ynd3bjZLTWMzOUxyNDM4UmFacGJTcEtF?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g519f2b3e7ef6",
+    "type": "nl",
+    "src": "Dagblad070",
+    "title": "FOTO'S: Premier Jetten bezoekt met wijkagenten Rustenburg-Oostbroek - Dagblad070",
+    "date": "2026-09-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdWEydEo5bHV3NENwMU5ZMk5iMC1UVHBZTmNxZFRhNlFmNjkzMXpUT0lzWjJleVo4Tnl4ZzMyWFV3WUU1UGpablRPb1V0S1IwLU9CTFhTaVFGNmxmYmpxZG5PVHo5WEtfMTNDcjJISnZIRUhKMEFlSEtNak5aTG92SmpUVjNTbW9nLUpRN2VrVG1wX280SS0zNzBycXluOXA2dVk5V3E1OFl1M0R0WHNV?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcb1debdc39ec",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Kabinet komt op Prinsjesdag met ’liefdesbrief’ om oppositie en polder te vleien - De Telegraaf",
+    "date": "2026-09-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcWZFUUJCeWpxU0R5NUJsWU9KR1pPVHpHb1JISU92dGoxbUQwNVM1OW5yOExSU2NoTGpNWFdOS1lhUmhjSHhqUTNLUW1tczBUak9ZRzBycDRhVGtyUjVIaDJHcVl0aDRIbk1BYVd2SV9BQVg3eWRBbkktMnQweFR0UzF1Z1NEQ1hucU40WFpoaGpEeTB5aE9zZDZLcmI2NnNReUEwVWZKYm9MR0RnOVJPLWJkVm1xMTJyWkhlbVRVWWNIeE5Q?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gac0a8b1e2653",
+    "type": "nl",
+    "src": "Consultancy.nl",
+    "title": "Het laatste stukje van de ZZPuzzel? Sem Overduin en Oifik Youssefi over de koers van het kabinet-Jetten - Consultancy.nl",
+    "date": "2026-09-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOaTh4V3oxVlJIQnFfSW9KTmFtd205dXpHUHgtZ0JoeHBCOWQwME05LXFrZEF3UGZpbURwbXNUc05ES2NLa3NZbmZrS0NHWW0wdm5nZ1FzaVVWQm84V2pQTjd2VXBKWUk0Sk1CVkVwV3JGRl9FYTFPMDdrVDN2S1RpN0oxWWpvQXUzZ0F5eE9sbXhUUnpyOU1RUHRSeURjYUZfNFZJVWFpbWdsZS1KWWY5dE9EeF84emxhVlRJazJtVm9URGllLVYycWttMHFwRFdFSXU0NVpYZXZ3Z9IB3wFBVV95cUxNa1dPaDhSV2NmWTRZYnZqTV85dVpnaWItZ1c2OW5rbC1FemVYSEcyNGNNd29TM0FEMlNEYjBOLWxJd202MTJ4WjdfVnYwYXh5enBBQUtmV05LTmFyT2lmc0hwa0FyeXJBQ0MwX3F4TkVueE1TelpiWXRnX001REdzbFU1Z2FKRUZFeEdrSmtwTGNtMHA0VHFiU21mYUI1TThPSGllMjh1bmg0OHZjTTUxLUhNeHVPTXFoLVBxRnlOeGFTNzBMbFhfZVh4eld6SnM4ZXVVX2c1MHlKeGxZbjhJ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1a4a950890dd",
+    "type": "intl",
+    "src": "The Times of Israël",
+    "title": "Pays-Bas : le gouvernement veut interdire une chaîne de télévision d’extrême droite - The Times of Israël",
+    "date": "2026-09-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaHN1bVlsZFlWRzExcHh5SHEyaXNIYTNGXzJBN1oya0ZWaGhQZFVDYmlnSDBYWFRQNWNQdEZiUlNKUVV6VnEzbE9xRmFHaWFtem9vY2xBM2tJeXRsTW5KUGhtek9SQ1NrRmlvVmpkcU5MODJNa2lHMEMtZDlwbUdZNUM5bm9OVk04SWtNZzIyY2dLWVRpNG43Q0w5NTdPUU1xMlNIQ1VpTHZvdy00VnhZ0gG0AUFVX3lxTE1SblpvNUFoLVROY2xUMnM4NG04VG1ZMlNsN3h0U1U2WVJDaVVpVmRwalQ0STdZeGtvRW1MR2V2dU9obnhJNHY0YkhOd2ozMVZEbUR2ZWFwNUZJUnFOUUljTzhreXI1S2htVmFlTk1XY05lLW5FTDcxZXNVdk8yQy1qelNXSDlIVFVwY25seUNNNUFEWTVoM3V3R04tenlRT1Nqd2pPOWZIYmFOU1gwVkxCSVg4Yw?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g266d48b200b2",
@@ -172,6 +427,16 @@
     "date": "2026-09-08",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPRXpLR1J4RHlWUjNGRHc1aFJFQ0VWWlFGVnJ3NDBrdUNVbmRybDVyYWMySzF5NWYxdTBMdXNYMUFHNDRHMXF6OWpJRV9IUWY4RFJvYUJVLTNJdEJNVTFxLXhQaGxObkxxeXdPaTd4VWNERDF6V1hTSW5kS2QzdXJsalVud0VZcXBHVy1RejNDblczdGI2ZktxWTdpcEJUVEpEdlZfMjRyMjZtb2RleVpNdjJB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc44173a3bce3",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "De klem waarin Hans Vijlbrief zit: loyaal aan Jetten, trouw aan zijn proefschrift - AD.nl",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNDJwaktzVENLUjF1MVJ2VDZBX3BsaFEtWDV6UDhic1lXalB6QXJ5cXItQ0FmVlRBbmVZTXpTNDFwcERodzJYVmFhT2Yta1VpeUdLSVNpSDN2SjJfUmZUVUROMTQzT3RfcWdsSVlSYllXMDhQWklRekdGY2U5a2dpSC1BNHlQQ0VrVDhBY0gtTnc2ZWliSlJOSEY1dzZhd01vZEFtekZlU2V0WVE3bVZFOEtycEZObGs?oc=5",
     "icon": "📰"
   },
   {
@@ -430,6 +695,16 @@
     "icon": "📰"
   },
   {
+    "id": "g40ee7dfd0e03",
+    "type": "intl",
+    "src": "Offshore-Energy.biz",
+    "title": "Netherlands becomes home to ‘Europe’s largest’ carbon capture facility - Offshore-Energy.biz",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNGRObEt0a3B6MEVGNmJRX0R0RzB5dlBkU2hNaW9KOTFOYV9oODEzbHRMdDZfdmpqSHA1b1hhZWZGWEdzV0V1S0NMd0NXTlpmMXFjSVQwUGhDclBUc1JtcTVYb1lmb1N3NWlkZjNsVEZHanlfQWI3OFg0cV96WWtUY3FMbUZsVHNJYi1LYVc3R0JKc1haVExiMVkweVE0aTFmRnc?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gfe39408c5581",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -518,6 +793,16 @@
     "date": "2026-09-05",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNMjVXeWYzMV9XSFlvM1BDQUhTZmdDSWVFeXI4V2FxMFpxY2ZzMnJ3RE54cGdWWFJBeE44UmxCSEZveUlQYmFiS2pMUW8yMUhDYVpnNk1HUTJjcWZtMk1ZQ1h0d21ZUjkzdTA2alhyZXFiVzhLUjNtQXE2bUY1bUlvLURNQU5YUTB3cTN6WHY3V2pWcGo3cElUakRrcXE4SWFwYzNleE9mMU1ZMWlNSkxBMnBadWxRZi01Z2xTVGtRd3N2ZEpfS2trNElJWXplQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd6a80050ecd4",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten neemt dezelfde gok als Rutte en dat kan dus helemaal misgaan - AD.nl",
+    "date": "2026-09-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNV0VLaUoyZDlJT3pVZENHTkVOQUsyMEs0d3g5VDZYRFlMcmhkN0RtMHdjbjJkT2FWZm5pb1BwUFowM3JOOHZxWEtGVWdXQU02QWkzLXZuOGJ4dzZ4cktiOTBwcWNDT3B5UTMxMjlqLVhaOWJTbi12dERVajRHSVh2eDNhUU8tbGlwWERDSGJ4cko4VkZ0YjljMVV4bUpkdTJrM01kZEtRSQ?oc=5",
     "icon": "📰"
   },
   {
@@ -10236,6 +10521,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g674c8bcf2e57",
+    "type": "intl",
+    "src": "lavozdegalicia.es",
+    "title": "Países Bajos cambia su estrategia contra el nitrógeno: menos cierres de granjas, límite de vacas y más dinero para innovación - lavozdegalicia.es",
+    "date": "2026-07-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPNGMtYXNDTVlGd1hYcXBUMm41R1hVSE4xMXNkWks1MjdvanZIWl9fN1ZSVFhQaWZFUll3bzBOcDBjdHBKU2pTYndLQmNwc2pQN19iSFA1cVlDZUU0TnJVbHdzbGh2Tk9XYWY3UkZVb1h6dDQxcHFWSlNvXzdaVHVpWVhiaUE5WWhKeTNfSXFYM1NydGhkd2NKRXFDQmpiUU9ob1VNbi1TNEQ4MkhfR0xLS0RISVlQeHl6bnZkOC1PSkpPc0VCMlpBdS1zYVJzbmlwcllHLUFsSFh0ZDkzcmM2SE1xME56STNnRzdMX3hYR19GNHRsRnZ6eXZ4dF9uTnY3NWRCM3RVeVc3Wk5HbUd3d1ZzSy1ZMVFHUWtR0gG3AkFVX3lxTE1Ka3ZLUFB5WWwzUWJscll4bjNVTmg3N3ctNzV1cnE5elcxdlFqOVZhNE04SkZBQ0w0WDdOZ3YzWlhKVDBfVkpLbEVpbVZsQzJvNk5xb1luWXUzejFkcnIycVZHd2JWbVlrMjdhZ01TdHVwYnF2UEFNbHhsQ3lMLW9KeFZlQzdEWG5aRXViMWFMUWF5dzUwYzAyZ0dJenAtOXRxODBxYWZnOUYwNHF3U3hQV1ZMRVlzbnU4bFlZMTJLeUpRVlZsWFRQSHBnMDdQV2lyUDR2dVFGMmZBMXVTT1hhLWFBZms2X05PbUtrYnlLOHBhSldnMC1QZ1B6eVRxZGo4VkpxVER0ODBUMElybGZ2RXpfTTBLc3JqbGVLNXdsTE1ZR3pjYWxOWldzVDQyR3JsZHRfYjdJ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb2a17b4da396",
     "type": "nl",
     "src": "De Telegraaf",
@@ -16855,6 +17150,16 @@
     "flag": "🇬🇧"
   },
   {
+    "id": "g56a5d818fcfb",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Pagina niet gevonden... - EenVandaag",
+    "date": "2026-05-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNZ2FjVkhHNUZkZmczQS1YMnU1Zm9wRHlwSzhZcF9DekpWbmdYSzZOdHJNVURIRjdBbEZIbHgySW5NVjh1U3lXM0x2S3Exc1NUcUlYbXlpby1QaUJycTdEVEY0eG5LVm44RktvYWhaQk1NM2Vhc0hvSThUNkRyQlB0emhyanJCamNaZEJxX3U4NzZGOFdYbXltR3J4RDdab1pUYzFnUXdubDRoeXRJcXJINW5YdVJ6M3ppM2VYUHFiUUZfZkRYVFpFV2p0NWM2U2pGVmVzcVBkYnRHcGp3V2J0MkFpMEd2SU0xSXZidzJkMmlac08yOWdzaEwtRG4wX0FucUc2WDdMMTNSckZ2MUprcldWNA?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g4c38053dfdba",
     "type": "intl",
     "src": "Al Jazeera",
@@ -21378,6 +21683,16 @@
     "date": "2026-04-21",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcGRyMjNCaGIxRVdPQUNySE9WWUZkd3ExZG9KcDBXYVFWZV90U0NmVlFEZmRKdUN0ekk0anV2QjJEV0pWS2dnNXQtOGFQMk9qZUFxdXZzVGtjWXA0Vnp6VUxaMVhrRWZEYW4weGVzTTBCX3l5LUlna3plbkNPWktBYVlwcy1oWm0zWGt2VDk0TlpoRk5LTENlaERaX25kRVpnbFBsT0RtQVhxTUI3OUIyMg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g027aba118904",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "‘Klimaatdrammer’ Jetten vliegt erop los als premier: CO2-uitstoot loopt snel op - Nieuw Rechts",
+    "date": "2026-04-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPWkRRWm0tVzVna0hTOGNhdnphdjBoRXZaZ0p4eTRGUEFyT055OWttWFhmLWNZbEhRUVFra2c1Tk5aejIzVmh6TXNhV2tVWWJFaWh1cVpxd1FUcjlZU0NBNXhPR3ktZ21lcml2U0FScWplR1Q3clEwbW50U3I3WXR4RWJ0Wno1SG9SWFNTTGtwTXNHa09vYVVUTEZpb0VvM3pqUnViOF9CSEcxazBsaWtwOGxaVE1JOUFuT2dReWRiQXplRWt3ZXNsZ01LaHF6LWtVYjRDUXhMUzNRaFF3UGc?oc=5",
     "icon": "📰"
   },
   {
@@ -36096,6 +36411,16 @@
     "date": "2026-02-23",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbXFqVUFaREdBUFlRZmJ4ZWIwYzBqOWxXcm0yUzVlTkE4dVA0SkhVWEFVZUtWblBCOTcxbk1uOXhGcER2N3JRWmFZOUhYdUx2RHVydWMxU2pYN050WFNHWDhwVU1yOVppN1piYjhBRmhqaFB2cVhTUGs3VXcxZHNsdlhpT1VtTHUycjhuVWQ0dDRkMFU4T2xyNE52RFdYcXRidVRScFlhNTh2Umc5SzQ4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb3fc8780fa2e",
+    "type": "intl",
+    "src": "lagazettefrance.fr",
+    "title": "Qui est Rob Jetten, le jeune centriste à la tête des Pays-Bas ? - lagazettefrance.fr",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOEFWODM2UkFUcG8tVkszdWNYUjU0YU1CZjlNVkxjMldsd0djc2M2d3lXTDF4bG9nU3lBU2JJZzRpOGptdXZsX3o5S0dUaGRseE4tMXJpSzN6UVFzV0NPWDY3SE0wdm5BQ29Rd1hkTlBOeTZYSVFDUktNa3B5S2VYNGNqc29icUVpM1hRa1ZjaVk1b1RnVFk3aTJ5OGtCdEk3?oc=5",
     "flag": "🌍"
   }
 ]
