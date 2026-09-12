@@ -1,5 +1,57 @@
 [
   {
+    "id": "g65d3bf8306bc",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Gelekte miljoenennota: kabinet-Jetten legt rekening vooral bij huishoudens neer - de Volkskrant",
+    "date": "2026-09-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMml4RE5VakZoOFd6OVlDdWY5UVhNNlZWZ3E4SE51WW4wcWFhNGZyRW1hZlZjZEdFdU9La2Y0WEpXaE01MzZ2bEh4cHlYLWxvWkFCaVBMNWJUTU9rdF9xeU9yaXlmYkxMdWRMak1KbDlMYmlGSFVwVi1jeGtmNmdsN3V0VUtRcVNNYkhYTUZRWWxuZVhvYU83cVJ6M2JlOVpXMDd0VWVrTlBWQ0xuRllzRTRQU1JldVkxNDgzVEpTaXU5QQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ge5f6872dc21b",
+    "type": "nl",
+    "src": "DVHN",
+    "title": "Waar blijft de Partij voor de Lange Termijn? - DVHN",
+    "date": "2026-09-12",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVzBhbTBVQ3R2bHJhdWRaSjNySHBCX2RIdHdjVnJLZEVsTUtYZldoaldPeVFQUE0wclZqdlZLb2cwU2V6RXZkeDFBUWdzUTVrak0tcFAyVlJqaV9fX1Q3cUE1NGNIcl9hSTQ3bEM3UjVDbHZuN0lLLXNkVXRmc21fcFE4WFZ1RXgwaWtZdi1qU2Y0Zml6Y282Y0JXdTk4OTA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g018ee92f6b95",
+    "type": "nl",
+    "src": "Bnnvara",
+    "title": "Het is schaamteloos dat minister Van Veldhoven mee wil lopen op de Klimaatmars die zich richt tegen haar - Bnnvara",
+    "date": "2026-09-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcmFLUUo1OWV1RDRsT2NYVHAxWEwyaXMySWQ3SkVLNm96LW54RUU4MGVuaElaTVpLOU42Z1lJcFoxekR0aVpla25QWVJaZl82Y3hQOGhCaTVWeGlOOWo2TmJnMmhLdzBMVEJtT2p4Mm11YVJqR1p3RHNhakxQLTR2dC1CUkxuR0M4VllZM09RbWdTR0dUZ1Bja0gweWU2QnRUcmphVDgzQUh3a0ZLR2lSWlBIYlRnNkhaRGZ0UFVwcHNWaU1mOWd2b0I4eGFQNGJ4NmJnSmVwU0ZSUQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g30d84c235a95",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Slechts 1 op 10 vindt dat kabinet voldoende daadkracht toont: 'Alleen bezig met zichzelf' - EenVandaag",
+    "date": "2026-09-12",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaGtVUzJoYjFVN1F5TlNVYTc5WXRadGo1Vms0MGhDUVhaN1daVUR0dzZHWElLRWtEZlo5WjUySHNnLThqTXM4T0w0bHdZLUlLX0VoMnhlT05YbEZVSzNXeGVKdDZza0ZCNEZNRXE4T0VETnR1UzUtZzIwRFJrTjN2Y191RTVlV0lwOFN3OFAtV2MyOGhyaHY0bW4yczJjQnVtYTh1WEhHRGV0TTcxakQ0TXM0eXcyd25PVXpIZVVmRkZnelJOeWVtTS1QUFV1VkF2Ri1XWmtzMXlPb2xqVm84?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7ed34a1149a3",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Wie verdient er nog een plek in de wachtkamer? - Eindhovens Dagblad",
+    "date": "2026-09-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbmRfSjJ6YjJBRUtQVi1OVzRxbkZWcWpkXzM5eEhOTmVwQlBfMWlFaFB0cEUtQ1NmdVpnQVpTQWhEZTN2cnJfSHE2N1pSOWdRbFg2ZFhkNm14SmUyaEFtSk5VVzdxWnk0X1pJcGU3NHljdXJYakpBR0R5VS1ibjhiX0JERDNHTW8?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gb1816c0b3467",
     "type": "nl",
     "src": "De Telegraaf",
@@ -100,6 +152,102 @@
     "date": "2026-09-11",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQTUJ2aTRCcThBanJRdnFtMW9Kc3FPeHJkOTJpcTQ3UktmdWdXeG41YS1JWGtrSG44eXVSbzR3WHgzVW1NWmU2Y2FhQno5VWJ5SUNvYmNIVW1iWDlDR1AzM2tJbWhIcktlaEVoN0RsSlpxUF96cXJNOUg0bDkzeUhKUC1seGp4aHFoeC1MdzN3TXQ0VFUtRm5aaHQ5TFlFbXJ3UG5pWEpDZGF4VUJEbGxfZXBnRVZHc2JRZl9QLUFKVzJNXzJ5TmJ3Vkk0V21idWp6VlRTeTg0bmVIdm5zNmxibXBHNNIB6AFBVV95cUxQQU9vYmhfdWZ4WTIzMEl4blIxT3BORVBSTnVRcDF0ZkJYTW5mQjhhRzV5SUdsV1p0dXJhblNzSVNnS3BqWlhmaV9jZjZHZnZOWnVhbU14cjg5VUlMZ2R3YU9xRi0yVEtOX1ZvUE1wWWdoeFUwX3ZTWjE3am0yZF9KVDJTMzZEbVQ3T1N0MEY2X0FYYjVqTjNsR0c3MjlqTkEzVF82d1ViMF9XUG81ZGczMW1DVnhTTzh3cS15N3lJREgxV2FsMnN0REFaRTVSdUF1Sjk4V092SlRMS0tpcmd4YU1rV0t2TFh2?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge45667f2fd43",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Veel meer geld naar Defensie, weinig klimaatmaatregelen en afstel en uitstel op sociale zekerheid: dit zijn de plannen van kabinet-Jetten",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/11/veel-meer-geld-naar-defensie-weinig-klimaatmaatregelen-en-afstel-en-uitstel-op-sociale-zaken-dit-zijn-de-plannen-van-kabinet-jetten-a4936463",
+    "lr": "right"
+  },
+  {
+    "id": "gcd29fbe9fa84",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Met uitstel, afstel en cadeautjes hoopt het minderheidskabinet-Jetten komend jaar te overleven",
+    "date": "2026-09-11",
+    "sent": "p",
+    "link": "https://www.nrc.nl/nieuws/2026/09/11/met-uitstel-afstel-en-cadeautjes-hoopt-het-minderheidskabinet-jetten-komend-jaar-te-overleven-a4936422",
+    "lr": "right"
+  },
+  {
+    "id": "ge5a5ec2c0f21",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Opinie: Rob Jetten is vanwege zijn AI-appjes niet meteen een leugenaar",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/opinie-rob-jetten-is-vanwege-zijn-ai-appjes-niet-meteen-een-leugenaar~b6a3a510/",
+    "lr": "left"
+  },
+  {
+    "id": "gd4ec2a0189bf",
+    "type": "nl",
+    "src": "Hart van Nederland",
+    "title": "Premier Jetten over busongeluk Zwitserland: 'Mijn gedachten zijn bij alle betrokkenen' - Hart van Nederland",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQM3dXOE1lVEl0QnE2UDBSQld1XzFLckRNWkc5N3Z4TlZyMWc5cXZRYXVYTEI1ckpZUHNlWVhzcWRBaHVhc3VkY3hkR29wRkJrSktLQW1la0NRUkctZnRJOHBjVExtVFV5cTZKSkgyTG1ncGxJTkpEb1pkNEQwRWZrT29PQnFLZ1JBTzZOZW9WSm1teWtkeWxxUU5EMk9iMVdaYmNodE9yTzRfNDZWalRiTmZTNWtIaVNqYndnX0VjazdFZU1K?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g28b3c1b2b6e4",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Veel meer geld naar Defensie, weinig klimaatmaatregelen en afstel en uitstel op sociale zekerheid: dit zijn de plannen van kabinet-Jetten - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPVldOTmtCRjlDa0dDY1U2Y3llWmlqVS1uUnZxSG5xY1pseWRsZGF1VGlaUzBrenNHU1ZFY0w0aTRXMnRiQ0UzaXFVNzZIV0MwVVZtaVFaZWtRYk8wSFhjRzQ2eU0zM2lyWWFaN3pZYW1FNDkzYkthU0tsYXJpa3VZcHRwVGRBOWtZcWEtdV9GWW5kUG1CYUxzSjhjSlU3WDAxSVJ4T1o2X3o5TXJKVDZldGp5b212LTNqZmREU1JzdWVpRktXN09sZWVtYWNya1dRUTRWZ2pxWms3LWpUUHM2SXdKcGZNeXk5LVVxNE9Eai02ekU1NHNFeUtlejgzb2lWcFotRTg3TUY?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gb59e1d02aa18",
+    "type": "nl",
+    "src": "boerenbusiness.nl",
+    "title": "Premier Jetten ontvangt 'ontzettend goed nieuws' - boerenbusiness.nl",
+    "date": "2026-09-11",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb0Y1Mm5rVWs0ZGNIR3JtQmRMSlhUOUJTX2o4ZEtoeFd3Wjl5OVp3RmEzQVI5d0FOSGxDa3JsQXlLbWpoQk5iRWlPYmNiQy02c2JHM1R0aEhZc1BDcmZmN3o2TEhETHRJSWlpUnBvdGpKR2xhSWJ5TktySDd6VHNzaG5iR0dPbk5SUzhjOVRQdWljVW9tZFAyYg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3f6894461790",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Met uitstel, afstel en cadeautjes hoopt het minderheidskabinet-Jetten komend jaar te overleven - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-11",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPSG1PWm9DTW51MVNHeTk4Yi0yclZLV3FUYTMyM0s5N25HbGk2UGtrdlkyclNCSTcwempWTTNaN2p0eWV6c1pRZ2RfdTQtUEExWTRJVHM0MnZ0M3FaRVlxUGZYblBZVy1QMTVQdG9qRE5keXUybGNwZFQ3aU5yYnllSnRUMVlLaEU4d3hsRlEzTnNLRmhjOEdCM0VIbklBWFRMTXU3b3FVd1hyajMwMTN2TG5sckJCRkRBOVo2NzhiOGdIOVJRRThmc0luRWNmZk93YVVxSUJB?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g21624cdc375d",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "OCW steekt geld in terugdraaien bezuinigingen, onderzoek en leraren - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZU5hRmtXNk9IQ3lNQk82ZG5QbW5GSVA5RzNhV09xWktKb0RyZVBvUEhvc25DNHd2ZkNlZ3BtSTJ0OEd0QzNxV3R0T2RST0F3V3MyaDZGWHpfaGsxTEVnMWJmQUFvSEp2RUZ0b3NLYkFtbkloUG5YdE9NWHB4LWRoN0VJOW9lZVQ2Z3RDQ0NPWnBsZW9adm82MXR0V0RzZWdPNkQ2dDgzU3hna0NlQ0hkRlBB?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g42ee1e0b5653",
+    "type": "intl",
+    "src": "fr.news.yahoo.com",
+    "title": "« Oui, comme les trois quarts du pays » : le Premier ministre des Pays-Bas reconnaît utiliser l’IA pour sa communication - fr.news.yahoo.com",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYlBQbHZPUnFZNWxPWVRCZHloUGZ1MjNQX2hoam1rZE5TNDY3UEpYbFRFbFhEdVR0WDliR29HR2RMcHFEX2tXeGhMZHRULU5ZOFU0MGRKcEVRN2VLUllTb2VmeDdabU55SFowU3FmcHRCZHJXTmRobHRoRTNkczNvbQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -447,6 +595,37 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQajdVZU41ZkZjQkxseHkwQWJSeVFpN01BdFRseHoxUGNYcnIyanlQZElOb0MwQUVhZ09PQjN5cTdON2FobUg5eUpXZHZ1emdZdU56OHhmMFpCQVVPeTAyb3Rxb1FkTkdBZURia0NmSG50QjdRa0w5NjhrcEZxbEg1VXphbjdmZ1pGbmc?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gf06373429fc5",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Pieter Grinwis (CU) waarschuwt premier Jetten en minister Heinen: 'We mogen ons niet laten gijzelen door box 3' - WNL",
+    "date": "2026-09-10",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPOWRfQkZabDJYOFpfZFRFVkZGLVdyT1pYSlMxR3lkQkMzUjdmRUR1Wk1DV2hnX0hieU0yNHNFbERmQlltS2w2czZZd2NzcHNnQnQ5a2k2RGZXYWZCdFJFQ0tFb3JPV0ttVHF1Ujg4V3pjajhaQUgxWlphRlpyUUlWTG5IeWVmSlg4WVFIdV9oOWZLUU1hNndLQTdNeF8tYmlPdGJpeUNLb3hab3RocEliLXpnRUJaNVdpNFU1NVNHMkI5OXpCYkg2OFdBT04?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g79aa7edafbc9",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Hoe schadelijk is het dat een premier AI gebruikt voor berichten op sociale media? Jetten reageert luchtig: ‘Ja, net als driekwart van de Nederlanders gebruik ik af en toe AI’ - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAJBVV95cUxOZWNfY0ZfemtoNlJ1eFl1UzhoU000eVd3dEtzVS1wbENLb2FpTDFfVE5KN1NtQVRjMktmWUNWaHF4VFZ6ejJkcHVGQkFoWW9NSlNZRW1Dalhfc3pKaVFNUXViU3NaZ2tkSmxGajh0Y2llREhaSmNzcnZCMXh3akc0ZENyMzBVNE5MSUNZTDR2T3ZxQUJRWmZiLWI2cXluZzA3bVhUbFFmNW5uUHR0ZGVYUEJXdzdJaHRfdXJzTHFIV1ZYemlwaU1FUERaLTRXN2tpcU12WFhjRUloZjZEYlRjaUxrRUJpZzk1WG9QUFlackhWSEhFZUtEVXFlQ2hVLTIwU2JOMmNvdFlnVm5Vd3UxMmgtdkktbUp4YW15clgtblk0X2FrZnY3RUhHZS1pbjV6MTBDNHJZb0xmWERQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g8dc0b413bcd8",
+    "type": "nl",
+    "src": "DVHN",
+    "title": "’Premier Jetten laat Instagrampost over Westerbork schrijven door AI’ - DVHN",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUkZwb0hVZE1ScXpNeDVaVW5fdVFxV1FtcHdYMGIzRUZVQUNTaDRFWTlEZThtdlA3MXhweXlOODhqcHpKYm15MjJNR0otcHFYRDg4Nlo5cllLbDNWdXR6V3dtUGVIV1Zwc0cxcmo5TkdBQ0o5RWNmUENySjlHODlyYk5zMlVUVFY3Q1dtUU5wYXRoaUtlaTNqQjBScUp5Y2NNa05ENHdHX0kzZExnLVAwVENOT1A3QzRFVEp0LU5MUGRJM2w2RV9PQnBYaw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g7b1b1ae24833",
@@ -968,6 +1147,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejRXUmtJekpVbDFkSVRBMTZZclk4bkZVZ041M0VVSTZnOWctZ0hmZDJXdWZnQVNCNDcwVDNTV0Y4cVhzLUZHNEU4WGszWVJ1TTllS0RObnltNHl6c2hWM2NibEtGb3VETzQtdExfcHJWcHRuQ0dxUTh6TDdGY2NvYmtkUFJzTGZveU9JRTQwLTdBTEVXYVItZjJ0X0tXeER2OEtYVA?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gfb071b2a1f76",
+    "type": "intl",
+    "src": "altaposten.no",
+    "title": "Yara åpner EUs største anlegg for karbonfangst: – Handler om Europas framtid - altaposten.no",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbEdQemVTc0VYWWREcXBsUXl4YnhFNTdvWDdwN1FYV0l4S21FdFpuenV3OURIOVNHOXczWHpJYXltQUNyWHNUMDlsaTNsUUwtRFVPSUtuSWJvTnRaRkdHU1JCYV9xRzBIZThYY0V2dzhDWF8yUjJvLVBsT2ZBaTZXeW1XbE1iUWczTE1FNnIzSTBIdUtuT2dfeUpPZnIzbjctdk1UQ3VKTm0zUkpFYUd4a3hvS3lwLVgwblV3ZTFUUW14Zw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gfe39408c5581",
@@ -3855,6 +4044,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g860213831b86",
+    "type": "intl",
+    "src": "tn.com.ar",
+    "title": "La chicana de Nicolás Keenan a su novio Primer Ministro de Países Bajos luego de la victoria de Los Leones en el Mundial de hockey - tn.com.ar",
+    "date": "2026-08-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPbzRBemotRElQSER5ZlppczFpRlBEQTdxQ2huUVBkMXJhdERFQUhYdThhb0EzVDc5dV9DMk1MQ2FaTG51dUkxVlJrSmRnWUVuVUFPMFViQzQtamI4Y1BDZ2hsNEs3XzVNRC0tdDRCa0YySUpLUEtQYWVseHBMOUV0SVdkOVdFMEJiSkIxT0RiQlBqeFhXTkxVTDZrYW8yZURhNXc5dUppd1FnR3VFTVU5RExnZ0J3eWppQWt3enNYVjhwVzlnSlp1MHNqTzlWZmNQTHF2ME10VnpxTmxNODlmNG85NVBPSHBSYTlyWnRzYXkxNVAyLXRCYldtYXFSTHRXbUJtbzdlNNIBmwJBVV95cUxPYTNBVE9YVV9zLVFIUzNEYWRHQ2dnXzVCR2pmbGR2X25ERkJyVW1hd0FIWlF5dlZ6T1JJZFNhRk9UeWd1b0FiSWI1LVNaVXR5blVPU0V3bERSLTJ2OVk1OXFmUm96VEt1dnpFQlJHVlhhTXNmXzVFc3Z1WEVlOWNGelpLQ1JtSzd1QWlkbmJ0MkVxTWZFbkZ4WjM3d1pCdDV5Yl9VZ1hMOUlweW14NlBxYlZuSlF0N0FGOVBEQWlNMWJVZHFzLW1VUElack5SOTVQaENUMlJiNG9TbEZkcGhuejdvcnI0ZGRGYmdlNWJ1RTFlYVlZVlhSRnhqenoyNXR6UXljX3ZNZzJhV2h2NkJKeThjN2xneDBFdTZF?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gde05b371db4c",
     "type": "intl",
     "src": "n-tv.de",
@@ -4682,6 +4881,16 @@
     "date": "2026-08-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTmctZGpkbXR1UEhLZmVsb2lFVVFQNU5yRWoxbWRaWXFEU0c4dUJVVUNmQkE3UmVQNHV6S1U2MnR4UmhWVS15eXZDakdoOEUtSGF6SjgyaVVMbnhtR0JZZTFlcFdmSkd3WXBXbFdNTWZkTUJkYXhhU1d5VWx2S0c5ZTdQZHNLRjQxc0kzRldKbzd2UE9ZdWpwMXRRMmpIdmJzdHpidFNObjRfT3Z5azdmYnJubFdOZnIxWTJqVzFB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2df8503b43e7",
+    "type": "intl",
+    "src": "tn.com.ar",
+    "title": "Del amor a la rivalidad deportiva: el partido entre Los Leones y Países Bajos enfrentó al jugador Nicolás Keenan y su novio Primer Ministro - tn.com.ar",
+    "date": "2026-08-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcUNjd1VqYU9YX0o1S3VOOXJlU2h2VFNQWWxudERZMFpjeG4xNzRBa2YxV0EzbDF1akQxN2N4X2d1NnZsSC1DaE1WcEM4VTlteXpvazJUVUVoN095Y2N6Y1k5dm1JZ25ZX2VCRXhqcVhHSTF5UmlQdUh2Q2lvZEx3RDJjRXNLZWlSSWNQeDJscHlyaDJOVFpkaTRNQmVMRlFxOEJITVBXWjlRa19OZTBPYnFMalJoZHY4Q2RORUxtTjJ6SjRIb2xaNUZhRVhkQTBsTWRkcy1TU3JaT1dEeC05TFJPaThoNks4eXMzcmlTVGhfVzNtbHdqWWRpX1jSAZACQVVfeXFMUGxCclFkLVhiMlZ5RFF4S0pKS1ludFpNMEhzQkJNbVk1SzdZdzBmVG16cDFRN1c4WG1sanBGRDBPVzJhOXlldkliRWVJRmNmY3hxcnhTTkM5eHRjZTlGanU0VXRIZjhJVVhXcTF1WTBvRXN4bGlmQXZNd3FsbUxodlhTa0RNNmdldU4xV2xDenBHSEsxZVVjdFdlbFBDUTR6NzBPemdxNmZqME0xbGVrQUNCOGpmRFpJNElUV1BWM2VZMVR5Q2RNdnhqNmkxQVFiSDh4VDVWVlY5eXNEUm1VMEJZZXUxRkhkRmVQNDZ1eExCOTBhbFIwbjZPblNoWUdmZWZvYlVHdk5YMTN6cnUtaHk?oc=5",
     "flag": "🌍"
   },
   {
@@ -23402,6 +23611,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxPYmhmMGJBLS1nZDFoYUFJT3Y1MTdDWGNOaksxdDk5QmgyTWl3M2FZYjA1LVBLVWN5a1VGVEllWWYxTVlpa1Fzc0RSa2JXbUxsd25aM0VZajY1Vjc2NzZUemVocnRKYXZTajlrcXdrZ2QyNGZQZlc2MFJUOGRueUZPNG43ZUhYMS1yRWtCLV8tdm45TDFaY05QcmZMSFBGUmozSWRMcDJ2ak15bEpnaEVlMW8xTzhONEZwdXRSeG9kOTdUc3JVN29kaE5GOGN0eUVYTEdoN3BTaG1qRTdjVTJQU1ZQTDJOdVA1RHk1bnlyMFFUaHdKckc2Qm43UEhCb2NYZ1HSAYcCQVVfeXFMT25uMFM5X0F1cGxqeHJpMTlVbVM1c000OWtwWlRKNERHVnRSNllnTlUxTG5NU2luaXFvaDdVZWRLbllYZmtqNkVYOXRtLTBERW5qRk9LQzhLVE9QVVNZNF9CREswb3dkNk5ObjBUdGMzSmRmOEJmTUV5LWFsM0RPaXhCWTBpQ0FSMXhZZTZGc1NXWnJDa1ZJSTluMURldE4tN0NpWTJXMFhaX05GR3VQcllTbGMyRm5rVEp0Yk9VLTgwTl84V1ZqLXRxZWlkQ2lwOE5pQzRSMmFhYmVGeHNYVzRMdmNPS3k2M2NidGwyalFzelREd19SRlZOMXZKcFdCLTdobXM4ZzA?oc=5",
     "flag": "🇺🇦"
+  },
+  {
+    "id": "g5e525b39dc8d",
+    "type": "intl",
+    "src": "aa.com.tr",
+    "title": "Zelensky arrive aux Pays-Bas pour des entretiens avec le Premier ministre néerlandais - aa.com.tr",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxONGkwUjEwWUE5TU1qblViYnUzQjAyTGUya2NIMHhiQ1AzbXBFaDFRRnJSQzFKQmdocThVWWVDbEpTMFkxM3ZOTUJZXzdnVUMzMzdzeEVzelVvRDhMcU5zNFJrSFdXTXRTSHk2UkFDSUQ2XzBQLVEzRXU4aS1peElRampaX0M4VEdyclRCTXJ3MFBQSF9meFFZM0xhU3EtMGwtNkw1RHNjUzh2bGdyeWpEMVFBbmNBclJCakMybjlJdlZ2dW5FVjVETg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb63c278193d3",
+    "type": "intl",
+    "src": "slovoidilo.ua",
+    "title": "Україна та Нідерланди підписали документ про оборонну співпрацю - slovoidilo.ua",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaVluMHZyQVF3VklwOVF0dm9DdmNWdFFLcm5PQnh6RzhDZThPRk5FblE5aHJGdXZETmFGMU82UGtiMGdkbVExVDMxWkliOUphSnhJUFgxSUtNYnNFMDRDQVp3T0hwUFJaTUxTbXd0Vkw4eDZwelFhVERuNVpOUXpsWHYtTklTeURUZmwxRHFpeHlXZWxUWGhxd01pT1QxNWlVRWJxMERpMHgyN0Z1NXY5UkhzLXRzRGZp?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g18d3822c9c96",
