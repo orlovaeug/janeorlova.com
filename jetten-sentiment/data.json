@@ -1,5 +1,58 @@
 [
   {
+    "id": "gb0af8746abf7",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Een hete en droge zomer vol records, maar het kabinet van premier Jetten (ooit klimaatminister) houdt zich stil. Vier verklaringen waarom",
+    "date": "2026-09-13",
+    "sent": "p",
+    "link": "https://www.nrc.nl/nieuws/2026/09/13/een-hete-en-droge-zomer-vol-records-maar-het-kabinet-van-premier-jetten-ooit-klimaatminister-houdt-zich-stil-vier-verklaringen-waarom-a4936273",
+    "lr": "right"
+  },
+  {
+    "id": "g3e029ae6ace7",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Bart Nijman: het is echt zorgelijk hoe Rob Jetten zijn schaamteloze AI-gebruik bekende",
+    "date": "2026-09-13",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/opinie/bart-nijman-het-is-echt-zorgelijk-hoe-rob-jetten-zijn-schaamteloze-ai-gebruik-bekende/161352022.html",
+    "lr": "right"
+  },
+  {
+    "id": "g131afefa408d",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Een hete en droge zomer vol records, maar het kabinet van premier Jetten (ooit klimaatminister) houdt zich stil. Vier verklaringen waarom - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQZVQ2NjVDaGljU0lTekhuS2tldERDTzQ1Mm04ZTNzNThRMXZid0h3X0tsZGhuR3pFcHFuSk0tZ0toM1hGbXdUZW91NFdkTng0aGtyc3VFb1VPU2JGN2k1bDlWMVZUSng2YVZmaUFiV01wZDRfVGJPcFVZdGVXVGFCTU53ZnBta05IVFlPNkVaNWxGaHZabGVfMnFYVmMyeHJjc3FHeF9iNV9aemMyaGhjVlQ2dDRILWdfZFItQzQtbk9zUURtUzAxQVdYUW9GeGFGQ1Q5dXpjU2IyV0J0dkhmUTNoeXZjbXhNYWR2SDhNT2tLR3l2SU5sNDRmcno1UW9VN3BZUV9tVmFpY1E?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g27bde795bfe4",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "TikTok-premier Jetten staat symbool voor een uitgeholde democratie - Nieuw Rechts",
+    "date": "2026-09-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMUNpLXBoWGgxMVQ2RmN0WWlNWGlyc2tXVzRkNmpIUXdRdTlwenZILVF1OVBpLV9BZER2bUdJU3V6V0lsZHVIR21YNlpJeHlzakR3LU45RHloSkQ5QzI0ZWV2aGM2VTl5LXc0R1BzR0xzRlZRNUhGSGdQNnF4aVBlSDl3NURoTWI1enJZQU53Sm45dmlKY0JrWkN6Y3c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdb4780ffb40f",
+    "type": "intl",
+    "src": "LatinUS",
+    "title": "Primer ministro de Países Bajos admite que usa IA para redactar mensajes en redes sociales - LatinUS",
+    "date": "2026-09-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdmFaQkFDaF96Z21MYUJaSTBtQllWeC1oTUVNeUhld0JwSGtCZVlSSTJJUllrNGV0ZURkbTc2NjV6M3NVLUZzRklCNXdFRlphUG1pZHltSC1ybzIzaFdhSEdrSE9QX1hQVm1tSk55Y1lQSm10d1hsQ2FwYi12TUpKVEdLVUJLZktWT1V3U1pWRHgxWHhXdkZsZEx1ajNwbngzNnNJZWw5bWtnaTVCZGxKMEVXbWdHT1NGZXFheU8zeDFrLU5paC16Y01oY2QzVW5nTzdF0gHTAUFVX3lxTE52YVpCQUNoX3pnbUxhQlpJMG1CWVZ4LWhNRU15SGV3QnBIa0JlWVJJMklSWWs0ZXRlRGRtNzY2NXozc1UtRnNGSUI1d0VGWmFQbWlkeW1ILXJvMjNoV2FIR2tIT1BfWFBWbW1KTnljWVBKbXR3WGxDYXBiLXZNSkpUR0tVQktmS1ZPVXdTWlZEeDFYeFd2RmxkTHVqM3BueDM2c0llbDlta2dpNUJkbEowRVdtZ0dPU0ZlcWF5TzN4MWstTmloLXpjTWhjZDNVbmdPN0U?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g65d3bf8306bc",
     "type": "nl",
     "src": "de Volkskrant",
@@ -50,6 +103,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbmRfSjJ6YjJBRUtQVi1OVzRxbkZWcWpkXzM5eEhOTmVwQlBfMWlFaFB0cEUtQ1NmdVpnQVpTQWhEZTN2cnJfSHE2N1pSOWdRbFg2ZFhkNm14SmUyaEFtSk5VVzdxWnk0X1pJcGU3NHljdXJYakpBR0R5VS1ibjhiX0JERDNHTW8?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gdd5ce6ce730b",
+    "type": "intl",
+    "src": "La Vanguardia",
+    "title": "Un premier apócrifo - La Vanguardia",
+    "date": "2026-09-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPckxzVVAzWFVia2lwSWdYb3l1ZmdKQTBubWhyMzZrS0lfR1pYZTR3SmZQVklwUTdxRUtuVG96WXR0TFU5NHczdk5jY3pzWHEwTV9ORFRuUW0xNjBhcFQyOGhIRXdlQWVsMHY3Mk9NNmFoRFY4MEdmOGs2aXRVUjgxUkEzdUlvSkHSAYcBQVVfeXFMT3JMc1VQM1hVYmtpcElnWG95dWZnSkEwbm1ocjM2a0tJX0daWGU0d0pmUFZJcFE3cUVLblRvell0dExVOTR3M3ZOY2N6c1hxME1fTkRUblFtMTYwYXBUMjhoSEV3ZUFlbDB2NzJPTTZhaERWODBHZjhrNml0VVI4MVJBM3VJb0pB?oc=5",
+    "flag": "🇩🇪"
   },
   {
     "id": "gb1816c0b3467",
@@ -249,6 +312,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYlBQbHZPUnFZNWxPWVRCZHloUGZ1MjNQX2hoam1rZE5TNDY3UEpYbFRFbFhEdVR0WDliR29HR2RMcHFEX2tXeGhMZHRULU5ZOFU0MGRKcEVRN2VLUllTb2VmeDdabU55SFowU3FmcHRCZHJXTmRobHRoRTNkczNvbQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "ge187a2240e00",
+    "type": "nl",
+    "src": "binnenlandsbestuur.nl",
+    "title": "Kiezers reageren afkeurend op kabinet richting Prinsjesdag - binnenlandsbestuur.nl",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOU1JaNXlBcHdDT0RlZjA1QV90SktQb3ZXc0ZfZ3BEMnl2SVRaX1JfeGlNcDhRM2o2UXVhbVdIU1pkM20zaWtkS21fUTVCcWRLRTdpenRnal9VMWMtSHk0TW03aUhXNU16eXN2Qmt6akZMU25Idkw0Q3BrZmJzY3YzQlotNXFzRDZqUGpRNXlUQk9BUGZzUXJxTW55by05VFhtc18ybE5vQnloOHhUTm8tNUlTc2RaUmVDdDI2ZlhldGRQZndQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g266173502052",
+    "type": "nl",
+    "src": "Boerenbusiness",
+    "title": "Premier Jetten ontvangt 'ontzettend goed nieuws' - Boerenbusiness",
+    "date": "2026-09-11",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb0Y1Mm5rVWs0ZGNIR3JtQmRMSlhUOUJTX2o4ZEtoeFd3Wjl5OVp3RmEzQVI5d0FOSGxDa3JsQXlLbWpoQk5iRWlPYmNiQy02c2JHM1R0aEhZc1BDcmZmN3o2TEhETHRJSWlpUnBvdGpKR2xhSWJ5TktySDd6VHNzaG5iR0dPbk5SUzhjOVRQdWljVW9tZFAyYg?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g5a951ce1767d",
@@ -628,6 +711,26 @@
     "icon": "📰"
   },
   {
+    "id": "g2e480b600456",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Nieuwsuur over de AI-posts van premier Rob Jetten - NOS",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQYjhkOHdGbmN1QWVheEpQSXZLMUxmX2dKN0xtM2d5aXRMeUVndllNLXpQUlBYMmpsRFhlUFFfRkppcm90emlfMHgxYVhhbHdsQjQ4RmUwMW54SmpfcW5tMXJFLWlnMS1FNUZiY0ZFWlZ2NnBjQmoyRl9iaUtUb0s1ZE03Y3ZUdnZCNE04bDBPOTNxbmxxOERKSQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge744b59e3539",
+    "type": "intl",
+    "src": "fr.news.yahoo.com",
+    "title": "Le Premier ministre néerlandais délègue sa communication à une IA - fr.news.yahoo.com",
+    "date": "2026-09-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQN0RpWFN5NklISXRNTmlsWWhXTXVTbGE5aDdENEZLWDJtRGFTeFVzXzZsVE1QYTN3VWZJRDJYNk5FdjVhdklaYlBXdEVhWkNiTTRJVmwzelNocGpoaHpMYUFlck45TUdLTzNlem96ZXFVWDlMa2Z2TnlWMjZDS2V6TUstMFpuOWdhdHRxQ1lULW1MVklqTDZSTGNzNHF3NTAxeEQxVkJPR0F4Zw?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7b1b1ae24833",
     "type": "nl",
     "src": "bnr.nl",
@@ -704,6 +807,16 @@
     "type": "intl",
     "src": "The Times of Israël",
     "title": "Pays-Bas : le gouvernement veut interdire une chaîne de télévision d’extrême droite - The Times of Israël",
+    "date": "2026-09-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaHN1bVlsZFlWRzExcHh5SHEyaXNIYTNGXzJBN1oya0ZWaGhQZFVDYmlnSDBYWFRQNWNQdEZiUlNKUVV6VnEzbE9xRmFHaWFtem9vY2xBM2tJeXRsTW5KUGhtek9SQ1NrRmlvVmpkcU5MODJNa2lHMEMtZDlwbUdZNUM5bm9OVk04SWtNZzIyY2dLWVRpNG43Q0w5NTdPUU1xMlNIQ1VpTHZvdy00VnhZ0gG0AUFVX3lxTE1SblpvNUFoLVROY2xUMnM4NG04VG1ZMlNsN3h0U1U2WVJDaVVpVmRwalQ0STdZeGtvRW1MR2V2dU9obnhJNHY0YkhOd2ozMVZEbUR2ZWFwNUZJUnFOUUljTzhreXI1S2htVmFlTk1XY05lLW5FTDcxZXNVdk8yQy1qelNXSDlIVFVwY25seUNNNUFEWTVoM3V3R04tenlRT1Nqd2pPOWZIYmFOU1gwVkxCSVg4Yw?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gd2bff8fae4c6",
+    "type": "intl",
+    "src": "fr.timesofisrael.com",
+    "title": "Pays-Bas : le gouvernement veut interdire une chaîne de télévision d’extrême droite - fr.timesofisrael.com",
     "date": "2026-09-09",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaHN1bVlsZFlWRzExcHh5SHEyaXNIYTNGXzJBN1oya0ZWaGhQZFVDYmlnSDBYWFRQNWNQdEZiUlNKUVV6VnEzbE9xRmFHaWFtem9vY2xBM2tJeXRsTW5KUGhtek9SQ1NrRmlvVmpkcU5MODJNa2lHMEMtZDlwbUdZNUM5bm9OVk04SWtNZzIyY2dLWVRpNG43Q0w5NTdPUU1xMlNIQ1VpTHZvdy00VnhZ0gG0AUFVX3lxTE1SblpvNUFoLVROY2xUMnM4NG04VG1ZMlNsN3h0U1U2WVJDaVVpVmRwalQ0STdZeGtvRW1MR2V2dU9obnhJNHY0YkhOd2ozMVZEbUR2ZWFwNUZJUnFOUUljTzhreXI1S2htVmFlTk1XY05lLW5FTDcxZXNVdk8yQy1qelNXSDlIVFVwY25seUNNNUFEWTVoM3V3R04tenlRT1Nqd2pPOWZIYmFOU1gwVkxCSVg4Yw?oc=5",
@@ -5177,6 +5290,16 @@
     "date": "2026-08-17",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5rT3BBRUl5c0RDR1dJLUM0UnotSmdySHBDWng1bDd3U1lVbVhQc0Z3c0NnMmFrQjZwSU1xRV95bEphN2JkajlWaXJJamhNc3FFMklCc2Njb0dBMGFyelVnQXRzU3VEaWU1Zk9RMXYxRmY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g98ef1cc796f6",
+    "type": "intl",
+    "src": "The CSR Journal",
+    "title": "PM Modi Congratulates Rob Jetten on Taking Office as Netherlands Prime Minister - The CSR Journal",
+    "date": "2026-08-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWTFsMVB4c0tlTjgzOTVhaGlsLXYxZ0FrZlA5MDdwYlVIcGUyaVBVRjRZRm1mVXJwY002dmFYN1ZxcE5tRFlSOHhWa05sU1lxRjVvcVNpbkRqcV9VbFQyQ1YybjIwa0JWeDNfYTlIVmRkblB4a0Y1Nk1mVHBxN1AweC11SnZ5b19iTGZvMDAyZ0NmTGRtdS1DY0hyVDk5dHpQUjlYbk1Jaw?oc=5",
     "flag": "🌍"
   },
   {
