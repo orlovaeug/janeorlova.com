@@ -87649,7 +87649,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18621&did=2026D42710",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkcfe08d539d",
@@ -87663,7 +87663,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18620&did=2026D42709",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk8120570664",
@@ -87677,7 +87677,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18605&did=2026D42651",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk7d1c2eaa04",
@@ -87691,7 +87691,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18622&did=2026D42711",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9be91e3a48",
@@ -87705,7 +87705,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18606&did=2026D42654",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkdeaced02b4",
@@ -87733,7 +87733,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18593&did=2026D42601",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk57a80f9005",
@@ -87747,7 +87747,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18592&did=2026D42600",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9fb7020641",
@@ -87761,7 +87761,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18591&did=2026D42599",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk04efa9fd78",
@@ -87775,7 +87775,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18590&did=2026D42598",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk5c7d651811",
@@ -87789,7 +87789,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18589&did=2026D42596",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk469a46d14c",
@@ -87803,7 +87803,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18588&did=2026D42595",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd54543be91",
@@ -87817,7 +87817,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18587&did=2026D42594",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkf5a3fefb9c",
@@ -87831,7 +87831,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18586&did=2026D42593",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkb92f5e1bc9",
@@ -87845,7 +87845,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18585&did=2026D42592",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkf72bed93a4",
@@ -87859,7 +87859,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18613&did=2026D42675",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tke331792099",
@@ -87873,7 +87873,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18608&did=2026D42658",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkc5b710e1b9",
@@ -87887,7 +87887,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18611&did=2026D42674",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk01c631e23a",
@@ -87913,6 +87913,20 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18807&did=2026D43268",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk8e1d6f02c5",
+    "titel": "Gewijzigde motie van de leden Coenradie en Van der Plas over onderzoek naar bewezen effectieve en kansrijke intensieve en begrenzende interventies voor ernstig ontspoorde minderjarigen (t.v.v. 29911-512) - Bestrijding georganiseerde criminaliteit",
+    "indiener": "JA21",
+    "datum": "2026-09-16",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18938&did=2026D43739",
     "toelichting": "",
     "stemmen": {},
     "archief": false
