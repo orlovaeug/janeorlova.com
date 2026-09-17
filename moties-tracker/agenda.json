@@ -1,29 +1,5 @@
 [
   {
-    "datum": "2026-09-16",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06495"
-  },
-  {
-    "datum": "2026-09-16",
-    "tijd": "2026-",
-    "titel": "Algemene Politieke Beschouwingen 1e TK",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (overig)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05419"
-  },
-  {
-    "datum": "2026-09-17",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06499"
-  },
-  {
     "datum": "2026-09-17",
     "tijd": "",
     "titel": "EINDE VERGADERING: STEMMINGEN over moties ingediend tijdens de Algemene Politieke Beschouwingen",
@@ -70,6 +46,14 @@
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (overig)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06643"
+  },
+  {
+    "datum": "2026-09-17",
+    "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06499"
   },
   {
     "datum": "2026-09-21",
@@ -258,7 +242,7 @@
   {
     "datum": "2026-09-21",
     "tijd": "",
-    "titel": "Tweeminutendebat Beleidsappreciatie bijdragen experts inzake luchtvaartverdrag EU-ASEAN (36700-17)",
+    "titel": "Tweeminutendebat Beleidsappreciatie bijdragen experts inzake luchtvaartverdrag EU-ASEAN (36 700, nr.17)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06460"
@@ -286,5 +270,53 @@
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05039"
+  },
+  {
+    "datum": "2026-09-21",
+    "tijd": "",
+    "titel": "Tweeminutendebat Bescherming persoonsgegevens en grote datalekken (CD 25/6)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05516"
+  },
+  {
+    "datum": "2026-09-21",
+    "tijd": "",
+    "titel": "Tweeminutendebat Circulaire economie (CD 8/9)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06387"
+  },
+  {
+    "datum": "2026-09-21",
+    "tijd": "",
+    "titel": "Tweeminutendebat Strafrechtketen (CD 8/9)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06389"
+  },
+  {
+    "datum": "2026-09-21",
+    "tijd": "",
+    "titel": "Tweeminutendebat Belastingdienst (CD 19/3)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A02466"
+  },
+  {
+    "datum": "2026-09-21",
+    "tijd": "",
+    "titel": "Wijziging van de Wet luchtvaart in verband met de verankering van de Maatschappelijke Raad Schiphol (36655) rest",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06363"
+  },
+  {
+    "datum": "2026-09-21",
+    "tijd": "",
+    "titel": "Wijziging van de Wet studiefinanciering 2000 in verband met de verstrekking van een aanvullende tegemoetkoming aan studenten die onder het studievoorschotstelsel hebben gestudeerd (36922)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05125"
   }
 ]
