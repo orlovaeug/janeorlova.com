@@ -1,5 +1,47 @@
 [
   {
+    "id": "gb0874a2bb779",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Podcast De Dag: Jetten kiest geen kant, maar koopt tijd",
+    "date": "2026-09-19",
+    "sent": "u",
+    "link": "https://nos.nl/l/2631600"
+  },
+  {
+    "id": "g84f54e35438e",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "De eerste Algemene Politieke Beschouwingen van het minderheidskabinet-Jetten",
+    "date": "2026-09-19",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/19/de-eerste-algemene-politieke-beschouwingen-van-het-minderheidskabinet-jetten-a4937080",
+    "lr": "right"
+  },
+  {
+    "id": "gb86b365332e5",
+    "type": "nl",
+    "src": "Avans Hogeschool",
+    "title": "AI kan het onderwijs verbeteren, denkt premier Jetten - Avans Hogeschool",
+    "date": "2026-09-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWmRVNmlTMGdacTFOaFBteWI1MGRCTDBlRm81bnJXd0RKdlo5aG9WeDNwZGVXcmpQTnRldUcwSWhuRW5kZTByQmt6WVdwZkVLemo0ai0tbHhMZ250Q1RWYmlCdy1lbkJNQUgtWVVtVDB4LVp1TUo0T3F1NkI0VmdBcE11bmpwVHJsRVQw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd9782f89e99e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Hoofdredactie: kabinet blijft treuzelen terwijl land snakt naar duidelijkheid - De Telegraaf",
+    "date": "2026-09-19",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPb1J3Ry02aFloQjdxMnhhZFRnZV9lTEhkT2FGT2tKMGpVVlRuT2p0NUJVb2RNZ0xqSUV2aVdCSnVKNUo5RVgyUmcyWnJwbjhIMnp3Q3lvdkxFX0dUdnV6ZDdqZkdaT2JoeUhfdEpmbHBTbFFHa0U2TzlsemZId3JwRVFQazU4N05XVjBXUTRIc1RZTkhMSU5TdWllYkhJSHFCWURUbEJHQVhJVm5TYmo0VmJhSW4wejFUV2ZLczhQLWM?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "g15624e15c0df",
     "type": "nl",
     "src": "De Telegraaf",
@@ -89,6 +131,171 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSTBhR1FNME9hdGYyeUZxQ1N6TVR6NXE2QVdobDk1bGgwbjNsS2Jld21aWld4ek1UUFh0RmE5a0ZFMkV4QU5ZdlBDTmFrT3FlNHVWek1vblNJUmdjM0RINkVwM193SE5HTEYybEowMVY0RWNSUzM3TzhkOFZiOHd2bzlUYWU3bkd1QkNxdG5qZ0xvcUtiY2I4YnlhSlpydw?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gf1539351e6f3",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten wil voorlopig niet met BBB onderhandelen; BBB-leider Vermeer gepikeerd",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://nos.nl/l/2631526"
+  },
+  {
+    "id": "ga6ede14156e8",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Alleen met echt leiderschap kan Jetten zijn kabinet redden",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/18/alleen-met-echt-leiderschap-kan-jetten-zijn-kabinet-redden-a4937031",
+    "lr": "right"
+  },
+  {
+    "id": "g5a5d9f1cfe30",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Hoe ironisch: Jetten zet de koning in als redder van de democratie",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://www.trouw.nl/columnisten/hoe-ironisch-jetten-zet-de-koning-in-als-redder-van-de-democratie~b74aed6b/",
+    "lr": "left"
+  },
+  {
+    "id": "ge5599b0006e4",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "De week van Rob Jetten: niemand lukte het om vat te krijgen op de premier - Trouw",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZU1zc1gyLXNaRGxJOWZNMjlLT2I2OGxCYTVWVmJhZTFUQTE4SGNDNFBTeGxKMmxRbHFIcFhOTE4wc2I3dTlJVjh5cWxGU1BiMVBJb3NOb1hBTldqTl9YRm9VNDFHZkl1algxZlF1UkZJaDJ4Mk42NWk0ejNla2VqWGRKM3d1aDc4WHZHVGkyRnI5OUZEQnlkMmxsM05ncjBqVG1YX180ZUNwYkt2WXhrTlZB?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g4c436a491125",
+    "type": "nl",
+    "src": "PowNed",
+    "title": "Ministers en collega's maken premier Jetten af: 'Het is laf!' - PowNed",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNX3BuTVRQWUFQdVZ1Y2xEUktrLWhnMVVsN0hmT21yUEJscUU0em1ORGVPU1NtUEpfZnh6bUlvWEpTa1BQT1JiQS1wSk9XWEtIbTVseUxXUWZXV1BfdUFHLVRVRURFc3htdlg2VVFkbzdMdmZLc1lUUDYwQzdITGoyd2tOWWxaVUhYc3RpQldiTllJQnJHNWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2d8eba8c41c0",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Jetten lijkt onverstoorbaar in debat en dat is zijn kracht - Reformatorisch Dagblad",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQThWbGl6ZWtHWnE1V3F4bzQzUjNIOGw0QXY2OEluTjVSOFlxa1hRQ1VPZFZMeW5HM0hGOGNyZm5NLXg3RjNnczJDTU5kaGNfNDdKMmR0Z3ZBR3FQYlpMR1RxZEdjMURMcllqNURXclFXQmtLTmFYRWNxS3YxdTFuVWhDLTdjUVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g48ddbd3c6560",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "De ministers die over Rob Jetten klaagden, lieten per ongeluk hun eigen bekrompenheid zien - De Gelderlander",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOS2QtLW5ETWhIdVZSTl9UNmpVWFZJbERtTTdzZmdBN0F5MUZmRENDSWZ2dzBsTFNZdTB5MXpDVkU2WGMyS0NaUW1ERDRNN2ZMR09XaXFNQUpBQ3VEUkZiU0xGOUExZVdBOUN0QTZNdnRaNmMwcDRvd0tqR2Z3Q0MzS1RMRVhUN3NMQmVLdWd1SnVYaHpteDY4N3NKdEFzZUpncnpPNXdacFoya04welhKdFVHWVNQZmRLWnNMV0xwNHNfY1FKdHRYZGVBS1dEMnlfRC1aaw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g07ec47f1a202",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "De ministers die over Rob Jetten klaagden, lieten per ongeluk hun eigen bekrompenheid zien - AD.nl",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMGJXZFdMUjlnOXJIU2pIQ0xTQmtnRUp4U1lCTGJJcVhwNzFFZUxUM01yWmZadUU1RzFpQUxnSjRDQkx6RGM5N2VWaDE1dng3X1RsemwtejJjeTZDWXluUzYtaURCOWNDcG55MmVuWm5VTk1wRHFZSDV2RGVWN1ZBbVRGLUF5TUtKTEtlUnNSOFZxWXFJUkVfMmp2VUFOQjZ3STlaRFFPak5zaXduVVRLLXpyYTZDbU1FbzhzTWlhYUg0ZHA2ODF3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4106a3e94875",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Zodra ministers klagen over premier Jetten, wakkert Wilders dat vuurtje maar al te graag aan - AD.nl",
+    "date": "2026-09-18",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUkh6aUt3bTl4aFd6azZBcllWNFJac29uYjFHM1oydjQtU05xcTEzblBGSUFIaWt5ODduR2I4M1RIQ0NiZnRTaXBEZ0w0MUJjeGl1by1UczR6eWVrZnBBMV84R1pQRnNQMVZuQUJJMERmUFhjMEp3cURJdFBxRWczU3NXbWNaN2tldFdHTlkwYWs5VFFscVQwblRHV1FEanJRbkU1Zk9oUkdJT1JVb0dUY2YzdTc4bzVCaFJFYVJ4QU1idVBXYXE4?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g23befdb9d5d8",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Hoe nu verder, vraagt iedereen in Den Haag: dit is wat Jetten daarop antwoordt - AD.nl",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQzY2WmJ3UUlYQVItVVZJWW93b2tRQTdjV3RWc3hSNU9kN2JULXllajFCS3dJSURtWnh6OVN3TWJXT3NZU05JWDg3Tkktc0VfTjA4a1NOYmxhcGE0YkR2N3NKcTJjS2VtUlZaQ1c0ZnJ2ZjhtTUZOY3RvclNwSjlob0FMMHkxalpDdzNVVUVadVRpQlRXSDNjamVyQ0hIeExFNU9lY2pXRUZPOVRaNTMxSHdtWQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6c8368f3692d",
+    "type": "nl",
+    "src": "TPO.NL",
+    "title": "Kabinet-Jetten praat voorlopig niet met BBB over begroting - TPO.NL",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5vbXVYcVFIdGdLdzZKY1p3ZElOMVFnZUU0d18tX3RyQmNLZ3d1alZtc3NpWVRBTnRjVmFUUVVwempBVFE0ZkF1Qlp5aV94bHVjbXZNZEdNOVRQZDdVNG9YdTVUYmhWSVZ1U2RUTXU3QzhXUFZtT0pLWmk4V0Q2UGM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g317a0a96ab38",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Opinie | Alleen met echt leiderschap kan Jetten zijn kabinet redden - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTmZpSmdkenVSODcwcXRWNWdHVFZjdnVxWE10R2o3YWE5bm9jUnczRnR0VGxEcXkzVTN0U1FlTGp0TnlKUHpnT0ZndkdyLWJaT2dkR2ZlcnlFTldiMm5mNTg4Q0dKZm5ETk9GUzYya0JrNnFyZnMyRk5HRl8xSXZMM2RRWC1tSHhENEtWRzVpTXEyUlZnamJsY3pJQ2FDMmI4YXNMOHpVRQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ga3dd09bab282",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten zet BBB op strafbankje, partij mag niet meepraten over begroting - De Telegraaf",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTEJwTzNjSl9DNEFnS0xwZlgyT1p4WFoyVVB2d2lIREJ6LTdJNXZpUkxXZU14eU5mSDNXWWVqWTNtUE1EbWdHcllyUFN0YmVzNDNxT0NVSmRRVHlLb1VjQXF2MEw4YjhubUNHaVo4X0pkTXpQZWZaTHRVZHhieUJYVS1zdGdiNXlNQ3RCYXpkN3VHZU5tYUFScXcwMmh5OWo3M2hyOXBtX21vQjBkOUpkWmlZdGM4SDM4MWtz?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g6fbfc132d44b",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Kabinet-Jetten krijgt herkansing - Reformatorisch Dagblad",
+    "date": "2026-09-18",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9KV1E4OTJjc1dZUXVpTURPTUlMNVNPUDhHbzNKUDRxODlxNk1UTmNzWlFsQ2dkUE9OajBmUVUyeEMwS19CQXhBLXZPYU85QUtoSlRjb1RPWmtXdW05LWNCaFRR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8d8a603132bf",
+    "type": "intl",
+    "src": "konsulteer.com",
+    "title": "Dutch PM Jetten Backs Proposal For National AI Safety Institute - konsulteer.com",
+    "date": "2026-09-18",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPLW9WVVhVOGNBb3JVVXVNRFVKR29XTGE5dXhVb2RTZ0wxem5NdnNJaHdkMS1NU016NmdZM2JscUVlbzBWLWdxeEttcFhOdndwWWZtTlNwNmJUU2Z0T1NhTTNaT21vSThjcVhWNHZuY1A1ZDJ1YTU0QnNLQ0lMVFIwa20wTkt3WUlyTmZHazE3cWgxSU91TzJOU2k2cUJTUFk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3eac6df23eb3",
+    "type": "intl",
+    "src": "politico.eu",
+    "title": "Five EU leaders: Europe must spend better, not just more - politico.eu",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM1labnI5dm5Vb2tOSFJuNnBucXRDellYSzE2V0pBWVlJSW1PdzBCUENvczlsYjVoU1A2S0NUREtjTEw4N1ZtUE14cU11Ry1oajBTNEdIOEZMM2c4dGdtckdodFRFZW9NS2N0eGE2TTFvdzJfUDFlSm1KcmVPcmlEZ0VuN1VvcUxQc2RfbG5oTl8?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "gd65c19e2ed46",
@@ -575,6 +782,36 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQbzU3MEdnVVZjb05YYXcweldONVRtQkFiZkdvSkw3c2hJTHJxMjZRQzczY0Z5UnFkblhWLXQ4TWhieW1BazEwZE5wYkVpeVdVamxNQWNaNk1oVVptS1hXWlJnemZWTHRCOGNBZ3oxcndkOUcwMDAteF9TekhIWUo3V2o3NE5URm5CbHVMak90Znh3SGNKUzZ3aEpvd1FKS3JTaHgzTFE3RkEtOV9IZGtvdFF5TDMxWW1PdlU0ak8tcWsxYVRWZl9qTlp2MjM0bmtocTkwVUpUYzc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g933d90f06cb2",
+    "type": "nl",
+    "src": "NU",
+    "title": "Geen begrotingssteun vanuit oppositie na Prinsjesdag: premier Jetten terug bij af | Politiek | NU.nl - NU",
+    "date": "2026-09-17",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMzRkRjJhNmYxZS0xVG9pUDMzLU9vOERWT2VYQ2U2U2d6UUx6U1JISDJuQ3BsRmtVcDNBUHp5XzRoY0FSbFNSWE9mUGQwakllNDY5QnhmbkdpUnpJbkhvNUxSNjNDcm5lS1NoUlNwcVRJSEJEUFdZR0E3cVhBeF9TdVlTX0d0WTJuV09qWVgxMkcza1RSRVBJcFRwZE9UZ1hwVU8yLWkyWkpCQWRFRTdKQ3h1bW1kbTNETTJ1MQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfe06516a7071",
+    "type": "nl",
+    "src": "Forum voor Democratie",
+    "title": "Kabinet Jetten kiest voor klimaat, stikstof, hogere lasten maar geen migratiemaatregelen - Forum voor Democratie",
+    "date": "2026-09-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1iS0dtUTRzNFNTdHlYMWxwdnpWMzhSRGdqRkdwV1YydnVCZVdmRUJub0ZXZDEyalJCLVpNZzBwSFFLeFRmSDlYZQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0950d46e555e",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Ook na twee dagen debat vindt Jetten het te vroeg voor een keuze tussen links en rechts - NOS",
+    "date": "2026-09-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNYV91b04zSlFkbkZVVDBkc3EwOFdrT0pMaTVlTW8xdVNHOW1teTlnb3FINllCUDVaTUNEcFV6eEFqWHRRcDRQdG1td0lqVDZyNXRHQ1FKdGZ5WjV0cG5kckszSnlPdkF3MF9uaGlKemU3QUpSZzZBNnliVkcyMnVOVGpQeHVyc1p3Z2cxNTJlbXJjUFZ0MkdSY1NmSVYzZlJ3LW5WVVR4ZWh4UGZfVGdFRHc1b0plRm12cUE?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gde6eec6009c9",
@@ -1240,6 +1477,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbUFkangza3ZlU0M0OGwxVU00YkFJWnR6dHlyY2FYOXhWa2NBcjl3VnN6ZEFYUUs2X1pfcWdQVUZGNkhMeTI1YUhTa1V6WnBMM3dYMkM0dEFUQVRSQVJDZnZIVHRQSGFmM1dFS3BPNE12Qk4xcTFTaTFGaHBIN1JmSVRZSHAxdkxFMFZMQUNOV1VuVnk2Yi1ZWE0wQzI?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g4ab2b4ce404f",
+    "type": "intl",
+    "src": "IamExpat in the Netherlands",
+    "title": "Prinsjesdag 2026: Dutch 2027 tax plan explained - IamExpat in the Netherlands",
+    "date": "2026-09-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbERpTWI2d21udHVsSFZ2ZktjUm53Q1cyWkNWNC10a2MxMUZuV0pBM3N4UWc5dTJvNmpPWm9Ea1JLT3ZLaXV4Mll5d2pTX1F5U1UtYXU3bEl2RGFha213WmtuT1pLRWd4Q1VoZzFSOUg2UDN4SGNTcUhNQjZHMnpVTE84aWVYdTZUd3RySnMzWGJQOTJKR3BiWENiVU9qc1ZrQUs1N1dod3RCNDg?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g97dcd4b08f62",
@@ -2822,6 +3069,16 @@
     "date": "2026-09-07",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbEdQemVTc0VYWWREcXBsUXl4YnhFNTdvWDdwN1FYV0l4S21FdFpuenV3OURIOVNHOXczWHpJYXltQUNyWHNUMDlsaTNsUUwtRFVPSUtuSWJvTnRaRkdHU1JCYV9xRzBIZThYY0V2dzhDWF8yUjJvLVBsT2ZBaTZXeW1XbE1iUWczTE1FNnIzSTBIdUtuT2dfeUpPZnIzbjctdk1UQ3VKTm0zUkpFYUd4a3hvS3lwLVgwblV3ZTFUUW14Zw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd8b75b859559",
+    "type": "intl",
+    "src": "infobae.com",
+    "title": "Primer ministro de Países Bajos ve un \"toque de atención\" en la victoria de la AfD alemana - infobae.com",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZWlJdG5xUUxJYVVtYjY1OFJ5Qjc3SXQzbDAtQlFkc29LcmVUTGI5c1N4cW1TSWlFSW83UlVIUzdaSUg3cS1HUm9tZWxMOGd5SVgyZGxxTzFsRFpHU2E1MkwtLW5Jbk1qcUp4Tk1KZ0JHX2RwZHpyWlJ1ZmE5cmh2YlRiallqVlVtMWRtaTRNQUVvQXJHSlR1eEdrOFlFVFA1OXpmSzVfeks0VjdhWGVzMzJqTTNoWUpJNnpQdU5STFZzUGRwamJzZ09GQmpOR0REMGU4S3FGQ1HSAfMBQVVfeXFMUHdqWWJ0WVBzeGVoMkhXQnZBWUZ5aVNwY3pEcGJCcFpVbkFVTldvQ2VWSUYzN0lmLTd5M1JYMi0wQ0JNWDVJQ216MmRBbDMtSWUzbnFIQ2ZLQTdGX041TEI5QzNOMm9BWW55YkIyOVFVLTZXZm5LUDdDcEpuTjR3ekY0eC1uUk9yUE1KNmdkcU1nQzRJT3B4dW1hY0wwck5lM1pIVXVNQVZXVlVvT2Vwa000eHpWd1ltZnJpNko0WGU1NkJ2Y0doLV9vQ25zejE3UXhDNVZwbk5HLU9xb3d4UDJ6dHEtVG9tNWhGRWhRUlZmdnc4?oc=5",
     "flag": "🌍"
   },
   {
@@ -12106,6 +12363,16 @@
     "date": "2026-07-07",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUWhqYWpLSG9ObmY5cjZtVUJkQkRYS3hpb1RUTzBralpZckpQa2pJbEJZLVJ2RnhYb1drb2pjT3VWRlVFSHZNTTZHc1RETURGQ2c2QnItekd1dWxqMWlobEF2Z3BSLTdpeWlGZVZTeE1XTGVRbkxScDlXLXM2OWZnT0tvdERta3hhXzV3UG4ybjRRRHI3Uk1VVm9zdkozWDk1SlBFM3RKRmI2ckZLUlNIYi1HdGdJclBzT2swUzBTTEYtT1lWajhjLTRQc9IB0AFBVV95cUxOQVVHUHNtRmxFd1JQelFyWmI2ekRkQ1ZJWS1ZT2FXbGhTV0o0ZHJjQllnUFFGbmF1ZHpPSl9JTTRkUVhmRW90S1hYZElBbmxBclFBZGxudnpKaVRKcmhjVW8yUEE2VFlOcnhUU19qUS1RUktRcUI1ZUZjTXBfemFLNlJKaDg3czhfRUxveU5KSU1VNVZ5RGFHdlZEbmJzaXp4RTRNR1JuUnF4Ym5YWnlNRmpPVUJEREpaQjJuTF9LUHVQSW5DNi1kQThMNGFjTUFa?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g09a49355240b",
+    "type": "intl",
+    "src": "infobae.com",
+    "title": "Países Bajos espera que cumbre de la OTAN logre resultados de \"ambiciones históricas\" - infobae.com",
+    "date": "2026-07-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPUFpaX3otRG9aT1F4MmNsNHZSVU5Zc3AwdU5OWnFKSWFuV2FhSTkwNlBRT1psN2VubVBVOEdkNWY2eDJjeVU3QnBrbkVRbjlhMGNVR182VXZKZU9sYXZ2US1hTndFcF90VW5nSzU5UGUtOGFVaWNKTkhIS3lIWkZDLWJlbmhrRzlrOV9NY3VVQndFTTlIZnFrb2JpUUd5bVczV2NWbWZFaFFhdUctWHNHU21JbkRSTWZuejhBZ3BKNGFZZ2Y3UnZwR3VYdGJHNWFBaEHSAewBQVVfeXFMUEp3MHhETm51NmZYX2lvWktTY1dRVERocm1fNmhlVkhpcVNnRXNicnpqQ0Ntb0l4dG1oX1dzR2dlWnItazdXWDBmck5VZlMtS0ZvQ0luRDRvOEwtWGV2dW11RkJDNWw0WDRncWx5OEM1dGdiMUVIZzdOQzMwalFvTkt4X1E5NVI3S2Y1S3ZlU2pRMVRndWt1MlBlTHpEZ2xrOXpkNGQwRjVkM21jRFRUZDFuX2lLY1MtTUY5SmhjNWdaZGZkLVBONlpCWDlOdGZFeHU4dUVKdUd3SWhQTnpRQjY4VU5FN0ZHRUJuNlo?oc=5",
     "flag": "🌍"
   },
   {
