@@ -1,5 +1,36 @@
 [
   {
+    "id": "g1481715fdbe2",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Nieuwe eurobiljetten op komst: Nederlands ontwerp maakt kans",
+    "date": "2026-09-20",
+    "sent": "p",
+    "link": "https://www.rtl.nl/nieuws/video/video/cd98f329-2168-44cb-9a8f-00becdc05b8e/dit-nederlandse-ontwerp-kan-straks-op-je"
+  },
+  {
+    "id": "ga59a578b8499",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "'Rob Jetten wekt niet de indruk dat hij dit beseft'",
+    "date": "2026-09-20",
+    "sent": "n",
+    "link": "https://www.telegraaf.nl/video/rob-jetten-wekt-niet-de-indruk-dat-hij-dit-beseft/161704145.html",
+    "lr": "right"
+  },
+  {
+    "id": "g249d6f423293",
+    "type": "intl",
+    "src": "DW.com",
+    "title": "Dutch police disperse violent far-right protest in The Hague - DW.com",
+    "date": "2026-09-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT19lTFc3N2JjZGtDUXg1Z2hDY3ZBX3Z4MUVtai1xaVpUdzlLU1hRMXNGa2EtVjZ6b1REQmJsNmNOdS1hVFcwc1FuYU12TmVTOXpQQkkxN3VJYU1fSGExeE1pZ0s3MEFqUWVZTVRLVXhsY1ZUUzZJSnlDbGdEOElYLUw4OVBmTmZJWjdXWFZUNkF4OGVSMzRQc9IBmAFBVV95cUxQNXpLSy1jWkRaQ1A3c3hlZThWTTZfVmVpb1JqeVN3aU84QXBFRHgxQXJVMnQ3cGNoV0g0SjRpZUZEemN2YXhwWDVBRmhGVmtrWEJjUmU4TUN2ZjUwYTBraUktSkhtZWxvdERhS0pVWHZVMXlIRGZ4cWVTMmxfbjUxNVByS0pOWm1pZkdNTTYtQ0tvSVpRekVYNQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb0874a2bb779",
     "type": "nl",
     "src": "NOS",
@@ -40,6 +71,47 @@
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPb1J3Ry02aFloQjdxMnhhZFRnZV9lTEhkT2FGT2tKMGpVVlRuT2p0NUJVb2RNZ0xqSUV2aVdCSnVKNUo5RVgyUmcyWnJwbjhIMnp3Q3lvdkxFX0dUdnV6ZDdqZkdaT2JoeUhfdEpmbHBTbFFHa0U2TzlsemZId3JwRVFQazU4N05XVjBXUTRIc1RZTkhMSU5TdWllYkhJSHFCWURUbEJHQVhJVm5TYmo0VmJhSW4wejFUV2ZLczhQLWM?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "g9b1c7c703abb",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "24 aanhoudingen bij extreemrechts protest, Jetten noemt geweld weerzinwekkend",
+    "date": "2026-09-19",
+    "sent": "n",
+    "link": "https://www.nu.nl/binnenland/6410326/24-aanhoudingen-bij-extreemrechts-protest-jetten-noemt-geweld-weerzinwekkend.html"
+  },
+  {
+    "id": "gc8fedd2db747",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten hekelt ’weerzinwekkend rechts-extremisme’ op Malieveld - De Telegraaf",
+    "date": "2026-09-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOYk5qQThvWTdiVUN1TTF0eHVRVHhfWTh2MEU5MVRhUkhmR09jbUgtOUpoVFo0enk4QTBLX0J2TTF6dHNQRWxGTWtMVUxfekVJcDBwNkpFbkZ4UnNIOU9nbS14SjFIa3k4ZnZqVkxQd0ZrWllOdTdQNlgyOXhnZVhIdEk1ZG1Gb1c0TTBYNUk4S1ZHbGF3bHN4MWlyZnZiNmVGNkQyZHIzZ2tQMTJ0WkZN?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g02876eb1456a",
+    "type": "nl",
+    "src": "Hart van Nederland",
+    "title": "Premier Jetten spreekt over 'weerzinwekkend' rechts-extremisme op Malieveld - Hart van Nederland",
+    "date": "2026-09-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOb1drdzl5TFpIWWtpWURoZ2U2UVNic3BlVkVsdUtXUlFwYXBmVUpXSHM1MVRYZHBpZjdWR29tNW1oa0ZyQ3MxUEtzQWN6UWtVQlFKRzFQTDc0dnVFeXljQWpqWGtIR1R3RnZ5aS1aZjg1cVFEUm10eG9RTjI0eDBrS1l4a0RfWVRxLTk3eGhhRlh5enJ3QkZjTHI5bm5oY0hWVk93dWNabXpkc1c1SUNFamhPWDF3dk1vd2llQTNFOXlmdVJaYjgxejhCT1A4TW1hZHdZ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc0f19bc56b29",
+    "type": "intl",
+    "src": "Al Jazeera",
+    "title": "Dutch riot police break up violent far-right protest in The Hague - Al Jazeera",
+    "date": "2026-09-19",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZG9ObWsySHBpS0FDRmF1M2p2TzJybXJ2OUR1TkhPbFB1c2ZkdU8wdUZRNk9UaTZvbjFIMnhSTFRjMnlJMXI0TUtTcHVpVHFnSThwMy1iYk5hWDhlUHNZVjNMb1UtSzFaSWxxZXc0WWQzNDIxalVYbDFwT3NIbEcyd1Fzd1dUWmt1ZnFyZ2xqbzk4Q0IwNktjckZIZ1JaOXlJVzlZZWlTTHowUdIBrwFBVV95cUxQd3E5c3pZcmdLd0s1TEhqeGpjX0tWX044RnNOV1JnV3BCUVlMZ3BwWnFfblZwS3lURXAwSUgzeVU1QXZZYldyS0FUNDJDZU1hbW13eUxoVFdjYW1zaHg5aTlUb01CNkJwX0M2YWZBTkZya0dFaUdHa3dKNzBuY0VfQUktRXMtalhzN3ZudG5rZzFvQlhLTDYwMEZFWXhmTE1WTnlBTW5Sbm1CQXY4T2E4?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g15624e15c0df",
@@ -296,6 +368,57 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM1labnI5dm5Vb2tOSFJuNnBucXRDellYSzE2V0pBWVlJSW1PdzBCUENvczlsYjVoU1A2S0NUREtjTEw4N1ZtUE14cU11Ry1oajBTNEdIOEZMM2c4dGdtckdodFRFZW9NS2N0eGE2TTFvdzJfUDFlSm1KcmVPcmlEZ0VuN1VvcUxQc2RfbG5oTl8?oc=5",
     "flag": "🇺🇸"
+  },
+  {
+    "id": "g9976e15e11c0",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Jetten heeft een voorbeeldfunctie, óók wat AI betreft",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/18/jetten-heeft-een-voorbeeldfunctie-ook-wat-ai-betreft-a4936579",
+    "lr": "right"
+  },
+  {
+    "id": "g244db2edcdf6",
+    "type": "nl",
+    "src": "de Stentor",
+    "title": "Hoe nu verder, vraagt iedereen in Den Haag: dit is wat Jetten daarop antwoordt - de Stentor",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQQVBhNHpxVjJHYnJfUXl5VnE0aUFFMEM0RnM3b0dUbXBpNmFEZVlucmVhUWFYSDJCOFRNUkFETkhKUE1tel9TdUU4VkRTQjJ6VkxpYXloSVZJVE8yelV0cW10LTVqOGFFcG9ULVVrb2JBdDVqV2VqSVlZemtRQTdnVHFwaTVlNVNhc1hESG5VMlA0aWRWNndLTkt5cEowYlA5akQ2enFGWms0VGVOUHBlUTJmaHpmLVc1WldUMw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g88235c2db4a6",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten wil BBB voorlopig niet vragen om steun vanwege motie van wantrouwen - NOS",
+    "date": "2026-09-18",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYThJMU14dFNRV3VOT2lFbzljbGQxRERESW1jWTRuLVF3ZXMtdzRnNk5xY2M3MWg0NnJMZkxQa0RrRzZHMHpSMnQzdzBUZGpDMzZmUlIwaVNGWVBraHpGZmpsSTRrSExjZUtCZjdTVmZtR25GendxOFh4dHdheFNpUzZ3TTFaRnd4bWFnZGNzeUt6QXlKNmxJcHVQN014aXNiekd2N3ZIa1o?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf9757e34a70b",
+    "type": "intl",
+    "src": "politico.eu",
+    "title": "European leaders prepare public for ‘intensified threat’ from Putin - politico.eu",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOWmd5SGlINVVHMmVmNnRSa2RnZVZWYkZNTVdqRUwtbzNKNklUankyeGNreHJpQ3lJNXBHMUF4T0ZZOXo3UlRFSkE5c3hMRHl1UFNEVXZsX2YzMGJ0dlRiSnJCMHpMMjRGTzNldG1PN2NRb3oweTkyYnBxcXJldERqSU1wWlRMR3daNHZKZkJMb09qQWQxaXl3b2owRFk?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "gcf3e8e2e606f",
+    "type": "intl",
+    "src": "DD News",
+    "title": "India, Netherlands Elevate Bilateral Ties to Strategic Partnership - DD News",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzVUM1B3a2k0bl9QbW5ReG9lNEx5SmVsQ19GamctZTE4b3djZ3ZVZWE2UlBEWUYtTWl4aU1JaFlrVVQ3c2JDdzVKLXFsTk9tOG1ZTjQ1cDJkSTllRVpJMnhWdVlFSl9mWjRsWlpEUWlBbXlQZXBlNDN0U1QybXAyTl9sV0NJVUp2TUtKNmtUX1I5eDhkdGc?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gd65c19e2ed46",
@@ -814,6 +937,27 @@
     "icon": "📰"
   },
   {
+    "id": "g9649c04f9873",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Premier Jetten gaat oppositiepartijen uitnodigen • Wilders tegen Jetten: kritiek van uw eigen collega's - NOS",
+    "date": "2026-09-17",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOaFJHMWFsZE90eEp0MnhQaUZOTEFkUWsxVlB0RFdJTnNBRWVLR2xLUllWNzY3dHN4bEVkOEdGMDdhckJXbE83cWhDXzM5X281RXNQZDFLSW9EY3VoZUYwTWhJTDRBYWdhRnBzOTZUeHkzTkxIdDNiVlptTm9Tb1MwLWlFemF4NUtYeEdfa3drbEFKczJYYjZVczYtTU54QU1Ic2t6aDRTQjZoRWdlUS10bDdsVllyYm1uVW9kZ3NJa0J2NnkzNTdkc3J4QnRJVnJaZllSNE9rNFRhamlZeXlrVWx3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g112c40bd090b",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "VVD-ministers steken premier Rob Jetten een mes in de rug - bnnvara.nl",
+    "date": "2026-09-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTFVOYzR1LVN6cmM1ZG9URUhTTXNrUjhGdmM4ejJWMWpYdkxiSmplM0l3dWRwaFd6aXJ4eHZUOHZDbE5SUkg2bDl6UE1zMzZwS1h0blNsRkpjM2NrbzRDMm1RZUJHWEVUS0FoRndhaV9BMjUxVk9HUDJhSkljN19jZU5CS25KaEJtblc4TE5kM2VIS0ZuYnhOOUFoUQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
     "id": "gde6eec6009c9",
     "type": "nl",
     "src": "NRC",
@@ -1036,6 +1180,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQzJkNFlwU0l3SVFHQm1CdTdTdm03alhfNlpYdWVxcFo0aFU3cmV4a2p6WXBmcnJ4Q00zUE1vSjVQeGVSRVJIR3RZTm5fRkhwOTVHc2EzcTQtdGcxRmdNbS16UWhLNnd0UEh4VTFYNlNmenBQcktWLU92c1M5Z0ZoeGNRQW9qTk1RQTR6aE9kcGNfSjNwNlRSeUdveXhYUnRxYkM0M1E5MWdFa0dfN09WbDV0OGJQcGE0YjBjaFZRSmFqOWlZMTd0OXpwX3pWdnltOEZieA?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g2f9edee6f882",
+    "type": "intl",
+    "src": "El Español",
+    "title": "¿Infiltración rusa o protesta de agricultores?: Países Bajos investiga el sabotaje más grave a su red ferroviaria - El Español",
+    "date": "2026-09-16",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRnk3djRQOUNLMFFyemxfWkhpY05HRHdMcTY2OGhrd0pRdVAzNGRBLVZCMmo0UWxRUFJLd01WRGtRd2RqYmpIZERBdkpaVVg0Zm5uR0M2UF9aaTJjQk8wX1FZOUd0OFYzUTFOREpqNFdpd2RsUUVJa2xyX2UyYXI4VTV0MzhiT2tOYUNseDNQU2ItbWt1ZjVRM0p4NGs4V204anVfZ1d6ZVJLS09VTUcwM2FLeERIZ2o2LWJMRHFZdEt2U1dRcDVzM3A2U040UlNXM3V6MXF2NFl2WVlmVlBhY1FFdk9GZi1tVEpIU1Vna3FiZThf0gH6AUFVX3lxTE5OWXZaS1NGN3pZT25GOWY2U0toREtWQ0poVVdBdGxCaEhBek9pX2VaQUQwVlV4QVliZHVVRGFvUnpvN0ZiQ09sMURQalVBd2U3TWUtczVDMzFxRmlTel80Zmd3TUVvWHI5NGZZTUlfS2xla21OU1Z4aTRneUFUTldrOEFSQ2FkbHdSVWNkNWdjQ2Q3VVFqdFgyVGd5N08zVExhUHNva1RWNk9yLXNiV0szc0FMVERGeGE0RzJjb0s2Z081LWhSd0l5MWRIWlNMY05uRE1HTzhFNU5DZGlFTHk5NVhfRXptMGVQSEFBREY3d1N4QmFfNGttR2c?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gbf438e4aaf74",
@@ -3080,6 +3234,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZWlJdG5xUUxJYVVtYjY1OFJ5Qjc3SXQzbDAtQlFkc29LcmVUTGI5c1N4cW1TSWlFSW83UlVIUzdaSUg3cS1HUm9tZWxMOGd5SVgyZGxxTzFsRFpHU2E1MkwtLW5Jbk1qcUp4Tk1KZ0JHX2RwZHpyWlJ1ZmE5cmh2YlRiallqVlVtMWRtaTRNQUVvQXJHSlR1eEdrOFlFVFA1OXpmSzVfeks0VjdhWGVzMzJqTTNoWUpJNnpQdU5STFZzUGRwamJzZ09GQmpOR0REMGU4S3FGQ1HSAfMBQVVfeXFMUHdqWWJ0WVBzeGVoMkhXQnZBWUZ5aVNwY3pEcGJCcFpVbkFVTldvQ2VWSUYzN0lmLTd5M1JYMi0wQ0JNWDVJQ216MmRBbDMtSWUzbnFIQ2ZLQTdGX041TEI5QzNOMm9BWW55YkIyOVFVLTZXZm5LUDdDcEpuTjR3ekY0eC1uUk9yUE1KNmdkcU1nQzRJT3B4dW1hY0wwck5lM1pIVXVNQVZXVlVvT2Vwa000eHpWd1ltZnJpNko0WGU1NkJ2Y0doLV9vQ25zejE3UXhDNVZwbk5HLU9xb3d4UDJ6dHEtVG9tNWhGRWhRUlZmdnc4?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "ga63b7a4c2988",
+    "type": "intl",
+    "src": "reutersconnect.com",
+    "title": "Licensable picture: Dutch PM Jetten meets Norwegian PM Stoere, in Middelburg - reutersconnect.com",
+    "date": "2026-09-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNRU5WUC1PM0hSOHRlM3h0eldWUVFsM0tfUDNqZmc1Nnprc19XckhEZUs4WlZqcGdFLTdsa0RKam5IRmtvWVhiejNVMlhBQ0NFUWswUmY4YUFWb2ZwelRsbEhFWXBfNjhadnpCcVJRcnFfeHVoa1JOUUM1NHllVkJjMnlxSUF4VGZvZEd4dFVRVFJadFcweWV3X2lkVUwwUVVLbDFWdXVSX090bGhXdlBqNDFFcU43bGpNNGlaam9tTDEtZFRqWTdFY1lReE1YMXk3SlNicDladHJKS3F3RlJr?oc=5",
+    "flag": "🇺🇸"
   },
   {
     "id": "gfe39408c5581",
@@ -12628,6 +12792,16 @@
     "flag": "🇷🇺"
   },
   {
+    "id": "g805800c3f477",
+    "type": "intl",
+    "src": "Дзеркало тижня",
+    "title": "«Сильний сигнал» з Гааги: прем’єр Нідерландів пояснив, як змусити Путіна закінчити війну - Дзеркало тижня",
+    "date": "2026-07-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVGU1VVJ5M2k4M0FKUE81cWlxUk9uRDdTNkxFREFhMjAxRUE3RUdQNG9idHNqQlI5ZnhiLWVEeVdrLW5pZ0N1NU1ya2ZvM1k4bzM3M0p5WHRTUXpQbS1Oc3pOaHVYMDhodDFELWtjSXQ4ZHc4dzA5ckQ3UWRlLTlGbFgyNW4tRjdMaGs5ODdBb1F3WDM4eUhfYjhDVnlvMEZEYnc5eDJFRElJeXo4RmdnOWtmTdIBuAFBVV95cUxPQndjLWR5aGUxaGIwNHVzN3RaMnNrM0hKSUcxbC0yZVAtS1ZUNmtkcVNCbm1TWU4tRWdrVkxXSV94WEZ5LVg4c0owZThOX01HdDE0OTU4NzFFS1A2VVhCamgtSDF2bzFnTmsyUm1rOEprRURwUkREUUFrdC1kdHQxbzBGM0pCdzdfaV9YU1ZlcUg5MVNsTUwtWGZZbWdjSzRadEhJYXhwTUR5LWd2d04zRF9YSUxYVUh0?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g61dca4288704",
     "type": "nl",
     "src": "NOS",
@@ -21688,6 +21862,17 @@
     "icon": "📰"
   },
   {
+    "id": "g8da2115128cf",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "Hans Spekman dreigt met landelijke stakingen als kabinet-Yesilgöz AOW-plannen niet intrekt - bnnvara.nl",
+    "date": "2026-05-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQOGV5MWhKSTNRRGdEa2Y5N2c1X1EwQ00zM21vSFRaWlV2SFo2UExkczlrMmljLUdhWnlYSno0ODE5UkRscnB1b09qX29pT3RUMWZTRVJVZWl2RnluMk9aZ0RKekRzNkFTYU9lSHBLSDBFMVlqNHRjTm9XUlpSVlpWSjhOVlh3NVlaWGl0M29NMzIwZ2pScW1iYjQwZ3NwWkZSdlM4ZU9mR2NzV1k0OWtkaEppMm5BUG56anJLeU1EbjlBbnNMdUpR?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
     "id": "g147f00c44472",
     "type": "nl",
     "src": "Dossier Koninkrijksrelaties",
@@ -25803,6 +25988,16 @@
     "date": "2026-04-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNV0JHcWVIaFVNM3IxU1F4MHRxU0dRN1VWZmRtcWc2T2V6WllSWHNJWXdOMXV0VmpOSjc2TW9HbUt3eExxYlhiczBDeWdpUDRXbUgxdU1SUURlVXpvdVdheV8zWmhNRVBxN0NUR214UGxBeXFJUUwzc1dJREVaM2Exc0xLaHItTkhTUEF4emlqUXdkc1JSTVY3dGVyRDZqOGlESXg5S1FGTGJCU3djX09yQWlOR3hsTF8tWTF5RFkzcnlOaFc3ZUoxNDJELVc5eGVmZ1YzeG5NOW1GazdD?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2208b42885e0",
+    "type": "intl",
+    "src": "Офіційне інтернет-представництво Президента України",
+    "title": "Володимир Зеленський і Роб Єттен зустрілися з українськими військовими, які навчаються на протимінному кораблі - Офіційне інтернет-представництво Президента України",
+    "date": "2026-04-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNS21kN1VTU2U2V0k1NDgzakZyaEZxak5jZ2tJSkdzU1VjU2N3WTBHNTJoeHRrZW1aQ3I5cFpRb0ZUQnFJMnhScXRYeEFYT19MR2JhMUZZUFRqVUdhbi1ueG9RUGppMGh5SUtONlljNVhDUG55MDJyQnc3TEtXcGQzSXZRZ3M5MHVlaVNSeWZ2QkozNjlmVlcxWEpjTjlQblFkN1E?oc=5",
     "flag": "🌍"
   },
   {
@@ -39229,6 +39424,26 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPbjJra0pYWDZ0QmlucEN0eWhOaWZISmZXY09nVDV4QVNicWhKcG0xdWtyV1RmcXk1QUFHVG8xaXN0RkplN2dlaWQ4M0huY1RIUndaZWNROG1mN05kZ1lrVTlaTm1mVXh6UnhHZnZ6REtNN3huYXM3LXgzWjAxOXlDQS1IMzdVWXZnakJmdVpLV29KVWdzeHpZN1JaYWZuRFZTY3EzekxLRk9mY3M5WjF1cmdHQ0FLNHpZamRWNEl3aHZRNExUbUNselZTQ0YtZXctN0cwejNGZTA4R0pHSkZ4WEhwV21BQmx4Qlota2Y3dw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g891ae0622847",
+    "type": "intl",
+    "src": "Timbro",
+    "title": "Brustna förhoppningar och ständigt nya partier - Timbro",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE00dGp0Y0FtT29lNHFMT0RxZDdPd1d4UDF0RG1LblBJMmdKMlRqeFdlZlUtdjFIeEYzd0IzWFBzRXVpelRfdFN4REd3NzRfTnVESlBsQXl6OS1iUm9YdHRiQzFVSEpiVVNFbEhJWWNtZnQtN1k1a1FCR3doTWRkZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9db82a02141b",
+    "type": "intl",
+    "src": "Gamereactor Sverige",
+    "title": "Rob Jetten blir den yngste nederländska premiärministern - Gamereactor Sverige",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcmVkTVROMGlmbHEwQjlkaXhvRGhaUkVzS1BzZGczS0QzYTlzY1dHUm5UZTI5MTVObFltVV93X1dZOWtLWTkwWmp2OHFaakhsQzJ0UVJZM1h2TE9SMENQdHpsejRRUGprWTdZUmZtbGh0MEN3N29rRHV5a0RZdmtEQWtiZ290UjJDcE5INnFhMmlSbklGLUR3?oc=5",
     "flag": "🌍"
   }
 ]
