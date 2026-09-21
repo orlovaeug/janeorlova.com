@@ -1,5 +1,36 @@
 [
   {
+    "id": "g49bd3214bc23",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Premier Jetten over dalende homo-acceptatie: 'Schokkende cijfers'",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/politiek/video/0aa2d8ad-d988-4cb5-9f92-317156a59132/premier-jetten-over-dalende-homo"
+  },
+  {
+    "id": "g434d3f3d0854",
+    "type": "nl",
+    "src": "Erasmus Magazine",
+    "title": "AI kan het onderwijs verbeteren, denkt premier Jetten - Erasmus Magazine",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUFE4SU5tdlhtTmxFQzVJcDVRanR2V0NXRjVJSFlxd3ZCbUxzS3ZWdG1ONEtOZDJJdW1NSHdTY3JiaVl5cWQ5bkdPWklqanFYY2RmZm1CQWZGNEdaT3BMbTN3SExTb2NZc2lIdzRfcTJSOEpLSm5PZjZZSGU3OU9abGJiNzBlV2dEaEdnSzJtT3VnakE2NG5yQWptMA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6240dcb207ae",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Politieke toekomst Jetten in gevaar door VVD? - bnnvara",
+    "date": "2026-09-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2hxMXdFaDE4a3ZVME1xM0Nmdm16WEJlcENISzMxV1JvY1A3MEJXNk54Ukt3SE9yODIyN1h3WDVRSUd0d1RZTTZVWDh3UmYybzNfdHE2cnJzdUxJdlBQR2pwQU5SNm0xZDBKaVJvb24yTWw0eEEtTHBRTTRCTGdxMnQ4ZTBMSGIzNHc?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
     "id": "g1481715fdbe2",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -29,6 +60,38 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT19lTFc3N2JjZGtDUXg1Z2hDY3ZBX3Z4MUVtai1xaVpUdzlLU1hRMXNGa2EtVjZ6b1REQmJsNmNOdS1hVFcwc1FuYU12TmVTOXpQQkkxN3VJYU1fSGExeE1pZ0s3MEFqUWVZTVRLVXhsY1ZUUzZJSnlDbGdEOElYLUw4OVBmTmZJWjdXWFZUNkF4OGVSMzRQc9IBmAFBVV95cUxQNXpLSy1jWkRaQ1A3c3hlZThWTTZfVmVpb1JqeVN3aU84QXBFRHgxQXJVMnQ3cGNoV0g0SjRpZUZEemN2YXhwWDVBRmhGVmtrWEJjUmU4TUN2ZjUwYTBraUktSkhtZWxvdERhS0pVWHZVMXlIRGZ4cWVTMmxfbjUxNVByS0pOWm1pZkdNTTYtQ0tvSVpRekVYNQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gbcfc90f14a6a",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Partijen die samenwerken met de VVD zien al 15 jaar hun leider sneuvelen. Is Jetten de volgende?",
+    "date": "2026-09-20",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/20/partijen-die-samenwerken-met-de-vvd-zien-al-15-jaar-hun-leider-sneuvelen-is-jetten-de-volgende-a4937052",
+    "lr": "right"
+  },
+  {
+    "id": "g83d3af35cc5d",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Jetten heeft geen haast met gesprekken met oppositie - Trouw",
+    "date": "2026-09-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZDB5aEh5bXYwc245Y3BGS18wSjE3Qi1JeW9XeTI3VThyejhLeUk4SmpHTzF2dWFOaFhmMmVtY09rTm1yYnQtbFQtWUZpOS1vTV9ISzNKdU5MaXI1djJhWlNfc1dfN2tqYTJDVnprNUpxNzJVTTg0bVVoekZSYWZtaXAtMUR1U2lVaEJFT0xKblBROXUxNm5J?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g3f9229a4d500",
+    "type": "nl",
+    "src": "nos.nl",
+    "title": "Komende week nog geen gesprekken over begroting tussen kabinet en oppositie - nos.nl",
+    "date": "2026-09-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcTgwVUlWZENUcUx2Um10NEJFTlhiVldua2lrVTZVWXJMYXRwMnhtX2dWQWlsSXNrdU1lelRoenYtaVlaZVhHTk1hUEQ3VjhLWjNMbmQwQWJZMDhabnBRU1VWVkJmaW95TkQ3Q1c4aS15dnFDLXNsTU5SY3lJQVhzdTk4SEU2UUhzczd1Ni05bkR6eDgwaFRfVUo1bGxPeUFaczJSUV82dFJvZw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gb0874a2bb779",
@@ -112,6 +175,17 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZG9ObWsySHBpS0FDRmF1M2p2TzJybXJ2OUR1TkhPbFB1c2ZkdU8wdUZRNk9UaTZvbjFIMnhSTFRjMnlJMXI0TUtTcHVpVHFnSThwMy1iYk5hWDhlUHNZVjNMb1UtSzFaSWxxZXc0WWQzNDIxalVYbDFwT3NIbEcyd1Fzd1dUWmt1ZnFyZ2xqbzk4Q0IwNktjckZIZ1JaOXlJVzlZZWlTTHowUdIBrwFBVV95cUxQd3E5c3pZcmdLd0s1TEhqeGpjX0tWX044RnNOV1JnV3BCUVlMZ3BwWnFfblZwS3lURXAwSUgzeVU1QXZZYldyS0FUNDJDZU1hbW13eUxoVFdjYW1zaHg5aTlUb01CNkJwX0M2YWZBTkZya0dFaUdHa3dKNzBuY0VfQUktRXMtalhzN3ZudG5rZzFvQlhLTDYwMEZFWXhmTE1WTnlBTW5Sbm1CQXY4T2E4?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g1ce56cd0657b",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Kabinet gokt voor overlegronde 2 tevergeefs op ‘Binnenhof vol liefde’ - de Volkskrant",
+    "date": "2026-09-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZHpFVFV4Mnh0OVVsdGlfUGl4MnFnZFA4ZklTYUxYX2xhNDZjQ092MVF4aXN3NHo5eVJORW5Jd0tZVExNWmpmZ0pTY2c5SW82b1BHWTZwb1Q3WDBDNG9BMmJtcG80U3BIOEthcWVIcGY1YWhCa19qV3NwY0tQUW1IXzB0MGptSnRlZmg1UDhZZWotRjlkUllaYmdBTFdReVU4dXNJZjl4RVczc2RNOE9ZR2tn?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "g15624e15c0df",
@@ -419,6 +493,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPdzVUM1B3a2k0bl9QbW5ReG9lNEx5SmVsQ19GamctZTE4b3djZ3ZVZWE2UlBEWUYtTWl4aU1JaFlrVVQ3c2JDdzVKLXFsTk9tOG1ZTjQ1cDJkSTllRVpJMnhWdVlFSl9mWjRsWlpEUWlBbXlQZXBlNDN0U1QybXAyTl9sV0NJVUp2TUtKNmtUX1I5eDhkdGc?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "ge5e8f3c6a275",
+    "type": "nl",
+    "src": "nos.nl",
+    "title": "Jetten wil voorlopig niet met BBB onderhandelen; BBB-leider Vermeer gepikeerd - nos.nl",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV2JGYnZ5NTZxNVI0NkZEamY5UjZBYS1EN1VhZGcyZlhzTTg5UExpZERJaDhKR2oxSkJPZElzODhRM3htVUJKejZKb1lsUmVLVDBxYWN5MjI0ZTJ1ZUdQWG5ma1lNRlBIdUxkSjQwZ0lWakZlOVNybGIzS19yLWlfLUJyUmtwNGhEMnczdXBNUThpX1VkZ2R0NzBCYnhsZ2w3TS1MS1dBTDV3QTQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gd65c19e2ed46",
@@ -958,6 +1042,46 @@
     "lr": "left"
   },
   {
+    "id": "g7b41871ae1df",
+    "type": "nl",
+    "src": "limburger.nl",
+    "title": "LIVE | Premier Jetten aan zet om orde op zaken te stellen tijdens tweede dag politieke beschouwingen - limburger.nl",
+    "date": "2026-09-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVlpCeDVYQ2tDdDh3aG44WWFXd2ZSN0FjMUU1Z3ptVHdmYlBjUDllVktxeHVCdWtkUFZ5dWw5N0dNWGpuMUpHQzFYeTRMS3Nfb25hcVBlRTJYeUxQTnBrTHE5eUx5UTJWTU52N1AzcDEzSEZQUzJ0dnVBN1k4MWtDRTZlZGZQQ1BMX0Q2eVhydDNOWk4yQy1tZWRrX3BHUVpXalZ4eWNTQmhDMjV6bWRaZ3VoTXRtOGp2akxRNGpFQy1qd1dVOXZBRzUzeWJ2Tm9MX0JmZ3I4TWJPWkJMd21zS2dyNA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge7968302143f",
+    "type": "nl",
+    "src": "parool.nl",
+    "title": "Premier Jetten blijft optimistisch over de toekomst: kabinet gelooft dat de oppositie niet alle plannen zal wegstemmen - parool.nl",
+    "date": "2026-09-17",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQRTg0WkNycUtrUjBNOW5SYVRETERIWVQzS2tuSlM0Z0J3Ry0yaENOX29odkVFNE5zYzFjMnZ2SEMtNEtrZkVLTVRldDg2eEo0WXdGaExteWJjSzJ3X211cm9oTmMtdWZsWVlwYVNaYk14Q2RnNnlzVlJFOWU2ZHoyOUQ5cUQ4aFc0dXhhSTdyVGpsS2FMaVphQ0lWTFo0SGVrSWZ1WnA5VGpEdEZpVy1pam4zNmp4WmdxZE5LVjh6SEd1LTlWeFBuTnFGdWdzTWNZQmRTMkRQWlVlTWpBMFRaUmVfMVo5eVBrb1hya1dNZXAwYVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdd64ae75caa5",
+    "type": "nl",
+    "src": "parool.nl",
+    "title": "Zijn ministers kennen zijn ‘trucje’ al: zo gaat Rob Jetten te werk als premier - parool.nl",
+    "date": "2026-09-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPMm5RUW5MWmVwLTIzZHRpM25DMW85QnhUOFgxTXo3NTlhZUpEaUxlenV2ek5GeE5QVnBYTW5fOU9BbjE1TDE5V0pjUm9zSGd0TEk5dkpOQVYzdGE0TEtpcUpJU05MRkd4WWRTaVQ2aDhqXzQ2a1dIOHlHOWk0N25RaWt0S3BKVEFKNDE1MFUtNExkaGRrY1h0dmxzN0dIQWJqbFBTcEhuS3lLS3o0UnJMWHNwTjVnb1lJ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g83a0e39d7295",
+    "type": "nl",
+    "src": "nu.nl",
+    "title": "Geen begrotingssteun vanuit oppositie na Prinsjesdag: premier Jetten terug bij af | Politiek | NU.nl - nu.nl",
+    "date": "2026-09-17",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMzRkRjJhNmYxZS0xVG9pUDMzLU9vOERWT2VYQ2U2U2d6UUx6U1JISDJuQ3BsRmtVcDNBUHp5XzRoY0FSbFNSWE9mUGQwakllNDY5QnhmbkdpUnpJbkhvNUxSNjNDcm5lS1NoUlNwcVRJSEJEUFdZR0E3cVhBeF9TdVlTX0d0WTJuV09qWVgxMkcza1RSRVBJcFRwZE9UZ1hwVU8yLWkyWkpCQWRFRTdKQ3h1bW1kbTNETTJ1MQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gde6eec6009c9",
     "type": "nl",
     "src": "NRC",
@@ -1190,6 +1314,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQRnk3djRQOUNLMFFyemxfWkhpY05HRHdMcTY2OGhrd0pRdVAzNGRBLVZCMmo0UWxRUFJLd01WRGtRd2RqYmpIZERBdkpaVVg0Zm5uR0M2UF9aaTJjQk8wX1FZOUd0OFYzUTFOREpqNFdpd2RsUUVJa2xyX2UyYXI4VTV0MzhiT2tOYUNseDNQU2ItbWt1ZjVRM0p4NGs4V204anVfZ1d6ZVJLS09VTUcwM2FLeERIZ2o2LWJMRHFZdEt2U1dRcDVzM3A2U040UlNXM3V6MXF2NFl2WVlmVlBhY1FFdk9GZi1tVEpIU1Vna3FiZThf0gH6AUFVX3lxTE5OWXZaS1NGN3pZT25GOWY2U0toREtWQ0poVVdBdGxCaEhBek9pX2VaQUQwVlV4QVliZHVVRGFvUnpvN0ZiQ09sMURQalVBd2U3TWUtczVDMzFxRmlTel80Zmd3TUVvWHI5NGZZTUlfS2xla21OU1Z4aTRneUFUTldrOEFSQ2FkbHdSVWNkNWdjQ2Q3VVFqdFgyVGd5N08zVExhUHNva1RWNk9yLXNiV0szc0FMVERGeGE0RzJjb0s2Z081LWhSd0l5MWRIWlNMY05uRE1HTzhFNU5DZGlFTHk5NVhfRXptMGVQSEFBREY3d1N4QmFfNGttR2c?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gca05a6ef28ef",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Premier Jetten: bezuinigingen blijven in boeken, maar zijn bespreekbaar - RTL.nl",
+    "date": "2026-09-16",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ1k5c2RLTGpMckdHM3FxQmtRNHVxMk16Q2pOMXk0NGw5VTJQWjdudm5aUmxTRnpVZFI1anZ3OWlvSDg4c0piQlJYYmhrOTFqRF84M0I4TWREd2ZLOWdTeDYxc1ZMaFB2WlUtWm93U0ltNzRMcjRQZjY1U3NubUJ0b2gzTWdTcnR3THU4THBSbGpLUHIyTVlTc1l5eWMzQzZieXA4?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gbf438e4aaf74",
@@ -1924,6 +2058,16 @@
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMWRwd1I5OWNSQWYwVmVXV2ZSc3VZT2c2SjFsUG5DNTB6Tk9OdkV3LVNMbG9KVW9RZFNqNlVKbVhlU1RPOVEwUGw4LTl4ajlsSmExck16NEFJSkt1ZGtSWWdFNGVGX0VNUFB5a040VWlyci1kS0ZBd0gyUGVmc19SVWdJNko3endxOE8yVHR2eFQ4UmlKbmd4Yw?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g4d891daacb31",
+    "type": "intl",
+    "src": "latinus.us",
+    "title": "Primer ministro de Países Bajos admite que usa IA para redactar mensajes en redes sociales - latinus.us",
+    "date": "2026-09-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOdmFaQkFDaF96Z21MYUJaSTBtQllWeC1oTUVNeUhld0JwSGtCZVlSSTJJUllrNGV0ZURkbTc2NjV6M3NVLUZzRklCNXdFRlphUG1pZHltSC1ybzIzaFdhSEdrSE9QX1hQVm1tSk55Y1lQSm10d1hsQ2FwYi12TUpKVEdLVUJLZktWT1V3U1pWRHgxWHhXdkZsZEx1ajNwbngzNnNJZWw5bWtnaTVCZGxKMEVXbWdHT1NGZXFheU8zeDFrLU5paC16Y01oY2QzVW5nTzdF0gHTAUFVX3lxTE52YVpCQUNoX3pnbUxhQlpJMG1CWVZ4LWhNRU15SGV3QnBIa0JlWVJJMklSWWs0ZXRlRGRtNzY2NXozc1UtRnNGSUI1d0VGWmFQbWlkeW1ILXJvMjNoV2FIR2tIT1BfWFBWbW1KTnljWVBKbXR3WGxDYXBiLXZNSkpUR0tVQktmS1ZPVXdTWlZEeDFYeFd2RmxkTHVqM3BueDM2c0llbDlta2dpNUJkbEowRVdtZ0dPU0ZlcWF5TzN4MWstTmloLXpjTWhjZDNVbmdPN0U?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g65d3bf8306bc",
@@ -2931,6 +3075,16 @@
     "icon": "📰"
   },
   {
+    "id": "g1fc8d86d6e1f",
+    "type": "intl",
+    "src": "Energi og Klima",
+    "title": "Karbon­fangst: Det er gode grunner til å feire Yaras anlegg i Nederland - Energi og Klima",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdU1mMFFqN2hoS2RsNE5nNHBFSFpmcXpFN2NIcXdmLUE4eXU2MEtINENhQkJORkp6bDEwVFNuWExWTXlIX0txMUZneDhTNl93TV9GZ0xHYXp1S3FTTDZqZTJVak5tRm14S2gzSF9fSWhZNkd5XzRNMG9KVFI4NlRMSm9fVFpHaFpnN0VxYnZTeXZDXzZWTlVkUC1fRXdCcEZ0d01QVVBnRHhGSkZOUXZnUllpUkU1dFI3NU5iNjVyQ1ZneW5VLWtBVFNfRm5RQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb371bd743dc4",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -3932,6 +4086,16 @@
     "date": "2026-09-02",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNZUxVZXQzbUlnU3VqVW9pYVRHMFkybHEzbFdsOU1WbUxhaml5R1JHUjZnWWhKSlhuanhkNjItbjY5MTdRVk14VEJmbTQ1eERFT1RjUjhMd0pkTmIwdVdPajliMHJVUTFpa1Q3R1lXbnlINXF0anlKQ0VvYXJFZVduTUNOMnJYSFFPNVZyTVdWQWd3YkRZdnJFZF83QjBaY190YjlOLXY4RWREY3NUdzZ1amtmamN6aF9CamNlWDVLb25HRXdfa3IySERxRnQ5SVhOdGpfaTFEdDJuX0w5bEJxQzN3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9708f3b03663",
+    "type": "intl",
+    "src": "Radio Haugaland",
+    "title": "Støre til Nederland mandag - Radio Haugaland",
+    "date": "2026-09-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqbFVMY2p0VXhaUTJGNXhSM19iSFpNYzMteXJ0ZGtDNzIwLTBSbjZISW1xNkY0OU52NnBXUGU5aUdxX2RCbGUtX00zYkVWSUxMaXMyQWVRZzJpRUktbUJyYjg0aFJlLVN0emc0aGZjeWdPSGF5Ny13M1Zn?oc=5",
     "flag": "🌍"
   },
   {
@@ -6473,6 +6637,16 @@
     "flag": "🇩🇪"
   },
   {
+    "id": "g9cf021dcbc27",
+    "type": "intl",
+    "src": "nrz.de",
+    "title": "Holland-Premier Rob Jetten küsst bei der Hockey-WM einen Spieler des Gegners - nrz.de",
+    "date": "2026-08-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMngtNWR2d3labmRnZFRoWHRMQ09hUWljUTFSYlA4eFc5RmcwRWNkampRVDZzVWN3SExCZDRCYXlSZ2lUMHlrdVdQWnNiaFBiMHdfQWk3Q2Yzc0h5dnIyaVZQVzlSellwNkY0OHJNWW9oTXNiOFhXdWxXaFA3NUxncHFKNkNhUWF1ODU2djh5dDl3UTFwcFlJVmhaUXFZbDI3Z3FFSE9XXzF2ZlJhRGM2aGRuTTBlYVZIbkQyUXRTSWVGb0tkdGtWdlFn?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gadbbda1afde6",
     "type": "nl",
     "src": "AD",
@@ -7325,6 +7499,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWTFsMVB4c0tlTjgzOTVhaGlsLXYxZ0FrZlA5MDdwYlVIcGUyaVBVRjRZRm1mVXJwY002dmFYN1ZxcE5tRFlSOHhWa05sU1lxRjVvcVNpbkRqcV9VbFQyQ1YybjIwa0JWeDNfYTlIVmRkblB4a0Y1Nk1mVHBxN1AweC11SnZ5b19iTGZvMDAyZ0NmTGRtdS1DY0hyVDk5dHpQUjlYbk1Jaw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g255727221e6f",
+    "type": "nl",
+    "src": "nos.nl",
+    "title": "Moment van de waarheid voor minderheidskabinet: komt er een begrotingsdeal? - nos.nl",
+    "date": "2026-08-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQeXNZWFY0MnhTNlZWX0EzR2UwRENuM1ZLLUR4ME5leV9oUkFPT01VMmg0YXRMMUM2b3FkMmZocnpDQmpqc3cyRFprMGF4MU9DcXdsTGtCN3l6V3VQRHl3ZXFkRTZJbjFJaDB2LTN3dHpzMUlMTk1lcWRxTDlWX0dHRlZlMjd4UlNUWEFMQlIyTjM3eUZFSGxFOU1qV19XaHlsUURZWWRjVQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "geb90699df7e5",
