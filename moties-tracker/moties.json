@@ -87915,7 +87915,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18807&did=2026D43268",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk8e1d6f02c5",
@@ -89451,6 +89451,48 @@
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19102&did=2026D44171",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tke2b60f34c2",
+    "titel": "Gewijzigde motie van het lid Moinat over een inventarisatie door een onafhankelijk extern bureau van alle afgeschermde dataomgevingen binnen het ministerie van Financiën (t.v.v. 31066-1563) - Belastingdienst",
+    "indiener": "Gr.Markuszower",
+    "datum": "2026-09-21",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19412&did=2026D45002",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkcf09b5f5ba",
+    "titel": "Gewijzigde motie van de leden Bolhuis en Ceder over onderzoeken welke aanpassingen in wetgeving nodig zijn om gemeentelijke armoederegelingen ambtshalve uit te keren (t.v.v. 36799-32) - Wijziging van de Wet structuur uitvoeringsorganisatie werk en inkomen in verband met het bevorderen van proactieve dienstverlening door het UWV, de SVB en gemeenten (Wet proactieve dienstverlening SZW)",
+    "indiener": "Onbekend",
+    "datum": "2026-09-21",
+    "thema": "Bestaanszekerheid",
+    "status": "in_behandeling",
+    "alignment": "neutraal",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19345&did=2026D44818",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk10b6025101",
+    "titel": "Gewijzigde motie van het lid Schenk over als uitgangspunt nemen dat niet meer persoonsgegevens worden verstrekt dan aantoonbaar noodzakelijk en dat waar mogelijk wordt volstaan met een resultaat- of selectiesignaal (t.v.v. 36799-36) - Wijziging van de Wet structuur uitvoeringsorganisatie werk en inkomen in verband met het bevorderen van proactieve dienstverlening door het UWV, de SVB en gemeenten (Wet proactieve dienstverlening SZW)",
+    "indiener": "Onbekend",
+    "datum": "2026-09-21",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "neutraal",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19335&did=2026D44799",
     "toelichting": "",
     "stemmen": {},
     "archief": false
