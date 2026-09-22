@@ -1,5 +1,109 @@
 [
   {
+    "id": "ge976a1eef186",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Ze kregen te horen dat er voor zieke Sara (11) geen hulp was, nu mag hún dochter naar Rob Jetten",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://www.ad.nl/binnenland/ze-kregen-te-horen-dat-er-voor-zieke-sara-11-geen-hulp-was-nu-mag-hun-dochter-naar-rob-jetten~a6c9dbc5/"
+  },
+  {
+    "id": "g96a17c01ccbb",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "BBB van strafbankje Jetten? 'Appje gekregen van premier'",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/video/bbb-van-strafbankje-jetten-appje-gekregen-van-premier/161875902.html",
+    "lr": "right"
+  },
+  {
+    "id": "gbc4365ba20e2",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Rob Jetten moet nu echt knopen gaan doorhakken - Reformatorisch Dagblad",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMU51Tm1ldEREMWtmYVZFT0UxSzNMUTJKLWZ3a3NVNkRnOHUwR3dDWGdDOUFEYWc2bUN4bW5nQW9sVVlzRjNyM2RiVERNQkN5YlAzWXNvZ3VLNG9zU0pZX1FVQWV0eUR2RFljMmptNzN3WmhWT3VqUl9iVlJ0ZXZtTzhOM0ljOWxmRlMzMmttbENVTDlLb0dfemVva2NydWlITERLeTJiUFlpR0E?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb6b73f0d22ec",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "BBB van strafbankje Jetten? 'Appje gekregen van premier' - De Telegraaf",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOWljdWU1c3oyV0t0S0FjZkROSTY5aFIyVlYwOHZNakxGeFJDV0ZOUTFMRUdIUXlNTnRLRmdYWmNtb2FTellZc2IzY3h1bXFnakxPRC1HRlR0THhTNmE4bWwzSkhyaUFVeE8temRvQm0xUVRlV0JDb0luUkROOWk0N3o0c1FHVl90WTNRZEMwbDU4WS1GamlzV082VU1WTzRM?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gbc351824c295",
+    "type": "nl",
+    "src": "ad.nl",
+    "title": "De coalitie zou snel met de oppositie over de begroting praten, maar dat loopt nu toch weer anders - ad.nl",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdF9mbWtrSkN0Ukx6TVQ4emI3NGdJZjhWaVBHalFwREpMSENqNzhnR0NRdnFmeEZfNVdacG1VOGN2Znd2YURaamprYWZ6MzY0SlJQVThxamkwMzlIVDhfRDdJWngwQ3IzMU9yckh5XzVpM1h4cml5ZWQta20zOFo1QllkYTBUSWh0VWJBa3Q3UnpNWTVReWRvODhvbUp0Rl8tVU5QMjZIME01TlJGdjFsSUFlUnZaVkJzSW81V29oWkFmYnR5WHhzc2dueXRIVHc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g16a2686867e7",
+    "type": "nl",
+    "src": "Dordrecht.net",
+    "title": "Dordtse Sara bezoekt op donderdag 1 oktober premier Rob Jetten - Dordrecht.net",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVjViR1oxRXU3S0JzVWFOemt1Z0dJbHlZSGFYQktFWERhbmxRT2J4SDZraWRpWk5NaVNrUUYxSlpCc284WVpNS2FIS2UydlQwTi0wWDdrWUd1SzlKRWtkR1hVZWZuaUwwczNOdWE2ZHg2Ymh3MTlicHZYd0tNS19BbzlfeWJUMmlEa2E5TmtqU1FSbWxkMG1tNFRoVTVPcGdPOWViVw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g162e88e9549b",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "Kabinet-Jetten heeft lak aan klimaatcrisis, lanceert ‘routekaart’ die nergens naartoe leidt - bnnvara.nl",
+    "date": "2026-09-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWHpfTWFVcHV6WjlXRlFManZwWkw4UlBXSTNXOFFRWmVrcFd0aENtTVE2cmRJQ3B4QTh0YWtxWFlqU2VDc0tZWGxRRUdtdTQ5ZU1SOUJpeDhKV3F3S2FfNWZLRnFDR1N5WXB3UzFjeUtNT0tMSmpLVWM4WFRCZ1lyU0lmOUpJOFRKYnhzZ1l5bXQzZWRERlJQZVpmZU5kSjZYeW1KdDZfXzBxZGp5OW9xc0hzdEptbE1BR1YyMExTQjJtX014?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gef5954455f05",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "Minima keihard geraakt door hoger eigen risico van kabinet-Jetten - bnnvara.nl",
+    "date": "2026-09-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVkVIMWhnR05uU19icTFWczFHUlBaWTZOZi11em1Zd3B1TWRUWTFzYnI3MlZuTFdtQUFJTU40SlRxeG9DSXFmYTRyQ1FqTFduUmZha1R5eGFMRFg5eG5iRGFfWkFmMGxoaUtxN1RZeklwOFdwZkpUM1JKRi1EWms4eXFQVDNtR1ZINEhieG45VnZkcE9BUHhNaExKY1VHYjFOUndEeF9B?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g5f900e20cb95",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Rekenkamer: ministers vaag over plannen en besteding miljarden - NOS",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONzZOSWxuVlBOaWU2Q3V5ZTdUM05telNiclZHbno4cDhPWkVYX3l4WGhPdTd0WFJtdjdHLVZ6Um1neUxQMXNDbXVUc3pnZHpHUENhcU41YThTaHlhRmhoV2N4YzVUdHl4RzJuMFVDSVhMTWdaaEo2VFd0aE5IbzQ5alNCRVR6MTBnYi1zZmp5RWhwTlJSd000?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g580f914b97ea",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Rekenkamer mist keuzes om aantal ambtenaren terug te dringen - Noordhollands Dagblad",
+    "date": "2026-09-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOVgxeTgyZDFlS0kzSHJDRU9wejZqWDJ1NHNzSERzQlp6ZTFTb0pwcVhEM2tQZEEtLWprN0g4Ym1YWFA4UHc5YnBlRWJlYTllVEJoYVJUNl9ZR09ZLVBDaU5QMVRZZVNWeDhOcXB5RWlTSVI3OS02RXg5UTJRaThyQXd0anhsZ2t3alBUVm5EbzRlVl8wVF9INTBoMS0zSHVrRm55eTJHaHlDcHczX0ZCRHhCcWY3c3F4dVkzVUhjZw?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g49bd3214bc23",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -29,6 +133,89 @@
     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2hxMXdFaDE4a3ZVME1xM0Nmdm16WEJlcENISzMxV1JvY1A3MEJXNk54Ukt3SE9yODIyN1h3WDVRSUd0d1RZTTZVWDh3UmYybzNfdHE2cnJzdUxJdlBQR2pwQU5SNm0xZDBKaVJvb24yTWw0eEEtTHBRTTRCTGdxMnQ4ZTBMSGIzNHc?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g34a6aa17f3f5",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Strafhof-kwestie escaleert dag voor VN-vergadering, wat gaat Jetten erover zeggen?",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://nos.nl/l/2631968"
+  },
+  {
+    "id": "gcba65de0ed9d",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Lezersreacties: Voor Rob Jetten zijn pijnlijke keuzes onvermijdelijk, net als voor Odysseus",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/lezersreacties-voor-rob-jetten-zijn-pijnlijke-keuzes-onvermijdelijk-net-als-voor-odysseus~b5b38e07/",
+    "lr": "left"
+  },
+  {
+    "id": "gf0ea2d8c854e",
+    "type": "nl",
+    "src": "Ministerie van Defensie",
+    "title": "Premier Jetten ziet landmacht fictieve vijand bestrijden - Ministerie van Defensie",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTUVtVjM1aWhuMk9lWTRyZ2tYdXl2WEl0SWxoUnVKN3JmRy16aWUzOU5jamtOTnRPaGhZRV9mTWtwRXBXQXdBMHZsM0Q5Tl90Qk9ZWmN1bEVnWlR3eERTbzJVNjR6X0s2ZjkzenpQdDk2Z25oMEJxUU1QVjZBUnZ2YzZ4LUdMNHYwMTVmcC1sVWppbmRmdk5QazBTQ3h4bGlPVlpoLUo1dnFzdWxROTF4RlFFVHI?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9abc73b878d5",
+    "type": "nl",
+    "src": "de Stentor",
+    "title": "Met deze speciale bril kijkt premier Rob Jetten mee met een drone die over de Veluwe vliegt: ‘Zo, die gaat snel’ - de Stentor",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPN3F0VVJjRTRTNzRON29hcVNobEQ4eE9fbmRjeldSNmZXWmFxa1lWTzNwUFI3dVZNa1k3Z0FjSDN2eTNoUEh5Z3IxNWpfSzdGTVZYd1dpR3liYWIwT2pGalZ1OVBNeFkyajdCZDBIR1E5UTB1eXkteS1McU9UM2EzZDBXMFFIVkxnQU9PT3AyUVpTclZWR2FFZ1ZmeDJxZ1pGX2x5aGpvSEFPUHRPdXpjSzFYdFFGWmhlQVNVeGpkeEM2T1Jsck9aWGNOdkk0MjZQZVJhTXBkMm90OEdJU2RlZE5xcnM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gab652ed385a8",
+    "type": "nl",
+    "src": "Omroep Gelderland",
+    "title": "‘Zo, dat is een haarscherp beeld’: Rob Jetten kijkt mee met droneaanval in ’t Harde - Omroep Gelderland",
+    "date": "2026-09-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOU3hmNmdWZTZIY3dndnFCNy1XVkpEQURkc0NXVk1wdkxWRnduY3F1bkxEeEcwdnY1Sl80VGZZcmJTOFl6VV9mYm9uVGZ4V2RRdmJuMFU2Yk5xM3lDbWtoRzMxU0JibV9qSHBIU3pQMnlKN3IxNjJQZm91UWRoc25qSm1BMkJBWHdTZWc0djVzNWNRMHRNZnJEUWxxdmRCZjA2MWlKaDFZVVlkb1djbmNHQnhn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3e7ccfa0bfc3",
+    "type": "nl",
+    "src": "volkskrant.nl",
+    "title": "Kabinet moet eerst intern plooien gladstrijken voordat het nieuwe gesprekken met oppositie voert - volkskrant.nl",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNVFHOW9Id1pVZ2piS1c4VVlqR0piMDJfdDA5MmhUTldVSzJXRnJvT2dGUlBlMU1NOTdiMElnWHlWQnBkNVc5Q1dqcWdfZGR3LXBuTl9CZk5MYXRBV21PWDRwc18wbk5OdnhCVzdPVWZnaEpYUWg3QkMxd1lxdkJHN3RKd1REdjREdDBwT2J3LXBwU3J0aVB5Tnd6Y3dLeVl0Z2tHVmdyeEwwS1B2NE9sWUJxWklCZUhBTXVWaUtKaHl0VTVzZDYyYUdTdTRwRVJCdHRmZlhLVUI?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gd0491bf84a8e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Wouter de Winther: laatste kans voor het kabinet-Jetten - De Telegraaf",
+    "date": "2026-09-21",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQalhjaWxpNUlnZy1ULWFqbGZLUU9tVnJESzRLQjAwMjVDNnRLenNDYVlhTWNWSlBvcWN6SG9uV0hQR3c4dE11dXhWT2RuU0tBSGJqZmFUbDQxbTBBNC1meVpWMFlCLXU0Y3RIeEV6OHduVnBmMEdsZ1dKd1RzYjZucGNiaFczR3pXc1cwVnBrRVlVUTZBcTJOSm5kLUdEMjBnYi1F?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc134d1ec216e",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Jetten klem tussen links en rechts: ‘Dit gaat voor politieke ongelukken zorgen’ - EWmagazine.nl",
+    "date": "2026-09-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVzBydEJCOERMOEZGZFM3bU5ibk9NbHpTQVlzT2pJSGZFaGpqdFZIbTl6VnItc1U0a3I4SklFVktzS2ZueXpKd2xfeHU3Y2xCZV9FNGpVdk54enBRUy1hVlUzU0Q2LU56cFhTREVtTURhZ21qODc0dmJZSEdDclJsdVRhVWtkdUpIZDAtNnVFRFJ1d3Uwc25EUGxpTV9FY05FQjN0Q3YwbEhCZw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g1481715fdbe2",
@@ -88,6 +275,27 @@
     "type": "nl",
     "src": "nos.nl",
     "title": "Komende week nog geen gesprekken over begroting tussen kabinet en oppositie - nos.nl",
+    "date": "2026-09-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcTgwVUlWZENUcUx2Um10NEJFTlhiVldua2lrVTZVWXJMYXRwMnhtX2dWQWlsSXNrdU1lelRoenYtaVlaZVhHTk1hUEQ3VjhLWjNMbmQwQWJZMDhabnBRU1VWVkJmaW95TkQ3Q1c4aS15dnFDLXNsTU5SY3lJQVhzdTk4SEU2UUhzczd1Ni05bkR6eDgwaFRfVUo1bGxPeUFaczJSUV82dFJvZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge4c8ad8c7831",
+    "type": "nl",
+    "src": "trouw.nl",
+    "title": "Jetten heeft geen haast met gesprekken met oppositie - trouw.nl",
+    "date": "2026-09-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZDB5aEh5bXYwc245Y3BGS18wSjE3Qi1JeW9XeTI3VThyejhLeUk4SmpHTzF2dWFOaFhmMmVtY09rTm1yYnQtbFQtWUZpOS1vTV9ISzNKdU5MaXI1djJhWlNfc1dfN2tqYTJDVnprNUpxNzJVTTg0bVVoekZSYWZtaXAtMUR1U2lVaEJFT0xKblBROXUxNm5J?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g8de04c61a24b",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Komende week nog geen gesprekken over begroting tussen kabinet en oppositie - NOS",
     "date": "2026-09-20",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcTgwVUlWZENUcUx2Um10NEJFTlhiVldua2lrVTZVWXJMYXRwMnhtX2dWQWlsSXNrdU1lelRoenYtaVlaZVhHTk1hUEQ3VjhLWjNMbmQwQWJZMDhabnBRU1VWVkJmaW95TkQ3Q1c4aS15dnFDLXNsTU5SY3lJQVhzdTk4SEU2UUhzczd1Ni05bkR6eDgwaFRfVUo1bGxPeUFaczJSUV82dFJvZw?oc=5",
@@ -499,6 +707,16 @@
     "type": "nl",
     "src": "nos.nl",
     "title": "Jetten wil voorlopig niet met BBB onderhandelen; BBB-leider Vermeer gepikeerd - nos.nl",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV2JGYnZ5NTZxNVI0NkZEamY5UjZBYS1EN1VhZGcyZlhzTTg5UExpZERJaDhKR2oxSkJPZElzODhRM3htVUJKejZKb1lsUmVLVDBxYWN5MjI0ZTJ1ZUdQWG5ma1lNRlBIdUxkSjQwZ0lWakZlOVNybGIzS19yLWlfLUJyUmtwNGhEMnczdXBNUThpX1VkZ2R0NzBCYnhsZ2w3TS1MS1dBTDV3QTQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7244f83db251",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten wil voorlopig niet met BBB onderhandelen; BBB-leider Vermeer gepikeerd - NOS",
     "date": "2026-09-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQV2JGYnZ5NTZxNVI0NkZEamY5UjZBYS1EN1VhZGcyZlhzTTg5UExpZERJaDhKR2oxSkJPZElzODhRM3htVUJKejZKb1lsUmVLVDBxYWN5MjI0ZTJ1ZUdQWG5ma1lNRlBIdUxkSjQwZ0lWakZlOVNybGIzS19yLWlfLUJyUmtwNGhEMnczdXBNUThpX1VkZ2R0NzBCYnhsZ2w3TS1MS1dBTDV3QTQ?oc=5",
@@ -1082,6 +1300,16 @@
     "icon": "📰"
   },
   {
+    "id": "gb25045139478",
+    "type": "nl",
+    "src": "eenvandaag.avrotros.nl",
+    "title": "Over links of rechts? Oppositie wil dat kabinet kiest, maar premier Rob Jetten geeft niet toe - eenvandaag.avrotros.nl",
+    "date": "2026-09-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNN3RBY2JlMFJpOFE1U2dmeERja0laTXdkdlppM20takVDTjk4c2ZqMC1yeGdKamYweXZmSG04dWFBOTRDdXJSbmtjSEZNQ1RoOTJjLXhuc0pfT2psSkFaUWdjcmk2VnNhRVV4NlFxczN6YkVmdnctT3BTU1d3NEVQaEFpZ2NYVnhkX3lTWXBzUFVVUF9lcHYwOHJ6SE9Oa2ZDQmdQNGNybzB6UmJGcjRuVDFGeG1WdDZMY3pueXlmVExXcDFuQWVyS0FoWDlYWUQxMVI0LUVB?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gde6eec6009c9",
     "type": "nl",
     "src": "NRC",
@@ -1324,6 +1552,17 @@
     "sent": "a",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPQ1k5c2RLTGpMckdHM3FxQmtRNHVxMk16Q2pOMXk0NGw5VTJQWjdudm5aUmxTRnpVZFI1anZ3OWlvSDg4c0piQlJYYmhrOTFqRF84M0I4TWREd2ZLOWdTeDYxc1ZMaFB2WlUtWm93U0ltNzRMcjRQZjY1U3NubUJ0b2gzTWdTcnR3THU4THBSbGpLUHIyTVlTc1l5eWMzQzZieXA4?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g31c287e78bf8",
+    "type": "nl",
+    "src": "trouw.nl",
+    "title": "Ook het kabinet-Jetten wil ouders laten meebetalen aan jeugdhulp. ‘Ik vind dit heel zorgwekkend’ - trouw.nl",
+    "date": "2026-09-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOd3V5dUJiaFgtWXpUMndId0d0ZWQwcmxqcWJNUzkyZGNNdGdhaGI4ZUdoZE9YUXFmYUJrZUZXS3gzSHVBVzFnT21uNkJMYkM4U2VMMHlYcmtNckhkUkFfenN2T1huZU9nemY5TUd0bmx5Zy1nMi1jcFRMNld5T1ZwSzdlM3FZdENnYnVCVW5DcTlENXZ5Q0EyZHp5WTJUZEpSWUkwTUg2RFFURUZHc2VhU3E5ZTFMZ1NWZ2VQVVRadGRpSWZhRTMtYkd2aDBJSXA0?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "gbf438e4aaf74",
@@ -1775,6 +2014,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbERpTWI2d21udHVsSFZ2ZktjUm53Q1cyWkNWNC10a2MxMUZuV0pBM3N4UWc5dTJvNmpPWm9Ea1JLT3ZLaXV4Mll5d2pTX1F5U1UtYXU3bEl2RGFha213WmtuT1pLRWd4Q1VoZzFSOUg2UDN4SGNTcUhNQjZHMnpVTE84aWVYdTZUd3RySnMzWGJQOTJKR3BiWENiVU9qc1ZrQUs1N1dod3RCNDg?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g8a09dc444e08",
+    "type": "nl",
+    "src": "eenvandaag.avrotros.nl",
+    "title": "Rob Jetten op zijn eerste Prinsjesdag als premier: 'Aantal dingen moeten we gewoon beter doen' - eenvandaag.avrotros.nl",
+    "date": "2026-09-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMGw5R3ZTa2IyNldIVlZoRGg2eW5zYzI3NDQyQU5xczd0Y3dBaWNLckZJUnpYdDRkYjU0RHNRSi1JY0JaNUhuOEhjNEFyWjBFYXJBaTdfTTA3NVM1WkktTHJlaVRPdjFYN1ZhZWNIelVFXzFlaWRsT3Rzc210TDFHZVdvalFFa2Y4b1BwUVhzRGk5LXJnLWlYNWpFRDNxRG5CQ2hpN1pLcGZMcTIzTTdCMlF4V2c4NWRpTE9Lbzl0SEpBQU9wSUdSV19yRzJ3QkJETVB6MS13?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g97dcd4b08f62",
@@ -2388,6 +2637,16 @@
     "date": "2026-09-11",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYlBQbHZPUnFZNWxPWVRCZHloUGZ1MjNQX2hoam1rZE5TNDY3UEpYbFRFbFhEdVR0WDliR29HR2RMcHFEX2tXeGhMZHRULU5ZOFU0MGRKcEVRN2VLUllTb2VmeDdabU55SFowU3FmcHRCZHJXTmRobHRoRTNkczNvbQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf3543e7367ef",
+    "type": "intl",
+    "src": "elpais.com",
+    "title": "El primer ministro de Países Bajos, Rob Jetten, reconoce el uso de la inteligencia artificial en sus mensajes - elpais.com",
+    "date": "2026-09-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQbUxNOHFPbXhKeFZEcTlkMEM5UVpCT0E1WlBwQWxyS1Q3WVI0dEFPQTNBRzZoS0xUcDFRNTlWcTg5QTBXaTF0c3EtWmxHRkZ3czRfcm91TjJjMGxjdDMwOTFtVGY4aEpSVmUxR2JtOUd0aVpTcUpkTTZST2haQzlDckhhd1NpdV9kdDhkX2MzMGNtcFp0MzVhQUZwMTlTZGFkOEtMOG1PV3J5djA2TTlzWUlpZkcxQVdVdm5mWVczQ0VsQWJWX3pGQjF3UVBueC0wZW9WWS1odVA2OWlqa3BCX0VqUjVvdGh1YlAtZNIBgAJBVV95cUxQQmg4NV9VWkllYjk2SXQ1SGRWRUJ3NVRVeUdQUE9XVUtzWFo2UjlSNlhJUF9GVjg5VUNQRHRJUWI2bG13emdVeTlwelVOSkszWHhWYTZiMGwzakJGaWJNSC15MGp5UkxUVWE3eDVMSFFpRHI0bEEwbUJYaHQ2UXlpX3o1Sk5oUmpHOVp1dWJRVV91aGxqaGdHNFlrQzdob211U1JPeURwdnhMTEhCNjdYUzhUM3J4eEg2VzVqSllOX0sxTV9RczdxNm8tVkdqYlRmUVFBUkdhTWR6eS0yejBtaHlDQ2pXN3dLUXl4dFNhaTJES012UnpZRk5DMzJaRUV3?oc=5",
     "flag": "🌍"
   },
   {
@@ -18890,6 +19149,16 @@
     "lr": "right"
   },
   {
+    "id": "ga9fbade5c8ac",
+    "type": "intl",
+    "src": "sana.sy",
+    "title": "Les Pays-Bas interdisent l’importation et la vente de marchandises israéliennes - sana.sy",
+    "date": "2026-05-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Dejlra1V3aEw2MXBxOG5CWGtNSk1WTGNaNXNNYzVBd0ljSk5VOUZZNklVd1lGUXBacEk0SXo5bXc2SllwZTdwMmRjNTFNcl8xS0I4?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gb9f9da171f3a",
     "type": "nl",
     "src": "Nieuws.nl",
@@ -22204,6 +22473,16 @@
     "date": "2026-05-10",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxONU12cmRmWHVKSEFuNEUzWGlUdTVWeXdVV3RXQjNrSkxta1JuMlV4WjNJY2lMcVRmR2YyRzlWcmc3X1loQXBJbTdEd2RCN0o4QkI5dHpvSzFRUGlVT0JhRXVaZ0xMbWJMckxkVVN4MUdBTi13UUlMNVJ5U2dBbGxJbk0zWmk3Vy1Nc3RSX3FIa213bE0?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd59e6a69c5c0",
+    "type": "intl",
+    "src": "Demócrata",
+    "title": "El jefe de Gobierno neerlandés agradece a España la gestión del brote en el crucero MV Hondius - Demócrata",
+    "date": "2026-05-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTnZ2Vm5LOV9PYm9mekpTaDN4LWxGeXh1SEdwbU5nbk9QX3YwaDhpT1ZkZFhpZERFSDlPSFhMR2lQUTduOV8xQTQzYjliYnpSeWZmMlA2X2tCSVVvaHlBdDFBTkVid1ltWjBzenlYY1I4bGZCZkdQbFZSMkVuc2tOYXpzZEFJQXVCMk1OSXYtZTBuckdtbGNSN2FIRlRSR1hIMFFCWW1JQkRUeWN6TGtpRnBSeFA2REdRd0tUSGFyekNKejJEUVlr0gHMAUFVX3lxTE1KanBrM1FhUmRjY3Z6dTZ0dHZQUWdvMG9jVWdRRkNsRGFWZ2ZNRVh4eGFreGttOTR1ZHd3OV96LTFSaXBWOWJMRVJNbUpJb3gyZ3JkQTlNTGVXWjVfRW9QTjdwaUVuNUNTRGtlV2FuemRnU0dsRDhGYThNZ0doWTE0d0tvU0liWklzR1hoM2pLdTc1N3d4MmtBVl9zVnNmbXZNaUVRX1NFSXVIZVl1OFluZmtYV3R4djM5djNjN1hzX2puRnZScFVyTG5FUQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -34305,6 +34584,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Gal80X3VJbTlySElPb1BjaThTS3pVSUUtSVZ2WFZMMTRpWHVLRjJ5RU14N21LbWhBVlFKR2JoSW5TQ0ZzZm1mcDVDWGluZVNxdXBkUFR2UTc2dEtfcGgwM2dWdm7SAXBBVV95cUxOZ2lkYlRNZlEyNWZ0NWhQY08ybVF5bDlobTV6NnFUb1ZHT0dCM2UwbW5XZUs2UDZTMzlWYTNRQnJVR0NSZXhUR1VLVEpuTGh2VnNleXdXb1NUakltcXZ3ZDhONDBCMmVkcUdORmRWcnV6?oc=5",
     "flag": "🇺🇦"
+  },
+  {
+    "id": "g1abe6b12f801",
+    "type": "intl",
+    "src": "radiosvoboda.org",
+    "title": "Прем’єр Нідерландів прибув до України вперше після призначення на посаду кілька тижнів тому - radiosvoboda.org",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0QUprdlpXRHczMXhFaVVsempWeFBTMmk4Q1VuRms0QVR6aDJoNFV2eDRidHpENGpENUdKNUluaWNObG1NS3l4Nk96ZjYtQjBZZGtCLW1wdXJkc0xWbXhlV05Idnp4dlBjTHVvdmJCbUpOaUtEajBxdmdmUUgyMWPSAYIBQVVfeXFMTldQRlJaLTAwNDhyWjRYVGtmbnFoWGtsRXJTTklnQTJMeV9HY081VHJ0aGdVLU5XQXgyeFR2QndxdkoxRmhYbk52Nk80YW50ZzdsVzM2aFB1WmJYblV2Tnp0YlRkMVRaV1VGZTVOblFrMnc3MGRJZHZWc28tTkhCcVFGUQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ge961dea86589",
