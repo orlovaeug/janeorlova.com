@@ -1,5 +1,250 @@
 [
   {
+    "id": "g61d362f14c5b",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Premier Jetten in eerste speech VN: handen af van Internationaal Strafhof",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://www.trouw.nl/buitenland/premier-jetten-in-eerste-speech-vn-handen-af-van-internationaal-strafhof~b13c268f/",
+    "lr": "left"
+  },
+  {
+    "id": "gf587a447b075",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten neemt het op voor Strafhof na kritiek Trump: 'Handen ervan af'",
+    "date": "2026-09-25",
+    "sent": "n",
+    "link": "https://www.nu.nl/buitenland/6410926/jetten-neemt-het-op-voor-strafhof-na-kritiek-trump-handen-ervan-af.html"
+  },
+  {
+    "id": "ge95be4d2c1ab",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Na ophef rond posts van partijleider Rob Jetten: kritische D66’ers willen regels voor AI-gebruik",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/politiek/na-ophef-rond-posts-van-partijleider-rob-jetten-kritische-d66ers-willen-regels-voor-ai-gebruik/162155008.html",
+    "lr": "right"
+  },
+  {
+    "id": "gb78b16ced64d",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Na ophef rond posts van partijleider Rob Jetten: kritische D66’ers willen regels voor AI-gebruik - De Telegraaf",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS2FMLVBWYzVaWm5Nekl2NE5McVNPOFNSRHBMT25VX0VMOUg2TUVJd2dtSGE0c1ZaOWhHSkxkakdyREhCQUZOQW5nVFJiZ1FnOGRrZThHSk9DcTYyUmJ2M09naEJPZ2RLMFdlZUlZTkpMekhNdWdCWXFOQ29wcklxZ2xpS2V5OEs3Q21YOWZEa0VuVHlPMXB1eWdYWno3b21wQmZrOUg0bGx6SkVYdGU3TkVySjY5Z1diOTJ6YjU0WVFUbk5MQTRJTDVFZVNjS3FBdG5VYzlxVi1SVGM?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g447f025ae421",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Premier Jetten in toespraak voor VN: ‘Ondermijning Internationaal Strafhof raakt ons allemaal’ - de Volkskrant",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSElWWWlQNjhsMnpHcy1LTnltSldTVk5SR3A4ZDc5Njc4d3FsR1lQb3RxQUdaYUMzTEM4VkV0ZUFKaVRFRGp6b0RmRG5QTDNvV25LVDgxTnZCQUFTelJFNU55dEE0QzRadEF0ZmVRNWh6RDlWelRxb3JpT1NkalJySGFWdXgzU0w5ZjU5cUN0Q2ZhV01KZFFHa3N3aXFVQjczNnIxZHVwdzR3bnVSUy1RdGxQVTFKWF9iZ0NKOVU3bE9GLWpOdEt5UTVsWUhyZXR5RHhSVA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gd797e1307990",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten sneert impliciet naar Trump, verdedigt Internationaal Strafhof bij eerste VN-speech - bnr.nl",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQ0p5QU5ES283YnpseXlkWE04Sm9OamlHZVVReXNJTUdkbjNpYU1CZG9McXhxZTJZM0RsdlpYMmd4VzQ3NG5uYTJWYWY2ZVpQUF9QZno0U3c3d3REOUFIb1BGRFNxSEpPWU5sMXlEeXUtMTIyRWU2ZWFOSlZiY0hXbGxfMGY2cnlmWGY2OG1OVWxtZ3NzekVJb09nV2ExS281NHFlLXUtc281eHB4amVPcFUyVmk1M1dPUUluUGFKR29QWjlRcGxXbmNFTnlkVEhwbUFNMWtB?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g7886095a7421",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten neemt het op voor Strafhof na kritiek Trump: 'Handen ervan af' - NU",
+    "date": "2026-09-25",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUEhiTEJ1NHNSNFlaS1E5U0FKbVE0VmVLcVBXZmVtbEROZU5NTW8xUUs0WnlOZWRqLXpJRGQ3VG83QXFqQnFqNzFxSVFBSkxHN0ZFcHo1ZE5rNnlzb1c1WmROOHNZUGdqelN3WjRDRHZYVmZ3UzR5Snh1bzdQU1FOY1JnQWh5OFR0Q2VwZmRRUkpWUlV6MVRJc1pBMzEzOWlEN29DaGdrT0syY3A4?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb3b45af70a11",
+    "type": "intl",
+    "src": "Government.nl",
+    "title": "Speech by Prime Minister Rob Jetten at the United Nations General Assembly 2026 - Government.nl",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOUgzeDVxcF9KLTFzSW05WGhIRFU3dExDQVNiMkE3Zmp1UUsxNWNnT2dPMWpZR1BJT3FsVU5NWXlsSWdTb0ZCWHBULWR1cFZQQnEtMFhuMDZxMy1uME5VQlZoQ1c2eGU0Qzh1UHh2QU9WbjNjV2xLeF9WdW1OSkVlTDVIZExpLU9GTmE2Y3BUSF80LTFVa3ViTGJaLW4zNjB5WFFDZDdMeGxCbDBjaFgyZm1KOXQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf8cea8ba3492",
+    "type": "intl",
+    "src": "Advocate.com",
+    "title": "Gay Dutch prime minister & Zohran Mamdani visit LGBTQ+ archive — and hear from young New Yorkers it serves - Advocate.com",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5qeVVZTUVGQUttbU5WVm1OY05lRGlMenQwMlFwQ2pyQW5PRFVnaE85M3ppNEk2WTY2ZGo3R2E2M1VjeW4xbXFCMVN3WTNwSmF2azFFYkpISFpqVUhSQXJrTFcxMkJBQ2ZxOWVpb0xn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1aa4910de05a",
+    "type": "intl",
+    "src": "UN Media",
+    "title": "Prime Minister of Netherlands Addresses 81st Session of General Assembly Debate - UN Media",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PV2JZNURscU1JTWVwRy1sUTRtV2xIdGxwUTFtdDhvc25CMGkwX1RVdGc3Ym9pNGRvWjJfZWNFN2lSeHZ5QnRCallrT3VBT0drRUxXbk5DT3Rmb0x2eTNTRFZB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g065e48cfcd32",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM lashes out at U.S. over ICC sanctions, ASML restrictions - NL Times",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdGNJZHQyM0xKaHQ2YXh6Sk5ZeHpqUXB6bFVfX1pjeVV3MmJjZFZfa3dmeVhnbG96NU1hemVkNGhfYXRFZDJiXzd3WDYzSXdKTDFvLUxOeE1VeERRQlZaSEdpX1ZoZ212ajZmeEQ4cDJJSGg0ODFrY2JNS2xjNENTV0REdnVYVDA?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "ge60db4b1d4b9",
+    "type": "intl",
+    "src": "Orinoco Tribune",
+    "title": "Acting President Delcy Rodríguez Meets with Prime Minister of Netherlands - Orinoco Tribune",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOczNpRE1rLWxlU3FjN2lzWlc4bW9HLUZ4V3lxNzBoMU85MUR3VFRKaGFGOW5GenhCVld1RWFfZjd6NzgxdDUwRXNVZ1JXTHFlUG9QQmVUM0pmYjQxX3R1Z0RTTF8xQUtfV0M0UHJpNW1VWXd2Ukg2VlNwN0dGSnJ5STJ5VldxUFJfaGF5X3JoY3JYSXY2WEVUUjh3TjVRbll2VGpN?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gff0544176300",
+    "type": "intl",
+    "src": "Межа. Новини України.",
+    "title": "Dutch Prime Minister Rob Jetten Vows to Defend the ICC Against Pressure - Межа. Новини України.",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5LdnlCRUpVOU5PdWZuOTRFNkk0U2M2dWppTzY3QWtBcFk0MWJLcHI5M3U1Rmg0dlRHNTVZVERGQXFuXzNSV0JKMXY0RUxlU2xxUzVQSFRjbXJkLUIteVJhNTE5Q3RUZ2Va?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0de110f6720c",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "Dutch PM Jetten warns “hands off the ICC” in debut UN speech - DutchNews.nl",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOc0l1ZzlwczVLUGZEcmk4ZXRlcGhEN3l1aVhCUldaNlFWY2w5bk85NjNjcmhPcmtpVlFEaXFoUnBWY2lMTng4aUxIZlQwQjRIRWxSMlI1ZmlVQ3RLQmJoMEo5bXNPRy0tRFY2cWg5Q1g1WFhJa2xwYzVEYjNGVUh0WDN3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3624695917eb",
+    "type": "intl",
+    "src": "A News",
+    "title": "Dutch prime minister slams 'attempts to undermine' ICC - A News",
+    "date": "2026-09-25",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQXzd1X1JfWExBR3loN2hJSzE3RkRnMF91WWktSWpsZXdHMDBKODExMjNFM1ZINWsxdmQ4em1TWnk3ZVo5T0txazNyN0J2V2dKbFZuVExiRVVxR2RFV1FOWXd0ZkFTT0JubUdfMkZ5VEZMQU1RWGZUSDd5aWdjcnhOZGtoRjFvcDZjclZZMm9IZzRDdVpjcTgzQU530gGfAUFVX3lxTE16Y0lZbjU1Q0xPNmF0VXUzdWI5Z2lwcVVTZDdTdDRvSENSbUNiNy12ZXVxWTVzVWtfWHpqYzBXWXp2VXN3MjdlVUdIc2ZuWjRZcFZVNlRCaFo2bkRBa1ppNmVFYzJOUmVGZ2NNU2hEc0pKVG0xVE1HbDQ4dHFhMWQ0NWstQUdndEZFWDkzdGs4XzhqckZiV3hjdHZ6SU9Fbw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga800d5d7fa44",
+    "type": "intl",
+    "src": "Star Observer",
+    "title": "NYC Mayor Zohran Mamdani Meets Gay Dutch Prime Minister At LGBTQ+ Community Centre - Star Observer",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOck1sWHd3bHBEdk1uLVEyMklaa1ZkMWlqZFQtWWx6SGM1UFRCSkVpOFc4dlBaWndvRWF0VFhpSzhfVjc4dlNQOWxxU2c1eDNWZm4wVjZ4X0FhSG1DOV83Tm5CalF6NE1rUzZ6UnRhLS05YlRtVkFJenJ0YjZId1FTSVhqYktjVWM5WUpKS01qRWJldlVRM2dORl9JcVFqMFNwUXJIbzNfRW5IM3FZQmxobVF4WHRGcjdjNmtPTXZ1OWtLdk9RTWcxY29qM2lNcUUzTE1EYmZGbFZhcHBGTGVSSjV3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g256202174e38",
+    "type": "intl",
+    "src": "finance.biggo.com",
+    "title": "Dutch PM Confident of Reaching Deal With US on ASML China Export Curbs - finance.biggo.com",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1VSlZ0WGFyZ3pJOGtvWG1HT1N2MkJ5WUVpeExReklGZE84cHdUdThKQVRTVmlOSjlodEQwcFo3MmszdDdVTEI2Q3hzUDAzbUpkRC11QzNQeDVqdFJLYnBPSktBdGRHekZfbkVabVpNMEgwajBnRUE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g45ee5b67127e",
+    "type": "intl",
+    "src": "schwulissimo.de",
+    "title": "Rob Jetten in New York - Besuch im Stonewall Inn - schwulissimo.de",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQR0J3YjJSOWdVNFhtMWduQXpJYS1NNnFmd2E0YnZveEdyNEswcVVKanVicjZXVEMwcTFZX21PbWFCUGtEekJqZkxUQ3FOZ0tyc3d4eFlfTmFkc1R5Nm1zZVMya0ZDSklEeXlUeko2VWZBR2pjSzl6czlYUjVDVU5zOEM3V09tdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g222cfe376873",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "Jetten exige “manos fuera” de la CPI frente a las sanciones y amenazas de Estados Unidos - Yahoo",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQSzUwRlFsSjNlMUlwOWUydUhSOV9SZVo1MllVbUFHb1pjYTBOenlGSUw5dktjQVhsc0Zmd19ySzBhLWwzRmVjamlvdk84QTBnUzJBaHJzQzhvMDh2d3RJUlJyeWtyUG1FX2ZaSTlTbTJwQWVmeXJ1bFlKbDh1MDd3aTd1NA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfcd2fd12eef0",
+    "type": "intl",
+    "src": "Cinco Días",
+    "title": "Países Bajos defiende la candidatura de Klaas Knot para sustituir a Lagarde al frente del BCE - Cinco Días",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQN25vb1hYa0F5WTAyNy1zemo5TlUwSVcxMFlid25UZkNINGpuWW5GWXV3WDV4Z2pSVlZtVHNVV3lwZ1VYU2c0d05SOUh1cDVySVZCWkRnNm1ERkpXOVpZODcycEZwTHM4NWk1d2NZSnRxOVNTS0o2Uy1xNWd0OUU2ZkQxSmpFbnlYc1hJLTB0eTlDRk9QRGFsamJCQ0VHalRtMENpQXN0QkdEZjh6eDFKSXhEakpWeDExeW9YdEwyWkhmME5WZDVqQ1RSSTdEUGFrXzdhM2FOcXVwS0N6cDlTSHpzOXNpeUlsYmNBNklfcWjSAYQCQVVfeXFMTkIyRkE2eVZscWF4YmVqd1hVMHdvaUZGS1ZUT3R4VGRLN0REdlFRQzQzYkFuUzBQQ2NvaEUtbXdHaS0zTW9QcHhyX2pJbm5jeWNYN19XejNOLVpmTk4wNi1vbVN4SmJhNlVoS1JFU3l4S3MtYnhmaDJITWhzVW9FdWYyWEJ0ZEsxbDVfcjcyd3RvR3VleFZSS3pQN19xNWQtbG1yX2VkdFVOaldkVVBicWJaeFlkSnc1ZFROR3ZqQXVJRjc0UlhCY0YzUE1NSmNQX2JGb2xVWFRBX0g3bDAxLTdIcWx5Vi1YcXlKNTZENXJ1NVhXT1RoVjI1QXFyT092Y1VKZGU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc236800dda38",
+    "type": "intl",
+    "src": "Укрінформ - актуальні новини України та світу",
+    "title": "Прем’єр Нідерландів: Ми будемо захищати Міжнародний кримінальний суд - Укрінформ - актуальні новини України та світу",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRjlGZFBrcTBCQWdQMUw4bXBlNklrLTlQVnNyMGl4bnIteWJZWkk2LVRTekFfbkRFMVZnR3VrVlJHUkt0UWNuOFBPSUt5LWZ0QlROdXlOZkdEYWtyM2lJbTE2UTNZY2szYnZQWDUxVW1id095anJNdFk1ODhsUHJQMFJzSGhXM2NlVE85THRDSzU1SlRhWWtMeVlVZWtFQnJ3RjhJdHBTbmY2Y1dDNmxkM1QzQmRnVjTSAbwBQVVfeXFMUEVpdGFCejk1WDhRUWtrNGoxVEhLaHdFa3lOVTMzZ2o0endBdm5uWFYybHBCVkp4VWlYbGUtVGEwOUIwejV4Q24yd19tWGtmZy1tRDBRX3U5eWFDd2ZmTEV4SWZiVFY1ZDBZdVd5MVpRZVhwcWhHREpvQmszRm9pRndFN2U1clpPOVRrRDF5RWxlZUlMbDdGbDBRaVJuMUNyQ29VN2VhdlBNSnRCcVFlZnpucFRvejF1dXp5OFk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g50725304e726",
+    "type": "intl",
+    "src": "Korrespondent.net",
+    "title": "Прем'єр Нідерландів пообіцяв захистити МКС - Korrespondent.net",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTTIxMnZWLXVRSTQ3QnNVTnFGR1Q3dFBTdkRCV0M2UlNmblB3RkZab0xPck9HWFQtTUtQcnZkR1RjSHZWWFV6OTJrWWF4ckJYNDU2S19JUW1LUk12akV2TzhJY3ZkcHA4LUVDQVhucUdEdG5YOEpudGE2Sl95WmR2dUp6NWdSTzJqOXRyT0NRTdIBjwFBVV95cUxNTTIxMnZWLXVRSTQ3QnNVTnFGR1Q3dFBTdkRCV0M2UlNmblB3RkZab0xPck9HWFQtTUtQcnZkR1RjSHZWWFV6OTJrWWF4ckJYNDU2S19JUW1LUk12akV2TzhJY3ZkcHA4LUVDQVhucUdEdG5YOEpudGE2Sl95WmR2dUp6NWdSTzJqOXRyT0NRTQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7ce1aaf1b3e3",
+    "type": "intl",
+    "src": "ПравдаТУТ NEWS",
+    "title": "Прем’єр Нідерландів закликав захищати Міжнародний кримінальний суд від тиску - ПравдаТУТ NEWS",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTlBTbTBpYVBYOEFxSDMyQ2w0aWxmLUNTdWZhbmtpOG1xS0xVcWJuSDhUYmFXSE9XSUNUS0xBdm5ScnlLdkJiSFd0SWRmZkZsNUN2MHVrb3lOWVk4OS1VcTBOV0JJQVpvSVFTb3VGME80UkpLUVNBR05zazZWQVZVTkNjUzFZZnNYLWV6a21ROWZrTkVaaDRub1pkcFVuV01qUkQ5RlNiZkZ4V0o4ZHNiWEU0Zld6Mkw1WEdjaw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0e122aa59229",
+    "type": "intl",
+    "src": "UA.NEWS",
+    "title": "Premier Holandii Jetten potępił próby podważenia MTK — Anadolu Agency - UA.NEWS",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdXZNWGxLd3lrTjdXTHljRG1IMXp5blo3emNXcm5NWWYwQkhBRDlCLXl5ajFsTnNoV3FoRERrQVpXWF9JRE9NZEQ3Rnh6SWU0dExEbDA0Uk5kSHpsa3RWZlJiMWwzLXlGN1J5aHdfS2F3QTlHS1AxdnV1cDExTFpxNXozWC15eFhEZDFGcVNYeHlhSmJKdWR0LTJ3?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gd256483115be",
     "type": "nl",
     "src": "NOS",
@@ -158,6 +403,248 @@
     "date": "2026-09-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1HbmdhWVZmQmFhNl9MTF9VU3NDMmJ2bk40ZnBXMVBGeUt6b3d4NGhmbkhvSkRsdG1yaHIyMmptVGo3Z0l4aUNTUnFTVWxFVURHZWZUemlUdHNvaEh3R2F4enVTTkcyRmM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd23b8e967962",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "‘Handen af van het Internationaal Strafhof’, zegt Jetten bij VN",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/24/handen-af-van-het-internationaal-strafhof-zegt-jetten-bij-vn-a4937524",
+    "lr": "right"
+  },
+  {
+    "id": "g263834e2c66b",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Premier Jetten in eerste speech VN: handen af van Internationaal Strafhof - AD.nl",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZTR4MHVxQ25uZXl5MHFSbXU2clJCWlhWV0tHY3hCaWRQUVBJMXhVU3MxUDhfbnVHSE5Wby1MSzdYYm9WMTl2eERXNkZFQXU0MVNZTkxWR2JySVZIalNJeGZPOXIteHdDczlrc01TN05TaHRjd1BvN0dEUGlkN3lwTlF0UmRZc1NLQW1pWGtHSW1pd0dDUTA4dlh5V2wwWUpjZFJsdmoxWlNyN3VvX2tMTg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g14ef00e15b32",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Jetten en Máxima gefotografeerd met omstreden Syrische president: wereld omarmt ’jihadist in pak’ ondanks bloedig verleden - De Telegraaf",
+    "date": "2026-09-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxNZW1rUnExSHRxMXk2YnZvbEhtZ0k2ZWR3QXV4QUZWN3JlV1h1ZHQ2akoyOFlwZ3ZHVVNCdHc2cGVzTW9uZnJYeHFySWQzcV9UcXZNckF3OVpxaGR3Sl9KTGVKSWEyN1dsbHB4QWpWc194TnJ2M1JRYmlIWWF2blNjcy0ycmNITS1oWGM5UVJibVFTM2o5ZFg5Q3EzRlF3aXc5YnhocnZxOTdFaDBuV1VJQ2stMlJXMU1Ua0IyS054cFlsM2FOZmMtMUFBZk5GVzNiSjJudVAwb09GeVFlam95TjBsNVJsRE9SS3BSSjZZT1VkaUJPUkhjel9hSzBvaG5HX0NMZzRhbnhxdw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g954e5f0a9962",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Jetten begint toespraak bij VN met dagboekfragment Anne Frank, roept op niet naïef te zijn - RTL.nl",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTUo4TGV3c1FFNks5SGVxRzhoQUpkb1dsTWFseWFhNzBDcEhRdG9nY01ONWRucmc3c3VkSWlHR1ZxRXMxMnhfUTJSQnNFWWRVNjNpN1ZJWDZpaWVCeHcxTkprSWpLVUVIRGF5ZW5QZTBGTGRWLUI4dkhRejRxTWpOLU00VmlxTFU5Yno2R0dSNlNZRmxxYU16YkJGNGcyRnNvbTNPZk5mOW1MZjc1WVhFLUxHWQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc063c131c8b2",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Minister Van Weel gaat diep door het stof met salvo aan sorry’s nu oppositie woedend is over ‘misleiding’ - AD.nl",
+    "date": "2026-09-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYVMtOXVzRjlFX3Z0VXpLMkRHZ3U1STVwc3BoWmtJU3duRWtTNUV1dWpZb0RYRmMxMmt4M1hPOTAybjdvdzFNY0tOOXMzV29vSTFfd212TlpjYUUwTDQwTmN2RVBmWFlBWGkxb2Y1cy1KQzZRSDRpLUZXOWVzXzdLa0VmR1VLTDVFR3FhZlJ6MW5kSGJGOGxoaTVBOGZxWjNhRk40WEpPR014bzJKaW9VLWtVUFNNR1U?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g657aa2011003",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Eerste minister kabinet-Jetten in de knel: veegde Van Weel iets ‘onder het tapijt’? - De Gelderlander",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdlZHaGs2enotbkoyNEp3Z0QtM0wwV19NbDc1ZjRpTEhZUHBpbmVUTU85aTV2c2FoYTFUUkx3ellxT0hFZFdvV3hDanJYSE5qc01PN3FLRW5BQkplbUxNaktseGFIUWc2Tkw0TFNFYVVvRTNVa0lZbWtFM3htVjdMVXNJTkVxRkhJWlpUWEcyX0FNV0huVjlVVGNxMVN0dUdKdzZWRjdWcXFPX09TSlItMU9adkFGeW9BOXBxc1ZGVTdYWE05?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0a64422c871f",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "Eerste minister kabinet-Jetten in de knel: veegde Van Weel iets ‘onder het tapijt’? - Tubantia",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMmd6ajhDamk1SEFGaGxWRVBoMzRTcnJLSzBtSlpqUVR1THdEbWdUMnlOekVOcWRLOWh1OGJ6NTJxMFdJR0hFQXNLaGExc3h6Z1JMSE1MeUlOb2RDc3hpTFRXc1U5XzdkTDRhTHpPMXJkUWtxZlRrQXc5U18zMDJpUjBhN0lvbUluVjF0M2d5NURqeDRpN1c5RENQNVFmN0VVX05yenpIRGhiTWc4Y09zU2NPNDBnb2VFSnNFYUl2MA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g08394e22ced2",
+    "type": "nl",
+    "src": "indepen.eu",
+    "title": "Rekenkamer maakt gehakt van begroting kabinet-Jetten - indepen.eu",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jc0dudHRDenV5TUdocXBPMXlncndKbUwzbXhVeUduZ0xfS3N6YzdNVHZiWXVCZzBVc2lJSVlTVVZnSzVSRXpwLW5LNG8xNllxYTJvZzJTRGZXRzRrV09naXNjS3FTLVgyZEpVT01CUm5Pa2VKbS1Pb1I3RFk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7d183462e8fc",
+    "type": "nl",
+    "src": "Montesquieu Instituut",
+    "title": "Een rechtsstatelijke analyse van de migratiewetgeving van kabinet Jetten - Montesquieu Instituut",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdktQVlk5OEpwWnRyaVVLdjEyQXJSSGsxWmpwbjhwQ002MU9QZVJFVDBQZ1lhdEE4QVlQVzkweGZ4X01uXzNRQzV5b0JGZGZLQlZLWUtGaFBQek1FTU4zT3VIUXdyYkZwcFJ4cVpZR2Q1TUlHNXF5cHFOdE91RlExWWNiNjZXU3R3ZHNiUFlsejVIcWxNM0I0WU9HT01UN2E2M0Z3Rllsc3lFbUxBQ29fRlRrUC1yTVdaNl8zNTg5OHM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g99e51537fccd",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Nieuwe verkiezingen zijn geen oplossing voor bestuurscrisis - EWmagazine.nl",
+    "date": "2026-09-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPQWlyMjR3UVFwVDlNWDNaazc1REpmUXIwYXhyWUUwWmFxRDhmUEN6dG54S2F5YTNjajJDWXBEX2gyTWVwNWJCckxqd1Q4cG9zNmhQUUNzLVFKUlVUYjN0TWwtZjB4aUs4ZF9jdDBwVDNoOGotVjhWRDZSQzVXSDNBMllhVnByZHJZc2JKWU9LQUNkY3NtUmFldnFrYmwtUVBnTHdxaktpVl81cUttR0MwYkxIbHdOWjk1WmJKXzFSM1Q?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4e93a1a7016b",
+    "type": "intl",
+    "src": "gaycitynews.com",
+    "title": "Mamdani and out gay Dutch Prime Minister Rob Jetten meet LGBTQ youth at The Center - gaycitynews.com",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbHdZSHRxT1Y4MjJBdzBVTUcwMmNNeFhnNGw1MjRqTEVZVnVyMzhYVnFBNld4V3ZEbkI2M25admU5TV9tM0hPbEE5ZWE4eDRJczZibVFGVUF6SDcwc1pzS1hPNGExUVN0LXpESTJxOElzQmV2OWt5YjhBS3k5WW45Vg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8c4efaef5112",
+    "type": "intl",
+    "src": "Bloomberg.com",
+    "title": "Knot Would Be Perfect Fit at ECB for Many Nations, Dutch PM Says - Bloomberg.com",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQems5Mm01bGtJSHJUODhxMTBaanBicS1tZjFDZENIS2V1MUQzS3hzVHNRbW9tYWpFbEJLTjBqbTRWNWN6VkVET1dLeVdIVFRMRGVOQ1hBSnc0d0l1cEVFZlRvNVo4VkNMd0gza2c0LUxZRS16c0NYNG1ZcU9rR3NRWE1wSlIxYjRSWTdEUWZaSjlBeERHTm9Yd2luaUcyZ0tPWDJOY184bkZKbVpuOGZqWllPeTE?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "gb2c984282b79",
+    "type": "intl",
+    "src": "Bloomberg.com",
+    "title": "Watch Dutch Prime Minister Has Discussed MATCH Act With Trump - Bloomberg.com",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaV9ZaTl4NUk1eUxtY0N1TDMzM2hJWDVxNVJ5RmVnV2V4aGZPeV9uYnczb09odEY3RDhRd1llUXctTjJVS010bi1RVjJ6Mi13VXZiMmVjeU10M19Qb3BSbmRqa0o1WklwNS1IV1pfa0hxVEJDX255bWJHZE1raTRmMWZIdmpDazVvSnNZcXZWY1BYMzQ5NVBSYW5zUHlyNFMxWDRTYXZXZ3FBc3lKZi1Z?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g4d663da74970",
+    "type": "intl",
+    "src": "HOLA",
+    "title": "Queen Máxima takes Manhattan in a waist-cinching blue dress and striking red shoes - HOLA",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNUDVWVzJqMzRrVWJjRnhqTWRpMk5KVDZPeXhteHp0dC1fOEFzZzhLLXllVUlTX0hlVXh6NmdJQlRYTm1abkM0ZzUxOGl5eTJGajBxTUg2elhKVTEtdGJKT1drSkhfVnYwZXU4NXNKLWJiLUNOX3lnZW5oN0I1WjlKWC1RRklybjBlR2ZiU2VEN09wbFdf?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfc1a1365e589",
+    "type": "intl",
+    "src": "Goshen News",
+    "title": "UN General Assembly Netherlands - Goshen News",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTS04b2lyeHBpT2Q5STFKMUJDMmpROE9jYmxqMjV2dHNsTDNpY05BaWtaeEV0MUxPdlRodkdveWQ3NTZVYUtiUTBJajRpTHFHblAxeWN6SS1GRWtnRG1qWjVLd0xuS0hwUWFmTjY1Mk9rVndiQmNhRkhwaVZOVVdEeDJGbWlXMFFDUmQwWl81aUJaM1U3R3NlejZ5cXRsbWdKZU81U0YtRGI0NlpCajVKbDFOcHdJVHJMWnZ0QlhhSFM5VkU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gdcf7a4ee0e22",
+    "type": "intl",
+    "src": "Bloomberg",
+    "title": "Knot Would Be Perfect Fit at ECB for Many Nations, Dutch PM Says - Bloomberg",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQems5Mm01bGtJSHJUODhxMTBaanBicS1tZjFDZENIS2V1MUQzS3hzVHNRbW9tYWpFbEJLTjBqbTRWNWN6VkVET1dLeVdIVFRMRGVOQ1hBSnc0d0l1cEVFZlRvNVo4VkNMd0gza2c0LUxZRS16c0NYNG1ZcU9rR3NRWE1wSlIxYjRSWTdEUWZaSjlBeERHTm9Yd2luaUcyZ0tPWDJOY184bkZKbVpuOGZqWllPeTE?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g005145c5d7b0",
+    "type": "intl",
+    "src": "Gay City News",
+    "title": "Mamdani and out gay Dutch Prime Minister Rob Jetten meet LGBTQ youth at The Center - Gay City News",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbHdZSHRxT1Y4MjJBdzBVTUcwMmNNeFhnNGw1MjRqTEVZVnVyMzhYVnFBNld4V3ZEbkI2M25admU5TV9tM0hPbEE5ZWE4eDRJczZibVFGVUF6SDcwc1pzS1hPNGExUVN0LXpESTJxOElzQmV2OWt5YjhBS3k5WW45Vg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g156d68b74b43",
+    "type": "intl",
+    "src": "ukrinform.net",
+    "title": "Air defense and energy supply: Dutch PM holds conversation with Zelensky - ukrinform.net",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRkRUSjRIVkpjbGcyWHlnWVhmcDhqdExEc2xvcGx1dFR3VERfZzhEOTJVX2pMVkFiQjZwVEtiYzk5TFdHZUR1a1VmQk82dXJiTnUzTUpWWUNQend5OE5NME5CeDEwVmdfdTYtMWhJMGV3Z3lBbk16LWJqb1hUYWpoR1dwX2g4OGRhRmdWNmZiNmpzTEhoRkZyQi1WdlM2Wk5rYk9Yc1I3aGloeW03S1duNXh3bEhHTjExWGhndVJhZjl4Rkdl0gHKAUFVX3lxTE12MnVxelZCcF9ORUk1c0ZzeU9LcnkwQkdpbDFPYmdzNGhXZVdYMW9nNC04bXhHN0ZqMHdIWlB0c0dGSUpGNm41dkd4NENKYnNlZVo2RzAzRFRTajdqSjBacnNqT2JqcEFaQWxwWFhvcFFKbWhPVXBPbk91X1JxWERtb0xlb1lvVW8zQkxIVGZVZzVla19LUFYyNWxoWjd4YThOODJiZ0FGZWg0NWdLTDB0YnI0T3ZwZ0YzaGt0Y0ZQWFpCLTh5eWxtWXc?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "g580eacbedd9d",
+    "type": "intl",
+    "src": "Curaçao Chronicle",
+    "title": "Pisas Joins Jetten in Venezuela Talks as Dutch PM Pushes Economic Cooperation and Free Elections - Curaçao Chronicle",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMUU2RTdncTFYWTlTRUU2TDJsUmdLa1E3STVyVGxyS1VZdV93b1NYdFRrUVlhUGF6MkpQcFczR0NyaDF1alg4S2kyRUpqdkJ1VVQ3R3Z5b2J6YlFJMkhSMkpIeG15bjd6OUtURE5LSkc4cV80RDlkS1RoR3RJV29mSldDUjNRRFdXLTliRkpfSWREd2FwMTdDeFgtcktnRUZueHdIcHdmVFpwM0Zob2FsWFM2QnctYUtZaTNYM25FSjNmSEJpakx5OVZPazhHT2V3NW1kakVaY1h3UQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4d9a3b214810",
+    "type": "intl",
+    "src": "EL UNIVERSAL",
+    "title": "Canciller Félix Plasencia sostuvo encuentro con primer ministro de los Países Bajos y de Curazao - EL UNIVERSAL",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNGVGNjBLdWZsc0pzZ0Y0N2VQcC1pLVpBLTk2YXNZY3RLT2lMTXRUUEdMNWw4LXJONWpGTnMzY2NReWpuVGlOa3VIX0FhOXBTS2ppT3AtN2M0b2YyNFhZbWl2YnNGdVljaDh4LW9rQzdhSEZBMUJnWjJLSkdHeTFpekVjLXZfaFBwMzB3dzczTVZWOXp1ekx3Qk9GT2ZsMFBVM1Y1em9maTZxakpMaVl0Z3diZzgzXzlBNlk0UDNaY05ZNjNSWG9EMUNMNTY3NDVxdU1Hd3hBVkFHQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb174bc00b297",
+    "type": "intl",
+    "src": "CiudadCCS",
+    "title": "Canciller venezolano se reúne con ministro de Curazao y Países Bajos - CiudadCCS",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE41REExOE90VnVONDdOMC1jRUJjNVZlUVlxRFFpZUVoOWdPSnY5NEVrdkllRENSeWNPU3g2Y05vR1pHV2RSb19HSlNzaTZLQVM4bEtSYlhnSQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g317c2c6da8db",
+    "type": "intl",
+    "src": "laradiodelsur.com.ve",
+    "title": "Canciller Félix Plasencia se reunió con primeros ministros de Países Bajos y Curazao - laradiodelsur.com.ve",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPU284QmRYNTdvbFZ4NkF3VGxYSS1zN2ZJU2NJMUpUUkZfMmd3V1BwYUFlckdubmRRbGtXeHR0N1BSeUlYR2hNVXlvYnV1cEttM2NvcWE0TE5icVgtTTdIUnQtM21kRnJlVjNvUFRqM05HSWxFUFhsWE9PSGptcUowN0VvdHNGSFZFV2pWbzNicmpUX2xhX0lpWWhWczJUcXZsblF5cHI1Q0RDOXQtVEJLak9mbVhrX2hIQ0E?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g873e16d42b26",
+    "type": "intl",
+    "src": "El Nacional",
+    "title": "Países Bajos respalda una transición democrática en Venezuela tras encuentro con Delcy Rodríguez - El Nacional",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbFlucDFpRFROVThZRkFEWlktZE4ycHYtbHVnZVdneGs2UXpXcWlpZi0ybVZBTUZhSVdBQUlyY2ZqSWIyYzhYWjI3NVdoMmNOamNUd1VVc2xBbE10dDQyaHFfWGtvdENnRlhiYkRVRW1RT21fcWt6aUwyVXgtbWpOQXlWdFQ3cTdrUGl1dEtjTFNUQkdEd2pVUkpaMFppLWRPUVhxYzhVTnc4TEY1MnE3SDFrSHA2Yk9RUlNCeFFwODRZenEzcGZKM2xTakM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge599819898e5",
+    "type": "intl",
+    "src": "Gay.it",
+    "title": "Rob Jetten visita lo Stonewall INN: \"Luoghi storici come questo sono importanti, faremo in modo di non arrenderci mai\" - Gay.it",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0tdmhaanBLd0hUa0FGeXI1MXJkSjRKV1Z1bmQ1dUhHTzBaZHRKbnBhVnBna3pRbDZ1cmhTd0tXLUVFOU9rdGstTjl6UXU2ZTRQTERvTFZ3?oc=5",
     "flag": "🌍"
   },
   {
@@ -423,6 +910,37 @@
     "flag": "🌍"
   },
   {
+    "id": "g14cb46cd2b18",
+    "type": "nl",
+    "src": "bnnvara.nl",
+    "title": "Yesilgöz saboteert elke mogelijke vooruitgang kabinet-Jetten - bnnvara.nl",
+    "date": "2026-09-23",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUXdyMzBGR0szdWRvZGJyTWdXLUJ0YTNlb3NabHVrSUIwdVU3UDVKZUgxbmNwVmFHeXRBOWtLZk9LYk14NkVBVFRJYjdJWktxdmtBQllUV3BQV2xZNktlMW42eHRDQm1UZkQzZ1V3TVJBbkhSYkZWOVBLUllRVnRJWmFXbkpRV2NQa2tPcTVEWmZhbFRUT1M0aUlWMG1iLWM?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g5ee4a8587187",
+    "type": "intl",
+    "src": "lgbtqnation.com",
+    "title": "The Netherlands' gay prime minister drank a beer at the Stonewall Inn while praising its legacy - lgbtqnation.com",
+    "date": "2026-09-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQLVhnR1Z3UFpUQ0ExU2RJWGdQV3hFc1hQeVA5enpEZTZ0Q3dYUTdvQmw3MTc3UkFkR3BtXzRydkUyelpReGVRNDFETmhjRW1iOGpBeGIweHFMYlc0WjFVUHRVdUZDZ1lWWW1tVWF0QVJqbEppajFsNVc0S2dfcUpjWDJOalFZQUpBUkdjZjZLM2MtaEhrSWhGU25hOUhPa2UyLWhlZ1l4dWUyc3JGWmtnSzhROGVZVEJiR2ppT055R2hORVJmZDRzcTRvRQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gecb98cb470c6",
+    "type": "intl",
+    "src": "ukrinform.net",
+    "title": "Zelensky meets Dutch prime minister in New York - ukrinform.net",
+    "date": "2026-09-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNck93UlRfemxEWTVRbnVKUkRSNUs0ak9jcTUxb0NrZWpoU0ZOcW9vc3NvLUJHWk95M2ExZnNNaXZ3MngxUDN2U1ktTXBEUGpRVTd6WHo1VHdfeUVOMXExdTQzSDVSbnQ4M3AySVZ0OWN0UlczaHEwN0ZpeklqT3B5R0tSSnJBMC11VGNwS2N4UmZBQTJBdjFJLUFvZ3lZd2xPUXMtNdIBqgFBVV95cUxQdGFEM0ZJS3VKM1I4Ynl3QnFhamtwRVZHNXdMeEU4dmlLcmdWenBpM2dPTXQ1VVh0ZFdqZHV1ZzNrWWZCR3MzeHlpc2QxeUM4bGlUVHNfaVpySTN6X3NXQk5UVzZfVGN6dFVFbmFHQnhrMGJoRk9TZVJWRmtxYTc3aUZBWWN2TlM0SjNEN2FWcTM4aDV1LWhaWm54N016ZGdjTC1ndGJpUlU3Zw?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
     "id": "ge976a1eef186",
     "type": "nl",
     "src": "AD",
@@ -614,6 +1132,16 @@
     "type": "intl",
     "src": "Офіційне інтернет-представництво Президента України",
     "title": "President Discussed Support for Ukraine Ahead of the Winter Season with the Prime Minister of the Netherlands - Офіційне інтернет-представництво Президента України",
+    "date": "2026-09-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS0lIamtQdTRFQ3VDYTNuYU1wTVhHbDZZUmRqbmhEX3Rudkx1MnZBZ2d0ejRlZFJoNFVyRUFLUzBETDU1RXUyUUlEZk41enVNNDVIc0dqa3RVS0wwdWxZN0dvSm5wN3oyUXRzZFc1ZVNyQWpBZnUxSGRYY2dKa0JHQk9vaEVJTExmVUJsYndhNTkwc1lrSzNQRGI5VlFnRnlwQmhwZDdpbw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga5d7d177c0d4",
+    "type": "intl",
+    "src": "president.gov.ua",
+    "title": "President Discussed Support for Ukraine Ahead of the Winter Season with the Prime Minister of the Netherlands - president.gov.ua",
     "date": "2026-09-22",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS0lIamtQdTRFQ3VDYTNuYU1wTVhHbDZZUmRqbmhEX3Rudkx1MnZBZ2d0ejRlZFJoNFVyRUFLUzBETDU1RXUyUUlEZk41enVNNDVIc0dqa3RVS0wwdWxZN0dvSm5wN3oyUXRzZFc1ZVNyQWpBZnUxSGRYY2dKa0JHQk9vaEVJTExmVUJsYndhNTkwc1lrSzNQRGI5VlFnRnlwQmhwZDdpbw?oc=5",
@@ -2153,6 +2681,16 @@
     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOd3V5dUJiaFgtWXpUMndId0d0ZWQwcmxqcWJNUzkyZGNNdGdhaGI4ZUdoZE9YUXFmYUJrZUZXS3gzSHVBVzFnT21uNkJMYkM4U2VMMHlYcmtNckhkUkFfenN2T1huZU9nemY5TUd0bmx5Zy1nMi1jcFRMNld5T1ZwSzdlM3FZdENnYnVCVW5DcTlENXZ5Q0EyZHp5WTJUZEpSWUkwTUg2RFFURUZHc2VhU3E5ZTFMZ1NWZ2VQVVRadGRpSWZhRTMtYkd2aDBJSXA0?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g2c75734b1cb3",
+    "type": "intl",
+    "src": "vg.no",
+    "title": "Mistenker bondeaktivister etter togkaos i Nederland - vg.no",
+    "date": "2026-09-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOemdIaGFjbVRQQ2xCUG9PVDU2REZHLTNyR2RDeXFlX2xCdUZjeWM0U2FjbVczLUh5OGxjMGFudEdmSWZlNzgydW1SbmI3clR1TGtLR2JHV1o2MF9JTWNrMkYxWXRMVG9hZnVlemYzRUN1b2FnNlAtb2N5V2FwYVU0YjJPaHVNMFV6V05fRW5haw?oc=5",
+    "flag": "🇳🇴"
   },
   {
     "id": "gbf438e4aaf74",
@@ -3961,6 +4499,16 @@
     "date": "2026-09-08",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQdU1mMFFqN2hoS2RsNE5nNHBFSFpmcXpFN2NIcXdmLUE4eXU2MEtINENhQkJORkp6bDEwVFNuWExWTXlIX0txMUZneDhTNl93TV9GZ0xHYXp1S3FTTDZqZTJVak5tRm14S2gzSF9fSWhZNkd5XzRNMG9KVFI4NlRMSm9fVFpHaFpnN0VxYnZTeXZDXzZWTlVkUC1fRXdCcEZ0d01QVVBnRHhGSkZOUXZnUllpUkU1dFI3NU5iNjVyQ1ZneW5VLWtBVFNfRm5RQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfe82bc81de92",
+    "type": "intl",
+    "src": "frifagbevegelse.no",
+    "title": "CO₂ fra Nederland skal lagres under havbunnen i Norge - frifagbevegelse.no",
+    "date": "2026-09-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdGZsdU1rS1FHakl1dGNzLXhGVUk1N25MLUNmajdEUmFTZlowTzBfVnI0bFZURTFYdXBfM2JmRGF6T3BnV21XbDVZRFdobjdPYm4xcjdwLU1hVllHcGlERVUxNFBYaEZyMFdUNmIzbjkxbEVLdTluazBPOFJUeHM2X1JRTzlCMjlmd20yd1htWTZvZFFhZ3VreXFQYlBNcDI2?oc=5",
     "flag": "🌍"
   },
   {
@@ -10654,6 +11202,16 @@
     "flag": "🇺🇦"
   },
   {
+    "id": "g1e8de774c9b1",
+    "type": "intl",
+    "src": "eurointegration.com.ua",
+    "title": "Зеленський та прем’єр Нідерландів обговорили підготовку України до зими - eurointegration.com.ua",
+    "date": "2026-08-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xdzdMT2xsNU5NRWVZTlUta2hKOFZSYTBLRGk5aU45MXVqYlZIeXA3VnRlUEhtWEhaWnNPS0h2ZFR3Q3hvS1pTZV9Kemh0Ylp4WnQwV2xTbGhDanNrWllaWE5MQ1ZjV04xZGc?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g1b0062a5dfe9",
     "type": "nl",
     "src": "Nieuw Rechts",
@@ -13920,6 +14478,16 @@
     "type": "intl",
     "src": "Дзеркало тижня",
     "title": "«Сильний сигнал» з Гааги: прем’єр Нідерландів пояснив, як змусити Путіна закінчити війну - Дзеркало тижня",
+    "date": "2026-07-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVGU1VVJ5M2k4M0FKUE81cWlxUk9uRDdTNkxFREFhMjAxRUE3RUdQNG9idHNqQlI5ZnhiLWVEeVdrLW5pZ0N1NU1ya2ZvM1k4bzM3M0p5WHRTUXpQbS1Oc3pOaHVYMDhodDFELWtjSXQ4ZHc4dzA5ckQ3UWRlLTlGbFgyNW4tRjdMaGs5ODdBb1F3WDM4eUhfYjhDVnlvMEZEYnc5eDJFRElJeXo4RmdnOWtmTdIBuAFBVV95cUxPQndjLWR5aGUxaGIwNHVzN3RaMnNrM0hKSUcxbC0yZVAtS1ZUNmtkcVNCbm1TWU4tRWdrVkxXSV94WEZ5LVg4c0owZThOX01HdDE0OTU4NzFFS1A2VVhCamgtSDF2bzFnTmsyUm1rOEprRURwUkREUUFrdC1kdHQxbzBGM0pCdzdfaV9YU1ZlcUg5MVNsTUwtWGZZbWdjSzRadEhJYXhwTUR5LWd2d04zRF9YSUxYVUh0?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd219e97367ab",
+    "type": "intl",
+    "src": "zn.ua",
+    "title": "«Сильний сигнал» з Гааги: прем’єр Нідерландів пояснив, як змусити Путіна закінчити війну - zn.ua",
     "date": "2026-07-05",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVGU1VVJ5M2k4M0FKUE81cWlxUk9uRDdTNkxFREFhMjAxRUE3RUdQNG9idHNqQlI5ZnhiLWVEeVdrLW5pZ0N1NU1ya2ZvM1k4bzM3M0p5WHRTUXpQbS1Oc3pOaHVYMDhodDFELWtjSXQ4ZHc4dzA5ckQ3UWRlLTlGbFgyNW4tRjdMaGs5ODdBb1F3WDM4eUhfYjhDVnlvMEZEYnc5eDJFRElJeXo4RmdnOWtmTdIBuAFBVV95cUxPQndjLWR5aGUxaGIwNHVzN3RaMnNrM0hKSUcxbC0yZVAtS1ZUNmtkcVNCbm1TWU4tRWdrVkxXSV94WEZ5LVg4c0owZThOX01HdDE0OTU4NzFFS1A2VVhCamgtSDF2bzFnTmsyUm1rOEprRURwUkREUUFrdC1kdHQxbzBGM0pCdzdfaV9YU1ZlcUg5MVNsTUwtWGZZbWdjSzRadEhJYXhwTUR5LWd2d04zRF9YSUxYVUh0?oc=5",
@@ -18556,6 +19124,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQald6YlBuVnY1Zlh2T19INTBHMEZOemlTQXFuUmk0WDhxaTFLRUxzN1ZaTmtYVk5MckhlbzFCWmljbHhWWi1vTHpNR0lLMndvM3Q0c2xMWHVpbEdXV091NlE1UFJrWF9sSTYyUlZIUm1OV2c4Z05DV1lXZWJoSkNSdy0yay1MMTRrLUpnQ1FYdXpoTjl6ZlhKMFk2MjdnNzVQLS1xTTlTdHp6RjNUUGJMM2F6VzFkT0hZVTBVN2JYNHhMa3Q4VW94UTdJblYtOHcwZXlNcA?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "g6abb940c6aec",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Lack of results sends confidence in Jetten I Cabinet plummeting after 100 days in office - NL Times",
+    "date": "2026-06-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEJ0bk5FMzZjeHpTZk9QYXFqUXd5VDQ3M3FvM3FkRW9pZFFOQTg1NzRVV2YzbnZmeGNuOTJrS3JsOHhkRjh3S0hSS3NvbWhfcTdDa0Ryc3hROHRtakRPZUFBdlRlcDBVaFBMN0xNempfSGthZ1lSUEdHY3h3aEF6QTh6YWhVZFRCV1NzMjlBRFBZWkUwa1lLTDVCM05MNEVPZ2pv?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "g6b1346cc3a17",
