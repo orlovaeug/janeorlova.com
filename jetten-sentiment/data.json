@@ -1,5 +1,66 @@
 [
   {
+    "id": "ga14b9cee1b5b",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Jetten krijgt wind van voren om AI-gebruik bij Keti Koti: ‘Wat is dan persoonlijk en empatisch?’",
+    "date": "2026-09-27",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/jetten-krijgt-wind-van-voren-om-ai-gebruik-bij-keti-koti-wat-is-dan-persoonlijk-en-empatisch~a163d3bc/"
+  },
+  {
+    "id": "g325900d65c21",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "De broeikas | Plan Jetten voor lagere energierekening na drie jaar al bij grofvuil",
+    "date": "2026-09-27",
+    "sent": "u",
+    "link": "https://www.nu.nl/de-broeikas/6410815/plan-jetten-voor-lagere-energierekening-na-drie-jaar-al-bij-grofvuil.html"
+  },
+  {
+    "id": "g5d63978fd4c0",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Jetten en Heinen na gesprek BBB: 'We voelen breed draagvlak'",
+    "date": "2026-09-27",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/politiek/video/893fe7c5-1a93-4b88-91fd-688f2caa02b8/jetten-en-heinen-na-gesprek-bbb-we"
+  },
+  {
+    "id": "g11a49448582a",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Het kabinet wil met zowel links als rechts zakendoen, er is meer enthousiasme bij links - Trouw",
+    "date": "2026-09-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPb3g5MzAwQUt4TTk1WFJxQXlfMFlZeFBQV19STFh4cUJmTFNYd21mRmxuYnZYS0FCRGN3dFFLZXlzVWIzdEhMdHdMNEI2OE9rVEZ5Z2ZvMWRsaDNtWUVqVXZMNU1Yb0h2bFlXM2R6ZXpjUG1xSERZa0VCODdBUWdMME5oUVhUT2d6UV96bWFDR2NmVm5lNERHdGV3TEZjTktfendqRzZCSktsdWVxTFhNN29XSEpZNm5ycXVZOU5tWTJHS2FJ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g203ef4968c67",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "Uitgelekt: kabinet wil cruciale eis van Pro inwilligen - Welingelichte Kringen",
+    "date": "2026-09-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMlJrVnQtd1pfZGF3R3hpSFpTc2xWWWt1aFhmU0w3TGthdnNtWXJmWUN3VHE1VVhIZmFqWGlFdFpwNENkSzE3ZHYwbHFDeWpQOTRpNUt3WGFDbFQwYXBlNVZRaWdpN2VmWDZ3allvWGl5Tm0zU0pIaDVRRHR6eUFaRDZpT1l2QmhpaDFVTmRWM2kycTI2aHRPVVJpQXlMZVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g953c04fae1c3",
+    "type": "nl",
+    "src": "NieuwRechts.nl",
+    "title": "Kiezers somber over kabinet-Jetten: ook eigen achterban twijfelt massaal aan goede afloop - NieuwRechts.nl",
+    "date": "2026-09-27",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZlFmTFZIbWl3N2Q3NHZEanJPREtQaW5TZUtEN21uYTZhRlBBVFltN3lnSGhMY0ZlRTRpSkNqQWQ2VDFkRUh6UXRnU04tVWVpRVdPT1JOVWVKMWNJN3d0Smd1N2R0R2dsZmtOd1BVOVVnRllfTUZTc1BzbFppR3NxVFJiUndJSS1IM1VoMWYyS2w2SjlvT0NnaFlYc19FLXY2NWh0cExRMlpjTmlLUFY2YjRYMVRVSXVycUE?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gd91d9a836321",
     "type": "nl",
     "src": "NOS",
@@ -59,6 +120,132 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE56TkFxT3RnWUFzSUdjak1PUm0wcTVjVzV1LWZJZWZZLUZ5TDdQUTdZalFzdmZsamhhRDRTaFJ2MFMwLTc1cmMySFYyRW9VQ0EzUE1WaVVEUjN6OThwWnlNRUVHRUlOQy1SUlE?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g11a8d57ae731",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "JA21 en SGP kritisch na gesprek met Jetten en Heinen, volgens de premier zijn alle vijf de oppositiepartijen enthousiast",
+    "date": "2026-09-26",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/09/26/ja21-en-sgp-kritisch-na-gesprek-met-jetten-en-heinen-volgens-de-premier-zijn-alle-vijf-de-oppositiepartijen-enthousiast-a4937602",
+    "lr": "right"
+  },
+  {
+    "id": "g9077b7c427c8",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "JA21 en SGP kritisch na gesprek met Jetten en Heinen, volgens de premier zijn alle vijf de oppositiepartijen enthousiast - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQZmN2N2lRcDN3dmk2NUc5cnhFWW9aZWw1T0Y0OV91V0w3dUd1MnUxYjdwQ1hBalpkWDVRbjRMVF9VbWk5Z01icWRUb2djZ3BCUE55OFNzOFdtdS1CQm1GcV9UeFVTcllqbUU2dEhYRGROMVpXTWE3RDQ0M0o1eGROX3JyNjk0LWg2eU9FblRnU2F5VlR6YnV1RUQ3VDZXbEhNaG9qUTF1NWp0TGNUNnUzekdxLVU1YUJNTXV4TGd1d0hva1NSakpCaV8zWlkxZXFUMWFjQl9FemRSMEg2Qml4Y2g4Vjd3ZDgtMmFSelN1MEptSkt0TDdfXw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gb807dadd7d58",
+    "type": "intl",
+    "src": "dagelijksestandaard.nl",
+    "title": "D66 wil fatsoen, maar niet van Jetten - dagelijksestandaard.nl",
+    "date": "2026-09-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUTYzTDB5Qks4UmtqRy1TTG9uWHlJOUszTE92WThoTHdSdkJ4SFJUc2wtXzM0S3R4TzFqckJQOUhNckgwYWUtTGlWWVZjdFl1WlR5bVFuRTZtMEtlYzlMVVpmQUduOFp6ZG1td3BSeEQxYS1iY1BmSl9XbndzSDQ1YmQtSVhIckRobWprM2tIUjR6OGF2aUhYU0xFRXN2cmhxU25VWmU0LUFBNW1FRWM5dEVoRVZ5aDhy?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g1a8f0a423d5b",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Kabinet beweegt op bezuinigingen sociale zekerheid, zoekt steun box 3 op rechts - de Volkskrant",
+    "date": "2026-09-26",
+    "sent": "a",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNY01XTG5ndW9ZeFNGRENFdWY2TGhjM3I5RkROX21VY0NseWlrZWt1T3RaRUxyd2Z3WjY2NU01X1R1V2V0ZGIwU21UVmUxUTk2TDhfckpvZ3NBTXVZXzFtOFU0bnlFTWJCYi1Pd0V0YVk5TmZINmFnSTcwa0R4WkpiMXA3WGdTWmRROG8wYk43OGJHZjBnNEoyQzlRX1Fic2xvcDRLOGhKc0pCUXRVN3otNWI4MnpqVTBIUTdyZTZUbnI?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g7fce85886d16",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "‘Kabinet bereid te spreken over bezuinigingen sociaal vangnet, coalitie heeft ook nieuw voorstel voor box 3’ - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNRW43MG4xWGpKMEJSNlVzMkxQNGhhSGdfMkhaNzdrdE5HV3pJY3RaMGpTNU5QNFUydkl5aGNWbHh5NEdwOXRXekVnZkMxMlNhS0luX0U0S01mVzBXcFloM3lSbVU4T2gzRlI4ajhXQ0hYNi1iZ3d3anB3V3pfSzloMk1lTlFveUVEWHVsYUU0bW9lelRIamp5T3NUd3B0NHY1N0p5ZEphak9TbmswX1B5cDV1YmZWNXdqMnhRei1nX0Q2TWxreF9GMmJqZk8zRTlnbGpqMUhBV24?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g12687c20b902",
+    "type": "nl",
+    "src": "Dagblad010",
+    "title": "Aanbod van kabinet-Jetten aan oppositie uitgelekt - Dagblad010",
+    "date": "2026-09-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTGRnWDhyUTVEOGxMcHZqaXlpQ1pjRkw2amxCV09CeHRRYnhjWnVVbVVvZTlkY3I0VVN1X1lEb1pPWjN0ck4zTGwxWWx6VXBsR0FpdGJ3LUl5SzVtdnZvMk9hNWFPdTAxQng2WU5zMHhrMkloUmVQMnJlRG9XMXFFZ3Z4cFQyMlMx?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8633072a0658",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Pro, ChristenUnie en Volt: beweging bij kabinet, JA21 en SGP minder positief - NOS",
+    "date": "2026-09-26",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWDVvejZ5QzJmWXRHQldOanZyZWM1UHY0cUp3VlFpTmNUMW9HeTVxdkVJVEp3clJHRlJMUFlUZ215Y29DclJndnY0bVVpUWctNUExSkVSQUw2TWNyRUN5NlBweHp4TnRWUS1qd1dRczFOdWR4RExJbGx2bXU2Nk56UUxCOEZDUDIxSnlXN2VGUUFfN3phejFjcjkybGVlazVCemxIeGU2MA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0aca6fe99330",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Aanbod van kabinet-Jetten aan oppositie uitgelekt: versnelde verbouwing box 3 en geen bezuinigingen op uitkeringen - De Telegraaf",
+    "date": "2026-09-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOc3JEejhZdDY1OWJHbGxUQ0VrV0hxSWhTSHJETmxJb1ZNY3VZZVMtaDNwNnUwazd6VTZpcGV2MlAyZHBRTDJ6b1hxM185TnIxdHBYekxhTHhJVnFsck5HTmYyU3Z1Zl9nRkkxN1E1M3dqd1owUEt1X0E5d2cyWWctU2tiS0I0TkhicklUdGp5NDhLUjV3Zm5zc2dwSnVFT0hnNWRmOE8tX29odkJYTWtPYklzUVBNZnI0LWxVb1ZDTlBLcWhKWGRWS3dWRzNGM3Vvdll5NldOOVRMbExEdjlQUHZuTXBMTlFLOEhiX0poRkdmWVh4?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g7852a196494c",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Kabinet biedt oppositie snellere box 3-hervorming en schrapt WW en WIA-bezuiniging - bnr.nl",
+    "date": "2026-09-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQYVhVRzY5SGlmeUpzYy1ReV9yS2NNX0Z3aDB1S1ZSSzBCdGlzQmU2TTJPMi1BMUYtcjVWVFA3X2dwand0Tl9TbHliUHhfYlEyYmw0UVNmMWRRQnQxNDBudWtoZzFTWklJWWFtR3hWSEZwMnBaRzFxaGdydjVMT2lOYlh6OFp5aHdlQXR2M0lfMVgwZ1otdFE2TmU4QkRDU3hhbEI2Ync4RDdKekwxMHFHSHFlNktWYTRZUzU2S1N4NVc4eEE3MER2amQ1SFBwdkFOSU5kTlQwRng?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gba30e19cf77c",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet bereid om bezuinigingen op sociale zekerheid te schrappen - AD.nl",
+    "date": "2026-09-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTllyVGhscDFIc2VuUnlKeFd6S0hDQ2tHZEs2VDdsZ2xJQUV5Q3NoMUotMTFEc3VMVk5ibjBfcDJnUWJtRHBwZjBMRHdvdUxoRXFqUEJobzFuajNaTndib0NwS3pPSGw1VjJrZUpBNjBCdjBNOEhscTNMNWpjS2ZLZGhpRWJPZGhDb1kxRnV1Y0xmNlU0UG40S0Q5eHRBeDNDS1Bwdw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5161b5520e8e",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Kabinet bereid om bezuinigingen op sociale zekerheid te schrappen - Het Parool",
+    "date": "2026-09-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMkp3a3BnTTY1eV9yVHJiUUw4cHpFNkpVcTM2akVSOFltSVJ3MG9kMXdhc0c0TFgtMm1GQ0h0X2I3bnFubm9RVWtMQVBlek1rT2hnUWxmeHBvcmdtRFB1N2JfS1BXSUJoREJvRWk2VUd5RThtNHRTRll4YVdRMGhKRlgyemVxUDBzeXhnM2hjY19TWTF3QWlRZk1lWEttY1JXY01CMWJGYXlhXzQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g964840023c62",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Zelfs een val is ingewikkeld bij dit minderheidskabinet - AD.nl",
+    "date": "2026-09-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQ1Z5X2dqbHBaOWxYV0VxTWhsZlItZlZlZURkQkpobGFZRGVYN19ZcnRGNi16ZmliaVIzeTBvUHU0WDhFQW5ySzA0alMxQWNxOHBWQ09NQ0ZlZWIwVmM1XzRYZGRwR09waVFzTUE4N3hHMml3MW0xS183UExURnBmM1ZpNXkyMjFkMlh2dEQ3emRNcmJmQU9z?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g61d362f14c5b",
@@ -509,6 +696,58 @@
     "flag": "🌍"
   },
   {
+    "id": "g1bdbfffc7695",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet heeft na week van verwarring ‘nieuw en aantrekkelijk aanbod’ voor oppositie - AD.nl",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOMVMzWEZJQkN5WV85SVVNWWtUTTlzamZtX29RN0ZLS2ZIblhsaU90cHBRVl83X05tQWZsRmxXWEpucG9KMklSMTJNRC1IRzVpbFNraVdIOHlvdlJVRldxVHFFWDZXbERlUGZVQ2l0WVJXa01iS0M3YjBsWGdPNjZBYzNvWHluSzdmUnFpX191bzE1UlF0b2hzbHlZQWcwMlpYUFNVTVJoMzQ3X090ZlRJaEU0NGgxcDBkMmUw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gce9d2423bb11",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Premier Rob Jetten was een week in de VS, maar er ligt wel een nieuw coalitieakkoord - Eindhovens Dagblad",
+    "date": "2026-09-25",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOek81cjVodU0zak1oLThZLW1xZmxzTW1FZnREZFpBcUlMZ1VKejNHQzRPd3lzVjlnVHZlQ3Rqd1dwVVlaLTM5RnZwU1VDSEhvbzNkMHEwVGVjdi1KQXAxcFFUVTR5MTRydnZ0UEpkYXZnenl6MmhPSkxBM2hPSEE3U3NPZGlqVU80YlY1NmRxNlNidw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g10402831affc",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Bij de Verenigde Naties in New York liet premier Jetten niets merken van de politieke crisis in Den Haag - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-09-25",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZDFOYlZtdlRlSk5HaGc5U3B4SUlHd291Nmp3cWRlMnhySXFlTjBEVFU4UlNTSGtPZEQyeEFWaDRsSzBhaXNPSHBBbElXSG84OW9RcXZoS2Foa1NmckhGX011X0JWdzFRcHRtVG12TVI5dmpxTG5EQVFueHVnbE4tZzNOTzJySzBPMEtRSjkwZFh3WjdEWXZhSVRrYk9NaWg4VTVTVFFvOWN5emRnYng2RThqM2kyVjBuVHprc05BS0NreFlOdWxTVU1qWWM2YmpGZGxVZjAwLWNMTXMyT29vdTBQdWQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf1295cb674f7",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Kabinet heeft na week van verwarring ‘nieuw en aantrekkelijk aanbod’ voor oppositie - Het Parool",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWk5tbW5hZFVpajNTb1hfMk5Yczlwd3hZS1l1M19QU3oyQmpVNU5KR0N3RzBmTl9KUC1zM09uS0tkdlh2VEZQSi1RRDdfZHh1alNtTkVDMkdxa1B2WkR1TXg3U09Kb3IzRXg5cjV6cTFZU0U1REVUczlFNkw0ekhiandpcVJHdVp1Qi1BeVB1TjZqUkw0cmFUTlYzVWlianhfZ3prd1V1YTNkc3Fxc0hMd2NxRS1UZ3VJbGNPUkJMd1VxQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g06d30e04a942",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Kabinet komt met nieuw voorstel voor oppositie over box 3 en sociale zekerheid - bnr.nl",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPS2lReTlTYWZ0bDZKelJhMVJMWm54anZFekczYnNIU3loYWktTzRONUljVGpPMWZybEF0b2R3LVY4UjBwaHd3QVhlUWhQb2JjVkw1UG9RT1RVYktwemNuSW56X0dlc3NiX2pHTDdIS2s2YlJMZWJBUWN4Ullub09mbE9kTXB5TXZ6aHVhZlRZTEhCOHJBMDlVdFdlS2pVbUJscXNnSmxrUmtiZFJvNnY2bk4xRWZnU0ZFN0VGeVcwQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "gd256483115be",
     "type": "nl",
     "src": "NOS",
@@ -939,6 +1178,46 @@
     "date": "2026-09-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPU0c4V0tRaTlyMFR4QjJKeW9uUlpLTEtGX0VGNnZMT0I5Nl96bVc2enFaU1FVYjdtczNMUnJEczl1a0t0bUZCYUU5VmhSMzlaWnFReEFUek5iSWdNS3Bmd1hiR19vcldGbW5GUi1aeFNRZVJILWlQdTZhTTJqbWhuVUNZWm0wY09Fa0xfMU5sQ3hZRExTQ3l1Uy0wN0Zwckw3VUNpdVZ0YmdtVE1VNDZTSkVZbm5YQTdvSUZwejFpTHljQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6598c49dacee",
+    "type": "intl",
+    "src": "Bloomberg",
+    "title": "Watch Dutch Prime Minister Has Discussed MATCH Act With Trump - Bloomberg",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQaV9ZaTl4NUk1eUxtY0N1TDMzM2hJWDVxNVJ5RmVnV2V4aGZPeV9uYnczb09odEY3RDhRd1llUXctTjJVS010bi1RVjJ6Mi13VXZiMmVjeU10M19Qb3BSbmRqa0o1WklwNS1IV1pfa0hxVEJDX255bWJHZE1raTRmMWZIdmpDazVvSnNZcXZWY1BYMzQ5NVBSYW5zUHlyNFMxWDRTYXZXZ3FBc3lKZi1Z?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g5af423d80aa6",
+    "type": "intl",
+    "src": "Bloomberg",
+    "title": "Dutch Premier Hopes to Prevent More US Export Curbs on ASML - Bloomberg",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUUNaNGRPR1BseDBJX0FoSU9zeDllZmhqVE5KTDJqbVEzY3k1WU5idFhRWm9SWEJyRUJwZk5LNGhWZU1adVRDTVJKSjZXQXdxaGFoaG1pQlg2YVVWOVdUZ2VYbDFDNGsyVXpYV1A4c0NXd3R1dkxKU2ZSWHZlc01nZTY0RzlOTmYwaVY2Qm1POW9xQWs1ZXY2WlRFeUd2aUw3NmpCbUQzcVlCRktvcUdV?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g8d0747effd5e",
+    "type": "intl",
+    "src": "Bloomberg.com",
+    "title": "Dutch Premier Hopes to Prevent More US Export Curbs on ASML - Bloomberg.com",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNUUNaNGRPR1BseDBJX0FoSU9zeDllZmhqVE5KTDJqbVEzY3k1WU5idFhRWm9SWEJyRUJwZk5LNGhWZU1adVRDTVJKSjZXQXdxaGFoaG1pQlg2YVVWOVdUZ2VYbDFDNGsyVXpYV1A4c0NXd3R1dkxKU2ZSWHZlc01nZTY0RzlOTmYwaVY2Qm1POW9xQWs1ZXY2WlRFeUd2aUw3NmpCbUQzcVlCRktvcUdV?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g5c750c02101e",
+    "type": "intl",
+    "src": "AlbertoNews - Periodismo sin censura",
+    "title": "Delcy Rodríguez sostuvo encuentro bilateral con el primer ministro de Países Bajos, Rob Jetten - AlbertoNews - Periodismo sin censura",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQTAzOGg3dENBYlBWVWtTQ294UWFzckptamMwdl9GZTdtZTRlejE5SGczS3ZLdnIzdjM2aHdrTzh2amx4c2Q3SEUzSlIwV1BwUnQ5UDRZWHlVSjlialJRc3NJNW90aHdOdHZsTm8ydVpaODV3WC1SVXI2TjBueDE5b1FFX3JYN2l1bTJrWWVaNV9QY2J2ak9aNjhsZF96ZjJwbnlXWmVpQ2dYMDg4UVNxUVdUWXpJUm9CT3c?oc=5",
     "flag": "🌍"
   },
   {
@@ -1585,6 +1864,16 @@
     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNVFHOW9Id1pVZ2piS1c4VVlqR0piMDJfdDA5MmhUTldVSzJXRnJvT2dGUlBlMU1NOTdiMElnWHlWQnBkNVc5Q1dqcWdfZGR3LXBuTl9CZk5MYXRBV21PWDRwc18wbk5OdnhCVzdPVWZnaEpYUWg3QkMxd1lxdkJHN3RKd1REdjREdDBwT2J3LXBwU3J0aVB5Tnd6Y3dLeVl0Z2tHVmdyeEwwS1B2NE9sWUJxWklCZUhBTXVWaUtKaHl0VTVzZDYyYUdTdTRwRVJCdHRmZlhLVUI?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "g14276601a5d2",
+    "type": "nl",
+    "src": "defensie.nl",
+    "title": "Premier Jetten ziet landmacht fictieve vijand bestrijden - defensie.nl",
+    "date": "2026-09-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTUVtVjM1aWhuMk9lWTRyZ2tYdXl2WEl0SWxoUnVKN3JmRy16aWUzOU5jamtOTnRPaGhZRV9mTWtwRXBXQXdBMHZsM0Q5Tl90Qk9ZWmN1bEVnWlR3eERTbzJVNjR6X0s2ZjkzenpQdDk2Z25oMEJxUU1QVjZBUnZ2YzZ4LUdMNHYwMTVmcC1sVWppbmRmdk5QazBTQ3h4bGlPVlpoLUo1dnFzdWxROTF4RlFFVHI?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g1481715fdbe2",
@@ -20281,6 +20570,16 @@
     "date": "2026-05-27",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRkNrX040VTdiUzdYZW8tQlczcXRyT2dmY1VpTzBibkVRcldHU0FUNzQ3bVlPU1VNTkl2dGJXNTFqRHJITmFnei1aNWdSUlBTX29BVTFPQmZtbWxxX0hIR2tDSERvcWZ0MGZwakxzVDZsMm1rNGZyTzZ3TDRRbjgxWE8wMXJLOWFOUGF2NlktMXVWYnF6TkQ2eFlLNkxvTVFYZG5RQ0ZCcFE0dG51b2pMQlJrZlRuaVFhcFF0NDFoaDc4cnE4NkFtOVpHeHIxVUFmaEZSODNB0gHbAUFVX3lxTFBpNDVrOHBOaVRjV0dOcHItX0tzVmw4VGVzdngtQTRZTjVuZ3doUjl0MVNQVld4N0lGN0MzSEdYUWxNT3RkbnNPZ1pjVEQ3VnFKaURXUlNxdTBIRHJRaHkzeFVOS3EyNXh1VVlyMk1vQkFTaDJqMUNTWVpOUzFZVFdMZjZ5SnhaWWVBc3BKQ2NwVUtBOUZWdWtqazdnaUhzbHd5QnM1a0NRc2wwb2g0UF9RQ3d1RGNlZDhGX0hHeG1TeXljWmx3Zlo0S25pdkwzSEZzeU04bml3N2c1OA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g28959057f453",
+    "type": "intl",
+    "src": "Укрінформ - актуальні новини України та світу",
+    "title": "Україна має отримати чіткий шлях до ЄС - прем’єр Нідерландів - Укрінформ - актуальні новини України та світу",
+    "date": "2026-05-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdTMyVk9aM3hGazJ2bU0zeVd4Umh0dTBQdV9zSFNFWWdyNy1FQUhTbGg4VWF6d3B4ckNUZTRpVk15aWxOWmx1aHRjLVNHbklWR1dGanI0b0dwWmt1eVRBaDVFeWRaNzNvRDdEUjR2QzB6RVlJWFE5LUhvV19RWFNkeU5ZVnRQQW8zaGtqNldyVTJaQmpPNEd0NTVWZTE5YmtvcHhBdzZ4NlpfTDBDWDZhcNIBtgFBVV95cUxQWmVqdG1mN256ZnVkVzBuS01HUFNaeWZyOVpDeHNkMjk5UTFleVFoalc2TnpkYUNmTTBJWlo3Skt6SUhhYklCUi1mSVpMSWpoRGZBNzZ6R18yS213amFobU01MU9fb3B6bi1CMlFScjBxZ1R2TUpkd1M4R2p4N3BPbFFqb0o2VXJwVVZzelU2aFRIQmFRRG9FTzMtb3hOekMxVS0tUEZkT0ZMZlR5a2NSQVQybHVEdw?oc=5",
     "flag": "🌍"
   },
   {
