@@ -86097,13 +86097,14 @@
     "indiener": "CDA",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18140&did=2026D41449",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk1b6735c5bd",
@@ -86111,13 +86112,14 @@
     "indiener": "PVV",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18143&did=2026D41457",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk249ce7d672",
@@ -86125,13 +86127,14 @@
     "indiener": "D66",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18136&did=2026D41439",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkf0b5407ea7",
@@ -86139,13 +86142,14 @@
     "indiener": "VVD",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18137&did=2026D41442",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkf78b9a39e1",
@@ -86153,13 +86157,14 @@
     "indiener": "CU",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18132&did=2026D41435",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk278a5ca73b",
@@ -86167,13 +86172,14 @@
     "indiener": "JA21",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18141&did=2026D41451",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk9ab7ec296b",
@@ -86181,13 +86187,14 @@
     "indiener": "D66",
     "datum": "2026-09-07",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18134&did=2026D41438",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkff530d3026",
@@ -88345,13 +88352,14 @@
     "indiener": "CU",
     "datum": "2026-09-08",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18263&did=2026D41834",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb25abc389c",
@@ -91527,13 +91535,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-21",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19345&did=2026D44818",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk10b6025101",
@@ -91541,13 +91550,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19335&did=2026D44799",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkfb38880a97",
@@ -91747,13 +91757,14 @@
     "indiener": "CU",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19440&did=2026D45084",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk921786c807",
@@ -91775,13 +91786,14 @@
     "indiener": "CU",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19437&did=2026D45080",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke4bc871801",
@@ -91789,13 +91801,14 @@
     "indiener": "CU",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19435&did=2026D45078",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk4979043dfa",
@@ -91803,13 +91816,14 @@
     "indiener": "CU",
     "datum": "2026-09-21",
     "thema": "Klimaat & Energie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19431&did=2026D45071",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk5079032f23",
@@ -91817,13 +91831,14 @@
     "indiener": "SP",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19430&did=2026D45070",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk8b6c013e1d",
@@ -91831,13 +91846,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19441&did=2026D45085",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk7847b39e52",
@@ -91845,13 +91861,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19438&did=2026D45082",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkf1dbbf7c62",
@@ -91873,13 +91890,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19434&did=2026D45077",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk4e008ed27b",
@@ -91887,13 +91905,14 @@
     "indiener": "SP",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19432&did=2026D45072",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk5b29921778",
@@ -91901,13 +91920,14 @@
     "indiener": "SP",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19424&did=2026D45060",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk38602e09a4",
@@ -91915,13 +91935,14 @@
     "indiener": "SP",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19428&did=2026D45068",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk823a39764e",
@@ -91929,13 +91950,14 @@
     "indiener": "SP",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19429&did=2026D45069",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk984da07cb6",
@@ -91943,13 +91965,14 @@
     "indiener": "SP",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19427&did=2026D45067",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk37cbd5c20e",
@@ -91957,13 +91980,14 @@
     "indiener": "VVD",
     "datum": "2026-09-21",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19449&did=2026D45107",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb58435b507",
@@ -91971,13 +91995,14 @@
     "indiener": "JA21",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19463&did=2026D45140",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkedeb50f424",
@@ -91985,13 +92010,14 @@
     "indiener": "JA21",
     "datum": "2026-09-21",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19462&did=2026D45139",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkdf6955d750",
@@ -91999,13 +92025,14 @@
     "indiener": "D66",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19460&did=2026D45137",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkd5a6ee382b",
@@ -92013,13 +92040,14 @@
     "indiener": "JA21",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19461&did=2026D45138",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke43cecc118",
@@ -92027,13 +92055,14 @@
     "indiener": "D66",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19459&did=2026D45136",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk9a0844107d",
@@ -92041,13 +92070,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19457&did=2026D45122",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk69ffddeb80",
@@ -92055,13 +92085,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-21",
     "thema": "Klimaat & Energie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19458&did=2026D45125",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk7682327d88",
@@ -92069,13 +92100,14 @@
     "indiener": "VVD",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19446&did=2026D45100",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk43eef48b86",
@@ -92083,13 +92115,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-21",
     "thema": "Landbouw & Natuur",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19456&did=2026D45121",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk47d5864311",
@@ -92097,13 +92130,14 @@
     "indiener": "CDA",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19454&did=2026D45118",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkafc5e68c03",
@@ -92111,13 +92145,14 @@
     "indiener": "BBB",
     "datum": "2026-09-21",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19452&did=2026D45115",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkc0eb824cbe",
@@ -92125,13 +92160,14 @@
     "indiener": "CU",
     "datum": "2026-09-21",
     "thema": "Asiel & Migratie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19442&did=2026D45086",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk3f1ed9386e",
@@ -92153,7 +92189,7 @@
     "indiener": "Groep-Keijzer",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19685&did=2026D45581",
@@ -92167,13 +92203,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19684&did=2026D45580",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb868e9a57e",
@@ -92181,7 +92218,7 @@
     "indiener": "Onbekend",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19683&did=2026D45579",
@@ -92195,13 +92232,14 @@
     "indiener": "SP",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19681&did=2026D45578",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk6a4b7c15b1",
@@ -92209,13 +92247,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19679&did=2026D45577",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk8980a01015",
@@ -92223,13 +92262,14 @@
     "indiener": "SGP",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19677&did=2026D45575",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk74aa0e45e8",
@@ -92237,13 +92277,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19678&did=2026D45576",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk4602b119e9",
@@ -92251,13 +92292,14 @@
     "indiener": "CU",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19672&did=2026D45569",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk7ba06a5ff0",
@@ -92265,13 +92307,14 @@
     "indiener": "SGP",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19675&did=2026D45572",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk3171793d5c",
@@ -92279,13 +92322,14 @@
     "indiener": "SGP",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19676&did=2026D45573",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk3d3278ffc4",
@@ -92293,13 +92337,14 @@
     "indiener": "CDA",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19673&did=2026D45570",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke069f9ee8a",
@@ -92307,13 +92352,14 @@
     "indiener": "VVD",
     "datum": "2026-09-23",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19674&did=2026D45571",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk8f656b395a",
@@ -92321,13 +92367,14 @@
     "indiener": "SP",
     "datum": "2026-09-23",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19671&did=2026D45567",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkac33c5f197",
@@ -92335,13 +92382,14 @@
     "indiener": "CDA",
     "datum": "2026-09-23",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19668&did=2026D45564",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkc2ea045269",
@@ -92349,13 +92397,14 @@
     "indiener": "SP",
     "datum": "2026-09-23",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19670&did=2026D45566",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk94ed1026e0",
@@ -92363,13 +92412,14 @@
     "indiener": "CDA",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19666&did=2026D45552",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk6ec4645581",
@@ -92377,13 +92427,14 @@
     "indiener": "Gr.Markuszower",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19663&did=2026D45544",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkcdc0560da0",
@@ -92391,13 +92442,14 @@
     "indiener": "CDA",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19665&did=2026D45551",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk73e1f72b03",
@@ -92405,13 +92457,14 @@
     "indiener": "D66",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19664&did=2026D45548",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk81348da21e",
@@ -92419,13 +92472,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19662&did=2026D45543",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkaac6148b2a",
@@ -92433,13 +92487,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19661&did=2026D45541",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk171c074eb0",
@@ -92447,13 +92502,14 @@
     "indiener": "PVV",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19659&did=2026D45536",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkd32100a9fa",
@@ -92461,13 +92517,14 @@
     "indiener": "50PLUS",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19657&did=2026D45534",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk426d784aff",
@@ -92475,13 +92532,14 @@
     "indiener": "SGP",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19658&did=2026D45535",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk2616c311e7",
@@ -92489,13 +92547,14 @@
     "indiener": "50PLUS",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19656&did=2026D45533",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk83d0d417a9",
@@ -92503,13 +92562,14 @@
     "indiener": "50PLUS",
     "datum": "2026-09-23",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19655&did=2026D45532",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkee0bd14b7d",
@@ -92517,13 +92577,14 @@
     "indiener": "JA21",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19645&did=2026D45503",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkdb02569618",
@@ -92545,13 +92606,14 @@
     "indiener": "Gr.Markuszower",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19648&did=2026D45507",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk5a95f13362",
@@ -92573,13 +92635,14 @@
     "indiener": "D66",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19647&did=2026D45505",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk958c2edb5e",
@@ -92587,13 +92650,14 @@
     "indiener": "JA21",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19644&did=2026D45502",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk7794753737",
@@ -92601,13 +92665,14 @@
     "indiener": "CDA",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19638&did=2026D45493",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk4f15a2c840",
@@ -92615,13 +92680,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19643&did=2026D45500",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk22732fcaf0",
@@ -92629,13 +92695,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19642&did=2026D45499",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk18ab796205",
@@ -92681,7 +92748,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19640&did=2026D45497",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9ab02a0dd8",
@@ -92689,13 +92756,14 @@
     "indiener": "PVV",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19639&did=2026D45496",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk416cdda219",
@@ -92703,13 +92771,14 @@
     "indiener": "BBB",
     "datum": "2026-09-23",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19636&did=2026D45490",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk68fdecf777",
@@ -92717,13 +92786,14 @@
     "indiener": "VVD",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19592&did=2026D45425",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk8520383ad9",
@@ -92731,13 +92801,14 @@
     "indiener": "BBB",
     "datum": "2026-09-22",
     "thema": "Wonen & Bouwen",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19591&did=2026D45424",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk0f3580f113",
@@ -92745,13 +92816,14 @@
     "indiener": "D66",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19594&did=2026D45427",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkea05c64beb",
@@ -92759,13 +92831,14 @@
     "indiener": "JA21",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19595&did=2026D45428",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb4ea51cb8d",
@@ -92773,13 +92846,14 @@
     "indiener": "Gr.Markuszower",
     "datum": "2026-09-22",
     "thema": "Wonen & Bouwen",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19593&did=2026D45426",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tked96f01d2c",
@@ -92787,13 +92861,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-22",
     "thema": "Wonen & Bouwen",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19590&did=2026D45423",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkbabb45b170",
@@ -92833,13 +92908,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-22",
     "thema": "Wonen & Bouwen",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19589&did=2026D45422",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk82d9a92ea7",
@@ -92861,13 +92937,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19601&did=2026D45434",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb67a312828",
@@ -92875,13 +92952,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-22",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19600&did=2026D45433",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk33d82e0f53",
@@ -92889,13 +92967,14 @@
     "indiener": "JA21",
     "datum": "2026-09-22",
     "thema": "Defensie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19599&did=2026D45432",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk16c26d94ab",
@@ -92903,13 +92982,14 @@
     "indiener": "JA21",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19598&did=2026D45431",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb73e888e60",
@@ -92931,13 +93011,14 @@
     "indiener": "PvdD",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19596&did=2026D45429",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk2adfd3843e",
@@ -92945,13 +93026,14 @@
     "indiener": "PVV",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19588&did=2026D45421",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk5a72d4f2e6",
@@ -92959,13 +93041,14 @@
     "indiener": "PVV",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19587&did=2026D45420",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkd9735c2841",
@@ -92973,13 +93056,14 @@
     "indiener": "PVV",
     "datum": "2026-09-22",
     "thema": "Asiel & Migratie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19586&did=2026D45419",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk76072554d6",
@@ -92987,13 +93071,14 @@
     "indiener": "PVV",
     "datum": "2026-09-22",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19585&did=2026D45418",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb48e7bc460",
@@ -93001,13 +93086,14 @@
     "indiener": "D66",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19611&did=2026D45444",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkbbecc0f07d",
@@ -93015,13 +93101,14 @@
     "indiener": "PvdD",
     "datum": "2026-09-22",
     "thema": "Klimaat & Energie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19606&did=2026D45439",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk62f204ca4a",
@@ -93057,13 +93144,13 @@
     "indiener": "JA21",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19612&did=2026D45445",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false
   },
   {
     "id": "tk766eebd293",
@@ -93071,13 +93158,14 @@
     "indiener": "DENK",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19609&did=2026D45442",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk8edb9f9433",
@@ -93085,13 +93173,14 @@
     "indiener": "DENK",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19608&did=2026D45441",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk6016172b1f",
@@ -93099,13 +93188,14 @@
     "indiener": "VVD",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19607&did=2026D45440",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk2d6b579cb6",
@@ -93113,13 +93203,14 @@
     "indiener": "PvdD",
     "datum": "2026-09-22",
     "thema": "Klimaat & Energie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19604&did=2026D45437",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk21324d8843",
@@ -93127,13 +93218,14 @@
     "indiener": "PvdD",
     "datum": "2026-09-22",
     "thema": "Klimaat & Energie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19605&did=2026D45438",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk7c59d390ca",
@@ -93141,13 +93233,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19602&did=2026D45435",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke17911e9dd",
@@ -93155,13 +93248,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19603&did=2026D45436",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk1ea8bc8261",
@@ -93279,13 +93373,14 @@
     "indiener": "DENK",
     "datum": "2026-09-22",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19610&did=2026D45443",
     "toelichting": "",
     "stemmen": {},
-    "archief": true
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk1b80539f66",
@@ -93293,13 +93388,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19899&did=2026D46029",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke0b5a5836d",
@@ -93307,13 +93403,14 @@
     "indiener": "PVV",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19901&did=2026D46031",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk49cbb47c57",
@@ -93321,13 +93418,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19900&did=2026D46030",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk68c7f12f0a",
@@ -93335,13 +93433,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19896&did=2026D46021",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk11007301f6",
@@ -93349,13 +93448,14 @@
     "indiener": "PVV",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19893&did=2026D46018",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk0f0d7cb96d",
@@ -93363,13 +93463,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19895&did=2026D46020",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkca7385a5c2",
@@ -93391,13 +93492,14 @@
     "indiener": "PVV",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19892&did=2026D46017",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk8535a273a3",
@@ -93405,13 +93507,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19890&did=2026D46011",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb2921f499e",
@@ -93433,13 +93536,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19888&did=2026D46008",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk28a2f57c17",
@@ -93447,13 +93551,14 @@
     "indiener": "D66",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19887&did=2026D46006",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb220e9bc16",
@@ -93461,13 +93566,14 @@
     "indiener": "VVD",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19881&did=2026D45991",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkee6f964962",
@@ -93531,13 +93637,14 @@
     "indiener": "CDA",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19818&did=2026D45871",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke21bda32a8",
@@ -93573,13 +93680,14 @@
     "indiener": "D66",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19821&did=2026D45874",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk1266da4582",
@@ -93683,13 +93791,14 @@
     "indiener": "DENK",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19817&did=2026D45868",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk6c8414081a",
@@ -93697,13 +93806,14 @@
     "indiener": "DENK",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19816&did=2026D45866",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkf82efbfa5c",
@@ -93711,13 +93821,14 @@
     "indiener": "DENK",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19815&did=2026D45865",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkd81e1b5323",
@@ -93725,13 +93836,14 @@
     "indiener": "SP",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19814&did=2026D45863",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk61f2482b5b",
@@ -93739,13 +93851,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19812&did=2026D45861",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk58b7c68a99",
@@ -93753,13 +93866,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-24",
     "thema": "Overig",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19811&did=2026D45858",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk14f80b1572",
@@ -93999,7 +94113,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19752&did=2026D45740",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk084f8aebff",
@@ -94125,7 +94239,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19753&did=2026D45741",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk37089d0166",
@@ -94139,7 +94253,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19751&did=2026D45739",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkaccef0cf5a",
@@ -94153,7 +94267,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19745&did=2026D45730",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk768e23d859",
@@ -94167,7 +94281,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19748&did=2026D45735",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkc088d6dc93",
@@ -94181,7 +94295,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19746&did=2026D45731",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk7fcc897f23",
@@ -94189,13 +94303,14 @@
     "indiener": "CU",
     "datum": "2026-09-25",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20008&did=2026D46218",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk4e42038eb7",
@@ -94203,13 +94318,14 @@
     "indiener": "CDA",
     "datum": "2026-09-25",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19999&did=2026D46202",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkcf982e42a5",
@@ -94217,13 +94333,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Asiel & Migratie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19903&did=2026D46037",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkfbce337b1c",
@@ -94231,13 +94348,14 @@
     "indiener": "D66",
     "datum": "2026-09-24",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19972&did=2026D46144",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk9be1d4fd5e",
@@ -94245,13 +94363,14 @@
     "indiener": "Groep-Keijzer",
     "datum": "2026-09-24",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19971&did=2026D46143",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk336c1e3aac",
@@ -94291,13 +94410,14 @@
     "indiener": "CDA",
     "datum": "2026-09-24",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19969&did=2026D46141",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk80d1e050ae",
@@ -94305,13 +94425,14 @@
     "indiener": "Gr.Markuszower",
     "datum": "2026-09-24",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19967&did=2026D46139",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb432261b59",
@@ -94319,13 +94440,14 @@
     "indiener": "Gr.Markuszower",
     "datum": "2026-09-24",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19966&did=2026D46138",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk713d81ba74",
@@ -94333,13 +94455,14 @@
     "indiener": "VVD",
     "datum": "2026-09-24",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19968&did=2026D46140",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk55dd48577c",
@@ -94347,13 +94470,14 @@
     "indiener": "Gr.Markuszower",
     "datum": "2026-09-24",
     "thema": "Financiën",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19965&did=2026D46137",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke56f063275",
@@ -94361,13 +94485,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19915&did=2026D46055",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk21a7daf217",
@@ -94375,13 +94500,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19932&did=2026D46075",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk72dc763d5a",
@@ -94389,13 +94515,14 @@
     "indiener": "50PLUS",
     "datum": "2026-09-24",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19936&did=2026D46079",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke681fd021e",
@@ -94417,13 +94544,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-24",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19934&did=2026D46077",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tke7bb6d4db2",
@@ -94431,13 +94559,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19908&did=2026D46047",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkf4311be5b2",
@@ -94445,13 +94574,14 @@
     "indiener": "PVV",
     "datum": "2026-09-24",
     "thema": "Asiel & Migratie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19931&did=2026D46073",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk06f7a7f22f",
@@ -94459,13 +94589,14 @@
     "indiener": "PVV",
     "datum": "2026-09-24",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19930&did=2026D46072",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk7e861f980b",
@@ -94473,13 +94604,14 @@
     "indiener": "DENK",
     "datum": "2026-09-24",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19928&did=2026D46070",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkefed44b3da",
@@ -94487,13 +94619,14 @@
     "indiener": "PVV",
     "datum": "2026-09-24",
     "thema": "Asiel & Migratie",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19929&did=2026D46071",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkc5f7c3e277",
@@ -94501,27 +94634,29 @@
     "indiener": "DENK",
     "datum": "2026-09-24",
     "thema": "Economie",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19926&did=2026D46069",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkb1877c3a9d",
     "titel": "Motie van het lid Ceulemans over bewerkstelligen dat het keuzerecht voor het bedrag ineens ten laatste ingaat op 1 januari 2028 - Toekomst pensioenstelsel",
     "indiener": "JA21",
-    "datum": "2028-01-01",
+    "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19916&did=2026D46056",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk758fd4a9c3",
@@ -94529,13 +94664,14 @@
     "indiener": "D66",
     "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19913&did=2026D46051",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkf3092d06db",
@@ -94571,13 +94707,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19909&did=2026D46048",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk6109c6c9a5",
@@ -94585,13 +94722,14 @@
     "indiener": "Onbekend",
     "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "neutraal",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19906&did=2026D46045",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk4c2b695b93",
@@ -94599,13 +94737,14 @@
     "indiener": "50PLUS",
     "datum": "2026-09-24",
     "thema": "Bestaanszekerheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19905&did=2026D46044",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tk33de86a329",
@@ -94697,7 +94836,7 @@
     "indiener": "D66",
     "datum": "2026-09-28",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "conform",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20235&did=2026D46784",
@@ -94851,7 +94990,7 @@
     "indiener": "CU",
     "datum": "2026-09-28",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangehouden",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20223&did=2026D46772",
@@ -94879,13 +95018,14 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-28",
     "thema": "Zorg",
-    "status": "in_behandeling",
+    "status": "verworpen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20193&did=2026D46713",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": false,
+    "stemmen_na": true
   },
   {
     "id": "tkdcd57bf63a",
@@ -94893,10 +95033,393 @@
     "indiener": "GL-PvdA",
     "datum": "2026-09-28",
     "thema": "Bereikbaarheid",
-    "status": "in_behandeling",
+    "status": "aangenomen",
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20156&did=2026D46591",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false,
+    "stemmen_na": true
+  },
+  {
+    "id": "tk7fe50d0176",
+    "titel": "Gewijzigde motie van het lid Bikker c.s. over wettelijke verankering van het Nationaal Verwijsmechanisme (t.v.v. 36835-19) - Implementatie van Richtlijn (EU) 2024/1712 van het Europees Parlement en de Raad van 13 juni 2024 tot wijziging van Richtlijn 2011/36/EU inzake de voorkoming en bestrijding van mensenhandel en de bescherming van slachtoffers daarvan (Implementatiewet herziene Europese richtlijn mensenhandel)",
+    "indiener": "CU",
+    "datum": "2026-09-29",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20395&did=2026D47151",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk2b53dea462",
+    "titel": "Gewijzigde motie van het lid Van Brenk over alle gemeenten ondersteunen en faciliteren bij initiatieven rondom zorgzame buurten en voorzorgcirkels (t.v.v. 31765-997) - Kwaliteit van zorg",
+    "indiener": "50PLUS",
+    "datum": "2026-09-29",
+    "thema": "Zorg",
+    "status": "aangenomen",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20351&did=2026D47025",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false,
+    "stemmen_na": true
+  },
+  {
+    "id": "tk0e9bb2335d",
+    "titel": "Gewijzigde motie van de leden Flach en Grinwis over bezien hoe de glastuinbouw buiten ETS2 gehouden kan worden (t.v.v. 36947-30) - Wijziging van de Wet milieubeheer en de Wet op de economische delicten in verband met het verhogen van het aandeel van gas uit hernieuwbare bronnen in de totale leveringen van gas aan afnemers (Wet bijmengverplichting groen gas)",
+    "indiener": "SGP",
+    "datum": "2026-09-29",
+    "thema": "Bereikbaarheid",
+    "status": "aangenomen",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20311&did=2026D46963",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false,
+    "stemmen_na": true
+  },
+  {
+    "id": "tk088d2cd566",
+    "titel": "Gewijzigde motie van de leden Van Brenk en Dassen over scenario's uitwerken om de impact op de welvaartsstaat van AI en robotica zo nodig op te vangen (t.v.v. 29544-1333) - Arbeidsmarktbeleid",
+    "indiener": "50PLUS",
+    "datum": "2026-09-29",
+    "thema": "Economie",
+    "status": "aangenomen",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20308&did=2026D46959",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false,
+    "stemmen_na": true
+  },
+  {
+    "id": "tkd25eca50ca",
+    "titel": "Gewijzigde motie van het lid Ceulemans over per kwartaal vaststellen welke nationaliteiten onder de grens van het gestelde inwilligingspercentage zitten (t.v.v. 19637-3630) - Vreemdelingenbeleid",
+    "indiener": "JA21",
+    "datum": "2026-09-29",
+    "thema": "Bereikbaarheid",
+    "status": "aangenomen",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20306&did=2026D46955",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false,
+    "stemmen_na": true
+  },
+  {
+    "id": "tk95bbeb357f",
+    "titel": "Gewijzigde motie van het lid Dobbe over in beeld brengen of, en zo ja hoe de actieve werving van Defensiepersoneel leidt tot personeelstekorten in de zorg en het onderwijs c.s. t.v.v. 37020-X-12 - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "SP",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20303&did=2026D46949",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkb80ee254e5",
+    "titel": "Motie van de leden Van Baarle en Bolhuis over streefcijfers hanteren bij Defensie ter versterking van de brede diversiteit - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "DENK",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20293&did=2026D46924",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkba8af25b8d",
+    "titel": "Motie van het lid Van Baarle over de haalbaarheid van een herinnerings- en educatiecentrum binnen het voormalige Joegoslaviëtribunaal onderzoeken - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "DENK",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20294&did=2026D46925",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkff60dfe95f",
+    "titel": "Motie van het lid Van Baarle over organisatorische en financiële ondersteuning van de stichting Nationaal Monument Srebrenica Genocide '95 - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "DENK",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20295&did=2026D46926",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkcb662d8601",
+    "titel": "Motie van de leden Bolhuis en Jagtenberg over jongeren actief informeren over het doel en vrijwillige karakter van de Defensie-enquête - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "Onbekend",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "neutraal",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20296&did=2026D46927",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkbe15064ed8",
+    "titel": "Motie van het lid Bolhuis c.s. over een zerotolerancebeleid invoeren voor discriminatie, seksuele intimidatie of ander grensoverschrijdend gedrag - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "Onbekend",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "neutraal",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20297&did=2026D46928",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tke6f92bc782",
+    "titel": "Motie van het lid Dobbe over stoppen met het voorbereiden van een opkomstplicht waardoor jongeren onder dwang in vredestijd het leger in zouden moeten - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "SP",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20283&did=2026D46914",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk497bf654d0",
+    "titel": "Motie van de leden Van Baarle en Dobbe over uitsluiten dat jongeren een boete krijgen indien zij de Defensie-enquête niet invullen - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "DENK",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20291&did=2026D46922",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk31542e273b",
+    "titel": "Motie van de leden Van Baarle en Dobbe over uitsluiten dat jongeren een vrijheidsstraf krijgen indien zij de Defensie-enquête niet invullen - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "DENK",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20292&did=2026D46923",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk313a630130",
+    "titel": "Motie van het lid Van Houwelingen over rekening houden met het scenario waarin in de toekomst Nederland niet langer lid is van de EU en/of de NAVO - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "FvD",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20290&did=2026D46921",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkae16bf21f1",
+    "titel": "Motie van het lid Peter de Groot over een overzicht maken van de schaarse functies die prioriteit hebben bij de werving via hybride banen - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "VVD",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20289&did=2026D46920",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk8d3888d135",
+    "titel": "Motie van het lid Peter de Groot over de gevolgen van vliegen op vruchtbaarheid in kaart brengen en waar nodig maatregelen zoals het invriezen van eicellen mogelijk maken - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "VVD",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20288&did=2026D46919",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka6adf6e660",
+    "titel": "Motie van het lid Van Lanschot c.s. over in 2027 eenduidige aanvullende specialistische burgerreserves oprichten voor de sectoren techniek, logistiek en veiligheid - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "CDA",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20287&did=2026D46918",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkb2e25183b1",
+    "titel": "Motie van het lid Van Lanschot over met investeringen in natura bijdragen aan de publieke cofinanciering voor het opschalen naar 130.000 algemene burgerreservisten - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "CDA",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20286&did=2026D46917",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkafed18fec2",
+    "titel": "Motie van het lid Dobbe over garanderen dat er door de plannen van Defensie geen afbreuk wordt gedaan aan werknemersrechten, inspraak en vakbondsrechten - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "SP",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20285&did=2026D46916",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk2f3aeb5077",
+    "titel": "Motie van het lid Dobbe c.s. over in beeld brengen hoe de actieve werving van Defensiepersoneel leidt tot personeelstekorten in de zorg en het onderwijs - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "SP",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20284&did=2026D46915",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc15f5a953a",
+    "titel": "Motie van het lid Jagtenberg c.s. over doorbetaling van ouderschapsverlof bij Defensie gelijktrekken met de rest van de rijksoverheid - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "D66",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20280&did=2026D46911",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk47ab2e8636",
+    "titel": "Motie van het lid Jagtenberg over de kledingvoorschriften bij Defensie herzien om te zorgen voor meer keuzevrijheid en voor uniformen voor verschillende lichaamstypen en zwangere militairen - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "D66",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20282&did=2026D46913",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1d9dc0aab8",
+    "titel": "Motie van het lid Jagtenberg over samen met Oekraïne een multilateraal centre of excellence voor militaire geneeskunde realiseren - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "D66",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20281&did=2026D46912",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk6ccefa92f8",
+    "titel": "Motie van het lid Nanninga over bij selectie en plaatsing geschiktheid en operationele behoefte leidend maken zonder voorrang op grond van geslacht - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "JA21",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20279&did=2026D46910",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1720688487",
+    "titel": "Motie van het lid Boon over een speciale militaire eenheid oprichten en opleiden voor het actief opsporen van vreemdelingen zonder rechtmatig verblijf - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "PVV",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20278&did=2026D46909",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk6aba8bfa20",
+    "titel": "Motie van het lid Boon over grensbewaking standaard onderdeel maken van de opleiding en training van Nederlandse gevechtseenheden - Vaststelling van de begrotingsstaten van het Ministerie van Defensie (X) voor het jaar 2027",
+    "indiener": "PVV",
+    "datum": "2026-09-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20277&did=2026D46908",
     "toelichting": "",
     "stemmen": {},
     "archief": false
