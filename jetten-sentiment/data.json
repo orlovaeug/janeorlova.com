@@ -1,5 +1,66 @@
 [
   {
+    "id": "g6a1c1a18bcd5",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Wie is de mysterieuze Gerrie, die zelfs door Rob Jetten wordt aangemoedigd? ’Hij bestaat echt’",
+    "date": "2026-10-04",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/binnenland/wie-is-de-mysterieuze-gerrie-die-zelfs-door-rob-jetten-wordt-aangemoedigd-hij-bestaat-echt/162554090.html",
+    "lr": "right"
+  },
+  {
+    "id": "g8d33c44c2c6b",
+    "type": "intl",
+    "src": "dagelijksestandaard.nl",
+    "title": "Woede om arrogante Jetten: premier kleineert Oldebroek om regenboogverzet - dagelijksestandaard.nl",
+    "date": "2026-10-04",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaGpyTWZYYVZDUHhqZEFqOUIxZjFzaGJTbDlfREFTdktrc1dLS3dKT2Rja1hib19ua0FDOFNBQWRDaGMxcGJFeUdxc1RWOUlybkczdWFZcTZRYzR2Qko4ZkhINk9XQ19IUENwRUo2Zm1HV1VodDE5MHBGejNYdkl6MjJrMWYyczIxTXpFcVhMNzhFMzJPSlYwUlV1LXRBTHVDMkZZQlkzMDFzZXc?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "gd9dbbc1a91b9",
+    "type": "nl",
+    "src": "Vandaagenmorgen.nl",
+    "title": "Persconferentie Rob Jetten na 1e ministerraad van oktober 2026 - Vandaagenmorgen.nl",
+    "date": "2026-10-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNHNYRDVqSXlDQy1OanNwazcwZUNiQ3BOSXp0Zmo1dkFFY05RUnZaaVBFbVBNbUYwQmlhdlB3dU1zeEo5VHFrNkVDc0s1a3lwdUVFNDVsWnZlYUQ2MWd4OF9YM2FGbW1jY2Zmc1NyUXNON2ZfcXAwa2VBeHdRZmRNOVl4R1U2eGk0aE9LTDRlc1FLVVMtcGkxSU9FRlVHY2x3T0xnUmtrbXJmUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gbdba18449766",
+    "type": "intl",
+    "src": "DC News Now",
+    "title": "Germany’s Merz visits Kyiv as Russia steps up attacks on Ukrainian cities - DC News Now",
+    "date": "2026-10-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMk1YVVhsYi1XQlZCUEwzNjRzbFFUNXp0R2ppUVYycnJBTmNwOUlSSVRkc0ttZ055V0xLd0ctZFdoSmsyZ0RiNndSSTlYX3FKWGdaN3VaZEptOGxiUXdCSDkwVy1wTWJQRy11LXRTOHdLNzFxUll3YWl0WEZyZ0c3eVJqX3pwbUVSOXV0cjZKcUs1cG9reVVJbVRTS3RJMjN3MzJHdFIwVm50QV9xaXBwZmJ4OXc3MlFDS3l6R0hBV3FDd9IBxwFBVV95cUxNUEt2R0RnRHRqMThGSDgtU1Vxajg5cWRnUTBVNFR2OWVWdDhibHZveXRfX3JyMHV0Z1l5TEVwU3FIOVlLeC1id0VRckQ3MDYyc0xpb3dDcUI3NG5EZmU3TlJCcEpUR3FwcEhUR3JGS29lbXRzaU1VQmZyWmxxc3Nha3IwaXBjVGJvWGRpQTE3NG9fd2ZsT2cyejkxTG1NQ2hBOWZVM3FqVUxIR0laOFJXRFVlQTFUY0dBTTNsNlZzNFlhMjlxam5Z?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7c9a6a55f9f2",
+    "type": "intl",
+    "src": "News4JAX",
+    "title": "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities - News4JAX",
+    "date": "2026-10-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSTN1N2FtWFlLX25tVGhJZkNubFA4ekE2ZUZCaEo1bzI2RERwejBHRlBqSDZFY18xcWxsVW85VE5lT01ROGxCdXY2dnZHeWRvY0FnT0VFblprTTlqSDVJdFBHX1dDeEFCSThNbFZacnY3cTREN0cxT294OEh0YWdUN2QzT3Q3dVVnQWFZbzRlVTZXYm84emgtREhkRGhLWGl4aDhWOXZnelhLQjJMQ2FEOFk4aDlWY3hHWmVjRQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gda6116ea8eef",
+    "type": "intl",
+    "src": "Bozeman Daily Chronicle",
+    "title": "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities - Bozeman Daily Chronicle",
+    "date": "2026-10-04",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPMjZfRVFqc1EtMFNaQXBnRk9sTERDNGZwcEpPVnkxOWNlYUJabVRXSk1Ic0pDOHlkcVViVkl0VS1QOFZxNUFmZ0pJYi1GSnJuS3liWXJNRjkwa1hHSGNuV3EwYVFyVTF6bWRyUXdUYW1XQmMzYUw3ZDFqUUpSeWpaaWtUajh4T2JrUWxtUlh4b2ZPU1VyRktfSXJaTXdELWpwbUhjcHBtVjhkMHl2UzUtbGpWZGVFY2VsSU04LUlJN3g3OGZ4V3ZDUnNmbzFwMk11dG56QTFKTWs4MzlOSmFUZUFCTjkwV2JhOXJaMHZNcDVKOHlpX09oYU9JYU5tdHZpbUZVbTlWMmN2djQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g7964bee32277",
     "type": "intl",
     "src": "World Socialist Web Site",
@@ -109,6 +170,36 @@
     "date": "2026-10-02",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRTFVMWdsZUdZcV91X1k3T1IxVThQRGcxQm9wcEQ2WVVjWW5mb0cwaUtfdVNNUTVGY01sNGxya2Z6YmNIXzRtWlFFYTh2cTJDLVRjZ1VYWlRsdnEzNnUzT1NNUlBWUThtaTZ4emJEcUwzdlY1cXZPVm9UTXRKVTNkaXhqVVNSaWQ5VjlOalhoZHhHbDJJTTlrczc0VlFSMEhVWFZsMXB4LURIZDl0Nnp1cFNwb1J5TTc4UE13MlJsZG0yZFNvcUp1MlNtN3ZIWmNGamlvZtIB1AFBVV95cUxPRTFVMWdsZUdZcV91X1k3T1IxVThQRGcxQm9wcEQ2WVVjWW5mb0cwaUtfdVNNUTVGY01sNGxya2Z6YmNIXzRtWlFFYTh2cTJDLVRjZ1VYWlRsdnEzNnUzT1NNUlBWUThtaTZ4emJEcUwzdlY1cXZPVm9UTXRKVTNkaXhqVVNSaWQ5VjlOalhoZHhHbDJJTTlrczc0VlFSMEhVWFZsMXB4LURIZDl0Nnp1cFNwb1J5TTc4UE13MlJsZG0yZFNvcUp1MlNtN3ZIWmNGamlvZg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g15d451792bb4",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten over onduidelijkheid box 3: 'Snap als mensen het niet meer kunnen bijbenen' - NOS",
+    "date": "2026-10-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNYUgybWpYa2N6QmZvR252bkJKRlVqcDR3N2Q2U1hRX1g2Rm1qQTRRbl9rU1RQODdQUU5zTjNqTXNKb25ZVGNXSnoyOUVndGRhN3MycTVNUmNFVVdDNFFlbU93THZyNTJ5eFowSVNBRkdxY0RtTDNrN00teldfTlZ6VHNGVnJyaTY2bnlDZG1tY09RU0trUmoxSXUtYy10M05zN0owc091TFJmOWFjcTRR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga09e2e9832c8",
+    "type": "intl",
+    "src": "Межа. Новини України.",
+    "title": "Dutch PM Rob Jetten and EU Parliament President Roberta Metsola Discuss Ukraine Support in The Hague - Межа. Новини України.",
+    "date": "2026-10-02",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5FLUJndTU2bVFOXzdmVEZVR29QYkRpWVJVTlRqTlFyZi1BU3NDTHNxNEM2MjJuWGRkbkZqQ1lNYXB2aFZQdXBvZk15UXFhdHZvN2o3U1Q0SmZNbkhOaFE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9c5835b8379b",
+    "type": "intl",
+    "src": "indexbox.io",
+    "title": "Dutch PM Rob Jetten Visits Maasvlakte to Discuss Port Logistics and Investment Climate - indexbox.io",
+    "date": "2026-10-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTEV1alc4MFFtalRiM09UYlhuN0xTZ1U2Q3JHVXZ1eUtGVlhQd0hDbm5XSHJDaFJKOEhQZjhZcTBjSUxPc0J5aW5vQUQ5LVY5TjZna05leTRqUUc1ajhHSm84N1dyZUdFYlpiUnlETElEa2hzVzhHRUFZVWx5dTdVdEVRQ2RjM09MZlRoYnlDeld3eE5KUGhDMjE3cm5adWNnVVB6WXhxWktIQWVKYjhIY293T1JFUXc?oc=5",
     "flag": "🌍"
   },
   {
@@ -480,6 +571,26 @@
     "lr": "right"
   },
   {
+    "id": "gef1d4933e5d3",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Kleine spaarders en beleggers straks dupe van nieuwe belastingplannen kabinet: 'Voelt onrechtvaardig' - EenVandaag",
+    "date": "2026-09-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQb0tOa2FzVDdLbU85T3hiM1VxNTFOR3dhaVNCZUhJcmlsOE9GUjlXNzNPdy11NXlFMkZNbEZRMFhLNmFkdEtpc3NEZ2JXbnBNR0V1M2dYV1I2MTlhRkc3QVJLRHZHQ3BCQVY1TTFKZnZOSzl2S2ZRS3dRWjF4bWJxamRXbGhMcHk3b2F4ejJOblJKa2hBa1FlUEtHQnFPbzZCZjA1VFVKMnoxc2VFSzVMeTNUOEd2VVBSc2NCRkEyYzlRODUwd0h2RXUyOGUzREpiT09CZTZWc0kyZUdVQjJB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3a5c4a316791",
+    "type": "intl",
+    "src": "ft.com",
+    "title": "Netherlands retreats from taxing paper profits on investments - ft.com",
+    "date": "2026-09-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQ0lFUWhONWNVWlBrN1VneXJiajUtS0RzZXA1Zmk3N2dWTDIzTlNRUzdMLWhyWlBtSUNGVWs5VjFJeWZHUGsyOGhxMlVMVEtRMFlINUtqb0pTYzlhcjRORUVFeVE4RWF2SGc3RXNCOG5uNnRGWV90Nk9NWExLbWE0Y0ljRy0?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g50c63d072438",
     "type": "nl",
     "src": "AD",
@@ -813,6 +924,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE83dnJPQk16Ulp4U3ZxN0IxTVlzVmNPT19KNDB6UmJFcmcwUnlqWUVJcS01UC1SSDd3SWQxUnMwcndYQzRDN0plZWhOMzVyYVBaaUdmc1NyelJCVzRI?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gca5fd3acb83f",
+    "type": "nl",
+    "src": "dit.eo.nl",
+    "title": "Premier Jetten en 'vol op hun bek slaan': verspreking of slimme zet? - dit.eo.nl",
+    "date": "2026-09-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQkVuaHVmc1U0bERxNXZnNXZyWDZPMzVuTEFhd29nQW5keENMRW5hbEc5aGpBc1hwelRUbGtlNVhhZWtiYXJ6Q0JpWTZ2R3VkZ1JiNThEMGMza0c4c2JkUTlyNjJlZlB6dktjWUdUYUJTRFZESXBBZDF5dDVKc3ZubFJKV1FibzIwQTFJV0drWHZlNUpKQXNB?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gbb391b393ca3",
@@ -2624,6 +2745,16 @@
     "date": "2026-09-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xYVBKQ1lQb3p1WXd6OG56UW9penVSUVpTbEpTY0dreVFndF82VHduYnhCU0JQRk1rc3NVZjU0bVAxeEhZa3lEOFZEci1pbURvMjdFRllPV3k2VmswaE9jT0tkdnVkc3c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbe716167f120",
+    "type": "intl",
+    "src": "sbs.com.au",
+    "title": "Strategic Partnership between the Government of Australia and the Government of the Netherlands - sbs.com.au",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSVk5NW5aUFlkYWREeXVCR2Joa1o4MmJHZ1ZQdi1FMXpHYWZBcDU1bHdaSHJIbUpkbllsV05uOFppVWtGNnVqYjZZRlBYOFUzdTczekVTVnA3ZkZRdDJlY0R2ejctYlVVb1V2dnA4SGZMTDVuRnZDa0Q3amNsczMyMVBSSDhlcUtSU2tZeWk1UHp2MUt3NW5RemZmQVBsVE9uRXRNbVRmaHZ0Nzl4TGFkOTFrenJXQWEzWDJ2ZHNlbk5tbHdKNk5MTEw0TU9NQ2xKU3dKaUFacDRuR2ZQQkFJY0NwVERUWkJ0QWc?oc=5",
     "flag": "🌍"
   },
   {
@@ -11147,6 +11278,16 @@
     "date": "2026-08-15",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX1VpS19MZW1zY1k3NmgxNjYxS295ZUdZbHRhemxyUEpzQmp3dkhJRjlPNXJnSk56WUxTSTJkUmpFYTUzVXdvNzRvcDVMTzZGeER4ckNVMmxVTjZnOW5OZXNORUVHRlF5TkZPcEdicXVMcGVWVWhwVUFzSVdrS0FIcXdHcjVuWktrby02bElRRWVEcjZoTU5KdQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9788db8a7f97",
+    "type": "intl",
+    "src": "Norge IDAG",
+    "title": "Krever svar fra Nederlands statsminister etter «7. oktober»-skjorte - Norge IDAG",
+    "date": "2026-08-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOWFJCbnE2OXNZX2l0aUYtVm1yUlV4SE1pZDhpcV95Vjh4Q25zRThHSkdZRlFqWGE5aFRvNGpBdGRSQVlUWHBwcVUyS28xclJQNmktY2FmT05HeTZMMmZFb2l0YU0yZHNQc05GdlNNSmdvLWZzQlRFLTB3MlpjX2EtZ01FM2c4QnJ5SnFfSW1zbHZ5X2c?oc=5",
     "flag": "🌍"
   },
   {
@@ -32218,6 +32359,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNNHpEcDJkSXMzVmNHc3pOTzd3blhBQkRTNURrMmNaUktSdWtLYkcwWW5nT3gwUi16RGRNejVzbmNxbXRtUkpPdG1vTTN3MlktNzE4a3BKaWNyY0RiTTdaNXVKMzhjaEM4djlpRVY5WkdiZDNhcVNlTU9SWHFzRmJfWVUxdmV5Z05tcW9jdkVqa19acjFQYkNrLWFaVWIxcjVfYWc2TEVGQ2VjQXlDVldRTTJCN192UQ?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "gd867914ae14e",
+    "type": "intl",
+    "src": "Queer.pl",
+    "title": "Rob Jetten – biogram - Queer.pl",
+    "date": "2026-04-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5uYWJBdlhJM1RUN1dub0dZaHBid0dIbm95Q19JSUF4TnVZVTRIdUhrYXVNR3J4VHJ3Rk80eEFjTDdmTDVlUndKSDFmY09tZw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g60e7617690c6",
