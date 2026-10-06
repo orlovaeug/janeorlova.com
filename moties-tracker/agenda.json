@@ -18,7 +18,7 @@
   {
     "datum": "2026-10-06",
     "tijd": "2026-",
-    "titel": "(onder voorbehoud) Tweeminutendebat Telecomraad (informeel) d.d. 12-13 oktober 2026 (2026Z19294)",
+    "titel": "Tweeminutendebat Telecomraad (informeel) d.d. 12-13 oktober 2026 (21501-33-1250)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07309"
@@ -42,7 +42,7 @@
   {
     "datum": "2026-10-07",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: (onder voorbehoud) STEMMINGEN (over eventuele moties ingediend bij het onder voorbehoud geagendeerde Tweeminutendebat Telecomraad (informeel))",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Telecomraad (informeel))",
     "locatie": "Plenaire zaal",
     "soort": "Stemmingen",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07310"
@@ -54,6 +54,22 @@
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07267"
+  },
+  {
+    "datum": "2026-10-07",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Demonstratierecht (CD 10/9)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06676"
+  },
+  {
+    "datum": "2026-10-07",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Verkiezingen (CD 23/9)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06958"
   },
   {
     "datum": "2026-10-07",
@@ -70,5 +86,21 @@
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05039"
+  },
+  {
+    "datum": "2026-10-07",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Kinderopvang (CD 25/6)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05518"
+  },
+  {
+    "datum": "2026-10-07",
+    "tijd": "2026-",
+    "titel": "Wijziging van het Wetboek van Strafrecht en het Wetboek van Strafvordering in verband met de introductie van de Alcoholmeter als controlemiddel om toezicht te houden op de naleving van een alcoholverbod (Alcoholmeter) (36 585) + Wet verbetering aanpak rijden onder invloed (36 586) ",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2025A06253"
   }
 ]
