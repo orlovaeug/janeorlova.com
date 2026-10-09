@@ -1,5 +1,66 @@
 [
   {
+    "id": "ge54f0d017576",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Premier Jetten vindt discussie in Kamer over regenboogvlag ‘jammer’",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/premier-jetten-vindt-discussie-in-kamer-over-regenboogvlag-jammer~a8db33aa/"
+  },
+  {
+    "id": "gf5f4ca1320ff",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten vindt discussie in Kamer over regenboogvlag ‘jammer’ - AD.nl",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcWRvQlZxazFJV05UUzhrUGd3SE9DdTU2aGZsMzdhSzdUYTFfU211X013YmUya3pqWTE4YWVwTDhzbmEwblBjWVkydXZZbUVRT2NQc21PaEE0aXlKc2IxU2tsQzBFQ2FCOW5JTTJ6VkhJVkhyM0QzbmEwZHo2YnpHcHJHNWpISjNVS2tqSGp1ZlVhaENnNHFiNWZ3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g29f5206135b7",
+    "type": "nl",
+    "src": "KNVB",
+    "title": "KNVB in gesprek met premier Jetten over internationale samenwerking en de kracht van sport - KNVB",
+    "date": "2026-10-09",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOV3dDMkFpb3pfT3ZvRE85QmxiZjNkQ1ZDbndQWFFHUFJnV3pfRWFNdmlRNEJnWmZhTzdJa1EyVEZEYzF6eUphemhneEtrcGljSTJKNURZd1lnWmRhZU83ZlZ2dDlEamo5eGRPXzVJTzhoLTR1RkJuT0E2Q290TGR2bHhhbXNBbEdSb3JCc2VMWXd2OVlVR1Z0eHhJdjRtbFI2TDVwTGhNTGZuRnl6UzQ5UjNpZUtBdmxMRllR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g400f57f4fedd",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Jetten noemt Rusland ook de vijand, 'niet verrast' door Yeşilgöz - WNL",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWG5SbWR0cFRuWTFVOTJUT3ZQMk5DT0JuY0FrZ3FBR3N1bWVXYjhVRTNPaGcxX1diQS1HRndCTXM0MFJTTXU3Y0wxbms0LTdrakV3SGRIbmlSRWJyRUJQSG1oYVAwdkFwSlNGOGswWkJIMnYyeDBKTzliZU43cVBPcEFsNUpxSWZWSGc0MVVOMk0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6dfdf23e90bb",
+    "type": "nl",
+    "src": "Bnnvara",
+    "title": "Bestaat Rob Jetten eigenlijk wel?! - Bnnvara",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5nVVBkc1gtcTFJeHdiRFRBTmljNFpWbXBsVTJQWmN1N1QzUU5UWVJuOW91ZVlzaVZvMkh4SEhSRjVFR21naW9mWVJEdXpRZVl0R2FEV0ZiQ1l2azZIOEYtWEpPQ2I5ZTMxbEJhbWdxaFpRZXNnbG01R2R3?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g9aaa8b884a7e",
+    "type": "intl",
+    "src": "POLITICO.eu",
+    "title": "Dutch PM slams ‘absurd’ US decision to livestream execution - POLITICO.eu",
+    "date": "2026-10-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVnhTNTJqM0ptX0RIb0oyaWwxVWdncUU0blNvYWpEeVJxTllfeUg2TkJ2R0VhT1Z1aWU1WVo1XzJtZXBseDRzcFdFV08tY1c3YWswZHBPSm5hM0FoQ0EtVmk2Vml0dnFTNkplOGRETzJya0JQcVd0S0V2Um93VG9QVEVGU2M3RWJYQ25VTzdVNzhSWm5ENlEyVkFiNHp3NGxaS0pF?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
     "id": "gaafcb1178fe9",
     "type": "nl",
     "src": "de Volkskrant",
@@ -91,6 +152,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTC1vOXFIOHJLN3lQMVZYUHU1ZmZkZVNjZHpodWxmd0d2ajlkR2RJNVRTTWUyMk9sZTVucmpmY3lHUHhKbzI2a2FFMjVmVnN3X1RvSnF0ZVhnWUpBWDJUMU1QS2gwd3lXLXowSUxfZEhuN2dqM0NLeWNBeWpWV0dOd1gzOA?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g318976aefad5",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "PM Jetten misinformed parliament about using AI for social media posts - NL Times",
+    "date": "2026-10-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT3daNmVIazlWX1FFRmk0dFctMmI0UVhMYzdQM08td2hSZE5xeFphNFhzMlJGSTZOYS1iamhENVM3M2xOZUhucGlEV3BsZERMY0ZlNlFWazk0VG5lR2l6TDZNaTVJUF84SmtVYlF3aVJyZjNNb204SV9acUYxZkhRZU1hbW4td2ZkNnN6VFZPcU8xTEN0?oc=5",
+    "flag": "🇬🇧"
   },
   {
     "id": "gb5d6798eb044",
@@ -24171,6 +24242,16 @@
     "flag": "🌍"
   },
   {
+    "id": "ga48834d65b7e",
+    "type": "intl",
+    "src": "Finansavisen",
+    "title": "Nederland: Vil forby import fra israelske bosetninger - Finansavisen",
+    "date": "2026-05-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPS19lQ0FJbzRCaXVsMzlVNHdZdUU3UmUtUThocW5KVVkzdnpRc1JrRnhEU3BJTzIxX2ZGTHBDYmwxRnpiLVNHREtOVS1JWmU5akNtY2R5d09CVDlDSTVGM1EwQ3pRcUREYTNOZVhyWHgtcFpZWjduUF82X0o3N3BPOWFNUk9SZjQ3VDdnblVLVGpET0lSZE5vYkdHV0lqc2NDMzJuaGVxYVcxRElm?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g39d679ba013c",
     "type": "nl",
     "src": "NH Nieuws",
@@ -40176,6 +40257,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g5e04530ea930",
+    "type": "intl",
+    "src": "männer*",
+    "title": "8 Fakten über Rob Jetten - männer*",
+    "date": "2026-02-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaUlZdjlteWF3V2dZZHhtQ0J2OVAzMjFQbnVLS1RsSDJLalZ1Z1VqcjNJc2pjc2NQQlhyUkRZay10N3dRbE01XzJXNUhvZnNnQ3d2Q3Y3UDZwY3NpVjRWVFBHWkVBSUtaOXlpek5xcjhBaGt2akVmV01JazRzQi1RR0MyS0xoZlVGd0F0VnBjYk1hZVEwc1lHMlJseTJVWnVhUW8xTFBmbUdpWDJpNFdJQ0FmakpUeU1wNkE0?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "bl001",
     "type": "blog",
     "src": "BNNVARA / Joop",
@@ -41413,6 +41504,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9GNHdwR1NpWHdjcnVfTU5UeDUzbTZSdnEzcEZjOEt0VEZsMTJnMGRfS2htYVZsVWppUVFtdFRHYUk5VkZ1T3hPeWw1Q01YSmlGX3VrRGNDd0N0b1E3b1VYMG8zTGd2MGhHWkRRRk11Z3ctRGFlaVFsZQ?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "ge1851fd981e1",
+    "type": "intl",
+    "src": "männer*",
+    "title": "Jung, schwul, Premier: Die Niederlande machen’s anders - männer*",
+    "date": "2026-02-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNRWt2emN1MWtFb1dXdHlndmY3MFFEalQyZTlneFdncW1UUFl0cHlqNXdZMFRuU0tvSEw1dGY3N3JTeDF4bWdXVTducHBlSzdNWDRvbWM2cmVwRkF4cENzRTRJTDJLamtIblFRWXM4ODRHWFZkOWcyY2pzeFVzZ21vZ21B?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "nl001",
@@ -44672,6 +44773,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNR1MzY1hyMFRyY1JEZ0tzUTVyQXRHaGVJbzhjZHhUTENGRVh2anhSRGFmUDJyTXlVWElaTEtKUkhLT3NKTGVJd3B0WW9kRWFjREJyWmpMam44ME9ma3NVMmZsb2JYR3VBa2FLSm1UQll0U2w4WnlzLW42VHRGRGE4YU5PTkZ1c0c1TFd6ekdNdzF0TDRMdlJWbGxnMjRTMzJ2YnRiOVZBOVJNaGpGdU95REZFWVpXdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g89bc0908bc8f",
+    "type": "intl",
+    "src": "Courrier international",
+    "title": "Qui est Rob Jetten, le jeune centriste à la tête des Pays-Bas ? - Courrier international",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNOFFiSnNEZjNzM2dGZXZGWk9KdnNhMlg0QkVESWpCV3RVUDcybWNSbWx6ZVJaVWJUS2xvVGJmOXZQVHdZTHg5QktpbTlOS0JoSzRQVHZIb0pSQVNySGR2TFEteFF1T20zNk4tVEdqN2JQaHFHa1Mwa2w5YlVkbFZLZm5KdTV2Mno5dlhnQVBJd19DZzFUVDdXcFFxN0xRVFU5TERTTXE1TVpkdE43RUp5YjZtMUNPTXlNY2ppRVlnb2N4OFJNLVZzWmphbXBtU243S0lJX2x3?oc=5",
     "flag": "🌍"
   }
 ]
