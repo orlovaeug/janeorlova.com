@@ -88715,7 +88715,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18476&did=2026D42309",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk4c0a8c74bc",
@@ -89191,7 +89191,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18438&did=2026D42246",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk6bd0f9dd1e",
@@ -89525,7 +89525,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z18449&did=2026D42271",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkcdb97e654d",
@@ -108535,7 +108535,8 @@
       "Keijzer": "afwezig",
       "Volt": "voor"
     },
-    "archief": false
+    "archief": false,
+    "score": "(90-36)"
   },
   {
     "id": "tk8f90f0c380",
