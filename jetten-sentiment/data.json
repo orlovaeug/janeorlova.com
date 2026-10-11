@@ -40,6 +40,37 @@
     "flag": "🇺🇦"
   },
   {
+    "id": "ge3c12e3f00cb",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "’Premier Jetten is er niet voor alle Nederlanders’ - De Telegraaf",
+    "date": "2026-10-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQb19kNnhmZVl3OFltX1dJaHNobWQ3NmRRWGdIc1Q4RGZfeU9XZFV2dXgwejRyR1hJTXpoS2NhclBMV1JOaTBEazRJTHVpaUIteHJEVUpvQTZXRThrLVN4akpPSUFZSEhsWC1UU0dHOVYwbFJLWk9KZ05uRmROVE1Pei1lRElhTEpjcWMyemkzOVNmNXZ1QW92SkJn?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gec75784bcd4e",
+    "type": "nl",
+    "src": "WNL",
+    "title": "'CDA heeft spijt van samenwerking met VVD, VVD moet uit kabinet stappen' - WNL",
+    "date": "2026-10-10",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQYlJoWW5fQXhpanBwcHcxOXRLcUhjX3VObkZ3Qlhvd2NGNDFPY3V4NkF1NjFvTzBEOFptQWd2aVJNMW54RUpUSG1VTDlnaEhnM2VTelFoTUpJZVI3aDNYbld5WUFZN09uU2k4LXRmRnFhNzR0Ny03eW9BVG9ZajNoSmZCOHhxajlHTWlEUFNfZjhDdVl4dXVDblhnNA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5b00334db53c",
+    "type": "intl",
+    "src": "mezha.net",
+    "title": "Єттен закликав до дієздатнішого й гнучкішого ЄС - mezha.net",
+    "date": "2026-10-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYU1MWVBxM0tuTk9LYTloLU8za1NQZERzYTUtaHloRXBkNHVxZ1R4NnlmbmtDWDdMcHdJYmExbE1JeDloRFlHRWN2dWROVzlfQ0dYb0pZLU9BcXBzdkJCNTJIWm4zS08zczRZTzRyalV6MDlXcmxWbnJieXQtaWhZblBn?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "ge54f0d017576",
     "type": "nl",
     "src": "AD",
@@ -4014,6 +4045,36 @@
     "date": "2026-09-24",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNSVk5NW5aUFlkYWREeXVCR2Joa1o4MmJHZ1ZQdi1FMXpHYWZBcDU1bHdaSHJIbUpkbllsV05uOFppVWtGNnVqYjZZRlBYOFUzdTczekVTVnA3ZkZRdDJlY0R2ejctYlVVb1V2dnA4SGZMTDVuRnZDa0Q3amNsczMyMVBSSDhlcUtSU2tZeWk1UHp2MUt3NW5RemZmQVBsVE9uRXRNbVRmaHZ0Nzl4TGFkOTFrenJXQWEzWDJ2ZHNlbk5tbHdKNk5MTEw0TU9NQ2xKU3dKaUFacDRuR2ZQQkFJY0NwVERUWkJ0QWc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf465022fed66",
+    "type": "intl",
+    "src": "CNN",
+    "title": "Dutch Prime Minister on pressuring Russia to end its war in Ukraine - CNN",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOUdHLTlPMUxXeTc1Qi1TWkVHc1dfY1dWLW5iYXlZMjFCbEw1ejFid3o3aFhHdkY3aDVESTExdG43UTEwcjBpZk5zSVRfRXRwMjBwUGNpVkZXUkE3a0NpdElmZno2MUVaQVZvOGdfeFhzZEdHVTJTMEp3cU9LNnRXX215Y3pCUDQ3SkFQN05UQzBxbFI2?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g3a4496df6bd3",
+    "type": "intl",
+    "src": "Al Jazeera",
+    "title": "Dutch PM’s contrasting stance on ICC-wanted Putin, Netanyahu - Al Jazeera",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMFl4VC1iZmdjTGxyT0tKRFlMc3d3RzdMRWhKTFdxQm1HVUpNZ1FrRlRTRmh1R1B2ZEFQcXhpMVh3V0ZORHZWRHQwdzdjaW96bFlTd3l1WGstOXoxaWRFeTk3WXVuOEhpdXlYWm5OdkxNTnlCc3VvTTViZExuQ29zOUIyQUh6WUpmeUMwVVQ2cnJialR4Mkt4VXdQTW11UFZIQUwzTnMyUkdCcUg1X0HSAbMBQVVfeXFMUC1JTkZDRFY5bTRyaVEzRWZvNnFDQVEyN1VmT2RXTWpPM0R2RlItMFhNTEVldjdiTFBUdDZ5WTY5cXRabFV1cldwN2t3UTdWUG80SHhUa1NUQm85Sjlnc25XRlhFYmwwaUZMOGktU0ZVX3hldWN3b3RSM3lDSzM0Y040TXBRRTJsbnZDLWdhSVFnOFdxMWJQU3lEYWF3bGx6QzZVNWJCd1hVRmR2UV9yRER0UFE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g903395eb1ce7",
+    "type": "intl",
+    "src": "Welcome to the United Nations",
+    "title": "Pays-Bas (Royaume des) - Welcome to the United Nations",
+    "date": "2026-09-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1kN3hqczRNX1lLa011TmVIdlB0ZHM2b0VvTWxzelZfaXpRYlBaa2FibVRUZUhqYklVb2trYk9zR01RbEZCNDVXUjdUZHBKUTdwamxKZVdQeHB1WjBWekE?oc=5",
     "flag": "🌍"
   },
   {
