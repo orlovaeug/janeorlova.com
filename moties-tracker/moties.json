@@ -106317,7 +106317,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21252&did=2026D49066",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk2585059b6d",
@@ -106331,7 +106331,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21251&did=2026D49065",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkbe5522a118",
@@ -106345,7 +106345,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21250&did=2026D49064",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk8213dfd5d1",
@@ -106359,7 +106359,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21249&did=2026D49063",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkf1e7d0175f",
@@ -108838,6 +108838,174 @@
       "BBB": "voor",
       "DENK": "voor"
     },
+    "archief": false
+  },
+  {
+    "id": "tk3a042f8ac9",
+    "titel": "Gewijzigde motie van het lid Martens-America over gezichtsbedekkende kleding bij demonstraties vaker niet toestaan (t.v.v. 34324-47) - Evaluatie Wet openbare manifestaties",
+    "indiener": "VVD",
+    "datum": "2026-10-12",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z22012&did=2026D50690",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk6aa588f43f",
+    "titel": "Motie van het lid Van der Plas - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "BBB",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21960&did=2026D50536",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1c7b8f9ba3",
+    "titel": "Motie van het lid Teunissen - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "PvdD",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21954&did=2026D50529",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk89f1634884",
+    "titel": "Motie van het lid Van der Plas - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "BBB",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21961&did=2026D50537",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk45125684c7",
+    "titel": "Motie van het lid Van der Plas - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "BBB",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21959&did=2026D50535",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkb7813332b2",
+    "titel": "Motie van het lid Teunissen - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "PvdD",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21955&did=2026D50530",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1808a89579",
+    "titel": "Motie van het lid Teunissen - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "PvdD",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21956&did=2026D50531",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk0d8cc8d9fb",
+    "titel": "Motie van het lid Van der Plas - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "BBB",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21958&did=2026D50534",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk84d38a0058",
+    "titel": "Motie van de leden Van Oosterhout en Mutluer - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21953&did=2026D50528",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk2c2e6d1362",
+    "titel": "Motie van de leden Straatman en Bikkers - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "CDA",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21951&did=2026D50526",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk9901c85870",
+    "titel": "Motie van de leden Van Oosterhout en Mutluer - Implementatie van Richtlijn (EU) 2024/1203 van het Europees Parlement en de Raad van 11 april 2024 inzake de bescherming van het milieu door middel van het strafrecht en tot vervanging van de Richtlijnen 2008/99/EG en 2009/123/EG (Implementatiewet herziene Europese richtlijn milieucriminaliteit)",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-12",
+    "thema": "Overig",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21952&did=2026D50527",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk9918586866",
+    "titel": "Gewijzigde motie van de leden Diederik van Dijk en Flach over in het definitieve Natuurplan opnemen dat er geen sprake kan zijn van nieuwe ingrijpende ontpolderingen in het Westerscheldegebied (t.v.v. 33576-551) - Natuurbeleid",
+    "indiener": "SGP",
+    "datum": "2026-10-12",
+    "thema": "Landbouw & Natuur",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z21917&did=2026D50446",
+    "toelichting": "",
+    "stemmen": {},
     "archief": false
   }
 ]
