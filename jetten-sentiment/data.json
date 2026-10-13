@@ -1,5 +1,25 @@
 [
   {
+    "id": "gfc266ec54e9c",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Jetten en SGP brengen de pennen in beweging - Reformatorisch Dagblad",
+    "date": "2026-10-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE8yZ0VhZVNsdWM5MDFPLUFFQnhxQmd0YUQzX1FRcFJwVTZuYjMwM2FVS294ck9HeThXZ2hSSHhLaXZuWmI3dTZFQ1BUY0dvd3N4ZmJxQ1JXOHp2VWxUM25oLWlqQVVfcVhnRWlEVXJ0ZVdCNXh0YmFiYQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb58e9e8dbd92",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Jetten hint op nog meer geld voor slavernijverleden - Nieuw Rechts",
+    "date": "2026-10-13",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN3QybHBTQkhCa3p2YkdSdTBUelpVN1U3dnczZFkzWmcyNTdNNGZ6QnpicXctZE5McERXU2M1c1VYOFZMREd4QW02ZFlUdW5CTU9NX3lnR1Z2aGNFck84MWxyYWRULVJPV3RWamxIc2FvNHltMUZvWG9McmFDSUhZLVA1amYzUmc5?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "g57fb01a46e44",
     "type": "nl",
     "src": "De Telegraaf",
@@ -623,6 +643,16 @@
     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNeTVqVVBOMWhYWDdvRGJrMWNGTUVmZ0IyZG9Ib1dGMVVkdkRLLWtiU2k3cElmajI3YUR1Ym13NlhJMGVxZm05d2NJTElUM3o0NEdsM0M0T1F0M0poRFd3S1ZiVy1xd1ZoUjFHampDcFR0TmNZWkJvX1NYM2phRlo0dWxNUG0ybll0aFUtSE5DTzZROVc2aFhoVGVFRWJBc1hwM3NZZlZlNWc1a2ZhdUNqemRLaHUxOWxMdlJVdTQxVnk2bFRYZFVyMWI1a0xsMU9FVlI2U0ZkbkhOQmFQbU55VDVzYw?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "gb451fa95c9a7",
+    "type": "nl",
+    "src": "Tweakers",
+    "title": "Kabinet-Jetten wil huiseigenaren verplichten tot hybride warmtepomp vanaf 2029 - Tweakers",
+    "date": "2026-10-07",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSl9GQWpOM0xFQ2RORjNSbGNyMjJEZ2w2S0l2UGVCR1ZhaHZWUF9ZZ1NuNVpBTFpUZTJqZzZGRWtBTnpFdGgxcjJkSW5iMHJ0cHRjR18yTDZuS2tNNHJ0QzdFbDEzVlg3eldZNzdUa20tbFZsYVNINXgwVlFwNW1jR3R6dDBBQzVLVEVCNU5DMENIWHhTY2hpaWJONzdhRnppSGlTcHNCLUtKUHQzWlRxanA0aVRsQlJRYlE?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g5fcde7c4b746",
@@ -1260,6 +1290,16 @@
     "date": "2026-10-05",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSHc5NzVadG1DN01MMWlmdzNpbFJObXN5UkhtTTZrSEFsWm1NWFZrMk80cHJfYTB1RU03VUYweUdjak1ocUFvZWE2MFd0LTJLeTNia2Jlcjh6SFlySlJyQ2s4Q2ZQbEU5eHpMRFd2ZEhDMmVRZVcyY0E1cHlTMGFNSXpLT3gwSlNyOFhwOFVpS0hOMXZ6UDl3MHZheWlQcnRRa200aktLWEM0RUF3bWlqaHBrVnRMdEFuNmY1MmtYMkM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g54c08143895c",
+    "type": "intl",
+    "src": "Rubryka",
+    "title": "Нідерланди допоможуть обслуговувати українські F-16: Зеленський обговорив із Єттеном посилення ППО - Rubryka",
+    "date": "2026-10-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DY3BPWWpUQjJaT2V1TWJHdjM5bHZBX0w0YldLTE41NnBHZV81MXktQWxUX0tKYlJ4VE5lYUhsY2xDRjl3aXpIT2o1bWhBS2k2dmwwNWFwQVBpZDNzbnRIbzdJZWxraEhKSWpVSTRR?oc=5",
     "flag": "🌍"
   },
   {
