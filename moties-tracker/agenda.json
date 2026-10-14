@@ -1,43 +1,11 @@
 [
   {
-    "datum": "2026-10-13",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07437"
-  },
-  {
-    "datum": "2026-10-13",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07438"
-  },
-  {
-    "datum": "2026-10-13",
-    "tijd": "2026-",
-    "titel": "Debat over de Europese top van 15 en 16 oktober 2026",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (overig)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06182"
-  },
-  {
     "datum": "2026-10-14",
     "tijd": "",
     "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07439"
-  },
-  {
-    "datum": "2026-10-14",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het debat over de Europese top)",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07509"
   },
   {
     "datum": "2026-10-14",
@@ -50,7 +18,7 @@
   {
     "datum": "2026-10-14",
     "tijd": "2026-",
-    "titel": "Tweeminutendebat Maximumaantal kinderen per spermadonor volgens het CBO-advies (20486-42)",
+    "titel": "Tweeminutendebat Maximumaantal kinderen per spermadonor volgens het CBO-advies (30486-42)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07453"
@@ -82,6 +50,14 @@
   {
     "datum": "2026-10-14",
     "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het debat over de Europese top)",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07509"
+  },
+  {
+    "datum": "2026-10-14",
+    "tijd": "2026-",
     "titel": "Tweeminutendebat Nationaal Agentschap voor Disruptieve Innovatie (NADI) (CD 6/10)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
@@ -102,5 +78,37 @@
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07440"
+  },
+  {
+    "datum": "2026-10-15",
+    "tijd": "2026-",
+    "titel": "Implementatiewet richtlijn herziening productaansprakelijkheid (36906)",
+    "locatie": "Plenaire zaal",
+    "soort": "Hamerstukken",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07221"
+  },
+  {
+    "datum": "2026-10-15",
+    "tijd": "2026-",
+    "titel": "Wijziging van de Wet op het financieel toezicht, de Faillissementswet en de Bankwet 1998 in verband met de implementatie van de richtlijn herstel en afwikkeling van verzekeraars (Implementatiewet herstel en afwikkeling verzekeraars) (36964)",
+    "locatie": "Plenaire zaal",
+    "soort": "Hamerstukken",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07450"
+  },
+  {
+    "datum": "2026-10-15",
+    "tijd": "2026-",
+    "titel": "(onder voorbehoud) Tweeminutendebat Energieraad (formeel) d.d. 29 oktober 2026",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07596"
+  },
+  {
+    "datum": "2026-10-15",
+    "tijd": "2026-",
+    "titel": "Begroting Volksgezondheid, Welzijn en Sport (37020-XVI) voortzetting",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07510"
   }
 ]
