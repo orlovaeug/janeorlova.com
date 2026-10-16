@@ -1,154 +1,66 @@
 [
   {
-    "datum": "2026-10-15",
+    "datum": "2026-10-27",
+    "tijd": "2026-",
+    "titel": "Stemmingen",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07680"
+  },
+  {
+    "datum": "2026-10-27",
+    "tijd": "2026-",
+    "titel": "Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07681"
+  },
+  {
+    "datum": "2026-10-27",
+    "tijd": "2026-",
+    "titel": "Begroting Onderwijs, Cultuur en Wetenschap (37020-VIII) 1e TK",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05413"
+  },
+  {
+    "datum": "2026-10-28",
     "tijd": "",
     "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07440"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07682"
   },
   {
-    "datum": "2026-10-15",
+    "datum": "2026-10-28",
     "tijd": "2026-",
-    "titel": "Implementatiewet richtlijn herziening productaansprakelijkheid (36906)",
-    "locatie": "Plenaire zaal",
-    "soort": "Hamerstukken",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07221"
-  },
-  {
-    "datum": "2026-10-15",
-    "tijd": "2026-",
-    "titel": "Wijziging van de Wet op het financieel toezicht, de Faillissementswet en de Bankwet 1998 in verband met de implementatie van de richtlijn herstel en afwikkeling van verzekeraars (Implementatiewet herstel en afwikkeling verzekeraars) (36964)",
-    "locatie": "Plenaire zaal",
-    "soort": "Hamerstukken",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07450"
-  },
-  {
-    "datum": "2026-10-15",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Energieraad (formeel) d.d. 29 oktober 2026",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07596"
-  },
-  {
-    "datum": "2026-10-15",
-    "tijd": "2026-",
-    "titel": "Begroting Volksgezondheid, Welzijn en Sport (37020-XVI) voortzetting",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07510"
-  },
-  {
-    "datum": "2026-10-15",
-    "tijd": "2026-",
-    "titel": "Begroting Economische Zaken (37020-XIII) voortzetting",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07511"
-  },
-  {
-    "datum": "2026-10-19",
-    "tijd": "",
-    "titel": "Tweeminutendebat Nationaal Agentschap voor Disruptieve Innovatie (NADI) (CD 6/10)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07409"
-  },
-  {
-    "datum": "2026-10-19",
-    "tijd": "",
-    "titel": "Tweeminutendebat Energie voor huishoudens (CD 13/10)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07643"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Selibon (CD 3/9)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06332"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat IVD-aangelegenheden (CD 3/9)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06331"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Landelijke publieke omroep (CD 24/9)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07162"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
     "titel": "Tweeminutendebat Luchtvaart (CD 7/10)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (tweeminutendebat)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07455"
   },
   {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Jeugdcriminaliteit (CD 8/10)",
+    "datum": "2026-10-28",
+    "tijd": "2026-",
+    "titel": "Begroting Infrastructuur en Waterstaat (37020-XII) 1e TK",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07578"
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05415"
   },
   {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Digitaliserende overheid en toezicht (CD 30/9)",
+    "datum": "2026-10-28",
+    "tijd": "2026-",
+    "titel": "Begroting Koning (37 020-I) en begroting Algemene Zaken (37 020-III)",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07276"
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05411"
   },
   {
-    "datum": "2026-10-26",
+    "datum": "2026-10-29",
     "tijd": "",
-    "titel": "Tweeminutendebat Beleidsreactie op de evaluatie Wet ambulancezorgvoorzieningen (35471-44)",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07365"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Arbitrage, mediation en herstelrecht (CD 14/10) ",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07645"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Herziening bekostiging mbo (CD 30/9)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07279"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Verkenning belastingvermindering energiebelasting toespitsen op huishoudens (32140-335)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06453"
-  },
-  {
-    "datum": "2026-10-26",
-    "tijd": "",
-    "titel": "Tweeminutendebat Wadden (CD 8/10)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07577"
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07683"
   }
 ]
