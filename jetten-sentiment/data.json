@@ -1,5 +1,108 @@
 [
   {
+    "id": "ga8ba2efc040f",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten en EU kritisch op VS en Trumps toon tegen Zelensky: 'Niet de juiste taal'",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://www.nu.nl/spanningen-oekraine/6413358/jetten-en-eu-kritisch-op-vs-en-trumps-toon-tegen-zelensky-niet-de-juiste-taal.html"
+  },
+  {
+    "id": "g75b0391431ab",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Blijft Brussel wegkijken bij schending Dublin-regels? Jetten verwacht actie: ’Dat is hun taak’",
+    "date": "2026-10-16",
+    "sent": "p",
+    "link": "https://www.telegraaf.nl/binnenland/blijft-brussel-wegkijken-bij-schending-dublin-regels-jetten-verwacht-actie-dat-is-hun-taak/163153130.html",
+    "lr": "right"
+  },
+  {
+    "id": "gf76bdccde0fe",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Blijft Brussel wegkijken bij schending Dublin-regels? Jetten verwacht actie: ’Dat is hun taak’ - De Telegraaf",
+    "date": "2026-10-16",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQU2c4TTFMOWRFZldTVDJQVTRIbmEyeUpCdGhrd0pTTTlHR1JGR082a21wU0JLbDJ6WVJYWG0weVNKVGJNZFk1Z2RzTjF1SWV2YTBPYm4wTUxQOWhjNHpJTEdkREM3QTF0Rk8teG1uRnBZdmY1TWF6Ukl2bXhoWGFzTjlJaGJIQU9FRFhBVFM5TXNuWTJGTHNYNTJQanNweVJfbTB5aWNoM1luMWdGSC1paEh1RXEzZzM3R0c3TFNGbGlBYWdlNDl1cDBLM3dhOHl3TUpaRE9IZzE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g908b07391df7",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Premier Jetten valt Trump aan in Brussel om 'belachelijke dieseldeal' met Poetin: 'Onvoorspelbare bondgenoot' - De Dagelijkse Standaard",
+    "date": "2026-10-16",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbElObDRCU1VsZHdyQklSQ3F1Vno1eG1wcXY4S0x5cUpxVGVsdUJMUllyV0dOQWNFWFNBS2hhRWExZ2phaTlVSEZwdEducUFaRFFzdG5YTHBTWmRBM2hQamw0emVKWEFoQ3NxaWFNZ3M0Mm1GdkRHaXB2bzIwbE9zbXZ0WUtlSDNBeTFjTVZ4bzRIRHl4dnNGOG42NlhpUFl5M2xJN2NqSENkS1k?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "ge1223fad7b49",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten en EU kritisch op VS en Trumps toon tegen Zelensky: 'Niet de juiste taal' - NU",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNnUzRU1jUFdHSHZONkppR3JNRERCMzJxWlNLeXN3VjNpWXNZZl9pX0s5VFJYUW9jVzBUTlVodmRMT3U1ZkJGUXctb2Y2aDdiZHNNQ2hLaWdXdjllU2hOSmJMQnM4Y3V2QzhFYnk5alN0elR5Z1ViRTBZQVVvZHU3N2QwT00xSDdwNHJELVdCemR3ZXJ0b01BMjUyRHc0ZDM0UXo4Uk5fUWJ6UmE3LVByYnp4ejdWSm1pdDFLdlZOY1BXNkxQM2dr?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb93eedbad504",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten: ‘Europa staat onvoorwaardelijk achter Oekraïne’ - bnr.nl",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVERzdHpZdTMwZXIwbkJaQ050ckh5QmtJUHlmVlNISWE5Y3VSMklhdWd0SUlMLVhFcUZ1Nk41ZkxhaWMtOVhMYTlhR0xUNlFpN0hGOUt4TWZPOGhfWkNzbGhhaDdCNE1JSWtEN3ZGNTZIMjcwZTFCWjVBNmhqejQ4S0M0QjUyQy1pTjdwbHFVMGxCaE1xUG1EQ3lxekR1Wk5ZYXZoQQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g995d555a0b97",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Trump komt wel weer terug in het Oekraïnekamp, zegt Jetten - Reformatorisch Dagblad",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaTlBOUdrdmpqS2Z2NTNSa25uMTJnQ3pGQUt2R291cERvcU9lWFc4eUJUS0lmSzNKOFJhbWI4RU5EQ09acERxN3FXeEE5M3ZNRkZZaWtmQWVHUmhjZTNzQXpxU1hDRFM4dkFFUWx3bFd1enJLWW5zX0ZuWDA1MGhhbUNlUWxsdWtHa3pN?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g453ac3493c1a",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Rob Jetten hoopt rechters te overtuigen om asielzoekers terug te sturen naar aankomstland - Vandaag Inside",
+    "date": "2026-10-16",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNc0hvajZDZWpva1o1U3FTcHdZcW5DeW54S3FyMThIS3hNRXpraVpsQXgzSF9TbFNSM00tUWR1VS1Fa0VGSXNuNEZxQWQwOVBjWE1GRVd1Y1B4QnlvWVZVcTJ5Ql8yWTRSaXFQOUUzb3JjYlEwRlJySHI0bDFIWTVDa2R1U1BDUldVaU5vYVZxakI2QlZPd2k4dTRRbHpCMi0tTUpsMmR4dk50LXo3V01yZFVpTHo1VDQxTTFHVi1yWngydHJHZkw1MkVLM00?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd09d28c10816",
+    "type": "intl",
+    "src": "Радіо Свобода",
+    "title": "Прем’єр Нідерландів: Україна скоро отримає військову допомогу від «низки країн» - Радіо Свобода",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUi1kVjBwbThXMVZxVzJCX1BJVmswRGdyX0VFVEF4MGNyYlB0Mmp3ZEtGNWFza1N0SGJRdXJHSEE5WUpYcU0wajVPeG53OTFLQlhLX3lPd215ZlNaQ0h5YzVjMzFzaXZGMVQtOWNsT1hXdGJMRmtVMjJ2bS15T2pzTVIwT2VyVWdjVkMwR0tFZlFIdGNPQ2tkSVVmNnlOSHPSAZ8BQVVfeXFMTVItZFYwcG04VzFWcVcyQl9QSVZrMERncl9FRVRBeDBjcmJQdDJqd2RLRjVhc2tTdEhiUXVyR0hBOVlKWHFNMGo1T3hudzkxS0JYS195T3dteWZTWkNIeWM1YzMxc2l2RjFULTljbE9YV3RiTEZrVTIydm0teU9qc01SME9lclVnY1ZDMEdLRWZRSHRjT0NrZElVZjZ5Tkhz?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge9a82e60ea7b",
+    "type": "intl",
+    "src": "УНІАН",
+    "title": "Нідерланди незадоволені кількістю країн, які дають гроші для України - УНІАН",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUER0WXJHT1FvVGxneFJaMjRnbGQ5OGI0MVVxbS1yZzN3clQ4TEIxRjZRdDY0YWp5WXJ1MEZoQm1RNmYxb1JaekNMZno0Umo4N2x1S2dfaWI3UXFPaXdheVBQZEdsLUNoV0diVnNkN1NuOVNHbGZFVWM3Qlk1eExQMEN0SUVtZUJTQTlETWYwLUlKRjJWUmNWQjgtYTVtcXVhUU9WZmZ0NERqYWZXT2Q3V3JuSVNyNDVxblBTc1dn0gHUAUFVX3lxTE1PTE0tZ2FHcFlkdTlsT0FqSG05aFVwNzhROEFWRGZFWVdiQktCd2RGOGJSVjgtRTlQZk5VSDhoWnlheG82Zi1BVktGd05lLTN2aWZtY3JsaTdfTU9CNHBGSFJQd2lZeVJXNE5TSWkyaEs0bGtqdV9qTWc4Y1NORnlCS3ZXUVJoRkhkeVl2UVl3emp2TEJJdzVmVGl3UmJrQ3RHTzNCU3o1elV3bFpkcTJUMzh4dkxERXpEdTRsZjZOZTJFV0ZUcFFvREJyYWxIOVZMMUg5?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g3ffd9cc27833",
     "type": "nl",
     "src": "Trouw",
@@ -160,6 +263,47 @@
     "date": "2026-10-15",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOTEMtMzloTFBZRUJXMS1CTjFHUEQ2YV9EbFRGa0NvWWoyd0UyaGN1YWxINXFCemMzdVNiUWg3WjI5Y3NDODhUNHZ1NXNKMnZxMzAtZWtadmNNQTdlVGZDeVFELXIxd21YdzZOcndpcFpWa0EzMi1SSVVzamp3d1BMSmphUnhzQzQxbTFLWEV0U3d3WG5FWXpnZHgwdXVoVGhwVEJTZ0s2cnY2SmwtcnIzYnZIMElSaFFlRkE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gef65e46bc885",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Rob Jetten in verhit gevecht over miljardenbegroting op EU-top: ’Ik kan in behoorlijk veel talen nee zeggen’ - De Telegraaf",
+    "date": "2026-10-15",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQTTJUOHRUVU9GRzZwbWRVVWJuV0VjQUNqeHJXNWppaDNDWVpla29LM2JSSkg3UmhQdnh3Y3RvOEJxTzlPei1tWWZzcXVVbllPWUVrS0ZiNUVvcUFFWGUtaXJ3VTR3SWI2TkszeGloMDQ4X25uWW9xSDV3RVhtM2gyQWt2T1pBaFpHbS1BTjNyeTlmR3NjN2o3U2E3WXdGMWNQVXdySUlfX2F3VHFnRXRyTl96MkxINnRTVTRLU2tlYXctcTJYN3JnbXBiT2FsVTZqaHVzT180XzdWREE4alZDU1RWMWVJZk9rYjVPaUg0U182RGUxSng0?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gcbc1c9be248c",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Premier Jetten vindt VS vaker een onvoorspelbare bondgenoot - Noordhollands Dagblad",
+    "date": "2026-10-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdE1GNnVIdUlQdXN0ZzhZdzNkUVBTaEk0YTA3cGw4OVlQanRONndpa3d2RTR5WjRDVW5EY2hSNHZHT1VWMGl1ZFNOZmdPYU91UkEwcHNEMXE3VUNnWVBFSDdzRlZSbVphN1FVNENuVjRyVmN0UzgwSDFXMUNSMURadldrWWtFYXhBX2tjMUF3ZGMtbFExbnhXcUhXdllENGQ5aERwV2UyM3JxNUdnTXZaS2VHUTEzbHU4Nk1UQzVn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2b534f845655",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "Premier Jetten vindt VS vaker een onvoorspelbare bondgenoot - Welingelichte Kringen",
+    "date": "2026-10-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdEFRZFVuMEVVMWFZR2lqWG50eXNaQkhlOHJMSU05WHFtZ0xrVm5uUkw2WWZJQ3Fsd05Ha2d3dHZwellnOHhIM2dKZDFHVkZiWEhBMXpCQVRhWjlUNG42QzdnWnFnZHdLQ0pDNWMxN1RRNjZMNkpqN1doc2EyNjNlM0pUVWUzYkNXaDVFSVNRNk5NRTRmaFNYd3lCZXZJNzBYZ1FXTXNBclVTUTg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb02a02f3022e",
+    "type": "intl",
+    "src": "Defence24",
+    "title": "Premier Holandii mówi o wojnie i apeluje m.in. do Polski - Defence24",
+    "date": "2026-10-15",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxONUViWDAzUnFHNFlfN2hjX3VWTkQtV1Q2MXhfek5ZYXpSTlNmbjFkVWkxU0l0MUEtWTdaZDljQ0k3SG55dzVQZzRJSXBIS3lLdmhWVEdOb21ESHNaQTdhOGltZk1UbVg1a0dPM281NVZyUzladU5iYlpCejhNTUVVajJuVWdZYlhVYmo5NHZnN1FzOGwycER6NHd5eFVWRlVmU0hJa0xneE1rc3k2cTd6Rjc4WkxaMXpCMXpyMA?oc=5",
     "flag": "🌍"
   },
   {
@@ -357,6 +501,16 @@
     "date": "2026-10-13",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZGZkVnBYUHpOTHV0RFNKeENjNzhyZW5jY3M3R01Fc2ZaU3gwTWgyaHdGTEtOVzVXeHVRck9FaWpvVW13c1QycDd6a29SRzRsazZFdmRzMW82djNjUXBrX3YtZ3VHZk5FWnJiV1M0MUdzb2FTSDVwczh0NEZFczJNcFFIWXhBamRkRnNpSDZsT2pIUDM2X1FvbTh2TEoxVG95N1ZySm1mSkdpWG1XQm53ak5JYTdkSk5IVWdMVUJuS0ItcFVBNGc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g249f29991a0c",
+    "type": "nl",
+    "src": "Leidsch Dagblad",
+    "title": "Jetten: akkoord over ICC met VS wordt niet makkelijk - Leidsch Dagblad",
+    "date": "2026-10-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPemdOTHpPZFhYWVhVcGtHdWVHLUJBdmZZOHRtMzUtWWhqeGRTWVctLVFYYjk4aGtjMlcyemJtR21CN3BhaWFzOUUxZUUzdFV2ZmlhZXp2clpxZjRQODBrdkl5N3NTNE9vUTJIdjFrV2xnSVU3VDcwSEs5TFlCUGhrQy15RHUyUzRBUVdyVDZOQkVncU9GNEV1eDNqN2pWa1pXbFI0bjdkUGlmQVk?oc=5",
     "icon": "📰"
   },
   {
@@ -756,6 +910,16 @@
     "date": "2026-10-09",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPOGZHXy1iNGxxNXVrUUJLbTh2TzJtU1lzNUJJSWxjQUptQWlFZmJTdFZySWNZQXFDQ3FqQ0JwUUJwZU5UZ3Vqbm11VXVBUGxldTl0UDJwS25zUkZmaUMwaC04LV9vMGFYaGZHV0hZMzVYYUlhelY2YThYdGd3ZjFvR3UwUDc4VzBwdGpWMC04SXh3a0tfaHNKbzVVREM0ZDdKLWJNLXN0dUtSeE1r?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7d433b78ef64",
+    "type": "intl",
+    "src": "UA.NEWS",
+    "title": "Jetten zapowiada ochronę MTK przed sankcjami USA - UA.NEWS",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOM1dfS2ZUdGdzVWJMaWtOdGFEVzVUZ2xWakVWOXBKSXlqSmZ3RjhnZ3VmZkRJcU1Ic0puU3VDZ0lqZmhjQ3pOd2o0TU42MHVGT256QUh0R1BiczdGakkwbVFFXzlrZU9tc2NqUW9yVzRkaW8wNC0wdXFWbTN0cWpsQTJBMzVxYUxCTjJxX1RudEtPcVpjT1F1RkJ6Y1B4cFpwV2xkeWJ3TU1zaldyc0NyWVJLODFBVUVnd3BKYTE2Zw?oc=5",
     "flag": "🌍"
   },
   {
@@ -1514,6 +1678,16 @@
     "icon": "📰"
   },
   {
+    "id": "ged4b9d91acb3",
+    "type": "intl",
+    "src": "Reuters Connect",
+    "title": "NATO Secretary General Rutte, German Chancellor Merz and Dutch PM Jetten visit 1GNC in Muenster - Reuters Connect",
+    "date": "2026-10-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi-gJBVV95cUxQUjhFSmp4Q190ZnZTakl3dW40UGhaTldXMkJKYUxtZWs0c0s0TC0wVjhTcXNaRGJfbzdtTktOTW9Gd2N2RFpiWjZSQk85dE1mS0lINTFZaVBHYnp0cllJNndQRzhad3hsOU5RWDV2OGtfUU5zUHhkckxnRHM4M2E3NUhPUUo4ZGpzZmtGel96Q3Fud3NlT2d3T2Vtc2hFbkduUkFiVHhTX2FwbE92V29xYm9PbkZsRm1uWXEtZkwxUy1USkNWYk9fSFE0a0ZGLWFYM0RfYUhPNDNfMEpPTE01T1d1WG95czNjMXpSM08xVUZZM1p6ZVI0V3JmLWlFaDJxbkp6WWdPb1MyVHl6Q2VsUjNIVTJHaE0xR08zY2lSbVhuSEk2US1vZl94ZWZhQmhBV1JhLWNKU2VHVmhaaTBCRFpYdEpNN1hqcElJa1FIVkh0MzFIaGNkeGIybXc3NmJRNl9sTjNaUEkwbXg2Q1dWSm42OEhVaGdVa3c?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
     "id": "gd035a149d9be",
     "type": "nl",
     "src": "Cvandaag",
@@ -1671,6 +1845,16 @@
     "date": "2026-10-05",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DY3BPWWpUQjJaT2V1TWJHdjM5bHZBX0w0YldLTE41NnBHZV81MXktQWxUX0tKYlJ4VE5lYUhsY2xDRjl3aXpIT2o1bWhBS2k2dmwwNWFwQVBpZDNzbnRIbzdJZWxraEhKSWpVSTRR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga233e8c37afb",
+    "type": "intl",
+    "src": "shelter.in.ua",
+    "title": "Нідерланди забезпечать Україні обслуговування та боєприпаси для F-16, — премʼєр-міністр Єттен - shelter.in.ua",
+    "date": "2026-10-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSHc5NzVadG1DN01MMWlmdzNpbFJObXN5UkhtTTZrSEFsWm1NWFZrMk80cHJfYTB1RU03VUYweUdjak1ocUFvZWE2MFd0LTJLeTNia2Jlcjh6SFlySlJyQ2s4Q2ZQbEU5eHpMRFd2ZEhDMmVRZVcyY0E1cHlTMGFNSXpLT3gwSlNyOFhwOFVpS0hOMXZ6UDl3MHZheWlQcnRRa200aktLWEM0RUF3bWlqaHBrVnRMdEFuNmY1MmtYMkM?oc=5",
     "flag": "🌍"
   },
   {
@@ -3979,6 +4163,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gb6a2176f4d4e",
+    "type": "intl",
+    "src": "Anadolu Ajansı",
+    "title": "Dutch prime minister slams 'attempts to undermine' ICC - Anadolu Ajansı",
+    "date": "2026-09-25",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMkR5OVB3eFgyWVduTm5HM1BHdjhxT3hIZFlFcVZSNE1ZVE82bXYtTHBKT3pETDZvSjQ0cGlmbUx1Tzg1b3lmWnVKb1NlNDlwNjdINEFKLVVxWEVrOThMNU12N0JmT1NuOHZUVklwa1JGSVdVSUtfSF90MHFNRkpPQllpTnpRYVpBbTMtd1NncHFpYV9keHdZ?oc=5",
+    "flag": "🇹🇷"
+  },
+  {
     "id": "gd256483115be",
     "type": "nl",
     "src": "NOS",
@@ -4952,6 +5146,16 @@
     "date": "2026-09-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQNWNBNkZUOUlBSkdqVHh5bHpnR2FUdWVyd01RLXUwNVdaNVdFcUUxR25mQW5VakxXUUtNSzZQM0tJSllZcE9uX1pXbkdldktsTzUybEJuSWlVZTZUTVZCNWRUQWg1V0xaNGFMb24zOWhaUF9wS3RVdUVLRE5weEtldzZDdHRHaUJpYzItSU80UTkwU0d3c0d5LXZ1NnBIUDQ4M3FtXzNfenJLRnk2?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc72453fe40cc",
+    "type": "intl",
+    "src": "Instagram",
+    "title": "Presidenta Delcy Rodríguez se reúne con el primer ministro de Países Bajos Rob Jetten La presidenta de la República Bolivariana de Venezuela, Delcy Rodríguez, continúa su agenda de trabajo en la sede de la Misión Diplomática de Venezuela ante la Org - Instagram",
+    "date": "2026-09-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE90YlBYZWZjUGhKaG9kczYtYWZrQ05wTHcwWDFZSTV1aHEtbkNUdVJzSHJDVExneTBuREUxOVgwVHJ6MEt1aFpKc2kwTkZmYVhpb0E?oc=5",
     "flag": "🌍"
   },
   {
