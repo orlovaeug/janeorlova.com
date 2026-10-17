@@ -1,5 +1,36 @@
 [
   {
+    "id": "g084ee2aebe97",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "'Heeft u terug van 100?' Grotere biljetten in geldautomaat lijken aan te slaan",
+    "date": "2026-10-17",
+    "sent": "u",
+    "link": "https://nos.nl/l/2635323"
+  },
+  {
+    "id": "ga44eb2591e01",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Oud-premier Schoof blikt terug: 'Ik premier? Ik dacht: dit is een grap' - RTL.nl",
+    "date": "2026-10-17",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV3BDZUpWWjdQclVDSmZsaWtBVXgtTk5kbl9pNXAtRmJkOFIzZnNZRlV6VnlHamllUjFnUC0yQVo0MzExLVJDZk1lTWlYS0lkUU5QWGxiWEc0N2xaaW9yOFgtMTNTZ1lFbUpjSDRvaUktWVd5NWhaOVRDQ3M3bjFwYkltV0ttZURnbXhNUE5sQTJ0bi1zTG9yTDFybVh5d0U0c2NPSzd3UkFCREk5NS1ubTlsenQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf8abd3d7e756",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "EU steunt Zelenski tijdens diplomatieke rampweek: ’Land zit al jaren in een vreselijke oorlog’ - De Telegraaf",
+    "date": "2026-10-17",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObzFpeWxneVZwSndZekZxNUNSSXRCaHFLMG44NWE4TXNpcWk5elU5cFQwOFkxZjNRN0FrdXJCblZ6aWR6QTNrT2w1S0tySDJXRUoxVXI0TTZvSXRLX2NhLWI4THF2VEdBeW9VeXZUU01zOGZoN01fY205VTU1XzYyYy1NU3ZJTUI4SDRKMWNLbTVyNFY5R3lrblpHLXRiNWZleFVLQk5kc0tKWnlSWHZURnhMQTdZc2lXZVBDemF2czFBeDg5Qy1YQk13T2dBOUtSQXRCRG5ET2Nwdw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
     "id": "ga8ba2efc040f",
     "type": "nl",
     "src": "NU.nl",
@@ -100,6 +131,48 @@
     "date": "2026-10-16",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUER0WXJHT1FvVGxneFJaMjRnbGQ5OGI0MVVxbS1yZzN3clQ4TEIxRjZRdDY0YWp5WXJ1MEZoQm1RNmYxb1JaekNMZno0Umo4N2x1S2dfaWI3UXFPaXdheVBQZEdsLUNoV0diVnNkN1NuOVNHbGZFVWM3Qlk1eExQMEN0SUVtZUJTQTlETWYwLUlKRjJWUmNWQjgtYTVtcXVhUU9WZmZ0NERqYWZXT2Q3V3JuSVNyNDVxblBTc1dn0gHUAUFVX3lxTE1PTE0tZ2FHcFlkdTlsT0FqSG05aFVwNzhROEFWRGZFWVdiQktCd2RGOGJSVjgtRTlQZk5VSDhoWnlheG82Zi1BVktGd05lLTN2aWZtY3JsaTdfTU9CNHBGSFJQd2lZeVJXNE5TSWkyaEs0bGtqdV9qTWc4Y1NORnlCS3ZXUVJoRkhkeVl2UVl3emp2TEJJdzVmVGl3UmJrQ3RHTzNCU3o1elV3bFpkcTJUMzh4dkxERXpEdTRsZjZOZTJFV0ZUcFFvREJyYWxIOVZMMUg5?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6264a5eef242",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "EU-leiders lopen stuk op nieuwe begroting: Jetten en Sánchez lijnrecht tegenover elkaar - de Volkskrant",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRGZ3aHRVMFlpSk1YdHdmYlFyeURQM1RoMWk1a1pXUDNsVG9SU3RtbXFhbGI4WHpsenlOdEdVWmE4UjFSalA3NjRXN1ZUSnVNM1g1OV9nZG9hdmFuWHlvT0dNRzRWQzBsaDkyZXNRcWU5aHlvNmhLOHAxSElzTUdnaFRrZHptSTF6OUpJMEhEZW9KcTJJdzJHdjAyT2JHelVzOFE2cE5WbHdPSkxsb3ItVVVoTmZCOE5iZVdLVWVQdy1ra0Y1cXUzOXRpMA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ga763c1d953cf",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Met 18 miljard wil het kabinet-Jetten de Nederlandse infrastructuur weer op orde brengen - Trouw",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQakJEMFNtWGlYNEtoV1FyWV9zQm9NeGxfYmY1ZURYaXRuR2NDLWlkUzRPNnYzYnFBMndVc2tuTVhnZFZOSHo1dmFlTVJyOGJLRWlkZm5kaWNDRHV2T2Z5d0ZELWRYMm1WWlltWHlKNjhQMFg0YVVnNFpBN2FwblJncHpRSzNUc1BBT3c5VDExME45bjgtMWxIaHE1eDhkTllxRXdGd1E4b3c5SnlkQ3RpVkFZd3dQZlY0WUZNSEphWnl3N0hsWEpj?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ga7e2cde848b5",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM says Trump is taking the wrong tone towards Zelenskyy, Ukraine - NL Times",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdTQ1QWREaW4wbWdzakVFN2RpQzd4WjRyLUZrbDM2M2hXd1BuU1QwT0lGbTIzdklPbGhVRUNiSFhSTjY2RWgwRk9mZDhjbFNqc2g4b2M0Q1JHTWhrem1xRnVEZ0tJOEwwRVA5VzhPNkk4QzZkNjJNVk1zTWgzMGlhd1djVkRTZGhoa3hRTEpKdmFSMEhKZWlEQw?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gb0547aa05961",
+    "type": "intl",
+    "src": "Суспільне | Новини",
+    "title": "«Зеленський довів, що він — справжній лідер»: у ЄС відреагували на слова Трампа й закликали продовжити підтримку України - Суспільне | Новини",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNNVNydlcwa2dIX0dEc0kySWYtQ0FjejU2OUo4VXVSM3B5a3NUQURpS1JRTElzdy0xQ1JmU0NpSldDdDQxWXV6bTBuTnRwcVpZeWxDNkFUeEJ6NGQ3b08xRklMSk5OYjh0aWdVYlVsSWRxdWZYNlRsb1lDckNRUzVmTzBRVGo0M3RrVldGVndrUV9KZ2JfVHkwOFJ4T0hfM2RuZF9PRTYxWWhvWmFUOFFLZEg0N3VRdmhvNk5LalE0d0hNRnZBeElNUU8xYlZURFRLa1d5V0diZEhmY1Y5T1HSAeMBQVVfeXFMUHpkOGhzbWsyM0c1N1pGTDlRUHBGRkNzN3ZHTVZ2Y01ydVVXNWMtVDhRUndNV1FwQ2ZxWldTZnhtVm9qaHZoTEZRVVdKM2J4WXRBWVVmbjNrZC1CYy1CSWhCT1psSnJJN2RfWmVyakNYcVNwYUxIQ1ViQlFLcHpEVnF1bU1TX25jUldXMnFKQ194Tjk1M2t4MlVDdHBUeGIxcnMwcU1EX3ZPalhiQzJyRXAxTE1Bdks5WjM4NnJuRWZGUWdUMVZkX1hBZm82eWo4RzRyM1YwLUNEbzk0dml1TGU2NzQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -45805,6 +45878,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNOFFiSnNEZjNzM2dGZXZGWk9KdnNhMlg0QkVESWpCV3RVUDcybWNSbWx6ZVJaVWJUS2xvVGJmOXZQVHdZTHg5QktpbTlOS0JoSzRQVHZIb0pSQVNySGR2TFEteFF1T20zNk4tVEdqN2JQaHFHa1Mwa2w5YlVkbFZLZm5KdTV2Mno5dlhnQVBJd19DZzFUVDdXcFFxN0xRVFU5TERTTXE1TVpkdE43RUp5YjZtMUNPTXlNY2ppRVlnb2N4OFJNLVZzWmphbXBtU243S0lJX2x3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g830456a73db1",
+    "type": "intl",
+    "src": "folkebladet.no",
+    "title": "Nederlands yngste statsminister innsatt i dag - folkebladet.no",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNY0Q1SlVuLVJlcDdJaktHX0Y5MHhoWFQycTNjRjJGRVl3c0FseXBQZ1VQWVZFUVg0Qk1hMkxoODE4T3BBOEYzRW9YWjhEX1R5WWNURGEzRS1kMnJ5Z1JYcl9tWUJDQmRBWXE5TlZwV3RwZ0RhR0dIT0F3NmNSOGU3YmdqRXNEWndYWElZc0Nfa2NJYWlPZFBsc05aUQ?oc=5",
     "flag": "🌍"
   }
 ]
