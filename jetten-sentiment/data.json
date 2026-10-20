@@ -1,5 +1,443 @@
 [
   {
+    "id": "g93a8117d710c",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Van Duitsland tot Argentinië: zo schrijft de buitenlandse pers over de baby van Rob Jetten",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://www.ad.nl/binnenland/van-duitsland-tot-argentinie-zo-schrijft-de-buitenlandse-pers-over-de-baby-van-rob-jetten~a41ac43e/"
+  },
+  {
+    "id": "g878e36f98ba9",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Natuurlijk is het babynieuws van Jetten ook politiek",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://www.trouw.nl/politiek/natuurlijk-is-het-babynieuws-van-jetten-ook-politiek~b10a3e18/",
+    "lr": "left"
+  },
+  {
+    "id": "gddd52f7610d0",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Mark Koster: Rob Jetten is een RTL Boulevard-premier voor bijzaken en beschuit met muisjes",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/entertainment/media/mark-koster-rob-jetten-is-een-rtl-boulevard-premier-voor-bijzaken-en-beschuit-met-muisjes/163331364.html",
+    "lr": "right"
+  },
+  {
+    "id": "g1b0597e6f617",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "‘Dat is een interessante vraag omtrent kwestie baby Rob Jetten’",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/video/dat-is-een-interessante-vraag-omtrent-kwestie-baby-rob-jetten/163330372.html",
+    "lr": "right"
+  },
+  {
+    "id": "g807546f230c7",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "‘Wat zegt Catherine nu over Jetten-baby?’",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/podcast/wat-zegt-catherine-nu-over-jetten-baby/163325023.html",
+    "lr": "right"
+  },
+  {
+    "id": "gacd96c6dbe32",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Mark Koster: Rob Jetten is een RTL Boulevard-premier voor bijzaken en beschuit met muisjes - De Telegraaf",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOOUtDdHV5UTBNWlFYY2VxSU9MdlJ3RHdZRkVGdTZ3M0hPeWxRbUNIdnZubjNMQmxwTkVJbzFFWDQwa0I5TUlNb2xUZXNrOGE0WnNQaHpfZWc3c2YxbmwzVHlsWmdCUV9hWXZfeU9QcjBkcldCbEg1bS1oNXl0YmZlaDZkNjZScC0yWTFvbHJRZ0wyWm5rZmItVWRoYlpWVGFXUl9pRjJLOXpSSHlWSXc5SkNnaDNMWWlrN2J5WXZQSDB0TkhxOTNyS0NvWFR3U2lSWDRuSFA5aXlFbGQzelZrbTRaRQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g0ab1f5acfeee",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Alles lekt uit in Den Haag, behalve deze daverende privéprimeur van Rob Jetten - AD.nl",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMVhDUUQ3YXZxRkdzTHZJVlBWQWxnNnkzNWliZFdLbFAxdHpJT2prNWlLaGg5aWZlOEVuV3BqSnJsamp3elMxSTl4SFV6ZHFTRmtwczEybE5FZFJsVlowZWVSb2l1UXF0c19UR3BBdVNSa2g2cDZGaGhGSkpsYlZYNGRlYjhfMVVUNUw1eHF1SmZVVG5Jem9nSnlpOGRzTUZyRnU5Q0FNNkRKU0ZLeElaNFY0SmI?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gca88ea9f7f03",
+    "type": "intl",
+    "src": "De Morgen",
+    "title": "Van ‘de roze wolk’ naar venijnige reacties: Nederlandse premier Rob Jetten en partner overspoeld met homohaat na baby-bekendmaking - De Morgen",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPMnpnZjhLMlhMS1FFcV9OczVIcDlvUUxzUFpyejd0dUVLRUswZTRDNGhTdzhwSUFQV3RnQ1lGcTlMWU5iNE16djNZYmQtVFR5NUdhb09hTHVYQnZILUJUMHBoNHRIY3BiVmxBN1RkeUdmU0w3NmdnakZ0bE9GUlhYYlBxUUlXSmxYSFBKT2pqSzVrTVpxY2lyb05MQTFUcWVhZEU1NlhNX29aZGVuLXJFcDBpXzF1RzlZM01tSGJvMEdsVnVGVVdrNDR6UUFUdVgydWU2Z2daTVdGeWJJekZvcC15QThHRm41V1ZKNDNpR3F1V3h1YlVZaTExNFY?oc=5",
+    "flag": "🇧🇪"
+  },
+  {
+    "id": "g85e0b857e522",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Natuurlijk is het babynieuws van Jetten ook politiek - Trouw",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWmh0YW5LOVVrUlp5U3JZSUxpdUpvRWVrV3E0TERFYndMUldsVHV1MjdRZnNxMFRtekJ0UUNqMGFNcHlrU2REZFVLaUV1UWRvUG4zOE84QV81clF3WS13U1ZGdlZUa0Y1OTczTmlZYTQtdHNvZzQwelNZd1QxMkdjTUhUTnFVXzVoWlZoVnJuV1BDdlF3UTNj?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g479903d415dd",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Rob Jetten is niet de eerste: deze premiers kregen ook een baby tijdens hun regeerperiode - AD.nl",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNXBBMlREWVhuUHFna3BQNk1KV3dvWkFyVVdQYUhpbkNyOFNxZGdSQ1lQY3liNFhVcDNNemNkNTdkQjhtM1ZiLUFqUnVJWEwtYlRKMi1VUXhTT2xHMHROUnN5UkduTTBsekVIeEZPc1lNclFKSmF4Z256ZU5UNzhsWTU2dTR6X2t0QTF5bnNtRks3cHNCbU81eGtyMVpmeWRNSmoxWEd4R21FZUtWaW82RU5EcWpBMkJ6ekFqeElockVFcm0tWlE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge2c7b4939493",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Van Duitsland tot Argentinië: zo schrijft de buitenlandse pers over de baby van Rob Jetten - AD.nl",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQlI4bkIzbFlDLVZZTldEUHJUSjBDZ3VHblJ3TjdLNzYyM2VrTFBseGEzc3FOQzZ6anJKUy0zek5wZXdGclRXYkxjMGlCUHp5Ri1ZakhXVTBEaDdsaEQzQ0xCeFF3QjIxN1dDWnRNZHIyUG5sbVBDNXlZS1ltWExUbmFKbDdyNGVScF85SUNaQmlaQWdEZ3p4OU9GOWw2Q3V3dWIxcDVQNGN5UThBaGRsSFFubTJjWGlRNGVldWw3VDA0THlCN2g4?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g204ed95a562c",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Kabinet-Jetten is stabieler dan zijn voorgangers: er is in 239 dagen nog geen bewindspersoon afgetreden - de Volkskrant",
+    "date": "2026-10-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa21xT2hhQWF4bXpQYml6MTZXdnRxUndyWVN2UFNSRTBwRkJPTGlBeXA1cU1jNnAxWV90M3UtYlQ3WHc0N1M0RXItYVBuMU02c3g3REYxYi11ZUF2d2RFQkh1V0h1NEl0NmZXNTBydFVNNmR5UGtkaTZuRGg4bFAwT1AtN1dYQ2RDakxoQzdTLVBQNEpUUm1hYnVRUTZvdE9pQVg2czlWVmdTMDk0dUpQTkNSVW5EYWdPLUl0Nk9BbHhNMGtZcldGYnU2MUQzd05BMDVsak1mYUxYZFRTN1BTcA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gb74e09aaedbf",
+    "type": "nl",
+    "src": "Nederlands Dagblad",
+    "title": "Kabinet-Jetten is stabieler dan zijn voorgangers. Er is in 239 dagen nog geen bewindspersoon afgetreden - Nederlands Dagblad",
+    "date": "2026-10-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQ3cyYWZZVm55U2ZObmVLTE40TFhoc3FGeVdraFRRU3huQ1lHVEdqVVd4TDRlb1pCSUZfbHZ0djJxZktsQXl4WXpsYW5TNjl3SmlDT1l0NEpySGlCUmgzNlZpZGViVTlIRE1iUG81TVltM01yMFRRZVVBN25FS3plZkxRUFpXZnpJRW5YckJIc1JXWUkwa3V0emlxek45Zk5BVXpYczVR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcc55dced8e77",
+    "type": "nl",
+    "src": "Welingelichte Kringen",
+    "title": "In kranten volop aandacht voor babynieuws Jetten en partner - Welingelichte Kringen",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTnR0aTA3QkoycTQ3MGVvZ3RDNzI4M3pqWHYzTWdhd3VGcXhZekVILXJ4LXh3VUMtTFNOcWNxZzRlaFduUE9CYUxCZ1ItMTljd3hzU0N2VmppajhEYmg2a3lGZFRSeXBSeTFmcWdmUVREX3FzcWlGN0p5ZWotZW5YLWcyaFR3VFRLa0RGdEFvT1cyM3JxWk16OUw5QVljV3RhZDBfcHhUeFd4cDA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gecfcca04a4a8",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Volkshuisvesting nieuwe stijl: Jetten & co bouwen niet voor Nederlanders, maar voor asiel- en arbeidsmigranten - Wynia's Week",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPalpUQUpHM1AxY2ZGelZ3bVRpcG9ZSzY1VE1JYU1qSzhrT3czMnRmNGIzUktESU02aXdUUG01NGtUaU5XemhKNFlHOUE5d2xpS2FDQVo1eVhnaFJSZzRGWmpIcHdfbVZhZEJZempEVGdHeGxmU1lpVFR6U0RhX1RUSUwxYmphc1JGakZ4Mzh4Z3lUT0JPdUlQc0p5c0k3cVlvY0hBVXJBVU0yM0lFSkdtYkQ3ZE5hb3R3UVJ6YTF6aWJQWExUWTlYSmpkU20?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g237fc747a18a",
+    "type": "intl",
+    "src": "Star Observer",
+    "title": "Gay Dutch Prime Minister Rob Jetten & Olympian Partner Nicolás Keenan Are Expecting - Star Observer",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNTU9YaUl1LTBqREVGTEZHeUlxUzJFYnlzazZOU0tIMGx0SW9XT1dQMFhiV2ZPZmNocFZ1RWFabFQ0NVV6a1hkek9xZXFTT1VoNFllMU1hdlNoZHJUUzJvUERYX1BnTWdsQ3BUVUdieXcyenh2UUVRNjIzeHdXTTlEdERwczAwcGY5MmpkRGljQ2xBcjhiaXFTZnJVR1ZhNEExMEh6TDNlRjY0X0Q2WXdRUGR2WjZXeFAxM0dlMm9nWUg0SUk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g59426cbf5f62",
+    "type": "intl",
+    "src": "Diari ARA",
+    "title": "The Dutch prime minister will have a child through surrogacy: is it still legal in the EU? - Diari ARA",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTFNjUFZTU01OZElpYjMwWWd2MlREMTlBcUdoSXY5WmdqWHV1NkZQMHJNLU1jVnBuLUtHcVNVTnVaUVIzbWdZSklidlFjOUdsV3RudEZ5OGhlWG9pWU5rNFhZUE8zOS12T1JGRDR5TFlhWlNWY1NaelFtY0YxeVZGWFM2UkRmVHFOTDlBQ0hJZmFqZG85NkpZSmhYWml4SzdUVVBEczVLZlI1S3RxNWR2YXI3YkN6N2RpczdiUWRYX3NESHQ2alE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga8b59662f837",
+    "type": "intl",
+    "src": "ANI News",
+    "title": "Dutch PM Rob Jetten, fiancé Nicolás Keenan expecting first child via surrogate - ANI News",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPcFFXNjI5WndBQkE1eVhHZG5kSWFQY0U5Rkc3TFVqcVh1RGZRcDA2aWlnajJCQXQ0RGxHRnh5M3ZfeEdWQlpRc01VNXlYejY5TzRPOUI2R3F3QTdnaGdBallKdkVqU2lDQXdkbVJNUnBSN1lUT2VIV0RuNHhvc1VLTDZMaF9xY3U0YjR5UGpqUl9NOEFZaU8zYW43MDRaOC1TU1pfM3NLYzlqaUtwa2gtalpVVVhmWjdGZWItbzJqTmVRTE1panVLejZrMm5IQzZYMUpJOTlLeUJtMHVwT2ExTkFfWHE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf4795bdfe447",
+    "type": "intl",
+    "src": "news.sbs.co.kr",
+    "title": "Netherlands' First Gay Prime Minister Announces He Is Becoming a Father: 'See You Next Year, Little One' - news.sbs.co.kr",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5hTElSVk45TkpyM3Q3eE9YTVhOTHMxcUlGRUhjUWIzSDN6QW5xaUY1VmEwLXVJa1pvMkpaVWNQa28wQmpQR2hlbU44d0VzeVhqOG1aTWxPMXpwVjd0Q1Z1QmpxdTM3dw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga00f8a158fbb",
+    "type": "intl",
+    "src": "아시아경제",
+    "title": "Netherlands' First Gay Prime Minister to Welcome a Child Through Surrogacy Next Year - 아시아경제",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9JQmhobEhfZjF0d055QXQ3eU1mUVVYQmsxcWZiQnB0YTU2QndwNUgwb3B6OXpsZmJVamxWUUdCbTlRc2dlVG5pZ3pSTUE1MGhJUm1jek8xSnZmVXp0SDY2UDJhQ3k?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbee258b944a1",
+    "type": "intl",
+    "src": "DutchReview",
+    "title": "The Dutch PM is having a child via surrogacy, and he wants to change the law around it - DutchReview",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVEwwekxpbnZaZjFPREdaX05KYXo4ck1MS1lDaUhMTTBNOEFRaXN5a3pqZVdXRUZzdm1ZeWxfNG4tRXU5ZFhrSEk3ZWlsSG50ejEySTBrY1lzcnhGdlVXWXExRGtzLXR6LUxIWS1zYzdGSXUzckdadlZ5UVFmdE1vX3luWW1zZ0w2WldieHVFN0k?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbc79876f07c6",
+    "type": "intl",
+    "src": "news.sbs.co.kr",
+    "title": "Netherlands' First Gay Prime Minister to Become a Father via Surrogacy Next Year - news.sbs.co.kr",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFByeU9SZmEwSFFKdl9Bek9DOW5VSUFHR051UTdnS3BHOGF1b2w5aF9xczFxRk91ZVJiUllzc2tyS0RJbVctd0N2akZnWlZMNWJnU1oycWlZMFkzUm42R0N2NUVnRVROZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge298a02f8116",
+    "type": "intl",
+    "src": "ABS-CBN",
+    "title": "Dutch PM, partner expecting baby via surrogate mother - ABS-CBN",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPejFCdW5fSjNZOWI3TV9JUFMxd2FISlVfVHR1M25DbE5MRk51dVBZMURDa0JzOFA1ZUZhcTdKbVRPSUlUWGQ2S2dBUG1GVHY4X0x3OVY1NXhzZ0xiRGtqY0hSd29MV1dIVkpzTG11WV9jZTFCV1F1XzljWUVxMUtJb1lGNnJIUWFJZDktQ3BxOFZUOVp6Ui1UXzhTaGRTSUxxZXB2ci13?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6afb1b98dccc",
+    "type": "intl",
+    "src": "Q News Pty Ltd",
+    "title": "Dutch PM Rob Jetten and Nicolás Keenan are expecting a baby - Q News Pty Ltd",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTzFmLU13ZkQybi0yTEpabkprOTEyamZtaVBhV0pENm5EczdSTjk4Y2Rxb2tjTTRBVkNack5HaGZYX2VIU1FJWTA5UHZUYi1zMWhDVlJiX2x0aUZpT2Jwd0VmSHQ3ZHdnMU91ZThOSTlHUDQxdnpaQlFDQTVWOTFITERBZE9IRS1keWNQNHI4QV9rcU5icHREczBWOA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g220a45bd0332",
+    "type": "intl",
+    "src": "RND.de",
+    "title": "Niederländischer Premier Rob Jetten und sein Partner bekommen ein Baby – mithilfe einer Leihmutter - RND.de",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNeUUwR2RCZkRfWVhDU0FIZnp4S0NtbXNvV0hqU1E3UjdCbGhNQ21mUVNId2FsOG1nWG9vUFduLVNmb3BTRmRieUJ4ZVVWbld4SzRWWFpkZWFqU1NHN2ZYa3ZmTEUwLURaV05WVE5DQVZ4S0JPaHRFWlFNQUJSRmlUanpwNUhtbU0zNVJzZlVCMEI0ZzkxUHFEemtUS0xVTGdORFVtRndpV3NfZ1dDMDh6d0hZWTZjMkpucmNid1pxVnB2V2FXN3UzWUwxcXhYeHNGTkR4U2Y1cXg4RnVDQjZIam1fdElQTWJKQ2FZcw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7b31d0b112c7",
+    "type": "intl",
+    "src": "die-tagespost.de",
+    "title": "Der nächste Leihmutterschaftsfall - die-tagespost.de",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTzNweHhuUXRjXzZqOGxsUmZNWVZKbEN1bklaaHRjWGRxNS1BMmdWbVkyUzZ2UW5nR1BMbzVVWnMxc0xDcE13UmlnUGF1TmxtYktqNXVWcUVUVG9faG1yaHhvYVJlVUxUNzlZMHF4aF9DRk1oTUFxVWdqN2dTM2ZMeVhwcTlJZWlJSGc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g011f35a8ae94",
+    "type": "intl",
+    "src": "EL PAÍS",
+    "title": "El primer ministro de Países Bajos, Rob Jetten, tendrá un hijo por vientre de alquiler con su novio, Nicolás Keenan - EL PAÍS",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOVTJVSUxBaXhyZy1wd09Gc2MzSGdhWTRfeFM4U0VBbGxqeU5kV0FxYWxJS3BRYy1rYmw4RUNRM0c1eXhlSDRHRXFvYndrcHV3aFVYQjJQSm1sVUxNQUktZ0JQelRuVEJSamQ1ZnRFM3dMbmItbWJPOTJoV3VDRmR5cG9oc25ncngwZlBBOVpsZnpObHp3bWlRTmhSZW1FQmtDVjVNdG5RNnE5VE4xNEZyZDIxOUQ3NzF4RFRpdUpiLWx6cDNESl95eUhiU1pMUlFCZ3cxT3k1MXnSAewBQVVfeXFMTzZEQVJOeXh0TEJJU1lNWHFEYVVKZEN0YmpBY2VrcnEtcDk4RUNJVTN4NFdyNUkyMDVvRW5VU2h6NFJzRGRNLUtVdGhXTjRDbGJxT2stbWVVY3RtZ2ZXbXFIN3VYT0lrMFNBd1ZNTmY0RFByTHpyVG94M0l2eDNJVTYxcFk2bHVNTzlnZUVrLVRsWXZqSDFZbFNYUTRQYmpBZ0pYUkhKem9Fb3E1czBQWlFKTWVaZld6YlNkUWtYRFhYdWRVRUoyV1NZdFZLYjZaY1IzbnJVWlJLYzBFX2RnbkZiMzE4WGYzcEFZaTY?oc=5",
+    "flag": "🇪🇸"
+  },
+  {
+    "id": "g40c3720c4622",
+    "type": "intl",
+    "src": "elDiario.es",
+    "title": "El primer ministro de Países Bajos anuncia que espera un hijo por gestación subrogada - elDiario.es",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQnpJUFg1d0RNaWI0VDg1NGJYMHhtNjBpdXNla3dBVGtDRThKTFFLS1IyczVfOXpIOG9XWi13bTVoV0VVUEpIamN6VWsxc3c5eEREUHliZ00tWnVIZjNCNGhnZEJVNlc3U18yY09BaE5IZUFDSnZGUUtQNnIwNVIyclYwUUhDZHNJeWhmSnZ5OGc4aEZhbTlKdXdYWUhPRUlpT2REeXZVdi05VTRhWWQtSUdibndva2k20gG-AUFVX3lxTE9Jei1OZ3BsVmhfeEdtT1FkQ0g5bHRVaGE5cUhKSVdkUEN6Q3UxR2U4dng0Ry02bTZKMENXZEVsVWo1TkhFa1k0eEZ5RmNjWVhlR1FoV1phbEJ4NzJ4dm5LOUJRc09vWWtacjhHbl9mTk01elZNZVlOaml2WkxuM294OXR1am42UDAxYk13RkVpM19DMG9yWGFUbFRKVWhaX2ktZ0NaOUNGeW56VDBWNUJuVndUNlNYTkRqSTE0QlE?oc=5",
+    "flag": "🇪🇸"
+  },
+  {
+    "id": "g2deaeb70e17d",
+    "type": "intl",
+    "src": "Diario Público",
+    "title": "El primer ministro de Países Bajos anuncia que va a ser padre por vientre de alquiler - Diario Público",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdU90WW5mRDNLaEdjM3dhbmZ5c3JIeWVwc0RKN2NyZE9DYzk2cFRhUzdYQTRsckhCRFcxbmVYSTNxM21Sektiamtkc1NtUDczVFRpTDNYX0I0aGdUVWcwQklER0RvZ0ZyOEhweGJrUi1MQmdoV3pCQTM2aW9rMEZyd3lUZ2pfR1hGcFBfVlNOcFFyZ2UtUzh1LdIBngFBVV95cUxQWGxSb3lsRTVXd3RFS1Jmd29ybHJ6aFpSYk1nb1luWklDcldSQlZ3Q3YzV1lmaDlaR1VXQnZHR3ExaG80SDhRaHJBMTlCMlZBelM3U3dzYUZkdkJNSWV5V0lpUjdFNnVOdFVaMFVoY21XYTF4UDZiTWROOE5La2xmMm9ubUN1YzNNY29HTURoRExVNURhWXpmaHZKSk1yZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g17663d9c0997",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "El primer ministro neerlandés Rob Jetten y su pareja esperan su primer hijo por gestación subrogada - Euronews.com",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV01CSVBoTVhxTUdDX0JDc0d6MTR5TnlGWGR1cVVfclBUYk8tSHphT2dRTFlHa2N1QnVydFFMb3lOXzlGc3V3aU9VQmxmemFmRkxlYllrWkt0MlV4QnhUWGJaQ3EyMXlEak0weklrTk5xWmZWRl9JcUJqNWczQlB6UkhuWGtmOTZsZHdjQ0hJNXRWbXVQOFBpYld5b1U3LXl1ZmVOMjlEc2VPUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbec7fbfcf514",
+    "type": "intl",
+    "src": "Diari ARA",
+    "title": "El primer ministro neerlandés tendrá un hijo por gestación subrogada: ¿todavía es legal en la UE? - Diari ARA",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSEU5aWw0bndScU0xNUJPcVc2UEhOdF9JYktiNmc4cVpZVENNRnp5N2xsQTNaWjhkYnFBc1pjTnBpVDhacmpDVkdHdTZ1WWFQLWpJY2VCT3RnUDVaSDFNS3hnZ3N2TEQ3UGFVQkNhRGlPeWQyWVBaeENiMU1DTDEtZnc3Qk85c1VYQWZFZEZld1VlMHNqZE41UE1PNGlIb1htVHIyeG9PQkhmRjBq?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2572d2a73d18",
+    "type": "intl",
+    "src": "El Español",
+    "title": "El primer ministro de los Países Bajos y su prometido serán padres por gestación subrogada: la gestante es amiga de la pareja - El Español",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQNE5OUE9uaV9ad2g5MTFNWlFIWnRMZ2JDd2t5UndjZ0dqeTljQUowNF9NLXNnSk5TUlFUVEkzQVQ2RTZSWFNCRXFRenlYczZlMl9FMFN4emRLTmhjWHdzbFcweU9zWmRZY0VPcWhrWFU3eXRvclA3UUJwUDYyemE2bnIzenRzRWpMaDRON0tHZVA5ZU9tNlNOWmhZUmdObE5aOHE1MjZPMzBaY3NFMi1FT2Z0cEp6SnRPLXFaMUJaaHFhbTJxaVFMNDNHZmxZSzNzZjFKN1dwRkpVVWhpM3F4M1lWeThER2NsU3Zxcl9ueHpUUXE0QmfSAfsBQVVfeXFMTWdfd0dHMEE5VmZ1bmd1RDlYeVVnM3J6ZHl0Q3BmQ3JPc0YzOVZtTC1Na25LM2Jua0FWZ25QSHlRamdUVC13cW1zRUsyQ3FTeHEwdTdSOTh1bk9JVGlSYlpNTFYtTlRtYkhzNDVza04yakpZTUFkS3BfYVVXU2FDRmdGejlZc21HbHdGa2l5cjNZc2w5bkpTTTlOSEFnYjBJRGtBTFJtSkZodmF4VXpIMWFFMWRqWENZeFhxc0J1NlBiVFZvVGZLbnlTWWp2dno3Wm5ZUU1ZR1NjOHdXRHhmSW50N3lGcnQtY3A4NGpFYW1FWkxjMFdkVEtSREE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbe44718d97ed",
+    "type": "intl",
+    "src": "Revista Semana",
+    "title": "Primer ministro de Países Bajos tendrá un hijo con su novio; así fue el anuncio de Rob Jetten - Revista Semana",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNenBhOE52akVQTWdWd2NNekZybjRFS21ydzUwVmxxSG9Tb3RnbXhVelMwQmVPVDBqSWUxRmFhaWV4QVZmSWFESkRoWHdNaVhGQ0ZQb0FuNmg3a3VHNHdBYVlheW5uel8zUFRmT1MxZzJVUDRRS0p3TDhZaDgyWGpTOWtCUGNHVWVieEJWd255ZFN2OVA5RjQ2YmhaS0N4c1V5dFlBTkZrdkdBRjdGU2JCLWNJWFlKWkt4RlBtNXp3cjU0UnNhM056YU9jYUk5R2pWUGRWZtIB2gFBVV95cUxNbW1tUzBaOVVRNGxPWWFVV21peHZ4UHNIWGhTeWxZTS1FX3BLS1JMX1NQbTBYSWdScVozT0hOQXN1SUc1M1UySGRER2Z3S1VxTFdmUTdpWVNWXzh2OU5LUlFta3RIZHlDMkZrVlliQU5EcWlHc1F3c0NjWExIVnNEcVV3MXZiaGFHVTFETlhnaUM4RUxlb2RuMDNNRDFuclBvNG5ZWTZObEM5c1h4bmh6aEVlZlJqbkpDUm9TZFZpWV9KNGVzMU5mRkdyYmJNeDdRRndYVUhVMUJBUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g62c4ff4a0a63",
+    "type": "intl",
+    "src": "la Repubblica",
+    "title": "Olanda, il premier gay Jetten: “Avremo un figlio con la surrogata grazie a una nostra amica” - la Repubblica",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOTNwSEZpUThMSWQtWURBZzY5NG54eFZra1pybW9fbXJBQ2lFNC10dmwyWTJYaGU3V0JIRHpwWUNfVERxXzlNQU9qcVJDalV6QWRkLUhuUDVaU004NGxPUVZKRXhMV3p2R3dTQlM3U3BqZ092U01SRlgtWjRfUVc2Rm12UGxpa2FqLWY3R21pSHRadVNtUmtMWFY0QUdtdHN1bjQzNDdCM0dCeFRReXp4NnYzLW9tX1F2d0lvdHNiT3NSYlHSAcMBQVVfeXFMUDkzcEhGaVE4TElkLVlEQWc2OTRueHhWa2tacm1vX21yQUNpRTQtdHZsMlkyWGhlN1dCSER6cFlDX1REcV85TUFPanFSQ2pVekFkZC1IblA1WlNNODRsT1FWSkV4TFd6dkd3U0JTN1NwamdPdlNNUkZYLVo0X1FXNkZtdlBsaWthai1mN0dtaUh0WnVTbVJrTFhWNEFHbXRzdW40MzQ3QjNHQnhUUXl6eDZ2My1vbV9RdndJb3RzYk9zUmJR?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "gd1899a49b37b",
+    "type": "intl",
+    "src": "il Giornale",
+    "title": "Olanda, il premier Jetten diventa papà con l’utero in affitto: l’annuncio sui social - il Giornale",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNFptMkh2b3lCbVZCQW9PYjU2QnJRYUhuT2RrdTRiaGRISkxnTGQyMVRLQUxkZWx5eEIydWZiLTFQaEpMU2piOEROVzNRVTdZWXU4aVdGS2lmdnBPdFFaSTJEc0UwUFZBTW5BbnM5M2otMUdJZzcxTGFTd3pmQUJjbDZvYTRkVkhoWHgwTDRDWTlrOG81VzZiQ1hKdW50SEhldV9Cdkx5ckRnTzJHM1F2WWJnb0RSMkVWaURaTU9md3I1UUt4TnlpaDNOSHBNa0Z0?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g875e95f1884b",
+    "type": "intl",
+    "src": "Gay.it",
+    "title": "Rob Jetten e Nicolás Keenan diventano papà grazie alla GPA: \"Sta arrivando una persona davvero speciale\" - Gay.it",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPa01qSlR1SzdMNkNkZl9qa3V6MTZuUEFGdW5FTFBDcnI0c1Yxek9kNHMtMG9ubl9XOWE1U01DcTBrYlBBVzFVbnUwdV9SeDRTMzVlS0VmeDBMWVRPWUNEWmo4NGhCdWs4bVlaSG9HT3NsbU5TdzVKRjNQVm9ad0xXTGNEWQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb0ef388a08f8",
+    "type": "intl",
+    "src": "TVN24",
+    "title": "Holenderski premier spodziewa się pierwszego dziecka dzięki surogatce - TVN24",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQc3h0QzROekVXT2JHTUNvZDJwRDZKelhIZ2FDZjRHTGQ5bVgwVE9IbE9XWGpRNUVxMWo3V2RiUkFsUXkwMWoySkl4YzBsMzNVcC1sSEpXOE13SzF1Nmh1SzAwRElBQXFQVm1EdVpVdE5ieUpURnk4bjJNaUQza0xFWXpIN3Q2ZXZ3WkY3M0FpdWVhWm96STBjajJFczhtUGZHaFphWlllbFdGOHZuTV9tVUtWZnl1WFhY?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
+    "id": "gf7cf691ac832",
+    "type": "intl",
+    "src": "WP Wiadomości",
+    "title": "Dziecko premiera Holandii w drodze. Urodzi je przyjaciółka pary - WP Wiadomości",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQWhiN0IxTFlwdnduOHNSQklNTDFSUk5uY1RxX3cyWmJMd25EUVRQc29MdUp0ZzRwa1VMZDNpOHNBX1VXQ0ItTERzbjNCT19WT3R2OTF0Y2tySTRLZWtCX2ZFdnJKX1ZTdC1VTFMtOUVKRENZTGVDR1diMFExTlZ5TzdJR292SlBSOXFyZ3V4cHplU1BRRmVaWlhqRFVKaWRIOFE5S1dEX3A?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5a39bb11ff4c",
+    "type": "intl",
+    "src": "o2",
+    "title": "Premier Holandii i jego partner spodziewają się dziecka. \"Jest w drodze\" - o2",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSmhIekl5c1BTMkhjNXI0bjJvMEhseXRnOG12WDdvOEQtcEgzcnNlSlpoOTg0R09oNmd1X0VIdzNWaWwzMzlHcG9zazc1Z3NMQkdjTlhYN3JBczBaTThTWk5Za0JHYk9pV01ZT2FaMjNIc2JQM0ZYV3R5T1JxcnBmdVFSZERiZllkZWNVcU9tcDRnWkF3VTlELTNvNWRFOUU3b0pvNXhUeXotdURMSnZub3FqU2JZM2s?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge4214ac8e89b",
+    "type": "intl",
+    "src": "Super Express",
+    "title": "Premier Holandii z partnerem czekają na dziecko. Śmiszek krótko: \"Europa po prostu idzie do przodu!\" - Super Express",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVFVYZ3FTeFctdWRWdzVjS1A0THhBWW5tbUVHUlQ4V0ljV2hwV3F4M2ZJWU45cGpJRzZiOTNYZGpHTzdibjR3MWR0ZWJKMDY5UElFbjVKNnl0cFk3b1dDdE42QWFNMFBFOVZfM3ZBbFBwR3FMMTVFX0VCUWNKaDRzN0VwSWZZQnhkd0RHd1B1eEhPUS1WSkhURUhhQUZrLTJYSXB6TVhvNk9QWVBjbVF3SllYaEtlTzdvZXNWTHNKZVJIU0tUcWU2WmJBN3JpV3g2NURfSDdXeTlTU1FuSk12SVBETlBjY2g5NG9iblF1QmktNmtnNnJF?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga7f9343459c5",
+    "type": "intl",
+    "src": "salon24.pl",
+    "title": "Premier Holandii z partnerem czekają na dziecko. Urodzi je surogatka - salon24.pl",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSkRMS1JrS3kwbjNvYjZ2Vzc2NDE0cUtQQTVTTkREVEk5SmNkZ01QUlJQTGNsaDlSWmVtS0YtRDRIRlNaaFdRZEVESWVOZ0pLUUE1dmtKVGZkdDhIZjk2QWRGbWRnajR3THV3LVZBLXVWNUVwWmctMmdYdjI3aGtHc0NjbXpJZW1SR2QzTkhBQngzaTY0Y3I4X1NEZmItUlZlYmFUTy16X2FIcE0?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc0a2555050cf",
+    "type": "intl",
+    "src": "Radio ESKA",
+    "title": "Premier Holandii zostanie ojcem. Pokazał zdjęcie z ukochanym. Polski europoseł komentuje - Radio ESKA",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOWktpbnlqV3RfZW5uZl9uMFoyQVd2aU5oVWMxa0JFUE5nbm9XSHMzdUlBejFCN1VVdWlMNXFsSzlpY1BMc2syaXRNeHBwQVVMVGp3UmlaOEl0T2pWaGMtRG1VZmpXeVV4Vkh3ejN6b2swV0xYRE95NGRzZkVqY3VuWGkyTl9mQjZISnROVXloa1Bta3hSRnZZdkNJRDU5MVV6S2luaTFrMW5OZ2R4U0tubklDeGRINjA1aE0tQ3pjUVBqTGd1OTZ2TElsQWZCV0RtNk5ySVRRMXo?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9c7ae7de661c",
+    "type": "intl",
+    "src": "opoka.org.pl",
+    "title": "Premier Holandii zamówił dziecko u surogatki - opoka.org.pl",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPemRFNzM4cWRWQ3lka0FXNE5jSlZESGwtcFZmWVpmTTZQaVJBcnByZUhnakJfalJmZUFFOVd2N2VNUlJuSlhTZjVwRDJLLW5tWUNRMThsZkd2VG9yRUd1Z0ZpZV94R1JCWHVKOHVXU2xDYi1YWmducHI1aFdFQWxxZGc5MWIwdEgt?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g362aca40c665",
     "type": "nl",
     "src": "NOS",
@@ -523,6 +961,526 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWjJNbGZQWm9hRWRxdEozXzQyRVhIYkE5ZlFQYnNtY1k1VS1aZ3FIYk01VWtreHUxX3N3eTdDVlBzRUNPVzZ3akNVNzBaRTVSOFpaVWpSMnFDQ21jQmhmR2hGMEt5UHhwOW0xWkpFcktPQUwtS05MN2p3RVFPeHozdlpvUFdSZzBnVFJQbGF5NUF0Sm5zSlBRN0FZVG1ZR05OVFRWUldIOG8xS1JjaTZrVlRLSUQyaUtVdllBSnV3?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "g55f52790423f",
+    "type": "nl",
+    "src": "Omroep Brabant",
+    "title": "Premier Rob Jetten wordt vader: ‘Tot ziens in 2027, kleintje’ - Omroep Brabant",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY0FTMk9CZS1sUkFLTFhHMXVsNy15MmNRVW1CYnBNMjdFUzEwcDdPaUl5NlFNVHJ2OUZHVUVlOHFoVWI1V0xXdnFFaHRISnQ0NHQwWjN5azZvSm8xeDRsNXktQXRabGhYQU5ZUWk1Q0wwU3BUUDYzc3pUN1VxRm5Mb3F0UVdrTElDM3pZLXBqVDlQdTFzcWdnOHI4X0ZvNzBCeFJZ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g95cdde0e3ad8",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Rob Jetten en zijn partner krijgen kindje: de regels rond draagmoederschap in Nederland - EenVandaag",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOG4tTHZkclllUkRwMUZDM2FVclJZenQza0xITEUtdHdrMU5CelcteUd4cUZ2dDdieVU2a09FX1VhVm1pVVp0Ylc0bW5ZeEU1bGpoWHVEMVB2aW85SExxVm5yQ1Y1ekFVVmZVSmZlRzFaazhyaHdHbGVWdGg4UUMxVlpNWlpOaGZpQlhRLXJMc2UwOXpWTE5wVHBEMWVZNXltMnNwek1RTFJOY0RWMGJwRUlGd0xtcnQ2OEI4WTlzV3BSeVRQc1U5RWY1aExlTE0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g630aba2b6a73",
+    "type": "nl",
+    "src": "Omroep Brabant",
+    "title": "De premier verwacht een kindje: gaat Rob Jetten met vaderschapsverlof? - Omroep Brabant",
+    "date": "2026-10-19",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZEJfbFZDSlhDelFibXZYQ3pRc2VuSkhtVHM2NGQwQkczSVk2Nm5HUnVaOHRwbG15ZWhzTVZFNUN6Q0ZJTHhnSHdZaGtwS1pLUGg3ZVRzNzlKckNEZmlOYng3RkM4Nnp2ZnpweU9TNkQyeFJjbEhmVGhaT2JfY293aXFsU2thQzNzZVVnV1pnLXFhTU1IREgyVGk2LTA0MHliNkd6bG1xVktRU2VnMFlXV2VR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3f221397ec77",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Premier Rob Jetten krijgt kind met verloofde via draagmoeder - RTL.nl",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZmhzTUhYaXhSM1U4cTJaaXMzdk5MSk9hVnNwcVBqVm9keEFXZlBBM0NFcGJSWmtSYmh6X1JhYnBfbjdKYWQ3d2dOWW5DMVJZak5lTkYtSHFrVlN0NU5FeDVhZlNWS2pOTjl3WDdUclVXd2NCTHhfcE9iQjlsdk1IbmdIN2E0bE9vclRhWkJyUEVxY1k?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge16c4ce95dc5",
+    "type": "nl",
+    "src": "NU",
+    "title": "Premier Jetten verwacht kind via draagmoeder én wil wet hierover aanpassen - NU",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNOS1xUVZtZEk2Y1prbUxDQ1FKdGF5RnFmVXNRY2VEYk1yMWhpZkhCQloyZTBPMnQwS3J1aWtBQVZEZWJXWUlLelNtZGZIZHg4TW80NnUtcHdSYVp1MFVfV01rQ2hlM29MdThPYS1leVVQdmYzS2RMNTZXNzdKcTgtcDBfNkRMWGE3M0tPNEtTOU5YTXhmX3Z4dVRyNXRfQUM0WEZ5MkhvX1I3ajBuMXFlVmxzZnQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g67d7812202a7",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Ook nu premier Jetten vader wordt, trekt hij zich van vijandigheid niets aan - Het Parool",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOb0swdURhdXVkb1lTUkNGZ3BobS1aNDJDcGtUVDlKUDVxdVAwSl9TZThCdG1CVTd6Ymd4ZkQyamduVlZEbWJCUTNJMWp5ckxlalNGUGZ2UnktNkdMZHNNbzl1Nm5BSExXTFJRNjhyNHQzd2xqUG1ULXFCWEhJVVdPZzJlZDJ2MU1hLXVhQndFMXFGcmxDSkhhSmJ5RGpETzY4MmZIUzR5ODFSejRqd1FJa1RUa1R0enBQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1b655d317ade",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Premier Jetten en partner Nicolás Keenan verwachten kind - Het Financieele Dagblad",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd3IyRG55NDU5eFI1MnlIcUlBaDNmWXpkWnFBMXlSZlp6SWs1SmNfV09OVEJHdnA5ZDM3a1JXbFQ5RzZYVDJIMVpxQ2VXLURzcWc2UFdvXzg0UE92OFQyRWtGUG80dUlMSkVVejdzYXdFR25WZFhaaGt3UWF0RWdScEtuWGQ0MlcxWmlaX2JHLTk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf685bc3994f8",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Bedrijven haken direct in op babynieuws Rob Jetten: ‘Van Tweede Kamer naar babykamer’ - AD.nl",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVENuVUE4dkFSNUN5bFh3cGMzOWJsSE93emVXXzBFLUtJOGdRMEF1aVdXQnNkVFJ5QVZ2VjlxazF2NERGdmVVUG85bENrWUJZZm1WU0ljUmhMdnV6dWw3bFl4MF9ySmd0eUtRajhscjJjV0pEQXlYREdHaU5xNExWaElRby1fYXItQWxfVjBmLU5nSTNfY2EzMjNVSEl1dlE1NlVrdjZqQi1LdUpWMEwzMDJaWE1oRklFY253QkZFbw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gac172f897b41",
+    "type": "nl",
+    "src": "www.rodi.nl",
+    "title": "Calandbrug in nieuwe prioriteitenlijst kabinet-Jetten - www.rodi.nl",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTnVQallJRUdxaGxSRlRlOEEzNnZuYXg1b1hVVEg2R2Z4UlNPcENZM2c4QmRPSE5PR2xTNERTMEMxT0VKWmtrY3dYcW9wT2NKNFN5SFZqbVN5LUR4ZmdfR082VmtfYVRfWU8yWEhhTG1aTU5PSmFNZXE5ODVYcUdYWTc4NnZBV1FXRDNJbE02V3ZfWjczRTJUdzE3aHJYQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9c27f3894928",
+    "type": "intl",
+    "src": "Reuters",
+    "title": "Dutch prime minister expecting first child via surrogate mother - Reuters",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOejNmODFMODZIUU04aDBXRFhqa2phVUQwR0M3aVlqNWFmYVNnMmF2WXJRYkZXT1VxOGhNVUYxSFlhMGJ6dTVWalVNeGtvN2RxQ0VyMUpSbnBBSzVaMEI4aHlQSDFCa0NQLUFSMmI2RmxEV2x5S1ZOZzAzbHpoc2lxelUzWUpaZXpIbVkzUWJWX25MaUlpY0dXbG85ZlQ4bkFaR0tidWFXdWU?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g022487844295",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "Dutch PM Rob Jetten and partner expecting child via surrogate mother: 'Someone very special is on the way' - Euronews.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSjNUeVVCeWQwT05RTXV2YkFoZGhHTXA3aFd5RzZMVnFmSGJ2TzU0VXZoV2hWSGRvRl9NbkFnd2VnVjI1WlkwN1hhbXNYeEZJdVY0SzY5c1pDNHgxbUx6NEhudGt3R1RxTFZudVdDMlZEckx2MzFOWG9xNHJvZDVla2hNMmYxX1N0cnZFZFhFcUphcTItZktwZ3VGQVZ0R2FYUy1XX1AyU3NOTHJ4ZTZ1U0NZZDBnUWN1NEpva0lGX3EtQl9a?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd7dd47828036",
+    "type": "intl",
+    "src": "DutchReview",
+    "title": "Dutch prime minister Rob Jetten and his partner Nicolás announce they’re becoming fathers - DutchReview",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaEdjdkdtLXJiYlJMZ3AtMExNTWg3Zk02Vzh5b0VaQUJfTUtoNWdqTVR1TnN1QnFta1BIY0NfcGF5NlJIeGp5cVUweUpaRmJ5VDg4cFJ0OHhMR3F3dU5aYjNPSExLR0tTUkU4bm5CVlNDNEtTcW9Xd2ppcWVIXzl1WHlwTnpXRVhnSTlWMlJ3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g500628e73d8c",
+    "type": "intl",
+    "src": "Informat.ro",
+    "title": "Dutch Prime Minister Rob Jetten and his partner will become parents in 2027 with the help of a surrogate mother and an egg donor - Informat.ro",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNUWppVV8wZS1MZHluV0NvVURYTWR1RU5OSE12Q2x6ZnVPNTgxSzJqUGpqUGpMbEVhYk1ITndzZGxhX1BOSnd4T0RiVzA0dGtGaFIzMGFRU2FlS254UlRBcXN3amlDd2xURzdic1pEc2lndzNPOEwzMmhlN01ETF9YNllEeXdGVjM1VUFLYllJcWtzbHR0ZV9FVFdyV2duSkZTRkVPZXZoRnB0WDZILUJhMHVJZ3YxZHBLQi1IaWhMNVVuZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7bab3c9db9de",
+    "type": "intl",
+    "src": "UA.NEWS",
+    "title": "The Prime Minister of the Netherlands Is Set to Become a Father Through Surrogacy - UA.NEWS",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNYU4zRm52bTRfengzSTcyR05CelpOTEMyU2tCcWJZMUw3Y0x4dWswNWlOZVo5RGZIbzEyWFRCblBCNzhPQnZwblBrRmlJandVUnlKUWVldmhQMG5tMW0zVlVGLXJoUUFWMFVfM2U2ZVJ1X1N6bFRLUFlxMmZSc3FRV2Z1dkQ0QXhqa055Ujd5Z2RfcF81?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gaf71ac6ffa8a",
+    "type": "intl",
+    "src": "BILD",
+    "title": "Holland-Regierungschef Rob Jetten wird Papa – per Leihmutter - BILD",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONXcwVE4zdkpqWndzeEdEV1NmZklDQU1RMDBBc1l5LWpRLWU4bnlKSXE0OXFtbVFFRXNhNmNpYUVtTkVOdUJ6SzBxZkR6X0xjcGpudkhhcFNneHZZd0tWbjFqelpBSkpIREc4QUpsdVdDNHgyZmxzWmk3ejRZUlNoR09ZVTN4SXl1TzdqOWRVbElCZ1RCY084N0xxcE1ucWV5S1I5dkVUWkJ3VS1sWk5iY1ZBZV8xOGdQRFBKdzN0MFBhZ00zODdDY21HYm8?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "gb4c87a9ebc8f",
+    "type": "intl",
+    "src": "Berliner Morgenpost",
+    "title": "Niederländischer Premier Rob Jetten wird Vater – mithilfe einer Leihmutter - Berliner Morgenpost",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVV9RM1JSc1hFbEhMbEpwVlBjRl9IbzFtdlY0NHJNVERBWDhVVEUzUXR5d0c2bkFzZmVXVVFpMkdJenVNNFVkdTNXSm15WkIySl8wbWI5RzNpS0hmUjl4NGxZN0Nna1FhZE5kSHRCRWNPcG8zQm5TdFJHdjVpVTJnbFJyOW0tdkdBblVFWGlHUmhVN1BUb1NjRThhTjh3MnlEcm5fTWZ1YkhueVdtYXI3cklPM3EtQTJtVThiZ3pveUhseGRNa2hrcWNlOFB2X0F4VFRoWklZd2QtemNt?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ged1f773d39dd",
+    "type": "intl",
+    "src": "männer*",
+    "title": "Babyglück für Rob Jetten: Schwuler Premier wird Vater - männer*",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMWdkZ2oxeWd5T0tXeDZKcTl6R3VybUF3blJrUWIwS05kdHhiOFYzamtKU2YyR1dMdmg0Mnl0dVlQVWs5Rk1vQWk2SnFremtwRVAyOGNMWU9QX2FnaUpfbDBaYkxXYnB6TktHdGlySVJUeUVuRV9vSWtld1FaZE9SaHBidXlGWU53?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g669e0e510e35",
+    "type": "intl",
+    "src": "DACHIST",
+    "title": "Jetten und Keenan erwarten Kind per Leihmutter - DACHIST",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYl9LMldfTE5UeFF2NVFrNktBZHVZU1BrVk5peXd2NEFZX0xYYVZyaWhmWktyUlMzYnNUeThpUUdqRXRuUV82d3h2eWxSTWR1Y2dUSlFOS3BRYThUamdqT0JPd0k2ZWgteDN0SWM3NlJzd2EyNEdKNFdibUFxVlNyWlo0QjNmTkxXTG82RDNEeExuaEtWUXdtWUdoZXI4X3VrQjZMVg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g33e723a0fb59",
+    "type": "intl",
+    "src": "Spiegel",
+    "title": "Rob Jetten: Niederländischer Regierungschef und sein Partner Nicolás Keenan werden Väter - Spiegel",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPVXBaT21BaW96d3JsVENFTWtzZzJmUi1aeWVzcUpVTnc0eFdOcVJsclVpdC1tNWFSTXVGeFJ0amtCMHQzeGtBbEppT3JOZm5aeVZhV1h1RktkSkh2MElzXy02eGVLRlJjbE9uZ0pFRjF4RWdvTl9MbzdlRlg3X2liMUpUYVk4X0lGb0s2aUtEVGpYLUVhNlZOUUMxdVZReW94czY0NDFNOTczWWdiX3Z3UFI2UGFlUFBRVlJLWm1VdTZxZHM3RkpPeUwyd3R2aWNnUG96US1GTURsMVg4TjBTX3I1RXo0eTNidGJ3c1BnYWo?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g7428008a0aed",
+    "type": "intl",
+    "src": "Informat.ro",
+    "title": "Der niederländische Premierminister Rob Jetten und sein Partner werden 2027 mithilfe einer Leihmutter und einer Eizellspenderin Eltern - Informat.ro",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORUtueFduZFZfdlh1TEd5cVMtYnN4NmxpeGw4S1h5T3NkWGdMelBCdkMzSjNUaktrWlpnMktzRklkLXRKblNrel9yTlQ2cFFVSk51dlE3THVXaktFa19ESjFUQjlUcXBkSmhXYlJfWE4zMVhicjVVck9VSzBnOFNrOFRnMGFRa1BJWmhhUU4tVXdQY0pxUjktYnk4SldkZnFEOWR1M0I4c3lYeDRMREE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5a7531e10dc1",
+    "type": "intl",
+    "src": "Kronen Zeitung",
+    "title": "Homosexuelle Beziehung - Premier der Niederlande wird dank Leihmutter Vater - Kronen Zeitung",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTFBnRU5ybDNhaUxhV0RqRWVMWGIxUGpza3NIVGMwSlJYYlhfS2dudjdoem5kLURzS3JJT29Bd0U1VTVkZw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g9ef1c6d5af3b",
+    "type": "intl",
+    "src": "Kleine Zeitung",
+    "title": "Niederländischer Regierungschef und sein Verlobter werden Väter - Kleine Zeitung",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUHVfRVppYXM3SE1QOGZJY0tISnlvNURYMjV6bWkwdGI2bDk3VmlRV1Jidnk1Wk9RVjVOX19ITVBWVnNubV8xOU03elNmaTBNdWcxWW1vMnM3SmxoaVZMYXM2dFl1Nkp0VVVyM3FYNWlJLUd4LTFnQjh5clhPRk82bjJqRExMTGxCQmh4cjhUTUlFZnhZYWl1cndLdkpPUUVjNzNiZ3hTZDR1a1VhWWR6bw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "gd374b721c2fe",
+    "type": "intl",
+    "src": "Spiegel",
+    "title": "Rob Jetten: Niederländischer Regierungschef und sein Partner werden Väter - Spiegel",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOeFJPUG9vS2Q3U04tWk5idzdXZDgycktvMkZZSzNIMmZUZHp2MWpJaVlqeE93TVZwVno5Q0FyZGY0aWF6b1E3Vld1VjBXenB0ZllFQ1p2d2pZVGdsbWtrSGYtR0dXQldkV2NQZzI0cHItd0ZjRHR1WlM3dVdiTndjY2EyazdZY0p1eWpPTjh5V2xqbXVfZkxlUlJLNFFHSmdQU0FOY05NTUtNNUZKenRFZC1KbGJoQlE3OGxyay1Gem5iaHotcjNvSFRSX0VQamd5WkxULUFveGowejIw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g3b8e8c80293c",
+    "type": "intl",
+    "src": "TF1 Info",
+    "title": "Le Premier ministre néerlandais Rob Jetten et son compagnon attendent un heureux événement - TF1 Info",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOOHRtbzV3TGF1R3JVMjdJZnpaYVprMTVRSVJoNW1hV3ItT0RnLVprQkRma2NXOU80VzBsSmxvaGU2UUdVU3VQeGw4ejhLQjhvQU82YnJHc19JNzMwZjFvYWoxcHBzZ2lPcWNLYm9mMjM1M1FrOVVaZl91bWNHN0JlUHY2WnZOZVJlRlF6aHNZVmhQeFBLVmRudTNONTJlNXZMR29ZRldubTFPamJKclFSZ0MwblE0WXpQMVV0V203c0JkSkt3NWxtNklqVHRSYS05SHd1RzFIbw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3ad28e7dc50e",
+    "type": "intl",
+    "src": "Boursorama",
+    "title": "Pays-Bas: le Premier ministre et son compagnon attendent un enfant - Boursorama",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQdUJBRVozV1FkdGdoNlIzTFAyWlhQc3NoTC1yeEthaGRXSkFxRThhYXF2c0U4aUpKSVVqc3lURERhalBETkMydXdzSmJiMzdwazNwVTZXaVlQNG1Ua1dpNERURlA2Rk9HeklmM2NPT3RSX0tKNlRVeWRLdDNQNGlsNndlTkJEUlVtMGtYQ0hEVkFJOGViUXQ4a1Y1ZXNwMlA1NUlzV1VONUlXUm4zNDRuQUkzLWY5VEFQdVhOaFRfTEE1aHIxSTlwTEtVM19fenZpcjkteW1XbUhrZjNqT1E1WkxWdEo3NGR6eWc2anRyY2ktTm_SAfMBQVVfeXFMUHVCQUVaM1dRZHRnaDZSM0xQMlpYUHNzaEwtcnhLYWhkV0pBcUU4YWFxdnNFOGlKSklVanN5VEREYWpQRE5DMnV3c0piYjM3cGszcFU2V2lZUDRtVGtXaTREVEZQNkZPR3pJZjNjT090Ul9LSjZUVXlkS3QzUDRpbDZ3ZU5CRFJVbTBrWENIRFZBSThlYlF0OGtWNWVzcDJQNTVJc1dVTjVJV1JuMzQ0bkFJMy1mOVRBUHVYTmhUX0xBNWhyMUk5cExLVTNfX3p2aXI5LXltV21Ia2Yzak9RNVpMVnRKNzRkenlnNmp0cmNpLU5v?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf2a02c0d0964",
+    "type": "intl",
+    "src": "La Libre.be",
+    "title": "Pays-Bas: le premier ministre Rob Jetten annonce attendre un enfant pour 2027 - La Libre.be",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNR3FsUkVWV2VNaGZDZkpOUTdUbXdQNkx0YTUyUGxWQVZrc3RSZDVaVmJNSlpyaEZ4NUZGbEEyb21XdXJmYVM3SERXVm1TQTdJU3BwbkR1R3V4OWpFUHl2X09qaTZKQkozbWtMd1pDZGM5TVgxdWhja0FwWVFZWno4SGQzMUdsaXlzdnZoZ2NsOFpnYTRnY1dRcENGd3hpdjFXc1VjWl92NmpNa0pQVzRWQ0liU3VQdlg0MDBmLWs5Z09TQ2ttOUsyWEtwYUhzWUd0Vlp3UXo1U0tncnpQWDFOT3hKdENWeHAxcG50Y2xUM3c?oc=5",
+    "flag": "🇧🇪"
+  },
+  {
+    "id": "g9746e5651b4e",
+    "type": "intl",
+    "src": "parismatch.com",
+    "title": "« Une personne très spéciale est en route » : le Premier ministre néerlandais et son fiancé attendent un heureux événement - parismatch.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOYm9lU2pUVWFHcmJOUU1iSzZRVkhVa1RCeXlFUG0xSEZyS041blZjNkR6b1dsYXd6Q2MyS0hxcnljLWpwakhWaTA1eXRybV8wLTZWakJSdUtNc0s5NGFyUkZoR2FiclBibzNmR1lxMjB3ZkZLdWlqdXNqVEhLMDkwdWRRc3Y2NFBnamJkTUFKVVRiVUVHZnFkQVhBQ1pBaTJHaXc5aHpCc1BpaTNTOWtFX3djeXlTX0lzdnlvbDlyaTlmSnJxZ2J6aW5XdE1LLVZLVGNmMC1MM2l5cVNJZmZxZEh3eHl6ZXJ0Y1VhQ1h0UlFlS0xldEpDNnZfSmZJZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge84a6188307e",
+    "type": "intl",
+    "src": "Informat.ro",
+    "title": "Le Premier ministre néerlandais Rob Jetten et son partenaire deviendront parents en 2027, avec l’aide d’une mère porteuse et d’une donneuse d’ovocytes - Informat.ro",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeFpHZ2hnVDlfSmtnUFhKVlp3YndDczhDTnJaWVVFTDhBVmQ5bVRBQkc5dXY1UE5UUnBlZE01WWdxRmtkYzV3VXJub2dOQjBCQXVPaGJXREhRRmsyOU9hS0FXR1QyS3lZUWRfcEdVbjFRY1NMVW9lbHlsemRqdUEyWWhjWEJZT01iaW9CZUFjN0xOM0w5NER1anQ0aTFFNjBwQ19LQTRTU1ZrTjhIMWg2cmUwSkxKQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g23cf2e6b0de2",
+    "type": "intl",
+    "src": "Demócrata",
+    "title": "Le premier ministre néerlandais sera père par gestation pour autrui - Demócrata",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdU1iVzl6Ull5WXhycmFHQU9fOHhLU2c0N3dJQW9BQll3Q0ttQ3NGSVdLRXM2NVNCaEZ1UXhRWjh4em1reVJUbzk4aEZNZ25fWXhPdktVczVWUkhOTHBuTkM1UlJrMzltNEhnNG80LWxWaHFfQkZBc2lhYlJoZlh0dXRla0IwRGZRYTNORE5tcGVBVVdnZnRHOEI2WXdNc0NQUDYtcVA4c0NraE5KRlNUUjI0OFrSAbQBQVVfeXFMTnVNYlc5elJZeVl4cnJhR0FPXzh4S1NnNDd3SUFvQUJZd0NLbUNzRklXS0VzNjVTQmhGdVF4UVo4eHpta3lSVG85OGhGTWduX1l4T3ZLVXM1VlJITkxwbk5DNVJSazM5bTRIZzRvNC1sVmhxX0JGQXNpYWJSaGZYdHV0ZWtCMERmUWEzTkRObXBlQVVXZ2Z0RzhCNll3TXNDUFA2LXFQOHNDa2hOSkZTVFIyNDha?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge9d043fc0c09",
+    "type": "intl",
+    "src": "Vanitatis",
+    "title": "80 años después, un primer ministro de Países Bajos volverá a ser padre en el cargo y lo hará por gestación subrogada - Vanitatis",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNbnNmMDdhak50a3N1M3Q0SW1CLWJjZmlYNXFjN1VKdXIxN0kwOUdXM2Y1Y0ZYTjhZeUdkR2dXeVhuTGNLY2ZfT1NUVGNNbEVDSTRxSy1kT2ZIMWowRG1Rcm5KY0JTVTl0Z2pYLXFyLVNBNGdmS3U0aEd5anppNV8xcEpqR1VHSm0tYnVXSTUwZEFvWUNZeV9zYkN0T1FFc2RlbkJrcmVGT1YwSnUtaFVOSUFYR2QtQk95ajBpb1htTVBTSEhmeTN0UjhFMERVVnJyUWR0TmZ4amtfRDg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8df65bc53f7b",
+    "type": "intl",
+    "src": "Clarin.com",
+    "title": "Nicolás Keenan, figura de Los Leones, y su anuncio más tierno: la historia de amor con el primer ministro de Países Bajos con el que serán papás - Clarin.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQOFA5TERtdDc3dG5JNUhJaktxd3B3NmZHU2ExQmdXOHpEU0pISGtDWWlMUmhTXy1STC00ZGQ2WnIxOWstbDBYMjlNS24wWERaX1Rhd0s2STJLQXNEdU1ISmpJZDExRnl1U2stVXhmRlFRRWhiSW9FSS0xY05ZUmpXaE1XOWJUMzNCMTdZXy1mVEhKZHdTNTBvS01oa0lHUTkzcUZLOFpVSnZlWGhmd1hJLWw4emdkNWVtVmF1RFJFbnBSdUhDWlJYOTZ2aEhnaEZ2R1FoYVBzSzRoQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcb02ede933f5",
+    "type": "intl",
+    "src": "Revista SIX",
+    "title": "El primer ministro de Países Bajos anuncia su paternidad a través de gestación subrogada - Revista SIX",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNN3lyTVFQYy10aFNKTmdrLWctVmpPdlZYVElqeDRFTXdHSkdpUzVMcFJrYUpTVFFBZmNsckJMUUNIWURFWU50RnFiQXpnNjY3andPS1J5YjBHUE9DM1BxZzRJVUxCRzdsTVIzb1pPM1d4Z1NEM0hJZHktR2Izd05MM1dfSXJ2aU40VDVBa1JRWjBfR29DZXdXb0ZDYUROQ1VqdjJDWjhGZmt2Q0lqcmJuYnRIWGtEUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc0fa2be53e36",
+    "type": "intl",
+    "src": "La Vanguardia",
+    "title": "El primer ministro de Países Bajos anuncia su próxima paternidad por gestación subrogada - La Vanguardia",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVUFxek1iSkdLWkpaNENrc2s0OUZkc0ZaYTZIVDVzTWVyVWZYeV9CNm9sN2xSM09sX3NZNEE0SHp0bUNKOUl6VkdJdFlIOXRCR2xMSlQ4UVVONGJ3cFhmRnQzcW9hWHBib0trY3dsYTJZTGVRZUM3T2pyZmxOU2JVVmMtZmRuZFNnNGRfc1ZwYUpONlhqM0xMaENHeU9sODVYSVpLeWlVZUNxSjREVlNGR3VSUG9PMTJiblFnczZuZ2c3Z3JCWTlkb1hGQ0lWUdIB0wFBVV95cUxQQm4tc3BNQ2RRakF0UWxra0FIMjRFdG9XZXI3WmF1VXNvZ1c4a3dpMnludHJmVlMzcTRhT2xsUDJ1ajltZFRBS0I5NDIwMzJ5V2lPR0JwaFpqcVJMN3k1ZXFxTDRfNjcyMERiVS1CWmlnZjF0SXZHbDRtOXIxRVg1MFlkZWFiSjhFWTVvbHozbEV2YUtBZFdYMGxZaXJfN21LVXdqUzE2THVFRXZFak5EN0F4cVozVUw3bldrZEFSdXFpa0dIbzFvU2tVWG1yUGJuZ0o0?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g22b4ef37ebea",
+    "type": "intl",
+    "src": "El HuffPost",
+    "title": "El primer ministro de Países Bajos, Rob Jetten, anuncia que será padre por gestación subrogada - El HuffPost",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaS1zcW5oYXB1OTREQzZISHR4VkUtb2lmOGpXYVlQNnFILWJVTnd1Njl1MVc2THpySFpwUUFrSXVDeGFJVVdRQ1VuYm5UdVMtUjg3bmd1WmRSNTlRejlLWHlYWExNMk5CODhtaHlhZmZNWGx4T2ZKeV9GTmdpVGZ2R0p1R2xsLVNxTVhabTJMOXRRQmh4elJtRkpoVWYza3NpeEdnRURfSzBpSkZWX3FjMDctRWg3cU9wTnlqUzF3LS1PX1pSUjBv0gHbAUFVX3lxTE5zTUJBejkxamJyWGM1M0hVS1pLaUwzdUNOVjdZQUxIbzhPejNXT0NGVGtlWGpiLXZMclFDN0kyYmtWQUtRZUZscjB4V3lpdGRNeVV1Z1pCZDZ1NG1TcEQ3emtoNFplOTZiSG9FaERwaC1DOGRweVlELWdpeEhUZ3licnViUE5MVHdobmY2LUxISW1rXzNZVld5aFBUam5oX2FyRWVBXzRiOVJJeVNKRGFqLUFVMTRSVGN2eWE1d1l4MmFEcDE0cVJ1T3l2MnhNNU5oR3U2YmRlUU9XMA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0741dee31e8c",
+    "type": "intl",
+    "src": "El Economista",
+    "title": "El primer ministro de Países Bajos, Rob Jetten, anuncia que será padre por gestación subrogada junto a su prometido, Nicolás Keenan: \"Nos vemos en 2027, chiquitx\" - El Economista",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNeEREV1FMU0VYd0JxeHdxMHhuTTROOUZPRXZDMWVkSDVaNk9wZjZPYk1HUUdIZFlzQ2FXbm9WVXRvaDBrOFRLMFRCSk5SdHZIdlhBWkkxUy0xd2pXVFFEWlJoek9pYzFlTEh3eUtWaUppUU5sU3NVOHBWeTNSUzNQaC0zTDgzdXYxbFZzRUN6T1I0bk5Ia2JEMFdwSVpSNU5tTUVUM19VZjdZX0k3UHV5aHBBZmNadHdsWGxPOENIRmx6UVdLNXVjTk5NQ0lldVB3SEhfZjl2STdLNlNGUmtXWnBkSjJCQ2Q5V1lSU2tMYTRfa2R0SmV4U19xb1VVVVhnRWlwXzhvSERvYTZjb0dkd041eVVuUzk2ZDh3cVcxU2RxdHYyWnQ0aVhQQUpHemFORmk3ODIxdXJqZlpsWENhWklHMmVpdmRrV2dLQ3hjdHPSAbsCQVVfeXFMT2ozNnJwbmExYWlyejFNRkhKTWIxTWl4V2pTTXVOXzZxWm5wUm1kRVlrVm55Um9VMlNJNFp3aVZiQUlXaFhzRjlQZGs1RFZfaWNLMVNRdmJ5Qkt4dUdTRkNYbURqRUZ3bjNyOHIzV1E5X0kxVy1IUjB0aEtEYV8tdHlBZENtTVEwQ29vcFRqN3FER1JNaHJGVGxYY0VSNkNFVlMwTVgwVUktc0JyeXFMNUJOelNWalNwTFFDQU90eDVsRHhqLXAxaDFkRjJWbF9Sd0VkWm53TlIteTljeHFEWHdrblEyVlhwYU1PdHg4bTB1eTFaVG5ENGpDUUpIekJ3NmVwQjVNZ1Rtal9FTjJrTUVDNnFaYjlnTURQUElnRzVrSHhwbmFzNFlKQ3hQOERpdFQwZHU2VUJMa1RZ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gec23c6f89521",
+    "type": "intl",
+    "src": "The Objective",
+    "title": "Quién es Rob Jetten, el primer ministro holandés que será padre por gestación subrogada junto a su novio argentino - The Objective",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM3R6NVpvM0JBTUtJMmV4cGhhVHNKWUVxalA1d2thQnMtbVY5R2RCcmFBZ2FkTDVlbHRmQ19JS3M2ZXB6YnUzSE40ZTdveWU0MTl5MGpURVJkWjhFOHYxUVR0Y2tGOXNhNWo4SndmeVBvRzNhVUd5aHJHbEdXMHJQOV9YZVFWY1lUN2JRVVNFV0NKeU5CVHM2azI4MGdNR2pYZk91SlpqU2_SAagBQVVfeXFMTzN0ejVabzNCQU1LSTJleHBoYVRzSllFcWpQNXdrYUJzLW1WOUdkQnJhQWdhZEw1ZWx0ZkNfSUtzNmVwemJ1M0hONGU3b3llNDE5eTBqVEVSZFo4RTh2MVFUdGNrRjlzYTVqOEp3ZnlQb0czYVVHeWhyR2xHVzByUDlfWGVRVmNZVDdiUVVTRVdDSnlOQlRzNmsyODBnTUdqWGZPdUpaalNv?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7d552125be33",
+    "type": "intl",
+    "src": "Diario de Pontevedra",
+    "title": "El primer ministro de Países Bajos y su novio, el argentino Nicolás Keenan, serán padres por gestación subrogada - Diario de Pontevedra",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOaEYxWl8xVm5iOXIxSHhRWkg1b3FYenpMZXE0V2ZuY09aWFNuUEx0ZzJMQlRnZm42cjl6Nm40ZFJIZFY5N1pPbzN6NmFWZlE3N3UtdW1taEtsdUlKREpWUF9PSVN4SWliVS1XbDc4RWZlYWE4V0VNTUdCQW9ELXFMTHV0RVFDcENHSTNoZ2hyNG5fc014MDBxQnZVc1pkOE03LXMwaEI5aWt3QTh5M3dXT2FqUVcwUjVrOW0tTXM2Rm51V2VKdFViWnZKVk5GaFB3MU1TWVZSa0tYZ0J1UG9NRklQc0lsVURQbmRiZ0NDR19iQmJtM09reGIxLVBBY2Rp0gGGAkFVX3lxTE9BU1dyY1U2QmlzTFlRSjVUQzRJaUlfWEduR2U3T2IxNUNGQ3JwZ2RqTC1TaVlCU3E0bUdGS2liN3VRNXJ5MEY5RDFwUzZiakF1V3VZV1pzTy1DU2JpNVAtZ2FvYzI5NHpoUWkxSFYzOEJ0OVByUEpjYUtxXzFBVV9WdEM5TlY3N3hhQmdnV1V5WWtpeExIZkEzTWFpcEtNUE40TU9SUTYtMnkxaVpIM2dRMUNZcU01ZE5JR1ZEZU0yaW82YXZHNzZaenczQ1B1UUhTZFFzVjRRb25ramREbW9pWGZDM3JvVHRaeTVvX3hIYWN6VVRQX09ab29Pelc0SU1VVzM0Z2c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g08b23d973f51",
+    "type": "intl",
+    "src": "La Nación",
+    "title": "Nicolás Keenan anunció que será papá junto a Rob Jetten, primer ministro de los Países Bajos - La Nación",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOLW5vTFRkR1MzR0QyMUEtX2h6cmNycWVJUGtiVGZUQnJqTGhCeTNwUDZiRTkydmUzMUVmSGpzQmJ1dTRWbkZuNWZJeTRzLWUydFlaWURQMmF3d3BteVgtNVdHelAwR3h2cGNBYVJIVC1nSDQ3YXJqb1lRQkUxYW1EMXNDaFN1LW1TbWpvdFU5dkZoVmMyaTBhRTB0YU5IcTYzdDNKMHlmUU9WNm1sSzVjNVZRY2VnVGhzMlAyTjBnZ1l0R250RXJQMkg5YW1YdGVCWkhj?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc0597c928897",
+    "type": "intl",
+    "src": "heraldo.es",
+    "title": "El primer ministro de Países Bajos anuncia su próxima paternidad por gestación subrogada - heraldo.es",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQY2M2UHFQNm9lNEF6NktXblQ0aDBXWEZoRm5jQnk2ZFJRRTRBRFNHOUlGY3k1TmxBeF9XaDlha25DU2tGdGY2MFNLOXlBU0FXby1VeFlCMHRuMU5WRXJ5RjdralFHXzZ6RWUyWVFua1Bpemd1WW8ybG1YbUlyaEVSNFF2ZC0yRi1qblU1UkVld0lTd2RZakxaYW9CbFE5N3BUNGV2RGs1SWpVX2ZxMWk4aGh5RUk1dzdibFNuckl1NzFXVjFOcGZ6TGQ5U1NoRUpRT1dxWll3NmNnTi1GVXhBYjlrR2lQa0Q0djU0cdIB7AFBVV95cUxQY2M2UHFQNm9lNEF6NktXblQ0aDBXWEZoRm5jQnk2ZFJRRTRBRFNHOUlGY3k1TmxBeF9XaDlha25DU2tGdGY2MFNLOXlBU0FXby1VeFlCMHRuMU5WRXJ5RjdralFHXzZ6RWUyWVFua1Bpemd1WW8ybG1YbUlyaEVSNFF2ZC0yRi1qblU1UkVld0lTd2RZakxaYW9CbFE5N3BUNGV2RGs1SWpVX2ZxMWk4aGh5RUk1dzdibFNuckl1NzFXVjFOcGZ6TGQ5U1NoRUpRT1dxWll3NmNnTi1GVXhBYjlrR2lQa0Q0djU0cQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb781daf9cafc",
+    "type": "intl",
+    "src": "Libertad Digital",
+    "title": "El primer ministro de Países Bajos y su pareja anuncian que serán padres por gestación subrogada - Libertad Digital",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOYmkwSkFwYWRXNEhJUFR6R0xMU1ZDU3ZoYkE2SW9qVVpiWmhHM3pndmZ2MTByTVB5eThLTWkyYzQ0SEhEY2w3TnhESUEyQzZGN05vRUpyZDhiSV9VMDAxVVp5OE9UWVEzNkR3SzRkZ0JBVV84TEZub1RsazhEaWszOVZndXJPVkxiM3pTazhNdWNyaWpWYmlnRVk5UlR1Z2pyZDhVUml2NVlWdGNrYWdyZHllLU5TYjZiZkVPdDRJWUVQOW44dnpoX0FXeXRGODhXUElOUUl5THcxR2VUMDloYTRpSUpWMzVaUm1lNTFEdXY4Q0XSAf4BQVVfeXFMTWpHaC1lYmN1QkdHUVVPVU5wYldPY2JHOWdhckhnT3FFVmZ5YWIzUHpoeFdWT1pJeVhDOEJPbWl1UE55TXp1RHluS2s1TEJfSjJnUUt5ZlVCU3RaQV93TElNU3o4NVg2eVR1TTFINkFKeldVZDhzOEt5M21XTExuNXJWTmZHM3Iwc1J5eFcyN2YtN3pTM0tfcHROUWVfYmM4bkxMTnBaRlJoYUJoRlZQbEpDSTdfLXUwZ2toTDhObVUxR2dObjRkdlVqYjBXYmhSaEVRb3hOM1p5V0hWZG5xTUtpSDFRZTY4RGx6bXd3eDhrT2ZKVjItdXZRcjB2RkE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0a989901e3e6",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "Il premier olandese Rob Jetten diventerà padre grazie alla gestazione per altri - Euronews.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOcFFrMUFzWDlwLWRMRVE2N09xZjEyT1hOc1BDUXFOSkZ3X2stNVplbkxEcWNPSlVlT05pak5uM0Fyb1FBbV9ERnozaU5sUVhlMzhhSzRjWjRKcG1wYzNnQlpvZ1o3bzRHdi1QWFZNWHlKRmM1ZUpOMDNWbUozb1JwX19SY1RwbzdHRkFpaWNTaVhQM2t6Tkk0U2hiNG9wSU1HR1JQTGZnclRtdmQzSGo5MllKSms?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0470528738bd",
+    "type": "intl",
+    "src": "AGI",
+    "title": "Il premier olandese Jetten e il compagno diventano genitori - AGI",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxORjd0N0d5WHozMi1ZM19WUGc4TFVoT1lYeFZXYnl3VlhxNnpFVnJ1N1VHRTJBTUY2b180Mm14WERjUldDTjFLQ3VhYkx5bk5kRXBONGY1Nm9ibmM0UjZwbDhyV2N2MkR1aEo2MC1UZTUwNU9KOTRyVXJZaGxET0lvanRSTW0wSnM2NFHSAYoBQVVfeXFMTkY3dDdHeVh6MzItWTNfVlBnOExVaE9ZWHhWV2J5d1ZYcTZ6RVZydTdVR0UyQU1GNm9fNDJteFhEY1JXQ04xS0N1YWJMeW5OZEVwTjRmNTZvYm5jNFI2cGw4cldjdjJEdWhKNjAtVGU1MDVPSjk0clVyWWhsRE9Jb2p0Uk1tMEpzNjRR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g442aca022bf5",
+    "type": "intl",
+    "src": "31mag",
+    "title": "Il premier olandese Rob Jetten diventerà padre nel 2027 con una madre surrogata - 31mag",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZFRpdzIwRnk1Z3p0WXNoVzFJUnZxOEVicFBLbEtXNTVZQ0JUQUs4RWNHRzEtNi00RUM2Sjdmd3RtOVk1NUozNy1OQklTeERwZkVuTnNyNFN4RDZEa2RVZVJJS2VZV0F0RHdkZVJDV2NTdDRmeHp1NEU5WlFOZHVianJINFc3UTBPa0x4WHJRUklqTmlHeGJuU3JFNksyVTVMU1U0?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf6cdbb208659",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "Нидерланды: Роб Йеттен с партнёром ждут ребёнка от суррогатной матери - Euronews.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5EamNRV1dJTERKc25OVi1wTXh0ZHF0Si1NZkExX3c0VkUwTmx0am1sMU1ZemhtVjBfQS0zYWZPY1hwLUEwOFExaDdIMDdURl91Q1dvNmFEdzdBVU9zVFlXNVRiQVIxVHRtZ3JhTDhSbVFwVWRJ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf14ea544eac7",
+    "type": "intl",
+    "src": "PolsatNews.pl",
+    "title": "Premier Holandii i jego narzeczony będą mieć dziecko. \"Ktoś wyjątkowy jest w drodze\" - PolsatNews.pl",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOMXc4NlVMeG8zMGtqNDBaWkFVSGlQbU43WHlZX004bWljS3JacGY1eXQtRWR3bkVScXVRY0huSG1MQWRrRElnQWdNempOX09IQ0twNTh4R0hSeXRLUjVOOVRQX2ZWMjlmUWliTUo5NXA1RXZEajFlazA2cmw0ZnFLaWstaDhDQTl1VnQ2c2lTQ2kxWWxpMFFROTk2WmI5d3JraHY3TGU3eVlJOTVhNUJ2VGVOeHVGenprUnlVVU1mQkdQWWt6RXc?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
+    "id": "g00ce7f924dd7",
+    "type": "intl",
+    "src": "Do Rzeczy",
+    "title": "Homoseksualny premier Holandii zostanie ojcem. Dziecko urodzi surogatka - Do Rzeczy",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPM2ZWMGNrRDhUdHdqdVJ3SExrUGp5NUtDcVBUZE5CT045UEVFdHRDOFZFNUZZeUlqanp4Wm1MZl9zZVlUVDkzcU13VWFFVHVWZTB5UExvNUtiYlQ5aG54YWRWRTZ3X3RVdVlkaUxwUVdwVGN0TjRwR0VPdmxrTjRxdUdEOU9XYjBQdDVWZzh6MW0tUzZ2S1VuNU00M2FJLWd3LUZ2dEJlYTB5bU9W0gGqAUFVX3lxTFByQlFsZHdMWExpcGZ2UTM5QXBEbzNTWjJQUGt1WGRvNnludWdyenVFV3I5Q282clBBLVkzX1NyLVRzZ2pPeU9QZ2pXZFFKeVJPVG1BanhxUkNORU4wanZuSjZuY0g1T1I0NWwwLUp5WlkybVFULVFhSlpHbXoyMm82YlpHczhOUTFOemg1TkRfYWI3Mk1vUTlTWTh2VkExUTZVV0laTUxGMldn?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g4cdf32689831",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "Premier Holandii Rob Jetten i jego partner oczekują dziecka od surogatki - Euronews.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPczJCU3VoRmJPVS02amM2YU5VTFpDeFo5Ump6WUFMU3VBSkZ5VzZCTVQwVGYycVk1Zmx6MkNaTHlBdkFSbzlXR2xUWDR4ZXQ0VFFqUHR4UGhiemJ4UTd4VjJ0UFRiY0RFZW0taFgzdDRQck5PUnEwN2o2VkFoX0RDY1NIYmd1TTl1ZUlaNDBuZm9pRlpNeDJfUDRYS0dmblpOM2xYeGs5dTRUSzA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g27f83ba1aea4",
+    "type": "intl",
+    "src": "Kobieta Onet",
+    "title": "Premier Holandii z partnerem ogłosili. \"Ktoś wyjątkowy jest w drodze\" - Kobieta Onet",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNV2RYNm9CckowTmItSWtGU3lRLWFkSVk3aHFGLWxkbWN1REU1bVl0d2VlX1JpUkxyNVlFc3IzWE9md3NhcnRnVlFyZUhtcmdhdEhnRkJ3eFhFQlpqa0E3Z2JHSGRuMF9UeEJiTElUN0NYWVl1VDZ2YWZOZHlCTTNPSXdHNk1GQ0RlcGZMSVBrRkdsdDgtZTNZN3V6RGhjNm5xbTYtb2lpRHJka1k2WW1NM3FqaHQxZmcyUmc4QjlR?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
+    "id": "g8da643cc55aa",
+    "type": "intl",
+    "src": "Kresy.pl",
+    "title": "Premier Holandii poprosił kobietę, by urodziła dziecko jemu i jego homoseksualnemu partnerowi - Kresy.pl",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRHZGSW1idDJFMmFJVFlpdUdnc3ljSDZrZkZZMzRydXRmM256M253MlJPbnZYVU85bjlmWTR4Uk5mUnl2RkhRSk1wbDVtNnFsVlVhQ29TMW02UGJWUWZ2Sk5hT3pSYTBRSjRaRy0tbmdoV1oxTTFsc2RCaWZybDRDbi0tSUVaQWlCalBsWFpZZGVsNU9tTGJ3RkRFam1yUVdKOHFGUi1EUjBaVjh0eFNQSDNWYlI3aHpWWFJkQXR3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5be26ba68c4f",
+    "type": "intl",
+    "src": "Tysol.pl",
+    "title": "Premier Holandii i jego partner czekają na dziecko. Urodzi je surogatka - Tysol.pl",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNVVjN21jZTduYlBBMkJ4UkV2N1ZtdU5ST0p5OFU1bGI0ZUlpSnFWZmlWbEh0OGd0Q1Q1a2RjbUpjdU9DSGNvS1pWNUZaRldZLTU4bzJyUlZIdmhiQlRqeVdfRWI2SUpKUEI1b1VGekk1SmJPT2JlUzhlWEk2dG9feHg4emwteVZVS2xxV2lhR2M5ejJ3aU5ZbzM4aFBTLTFzMGhnX3RYTG4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc6eb19402d78",
+    "type": "intl",
+    "src": "adressa.no",
+    "title": "Nederlands statsminister og partneren venter barn med surrogatmor - adressa.no",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUUhwTE5MTEJDNzhsNmFfb25FQ3ppOEpGaThSUkdWd0MzV0ZKYm9udFNjbVBZampGemhlV243S1RVVWh1OG9kUk1TbjZZYWZuamxPUlhaZ1o3eHFWVFJsLXhDbk5TV1FIWERuSlNIYkJqR3hKRDVBYzFEM3FnYnIzNF83QkNBdmw2WVh4YTFUSGh4Snl4bWVPVkZEWjNrbUJHSHdxWE81ZU91ZmxzeHVvWXVub0g?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9ce48c52de78",
+    "type": "intl",
+    "src": "folkebladet.no",
+    "title": "Nederlands statsminister og partneren venter barn med surrogatmor - folkebladet.no",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNS0FBTUNuS0RXVms1T3RTQVlIYlM1UU0wYUxSOXZQdktDcVpoaERlSUJVVGNyMkxBT0kxajRaZlA4Z1BuZTFSOUlVRXd2bGN0aXpuZ1VnRHI5eFFCOWxtNkJqaVRfNHFHWEZCRnkwaEc1dmJZTjU2SlZYVXF6cndKMF9FOUVybHY4LVVRclRvWWE3MEFzXzZaaDF0N3dFckJ6QzEwRGR0TUNPRTk2RkR4NHQtN1hrUQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "gdf72e5827cc0",
