@@ -91965,7 +91965,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z19439&did=2026D45083",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk73b79e6dff",
@@ -114733,5 +114733,19 @@
     "toelichting": "",
     "stemmen": {},
     "archief": true
+  },
+  {
+    "id": "tk4b85e838ba",
+    "titel": "Gewijzigde motie van het lid Westerveld c.s. over het uitwerken van alternatieve voorstellen voor de VWS-begroting (t.v.v. 37020-XVI-38) - Vaststelling van de begrotingsstaten van het Ministerie van Volksgezondheid, Welzijn en Sport (XVI) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-22",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z22785&did=2026D52478",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
   }
 ]
