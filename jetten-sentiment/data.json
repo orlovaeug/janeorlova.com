@@ -1,5 +1,66 @@
 [
   {
+    "id": "g6ec14b4ce873",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Marianne Zwagerman: klimaatdrammer Rob Jetten maakt warmte doelbewust nog veel duurder, terwijl kou veel dodelijker is dan hitte",
+    "date": "2026-10-22",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/opinie/marianne-zwagerman-klimaatdrammer-rob-jetten-maakt-warmte-doelbewust-nog-veel-duurder-terwijl-kou-veel-dodelijker-is-dan-hitte/163452965.html",
+    "lr": "right"
+  },
+  {
+    "id": "gd1b9a1b9ccb0",
+    "type": "nl",
+    "src": "Cvandaag",
+    "title": "De baby van premier Jetten: wat zegt de Bijbel over draagmoederschap? - Cvandaag",
+    "date": "2026-10-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWFgzQkloSUw2VDZTYk95bF90ZnF3Znk1MHZlUWpvdXhuS3llQWQwUEY0YnhmRU9lVkEtN1RyUDNZbVdiT0Nmc0Z6LVc0ZDVlRzVjNXQtMHRzcTRSRGZaX3o4akdXSFZkSFQ2amQwdW5IVm9OUjhmaWczbkdzaU5Kb3FVa0tSd0FlWXgtWldNb1pFWHV1VkY0ZDln?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g320a25112b3a",
+    "type": "intl",
+    "src": "The New York Times",
+    "title": "Global Rush to Fix Security Flaw Uncovered by A.I. Leaves Sites Offline - The New York Times",
+    "date": "2026-10-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQRjdXY2RJZ243aGFyMFg2WmdScW1vdkF0M0ROdHJqbjN1R0tfRVQ3Vnl5UUxpNUxWV29vaDBSdlJQVHJkaXlrbVVLRmZlREZyZFhhal84a1d1bXItdlV1LU9qWmJReHJWeGtNb0VTNnc0MG05QUI3bDlYaEZEM1ZJZlRzUUM2b3VWYV94WmZEZ3kydDg?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gb7d9fb60c7fd",
+    "type": "intl",
+    "src": "Ohmymag",
+    "title": "Rob Jetten et Nicolás Keenan, premiers pas vers la paternité au sommet des Pays-Bas - Ohmymag",
+    "date": "2026-10-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxONGh5anlhMXlHRmFiUmhqTFhxajhSTzVvZkQ1ejAxWjhMVnZVM3JEMWNyZHJMdGlDd3M3RTB5N1F5a1A2elN3OFZWSkxJTExlX1BoNzNkNjFlOTNrRVB1TjNyaUJnTWNabVg0U0xqem9uaTdzRHBnLVlTV3RBWkhpRGpRSktVcnMwb1ZNQWF0eEVXLVpuVUo0QV9mVUt0Qk91a3dpWW9DZW8yY3dEWTNWV29EUTlpRW1mTTRMRjlRN3F1NXc5RThaXy1SUkl4bm54OVZNaU1BUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9405ef690aab",
+    "type": "intl",
+    "src": "Demografica",
+    "title": "Rob Jetten, il premier olandese diventerà padre con la Gpa: primo caso al mondo e la distanza dalle leggi italiane - Demografica",
+    "date": "2026-10-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSDE1alktUm5oendSWWprNWJjT1U4NDZlUVJWTmx1cGVQSXFLcWpuclBialhPVTBJNjRoOEVJdUFhN1hMTE0tbWNiV3RRQlJvZjQ5YkF2NWNNUDhaTzRoTnBNQm5tUEJkbVVwMy1CUXlTRVBCUDh1ZVR6bmdhQ3BGUkVvRVYxQmU1T05ZenpPWklYRVMwTzMwRUh1RW9FS0o1?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6e5263c5aeff",
+    "type": "intl",
+    "src": "Tempi",
+    "title": "Il premier gay Jetten e l'orrore patinato dell'utero in affitto in Olanda - Tempi",
+    "date": "2026-10-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9TWXVROUZqdzRxTEYxRzcxUXNkT1RDZ3h6V0J5VExnOUtqTHR2YjloZE8zV2dLYnU2ZVFqVFlHWHBTV204YWVZZzFTVkgxLWYzVGNoQ01LbDRrSmE5bnRmc1V1S0FQMkJwQnBNem5GVlNDUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gcde0842c7737",
     "type": "nl",
     "src": "Trouw",
@@ -138,6 +199,87 @@
     "date": "2026-10-21",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPR2RwNzhhY1BxZ1o1cEM4eVFrbEVmc080T3ZmaldiMm5XckZOOHBobXFqNWdpSHFacXkxN3hxNkdwVHdoVFllTEdDa2NtNXUtVjV2ZU9MRzAzSlh2TW5mdkFjbG9MVjNCb3RxTmFDczNkbXpLUDBCUTZXa0Jpc1RUdEhPbTAtVTBEZW9vMngyZUtNdkxOZkk0aEJVaXVBLVd2VUJrekln0gGrAUFVX3lxTFBnVXhIOEJLYVd2UF9kTU4wUTdfVFJqTUVMSEtyaTZiYUJkVUN6N3RrMTRnY1BNaFNHNXFpOTFDTWpHS0FQblliQldmRHRjSkpMNzVoZ1JrUHBtcDBzZlN0eEVmam5aLXVaT0lkYVFDUTdTQ28wWU1Mb25KNEdjMXMzV1FranpjUWFiaUdteFptdUhYRHBYV1hqVmNtRXk4bjM0ZlFwNW9RdDJuTQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3b6ffdee74ab",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Jetten geeft met kindtraject belangrijk signaal, laat de politiek nu draagmoederschap fatsoenlijk regelen",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/10/21/jetten-geeft-met-kindtraject-belangrijk-signaal-laat-de-politiek-nu-draagmoederschap-fatsoenlijk-regelen-a4939487",
+    "lr": "right"
+  },
+  {
+    "id": "g789cd7e946ab",
+    "type": "intl",
+    "src": "FAZ",
+    "title": "Rob Jetten wird Vater per Leihmutter: Kein politisches Problem für Ministerpräsidenten - FAZ",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQMXowTGxVOTFpaDFJY2RaWHNFd1cyd1ZvMmlNQWxFcF9PZmdqNkdVRlJkZzhaUzJENl9zUldCaGFuZi0tMndoSkh6Ry04ZnN2YWpuVk5YMEt2UU1BaGFvMVZCS2ItekdRNGthcFZseUFjcjY2eEM3cVZsZVpXMHZ2a3hPWTVUM1hTeGQ0SS15YjUxMmtYVGhYczRLZHZpMWllXzIxQkljeFo3cGVsREdpdWJnTVBRZUxwaU85VnFfQU52SnprU3dLWlR3WDhUTElfY1haYXQyU09USVBzR0E0?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "ga3a3c1bdaf49",
+    "type": "intl",
+    "src": "Ouest-France",
+    "title": "« Une personne très spéciale est en route » : le Premier ministre des Pays-Bas et son compagnon attendent un enfant - Ouest-France",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNS3JrcFlSZ3BHVWVpZFNPM2hqM2MwMHA1Nkk4UjF3N1ZBWFU4eUZfbmtEeUxVaXdPU095aXp2Ry1GZS11V00wS05UQ3lCMk8xYUJMNVkyV1pUX2JvMzNLeGFWMzZTcE9MM0JEMEFXQWtwdEk4UFdXZWlhaV9EQWRVY18wMUFHRU5scWREX0dyanlMSVB3QVFleW9HbEItWXBDQmd5aUZrRlhIclY4ckdOaGlOQW9pZHNYR18yV3A5OExucWo4RE10MlRScXhya2JQZnF0cUVxaUZJQVhOWjU5SlQ4X2ZMQXNlakd4ajFwY3JJUThiRDVSMjBwX2pPeW1sMmVQZU9BelplanBqOExiOVNRN1JFLWtoRVE?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf194311326bd",
+    "type": "intl",
+    "src": "La Libre.be",
+    "title": "Pays-Bas : le Premier ministre Jetten et son compagnon annoncent attendre l'enfant d'une mère porteuse, pendant l'examen du projet de loi sur la GPA - La Libre.be",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPMWhLT0tvcnczTTZxcGhpMWxQSTlZQ0IwMkhrdnNwTnZyaHY5bjA0MnRfeGgwM1lCWGVQQzZ2bjBtSi05a2R2SWxvNFJsRUV2Z002NV8yWklqZDlFZ2NKNFRWZzdBcFhFUVlObzJkUGNlUnVqMDE1T29WcFh5NGJBazVkSkpPUW1IOUtsWV9yd2VRSDUxOE9UTlljM1d2eWRsTkd0aUZ1NzVNQ0RqN3Fubkw1X3NVbVNsTjBWNk9aR3VMa0tUU0ZxYWptbERzX3dTdHZDRlNfdFNJQnJUeFY5MVlDUHFIOXYtaEc1cHp0OHhueXYxVlZZbjJUaDdvMnJVUUtQNWQ2bndGazh2QUEySWRkY0VoWldjTVpFa2VabHY3RjBhZmw3cWw1M1Z2OFZSNUlFRGVEOUU2Rk9Xc2E5MHFmWHp2d0JF?oc=5",
+    "flag": "🇧🇪"
+  },
+  {
+    "id": "gdbf816b3164d",
+    "type": "intl",
+    "src": "Aleteia",
+    "title": "Pays-Bas : le Premier ministre annonce attendre un enfant par GPA - Aleteia",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOU3o0dEx5NUxmZFZ4Nm1hTXdRTzZxTzVRYVZSUWdSNDJVVkdLNlVTVndhenZZVU9GSm83OUNxZVRxMTAzckJvLUd3VTBYTUtDVWgwZ3hkU2xsN3BEdTBNeXU5ZmZ6X1RodmhsMjFIc2FrSXdyc1pYdXUyeElWbGhWLU5zZTM5anNMRTdIYWMtT1BPOWpaOFRyNS1QZkhMNVU?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gced24dd26fa7",
+    "type": "intl",
+    "src": "Têtu",
+    "title": "familles GPA de Rob Jetten : aux Pays-Bas, un contre-modèle altruiste à la pratique commerciale - Têtu",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ1o3bG5aZHdXS292ejV6dnh4SmlOenB6QzNVSDVnR050NGdiUnRTa0dwOHZ1VE5HbGVPSGlUcnRtWTUwOGNaS1NHRTR5ajJSZktnaXB3QnYxSlFjaWIwNXFCOVRPZHdQYWxldnNtMU5aYUpMbzVhZGdDc18zV3pMR0t5bmFfWHB4d2hmeXhocGdjMl9QUHZWWmFwb1VKMW8?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1bcadb3cdf02",
+    "type": "intl",
+    "src": "Periodismo de Izquierda",
+    "title": "Los Leones Nicolás Keenan y el Primer Ministro de Países Bajos, Rob Jetten, anunciaron que serán padres en 2027 - Periodismo de Izquierda",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRFpIV005NHFhbHpnMlg3VWxqWHpHVG1PTVltdXM1MVFqUndOelBHbkhsRWdWakFSSVZWX0ZTU2tvUThBMVhiVndVSmRGNzc2ekVKT2ZJX3AyY0lqZmNOblg3d3dsU19Ka0o1eUdoY2huTnRLSUk3V3BmN25ZWEFDbjZCTXBzR0ZNX3NIZTJIYWZvQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ged4053d3264e",
+    "type": "intl",
+    "src": "Aleteia Polska",
+    "title": "Surogacja. Czy pragnienie holenderskiego premiera usprawiedliwia go? - Aleteia Polska",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUXpSVGIwblEyNW9FMV9rWVVPVXdISDR0am9NVFR5RjRUU2k1RXpZVWg5dGlubFRQMFp0eUc2SzVLUC0yNVBBQlFjSXRPUDJfd19iM1FZQlJ1cWoyNUt1bGR3TVhHSTZfMVFoVGNXQ0FNemhfbHFaRkNOUUV5cU12ZGxiWVdudzdMNzlacG5sZ1pxemVMVGlza3BIOXBITWVwMk9r?oc=5",
     "flag": "🌍"
   },
   {
@@ -858,6 +1000,16 @@
     "date": "2026-10-20",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQMTVUeVZvbmJkU2pxaHNObE5uNDRZOUJKTXJZalFWZDJnZldVLXpQcVp1MmZ0Q1FQcUlueFo5aFBJcUdtNDBHaU9pR3ViQ3I5XzFUalFjMnVNWkNPXzhkOW5jTHBmMmRoUnRiaHp2eVhoZG5YeDZRNndXcEpTalkwWGwxallhV3JyY2dwNURhNWFac29SdExHXzBLdDRubkh3azBrVHRtX2FtSFRrZ0o4eGtNdUNaNFhHeXJzdk1xaXBuLTFCMGdJdkV4NkQ0NEk2NjVuaDRxZC1BdGRPVGRhQU5valc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9c0a9880e691",
+    "type": "intl",
+    "src": "Католицький оглядач",
+    "title": "Прем’єр-міністр Нідерландів замовив дитину у сурогатної матері – Католицький Оглядач - Католицький оглядач",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY0VCOVRlYmZJZWRuSGZzMmx6WTFWWkVyckh4eXdVWFMwNVF2TVZuaTVnbi1nT1VseTJlQm9UZTJMRjZqUm4tUEo0aEo4ZXNiM2RjZXVPR05aSnVseWtaR01lb1BjTXNxTFNBbFg4NjV6ZjNuc21KcmZIOWl4bHNVMjBXUGRzV1FzVWNaZ2pUOUg2dUFUWXRN?oc=5",
     "flag": "🌍"
   },
   {
@@ -1987,6 +2139,37 @@
     "flag": "🌍"
   },
   {
+    "id": "g68fc2c2f95fb",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Rob Jetten is nu niet alleen de jongste premier ooit, maar ook de eerste in het ambt die een kind verwacht - de Volkskrant",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQMmRwS1JvdHJCenhCNDBoSVNYWE5ENHluclFldEJDVTV0RGU4WElmZWdTLTFETVVUM2p2WUhXTnR1QXp4WkhyUWJ5ODdOV3ZsUG1JUWRHWUZ5MC05Z1VQLWN2SUFPMGZuclloTGFXR3ViT3UyYzEwR2JiVmQ5NnY3Z1laSEUyYnhTVE9HZFZaanE2UWRrX3RaeHZJakFpd1BGVGhLb3JFSFhXX0JDdDdEb25WZF9xUEg2VU16LU5iZHFhZHBBQjZ0aERUU1czMzNvaVdoc1NVRWRqeXVGM1prM1JBV0M?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ge041103bbdda",
+    "type": "nl",
+    "src": "NU",
+    "title": "Rob Jetten en Nicolás Keenan verwachten in 2027 een kind via draagmoeder - NU",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObzk1dlVTSWdvRXVYV3h2eGlEWVBYQ21DTGxhRjhHcFBYYWdET2pHMHJEUk5kd240NGRtOHJLVHBpQld4RWZPcTBpblVRWXY3RnRzaF81VWh3RWpZZFo2OXVjOFhRUEVJNzg2WUJLY1RsVGs3cWNjVk5ldnVXeGo3djUyZUtpc3hURTZMczRYU1Y1bVZ0MUU2bzhpMWNXN3BsbFRzX0VvMHJNMXJiSzF0aGVocVQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g071581c3be07",
+    "type": "nl",
+    "src": "NOS",
+    "title": "19/10 in Nieuwsuur: Premier Jetten wordt vader • Frankrijk in de ban van rellen • De verhalen achter Joodse 'overlevingskunst' - NOS",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNdnZfTjE5YVVYMGppZGFTTDJVSk5ZeC1xUkNCOVNUaU5NWW01WWNwODI1WmVWc0c3dGlZOEtDWFljVXdPaDA1N25ydmZZRDNVVExPbVNweUJBS1hOWXQ4b1Fla05jYW5GSElQd0lIUHZkakdPSlVPMGozSVAtU2JLZWhTc181bDE1LWNXaVdVSFlTMVRZYWFhMzlXZ2FSclVCSG13akF5U0oxcUc3dTBiajk5T05HOUUwM0hhY2dRZ2k4YjZDT28zY1ExNzNVbFBlOHdZY2IwZ0lQbmpOZUhmdF9NT2RGS0VuSEpyRFJVRXFxQQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gdf72e5827cc0",
     "type": "nl",
     "src": "NRC",
@@ -2068,6 +2251,16 @@
     "date": "2026-10-18",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQalg4T0lNVGprY3A0ajJkZlRCV3NPTGozbG9xaWJqLUJBRUNIVmQ5dk9VdjlfRDUzVk9WTU5lUVYzdURybUl2VndCNllEZk4yMnhlSV9yYkxvcHd1Y0tKVHd6XzdVWWJQUzJKRVFvalpWUXZ6WER4YkVkTFlfRW9MNjF3NUItdGNzeFBKc3JTM0dhR0NrWElGeWw4WjlYU3hRdXkwYmpGQ0xzd0g1OWxpXzFfSVBnMUlhRy0yMFkyMl9RTXNDQzJqYmxR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf1031a49c845",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "PRO-leider Klaver roept wéér op met links te onderhandelen: ‘Kabinet slaapwandelt crisis in’ - Eindhovens Dagblad",
+    "date": "2026-10-18",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYlpZcmZtdVhGVXhfY0pkeS1qS0xQMDZWNkpxUXl4XzlzeGhEcEk2YTM3U01VOVVuVW1EdmlUR3M1RzdaUURtT1JrTGZORjdOR2t2UHdDV2FRemx5ZnhvMDh3dXhQXzdBV1VZbGJibWpGakMyUmtfLXJKSnZxRkxJb1oxTzQxczVzQ0dHTHNlMFBMX1RPNjdORVAwVXB1MFJlRDRodzNPUmZhOTdKWTFEZ1pqakVDVDVnZGZrN0drM0dQbDVa?oc=5",
     "icon": "📰"
   },
   {
@@ -15193,6 +15386,16 @@
     "date": "2026-08-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTmctZGpkbXR1UEhLZmVsb2lFVVFQNU5yRWoxbWRaWXFEU0c4dUJVVUNmQkE3UmVQNHV6S1U2MnR4UmhWVS15eXZDakdoOEUtSGF6SjgyaVVMbnhtR0JZZTFlcFdmSkd3WXBXbFdNTWZkTUJkYXhhU1d5VWx2S0c5ZTdQZHNLRjQxc0kzRldKbzd2UE9ZdWpwMXRRMmpIdmJzdHpidFNObjRfT3Z5azdmYnJubFdOZnIxWTJqVzFB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8aca8da63553",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "Budget talks offer no clear route to majority for Dutch cabinet - DutchNews.nl",
+    "date": "2026-08-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVmVyWHZ4dDUwcEZ1Z2VTVWFMbkEzTjNBcVFGSHRCamM4NEgyZTh5VzBIc2pGdzdUTGdUZ0pYVENuTm1rd2VZbG1iU293X215cUh3ckxLbHktemVweDA0RUZlWE5YdzVFVVdoU3Ryb3lvVEhWUGNUeGNzanFWaTJLQ2ctSV84TmdCWlM5T2xBdURQNDNjRnlJYVhlekFRUQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -32238,6 +32441,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNXJyX2c2TzI4NERtenlQdDdXZExTYnZFV24xNjNlZVhfNVM2OXp2M2hHdjI2YUZqSUdWTDNXenBaN2tTdm9OS0dEMXNlT0kwWGhoOWFWZTlwQWtJbm9SS2dSSnpfeVFuNzJWTEdsejFaVEt3azdNaXhGMS1fZGVHcVZ2b3haMjRfMm9YUFk1VHdZaU5tUjNJZndXNkhkMDZWNDNadnBka3VYdw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g6bef2de93fe9",
+    "type": "nl",
+    "src": "Nieuwe Oogst",
+    "title": "Jetten wil schuiven met budgetten: ‘Nog altijd veel Europees geld naar landbouwbeleid’ - Nieuwe Oogst",
+    "date": "2026-04-24",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQclJsV2pieGhPS1BJWC1oZ2h0TGtsUGtpakJ6bXZiMmt3Y0NYTXFCRGFVYW5PZkNDZUVOSTBiaEZ3eFE4SlZXNUJtakRkWEFfZVRvcWFZSG1URlkzdWRWRHg1R05iOUxENjFUZjEydFNNWExHaUZLTEVvaEpfUzFlNlRIaDVEQUhqLVI0TEJRQ2xkZncxVVNRWk9PQlc2MkdFZkhXd1VJd1JWeHlibHoxSW81OXpqenNCSlZNVTh3M3NhUnIwRGs4?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gb8b95776b7e5",
