@@ -1,5 +1,25 @@
 [
   {
+    "id": "gff69f76d8efb",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Verliefd, verloofd en straks vaders: het liefdesverhaal van Rob Jetten en Nicolás Keenan",
+    "date": "2026-10-24",
+    "sent": "u",
+    "link": "https://www.rtl.nl/boulevard/artikel/5660454/relatie-gezin-rob-jetten-nicolas-keenan"
+  },
+  {
+    "id": "gcefc693d315e",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Rob Jetten krijgt een kind: waarom vindt Annie dit ‘een ramp’? - De Gelderlander",
+    "date": "2026-10-24",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUHFhNmhJbFh2ZURSUjdSanVZZlVkOVVDSzgyaWVMZThYcUZ1OEIzcVgwcUw0N1Y1LTNlNENjLUVERkNVTnF4bmpjd3l4cFFxT0RKM0J4RFp4SlZ0cGRVcEEzWjZqcVVxQUM2V1lzYmlGZjVUeUpSQXJTWEpMQ2pwM0VFMERCdUJ6QUtYSkJTOVVDQndPc3J1RmNqTjFEdWR1SmlkSGtBRQ?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "gc87c09ec0126",
     "type": "nl",
     "src": "De Telegraaf",
@@ -30,6 +50,100 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBaRmp1SnJpWnNKV0R6ckZvR0p2SnBvV2tYMm5USmU1bFktNGUyYW5WYUMzWl82Um9KVG5aR3dZYy1zUi1uVU04?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gc0e869ca869a",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Krijgt Rob Jetten binnenkort van de SGP een rompertje cadeau?",
+    "date": "2026-10-23",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/10/23/krijgt-rob-jetten-binnenkort-van-de-sgp-een-rompertje-cadeau-a4939646",
+    "lr": "right"
+  },
+  {
+    "id": "ged6410f71101",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Stroom aan haatreacties op babynieuws Jetten: waarom juist negativiteit een slinger krijgt op sociale media",
+    "date": "2026-10-23",
+    "sent": "n",
+    "link": "https://www.ad.nl/binnenland/stroom-aan-haatreacties-op-babynieuws-jetten-waarom-juist-negativiteit-een-slinger-krijgt-op-sociale-media~af523375/"
+  },
+  {
+    "id": "g2876808a0f67",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Het kabinet-Jetten is een uiting van politieke verlegenheid",
+    "date": "2026-10-23",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/het-kabinet-jetten-is-een-uiting-van-politieke-verlegenheid~bad90343/",
+    "lr": "left"
+  },
+  {
+    "id": "g128741f82983",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Stroom aan haatreacties op babynieuws Jetten: waarom juist negativiteit een slinger krijgt op sociale media - AD.nl",
+    "date": "2026-10-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPZWx0QUpKN2c4VC1DQWxabFlrU1NxQUlES3BoSWtENmNxUU5pR0F2bGdiXzJEMUdVZC1xOUNuRmExTkRDRHdNVUZuTHFlU0l1Z3dZbnBhOV8tZUgzdFdwMUVZa25PLTQxNlY5NDk4S1Z2YjlCS2JYZWdXVldQYlJqLWtoeHFveUFVcFRXeHl5eWRac0U1VXotNWNuYlN4eTBUMnVuYkFkb0J1ZHlSdWVKMmdHZU80WDNGWGtnUVZLaDJuRDlKX0Jld1dEdmh4RWlPbVFhVmVuTWs5dzR0Qmc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge7e5b1c015c6",
+    "type": "nl",
+    "src": "Leidsch Dagblad",
+    "title": "Waarom verwijdert Facebook de haatberichten na babynieuws van premier Jetten niet? ’Meta verdient eraan om het te laten gebeuren’ - Leidsch Dagblad",
+    "date": "2026-10-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNV2RWU2NHd042c25HRXp2SHFFTVNpZDNCRjN4MENyUVhYUVhsZUFFZWtDZFd0YzctRGVzVDBNVXRGbTNnb2J0QlctaDNPOGpRWXkxdk1BX3BTNmhjOVdrSEJXUTBRWkFOYkJrZF8yVk9GbHdGaFFUUUdSS291YzhSSDBZTnY2X0RPQlh2N3RYWkJHcFU4V1ozMFN4MnNqTDN2NHFBWHBJOXBNSl9zU3pOZGkzNTVEdklYN1VjSEtTUkZUSlh6bVptYmVtb1pkWEZ2Vy1xMHJDOTNJSExzaVZyS1puTk5ZYzVoOGtNdWlNcGRHZ3Z2eGVXRzQtSmZwem1idWxaZDBPR0NMUTg0WUdZ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g77829ec961dd",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Waarom verwijdert Facebook de haatberichten na babynieuws van premier Jetten niet? ’Meta verdient eraan om het te laten gebeuren’ - Noordhollands Dagblad",
+    "date": "2026-10-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPbDRFSXQyM05CLWtaLXJienZleFB2c2Jja0VTeGk0Q1JsNGdaWXR3OHRPTWVwcGRpNWZFWjFya1o1NFFuX0x5V0RERW5jY3B3NndiLVhkVi1EM05fSDVRbkkySHByc1NtYWN1MlRvSmxHeC1seWF0aU1YM2NkeHI5Z0VQdERNQ1pnbUxhajIwb0xjRC1vbGJ3djhaVGJjZW1HcVFGdlB1NW5fUjF2NHZmVkZwS3dsLW00ZWV1Z1RONmtuYnppd1VYZWRib2Z2WVp4aVNPVTZNWlI2QmVwbDZnMHdCS1ltOExBcVV2RU9ia1gwZ2FnQ2pUOHBFc1BTYXBTYmROWE5ELU5vNXM4UEx5X3pCdFR0NDA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gaee6d500f980",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Het kabinet-Jetten is een uiting van politieke verlegenheid - Trouw",
+    "date": "2026-10-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbWxjbHFXdDJXOThLOHVxSWJnVFdlRk9PVnp4SWhTejEwWnlGd3RHZl9CeEE2bkU5VmNZOEhOMHpmbXhpNVRFcE45ZDVzeG5UbzRfcWNDN045OWVRT1k5UmNOeDd0OC1icE15NXlEaVJkNjVOUGR5XzU3YWRfenlCbWcwVXpCWC1GUTZqMzJVSHVYRnktd25jb0stMi1Rdw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ga7d0ece32a73",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Syriërs terugsturen naar Syrië? Nederland lokt regime met geld - De Telegraaf",
+    "date": "2026-10-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPS1dTZmZ2TDJZcFNuYWxaR0hadnpBaVl3c1N0dkhaSUtXVnFBbGFqWTY1Z3NDWWdqOWpIM3BuZld5THhxQmRVUW5tWVhaRlIydUp0bUUwYzAzUm9HazJPbUF4VU9EOEVXem5udHZSekJEVEVYUkZiTV90QnFFSGtKTVhlTi0xeEJwb0lGMnd3RXlLbGszekxibUhZOU1PZFJNUXFhN2xFV3lnMW1lTmVBWVhiMWt4aTdzUzJ3OGhKNnZEdU9sWG90T05VTDY1UnFDS3F3OWRHY0ZLSWFobkxCYmxncTE5OW9XVm56V3hjS1VaRDVScjg4TWluNDJ0U2lW?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf36160b5efcf",
+    "type": "nl",
+    "src": "Folia.nl",
+    "title": "Renteplafond op studieschuld voorlopig toch van tafel - Folia.nl",
+    "date": "2026-10-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVVBXQ01mQ0FmOEpwLXRfNWdvQzFhU2hTRG0zb0hFQXg2M19WSTZyMzRzY2pDVTVZcjRHUldWWk54WHgxaExxQnd5Z201MnF0RlhuMlZsWkk2TjU0eGx5M0s2aU1IRF9nV1FRaVpKa19ZZGpOWVVZMVdNaWxaNHEtSVNDVjRERFVYTldyUTRXNy1aWTdEcExV?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g6ec14b4ce873",
@@ -373,6 +487,16 @@
     "date": "2026-10-21",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUXpSVGIwblEyNW9FMV9rWVVPVXdISDR0am9NVFR5RjRUU2k1RXpZVWg5dGlubFRQMFp0eUc2SzVLUC0yNVBBQlFjSXRPUDJfd19iM1FZQlJ1cWoyNUt1bGR3TVhHSTZfMVFoVGNXQ0FNemhfbHFaRkNOUUV5cU12ZGxiWVdudzdMNzlacG5sZ1pxemVMVGlza3BIOXBITWVwMk9r?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g056080ef43dc",
+    "type": "intl",
+    "src": "Fugues magazine",
+    "title": "Le premier ministre néerlandais Rob Jetten et son fiancé attendent leur premier enfant - Fugues magazine",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPWWk2SVhTeXNVT3N1MHNMYXdtRE51U1llZjRWbGxTcWlzaTFwZGlDUXZRVDdzUExsUjBUTjFRcEVQbzBQM1puZGNWa0VfajFYYzBCOHI5OUY2X2JWR3FjeE1MbnRPUWp0a0tIcGxnemFLcktQcktfdlgzVlRPQVRKSmJfa2l1VU1vckxkX09lQkM4VHdySC1oNmtEVlYwVFpMOU5NeU5HVThBUFdXYllPMDRzcEhMMnNTYmFjeGRB?oc=5",
     "flag": "🌍"
   },
   {
@@ -1113,6 +1237,27 @@
     "date": "2026-10-20",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWXk5NkxUZnA1R29LdFkwMXQtNEhyWmR1dmw3ZF9mQWZzbzlmV2RoSDJETkthdlhGUFMwR1JfZ0twZ3c0Y2JfLXhibWZiQVZZNFVjYzJwTGdDOENFU3NScThnT3FWR2Q2TDNENmROal91alRlY2RTRnpTRDQyU0FacFB4cDNVd1ZwV2RpWGFaU3hqSkVrRnNRNzZuTF93MzJpQklMWjUzaDdxNG44WUJlYWk0eGpFUjNtNGpQZzJPVQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5014880b98eb",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Waarom het babynieuws van Jetten politiek is - Trouw",
+    "date": "2026-10-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRFBRS0ZSMTlZMENpZ09SQzNwbVRVTlVTS3NRdTNESUhSV0wxSHVWbnFDMHpUWDZFV0dpcUNHODRfR1F6R2ZTTi1jbmlEZWIwWWtYMGVkQ2NvN1lGT3ZKN1poclQ0cG5TYVF1NXFXNXMzdzFXbVJTeWFvRUFCODZibWN1YjlsSFNsREZ1TQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gace209af572e",
+    "type": "intl",
+    "src": "Euronews",
+    "title": "El primer ministro neerlandés Rob Jetten y su pareja esperan su primer hijo por gestación subrogada - Euronews",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV01CSVBoTVhxTUdDX0JDc0d6MTR5TnlGWGR1cVVfclBUYk8tSHphT2dRTFlHa2N1QnVydFFMb3lOXzlGc3V3aU9VQmxmemFmRkxlYllrWkt0MlV4QnhUWGJaQ3EyMXlEak0weklrTk5xWmZWRl9JcUJqNWczQlB6UkhuWGtmOTZsZHdjQ0hJNXRWbXVQOFBpYld5b1U3LXl1ZmVOMjlEc2VPUQ?oc=5",
     "flag": "🌍"
   },
   {
@@ -2311,6 +2456,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5EamNRV1dJTERKc25OVi1wTXh0ZHF0Si1NZkExX3c0VkUwTmx0am1sMU1ZemhtVjBfQS0zYWZPY1hwLUEwOFExaDdIMDdURl91Q1dvNmFEdzdBVU9zVFlXNVRiQVIxVHRtZ3JhTDhSbVFwVWRJ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g61a9865251cf",
+    "type": "nl",
+    "src": "NU",
+    "title": "Rob Jetten verwacht in 2027 kind via draagmoeder en neemt enkele dagen verlof - NU",
+    "date": "2026-10-19",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPajNrcmVxUkZMZDBCeTlNN3N1YS1aZ2xKbllBTkp0a0hkX1pmNXctcVhuS1hZZ0w3NzBHcmpTS3FodEIyVzlBY1JsVlJxdm1vUXFwY0tjTWlKNC1hdV9HVjZ2TFlNWGQ3eHROS1Y3OG9GV0NRcjU2T0p2X1hyQUM2Q2wxTlJIbmxpXzVpTHIzeHBHajRpNlJjQXM3SHJSTmlTcElyWlBJbW5pUndmV2ZKRlVTODVpN3h2Xzcw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gdf72e5827cc0",
@@ -27311,6 +27466,17 @@
     "icon": "📰"
   },
   {
+    "id": "gb185a4e43bba",
+    "type": "nl",
+    "src": "Bnnvara",
+    "title": "Kabinet-Jetten doet concessie: snellere verhoging AOW-leeftijd ingetrokken - Joop - Bnnvara",
+    "date": "2026-05-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWDZtYWtmUGNraTJ2VzBEZVJSUmhWaVdmSVpEWDFnTEZKSlk1dDlsLXg5R2d3d1k0c3k4NjFwQnZSN0RMUHdFaXpiVUZqd2VQM3p6VGcwVzNobmpvbTQ4SFV5WWY5VkIwTUFBd25SLVROYnJ4WHNLenRhczlRUU01UVpGSmhUMUdoRkdfY0I0Q3h5aExKNHFzcGFGWkhORTVqXy1vX2dfQXNYNUZEQm9FSA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
     "id": "g7ba5c4a32dc9",
     "type": "nl",
     "src": "De Telegraaf",
@@ -43052,6 +43218,16 @@
     "date": "2026-03-08",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0QUprdlpXRHczMXhFaVVsempWeFBTMmk4Q1VuRms0QVR6aDJoNFV2eDRidHpENGpENUdKNUluaWNObG1NS3l4Nk96ZjYtQjBZZGtCLW1wdXJkc0xWbXhlV05Idnp4dlBjTHVvdmJCbUpOaUtEajBxdmdmUUgyMWPSAYIBQVVfeXFMTldQRlJaLTAwNDhyWjRYVGtmbnFoWGtsRXJTTklnQTJMeV9HY081VHJ0aGdVLU5XQXgyeFR2QndxdkoxRmhYbk52Nk80YW50ZzdsVzM2aFB1WmJYblV2Tnp0YlRkMVRaV1VGZTVOblFrMnc3MGRJZHZWc28tTkhCcVFGUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2f727935d6de",
+    "type": "intl",
+    "src": "NV",
+    "title": "Нидерланды будут предоставлять Украине около 3 миллиардов евро помощи ежегодно — Зеленский - NV",
+    "date": "2026-03-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOOWE4czliWUozbi00bUFRQlBHNjJUdzFmTGFyUFpVUER0TkFDNXRlYW9hczBLMHBRTURvM05hMUNuelNDTjF0dkNnOUlHS1paeHdCVnk2SkQzVkhmNGFMZ3pjVGczNnpQeFozNnRlWGk3aU1sNHpLLU1QZXV0T0wwOVlZTXBzQmItUFpsc0tncnhVV2hlMzBYZUV2eUFoTjBwNmVIX2tWekdxekFXdEh2bFkyZjYydkNvMjR1UHpTNGwtU3FlQ3U4Z2JMQi1rQVFvcWxrakswbF90bVZTaXpqddIBzgFBVV95cUxPQTk5QmtuTjVUdXFGUlVMMU50VHI4cFhQOWRWMGZSdk9SS1gwemRscW5za2xvSDdWVUNXbU5DRWJVMW9vQlM5OUJfQ01QY21QZUZadm5uUlNDdkhSRkxKd0QxaDMzS0pqQlFubEg5ZjU2VlpheVVCWDZjVFZiSWZPT2o0Z0c2OUVrQzhKVlRtX1lWejlSOFFFeFpwZ0hJeFc2TlJvbXJpbUJGM1FYa0NYbm8yZUJ5Ri1mQkxVS0lEYWtLenhwdlNYa2RDZWcxdw?oc=5",
     "flag": "🌍"
   },
   {
