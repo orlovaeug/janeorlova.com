@@ -1,5 +1,338 @@
 [
   {
+    "id": "g294b198bb5ac",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "President Zelensky vandaag in Den Haag, bezoekt Jetten en de koning",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://nos.nl/l/2636979"
+  },
+  {
+    "id": "g84828da5398e",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Zelensky deze woensdag op bezoek bij premier Jetten in Catshuis en bij de koning op Paleis Huis ten Bosch",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/10/28/zelensky-deze-woensdag-op-bezoek-bij-premier-jetten-in-catshuis-en-bij-de-koning-op-paleis-huis-ten-bosch-a4939940",
+    "lr": "right"
+  },
+  {
+    "id": "g7af59cb1eaea",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Raadslid D66 verdacht van verkiezingsfraude, Sohib H. mocht al op bezoek komen bij premier Jetten",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://www.ad.nl/binnenland/raadslid-d66-verdacht-van-verkiezingsfraude-sohib-h-mocht-al-op-bezoek-komen-bij-premier-jetten~aacb506a/"
+  },
+  {
+    "id": "gf494815ba99d",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Zelensky bezoekt vandaag koning Willem-Alexander en premier Jetten: afspraak komt op opvallend moment",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://www.ad.nl/politiek/zelensky-bezoekt-vandaag-koning-willem-alexander-en-premier-jetten-afspraak-komt-op-opvallend-moment~a4fb16ae/"
+  },
+  {
+    "id": "gf7259c919520",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten en Willem-Alexander ontvangen vandaag Zelensky in Den Haag",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://www.nu.nl/binnenland/6414651/jetten-en-willem-alexander-ontvangen-vandaag-zelensky-in-den-haag.html"
+  },
+  {
+    "id": "g9280c683a753",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Zelensky komt vandaag naar Nederland, bezoekt koning en premier Jetten",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/politiek/artikel/5661536/zelensky-nederland-persconferentie"
+  },
+  {
+    "id": "g6e1c873ecc2e",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Zelensky bezoekt vandaag koning Willem-Alexander en premier Jetten: afspraak komt op opvallend moment - AD.nl",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeG9nT3BJQW05akdHOFR1VG0ybEJvbmljS01UbXQwZjYzNmdoQjJjeVBwVmt3UjcxdzhDZ3VyOEV0NHBhaVFqZ1hHeXQ2MUI0M3ZEdkcxUDVfX2tLdkg4UGZTaWtqcEFmV1JtYkNVenM5R1J2bGlEc1d5VWF2SGl3UlFFaEplVllrdWMyWUJMcHhsa0VQM1UwMUxlTlVJdHBXLVJNQjRYa0dqbTVadzNESDZIV2pnRU1fSlVnUUxqNUk5QlRXQlhBWUdKazAtdFM3VFgw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb4bc62636ec3",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Zelensky vandaag op bezoek bij koning Willem-Alexander en premier Jetten - Het Financieele Dagblad",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQS13cVZKbEV0TUlEWXo1NDQ2LThBU2VSb21IdGFPa1d4dGppYW5Xajd0VWx4b0lBQ3E1YVNvSlFsVDhsU3I5MHQ1Y2RYTVFHQjlkY1ZCSTVCT2MwbnpITE96cHFrSm93bWxLTEN0elh6N0tXWC02Qm00UkN6WDVJeTd1eFo3YjdpOU51VkZxX2d4eC1KMEc5c0E5Y1IxU3hBX2RuaV9n?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfd8841867dba",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Zelensky deze woensdag op bezoek bij premier Jetten in Catshuis en bij de koning op Paleis Huis ten Bosch - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMkFRMm9MSlg1RzQ0ZHJ0RUUyMTlpejFJXzRfcjJ6R2JUc29KX0FOWkNqN1N6eHExQUxvUWxCY29HMFNHeDBsX0VHemRWSi04RDV6SDVKUVF5X2hFcWtrYzdrUTdMWDMtYy1jQi1aYTNOdHU5Y0xwMkE0ZHEwVzBHSFpzcGdIaFVKa3pUUERiUktmNl93SER6bjd2RDdUVTVCWlNVc2NfM0RnSFNQY3ZBczdKbG1semlXNVM1QWpoQlMyZE9qck44SHV2MFhad2F1cHFFTjYyS3I3T2JFS3BpLUJaX2Zwdw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf939e40ed31a",
+    "type": "nl",
+    "src": "Haarlems Dagblad",
+    "title": "Jetten betuigt medeleven aan Spaanse premier na treinongeluk - Haarlems Dagblad",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSG9GckRvSUY5S2swcUJ1MHd2RUNYZl8yeXZla2laZk5tZXlBYnFyQm5QblRqMUNLZFFpVDBRWGsxQVotT3VKNkJFZ0ZqZ2Y4WFRweEFFbTB3ekhXcmFKQjBwM1h4d0pXOUxWSDlCblBQNmZ6NzRhb25TZDJnTzFnR0h3c0M2YjFxZWVRRE9IbERRc0R1ZFA0R3dXeW53YWFXaTB2S3VFbkFqdmloaG1mbWpuMG5hcU9j?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9ccfa03d96e3",
+    "type": "nl",
+    "src": "Nieuws.nl",
+    "title": "Jetten betuigt medeleven aan Spaanse premier na treinongeluk - Nieuws.nl",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOenlPMEp1ZTMwa3dPWU9WWGhodTlVTWp4TnBEWDd5QlFKWUhVU1B1SXNILVhRTHFFNnFPRTZ2NW1LVHVRek9IMENZT2N1dEo5cmpiaVVyWm9qSkUtc3FRVzBlV0NaS0VqNXcxUlNBdDhqV0pyNWl6cjZQTE1ROWxTNTlBR3NMNWI2cVJjbDhvdjVIc2tWX29OWTVB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7a12e903394c",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Oekraïense president Zelensky bezoekt woensdag koning Willem-Alexander en premier Jetten - Het Parool",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPaDktcnp5VGpDZmN5d1B2QU1iejV6S3Z5eVJxakhlY3FURVdFeXBVcnNXenNYb2xkdkRBM1dfenhqbDktRk1lSEVhekxqbVJxMkdCRENNeUFCOTUyMnlRekxtcTl3NzlCXy1lVmJBNWpPN1BaajlYRkdXUk5id01kNHNUc0Z2X0l3TmxlVVVQRnNrYnJ2RXczc2E5dzE0R3VkZFFBSFRKa0tuNnh4SUEwd3lnd1pRNkZWcEV6NzlLVlVPcU5nNnlhVG1n?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g722187bcbf4e",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten en Willem-Alexander ontvangen vandaag Zelensky in Den Haag - NU",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORko2SE1adUZHQzdQMFNJbWNJcmlqRWVFcHBfZjZvUV9WVGRac2RES01leG5ROTN3S2IwSzJSR1JYQzRweHhHaTJIZy1ZRE5Gdk8wYXRhclN2RmhWVzBQX1hfOUJTZWdRYmdXeHRua2hzaDBlVDZJT1dib08wNjZOLWVtbXg2SmtpdmNReXZ4d0diaHIzNkpfR2FhRFNiQVAxYmlOTDB0ck9Oekk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g10cb43536d5c",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Zelensky komt vandaag naar Nederland, bezoekt koning en premier Jetten - RTL.nl",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQS1SUmI3UzU1UHRYWjRvUWdRdnpvWkJaVGs5TnBFU3BvcU1GVkk4SUJfY2x1bVpaY1RwdE4zWl9pSHVzVEZpOWI2ckl6S2dwSk1aYW4wUHdhVTdfR0ViUGJfUl81SUpRLU1LVmxmdF9vMDE2Q1VnX3U0anBHOEZBRnFiRW96aXVDdmgzT3h3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gfb6ce1eccee4",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten betuigt medeleven aan Spaanse premier na treinongeluk - Noordhollands Dagblad",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOOE5nMjNFUTFSajFTVGNkLTJ2RVp2YUpMdTZTYk5uNkNhdHl1NV8wREgxZ290R1BuZzliWm82MUUtY2ZpYkRGOWlhSVQtX085Vy1LRjRoSmdZRHI2OW96YWM0aUhZY1NhelpBUDYyWTV1d3o2S0Vzc0tKcS0wdnBMbDV4SEtJOHByU0UwYVY5OURhVTdkRU1abExOTWw4djVHMWZpRWFWZExSUkZmVVBwRDB5SXFVdjdZYk5jVnhDOA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc5207a24392e",
+    "type": "nl",
+    "src": "Omroep West",
+    "title": "President Zelensky naar Den Haag, onder meer ontmoeting met koning Willem-Alexander op paleis - Omroep West",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVkd2N3c2WER5WW82VGVrS084dS0zN2ZJbFFDak5fRW5lMnhKTDRxWjF6bW5WWGRXSVltQ3lwa1FGSXl6Mk5OcUp6TTg3a2REcllkT2tvb2tCc3Q2cXFuVzZJVGJ0ZWl2b1BXMlVXSzFpYi1mRFN6UmxsUGhWeGNtN1VpWGxIX1hsMU1xTHR2S2pUSnFtM0xvdlljakFvemVVSEotbzZGa2dKTUNkb0FKZWU0N0p2eEZEamRjMk1IQVZMdFAzdUFaNWN2QmZRdlVk?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8f72074c72d5",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Oekraïense president Zelensky in Nederland, spreekt met Jetten en koning - bnr.nl",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeDRmd0VOQUx2Rk5CZHBpbFREbGo0WXNFRndQTVdUT0VMempUNkdPODQ4RGM0NDMwWmJJWUh6b2VhcV9fYUhRMGZ2ajJGYmZ2UHhsdGFzamdWQjc4QTZNTmNWTld2aEx5clRJY0JLQjluYkNXTkJKT09ud2VVQV82LUdwWXh1Q2dabWt0TXhRYzN6aHJoOWdwYmVNQnczbEV5eFFBdTR3Q0xHRUlTQnVYbll3dXBNZldCcmVB?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc25f393112dc",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "Zelenskyy arrives in Netherlands – video - Yahoo",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPXzhIZk91ZmZGVEo2VG5RcXk0VnBJVTNOR2FRVGdaSnIzT1EwbXNXZHd5dmNYS1l0c2lpM1RvM21zM2tCUExWTVRCUjJzOW9xeWVLWmc5V1pIc1RyRUxjNjluSVVILUJtOE0xbWNoWWRZSVBfUTlzVnplZ0M4MEZ2T21pWmVScDYwMU9WOENnd2RvVF91VlFB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g188d754b15a5",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "No support for tax plan would cost Dutch gov't €2.5 billion next year - NL Times",
+    "date": "2026-10-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSzJOd2JLclFIUktZS1J4WGpUT1pGUHE1NVpXUG16SnVDNTNNYm15emdGM3N5LS1NXzlWUUd1azI2NUl5bmFkdUh3OXk4VENwWnhTNml3eVJtTURtQmFfLUJ5d3RUcm9LWDdFNkxfNjdtZHdraldkektIWE1UaUM5SExCb2E3WkdJUlA3UDR3?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g247feb249956",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "Zelenskyy to meet Dutch PM and King Willem-Alexander on 28 October - Yahoo",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQX0t4UFdiMXJmTUg4MUdVUVMyMzRhVHRXOERvVElZN0lGQ1pNU2I5OGxjR0laUnh0SkdsRFFLckliY3VMblp2cGVxSGFCQW1uSmJXVUI0em9nT3NHajcxdGxkWlhhbHlmb0VDckF5V2NlYnAxNVQ0VzM4NWVHQ1Y5ajBEU3VudGhMWVlZdWRB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfc5d79e83ac6",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch King, PM to meet with Ukrainian President Zelenskyy as gov't pledges more support - NL Times",
+    "date": "2026-10-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMHNJNFEwVy1CWHh0YjlfdmlOU0J5b3Z2c1B0UlFNLWRsVEZGRk9SazV2ZXU1TTcwRjg2STBVWVN1OXUxYTIzYm5SYi01bGlnRWpUeFl0c1FhWXRkZkptSThQSC1OdTBQdm5YSXVsTWJ0OUhyZkpPSjdDMXAzdE9BYVNmMGJMVjdZTmx1S2NBYlVzRTBWLTlPQndEMFRNU3h3?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g0151cbb6f76a",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "Zelensky lands in Netherlands to discuss air defense, economic partnership - Yahoo",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQUpwanFTT3JWQ3FNY08ta1BfZW53NDN1ay1yaTc1RkRSbE1mOVZDT3U1eXhvelBMOTVBOG1zZDE1b0FVR3pGd056d1QtM2wyRjRvUlQ3empMRHhIY2k0RHIzQzhiS2xFeHpGc05ZZ0laeGRTT3ppMGhrVUNmVWVJOW82cGFmcnNKdXJCcnpxZEJpYnJxR0p6RXpaV2ZUNk0?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gaf86e11271d2",
+    "type": "intl",
+    "src": "Українська правда",
+    "title": "Zelenskyy arrives in Netherlands – video - Українська правда",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBkVzV2aWIzdjR5bHV3T29YSU8wUGwzb2JqbTMzeC1WT3gxZjV6alhQOHlrOEU3M01Ma05PeXFzc3JSTGtjY3ZIdUNGVUNoWVVTYnJiWWJrNkJLZ2dYaUl0and2Rlk?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g23736cce8231",
+    "type": "intl",
+    "src": "The New Voice of Ukraine",
+    "title": "Zelenskyy arrives in Netherlands for talks with prime minister and king - The New Voice of Ukraine",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ0h0LXl1UkUzVjZPVm9aUy1XaUJTMDEyNTk4TERfUHh3U1NrSFd0S1hyT2xDR1FlcVk4bTFRcDNEN2JRR0I1VjFuSTF4OTk4LW5aQzlkaGtrcVhRMVB0c25HLTNUV0ZmM3pub0tSTFcxanpsRll6aWFZb3dPMFdHTnZVM3ROZGNnSHVYVGJWT0FZcWdfYnFURHhfWHJEbENVbE85RzhTWXhQTkQtLUNKUnQzbUk5MmJNMmxSUDY1LUNvVkVn0gHAAUFVX3lxTE1JVVRZOWRzVE1vblphYThWZ1ZyUGpsU1ZvVXZyTDFGVTZIbG9ZN053ZFJ4Q01TQ1F2b3lXcnZRWUZqc1JFRXUtMDZEOF9XZVY1MEJDM1BJYlo4Yk9uMGVvM3psSzRVTjF0ckRUNFZnbWF0aFNFR1NQMG81eS1EZkRvNUdlVENWQkdsd3NjMHRuZU03WVMtVUd4VU8xVTl1LTZuTGJoUlgyUmxINjdYbW5xN25zVjh1ZmNUVkp6MkVGXw?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "g0a35f2faa6a1",
+    "type": "intl",
+    "src": "Ukrainian news",
+    "title": "Zelenskyy arrives in the Netherlands, where he will meet with king and prime minister - Ukrainian news",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOVWNEZTdHQ3g5aWp1VUFEOGwzQUlXRnRIOVIxejhCbFFvNWFGeDc5MVZidWNRWDM5SUI3cHNoXy1Vamx5eUhqcE5zbXV6LUd0bV9zdjU2QkR4OC1ScGlLVEtRN2o5d19Wc2xfQjBEMGJFRFFaaGlYTE00cHFoUDBpX1NWbzNlWG9aazItT0Jrc2RwMHVWNko5QnIteGMtUl9NNTFIYnhMeVNieXJicVdCdlBkRUpiTmpQMnlfM3F3d2dOajJGclZkdmcxdnNqQdIB0wFBVV95cUxOejdodmt6T2xqdFAwRjd4enljRzlnZXJuOVVMVTFIYXpoTHh1VGxLVDVoRFhLUjE4TUNuS3hFcWdUa2ljSzdpSVM2elBIWHZfM1lrVlVrUVNrOHhnV05LanRSVUtXNzg1VWozYzAtbzVLY21TblMxb29tbVdFMEwwNHFXRWV6S3owYjdoQ1J5ZzRVYTlGc3VZVzd3SjdoUGV6YTN5SUhYTUZFZmk3NmRsV1ljaThNMnFqM2NidzgtUEtwaFZLdE5wd2dCRVh2YTdKM253?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "gea89df1a3e4e",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "Zelenskyy visits The Hague as Dutch announce €1.2bn aid package - DutchNews.nl",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMkV6R3lvVmgtQ3pnMEVZTTlkWkRILUF3YTZwQ20ycGFWZHVkaGNCazdSZ09KOE12aXc3YkJNaUtLVzVtR1FkZjVVYUVjSUI5LVAyaHVKMENudy01RW9kUDhjUHk1d1BvaHFVVXQ3dlRnWnl6OFEtbklLVEJEdzllSVYyUG5QUElkWmo3MHdKN2FJRVZnYWJGR3NtejZ1dw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfbe723279554",
+    "type": "intl",
+    "src": "Цензор.НЕТ",
+    "title": "Zelenskyy has arrived in Netherlands: talks are scheduled with Prime Minister Jetten. VIDEO - Цензор.НЕТ",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQczhQbzc3Z2dzcjRpM241R19LRFkwZ2JnOFVtbkVLdnVjOU5HVWhWR2xieDRYb0huZ25uOFVuNHVnZmc1bElNc09kYlg3anpGcXpaVXFKQnZrbmd1dDVEU3ZILXd4aTdfYmNtUUh1OFV1MnhQUGJVMGJsNElpclp2UUZzMElCaWlEUmNGVVdPZzVuckJZNkZ1T1dNaU5COVRvWFV0TFB6UHFjZXpiSkVLY2N2UDM?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb7b4bdbeedd2",
+    "type": "intl",
+    "src": "Українська правда",
+    "title": "Zelenskyy to meet Dutch PM and King Willem-Alexander on 28 October - Українська правда",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HTDd3TzY4QllpSG1zTmo0SzB0MDhuYXVpU3k0SGo1M2wtc1pjb0lGN3NkdWFKOEpkUTY4czFUUHRjWnFkNko5N05rSldpa0FQVzFJYXVhbWJHRXF3eFk4aDRCXzLSAXBBVV95cUxPaE0yaUxyeWZ0TWdzV2N6ay11cHJxYTlBS01YRW1lamRqQnVYN1VsTUVHMjRLVk9xUlJqcTN5NHB2TWFxUU1wZGI3WGNycC1VcWFDTHV6TUlZZlppdWlIekRUTHF3aEs1Um9yTnlnUVdG?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g93ff9c14170c",
+    "type": "intl",
+    "src": "The New Voice of Ukraine",
+    "title": "Ukrainian President Zelenskyy to meet King Willem-Alexander and Dutch prime minister during Netherlands visit - The New Voice of Ukraine",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVVJVeUJCWm5xZWNpd0Z2TXBNWFFnQlR6ZnltRkpubFM0dkFqSTRZb3gta0pHa0ZzeDI2Rk9EWkQ4akhTWEctZERRc1FNd1NOLTU2M1Fnbi1NeXpOcHFocG1FXzFfckNfbWNFLWFOazFWcks1cVJTbWdyNjFBVEd0cXgyemQ4OW9OWVZEWlh4ZnVuSFI20gGQAUFVX3lxTE14eXVmSFlJY01MSzN5OHc1M09rNHQ5N0FISmptYllzXzZFVTQ4ZW15bl9TVndzNFgzLWQxNDZ4LTZOVWlSOWlKdngxNDF4djdaa1otZmpJd1BYdTlYeU1CczI2ckxraVBqSXBaUFJMMEFzOUkwNk1WTWJHaWUwaXhBQ0w1VGE3ZnFuYng2MlBpMA?oc=5",
+    "flag": "🇮🇹"
+  },
+  {
+    "id": "gddcf55596aa6",
+    "type": "intl",
+    "src": "HolaNews",
+    "title": "Zelenski visita Países Bajos para reunirse con el rey y el Gobierno neerlandés - HolaNews",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNF9HbGhkQUdIUEYtcUhfM1NDU2pXUUx4M1BfSm5raVFFYTRNVVZYcUVnZ3cyb0ZqQ1NRNjRqZy13ckcxUWFKSU1ZX0NFR0NFQzQtd3FCVUVWY0VfVkp0ME52d0hLUUxoUHkzSkdiU0NMZUZSRnU2SGoyazJPaVNUd3IxRG9VTGpPYjlVdkljN2V4ekRxemdhVWJoSE5kWXJRbmc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd8f895bef356",
+    "type": "intl",
+    "src": "Rubryka",
+    "title": "Зеленский прибыл в Нидерланды и встретится с премьер-министром и королём - Rubryka",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1EaGkxVXU1LVhNaDNEcUV6YmJ5WU1sdXFnLUJtOFBRRlM2eFFqYW5pZG5fcjR2cUZEdFFHSkNzaXBVODJuS1pGWi00MG5sT2xYTU9TeENxcXFIS1Q0YkZvalplSjZQdGs?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc7a3eb8b4b62",
+    "type": "intl",
+    "src": "NV",
+    "title": "Зеленский прибыл в Нидерланды для встречи с премьер-министром и королем - NV",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZG5BS25YUjhFblJnWHRYeWo3QXNMMGdPYlhpMTdmbWlLV19OM0YzekwwVVQ2RHAwbERfTnhqVmhOQ1RLNmt4Z2ZGS3MxUElrWmVadkpOQll5dUtqYldILTdDQ1lrMGNVTm41czdIaEhJMjhtTlVXS0hsTFJfVWxMVGphRHBvQUhRSHBZTVFrRl8tQU9IN1d3bnlTWEN5ZnRnWndueUhfc3FQbzlWYk5WakUxMUltbFI1T2sxMlUyY3dzd9IBpwFBVV95cUxNNUVQazBDZXpOZXFLTi1FeW5UalRtaUxvN2ZXYXdRclJmTHZlQzhXYU12WUt2cmdvSDhKZk5yMjNRRk05S29vUWJhQkppSHRYNnZZM3B6d2tQVndQcEI4ZUxwTTFOSlZwVS1Gbk5SMjIzM3loM3J3c01KRFZZOGhZTWFFVldwVGRic2hoNnZxbk1QdVVRNVhtc1QtTnl2WXhhYnF1ZGNHUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0f0896dae3fd",
+    "type": "intl",
+    "src": "Телеканал Ми Україна",
+    "title": "Зеленський прибув з візитом до Нідерландів: заплановані зустрічі з прем'єром і королем - Телеканал Ми Україна",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMHhxNGhzcHRuWnViMXBlZFZ4WGgzNFlDRnhTT1NTbVNRV0JUV0JkZ2Rlc2pzeWZRdEZURHFyaVJqZU1uUGROV1lNRXhTM3NpVlFZMnFoUUVNOVNTb3d2OHJSOFk5TzBnZEtfZVRldUgwMWM1aENEZzhRdGlYbWdTMGlkWHZLYjZEM3FGOHVlN0w4eXpuZ2JZQUdaRXFYRTNkamV2VlNsY19jb29MV05LMElEcEY?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gd5a25ccea625",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -121,6 +454,48 @@
     "flag": "🇺🇸"
   },
   {
+    "id": "g8c107bdf9532",
+    "type": "nl",
+    "src": "HLN",
+    "title": "Nederlandse premier Rob Jetten reageert op negatieve reacties over aanstaand vaderschap: “Die horen er helaas bij” - HLN",
+    "date": "2026-10-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOGhWRzN0S1pCakdHdngwOGQ4T3hjTFF1azBPdDU5UWxRaHRRRk5hZTljZEU4MU5VRzBHMlFZZS1kYnAzU1lGc2hYblNYZnp2a1B4VzFQUGhjd2ZpNDlxcUdDdHVRVWc4X3JyTWpUM2ExT3c4Z01hZ0FUQUN6THFYQmZvSG56TjRhOHNVU0xZYjJPY0ZyamUxVlI1bExxdE96ekdmOVpYcnpKZ0gtZ2dEWWlETXpIUnhlWjh2cGlaTEZzQ1Q1T25iX0c2akxRZW9RWlp5QVAxZ2lKanZmS3FnZ0k4Y1BZQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gaa723517527f",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Adviescommissie: kabinet is ‘inconsistent’ en spreekt de ’taal van het internationaal recht’ niet - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-10-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOemVoVFJ4X3R0aGYzelFRUlYyRnlnS042YkhVTEpjMnE1dTAxZzhJQjF5YUFTV25Ld0FKVVlQNmc5UTRzdk1GbWNnOE9uRjBpRWFuNlVfd1cweTJ2VU5EWjI2amF5Y1RaUTJmT2k3b3FWUmdtWUdsSUIwVmNEX2hjc1RuLUhZTnMzTVNuTk9QUHZDaTVGUG9BcXo0SGtGVTE4RXdnTEJQMDBjMThRa0pnbnZIRkVCRTNLTWJoenNHbmNaZjNad1k5YW1BbUFJZUZhVWdUTA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gee5ec2b5cdec",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Kabinet ‘kritisch’ over sanctie VS tegen Italiaanse internetdienstverlener - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-10-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQkxnN19JdXRPY3VvRGs1SkNkNVFxNTFMVXdDMTUwR2Jual9oRTFEZk9qcXZGVGhaaFhjTzVWaDZHOVBfM0VGMHZwb19xNUc1LUUwdHRQYW90YnZlZDdkX0prSWFKN193Vmc0cmpxMlY5cFJya0QxRExLTzZSR0t1VGY1OGlZaHMxYVRiM2lFcHdQWXlveEpoR1pGb0pYZUVONms0ZC1YRVd2eV9pNkZiTVpUN29nMFlJREE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gfe648ce81b1d",
+    "type": "intl",
+    "src": "World Socialist Web Site",
+    "title": "Netherlands: Jetten’s war cabinet is working with the trade unions to cut social welfare - World Socialist Web Site",
+    "date": "2026-10-27",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5XbkV2MGhWelY3SXhzZTB3alFQaEJ2c19ldFpyTk1BSHlZXzduY2lBc0M3c1BNWVFGbTRVWXA2UU5YWEVqUnhzblYtTUt1X1lYa1BkRXF6ZUN5bzl4MjVCa2ZMeTRFN21W?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g9954fb7f00da",
     "type": "intl",
     "src": "Leeuwarder Courant",
@@ -231,6 +606,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9LMGlqbmZnbWp0V0R4S1dmRUl0LUVqNHNEWEI4cVFMYi0xMlYzZVdibTl0Wk1CbkFCMlp3NjNjNFM0R3RLUE5JYm1aZ3BlTWJQMDNBZ3JndmpCakhHUkRGRmJ4OVp3ZEFacUxN?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g35582f001aca",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kabinet hervat gesprekken met oppositie, maar akkoord nog niet in zicht - NOS",
+    "date": "2026-10-26",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdloxSmpjY1I2bVNGeHpSV3FsYWxXTjFtbG1NMmlzQXg3N01qcXhPU1NFbnJKdmNveEhHOU04QjBhMlFWeHczU19NN204U000MGdHa05PVzh2QjN6QVM4dnZCcGREdXcyS1ZTaDdvci1mSXZTLTZjb2Y5NXh1UG9xemJPR3VCZDhFNUpIcDFfUDFhcnA5N0NCMnNWMWx2bkx6RUdF?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g552a0fa3df9f",
+    "type": "nl",
+    "src": "NU",
+    "title": "Kabinet steekt 450 miljoen euro in fonds om regenwoud te beschermen - NU",
+    "date": "2026-10-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOb3plZkFBdDJrVllwaU1IREVXVDVrOUNwVUU0ZF94aUlYZ2lHUVFpSVFPVGtWaVZrYjdZZ0Z3RXQ0cFFRZGN4NlRnVGpiaHBpYjZSRkFqZXFyUXNUVldaWjZLb3VISmNzNlA3VmNFd2pMTHREbWJQVkNzSUZNN2hsNGhGVWVBRmU5UXp1VTlBQmgzTWlHTHZ4LTNBVF9zLUhfTDdTWk5nU0VZZw?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g4be79e3e7aba",
@@ -2866,6 +3261,26 @@
     "flag": "🌍"
   },
   {
+    "id": "g3918a36ac291",
+    "type": "intl",
+    "src": "WAZ",
+    "title": "Leihmutterschaft: Niederländischer Premier Rob Jetten erwartet sein erstes Kind - WAZ",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPVDRRckZ4RFpLMGZGMUwxUjg2cVJac3NmbmxTb3VLWnZ2djhSM09iRXlwM3dITnRVWXlNMGExRkRKWUVMOXczWlh3TkRKVXVPbmxCVXR0SzAwcUdPNWVraWJ5SUhJVjBCZnhJZ2Z2Tno1MlVrVWNKZXhEMGdESWdheHE1X1J2a0xETzI3M1AwUHlHeGE0ZWVQbjRGVFI5TlpvbDFmdXUxc2pGSF9Melkyd0NPcXVCekRnemdWeTA3N2QyeEZTUHZnaVl6X2Y3ZzNJRmg4?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g487c0a5c1a04",
+    "type": "intl",
+    "src": "Hamburger Abendblatt",
+    "title": "Leihmutterschaft: Niederländischer Premier Rob Jetten erwartet sein erstes Kind - Hamburger Abendblatt",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOOTVxZjJub3FHWmJYYmQ2R0Z1YVZMVjgyTlF3RnpHZnZVTW5ObGNudEJSWUxsMWlONmFFZEs2YTlvZ3ctSjgtdzZnallWc2gxbTVfX1BrTHc4cVYtSW9aWDZtTnF1TVk2T09tRG9FMEw3eVhON1Y4ckxyd0hYeTBfa3dSY3dMZUg5eVdNOVlSQVZFWGdaZW9oZXhRQWhLQ1BWaF9QdE1aa1VhaVpBM18zV2FmM3BqVlNLM2hKdzZERm5kOGNMbF8ydnlkaV8wbWduTGJ0XzJKU2pvSF94?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gdf72e5827cc0",
     "type": "nl",
     "src": "NRC",
@@ -3185,6 +3600,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQRE9PRHJmaTYyMkg4U2sxV0hPd204U2JzRmNDai1IR1oxcDY2OEhoVmhLcDlsRk5VNTFpN1JTeGNadWpWMFk3dV9JQm9mVzhvYjVYaUVZQWh6dnR0UWtydHJhSFhHVzZoMGY3QnYxaXdISmlPZkRBOVQ2ZWZWSUg1Mm9kOFBRQWF1UFVjVmFTRTNDSkFKYUh2TG1mMHRKOWRkQmwwOVB1d2lBVDcxMnNESVgwLWk2MUQxck8wTlVvVFNkRWFOcW85NFdRR2JTT2M4QzUtZmtoQ1RoSWtRR19HRkJOMDUtVzBLdGNuRG5aaEE?oc=5",
     "flag": "🇺🇸"
+  },
+  {
+    "id": "ge8ae9f9f2193",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten en EU kritisch op VS en Trumps toon tegen Zelensky: 'Niet de juiste taal' | Oorlog in Oekraïne - NU",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPNnUzRU1jUFdHSHZONkppR3JNRERCMzJxWlNLeXN3VjNpWXNZZl9pX0s5VFJYUW9jVzBUTlVodmRMT3U1ZkJGUXctb2Y2aDdiZHNNQ2hLaWdXdjllU2hOSmJMQnM4Y3V2QzhFYnk5alN0elR5Z1ViRTBZQVVvZHU3N2QwT00xSDdwNHJELVdCemR3ZXJ0b01BMjUyRHc0ZDM0UXo4Uk5fUWJ6UmE3LVByYnp4ejdWSm1pdDFLdlZOY1BXNkxQM2dr?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g549bb51c678d",
+    "type": "intl",
+    "src": "Paris Match",
+    "title": "La jolie histoire d’amour entre le futur Premier ministre hollandais et un athlète olympique - Paris Match",
+    "date": "2026-10-16",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOTGNJZ002bTlHcVNrUzlTc3pmQWNoY2hGLTd6LTFzSW9EZXBkMUFobjl0SmotTjBORnFvRUxJRFJvZEFsR3hBT3pSV1lqeDFuX2NmaThCZ3V6XzlSa085LXM2blc3LWJZb19hY3JzOFpzbGh3ZVRmRU9sdDBQQVQtMVFqVjdzb1hoa2dYUEsyb0pIUjFBRUhsUWNYbU16TzN2MTQwa28yMjRNaXRZZkFtbmFyWnRBRkVpRjFjdjkyZVRjc1VDR2xDSU42UzZ0UHpwNmR5ckhpZw?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g3ffd9cc27833",
@@ -4044,6 +4479,26 @@
     "date": "2026-10-09",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOaFBqYklVVG5EN01LV3lPUmlVQmF4T2w1OFlEdUw2c1ljVWdVVzNVc0RCSS1taUQtNVpEbTFaOUdTT3FjeFF6Uy1RNnpCSWFiT25xZTdITWdwUVYyYkswZmRselRERTJCaXE2NzZqa19ld1l3eUpPc2RRMUtrVjRBeUh2dHo1T3NGclMzUlRJWWVMOG9jd0JLekxOVk9ybU4xY0lIMnN2Y0NFdnI4ZHY5Y1hUR0JGbDR2UVhrTVI5eUdHMURpbHJWUlpKQ3VyS0pOLWdSQkhKZzJwX3ZvUGVWTkR5dlplSHJjck1VcjFDbjR1WUdxeGI0OHZtenZabWpXV2tucQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g69fc1d753bed",
+    "type": "intl",
+    "src": "Council, European Union",
+    "title": "Press statement by President Costa following the meeting with Prime Minister of the Netherlands, Rob Jetten - Council, European Union",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxObFpMWjFOakZhUldkTjdjNFllSVE4QmVSSlFwVFdhYlR0ZXY1RDZtaXhFRnp6b0JNakQ1ZVlXZWphU1pndWktcTRxc1RIWjBiNTQ2ZjA4VFAtamNpeHN0Q1puTXFVcy1SLWk3bTVSdFRCZU9IeXdYbkF3NWZGcmJhcnQwUU9BYnlVWGpnM1B2N2hiQTVKSlVjblhVWUlLMzNOTkhSQkV5OTNCYVRMYTZXWk5KQzJJUThCNi1uTmswbmdqUFRsUUxZczdXOGdLblh1b0NsMEdEOUVOMkJLT3F3MXBNY1NCTGFjcWc2akI4bzdRTklybGx0b2FjRDVlbjRtQ2VSMw?oc=5",
+    "flag": "🇪🇺"
+  },
+  {
+    "id": "gb3f883b153ca",
+    "type": "intl",
+    "src": "Ukr.net",
+    "title": "Прем’єр Нідерландів Єттен розкритикував трансляцію страти у США — Politico Europe - Ukr.net",
+    "date": "2026-10-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSR1Jza3NTUmdqdmpadWtYR2lnTm1SeVJHQWZFTEgwVWFGcjNuNzJZOTJJajBXSzR4VncwcHg5ajVuU1dBbWxKWllybElCWUhOMlJoeWlVb1BSWDZzbW95OXZ4OWE3SVk?oc=5",
     "flag": "🌍"
   },
   {
