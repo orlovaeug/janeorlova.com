@@ -97727,7 +97727,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20235&did=2026D46784",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk1f0c234a5d",
@@ -98025,7 +98025,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20223&did=2026D46772",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk1507ada67a",
@@ -117050,6 +117050,76 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23205&did=2026D53494",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka6a581b328",
+    "titel": "Motie van het lid Beckerman over een start maken met de uitwerking van bepaalde aangenomen moties - Vaststelling van de begrotingsstaat van de Koning (I) voor het jaar 2027",
+    "indiener": "SP",
+    "datum": "2026-10-28",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23343&did=2026D53834",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkb47ace70bf",
+    "titel": "Motie van de leden Bromet en Belhirch over een brede verkenning over een toekomstbestendig koningshuis - Vaststelling van de begrotingsstaat van de Koning (I) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-28",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23340&did=2026D53831",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk89725f8df8",
+    "titel": "Motie van het lid Den Hollander c.s. over het Presidium verzoeken om de Kamer een wijziging van het Reglement van Orde voor te leggen om het staatshoofd de eerste verkenner aan te laten wijzen - Vaststelling van de begrotingsstaat van het Ministerie van Algemene Zaken (IIIA), de begrotingsstaat van het Kabinet van de Koning (IIIB) en de begrotingsstaat van de Commissie van Toezicht op de Inlichtingen- en Veiligheidsdiensten (IIIC) voor het jaar 2027",
+    "indiener": "VVD",
+    "datum": "2026-10-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23341&did=2026D53832",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkc6728e9823",
+    "titel": "Motie van de leden Tijs van den Brink en Bontenbal over het Presidium een voorstel laten uitwerken voor een motiequotum van twee moties per debat per fractie - Vaststelling van de begrotingsstaat van het Ministerie van Algemene Zaken (IIIA), de begrotingsstaat van het Kabinet van de Koning (IIIB) en de begrotingsstaat van de Commissie van Toezicht op de Inlichtingen- en Veiligheidsdiensten (IIIC) voor het jaar 2027",
+    "indiener": "CDA",
+    "datum": "2026-10-28",
+    "thema": "Defensie",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23342&did=2026D53833",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk27b5d4f88e",
+    "titel": "Gewijzigde motie van het lid Kostić over voorkomen dat Chemours een nieuwe vergunning krijgt voor het lozen van pfas op de Merwede (t.v.v. 27625-748) - Waterbeleid",
+    "indiener": "PvdD",
+    "datum": "2026-10-28",
+    "thema": "Bereikbaarheid",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23332&did=2026D53808",
     "toelichting": "",
     "stemmen": {},
     "archief": false
