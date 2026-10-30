@@ -1,5 +1,152 @@
 [
   {
+    "id": "g2d3a9ccce610",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten spreekt oppositie: 'We kunnen vandaag zaken doen'",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://nos.nl/l/2637267"
+  },
+  {
+    "id": "g4ba03dacf8a5",
+    "type": "nl",
+    "src": "Metronieuws.nl",
+    "title": "Chris Stoffer (SGP) over niet feliciteren Rob Jetten en het draagmoederschap: 'Om 2 redenen' - Metronieuws.nl",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeWFNeVo4czJmMGNnRVJITVhDRHN6eVZSTEpRMkVJN2dGeDlyUTRSZ0o1Nkl5LXhmanh3a2U5V0QwTlc1LWZpeVlaU3F1aTNBalZyZ3FfR3BXbGNaemxZMk43UjFEMVFEOUFDd19sczNGend0NWF2bHRsN3dWSWV2MVFzWTROLXBlb0J5SVIzbFRsLUVfdWd1SllvVVNMNHFqRmhVTkIxVU9xMkxXMWRDV3YyT0FBeFpDOGVnYTlUUmg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga02ed29f7460",
+    "type": "nl",
+    "src": "ZuidWest TV",
+    "title": "Alliantie Moerdijk vraagt regie van premier Rob Jetten bij Powerport, maar ministerie houdt regie bij staatssecretaris - ZuidWest TV",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPT21BSVJXdDZHdEN4QUZrbVJPTWxON1VtTjZHYkFZR0pid01sdVd0UUFZazBSS1lDLTVPV1picmotNVR0V1RMQnpCRDNWbGNjbEU5dGtaR0RYWDlvdlN5UU8tYWs2ZzItTUpSdnBDcFd6N3pxbFhsUUF6OS1ESk96VkhObGpWN0VReVR1Y0JfbjRNU1lTNTZ1eWtDdHJJWWJDZDVhNXBJQ25wSEVBU0xoOWJRLU5QNXZ4TlJIbk9ZYUtvd3JsUXFJa0dpdms0YXhFTm1WbmxB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2b6824ede410",
+    "type": "nl",
+    "src": "NOS",
+    "title": "30/10 in Nieuwsuur: Met wie kan het kabinet zaken doen? • Nederlandse economie doet het goed • Hoe houd je crypto's veilig? • Tonnen voor film die er niet kwam - NOS",
+    "date": "2026-10-30",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOOFlNQWkyUmxsckwyT0tjZThsMThNMW5UZ016TXBvOVdLdERhcm1zekFzWDdlSGREeWVsVlNodWlXaEdvLWg5UHJ4cWZDU25rLXEwdDR1cnJSY2pkV1poZkVsVlFuQlFjR2VHV2g5alpqMWIwUmJmSVphS3ZVbmt2NkI3amFfWjJlMGk2aUw4ZW1XT2YwcENucmxFMkItTEdFZkZKUUc0NmwtYmQ1aE5pM3dzRHhPTW81VVYzT19WdzM5UG5ON05WUG9SQW0wdXE2dHJzSkxyZ2RLa21rVkFLVVV6NDJsOGpYc2prc0F4bUxiTEN2YTRWREZ0N0MzeFZMQTBkZGgwWUVtd19lYmlPY093QmlyNmh2WU1r?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5835e6e53eec",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Stelling: Kabinet-Jetten verliest grip op stikstofdossier - De Telegraaf",
+    "date": "2026-10-30",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPcFJXa1JNbllCVlhaWmUxMmY3TXptd1UxZUdtM1NUX0JoUmRTSElkRDBGMWMzQXpPRTItTmtpd2k5VVQyOE9tSHZBR05pQklWRnJWSzQyWnI4b0lRa1RYNzhWZUZNbmw3Mk9Rdk5zWGJXQTRlRXI5MUNkeHMwRmNET0I1RVB5ZF9od0drSVdkbDVrVERla2g5RXZyeHhrdFlJY3h1djVIQ2h5ZGs?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g281328ec715c",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rechts pact ziet het somber in na gesprek met kabinet, ook links niet tevreden - De Telegraaf",
+    "date": "2026-10-30",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSHd6TjlwYmNIWUJWbktRODk1N1BzTFRGRlFJMnhJSTNPS1ozVVVlLU1leWJUdGxVaW5SQlJEYjdHODFDVVpuZU5paHVmaFlVeUZKbkFMUVV2alZWN2phM09jZDZvSm5HaXBjM2VJNEdwYjRLbHVYOGxIbDZ4N2xUZjExYUswX2RTZmVPVDNINF9seWdIQ3NIS2xMLVdmeVNkMUItVXI2Vzk5VFdtQktnYVRnM2l2WERrQndqLWpIRFMyUE1s?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf702102096a3",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten over eisen rechtse partijen: 'Heeft ook vragen opgeroepen' - De Telegraaf",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOMHRlUXgyNnBVbkZBdzB4dzRVWHNXYXAzS2xMdlJDN2hRREtPUXlIeTY0MGQ1bkdySmVPQ2VyWHUwOHlnVDBPWF9sV3poSDNxZjc0ZVAzWk9PUGdjbEo1amlaUHliRDVZVlFBM0tiT3VvSHJvYVkyWDdhbUhfd2ZWN3ZQZmdTSWtXdkRidmhzRi1aZk13UjRpUlBxM2VyVjhsM3MxUHNxYVZLcGpo?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g8e2c25ab5f76",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Klaver na gesprek met kabinet: 'Dan dreigt een grote politieke crisis’ - De Telegraaf",
+    "date": "2026-10-30",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaDlWODh4ZjlRUmR5cThDRkZTVFJNYjhTSjJ6Qk9CX0x5ZmF3R1hUeEN3VklXc1MxRTNYWEZ6UmZFR1NjV2taajdlWnpCeF9kamRLZFN4aG9LRF9RVkZBcERzTnhoeXdHY3YzcVhkRTFuNktHZHZvMHVLQ2RjUTlqZHFxZ2VPb01hQVpVTUh2YkhOQ2ZTVjB0OEMtUk1wNXduWFBnREZLazhmYXQ1Rk5Ic3duMA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf96f3f8dbd51",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Joost Eerdmans (JA21) teleurgesteld na gesprek met kabinet: ‘Het ligt niet zoals wij het willen’ - De Telegraaf",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNalBQRGpkQV9rT3hlalJBal94WGZkZTJHRHBLSmpiZ0E4Y2lhdlVrOS1WaUk5emRsTTVEYzdTbDNQTUhKTmx5aFdkVno2NVFoWnA1b0FmWEpmSzkzMVBlMThvMEFnaTA3U0hoRThBbjdjNFllUEZTZkZOTDNpX2ltVFRXc0FhQXlJNXVob2kwLXctdTh0WEtSaFVMM1NqMnZSVkl0S2xQS1pySWJlUnlCRDFVS1h1THg4bUtuVzMwSmsxNy15czhvOURZUlItOUpiQk00?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf487a85246ea",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Stelling: Kabinet-Jetten verliest grip op stikstofdossier. - De Telegraaf",
+    "date": "2026-10-30",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQ0tuTzcwMl9ybTJaZWZhcTJRbmV1WXBEOU1SUVp0UlU4Wld2cDFkWGtWZ0UxN3hacTc1bUdyVzZkS1lrOW9XdFl5N1lpbmNtdUR0SlBXMVBhSThhRXp5NVdVMnB1UmdfNVREbnZTQU9RcjZOeWl0RlI2WDAzXzhaemtxdDFMSXMzb2gwT0E3TDV2RnJCcTdVUjFOT0hFRlVJc3FjX2Jlalpad3Ry?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g91d59b28b81f",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Spanning loopt op in Den Haag, overleg met oppositie gaat verder: ‘Kabinet lijkt stuurloos schip’ - bnr.nl",
+    "date": "2026-10-30",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE14dHZXVFZTZG5seGZaN2JkbXhXUW9yaS1XMnNHRjdlTThmTEpKdGRBWElHZXQ5bTAyU3RWelNZbnBHOW04S3ZiOFl3bXU4QQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "geb27c06b30ae",
+    "type": "nl",
+    "src": "NOS",
+    "title": "'Onuitvoerbaar' en 'onhaalbaar', zeggen experts over eisen rechtse partijen - NOS",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPT3dsV2p0VHVEelVuVzFpZ09sMnc5MHlHUkdvWFdMQW9ISUNydThIdXV0S1U4Y1ZsQzFFYlUzNnQ2MTRzU2RnMkxBZ0hGbmlSVVNlTm9TbVBtUjVkeFN5SGhDemZSZkl1dVhVb0djM3pySnVRSkZBQVdWbndRVzMyX0ZqamhLNW9DZldUclFJNUU0Z2s5LUZ6RTdCeDBRWVVNbU9zeEQzOVV0RnBnRHpGbw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf1764ec11c93",
+    "type": "nl",
+    "src": "Vandaagenmorgen.nl",
+    "title": "Harderwijks monsterverbond lijkt kabinet naar links te dwingen tot treurnis van VVD - Vandaagenmorgen.nl",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTVpxQTVqSEZfZkNYc0ZwZGFUVXhmUDRQUjdmNmJVZjdmRXNnal9Ga0tNQlBEZGJaZnM5alpmblB5akJpWW5JUlhtVUp4TF9sdzdXVXZVNkh1RWVYQjRhQVp2dDBibGNEdnpOUFFuckxmY1hHMXJ4bHZtaVZCdHF0enFWTTVTT2k0RGtjRjZmZ1BicXpjVU9RTlZ3TzUwNVh1TDZhaTR1aFFxNURqZGt0NVhVTmJOODhiaWMyNWpFMnF3NXFYUkE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gddd77ec69756",
+    "type": "intl",
+    "src": "World Socialist Web Site",
+    "title": "Países Bajos: El gabinete de guerra de Jetten trabaja con los sindicatos para recortar el bienestar social - World Socialist Web Site",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9wd1NQTDcwNXVVUUFDWXNtM0pCRTlnYXJES0tvRERESVhaVDFhc1VPNzVTWEptbURhSHdaNEhGZTktdzJab2lrVGxFOTFDMzdiMTBORHMyMDk3bnpNc3ZNajV2alpzejcz?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g378fe2124777",
     "type": "nl",
     "src": "De Telegraaf",
@@ -217,6 +364,161 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNHlLSTVQeDBoakNIbFNuZ3NhR3lfdWctUzljdEwzTDVjMDBxY1BZNzdOQUZLWHAxN2VQOUsxQVFvNzZxMEMyNzBEZXFlclVoUTJVZGZTbEJMR0NQMWV3WkdHRW40RnBqZERDSWdMUC12N0pUQU9HdzFnVzl0VWFiTW9FZkIxZ1d6Z3I2V282ajlFVGpKeHRNOC1OVFFBYUI4Tjk4N0dzNTJuRHNyYWtkbkRORURUdw?oc=5",
     "flag": "🇵🇱"
+  },
+  {
+    "id": "gfc718c3daa38",
+    "type": "nl",
+    "src": "Omroep Brabant",
+    "title": "Rijk gaat niet in op oproep Moerdijkers: Jetten krijgt geen regie - Omroep Brabant",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWDcxSXFZa0VmR1BveUZPZ3BiN01udUJQWTcwVmpxWFVEenFLbFk0X2dudW8walRkb1hmdHNoZVpCLTkyVl9qQVUxR3c3NlUwTFNUZnAxYVQxbE83QmZDTUFDUjNiZGZJODZuQzQySVBkNmEwQVBTMTZOTFdjRkdwUEVaZld2amdsSzNzRlNSNHZhZDRHM3JjeVM1THZ1TGhqTG1ud094aWR5bjBt?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gce21976aa6e3",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Wierd Duk haalt uit naar Rob Jetten: ‘Dit is toch niet de premier van Nederland man!’ - De Telegraaf",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOb1owbkprc21ibGhOemVEbG9EcHY1ZTAyT21ta2hEbjBuZUFlckthcHdnQkREYVQtY2wtalE4S2p1bVFMcG9rVEhiSFMtd29QT1lIeXBFcldkbEx3MXNkeU5PWFVDNElPdF9ocEQxaHFkZF9sZlpFTGt5OF80VUxDY0FGS29HZWEtZVYzNEJXNF9rcTkxSmRKZ1JtbzRnRXdsaWdOTmdSbXBMV0tUOGU1eU1JRFdhUmRpeE14cy14c3hZRGlMUVE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gffdfb3153bb6",
+    "type": "nl",
+    "src": "KIJK",
+    "title": "'Rob Jetten zit gewoon schaamteloos partijpolitiek te bedrijven als minister-president' - KIJK",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hckFkNVJDSDc2N08zLWZka2tuUUIwM3ZLR0hXakZXVFlyRGs1V29LQnYyaVNfSXNFczlJLWFSdmpESkZXZjRHVTYzQjQ1X0xaV2RTbmlNZ3lLMXhqbmRsNEpkMndxUzhYNjlvSVRidmE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd8c7d55fed3e",
+    "type": "nl",
+    "src": "Nieuws van de Dag",
+    "title": "Rob Jetten onder vuur om tweet over Geert Wilders: 'Dit is toch niet de premier van Nederland?' - Nieuws van de Dag",
+    "date": "2026-10-29",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTUNPNUNpVTE5QjN0eDVyZ09YNVRpQzN6Mnp2LVRRYlZaUDdlenhlaXEydlFGQmxnVG9DMXJUMElEeXp1Q2JNMnZtaklYNTE5OHVGQm5BZ1l3d0d3RDdYNnl1eTVDTE1BQVVjZVpSa2Z6SDEzX3lNU2RxMDkycEl0Tzg4ZzBYaWNVelpjOVctZEQ5S0NNd0oyS0RnbFBuc0hMNFVWWGxJSUJHSUp2cmdJcVFKMk80bVBHeHFMNnRUUFV4b0JsQUJrZFlQSQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g4ee9fcc2e133",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Top kabinet bijeen na nieuw eisenpakket JA21, BBB en SGP - NOS",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOc0t2bGVlelc2UGR1eXEwU2dpdGxZeGdCMmZNMVNvZWZ1MlZBYTFKa0dPNVM5Nk1GOVFCa091Q0luVlJPRmZjLW5hQ2VDQkhCaDNicks4RTZZcUk5SWR3QmxXd1dnNjBFazVqSEhUY19HMHpoNXF6X0t5Q0psdFh2NmNFWDhPY3hFbVR2UHZpaw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0f2fefd9ba00",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Als Belastingplan kabinet-Jetten sneuvelt, dreigt 'een tweede Toeslagenaffaire maar dan nog groter' - bnnvara",
+    "date": "2026-10-29",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQX1FxOVIwNEVvMDRKcTZyaXVpMl9INkdqVEl0eWlaV3NfVzRJMUc3STZBTm0xVlQzSzJwWUctRXpta2ZLS19WZ1pXN2gwZlM5LW5kOVhEeHY1WHhjYnYwWkNta3VGb3p5V3lKOWNCSFpLZWtxeFdUd0g2YllqaDRWYm9RY09iOEFlLTZsRzlIZzdISzY3UTBxdVVkUFdfRGgzY2g2dmtybllTVGZiMmpjVFNOWVpyMFp4RVI4a2x6cXlDQ3ZLSkNJS3d2VDVDQWs?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gb49a4469a7d3",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kabinet praat morgen met verschillende oppositie-combinaties - NOS",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVTVvNFNJS2xfNlRUbUZiV1ozZEtLN3JFOXpxNi12QTRwY2RiWEhLUmJ1eTRtQzd0aGRyMTBhWEg1MXBZbFp5OFVOR201eXN1bWdOdXE5Vm1qOHBNLUJaRGZBblV2T2hqMHBYV1h2WGpsZlJ6b2stRVBMQkhjMElRZmFsVDBqTnEzTWZwZUs4N3pmSTFvLWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge8120a50e9d3",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Wouter de Winther: kabinet begint meer het probleem te worden dan de oplossing - De Telegraaf",
+    "date": "2026-10-29",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORnMzMTlGTFdNX05ZbmR5ODNlcTFzS29rUXdsbndPMXU1SUNTVGlwdk5sNGd6TFJvSHRWd3FOcHc0OTBmZzZfT3FvRU9wRFRyNWZNVFNKRU54RlZQcnYxVDdzbFlJSTdqY1h5bGttX3g3VjV0NVlLZUc3OGdfV2lLMzJsVDdOLTVnUTVDMkJBSkR6bGZqajFFYm4wQzZadEs5YmZLMFBLemI2NmdiVEplSHdnd19BamtIV2xCTnZlTnpsVng5?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gab8d5207e7c5",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Hoe nu verder, na het politieke bommetje van JA21, BBB en SGP: deze vier routes zijn nog mogelijk - De Telegraaf",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS0JJVGE0S25GMmZPZ0NidUFZckNjSFVoNDQ2WFhIZEFhNUNTTlQtTTJYSTNGd1RDaENqdlNUbzQwNF9jM2xuZ2UzcVc5dTJlcmE4dndSclpPeW1ZMDlWQnlSWng4aW9HMzRSNVRTUVZJS3RDWjIyWmRCRkxOMmp4VXVBTEN1UWw1TGYtS1NZYmFVZWxCOWh6ZXlWSFJ4SE05bDlBUC1scVltVmdBNUx6SEZDMWQ3V203YllhQVp3RnAzaUxSWUQwME82aWlVZEM2U1JoTEoxOEFDakE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g1704558c1c28",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "VVD'er Heinen wil kraanwatertaks verhogen - De Dagelijkse Standaard",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNc0Y0SlBOdUxXdlBTNlc2VkRoUkJvdzRKZEhLdXZxcnVLNkxvZVFrSjh5dGpHM0Z2OWxtOXhVUHh4akZmTTlhWEFMRjFRNW1DWG5ZWE9jdVlSbTNuc3RmXzJ5cGkxSFhBMjhpall3SnQ2aXRhMFBqTVBQVkZ6UzctS2xFd3hnSl9qQjBDS3RzM25WOTRmR2lfWV9sQkZwNW9sXzUzZkZ2Y0doaGRzZjU4VFVZWVlFSEtsdFhrZGZYV24zREhTTkZFb2JvRHRuOXZfamZv?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g570a1dee3696",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Het kabinet geeft toch geen uitsluitsel en gaat opnieuw met de oppositie in gesprek over het Belastingplan en box 3 - Trouw",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNemd1YXFBdk4xRkItX1MyWmxEazlab2VGT1Q3WDFTRGtpN3NBSk1XRDFmcTQ4R000Z19OdkxVNFJDa3BaVGFyUzY1OW5qb3VkWDlnQUx5WVNjZlVhSVVKcXVJSTduWjV4NWh5TUMwdmxIZTZzQlh0Ul8wRlpmc1c1SkFpRktkZnRYNjdpZ2Z6M0VZSDRXZ1g0WTU5REt4T3lobjJQb0JGanRuWTE0NG5TZlJFYVBOaWhJNlpmV2NyUUZDWHhNeUV6c2dubFZzRjl6cTBobWVBTkk1N0hOdUR0b1YtcFZTcXFKc1RR?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g21b47eae95ac",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Cabinet won't make Royals pay taxes; Left-wing opposition frustrated by D66 backpedaling - NL Times",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQ0lfSkdjblhCSl9FNzlEcFhEdVduMXRjbnYyRDBTYkhCR2EtcmdPR2Izd0FxVFJoRVM5SXdfeVpDOF9fTjJsVWFxZnVIbnFnb3dJaEZ0czg3RlQwZDVIWFN5TER2MXMzM1hQaDVBNFNpT2tqWHlJc0dLZXQ2R3JxWEVsWElRNnQwZG15LXZSUmxDaTFJUlh3YnB5c0lBWnJJbFVBcGFoalpoWklIVFBfUHViVQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gd6847c968f20",
+    "type": "intl",
+    "src": "The Lufkin Daily News",
+    "title": "Ukrainian President Zelenskiy and Dutch PM Jetten hold press conference at the Catshuis in The Hague - The Lufkin Daily News",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxPdGpIMk5tUmdob0FTb2dOOTBZaVMyRjFnYm41enpSLWRRRW9Wa3JsQXB0MlNnbEE1b3RJbDF1STNsb2ZCU2E5LTdKbVpYejloWDBxMTYzdXFSZnF4U050VnMzeDJ1TlNYay1ERktLc1ZvRHcxU2x3U1BaTTQ0UnAyQ2J3Smk3ZXEwUENvdVdjcEdlSmFGZERrVjFSRkdSN051Q0hyenlRTEpKWHFBY1ZDRUF1ZUdRMXUzeGxYSVhjcnJ2RFoyOGh5WW9SZk4zeDVWTlNsY1luQkFfV1ZLNmU5OGJFZ0tyTDFnYnFmdXljWTM2NEVLaWlfeHhNMS1oWnhkMEdYQ0dkeTlaWVZLQU9JTnlGMUdUY1VrUXAxaA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ga4fa2ec6f2c5",
+    "type": "intl",
+    "src": "Reuters",
+    "title": "Ukraine's Zelenskiy: We have intelligence of new Russian ballistic missile strikes - Reuters",
+    "date": "2026-10-29",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPaS14NmUwVXBlV1VCVGJFZXVVMkh1ZnNCVnB1c1FVR1Z2blVlMDlhRmZONUc3SEdTX1lGTHFINkdLZTQ4SDFxTnRUaFItdlIyNjJHODdLaHRNVXcwSXRFOWZoanlpT3VfdWM5aFVyd2VSc2ZWbC1IRnFBUFVCWjFFWndUeFRLV1VON3V5OTd2Y0VQekpuTXVGRXVrMUxWTzNtbDhySmN4dnJOUEZHb0ZLZ3F2Uk1vSEdDekIwS25ZTGRRUDgzVW9CMG9kN3BhS3hVa3d5Nkp2Yw?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g8e92200f4c2b",
+    "type": "intl",
+    "src": "Viva.pl",
+    "title": "Rob Jetten rządzi Holandią, a u jego boku stoi przystojny partner. Teraz spełni się ich marzenie - Viva.pl",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZk1HYXVrSGJXR010Q2JHSUVhM3R4V1VIWTh5X0stTWd1SU9sQV9IQkpOYXM3bi13eXM5MzBlUjdnOENDcFRZdzVEWUpSaXo0YmhWcGtFNHZHWEhJZl9rOUF4aDRUTFdRY0ZOeUlZRGlPWVA3SVBPMmdtZGVzY01oaF9yb05Yb2lhN29zSHZKTjdpOHhhbnNxUU5ZSzVjdU1tUEl4ZGJCT3dXb0RvbURLS1NJUnVFd1V5Z3pBMWE4cmJvMjhhcTJ2SEFEMkFfdkFTQjRR?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g294b198bb5ac",
@@ -929,6 +1231,86 @@
     "date": "2026-10-28",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNVEtqaThuUWZiS3NGWnhTd2pxVDJIR21XUjZ5em9FUHptMlczYnZ2TG53MC0ya2tTaG82MllHTUtfcFdnQUt1UzBaVm1Fd01TRWhUY1JWRmhycXk1a2RkRW1kUllqSElSdXFEel9NemxMMlBraERyVlhXT2I1Ui05Ujd2S0U0TmM5Z2lBTmY1QTRtQ1RMZHBPZkYtbEs4Ym9fclZyWThJU0N3cloxSlRBamdxdkd4V3QzWU9YU0g5bU4xVDhtSVpWbS00YkMxX2tid0RQWDMyVWxZdGJudTc5X1FKcE5SNlc3YV9HTThyejc4Z2pySkViblJMeE9JZzjSAYMCQVVfeXFMTktYTG8xRXlBMTBVUVVZaHpydHdZaExYcEc2TkF6WF9TaFplTkhVYW5OMEpSUGhIOE9mNnp6TV9fbUxlUGo4NVpzMm5WUXI0QTg0MzZzVlZFU01zX3JLS09LUUdZUEZEbDNDNnY4Q0toWXJuYmU0ZEY4cVgxc2Z2dnc2cWlvM3lFZTlmZGdoMmtWLUp1ekJ3V1czS3JRYmZxcDZLNjIxMHp2dXZRbThxb29VeFR1b2V3djR0NWhaejJaNV9NNE93MmdJemI5VEJEc2ttZ2o4cUVGc05mMUNfRmU3blNNdU1QVmU0aGp2dWxuSk5SVUtwWGpOYlRaTUg4MlBOOA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf4870bfa89f7",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Kabinet geeft Zelensky bij bezoek aan Nederland steunpakket voor de winter: drones en luchtafweer voor Oekraïne - Het Parool",
+    "date": "2026-10-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMjlQRkFJYklBTTRVblFtdHlkdWZxS3NDMlcxSHBGX043dVNMYUFqYlozUG8wRGs1Z1BsTGYtQm14Zlg5S2VXaXEtMHNuQzNqRlh2R2g3MEhnQ3B3VFdhSkE1TTNlS0Z4c1Q1eW9fQUdhZ3Z6d3NEMTJWcWtnSEhMbXZSTHluSkdRSzZvMGZ6eExZQzd3Tzd5enp2QUxZU2RvZk50OFlTS3JWQVBlUHFmb2xxVGthY2N3a3g1UjJGNlZ3ZF9DN3ZZUHdZUVBrRVYyNzE2NHprTWh4elRmTm50WGhSdl9OR2c?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g231db4d595be",
+    "type": "intl",
+    "src": "Ukrinform",
+    "title": "Ukraine and Netherlands begin work on air defense project - Ukrinform",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMjJsbHZmcWpFQW1WU0I2TjBNam45VGdkaDZmTjQxWWZEazM3Q0diZ3gwcXcyc1dnRDlTajViZ01xYXJOWGw1NXNYemFuUm40SUp5MWNNSXhvSWp6TVRESE42Ul9oTGVselNtanBTVkNNZ3JCbUctNm9GYTE4TE5UcXhaTXc4bmJ2OFduU0JtZzIxR2pkeDZWSk1KLVkxMHdnV2o4VzEzVUZMY0VyVGJ0TUhR0gG3AUFVX3lxTE1YdDBDUUVIaXFDV0xwQkp5bWE1WVVjZFFncXN1bGc5dkdmTlZQNmJya0FENFZuTkZPOGhPekc2dFVuRi16Zkg1SHl6WlQ5SzJXdWk2dWh0UExnczVCRFNmTUZSVWNId0dnZjJ3eEhjbjVjUWtMVk1MNS1mb2hpdmRxeXZkQVJLUExwNmRfU3lwRURKZ3R3eEllWUEwRGgtTEtfMXVZS3NyMklFdC1NQUxKOWthWDc0dw?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "g28d257e24d12",
+    "type": "intl",
+    "src": "NV",
+    "title": "Дрони та засоби ППО: прем'єр Нідерландів після зустрічі із Зеленським оголосив про новий пакет допомоги Україні - NV",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNU2twU0FDVDBJbGpLUGNNVkFQNzBQZGY2TDVzbmhqclhjRElobWhyZng5eGg4Mjl6Ny0tTGxlbTNmU0FaNXNhbHFZMU9JX3NpMUE2dGRnRWVqeWV1NEdDT0ppYXUyM1BHOXpwX0poTldBUDVlVldoWXhwUjM4ZGxKcXZNT1EwWm8xT3Z2LXk1dm9BVktqa3RhM3JqWVJHOE8wUV9lNXR2clBpSm1qbHBWNlA0bE5iRW80UHBvZUUtRVlVUdIBrwFBVV95cUxOc0xsaHlhakF4S0k5NV9CSzc5Y3dsc2xxYjByYWRvSDk3cXYwNVBWSUxhRC1COHAyYUNTdGpYcEFkLW9aOHdhRWRXS3hQU0FYZ1EwYTMwRE1ObV9tRWt6OVRpa3JtdlFJUXJFcjlZb3lxQkw1NTFYU0hZUTJST05STDhuZzZMd2NvZkRiVnFLWXVBc2daemNDQl9oZjgzUHNmd3ZZd3U1UFp5ZHRTVHZj?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbb16325e6327",
+    "type": "intl",
+    "src": "Rubryka",
+    "title": "Нідерланди виділять Україні €500 млн на ППО - Rubryka",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTThHdEIwYzYwcDYwb0haVjBEckpDd2p0ZmVSNDVsOHJTX196ODFtT2FQR2JEMlZVdGtLREpLR3FVOC1DbG9hR3F2cV9USnQ4TmxJN3N6b1ktQlMxS2pRZDVHYmRfbUNHMmdROTJmSHduMHJURkNyZF9lTXhXeW0wQkR3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6285659a7b99",
+    "type": "intl",
+    "src": "Радіо Свобода",
+    "title": "Нідерланди нададуть Україні 500 млн євро допомоги на військові потреби – Єттен - Радіо Свобода",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVHRlU3RjeTZPR0hPemhEV19EQ1JaNjZRRHM5MnRIcjl3dUZZVFFzSzhpQlFoQmdZTzE2WjV4RHpmaWhNNFZrRzRFcXEydEk5Q2NkNnhYdUxrZFpvZFl6T0ZjZWN3WHBOdEdRSFFidnlpTV9CQjJRc2NyUnJhM292clh1YWhKb0puVTVXUjI2UjNiNzk4WDdPNXhVNEfSAZwBQVVfeXFMTVR0ZVN0Y3k2T0dIT3poRFdfRENSWjY2UURzOTJ0SHI5d3VGWVRRc0s4aUJRaEJnWU8xNlo1eER6ZmloTTRWa0c0RXFxMnRJOUNjZDZ4WHVMa2Rab2RZek9GY2Vjd1hwTnRHUUhRYnZ5aU1fQkIyUXNjclJyYTNvdnJYdWFoSm9KblU1V1IyNlIzYjc5OFg3TzV4VTRH?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g7da91a23b1f1",
+    "type": "intl",
+    "src": "Цензор.НЕТ",
+    "title": "Нідерланди виділять Україні 500 млн євро на ППО та безпілотники, - прем’єр Єттен - Цензор.НЕТ",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSEhtZFR5M0RXS25pbnRrbGZkNGNmNXZqdnZENVBXaF9xYmVYclJ2cmxjLU1NenZJNGVPLXJ2bzBYU1FGWDJnNC1SbG9sTTFtQ2JUOFBIeC16VDdtUFA1elFteDJXdHN5bUJYeVQ0eXdEeHhJZjUwWUd5a3VyQTIyS1RHeG1YUEhTMGhSaWRLZkRhOWtSaHQ5WV9SN1NvV0daR0VLVEtVcVoyTUhFUTFtMDJmdEVSdw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g445a4628f8a8",
+    "type": "intl",
+    "src": "24 Канал",
+    "title": "Купувати російські енергоресурси – дуже т*па ідея, – прем’єр Нідерландів Єттен - 24 Канал",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNXzdIcm9jXzRYODMxSlJJcDBCb21ZZWhDSHFHa05FLUV6NTZSUU4zaURsd0lVeTVlcDhOcXAtbFNjMVZHN09SNWhQeDBOdVV6blZBM1plc3VMaENieEl2Y2NOYlUtdGs0Z0tRTWNLVWFyOWtGYTdBZXUyNUgzOXJjQzZCLXl2YndQTHRDc1ln0gGTAUFVX3lxTFBtdGR2MTg4QmUwYnczaENwVFNSUXQxZ3ZqRHFiQ293ZVJFOU1zWk1NZWFadGRtTjNOV3VjRURXLV9LWmt3YnZiNHBmd0RzSUVrNnBNTjB6ZHhfNVBaSmREbUJNb1Vod0ZpelE0N1d5czlBa2lmQkNnRjREbWg4YUZRbndDajZPMUhnQlVzbXhqcklpQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g5de6a53dd819",
+    "type": "intl",
+    "src": "Інтерфакс-Україна",
+    "title": "Нідерланди шукають країни, які могли б оперативно надати Україні додаткові ракети ППО на зиму – прем'єр - Інтерфакс-Україна",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE80YmhKVzhsTTk5RjM0UC1fdVNwTnBNdXlWRjBCQUNoYVJ1TDFUaWlnQlJldER3aUpKcUtNOUlXWlRIMnhnR3MyczlJeHUzQmt1UEQ2NmR3V25yQlJ5TnfSAWNBVV95cUxPMXEybDU4OTdCdDhkQXB3MmJ1YkV3djg3YXhyRDRJNmJMOWZIbDJVekNEVE01RXBSWmE1d0NuUm1GZTljd2ctQVdDbUhscFpqWFU3NU84a09Vdy1UVHotVWVpMWM?oc=5",
     "flag": "🌍"
   },
   {
@@ -7378,6 +7760,16 @@
     "icon": "📰"
   },
   {
+    "id": "g8fae33ed3110",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Jetten wil ruimere draagmoederwet ondanks waarschuwingen van rechters - Nieuw Rechts",
+    "date": "2026-09-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQblhncUFUOERYdjNldE1PRDdBajNRNWNUT3NpZ2J3RGpzTzhtOHBHV0hrZDVxR2F5ZjNtWTNRdGZsSUwtMUR2eVZDVzBSRzdvTUZjNGNaVmYxRE82VGZiVFBmV2Q0ZmUwbEdPaUdlU1lHYU1vajF3RVUwbWpwTkFoY2I2Wk12TXR0eVNSdWNuaTdvNWgyTFlSZGY4bzh6b25RcHFZb001NUc?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "ga14b9cee1b5b",
     "type": "nl",
     "src": "AD",
@@ -10333,6 +10725,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSTBhR1FNME9hdGYyeUZxQ1N6TVR6NXE2QVdobDk1bGgwbjNsS2Jld21aWld4ek1UUFh0RmE5a0ZFMkV4QU5ZdlBDTmFrT3FlNHVWek1vblNJUmdjM0RINkVwM193SE5HTEYybEowMVY0RWNSUzM3TzhkOFZiOHd2bzlUYWU3bkd1QkNxdG5qZ0xvcUtiY2I4YnlhSlpydw?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "g17421a4e4641",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Huiseigenaar krijgt in 2027 nieuwe rekening van kabinet Jetten: minder voordeel afgelost huis en einde salderingsregeling - Nieuw Rechts",
+    "date": "2026-09-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPLV9YQV9PblAwMmdNa2h5U0VPbVd4UFRoQll2aTVKNlh0Zkh3MVptOVBzNEtiZ3NYV0FwZ2UzbFRLX0E3Z3htbWpPY21MTkVkVGNDY21uRGJ0YlFVV29oSHYyUGU4ZTkwbzdQZm90MjhXcWJkU1huSUlkWU02cHkxd3BiV2EwckY2M3VsYlZxVjZYR0JUdUlQbHdUOEV6dl9DMWpRQ0p6Z0JVay1pLXk5Uk1Xdnhhb05JODdueXNsNXFEbkJITldITXhmZHlNR1Fscl9VS25kRnA3bE1PRjZGQ3pBeEE?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gd65c19e2ed46",
@@ -16718,6 +17120,16 @@
     "date": "2026-08-19",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSmdlSzA5N3lxNXoyM3Noejk1NkltLUZ1U0tVeFpSZFNETFNfcElMNjhEZ1FEMDBTVm1oOFNfSm5tY2ZNRk1hRW0yVGtTaFFEQU81YWw4V2Y1M3p6QkxCNWd6Vl9FSVNMWDJKSTlNOE5WVS14TFJMMG1xNkZWWm1xMWt3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g688f88c3c372",
+    "type": "intl",
+    "src": "MOPO",
+    "title": "Holland-Premier küsst Gegner nach Hockey-Spiel: Er ist sein Verlobter - MOPO",
+    "date": "2026-08-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSkhoSHZvS2Z3cWo0MVZEYkR5UFowTGZZd0RQdWZ0Und3MGlIcmR4ajJZcll0dDVLTGptU2o4UkN1Mkt2NzJZa0o2UFNjRjNtb1BFbWJUTmsyNDdXMWI4Z2lENktMTEgyT04xV09BdDdBZm5YS1Yta2hTNTNRRGgzQkFlS2d4ejFzeE5TRldCdGh4QVJYbGtHMkpWblBLZG8wYVlBQ1VsTndzbkJaX3RjSUFR?oc=5",
     "flag": "🌍"
   },
   {
