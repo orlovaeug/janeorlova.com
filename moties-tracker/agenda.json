@@ -1,50 +1,42 @@
 [
   {
-    "datum": "2026-10-29",
+    "datum": "2026-11-03",
     "tijd": "2026-",
-    "titel": "Begroting Onderwijs, Cultuur en Wetenschap (37020-VIII) voortzetting",
+    "titel": "Stemmingen",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07733"
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07971"
   },
   {
-    "datum": "2026-10-29",
+    "datum": "2026-11-03",
     "tijd": "2026-",
     "titel": "Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07683"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07972"
   },
   {
-    "datum": "2026-10-29",
+    "datum": "2026-11-03",
     "tijd": "2026-",
-    "titel": "Begroting Infrastructuur en Waterstaat (37020-XII) voortzetting",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07734"
-  },
-  {
-    "datum": "2026-11-02",
-    "tijd": "",
-    "titel": "Begroting Klimaat en Groene Groei ",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05417"
-  },
-  {
-    "datum": "2026-11-02",
-    "tijd": "",
-    "titel": "Belastingplan 2027 (1e TK)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06617"
-  },
-  {
-    "datum": "2026-11-02",
-    "tijd": "",
-    "titel": "Begroting Binnenlandse Zaken",
+    "titel": "Begroting Binnenlandse Zaken (37 020-VII) (1e TK)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05418"
+  },
+  {
+    "datum": "2026-11-04",
+    "tijd": "",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07973"
+  },
+  {
+    "datum": "2026-11-04",
+    "tijd": "2026-",
+    "titel": "Begroting Klimaat en Groene Groei (37 020-XXIII) (1e TK)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05417"
   }
 ]
