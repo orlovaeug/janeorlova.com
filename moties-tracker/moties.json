@@ -99087,7 +99087,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20533&did=2026D47432",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk61b7435e6d",
@@ -99197,7 +99197,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20532&did=2026D47430",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkd4704c665f",
@@ -102433,7 +102433,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20646&did=2026D47609",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk7a519b3236",
@@ -103133,7 +103133,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20623&did=2026D47586",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tk9118beb51c",
@@ -103147,7 +103147,7 @@
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z20621&did=2026D47584",
     "toelichting": "",
     "stemmen": {},
-    "archief": false
+    "archief": true
   },
   {
     "id": "tkfe66bf041b",
@@ -118058,6 +118058,146 @@
     "alignment": "strijdig",
     "vergadering": "",
     "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23488&did=2026D54182",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk1ea3b65272",
+    "titel": "Motie van het lid Raijer over een Gazaanse student van de universiteit verwijderen en het land uitzetten - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "PVV",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23487&did=2026D54181",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk406a5de6cb",
+    "titel": "Motie van het lid Moorman over een plan per onderwijsregio voor voldoende opleidingsplekken - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23477&did=2026D54143",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkbdbce3b20d",
+    "titel": "Motie van het lid Moorman over bijlessen en examentrainingen niet langer vrijstellen van btw - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-29",
+    "thema": "Financiën",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23475&did=2026D54137",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tkf48ee67da5",
+    "titel": "Motie van het lid Tseggai over een wettelijk minimumbedrag voor de stagevergoeding - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23478&did=2026D54144",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk7b56412285",
+    "titel": "Motie van het lid Rooderkerk c.s. over de aanpak stagediscriminatie op het hbo en wo voortzetten - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "D66",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23484&did=2026D54176",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk9d6f40b4cd",
+    "titel": "Motie van het lid Abdi c.s. over de studierente maximeren op 2,5% - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23479&did=2026D54147",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk030e0d9c29",
+    "titel": "Motie van het lid Rooderkerk c.s. over de AI-vaardigheid van docenten en studenten in het mbo, hbo en wo bevorderen - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "D66",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23485&did=2026D54177",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka3925b8f91",
+    "titel": "Motie van het lid Moorman c.s. over een betrouwbaarheidstoets voor schoolbestuurders - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "GL-PvdA",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23476&did=2026D54140",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tk303091971a",
+    "titel": "Motie van de leden Raijer en Wilders over geen aanvragen voor nieuwe islamitsche scholen in behandeling nemen en bestaande islamitische scholen sluiten - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "PVV",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "strijdig",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23486&did=2026D54179",
+    "toelichting": "",
+    "stemmen": {},
+    "archief": false
+  },
+  {
+    "id": "tka3084d2ef7",
+    "titel": "Motie van het lid Rooderkerk c.s. over de 40 miljoen voor het renteplafond inzetten voor automatische restitutie les- en cursusgeld en voor een verhoging van de basisbeurs - Vaststelling van de begrotingsstaten van het Ministerie van Onderwijs, Cultuur en Wetenschap (VIII) voor het jaar 2027",
+    "indiener": "D66",
+    "datum": "2026-10-29",
+    "thema": "Onderwijs",
+    "status": "in_behandeling",
+    "alignment": "conform",
+    "vergadering": "",
+    "tk_url": "https://www.tweedekamer.nl/kamerstukken/moties/detail?id=2026Z23483&did=2026D54174",
     "toelichting": "",
     "stemmen": {},
     "archief": false
