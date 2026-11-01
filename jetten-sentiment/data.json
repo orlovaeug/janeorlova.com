@@ -1,5 +1,26 @@
 [
   {
+    "id": "gbbc31fd40e2b",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "‘Rob Jetten deed alsof ik een moord had gepleegd’",
+    "date": "2026-11-01",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/video/rob-jetten-deed-alsof-ik-een-moord-had-gepleegd/163872089.html",
+    "lr": "right"
+  },
+  {
+    "id": "g859d8b3a4616",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Jetten wuift PVV-kiezers hooghartig weg - De Dagelijkse Standaard",
+    "date": "2026-11-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNWjMxQkdjdlVpSDhoLUpKY0dRVnl4Mjh0dkRXVm9xS0s1NXlNS0pnWFF5Z3RQWnVybDNVUkZ4aTdyMHpJeVpMMmlsaXlYT1p4YTY4RjYzbVFYWVFYZmMtTDdnd1Itdm9ZbF94SFNTTk1mVmU3MnIzMDZBYWtWWnh0QnBFb1RhWG9Mdl94RVlEaWhfYUxLekZBRFBnOWNGbkNJdU1qcjlBMmVHX2VsN09tRkkxRUk0eHl4NWNxSWNfUFh5R1oyYV95YXB4bVI?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "g9b22cf21c355",
     "type": "nl",
     "src": "bnr.nl",
@@ -39,6 +60,68 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNQmlDZVpXenlQSnhBZ250LVpXRTVfbVg2ckRjRVNoMldSR2xVRmV5VUtjendhUThLTTQ3VUFWeXdvZEhLTlIwbGg3d2QzYk9LRFRFM1ZQLU9nY2xJVXlzSzZmZzI3Vzduc3UxeWY5WmpLekFuZUk2NHVxZ1lkaVRFa3hXQ24yYkM5RW42WWp4NkZvcXBRcWUzcHIwajRqWHM0ZnVuVFplWGtMc2l2T096MzhpT3pKYkhJOUhUSS1IU1JFMmhkOHVVZVN4MG9DY1R2YXkwYVA4ZmpUTjlTU0Z2LU56SQ?oc=5",
     "flag": "🇩🇪"
+  },
+  {
+    "id": "g50a8924865c2",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Belastingplan dreigt te sneuvelen in Eerste Kamer, akkoord nog ver weg - AD.nl",
+    "date": "2026-10-31",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUFhLWXAxeDJsMEN5NnBrMHhvTWRQY0hpQUZTM3ZmaVd2MW9uQm1vMzB5RmxkRGd6cnFtLTJhMC1kSDhsa0tuS1lleUxsSnVTVzhQalhxRko4TDV0Z0g1NXhnMHZwcFVhUVRUOEZQTF84M042aDdURHAzeERKTGp1a3NMOWdlbGRjYkxOcVRCaGlQN1RTVHhsVDE0OURkd3A1WFUzcGFmaV9OQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb1bfc4fb0d45",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Partij voor de Dieren tegen premier Jetten: Stop onderhandelingen met „geradicaliseerde” SGP - Reformatorisch Dagblad",
+    "date": "2026-10-31",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVThRZ3RGeTFMc2F0cF9hTEZhZjR1SElNMjZmRG9zbWEyREo0VHRxQ284Wm40M1A2Y0ZSWkwwVmJtM0R5aU5uVHEtRWZjU2VXYS02NE0ySU5BN3FRaTlaN0xsVTR3M05Eak1EX0VMUTgwTHI4dGNHZDd4TU54cDNwRGdQaDFURU1UdU91VXRHaXFxZHI0b3RKSVl0d2dxM2ROcnpPN3NFSlVLU2Rhb2o5bURIQl8zQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcf0c2c7ec092",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Merel Ek neemt Jetten onder vuur na sneer aan Wilders: 'U zet een enorme kiezersgroep weg!' - Vandaag Inside",
+    "date": "2026-10-31",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxONWJRME55NW9LUzFoUHluMjFDdnhPTHI1Mld5alI0d3JGZ0FjOTFoNGVQY0RBX1d6aHNvaXh1VEdwN2ExZjRDeWFxODNVRGhGR2lHekZJNkdrNDRxZElnaFFHeXJBb0xlUV9JWkZodER3LUZRcFNfMUUta2F6Tl8tTXAzT05EX3RTM3BIRkpIY3RpTE9RUmNsOC1XMXlUckxYLUZBa204V0lOTnJhTHFwZEJKc2dSb2hkRzFYUWRTMFBVYWJYY2I2ZFdlYllWdmRsYUdtSkkwWmdqVkhD?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g9b9da46ba9de",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Pro en Volt: akkoord met kabinet over belastingplan onmogelijk - de Volkskrant",
+    "date": "2026-10-31",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZG1pMndfS0R4ZWUtQUVZYUlqelRnYm92Z25rdkpTTUVTMmgxMFpDOEthQUl2UG5nSzgxZllaU3NYLUg4R1NMRHg5UXBlQ2FYTS1McTgwQnRpeVRKXzJTMkVQQVEzNWNRRWlqYzNGSDY1dnN6Nmd5STVZT0Q2M3VSLVlDbFVzeE0zSEFVM1NJUWprdDdyWmtMSDdVakJzck1jVXZHLVFBWUpYUQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g3e2c8ed00456",
+    "type": "nl",
+    "src": "NU",
+    "title": "Kabinet praat in Catshuis verder met oppositie over steun voor belastingplan - NU",
+    "date": "2026-10-31",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNZnBBVU51NGVYUy1LZFNUTVRqbzJhd2tQaThiQ0MxRVd0aXlOMlRRektzZFF0ZlFEeGdHaWo5TFZ6TWZrSk95T01Td2VidDlVbHpIYmRKbHVRb3dsYXNIM1VQM0hPZTQ1NHhQUlM1b1c2OTR2ZWwzci1ZN09pdXpMWG9qekpaMlN4bHFuWmhMMTdQSjRZYWhzbkZINGtQYi12Q1lFSFJFa3hsemYyeUJkU1FkVldjNFE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdabf3203acf0",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Klaver: 'Politieke wil ontbreekt' bij kabinet om met PRO en Volt samen te werken - bnnvara",
+    "date": "2026-10-31",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOaFkxdnZiNGJXSFFEVjR4ZmtJOHZJMGFTTWlfbGx4ZXRtYmtXV3JWMXJkblItNHVRVnlIVURCYkc2a2pFT2VYZERmeEFTVEQxXzRMeDY1RkNqUHJUN2l2UkZwYlFoSzZGb2F2MXYzZXF0amZGRG53N093c09nQXlCNkJzVTFMODh4bmZSSFF3eE1xZlBQNW56aDRzXzJlMFlYckoyVnVVaG1ZTTR2Mlg5d2ZZN1htZw?oc=5",
+    "icon": "📰",
+    "lr": "left"
   },
   {
     "id": "g2d3a9ccce610",
@@ -287,6 +370,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRWljSFJQVC1OSUJ4aXNyN3ljMFF1cG5WY1BVR19xcDhvS1RBS3BrNjR4SF9WN2VCemo3VTRyTmo0LXAtNVF6Mi1KRS1YWktnWkNpSkg3S2lKbC1qY2owR3d0cjUxNVFrOTVMd3FId3FnNE13WGd0amUtd0Z0QVgzWXJXOEtXaFhTR0pfcG5jWE5WT2Y0TWgxTlVR?oc=5",
     "flag": "🇺🇸"
+  },
+  {
+    "id": "gb387ad5edfaf",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nog geen begrotingsdeal: chagrijn bij rechts, links wil ‘doorpraten’ - AD.nl",
+    "date": "2026-10-30",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcEJaMnFvamRobzRoWjdkbjJsMlVlVEpzd2gtd1g5YW5vd0M0amdQcnVUWG9NTGx5a0YyUW1jQnVsdnpYLVl4QnZhWlExeUN0emNvNzZTVVRaZlA4enhqVmhiWFBDMXlURU1kRmFlT0tnZWItUEozVU1jQ3FYSFNiRzdDdVpqZTFDeHQ2MkZrRmFDY2tjYzVDUkVsaklydE90UjRJ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g378fe2124777",
@@ -661,6 +754,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZk1HYXVrSGJXR010Q2JHSUVhM3R4V1VIWTh5X0stTWd1SU9sQV9IQkpOYXM3bi13eXM5MzBlUjdnOENDcFRZdzVEWUpSaXo0YmhWcGtFNHZHWEhJZl9rOUF4aDRUTFdRY0ZOeUlZRGlPWVA3SVBPMmdtZGVzY01oaF9yb05Yb2lhN29zSHZKTjdpOHhhbnNxUU5ZSzVjdU1tUEl4ZGJCT3dXb0RvbURLS1NJUnVFd1V5Z3pBMWE4cmJvMjhhcTJ2SEFEMkFfdkFTQjRR?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gd870668ea14c",
+    "type": "nl",
+    "src": "Partij voor de Dieren",
+    "title": "Petitie: Jetten, stop onderhandelen met geradicaliseerde SGP - Partij voor de Dieren",
+    "date": "2026-10-29",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPN0prR2NXOHNoVmliOWNCN1UyVjZmN3BRbkhXWnQ5TWlDbDhlZGs5QndCSUl4dDhueFhCcDBQT01Kd1NBSk1HaEN1LUQ2MnI1UnE5Qm9vY3hQSTlmNFVpZXhCdnUydEplNGtZWE85emRWQ3A5djZnZllyb00xRS1RRUFMcFhjaUtpS1NpTVk0ck14Tm5nRUkxU2JuQldKdVFY?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g294b198bb5ac",
@@ -1483,6 +1586,16 @@
     "date": "2026-10-28",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVGJlWFpvd25yRDdtVjR0YVJHWlhrbUlYN290SU5KWUVPSzFXbEpLRjg5cHpFV0hnWUItMkdON2I3M1d6WEFDZVg0U1hRQ0pkNjJTeXJTOTNIcjNxTDZ1MnFDUWhGR1hKSVczMVU0WkJOOHBBM0l4dVhiMGlfZ1paOWhUR21IQndLNXVTRlZPbHVxYUljZFRSQzB6eFVVY0NnMWw2R19admVLd2VuUFk0YlNnalBXQlJwSUI0b0ViRmdSV1BlZXZhdk55Nlh6dDFSeW9pUXRRUnZFUdIB3wFBVV95cUxPUUlCb3ZremVmUlBsQVBxYUJfT25RTmtGQXFiWHV5cWItektNS284dUE1Vm1NZ2JEVFhuNjVnc2JFTmV5Z2tRU1lEc0lkVGRxd2hPQ080Qjc0VmpEU29pNTFSSU9HSUdpdi1EbGpsZlZuUWVJZ1pGdDdfcG0xVzJoX0tPRm10OHdGSHNPejBPTWhGQVE3QmVBcS1PQ2NGTUp6SzcxNTdadlJkZDV6SGZEWlhfWWR5MUNJdlBKQ2NSdXd4aE5PdDhPSkI0cE5ROFUtcFJ2cExRSDVJLTFNaG00?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gab887915bd91",
+    "type": "intl",
+    "src": "24 Канал",
+    "title": "Нідерланди виділять Україні ще 500 мільйонів євро військової допомоги, – прем’єр Єттен - 24 Канал",
+    "date": "2026-10-28",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOM190VTJfbDQzckttZS11eHJFVmloTV9KdjdUbFFKUHhzLW1aZzkxd1BQTXB1NThBRldnOUR2czc1UnZGQTdCRzdGdmE3aURpREJ1Rk4xS1EyY2M0SW5Ma3RpaXpiY2JkeTlpeVRPWEtoWFJUSE5NaXZFNEdobFp1QUVlUGJxcjMzWWFCQXA1My0xWUFIdW1F0gGcAUFVX3lxTE9DME5qRGdJVnY5RnZ3MzhTYThKY2FCeklCcXdGVVhPQ1FScTZvZXZHbTlYRGdhWjRsTXF0bEgzOFI1MDI4bXFyU1lIY2F3M2lQMk1NVnNDRU5HcEpzdHpNSEFsWnBVaXRtX0F0SXlVaU5iVDE4ZnNiTkFoQUhLM1N6T1BraUNjRjJzbWZIYlRCaFZOZjNhc3BBay1wOA?oc=5",
     "flag": "🌍"
   },
   {
@@ -3217,6 +3330,36 @@
     "flag": "🌍"
   },
   {
+    "id": "g944e157c07a2",
+    "type": "intl",
+    "src": "WELT",
+    "title": "Niederländischer Regierungschef und sein Partner werden Väter – dank Leihmutter - WELT",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQYUhtbnN3VVdTSW1ReEQtNHdmcmdNLTlmTmluVnZRdkZfR0JKTTVjNkdJRWNUcUI5bDJpazcxUFp3V1lhdEJyNkwtTS1LNS1WR29yQVkxS0dmMXdYNXdpT1lLblNYRzNtUnJ4c0Y1UzlyWGdua2lxbTNoX1Y5czhXWnVOdGR5QmYyWkI2Mmt1cllaejh5cnp6S0V2ZTJ1Y0Nyd3lUMWVaMWRMYllHczd6Wk8xTE90bU1RM1VQTDBoay1mTjJWS0NIbEF1eDQwYzI5Nmd2aE1sU2xfQQ?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g13e2122bb2f2",
+    "type": "intl",
+    "src": "Revista Semana",
+    "title": "Primer ministro de Países Bajos tendrá un hijo con su novio: así fue el anuncio de Rob Jetten - Revista Semana",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNenBhOE52akVQTWdWd2NNekZybjRFS21ydzUwVmxxSG9Tb3RnbXhVelMwQmVPVDBqSWUxRmFhaWV4QVZmSWFESkRoWHdNaVhGQ0ZQb0FuNmg3a3VHNHdBYVlheW5uel8zUFRmT1MxZzJVUDRRS0p3TDhZaDgyWGpTOWtCUGNHVWVieEJWd255ZFN2OVA5RjQ2YmhaS0N4c1V5dFlBTkZrdkdBRjdGU2JCLWNJWFlKWkt4RlBtNXp3cjU0UnNhM056YU9jYUk5R2pWUGRWZtIB2gFBVV95cUxNbW1tUzBaOVVRNGxPWWFVV21peHZ4UHNIWGhTeWxZTS1FX3BLS1JMX1NQbTBYSWdScVozT0hOQXN1SUc1M1UySGRER2Z3S1VxTFdmUTdpWVNWXzh2OU5LUlFta3RIZHlDMkZrVlliQU5EcWlHc1F3c0NjWExIVnNEcVV3MXZiaGFHVTFETlhnaUM4RUxlb2RuMDNNRDFuclBvNG5ZWTZObEM5c1h4bmh6aEVlZlJqbkpDUm9TZFZpWV9KNGVzMU5mRkdyYmJNeDdRRndYVUhVMUJBUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc84fcab1437d",
+    "type": "intl",
+    "src": "ELLE",
+    "title": "Il premier dei Paesi Bassi Rob Jetten e il compagno Nicolás Keenan avranno un figlio tramite GPA - ELLE",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHpQWXRuV1Bsd2xHRjlOcHdVM1lNWDZfRm9Ub1JBUVpyRlBqSGVrUUZ6ZnZ5NThTZTJhdTUxVzJxbTNyVEMzRWVmNHlEU3o5dlBJY0ZiVmZnd24xXzFlX1dqYjl1c2FuakJ5N3YzdGZMTnJzNUNEYVo5bTl4aklRazRCRjZtLXVFX3NBMGNleXNmWlZtb292ZVQwQXNXdDhydFFidkdyd1hOa0QyM2Y3eGw4emZZaWZ1?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g362aca40c665",
     "type": "nl",
     "src": "NOS",
@@ -4554,6 +4697,86 @@
     "flag": "🌍"
   },
   {
+    "id": "g2c77cd6ca970",
+    "type": "intl",
+    "src": "SCHWULISSIMO.de",
+    "title": "Rob Jetten wird Vater - Premier erwartet erstes Kind - SCHWULISSIMO.de",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVkZDeXctUVdvVUFuclk3WHV5M0R5TEdmSGpjd1ROaVR2VkxZdTBad0RIeVVTMEExR3ZKUldlRWxSU0ktNUNFamR6ZlN3ZlB6MXpLN0N0bk1IcUlQWDhqZlh1enlqR1NlWU44cXRXamhodTlvRDdmcW5XdnRQbE0tUE84aE9Vd0VKNy1YRnJiWQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g826c3a6961f8",
+    "type": "intl",
+    "src": "STERN.de",
+    "title": "Mit Leihmutter: Niederländischer Regierungschef und sein Partner bekommen ein Kind - STERN.de",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQ01ZTUs2cks1TWpET2pRQUp0Ui1fUDBhV2NXNThaN0hBT2R2c1ZkeWJmTElmSHozN1hBc3lxVnF0NDVTNHBibVZSbHJmdmhaUU1oNmtmX3pJR3hRV3ZETU1McTJZcTlyb3pkWVlVVk5ZNnVKQ1g5NU1MdUs2eENMNlFiZkw4cTFEUk1NSHpraXo0Ri04ZkdOX2Jub1dSYWNqbTlXVkJzWEV5eFBZUXhTODZmZGNUQWU0cEZwX0tfdE8?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g2a967cba9b6f",
+    "type": "intl",
+    "src": "DiePresse.com",
+    "title": "Mithilfe von Leihmutter: Niederländischer Regierungschef Jetten und sein Verlobter werden Väter - DiePresse.com",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXpwN0lxYXgwWFBaR2k1LUNzSDV2V3IwUkljTFVPZV9XOEp5ZElfZ01Fbmw1bXZFbGh5d3Q1ZGw2RkRPTy1BOENnNVhEenI2VS1USnM4RFBhWk11R3dKWkhqUl9uZjltWGdpSU1pbUpxZkJ5dW1OVGNCNGppUzQwb0VHQmlJVzZZX043NUJKcXFTY3ZsQWJwUGhqUlFhU05HbEJHUHZ3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g95008592fd94",
+    "type": "intl",
+    "src": "Paris Match",
+    "title": "« Une personne très spéciale est en route » : le Premier ministre néerlandais et son fiancé attendent un heureux événement - Paris Match",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPLWZ5Nk5JanpOcV9fNlJhSEE3cFZoaFBoSldPSXh3TS0yT2U5RUlMdXNBNm8tbTNldWlzb1JmOGV0Zml1M2dCTlFVU2k2LVppWGZRTnQ4dG81cVdGX3ZwS2VtclRENExIUWlIengzN3NlTGJobXo1dUs3cUxNRHBSMDFETnlaNmV4bTRRT2Z6Ym44ZnUyS0hWX3NOZHJzNnM1U1ZnclQzY2lVcUN1el9LX04yYkJnczEyRHRIemt4U0N2TWVnT0NrU2ZqM1hQRF91Sm80ZW9KOWRHYVdlX093X2NQUzlNVTVB?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g75d8312e992f",
+    "type": "intl",
+    "src": "Exitoina",
+    "title": "El jugador de Los Leones Nicolás Keenan y Rob Jetten, primer ministro de los Países Bajos, serán padres: el emotivo anuncio - Exitoina",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVXBEUlNxUFFUZ0hEZlNmX2Uta0NYRkVtY0ZoXzJwMnBLQU5FdUtOaHJsT3NySDdjcHNob1NoRGFDVlc3NEt3elZwMDBNTkZXTXltbmp5bVRBUnI1OVdaX05MTk0xeGdEblE2c1BlN09DOVpYVjJzNVRFbDRyVEJ6MVhwT0xCbmJXX3NfNUktR1N6eFdWSzdRbC0yaUpTblg5NkppZVNHWVUxRkVDR3VfeXlyejEweFA3UG9WcmtvYkdnRVYxOEllRGJJa0ZtMW8xMnFLMmFnSmRzZi1DZE1qSWdkOA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g133a21a6663d",
+    "type": "intl",
+    "src": "ABC Color",
+    "title": "Primer ministro de Países Bajos y su novio argentino esperan un hijo por gestación subrogada - ABC Color",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRU1nRk5JazFKZ2VmWm9FVHNHQTZjRTFZNE85TUMtdFlFOGV4U2NFa0REVUdCRzcyTWsyc2YzdnVmMHZyV2t4eTB1OXdmaExNZEVvalp4eHAyb3BTSkNpbXVGeEdsZFZrc25xV0FOZHRyZ0JWVHppZ3BEWGE5NzNtWEhHdDMxNUpoRlNmdExBUnRyQW1QWFhYek1qa0RXbnNkYlhseUtweUFZNUotQzJSNUVmSUh5cjhhcGUxRXNEODlrRXBnS2pibUpCUHhrcTBkWHBadzRxTQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g87346e5d4393",
+    "type": "intl",
+    "src": "LaPresse",
+    "title": "Paesi Bassi, il premier Jetten: \"Aspetto un figlio con la gestazione per altri\" - LaPresse",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdU9FWHJfUi1uUlFZVjFkWmxzd1Z4UWp6MVBvN0w5TzJLT3hFT0tkX3o5M3IxS0RueGlfSFd1dDFkV2NPTWp4OUozajlqWjB0SUZpMHFLd1BaZFJoSTU3UDAzUVlvVVU3emJubktpME1vX3BQSmZBOVM4Z2dTNnpweEZPMF8ydUE1WnVuMlBLNEJQR3JvTXhMQ1FIYVBxeGdiUDgyT3FDT3E1MTFnTmRwaS1Jc2ZsTWhEVmc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0f4df5a0eaf8",
+    "type": "intl",
+    "src": "Agenzia Nova",
+    "title": "Maternità surrogata: il premier olandese e il suo compagno avranno un figlio nel 2027 - Agenzia Nova",
+    "date": "2026-10-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPblRRUERtcTlLRkwyUFJIS2t6Qy1EcDFaSHozYk1hczdBV0g3d0hUZXpqdW5jZnV3MndLSXFxcmNvX1N0RW9NSl9xOVdwNGxCLXlPTURzMldsaXF6MHA4VVZSOXpTdE1XME1kbW93Q05oWFRZVlgwUzdtRW9IZzlYMnVwaUI4c1hnd3h0ZHFkNHNFc0k3dXotZXV3SGg2bVJIekNVX0hRX3hUYzBuWXRwRl8zUEUtN0F2S1E?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gdf72e5827cc0",
     "type": "nl",
     "src": "NRC",
@@ -5773,6 +5996,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBSR1Jza3NTUmdqdmpadWtYR2lnTm1SeVJHQWZFTEgwVWFGcjNuNzJZOTJJajBXSzR4VncwcHg5ajVuU1dBbWxKWllybElCWUhOMlJoeWlVb1BSWDZzbW95OXZ4OWE3SVk?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g9f9af23c5b90",
+    "type": "intl",
+    "src": "Council, European Union",
+    "title": "Déclaration à la presse du président Costa à l'issue de sa rencontre avec le Premier ministre néerlandais, Rob Jetten - Council, European Union",
+    "date": "2026-10-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOaFBqYklVVG5EN01LV3lPUmlVQmF4T2w1OFlEdUw2c1ljVWdVVzNVc0RCSS1taUQtNVpEbTFaOUdTT3FjeFF6Uy1RNnpCSWFiT25xZTdITWdwUVYyYkswZmRselRERTJCaXE2NzZqa19ld1l3eUpPc2RRMUtrVjRBeUh2dHo1T3NGclMzUlRJWWVMOG9jd0JLekxOVk9ybU4xY0lIMnN2Y0NFdnI4ZHY5Y1hUR0JGbDR2UVhrTVI5eUdHMURpbHJWUlpKQ3VyS0pOLWdSQkhKZzJwX3ZvUGVWTkR5dlplSHJjck1VcjFDbjR1WUdxeGI0OHZtenZabWpXV2tucQ?oc=5",
+    "flag": "🇪🇺"
   },
   {
     "id": "gaafcb1178fe9",
