@@ -1,5 +1,212 @@
 [
   {
+    "id": "g1354448b1901",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Premier Jetten vraagt oppositie: neem verantwoordelijkheid",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://nos.nl/l/2637824"
+  },
+  {
+    "id": "g083d26946355",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Rob Jetten geconfronteerd: 'U laat het weer op het laatste moment aankomen' - De Telegraaf",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNZVpNekJya2xSZ25jUWV4V1Q1a012N0p5YVR3U0otZDNqdm91MWFQYWE0d0U1SGhUdTlVMGFPQnBmTlRJVUR4OTVVa0k2SjhEN3NtWFZBRFJQVTlSQi1KUnQzTHN1N0J1YjVvMktHOWRRWERRMUhuR2wxVXlra0dra3UwQXF5ZHo4ZUV6Z2lZQWprN2NGdFFacFJKcW5nU21WTW10UUx0MU5DWG5icWxrVmJyQXVYTDFrTFE?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gc6541e2f3cb3",
+    "type": "nl",
+    "src": "Noordhollands Dagblad",
+    "title": "Jetten na overleg: extra investering in koopkracht en veiligheid - Noordhollands Dagblad",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYi1QcG9NR1V5NGVZU1M3SXhCQXBXN1NZLU5ET05fcGUtSlExQ3ZZNWRMT1VVSzVzUHRfdVd0bWxZUUxRMWhsSFB3ZjNiVlc5ZXlQMUN0bTZ3M2xSWlM2STNNbHBPNVdMTmdRcHpielNVUXJvV0VMaS1vdm5iek9WWVRtd3UwSDFvNXFPSzRjQTR1cGNYbzNGemtiVkJROGRBRVY5WnRRa2N4SjUzYjh1NnIyRVMwMFFOeFd6TjZiQXA0Q00?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf366978158ef",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Premier Jetten vraagt oppositie: neem verantwoordelijkheid - NOS",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNHdYeFBQQW5RNU1MQ2ZOdllDRWNvTHpTYXMydFl1aVBOV3dvOXJlWXZ0akJZOTBFdGJXZkZOQ0xkQjEzczlDX3ljc1dGd2lVLXRqWFFxZ1VyMVdvTm8wU01Da0ZZNGFtaFl0eEFsMkVzM3FGdTI4SE8yeHAtd0xvd0hPbU1pZkM3N0tIMGdqZk9IZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8ec9a5745a8b",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Premier Jetten overtuigd dat belastingplan het gaat halen - NOS",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNmtpQkJEYWJwRTMyTU9UM19mSG5TOVhrUE9DUW42MHhiMWNGalhEdmNLQUhwU0EyZGd4MUYxMl82OUxCT3dDa2NYbFBnWjY1cWlxYk5leUJKaTk2ZTRsMnFIN3BVWjVkR29vZ0JGMXdnbVNTZXhCSkhScVI1RjIxN0wzRWYySnFwZDY0UDh0RUVaUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd8d57a87ca0d",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Kabinet negeert Raad van State en forceert Belastingplan zonder meerderheid - Trouw",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTXpMRS1tZFZNLVJiRUl5WXNpdGJnVlF0MmRQVGRfc1BxNVc4YzFFLVZCMldQVERFbG54VWtLanVpbFdvQUYxbXR3SFQ5U0NkZUROUVBjVWIydC1zcXRvdG5TRF8yYkJpSGx6NVlSSWhLSE5GLS1VUkFubmF3VEJ0LTUyNlN6YzVOOWdsQXBFQWMwZ05Hd3Q5REd3TEZjWDg4YmNiSUljOGJiMW9hREgxR0pXalhydw?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "ge11f8d49e231",
+    "type": "nl",
+    "src": "Het Financieele Dagblad",
+    "title": "Kabinet stuurt belastingplannen zonder akkoord oppositie naar Kamer - Het Financieele Dagblad",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQkJHU1pfdHBHMGdNN0pXMm1teVBpQ1lxdXJOdnJfeGd4MXVLT29KRi1NVUQ4U0hBeUNwZUtJUXVnT0Q2OWxNa3RNTVBraU1ZSklSSi1XSUVIdGhUN21jYlluMWRzMy13OHJxUXV1R3JrUVg5SHQydFZfNzljWlgzdDZtZHdYLUt0ajhSVVFURS02NnVNUl9ZeVQzLTQzbUE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ged0be17d61fc",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Jetten en Heinen geloven dat Kamer belastingplan zal steunen - Reformatorisch Dagblad",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQekl0WGZHRE4yblk0QW1aV2xRbm1aLWpYaExiUGVLZmJIUHhsU1hQeWhIWUQxU0Nablp0a3JhOGMtMmgzSzVSeFQyREpzQ0FHdTgwNTF4LUhzRll3eEIyc2JUa3h6VVBuaHNyRnRSTkNzSjNTZWw4VWhSbjVrdjk2NlBJUE9FZk0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga3f807637ae5",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Belastingplan blijft hoofdpijndossier voor kabinet-Jetten: 'Het zit muurvast' - WNL",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPTVN4OUE5S0h2YnJweUV2RkJFa2dBR19aYmNQWjNyaUdxcVFReGJmcjlvNmExVUtyNHI5NXZWNTQxSXEtNlIwT3Q3NWFORGZxZm9PRnVMMnNnREx0Z0taa3JXZnFIdS1uSE1sN1lqa1BhWWc3QmRMbUZmRmpXNkh6dmdkbTNsUG5tQ0NPM2xGM29yTmxsVWZBTE00WUhuTnF0b1E?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g30a0b717e98f",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Gidi Markuszower lijkt 'redder’ kabinet Jetten te worden: ‘Anders wordt Jesse Klaver premier!’ - De Telegraaf",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPeDBzdXY5eGlsaFdtdTRtamRtTGFiSTNkSlJPSjJFNXI1SnB2ZUdWZ0tWb29QZDV6VVZxZUY5OTBzM0Z0R21teHhhYnNCR20tUnVwYldVdS1HQ0k0Vm5jaG5pbm9FRDBVRDZvSmxDU0x3ZVB0cmt6R202QzcxNklsYWNxS1g1ZzUweGYtRV9LcmQ2ekxyd25US0hUVW1fVW5nelRlN0FjRUo5UGFfTE42alZPMWc1eF90cy15Y1dIRTdMRkc0YTFVb0hOeWpIRG8?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gcd27172aaa3e",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Berendsen (CDA): EU-diploma's derdelanders - De Dagelijkse Standaard",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPYXRsakQ1V3cyeE9CanBWeE53MnEyS3dfNnhENUpscGxXeE9Xci1Va0VnX1JNdVFJemxhR2JjZGdTOEtlYzVLWXZEM0cwRzk1cmNCSWZhY0tha2x1NHBhSzdWUFFmc29WaEh2cVNpWGdySjVjZFQ0YkRuVmg5THA5YzFYZmNyVDZtUnZOTDNYSUdaVC16Q3AyNmlKNlBhM2trNkZpa1B4NFpGSEJrYmt1cllmRl9XbUFsMkE4Y25fRnF0V2YtLU1tZWVJY0hYLWZZcnpxN3RiVjRHcUtxemtzeE1hN21ac3lWUXZYVUFoVmlSSXdWZkZQODhMV0xKSER0dGZLaHhfLWdhZw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g58ddd4b3dd13",
+    "type": "nl",
+    "src": "Headliner.nl",
+    "title": "Brussel wil derdelanders in zeven sleutelberoepen binnen vijf weken automatisch erkennen en het kabinet-Jetten onderschrijft de doelen - Headliner.nl",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORnlReG01X3NVY09DWmx2cmdfVVdXYVM1X3JmVmJ4djJlcEl3RlROMFRCSWlLQTM3TllTV0xQdHpSWnF5UFVWbE5uai1NUUpUQ3pKT2Q1MTlnQjBvcHZrZmFMMWVjSUtmQWNDR2pxQ19vUWkycTA4Ry1XckRmOUxWOXFiTXpwQTk5c2EyX1VwcmxTcDJVcU5QaU9USVlaR2VDTk14akVLWDU2YW5JbWpQV0NDYUJ0ZjE1Mkw0dFF1SEJ5eXduc0Z6c3E3ZElzQTlJOVhhZjNfdlVGc0JGU1NGV1FreUpPZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7a20fae837e1",
+    "type": "nl",
+    "src": "Taxlive",
+    "title": "Kabinet-Jetten stuurt Belastingplan zonder akkoord vooraf naar Tweede Kamer - Taxlive",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR2NsVUVkbjhzMHVnVlBGMGU0bkQ2b2RCWGtGRlV3ZTJKYTRDUndWZTlnYzdXc2NqWFF3aHJObldMVVlLUTZiSG00OTFtdEpQZXk3Y3I1Ynk4VFZwZzFXMC1CTFdGT1hqR2xnd2xMVHd1OUZTd3RpbUFfS01wSzR1eXZrZ2pkWFEtUHJJMEZTQmlFU204d2ZHLTdBbTVOVDNEd2tpSmg3elZIekNYQ1oyMk5vbDFHend1TW10Wg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb2e9c43cf73b",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet Jetten kiest voor casino-optie en stuurt belastingplan op de gok naar parlement - bnnvara",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcF9vVmZNTmNwZURxeFoybnRuR29HMGIySGtwS1A1R1AwYkdzeF9KMVV2ZkZ4T0dKTWxPNGpOczAzTl9ZMDJtQ1RDcjdBZ2E3T1MxOC1qWmY3OWh0NUVXMURBN2EzdE83Y0tXVlVEU0NHWmpqM1B3aFhxTFdPeWpocUxvNm1YUHlFdU1oc0huei0zZjljU01XcXdvSUsydVJmZnJlaTA3ay1DYVpQQTFQLXQ3bzYyWmNrN3ZPOV9BTXBLMFU?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gbf01a3de8bc9",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Uitstel box 3-plannen en indexatie inkomstenbelasting: dit staat er in het belastingplan van kabinet-Jetten - bnr.nl",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOSnBmSXpQamt1RHhKY0ZnMXRuUnFsbmJOVlVRd3BQd21vMWNQeVRudkc4UVhtY0ZjaENlaU9NdHdaSlBDT0FVcnc4cFU4OHJiRFZLOG1HUUxWWlBJbUphVng2U1JQbVV6UnpSc0gxM3pTVHBCb0FtTUVoRmloMzlkRHRlYk1QX1VrbWZETWtHVC01UlZZR2VXOFNvMXBkWkZZYVJ1R25NUHpFYzJtOW5lTE1vbGJCZDAxeG5SaHQ5ak4yZWl4Wi1Gd1ZhRWVJdw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gebc57e49dcd8",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Dilan Yesilgoz gevraagd: ‘Kabinet Jetten of Schoof, wat is kordater?’ - De Telegraaf",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPV1FyS3pDUUVPSlBEMWlEVzVlVWhWcUtleVJzaTlkWTRfTERGb2Z0QXZoYUFOMTVLZTNUQU5fUVBMdldocGxnUUdIYkUzN1BHWFFaQnczMG0wa0llN3pxdTBuUmd6UGVNT0U4dEkxRkgtQ1Z1Q2Q1ekZQREZWTG4yUE9zaXYxR3VINWFfR2NhRThtTnh5M3NqLVBrMktwM25Nc2cyaXh4Nm1MTlBKd3NB?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g75cf9c2840a6",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Top kabinet is het eens over aanpassingen belastingplan en hoopt alsnog op steun van oppositie - AD.nl",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPbXZ6S3hCYlN3bGloZDNxS25yRWNIenJ3WFpzT1hrN2JRU1JMSkQ3RGw0VzFyX3dSVEo0U2xSc0R1TjU0dzdTVGo4VGVHRXZBOG5xTzgydDB3dXBfUGdQdU9yR084aUV0aGxWSWZDYWhoYkRQOFlGMmxLR0NRX3ZfSVVpZUk0b3VRNzVWX1FpWk5tZ0FpaWJhdFNmSlZuM0dlY1NtOXVUX0hCaTNZWWIwQ1NEUlZSQ1FQLVJ2SExZdGU4NXlhb2ROUHlvQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1b996b276189",
+    "type": "nl",
+    "src": "bnnvara",
+    "title": "Kabinet Jetten 'kiest voor de weg vooruit' - bnnvara",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTm5rdnZPVFNfYmRTSFdYQklEYlJpckdHU3cxSXhPUFZSbGw5SG0yQmx6Qmtnb1BkS0MtNUhoNmNlbjdTNksyYmhDdTF0VjVFNi1rWDJldGtlZWNLTW8ta2FZaDdMNUVSSzBCaFJJRklkNXlmSDhVWlpBeHFhdmpJbUwwZks?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g26d7fa1b01b1",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Kabinet-Jetten zoekt de parlementaire grenzen wel op - Reformatorisch Dagblad",
+    "date": "2026-11-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5JUUxKNmJ5RlhYdlRBU3pvX2ZIS21jZEhSLVQtczgxajhDTWJBcG1CbmhfMzlhaEc1eDdyT1puc0RfcUVVZWZpZEVycnlxNmFXazM5TTV0YThac24zZ2xhUTJycTZOeV9yMEUxaGprZ1VMRXpzSVBOV3Z3ZHVTZHM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga8acae48b284",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Strooigoed in nieuw Belastingplan is wanhoopspoging van kabinet - EWmagazine.nl",
+    "date": "2026-11-03",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMFE5NzVueDdmUkRFUXJFbTRvUWN2SGFUSnFIYy1Sb0RxU0NSX3ItTFBYbkQzMmVURENtd1FGYTRtdVVZeEVaX0htR3J0bjJ1VnJCY2xvbUpwRkhQcDRLSk5TM3VubGZaN0d0ZzBNZTA1LS15VFE1dnJYX2RXelhoeks2cVhMSE1BemNJU2pqMklZQmt4dmZhT1pfeE4?oc=5",
+    "icon": "📰"
+  },
+  {
     "id": "ga0c87c10c717",
     "type": "nl",
     "src": "AD.nl",
@@ -49,6 +256,77 @@
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMS1GeTNBRW1kRW9ESEYzN2VZVlNIYWpRUEh4UkMxNE5DelcyTl9sYVV5aVk5RGhWRU9SVmFQa3NFd1dLRmdNTWd2N1NDSjA2QXp5V1Y3TDRBLVBmY3QzdVp4QXlINng2OWtTbnBjS3JRS1o3UUZELTU5bVFaYUlwUVktZDB4VkFVS1FyRDhEVjh0YjREcjNZS1Z1VlFRM0NvSTMyNzJ0NHJ3NFNjRTg3aU9NNXZXWHpueXM5Y0kydUtSdw?oc=5",
     "icon": "📰",
     "lr": "right"
+  },
+  {
+    "id": "gd4d93a43834c",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Chagrijn en wantrouwen in Den Haag: kabinet-Jetten komt maar niet op stoom - AD.nl",
+    "date": "2026-11-02",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSjVZNFdMSG9aT1BGWjB5U012TXJhUGlLQWd4M2htU2YyLUdSdHpjSE9RVUEzMWVnUkxVTHA1RWVFTEl1M2o1U3VUc245UndfYkVVQ3djMTNVaTJYOGpwTy1SLWNtcHhDX0l5ejVXOUl1MS1RTnNuejNoVlp6dmdzTHNhOTAxQmFpczJxekdCNDcyYjJRRXI1QTJjd19WcmNtVUIzWUY0aHRzaEhSdnc4?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g3fa4307cde61",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nog een kopzorg voor het al geplaagde kabinet: adviseur kraakt plan box 3 - AD.nl",
+    "date": "2026-11-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTDhxaUdpa0pncl95cmU2YURrYURjbzVEVXFzT2F2M2Q3dGMwQzc2SGY3S1l6NlF5WTM5bkZxVVFIU1o1R0dzbnFNcmszY3lBSWRfVzBpN3ZVb2E1WUhycG5nUDI0c2NnREZtclhBUHhDZFFPRHVCbEdwWVd6bXI4Y2lYX2lMbEdUbTlwdERHSnBBcFFsSjdGQko4V3daNUNHREZwLThOMVFaRTJRa1E?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g333ffa11b0ba",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Belastingplan-druk naar kookpunt: hoe komt het kabinet aan een meerderheid? - De Telegraaf",
+    "date": "2026-11-02",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQnhkVWhnR2RpT05tckRySERYSElvRWhzV3NjVzNXUnowcElXNXU4Zk1YTTZxUW1uSWRBTXhiWnJHa25HRXJ5cUVWaHItWjhzQTRsSXVUdEVEWU9zQkpiZkI4Z082aGZUM2dlUXVzLXJ2aGI2SV9NRlc1T0VBWGdFUUxqOWg2cnJ3d3ZxTEJ2S0t4Smd4aG1zYWFqTXZNSVVhNVlSbC00c21WZ2tjNG9wNFo0bXNrU0xvZkFvQlJPSQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g085d5a59565a",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Box 3 en kabinet-Jetten: Heinen is met zijn gedram de belangrijkste veroorzaker van de problemen - EWmagazine.nl",
+    "date": "2026-11-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQVByb3pTT1dieHVCbnlPMWtoQm8zQ1pTMHVIWkR3OUVfZlU4aUFxdEVXelVLU2FXTG1pc0dsTzNzMmx0X0IyUEdJOHZqMFczUzdSUnkxWW5YQU03T2p6Mi1ZYzRyV3E2Vnk4YXdnZ2gtZGdUUDVyYkpaLXYtODlka3JhVENnc0FFNzY4SlZtcUJRZnVNaFBlelhaOENKdjB2VG5nUVVFY1ZJLV9ia25SVmlwMA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g38d2183f9a47",
+    "type": "nl",
+    "src": "NU",
+    "title": "Kabinet eens over route belastingplan en box 3, vanochtend extra ministerraad - NU",
+    "date": "2026-11-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVzFTZE9wTFhmTFlMMm1Wbnh0NW42WXVuTlY2RjFudkVJQzRJS242ak5rS1U1QXJtSTNTNWtGb05TWUlRVmxJaXZFR1JIYVBZbllKYUhXOE1rSE9XWGwyOWlKWkplTTQzTmdYd1p0MUoxMTR0R2toYkZYejUtUllScmNQY1FWSzZrZF90REFlVUpCSHFBeVUzOS1FZGYyTHA3ZGs0MW9NdHJDWDNwUXZ6QVlzRE1rXzg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g8cc00b600d69",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet houdt dinsdagochtend extra ministerraad over belastingplan en box 3 - AD.nl",
+    "date": "2026-11-02",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQelNtNkJOVTJSQnMwMTdNTUlaeDZpX3k1eXgtSWExQkxDbVpzc0FuNFJmZUlrUzNSYXUySEViTWw4OHRhUzExckRaa3F0SVprNUdQMGVmVXBtV0xzb2puOWRsU3BOVVhsZV80cUhVblZ3RW1ldDlzd3REQk1rX2FPMDZWRDVSblE3MFp6NXRTRGJUYXlySHJlYzlQR1NmTWtya1BwZHhObDl4TmsxeDkxVmF3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5a2c05f59a4c",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Chagrijn en wantrouwen in Den Haag: kabinet-Jetten komt maar niet op stoom - De Gelderlander",
+    "date": "2026-11-02",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUTBLVHVDdTNHQjA0SWtlM0p1bWxDZVNaZVNna2VtN2g2YTBSeng3OGpnTUE5UFJKNGVid0N3eUtVOHhmY0ZEazFDQlZLbnNxZTdDZVNHN3lHQ0UyMHA0a1RJYTVIenQyT3huQmlLWC1xZkRuV0c0UXR0MFctb054SzlGYWtKajlib2NDT1Zzc1BNbzJ0NGxSejlJd0gtSVp6eGktdGxGSk1ReDY2WFBYWFN5SlphOG94Tzk0WQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "gbbc31fd40e2b",
@@ -101,6 +379,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOTkZGUU5FX1V6SVRSdWVsOUMwTjJJSUdOOU8wdFZCV3dwVTJyb3kyYXZweHZ6ZHR5QXRCaU9PWTJ2S2lGZWlxdjdYcGQxdkxuejMxcjc4Y29DVEJRZ0dscVBCeE5pZFByOEZDN1g1Q05LRDYzMGRmUDlwRFk2cVJRb3JsbE5nM3JaTkIwSkoxcGhXcVV6ZExwbVJNRlR3QlpuVnU2ak03OGh4aXhfdlRpVHNBdmNpdTFTU2JzV1hXWkdaVXJpdHlSSHhUdDhmLXlCcVB2RVZZWUQ5dHZlcFNVMkYyRTNueDl2MnZzejVueGc5bVZPdTNydUhsM29PbUpyeWtITTZncGZPU1ZpUVE?oc=5",
     "flag": "🇩🇪"
+  },
+  {
+    "id": "ga6aee2916dbb",
+    "type": "nl",
+    "src": "Vandaag Inside",
+    "title": "Guido den Aantrekker duidelijk over Rob Jetten: 'Hier staat geen premier!' - Vandaag Inside",
+    "date": "2026-11-01",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOY2Ffc29GeXNpMHNOQUQ3dTllUTZPdkd3M2plZG9WUlVGeldOUzRMUEQzWW9ZSklsRUpmM0Z0TkNDZkxQRUNLaEF1bXJyLWZmcVpCeFhzNFBCRjlIVy03NDRUSjNrVGN3WG1xNXdJZXNiNDZKc3Y3SkFwRjFhUEZscFlvLXA0OW1SQVlMclFKT1BaclhiN0pjUUhhbGlZaDRKRGM5V1FTdEwzaWh4eG14QzZfeTJnN3haNXFfSkpCcldSY05kVDZZVVdqTk13VHdlS2pWM29n?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g9b22cf21c355",
@@ -1728,6 +2016,16 @@
     "date": "2026-10-28",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi8ANBVV95cUxOSnJTNG10Y0paeVZ0Q0RpRk4wMGtXZE5LcWNHcHpCeDJ2bzhFR045T1pkem8ycFQySTR5STMySWdHMGFnXzIzTXFrV2JsWGNqUkhIVV9wVGpJNjBYaXdpNmhKckxsMW5lczUtSFZTNW5yM0toNHBMbGNrM0dIOGZqY2RrcDVtWEZLYnVUU0ZncExwOFFtU05EQXRvcEtnNEt5bFIwRGtkTk8xbnpiTW1PQV9TQ0x4N21hMzVKOFdjd3BNODVYWG9HZ0hZZXRDakVIVGVyODhUWHpQSzFWUWw1REk0UkduTDg5anlpWGRtSUkzM3Vld29JZWNWU3lpM0VKWkU1UDU3elRzSHh2a3ZsT3E5Q3lBVnVmc2VSSU9vTUo5MFVZclc4cnJWTWZSUVdBMV9GTlRDazFsV1AwcUpxRWUyTXRiRFAyWFh4UUVoMWZCSEVSUFhWMVN1eVRLeW12YXRNTnVWZGJiNDh1djRrR0VmblFBYlkwVThpbXBfcEVJc0hiR3hyNlZSN3lOY1c5Y083clNNWnh1T0p2VGcxd0tSNE53ZVVhclAzZVRlSzVMLWItelhUcDB5R3l2NGJpRm0tNEVCYnFnQVJYa0ZLQ0JZU2hBQUhBQTNKaU9tRkQzbnhfbTB4RmxkRjdfYTlr?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g1ee334d7714e",
+    "type": "intl",
+    "src": "The Mighty 790 KFGO",
+    "title": "Dutch pledge Ukraine reconstruction support as Zelenskiy visits - The Mighty 790 KFGO",
+    "date": "2026-10-28",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNQW5EN3NZNWJjZXBGR0FibHdrZkRyMUlJNkN6RkhsclVVbDRuenJPcDdHbG9IOVZ5amEyd2N2S2dmRU40ald3OVRVcld4Yng5RnFtLVVzRUJ0WGJ1Sko0aTNnOUxJOVE2SzhtSHAtYU9LQ0xBRGN1dG10MmpzME8xcUVobndBNHIxaVBHaGxINGNZT0xzbXJv?oc=5",
     "flag": "🌍"
   },
   {
@@ -3489,6 +3787,16 @@
     "date": "2026-10-20",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWHpQWXRuV1Bsd2xHRjlOcHdVM1lNWDZfRm9Ub1JBUVpyRlBqSGVrUUZ6ZnZ5NThTZTJhdTUxVzJxbTNyVEMzRWVmNHlEU3o5dlBJY0ZiVmZnd24xXzFlX1dqYjl1c2FuakJ5N3YzdGZMTnJzNUNEYVo5bTl4aklRazRCRjZtLXVFX3NBMGNleXNmWlZtb292ZVQwQXNXdDhydFFidkdyd1hOa0QyM2Y3eGw4emZZaWZ1?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gbf339765e5e3",
+    "type": "intl",
+    "src": "Inquirer.net",
+    "title": "Dutch PM Rob Jetten, partner expecting baby via surrogate mother - Inquirer.net",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObGV2T19YYWlZekhfbFM1QzJxRDdHeXdqWTZYaE5CZG5ZSkoxYzJYcEhuS2REUXQwTFNJck52NzEyWXRjR3VaN01HOHBUWktEVXkzWlJaUWNvMUR3c3F5bDZOMTNZYVFLN0dkNWp6UWsxcVNJdFhWRHJ0bEZGQ2F4WVpqWmhZaFpvVWJ1SVBMVXJ5ZENJa05RcDlzZVFjUVRGdktYYUlCc9IBrAFBVV95cUxQbWVFeXB6OXhGVGNwRE0xYXVOSWZmUGtObmVLdUlveU9FNS1OUVplZnFvbHB2Ump6OXR6ZGxSQ2ZOQjk0VzlZcU8ySDFMX2xjZlN6b2ZBUFZKbGRLOUpBZ0NxOHdGZjd5WFcxSlVlTzJ3TzI2b2htTG5yOVZWMGgtTkU5UzNnM1M0ZzJ6cEh4cDhtaDNGVHZJOXh1bDgteExZWkpicnFKRUtZaVU1?oc=5",
     "flag": "🌍"
   },
   {
