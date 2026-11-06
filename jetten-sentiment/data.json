@@ -1,5 +1,90 @@
 [
   {
+    "id": "g016fbea9a172",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Een cruciale kwestie voor Jetten: is er eigenlijk nog wel sprake van een coalitie?",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://www.trouw.nl/opinie/een-cruciale-kwestie-voor-jetten-is-er-eigenlijk-nog-wel-sprake-van-een-coalitie~bd1df38d/",
+    "lr": "left"
+  },
+  {
+    "id": "gef44c0255caf",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Rob Jetten lijkt als premier steeds eenzamer te worden. Hoeveel grip heeft hij nog?",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://www.trouw.nl/politiek/rob-jetten-lijkt-als-premier-steeds-eenzamer-te-worden-hoeveel-grip-heeft-hij-nog~bf2926e6/",
+    "lr": "left"
+  },
+  {
+    "id": "g2b7fe4dc519b",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Johan Derksen uit felle kritiek op AH-bezoek Rob Jetten: ‘Onze minister-president is er gewoon niet!’",
+    "date": "2026-11-06",
+    "sent": "n",
+    "link": "https://www.telegraaf.nl/video/johan-derksen-uit-felle-kritiek-op-ah-bezoek-rob-jetten-onze-minister-president-is-er-gewoon-niet/164192299.html",
+    "lr": "right"
+  },
+  {
+    "id": "g2ef813450cf3",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Rob Jetten lijkt als premier steeds eenzamer te worden. Hoeveel grip heeft hij nog? - Trouw",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSG53SDJvTGZpcTR1WWJ2cDFXS1VhU2I0bG9JbzZFUXdaOVlZZk9xeDlobTJSU1dYWU5Qbi1YaWRCOThpOEF5eWZ3Zm0xX080OE5Rb3pLMzBrTTRFNzBYRUNkQmRVQ1NTbEh6V1g5Y2FuNmp0N3NpSVJuWS1YMHFzWVB2NHgyZVdYX1czaldBeUZJV3dPWDFpbXZBMm5VV1B2MnFkMkxvQU9BUGJEWXpoRWlaQ002SHl0SzBtcjln?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gade16fd710c3",
+    "type": "nl",
+    "src": "WNL",
+    "title": "Jetten vindt zijn aanwezigheid bij Rode Lijn-demo 'niet passend' - WNL",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPTHJHSjAzZjVTdG9ENFF1cF9JTWhWaExteEw5TUdRT2k2LUpOX0hVZlZveXlybHBvRDJsWEN6Z3lSNjYtSEFVcnRRb3B1UWFlN2VtX0YyTUc3X09uWlE4aUxuRWhfVktZdmNiNU81NkUyWXhFZFFiS0lVNThidXY2Q3JJYk9CQVZ6bzJDVUNtYkVPQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga70b01c24078",
+    "type": "nl",
+    "src": "The Rights Forum",
+    "title": "Gazabeleid kabinet-Jetten onveranderd sinds kabinet-Schoof - The Rights Forum",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOcHhnODNpR2VmOEhJZmNIbjh2MlRVMW5ndkZDZnA1NVhsMVJOd2NiYkhlb1JIWWVZSjRVZ1lSdHJIWGNvWUdXT0hWVTlHMkFmLXZ4bUVYY1J4YXlsOTJTMjEwZy10UnNyNVExbWlyUUdKcEw2UG1JYVVpX0x2alFjTFFjOW1Gb3dha0JR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gbe884ec45518",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Een cruciale kwestie voor Jetten: is er eigenlijk nog wel sprake van een coalitie? - Trouw",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNN1BiN1dJdDRWbXFNQm83ZXF1aGlCV0w1ZjQ4RmpzQ1RfM2g5em11aXJEdGsyNzdqZWNLNlMwc0dzTFdleXlyQ2YxX0VCM0hoQ3RBaDBaeVpKUzR6Sm1qV2Rhbm1PSFJrbk5nU1ROTmRkaE1NdjNTcFdEd1JZSnJnekNKaUM1RUJBRGlGdzA1NFNucW1ocGFZLVY1X1VNX2hLb3FJUEFhcHNUbGZpbFRMVW5FemtVWXlDV3c?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g2e4434239fdc",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Heerma (CDA) en de jeugdzorgtruc - De Dagelijkse Standaard",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcjFMaXVIMnNuRnpwdnl3QWJsT2NqRGxXdTNqaldYc1hPNk12bW54dTJEcWZocG02YUIwbnBJUkU5aGI2SWc1TDN0dnBUNTlNbHZjTTc4RU43dE1fMEJfeDVPX2JKMVNnMUxfdGNZazVJLWN5b2NHdFFDNFlidF9sZ3lyZkZlN3VtRE5zUTE3MEFwSThHUzd1c1FNQnI5eEpLanc?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
     "id": "g62c6ee67ac74",
     "type": "nl",
     "src": "NRC",
@@ -123,6 +208,36 @@
     "date": "2026-11-05",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQcE1zUzVvb2hGcjlZN3gybkZ2SkhFTWV5c1Y0c0x0bUgzWEJ1YVFwdDN6SnN2b3NlZVhoaE9FZk1VSkpFZXV2eHRhN05RQUNLUW1HRTFqZ1JoRkd3WWdsbG9Za1ljZUdFaW0xUnhVM2I0TmxnaUsyMGNNUFRMOGlLVDJBQ2JRSVpoXzVZM3RLMUhKUHIxbWlYS2xjbmFkN2xZMnE2cTY5NzdISDVQWGl3eDFGMVdRcndxSVlQeE9kR0MzQ3drbXJDMEFaRXVWWnc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6cb833c71be7",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Premier Jetten merkt de hoge prijzen ook: ‘Pampers en cola moeten hier niet duurder zijn dan in Duitsland of Frankrijk’ - AD.nl",
+    "date": "2026-11-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVmktUEViMkI5MXhPMnFiZGVlQ3pMNDdkUkxaQlJZODRpZm5INklOLWl3bWdqaVItVU9RLWE0Q0RJSmJaVzFPTlVXSi1XOTdObHl3RjJtV0VpdFlTOGItOHRTR3d5a3Ezak1ackhwNFdMaFkyREhVRWxHRGppQ3A2aUJiM1BJNWtFVm1TcnpPbk9IOGFuaWEycERIWUlieUM1NkZzSG1zVHdOTV9LUEtnX1NVckhSV2RfYV9rci1fNzl1dE5HQm5vQmJkSmhLcVhYNmZPUTI1MGVvTl94T1NZQlRramREV2JV?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc6163307586f",
+    "type": "nl",
+    "src": "Leidsch Dagblad",
+    "title": "Minister-president Rob Jetten bezoekt mboRijnland in Leiden voor gesprek over discriminatie en racisme - Leidsch Dagblad",
+    "date": "2026-11-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQMWRiUjRYYmVBU2pYR2EteENsSHZ5clZFdHpsRjZVUW9UT2prVTBaTl9OQ3Jsek1ZODlSVkFxdlY4NThKcDFQaHd2VklPUnZaOE1PRU1DSmxVRW1POTMxV2s2TXVjMnJobWFEamxOSkd4X2oyWFJQVzhHT1ZnVjl5ZmZOb0xBUkVQQjd3czlxd0t5MlBiVWFLTWQtWlhQdS1SdEtna1dWSDNYZDdOWEpEbUp5alhuSk9URzVGNkExdldJWnFnYXhFNmE2R0xZZ2syNUJxbHIwa1paSTBGVTJUQUVmcWVYUGpmMTFFZ1N6a3duQQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc82c5e3a9e3d",
+    "type": "nl",
+    "src": "Eindhovens Dagblad",
+    "title": "Premier Jetten tijdens werkbezoek aan Albert Heijn: 'Producten behoorlijk duur geworden' - Eindhovens Dagblad",
+    "date": "2026-11-05",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOaVJybW1PaUJmWmtzOUxGQy11UFBNTmNrMlctLW1KcF9EZjF3TFhid1puWWg2MEhTRWpUSnRXNXR6N0VPaXRVVjh3anNIM20zMFNTbF9kM283SUFjTEp4a013Qm5KNUwyQ2drNU00blY1V3RhMnpGQmE1SnZGdUdhcXpodG1LUHdlWEhMY2xxOUp1Q2V4MnBV?oc=5",
     "icon": "📰"
   },
   {
@@ -3405,6 +3520,16 @@
     "date": "2026-10-21",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSEM4cHdINXU3d2M0MUdTeTFERmNHUndxYVJhYWFOOEc3RkQ0b0VrMW02enRSLXRwd0tuXzBkaGdscXBMbDJjVWxaaThmWGp3emFDRHFZZ2RzTHZhZDlZM21MeklSOVFuUnlad2R2eDMxSjVFekpvLUdCVkpnLVE0QmpZNkpHVlgxODV5UVQzNGxNRlNCRlVMX1lYTTBoZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge5dddf47315f",
+    "type": "intl",
+    "src": "Caras",
+    "title": "Rob Jetten y Nicolás Keenan serán padres: el tierno posteo - Caras",
+    "date": "2026-10-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUTBYNzBMQkFocm5zWTV0cHZvNVN0TThkaTF6QVUydmlNTTBPcWhzR3Z5LVFMT3AwSWZYVjlkVE9tUVdTU0ZzYXpDeWZHenF4aHd4a1p4ZjdEbUFiV0lVSTZUbXdvaGdyVzliOGtHYUg1YUNyclRvMUROSVh5S1dxOWNMZnJrR3l2TlgzczZyUm1IbUUxSlgzSzNfdGp5ekVSaWlLc3RnMFrSAa4BQVVfeXFMT25ma2RTelloaGRGQTJBeENzQzh5THAySHB3dGcwTTRoNGhOTjdBMGtzY2EyakdLd2xrTWdVQTAzc1lJMWlNWWxKTUI4dXhlTnlmUnR0UXVOZzMyc2xuaHpETy1hdkFaNVlwTjJmdHYzckZPYVdvc2dTUHR2ejhpNzBfaGNaNFFJUG03OFY3NFNXRFBXNWVoSkkzV3hVcllhcm81TTNtaHRXUUJoZkFn?oc=5",
     "flag": "🌍"
   },
   {
@@ -8233,6 +8358,16 @@
     "date": "2026-10-01",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdUIzd2N6VktjYkwtYVFYdjE5cGxZaW5BWVlCYVVPTG93cEZENWU4M3ZDdm5tcnZtUk96N0Q1eTEtanhxcTZVMWpqQXk3SllSY3FnTWZWVTdQeHhKaVpuM2VfWHRhelAySjRRYklfN0pKeTdzMUlobUl4eVRHRGFtX1NkVHB6eHJEMkxTcXd3QTFCMTU5bGJQc2lR?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf6b423f40386",
+    "type": "intl",
+    "src": "North Atlantic Treaty Organization | NATO",
+    "title": "NATO Secretary General in Münster: Keep calm, carry on, and support Ukraine - North Atlantic Treaty Organization | NATO",
+    "date": "2026-10-01",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPVTVmbzY2cTNCcFg2VkFLWkJzVTBLMEJtb3MyS2lNaTAzbTBOaF8tU2dWTEpZdDc3YjBRc3VYaW00UFFKR0lmbWRpQjRCQkt0aUItblVFVlU2X3hnSEIxSVRiLWZpZGtvbmpta2t1QTBEU19lXzRNYWhtSkRtbmNiblVHRzZBRzB2eENzRlVVNVRWSjNpclVBR3d5a0h4TnVWam5mOHlxdXhaaDZVbE5KYkR5YkQzR2dNalhQTnpjaEUxTUp1MWpJX3dnT0k1TEhBZE9nbkNpdTJiaEFUbE5LdFhWeTI?oc=5",
     "flag": "🌍"
   },
   {
@@ -19022,6 +19157,16 @@
     "date": "2026-08-18",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVmVyWHZ4dDUwcEZ1Z2VTVWFMbkEzTjNBcVFGSHRCamM4NEgyZTh5VzBIc2pGdzdUTGdUZ0pYVENuTm1rd2VZbG1iU293X215cUh3ckxLbHktemVweDA0RUZlWE5YdzVFVVdoU3Ryb3lvVEhWUGNUeGNzanFWaTJLQ2ctSV84TmdCWlM5T2xBdURQNDNjRnlJYVhlekFRUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0caddf1f2349",
+    "type": "intl",
+    "src": "La Nación",
+    "title": "El corazón dividido del primer ministro neerlandés: Países Bajos le ganó 3-1 a los Leones, donde juega su pareja, Nicolás Keenan - La Nación",
+    "date": "2026-08-18",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNGlFeUpCODh1MEtab2dkRjJzQkh0VXJCazhjY2RzQXFsMGx0bGxyajRSYnNkSzM3TWxya1R6YjE3MGJ4YnFaaDVUV0ZwV1dFYTJkSUZILXg2NTRuRVNyaUYxTkFnMmdodXdvczhDQ2FoTTV2eHVIUUk1MDdEY3RCU1gzLUJwM2tVWXNUeXQ3SGJtTTFqWWpSeXlaLUExYzRCRFRzMmozazJTUENZZ0w5VUJoTXNJWkYwU2czaDZfSnFWZG9DdXNnZEFZeFpTNFpWTW1iZUNlaDFMdDZyU19KRWF6OUk?oc=5",
     "flag": "🌍"
   },
   {
