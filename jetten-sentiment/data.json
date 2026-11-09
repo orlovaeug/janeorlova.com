@@ -1,5 +1,240 @@
 [
   {
+    "id": "g7123e58d5437",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Gemor in Antalya over plotseling wegblijven premier Jetten van VN-top: van ‘klimaatdrammer’ naar afhaker",
+    "date": "2026-11-09",
+    "sent": "p",
+    "link": "https://www.ad.nl/politiek/gemor-in-antalya-over-plotseling-wegblijven-premier-jetten-van-vn-top-van-klimaatdrammer-naar-afhaker~a8dc071e/"
+  },
+  {
+    "id": "g2784c4693bf1",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten niet naar klimaattop vanwege onderhandelingen over belastingplan",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://www.nu.nl/jeroen-kraan/6416005/jetten-niet-naar-klimaattop-vanwege-onderhandelingen-over-belastingplan.html"
+  },
+  {
+    "id": "g54732da6d63a",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Premier Jetten: signaal Rode Lijn-demonstranten 'niet te missen'",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/politiek/video/13ba9845-5bea-43d8-8df3-582be08eba22/premier-jetten-signaal-rode"
+  },
+  {
+    "id": "ge2e89830af52",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Jetten slaat klimaattop over vanwege begrotingsgedoe",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/politiek/jetten-slaat-klimaattop-over-vanwege-begrotingsgedoe/164300927.html",
+    "lr": "right"
+  },
+  {
+    "id": "gb43a987a360d",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Live belastingplan: Premier Jetten slaat klimaattop over, belastingplan gaat voor - Trouw",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNcFd3NjFRMDA3WG9ZVWxZY3hTMDdWNm1VclVXN3lZd0FRek15SkoyV3lGM3k5ODVDSU9tdkdSenJscUk4WnB6V1lZQU56QmQyTFZmR1dZQ1p3cTZ4Y0xGNHN5SG45VTY2WlptRUlqV1F3U0pzVjNfbFZ0a3k3VEdza1NwdllZTUtPLVhiWG9iWjZiUlpfZWRYRFBBdGZ4U25SNUxtN3FfQng2dUlMa3c0WC1QWG5nTjhFOGN1eg?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g0c2e711d81db",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Kristallnacht herdacht in Amsterdam, met o.a. speech premier Jetten - NOS",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZUdLODBwV0ZuY0JMMTdNTjJ3WVFyZTNHTlZvNVgtczA5M01YS2pCZERHTjVPYS1zOF9yRlM0YTJBT3hxdmNaRHR3eEUzdFo1VHEtMnFUQ0VXYmZYR0RrWlFhc1FPeDIxUEZPV2dVNm9TZllfUVRlTzJwUHozU21wcFk1MFZJT3k1cVRsNlVWcjR6dmczbEI5bkhjZk5yUFh5?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf22ce8ba642a",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Verloofde van premier Rob Jetten stond op het punt te stoppen met hockey: 'Hij gaf me een vangnet' - Sportnieuws.nl",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRlFTZ2s1c1J5SDgtLWQyRnZTa3VlcnIxaHBsSGpvTFFLZjFTWnZ5SWg4N3Z0RzhUSjZ5WXlya0hxRTFyN2ZOalUwRlJSNi05WDZ4TGN2bHg2VUVCZ3dNS0l1UVg2X3pKSmRkTXpDdXAxTlN3b1N4eFpLTnViUHFIbjgzX0xkM1ROcVFyMXJfVklFMzZ1ZkM5ZXlNVGJ0ZHFkc3pKOV9WaDFDRWFIY3FQSk5NU2llS3hpd0tsenYzNWJYeTBnNFU2SEZiLVFFRC1Jb1lNRGk4VTVvRGxZX2phZVR5OFZ6a2N6TjBHRA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga448c8938220",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Premier Jetten niet naar klimaattop Antalya, belastingplan gaat voor - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPODJwY09sYnJPcjY1LTZnVF91aW1LSUZWbHRrRmw1M0pzdkxocUZVaWI2LTBXRTFGeUQ0eFFRZkhkdnFKRnNOcDNBME1WcUlmZzNVbG0wTFhOVm95d3V0R0V0T3NSTG1EUWFheFE1UGF0U3FUTjFqY1FkY0xXbVd3aDZPNUN5azVTamYyR21HUWxmX2x1aUwyMGlYWWtveGE0bFhzZlpTM1h4N3NxSjFGc0RBTQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g496ed96768b4",
+    "type": "nl",
+    "src": "Centraal+",
+    "title": "Premier Rob Jetten spreekt Leidse mbo-studenten over racisme en stagediscriminatie - Centraal+",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPc09xenhNUmsxWXZraDR3Y0MxaXU4SEZ3X0VpczFXZFhyR3RreGtBdEJSMW8zcjZQbkJTVkNyd2t3bW9UdHJHZnlGeDlEVkJRTUpZQk9kSHdkU2xKU21iYnZyVWxIZ3AzdXZCSHhGWHBPVE5ZVm1meW5PXzNnSzB6LS1LVEZjcE1oVWZqeElTc09WaFk5Z29pd090eWg2RDJ3d0pTWF9fUnA0SWxDMDBycncyOFFvU3VuUGc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g10ad96891a50",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten niet naar klimaattop vanwege onderhandelingen over belastingplan - NU",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNLWxDLThxeEY1UDh1Rjlqb0EyLTdDRFR4TW93ai1OUDFNa05SNVRpVExxcjRQVTl6dHFWWm9UWHU4NUc5UkpoaTVlcmVpbmJfMm84dlFQU185WFcwVlVRanlrM3gwak5mLTA3ZHRteDFsbDlHMGVsbDNZaDR6bEY3Ri1NSUIyUVk2a1lyT1ZfU1N2Z0QzdlVIQTNMeFZDeng3MlZ5S1NqWTFxQnJ2X2xEcmJNTEp2dw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd6ed10ceb49c",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten slaat klimaattop over om steun voor belastingplan te zoeken - bnr.nl",
+    "date": "2026-11-09",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPM2VobjVHTkIzMmdzaGJvUURmenhQdUh2RUJIeUxsaVFHUGFtenk3QlNDQ19RdzE4Z0NfblRQc0JCQ2hocEZQeTJFZEd4TGttTlZhRDIxdGRnQUxrUGlOb1RLamlCSHptdUJuQlEzeUhOalhwOXZLa2VpX2ZnalRDYW5OazZoRVlFdUhGMVMwdl9XUnllRWJ6QUJaN0dWRHZ6UE9mM0FELXFNTlhBYWo3UmtCdENNTm8?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gdf668f21c658",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Verloofde van premier Rob Jetten over de keerzijde van zijn relatie: 'Opeens waren alle ogen op mij gericht' - Sportnieuws.nl",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOZVhvWk1OUk9sQ1cwNFBNYk5XVm1NQnhNNUtQN3NnaW0zZjN4aTN6ZWNWTzUyeF8ydTZSRGZnemxaNDF5Y1VjYW5lTDhYdmRxUGtSS1VKNUVGTzBWX0pQbFJnSTdJaXJHUW5zeEk1OVd1bF9zZExnaUZidzd6TkRzeEs0NmhpbVJMUWIwbndGSTZrTGh0MkxlQ1JodVZKb1N6NjY0NXdxTmMyS2pSWm1ZTHV2NjFYbDN4ZHp6TGJYdTRZNE5PNHNqcl92UHBmTWdwbHlsWjFNek9tbVRIUGstbEcwSXNFUGpvVnR4Vng1Y0JhUVJFQWhTRkd3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdb03486348eb",
+    "type": "nl",
+    "src": "De Gooi- en Eemlander",
+    "title": "Premier Jetten slaat klimaattop over, belastingplan gaat voor - De Gooi- en Eemlander",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPUVlRdFJXUDFkdWlpSFI4cVFtdUl4RzJMSWJSV0tMSUpvVjBRRDhnSjBUZHFzVHBQRDJSekZVdXdvTDkxTGFsWTVWWmkwSW1vZlNzR0NnRXF2ZHpHZkJHXzdDWm1BNmp1SER1Ri1UVVcweDhKLUQ1MV9hTFNmRWV2NUdCNFh2MmVvV0ZrZkl6OGhEaHVnUTdKd2hnWU1pUEQyNWl3Wl9IdEFHeGpFMWt0QkJqekd0cERa?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdb51aae9ca8d",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "‘Klimaatpremier’ Jetten niet naar klimaattop vanwege problemen belastingplan - AD.nl",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQc29vakJNblpDYmFnV2tpY25zWWFaTHJiN3RsekljQjRxR3FYdEJrdHpkTUgzTE9NeHFfcGJJWGw3RWhIdEFvZ3V2MlFSNWRQYzlXQzZFcTNzaDVkVldJM2IzeklIWmNqeGpVelNQR2tKbzhZSjkwWHpVVGhLSENkekhubl93RG1maDZHNVNDUHZnU1VnX0pKY1VpbEZlS1c2OGxfcDBhQnBBc1VuSm5qZA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gad23c6d36a66",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Kabinet-Jetten wacht cruciale week: ‘Op dit moment zie ik geen ruimte in de impasse’ - bnr.nl",
+    "date": "2026-11-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYURwd0NUWlE1dDFfNUN5REpOMzB3T1ZLeUxkdHZveGFIMDRDTE9sSy15VlZsQ3dvREk2Tnh1SjZySjF0TFNYa2tLaHdYSTlFcmF6M2kxM3gxa2kzb1lVS09md1ItdWZZY1V6eVcwbDRqT2FhVHlXSUoyZFZGRGJuVU0taXpVcFRPN184ZUFzbnBnY2U0RmFHZWtkeUVZVWpOUGpudW9jQWNwZm92VnVRUXhvLVlmb2xyR2Y1OXc1Q1EwemJnUExIYlpVM18?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g36441bca4685",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Jetten noemt cyberveiligheid topprioriteit, maar wie gaat erover? - RTL.nl",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNT19LWmk5NzVQUllYMlUzYXd3dXpOZW9Ya0JNM1hJcWo1SjlJYXJzZ3RCRDFwbUI3TVpHcmxhUUJJbnBaSlY4WWVmbHU4Y0xrOC1PZDEwRXRmVFdsSHAybGM5VE9PaUIydWFyZGo0d0dIUmh3ZzJDT1NpYTB3bHlvVVNwbTlhMGJHRmtBZEM3QTJ4U2VzQm1YT3dOVURHWTVrU1V3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gffd847e174c1",
+    "type": "nl",
+    "src": "Nieuw Rechts",
+    "title": "Rutte prijst kabinet: 'Ik vind dat Jetten het heel knap doet' - Nieuw Rechts",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZTFHaDdhSnh1ampmdUpLdkVobTRMVnk4NkpSd3FZOE5DVkhrRHlqNGdIVnNTcWdjT3VMUVBSTmN3ZmNidnhjbUxJUVhDWlR0ZzdiT3NkVGRuWGpla3Q5Y0lXMk5DN19EdWtGUmFUOWlxMlBVUWhMeXRWSElfeU4weWlHV3BZVVB1S3BNdzFhcU1MdDRtR0E?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge3a4d363ebc0",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Gemor in Antalya over plotseling wegblijven premier Jetten van VN-top: van ‘klimaatdrammer’ naar afhaker - AD.nl",
+    "date": "2026-11-09",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOWoxZThHNWlkTE5wZkhzN09RR0FQbDVUcGhORGdpOGx5N1BtSkYyY3N0OHJWb2hLTFdSRnp2NmZPQWZYQktKa1lZcmpIRUp5TlFjYVRZZlFBdnBxX2JGdmxVSkJJTGJuclpVa3YtWDZaY1F3NDA2dmF5bW1fWFEwQS1WNHVaSVBmeDNndjc3NEpfTXRjd1dta0FQY3dnRFpTUGUtQ2c3aHpna2tZVDFIWGd6Wkh2azZfUHRoUURsRjRqNVNQdnJBMnozWkFpWk01dXpsWg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5f9913cd25af",
+    "type": "nl",
+    "src": "Amnesty International",
+    "title": "Ruim 200.000 mensen bij vierde Rode Lijn-demonstratie - Amnesty International",
+    "date": "2026-11-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUmhfX2p2UGRfaFdvTUFSWHF2MFREMGNmODNubTFWd2FFVGpZY0M2cFZDNzI3QXducnp2MzF3YzlhRFNyTkV0Q3NkWlNONGFTUWdmc2htajFsT3dodDM1ZFFqY2E1TmhvYkVEM3gtTUhaU1pTTDhnYXVDRHlZRzUwRVhjM0pzOG5mT3ZhaGhn?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g0ac7675666b3",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM Jetten to skip climate summit in Türkiye to focus on getting tax plan support - NL Times",
+    "date": "2026-11-09",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUGoyblphWDlYUFljRzRzVzZwWnlybllmV0ZPaDVPV19DLXpJU0lmWkRETnhpOEg1R0dpYTQxVC05YVlZQVgxbjJVU2NySm1nMXA1UjFKQ3M2bVJVWnpFZjVMWkE4cGlCTTZOdzJRYS1lTTVLV3VYZS11anB6X1pTUWhNOFktMFdpYjFiNjc2bkVPSTZOUGxicjdMMFBYdm1JRUgteWozVQ?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g11214a73d82c",
+    "type": "intl",
+    "src": "EU Today",
+    "title": "More Than 200,000 Join Amsterdam Protest as Dutch Government Faces Pressure Over Israel - EU Today",
+    "date": "2026-11-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObmVsVXlCVE1ZdUxyLXAwNE5sQ0NtWDVvMUVwbFFCaV9PMWo4NzZGODlQMFp1WS0xWS1yem14ZVZwQUZncGxISnNoYkxaV2xRRXJzSTBZQzBVRXRTcGU3ME80OGZMeTBvZEg2YU1FYkJKX3NMOUJmWEpRV1JsQ1FqbjB6Qmw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0f435d41fc9e",
+    "type": "intl",
+    "src": "freebeacon.com",
+    "title": "EXCLUSIVE: Republican AGs Tell UK and Netherlands To Drop Sanctions on Israeli Companies or Risk US Divestment - freebeacon.com",
+    "date": "2026-11-09",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMVZSaEpoRGNKdkhNdUgxRVg0VFdSV0QxQzRnNVprT1lFTTJwbHY2QjJnWFFJcUNaMjc4RFhwd2hOZkk0b0dSZWg0V2g3dEVIU011Q21OMVEzV0tOeXp2U2owd3RZT29yNGIzSVMwRmhDR3ExdWlYX241cHM2WjgwckV6UXFPUldNRkFZVllEUEJETjhKVzNLbm12QlpYbkx0R09TMmFDMWJ3bE5LWlFoSnJtcll6NUJpS3c5OTI1RDhpdkFyaHliMDM1WkM1Q19acGFBbUl6bw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8c6f0e882702",
+    "type": "intl",
+    "src": "ynetnews",
+    "title": "220,000 protesters march in Amsterdam demanding tougher sanctions against Israel - ynetnews",
+    "date": "2026-11-09",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBxSUs0czVOLVNadFpqVWlGVGtDYV9WSDlqUGxYb0xGMU1STmNNRWxlWGlXVWZnYTQ3a0E5VU81Sl92THNIa2ZKSThCOXpMS3hNS1JQYVB3?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gecd376cff70e",
     "type": "nl",
     "src": "Vandaagenmorgen.nl",
@@ -17,6 +252,68 @@
     "date": "2026-11-08",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxPNWlzOUVmZUVVdFpaNlBNd1Z6ZFRXM1lLdnhLblRnemlKbmg5WHB5Rnlhd1R1amg0TmRCLXQ5M3htalBTNlo2aEcyTzZDOGhoTlg0WEJpU2twcU1wWGdMZ01zclNxckNFQXA3dUJhSU96RVZjQms0dzdUUkJTR25tV0R3bEJmTGpHN3JMWDYtSlRranVXck5sVnJEWndHZU1PQVYwV0d5SzNXVWVNU05Mc3BwbDYwcEhZX3JZZVduRFRVdVBhb3NIaXJ2aU1kSGoxVFdSMXdISHJNWmEwLWNOQ01MNlRJbUU0Zmktb3FST1JQU3pFOE9kTkFidjFGMU5iNU9fMmZqY01aOS1sQWFZMnJuV0E1MXAxNVRMT1B3?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "ge84662f97066",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Vooral de VVD, Booking en Jetten moeten het ontgelden tijdens vierde Rode Lijn-protest: 'Ik vind de premier slap'",
+    "date": "2026-11-08",
+    "sent": "n",
+    "link": "https://www.nrc.nl/nieuws/2026/11/08/tijdens-vierde-rode-lijn-protest-klinkt-ook-kritiek-op-jetten-die-eerder-zelf-meeliep-ik-vind-de-premier-wel-een-beetje-slap-a4940703",
+    "lr": "right"
+  },
+  {
+    "id": "g2ecf8974d580",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "Amsterdam kleurt opnieuw rood – zonder Jetten, maar mét D66’ers: ‘Jetten is premier, geen alleenheerser’ - de Volkskrant",
+    "date": "2026-11-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQMzVSekpBUU1yYTQ2NnREVFAyVmVpS0J3WHAwV1FweEJpeFRKdUQ3UVpNYjVXVGl4RzZaNEs3cTQ1N1BVamZZcWU5WG1iMm11TWVKODQ0MUV6aTJJeXNlcFB5RnZSVmpvcVpBT0RVbEsyZkRiYjVEY0tsdHpCR2FqWmxVMkUzWnl5ZHlUZEJRam9yRVlMMDBsdHRYblFqNm9aSGdQZDZ4bGdzcGlJM2dLV3VyUVMxNW9RVEQzalBjdTM5TkNGY3UzTVNhYThEWndoVUM4czY1OS1NeWxf?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g1ba438dd9090",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Rob Jetten mikpunt van spot in Rode Lijn-demo met 200.000 deelnemers: ‘Papa, wat deed jij tijdens de genocide?’ - AD.nl",
+    "date": "2026-11-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOamJ0SVZPNmVzcE1PUWUzZGNZVjQ4ckpoNVdUNVN1aF9ablJvellvSW95MkFMUlhXU2FIei1vR21GWnR3Sm5FUWtSQWxLSkpfRXNRUVlGbzZYWlJFVkQ4WGIxN3BRWFNFeVZDeXM2cGUwTHp5ZC14NDA4YlkyUm55VFlIV0JuU3JYY2xKb2tBVDNIelFIUS1WemFFNmhDcEdXNTRhY0hvWjZVT29ZZmVXN2U4RFQ2ZU9WdDlEaHUxUUdJTjlEMDdyWGtuLWJLcTBEQU9RYVQwWi0wX1B5aEE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g75d045e8ac72",
+    "type": "intl",
+    "src": "Jonet.nl",
+    "title": "Kabinet toont begrip voor Rode Lijn-demonstranten - Jonet.nl",
+    "date": "2026-11-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5qdWdhYXJMMXNCTnhuUHlZQTVrRVdvMWNRbVd2Wm5mWjVzMGNtM2FQSHVCNmdOUXJrQmxCVUJnbVNKOThsNm1TY2dzRjlGTHhTNE5uU2NjVlo3Ul9FT0o2SGNhMjM3N2NadnlaX3phV2VDMjhBU1E?oc=5",
+    "flag": "🇵🇱"
+  },
+  {
+    "id": "g5518b16cb446",
+    "type": "intl",
+    "src": "The Washington Post",
+    "title": "Tens of thousands march in Amsterdam, pressing the Dutch government on Gaza and Israel - The Washington Post",
+    "date": "2026-11-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObG42UU04MTJRT1ktVHdCS1Zsbm9yejE4Sm9jZGh4eTZ5RnVxbThoMDI5ZFNsUmlhZWRxYjdsclZPLWdkbzJzV0R6dlJydWlYNkJOU2szOEpDbkt2UlhJMFVTTWpsMmFNRmYzMFd3UHhWTTBOUndvV0dSLXdMYTlYTENRQjU5WHpwTVZaVmdnUFVnZmt1U0VISW40Z1Q4dkdHTFBsd3VLdmdCWjZiOWtJWkxSZjNlY0VpOHVaRkY3ZHhiMW5ZSWxEMEpCNmhab216cEZfeXhGLWdDZw?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g0f378751a8a1",
+    "type": "intl",
+    "src": "DutchNews.nl",
+    "title": "Organisers say 200,000 join Amsterdam rally against Gaza war - DutchNews.nl",
+    "date": "2026-11-08",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYkxBaDE3aVZpVkZnVXRFQVYyU0lhOE9VS2VyNno1bU9zU1pVWWhJTXc5em1pY2o2WWxTaWxRZTRpTDFrRDhUMzFxLXNrdDRKSlMyMExXLUdtMzh2ZXBaM1EwYU9saGNVV2N2ZTFxRVFpYk5NSWpXNDFkUGVSRktyMlFhaWhTcGI2eHhwVklhYUNveFU?oc=5",
     "flag": "🌍"
   },
   {
@@ -68,6 +365,16 @@
     "date": "2026-11-07",
     "sent": "p",
     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPX0VCMS1scm1BWDdVWjF2Rko0eHpjQmpzbGZJMEk3SWtuWWZaaHVLM3BlX2tNY0tzVHZBanpsNmFJaUh5eGRIdWVuOGdvWGx3ZXhlcTFQRnV4NjNQeEdMWjFMQWVnUGY2Nm9PQ2xHQlhZYWRmZ3lGV1VoRkhMa3lpSnlhYjFRaTFwRk1Vc0RyZG41a3RUUTlub01aaUd3c1l5V3JN?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g542f24899877",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nieuwe verkiezingen kunnen pas in mei, maar zijn geen oplossing voor de verziekte verhoudingen - AD.nl",
+    "date": "2026-11-07",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVERtdDlBd1gwQVFWVVFqNWZqNkVoZEROTFllV210MnpuTDlCaU1Rb2lPb19paDhyNVd5bTMwUzhxUEx1enZyMzJXRTh5cjkzLXdXNEYzZV96LXNPLXJKbmhpcWVWS0dlOFV3VVd3SnZpVk1IcEIxSFMzR2dUZTF4R0dUc1l3S0RGNmZwWW02bjBPRDdqRU5IaFFQUWZha2RmNzV2NmJmRFRDN3JQWHRCTTFvSUNwM3V2N0FuTlNzUjBtdjU0QVpuNi1B?oc=5",
     "icon": "📰"
   },
   {
@@ -265,6 +572,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcXdiSEhWak5odlh1QnU4eXJBeFQxdzc5ekRQTm1jM2RmTEUzWFFZSlV6NmM3Y2ZnT1g3SEdRcG44ZXNtaFJPUC1Lai04a01qR3g1V2o1cmVyZHp3U0Z3SWRMV1U3QXhMSDVabEQ2TzZ4YWVpQTRzSXh2RzBra2tvaWtBbmZ2d01JNVRrSHlMczE1cGp0UDFLSy1yWV9TeVJV?oc=5",
     "flag": "🇺🇸"
+  },
+  {
+    "id": "gfee1e9b16c4f",
+    "type": "nl",
+    "src": "Vrij Nederland",
+    "title": "IJzeren Heinen houdt kabinet in zijn greep - Vrij Nederland",
+    "date": "2026-11-06",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE04X3hRYkRZeHkyTm1hejJqUzNxalJ4b3ZEYzI5MkZhcE1oeVFxZkduRHZ3TXF4ZDVYZzczXzJOakJ4TGQ5NXZXd2dHeEd3WG14MHhHWmtjVVpyRTZFWFB1SldmRmRMbkpYYjVQVGZ3?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g62c6ee67ac74",
