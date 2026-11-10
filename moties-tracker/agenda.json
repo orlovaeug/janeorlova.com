@@ -1,6 +1,14 @@
 [
   {
     "datum": "2026-11-10",
+    "tijd": "",
+    "titel": "Aansluitend: Pakket Belastingplan 2027 (voortzetting)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07998"
+  },
+  {
+    "datum": "2026-11-10",
     "tijd": "2026-",
     "titel": "Stemmingen",
     "locatie": "Plenaire zaal",
@@ -18,10 +26,10 @@
   {
     "datum": "2026-11-10",
     "tijd": "2026-",
-    "titel": "Pakket Belastingplan 2027 (voortzetting)",
+    "titel": "Novelle uitbreiding vermogenswinstbelasting box 3 (37053)      Plenaire afronding (2e termijn regering)",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07998"
+    "soort": "Plenair debat (overig)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08330"
   },
   {
     "datum": "2026-11-11",
@@ -58,7 +66,7 @@
   {
     "datum": "2026-11-12",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over het Pakket Belastingplan 2027 en over moties ingediend bij het Tweeminutendebat Raad Buitenlandse Zaken)",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over het Pakket Belastingplan 2027, de Novelle uitbreiding vermogenswinstbelasting box 3 en over moties ingediend bij het Tweeminutendebat Raad Buitenlandse Zaken)",
     "locatie": "Plenaire zaal",
     "soort": "Stemmingen",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08240"
@@ -78,5 +86,21 @@
     "locatie": "Plenaire zaal",
     "soort": "Hamerstukken",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08241"
+  },
+  {
+    "datum": "2026-11-12",
+    "tijd": "2026-",
+    "titel": "Wijziging van wetten op het terrein van onderwijs, cultuur en wetenschap in verband met het repareren van wetstechnische en redactionele vergissingen en verschrijvingen (Reparatiewet OCW 20##) (36967)",
+    "locatie": "Plenaire zaal",
+    "soort": "Hamerstukken",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08206"
+  },
+  {
+    "datum": "2026-11-12",
+    "tijd": "2026-",
+    "titel": "Begroting Buitenlandse Zaken (37020-V) voortzetting",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08239"
   }
 ]
