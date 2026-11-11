@@ -1,45 +1,5 @@
 [
   {
-    "datum": "2026-11-10",
-    "tijd": "",
-    "titel": "Aansluitend: Pakket Belastingplan 2027 (voortzetting)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07998"
-  },
-  {
-    "datum": "2026-11-10",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08156"
-  },
-  {
-    "datum": "2026-11-10",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08158"
-  },
-  {
-    "datum": "2026-11-10",
-    "tijd": "2026-",
-    "titel": "Novelle uitbreiding vermogenswinstbelasting box 3 (37053)      Plenaire afronding (2e termijn regering)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (overig)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08330"
-  },
-  {
-    "datum": "2026-11-11",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08159"
-  },
-  {
     "datum": "2026-11-11",
     "tijd": "2026-",
     "titel": "Tweeminutendebat Sahelregio (CD 1/10)",
@@ -64,9 +24,41 @@
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05416"
   },
   {
+    "datum": "2026-11-11",
+    "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08159"
+  },
+  {
+    "datum": "2026-11-11",
+    "tijd": "2026-",
+    "titel": "Extra Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08369"
+  },
+  {
+    "datum": "2026-11-11",
+    "tijd": "2026-",
+    "titel": "Begroting Buitenlandse Zaken (37020-V) (antwoord 1e termijn)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08239"
+  },
+  {
     "datum": "2026-11-12",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over het Pakket Belastingplan 2027, de Novelle uitbreiding vermogenswinstbelasting box 3 en over moties ingediend bij het Tweeminutendebat Raad Buitenlandse Zaken)",
+    "titel": "Begin avondvergadering: STEMMINGEN (over de wetsvoorstellen van het pakket Belastingplan)",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08378"
+  },
+  {
+    "datum": "2026-11-12",
+    "tijd": "",
+    "titel": "Einde middagvergadering: STEMMINGEN (over amendementen en moties bij het pakket Belastingplan 2027 en over moties ingediend bij het Tweeminutendebat Raad Buitenlandse Zaken)",
     "locatie": "Plenaire zaal",
     "soort": "Stemmingen",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08240"
@@ -98,9 +90,17 @@
   {
     "datum": "2026-11-12",
     "tijd": "2026-",
-    "titel": "Begroting Buitenlandse Zaken (37020-V) voortzetting",
+    "titel": "Pakket Belastingplan 2027 (3e termijn)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08239"
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08376"
+  },
+  {
+    "datum": "2026-11-12",
+    "tijd": "2026-",
+    "titel": "Begroting Buitenlandse Zaken (37020-V) (2e termijn)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08373"
   }
 ]
