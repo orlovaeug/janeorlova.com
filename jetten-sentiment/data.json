@@ -1,5 +1,412 @@
 [
   {
+    "id": "gad56a21ce3be",
+    "type": "nl",
+    "src": "AD",
+    "icon": "📰",
+    "title": "Kabinet-Jetten gooit roet in het eten voor Klaas Knot tijdens het gevecht om de machtigste baan van Europa",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://www.ad.nl/economie/kabinet-jetten-gooit-roet-in-het-eten-voor-klaas-knot-tijdens-het-gevecht-om-de-machtigste-baan-van-europa~ad63ceee/"
+  },
+  {
+    "id": "gda5ac88bbaa9",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "Het lijkt niet de vraag óf het kabinet-Jetten gaat vallen, maar wanneer. Hoe kon deze crisis zo escaleren?",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://www.trouw.nl/politiek/het-lijkt-niet-de-vraag-of-het-kabinet-jetten-gaat-vallen-maar-wanneer-hoe-kon-deze-crisis-zo-escaleren~ba452c66/",
+    "lr": "left"
+  },
+  {
+    "id": "ga630eb663915",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Video | Jetten voor cruciaal belastingdebat: 'We werken heel goed samen'",
+    "date": "2026-11-12",
+    "sent": "p",
+    "link": "https://www.nu.nl/332202/video/jetten-voor-cruciaal-belastingsdebat-we-werken-heel-goed-samen.html"
+  },
+  {
+    "id": "gfedce1b3d3ea",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Jetten op weg naar cruciaal debat: ‘Gaat u de leiding nemen?'",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://www.telegraaf.nl/video/jetten-op-weg-naar-cruciaal-debat-gaat-u-de-leiding-nemen/164471872.html",
+    "lr": "right"
+  },
+  {
+    "id": "gcb336f38a976",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "LIVE Kabinetsruzie | Premier Jetten: ‘Deze coalitie moet een hele serieuze doorstart maken’ - AD.nl",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNDlpTk9IdTdxOGYwb1N5aG5IaHR3bndBWURVdi05ay1GVWEwcGNmLWZNMlNmc0R6Vnl6c2s3bkk2V1FzUHlRZGdKTVRBeWhMNjlCVHhRa0l6cFVrckt0WnNrdG5jNENYYnhnRmI3MVpXUGNQVnFLcTVZQk9fMHdVTEhTd3lZWHdma28wbWNwV21Walg0RHZpU0xVYWU4MlBmRHNSR2R3MzRSYVV3c1hpekpSclkySGFXYk1VS2ZmNkg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd4b6bf95e280",
+    "type": "nl",
+    "src": "Tubantia",
+    "title": "Lezer Peter Weusthof uit Rossum ziet liever een nurkse premier dan de altijd glimlachende Rob Jetten - Tubantia",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMmlhQTVNNlh3RWlXMl8xeERjemhGMEVYVEdzOFZyNk1TVWhnMU5rVmNoTEFFWFlpU1hqZzdRRWd0Q21EaW9laDVMdmowSjY2bFFybWwzaVQwWUM1dmxMWThNNTNMdi1qQ0UwbkdRbTM5U3JwVzFVUnNiR2xlUFc0X3VQN1kza0VjS3ZfUTlFNE9YdHo5VFRTR3lHQzVLVDUtVGoxLUVKdnNpNFlGVnJlb1BqZWE5d09WemhCY0dzS1BhRmRKSldMSFdwcV9USUtJb2htVHRJSHQ0eEFsWkM0?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf95691522c4d",
+    "type": "nl",
+    "src": "de Stentor",
+    "title": "Lezer Peter Weusthof uit Rossum ziet liever een nurkse premier dan de altijd glimlachende Rob Jetten - de Stentor",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPQ19DRzFNWFVjYWs2TnI0UEZpRnVNcF9jREZKUzRQWnBnNms0dk9IOHZTMGRYVkl6ODVnYTJjNEtTRm5QVnRtU1hvWEJsMm82bzZxT3ZURkJHZkxnWk1adXpta2NfS1pTRjN6ZHV2Q0pwaGViaXNKdTRqOTUyMVc0R2NNQ2tvTEljOXFwbGJxUm5aQmplMXlnSXJLWmlFLXJEbk5KLXljaURVTUpEMlN0YkRuT2FEZ0sxQjA5X0NHTkZCUFgwSVBQN0k3cUxSR19hQzk0Z0c5elZuY1Q4?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g017dffd02dbf",
+    "type": "nl",
+    "src": "KIJK",
+    "title": "Vandaag Inside: Wilders over Jetten: 'Met afstand de meest incompetente premier uit de vaderlandse geschiedenis!' - KIJK",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5rVlJLZXdTS3lrZnRkNl9kcEhzUm8tSS1uV09lMmZoUmF0MTdqR1BIUGlWZVRqMGNod0pwdE9lN2RxS1laaWlPdVl2YXFHLWRhSG14UTZWUnRTSm9Nc3RhZWx1ZFZ4dXhFaF9IYQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g393ea5256f3a",
+    "type": "nl",
+    "src": "Howl.Link",
+    "title": "Nieuwe wending in crisis belastingplan: kabinet raadt plan miljonairstaks af | Nieuws | AD.nl - Howl.Link",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9icmE3V0RpUGF1OF9xaVA4alFoa19Hb0ozaHc4aDR3TlRnUlVCQTYzd1pTYjNsUGwybmVR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7917b577ad14",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Wouter de Winther: 'Waar was premier Rob Jetten? Mark Rutte hield de boel bij elkaar' - De Telegraaf",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMC1wZmV3RGtmUExZaUNFc0g5dTk0UWpMR25HYkdvazRNRzZiSWRUckNna2RCamNtbjYxYWF3N1VabXNBTWlmSVp2VHVqVzdpOUhnUEpPRmNsR1JqWVZzaTNHeVhfcDE2RGJ2R2tXQWl0ZjkzdThyQkFCWGNqbVBxQ1RweU5GQ0M4dTJUWTBVWDRwQzZITE9uTllCVnFMelVzQ1lBck1qaHFfQXJYdzlVNDdRX01GN3hfREZJTVB0bnM3OTN1ZGc?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ge2d5b0fa8e30",
+    "type": "nl",
+    "src": "NU",
+    "title": "Kabinet-Jetten in diepe coalitiecrisis naar cruciaal debat en stemming - NU",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVzFoaWNvcjVTTUhFUlliWHRwU1hFOTRFaUQ2SFVwRFREMWVyX2tDdnlVVlgzSTRiTkpFV2Z2WlRwNEFEZDZ5MTgta3lxTXJxRVpUMWw1MWc2MjBkeHNuVGpoVXBQM25Bak5IZXlNSzJRdkl1bHdVeGtzY001anNQRWZPRW5hS3JnWHF0MkNVMXMwbVZFd2NXUlV6NGFyb25wS19GdVdKQ3ZuWFVwOTVR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge1af0eeca6a6",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Het lijkt niet de vraag óf het kabinet-Jetten gaat vallen, maar wanneer. Hoe kon deze crisis zo escaleren? - Trouw",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORGJMMDlOYVNrdTM1djRjY2VfWjY2djFDZGFOcS1kQVZjT2tuNjZ4QmI2VExUazNDai1vQlBIaVd1b0M4UXhCUFF6RU9QbUVNWDdiNVl4MHU5cmR0bHVjMjRMTWpkelBTQUtkeEJ4NGhyZk1OX0RkRU5ULS1UUWI0SXpJdGJuNHp4bHFCYnMwcUZvZUk5WkVRWk9qY2lVOGlDSHUyWm4tczZxNHNhVHZuY04xc3VUZGFzWW1lMHJHdk5LcmkzY05aZTlKclV6R0pLazFmZWlWSHRWMUU?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "gd897f7f3c52c",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nieuwe wending in crisis belastingplan: kabinet raadt plan miljonairstaks af - AD.nl",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOWlUwUWJvZFNBNG5mdjlwUzlWa1hTSW9TUGt1WnJmU1h4Y3plbmlRZng1RHBXRzNoOFFCdVlPVW10QmNzWkZGTjZrMW9yV2doUi1pbjBiNWlDZkl0aU5wNXdXNTE1eUdQVUE3dVAxQ0JxT2xRSWV2eXNneURCZDN3N1VaX2lXYjdwTDNtVHlOcFdpYnJIQWhzWnRhLUpLSXdjSHZRN1U3SmJhWEtPcnZKaUV3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc66d3aa099a7",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "Kabinet-Jetten zou vandaag zomaar kunnen kapseizen - Reformatorisch Dagblad",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RYWZ4LXRnelM5WElhdm9NbzVZdFpsQU5CMDRFRkFqbmNLYWZLVUxFMGlfMUhmTmd6TS0xemtxME55cXV5a0s3WkRrQVFZTzdSTHlVZG1UVDBUbHUxNGZqcnptbDJKMlc2ZWkyTkhSTVpVZmNCTVpEWE93?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga420913116d9",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Nieuwe twist: kabinet raadt Kamer aan tegen linkse deal te stemmen - De Telegraaf",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeU5jeXJoOVR0YTZiWjEzNDFRYjdkM0VUR0ZfeTF6SmR4V0lTV3EyNGN6Sl9xbWQ2UU5ocXp0blpud2JkNmRvLWZwOVpMQ0thcklacjRtRS1JNWd4cTVKaEV3UkVMN2EwV2U3ZkdDN0JWcW9hVDdWb3RYQnpNaUdZSXlCQnhKOTNVRUVJcjI1ZXhURUVQODY0Tlh3ZmlnMEs2eW9sZUZmVDNZenVYRzJ0Q1JNd2Y?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "ga3105d296141",
+    "type": "nl",
+    "src": "Reformatorisch Dagblad",
+    "title": "RD Vandaag: spannende dag voor kabinet-Jetten, Tweede Kamer debatteert over belastingplan - Reformatorisch Dagblad",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaUR4bDgyZmQ3QUJSbmlCanhaWjVwWlhYUnlKTlpQVFZQemZIREtBeHRVT0VQR2RWV09MRkVzaVZ6bU93bzdYN1BWM0lxOXRpY1VHUUVLSUFPNUM0WFR2UG9idWdHR2dPZzdjMlZBS1BPeFBjeWJIdmdLQy1lcDFOYndGYzlqbXloMWdONWVkNF9EeDE3dG5obHJXQlg5RHdRTWRZWkhCblYyVmc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7ee3c36072c1",
+    "type": "nl",
+    "src": "NU",
+    "title": "Erop of eronder voor kabinet-Jetten: alle ogen gericht op D66, CDA en VVD - NU",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPVmNBZHhkLXM1M2ZiQnh1a2FZX3FZVnJhNmRpb203OXU3RFp0QjF1dDMtMVMwNU5vMUwyUzdqVlY2T1d3VXFPeENQVHZyVE1YLUVyTnBJZmt1VkFiUW1YRnRQM1hhc09rcGY1TWtXck92YnVSeU1wczlQMXFYc2Y3NE54MWtncHk4czh5LUROcG9rdTJaVjlpZjItQUdGLXo3akhEdUZHallmS0FtOWhzbw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g97a58261e6bf",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet-Jetten gooit roet in het eten voor Klaas Knot tijdens het gevecht om de machtigste baan van Europa - AD.nl",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMVg4enBQRXFneXFyRFhRQXJObE84Wjd5WHMwWGVhN0NvdGUyX0x6bDRZek1LVjFqV3NPd2NuYlI5ZGlwajl4R09BM2JUNWdZZmJyWjVwUnloWW9yaVBPYWVaWDNtTXVlTDlNb3JLMUNoVTk4ZnVUSklYaHVtVW9FR2ZvRzM2VmczbHNWUWR1SWVwSlFEMnV0QnZnWXF1cFYtR2I3NVdNSkpWVldGUHdQQVRPdjEtYmY4VzAySkRId1YybzIzV01HVWw1Z0pqeEtwVTl3b3dHUV9GSGs?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf3b00cf8cd59",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Kabinet gered, tussenformatie of nieuwe verkiezingen? ‘De kiezer denkt sowieso: wat een bende’ - AD.nl",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbnc1cG0teVBDMWpHeGVsdURVNUhVcXE5U2d5YkZWRV9oVDBMWkRYR0xLU0VLMXh3azEweVRmT19pNUpDN3FTVy1QcWRweW9qQjM5LWtIeHNvcFJlTWVGaEZDVnJOb3VSQ1lUWC1ucUEybU5LS3dzbVJLLWFyUlZSLWlJdFJWTWhVeGR5cnYtR0Zramp5NE9zcUhhT0xORW1GNlpjOHVWbDJvVkljczZTQTBlWW1MVlJ0QTBLUDB3OWhaUkRR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ge377294e792a",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "KIJK LIVE: Spanning in Tweede Kamer loopt op, gaat belastingplan het halen? - De Telegraaf",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVDJoTU9QcW5Kd01IWDE4Y0RuODllUXByQVlLVmFLX2s2aWFYSGg4dWlRYnp1WEJHeTBERlkzMVI1Q0RiN1JZNUI3dGR5eHVCcjlXSnUxaWRON1dUSDJoVjQ5dE1iajh6emt5dTFTTlQ0YmJaT0tRZUtXYUtpM1BmaktiUHJtZWJhSGdOaEluWHVtUGktTUJfRmdNcC05elhySGh4NXNvRkdGM0JEX0p2SUt5aXZpamdFcXc?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gff6677a11511",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "LIVE | Kamer debatteert in cruciaal debat over belastingplan van Kabinet-Jetten - AD.nl",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSGlkamxqN0tUcFNSal9jVElDc0pGT043QlczaVR5a2dROUZGUnVUSGlQdXMyNm9CRU5rZlFsbFVvazFna0ZLNkNpcGVsUGl2M0p6WmxVQndBMlJyOXgyQTlkeDhsem9DdFhRbjVOZGJlUkZhU184VnZ4dHpOTktoYlQ5OE5NNWt5T3dhb1R5ZENiaE9YdU9iMVJyS25aV3VySUZOOWprX092SEswUXRtaVphRkdpZw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd7b64b4496b3",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Deze kanten kan het op met het belastingplan én de toekomst van het kabinet - De Telegraaf",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORTJmSm51dTR0UElQN1EwenpYTU9IZnBXLV9ERHBYM2lJTzhudDdURlc2YkZqdGhkS0FORlRtQTBJSGprRllMY2J5Z202TUV3LThtVVpPZzBGWGphME5uM0ZCMm80MDRaWkZMdXh2a29KRUU0Z1ZmN0N6REdKZFo5TkRNSmZ0ZDFtRzM5RVdsTHdCN0gwcU1WMHpQODhzcjB1clFGbUp6cDFGTzdOaWRUM1B2Z0hrRVhQSU50dTJES09kUQ?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g92916bfb6c09",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Haags Minuutje | Het is erop of eronder voor het kabinet Jetten vandaag - AD.nl",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8tZWVvMG9DQ083LVlNZGE5dFRkanZLZU5tRE9CNjJhcW5IdWUwUTRrcndtOW5EMnl1emNDbGMtS1hHRThXZHdYNzNCWVBrMUc0R0JRODJidXRBcUpoYmVGQWw2cGJGWGttZzR4V3dhdC1od28?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6eafd4147607",
+    "type": "nl",
+    "src": "BN DeStem",
+    "title": "Kabinet-Jetten gooit roet in het eten voor Klaas Knot tijdens het gevecht om de machtigste baan van Europa - BN DeStem",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPU0VVMWtQQktteHlRRHIycmZvbllnTWVwdDVHdkJZMHM0aXRnX2xieXhFR0RHcDI4VHVEY1BqdElteGo0Vld5NExSbUNydHU4MVBFWlA2VHVlTEpTY0hnV296S0YwRURIUjd1S29DYnlFRnNBOUg5VWx4aWV1YkxWOU94SWptVTZrT2FuSElJR0VrbXZlTnViekt5MmRKYWtsMThOcEpqaGhIbjFORE1QQktXMVZNY29ybTBXQ3BtS3BBanN4MHRXdHcwc2xhN1Bjb2NWQ1B4QmdOMHFYMkpBaUp0dw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcabfa2509fd3",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Volle tank tientje duurder, prijs speciaalbier niet omhoog: dit gebeurt er als het belastingplan sneuvelt - AD.nl",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRUtiYndicklDdF9fLXJrZEFNZ2dJcDY2bVo0MTkxQXlScGpSaW1oZk53UkM0c1Q0bEpvOXNMTlB4NF9laTFWcHZIaFpEUUQ1c0UzWkdZcG1XRVpPM0NYRkNxQlFSa1JXY1JCQkZoWjhxYlp6SXM3QS15YmVneHFtcENZdGhrWHktdGlMOUtBSnB1MHBja2Y0LVVmd0RfcmxqT18yODgtek1qNE9HaVlTOEcxU3lKellUMUF4Y1F6S3ZSOUQtdFNYWlFWdS0tRkM0bEhJYlVyRQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g7edbbdf4500f",
+    "type": "nl",
+    "src": "Brabants Dagblad",
+    "title": "Kabinet-Jetten gooit roet in het eten voor Klaas Knot tijdens het gevecht om de machtigste baan van Europa - Brabants Dagblad",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNei1ueW9fVUh6YkFPU3RQMXRmNW41T2N0SzlxcEljaU5wZ1V1cUxvYkpqZkRFRkJMbTRpNnZjY1ZsZGZ5b3M5SU11MHVWZkwydEV0T3F1cG5qYzZ1LXJCVnhhZnVleHRyNUJMb3dmYzFIQlJMalVvY2t6YzFUX2RGblI2MlhJZWxUaWE5LTc2bmd1NUV2by1sQ2pMZThDNEZpakVqSHpaQkxSTjMxV3AzcXdnZ2VUd0VNTWNJc3d1MTBuSTVFQjNSZzktRGxwclhKcHpxN0VwMWM5d00?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb5e7ed29bd58",
+    "type": "nl",
+    "src": "Sargasso",
+    "title": "Polyamorie voor beginners: het kabinet-Jetten - Sargasso",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAtdFFvQ29zZ1VsQm5ZMUdqWS1oODNnbllDY0tjcF93ckJ2TmktNG1qaHUxUzF1aF9aeWNSSmNKWENleWx6STlTLWtwdzZmYmNBUjM5NWx2c2hCeXg5OGtBU2lvaXotanhCYjRZOG15LUszaWc?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd5fa34515017",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Jetten voor cruciaal belastingdebat: 'We werken heel goed samen' - AD.nl",
+    "date": "2026-11-12",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVWoxRDJTbHNWbzhTdUtCZHVOZnVmVkRHeFpncVpLeVgtM0JQYzJjV2tIQkNFNnhtNkhJeXVoajg4N2JGLUVzTlZEcU5wbDJDcERBbElZNzF6MDJNTDdnQVRqcWRaaUVfb1pNNFJFWUFaTkpzLTBFNlJrMHdZdE1BN3pWbWdXMjFxMlFDWnE5VUxyQldqVlVhb1BpNW84TzV3czE0Ym04VHA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g58c1b10ca569",
+    "type": "intl",
+    "src": "Bloomberg.com",
+    "title": "Dutch Government Nears Collapse in Dispute Over Wealth Tax - Bloomberg.com",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOYUxxR0V6X2tOY1FQNWlwbHBrVEZsR2lzRXFXUnA0dHhldWQ2SDVfTnBhQ3o5UmVaRFlvSmpsUFJrQi1PLUxBWGNwc2NyejVaRmtybVdjd1lYQlBIcE84MUdHRWV1TXk0RFpWbVUyVlJEb1dqNFdHbkxzMFJ2NkM4dmtvMXFPSDFEbzk1MlBlR1hpeGo2UFlOcGx6QWhvSUZpLXQ1MXNnUklOeDFFcEhmdGRYa00?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g764e2284799d",
+    "type": "intl",
+    "src": "i24NEWS",
+    "title": "Dutch PM Rob Jetten Installs Mezuzah At Home In Solidarity With Jewish Community - i24NEWS",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMmZaVnhneENESTlsamo5X21Gb0w1OVVpbkRSenJzUXVIWmJhcDl1ZnZDT3EwamsxQ2JMSENTZHZOV1VUT2dIZGp4TWhhZjUwWU1PN3FrcjVHdjl0X3doUW9yaUd1YUItZUl6UE9QcEZkSEE4VGw2Rk5jeDVLRmVlVl94RWR2allfWlAwd1F6RjJmWmtydTZCLU1GQlNDNlNaYlFIVGwxbU5GMzNWb3FEY182ekZGRXRINkEtSkhMd1RlWkJYa3NubVRROWN5blg2MGlz?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gdd3aa370213b",
+    "type": "intl",
+    "src": "WRAL",
+    "title": "Dutch coalition near collapse as 1 party is upset over tax deal with opposition - WRAL",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQU1INlphdFp1eks0azNBR0dTT3N4MjF1akZUdHJ0VnBnQ3RwSXZHVnVvVk9RV0sySllSTDlkcm1kbEx1LWp6Y2pCNFhNcERRSGJPM0o1Q3JXWlJfVUlITEdFNTN0T2RHYldFYzdJWVlKQVpUdEo4eDVQNDBYV1hUN1FudXFfODBOZWhJYVY3WVdlaXY4NXNtcUFYcFA2WmZ6TnJHdkcxSnlfMFEzSjRoTXV4OTR6Zw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g6b1f77cf4da4",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "Dutch government faces crisis as coalition partners clash over tax - Yahoo",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQQlZEVmQzcTFMd1p0THVUQXVYcUFiM080YjJQdG5nLUtDbVl6MGFYZkgzWkZXMDNQSnk4MzNURlJieFJlYUpKUjVZeUd1UmZLZlhTMlRYdnRjMWItckUtVHFOZXNWeEtGVkROdWhKTGFfWHp1T3NVUjJ4bElFS0F2aGxYaWpkWmpVNHNNLTA2a2huQkE5OFpGcHhhZmc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g21a92bb278e1",
+    "type": "intl",
+    "src": "POLITICO.eu",
+    "title": "Crisis engulfs Dutch government ahead of crucial tax vote - POLITICO.eu",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNLTd4b2xHeGRfVEhlOVVmRVZhN2pCM3p5czR6UWRocDQwUW03bzVuZFR0ZWZRMFZUUngwOXI4Rk1ROFhwSlJweG1XdWlqRFc1WDBtN2dPNWxJU21DRmNaejYxVS1COENJX2V1SDROZ1VqVXVJWnhDazdIblgxczRkd1R2cFNtSDdkS0NsNERGUnBxUXRKQ2J2YUd6ZmEyRnFaV21vSWxYYzFfRUgzUXc?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
+    "id": "g184b0388b8af",
+    "type": "intl",
+    "src": "ABC News - Breaking News, Latest News and Videos",
+    "title": "Dutch coalition near collapse as 1 party is upset over tax deal with opposition - ABC News - Breaking News, Latest News and Videos",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxObl9iSGtFTW5uc29rZTViUEdtdV9aWHFvUkJMbGpsMWYzTXFUcFEtQWxuMlM0RTJkOXN4NjhJUXNKaE9idXJ5TmI5SVMzWDZvVGtkVWVhbXY1X201LWd3TmlhOC1hZmd2ajdWMlF5dkFrQkw0eUpDM0pWT1pwSnRxVDRuQjMwWmdZT2QzZnU3MmNNZVBKc1pIdnBTcmdSdEJ4TGln0gGoAUFVX3lxTE14bTQ5VzhqUXFwQnVBNHp4RHJBWWoteWFYdVRraDBiQ2gwUHV4eVBNekwzZXQ3NXlFbHUxYTM3QnBfVE5pQWVpaTczV2hfZW5kX25kWm5oWFdTZWp2elRzMWJXcFdXbkpXZTlRY3BzLVhkYWhnMlk4LU00VnQ4dGpqRUxiZHRRbnB0LVd4NG01cU1hTE43WnJlZmNySXFuNlFFT1FzUURDQg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g19ac3a8062f6",
+    "type": "intl",
+    "src": "Oskaloosa Herald",
+    "title": "Dutch coalition near collapse as 1 party is upset over tax deal with opposition - Oskaloosa Herald",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVnlsTGhjSjZSdHJmVnFGMEdtVWNfdW9icmRna08xZi04SFhfMVI5ckJMY2o3T3dpeWpGTjdMckNqMm1WOEJNamNUVlphbWpOa29GZVlnVUFuSjRzWUpSV3BJNHhqLWo5RzFSMmtQV0w1VlFMcEdqTG9Wb2VMZFRKM0wxSTlSY0pkNGVsRVB5UzZObHUtTFRLQ2FKSWx5ak03V0szTnE4QXl4cHJxR3lpQ3EydGdFMFpab0F4X1pPSDFPcjBOTXVzZ2FVUzdHQkpEZ2F5ekxhUFdTMi16eG12U2gzb21ldTVoTG9UVkt5LTMtMzl5R2JocDJLQnlPV3dIZXBtbA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0c3aa3a5d8ca",
+    "type": "intl",
+    "src": "chronicleonline.com",
+    "title": "Dutch coalition near collapse as 1 party is upset over tax deal with opposition - chronicleonline.com",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNa2dna29KZEFBbUxuNGVWblV0MnBWZUM3Yy1kSzZSZW5BVEd1aW94eGlYWHJ3RFJwNDBBZ01pOV9nZFRScHpmQURjU0hvMEJxRXRxYjNYb2FQdGJPY0VJMTFra3dPeDUzZUQ0R2tqSDF4VDVGRVBIZjhCY3ladTZMTUtHbWktS1R2cG95RklOSjRCakJzdHAtcU5WYk1jMXdnU2tFNUNyR2d4aGlXWFZSREIxaERwOEVYamhpQWtmMkphaXhQWmxqMUtjdXBDN0FoR2FtbEhpaThGUWhmLWdac1gyS082Y05KSHpGWG02WGFpQkw2SzktNjFnN3Nza1djZnc?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g8a450aef2c6c",
+    "type": "intl",
+    "src": "Belga Share",
+    "title": "Luxembourg's Luc Frieden speaks for Belgium and the Netherlands at EU summits - Belga Share",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOOEQ1SHI2d1dLRnhpalBWTUdVZU44cGwwYzlKajRWeFdGbHZ2eVc4b1BBS2VmV0ZYQVBUdUMtVlFoa05YMk5qcjBTNDFXQW9GZkZ6WGtwYVpscGtqS3hvRjRKenZyZW5WM3B4QUwzbWptcVFIc3lsSkNWczRHUkdVb2x3QnROWjQzdml5eWlBUGtiRS1XbmFvVjZkZnlqRThoNzNKWk9ieFAxTFFSZEJkNmlGdzR1Ynp4MmdnS3JKaGUwRUNxak5leDM0ZEkxUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb522e81c4bde",
+    "type": "intl",
+    "src": "The Times of Israël",
+    "title": "Rob Jetten exhorte les Juifs des Pays-Bas à rester : « C’est chez vous ici » - The Times of Israël",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUTRROFI4ZE9lMEhFYTlnSnAwblVkZ2FhSW05alI3dFlrMW9XM3AxMElRR1J5aU45VmFvb1luUkVIWTUwamZtdHJ6QnhGWE1BdjM0NUpGdkhoZG12VFhoclJEVklaWUVGZW5jbk9BSldSZGVhNG4td1plTmVKWk1PR0RWOUYtUDBNOFhNVXR2bS0xdzdhQTZaTG5jU1d3elY30gGmAUFVX3lxTE0wZ3hPcjZrdms4OUJBa3Mza2J2SVdaRk5MU2Vxd1FqcW9haGRiQUZPT1hfVmhOYnJ3RXU2d2E4ZEZXejF1TmNoYUxRZnR0ZFJRVU9NT0tfZlVianhGYmtHSzBxaUNjNWVNYVNyOGU4QjJNU3pnSWdpOUd1YmwwdVhEOWl3ZHJKOVhQcHhDUFo0dC1HejNqMTRRWmp1aXlqaUEyZEJIQ0E?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gbe48100f0171",
+    "type": "intl",
+    "src": "Business AM",
+    "title": "Le Premier ministre luxembourgeois représente la Belgique et les Pays-Bas au sommet européen de Dublin - Business AM",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPMms4RFJwNDR5ZnJnRDhQZ2lMQWJhRWFOc004M1Eya0RwV292QUFmNk42QllMN3Q4aWVaSWh3U1N2bmxSZWZfZHd6Z01yNVZZVl9FTTFabW1VcXQxRVljU1hQQ2ZoNTE5eFgtdDV2WW5rRV9sVEhIZUFsajB3dmgxRHpOYUNOUGE3bnNSa3pCUGRkRU16ZUVhcmkzaVlabXotRm5hNzdjOWVUUUxSRzRuTDFvNHA4NG91ckxfUUtzTXRza3QzY05j?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g9d438e80339e",
+    "type": "intl",
+    "src": "21News",
+    "title": "Deux alliés du Premier ministre des Pays-Bas ont négocié avec l’opposition. De quoi précipiter la chute du gouvernement néerlandais - 21News",
+    "date": "2026-11-12",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNWm1tMkI1aEpneXBvZUZUaTg0V0dYZ01ZbUVzWnBWd2gtY1Z1cUs1OU51blZGby1kVUFiRFZ6aGNHcUpfVzZTb0RsOGFYdTh4RklrMjJBdThOQjU1WVRhOXZtSWV5Y0hmUTNzbjhWNkZob0lpRVI1TUFIOTFOWFVrT1c1M1pXTWVPUTNSQXBpWWpER1hWRzJQU3hOdUlfa2YzSFdaek9heWU3Qzd1dUJiNVBiSlBpVEJQVERyM3Q2Z3JmOEV1aWMxYnJxSUN5ZU9EaVdPX05vWW9tNmxOSS1GRUdubHBVWnM?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g83256ff71a69",
     "type": "nl",
     "src": "NRC",
@@ -141,6 +548,98 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQcUYxalBUQThVMFpkbTlNc1lVV1N6emRLb2FqeUhaTFBBdzNfTEozWEtxR2h5WGlGcHJzdFNYMU1VSDFjSXA3QmxtNFR4YmUweVZsVFVuQ2FZeTdVal9Tblg0X2RnSEp0QU1vdXMwcWZLRE43emdTVzdrQzF0OUpYMjJrLWpOMGNLZzlBSl9Kb2FHUW1kdGxBTkdn?oc=5",
     "icon": "📰"
+  },
+  {
+    "id": "g2968b59d4437",
+    "type": "nl",
+    "src": "DeGoedeZaak",
+    "title": "Premier Jetten, neem afstand van de beschuldigingen over de Rode Lijn! - DeGoedeZaak",
+    "date": "2026-11-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQc1NicUpWLXhpbWNhSnNfbTVESGw4X0J4alV5V3FZYWg1YXI2cWMzQ3dwa1lOQ1FuVmhkUkMwYi0ySXBMYzNQQUo0NkRaRzJzWGpiODl2SjNwdnVOOE1mcmVEcV9uRXJJWHVMS0kxWkk4b1Y5a0dkb3FneVN5M0Z2LWc4MW1BSU1JVUpRUHUyMGoyLVRpTEtjRlNlc0lmaGxZRWFmNU9FY0NyVEpW?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g1b24b8839490",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Bontenbal tast in duister of linkse deal voor VVD te dragen is: ’Weet niet of er crisis in kabinet is’ - De Telegraaf",
+    "date": "2026-11-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRHh2TzRqQ2JLVDhQOXdTN3I2LUIxRGJOamluNS10V25iRVdTUlpWV0ZVX0ZLSHNRaXNJV29IOU81Z2pheVFBRDY5bHBreXhLbmh2dXhuS3NEUjhTMnVDUzd5RnI4MXN5ZzFaNTFBZ2J2RWlkNTdIUFhuSEowWWdlMlFoendBeVhUeVhkMnY0dS1oci1qNWhuRV9uTW5mZUgyam0zdkd1RjRLY29LcXBKNTBiNHRzRVV1WmRzeGR6UkZ0cmtTNGllakhiNUJMb3J6ZzFwbW5wVGQxcEhSZ0doMFRR?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g1dc75325a172",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Dit is het plan dat het kabinet in gevaar brengt: oordeel zelf - AD.nl",
+    "date": "2026-11-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONDczTUxiMlZHMXFKZDdVMEVINU9ib2h6TlV2SG5nak56UjUwUVE4VzNCVG83azVQNHA4eTdEa21pVlRXb2xsMVF3d3pRZHQwaDNNQ19Ka0NHb1U3UGJiOU5DSHdpZ2FsdFFyM1Z4WVdnSl9LVnFTdmI2a3JoTDVtRF9jVXZaNHJzdzJySWYtNndZRmZtamZnbVMtcnlOd28?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2efe61bd7da2",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Kabinet-Jetten wankelt na akkoord D66 en CDA met Pro en Volt - Trouw",
+    "date": "2026-11-11",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbnVaMlJmSGJxaEx3MWFtY01LWXhUdEdWRWQ0U3dvblJ6eDlONFBDWExCTlVsRS1NMjRVejMzQWd3bHJnV2ZiVWFKMEZNOG85dnVDMFJwREdKTmFTNzNrMEE1YzgxM2EtbFJTdXk2MURGczdOSDNNUE1oeXNJOE43cm5TV0tydFFQRmdTX2NrRUM5NTd3VTkxSXlDWG1OaFVtcVlYX254T3FXUQ?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g3b0a078a1d47",
+    "type": "nl",
+    "src": "NU",
+    "title": "Video | VVD zet Kabinet-Jetten onder druk - NU",
+    "date": "2026-11-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE55MmVuTE9CQjJsTC1lYnh5Q0dJQUhoam9TbENEREFUWmVKdDZBekNqMTRsMmZobFJxOHB4VUxLamxVanp0U0F2SVMwSU1sclRoNHl5V2U1UGI3TUprVjRwX19sdmpLWmdZS0pubzBPWFhPaXdoenVFbg?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga2c7dcf3df37",
+    "type": "intl",
+    "src": "Algemeiner.com",
+    "title": "Dutch Prime Minister Urges Jews to Stay Amid Rising Antisemitism: ‘The Netherlands Is Our Shared Home’ - Algemeiner.com",
+    "date": "2026-11-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSkJGN3NsUGJRN1h3dzc2TGNqWTdtaVRrZ0lHZDVHNlNCd2JtNUxlV2VZZ3JROVJPamZJVUxYcTBmSzd4MkVqN0FBR25wdHpLbFJ2ejdWQV9wc2hyLUR0NDJna3ZvQmRGbWlBWG96VDYzWUxmdkRzNXc1Uzk4aHhtaHF0Q2NzNE1DMnNoMXV3UVNmbF9fWm14TWUySlphLTU2QXBsTFRRX3FJaFRiZUlHR3BGblJfbTZnUWJicmtKbVh0MG10NlFiSnhVVVUyQVdrYmRWVw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc1233f323525",
+    "type": "intl",
+    "src": "OutSports",
+    "title": "Nico Keenan 'ready to give up' on Olympics before meeting Rob Jetten - OutSports",
+    "date": "2026-11-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTzNsZjlhMWI1TVFyT1pFMzhGSVU0UjE2SWFOMzFuUTV6OFQ5dWx3ZVpWUWF6c015SHp6YWJZM0d2OWJGWlZvRC00N3hQYVV5NjVNLTYxeGUxbDdMc2Q4YTFJTVdGRHd4LU9nSk9hQjNxRk13OTBxRTFJb0VYQUZCM0xEVXQ5TjdNWHUtX0hwMTFaTnlGVVhJbUhSbWZuMnFyUVprY0Q0Ujh1cFRKZW1lOC1mQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g0db152c19395",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch Cabinet in crisis: VVD could leave coalition over tax deal with left, center - NL Times",
+    "date": "2026-11-11",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOXF3QnNSaTFUaENwSEVMMnhVdHNnTmRpTW9ieEI3TVNTajVsMzRqeTRFakdPV1gtbkUtMXMxZVk1M3pVR3ZUUkdPbWV5ZlVOZ3ZWa3hqc2szdUIwcVhfTUllSmIzeHB0dXpnT21yb3loTkZscmZGblVFTDlOX3dUeFQxVURhU3ZuTFJFSFFhaE42NDZaSWc?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g71d7137453a4",
+    "type": "intl",
+    "src": "i24NEWS",
+    "title": "Face à la montée de l'antisémitisme, le Premier ministre néerlandais installe une mezouza à sa porte - i24NEWS",
+    "date": "2026-11-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQa281SkFMczhUVUNkVHByYVVybTJQRk5jR3BCd2h1eXRNMm9jb3dMQ3dYSFBqVHNkdXpnM1RRNTVoQVNCRHdkZ1pHVG85akVhOGtfS2NKcXdxdGh5WnhHbUtvRi1VLVJOZTRRcFU1RHFWaHhPTmtCZy03VVlVX0NUclV3THAxQXhVRi1aVm5NaFV3YUVqeHFjNTJUYUJTYVJRaHNUakdyVTFMMkt6cC1lR1BuM2QzX1BNZERLVC1ZYnNmbEY0UG1sWVdzalRSTTJLd3NEQ2dsTzVNVXl6Q3RhM3Y0SFlYR0Fac25KMQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ga4d7a44f7ba1",
@@ -11476,6 +11975,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNU0c3WGc3YXVjZWhoeXZPQXBFcTg3Mk1Zb1pVZGxUMFVfYlRvV1NudF9NM3dJR09pUDdoOEdFYVI0ZjJHZ2dTN3NkQ3h2MkF2Q0pFR3J3dVo4dUd5M0ZrR1huenA2aWJGcV9yeFBnTVlKS0VCS1h0V1hXbXRGVmxmUUhpRldjaUpKV2FtWThHcXBqRW1FQjUwUXJzYzdFUHc0ajlwb05Fb0c5N1J4eEFLbXVvODRNQQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "gd69ff375dbc7",
+    "type": "intl",
+    "src": "Ukrinform",
+    "title": "Прем’єр Нідерландів: Ми будемо захищати Міжнародний кримінальний суд - Ukrinform",
+    "date": "2026-09-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRjlGZFBrcTBCQWdQMUw4bXBlNklrLTlQVnNyMGl4bnIteWJZWkk2LVRTekFfbkRFMVZnR3VrVlJHUkt0UWNuOFBPSUt5LWZ0QlROdXlOZkdEYWtyM2lJbTE2UTNZY2szYnZQWDUxVW1id095anJNdFk1ODhsUHJQMFJzSGhXM2NlVE85THRDSzU1SlRhWWtMeVlVZWtFQnJ3RjhJdHBTbmY2Y1dDNmxkM1QzQmRnVjTSAbwBQVVfeXFMUEVpdGFCejk1WDhRUWtrNGoxVEhLaHdFa3lOVTMzZ2o0endBdm5uWFYybHBCVkp4VWlYbGUtVGEwOUIwejV4Q24yd19tWGtmZy1tRDBRX3U5eWFDd2ZmTEV4SWZiVFY1ZDBZdVd5MVpRZVhwcWhHREpvQmszRm9pRndFN2U1clpPOVRrRDF5RWxlZUlMbDdGbDBRaVJuMUNyQ29VN2VhdlBNSnRCcVFlZnpucFRvejF1dXp5OFk?oc=5",
+    "flag": "🇺🇦"
   },
   {
     "id": "gd256483115be",
@@ -26683,6 +27192,16 @@
     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPRkFCY3hOOXhMUDNQR1JmRC11M3hPWXF5UXlnamtfU0ZDSEQ5clE5cGM5d2U4RWx4ZnZLMjhnSVppTWFsVmlpUEV4WFpIelBjbmNLTndoRnpSdzFHcVpRVVJ3R1l0MFFBazVfTjZsTUxPLUVYYkNRcHVtTkdYWmNjWF9OZEFuU1htNWxfWnNTMlFfVGwwTnZfdjF5OWpadTJvc25reHB1NWxvSXY1SDVXXzNwVWVPc0RhUTNMOVJVVjBlVzdybWtj?oc=5",
     "icon": "📰",
     "lr": "left"
+  },
+  {
+    "id": "gfd53a211f80d",
+    "type": "intl",
+    "src": "NV",
+    "title": "«Історичне рішення». Нідерланди погодились прийняти повноцінний Спецтрибунал щодо злочину агресії РФ — Зеленський - NV",
+    "date": "2026-07-03",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdXRzUS13M29ETExBTUFhanE3a1ZkRFFjR09hanBfbUotbC1ER29mekdoUkkwVDNPaXlPdFpUb19BbjFSdjljR2FoY1d3RVlESi1EOG1nR3hDbFRNUXBCZnVfY2k5VHd6b1gzNXhmc0stNzFFekZ6dmNQblpWd0M1TktXZ1FZTEVhMEVYZkhGbHBQWTdidUl1NGNXUEVqUG1OU0hMYzNMRW9mdlFpMnduMTZnS1h0UXozREREOFltMzFfTTFnVjB3RNIBtgFBVV95cUxQWDVTTnAzSGMwNUZOZC1LbGY0RU1zNDFLVXdtdnhfSjFlS0gzaTNkUE41YVpWV2pPQ0pKZFkzSHAzNFZ3ems1eloxeG9iMDJQcG9uc1dQQ0ZudUhlaGRjSTBfR2xKLTIxT09lQ0dINU9ld3pJajN0N1ZUNGlwNkV4QTZFTmMzaWE4ckFUblJMTG15N0RiQ0UtUnRwZFVaQ0loUDBtRVFnX3BJbktLVS0xX2FUZXVpUQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "ga355db4e6a2b",
