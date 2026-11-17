@@ -34,10 +34,10 @@
   {
     "datum": "2026-11-17",
     "tijd": "2026-",
-    "titel": "Begroting Justitie en Veiligheid (37020-VI)1e TK",
+    "titel": "Debat over de ontstane politieke situatie",
     "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05412"
+    "soort": "Plenair debat (debat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08484"
   },
   {
     "datum": "2026-11-18",
@@ -58,9 +58,41 @@
   {
     "datum": "2026-11-18",
     "tijd": "2026-",
+    "titel": "Tweeminutendebat Openbaar vervoer en taxi (CD 13/10)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07644"
+  },
+  {
+    "datum": "2026-11-18",
+    "tijd": "2026-",
     "titel": "Begroting Buitenlandse Zaken (37020-V) (2e termijn)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08373"
+  },
+  {
+    "datum": "2026-11-18",
+    "tijd": "2026-",
+    "titel": "Debat over de verslechterende veiligheidssituatie in de wereld",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (debat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06852"
+  },
+  {
+    "datum": "2026-11-19",
+    "tijd": "",
+    "titel": "Extra Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08405"
+  },
+  {
+    "datum": "2026-11-19",
+    "tijd": "",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Openbaar vervoer en taxi en eventueel over moties ingediend bij het onder voorbehoud geagendeerde Tweeminutendebat Landbouw- en Visserijraad)",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08494"
   }
 ]
