@@ -1,48 +1,8 @@
 [
   {
-    "datum": "2026-11-17",
-    "tijd": "2026-",
-    "titel": "Stemmingen",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08402"
-  },
-  {
-    "datum": "2026-11-17",
-    "tijd": "2026-",
-    "titel": "Regeling van werkzaamheden ",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08403"
-  },
-  {
-    "datum": "2026-11-17",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Luchthavenbesluit Rotterdam (31936-1327)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08205"
-  },
-  {
-    "datum": "2026-11-17",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Kernenergie (CD 2/7)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A06131"
-  },
-  {
-    "datum": "2026-11-17",
-    "tijd": "2026-",
-    "titel": "Debat over de ontstane politieke situatie",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (debat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08484"
-  },
-  {
     "datum": "2026-11-18",
     "tijd": "",
-    "titel": "Extra Regeling van werkzaamheden",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08404"
@@ -82,7 +42,7 @@
   {
     "datum": "2026-11-19",
     "tijd": "",
-    "titel": "Extra Regeling van werkzaamheden",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
     "locatie": "Plenaire zaal",
     "soort": "Regeling van werkzaamheden",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08405"
@@ -90,9 +50,25 @@
   {
     "datum": "2026-11-19",
     "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Openbaar vervoer en taxi en eventueel over moties ingediend bij het onder voorbehoud geagendeerde Tweeminutendebat Landbouw- en Visserijraad)",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Openbaar vervoer en taxi, over moties ingediend bij het Tweeminutendebat Landbouw- en Visserijraad en over de motie-Wilders over het opzeggen van het vertrouwen in het kabinet (36 848, nr. 113)",
     "locatie": "Plenaire zaal",
     "soort": "Stemmingen",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08494"
+  },
+  {
+    "datum": "2026-11-19",
+    "tijd": "2026-",
+    "titel": "Tweeminutendebat Landbouw- en Visserijraad d.d. 23 en 24 november 2026 (2026Z25482)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (tweeminutendebat)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08492"
+  },
+  {
+    "datum": "2026-11-19",
+    "tijd": "2026-",
+    "titel": "Begroting Justitie en Veiligheid (37020-VI)1e TK",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05412"
   }
 ]
