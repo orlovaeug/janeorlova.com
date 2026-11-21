@@ -1,5 +1,76 @@
 [
   {
+    "id": "g37af9240de6a",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "De wonderlijke verzoening van het kabinet-Jetten",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/11/21/de-wonderlijke-verzoening-van-het-kabinet-jetten-a4941980",
+    "lr": "right"
+  },
+  {
+    "id": "g626abca3dfca",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Trijntje en Rob Jetten weten het al lang: van muziek wordt alles mooier - AD.nl",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRGI2UFZGNlJER3pGN1cxdVZiV3BVVlpZcTZfRWdBSGxIWDFWOFF1WU1QRmxiSFhUWmRRaXVkVGxFN0oyY2puWEh6dldNX1N0b29PUGJwNjhMUkxjeUFDNlFHUDB3c0tWaEY0VnkyQU9jc0ZvN1dXbVFHYWpBM2RVZGJMNmVTenIzdk5rM0p3S2FpYnVscGVrajZLbXlzSjV1UVhseUdJLUhfbF9TUVRmRkYtZTlEUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "ga72f5941d903",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Geert Wilders: 'Jetten is een totale nietsnut!' - De Dagelijkse Standaard",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPVW94SjJNWXFieWdvRzZSRmNFVjJQcWtpNW5qVkZBcDJBX05aZW43ME9tVXJrdDd0MUV3cGtja2JVNUNlUlZ0N3B1d3Z4aHM4UWJFYlhER0JkWHlZVzB1N2xfckFKSk40R1l5dFlEMXRadURNcHRBeHl1LWRaazFOejJWcGlidi1ldjdNTHFfZ04tTzJSWExsUFBkTDNjdw?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g77512cfc97d5",
+    "type": "nl",
+    "src": "De Gelderlander",
+    "title": "Hoe kan gehavend kabinet de rit nog uitzitten? Mediator: ‘Het is essentieel dat partijen elkaar niet provoceren’ - De Gelderlander",
+    "date": "2026-11-21",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOeFNvYzFwZG8wOU5wRGVhUDAwcDhMaW5DSG1WdG9DbW1EcVFsRkZOTVdIakJJS0lvSzY2U1VFZ1lWUEprUXl6WkpWTThCR2hPRDlPZXpyaW1vT3R3blY4OVBfUmFjakptdURUaWpfUmlyM3lrc3NwdWNER1ltRVV2WFlnUkdNVzY2M0JPVDhqekJITHI4WU9WOHlhY2pJU3pRTmVVNl9Cb1ZRNlFrdktvbnR4LVhzczVaTngzUHRLelk2ZXUxZkRCaWpRWGxEM3lSY2FkZlVRdVFRQmdIU2pDSDN0ZnlNQlVGVTJB?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5dbcb5c5e31d",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Kiezers walgen van kabinet-Jetten: laagterecord van 11 procent en VVD crasht naar 12 zetels - De Dagelijkse Standaard",
+    "date": "2026-11-21",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOGVZdXlJZTJxTmYtWEI0aFM0dVpQMy0wZlB6aGZmanNtYU1KdU5Ba3o1VUJOR3p2M1pZVmdoamdzZU5LbEd1S25jV3FWSzNnYTdnS05yYkNCejhOYUI2cUJhOVd5endNeDVWXzNzZnRaU25iNnRocXVNT0JZYlhZR0VXblJOeFhscE1TSXhfZVVhNVp5aFN3MzNTdnVDR0VkeVkwNndZbjV6dnFIdm1UenZBRmlOdWV3QXR5aTVKRWlhM3htakd3cQ?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g6305a0396459",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM Jetten voices support for Denmark after alleged Russian plot to murder rapper - NL Times",
+    "date": "2026-11-21",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNEdfT1RjY0tJWlhvNnk5UlZ5My0yOE1nbE83Ui1uVEtYblBxV3hjai1iV0ZkVmZNLW50RE1BOVpSeTVUckJZTUlJbGRiYy0wRV9pRWY5MkRqbG1lcE44dTgwQXhvV0lRRHlFVkM1cERkaUNsOGJ1X3FtS3ZqRkgyVG5YQnRBaHNVYkhGZDFJYU5Rb0xHWEpBN01HVlU5b0JqMllWYnRn?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g42d2fb359fba",
+    "type": "intl",
+    "src": "Reuters",
+    "title": "EU leaders' chair proposes new cuts to EU 2028-2034 budget draft, suggests digital tax - Reuters",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMEktcWd6MTVXNDk2WEVleTlEckNHZy1HdDNfYjhTcmZaODB0ZE9YQXlpUUdBdmpiYjhvcUJDUWNRbUh6NjJCM1NPSlNCd2NJeTE1Mlpoel83ajNSQ1lWbTdGbFc2MWpvam9SWjU2WFZBZktuU2NBYmpaTlZmR1dsQU1sZzJ5LWZQbE9BS3VjbTRKZGg3QmNhWGNVT3VNV0JPWlZXZmtNVTVXZnUzZ05NR1Nzcjc1WEJZc24tT3M5Z1Rfdw?oc=5",
+    "flag": "🇺🇸"
+  },
+  {
     "id": "g070ec940d42a",
     "type": "nl",
     "src": "RTL Nieuws",
@@ -117,6 +188,80 @@
     "date": "2026-11-20",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNNmt2eWtPcElVQnc5UURpSGJuT3dMc2diZ2s4b21EaXdRSl9GdGx0SFdnc0llMWNWb3NBcWtfbUtlRGtaa2pZcUh2dFZwTUtwX0lOMTNxNUlsWU1DeWJkYS1CUnd1enBzSDBaMkV6aFQzbWkyNDVFbzZrNTBpTHVkSFFCclphbTI2S2Z6VnV6ZS1wdUNXNFhsdHY2VUVEbnEtQmhCWmVTX1VwUjBiLS1Db2x5NXZ4cmJyUWVKUGZQN05JODAt?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g07a2ffc7a546",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten na neonazi-docu: partijleiders moeten niet alleen optreden na incidenten",
+    "date": "2026-11-20",
+    "sent": "u",
+    "link": "https://nos.nl/l/2640329"
+  },
+  {
+    "id": "gb1ab9c7f1366",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Premier Jetten in gesprek met Wouter de Winther: ‘Ermee stoppen was makkelijker geweest’ - De Telegraaf",
+    "date": "2026-11-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNXBXREZRTkJtOXdvU0dvY1ozaFBsbUdNVGpnOWhNdjloNGIwQVBEM1I4OE1sb3RCNWY2M3dteXFzdG5TbmJhVW00dTBkSWQ0YVBibl9tRnNoY0wxZFVRNzRUSVROZkZTLTV1eG5sVFM0c01LQ1d0bHFtQ1VmODBEMTl4R0J6NzRIcVlLaHVGVk8tN0l4ZEY2eWlZUnhlSC1wakc5dkJhMUdjbDkzeG9hRElybUZIRHVaWTZJUThNWjR4RDJGQjBUNVB5bw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gf48316b49e4e",
+    "type": "nl",
+    "src": "Ipsos I&O Publiek",
+    "title": "Ipsos I&O-zetelpeiling: Tevredenheid met kabinet bereikt nieuw dieptepunt - Ipsos I&O Publiek",
+    "date": "2026-11-20",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOd1NWTTZiR2M0TnhKSlRadV92MFRTZFYyeUxkamNMMVZCTEo0eGIwOENOdTRCSy1PN3BvU29BV291WTBHSjdEOVZIVTMta3NGUi1rdUthd1EwT3lMNHZSazVEVjA1a0xRc09Held0T1hDdEdSS3hhR19XVmI0VTNxLU45TTBqeVZhWUVaZk1TakxwbG1QOFFKbTJ4ZGFMNUh0cnFELWh6VDI3RWlUUVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gd8fa5fe33115",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "Sybrand Buma kan aan zijn klus als kabinetsadviseur beginnen - Trouw",
+    "date": "2026-11-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMzk4SGt2UTN0eXdfekR4ZHRfX3k3U01kYWVPRXhETllWdXhNbUtPTElndjl3cmU5NVhNRkJNNkVLUVh0dmhiWWhaQVZhY2V3M3NrZkdpTHdoTmE2WE1GSTBZUjcxM2NEQ3RxaXBKMkMya0wtNHF2N21KZHhrV0hQV2J6VkNzNkdyVDFMN2l4Yzl2MGRNeDU4R0V4Y21nRWRTcVE?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g0e4217fbc6ac",
+    "type": "nl",
+    "src": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "title": "Corné Smit, gepromoveerd op minderheidskabinetten: ‘Dit kabinet zit in de overlevingsmodus’ - NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+    "date": "2026-11-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNmdGM2p0Mmt2MktLOWdOdTRUQThGRTNfWDNXRzlnNWRUV2xZNTYtczdhNGVpOWJaWTdvY1JqeDRhMXVtRDJqbFZfV3lOTWliM2tRRzJtbWprTUVYaW81QU44X1dDNC0wQjlBelYwWkJMZEtqSldoYXl6WEZxR2RxYU1UV2JTMkh4TnNSeU4xc1o5VEhNWWdSWTNsczlwYXFiSUpHY2ozUjdvVTFwNXhyYlh2dWc2cUxkVHJPMk1CeElmb2gybmRkRHFEX21wZw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g46b1dec65201",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "Jetten geeft Sybrand Buma vrije hand: ’Inhoud en inrichting is geheel aan u’ - De Telegraaf",
+    "date": "2026-11-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSzN1T0hPQkhwYXE1WEhFS0FUQk1hbjJ4N0JkS2VBaEI0U0xaTDBNbmhQdnBaelEwazVpOHhPUFlVNlM5NWdSa2dLWVJ4bXZEd1k3M1BjVmdBR25oSzlTeVk4c0NKLUFlZEdEMWR5N0xUUnRRVm95M090cS1uby0telF2c1NyR201dWN1UDhpVWxobXhkS1o2Q01vaGZVdG5pMGM3QUhiSUQ4VExUYzlCYkl4d290cUhnTmtFSzFPNWtiZw?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g810fdf5e17a8",
+    "type": "intl",
+    "src": "Il Foglio",
+    "title": "In Olanda Jetten ha scongiurato una crisi, ma ha un po’ le ossa rotte - Il Foglio",
+    "date": "2026-11-20",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOGUwZ1ZZQ3BUZDV1djdXZmtiSkpBNzI5ckVWUHExUWVxLThNRUQ0bGk3LXUydW13ZGZDLS0yX1VrdjBvZDVIQThOLWt3eDFXSWhRelY1RFFuRkwwOHNDb3BqdW50ZXctTWw5eU40TEhQdERUQlBKdUxlMmd1b01KN2hvck9PZF9LSkQwU2JSMzUwZ1pDUWdQYTdhUjk0ZVR1NHFmNUt2dzYwZDFFMW1DODhxYUhKM2ZEXzY4ZkR1aw?oc=5",
     "flag": "🌍"
   },
   {
@@ -251,6 +396,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNZkxyUkJ6akJoVFpLSk9pOXB0ckRkVWFLTng0OFRmVXpMenlfM3VDaUVqbzd0V1dLQ3NhNU1ZVnR1ay11cV91UVRUYW9abUZJWXZpMk5YelVVN3ZxYzZ2REhfRXdBbHNWaE9HY0o3Q0tOLW1KdzFnUzRKUWhLOHVLeGZmdi1HNDJ4SjNpZ2tFLUUzZEdUSEJRcE1aY3dIa2RTSjdCRkVKM3NPZVIyckRJcXU1Y3g5SDBZU0RTR0JxcEh6VWNOZUdVYVhGVUczamw1cFM3YTBDczZlV3ZhV0NUUk1tVi1VQ25PSW52ZzBhOGJ4LWh3M3daM0p2U0JNdFNWSk1qSDF3dw?oc=5",
     "flag": "🇩🇪"
+  },
+  {
+    "id": "g0e4cdf22daf8",
+    "type": "nl",
+    "src": "EenVandaag",
+    "title": "Ruim de helft bezorgd over klimaatverandering in Nederland, D66-kiezers vinden dat 'hun' kabinet te weinig doet - EenVandaag",
+    "date": "2026-11-19",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQLTcxUW5sbWFyT3BvaHQ5TTE1TVV4U1BOM2lqd3A5XzF1bW1GSUVVRGNlNmpER0w1WDV5eXJ2RjdaWUlsYl9fdlZhN3R3YjRWcS16SkJtVjBFQmN2TE9LRDN1bTZGSm9Fejl5dWh0Ql91LUZSQW50ZExsdVMwN1Fqb0dvYk1BTGU1dkZpUHNPVmN5aUZoTG9USUpMTFhYWjlQUkFKRzVPelloV01sUDlpakJIU1pud25MTjktTG9CeHlJdmlZdTlPQmZfT3BPOV9fUTVhZmRkQWV4Y3EwRlU0WXl0UW03TDFYQUJCX0ZvUGV6OEVrSUxIU2VDeU4?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g3982dd2776b6",
@@ -1208,6 +1363,36 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPMlA3ak9DcXlWVHB5SWx1V05UZGEzTzhETURvVlZTSENHYTZMWjV0OWZPaDlRQjRxWk5mbkg0akMwZVJ2ZFNJT1J4Q01Jb25femJhUHFZcGJyeWVJY2hDbVV4NVJscDR1R2Y2QWp2aWVDWFY2N2ZaVlhsdmMxeDZ5UjNlTG9DSXJnN3BNOWJKcDA2c3R3X3JJdVk3WUw0SVFWZHRGcGQtajVVcmtES0JZWDdsb2NUVEsxVXJ0YnlZYmpnOHNIZy1WaVIyd1RDWmlVY1o0QUduVEFYbjJPb3hJVnM5SkhCWEVBbGZ5bUd5d09EMTFWMVZxbTFsV2pNdmJFWHdZOWhkWWdIUlU?oc=5",
     "flag": "🇩🇪"
+  },
+  {
+    "id": "g20cdbe82aba1",
+    "type": "intl",
+    "src": "Audacy",
+    "title": "Crisis talks keep Dutch minority government together after tax dispute, prime minister says - Audacy",
+    "date": "2026-11-17",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRlZnRXYxRm96NDdqQ2FUYmlxRGxfYjRNZmlZVDJJQXc5aGkwOXRLdkp1WFp4WlVYRnZwMndUT2FIeW1UcVZMZDIxaEo2QmRCVG9jUTNYVDh3RkpVQVMwRmhuMm1tRGQyeE93YktmQ1lLaktJTC11djRrYlJtaW84RElnUGY0NE5qOVZXRWp4OC1aMjN1eVpPd0I0SDlJNXhsSzRLNzl1ZHRlUUJjZjNwdGxGS3k2cWRzc09kSkJLbWI2QQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g113030d40c58",
+    "type": "intl",
+    "src": "News & Observer",
+    "title": "Dutch PM says coalition has found a way to keep going after crisis talks - News & Observer",
+    "date": "2026-11-17",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5IeFkwN2Y3U0xYWkU2SUF6X01reXNmNHRkR2pWa0tzNmFaS0llNzBDb0xJNlNxZFlaeEYzcUhDSmFkeHlNTmxUTHRab2JUMDZuMVYxZFNfMXozR0NIZy14eFIxQ0JITHE3R2VqaUZ0dlFEX2VZZGxuU2wzbjlHX1E?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gb552d6613c4c",
+    "type": "intl",
+    "src": "New Castle News",
+    "title": "Crisis talks keep Dutch minority government together after tax dispute, prime minister says - New Castle News",
+    "date": "2026-11-17",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPWjVxVlVJRjZhTzhHMEpKRVlfYnRSSjhtRHVNSVpNYzdXRnB5TENDY2s3WVNmVUF3LUxoRjY5dHFsZkswcnh6SnRFSVJxT1dRdXdRcjhSbWQwdTR4SDdPb0x5Z04wYVJmM0I4ZGhFd254WTJwOU94X0t3a251OENTcUlrX1Y4UzBtc2Y1b0hRQUdqcDk0S2h5UjlhQm9MUWxSYU5tcmJGMl9vUHFnQUo5SVFZWkdoTEtQTmdtbThoUXhMSGRtVDNJaExCNXNoYXR4TjdaRmhPd3VIdUNZOHNPbDl0ejVQWTE3OHh4Z2NfT3dwTmYtOXpTR0lhRGhQREFFeW12NUhFS2RQV0hPYjNkSQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g27259a227f7d",
@@ -3301,6 +3486,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g065eb6b991f2",
+    "type": "intl",
+    "src": "morning-times.com",
+    "title": "Dutch prime minister calls crisis talks as coalition acrimony erupts over tax package - morning-times.com",
+    "date": "2026-11-13",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQYkpGWXdvYnlVVE9JTHBPdTA4Q3FwaGc5bXdndzdIOWs1SXJ2LVlENE1kMDc5TXpzS241cEFCN25hRTNZNkloZ29VcG9MWWQ0OHdFNnpyQTRIV1dwT0pUQ3BQeFJhWXhQZE14ZFVtVk12U0FZQk1ITGJvcG9SYmU5MXpNZUJoX1FIdlhYWk1oaTZYbi1qSVgzOWF3VFkwV1Z5TVlwc1hUODhYQlNlUE5EX3R3SDdfQXVPRjJ2ZVBxa0oteTN3dHFNd3dxSzBUNGpKX0VfeVJqbnhERVZqUkhsbmZrQWFYQzllWDQtaWxseU54ZUlTS2VMRzBuNmh0YjlVYkM5dnVZWWk?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
     "id": "gad56a21ce3be",
     "type": "nl",
     "src": "AD",
@@ -4046,6 +4241,16 @@
     "flag": "🌍"
   },
   {
+    "id": "g378c4311c088",
+    "type": "intl",
+    "src": "Newsday",
+    "title": "Dutch prime minister concedes his coalition needs 'serious fresh start' after anger at tax deal - Newsday",
+    "date": "2026-11-12",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUThBRng0elVsVjFpUXd4emV3QkxxRVNEWFJqWjRBQmxhUmVyajFHd1NUUWRteUdVbXpFNC1NYUxMR1BFX3ZsNU15alJGZm9fX1lVVG1GS1hIYnQ5TFZSNjFrMGRrU2tFTmxqMEJCcW9ONG4xSTRQZ0RtRVh3QUxFNDJfWHlOdmNRLThuaUlqcw?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g83256ff71a69",
     "type": "nl",
     "src": "NRC",
@@ -4546,6 +4751,16 @@
     "date": "2026-11-10",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPanYtTXVpekNXVTFsZHR4dklXMGZYRnkwLU1lbzl2QnZ1WXYzU3NtblZVR1hGTmE0S0V5alNsZmRIYUdpMDhxdnRQTTYyNzcwc3E0bUozNWl5VWd1c3hiQmsxTy15M2JGWDVkR21JMGw5NlJHc2dvY0owR2tEOTlTdU1aZDR5RldOTXZOZElTS0VfbHlWZlpyV3dPdWcxWVVSS3RWaDBBdGpqcmRDYVpLUTdxZFN3cUJjWTJ6V0diREtVWkI4V3c?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g2fe164d4da53",
+    "type": "intl",
+    "src": "JNS.org",
+    "title": "Dutch PM urges Jews not to leave the Netherlands - JNS.org",
+    "date": "2026-11-10",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMDcxYm9iWF81b3MxSUhaaXNFQmJ0TlVRUV82clRsZGU2NG4zU2dLN1A2UGxjNjdJM1RkR2dIQTNHZzhNejNJb1AzRkI2NzRsR0xvalhXSW9mZzVONmFFU3ZxRGNUMWdYTWpOSE1adUl5UTZHNk1fSG54UzdRcVlBU2tINXFPSXVpOEJyemN2OA?oc=5",
     "flag": "🌍"
   },
   {
@@ -9636,6 +9851,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQNm9tTHc3OHZsN3BwaDRESmFVelZqRGxOamZaLVVjS0JpRzdESjlXcGpQVXZWckV4S21DTlFERFZaU1paNVFFSW91ZUNQeVdkNjNmWFllOTJPR2xUcUlhemg4bzZFbzh1Y001RExEYWVUSVVnVFpCd2M0V0JrX096WFN5djRqVmc0enBucG9xX0tSOTRkdExEd2tZZFNnUklHQTdaZExfOWVUTEcwamM0ZFBSMm5rNEh2WGRkdUwwT2xORUgyYV9sak9RTUY1dUR5cmVrUU5qalFRd9IB3wFBVV95cUxQQi1KRFM3bkFkVm1Lemgzb3hDbUlFcDZjYlZQbGNnWWtmXzlaWFo1NjBuZ25oWWNMUUZhMlVjSHkwVzVsYWdrb2dQOW95bURsc3ZIYUNVeVJNcWprX0VrVzFrSmZJVnYwQnJzMUxYWERDM0xzeEF4cGRDcFVlekVjYWtwak1oSGN1WWVFbzFIRThMZHVwRk15ZEhYbE13TFRLM29wOEhGU3RyYnQ4MEgtZWZCX0cycFZmYTNZMGlLZFBIc0w2TDRGd2Y4UUI4bXhCbFl2WGl2X3FvZmxvTGMw?oc=5",
     "flag": "🇪🇸"
+  },
+  {
+    "id": "ga6c92f7aebe1",
+    "type": "intl",
+    "src": "Euronews.com",
+    "title": "Rob Jetten espera su primer hijo mediante gestación subrogada - Euronews.com",
+    "date": "2026-10-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQV01CSVBoTVhxTUdDX0JDc0d6MTR5TnlGWGR1cVVfclBUYk8tSHphT2dRTFlHa2N1QnVydFFMb3lOXzlGc3V3aU9VQmxmemFmRkxlYllrWkt0MlV4QnhUWGJaQ3EyMXlEak0weklrTk5xWmZWRl9JcUJqNWczQlB6UkhuWGtmOTZsZHdjQ0hJNXRWbXVQOFBpYld5b1U3LXl1ZmVOMjlEc2VPUQ?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g362aca40c665",
