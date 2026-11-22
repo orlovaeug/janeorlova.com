@@ -1,5 +1,107 @@
 [
   {
+    "id": "ga27ba70e1fed",
+    "type": "nl",
+    "src": "RTL Nieuws",
+    "icon": "📺",
+    "title": "Jetten dineert met Britse premier Burnham in het Rijksmuseum",
+    "date": "2026-11-22",
+    "sent": "u",
+    "link": "https://www.rtl.nl/nieuws/binnenland/artikel/5666516/rob-jestten-britse-premier-oorlog-oekraine-diner-rijksmuseum"
+  },
+  {
+    "id": "g7c95ce852a8e",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "icon": "📰",
+    "title": "Wouter de Winther: ‘Begrepen dat Rob Jetten daar echt ontploft is’",
+    "date": "2026-11-22",
+    "sent": "p",
+    "link": "https://www.telegraaf.nl/video/wouter-de-winther-begrepen-dat-rob-jetten-daar-echt-ontploft-is/164883807.html",
+    "lr": "right"
+  },
+  {
+    "id": "g3d978b4939c6",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "LIVE | Droneaanval op appartementencomplex in Kiev: veertien mensen vermist en mensen onder puin - De Telegraaf",
+    "date": "2026-11-22",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPVVFJNmRPTWFIZFFXR1NFN2VGNjFHLWZPUzVNMDdsTG1pdmpOM0lXZjV4RGdsaWNMT3FSUWVEeGd6enp4XzYwSUJVZVJac1dFYmZLakxhYXo2VTVVOEhNeFh5Vl9BVlZPdF9wSTBfZFNENm5EdDdnSFd2Umw1UEhPZTBEeDZieWZVZVBWM0xwajZNMy13SE4tOElHZkctZkJvemU1Zk55eWg1X1lhXzBXalB0aUI5bFRHX2tOZ3BOcU40UWZXS2M2TjQycEFwUlR4SHVCX1FSX0dQZTktME16T0VPd25Edll1cDBaSGxrWlRQUVJrYTlxamdZOA?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g00930e22ea2e",
+    "type": "nl",
+    "src": "RTL.nl",
+    "title": "Jetten dineert met Britse premier Burnham in het Rijksmuseum - RTL.nl",
+    "date": "2026-11-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMnM3bnM5WFFUZXZyQW5TSllMTW0zLVdYaTNnUzdnUTgyTmNXRC03dFpQWTY3aVNNLU10d2F0cENRX3JmQVNQRUtwcC1rN2NmRkRONzdGV1U5V2NMNEVHN3FYanFWOWoxaFJmNTlSa2tvWFNtQm04dkJLeF9jc0pSckhFZzZNUktZVjdnLUdERC0xelJkYnBHdUE0cENwSHdUNkpZXzFENTVEUHR0MWFlRGtGSQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g079efa41cf2d",
+    "type": "intl",
+    "src": "De Dagelijkse Standaard",
+    "title": "Rob Jetten dineert chique in het Rijksmuseum met Burnham en belooft Oekraïne opnieuw militaire steun - De Dagelijkse Standaard",
+    "date": "2026-11-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX2xMdXJrWkxEUG00MUhsMG5oaUV0VDBIM2hoWFl4SnJBY1k5My1SRmdfLW55YXlTRlUtNTl2TnU0OUprXy1NM1pIX09GbkxIaVd6ajQxeTJkUDFXQVVUMUdXek45MG5FTkxNYllPZ1BkZmRzUlRFdHpTbFU5N1lCSjBqazRYR3o2ejhRSTc3M3V5VEpVNk5DTGlyZ1NyX2ZQVEE?oc=5",
+    "flag": "🇩🇪"
+  },
+  {
+    "id": "g88579dbbd1b7",
+    "type": "nl",
+    "src": "Friesch Dagblad",
+    "title": "De doorstart van het kabinet is goed voor Fryslân - Friesch Dagblad",
+    "date": "2026-11-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVzZtYlNRTmlub292QjU2SXlSelpvTEZhS05lUHRSWWdYOUh4V2lHWHM3VGl6M1BIYmM5MWFjcEI4NUlpQV8ydXZyRk9pZHJLS2VlMk9HdDhBN0tudzE3dTU2dlZXWFdFaHpKektOc2hmS3ZDTmtCUVlUZE5VTHV2S2c3ZDExcDg1XzFyWnJTd0tuVjM3UHpySFZaSkNBZmVKaFE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g69887a808761",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Bontenbal moet kleur bekennen: stop met laveren tussen links en rechts - EWmagazine.nl",
+    "date": "2026-11-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZ056Yi02blg4N3RDR2czTHA4UUlCVnRpNE9QbGdJM0xQekRSbG8tN3JXWlNPUDVTbi1SMXh3WDQxVjJUbUdiZVBYNVhOT01Ja2Zla3BISkRjOEJlM0hTVjRWM1E3a09zQW5Zdlp6SktNTGQ3MndGMDZtOF9hbjJTaG9OOENLc00yV1VaR2xpc0FzVmY2VlA0eDdjczBTUXN6am1scHZrbTBFTUMxVmxONHplUGRUQ25nQjJFV3Q3aTdQUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g2490e20cea83",
+    "type": "intl",
+    "src": "Ukrinform",
+    "title": "Dutch and UK Prime Ministers discuss support for Ukraine during meeting in Amsterdam - Ukrinform",
+    "date": "2026-11-22",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOVWl0UmViWHFlWGQtc1JoTVlBcVdub1ZTNmdweTRDeGhYU2xNbjBnOUdDVWZDT3liR1RJWkxJaGttQXBNUjU0VUpVaEhrLVpSNU8zRGlRVnI0c3pWbE5UMVJNTm01T0ZpUzBfd2Zxbk9Vb19BOWZHcFI5SjhBeDU1aEZ2aGx2QzROUlNhLWl0NFl5bGJoR2stSTRNTno4S2lsTW1CSXFPNGlSdkhoRHlpN2ttT2lJT3BFNDJISFR6bkk5Rm5uOEVvVFptMHR6eDdSekJrcUtR0gHbAUFVX3lxTE5JZy1CdHJFczE5TFlORnQzbmFrZVFlT0RLc2N6TFBLcWZTQWVldWV6S254OXNKUmVUVm0zVm9DR0xQVllDVU5FUWxpdE5TQW1NWjM3ekJLZjR3OTRkcVgxSmJhUVltR0laRUtkakd4emN5bkNwam92ZFBMcjFUenMyaVEzTG8wT3BFNnozRXZERHlmZUdJMzBmdXpMNGtuVVhKRGhOaW83azBBWW0xUTNGS3RYY25LR0N4ZFBQM1NaczVsYnRGTzBkd0tzQmJVeWJXNzdZYXlhbFNCcw?oc=5",
+    "flag": "🇺🇦"
+  },
+  {
+    "id": "g567e43a2ae2b",
+    "type": "intl",
+    "src": "NL Times",
+    "title": "Dutch PM Jetten hosts UK PM, partners for dinner at Rijksmuseum to discuss Ukraine - NL Times",
+    "date": "2026-11-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYW51NWFSQm90aHlka0c3Wjh6V3lKcmpXNUw1VmpHbzFLVzlzVksxcDc3aENOcmYtWko4N1E0bXFYeHFGRF9OZFlTZE5NVFgzeU9jTlVkNTdxWmFCY044eWROUjhYQ0pOZXFZODRZSWllSTNJcGhzRjctTlRoMVkwMXE5R1Z1VV93VW9iUnNQT0NCcG1ZV25HQ1hJSXdJQmZpMG40?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "g2b718e608b20",
+    "type": "intl",
+    "src": "ТСН",
+    "title": "Нідерланди та Британія обговорили підтримку України: про що домовлялися прем'єри - ТСН",
+    "date": "2026-11-22",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSVh1cGgyYng0QVc4aktWbW1QQXE1VWE2VU9ENE5uYXRmSGIzVzFTaVctd0V5dnZXaHBfMlVtVTJQbTF6QjVBYV9lV21CWlVabjBfLVNDcllqemNyajQ1VlIwT3FLdUtBWk44Z1hFd2dxWkNzM2lENkFmWFdWWkQzVVpFQzR1bWhPdmVoNkJYbi0tYVFxWGZabjNoaXA4X2lLNXVOWEtNLUpNUUllOUVoSnU2ZWota0xPVTYw0gHAAUFVX3lxTE43U1FQaE5tV1hfY0lXSFIyRlBPT2k4VTRUSjBWRGFEcEY3cy1LMWxxZ2lwbmxKeTJKRHR4Z3lLQmFoNkQ0LWpiWkszZzNnZlJrRVBnVElOZG9yNFdGRFhsdzd3MnFTWi1IUk5NRWRlTUx1SHhIajMxSjFPU3JSWDhCTW5wVHlqVTloMGMzTUw4clJMaUx5MHhwTU9qYktfWjk5aGRGOEJMQTVSdFVlMWFINUszRzVMZXJIZEdiMldpUg?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g37af9240de6a",
     "type": "nl",
     "src": "NRC",
@@ -69,6 +171,56 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMEktcWd6MTVXNDk2WEVleTlEckNHZy1HdDNfYjhTcmZaODB0ZE9YQXlpUUdBdmpiYjhvcUJDUWNRbUh6NjJCM1NPSlNCd2NJeTE1Mlpoel83ajNSQ1lWbTdGbFc2MWpvam9SWjU2WFZBZktuU2NBYmpaTlZmR1dsQU1sZzJ5LWZQbE9BS3VjbTRKZGg3QmNhWGNVT3VNV0JPWlZXZmtNVTVXZnUzZ05NR1Nzcjc1WEJZc24tT3M5Z1Rfdw?oc=5",
     "flag": "🇺🇸"
+  },
+  {
+    "id": "g0224ea71985c",
+    "type": "nl",
+    "src": "NU.nl",
+    "icon": "🌐",
+    "title": "Jetten dineert met Britse premier in Rijksmuseum en spreekt over Oekraïne",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://www.nu.nl/spanningen-oekraine/6417381/jetten-dineert-met-britse-premier-in-rijksmuseum-en-spreekt-over-oekraine.html"
+  },
+  {
+    "id": "g2d3c6e02bf76",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Premier Jetten en Britse premier Burnham dineren in Rijksmuseum, praten over Oekraïne - NOS",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOOE5ZYW5YMVVZeFdJRXIyaDBKcnNBWURydk8wTDJUQnpUS2k2RU9ycHVsN2NOS2syOHlXblYxeTVBblJPUUN2ajQ0SEtoSFJmUUJKeVZHRlhBRDRXSkZKbG5vamowZXBFRUV1ZkxaOUx5NG1Xa3pQZ2ZjZ1d6SFpqLUdaQ3c4TXRSTFpTM1pNbHotbHA0Zy12THVMTGcxclZvLW5YaGJ1OW9LbmFNLXBvblBzZmFKUQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gcec063908b4f",
+    "type": "nl",
+    "src": "NU",
+    "title": "Jetten dineert met Britse premier in Rijksmuseum en spreekt over Oekraïne - NU",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOS3JiRUt3dWxra2JXOWNpLVpHRXJ1MlNHRW5qVlRSaGJsTmZVb1RLOFIyZzRMVTYyQWxuRXBRSE1Qb3hWamI3bzR5N2ZKRFNTT1BPMHBBRmVaVzh5VTRlekRjOXhaZ01Ea3ktQ0ktM000S3VJbm95bjJmODF3T0dxTkItbXpfQ0FkNE1lbGlpcTJyWEZFREJOY3duUTgyYkx1ZHJVcGMxQXNLeEg0dGJTWHhUWXUyNTl3TW9fR096Yjctdw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gacb6809cbbf2",
+    "type": "intl",
+    "src": "GOV.UK",
+    "title": "PM meeting with Prime Minister Jetten of the Netherlands: 21 November 2026 - GOV.UK",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdmJGcEZBVDhRRmtCT3VUSzJ6UjhmUF9NamVsOUZKdy1wNVY4U3RoeWx1S1V6OTdOR2lrUUtuUGp2dVpCTDFIRGs2REhNTEczOFZBWlU5RlZPWG5tTF81b3UycWp4dFJTSDl3dFhSWF8xSHZWaVhSeVJfSW1jTkQtRU12V1RKVnM0TFViWnNrd3JDbDNHaUFBcVZlMzhqWGtDcXVjY3hid0hoVUZ6?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gcc7349bb81e3",
+    "type": "intl",
+    "src": "Capital24",
+    "title": "Nicolás Keenan compartió una imagen de una tradicional celebración de los Países Bajos con un detalle argentino - Capital24",
+    "date": "2026-11-21",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRVdSeDV1eXZZSndoQ0F5NGpqVUFaN0ltM0NPTHlrMnI4UjlNU1pwemFXNloxS1dWTWp2ejRZd1E2VXg1cDN5QXNJbmJ0cUxPbEsyZUZhMDVNTkoxTENZTUFGSzl0YTBMbGFEeTZNcEZ4blZtT0Vhc1VJLTFQSG83TGxZdzhla1g2ZjhkbDRBaUN3OHlIRU9TWlcybkthTVN2S0xDTmNrN0E2bmx5SjFmSFNudHpVSXo1Q0FQZFlB?oc=5",
+    "flag": "🌍"
   },
   {
     "id": "g070ec940d42a",
@@ -263,6 +415,16 @@
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOGUwZ1ZZQ3BUZDV1djdXZmtiSkpBNzI5ckVWUHExUWVxLThNRUQ0bGk3LXUydW13ZGZDLS0yX1VrdjBvZDVIQThOLWt3eDFXSWhRelY1RFFuRkwwOHNDb3BqdW50ZXctTWw5eU40TEhQdERUQlBKdUxlMmd1b01KN2hvck9PZF9LSkQwU2JSMzUwZ1pDUWdQYTdhUjk0ZVR1NHFmNUt2dzYwZDFFMW1DODhxYUhKM2ZEXzY4ZkR1aw?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g7f6177a7be34",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Sybrand Buma begint aan klus: 'Hij begrijpt complexiteit van minderheidskabinet' - NOS",
+    "date": "2026-11-20",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVkVIVzZOOEVRSFQwSzhrZzVad1FxQ2lPN20wSUZmWW16YnZMbXRZVmFobmJzRVExMGx4a2czTEN0NHZzdEZEdGlQQjM5YVgycldwU2d2aUVFeFdsZFBUSGdXSk5wMlFtMFBPRXVvcXRFZGxCY1VhQ19tcUZOLWJ6WS1BcWl5NGZTcC1PSFJ0UEdHcHNiZ01Yc2dKaWZfWk5XTWEyVGdjVGJvbTJV?oc=5",
+    "icon": "📰"
   },
   {
     "id": "g4d3f58f2a7f2",
@@ -1392,6 +1554,16 @@
     "date": "2026-11-17",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPWjVxVlVJRjZhTzhHMEpKRVlfYnRSSjhtRHVNSVpNYzdXRnB5TENDY2s3WVNmVUF3LUxoRjY5dHFsZkswcnh6SnRFSVJxT1dRdXdRcjhSbWQwdTR4SDdPb0x5Z04wYVJmM0I4ZGhFd254WTJwOU94X0t3a251OENTcUlrX1Y4UzBtc2Y1b0hRQUdqcDk0S2h5UjlhQm9MUWxSYU5tcmJGMl9vUHFnQUo5SVFZWkdoTEtQTmdtbThoUXhMSGRtVDNJaExCNXNoYXR4TjdaRmhPd3VIdUNZOHNPbDl0ejVQWTE3OHh4Z2NfT3dwTmYtOXpTR0lhRGhQREFFeW12NUhFS2RQV0hPYjNkSQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g08e233d09a97",
+    "type": "intl",
+    "src": "Oskaloosa Herald",
+    "title": "Dutch prime minister concedes his coalition needs 'serious fresh start' after anger at tax deal - Oskaloosa Herald",
+    "date": "2026-11-17",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOVnlsTGhjSjZSdHJmVnFGMEdtVWNfdW9icmRna08xZi04SFhfMVI5ckJMY2o3T3dpeWpGTjdMckNqMm1WOEJNamNUVlphbWpOa29GZVlnVUFuSjRzWUpSV3BJNHhqLWo5RzFSMmtQV0w1VlFMcEdqTG9Wb2VMZFRKM0wxSTlSY0pkNGVsRVB5UzZObHUtTFRLQ2FKSWx5ak03V0szTnE4QXl4cHJxR3lpQ3EydGdFMFpab0F4X1pPSDFPcjBOTXVzZ2FVUzdHQkpEZ2F5ekxhUFdTMi16eG12U2gzb21ldTVoTG9UVkt5LTMtMzl5R2JocDJLQnlPV3dIZXBtbA?oc=5",
     "flag": "🌍"
   },
   {
@@ -3496,6 +3668,26 @@
     "flag": "🇬🇧"
   },
   {
+    "id": "g15e55e7f14ad",
+    "type": "intl",
+    "src": "essexcountynews.co.uk",
+    "title": "Dutch PM calls crisis talks as coalition acrimony erupts over tax package - essexcountynews.co.uk",
+    "date": "2026-11-13",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZ0twYXpPNl9DXzJydmlYaFBMckJBVlNOcjVyQVRLRTdmNWZSLXB6djZ3TGc0Tm1qeGNUUTA2YjEtM1RCbEFGNDVwOTZYX2FZTzRhYjFmWl9TSlZMaGQtMnpmbGRnQXFrdGY1SE1TVUJvOTlIczZkejk5R05DNWtkWl9pVmxUaGR1UU8wTWNhZFhza2l1ZTJBVm40NlVQb0otS0VPNFhGU3kyZ21wYVByaU0wcnJ2bno2WERBUDNETEY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gc9594781eb88",
+    "type": "intl",
+    "src": "La Libre.be",
+    "title": "Pays-Bas : la coalition gouvernementale sur la sellette, poursuite des négociations - La Libre.be",
+    "date": "2026-11-13",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOaDBxUjk0QzFvVDNwcThFU2Z6X2d2Q2JxejdYYlNEVjdGUzd2a00yeGxGRHBsMzlfb1BmME9LTGhJNDV1cmpZTkI4dm5oSTFsQzBObjJ0SHl0M3lBZk16ajQyelA2WDJLSW1NUHJoZ0NSbElmS1BzOXc4TGN5MkxSc2JjbWVFRUt2c0tCMEtlU0dweXJJZEUzcTdCSWU4ZEsyaTRQTVlWd0VBeXNfM3R1dVF0R1F4UTZDMHVYa0Z5dGNfZ1dlNm9XaTZkOTFadUhEYThPSndTZklrX0FvWXozOFhfc000QUtEQkhzaW5XQU8?oc=5",
+    "flag": "🇧🇪"
+  },
+  {
     "id": "gad56a21ce3be",
     "type": "nl",
     "src": "AD",
@@ -4251,6 +4443,16 @@
     "flag": "🌍"
   },
   {
+    "id": "gf62d8a009084",
+    "type": "intl",
+    "src": "Bozeman Daily Chronicle",
+    "title": "Dutch prime minister concedes his coalition needs 'serious fresh start' after anger at tax deal - Bozeman Daily Chronicle",
+    "date": "2026-11-12",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNdjhHR3BESUJobGN0cVNQeDJzZWtVZkhpOEhMbnJEcWFtZEN3VG8xZjdrWF9jWHIyM0dvNTZRLVpaTVZQZEc0VXpCNDEtUmtUcEdFM3ZLb2ZrYTVybFFkeV9LeGV1LWtTbG5mTmJOTl9hYlotV2JFY3g5QU1faGdqRzRIdmpkcFV5aVFzbE1JZDlESnhUOGpWR3pzVEVoaDhINEF3ZjJGNm1ETW9OVm9sZVNCUE16eW1XaVZFNUdOaGVrNWpuZXZ0a1VvV2FOWnF2OXNSMWxYT0JqeDlNY2lDTTFwU1VuZGw5THM2LS1GbVBPWUtDN3BWOERMdjBGMDNpRjNkU0dSTGlXSGtTMDVjQWpaaUNibVZWeWc1ZzQ3a3prcUhhYmRj?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "g83256ff71a69",
     "type": "nl",
     "src": "NRC",
@@ -4484,6 +4686,16 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQa281SkFMczhUVUNkVHByYVVybTJQRk5jR3BCd2h1eXRNMm9jb3dMQ3dYSFBqVHNkdXpnM1RRNTVoQVNCRHdkZ1pHVG85akVhOGtfS2NKcXdxdGh5WnhHbUtvRi1VLVJOZTRRcFU1RHFWaHhPTmtCZy03VVlVX0NUclV3THAxQXhVRi1aVm5NaFV3YUVqeHFjNTJUYUJTYVJRaHNUakdyVTFMMkt6cC1lR1BuM2QzX1BNZERLVC1ZYnNmbEY0UG1sWVdzalRSTTJLd3NEQ2dsTzVNVXl6Q3RhM3Y0SFlYR0Fac25KMQ?oc=5",
     "flag": "🌍"
+  },
+  {
+    "id": "g6a639434b0b5",
+    "type": "nl",
+    "src": "BN DeStem",
+    "title": "Jetten ‘vanwege de actuele politieke situatie’ niet naar EU-overleg in Dublin - BN DeStem",
+    "date": "2026-11-11",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNUjQ3aFVkcEtuYVpEdDVNNW9BcHZ5S25aMk5FUGltZEpfcnpNWUo3YW1pNzV1VEFyUXFBbGRxTnloOGxtSm5uUjBVRGNzdzdpMC1XYndJbUZrZjF0amgyYXJFc1d1Ymh5SlhSVnp2dEE2aGt5RFpzS2FtR1NOM2ZZSjlGSVhFRWJFVHRPSWJJVU5PTXk4SDFFaFMtbGFud1pwM0ZhTU9GWmNic3U0NWlIb0ptcU5Ma1hNOGc?oc=5",
+    "icon": "📰"
   },
   {
     "id": "ga4d7a44f7ba1",
@@ -57745,6 +57957,16 @@
     "date": "2026-02-23",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNY0Q1SlVuLVJlcDdJaktHX0Y5MHhoWFQycTNjRjJGRVl3c0FseXBQZ1VQWVZFUVg0Qk1hMkxoODE4T3BBOEYzRW9YWjhEX1R5WWNURGEzRS1kMnJ5Z1JYcl9tWUJDQmRBWXE5TlZwV3RwZ0RhR0dIT0F3NmNSOGU3YmdqRXNEWndYWElZc0Nfa2NJYWlPZFBsc05aUQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g3f87b44ff482",
+    "type": "intl",
+    "src": "20 Minutos",
+    "title": "Jetten, primer ministro más joven en la historia de los Países Bajos, toma posesión con un Gobierno en minoría - 20 Minutos",
+    "date": "2026-02-23",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZEd5V2NlX2xWQ1NNY2VhQkRUMVlHeXJORXVuQmVNWG4yclBHeGplbDFtNllPMl95Z3M3aUZ6dWgzUVdvVFNIVHMza3dBRktsbmJzckFuWm5HOUlpb0ZyR3BkR0VPYnk5c2RwTk0xaGV4NFVjaDhnQ0dVbnY1TkQ4WUZrOTJyR2haRjc1ZW1UQWRXZGZ6QktRQjZuMVFWZ2RyVnQzZHZZRV9PN3FDV2Q5NDhyV3dibmFTNjJIbmR3b2pVUFVNZEJiRjVVT1fSAdIBQVVfeXFMTmFFQi1GRjhEU0lycUdGZnkwRW1pWE96VXVhSS1sWEMtMEloT0FGNGNYSTNjNUJjU19ZYmpsT2Z5T25LdmxTTjlOSkZIdEN1ak5DSk1KVVBDelEtWE1jZl91aEFHUHdmUE82U1NkdUEyWWYxUWpjNGk4Unp6M3RaRE5FcWc0WWctUE5WR2N4cTZNV2tuZF8xSlB1NGpNVWc2VXFyZXFIQzhMRmhQZFh4NkZvZlpYbUdTOTU1NnM1NEp1QWh4dmg5dkU5WEd4UzhvdEpn?oc=5",
     "flag": "🌍"
   }
 ]
