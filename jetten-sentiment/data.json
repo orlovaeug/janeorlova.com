@@ -1,5 +1,211 @@
 [
   {
+    "id": "g0c7e81d6d5a6",
+    "type": "nl",
+    "src": "NOS",
+    "icon": "📺",
+    "title": "Jetten zet zich schrap voor 'bloedig gevecht' over EU-begroting",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://nos.nl/l/2641042"
+  },
+  {
+    "id": "g241a15c9d6c0",
+    "type": "nl",
+    "src": "Trouw",
+    "icon": "📰",
+    "title": "EU-begroting ‘absoluut niet goed genoeg’, zegt premier Jetten",
+    "date": "2026-11-26",
+    "sent": "p",
+    "link": "https://www.trouw.nl/buitenland/eu-begroting-absoluut-niet-goed-genoeg-zegt-premier-jetten~b45e6f0c/",
+    "lr": "left"
+  },
+  {
+    "id": "gbb6f44075e4d",
+    "type": "nl",
+    "src": "De Telegraaf",
+    "title": "EU-begroting: Jetten verzet zich fel tegen hogere rekening - De Telegraaf",
+    "date": "2026-11-26",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPZFBPWVRmM0xsU2p5UDlaWnZKQzI3WEJ5aUxQT2hKaURGR25INVJZTTAzRkRfbmZUVkdqcUNiLVdKWFJrV3lBdzloSGZUOVRrcTRPemV3MGYyLVptR3EwUnBNMVlfc3BOazFjUXlfeDhUTmZNbTRVd3A0VlZsejJUeHFqZUM5M3V6SnZQT1JLV2ZjbzJiSVhkeFZCbURMcGVXaUNkendxVUgxSUJrXzc0T1ZLMmlZNGlhMWVNRzBOYklwNXNsR25pMDcxTUd2TmtCaTcwWFhwNDFpSzlfWWk2WHNxVnZNUEpmbGNpWnA1Qm81cXpwXzY0?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g5ac52c3f4aea",
+    "type": "nl",
+    "src": "NOS",
+    "title": "Jetten zet zich schrap voor 'bloedig gevecht' over EU-begroting - NOS",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdnRPVGdWZjVUQ2l2cEFwR3ZDdUJsVmhPYm5vVmVlUGVMX0toWVd0QnZfZ0d3Q3pDdHpDNHoyZVczWlFaaUJuVDluU2pZOGFxWmZFM2JxbkNNM2VuMkN1M2pZUlJyUDViNTZLdXRyWXc0WWVock9ZUE1Fc1RBV1RENkw5dG5xdnRuNkxZTG8xeTVlblhNT3pr?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5d5f76cc89fb",
+    "type": "nl",
+    "src": "Het Parool",
+    "title": "Schuine grapjes én een goed gesprek met de partner van premier Jetten, dat kan alleen in Boerderij Van Dorst - Het Parool",
+    "date": "2026-11-26",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQa1kxVG9iQmMyd3liRTd0a1pMWVpDekNFT1liclBpTF9HLUprZWpDMXNFUUFjQ1dSMjA1MEtoQmM5dWR0S0lKRVQtOExqM3RpV2RFXzVpaFJ2X3czUk9IaWZLb1lhMExjaUM4MHhjOGdudlk0UVFLN1JSSGFLbThsUmV6d1dDbUxiLVRsaXhCZWNIMUlQLXdLdDNkTmhQTXU1WllIUC1nazNHQVhVUXkyblljUlp3TEpoSzFteGFKTWZ6Y0x4OG5uTHdaUlkwdDFrcWpLT3ktVEI0VHg2WC1lNVFR?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g855ee990c4c1",
+    "type": "nl",
+    "src": "bnr.nl",
+    "title": "Jetten: Klaas Knot past nu beter als ECB-baas dan Hernández de Cos - bnr.nl",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNQVFVRDdZYkROX2UzM1FBZ0NqNEVIMjkyaFRRSmxNaXlpSDItcFBNVTUyejVXRFd0aWpNdDJ2TmFaRDNMQjEtZ3N6c09HS0t1ak15Y19Sbmd1QnNwMGl0SGg5VWxYZkcybjNBVnNpNk5uRTlqdHhCSFdWaFBCYUM4bFVTZkJIVXA4Y2hXbUxQTUlYLWhnOS1wRVNGb21CcFljT19fenJOX3lBdkVGbmc?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "gaca0379a30a7",
+    "type": "nl",
+    "src": "Trouw",
+    "title": "EU-begroting ‘absoluut niet goed genoeg’, zegt premier Jetten - Trouw",
+    "date": "2026-11-26",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeFFZX3kxb1FiRXJkT0FoUHpkcnJ6eDZUSmtTaTZuQjBnelhzQk40TzBUa1JsTldfWGdxVkhWdjI3RFVwZXFRMlhKYzFSbXBJYkNmWEJhbWpWTDhsNk1MVHBoOXZ5cFhWbzlreEhuN2pIUnRJaDVyRGxJZ24talFoeDdFeVRBajZpc2FkcXRwbk1FVC1ROExXdWlrR2Zha2ZZdVE?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g10ccdc9358f8",
+    "type": "nl",
+    "src": "Wynia's Week",
+    "title": "Rob Jetten moet nu in Brussel laten zien dat hij het premierschap waard is - Wynia's Week",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc0R0V2cyTXN4Tm42MUZOa2UyQlpUUF9rTUtCMDJybjdjYXhEUHZZOXhlRWk5X1JrVmtPMEZUTloxaXJ0ODNLMTB0UndaZUljMU10RUk5ZUo4LTl0MjUzTFVxMGIwMkktcmVidXpaOWdOUmVyaHdZbGNDaUpiOXpjN2dwd3M5TEs0VWRSWUxiRWhudHpWczBuaW9ZRmJlQ2VKZ3ZN?oc=5",
+    "icon": "📰",
+    "lr": "right"
+  },
+  {
+    "id": "g889c4d1f5796",
+    "type": "nl",
+    "src": "Rodi.nl",
+    "title": "Timmy uit Nieuwveen schreef de premier een brief, en Rob Jetten kwam langs - Rodi.nl",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdDlvX2RrOE9wNjJJeXV3cUtsTWt4MVo1SFh5ekh1WW1JbjE3eFYtaFpqck51dmRmN0JzU251UnU1NmNNeDJwZm9NYkc0cU1kZ0hZclMzZHlsME1fc0c0UUV5eVJWXzhSMFFOQlJTV3JzWEtRVFhBMHQySXJGNzlHNlRPNnV5ck5mb1BIOEFscGZjRGFRa2Z2WVZaZ2JsUlVmUU1LWnI3ODdoeTdBVjlDVGppU3ZVelF2cDdMUU1UVDZ1Zw?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g089dd800eb8d",
+    "type": "nl",
+    "src": "de Volkskrant",
+    "title": "De partner van Rob Jetten in ‘Boerderij van Dorst’, dat leverde een misschien wel uniek interview op - de Volkskrant",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPc0MxejMtQVlyQzlsWGwzR1lZeHY2dWFDOUk4ODRVSzFYUC1xNUJTbmN1RXFfc3FTMDFiT1pOeWZ4Uk5wcXdzbGg2emlPM3JQNG5SZGIwRmU4ZUYyNGFEVWZxSWZoUTZ5N3FTVFhVX3FHRGNucll1cHVTMzNPbzZjYjlHbkhCY181TVJuQ3ZIc1d2b2hoRTJkZ29TbjdkREg2QlAtb1hJdWo5THRrcnptTXVKWHRsYlk2c2FOM1dSOWgzNWE3SkFrRzgtTmZhQlhaelFGTTdBVTB4WDA?oc=5",
+    "icon": "📰",
+    "lr": "left"
+  },
+  {
+    "id": "g2c9cecc17f55",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nicolás Keenan, inderdaad ‘hij van’ Rob Jetten, deed gisteravond het onmogelijke - AD.nl",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdHlYNVBRV2h6d0NCTjFBLXBlUm1RNDZ4TTFTNGRLamxFUVJLMThyLXFQOVhldDg4bEszZUgteHN4SVpEZ05FZnRfSjM3UFg0UFhmR2F4UWpFaEdnQXB4Slc0V3ljTEE5aHlnYnA3WF8yQW1GWmpRdWxKek9hUWJaR3hsejJhb216bDRBX2EybUJKbENwc0VVUkNvWVVRcDJ0czdpTUtlanJhYmpGSlMxVDNERjllWW8?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g5d3fc9f8ede1",
+    "type": "nl",
+    "src": "Headliner.nl",
+    "title": "Kabinet-Jetten plundert autorijders met 24 cent meer benzineaccijns dan België en groene dwang - Headliner.nl",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOVi1JRGMta045VXBYMWdXblo4aTJfTW5ubUJFTk50UEp6SjhGeXN3dmRSTUt2R0ZYMVhPVER6S1NEbnJuMFA3cnBGSWk2dUZkTzFYeUFVVjREZ29oZFpFdjN0UmlZNmFPT0Y1cmxJbGluYU01VGVsVENaSWpFdEZlbzJ1eUJLTV9ZdWVlaTI2MGVKb0tyMWI0cy1Hc1UzWTVFbEFYYXB6RUxBZUMxaFdTX0F1UUFtYUhXY1VxLUtYYzktREpkUUR6RUNreXlWQzZaaTNoUGt6R1dwM3JDS0NMNmhyYnM?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gdfe47d68062d",
+    "type": "intl",
+    "src": "EUobserver",
+    "title": "Dutch dismiss any deadline on budget deal as EU leaders remain divided on size and new resources of revenue - EUobserver",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQX3BSY2djQW84RTBSQmljTGxNTEc3QmlNYm1jT09yMVFPMmhxYkhMbUJRUjY3b0p6VUJGTnh5RUVYd3NIMVByTDdPTVg0a1FQZ2dKWldEcTNPLTRubFNxa0lqd3oxLVl6Q2VQTjBjZGs1c2hjMjJuQnVRSEJOZDU3bVIydGc3WlFublZUSTYwNzQxRmNrbFJObFpzSDd2bm1uWW50dUFvdWcxT2FpM3JPVkt4RDlOcmhPZmhScEhGLUZFMy0yNW1TaDdmLVhjdTFKeW9OYQ?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gfa53b8aff1f4",
+    "type": "intl",
+    "src": "Belga Share",
+    "title": "The Netherlands and Belgium will defend customs duties in EU budget discussions - Belga Share",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbXhKekpyR05GOUtHQlVOZ3I4N05nSjlXX296dk9zWFNYb1J2U0NmNFpDM0hqYTc3UXc0MW4telFieEp5VzNhbFdrdXMzZ3VXV01jZDFobzhlYjdsN0kyWFNrcUN4M1lDeHZHYWNLVkhBQlNqZDNmdmFsY3NobjlibzJMS3hhZ2xwSktNNmtNeElNOXB6SmZvdnVjcDFnSVZ4MnQ2V1dxNXJDc3dJUnhHYkdYTUYwcXR0WS1wbEh4cDM5c2s1ZjhZM0dlbVg?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf9a99a553a7a",
+    "type": "intl",
+    "src": "Українська правда",
+    "title": "Netherlands joins Germany in backing proposal to link EU budget to Ukraine funding - Українська правда",
+    "date": "2026-11-26",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xaEFXemxySVphY3lldnNFMFdZendyLTd6Qy10Vi1tdWNETEE2VUxURWg3U2ZRX0dxYjNsYnhpekJjLWZSNWs3cVJDeWpYRDFqS3dqOFVfVFBkWjAwNTBZb0oyZVDSAXBBVV95cUxOelJFQ0NMRXNiYzVtTHNXZW9uVXBYZ1F4d2FYdFd4UWRud3hyTTQ4OGg4QV9QYWs4UmFXa0RRN2kwOXJxamVaSjRBdWZESmVBYTIyVUhqcVBNTXBMTGhiWk5ZbGVWc0w3eW9Tb3YzenVr?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf843f14c70e8",
+    "type": "intl",
+    "src": "Цензор.НЕТ",
+    "title": "No EU country can withdraw support for Ukraine, - Dutch Prime Minister Rutte - Цензор.НЕТ",
+    "date": "2026-11-26",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVl9lTjRYNDZNNjJWV2VMQjliSDk2bUU3LTNhcXVlWmxaTlkwLVJYRVgyNWpqUl9CUlQzVDV1aUoxUXhqWUw4cU5FRUl0MDhNdlBOa0JGY1dycDFLZnFCN3ZUU3YwRW5QSHNfYk50UEFWa0JIVy1JUGtqdllEN0tKUXRGcnNWLVB4d29UOEw3ajNDQ0hMZmFzVUxCdlEtdU43aFByb01uRnJYRGFm?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gd41e940cd65e",
+    "type": "intl",
+    "src": "jiji press",
+    "title": "Battle over EU budget, Dutch PM: \"Unacceptable proposal, must be reduced\" - jiji press",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRUtXZXhQOXFfQm93NmM4TEVwVkl3N25EZnUxQklUVWUwTXlYNmxyS21qVFp0LWU2a2Q0TjJpcjQ1dzBMcFcyOENlTFc3bmtCYkFxYXZKdGxEMUJQek5VNTItamJEXzMzRWVCbU5pM2hlSC1kUzdhcDhoMFFBWklTbmhKdXY?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "g992a9f87342e",
+    "type": "intl",
+    "src": "Europa Press",
+    "title": "El primer ministro de Países Bajos defiende que Knot \"se ajusta mejor\" que De Cos a los desafíos del BCE - Europa Press",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOZXJlWXVNUEI0OXhja245SjBvYlItMWRNd0EtU3NNZDdGcFJQT2lVWUdtUk54WERrSURQbDRzWlBYQVBleTVQckNpeTBaNXg1dWNhczZ3WndzeEVUZkFCcThLV1dRY21BNlhmYk1Zd2VnLTA3SVVJM253RTloUExTMHRvUHdZNFZRNWRHbENVQVUzYjdTQ2k1RmpOM1NIWGhOYjJ4dHhLTUtMZl9VSzM5a1hMcWVPN1dIbFJBVW40OUZNbnFKMC1pQUxERDdzOEdJMzE2WnFsWVpSdjgyZ1hQMTdLMXpYdGk4SkFFeA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gef8bede54c90",
+    "type": "intl",
+    "src": "Yahoo",
+    "title": "El primer ministro neerlandés dice que Knot es la mejor opción para el BCE en este momento - Yahoo",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPRXc4M0o2bXRQN0VaWXBlTTczOC1Rc3U2ZVVFVVh0a21RaUVKTFdNNU4yallERUowMjg5VzlHSDd5OVNRM1g0Um50TEpnSTlmLWt2cHlNSEgtZFNmTjlyeEVLS1JYV2FfUGdjQTRiaGZyUC1rVzREa0wzMTVTM0J0RG04T2paN2FGS1JLcVBBM3BZSHBZZ2g5MA?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gef0253b8cf5e",
+    "type": "intl",
+    "src": "La Nación",
+    "title": "Nicolás Keenan habló sobre la decisión de ser padre con Rob Jetten por gestación subrogada: “Se trata del amor” - La Nación",
+    "date": "2026-11-26",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUkxMbTFuTDVFUDdUNnc5Nkd5am1jVHVvdzRUZkRxN1VFVGo3U3F3WnB0cDJyVjFxbzVMaXBsZ01qbmdpRlowcXozZlJpQjRtX2RXSEloaUpJbkp1OVYzZmZ0cWd0bVFBNmtTOHFRYWdEWEZSWmNjWDA4ZHlfSENWS295cXFPdGx4Z1UzZmxTb3VlaXphQTJVVFVkekpzYm4zUXltNWlleVF1TmtVb3VCVUxBa29RNk9LQ1p3UGNBZGk1aGwyTDcxU29taGVLU2g5ampHLTFwQXl1UmxKQ21sT3JQQQ?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gba067a831ff2",
     "type": "nl",
     "src": "Friesch Dagblad",
@@ -28,6 +234,57 @@
     "date": "2026-11-25",
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNTFZRFhPWkUtYVZCVS1GTFplSkk3VjJTWjlPWm05MHNPVjlNd1loVTk2T2NrR2Vlenl4SF93bHd6UVFsQ3hlendLbjctTUI3RDFhWm5JV0FqR3Z6ZmRxOHc0bHNUTXNiSmRPT3hHUk9LLUZpSmMxa1JoXzVEQ1NTVEItUkl6WXJuMHBoQkdjaXBTTHdueXF5aEZQT2Q0NTlwc0dRVWhLdlE2QQ?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gb7d101315159",
+    "type": "nl",
+    "src": "NRC",
+    "icon": "📰",
+    "title": "Kabinet-Jetten wil migranten die hun asielaanvraag in een ander land deden veel strenger aanpakken. Dat lukt tot nu toe amper",
+    "date": "2026-11-25",
+    "sent": "u",
+    "link": "https://www.nrc.nl/nieuws/2026/11/25/strengere-aanpak-van-migranten-die-hun-asielaanvraag-in-een-ander-land-hebben-gedaan-komt-maar-moeizaam-op-gang-a4942251",
+    "lr": "right"
+  },
+  {
+    "id": "g06dfd36f676f",
+    "type": "nl",
+    "src": "NU",
+    "title": "Verloofde van Rob Jetten werd 'beetje verdrietig' van haatreacties op babynieuws - NU",
+    "date": "2026-11-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPeVJ4cklDU3hTNnJ1QUJIYnhUMFI4TWdPUWxvVUJuSlFwZ2NlcVRnZmQ4cFRWOEd0dm9pWWdIVTNGOWxjVV9FbE1iMHhPV2VOTnpvWm53aHBHMHhKSEpmeldxR3g1d0J0UkRydmU1SndKNEp5dE9IUHVOZF9nQWZWa1dDSjBUSHF3ckdnRkhFZDdNZ1ppX1lQcmZ0ZXBCcTVBZ01tcFdyZE8tbG12eXppM3VScXk4eEROaGVyUA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g233280f8950f",
+    "type": "nl",
+    "src": "Sportnieuws.nl",
+    "title": "Hockeyende vriend van Rob Jetten laat zich uit over politieke toekomst van premier - Sportnieuws.nl",
+    "date": "2026-11-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPYURSQ0JIemtzWkJkVFA2QmR2bkU3azJtMGVBS2NVdkdEdjZiTDJrOXI0bWxEVndRMHQ0dDZ6WExZTl9hUFRWd25UeDM2Qlp4YU5OZ1ZpTzgwcWZ4QjdqdWRTTGpZTGFlM21mb2I2ZVo4d0traURuOEs2MG00UjhGWHkzb1dfeEV5YXhYOGtHVmJQdXIwUkpHc2VCUmtucDFmQTR1Uk5pcFFMSlVrQUlKT3ZNZVZReDZQU0lfekNZM0ZZYmw4WTV5T1lqYWRoOFNwZDF2WEs2c1dHQjA?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gf10eb82f5172",
+    "type": "nl",
+    "src": "AD.nl",
+    "title": "Nicolás, partner van Rob Jetten, is blij met keuze voor draagmoeder: ‘Wij gaan niet veranderen door de haat’ - AD.nl",
+    "date": "2026-11-25",
+    "sent": "p",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQanVnVXotV2dVSVU5MkotTkphTmswSFpJQTNVaXk5S2Vkb0c3R0Frdk5ZSDIyZWZTbmN1dERpbXAwUFFqdlJ4UEhjY3hZWU8zNllyZXI5Yk5OMXA2dzRaeUVjdV9vNWp6QS1pM3cwaFNRZTFaOTBaOGdhd0xxZnE3Ul9IcHpyUG52NFdSMnFxcmZfNXM5bDY2TVN0UUxJRjFobENHS1oxQjlfWWx6ZDh2Q3hPSVJ1NTgxLV9RMkxWRDZoNnNmUUU2Z1dJbUljUkVnUVE?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "gc4492a75af08",
+    "type": "nl",
+    "src": "Headliner.nl",
+    "title": "Drama voor VVD en kabinet-Jetten in EenVandaag-peiling, terwijl FVD-kiezers door Zembla heen prikken - Headliner.nl",
+    "date": "2026-11-25",
+    "sent": "u",
+    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVVF4eV90eXNQcW5hNWp2R2MxVUtDSXRvWlVwQVVRWWI2TnpNeklIaU9uOVdRTk1UT05vQ2VSMXpKbmVhVThSSG5RNjhaanNjdzkzSlhxT0JTcGRqYjlDNjBVR2FqZWJjWEVMWF9MSC0ySWwzSElsczZ1T3pxdld2dGx6Q0Y1Y3RwZ0tSRDZYM0U1ZzF6N3dNR3FxblpxcjkzSTZKcTA0QlU3MlA2RXF6am9nTHpjaEFtNjY0bF9zRFNxamtMbTdPMEE5REZZNEpPblNqdVBVNDV6SWFlS0VGbm5hbE5mWXhyb0Zj?oc=5",
     "icon": "📰"
   },
   {
@@ -194,6 +451,26 @@
     "sent": "u",
     "link": "https://news.google.com/rss/articles/CBMiggNBVV95cUxOREw3S1BQTnM4M1VxRm5KdDJDT0lDNlBMdEJWYldHT19Rd19KU0xWWE9YVE9uQ3BTWjBMT0ZoSEdUNlVPaVBXcFNWSWNFdE1XYnVwX1JtR3RTY2o5SGVrT2FhcWs5ekZLRFF1RFprdFlEWDIxYUdlYjZJWnZ2WkdjWDdUbE1LOXVqdDlZMUtaWU1BaUE2QV9pX1oxb1hxM1pkSy1hc2lpVGlscDQtWU5IS1RHakEyUC1NZkJrVjQ1OFk3SHNEdXJ3aFhCdmtSbGxVVXBvNWJwX0lNblY5NktKY1dZbVpDaFl4aElwNHVrX2d1MWhYNjc4T0h4bjFQOUE4NHQ3dmtJUDJQY2phUnJKZmdlUThWUExzOWNUeTZpUDk2d0oweFIwVktVaTV5ZEUxdmZNZGRCZTk5UFI4UUtTcWdMVGJyZkl4aFY3NG9jaDhfSGpMN21WT1BnMWFQQmxPeU1Qak1wV0RGNFExWVVJY1BZc0FVc2F4aldEa1FHN015UdIBhwNBVV95cUxOS21LdWVCU1BtcGdfTUF6eUFEYmllRHE4NXpYdE9HRUFFXzVzMHhRcDV0WlNrajAwTGJKa0otNnNWLXQ5TmVVSWNzSW5qQmtaWThVQjdvT0NMenNzd0lSejI1RHlvYkswSVJad2JtTFB0RXBaaEZOWl9UZURrWmpKTnJQZzdUaDR0OWV2ZllRVkFFN0cxOS1PSDhPZ2hVckVjM2g4S1B3bXRSeXdVVmpMVjFQaGFOaXRESko1amlfVWlFQWJuQ2RLWmwtYS0xSDBpUE5xTU9LZjAzLW5NSUNDUVNyQzctZ2k4MnBEamJ6UEFnMmJKUWR6dVZYZW1xV0JOQk9DZEFyRWlmdVR3UFBhVUNIb2FabGlBb0dZcTBmNUNIRG1rVWw0cjlTVkhZUl94QjBzVTdudWlrV2phdVozSnV1ZmtfNXAtbUJrWWVpaTMzWGg1SXpBZlNQRVAwTHo0X3AwRTdua3ZMVjVmTkxXZDlhNDhTWFFDbGk5VHFHclk0REQwaV84?oc=5",
     "flag": "🇬🇧"
+  },
+  {
+    "id": "gece02c1adb20",
+    "type": "nl",
+    "src": "Headliner.nl",
+    "title": "VVD-leider Brekelmans over crisis in kabinet-Jetten: kabinetsval besproken, excuses bleven uit - Headliner.nl",
+    "date": "2026-11-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNcEQzTkxxemdyS1lnVk1hSFBLaklWbm5wUDZvNHBMaWZzSzZnWk80UC05RVhUYWxCX0hObnQ0enAtZGxLeG1udE5VN3JiQXhnVVMyYUJTZ3lCNWY4LTZsOTQzWVJvbHh3M3dYdlFnc2ZCMXE4QXo4N1N5cUtCX0t2WjBNek1qZVc0UG00M0NybTdRbzdWZkN1Z3piZkk5WmZ6YmVSaFlMUGY2cTk5U1czOHJQMXl1WlFvLVFEa2lfcGxGOVVWOFF2NDRobDRsVkk0MHFxYlBMbGx6TG9IR1BDakl3?oc=5",
+    "icon": "📰"
+  },
+  {
+    "id": "g6d734fc04b4d",
+    "type": "nl",
+    "src": "EWmagazine.nl",
+    "title": "Buma’s kabinetsreanimatie moet slagen: kan hij een politieke crisis voorkomen? - EWmagazine.nl",
+    "date": "2026-11-23",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVGktQkZMbmlMU0ttVFdodktpMnJXSFVFZGVHTW9vcVpSeXgxT2tEOERkSXVxYzRnOEU0SVNQRElhYW1vS3RXNFEyUDdIZ0tiZVNodk8tVVVBblV6WTBOU21ZeVB4YVNTVThXX1NUYVdGbHg5T0V1ZWlCMWpWay1SWFViYVZwbXRReVNQclE5NXBJTVVWNVJjN1RCdWNvVnZLNkgzVl9XTjFIUkZRV2ZaTTdGaDdkajQ?oc=5",
+    "icon": "📰"
   },
   {
     "id": "ga27ba70e1fed",
@@ -4044,6 +4321,26 @@
     "flag": "🇺🇸"
   },
   {
+    "id": "g0e48198c12b4",
+    "type": "intl",
+    "src": "Ealing Times",
+    "title": "Dutch PM calls crisis talks as coalition acrimony erupts over tax package - Ealing Times",
+    "date": "2026-11-13",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdnlDUmdVUUFERzlJaTlLdmE2bWNVVDR2X29rNmtaRlFhdW9pRXc1a2tLQmtVQTJoUjdpd1FDMjRPSVhjZ1lTN0cxcWxnWE5fOWR1Sk94dnN4UkVmVW9qdDFYdXFVY19Jd0dIWk1pMkNFaXZRbjBiUXhJcVMwNHhfT2F5dElzR2llZ1ZoWTBNNmktcE54N2xLVWFhRnhnVWlwNGlETk5HQnFfc2paYXRRX3pGcHhjaDk4d0w4?oc=5",
+    "flag": "🇬🇧"
+  },
+  {
+    "id": "gd6e4441dbbd0",
+    "type": "intl",
+    "src": "Yahoo News UK",
+    "title": "Dutch PM in crisis talks to prevent government collapse - Yahoo News UK",
+    "date": "2026-11-13",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAxTTBIQ1o4Yjg5SjNVSTBqejJYSG9mSmJPYTR5Y2ZMby00U1pBSmtraHZYNHRaNkNkNWFPX2lKZEdTSi1hX1ZoQlpmUWZlTFhZWHp5R1NqZjl2MmxZQy0wTzZfUlQxazNKWXRmc0R5RFZmX2xJMjBackpR?oc=5",
+    "flag": "🌍"
+  },
+  {
     "id": "gad56a21ce3be",
     "type": "nl",
     "src": "AD",
@@ -4826,6 +5123,16 @@
     "date": "2026-11-12",
     "sent": "n",
     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRWVOOVduc3hrN09LWXNVSWVkNmt2aGdSdHJjY2JiazJtb2EwSGt1amw1bkdTazJfUVo0WWFTQ0M0OTZHd3lUVEdZQzFOUVhjS0lJZ2R3T29UTjBOS3MtbTF2VHBkZ1BMVl9kMHdRekxCaEFubUxGeEZWVVJvRTBxSFRfbmV3cWlxYlU1LTRBNUI4dlJNSVY5Nm1IRm5kZw?oc=5",
+    "flag": "🌍"
+  },
+  {
+    "id": "gf7406c5e133c",
+    "type": "intl",
+    "src": "RND.de",
+    "title": "Regierungskrise in den Niederlanden eskaliert wegen „Millionärsteuer“ - RND.de",
+    "date": "2026-11-12",
+    "sent": "n",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcm5feHRYcm9OVFJ6RkRSLURwUmp2RUhhRE9LaDUyX1lKdW5KV3UwTjNySWhWX1UtVVRjeUNwYXN0bjV3cGc2a0NIVDlYbks5MzVUTVM5TUJ1QmwyM1FrcGliWkdtMTdlc19VZUYwSGJBYW5KMmNuQ09kRjVMMGFwZkhUWU9ZMHVJZUlZUnExTlVVRnlCcGsyWkozczgwNjJrOXRsWjJTcmhUNmhWYVl1SWRWdkpjR3M4T1lFc19VMEtYWTdBNVE?oc=5",
     "flag": "🌍"
   },
   {
