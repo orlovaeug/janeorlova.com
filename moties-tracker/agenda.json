@@ -1,61 +1,5 @@
 [
   {
-    "datum": "2026-11-25",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Herstel Groningen (CD 7/10) ",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07457"
-  },
-  {
-    "datum": "2026-11-25",
-    "tijd": "2026-",
-    "titel": "Tweeminutendebat Telecomraad 1 december 2026 (CD 24/11)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (tweeminutendebat)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08712"
-  },
-  {
-    "datum": "2026-11-25",
-    "tijd": "2026-",
-    "titel": "Begroting Economische Zaken (37020-XIII) (voortzetting)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07511"
-  },
-  {
-    "datum": "2026-11-25",
-    "tijd": "2026-",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08572"
-  },
-  {
-    "datum": "2026-11-25",
-    "tijd": "2026-",
-    "titel": "Begroting Landbouw, Visserij, Voedselzekerheid en Natuur (1e TK)",
-    "locatie": "Plenaire zaal",
-    "soort": "Plenair debat (wetgeving)",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05409"
-  },
-  {
-    "datum": "2026-11-26",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
-    "locatie": "Plenaire zaal",
-    "soort": "Regeling van werkzaamheden",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08573"
-  },
-  {
-    "datum": "2026-11-26",
-    "tijd": "",
-    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Herstel Groningen en het Tweeminutendebat Telecomraad)",
-    "locatie": "Plenaire zaal",
-    "soort": "Stemmingen",
-    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08639"
-  },
-  {
     "datum": "2026-11-26",
     "tijd": "2026-",
     "titel": "Wijziging van de Wet buitenlandse schepen en enkele andere wetten in verband met het creëren van bevoegdheden inzake buitenlandse schepen en schepen zonder nationaliteit gelet op enkele artikelen van het Verdrag van de Verenigde Naties inzake het recht van de zee (37038)",
@@ -98,9 +42,49 @@
   {
     "datum": "2026-11-26",
     "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: STEMMINGEN (over moties ingediend bij het Tweeminutendebat Herstel Groningen en het Tweeminutendebat Telecomraad)",
+    "locatie": "Plenaire zaal",
+    "soort": "Stemmingen",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08639"
+  },
+  {
+    "datum": "2026-11-26",
+    "tijd": "2026-",
+    "titel": "Aanvang middagvergadering: Regeling van werkzaamheden",
+    "locatie": "Plenaire zaal",
+    "soort": "Regeling van werkzaamheden",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08573"
+  },
+  {
+    "datum": "2026-11-26",
+    "tijd": "2026-",
     "titel": "Begroting Landbouw, Visserij, Voedselzekerheid en Natuur (voortzetting)",
     "locatie": "Plenaire zaal",
     "soort": "Plenair debat (wetgeving)",
     "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A08637"
+  },
+  {
+    "datum": "2026-11-30",
+    "tijd": "",
+    "titel": "Begroting Volkshuisvesting en Ruimtelijke Ordening",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05404"
+  },
+  {
+    "datum": "2026-11-30",
+    "tijd": "",
+    "titel": "Voorstel van wet van het lid Ouwehand tot wijziging van de Wet dieren en de Wet op de economische delicten in verband met het uitfaseren van de bio-industrie en het waarborgen van een dierwaardige veehouderij (36562)",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A07452"
+  },
+  {
+    "datum": "2026-11-30",
+    "tijd": "",
+    "titel": "Begroting Sociale Zaken en Werkgelegenheid",
+    "locatie": "Plenaire zaal",
+    "soort": "Plenair debat (wetgeving)",
+    "url": "https://www.tweedekamer.nl/debat_en_vergadering/plenaire_vergaderingen/details/activiteit?id=2026A05405"
   }
 ]
